@@ -1,0 +1,305 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-01",
+      "title": "TheWizards APT group uses SLAAC spoofing to perform adversary-in-the-middle attacks",
+      "completeness": "High",
+      "threats": [
+        "Slaac_spoofing_technique",
+        "Aitm_technique",
+        "Spellbinder",
+        "Wizardnet",
+        "Rozena",
+        "Darknights",
+        "Mango",
+        "Moonshine",
+        "Darknimbus",
+        "Badbazaar",
+        "Process_injection_technique",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "Arab emirates",
+        "China",
+        "Philippines",
+        "Cambodia",
+        "Tibetan",
+        "United arab emirates",
+        "Chinese",
+        "Hong kong",
+        "Ukraine"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 20,
+      "software": [
+        "Android",
+        "Sogou"
+      ],
+      "algorithms": [
+        "md5",
+        "aes",
+        "zip",
+        "xor",
+        "aes-ecb"
+      ],
+      "functions": [
+        "GetAdapterInfo"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/thewizards-apt-group-slaac-spoofing-adversary-in-the-middle-attacks/",
+        "https://github.com/eset/malware-ioc/tree/master/thewizards"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-01",
+      "title": "Operation Deceptive Prospect: RomCom Targeting UK Organisations through Customer Feedback Portals",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Underground_ransomware",
+        "Cuba_ransomware",
+        "Peapod",
+        "Snipbot",
+        "Com_hijacking_technique",
+        "Romcom_rat",
+        "Pe32_ransomware"
+      ],
+      "geo": [
+        "Ukraine",
+        "Bulgaria",
+        "Portugal",
+        "Russian",
+        "Germany",
+        "America",
+        "France",
+        "Croatia",
+        "Usa",
+        "Polish",
+        "Russia",
+        "Ukrainian"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Domain:",
+        "28",
+        "Hash:",
+        "9",
+        "Email:",
+        "5",
+        "File:",
+        "3",
+        "IP:",
+        "6"
+      ],
+      "software": [
+        "Microsoft OneDrive",
+        "Microsoft Word",
+        "Mozilla Firefox",
+        "Firefox"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://www.bridewell.com/insights/blogs/detail/operation-deceptive-prospect-romcom-targeting-uk-organisations-through-customer-feedback-portals",
+        "https://github.com/Bridewell-CTI/IOCs/blob/main/2025/04/Operation\\_Deceptive\\_Prospect.txt",
+        "https://github.com/Bridewell-CTI/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-01",
+      "title": "wget to Wipeout: Malicious Go Modules Fetch Destructive Payload",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Url:",
+        "3",
+        "File:",
+        "2"
+      ],
+      "software": [
+        "Unix",
+        "Outlook",
+        "linux"
+      ],
+      "functions": [
+        "eGtROk"
+      ],
+      "links": [
+        "https://socket.dev/blog/wget-to-wipeout-malicious-go-modules-fetch-destructive-payload",
+        "https://socket.dev/go/package/github.com/blankloggia/go-mcp?section=files&version=v0.0.0-20250410110046-894efeed42d9&path=client.go",
+        "https://socket.dev/go/package/github.com/truthfulpharm/prototransform?section=files&version=v0.0.0-20250129021817-f1957e9010e9&path=cache%2Ffilecache%2Ffilecache.go",
+        "https://socket.dev/go/package/github.com/steelpoor/tlsproxy?section=files&version=v0.0.0-20250304082521-29051ed19c60&path=certmanager%2Fcertmanager.go"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-01",
+      "title": "Fake Social Security Statement emails trick users into installing remote tool",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool",
+        "Connectwise_tool"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/04/fake-social-security-statement-emails-trick-users-into-installing-remote-tool"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-01",
+      "title": "Investigating Iranian Intrusion into Strategic Middle East Critical Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Havoc",
+        "Hanifnet",
+        "Hxlibrary",
+        "Neoexpressrat",
+        "Plink_tool",
+        "Ngrok_tool",
+        "Meshcentral_tool",
+        "Systembc",
+        "Credential_harvesting_technique",
+        "Remoteinjector_tool",
+        "Credinterceptor_tool",
+        "Psexec_tool",
+        "Reversesocks5_tool",
+        "Darkloadlibrary",
+        "Recshell",
+        "Dropshell",
+        "Mimikatz_tool",
+        "Netstat_tool",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Nanodump_tool",
+        "Credential_dumping_technique",
+        "Netcat_tool",
+        "Angry_ip_scanner_tool",
+        "Lolbin_technique",
+        "Discordgo",
+        "Redline_stealer",
+        "Cobra",
+        "Anydesk_tool",
+        "Netpass_tool",
+        "Process_injection_technique",
+        "Advanced-port-scanner_tool",
+        "Putty_tool",
+        "W64/injector.d!6btr",
+        "W32/agent.d49str!tr",
+        "W64/injector.d!bttr",
+        "Powershell_shell_tool",
+        "Netscan_tool",
+        "Winpeas_tool",
+        "W64/agent.06d9!tr",
+        "W64/agent.2ebc!tr",
+        "W64/agent.0b8d!tr",
+        "Hacc2_tool"
+      ],
+      "geo": [
+        "Palestine",
+        "Lebanon",
+        "Syria",
+        "Iran",
+        "German",
+        "Israel",
+        "Canadian",
+        "Middle east",
+        "Iranian",
+        "Africa"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 18,
+      "software": [
+        "Microsoft Exchange server",
+        "PsExec",
+        "Microsoft Exchange",
+        "Active Directory",
+        "NET Framework",
+        "Tight VNC",
+        "Discord",
+        "SoftEther",
+        "icrosoft Exchange se",
+        "Local Security Authority",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha1",
+        "sha256",
+        "aes",
+        "xor",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "GetPathSeparator",
+        "GetDrives",
+        "GetWebRoot",
+        "GetBasicServerInfo",
+        "FindWhat",
+        "GetBasicServerApplicationInfo",
+        "HXX0012",
+        "HXX0013",
+        "HXX0014",
+        "HXX0018",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://www.fortinet.com/content/dam/fortinet/assets/reports/report-incident-response-middle-east.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-01",
+      "title": "From Callback Phishing to Extortion: Luna Moth Abuse Reamaze Helpdesk and RMM Tools Against U.S. Legal and Financial Sectors",
+      "completeness": "Medium",
+      "threats": [
+        "Rclone_tool",
+        "Typosquatting_technique",
+        "Bazarbackdoor",
+        "Conti",
+        "Ryuk",
+        "Toad_technique",
+        "Zoho_assist_tool",
+        "Anydesk_tool",
+        "Connectwise_tool",
+        "Teamviewer_tool"
+      ],
+      "geo": [
+        "Germany",
+        "Canada",
+        "American",
+        "France"
+      ],
+      "software": [
+        "Dropbox",
+        "WinSCP"
+      ],
+      "links": [
+        "https://blog.eclecticiq.com/from-callback-phishing-to-extortion-luna-moth-abuse-reamaze-helpdesk-and-rmm-tools-against-u.s.-legal-and-financial-sectors"
+      ]
+    }
+  }
+]

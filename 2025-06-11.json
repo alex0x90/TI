@@ -1,0 +1,414 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "The Evolution of Linux Binaries in Targeted Cloud Operations",
+      "completeness": "Low",
+      "threats": [
+        "Nood_rat",
+        "Tinyshell",
+        "Rekoobe_rootkit",
+        "Sshdinjector",
+        "Pygmy_goat",
+        "Acidpour",
+        "Acidrain",
+        "Dynamic_linker_hijacking_technique"
+      ],
+      "geo": [
+        "China",
+        "Asia-pacific",
+        "Asia",
+        "Thailand",
+        "Japan",
+        "Australia",
+        "Taiwan",
+        "Middle east",
+        "India",
+        "Malaysia",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/elf-based-malware-targets-cloud/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "Proactive OT security: Lessons on supply chain risk management from a rogue Raspberry Pi",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Watering_hole_technique",
+        "Havex_rat",
+        "Teamviewer_tool",
+        "Lolbin_technique",
+        "Mitm_technique",
+        "Clickfix_technique",
+        "Aitm_technique",
+        "Spear-phishing_technique",
+        "Fakecaptcha_technique",
+        "Xworm_rat",
+        "Lumma_stealer",
+        "Asyncrat"
+      ],
+      "geo": [
+        "Russia",
+        "Africa",
+        "Iran",
+        "Middle east",
+        "Emea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 12,
+      "software": [
+        "Raspberry Pi"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "swift",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/proactive-ot-security-lessons-on-supply-chain-risk-management-from-a-rogue-raspberry-pi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "APT PROFILE MISSION2025",
+      "completeness": "Medium",
+      "threats": [
+        "Mana_tool",
+        "Passcv",
+        "Lowkey",
+        "Gh0st_rat",
+        "Meterpreter_tool",
+        "Blackcoffee",
+        "Messagetap_tool",
+        "Crackshot_tool",
+        "Easynight",
+        "Derusbi",
+        "Hdroot",
+        "Frontwheel",
+        "X-door",
+        "Aspxspy_shell",
+        "Dirtcleaner",
+        "Hkdoor",
+        "Credential_stealing_technique",
+        "Biopass_rat",
+        "Cobalt_strike_tool",
+        "Acehash",
+        "Highnote",
+        "Plugx_rat",
+        "Pwdump_tool",
+        "Poisonplug",
+        "Lifeboat",
+        "Mimikatz_tool",
+        "Potroast",
+        "Jumpall",
+        "Widetone",
+        "Chinachopper",
+        "Redxor_backdoor",
+        "Zxshell",
+        "Coldjava",
+        "Crosswalk",
+        "Ntdsdump",
+        "Rockboot",
+        "Winterlove",
+        "Deadeye",
+        "Pipemon",
+        "Tidyelf",
+        "Shadowpad",
+        "Highnoon",
+        "Latelunch",
+        "Sagehire",
+        "Deepdata",
+        "Speculoos",
+        "Privatelog",
+        "Cunningpigeon",
+        "Shadowgaze",
+        "Njrat",
+        "Windjammer",
+        "Unapimon",
+        "Deathlotus",
+        "Moonbounce",
+        "Winnkit",
+        "Wyrmspy",
+        "Toughprogress",
+        "Dragonegg",
+        "Dustpan",
+        "Lightspy",
+        "Spear-phishing_technique",
+        "Sliver_c2_tool",
+        "Krustyloader",
+        "Voldemort",
+        "Dusttrap",
+        "Plusdrop",
+        "Plusinject",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Dynamic_linker_hijacking_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Taiwan",
+        "Japan",
+        "India",
+        "Asian",
+        "Asia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 25,
+      "software": [
+        "Ivanti EPMM",
+        "Ivanti",
+        "InfinityFree",
+        "TryCloudflare",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-mission2025/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "Cato CTRL Threat Research: Uncovering Nytheon AI A New Platform of Uncensored LLMs",
+      "completeness": "Medium",
+      "threats": [
+        "Wormgpt_tool",
+        "Blackhatgpt_tool",
+        "Fraudgpt_tool",
+        "Ghostgpt_tool",
+        "Spear-phishing_technique",
+        "Polymorphism_technique",
+        "Hellcat",
+        "Prokyc_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Israel"
+      ],
+      "software": [
+        "Nytheon AI",
+        "Telegram",
+        "DeepSeek",
+        "Ollama",
+        "Hugging Face",
+        "OpenAI",
+        "SvelteKit",
+        "Nytheon AI Telegram"
+      ],
+      "functions": [
+        "REST"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-nytheon-ai-a-new-platform-of-uncensored-llms/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "ConnectWise ScreenConnect Attacks: Continued Surge in RMM Tool Abuse",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Chainverb",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Brazilian"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/connectwise-screenconnect-attacks-continued-surge-in-rmm-tool-abuse/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "Tracing Silver Fox The Winos 4.0 Campaign Behind Operation Holding Hands",
+      "completeness": "Low",
+      "threats": [
+        "Winos",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "Chinese",
+        "China",
+        "Japan",
+        "Japanese"
+      ],
+      "software": [
+        "Discord",
+        "Twitter"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "TaskServer"
+      ],
+      "links": [
+        "https://somedieyoungzz.github.io/posts/silver-fox/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "Toxic trend: Another malware threat targets DeepSeek",
+      "completeness": "High",
+      "threats": [
+        "Browservenom_tool",
+        "Fakecaptcha_technique",
+        "Trojan.win32.generic",
+        "Selfdel"
+      ],
+      "geo": [
+        "Egypt",
+        "India",
+        "Brazil",
+        "Mexico",
+        "Nepal",
+        "South africa",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "DeepSeek",
+        "DeepSeek-R1",
+        "deepseek r1",
+        "Ollama",
+        "LM Studio",
+        "Windows Defender",
+        "Chrome",
+        "Microsoft Edge",
+        "Tor Browser",
+        "opera",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "aes"
+      ],
+      "functions": [
+        "GetTempPath",
+        "GetSystemVersion",
+        "WriteAllBytes",
+        "ReadWrite"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/browservenom-mimicks-deepseek-to-use-malicious-proxy/115728/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "Beware of AI pickpockets: Pickai backdoor is spreading through ComfyUI vulnerabilities",
+      "completeness": "Medium",
+      "threats": [
+        "Pickai",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Rwanda",
+        "China",
+        "Egypt",
+        "American",
+        "Hong kong",
+        "Middle east",
+        "Germany",
+        "Egyptian",
+        "Switzerland",
+        "Tanzania",
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "systemd",
+        "docker"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/pickai_backdoor_exploits_comfyui-is-your-ai-at-risk_cn/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-11",
+      "title": "Attackers Unleash TeamFiltration: Account Takeover Campaign (UNK_SneakyStrike) Leverages Popular Pentesting Tool",
+      "completeness": "Low",
+      "threats": [
+        "Teamfiltration_tool",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Ireland",
+        "Great britain"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "Outlook",
+        "Office 365",
+        "OneNote",
+        "Microsoft Office"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/attackers-unleash-teamfiltration-account-takeover-campaign",
+        "https://github.com/Flangvik/TeamFiltration/blob/main/TeamFiltrationConfig\\_Example.json",
+        "https://github.com/secureworks/family-of-client-ids-research/tree/main",
+        "https://github.com/Flangvik/TeamFiltration"
+      ]
+    }
+  }
+]

@@ -1,0 +1,199 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-13",
+      "title": "Don't Get Caught in the Headlights - DeerStealer Analysis",
+      "completeness": "High",
+      "threats": [
+        "Deerstealer",
+        "Hvnc_tool",
+        "Hijackloader",
+        "Clickfix_technique",
+        "More_eggs",
+        "Xfiles_stealer",
+        "Steganography_technique",
+        "Lolbin_technique",
+        "Sandbox_evasion_technique",
+        "Tigervnc_tool",
+        "Realvnc_tool",
+        "Ultra_vnc_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "MacOS",
+        "curl",
+        "Q-Dir",
+        "Chromium",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Discord",
+        "Telegram",
+        "WhatsApp",
+        "Pidgin",
+        "have more..."
+      ],
+      "wallets": [
+        "coinomi",
+        "bitcoincore",
+        "exodus_wallet",
+        "jaxx",
+        "guarda_wallet",
+        "electrum"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "SetCurrentDirectoryW"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/dont-get-caught-in-the-headlights-deerstealer-analysis",
+        "https://github.com/eSentire/iocs/blob/main/DeerStealer/DeerStealer.py",
+        "https://github.com/eSentire/iocs/blob/main/DeerStealer/decrypt\\_stage\\_2.py",
+        "https://github.com/eSentire/iocs/blob/main/DeerStealer/api\\_hash.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-13",
+      "title": "Exchange Mutations: Malicious Code in Outlook Pages",
+      "completeness": "Low",
+      "threats": [
+        "Dns_tunneling_technique"
+      ],
+      "geo": [
+        "Kazakhstan",
+        "Russian federation",
+        "Australia",
+        "Netherlands",
+        "Portugal",
+        "South africa",
+        "Arab emirates",
+        "Russian",
+        "Iran",
+        "Mozambique",
+        "Georgia",
+        "Taiwan",
+        "Zambia",
+        "Turkey",
+        "Morocco",
+        "Greece",
+        "Viet nam",
+        "China",
+        "Lebanon",
+        "Mexico",
+        "Saudi arabia",
+        "United arab emirates",
+        "Uzbekistan",
+        "Iraq",
+        "Kuwait",
+        "Senegal",
+        "Pakistan",
+        "Egypt"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Microsoft Exchange Server",
+        "Discord",
+        "Telegram",
+        "Microsoft Exchange"
+      ],
+      "algorithms": [
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "Date"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://ptsecurity.com/ru-ru/research/pt-esc-threat-intelligence/exchange-mutations-vredonosnyj-kod-v-stranicah-outlook/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-13",
+      "title": "The Growing Risk of Malicious Browser Extensions",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shell_shockers",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Brazilian",
+        "Turkey",
+        "Latin america"
+      ],
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Telegram"
+      ],
+      "functions": [
+        "setInterval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/the-growing-risk-of-malicious-browser-extensions"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-13",
+      "title": "JSFireTruck: Exploring Malicious JavaScript Using JSF*ck as an Obfuscation Technique",
+      "completeness": "Low",
+      "threats": [
+        "Jsfiretruck_tool",
+        "Jjencode_technique"
+      ],
+      "geo": [
+        "Australia",
+        "Middle east",
+        "Japan",
+        "Asia",
+        "India"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "toString"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/malicious-javascript-using-jsfiretruck-as-obfuscation/",
+        "https://github.com/aemkei/jsfuck/tree/d274487af8b8f291b27ca79ceaabe736b62d0f79",
+        "https://github.com/aemkei/jsfuck",
+        "https://github.com/cilame/unjsfuck"
+      ]
+    }
+  }
+]

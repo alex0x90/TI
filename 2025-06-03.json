@@ -1,0 +1,194 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-03",
+      "title": "Malicious Ruby Gems Exfiltrate Telegram Tokens and Messages Following Vietnam Ban",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Vietnam",
+        "Vietnamese"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Url:",
+        "3",
+        "Domain:",
+        "1"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "functions": [
+        "Telegram"
+      ],
+      "languages": [
+        "ruby"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-ruby-gems-exfiltrate-telegram-tokens-and-messages-following-vietnam-ban"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-03",
+      "title": "The Transparent Tribe Vibe: APT36 Returns With CapraRAT Impersonating Viber",
+      "completeness": "Low",
+      "threats": [
+        "Caprarat",
+        "Crimson_rat",
+        "Androrat_rat"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Viber",
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/the-transparent-tribe-vibe-apt36-returns-with-caprarat-impersonating-viber"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-03",
+      "title": "OtterCookie Malware Analysis and Distribution",
+      "completeness": "High",
+      "threats": [
+        "Ottercookie",
+        "Invisibleferret",
+        "Beavertail",
+        "Anydesk_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Finland",
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Url:",
+        "1",
+        "Domain:",
+        "1",
+        "IP:",
+        "2",
+        "File:",
+        "3",
+        "Hash:",
+        "4"
+      ],
+      "software": [
+        "Node.js",
+        "macOS",
+        "Ubuntu",
+        "Google Chrome",
+        "Opera",
+        "Mozilla Firefox",
+        "Firefox",
+        "Unix"
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "require"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/ottercookie-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-03",
+      "title": "In-depth Analysis of a 2025 ViperSoftX Variant",
+      "completeness": "Low",
+      "threats": [
+        "Vipersoftx"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler",
+        "Windows scheduled task",
+        "Windows Registry",
+        "Keepass",
+        "Twitter"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "electrum",
+        "metamask",
+        "coinbase"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Get-ServerID",
+        "Get-UserInfo"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/in-depth-analysis-of-a-2025-vipersoftx-variant/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-03",
+      "title": "The Security Risks of Internet-Exposed Solar Power Systems",
+      "completeness": "Low",
+      "geo": [
+        "China",
+        "Netherlands",
+        "Portugal",
+        "Japan",
+        "Germany",
+        "Chinese",
+        "Asia",
+        "Italy",
+        "Singapore",
+        "Greece",
+        "Austria"
+      ],
+      "software": [
+        "Twitter"
+      ],
+      "functions": [
+        "Internet-Exposed"
+      ],
+      "links": [
+        "https://www.forescout.com/blog/the-security-risks-of-internet-exposed-solar-power-systems/"
+      ]
+    }
+  }
+]

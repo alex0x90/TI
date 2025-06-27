@@ -1,0 +1,1069 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Italian robbery: they first tried to attack the clients of Russian banks with a malicious Supercard application",
+      "completeness": "Low",
+      "threats": [
+        "Supercard",
+        "Nfcgate_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Australia",
+        "Italian",
+        "Russian",
+        "Italy",
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "Android",
+        "Rustore"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/F6/news/918840/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Fake Minecraft mods distributed by the Stargazers Ghost Network to steal gamers data",
+      "completeness": "Medium",
+      "threats": [
+        "Stargazers_ghost_network",
+        "Modloader"
+      ],
+      "geo": [
+        "Russian",
+        "Asian",
+        "Russia"
+      ],
+      "software": [
+        "Discord",
+        "Telegram",
+        "virtualbox",
+        "qemu hyperv",
+        "qemu",
+        "hyperv",
+        "Chromium",
+        "Firefox",
+        "Steam"
+      ],
+      "wallets": [
+        "atomicwallet",
+        "bitcoincore",
+        "dashcore",
+        "electrum",
+        "litecoincore",
+        "zcash",
+        "jaxx",
+        "harmony_wallet"
+      ],
+      "crypto": [
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "start"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/minecraft-mod-malware-stargazers/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Silver Fox APT Targets Public Sector via Trojanized Medical Software",
+      "completeness": "Medium",
+      "threats": [
+        "Gh0st_rat",
+        "Winos",
+        "Valleyrat",
+        "Seo_poisoning_technique",
+        "Truesightkiller_tool",
+        "Spear-phishing_technique",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "China",
+        "Taiwanese",
+        "Taiwan",
+        "Japan"
+      ],
+      "software": [
+        "Chrome",
+        "DICOM",
+        "LetsVPN",
+        "QuickVPN",
+        "Telegram",
+        "Windows Defender",
+        "Windows Task Scheduler"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/silver-fox-apt-targets-public-sector-via-trojanized-medical-software"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Infostealer malware disguised as a document related to copyright violation",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Rhadamanthys",
+        "Process_hacker_tool"
+      ],
+      "geo": [
+        "Hungary",
+        "Portugal",
+        "Japan",
+        "Korea",
+        "Greece",
+        "Thailand"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88515/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Lessons from Qilin: What the Industrys Most Efficient Ransomware Teaches Us",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Greatness_tool",
+        "Spear-phishing_technique",
+        "Mfa_bombing_technique",
+        "Sim_swapping_technique",
+        "Shadow_copies_delete_technique",
+        "Process_injection_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "North korea",
+        "Americas",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 38,
+      "software": [
+        "ESXi",
+        "Chrome"
+      ],
+      "algorithms": [
+        "aes-256-ctr",
+        "chacha20",
+        "aes"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.qualys.com/vulnerabilities-threat-research/2025/06/18/qilin-ransomware-explained-threats-risks-defenses"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Masslogger Fileless Variant - Spreads via .VBE, Hides in Registry",
+      "completeness": "Medium",
+      "threats": [
+        "Masslogger",
+        "Vipkeylogger",
+        "Remcos_rat",
+        "Asyncrat",
+        "Process_hollowing_technique",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "French",
+        "France"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 33,
+      "software": [
+        "Windows Registry",
+        "Task scheduler",
+        "Windows scheduled task",
+        "Chrome",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "AKAAU",
+        "HIKGO",
+        "SQSKP",
+        "r",
+        "BBX",
+        "GetWindowText",
+        "SpeedOffPWExport"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/masslogger-fileless-vbe-registry-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Famous Chollima deploying Python version of GolangGhost RAT",
+      "completeness": "Medium",
+      "threats": [
+        "Golangghost",
+        "Pylangghost",
+        "Clickfix_technique",
+        "Robinhood"
+      ],
+      "geo": [
+        "North korean",
+        "India",
+        "Dprk"
+      ],
+      "software": [
+        "MacOS",
+        "Linux",
+        "curl",
+        "1Password",
+        "NordPass"
+      ],
+      "wallets": [
+        "coinbase",
+        "metamask",
+        "tronlink"
+      ],
+      "crypto": [
+        "uniswap"
+      ],
+      "algorithms": [
+        "rc4",
+        "md5",
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "visual_basic",
+        "golang",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/python-version-of-golangghost-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "SadFuture: Mapping XDSpy latest evolution",
+      "completeness": "High",
+      "threats": [
+        "Etdownloader",
+        "Xdigo",
+        "Lolbas_technique",
+        "Spear-phishing_technique",
+        "Minidump_tool",
+        "Meterpreter_tool"
+      ],
+      "geo": [
+        "Belarussian",
+        "Russia",
+        "American",
+        "Chinese",
+        "Kazahstan",
+        "Kazakhstan",
+        "Minsk",
+        "Moscow",
+        "Russian federation",
+        "Russian",
+        "Moldova",
+        "Serbia",
+        "Ukraine",
+        "Belarus"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Mozilla Thunderbird",
+        "Microsoft Outlook",
+        "Microsoft Edge",
+        "Windows explorer",
+        "Windows shell",
+        "Windows COM",
+        "HuggingFace",
+        "LiteSpeed",
+        "NSIS installer",
+        "QEMU",
+        "have more..."
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip",
+        "aes-256-gcm",
+        "aes",
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "dotnet",
+        "golang"
+      ],
+      "links": [
+        "https://harfanglab.io/insidethelab/sadfuture-xdspy-latest-evolution/",
+        "https://github.com/HarfangLab/iocs/tree/main/TRR250601",
+        "https://github.com/billgraziano/dpapi/tree/v0.4.0",
+        "https://github.com/mattn/go-sqlite3/tree/v1.14.17"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Modified XWORM Distribution by Chinese-Speaking Threat Actor",
+      "completeness": "Medium",
+      "threats": [
+        "Xworm_rat",
+        "Gh0st_rat",
+        "Winos",
+        "Valleyrat",
+        "Donut",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Asia"
+      ],
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Chrome"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "AccurateRemote",
+        "verify_system_compatibility",
+        "Info",
+        "Spread",
+        "SearchForAnyTelegram"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/Modified_Xworm_Distribution/",
+        "https://github.com/dmpdump",
+        "https://github.com/TheWover/donut"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Nobitex Breach: Infostealers Expose Critical Employee Credentials in Latest Crypto Exchange Hack",
+      "completeness": "Low",
+      "threats": [
+        "Stealc",
+        "Redline_stealer",
+        "Amos_stealer",
+        "Allakore_rat",
+        "Lumma_stealer",
+        "Meduza",
+        "Meta_stealer",
+        "Raccoon_stealer",
+        "Vidar_stealer"
+      ],
+      "geo": [
+        "Israel",
+        "Iran",
+        "Iranian"
+      ],
+      "software": [
+        "Twitter",
+        "macOS"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/nobitex-breach-infostealers-expose-critical-employee-credentials-in-latest-crypto-exchange-hack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Pickai: The Backdoor Hiding in Your AI Stack",
+      "completeness": "Medium",
+      "threats": [
+        "Pickai",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Rwanda",
+        "America",
+        "Switzerland",
+        "Hong kong",
+        "Singapore",
+        "Egypt",
+        "Germany",
+        "Egyptian",
+        "China",
+        "India",
+        "Tanzania"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "systemd",
+        "Docker"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/pickai-the_backdoor_hiding_in_your_ai_stack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "The PolySwarm Blog",
+      "completeness": "Low",
+      "threats": [
+        "Chaos_rat"
+      ],
+      "software": [
+        "linux"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/new-chaos-rat-variants-observed"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Whats in an ASP? Creative Phishing Attack on Prominent Academics and Critics of Russia",
+      "completeness": "Low",
+      "threats": [
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Ukrainian"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/creative-phishing-academics-critics-of-russia/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Stories from the SOC ClickFix and Chill, Now Heres the Ransomware Bill",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Fakecaptcha_technique",
+        "Interlock"
+      ],
+      "software": [
+        "curl"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://levelblue.com/blogs/security-essentials/stories-from-the-soc-clickfix-and-chill-now-heres-the-ransomware-bill"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Kimsuky (APT-Q-2) Organization's recent Endoor malware analysis",
+      "completeness": "Low",
+      "threats": [
+        "Endoor"
+      ],
+      "geo": [
+        "Korea",
+        "Korean",
+        "Asia"
+      ],
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "base64"
+      ],
+      "links": [
+        "https://www.secrss.com/articles/79877"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Exploring a New KimJongRAT Stealer Variant and Its PowerShell Implementation",
+      "completeness": "Low",
+      "threats": [
+        "Kimjongrat",
+        "Powershell_keylogger_tool",
+        "Babyshark"
+      ],
+      "geo": [
+        "Asia",
+        "Korean",
+        "Middle east",
+        "Japan",
+        "Australia",
+        "India"
+      ],
+      "software": [
+        "Internet Explorer",
+        "curl",
+        "Visual Studio Code",
+        "Google Chrome",
+        "Chrome",
+        "Firefox",
+        "Microsoft Office",
+        "Microsoft Access",
+        "Windows registry"
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "exodus_wallet",
+        "solflare_wallet",
+        "keplr",
+        "iwallet",
+        "subwallet",
+        "bybit",
+        "rabby",
+        "ronin_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "uniswap"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "xor",
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "GetExWFile",
+        "GetBrowserData",
+        "CreateFileList",
+        "Get-ShortcutTargetPath",
+        "CreateShortcut"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/kimjongrat-stealer-variant-powershell/",
+        "https://github.com/Matmaus/LnkParse3"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Threat Group Targets Companies in Taiwan",
+      "completeness": "Medium",
+      "threats": [
+        "Holdinghands",
+        "W64/shellcoderunner.arg!tr",
+        "W64/agent.fin!tr",
+        "W64/hhagent.bee8!tr",
+        "Winos",
+        "Gh0stbin_rat",
+        "Cringe",
+        "Gh0stcring"
+      ],
+      "geo": [
+        "Taiwan",
+        "Chinese"
+      ],
+      "software": [
+        "WinLogon",
+        "WeChat"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "TaskServer",
+        "TaskScheduler"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/threat-group-targets-companies-in-taiwan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Case of an attack targeting MySQL servers that installs RAT malware",
+      "completeness": "Medium",
+      "threats": [
+        "Gh0st_rat",
+        "Asyncrat",
+        "Ddostf",
+        "Xworm_rat",
+        "Hploader",
+        "Zoho_assist_tool",
+        "Sqlshell_tool",
+        "Cringe",
+        "Hiddengh0st",
+        "Uacme_tool"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "software": [
+        "MySQL",
+        "MS-SQL",
+        "PostgreSQL",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88468/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Same Sea, New Phish Russian Government-Linked Social Engineering Targets App-Specific Passwords",
+      "completeness": "Low",
+      "threats": [
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Ukraine",
+        "Russian",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://citizenlab.ca/2025/06/russian-government-linked-social-engineering-targets-app-specific-passwords/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Bert Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Bert_ransomware",
+        "Revil"
+      ],
+      "geo": [
+        "Russian",
+        "Sweden",
+        "Taiwan",
+        "Malaysia",
+        "Russia",
+        "Columbia",
+        "Turkey"
+      ],
+      "software": [
+        "Linux",
+        "Ubuntu",
+        "Windows Defender",
+        "Windows Firewall"
+      ],
+      "algorithms": [
+        "rc4",
+        "chacha20",
+        "md5",
+        "zip",
+        "salsa20",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "Write-Host",
+        "Set-ItemProperty",
+        "Get-Service",
+        "Set-NetFirewallProfile",
+        "Write-Error"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://theravenfile.com/2025/06/16/bert-ransomware/",
+        "https://github.com/TheRavenFile/Daily-Hunt/blob/main/Bert%20Ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Threat actor Banana Squad exploits GitHub repos in new campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Creal_stealer",
+        "Blankgrabber"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/threat-actor-banana-squad-exploits-github-repos-in-new-campaign",
+        "https://github.com/gchq/CyberChef"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Threat Advisory: LightPerlGirl Malware",
+      "completeness": "Low",
+      "threats": [
+        "Lightperlgirl",
+        "Fakecaptcha_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "WordPress",
+        "Windows security"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.todyl.com/blog/threat-advisory-lightperlgirl-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Ransomware Gangs Collapse as Qilin Seizes Control",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Ransomhub",
+        "Lockbit",
+        "Everest_ransomware",
+        "Eldorado_ransomware",
+        "Everest",
+        "Mamona",
+        "Shadow_copies_delete_technique",
+        "ransomware.live"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "Linux",
+        "ESXi",
+        "PsExec",
+        "Active Directory",
+        "BCDEdit",
+        "NET Framework",
+        "esxcli",
+        "VirtualBox",
+        "Mysql",
+        "PostgreSQL",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "rsa-4096",
+        "chacha20",
+        "aes"
+      ],
+      "functions": [
+        "Get-Printer",
+        "Get-WinEvent",
+        "Get-Unique",
+        "Get-DiskImage"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.cybereason.com/blog/threat-alert-qilin-seizes-control"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Cato CTRL Threat Research: WormGPT Variants Powered by Grok and Mixtral",
+      "completeness": "Low",
+      "threats": [
+        "Wormgpt_tool",
+        "Fraudgpt_tool",
+        "Darkbert_tool",
+        "Evilgpt_tool",
+        "Darkgpt_tool",
+        "Pentestergpt_tool",
+        "Poisongpt_tool",
+        "Xxxgpt_tool",
+        "Wolfgpt_tool",
+        "Ballista",
+        "Mirai",
+        "Mozi",
+        "Hunters_international"
+      ],
+      "software": [
+        "OpenAI",
+        "ChatGPT",
+        "Telegram"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-wormgpt-variants-powered-by-grok-and-mixtral/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Italian robbery: they first tried to attack the clients of Russian banks with a malicious Supercard application",
+      "completeness": "Medium",
+      "threats": [
+        "Supercard",
+        "Nfcgate_tool",
+        "Jiagu"
+      ],
+      "geo": [
+        "Russian",
+        "Italian",
+        "Russia",
+        "Italy",
+        "American",
+        "Australia",
+        "Chinese"
+      ],
+      "software": [
+        "android",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/supercard/",
+        "https://github.com/devnied/EMV-NFC-Paycard-Enrollment"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Protestware in JavaScript UI Toolkits on npm Target Russian Language Sites",
+      "completeness": "Low",
+      "geo": [
+        "Russian",
+        "Ukraine",
+        "Asia",
+        "Russia",
+        "Belarusian",
+        "Ukrainian",
+        "Kazakhstan"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "7"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/protestware-on-npm-targets-russian-language-sites",
+        "https://github.com/link-loom/loom-sdk",
+        "https://github.com/link-loom/link-loom-react-sdk/tree/main/src",
+        "https://github.com/link-loom/loom-sdk/tree/main/src"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Fileless AsyncRAT Distributed Via Clickfix Technique Targeting German Speaking Users",
+      "completeness": "Medium",
+      "threats": [
+        "Asyncrat",
+        "Clickfix_technique",
+        "Lolbin_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 12,
+      "software": [
+        "Windows registry"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Set-ItemProperty",
+        "ma",
+        "CreateNoWindow",
+        "Connect"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/fileless-asyncrat-distributed-via-clickfix-technique-targeting-german-speaking-users"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Cloaked Shadow APT Group: Tactics, Techniques, and Procedures Underway",
+      "completeness": "Low",
+      "threats": [
+        "Timestomp_technique",
+        "Tinyshell",
+        "Dropbear_tool",
+        "Dns_tunneling_technique",
+        "Chisel_tool",
+        "Impacket_tool",
+        "Ollvm_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://redsecurity.ru/news/apt-gruppirovka-cloaked-shadow-razbor-taktik-tekhnik-i-protsedur",
+        "https://github.com/Acebond/ReverseSocks5",
+        "https://github.com/creaktive/tsh",
+        "https://github.com/Fahrj/reverse-ssh"
+      ]
+    }
+  }
+]

@@ -1,0 +1,355 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "UAT-6382 exploits Cityworks zero-day vulnerability to deliver malware",
+      "completeness": "Medium",
+      "threats": [
+        "Antsword",
+        "Chinachopper",
+        "Cobalt_strike_tool",
+        "Vshell",
+        "Tetraloader",
+        "Maloader_tool",
+        "Behinder"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Mac OS"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "golang"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-6382-exploits-cityworks-vulnerability/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2025/05"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "Caught in the CAPTCHA: How ClickFix is Weaponizing Verification Fatigue to Deliver RATs & Infostealers",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Clipboard_injection_technique",
+        "Netsupportmanager_rat",
+        "Lumma_stealer",
+        "Lolbin_technique",
+        "Sectop_rat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "Node.JS",
+        "PyInstaller",
+        "3proxy"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/how-clickfix-is-weaponizing-verification-fatigue-to-deliver-rats-infostealers/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "Trojanized KeePass Fuels Black Basta Ransomware Surge",
+      "completeness": "Medium",
+      "threats": [
+        "Blackbasta",
+        "Cobalt_strike_tool",
+        "Blackcat",
+        "Keeloader",
+        "Typosquatting_technique",
+        "Nitrogen",
+        "Akira_ransomware"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 6,
+      "software": [
+        "KeePass",
+        "WinSCP",
+        "ESXi"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/trojanized-kee-pass-fuels-black-basta-ransomware-surge"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "Malicious npm Packages Target React, Vue, and Vite Ecosystems with Destructive Payloads",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Js-bomb_tool",
+        "Js-hood_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "28"
+      ],
+      "software": [
+        "Node.js",
+        "Outlook",
+        "macOS",
+        "Linux"
+      ],
+      "functions": [
+        "setInterval",
+        "filter",
+        "push",
+        "pop",
+        "map",
+        "split",
+        "getAll"
+      ],
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-npm-packages-target-react-vue-and-vite-ecosystems-with-destructive-payloads"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "DBatLoader Delivers Remcos via .pif Files and UAC Bypass in New Phishing Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Uac_bypass_technique",
+        "Dbatloader",
+        "Remcos_rat",
+        "Lolbas_technique",
+        "Batcloak_tool"
+      ],
+      "software": [
+        "Windows Defender",
+        "Android",
+        "Linux"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/dbatloader-drops-remcos/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "Disrupting Lumma Stealer Malware Microsoft Leads Global Action",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique",
+        "Empire_loader"
+      ],
+      "geo": [
+        "Georgia",
+        "Japan",
+        "Russian",
+        "Asia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "Telegram",
+        "Steam"
+      ],
+      "algorithms": [
+        "murmur2",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/disrupting-lumma-stealer-malware-microsoft-leads-global-action/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "De-obfuscatingALCATRAZ",
+      "completeness": "Low",
+      "threats": [
+        "Alcatraz_locker",
+        "Doubleloader",
+        "Rhadamanthys",
+        "Doorme"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "main",
+        "MakeFunction",
+        "LoadIcon",
+        "DoubleLoader"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/deobfuscating-alcatraz",
+        "https://github.com/weak1337/Alcatraz",
+        "https://github.com/mike1k/perses?tab=readme-ov-file#introduction"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "Infostealer Watch: Will Lummas Takedown Help Rhadamanthys Rise?",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Clickfix_technique",
+        "Formbook",
+        "Raccoon_stealer",
+        "Redline_stealer",
+        "Vidar_stealer",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Process_hollowing_technique",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "Telegram",
+        "Google Chrome",
+        "Pale Moon",
+        "Windows Registry"
+      ],
+      "wallets": [
+        "auvitas"
+      ],
+      "algorithms": [
+        "sha1",
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.forescout.com/blog/infostealer-watch-will-lummas-takedown-help-rhadamanthys-rise/",
+        "https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "Inside DanaBots Infrastructure: In Support of Operation Endgame II",
+      "completeness": "Low",
+      "threats": [
+        "Danabot",
+        "Latrodectus",
+        "Emotet",
+        "Icedid",
+        "Qakbot",
+        "Password_spray_technique",
+        "Limpopo_ransomware"
+      ],
+      "geo": [
+        "Russian",
+        "Mexico",
+        "Russia",
+        "Brazil"
+      ],
+      "software": [
+        "Twitter"
+      ],
+      "links": [
+        "https://blog.lumen.com/inside-danabots-infrastructure-in-support-of-operation-endgame-ii/",
+        "https://github.com/blacklotuslabs/IOCs/blob/main/DanaBot\\_IOCs\\_txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-22",
+      "title": "A Detailed Technical Analysis of the Obstinate Mogwai Toolkit. Part 2: Donnect, DimanoRAT Backdoors, and the AntSpy Web Shell",
+      "completeness": "High",
+      "threats": [
+        "Donnect",
+        "Dimanorat",
+        "Antspy",
+        "Dll_hijacking_technique",
+        "Windivert_tool",
+        "Antak",
+        "Aspxspy_shell",
+        "Gh0st_rat",
+        "Eagerbee",
+        "Cotx_rat",
+        "Proxylogon_exploit",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "Asian",
+        "Russian federation",
+        "Russian",
+        "Middle east",
+        "Japan",
+        "Usa",
+        "Asia",
+        "Japanese",
+        "Russia",
+        "Mongolia"
+      ],
+      "software": [
+        "Windows service",
+        "Firefox"
+      ],
+      "algorithms": [
+        "sha256",
+        "pbkdf2",
+        "rc4",
+        "base64",
+        "md5",
+        "xor",
+        "sha1"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/5544/",
+        "https://github.com/tennc/webshell/blob/master/net-friend/aspx/aspxspy/aspxspy.aspx",
+        "https://github.com/senny/pdfjs\\_viewer-rails/blob/master/app/assets/javascripts/pdfjs\\_viewer/pdfjs/pdf.js",
+        "https://github.com/tennc/webshell/blob/master/aspx/nishang/Antak-WebShell/antak.aspx"
+      ]
+    }
+  }
+]

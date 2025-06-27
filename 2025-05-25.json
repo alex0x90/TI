@@ -1,0 +1,665 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "BadSuccessor: Abusing dMSA to Escalate Privileges in Active Directory",
+      "completeness": "Low",
+      "threats": [
+        "Badsuccessor_technique",
+        "Rubeus_tool",
+        "Dcsync_technique"
+      ],
+      "software": [
+        "Active Directory"
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes-128"
+      ],
+      "functions": [
+        "CreateChild"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2025/may/abusing-dmsa-for-privilege-escalation-in-active-directory",
+        "https://github.com/GhostPack/Rubeus",
+        "https://github.com/akamai/BadSuccessor",
+        "https://github.com/GhostPack/Rubeus/pull/194"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "China-Nexus Threat Actor Actively Exploiting Ivanti Endpoint Manager Mobile (CVE-2025-4428) Vulnerability",
+      "completeness": "High",
+      "threats": [
+        "Krustyloader",
+        "Auto-color",
+        "Sliver_c2_tool",
+        "Nmap_tool",
+        "Netstat_tool",
+        "Yakit_tool"
+      ],
+      "geo": [
+        "America",
+        "German",
+        "Germany",
+        "Korea",
+        "Asia-pacific",
+        "United kingdom",
+        "London",
+        "Japanese",
+        "China",
+        "Irish"
+      ],
+      "software": [
+        "Ivanti",
+        "MySQL",
+        "Ivanti EPMM",
+        "Linux",
+        "curl",
+        "Office 365",
+        "active directory",
+        "crontab",
+        "SAP NetWeaver"
+      ],
+      "algorithms": [
+        "aes-128",
+        "aes",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://blog.eclecticiq.com/china-nexus-threat-actor-actively-exploiting-ivanti-endpoint-manager-mobile-cve-2025-4428-vulnerability",
+        "https://github.com/fatedier/frp",
+        "https://github.com/BishopFox/sliver"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Chihuahua Stealer Malware Targets Browser and Wallet Data",
+      "completeness": "Medium",
+      "threats": [
+        "Chihuahua",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "10",
+        "Domain:",
+        "3",
+        "Url:",
+        "2",
+        "Hash:",
+        "2"
+      ],
+      "software": [
+        "Chrome",
+        "Chromium",
+        "Opera",
+        "Microsoft Edge",
+        "Slimjet",
+        "MapleStudio",
+        "ChromePlus"
+      ],
+      "wallets": [
+        "rabby",
+        "clover_wallet"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "DedMaxim",
+        "Write-Output",
+        "Get-ChildItem",
+        "Get-ScheduledJob",
+        "Set-ScheduledJob",
+        "Get-Date",
+        "Set-Clipboard",
+        "Prazdnik",
+        "WMI"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/chihuahua-stealer-malware-targets-browser-and-wallet-data"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Fake Google Meet Page Tricks Users into Running PowerShell Malware",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "copyToClipboard"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.sucuri.net/2025/05/fake-google-meet-page-tricks-users-into-running-powershell-malware.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Lumma Stealer Is Out of Business!",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer",
+        "Meta_stealer",
+        "Redline_stealer",
+        "Magnus",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Twitter",
+        "Telegram",
+        "Steam"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/lumma-stealer-is-out-of-business"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Danabot: Analyzing a fallen empire",
+      "completeness": "High",
+      "threats": [
+        "Danabot",
+        "Empire_loader",
+        "Zeus",
+        "Systembc",
+        "Remcos_rat",
+        "Gozi",
+        "Smokeloader",
+        "Z_loader",
+        "Lumma_stealer",
+        "Record_breaker_stealer",
+        "Latrodectus",
+        "Netsupportmanager_rat",
+        "Lockbit",
+        "Vega_locker",
+        "Darkgate",
+        "Kryptik",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Poland",
+        "Germany",
+        "Australian",
+        "Ukraine",
+        "Russian",
+        "Netherlands"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 46,
+      "software": [
+        "MySQL",
+        "Linux",
+        "Jabber",
+        "Windows Defender",
+        "Windows Firewall"
+      ],
+      "algorithms": [
+        "aes-256",
+        "crc-32",
+        "aes",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/danabot-analyzing-fallen-empire/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Profiling Hacktivist Groups,Alliances and Capabilities",
+      "completeness": "Low",
+      "geo": [
+        "Russian",
+        "Israel",
+        "Indian",
+        "Saudi arabia",
+        "Cambodia",
+        "India",
+        "Pakistani",
+        "Brazil",
+        "Germany",
+        "Palestine",
+        "Indonesia",
+        "Jordan",
+        "Palestinian",
+        "Pakistan",
+        "Spain",
+        "Algeria",
+        "Bangladesh"
+      ],
+      "links": [
+        "https://intelinsights.substack.com/p/profiling-hacktivist-groupsalliances"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "GhostSpy Web-Based Android RAT : Advanced Persistent RAT with Stealthy Remote Control and Uninstall Resistance",
+      "completeness": "High",
+      "threats": [
+        "Ghostspy"
+      ],
+      "geo": [
+        "Spanish",
+        "Portuguese",
+        "Brazil"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 28,
+      "software": [
+        "Android",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "canRequestPackageInstalls",
+        "installApk",
+        "sendConnectDevice",
+        "getAutomaticallyPermission",
+        "getKeyLogger",
+        "sendRealtimeKeyLog",
+        "sendKeyLog",
+        "printVisibleViewSkeleton",
+        "setStopUninstall",
+        "getRootInActiveWindow",
+        "have more..."
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/ghostspy-web-based-android-rat-advanced-persistent-rat-with-stealthy-remote-control-and-uninstall-resistance/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "NSIS Abuse and sRDI Shellcode: Anatomy of the Winos 4.0 Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Winos",
+        "Catena",
+        "Dll_injection_technique",
+        "Lolbin_technique",
+        "Process_hollowing_technique",
+        "Valleyrat",
+        "Cleversoar",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Hong kong",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 15,
+      "software": [
+        "QQBrowser",
+        "NSIS installer",
+        "DeepSeek",
+        "LetsVPN",
+        "Telegram",
+        "Chrome",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/2025/05/22/nsis-abuse-and-srdi-shellcode-anatomy-of-the-winos-4-0-campaign/",
+        "https://github.com/rapid7/Rapid7-Labs/tree/main/IOCs/nsis-abuse-srdi-winos4",
+        "https://github.com/monoxgas/sRDI"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Dissecting the macOS 'AppleProcessHub' Stealer: Technical Analysis of a Multi-Stage Attack",
+      "completeness": "Low",
+      "threats": [
+        "Appleprocesshub_stealer"
+      ],
+      "software": [
+        "macOS"
+      ],
+      "algorithms": [
+        "aes-128",
+        "sha256",
+        "zip",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "_start",
+        "start",
+        "dispatch_after",
+        "CallToRequest_10000281a",
+        "_IOServiceGetMatchingService",
+        "_IORegistryEntryCreateCFProperty",
+        "executes_IOServiceGetMatchingService",
+        "objc_msgSend",
+        "CCCrypt",
+        "c2nethandler_100001bd0",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "objective_c"
+      ],
+      "links": [
+        "https://blog.kandji.io/macos-appleprocesshub-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "ESET takes part in global operation to disrupt Lumma Stealer",
+      "completeness": "High",
+      "threats": [
+        "Lumma_stealer",
+        "Dead_drop_technique",
+        "Api_obfuscation_technique",
+        "Kryptik",
+        "Smokeloader",
+        "Darkgate",
+        "Amadey",
+        "Vidar_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 30,
+      "software": [
+        "Steam",
+        "Telegram",
+        "Outlook",
+        "Discord"
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "xor",
+        "chacha20",
+        "base64"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/eset-takes-part-global-operation-disrupt-lumma-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Another Fake Cloudflare Verification Targets WordPress Sites",
+      "completeness": "Low",
+      "threats": [
+        "Credential_stealing_technique"
+      ],
+      "software": [
+        "WordPress",
+        "Windows Defender",
+        "cPanel"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.sucuri.net/2025/05/another-fake-cloudflare-verification-targets-wordpress-sites.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Genesis Market - Malicious Browser Extension",
+      "completeness": "High",
+      "threats": [
+        "Lumma_stealer",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Chrome",
+        "Opera",
+        "Microsoft Edge",
+        "outlook",
+        "Chrome",
+        "Microsoft Edge",
+        "Opera"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "setEnableExtension",
+        "getInjections",
+        "getSettings",
+        "createNotification",
+        "getCurrentTab",
+        "getHistory",
+        "getClipperData",
+        "setIsEnabled",
+        "getScreenshotRules",
+        "startProxy",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cybereason.com/blog/threat-alert-genesis-market"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Copyright Phishing Lures Leading to Rhadamanthys Stealer Now Targeting Europe",
+      "completeness": "Medium",
+      "threats": [
+        "Rhadamanthys",
+        "Dll_sideloading_technique",
+        "Lumma_stealer",
+        "Dllsearchorder_hijacking_technique",
+        "Heavens_gate_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Slovakia",
+        "Bulgaria",
+        "Hungary",
+        "United kingdom",
+        "Portugal",
+        "Romania",
+        "Spain",
+        "Austria",
+        "Italy",
+        "Albania",
+        "Greece",
+        "Poland",
+        "Ireland",
+        "Slovenia",
+        "Bulgarian",
+        "Israel",
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Discord",
+        "Windows Registry",
+        "Microsoft Edge",
+        "Windows kernel"
+      ],
+      "algorithms": [
+        "chacha20",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cybereason.com/blog/rhadamanthys-stealer-europe",
+        "https://github.com/mandiant/capa"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Storm-0558 and the Dangers of Cross-Tenant Token Forgery",
+      "completeness": "Low",
+      "software": [
+        "Azure AD",
+        "Outlook",
+        "ADFS",
+        "HashiCorp Vault",
+        "Nginx",
+        "Burp Suite"
+      ],
+      "algorithms": [
+        "hmac"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/storm-0558-and-the-dangers-of-cross-tenant-token-forgery/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-25",
+      "title": "Katz Stealer Threat Analysis",
+      "completeness": "High",
+      "threats": [
+        "Katz_stealer",
+        "Credential_stealing_technique",
+        "Ngrok_tool",
+        "Process_hollowing_technique",
+        "Dll_injection_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Discord",
+        "Telegram",
+        "Slack",
+        "Outlook",
+        "Foxmail",
+        "Steam",
+        "Microsoft Edge",
+        "Google Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "bitcoincore",
+        "electrum",
+        "coinomi",
+        "daedalus",
+        "wassabi"
+      ],
+      "crypto": [
+        "litecoin",
+        "dogecoin",
+        "ethereum",
+        "monero",
+        "ravencoin"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip"
+      ],
+      "functions": [
+        "SetBrowserType"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2025/05/23/katz-stealer-threat-analysis/",
+        "https://github.com/SilentDev33/ChromeAppBound-key-injection",
+        "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process\\_creation/proc\\_creation\\_win\\_uac\\_bypass\\_cmstp.yml",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption/"
+      ]
+    }
+  }
+]
