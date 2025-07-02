@@ -1,0 +1,260 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-23",
+      "title": "Operation Sindoor Anatomy of a Digital Siege",
+      "completeness": "Medium",
+      "threats": [
+        "Crimson_rat",
+        "Poseidon",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Ares_rat"
+      ],
+      "geo": [
+        "Germany",
+        "Singapore",
+        "Indian",
+        "Russia",
+        "India",
+        "Indonesia",
+        "Pakistan"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "6",
+        "Domain:",
+        "8"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-sindoor-anatomy-of-a-digital-siege/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-23",
+      "title": "Outlook and Recommendations",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 7,
+      "software": [
+        "Outlook",
+        "Discord",
+        "macOS",
+        "Linux"
+      ],
+      "functions": [
+        "getIPAddress",
+        "getExternalIP"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/60-malicious-npm-packages-leak-network-and-host-data"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-23",
+      "title": "Operation Endgame 2.0: DanaBusted",
+      "completeness": "Medium",
+      "threats": [
+        "Danabot",
+        "Smokeloader",
+        "Icedid",
+        "Systembc",
+        "Pikabot",
+        "Bumblebee",
+        "Danatools",
+        "Supply_chain_technique",
+        "Hijackloader",
+        "Darkgate",
+        "Lumma_stealer",
+        "Cactus_ransomware",
+        "Lolkek",
+        "Zeus"
+      ],
+      "geo": [
+        "Middle east",
+        "Russia",
+        "Ukraine",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Service",
+        "Windows registry",
+        "Windows scheduled task"
+      ],
+      "algorithms": [
+        "crc-32",
+        "aes",
+        "md5",
+        "cbc"
+      ],
+      "functions": [
+        "calculate_danabot_host_hwid"
+      ],
+      "languages": [
+        "javascript",
+        "delphi",
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/operation-endgame-2-0-danabusted",
+        "https://github.com/ThreatLabz/danadetector"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-23",
+      "title": "Fake CAPTCHA Attacks Deploy Infostealers and RATs in a Multistage Payload Chain",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Asyncrat",
+        "Emmenhtal",
+        "Xworm_rat",
+        "Fakecaptcha_technique",
+        "Reign",
+        "Dll_sideloading_technique",
+        "Retefe",
+        "Lolbin_technique",
+        "Dll_injection_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Microsoft Edge",
+        "curl",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "swift",
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/e/unmasking-fake-captcha-cases.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-23",
+      "title": "Malicious attack method on hosted ML models now targets PyPI",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Nullifai_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "OpenAI",
+        "ChatGPT",
+        "Hugging Face",
+        "Zoom"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/malicious-attack-method-on-hosted-ml-models-now-targets-pypi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-23",
+      "title": "VPO or LLM? Silent Werewolf uses new boots in attacks on Russian and Moldavian organizations",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Xdigo"
+      ],
+      "geo": [
+        "Russian",
+        "Moldova",
+        "Russia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "DirectX"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/silent-werewolf-ispolzuet-novye-zagruzchiki-v-atakakh-na-rossiyskie-i-moldavskie-organizatsii/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-23",
+      "title": "ViciousTrap Infiltrate, Control, Lure: Turning edge devices into honeypots en masse.",
+      "completeness": "Low",
+      "threats": [
+        "Gobrat",
+        "Polaredge",
+        "Netghost_tool"
+      ],
+      "geo": [
+        "Malaysian",
+        "Taiwan",
+        "China",
+        "Asia",
+        "Malaysia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Nginx"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://blog.sekoia.io/vicioustrap-infiltrate-control-lure-turning-edge-devices-into-honeypots-en-masse/"
+      ]
+    }
+  }
+]

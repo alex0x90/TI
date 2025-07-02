@@ -1,0 +1,148 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-03",
+      "title": "DragonForce Ransomware Gang \\| From Hacktivists to High Street Extortionists",
+      "completeness": "Medium",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Ransomhub",
+        "Cobalt_strike",
+        "Mimikatz_tool",
+        "Pingcastle_tool",
+        "Log4shell_vuln",
+        "Systembc",
+        "Lockbit",
+        "Conti",
+        "Ransombay_raas"
+      ],
+      "geo": [
+        "Israel",
+        "India",
+        "Malaysia",
+        "Palau",
+        "Singapore",
+        "Saudi arabia",
+        "Australia",
+        "United kingdom"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ivanti",
+        "Linux",
+        "EXSi",
+        "ESXi"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha1",
+        "aes"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/dragonforce-ransomware-gang-from-hacktivists-to-high-street-extortionists/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-03",
+      "title": "Venom Spider Uses Server-Side Polymorphism to Weave a Web Around Victims",
+      "completeness": "High",
+      "threats": [
+        "Polymorphism_technique",
+        "More_eggs",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Terraloader"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 14,
+      "software": [
+        "WordPad",
+        "pccntmon"
+      ],
+      "algorithms": [
+        "md5",
+        "rc4",
+        "sha256",
+        "crc-32",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/venom-spider-uses-server-side-polymorphism-to-weave-a-web-around-victims/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-03",
+      "title": "Gunra Ransomware A Brief Analysis",
+      "completeness": "High",
+      "threats": [
+        "Gunra",
+        "Conti",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Credential_dumping_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Panama",
+        "Japan",
+        "Italy",
+        "Argentina",
+        "Egypt"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 37,
+      "software": [
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "FindNextFileExW"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/gunra-ransomware-a-brief-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-03",
+      "title": "SocGholish: From loader and C2 activity to RansomHub deployment",
+      "completeness": "Medium",
+      "threats": [
+        "Socgholish_loader",
+        "Ransomhub",
+        "Credential_harvesting_technique",
+        "Cobalt_strike",
+        "Keitaro_tds_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 11,
+      "software": [
+        "WordPress",
+        "Windows Explorer"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/socgholish-from-loader-and-c2-activity-to-ransomhub-deployment"
+      ]
+    }
+  }
+]

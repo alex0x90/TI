@@ -1,0 +1,386 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "CVE-2025-33053, Stealth Falcon and Horus: A Saga of Middle Eastern Cyber Espionage",
+      "completeness": "High",
+      "threats": [
+        "Horus_loader",
+        "Horus_agent",
+        "Mythic_c2",
+        "Apollo",
+        "Lolbin_technique",
+        "Spear-phishing_technique",
+        "Dll_hijacking_technique",
+        "Code_virtualizer_tool",
+        "Themida_tool",
+        "Ollvm_tool",
+        "Process_injection_technique",
+        "Confuserex_tool"
+      ],
+      "geo": [
+        "Middle east",
+        "Yemen",
+        "Turkish",
+        "Egypt",
+        "Turkey",
+        "Egyptian",
+        "Qatar",
+        "Africa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Internet Explorer",
+        "Active Directory",
+        "Windows service"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "xor",
+        "gzip",
+        "base64",
+        "aes",
+        "hmac",
+        "rc4",
+        "zip"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/stealth-falcon-zero-day/",
+        "https://github.com/DiscUtils/DiscUtils",
+        "https://github.com/hasherezade/tiny\\_tracer",
+        "https://github.com/MythicC2Profiles/httpx"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "Luckystrike Agent: Poker bleached from Erudite Mogwaii",
+      "completeness": "Low",
+      "threats": [
+        "Costura_tool",
+        "Shadowpad"
+      ],
+      "geo": [
+        "Chinese",
+        "Russian",
+        "Asian"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1027",
+        "T1071.001",
+        "T1074.002",
+        "T1140",
+        "T1574.014"
+      ],
+      "algorithms": [
+        "md5",
+        "pbkdf2",
+        "base64",
+        "sha256",
+        "aes",
+        "cbc",
+        "xor",
+        "aes-256-cbc"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/5603/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "APT 41: Threat Intelligence Report and Malware Analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Plusdrop",
+        "Plusinject",
+        "Toughprogress",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 18,
+      "software": [
+        "Windows Service",
+        "trycloudflare"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "GetModuleHandle"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/apt-41-threat-intelligence-report-and-malware-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "Understanding CYBEREYE RAT Builder: Capabilities and Implications",
+      "completeness": "Medium",
+      "threats": [
+        "Telegramrat",
+        "Credential_harvesting_technique",
+        "Uac_bypass_technique",
+        "File_melt_technique",
+        "Autostealer",
+        "Telegramgrabber",
+        "Discordgrabber",
+        "Grabdesktop"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 14,
+      "software": [
+        "Chromium",
+        "Telegram",
+        "Windows Defender",
+        "Discord",
+        "VirtualBox",
+        "Chrome",
+        "Gmail",
+        "Steam"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip",
+        "aes-gcm",
+        "md5"
+      ],
+      "functions": [
+        "runAntiAnalysis",
+        "GetModuleHandle",
+        "setAutorun",
+        "installSelf",
+        "DisableDefenderFeatures",
+        "CheckDefenderSettings",
+        "sendText"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/understanding-cybereye-rat-builder-capabilities-and-implications/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "A comprehensive analysis of India's apt espionage activities against my country",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Grimresource_technique",
+        "Artradownloader",
+        "Wscspl",
+        "Bdarkrat",
+        "Muuymdownloader",
+        "Zxxz_loader",
+        "Almond_rat",
+        "Wmrat",
+        "Trurat",
+        "Orpcbackdoor",
+        "Miyarat",
+        "Kiwistealer",
+        "Kugelblitz",
+        "Havoc"
+      ],
+      "geo": [
+        "Bangladesh",
+        "Pakistan",
+        "China",
+        "America",
+        "India",
+        "Indian",
+        "Madagascar"
+      ],
+      "software": [
+        "ProtonMail"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Get-Content"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzkzNDIzNDUxOQ==&mid=2247499422&idx=2&sn=1313fc72a2c2122f08fba5179c78dd55"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "Say Hi to HelloTDS: The Infrastructure Behind FakeCaptcha",
+      "completeness": "Medium",
+      "threats": [
+        "Hellotds",
+        "Fakecaptcha_technique",
+        "Lumma_stealer",
+        "Emmenhtal"
+      ],
+      "geo": [
+        "Kenya",
+        "Czechia",
+        "Egypt",
+        "Panama",
+        "Tanzania",
+        "India",
+        "Rwanda",
+        "Iceland",
+        "Brazil",
+        "Africa"
+      ],
+      "software": [
+        "Chrome",
+        "Opera"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/inside-hellotds-malware-network",
+        "https://github.com/avast/ioc/tree/master/HelloTDS"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "Skitnet (\"Bossnet\") in 2025: Stealthy Malware Powering Sophisticated Ransomware Tactics",
+      "completeness": "Medium",
+      "threats": [
+        "Skitnet",
+        "Qakbot",
+        "Icedid",
+        "Blackbasta",
+        "Cactus_ransomware",
+        "Dns_tunneling_technique",
+        "Dll_hijacking_technique",
+        "Anydesk_tool",
+        "Lolbin_technique",
+        "Transferloader",
+        "Morpheus"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft Exchange"
+      ],
+      "algorithms": [
+        "rc4",
+        "xor",
+        "base64",
+        "chacha20"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://wardenshield.com/skitnet-bossnet-in-2025-stealthy-malware-powering-sophisticated-ransomware-tactics"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "Two Botnets, One Flaw: Mirai Spreads Through Wazuh Vulnerability",
+      "completeness": "Medium",
+      "threats": [
+        "Mirai",
+        "Resbot_botnet",
+        "Vega_locker"
+      ],
+      "geo": [
+        "Italian"
+      ],
+      "software": [
+        "Burp Suite",
+        "curl",
+        "Hadoop",
+        "ZyXEL"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "deflate",
+        "gzip",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2025/jun/botnets-flaw-mirai-spreads-through-wazuh-vulnerability",
+        "https://github.com/MuhammadWaseem29/CVE-2025-24016",
+        "https://github.com/stasinopoulos/ZTExploit/blob/master/ZTExploit\\_Source/ztexploit.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-10",
+      "title": "Analysis of the last wave of Mirai Botnet attacks on TBK DVR devices with a vulnerability CVE-2024-3721",
+      "completeness": "Low",
+      "threats": [
+        "Mirai",
+        "Bashlite"
+      ],
+      "geo": [
+        "India",
+        "Egypt",
+        "China",
+        "Ukraine",
+        "Turkey",
+        "Brazil",
+        "Russia"
+      ],
+      "software": [
+        "Linux",
+        "Qemu"
+      ],
+      "algorithms": [
+        "rc4",
+        "xor"
+      ],
+      "links": [
+        "https://securelist.ru/mirai-botnet-variant-targets-dvr-devices-with-cve-2024-3721/112862/",
+        "https://github.com/netsecfish/tbk\\_dvr\\_command\\_injection"
+      ]
+    }
+  }
+]

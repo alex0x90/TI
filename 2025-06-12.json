@@ -1,0 +1,231 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-12",
+      "title": "Call Stacks: No More Free Passes ForMalware",
+      "completeness": "Low",
+      "threats": [
+        "Silentmoonwalk_technique"
+      ],
+      "software": [
+        "Event Tracing for Windows",
+        "Windows Error Reporting"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Win32StartAddress",
+        "Native",
+        "Get-InjectedThreadEx",
+        "Windows"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/call-stacks-no-more-free-passes-for-malware",
+        "https://github.com/jdu2600/conference\\_talks/blob/main/2022-04-csidescbr-StackWalking.pdf",
+        "https://github.com/elastic/protections-artifacts/blob/3537aa4ed9c7ed9dcd04da2efafbad38af47a017/behavior/rules/windows/defense\\_evasion\\_virtualprotect\\_via\\_vectored\\_exception\\_handling.toml",
+        "https://github.com/search?q=repo%3Aelastic%2Fprotections-artifacts+call\\_stack\\_final\\_user\\_module&type=code"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-12",
+      "title": "June 2025 Patch Tuesday Fixes 67 Flaws & 2 Zero-Days; Critical Ivanti IWC Updates",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Horus_agent",
+        "Mythic_c2"
+      ],
+      "geo": [
+        "Turkey",
+        "Middle east",
+        "Africa"
+      ],
+      "software": [
+        "Ivanti",
+        "Microsoft Office",
+        "SharePoint Server",
+        "windows smb client",
+        "SMB server",
+        "Windows SMB",
+        "Microsoft SharePoint Server",
+        "Windows Remote Desktop Services",
+        "Microsoft Word",
+        "Windows Common Log File System Driver",
+        "have more..."
+      ],
+      "links": [
+        "https://socradar.io/june-2025-patch-tuesday-fixes-67-flaws-2-zero-days/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-12",
+      "title": "The Spectre of SpectraRansomware",
+      "completeness": "Low",
+      "threats": [
+        "Spectra",
+        "Chaos_ransomware",
+        "Yashma",
+        "Blacksnake",
+        "Teamviewer_tool"
+      ],
+      "geo": [
+        "Turkey",
+        "Azerbaijan"
+      ],
+      "software": [
+        "Microsoft Visual Studio",
+        "DefWatch",
+        "Twitter"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "TaskManager",
+        "CreatePassword",
+        "SetWallpaper"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/the-spectre-of-spectraransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-12",
+      "title": "Vexing and Vicious: The Eerie Relationship between WordPress Hackers and an Adtech Cabal",
+      "completeness": "High",
+      "threats": [
+        "Fakecaptcha_technique",
+        "Dollyway",
+        "Balada_injector",
+        "Sign1",
+        "Socgholish_loader",
+        "Obfuscator_io_tool",
+        "Clearfake"
+      ],
+      "geo": [
+        "Russian",
+        "Mexican"
+      ],
+      "software": [
+        "WordPress",
+        "Telegram",
+        "TikTok",
+        "Android"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/vexing-and-vicious-the-eerie-relationship-between-wordpress-hackers-and-an-adtech-cabal/",
+        "https://github.com/infobloxopen/threat-intelligence/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-12",
+      "title": "From Trust to Threat: Hijacked Discord Invites Used for Multi-Stage Malware Delivery",
+      "completeness": "High",
+      "threats": [
+        "Rnrloader",
+        "Asyncrat",
+        "Skuld",
+        "Chromekatz_tool",
+        "Clickfix_technique",
+        "Dead_drop_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Slovakia",
+        "United kingdom",
+        "Netherlands",
+        "Austria",
+        "Vietnam",
+        "France"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "electron",
+        "chrome",
+        "Chromium",
+        "Windows security",
+        "Telegram",
+        "Google Chrome"
+      ],
+      "wallets": [
+        "atomicwallet",
+        "exodus_wallet",
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "pbkdf2",
+        "sha256"
+      ],
+      "functions": [
+        "CreateMutex",
+        "IsAlreadyRunning",
+        "main",
+        "JavaScript",
+        "readSeco",
+        "setRequestHeader"
+      ],
+      "languages": [
+        "swift",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/from-trust-to-threat-hijacked-discord-invites-used-for-multi-stage-malware-delivery/",
+        "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki",
+        "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki",
+        "https://github.com/Meckazin/ChromeKatz/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-12",
+      "title": "Graphite Caught First Forensic Confirmation of Paragon s iOS Mercenary Spyware Finds Journalists Targeted",
+      "completeness": "Low",
+      "threats": [
+        "Paragon_graphite",
+        "Bigpretzel",
+        "Smallpretzel"
+      ],
+      "geo": [
+        "Italy",
+        "Italian"
+      ],
+      "software": [
+        "iMessage",
+        "Android",
+        "WhatsApp"
+      ],
+      "links": [
+        "https://citizenlab.ca/2025/06/first-forensic-confirmation-of-paragons-ios-mercenary-spyware-finds-journalists-targeted/"
+      ]
+    }
+  }
+]

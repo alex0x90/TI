@@ -1,0 +1,185 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-24",
+      "title": "How Luna Moths Social Engineering & Data Heist Tactics Target U.S. FBI Warns",
+      "completeness": "Medium",
+      "threats": [
+        "Conti",
+        "Bazarbackdoor",
+        "Ryuk",
+        "Typosquatting_technique",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Credential_harvesting_technique",
+        "Rclone_tool",
+        "Splashtop_tool",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "California",
+        "New york",
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "WinSCP",
+        "Dropbox",
+        "Slack"
+      ],
+      "functions": [
+        "VoIP"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/how-luna-moth-s-social-engineering-and-data-heist-tactics-target-u-s-fbi-warns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-24",
+      "title": "Massive npm Supply Chain Attack 60 Malicious Packages Exfiltrate Sensitive Network Data to Discord",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 6,
+      "software": [
+        "Discord",
+        "Gmail",
+        "macOS",
+        "Linux",
+        "Node.js"
+      ],
+      "functions": [
+        "getIPAddress",
+        "getExternalIP"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/massive-npm-supply-chain-attack-60-malicious-packages-exfiltrate-sensitive-network-data-to-discord"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-24",
+      "title": "Additional certificate abuse cases from Larva-25004 (Kimsuky-related) group - Malware signed with Nexaweb certificate",
+      "completeness": "Low",
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88114/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-24",
+      "title": "Information leakage generated through the DB client tool",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MS-SQL",
+        "Linux",
+        "Windows authentication",
+        "Microsoft SQL Server"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88115/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-24",
+      "title": "TA-ShadowCricket Analysis with NCSC: Tracking the Latest Malware Trends and IRC Servers",
+      "completeness": "Medium",
+      "threats": [
+        "Syrinx",
+        "Sqlshell_tool",
+        "Pemodifier_tool",
+        "Wgdrop_tool",
+        "Sqldoor",
+        "Maggiescan_tool",
+        "Maggie",
+        "Ircbot"
+      ],
+      "geo": [
+        "Vietnam",
+        "Taiwan",
+        "China",
+        "Korea",
+        "Germany",
+        "India",
+        "Indonesia",
+        "Thailand",
+        "Chinese",
+        "Asia",
+        "Asia pacific",
+        "Korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MS SQL",
+        "MS-SQL",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88123/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-24",
+      "title": "From Rockstar2FA to FlowerStorm: Investigating a Blooming Phishing-as-a-Service Platform",
+      "completeness": "Medium",
+      "threats": [
+        "Rockstar_2fa_tool",
+        "Flowerstorm_tool",
+        "Aitm_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Moscow"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Domain:",
+        "1",
+        "File:",
+        "1",
+        "IP:",
+        "1"
+      ],
+      "software": [
+        "Cloudflare turnstile",
+        "Microsoft Office 365",
+        "Office365",
+        "Azure Active Directory"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/from-rockstar2fa-to-flowerstorm-investigating-a-blooming-phishing-as-a-service-platform"
+      ]
+    }
+  }
+]

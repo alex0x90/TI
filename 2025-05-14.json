@@ -1,0 +1,743 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Korea National Security Strategy Think Tank Appanum APT37 Attack Case Analysis (Operation Name, Toy Box Story)",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Rokrat",
+        "Watering_hole_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Russian",
+        "Korean",
+        "Russia",
+        "Usa",
+        "North korea",
+        "Korea"
+      ],
+      "software": [
+        "Dropbox",
+        "Slack",
+        "Instagram",
+        "Android",
+        "Gmail",
+        "AstrillVPN"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "prng",
+        "md5",
+        "aes-128-cbc"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/toybox-story",
+        "https://github.com/MBCProject"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Dont drop password managers (but password managers shouldnt drop malware)",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike",
+        "Keeloader",
+        "Typosquatting_technique",
+        "Nitrogen",
+        "Credential_stealing_technique",
+        "Watering_hole_technique",
+        "Rhadamanthys",
+        "Blackbasta",
+        "Blackcat",
+        "Akira_ransomware",
+        "Fakebat",
+        "Batloader",
+        "Conti",
+        "Lockbit"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 20,
+      "software": [
+        "KeePass",
+        "ESXi",
+        "Windows Service",
+        "InnoSetup",
+        "WinSCP",
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "sha256",
+        "exhibit",
+        "sha1",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "CreateNoWindow"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://labs.withsecure.com/content/dam/labs/docs/W_Intel_Research_KeePass_Trojanised_Malware_Campaign.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Malware hiding in plain sight: Spying on North Korean Hackers",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "software": [
+        "opera",
+        "curl"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "eval",
+        "getAbsolutePath",
+        "setTimeout",
+        "setInterval"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/malware-hiding-in-plain-sight-spying-on-north-korean-hackers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Horabot Unleashed: A Stealthy Phishing Threat",
+      "completeness": "Medium",
+      "threats": [
+        "Horabot_botnet"
+      ],
+      "geo": [
+        "Argentina",
+        "Guatemala",
+        "Mexico",
+        "Colombia",
+        "Spanish",
+        "Peru",
+        "Chile",
+        "Latin america"
+      ],
+      "software": [
+        "Outlook",
+        "VirtualBox",
+        "Hyper-V",
+        "Epic Privacy Browser",
+        "Comodo Dragon",
+        "Opera",
+        "Microsoft Edge",
+        "Google Chrome",
+        "gmail"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "GetExchangeUser"
+      ],
+      "languages": [
+        "powershell",
+        "autoit",
+        "javascript"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/horabot-unleashed-a-stealthy-phishing-threat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Tales from the cloud trenches: The Attacker doth persist too much, methinks",
+      "completeness": "Low",
+      "ttp_tactics": 6,
+      "ttp_techniques": 6,
+      "software": [
+        "Telegram",
+        "twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "GetAccount",
+        "GetSendQuota",
+        "GetFederationToken"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/tales-from-the-cloud-trenches-the-attacker-doth-persist-too-much/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Additional Features of OtterCookie Malware Used by WaterPlum",
+      "completeness": "Low",
+      "threats": [
+        "Ottercookie",
+        "Beavertail",
+        "Invisibleferret"
+      ],
+      "geo": [
+        "Japan",
+        "North korea",
+        "Singapore"
+      ],
+      "software": [
+        "MacOS",
+        "Google Chrome"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "links": [
+        "https://jp.security.ntt/tech_blog/en-waterplum-ottercookie"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "DragonForce Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Splashtop_tool",
+        "Teamviewer_tool",
+        "Adfind_tool",
+        "Atera_tool",
+        "Anydesk_tool",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool"
+      ],
+      "geo": [
+        "America",
+        "Asia"
+      ],
+      "software": [
+        "Windows Installer",
+        "active directory",
+        "bcdedit"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://intel471.com/blog/dragonforce-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Analysis of APT37 Attack Case Disguised as a Think Tank for National Security Strategy in South Korea (Operation. ToyBox Story)",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Rokrat",
+        "Watering_hole_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Usa",
+        "North korean",
+        "North korea",
+        "Korean",
+        "Russia",
+        "Korea",
+        "Russian"
+      ],
+      "software": [
+        "Slack",
+        "Instagram",
+        "Dropbox",
+        "Internet Explorer",
+        "macOS",
+        "Gmail",
+        "AstrillVPN"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "prng",
+        "aes-128-cbc",
+        "aes",
+        "exhibit",
+        "xor"
+      ],
+      "functions": [
+        "sub_40F0E7",
+        "sub_40F569"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/toybox-story",
+        "https://github.com/MBCProject"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Excel(ent) Obfuscation: Regex Gone Rogue",
+      "completeness": "Low",
+      "functions": [
+        "Macro1"
+      ],
+      "languages": [
+        "perl",
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.deepinstinct.com/blog/excellent-obfuscation-regex-gone-rogue",
+        "https://github.com/sevagas/macro\\_pack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "The HIVE0117 group conducted a large -scale phishing campaign using VPO Darkwatchman",
+      "completeness": "Low",
+      "threats": [
+        "Darkwatchman"
+      ],
+      "geo": [
+        "Estonia",
+        "Belarus",
+        "Russia",
+        "Kazakhstan",
+        "Russian",
+        "Lithuania"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "zip",
+        "sha1"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/F6/news/905930/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Critical Vulnerabilities in Fortinet and Ivanti Products: Multiple Zero-Day Threats Addressed",
+      "completeness": "Low",
+      "geo": [
+        "Germany"
+      ],
+      "software": [
+        "Ivanti",
+        "Ivanti Sentry"
+      ],
+      "links": [
+        "https://socradar.io/fortinet-and-ivanti-products-zero-day-threat-addressed/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Fast Flux technique for hidden and detection of command control (C & C)",
+      "completeness": "Low",
+      "threats": [
+        "Fastflux_technique",
+        "Zeus"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/87941/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "DarkCloud Stealer: Comprehensive Analysis of a New Attack Chain That Employs AutoIt",
+      "completeness": "High",
+      "threats": [
+        "Darkcloud",
+        "Credential_stealing_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Poland",
+        "Polish"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "Flash Player",
+        "Process Explorer"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Call",
+        "StringMid",
+        "Execute",
+        "FileInstall",
+        "StringLower",
+        "extractShellCode",
+        "CallWindowProc"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/darkcloud-stealer-and-obfuscated-autoit-scripting/",
+        "https://github.com/horsicq/Detect-It-Easy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Etherhide technique that uses blockchain as a C & C infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Etherhiding_technique",
+        "Fastflux_technique",
+        "Payroad",
+        "Clearfake",
+        "Smargaft",
+        "Bashlite"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "software": [
+        "Telegram",
+        "Twitter",
+        "Chrome"
+      ],
+      "crypto": [
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/87931/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "APT GROUP123",
+      "completeness": "Low",
+      "threats": [
+        "Reaper",
+        "Slowdrift",
+        "Oceansalt",
+        "Happywork",
+        "Freenki",
+        "N1stagent",
+        "Kevdroid",
+        "Poohmilk",
+        "Winerack",
+        "Karae",
+        "Ruhappy",
+        "Gelcapsule",
+        "Ricecurry",
+        "Soundwave",
+        "Zumkong",
+        "Nokki",
+        "Syscon",
+        "Carrotball",
+        "Greezebackdoor",
+        "Navrat_rat",
+        "Rokrat",
+        "Carrotbat",
+        "Coraldeck",
+        "Pooraim",
+        "Milkdrop",
+        "Shutterspeed",
+        "Final1stspy",
+        "Erebus",
+        "Bluelight",
+        "Chinotto",
+        "Kospy",
+        "M2rat",
+        "Mauicrypt",
+        "Spear-phishing_technique",
+        "Log4shell_vuln",
+        "Credential_dumping_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Korea",
+        "Romania",
+        "Russia",
+        "Japan",
+        "Kuwait",
+        "Poland",
+        "India",
+        "North korean",
+        "Nepal",
+        "Vietnam",
+        "Middle east",
+        "Czechia",
+        "North korea",
+        "China",
+        "Asia"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 20,
+      "software": [
+        "Microsoft Office"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-group123/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Sit, Fetch, Steal - Chihuahua Stealer: A new Breed of Infostealer",
+      "completeness": "Medium",
+      "threats": [
+        "Chihuahua"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "algorithms": [
+        "zip",
+        "xor",
+        "aes-gcm",
+        "base64"
+      ],
+      "functions": [
+        "DedMaxim",
+        "PopilLina",
+        "Armyanec01",
+        "PawPawers",
+        "VseLegalno"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.gdatasoftware.com/blog/2025/05/38199-chihuahua-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Security issues related to domestic and international financial sectors in April 2025",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Everest_ransomware"
+      ],
+      "geo": [
+        "Russia",
+        "Finland",
+        "Russian",
+        "Jordan"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/87949/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "QatarRat Tool Emerges, GST Data Sold, and LockBit Gets Breached",
+      "completeness": "Low",
+      "threats": [
+        "Qatarrat",
+        "Lockbit",
+        "Androrat_rat",
+        "Gh0st_rat"
+      ],
+      "geo": [
+        "Indian",
+        "India"
+      ],
+      "software": [
+        "Windows Defender",
+        "Telegram",
+        "MySQL"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/qatarrat-tool-emerges-gst-data-sold-and-lockbit-breach/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "A python in disguise: unpacking PyInstaller malware on macOS",
+      "completeness": "Low",
+      "software": [
+        "PyInstaller",
+        "macOS"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha1"
+      ],
+      "functions": [
+        "GetPasswordModal",
+        "RunAppleScript",
+        "DumpKeychain",
+        "CollectCryptowallets"
+      ],
+      "languages": [
+        "python",
+        "applescript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/pyinstaller-malware-jamf-threat-labs/",
+        "https://github.com/JasonAHeron/pyinstaller/blob/master/bootloader/common/pyi\\_archive.c",
+        "https://github.com/search?q=repo%3Apyinstaller%2Fpyinstaller+\\_MEIPASS&type=code",
+        "https://github.com/extremecoders-re/pyinstxtractor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Inside LockBit: Defense Lessons from the Leaked LockBit Negotiations",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit",
+        "Cobalt_strike",
+        "Mimikatz_tool",
+        "Fortra_tool",
+        "Log4shell_vuln",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MySQL",
+        "Linux",
+        "ESXi",
+        "macOS",
+        "PaperCut",
+        "GoAnywhere",
+        "ZK Framework",
+        "Windows Print Spooler",
+        "Windows LSA",
+        "BIG-IP",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero"
+      ],
+      "links": [
+        "https://blog.qualys.com/vulnerabilities-threat-research/2025/05/08/inside-lockbit-defense-lessons-from-the-leaked-lockbit-negotiations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-14",
+      "title": "Technical Analysis of TransferLoader",
+      "completeness": "Medium",
+      "threats": [
+        "Transferloader",
+        "Morpheus",
+        "Junk_code_technique",
+        "Com_hijacking_technique"
+      ],
+      "geo": [
+        "American"
+      ],
+      "software": [
+        "wordpad",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-cbc",
+        "xor",
+        "base32"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-transferloader",
+        "https://github.com/ThreatLabz/tools/blob/main/transferloader/deobf\\_flat.py"
+      ]
+    }
+  }
+]

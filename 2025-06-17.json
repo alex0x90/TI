@@ -1,0 +1,216 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-17",
+      "title": "Anubis: A Closer Look at an Emerging Ransomware with Built-in Wiper",
+      "completeness": "Medium",
+      "threats": [
+        "Anubis",
+        "Sphinx",
+        "Spear-phishing_technique",
+        "Shadow_copies_delete_technique",
+        "Prince_ransomware"
+      ],
+      "geo": [
+        "Peru",
+        "Russian",
+        "Australia",
+        "Canada"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "Twitter",
+        "nuget",
+        "vscode",
+        "DefWatch",
+        "MSExchange",
+        "MSSQL"
+      ],
+      "languages": [
+        "golang",
+        "dotnet"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/f/anubis-a-closer-look-at-an-emerging-ransomware.html",
+        "https://github.com/EvilBytecode/EByte-Ransomware/blob/main/Encryptor/encryption/encryption.go",
+        "https://github.com/ecies/go/blob/master/ecies.go",
+        "https://github.com/oakkaya/Prince-Ransomware/tree/main/Encryptor/encryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-17",
+      "title": "Zombies never die: RapperBot botnet recent situation analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Rapperbot",
+        "Xorddos",
+        "Mirai",
+        "Ghostnet",
+        "Hawk"
+      ],
+      "geo": [
+        "Germany",
+        "Canada",
+        "Italy",
+        "Chinese",
+        "Ontario",
+        "France",
+        "China",
+        "Hongkong"
+      ],
+      "software": [
+        "Deepseek",
+        "ZyXEL",
+        "twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "bytearray"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/rapperbot/",
+        "https://github.com/mcw0/PoC/blob/master/TVT-PoC.py?ref=blog.xlab.qianxin.com",
+        "https://github.com/lctseng/2014-Meichu-Hackathon-Team-Soloq/blob/master/General.rb?ref=blog.xlab.qianxin.com",
+        "https://github.com/thirtythreeforty/neolink?ref=blog.xlab.qianxin.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-17",
+      "title": "A Wretch Client: From ClickFix deception to information stealerdeployment",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Ghostpulse",
+        "Lumma_stealer",
+        "Sectop_rat",
+        "Fakecaptcha_technique",
+        "Eddiestealer",
+        "Hijackloader",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "ioc_domain": 4,
+      "ioc_url": 5,
+      "ioc_ip": 0,
+      "ioc_file": 7,
+      "ioc_command": 5,
+      "software": [
+        "Kibana",
+        "Telegram",
+        "Discord",
+        "Steam",
+        "Linux",
+        "Nginx",
+        "Ubuntu"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "dotnet",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/a-wretch-client",
+        "https://github.com/elastic/labs-releases/tree/main/tools/ghostpulse",
+        "https://gist.github.com/xpn/e95a62c6afcf06ede52568fcd8187cc2",
+        "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/sectoprat.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-17",
+      "title": "Is b For Backdoor? Pre-Auth RCE Chain In Sitecore Experience Platform",
+      "completeness": "Low",
+      "threats": [
+        "Kekw"
+      ],
+      "software": [
+        "Sitecore",
+        "WordPress",
+        "SQL Server Management Studio"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "GetLanguage",
+        "GetPathOrId",
+        "CloseDialogOnEnd",
+        "GetPipeline"
+      ],
+      "languages": [
+        "powershell",
+        "aspnet"
+      ],
+      "links": [
+        "https://labs.watchtowr.com/is-b-for-backdoor-pre-auth-rce-chain-in-sitecore-experience-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-17",
+      "title": "Weekly Threat Infrastructure Investigation(Week24)",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Brc4_tool"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "links": [
+        "https://disconinja.hatenablog.com/entry/2025/06/17/225643"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-17",
+      "title": "Diving Into Quasar RAT: TTPs, IoCs and more",
+      "completeness": "Medium",
+      "threats": [
+        "Quasar_rat",
+        "Cicada_ransomware",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "Twitter",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/quasar-rat/"
+      ]
+    }
+  }
+]

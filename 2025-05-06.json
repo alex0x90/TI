@@ -1,0 +1,144 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-05-06",
+      "title": "CoGUI Phish Kit Targets Japan with Millions of Messages",
+      "completeness": "Low",
+      "threats": [
+        "Cogui",
+        "Darcula_tool",
+        "Smishing_technique",
+        "Gh0st_rat"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Canada",
+        "Japan",
+        "Australia",
+        "New zealand",
+        "Japanese"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/cogui-phish-kit-targets-japan-millions-messages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-06",
+      "title": "Mamona: Technical Analysis of a New Ransomware Strain",
+      "completeness": "Low",
+      "threats": [
+        "Mamona",
+        "Eldorado_ransomware",
+        "Embargo_ransomware"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 5,
+      "software": [
+        "Windows CryptoAPI",
+        "OpenSSL",
+        "Visual Studio",
+        "Telegram",
+        "Discord"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor",
+        "sha256"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/mamona-ransomware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-06",
+      "title": "Bit ByBit - emulation of the DPRK's largest cryptocurrencyheist",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Mythic_c2",
+        "Poseidon",
+        "Rn_loader",
+        "Bandit_stealer"
+      ],
+      "geo": [
+        "Asia",
+        "North korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "PyYAML",
+        "SlowMist",
+        "Telegram",
+        "Discord",
+        "Linux",
+        "docker",
+        "Chrome",
+        "Boto3"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "GetSessionToken",
+        "AWS",
+        "IAM",
+        "ETH",
+        "exec",
+        "SDK",
+        "CreateVirtualMFADevice"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/bit-bybit",
+        "https://github.com/MythicAgents/poseidon",
+        "https://github.com/its-a-feature/Mythic"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-06",
+      "title": "Malicious PyPI Package Targets Discord Developers with Remote Access Trojan",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 6,
+      "software": [
+        "Discord"
+      ],
+      "functions": [
+        "run",
+        "debug",
+        "runcommand"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-pypi-package-targets-discord-developers-with-RAT"
+      ]
+    }
+  }
+]

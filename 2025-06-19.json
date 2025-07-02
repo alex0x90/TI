@@ -1,0 +1,390 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Critical Langflow Vulnerability (CVE-2025-3248) Actively Exploited to Deliver Flodrix Botnet",
+      "completeness": "Low",
+      "threats": [
+        "Flodrix_botnet",
+        "Leethozer_botnet"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Langflow",
+        "curl",
+        "docker",
+        "systemd",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "xor",
+        "sha1"
+      ],
+      "functions": [
+        "compile"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/f/langflow-vulnerability-flodric-botnet.html",
+        "https://github.com/verylazytech/CVE-2025-3248"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "APT-C-60 (Pseudo Hunter) Attack Evolution: Dynamic Payload Distribution and Command Relay Based on GitHub",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Com_hijacking_technique",
+        "Goldbar",
+        "Double_kill_vuln",
+        "Double_star_vuln",
+        "Nightmare_formula_vuln"
+      ],
+      "geo": [
+        "Korean",
+        "Chinese"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "md5",
+        "rc4"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247506307&idx=1&sn=917d291b3f14b349263a9b0a2f115323&chksm=f9c1ea8aceb6639ce7e8fa02c8630b203f508d3d971d21174c6a55f1bf4d4102ddc2af602d73&scene=178&cur_album_id=1955835290309230595&search_click_id&poc_token=HF9FVGijkTpFSMB-M7CWfzibM6JAyWn_ZJDaBEvu"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Introducing: GitHub Device Code Phishing",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Gitphish_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Usa"
+      ],
+      "software": [
+        "Azure Active Directory",
+        "curl",
+        "Visual Studio Code",
+        "ServiceNow",
+        "Flask",
+        "VSCode"
+      ],
+      "functions": [
+        "Zoom"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.praetorian.com/blog/introducing-github-device-code-phishing/",
+        "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
+        "https://github.com/praetorian-inc/gato",
+        "https://github.com/praetorian-inc/GitPhish"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Dark Partners: The crypto heist adventure of Poseidon Stealer and Payday Loader",
+      "completeness": "Medium",
+      "threats": [
+        "Payday_loader",
+        "Poseidon",
+        "Ultraviewer_tool",
+        "Lumma_stealer",
+        "Process_hacker_tool",
+        "Procmon_tool",
+        "Dead_drop_technique",
+        "Uac_bypass_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MacOS",
+        "TradingView",
+        "TikTok",
+        "DeepSeek",
+        "telegram",
+        "firefox",
+        "chromium",
+        "curl",
+        "Chrome",
+        "electron",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "metamask",
+        "coinbase",
+        "kardiachain",
+        "terra_station",
+        "wombat",
+        "harmony_wallet",
+        "braavos_wallet",
+        "xdefi",
+        "yoroi",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "writeText",
+        "GetUUID",
+        "filegrabber"
+      ],
+      "languages": [
+        "applescript",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://g0njxa.medium.com/dark-partners-the-crypto-heist-adventure-of-poseidon-stealer-and-payday-loader-c91382fac5c8",
+        "https://github.com/g0njxa/PayDayLoader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Botnets Never Die: Analysis of the RapperBot Botnet",
+      "completeness": "Medium",
+      "threats": [
+        "Rapperbot",
+        "Xorddos",
+        "Mirai",
+        "Ghostnet"
+      ],
+      "geo": [
+        "Canada",
+        "Italy",
+        "Chinese",
+        "Hongkong",
+        "China",
+        "Ontario",
+        "France",
+        "Germany"
+      ],
+      "software": [
+        "Deepseek",
+        "ZyXEL",
+        "twitter"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "bytearray"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/rapperbot-en/",
+        "https://github.com/lctseng/2014-Meichu-Hackathon-Team-Soloq/blob/master/General.rb?ref=blog.xlab.qianxin.com",
+        "https://github.com/thirtythreeforty/neolink?ref=blog.xlab.qianxin.com",
+        "https://github.com/mcw0/PoC/blob/master/TVT-PoC.py?ref=blog.xlab.qianxin.comhttps://pastebin.com/dfHYSqVz?ref=blog.xlab.qianxin.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Analyzing APT Mustang Panda's Latest DLL Sideloading Tactics & Malware Campaign",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Toneshell",
+        "Splatcloak",
+        "Lightpipe",
+        "Antidebugging_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "China",
+        "America",
+        "Asia",
+        "Myanmar"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "chrome",
+        "task scheduler",
+        "Windows Explorer"
+      ],
+      "functions": [
+        "Get-ChildItem",
+        "GetInstallDetailsPayload",
+        "WinAPI"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.killswitchx7.com/apt-mustang-panda-malware-campaign",
+        "https://github.com/ajm4n/DLLHound",
+        "https://github.com/KillSwitchX7/Live-Malware",
+        "https://github.com/mandiant/capa"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Amatera Stealer: Rebranded ACR Stealer With Improved Evasion, Sophistication",
+      "completeness": "High",
+      "threats": [
+        "Amatera_stealer",
+        "Acr_stealer",
+        "Lumma_stealer",
+        "Clearfake",
+        "Etherhiding_technique",
+        "Rhadamanthys",
+        "Clickfix_technique",
+        "Fakecaptcha_technique",
+        "Null-amsi_tool",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Event Tracing for Windows",
+        "Steam"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "by",
+        "Write-Host",
+        "CreateTcpSocket",
+        "CreateEvent"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/amatera-stealer-rebranded-acr-stealer-improved-evasion-sophistication",
+        "https://github.com/BlackShell256/Null-AMSI",
+        "https://github.com/CBLabresearch/Clematis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Threat Insight: Cybercriminals Abusing Vercel to Deliver Remote Access Malware",
+      "completeness": "Low",
+      "threats": [
+        "Logmein_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://cyberarmor.tech/threat-insight-cybercriminals-abusing-vercel-to-deliver-remote-access-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Uncovering a Tor-Enabled Docker Exploit",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Masscan_tool",
+        "Libpcap_tool",
+        "Coinminer",
+        "Malxmr_miner"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "Docker",
+        "alpine",
+        "curl",
+        "Unix",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.trendmicro.com/ru_ru/research/25/f/tor-enabled-docker-exploit.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "TxTag Takedown: Busting Phishing Email Schemes",
+      "completeness": "Low",
+      "links": [
+        "https://cofense.com/blog/txtag-takedown-busting-phishing-email-schemes"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-19",
+      "title": "Expanding on ChunkyIngress - Clippy Goes Rogue (GoClipC2)",
+      "completeness": "Low",
+      "threats": [
+        "Goclipc2",
+        "Coffloader"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64"
+      ],
+      "functions": [
+        "Write-Output",
+        "Set-Clipboard",
+        "Read-Host"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.zsec.uk/clippy-goes-rogue/",
+        "https://github.com/inguardians/Invoke-Clipboard?ref=blog.zsec.uk",
+        "https://github.com/ZephrFish/ChunkyIngress?ref=blog.zsec.uk"
+      ]
+    }
+  }
+]
