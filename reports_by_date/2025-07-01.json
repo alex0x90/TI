@@ -1,0 +1,318 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "LNK and BAT files: phishing mailing",
+      "completeness": "Low",
+      "software": [
+        "Curl"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/usergate/articles/923818/",
+        "https://github.com/billythegoat356/Kramer",
+        "https://github.com/KhanhNguyen9872/kramer-specter\\_deobf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "DCRAT Impersonating the Colombian Government",
+      "completeness": "Medium",
+      "threats": [
+        "Dcrat",
+        "Steganography_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Colombian",
+        "Columbia",
+        "Colombia"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256",
+        "md5",
+        "aes-256"
+      ],
+      "functions": [
+        "InitializeSettings",
+        "CreateMutex",
+        "Install"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/dcrat-impersonating-the-columbian-government"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "Threat Report: Smishing Triad",
+      "completeness": "Low",
+      "geo": [
+        "Chinese",
+        "America"
+      ],
+      "links": [
+        "https://www.silentpush.com/white-papers-and-reports/threat-report-smishing-triad/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "10 Things I Hate About Attribution: RomCom vs. TransferLoader",
+      "completeness": "Medium",
+      "threats": [
+        "Romcom_rat",
+        "Transferloader",
+        "Snipbot",
+        "Dustyhammock",
+        "Morpheus",
+        "Putty_tool",
+        "Plink_tool",
+        "Metasploit_tool",
+        "Slipscreen",
+        "Damascened_peacock",
+        "Rustyclaw",
+        "Meltingclaw",
+        "Com_hijacking_technique",
+        "Shadyhammock",
+        "Hellcat",
+        "Danabot",
+        "Sunseed"
+      ],
+      "geo": [
+        "Ukraine",
+        "North korea",
+        "America",
+        "Russian"
+      ],
+      "software": [
+        "Windows Registry",
+        "WordPress",
+        "NGINX",
+        "Ubuntu"
+      ],
+      "algorithms": [
+        "sha1",
+        "base32",
+        "sha256",
+        "aes",
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/10-things-i-hate-about-attribution-romcom-vs-transferloader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "DEVMAN Ransomware: Analysis of New DragonForce Variant",
+      "completeness": "Low",
+      "threats": [
+        "Devman",
+        "Dragonforce_ransomware",
+        "Eldorado_ransomware",
+        "Embargo_ransomware",
+        "Conti",
+        "Shadow_copies_delete_technique",
+        "Netutils"
+      ],
+      "geo": [
+        "Latin america",
+        "Africa",
+        "Asia"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "3",
+        "Registry:",
+        "1",
+        "Hash:",
+        "2"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/devman-ransomware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "CyberSOC Insights: Identification and Tracking of a Black Basta-linked Attack Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Blackbasta",
+        "Darkgate",
+        "Qakbot",
+        "Lumma_stealer",
+        "Email_bombing_technique",
+        "Microsoft_quick_assist_tool",
+        "Screenconnect_tool",
+        "Anydesk_tool",
+        "Process_injection_technique",
+        "Lolbin_technique",
+        "Teamviewer_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft Defender",
+        "curl",
+        "Steam",
+        "Office 365",
+        "Microsoft Defender for Endpoint"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "java",
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.orangecyberdefense.com/global/blog/managed-detection-response/cybersoc-insights-identification-and-tracking-of-a-black-basta-linked-attack-campaign",
+        "https://github.com/D4RK-R4BB1T/BlackBasta-Chats"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "Jasper Sleet: North Korean remote IT workers evolving tactics to infiltrate organizations",
+      "completeness": "Low",
+      "threats": [
+        "Teamviewer_tool",
+        "Anyviewer_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "Korea",
+        "Chinese",
+        "Russian",
+        "Russia",
+        "North korean",
+        "Korean",
+        "Dprk",
+        "China",
+        "North korea"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Telegram",
+        "Faceswap",
+        "Astrill VPN",
+        "Twitter"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/06/30/jasper-sleet-north-korean-remote-it-workers-evolving-tactics-to-infiltrate-organizations/",
+        "https://github.com/ondyari/FaceForensics",
+        "https://github.com/jischell-msft/RemoteManagementMonitoringTools"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "1. Overview",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Babyshark",
+        "Appleseed",
+        "Spear-phishing_technique",
+        "Quasar_rat"
+      ],
+      "geo": [
+        "Asian",
+        "Dutch",
+        "North korea",
+        "Taiwan",
+        "German",
+        "North korean",
+        "Japan",
+        "Switzerland",
+        "Asia",
+        "Koreas",
+        "China",
+        "Germany",
+        "Russia",
+        "Iran",
+        "Korea",
+        "France",
+        "French",
+        "Vietnam",
+        "Korean"
+      ],
+      "software": [
+        "Google Chrome",
+        "curl"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "visual_basic",
+        "autoit",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/suky-castle"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-01",
+      "title": "Phishing Attack Targets Canadian Infrastructure on Canada Day",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Quebec",
+        "Canada",
+        "Canadian"
+      ],
+      "links": [
+        "https://cyberarmor.tech/phishing-attack-targets-canadian-infrastructure-on-canada-day/"
+      ]
+    }
+  }
+]
