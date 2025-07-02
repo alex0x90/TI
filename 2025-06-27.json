@@ -1,0 +1,319 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "In the Wild: Malware Prototype with Embedded Prompt Injection",
+      "completeness": "Medium",
+      "threats": [
+        "Zeus",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "software": [
+        "Openai",
+        "VirtualBox",
+        "QEMU",
+        "Hyper-V",
+        "Linux"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "hasHypervisorCpuFlag",
+        "checkBiosVendor",
+        "checkEnvironmentVmVars",
+        "checkNetworkAdapterMac",
+        "checkVmProcesses"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/ai-evasion-prompt-injection/",
+        "https://github.com/mrexodia/ida-pro-mcp",
+        "https://github.com/atredispartners/aidapal"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "Bluenoroff (APT38) real-time infrastructure tracking",
+      "completeness": "Medium",
+      "threats": [
+        "Flame"
+      ],
+      "geo": [
+        "Bangladesh",
+        "North korean",
+        "Chile",
+        "North korea",
+        "Mexico"
+      ],
+      "software": [
+        "macOS",
+        "WeChat"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "swift",
+        "rust"
+      ],
+      "links": [
+        "https://www.ctfiot.com/258665.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "Case of attack targeting domestic web servers using MeshAgent and SuperShell",
+      "completeness": "Medium",
+      "threats": [
+        "Meshagent_tool",
+        "Supershell",
+        "Wograt",
+        "Tinyshell",
+        "Rekoobe_rootkit",
+        "Ladon_tool",
+        "Fscan_tool",
+        "Chinachopper",
+        "Godzilla_webshell",
+        "Regeorg_tool",
+        "Netstat_tool",
+        "Powerladon_tool",
+        "Sweetpotato_tool",
+        "Wingsofgod",
+        "Wmiexec_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Linux",
+        "Android",
+        "MS-SQL"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88559/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "OneClik: A ClickOnce-Based APT Campaign Targeting Energy, Oil and Gas Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Onecliknet",
+        "Runnerbeacon",
+        "Process_injection_technique",
+        "Cobalt_strike_tool",
+        "Geacon",
+        "Antidebugging_technique",
+        "Grimresource_technique",
+        "Backdoor.win.generic",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Apac"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 11,
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64",
+        "exhibit",
+        "rc4",
+        "aes",
+        "aes-128-cbc"
+      ],
+      "functions": [
+        "GetBytes",
+        "GetFunctionPointerForDelegate",
+        "WriteMemory",
+        "GetDelegateForFunctionPointer",
+        "GetConsoleWindow",
+        "HTTPS"
+      ],
+      "languages": [
+        "golang",
+        "dotnet"
+      ],
+      "links": [
+        "https://www.trellix.com/en-au/blogs/research/oneclik-a-clickonce-based-apt-campaign-targeting-energy-oil-and-gas-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "Behind Scattered Spider: Activity, TTPs, and What to Watch For",
+      "completeness": "Low",
+      "threats": [
+        "Blackcat",
+        "Smishing_technique",
+        "Sim_swapping_technique",
+        "Lolbin_technique",
+        "Ransomhub",
+        "Qilin_ransomware",
+        "Dragonforce_ransomware",
+        "Aitm_technique",
+        "Credential_dumping_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Canada"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 45,
+      "software": [
+        "Twitter"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/who-is-scattered-spider-ransomware-group"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "GIFTEDCROOKs Strategic Pivot: From Browser Stealer to Data Exfiltration Platform During Critical Ukraine Negotiations",
+      "completeness": "High",
+      "threats": [
+        "Giftedcrook",
+        "Spear-phishing_technique",
+        "Netsupportmanager_rat"
+      ],
+      "geo": [
+        "Turkey",
+        "Russia",
+        "Russian",
+        "Ukraine",
+        "Ukrainian",
+        "Donetsk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "LibreOffice",
+        "Chrome",
+        "Firefox",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog-uk/giftedcrooks-strategic-pivot-from-browser-stealer-to-data-exfiltration-platform-during-critical-ukraine-negotiations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "Surge in MOVEit Transfer Scanning Could Signal Emerging Threat Activity",
+      "completeness": "Low",
+      "geo": [
+        "Mexico",
+        "France",
+        "Germany",
+        "United kingdom"
+      ],
+      "software": [
+        "MOVEit"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/surge-moveit-transfer-scanning-activity"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "Sapphire Werewolf refines Amethyst stealer toattack energy companies",
+      "completeness": "Medium",
+      "threats": [
+        "Amethyst",
+        "Dotnet_reactor_tool"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Reactor",
+        "VirtualBox",
+        "Windows service",
+        "Windows Task Scheduler",
+        "Telegram",
+        "Chrome",
+        "Opera",
+        "Orbitum",
+        "Kometa",
+        "Chromium"
+      ],
+      "algorithms": [
+        "base64",
+        "des",
+        "zip"
+      ],
+      "functions": [
+        "Invoke"
+      ],
+      "links": [
+        "https://bi.zone/eng/expertise/blog/kamen-ogranennyy-sapphire-werewolf-ispolzuet-novuyu-versiyu-amethyst-stealer-dlya-atak-na-tek/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-27",
+      "title": "The Birth and Death of LoopyTicket Our Story on CVE-2025-33073",
+      "completeness": "Low",
+      "threats": [
+        "Loopyticket_technique",
+        "Petitpotam_vuln",
+        "Badsuccessor_technique",
+        "Printnightmare_vuln",
+        "Netexec_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "SMB Server",
+        "Twitter"
+      ],
+      "functions": [
+        "WriteProperties"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/the-birth-and-death-of-loopyticket/",
+        "https://github.com/dirkjanm/krbrelayx",
+        "https://github.com/Pennyw0rth/NetExec/pull/718",
+        "https://github.com/C0nd4/krbrelayx"
+      ]
+    }
+  }
+]

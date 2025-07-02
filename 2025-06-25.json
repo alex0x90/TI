@@ -157,5 +157,41 @@
         "https://gist.github.com/saurabhnemade/cf377389d34e8800b48afd505c7834fe"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-25",
+      "title": "Cybercriminals Abuse Open-Source Tools To Target Africas Financial Sector",
+      "completeness": "Medium",
+      "threats": [
+        "Poshc2_tool",
+        "Chisel_tool",
+        "Meshagent_tool"
+      ],
+      "geo": [
+        "Africa"
+      ],
+      "software": [
+        "Component Object Model",
+        "PsExec",
+        "macOS",
+        "Linux",
+        "Android",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/cybercriminals-attack-financial-sector-across-africa/",
+        "https://github.com/Ylianst/MeshAgent",
+        "https://github.com/jpillora/chisel"
+      ]
+    }
   }
 ]
