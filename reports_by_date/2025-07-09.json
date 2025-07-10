@@ -1,0 +1,492 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Anatsa Targets North America; Uses Proven Mobile Campaign Process",
+      "completeness": "Low",
+      "threats": [
+        "Anatsa"
+      ],
+      "geo": [
+        "American",
+        "Canada",
+        "America"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/anatsa-targets-north-america-uses-proven-mobile-campaign-process"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Tracking Scattered Spider Through Identity Attacks and Token Theft",
+      "completeness": "High",
+      "threats": [
+        "Sim_swapping_technique",
+        "Aitm_technique",
+        "Spectre_rat",
+        "Evilginx_tool",
+        "Anydesk_tool",
+        "Lolbin_technique",
+        "Blackcat",
+        "Ransomhub",
+        "Credential_dumping_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "Sysinternals",
+        "HubSpot",
+        "Chromium",
+        "Active Directory",
+        "PsExec"
+      ],
+      "algorithms": [
+        "7zip",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "get_user_folder_paths",
+        "get_config_filename"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/tracking-scattered-spider-through-identity-attacks-and-token-theft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Deploying NetSupport RAT via WordPress & ClickFix",
+      "completeness": "Medium",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique",
+        "Fakecaptcha_technique"
+      ],
+      "geo": [
+        "Moldova"
+      ],
+      "software": [
+        "WordPress",
+        "Curl",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.cybereason.com/blog/net-support-rat-wordpress-clickfix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "BERT Ransomware Group Targets Asia and Europe on Multiple Platforms",
+      "completeness": "High",
+      "threats": [
+        "Bert_ransomware",
+        "Revil",
+        "Babuk",
+        "Conti",
+        "Defendercontrol_tool",
+        "Process_hacker_tool",
+        "Ransom.msil",
+        "Powload",
+        "Ransom.linux"
+      ],
+      "geo": [
+        "Russian",
+        "Asia",
+        "Russia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "Linux",
+        "ESXi",
+        "Windows Defender",
+        "esxcli"
+      ],
+      "algorithms": [
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "Set-NetFirewallProfile"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/g/bert-ransomware-group-targets-asia-and-europe-on-multiple-platforms.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "GoldMelodys Hidden Chords: Initial Access Broker In-Memory IIS Modules Revealed",
+      "completeness": "High",
+      "threats": [
+        "Txportmap_tool",
+        "Godpotato_tool",
+        "Nltest_tool"
+      ],
+      "geo": [
+        "Australia",
+        "India",
+        "Japan",
+        "Middle east",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 14,
+      "software": [
+        "ASP.NET",
+        "Linux",
+        "curl",
+        "ASP.NET and .NET"
+      ],
+      "algorithms": [
+        "gzip",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/initial-access-broker-exploits-leaked-machine-keys/",
+        "https://github.com/NotSoSecure/Blacklist3r/blob/master/MachineKey/AspDotNetWrapper/AspDotNetWrapper/Resource/MachineKeys.txt",
+        "https://github.com/pwntester/ysoserial.net/blob/master/ysoserial/Plugins/ViewStatePlugin.cs",
+        "https://github.com/4dogs-cn/TXPortMap"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Atomic macOS Stealer now includes a backdoor for persistent access",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Spear-phishing_technique",
+        "Traffer_technique",
+        "Allakore_rat",
+        "Lumma_stealer",
+        "Meduza",
+        "Meta_stealer",
+        "Raccoon_stealer",
+        "Redline_stealer",
+        "Stealc",
+        "Vidar_stealer"
+      ],
+      "geo": [
+        "Dprk",
+        "United kingdom",
+        "Russia",
+        "France",
+        "Canada",
+        "North korean",
+        "Italy"
+      ],
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "Ledger Live",
+        "sudo",
+        "curl",
+        "QEMU"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "applescript"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/atomic-macos-stealer-now-includes-a-backdoor-for-persistent-access/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Chinese Threat: NFC-Enabled Fraud in the Philippines Financial Sector",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique",
+        "Panda_shop_tool",
+        "Z-nfc_tool",
+        "X-nfc_tool",
+        "Supercard",
+        "Track2nfc_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Thailand",
+        "Indonesia",
+        "Malaysia",
+        "Taiwan",
+        "Korea",
+        "Hong kong",
+        "Philippines",
+        "Chinese",
+        "Canada",
+        "Mexico",
+        "Indo-pacific",
+        "Singapore",
+        "New zealand",
+        "Philippine",
+        "Australia",
+        "China"
+      ],
+      "software": [
+        "Telegram",
+        "WeChat"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/chinese-threat-nfc-enabled-fraud-in-the-philippines-financial-sector"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "New BUBBAS GATE Malware Advertised on Telegram Boasts SmartScreen and AV/EDR Bypass",
+      "completeness": "Low",
+      "threats": [
+        "Bubbas_gate",
+        "Phemedrone",
+        "Darkgate"
+      ],
+      "software": [
+        "Telegram",
+        "Twitter",
+        "WhatsApp",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://gbhackers.com/new-bubbas-gate-malware-advertised-on-telegram/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Digging Gold with a Spoon Resurgence of Monero-mining Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Coinminer",
+        "Lolbas_technique",
+        "Dosvc"
+      ],
+      "geo": [
+        "Greece",
+        "Azerbaijan",
+        "Uzbekistan",
+        "China",
+        "Russia",
+        "Belgium"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "13",
+        "Domain:",
+        "1",
+        "Path:",
+        "1",
+        "Registry:",
+        "1",
+        "Hash:",
+        "3"
+      ],
+      "software": [
+        "Windows Defender",
+        "Windows Update Service",
+        "Windows Update Medic Service"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero",
+        "ethereum"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.gdatasoftware.com/blog/2025/07/38228-monero-malware-xmrig-resurgence",
+        "https://github.com/xmrig/xmrig"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Millions of people spied on by malicious browser extensions in Chrome and Edge",
+      "completeness": "Low",
+      "software": [
+        "Chrome",
+        "Zoom",
+        "Discord",
+        "TikTok",
+        "Flash Player"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/07/millions-of-people-spied-on-by-malicious-browser-extensions-in-chrome-and-edge"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Mapping Attacks by TEAM FEARLESS",
+      "completeness": "Low",
+      "threats": [
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Ukranian",
+        "Israel",
+        "Ukrainian",
+        "Ukraine",
+        "San francisco",
+        "Palestine",
+        "Israeli",
+        "Vietnam"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 6,
+      "software": [
+        "Twitter",
+        "Telegram"
+      ],
+      "links": [
+        "https://cyberint.com/blog/threat-intelligence/team-fearless/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Detailed Analysis of AiLock Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Ailock"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "algorithms": [
+        "xor",
+        "chacha20",
+        "sha256",
+        "ntruencrypt"
+      ],
+      "functions": [
+        "SystemParameterInfoW"
+      ],
+      "languages": [
+        "c_language"
+      ],
+      "links": [
+        "https://medium.com/s2wblog/detailed-analysis-of-ailock-ransomware-1d3263beff15",
+        "https://github.com/S2W-TALON/Threat-Intelligence-Report/blob/main/250704\\_Detailed%20Analysis%20of%20AiLock%20Ransomware/IoC.md",
+        "https://github.com/S2W-TALON/Threat-Intelligence-Report/blob/main/250704\\_Detailed%20Analysis%20of%20AiLock%20Ransomware/AiLock.yara"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Coinminer attack exploiting GeoServer vulnerability",
+      "completeness": "High",
+      "threats": [
+        "Coinminer",
+        "Spear-phishing_technique",
+        "Goreverse",
+        "Sidewalk",
+        "Mirai",
+        "Condi",
+        "Netcat_tool",
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Korea",
+        "Taiwanese"
+      ],
+      "software": [
+        "GeoServer",
+        "GeoServers",
+        "Linux"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88874/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "Anatsa Banking Trojan Expands to North America via Google Play Dropper Apps",
+      "completeness": "Low",
+      "threats": [
+        "Anatsa"
+      ],
+      "geo": [
+        "American",
+        "Canadian",
+        "Canada",
+        "America"
+      ],
+      "software": [
+        "Google Play",
+        "Android"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/anatsa-banking-trojan-expands-to-north-america-via-google-play-dropper-apps"
+      ]
+    }
+  }
+]

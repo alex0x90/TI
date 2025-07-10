@@ -1,0 +1,67 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "Code highlighting with Cursor AI for $500,000",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Vmdetector",
+        "Quasar_rat",
+        "Purelogs"
+      ],
+      "geo": [
+        "Russia",
+        "Latin america"
+      ],
+      "software": [
+        "Visual Studio Code"
+      ],
+      "languages": [
+        "powershell",
+        "solidity"
+      ],
+      "links": [
+        "https://securelist.com/open-source-package-for-cursor-ai-turned-into-a-crypto-heist/116908/",
+        "https://github.com/eclipse/openvsx/blob/master/server/src/main/java/org/eclipse/openvsx/search/RelevanceService.java"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "macOS.ZuRu Resurfaces \\| Modified Khepri C2 Hides Inside Doctored Termius App",
+      "completeness": "Medium",
+      "threats": [
+        "Zuru",
+        "Khepri",
+        "Termius_tool",
+        "Securecrt_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS"
+      ],
+      "algorithms": [
+        "xor",
+        "md5"
+      ],
+      "functions": [
+        "_writePlistAndStartDaemon",
+        "_copySelfToShare",
+        "_LockManager",
+        "_checkFileAndDownloadIfNeeded",
+        "_startBackgroundProcess",
+        "_decryptData",
+        "runInBackground"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/macos-zuru-resurfaces-modified-khepri-c2-hides-inside-doctored-termius-app/"
+      ]
+    }
+  }
+]

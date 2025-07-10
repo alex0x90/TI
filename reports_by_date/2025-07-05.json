@@ -1,0 +1,387 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "Exploiting Trust: How Signed Drivers Fuel Modern Kernel Level Attacks on Windows",
+      "completeness": "Low",
+      "threats": [
+        "Krbanker",
+        "Fivesys",
+        "Fk_undead",
+        "Lockbit",
+        "Poortry",
+        "Reddriver",
+        "Copperstealer",
+        "Terminator_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Windows Kernel"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/kernel-driver-threats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "XwormRAT distributed using steganography techniques",
+      "completeness": "Low",
+      "threats": [
+        "Xworm_rat",
+        "Steganography_technique",
+        "Formbook"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "replace"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88785/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "XWorm's Shape-Shifting Arsenal: Loader and Stager Variants in the Wild",
+      "completeness": "High",
+      "threats": [
+        "Xworm_rat",
+        "Process_injection_technique",
+        "Supply_chain_technique",
+        "Asyncrat",
+        "Lockbit",
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Empire_loader"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "35",
+        "Command:",
+        "1",
+        "Path:",
+        "1",
+        "Hash:",
+        "9"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "Windows Powershell",
+        "Windows security",
+        "Windows Event Tracing for Windows",
+        "Windows Security Center",
+        "Slack"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "gzip",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "EtwEventWrite",
+        "Win32_VideoController",
+        "RunDisk"
+      ],
+      "languages": [
+        "dotnet",
+        "javascript",
+        "cscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/xworm-shape-shifting-arsenal-detection-evasion.html",
+        "https://github.com/splunk/attack\\_data/",
+        "https://gist.github.com/tccontre/2e4508f7fd308a6d6e64aa56ff5ad50e",
+        "https://github.com/splunk/security\\_content"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "Pro-Russian hacktivism: Shifting alliances, new groups and risks",
+      "completeness": "Low",
+      "threats": [
+        "Ddosia_botnet",
+        "Panicbotnet_tool",
+        "Megamedusa_tool",
+        "Sakura_dropper"
+      ],
+      "geo": [
+        "Lithuania",
+        "Russia",
+        "France",
+        "Ukrainians",
+        "Russians",
+        "Poland",
+        "Russian",
+        "Iranian",
+        "Polish",
+        "Spain",
+        "Iran",
+        "Israeli",
+        "Ukraine",
+        "Ukrainian",
+        "Israel"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://intel471.com/blog/pro-russian-hacktivism-shifting-alliances-new-groups-and-risks",
+        "https://github.com/TrashDono/MegaMedusa"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "From .pth to p0wned: Abuse of Pickle Files in AI Model Supply Chains",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Vshell",
+        "Cobalt_strike_tool",
+        "Metasploit_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 7,
+      "software": [
+        "Unix",
+        "torch",
+        "Hugging Face",
+        "curl",
+        "Linux",
+        "macOS"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/from-pth-to-p0wned-abuse-of-pickle-files-in-ai-model-supply-chains/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "Scattered Spider: Rapid7 Insights, Observations, and Recommendations",
+      "completeness": "Low",
+      "threats": [
+        "Sim_swapping_technique",
+        "Teleport_tool",
+        "Byovd_technique",
+        "Blackcat",
+        "Mfa_bombing_technique",
+        "Teamviewer_tool",
+        "Screenconnect_tool",
+        "Splashtop_tool",
+        "Anydesk_tool",
+        "Ngrok_tool",
+        "Fleetdeck_tool",
+        "Psexec_tool",
+        "Credential_dumping_technique",
+        "Lolbin_technique",
+        "Mimikatz_tool",
+        "Stonestop",
+        "Poortry",
+        "Dragonforce_ransomware"
+      ],
+      "ttp_list": [
+        "Soft: Windows Remote Desktop",
+        "psexec"
+      ],
+      "software": [
+        "- forgerock access_management (<6.5.4)     - forgerock openam (<14.6.3)"
+      ],
+      "functions": [
+        "AWS"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/scattered-spider-rapid7-insights-observations-and-recommendations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "When Installers Turn Evil: The Pascal Script Behind Inno Setup Malware Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Shellcodeloader",
+        "Dll_sideloading_technique",
+        "Hijackloader",
+        "Redline_stealer",
+        "D3fack",
+        "Lumma_stealer",
+        "Raccoon_stealer",
+        "Remcos_rat",
+        "Amadey",
+        "Heavens_gate_technique",
+        "Process_hollowing_technique",
+        "Plugx_rat",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "22",
+        "Path:",
+        "5",
+        "Hash:",
+        "4",
+        "Url:",
+        "1",
+        "Command:",
+        "2"
+      ],
+      "software": [
+        "Chrome",
+        "Internet Explorer",
+        "chromium",
+        "Opera",
+        "Vivaldi",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Slack"
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "lznt1"
+      ],
+      "functions": [
+        "TaskContent",
+        "TaskName"
+      ],
+      "languages": [
+        "pascal"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/inno-setup-malware-redline-stealer-campaign.html",
+        "https://github.com/splunk/security\\_content",
+        "https://github.com/splunk/attack\\_data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "Phishing Attack : Deploying Malware on Indian Defense BOSS Linux",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 15,
+      "software": [
+        "Linux",
+        "Systemd",
+        "LibreOffice",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "setKeepAlive",
+        "setKeepAlivePeriod"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/phishing-attack-deploying-malware-on-indian-defense-boss-linux/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "Weekly Threat Infrastructure Investigation(Week26)",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Supershell",
+        "Netsupportmanager_rat",
+        "Mythic_c2",
+        "Brc4_tool",
+        "Plugx_rat"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "links": [
+        "https://disconinja.hatenablog.com/entry/2025/07/05/161657"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-05",
+      "title": "Who are DragonForce Ransomware Group?",
+      "completeness": "Medium",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Credential_dumping_technique",
+        "Lockbit",
+        "Conti",
+        "Spear-phishing_technique",
+        "Log4shell_vuln",
+        "Systembc",
+        "Cobalt_strike_tool",
+        "Babuk",
+        "Shadow_copies_delete_technique",
+        "Mimikatz_tool",
+        "Adfind_tool"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 23,
+      "software": [
+        "Active Directory",
+        "Ivanti",
+        "PsExec"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.bridewell.com/insights/blogs/detail/who-are-dragonforce-ransomware-group"
+      ]
+    }
+  }
+]

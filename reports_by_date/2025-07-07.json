@@ -1,0 +1,158 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-07",
+      "title": "HOUKEN. SEEKING A PATH BY LIVING ON THE EDGE WITH ZERO-DAYS",
+      "completeness": "High",
+      "threats": [
+        "Goreverse",
+        "Netcat_tool",
+        "Residential_proxy_technique",
+        "Behinder",
+        "Neo-regeorg_tool",
+        "Chinachopper",
+        "Proxylogon_exploit",
+        "Interactsh_tool",
+        "Landesk_tool",
+        "Screenconnect_tool",
+        "Vshell",
+        "Fscan_tool",
+        "Nmap_tool",
+        "Netspy",
+        "Ettercap_tool",
+        "Iox_tool",
+        "Earthworm_tool",
+        "Gohtran_tool",
+        "Reversesocks5_tool",
+        "Reversessh_tool",
+        "Spark_rat"
+      ],
+      "geo": [
+        "Indonesia",
+        "French",
+        "Hong kong",
+        "Vietnam",
+        "France",
+        "Thailand",
+        "Chinese",
+        "America",
+        "Asia",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ivanti",
+        "PostgreSQL",
+        "BIG-IP",
+        "sudo",
+        "curl",
+        "Microsoft Exchange Server",
+        "ASP.NET",
+        "Linux",
+        "Android"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2025-CTI-009.pdf",
+        "https://github.com/NHAS/reverse\\_ssh",
+        "https://github.com/L-codes/Neo-reGeorg",
+        "https://github.com/rebeyond/Behinder"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-07",
+      "title": "Datacarry Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Datacarry",
+        "Chisel_tool",
+        "Conti"
+      ],
+      "geo": [
+        "Turkey",
+        "United kingdom",
+        "Morocco",
+        "Belgium",
+        "Denmark",
+        "Lithuania",
+        "South africa",
+        "Italy",
+        "Greece",
+        "Switzerland",
+        "Spain"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 6,
+      "software": [
+        "Windows firewall",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ccitic.org/assets/reports/CCITIC_Report_TLP-White_DATACARRY.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-07",
+      "title": "Batavia spyware steals data from Russian organizations",
+      "completeness": "Medium",
+      "threats": [
+        "Batavia",
+        "Uac_bypass_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1005",
+        "T1027",
+        "T1041",
+        "T1059.003",
+        "T1059.005",
+        "T1074.001",
+        "T1105",
+        "T1112",
+        "T1113",
+        "T1518.001",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "Navigate",
+        "Run"
+      ],
+      "languages": [
+        "delphi",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/batavia-spyware-steals-data-from-russian-organizations/116866/"
+      ]
+    }
+  }
+]

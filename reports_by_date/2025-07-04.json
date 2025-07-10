@@ -1,0 +1,545 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Threat Actors Recompile SonicWall's NetExtender to Include SilentRoute Backdoor",
+      "completeness": "Low",
+      "threats": [
+        "Silentroute"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/threat-actors-recompile-sonicwalls-netextender-to-include-silentroute-backdoor",
+        "https://github.com/esentire/iocs/blob/main/SilentRoute/SilentRoute-IoCs-06-25-2025.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "8 More Malicious Firefox Extensions: Exploiting Popular Game Recognition, Hijacking User Sessions, and Stealing OAuth Credentials",
+      "completeness": "Medium",
+      "threats": [
+        "Shell_shockers",
+        "Credential_harvesting_technique",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "Belgium",
+        "Netherlands"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "9",
+        "Url:",
+        "3",
+        "Domain:",
+        "3"
+      ],
+      "software": [
+        "Firefox"
+      ],
+      "links": [
+        "https://socket.dev/blog/8-more-malicious-firefox-extensions"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "CrowdStrike Services Observes SCATTERED SPIDER Escalate Attacks Across Industries",
+      "completeness": "Low",
+      "threats": [
+        "Ad_explorer_tool",
+        "Adrecon_tool",
+        "Chisel_tool",
+        "Mobaxterm_tool",
+        "Ngrok_tool",
+        "Teleport_tool",
+        "Sim_swapping_technique",
+        "Teamviewer_tool",
+        "Anydesk_tool"
+      ],
+      "software": [
+        "Active Directory",
+        "Rsocx",
+        "S3 Browser",
+        "ESXi",
+        "Microsoft Defender",
+        "Confluence"
+      ],
+      "functions": [
+        "Get-ADUser"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/crowdstrike-services-observes-scattered-spider-escalate-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Hpingbot: A New Botnet Family Based on Pastebin Payload Delivery Chain and Hping3 DDoS Module",
+      "completeness": "High",
+      "threats": [
+        "Hpingbot",
+        "Hping3_tool",
+        "Mirai",
+        "Bashlite",
+        "Sysvinit_tool",
+        "Ackflood_technique",
+        "Tcpflood_technique",
+        "Synflood_technique",
+        "Udpflood_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Turkey",
+        "German"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 14,
+      "software": [
+        "Unix",
+        "Systemd",
+        "curl"
+      ],
+      "links": [
+        "https://nsfocusglobal.com/hpingbot-a-new-botnet-family-based-on-pastebin-payload-delivery-chain-and-hping3-ddos-module/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Gamaredon in 2024: Cranking out spearphishing campaigns against Ukraine with an evolved toolset",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Pterographin",
+        "Pteropsdoor",
+        "Pterodoc",
+        "Pterotemplate",
+        "Smuggling_technique",
+        "Pterosand",
+        "Pteropsload",
+        "Pterolnk",
+        "Pterotickle",
+        "Pterocdrop",
+        "Pterogram",
+        "Pterorisk",
+        "Pteropshell",
+        "Pterovdoor",
+        "Pterovload",
+        "Pteroscout",
+        "Pterox",
+        "Pteroscreen",
+        "Pterosig",
+        "Pterosocks",
+        "Pterosteal",
+        "Pterodespair",
+        "Pteroquark",
+        "Pterostew",
+        "Pterodash",
+        "Pterobox",
+        "Ngrok_tool",
+        "Fastflux_technique",
+        "Litterdrifter",
+        "Pteropsddoor",
+        "Junk_code_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian federation",
+        "Ukraine",
+        "Ukrainian",
+        "Russian",
+        "Crimea"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 67,
+      "software": [
+        "Windows registry",
+        "trycloudflare",
+        "curl",
+        "Telegram",
+        "PyInstaller",
+        "Microsoft Excel",
+        "Unix",
+        "Dropbox",
+        "Microsoft Word",
+        "Windows Explorer",
+        "have more..."
+      ],
+      "algorithms": [
+        "3des",
+        "base64",
+        "zip",
+        "md5",
+        "des",
+        "exhibit",
+        "xor"
+      ],
+      "functions": [
+        "getHttp",
+        "Get-WmiObject",
+        "createICIs",
+        "createAccount",
+        "createPage",
+        "getPage",
+        "Dropbox",
+        "attendtkq",
+        "xlonglet",
+        "CreateObject",
+        "have more..."
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "python",
+        "jscript",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://web-assets.esetstatic.com/wls/en/papers/white-papers/gamaredon-in-2024.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "From open source to open threat: Tracking Chaos RATs evolution",
+      "completeness": "Medium",
+      "threats": [
+        "Chaos_rat",
+        "Cobalt_strike_tool",
+        "Sliver_c2_tool",
+        "Chaos_ransomware",
+        "Njrat",
+        "Quasar_rat",
+        "Asyncrat",
+        "Pupy_rat"
+      ],
+      "geo": [
+        "Portuguese",
+        "Brazil",
+        "French",
+        "Italian",
+        "India",
+        "Spanish",
+        "Japanese",
+        "Spain"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "task scheduler",
+        "macOS",
+        "Ubuntu"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "ReadDir"
+      ],
+      "languages": [
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://www.acronis.com/en-us/tru/posts/from-open-source-to-open-threat-tracking-chaos-rats-evolution/",
+        "https://github.com/kbinani/screenshot"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "RondoDox Unveiled: Breaking Down a New Botnet Threat",
+      "completeness": "Low",
+      "threats": [
+        "Rondodox",
+        "Xmrig_miner",
+        "Netstat_tool",
+        "Netcat_tool",
+        "Mirai",
+        "Bashlite",
+        "Redtail"
+      ],
+      "software": [
+        "Linux",
+        "crontab",
+        "curl",
+        "Roblox",
+        "Fortnite",
+        "Discord",
+        "WireGuard"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/rondobox-unveiled-breaking-down-a-botnet-threat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Apache Under the Lens: Tomcats Partial PUT and Camels Header Hijack",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Apache Tomcat"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/apache-cve-2025-24813-cve-2025-27636-cve-2025-29891/",
+        "https://github.com/apache/tomcat",
+        "https://github.com/projectdiscovery/nuclei-templates/",
+        "https://github.com/apache/camel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Janela RAT and a stealer extension delivered together",
+      "completeness": "Medium",
+      "threats": [
+        "Janela_rat",
+        "Terminator_tool",
+        "Dotnet_reactor_tool",
+        "Eziriz_tool"
+      ],
+      "geo": [
+        "Latam"
+      ],
+      "software": [
+        "Chromium",
+        "chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "deflate"
+      ],
+      "functions": [
+        "Remove-Item",
+        "loadConfig",
+        "collectReresh",
+        "Date"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/janela-rat-and-a-stealer-extension-delivered-together-e274469a7df8?source=rss-36e34fe15919------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Amos hiding in GitHub",
+      "completeness": "Low",
+      "threats": [
+        "Amos_stealer"
+      ],
+      "software": [
+        "QEMU",
+        "Ledger Live",
+        "LEDGER-LIVE"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "getUsernameParam"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/amos-hiding-in-github-199eabea6605?source=rss-36e34fe15919------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Shadow Vector targets Colombian users via privilege escalation and court-themed SVG decoys",
+      "completeness": "High",
+      "threats": [
+        "Asyncrat",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Katz_loader",
+        "Uac_bypass_technique",
+        "Process_injection_technique",
+        "Smuggling_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Process_hollowing_technique",
+        "Killproxy_tool",
+        "Anydesk_tool",
+        "Remcos_rat",
+        "Zemana_tool",
+        "Icarus",
+        "Putty_tool"
+      ],
+      "geo": [
+        "Spanish",
+        "Colombia",
+        "French",
+        "Brazilian",
+        "Latin american",
+        "Japanese",
+        "Portuguese",
+        "Brazil",
+        "Spain",
+        "Latin america",
+        "Colombian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Discord",
+        "VirtualBox",
+        "Ledger_Live",
+        "Chrome"
+      ],
+      "wallets": [
+        "ergo_wallet",
+        "exodus_wallet",
+        "coinomi",
+        "bitcoincore"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "sha256",
+        "zip",
+        "xor",
+        "aes"
+      ],
+      "functions": [
+        "BrotliEncoderCreateInstance",
+        "Windows",
+        "ProcessStartInfo",
+        "SetWindowsHookEx",
+        "HookCallback",
+        "Plugins"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.acronis.com/en-us/tru/posts/shadow-vector-targets-colombian-users-via-privilege-escalation-and-court-themed-svg-decoys/",
+        "https://github.com/Securityinbits/AsyncRAT-Analysis/blob/main/CyberChef\\_Recipe.md",
+        "https://github.com/Neo23x0/signature-base/blob/master/yara/mal\\_katz\\_stealer.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Introduction",
+      "completeness": "Low",
+      "threats": [
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TeamCity",
+        "JetBrains",
+        "Jenkins",
+        "Selenium",
+        "Apache Tomcat",
+        "curl",
+        "systemd",
+        "sudo",
+        "Linux",
+        "crontab",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "functions": [
+        "exec",
+        "CreateString",
+        "add_to_startup"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/exposed-jdwp-exploited-in-the-wild",
+        "https://github.com/IOActive/jdwp-shellifier"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "Malvertising Campaign Delivers Oyster/Broomstick Backdoor via SEO Poisoning and Trojanized Tools",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Oyster",
+        "Putty_tool"
+      ],
+      "software": [
+        "WinSCP"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/malvertising-campaign-delivers-oyster-broomstick-backdoor-via-seo-poisoning-trojanized-tools/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-04",
+      "title": "How Much More Must We Bleed? - Citrix NetScaler Memory Disclosure (CitrixBleed 2 CVE-2025-5777)",
+      "completeness": "Low",
+      "threats": [
+        "Citrix_bleed_vuln"
+      ],
+      "software": [
+        "ChatGPT",
+        "Bindiff"
+      ],
+      "functions": [
+        "ReadOnly"
+      ],
+      "languages": [
+        "c_language"
+      ],
+      "links": [
+        "https://labs.watchtowr.com/how-much-more-must-we-bleed-citrix-netscaler-memory-disclosure-citrixbleed-2-cve-2025-5777/"
+      ]
+    }
+  }
+]

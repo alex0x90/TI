@@ -1,0 +1,275 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "Taking SHELLTER: a commercial evasion framework abused in-the-wild",
+      "completeness": "High",
+      "threats": [
+        "Shellter_tool",
+        "Seth_locker",
+        "Junk_code_technique",
+        "Polymorphism_technique",
+        "Rhadamanthys",
+        "Lumma_stealer",
+        "Procmon_tool",
+        "Sectop_rat",
+        "Sandbox_evasion_technique",
+        "Amsi_bypass_technique",
+        "Ghostpulse"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Component Object Model",
+        "Active Template Library"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-128",
+        "cbc",
+        "xor",
+        "lznt1",
+        "sha256"
+      ],
+      "functions": [
+        "GetCurrentDirectoryA"
+      ],
+      "links": [
+        "http://www.elastic.co/security-labs/taking-shellter",
+        "https://github.com/elastic/protections-artifacts/blob/ff154ddf0762a4a030c8832eee7753cb19b950ff/behavior/rules/windows/defense\\_evasion\\_shellcode\\_from\\_unusual\\_microsoft\\_signed\\_module.toml",
+        "https://github.com/elastic/protections-artifacts/blob/ff154ddf0762a4a030c8832eee7753cb19b950ff/behavior/rules/windows/defense\\_evasion\\_unbacked\\_shellcode\\_from\\_unsigned\\_module.toml",
+        "https://github.com/elastic/labs-releases/tree/main/tools/shellter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "Exclusive disclosure of the attack activities of the APT group NightEagle",
+      "completeness": "Low",
+      "threats": [
+        "Chisel_tool",
+        "Regeorg_tool"
+      ],
+      "geo": [
+        "Malaysia",
+        "Netherlands",
+        "America",
+        "China"
+      ],
+      "software": [
+        "Slack",
+        "ASP.NET"
+      ],
+      "links": [
+        "https://raw.githubusercontent.com/RedDrip7/NightEagle_Disclose/36d0366a5d8d4cb2ee95b0276d0f5690e13e3f6e/Exclusive%20disclosure%20of%20the%20attack%20activities%20of%20the%20APT%20group%20NightEagle.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "Technical Analysis of Ducex: Packer of Triada Android Malware",
+      "completeness": "Low",
+      "threats": [
+        "Ducex_tool",
+        "Triada_trojan",
+        "Unicorn_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "Apktool"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "sha256",
+        "md5",
+        "xor",
+        "sha1",
+        "rc4"
+      ],
+      "functions": [
+        "attachBaseContext",
+        "onCreate",
+        "bytearray",
+        "init",
+        "dl"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/ducex-packer-analysis/",
+        "https://github.com/iBotPeaches/Apktool",
+        "https://github.com/skylot/jadx"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "Malicious pull request infects VS Code extension",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Pandora"
+      ],
+      "software": [
+        "ETHcode",
+        "XZ Utils",
+        "Visual Studio",
+        "Node.js"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/malicious-pull-request-infects-vscode-extension",
+        "https://github.com/orgs/7finney/",
+        "https://github.com/7finney/ethcode/commits/master/",
+        "https://github.com/7finney/ethcode/pull/322"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "Heavy metal: the new Telemancon group attacks industrial organizations",
+      "completeness": "High",
+      "threats": [
+        "Tmcdropper",
+        "Tmcshell",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "48",
+        "Hash:",
+        "149",
+        "Domain:",
+        "2",
+        "Registry:",
+        "5",
+        "Command:",
+        "2",
+        "IP:",
+        "18",
+        "Url:",
+        "18"
+      ],
+      "algorithms": [
+        "aes-256",
+        "md5",
+        "sha256",
+        "sha1",
+        "cbc",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/telemancon/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "NordDragonScan: Quiet Data-Harvester on Windows",
+      "completeness": "Low",
+      "threats": [
+        "Norddragonscan"
+      ],
+      "geo": [
+        "Ukrainian"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "LNK"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/norddragonscan-quiet-data-harvester-on-windows"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "Introduction",
+      "completeness": "Low",
+      "threats": [
+        "Filefix_technique",
+        "Clickfix_technique",
+        "Motw_bypass_technique"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "jscript"
+      ],
+      "links": [
+        "http://mrd0x.com/filefix-part-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-08",
+      "title": "Analysis of HappyDoor backdoor attack based on VMP strong shell of APT-C-55 (Kimsuky) organization",
+      "completeness": "Medium",
+      "threats": [
+        "Happydoor",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "North korea",
+        "Korea",
+        "Korean",
+        "Russia"
+      ],
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/260600.html"
+      ]
+    }
+  }
+]
