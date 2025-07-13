@@ -1,0 +1,234 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-12",
+      "title": "Weekly Threat Infrastructure Investigation(Week27)",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Brc4_tool",
+        "Sliver_c2_tool",
+        "Plugx_rat",
+        "Netsupportmanager_rat"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "links": [
+        "https://disconinja.hatenablog.com/entry/2025/07/12/161448"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-12",
+      "title": "Evolving Tactics of SLOW#TEMPEST: A Deep Dive Into Advanced Malware Techniques",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Unicorn_tool"
+      ],
+      "geo": [
+        "Japan",
+        "Middle east",
+        "Australia",
+        "India",
+        "Asia"
+      ],
+      "software": [
+        "DingTalk"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/slow-tempest-malware-obfuscation/",
+        "https://github.com/PaloAltoNetworks/Unit42-Threat-Intelligence-Article-Information/blob/main/emu\\_call\\_rax\\_idapython.py",
+        "https://github.com/PaloAltoNetworks/Unit42-Threat-Intelligence-Article-Information/blob/main/emu\\_jmp\\_rax\\_idapython.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-12",
+      "title": "Phishing Attack Targets Canadian Infrastructure on Canada Day",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Canada",
+        "Canadian",
+        "Quebec"
+      ],
+      "links": [
+        "https://blog.cyberarmor.tech/phishing-attack-targets-canadian-infrastructure-on-canada-day/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-12",
+      "title": "OCTALYN STEALER UNMASKED",
+      "completeness": "High",
+      "threats": [
+        "Octalyn"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 18,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Windows shell",
+        "winlogon",
+        "Windows Registry",
+        "Instagram",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "litecoin",
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "delphi"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/octalyn-stealer-unmasked/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-12",
+      "title": "BlackSuit: A Hybrid Approach with Data Exfiltration and Encryption",
+      "completeness": "High",
+      "threats": [
+        "Blacksuit_ransomware",
+        "Royal_ransomware",
+        "Cobalt_strike_tool",
+        "Rclone_tool",
+        "Conti",
+        "Vssadmin_tool",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Crebandit_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "psexec",
+        "TOR browser"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Procedure",
+        "CreateMutex"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cybereason.com/blog/blacksuit-data-exfil"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-12",
+      "title": "Threat Insight: Cybercriminals Abusing Vercel to Deliver Remote Access Malware",
+      "completeness": "Low",
+      "threats": [
+        "Logmein_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "links": [
+        "https://blog.cyberarmor.tech/threat-insight-cybercriminals-abusing-vercel-to-deliver-remote-access-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-12",
+      "title": "Crypto Wallets Continue to be Drained in Elaborate Social Media Scam",
+      "completeness": "High",
+      "threats": [
+        "Meeten",
+        "Realst",
+        "Amos_stealer",
+        "Traffer_technique",
+        "Rclone_tool",
+        "Nmap_tool",
+        "Akira_ransomware",
+        "Sim_swapping_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Africa",
+        "Emea",
+        "Italian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "macOS",
+        "Telegram",
+        "Discord",
+        "Electron",
+        "QEMU",
+        "Office365",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "objective_c",
+        "swift",
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/crypto-wallets-continue-to-be-drained-in-elaborate-social-media-scam"
+      ]
+    }
+  }
+]

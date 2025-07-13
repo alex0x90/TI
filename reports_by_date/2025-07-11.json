@@ -1,0 +1,55 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-11",
+      "title": "Mahacao (APT-Q-36) commits a stealing operation by counterfeiting university domain names",
+      "completeness": "Medium",
+      "threats": [
+        "Protego",
+        "Quasar_rat",
+        "Santarat"
+      ],
+      "geo": [
+        "Asia",
+        "Asian"
+      ],
+      "software": [
+        "Android",
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "php",
+        "c_language",
+        "rust"
+      ],
+      "links": [
+        "https://www.ctfiot.com/261089.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-11",
+      "title": "Pre-Auth SQL Injection to RCE - Fortinet FortiWeb Fabric Connector (CVE-2025-25257)",
+      "completeness": "Low",
+      "software": [
+        "MySQL"
+      ],
+      "functions": [
+        "SetHandler",
+        "UNHEX"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://labs.watchtowr.com/pre-auth-sql-injection-to-rce-fortinet-fortiweb-fabric-connector-cve-2025-25257/",
+        "https://github.com/watchtowrlabs/watchTowr-vs-FortiWeb-CVE-2025-25257?ref=labs.watchtowr.com"
+      ]
+    }
+  }
+]

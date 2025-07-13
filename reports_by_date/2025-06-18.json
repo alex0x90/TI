@@ -1065,5 +1065,104 @@
         "https://github.com/Fahrj/reverse-ssh"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Filch Stealer: A new infostealer leveraging old techniques",
+      "completeness": "High",
+      "threats": [
+        "Filch_stealer",
+        "Process_hollowing_technique",
+        "Clickfix_technique",
+        "Fakecaptcha_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 15,
+      "software": [
+        "TradingView",
+        "Windows Defender",
+        "Chrome"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "ledgerlive",
+        "exodus_wallet",
+        "keplr",
+        "bybit",
+        "solflare_wallet",
+        "bitget_wallet",
+        "auro_wallet",
+        "coin98",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/filch-stealer-a-new-infostealer-leveraging-old-techniques/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-18",
+      "title": "Your Mobile App, Their Playground: The Dark side of the Virtualization",
+      "completeness": "Medium",
+      "threats": [
+        "Godfather",
+        "Fjordphantom",
+        "Process_injection_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "America",
+        "Turkey",
+        "United kingdom",
+        "Spain",
+        "France",
+        "Canada",
+        "Italy",
+        "Germany",
+        "Turkish"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 12,
+      "software": [
+        "Android",
+        "Google play",
+        "Telegram"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "build",
+        "getEnabledAccessibilityServiceList",
+        "getEnabledAccessilibityServiceList",
+        "setDuration"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://zimperium.com/blog/your-mobile-app-their-playground-the-dark-side-of-the-virtualization",
+        "https://github.com/rovo89/XposedBridge",
+        "https://github.com/asLody/VirtualApp/tree/master",
+        "https://github.com/rovo89/XposedInstaller"
+      ]
+    }
   }
 ]

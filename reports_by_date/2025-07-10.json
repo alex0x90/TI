@@ -63,5 +63,245 @@
         "https://www.sentinelone.com/blog/macos-zuru-resurfaces-modified-khepri-c2-hides-inside-doctored-termius-app/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "SafePay ransomware: The fast-rising threat targeting MSPs",
+      "completeness": "High",
+      "threats": [
+        "Safepay",
+        "Lockbit",
+        "Shadow_copies_delete_technique",
+        "Lolbin_technique",
+        "Blackbyte",
+        "Sharefinder_tool",
+        "Emotet",
+        "Conti",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Azerbaijani",
+        "Armenia",
+        "Georgian",
+        "Ukrainian",
+        "Belarusian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "firefox",
+        "onenote",
+        "outlook",
+        "steam",
+        "thebat",
+        "wordpad",
+        "msexchange",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "rsa-aes",
+        "aes",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Windows",
+        "SetVolumeMountPoint",
+        "FindFirstFile",
+        "FindNextFile"
+      ],
+      "links": [
+        "https://www.acronis.com/en-us/tru/posts/safepay-ransomware-the-fast-rising-threat-targeting-msps/",
+        "https://github.com/darkoperator/Veil-PowerView/blob/master/PowerView/functions/Invoke-ShareFinder.ps1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "RENDERSHOCK: WEAPONIZING TRUST IN FILE RENDERING PIPELINES",
+      "completeness": "Medium",
+      "threats": [
+        "Rendershock_technique",
+        "Clipboard_injection_technique",
+        "Polyglot_technique",
+        "Motw_bypass_technique",
+        "Passthehash_technique",
+        "Ntlmrelayx_tool",
+        "Dns_tunneling_technique",
+        "Aitm_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 14,
+      "software": [
+        "Windows Explorer",
+        "macOS",
+        "Outlook",
+        "Windows Search Indexer",
+        "Dropbox",
+        "sudo",
+        "Linux",
+        "SMB server",
+        "Windows File Explorer",
+        "Windows Search",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "FPDF",
+        "Workbook_Open",
+        "Chr",
+        "split",
+        "SMB"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/rendershock-weaponizing-trust-in-file-rendering-pipelines/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "Dark Web Profile: Arkana Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Arkana",
+        "Qilin_ransomware",
+        "Ransomhub",
+        "Shinyhunters",
+        "Anydesk_tool",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "United",
+        "kingdom"
+      ],
+      "software": [
+        "PsExec"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-arkana-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "GitHub Abused to Spread Malware Disguised as Free VPN",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "French"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "algorithms": [
+        "sha256",
+        "zip",
+        "exhibit",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "GetBase64String",
+        "SinCosMath",
+        "GetLocalError",
+        "GetMarked",
+        "GetGameData",
+        "NtCreateThreadEx"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/github-abused-to-spread-malware-disguised-as-free-vpn/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "Wing FTP Server Remote Code Execution (CVE-2025-47812) Exploited in the Wild",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Trojan:win32/ceprolad.a"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "Microsoft Defender",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "hx"
+      ],
+      "languages": [
+        "powershell",
+        "lua",
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/wing-ftp-server-remote-code-execution-cve-2025-47812-exploited-in-wild",
+        "https://github.com/huntresslabs/threat-intel/blob/main/2025/2025-07/WingFTP\\_CVE-2025-47812/sigma/windows\\_susp\\_command\\_shell\\_from\\_wingftp\\_process.yml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-10",
+      "title": "Where Everybody Knows Your Name: Observing Malice-Complicit Nameservers",
+      "completeness": "Low",
+      "threats": [
+        "Fastflux_technique",
+        "Hyperion_tool"
+      ],
+      "geo": [
+        "Indonesian",
+        "Russia",
+        "Turkish",
+        "Russian"
+      ],
+      "software": [
+        "Nginx"
+      ],
+      "wallets": [
+        "coinbase",
+        "metamask",
+        "trezor",
+        "tron",
+        "rabby",
+        "safepal"
+      ],
+      "crypto": [
+        "uniswap",
+        "ethereum"
+      ],
+      "links": [
+        "https://dti.domaintools.com/where-everybody-knows-your-name-observing-malice-complicit-nameservers/"
+      ]
+    }
   }
 ]

@@ -488,5 +488,81 @@
         "https://www.secureblink.com/cyber-security-news/anatsa-banking-trojan-expands-to-north-america-via-google-play-dropper-apps"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "ClickFix Chaos: A Deep Dive into Rhadamanthys Infostealer s Stealth and Steal Tactics",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Rhadamanthys",
+        "Typosquatting_technique",
+        "Process_injection_technique",
+        "Teamviewer_tool",
+        "Securecrt_tool",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 2,
+      "software": [
+        "WinDump",
+        "Authy",
+        "KeePass",
+        "Pidgin",
+        "Discord",
+        "Telegram",
+        "Steam"
+      ],
+      "wallets": [
+        "metamask",
+        "electrum"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://darkatlas.io/blog/clickfix-chaos-a-deep-dive-into-rhadamanthys-infostealers-stealth-and-steal-tactics"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-09",
+      "title": "From Click to Compromise: Unveiling the Sophisticated Attack of DoNot APT Group on Southern European Government Entities",
+      "completeness": "High",
+      "threats": [
+        "Yty",
+        "Spear-phishing_technique",
+        "Loptikmod",
+        "Api_obfuscation_technique",
+        "Fragtor"
+      ],
+      "geo": [
+        "Bangladesh",
+        "Italy",
+        "Italian",
+        "India",
+        "Asian",
+        "Asia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 10,
+      "software": [
+        "Gmail",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/from-click-to-compromise-unveiling-the-sophisticated-attack-of-donot-apt-group-on-southern-european-government-entities/"
+      ]
+    }
   }
 ]

@@ -1,0 +1,98 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-13",
+      "title": "Likely Belarus-Nexus Threat Actor Delivers Downloader to Poland",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Belarus",
+        "Germany",
+        "Lithuania",
+        "Poland",
+        "Latvia",
+        "Ukraine"
+      ],
+      "software": [
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "sha2",
+        "zip"
+      ],
+      "functions": [
+        "Click"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/Belarus-nexus_Threat_Actor_Target_Poland/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-13",
+      "title": "Ransomware Delivered Through GitHub: A PowerShell-Powered Attack",
+      "completeness": "Low",
+      "threats": [
+        "Powershell_ransomware"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "cbc",
+        "aes"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.sonicwall.com/blog/ransomware-delivered-through-github-a-powershell-powered-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-13",
+      "title": "PerfektBlue - critical vulnerabilities in OpenSynergy Blue SDK",
+      "completeness": "Low",
+      "threats": [
+        "Perfektblue_technique",
+        "Supply_chain_technique"
+      ],
+      "functions": [
+        "Function"
+      ],
+      "links": [
+        "https://pcacybersecurity.com/resources/advisory/perfekt-blue"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-13",
+      "title": "GreyNoise Identifies New Scraper Botnet Concentrated in Taiwan",
+      "completeness": "Low",
+      "threats": [
+        "Hello-world_scraper_botnet"
+      ],
+      "geo": [
+        "United kingdom",
+        "Bulgaria",
+        "Taiwanese",
+        "Taiwan",
+        "Japan",
+        "France"
+      ],
+      "software": [
+        "Slack"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/new-scraper-botnet-concentrated-in-taiwan",
+        "https://github.com/GreyNoise-Intelligence/gn-research-supplemental-data/tree/main/2025-07-09-hello-world-botnet-ips"
+      ]
+    }
+  }
+]

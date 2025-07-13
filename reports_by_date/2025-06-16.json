@@ -84,5 +84,38 @@
         "https://github.com/cert-orangecyberdefense/cti/tree/main/sorillus"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-16",
+      "title": "Dissecting a Python Ransomware Distributed Through GitHub Repositories",
+      "completeness": "Medium",
+      "threats": [
+        "Uac_bypass_technique",
+        "Lockbit",
+        "Shadow_copies_delete_technique"
+      ],
+      "software": [
+        "PyInstaller",
+        "Windows registry",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "encrypt_files",
+        "encrypt_file"
+      ],
+      "languages": [
+        "python",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.tinextacyber.com/wp-content/uploads/2025/06/Dissecting-a-Python-Ransomware-distributed-through-GitHub-repositories-1.pdf"
+      ]
+    }
   }
 ]
