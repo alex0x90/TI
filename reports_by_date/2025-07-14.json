@@ -1,0 +1,229 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-14",
+      "title": "KongTuke FileFix Leads to New Interlock RAT Variant",
+      "completeness": "Medium",
+      "threats": [
+        "Interlockrat",
+        "Kongtuke",
+        "Filefix_technique",
+        "Interlock",
+        "Nodesnake"
+      ],
+      "software": [
+        "Node.js",
+        "trycloudflare",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "Write-Output"
+      ],
+      "languages": [
+        "python",
+        "php",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant/",
+        "https://github.com/The-DFIR-Report/scripts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-14",
+      "title": "Forensic journey: Breaking down the UserAssist artifact structure",
+      "completeness": "Low",
+      "software": [
+        "Windows Explorer",
+        "Process Explorer",
+        "Sysinternals",
+        "PsExec",
+        "Chrome"
+      ],
+      "functions": [
+        "FireEvent"
+      ],
+      "links": [
+        "https://securelist.com/userassist-artifact-forensic-value-for-incident-response/116911/",
+        "https://github.com/PacktPublishing/Learning-Python-for-Forensics/blob/master/Chapter%206/userassist\\_parser.py",
+        "https://github.com/Awad93/Userassist\\_parser"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-14",
+      "title": "Behind the Clouds: Attackers Targeting Governments in Southeast Asia Implement Novel Covert C2 Communication",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Hazybeacon"
+      ],
+      "geo": [
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Windows service"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/windows-backdoor-for-novel-c2-communication/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-14",
+      "title": "DarkWatchman malware: SFX archives, XOR encryption and domain generation algorithm",
+      "completeness": "Medium",
+      "threats": [
+        "Darkwatchman",
+        "Buhtrap",
+        "Process_hacker_tool",
+        "Dynamicwrapperx",
+        "Shadow_copies_delete_technique",
+        "Keilger"
+      ],
+      "software": [
+        "Outlook",
+        "Windows Explorer",
+        "Chrome",
+        "Firefox"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "crc-32"
+      ],
+      "functions": [
+        "get_actually_url"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/usergate/articles/927442/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-14",
+      "title": "Adversary Infrastructure and Indicators Behind the SAP NetWeaver 0-Day Exploitation",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool"
+      ],
+      "software": [
+        "SAP NetWeaver"
+      ],
+      "links": [
+        "https://research.kudelskisecurity.com/2025/07/14/adversary-infrastructure-and-indicators-behind-the-sap-netweaver-0-day-exploitation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-14",
+      "title": "Stealthy PHP Malware Uses ZIP Archive to Redirect WordPress Visitors",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blog.sucuri.net/2025/07/stealthy-php-malware-uses-zip-archive-to-redirect-wordpress-visitors.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-14",
+      "title": "Contagious Interview Campaign Escalates With 67 Malicious npm Packages and New Malware Loader",
+      "completeness": "Medium",
+      "threats": [
+        "Xorindex",
+        "Beavertail",
+        "Invisibleferret",
+        "Hexeval",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Url:",
+        "7",
+        "IP:",
+        "1",
+        "File:",
+        "14",
+        "Email:",
+        "32"
+      ],
+      "software": [
+        "Outlook",
+        "Node.js",
+        "macOS",
+        "Linux",
+        "Chrome",
+        "Chrome",
+        "Firefox",
+        "Opera"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tronlink",
+        "exodus_wallet",
+        "keplr"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "exhibit"
+      ],
+      "functions": [
+        "eval",
+        "Function"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages"
+      ]
+    }
+  }
+]

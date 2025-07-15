@@ -51,5 +51,35 @@
         "https://github.com/watchtowrlabs/watchTowr-vs-FortiWeb-CVE-2025-25257?ref=labs.watchtowr.com"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-11",
+      "title": "Malware Found in Official GravityForms Plugin Indicating Supply Chain Breach",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Discord",
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "update_entry_detail",
+        "list_sections"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://patchstack.com/articles/critical-malware-found-in-gravityforms-official-plugin-site/"
+      ]
+    }
   }
 ]

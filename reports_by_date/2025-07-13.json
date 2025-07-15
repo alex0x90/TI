@@ -94,5 +94,31 @@
         "https://github.com/GreyNoise-Intelligence/gn-research-supplemental-data/tree/main/2025-07-09-hello-world-botnet-ips"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-13",
+      "title": "Hunting China-Nexus Threat Actor",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Vshell",
+        "Supershell",
+        "Havoc",
+        "Sliver_c2_tool",
+        "Brc4_tool"
+      ],
+      "geo": [
+        "Apac",
+        "China",
+        "Latin america"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://0xch4s3.gitbook.io/0xch4s3-or-threat-research/adversary-hunting/hunting-china-nexus-threat-actor",
+        "https://github.com/0xCH4S3/Adversary-Infrastructure-Mapping/blob/main/EarthAlux/ips.txt"
+      ]
+    }
   }
 ]

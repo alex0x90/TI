@@ -154,5 +154,33 @@
         "https://securelist.com/batavia-spyware-steals-data-from-russian-organizations/116866/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-07",
+      "title": "Mellow Drama: Turning Browsers Into Request Brokers",
+      "completeness": "Low",
+      "threats": [
+        "Mitm_technique"
+      ],
+      "software": [
+        "chrome",
+        "Firefox",
+        "Electron",
+        "Flutter"
+      ],
+      "functions": [
+        "removeRuleIds"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://medium.com/@johnatsecureannex/mellow-drama-turning-browsers-into-request-brokers-c25bdd3e6455",
+        "https://github.com/PlasmoHQ/docs/pull/137#issuecomment-2448769654",
+        "https://github.com/mellowtel-inc/mellowtel-js",
+        "https://github.com/PlasmoHQ/docs/pull/137"
+      ]
+    }
   }
 ]
