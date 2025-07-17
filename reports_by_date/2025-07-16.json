@@ -1,0 +1,147 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-16",
+      "title": "New SSA-themed phishing campaign installs trojanized ScreenConnect",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Outlook",
+        "WordPress",
+        "macOS",
+        "Android",
+        "Microsoft Defender"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cloudflare.com/en-au/threat-intelligence/research/report/new-ssa-themed-phishing-campaign-installs-trojanized-screenconnect/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-16",
+      "title": "DNS: A Small but Effective C2 system",
+      "completeness": "Medium",
+      "threats": [
+        "Dns_tunneling_technique",
+        "Cobalt_strike_tool",
+        "Dnscat2_tool",
+        "Sliver_c2_tool",
+        "Pupy_rat",
+        "Decoy_dog",
+        "Metasploit_tool"
+      ],
+      "software": [
+        "Sudo"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/security/dns-a-small-but-effective-c2-system/",
+        "https://github.com/iagox86/dnscat2",
+        "https://github.com/Arno0x/DNSExfiltrator",
+        "https://github.com/BishopFox/sliver"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-16",
+      "title": "Talos IR ransomware engagements and the significance of timeliness in incident response",
+      "completeness": "High",
+      "threats": [
+        "Chaos_ransomware",
+        "Microsoft_quick_assist_tool",
+        "Lolbin_technique",
+        "Impacket_tool",
+        "Nltest_tool",
+        "Anydesk_tool",
+        "Optitune_tool",
+        "Screenconnect_tool",
+        "Splashtop_tool",
+        "Rclone_tool",
+        "Medusa_ransomware",
+        "Simplehelp_tool",
+        "Brc4_tool",
+        "Shadow_copies_delete_technique",
+        "Betruger",
+        "Syncro_tool",
+        "Win.ransomware.medusa_note-10033532-0",
+        "Angry_ip_scanner_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Task Scheduler",
+        "Active Directory",
+        "OpenSSH",
+        "ESXi",
+        "JWrapper",
+        "macOS",
+        "Linux",
+        "PsExec",
+        "Unix",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/talos-ir-ransomware-engagements-and-the-significance-of-timeliness-in-incident-response/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-16",
+      "title": "UNG0002: Regional Threat Operations Tracked Across Multiple Asian Jurisdictions",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Metasploit_tool",
+        "Blister",
+        "Fakecaptcha_technique",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Asian",
+        "Pakistan",
+        "South-east asia",
+        "China",
+        "Hong kong"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 21,
+      "algorithms": [
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/ung0002-espionage-campaigns-south-asia/"
+      ]
+    }
+  }
+]

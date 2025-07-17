@@ -1,0 +1,119 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Katz Stealer \\| Powerful MaaS On the Prowl for Credentials and Crypto Assets",
+      "completeness": "High",
+      "threats": [
+        "Katz_stealer",
+        "Process_hollowing_technique",
+        "Katz_loader",
+        "Steganography_technique",
+        "Stego_loader",
+        "Uac_bypass_technique",
+        "Credential_harvesting_technique",
+        "Chromekatz_tool",
+        "Process_injection_technique",
+        "Qtox_tool"
+      ],
+      "geo": [
+        "Belarus",
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "Discord",
+        "Windows registry",
+        "VirtualBox",
+        "Chrome",
+        "Firefox",
+        "Steam",
+        "Outlook",
+        "Foxmail"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "coinomi",
+        "metamask"
+      ],
+      "crypto": [
+        "dogecoin",
+        "litecoin",
+        "monero",
+        "bitcoin",
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/katz-stealer-powerful-maas-on-the-prowl-for-credentials-and-crypto-assets/",
+        "https://github.com/Meckazin/ChromeKatz"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Konfety Returns: Classic Mobile Threat with New Evasion Techniques",
+      "completeness": "Low",
+      "threats": [
+        "Eviltwin_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 10,
+      "software": [
+        "APKTool",
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "zip",
+        "bzip"
+      ],
+      "links": [
+        "https://zimperium.com/blog/konfety-returns-classic-mobile-threat-with-new-evasion-techniques",
+        "https://github.com/Zimperium/IOC/tree/master/2025-07-Konfety"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "GhostContainer backdoor: malware compromising Exchange servers of high-value organizations in Asia",
+      "completeness": "Low",
+      "threats": [
+        "Ghostcontainer",
+        "Neo-regeorg_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Asian"
+      ],
+      "software": [
+        "ASP.NET",
+        "Microsoft Exchange"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "sha1",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "AppWebInit"
+      ],
+      "links": [
+        "https://securelist.com/ghostcontainer/116953/"
+      ]
+    }
+  }
+]
