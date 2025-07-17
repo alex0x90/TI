@@ -115,5 +115,440 @@
         "https://securelist.com/ghostcontainer/116953/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "KAWA4096s Ransomware Tide: Rising Threat With Borrowed Styles",
+      "completeness": "Medium",
+      "threats": [
+        "Akira_ransomware",
+        "Qilin_ransomware",
+        "Shadow_copies_delete_technique",
+        "Wevtutil_tool",
+        "Qtox_tool"
+      ],
+      "geo": [
+        "Japanese",
+        "Japan"
+      ],
+      "software": [
+        "Windows Service",
+        "QuickBooks",
+        "MSExchange",
+        "mysql",
+        "DefWatch",
+        "steam",
+        "onenote",
+        "thebat",
+        "outlook",
+        "firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "base64",
+        "sha1"
+      ],
+      "links": [
+        "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/kawa4096s-ransomware-tide-rising-threat-with-borrowed-styles/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Chinese Malware Delivery Domains: Part III",
+      "completeness": "Medium",
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "Chrome",
+        "Microsoft Defender",
+        "gmail"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii/",
+        "https://github.com/DomainTools/SecuritySnacks/blob/main/2025/SilverFox-Pt3.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "From a Teams Call to a Ransomware Threat: Matanbuchus 3.0 MaaS Levels Up",
+      "completeness": "High",
+      "threats": [
+        "Matanbuchus_maas",
+        "Microsoft_quick_assist_tool",
+        "Lolbin_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "salsa20",
+        "murmur3",
+        "fnv1-a",
+        "rc4",
+        "zip"
+      ],
+      "functions": [
+        "Teams",
+        "COM",
+        "GetVolumeInformation",
+        "HttpOpenRequest",
+        "HttpSendReques"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Threat Analysis: SquidLoader - Still Swimming Under the Radar",
+      "completeness": "High",
+      "threats": [
+        "Squidloader",
+        "Cobalt_strike_tool",
+        "Spear-phishing_technique",
+        "Uacme_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "Chinese",
+        "Australia",
+        "Singapore"
+      ],
+      "software": [
+        "Microsoft Word",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "functions": [
+        "SquidLoader"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/threat-analysis-squidLoader-still-swimming-under-the-radar/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Massistant: A Successor to Meiya Pico s MFSocket",
+      "completeness": "Medium",
+      "threats": [
+        "Massistant_tool",
+        "Mfsocket_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Russian federation",
+        "Tibet",
+        "Chinese",
+        "China"
+      ],
+      "software": [
+        "Twitter",
+        "Android",
+        "Telegram",
+        "Google Play",
+        "Instagram"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://security.lookout.com/threat-intelligence/article/massistant-chinese-mobile-forensics"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Phish and Chips: China-Aligned Espionage Actors Ramp Up Taiwan Semiconductor Industry Targeting",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Cobalt_strike_tool",
+        "Voldemort",
+        "Aitm_technique",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Healthkick",
+        "Faketls_tool",
+        "Sidewalk",
+        "Scramblecross",
+        "Moonbounce",
+        "Malleable_c2_tool",
+        "Spark_rat"
+      ],
+      "geo": [
+        "Russian",
+        "Chinese",
+        "China",
+        "Taiwanese",
+        "Taiwan"
+      ],
+      "software": [
+        "SoftEther",
+        "MACOSX"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "chacha20",
+        "exhibit",
+        "xor",
+        "rc4",
+        "base64"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/phish-china-aligned-espionage-actors-ramp-up-taiwan-semiconductor-targeting",
+        "https://github.com/xx0hcd/Malleable-C2-Profiles/blob/master/normal/gotomeeting.profile",
+        "https://github.com/PwCUK-CTO/TheSAS2021-Red-Kelpie/blob/main/SASatHome2021\\_Learning\\_to\\_ChaCha\\_with\\_APT41.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "MaaS operation using Emmenhtal and Amadey linked to threats against Ukrainian entities",
+      "completeness": "Medium",
+      "threats": [
+        "Emmenhtal",
+        "Amadey",
+        "Smokeloader",
+        "Redline_stealer",
+        "Lumma_stealer",
+        "Stealc",
+        "Credential_harvesting_technique",
+        "Rhadamanthys",
+        "Dinvoke_tool",
+        "Process_injection_technique",
+        "Asyncrat",
+        "Putty_tool"
+      ],
+      "geo": [
+        "Ukrainian"
+      ],
+      "software": [
+        "Selenium",
+        "Microsoft Edge",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "7zip",
+        "aes",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/maas-operation-using-emmenhtal-and-amadey-linked-to-threats-against-ukrainian-entities/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2025/07"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "APT PROFILE FANCY BEAR",
+      "completeness": "Medium",
+      "threats": [
+        "Athena_botnet",
+        "Qilin_ransomware",
+        "Computrace_tool",
+        "Dealerschoice_tool",
+        "Sedkit_tool",
+        "Mimikatz_tool",
+        "Xagent",
+        "Steelhook",
+        "Headlace",
+        "Sedreco",
+        "Oceanmap",
+        "Oldbait",
+        "Procdump_tool",
+        "Downdelph",
+        "Advstoreshell",
+        "Gooseegg_tool",
+        "Xtunnel",
+        "Cannon",
+        "Usbstealer",
+        "Foozer",
+        "Vpnfilter",
+        "Koadic_tool",
+        "Coreshell",
+        "Komplex",
+        "Slimagent_tool",
+        "Sedup_loader",
+        "Zebrocy",
+        "Beardshell_tool",
+        "Pocodown",
+        "Masepie_tool",
+        "Nimcy",
+        "Lojax",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Hatvibe",
+        "Cherryspy",
+        "Credential_harvesting_technique",
+        "Password_spray_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Afghanistan",
+        "Kazakhstan",
+        "Thailand",
+        "Brazil",
+        "France",
+        "Cambodia",
+        "Georgia",
+        "Turkey",
+        "Mongolia",
+        "Latin america",
+        "India",
+        "South africa",
+        "Russian",
+        "Indonesia",
+        "Germany",
+        "Asia",
+        "Vietnam",
+        "Moldova",
+        "Ukraine",
+        "Australia",
+        "Ukrainian",
+        "Pakistan",
+        "America",
+        "Romania",
+        "Norwegian",
+        "Russia",
+        "Syria",
+        "Kyrgyzstan",
+        "Israel",
+        "Malaysia"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 80,
+      "software": [
+        "Roundcube",
+        "MDaemon",
+        "Zimbra"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-fancy-bear-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Linux Is No Longer Immune: Why Ransomware Gangs Are Going All-In on Linux Targets",
+      "completeness": "Low",
+      "threats": [
+        "Pay2key",
+        "Helldown",
+        "Bert_ransomware",
+        "Lolbin_technique",
+        "Polymorphism_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Linux",
+        "systemd"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/linux-is-no-longer-immune/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Old Miner, New Tricks",
+      "completeness": "High",
+      "threats": [
+        "Kinsing_miner",
+        "Lcrypt0rx",
+        "Xmrig_miner",
+        "Dcrat",
+        "Cobalt_strike_tool",
+        "Amadey",
+        "Rusty_stealer",
+        "Screenconnect_tool",
+        "Lcrypt",
+        "Lumma_stealer",
+        "Metasploit_tool",
+        "Log4shell_vuln",
+        "Sysupdate",
+        "Byovd_technique",
+        "Kryptik",
+        "Coinminer",
+        "Filecoder"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "WinLogon",
+        "ChatGPT",
+        "Docker",
+        "Aegis",
+        "Openfire",
+        "ActiveMQ",
+        "Windows Service",
+        "Windows Registry",
+        "Process Explorer",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor",
+        "md5"
+      ],
+      "languages": [
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/old-miner-new-tricks"
+      ]
+    }
   }
 ]
