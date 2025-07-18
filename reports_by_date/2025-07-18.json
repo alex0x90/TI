@@ -1,0 +1,191 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-18",
+      "title": "Malware Identified in Attacks Exploiting Ivanti Connect Secure Vulnerabilities",
+      "completeness": "High",
+      "threats": [
+        "Spawnchimera",
+        "Dslogdrat",
+        "Cobalt_strike_tool",
+        "Mdifyloader",
+        "Vshell",
+        "Dll_sideloading_technique",
+        "Junk_code_technique",
+        "Fscan_tool",
+        "Filelessremotepe_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 15,
+      "software": [
+        "Ivanti",
+        "MSSQL",
+        "task scheduler",
+        "Windows service"
+      ],
+      "algorithms": [
+        "gzip",
+        "xor",
+        "base64",
+        "rc4",
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/en/2025/07/ivanti_cs.html",
+        "https://github.com/hasherezade/libpeconv",
+        "https://github.com/ASkyeye/FilelessRemotePE",
+        "https://github.com/shadow1ng/Fscan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-18",
+      "title": "Ghost Crypt Powers PureRAT with Hypnosis",
+      "completeness": "High",
+      "threats": [
+        "Ghost_crypt_tool",
+        "Purerat",
+        "Purehvnc_tool",
+        "More_eggs",
+        "Process_hypnosis_technique",
+        "Dll_sideloading_technique",
+        "Runpe_tool",
+        "Polymorphism_technique",
+        "Lumma_stealer",
+        "Blueloader",
+        "Xworm_rat",
+        "Dcrat",
+        "Pureloader",
+        "Stealc",
+        "Kleenscan_tool",
+        "Process_hacker_tool",
+        "Process_injection_technique",
+        "Dotnet_reactor_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Windows Registry",
+        "NET Reactor",
+        "Chrome",
+        "Chromium",
+        "QQBrowser",
+        "ChromePlus",
+        "7Star",
+        "CentBrowser",
+        "Chedot",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "atomicwallet"
+      ],
+      "algorithms": [
+        "aes",
+        "chacha20",
+        "base64",
+        "cbc",
+        "aes-256",
+        "sha256",
+        "gzip",
+        "sha1",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "Gunzip"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/ghost-crypt-powers-purerat-with-hypnosis",
+        "https://github.com/eSentire/iocs/blob/main/PureRAT/PureRAT\\_IOCs\\_27-06-2025.txt",
+        "https://github.com/holly-hacker/EazFixer",
+        "https://github.com/SychicBoy/NETReactorSlayer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-18",
+      "title": "Secure Your (Microsoft) Teams: Defending Against Helpdesk Impersonation Attacks",
+      "completeness": "Low",
+      "threats": [
+        "Email_bombing_technique"
+      ],
+      "software": [
+        "Microsoft Teams"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/secure-your-microsoft-teams-defending-against-helpdesk-impersonation-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-18",
+      "title": "Android Cryptojacker Disguised as Banking App Exploits Device Lock State",
+      "completeness": "Medium",
+      "threats": [
+        "Cryptojacker",
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "WhatsApp"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "aes",
+        "randomx"
+      ],
+      "functions": [
+        "NMuU8KNchX5bP8Oy"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/android-cryptojacker-disguised-as-banking-app-exploits-device-lock-state/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-18",
+      "title": "Analysis of the suspected attack actions of APT-C-53 (Gamaredon) targeting government departments",
+      "completeness": "Low",
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/261949.html"
+      ]
+    }
+  }
+]
