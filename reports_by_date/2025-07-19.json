@@ -1,0 +1,341 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "Greedy Sponge Targets Mexico with AllaKore RAT and SystemBC",
+      "completeness": "High",
+      "threats": [
+        "Allakore_rat",
+        "Systembc",
+        "Spear-phishing_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Mexican",
+        "Spanish",
+        "Brazil",
+        "Mexico"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 17,
+      "software": [
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "delphi"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/greedy-sponge-targets-mexico-with-allakore-rat-and-systembc/",
+        "https://github.com/expl0itabl3/uac-bypass-cmstpl"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "Masquerade: You Downloaded ScreenConnect not Grok AI!",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Asyncrat",
+        "Credential_harvesting_technique",
+        "Donut"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "OpenAI",
+        "Windows Installer",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "jscript"
+      ],
+      "links": [
+        "https://www.nccgroup.com/us/research-blog/masquerade-you-downloaded-screenconnect-not-grok-ai/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "Linux SSH server target attack case analysis that installs SVF DDOS BOT",
+      "completeness": "Medium",
+      "threats": [
+        "Svfbot",
+        "Putty_tool",
+        "Httpflood_technique",
+        "Udpflood_technique"
+      ],
+      "software": [
+        "Linux",
+        "Discord",
+        "discord discord",
+        "curl"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89074/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "Formbook spread via Macro Office: companies involved in competitions and projects in the sights",
+      "completeness": "Low",
+      "threats": [
+        "Formbook"
+      ],
+      "geo": [
+        "Italian",
+        "Italy"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/formbook-diffuso-via-macro-office-nel-mirino-aziende-coinvolte-in-gare-e-progetti/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "Dark Web Profile: CrazyHunter Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Crazyhunter_ransomware",
+        "Byovd_technique",
+        "Zemana_tool",
+        "Prince_ransomware",
+        "Avkiller",
+        "Zammocide_tool",
+        "Sharpgpoabuse_tool",
+        "Godzilla_webshell",
+        "Regeorg_tool",
+        "Impacket_tool",
+        "Ntlmrelayx_tool",
+        "Secretsdump_tool",
+        "Donut",
+        "Cobalt_strike_tool",
+        "Domain_fronting_technique",
+        "Dev_tunnels_tool",
+        "Petitpotam_vuln",
+        "Certipy_tool"
+      ],
+      "geo": [
+        "Taiwanese",
+        "Taiwan",
+        "Asia"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft AD",
+        "Microsoft Defender",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "chacha20",
+        "md5"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-crazyhunter-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "NailaoLocker Ransomwares Cheese",
+      "completeness": "Low",
+      "threats": [
+        "Nailaolocker",
+        "Dll_sideloading_technique",
+        "Nailaoloader"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenSSL"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "aes",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "EVP_PKEY_CTX_new",
+        "EVP_EncryptInit_ex",
+        "EVP_EncryptUpdate",
+        "EVP_EncryptFinal_ex",
+        "EVP_DecryptInit_ex",
+        "EVP_DecryptUpdate",
+        "EVP_DecryptFinal_ex"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/nailaolocker-ransomware-cheese"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "Getting to the Crux (Ransomware) of the Matter",
+      "completeness": "Low",
+      "threats": [
+        "Crux_ransomware",
+        "Blackbyte",
+        "Process_injection_technique",
+        "Lolbin_technique",
+        "Rclone_tool"
+      ],
+      "software": [
+        "bcdedit",
+        "Microsoft Defender",
+        "Windows Defender"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/crux-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "From Cloudflare Bypass to Credit Card Theft",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "request"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/from-cloudflare-bypass-to-credit-card-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "UAC-0001 cyberattacks on the security and defense sector using the LAMEHUG software tool, which uses LLM (large language model) (CERT-UA#16039)",
+      "completeness": "Medium",
+      "threats": [
+        "Lamehug_tool"
+      ],
+      "software": [
+        "PyInstaller",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6284730"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "Tracking GLOBAL GROUP Ransomware from Mamona to Market Scale",
+      "completeness": "Medium",
+      "threats": [
+        "Global-group-raas",
+        "Mamona",
+        "Wevtutil_tool",
+        "Credential_harvesting_technique",
+        "Qtox_tool",
+        "Vssadmin_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "ESXi",
+        "Outlook"
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "zip"
+      ],
+      "functions": [
+        "DeleteLogs"
+      ],
+      "languages": [
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/tracking-global-group-ransomware-from-mamona-to-market-scale"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "DeedRAT Backdoor Enhanced by Chinese APTs with Advanced Capabilities",
+      "completeness": "Medium",
+      "threats": [
+        "Deed_rat",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "rc4"
+      ],
+      "functions": [
+        "SetUnhandledException"
+      ],
+      "links": [
+        "https://lab52.io/blog/deedrat-backdoor-enhanced-by-chinese-apts-with-advanced-capabilities/"
+      ]
+    }
+  }
+]

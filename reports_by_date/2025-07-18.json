@@ -187,5 +187,49 @@
         "https://www.ctfiot.com/261949.html"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-18",
+      "title": "npm Phishing Email Targets Developers with Typosquatted Domain",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Node.js"
+      ],
+      "links": [
+        "https://socket.dev/blog/npm-phishing-email-targets-developers-with-typosquatted-domain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-18",
+      "title": "Ongoing SonicWall Secure Mobile Access (SMA) Exploitation Campaign using the OVERSTEP Backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Overstep",
+        "Abyss_locker",
+        "Vsociety",
+        "Timestomp_technique"
+      ],
+      "software": [
+        "openssl",
+        "LINUX"
+      ],
+      "algorithms": [
+        "gzip",
+        "base64"
+      ],
+      "functions": [
+        "bootCurrentFirmware"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/sonicwall-secure-mobile-access-exploitation-overstep-backdoor/"
+      ]
+    }
   }
 ]
