@@ -337,5 +337,46 @@
         "https://lab52.io/blog/deedrat-backdoor-enhanced-by-chinese-apts-with-advanced-capabilities/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-19",
+      "title": "SharePoint 0-day uncovered (CVE-2025-53770)",
+      "completeness": "Medium",
+      "threats": [
+        "Toolshell_vuln",
+        "Sharpyshell",
+        "Ysoserial_tool"
+      ],
+      "geo": [
+        "Berlin"
+      ],
+      "software": [
+        "ADFS",
+        "SharePoint server",
+        "Azure AD",
+        "ASP.NET",
+        "curl",
+        "SharePoint server ASP.NET",
+        "Outlook"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Set-Content",
+        "GetType",
+        "GetMethod"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://research.eye.security/sharepoint-under-siege/",
+        "https://github.com/pwntester/ysoserial",
+        "https://github.com/antonioCoco/SharPyShell"
+      ]
+    }
   }
 ]

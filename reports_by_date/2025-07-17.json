@@ -550,5 +550,40 @@
         "https://www.fortinet.com/blog/threat-research/old-miner-new-tricks"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-17",
+      "title": "Scanception: A QRiosity-Driven Phishing Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Qshing_technique",
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Apac",
+        "Emea",
+        "America"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "Office 365",
+        "Selenium",
+        "PhantomJS",
+        "Burp Suite"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "exhibit"
+      ],
+      "links": [
+        "https://cyble.com/blog/scanception-a-qriosity-driven-phishing-campaign/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/tree/main/Scanception\\_%20A\\_QRiosity-Driven\\_Phishing\\_Campaign"
+      ]
+    }
   }
 ]

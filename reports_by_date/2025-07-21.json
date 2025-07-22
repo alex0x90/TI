@@ -1,0 +1,169 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-21",
+      "title": "ToolShell Campaign: New SharePoint Zero-Day (CVE-2025-53770) Triggers Widespread Exploitation",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln"
+      ],
+      "geo": [
+        "Berlin",
+        "Netherlands",
+        "Iran",
+        "Ireland",
+        "Malaysia"
+      ],
+      "software": [
+        "Microsoft SharePoint",
+        "Microsoft SharePoint Server",
+        "ASP.NET",
+        "SharePoint Server",
+        "Outlook",
+        "Microsoft Defender for Endpoint",
+        "Firefox"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/toolshell-sharepoint-zero-day-cve-2025-53770/",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-07-19-Microsoft-SharePoint-vulnerabilities-CVE-2025-49704-and-49706.txt",
+        "https://gist.github.com/gboddin/bf6ff340022a1e5f02450125409e5277"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-21",
+      "title": "Proxy Trickster operates infrastructure: 24/7 and globally",
+      "completeness": "High",
+      "threats": [
+        "Xmrig_miner",
+        "Gs-netcat",
+        "Masscan_tool",
+        "Opendir_technique",
+        "Iproyal_pawns_tool",
+        "Traffmonetizer_tool",
+        "Proxyjacking_technique",
+        "Gsocket_tool",
+        "Nircmd_tool"
+      ],
+      "geo": [
+        "South africa",
+        "Azerbaijan",
+        "Usa",
+        "China",
+        "Great britain",
+        "France",
+        "Russia",
+        "Ukraine",
+        "Portugal",
+        "Russian federation",
+        "United kingdom",
+        "Germany"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 18,
+      "software": [
+        "Docker",
+        "Selenium",
+        "Unix",
+        "crontab",
+        "Qemu",
+        "Systemd",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "install_repocket",
+        "install_repocket_arm",
+        "install_psx86",
+        "install_psarm7",
+        "install_psaarch64",
+        "install_psarm6",
+        "install_psdk64",
+        "install_psdkarm7",
+        "install_psdkaarch64",
+        "install_psdkarm6",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "php"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/5714/",
+        "https://github.com/robertdavidgraham/masscan",
+        "https://github.com/hackerschoice/gsocket/blob/master/deploy/deploy.sh"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-21",
+      "title": "Rumble in the jungle: APT41s new target in Africa",
+      "completeness": "High",
+      "threats": [
+        "Wmiexec_tool",
+        "Impacket_tool",
+        "Atexec_tool",
+        "Cobalt_strike_tool",
+        "Dll_sideloading_technique",
+        "Credential_harvesting_technique",
+        "Pillager_tool",
+        "Mobaxterm_tool",
+        "Mof_obfuscation_technique",
+        "Rawcopy_tool",
+        "Mimikatz_tool",
+        "Lsadump_tool",
+        "Neo-regeorg_tool",
+        "Process_injection_technique",
+        "Credential_dumping_technique",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "China",
+        "Japanese",
+        "Japan",
+        "Korea",
+        "Korean",
+        "Taiwan",
+        "African",
+        "Africa",
+        "Chinese"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 34,
+      "software": [
+        "SharePoint server",
+        "Microsoft Edge",
+        "ASP.NET",
+        "windows service"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "DllEntryPoint"
+      ],
+      "languages": [
+        "java",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/apt41-in-africa/116986/",
+        "https://github.com/L-codes/Neo-reGeorg",
+        "https://github.com/jschicht/RawCopy",
+        "https://github.com/microsoft/Xbox-ATG-Samples/blob/main/PCSamples/Graphics/SimpleHDR\\_PC12/Readme.md"
+      ]
+    }
+  }
+]
