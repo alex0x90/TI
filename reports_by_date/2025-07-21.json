@@ -165,5 +165,68 @@
         "https://github.com/microsoft/Xbox-ATG-Samples/blob/main/PCSamples/Graphics/SimpleHDR\\_PC12/Readme.md"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-21",
+      "title": "ToolShell: A SharePoint RCE chain actively exploited",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln",
+        "Sharppyshell_tool",
+        "Ysoserial_tool"
+      ],
+      "software": [
+        "SharePoint Server",
+        "ASP.NET",
+        "Twitter"
+      ],
+      "functions": [
+        "It"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/toolshell-sharepoint-rce",
+        "https://github.com/pwntester/ysoserial.net",
+        "https://github.com/antonioCoco/SharPyShell",
+        "https://github.com/kaizensecurity/CVE-2025-53770/tree/master"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-21",
+      "title": "SharePoint ToolShell \\| Zero-Day Exploited in-the-Wild Targets Enterprise Servers",
+      "completeness": "Medium",
+      "threats": [
+        "Toolshell_vuln",
+        "Credential_harvesting_technique",
+        "Watering_hole_technique"
+      ],
+      "geo": [
+        "Berlin"
+      ],
+      "software": [
+        "Microsoft SharePoint",
+        "SharePoint Server",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "sha1",
+        "base64",
+        "sha512"
+      ],
+      "functions": [
+        "Set-Content"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/sharepoint-toolshell-zero-day-exploited-in-the-wild-targets-enterprise-servers/"
+      ]
+    }
   }
 ]

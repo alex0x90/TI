@@ -1,0 +1,531 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "DeerStealer Malware Delivered Via Weaponized .LNK Using LOLBin Tools",
+      "completeness": "Medium",
+      "threats": [
+        "Deerstealer",
+        "Lolbin_technique",
+        "Interlock"
+      ],
+      "geo": [
+        "Iran"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1027",
+        "T1036.005",
+        "T1140",
+        "T1204.002",
+        "T1566.002"
+      ],
+      "software": [
+        "macos"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/deerstealer-malware-delivered/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "NET RFQ: Request for Quote Scammers Casting Wide Net to Steal Real Goods",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique"
+      ],
+      "geo": [
+        "Ghana",
+        "African",
+        "Nigeria"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/net-rfq-request-quote-scammers-casting-wide-net-steal-real-goods"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "PoisonSeed downgrading FIDO key authentications to fetch user accounts",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique"
+      ],
+      "links": [
+        "https://expel.com/blog/poisonseed-downgrading-fido-key-authentications-to-fetch-user-accounts/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Beware of RokRAT malware distribution using malicious Hangul (.HWP) documents",
+      "completeness": "Low",
+      "threats": [
+        "Rokrat",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "North korea",
+        "Korean"
+      ],
+      "software": [
+        "ShellRunas",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89116/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Beware of malicious LNK distribution that steals information by disguising the card company's security email authentication window",
+      "completeness": "Low",
+      "software": [
+        "chrome",
+        "chrome",
+        "opera",
+        "firefox",
+        "outlook"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89126/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "#StopRansomware: Interlock",
+      "completeness": "High",
+      "threats": [
+        "Interlock",
+        "Kerberoasting_technique",
+        "Clickfix_technique",
+        "Rhysida",
+        "Lumma_stealer",
+        "Darkgate",
+        "Cobalt_strike_tool",
+        "Systembc",
+        "Interlockrat",
+        "Nodesnake",
+        "Berserkstealer",
+        "Anydesk_tool",
+        "Putty_tool",
+        "Azcopy_tool",
+        "Screenconnect_tool",
+        "Fakecaptcha_technique",
+        "Process_injection_technique",
+        "Fortra_tool"
+      ],
+      "geo": [
+        "America"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 25,
+      "software": [
+        "Linux",
+        "Tor browser",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Windows Registry",
+        "Chrome",
+        "WinSCP",
+        "ESXi",
+        "macOS",
+        "PSExec",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "Get-Service",
+        "Get-PSDrive",
+        "remove"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-203a",
+        "https://github.com/cisagov/Decider/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Cato CTRL Threat Research: Investigation of RMM Tools Leveraged by Ransomware Gangs in Real-World Incidents",
+      "completeness": "Low",
+      "threats": [
+        "Hunters_international",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Medusa_ransomware",
+        "Simplehelp_tool",
+        "Living_off_ai_technique",
+        "Bloodhound_tool"
+      ],
+      "software": [
+        "PDQ Deploy"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-investigation-of-rmm-tools/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "How to protect yourself from Toolshell-Critical Zero-Day chains in Microsoft Sharepoint",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln",
+        "Proxylogon_exploit"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Microsoft Sharepoint",
+        "SharePoint server"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/5721/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Lookout Discovers Iranian APT MuddyWater Leveraging DCHSpy During Israel-Iran Conflict",
+      "completeness": "Medium",
+      "threats": [
+        "Dchspy",
+        "Sandstrike",
+        "Metasploit_tool",
+        "Androrat_rat",
+        "Ahmyth_rat",
+        "Bouldspy",
+        "Guardzoo_tool",
+        "Spymax"
+      ],
+      "geo": [
+        "Iranian",
+        "Syria",
+        "Asia",
+        "Canada",
+        "America",
+        "Iranians",
+        "Iran",
+        "Africa",
+        "Middle east",
+        "Romania",
+        "Israel"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "StarLink",
+        "Android",
+        "WhatsApp",
+        "Telegram",
+        "HideVPN",
+        "EarthVPN"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.lookout.com/threat-intelligence/article/lookout-discovers-iranian-dchsy-surveillanceware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "CVE-202553770/TOOLSHELL: HUNTING DOWN THE ATTACKER TECHNIQUES &VICTIMS",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln",
+        "Barracuda_tool"
+      ],
+      "geo": [
+        "Ireland",
+        "Iran",
+        "Greece",
+        "Germany",
+        "Russia"
+      ],
+      "software": [
+        "Twitter",
+        "Microsoft SharePoint Server",
+        "Microsoft SharePoint",
+        "Sharepoint Server",
+        "Chrome",
+        "Microsoft Edge",
+        "Chromium"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "ecdsa",
+        "base64"
+      ],
+      "links": [
+        "https://theravenfile.com/2025/07/22/cve-2025-53770-toolshell-hunting-down-the-attacker-techniques-victims/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "New version of ACRStealer is in circulation with active modifications",
+      "completeness": "Low",
+      "threats": [
+        "Acr_stealer",
+        "Heavens_gate_technique",
+        "Amatera_stealer"
+      ],
+      "software": [
+        "Steam",
+        "chrome"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "md5",
+        "cbc",
+        "aes-256",
+        "aes"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89115/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Gamers get ready: under the guise of cheats and mods, scammers distribute Trojan.Scavenger for the theft of cryptocurrency and passwords",
+      "completeness": "Medium",
+      "threats": [
+        "Dllsearchorder_hijacking_technique",
+        "Scavenger",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Chromium",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Yandex Browser",
+        "Opera",
+        "Bitwarden",
+        "LastPass"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15036&lng=ru&c=5",
+        "https://github.com/DoctorWebLtd/malware-iocs/tree/master/Trojan.Scavenger"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "LameHug malware uses AI LLM to craft Windows data-theft commands in real-time",
+      "completeness": "Low",
+      "threats": [
+        "Lamehug_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian",
+        "Russian"
+      ],
+      "software": [
+        "Hugging Face"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.bleepingcomputer.com/news/security/lamehug-malware-uses-ai-llm-to-craft-windows-data-theft-commands-in-real-time/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Disrupting active exploitation of on-premises SharePoint vulnerabilities",
+      "completeness": "High",
+      "threats": [
+        "Lockbit",
+        "Ngrok_tool",
+        "Trojan:win32/hijacksharepointserver.a",
+        "Toolshell_vuln"
+      ],
+      "geo": [
+        "China",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 3,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "SharePoint Server",
+        "SharePoint server ASP.NET",
+        "Microsoft SharePoint Server",
+        "harePoint server -",
+        "harePoint server vu",
+        "Twitter",
+        "Office 365"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/07/22/disrupting-active-exploitation-of-on-premises-sharepoint-vulnerabilities/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "EdskManager RAT: Multi-Stage Malware with HVNC and Evasion Capabilities",
+      "completeness": "High",
+      "threats": [
+        "Edskmanager",
+        "Hvnc_tool",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "send"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/edskmanager-rat-multi-stage-malware-with-hvnc-and-evasion-capabilities/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Operation \"Liquidation\": We study and block the infrastructure of the Nyashteam group",
+      "completeness": "Low",
+      "threats": [
+        "Webrat",
+        "Dcrat",
+        "Xworm_rat"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "Steam"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/nyashteam/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "npm is Package Hijacked in Expanding Supply Chain Attack",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Scavenger"
+      ],
+      "geo": [
+        "Jordan"
+      ],
+      "software": [
+        "Chrome",
+        "macOS",
+        "Linux",
+        "Electron"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/npm-is-package-hijacked-in-expanding-supply-chain-attack"
+      ]
+    }
+  }
+]

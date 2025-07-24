@@ -1,0 +1,474 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Fake Zoom Call Lures for Zoom Workplace Credentials",
+      "completeness": "Low",
+      "software": [
+        "Zoom",
+        "Telegram"
+      ],
+      "links": [
+        "https://cofense.com/blog/fake-zoom-call-lures-for-zoom-workplace-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Soco404: Multiplatform Cryptomining Campaign Uses Fake Error Pages to Hide Payload",
+      "completeness": "High",
+      "threats": [
+        "Garble_tool",
+        "C3pool",
+        "Xmrig_miner",
+        "Password_spray_technique",
+        "Smuggling_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 19,
+      "software": [
+        "PostgreSQL",
+        "Linux",
+        "curl",
+        "Microsoft SharePoint Server",
+        "PostgresSQL",
+        "Apache Tomcat",
+        "crontab",
+        "systemd",
+        "Unix",
+        "Windows Service",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/soco404-multiplatform-cryptomining-campaign-uses-fake-error-pages-to-hide-payload",
+        "https://github.com/burrowers/garble"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Defending Against ToolShell: SharePoints Latest Critical Vulnerability",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln"
+      ],
+      "software": [
+        "SharePoint Server"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/defending-against-toolshell-sharepoints-latest-critical-vulnerability/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Uncovering a Stealthy WordPress Backdoor in mu-plugins",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blog.sucuri.net/2025/07/uncovering-a-stealthy-wordpress-backdoor-in-mu-plugins.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Fake CAPTCHA led to LUMMA100725",
+      "completeness": "Medium",
+      "threats": [
+        "Fakecaptcha_technique",
+        "Lumma_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "France"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "Microsoft Edge",
+        "Google Chrome",
+        "Windows Defender Firewall",
+        "AutoHotKey"
+      ],
+      "wallets": [
+        "iconx"
+      ],
+      "algorithms": [
+        "zip",
+        "sha1"
+      ],
+      "languages": [
+        "powershell",
+        "autoit"
+      ],
+      "links": [
+        "https://www.nccgroup.com/us/research-blog/fake-captcha-led-to-lumma100725/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Operation CargoTalon : UNG0901 Targets Russian Aerospace & Defense Sector using EAGLET implant.",
+      "completeness": "High",
+      "threats": [
+        "Eaglet",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Phantomdl"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Romania",
+        "Russian-federation"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-cargotalon-ung0901-targets-russian-aerospace-defense-sector-using-eaglet-implant/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "New MacOS.ZuRu Variant Discovered",
+      "completeness": "Medium",
+      "threats": [
+        "Zuru",
+        "Termius_tool",
+        "Khepri",
+        "Securecrt_tool"
+      ],
+      "software": [
+        "MacOS",
+        "macOS Gatekeeper"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/new-macos.zuru-variant-discovered"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Back to Business: Lumma Stealer Returns with Stealthier Methods",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer",
+        "Fakecaptcha_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/g/lumma-stealer-returns.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Coyote in the Wild: First-Ever Malware That Abuses UI Automation",
+      "completeness": "Low",
+      "threats": [
+        "Coyote"
+      ],
+      "geo": [
+        "Brazilian",
+        "Latin america",
+        "Brasil"
+      ],
+      "wallets": [
+        "electrum"
+      ],
+      "crypto": [
+        "binance",
+        "bitcoin"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/active-exploitation-coyote-malware-first-ui-automation-abuse-in-the-wild"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Scavenger Malware Distributed via eslint-config-prettier NPM Package Supply Chain Compromise",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Scavenger",
+        "Dll_sideloading_technique"
+      ],
+      "software": [
+        "Microsoft Visual Studio",
+        "qemu"
+      ],
+      "wallets": [
+        "harmony_wallet",
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "xxtea",
+        "crc-32",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "WriteConsoleW",
+        "logDiskSpace"
+      ],
+      "links": [
+        "https://invokere.com/posts/2025/07/scavenger-malware-distributed-via-eslint-config-prettier-npm-package-supply-chain-compromise/",
+        "https://github.com/Invoke-RE/community-malware-research/blob/main/Research/Loaders/Scavenger/IOCs.md",
+        "https://github.com/JustasMasiulis/xorstr/tree/master",
+        "https://github.com/hexamine22"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "From Help Desk to Hypervisor: Defending Your VMware vSphere Estate from UNC3944",
+      "completeness": "Medium",
+      "threats": [
+        "Lolbin_technique",
+        "Kerberoasting_technique",
+        "Winrm_tool",
+        "Teleport_tool"
+      ],
+      "geo": [
+        "America"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "ESXi",
+        "PostgreSQL",
+        "Linux",
+        "HashiCorp Vault",
+        "cURL",
+        "sudo",
+        "Debian",
+        "systemd",
+        "vSphere client",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "assert_running_as_root"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/defending-vsphere-from-unc3944/",
+        "https://github.com/lamw/vcenter-event-mapping/blob/master/vsphere-7.0u3.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Interlock Ransomware Analysis, Simulation, and Mitigation - CISA Alert AA25-203A",
+      "completeness": "Medium",
+      "threats": [
+        "Interlock",
+        "Fakecaptcha_technique",
+        "Clickfix_technique",
+        "Cobalt_strike_tool",
+        "Anydesk_tool",
+        "Putty_tool",
+        "Credential_harvesting_technique",
+        "Lumma_stealer",
+        "Berserkstealer",
+        "Azcopy_tool",
+        "Kerberoasting_technique",
+        "Interlockrat",
+        "Systembc",
+        "Nodesnake",
+        "Blackbasta",
+        "Rhysida",
+        "Ransomware.linux",
+        "Kryptik",
+        "Wacapew",
+        "Deathransom",
+        "Ransom/win32.rapidstop.d"
+      ],
+      "geo": [
+        "America"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 23,
+      "software": [
+        "ChatGPT",
+        "AnyConnect",
+        "Chrome",
+        "Linux",
+        "WinSCP"
+      ],
+      "algorithms": [
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "remove",
+        "Get-PSDrive",
+        "Get-Service"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/cisa-alert-aa25-203a-interlock-ransomware-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Gunra Ransomware Threat Emerges as New Ransomware DLS Collection Status",
+      "completeness": "Low",
+      "threats": [
+        "Gunra",
+        "Conti",
+        "Blackbasta",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russian"
+      ],
+      "algorithms": [
+        "chacha20",
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89153/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Surveillance Malware Hidden in npm and PyPI Packages Targets Developers with Keyloggers, Webcam Capture, and Credential Theft",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "23",
+        "Url:",
+        "3"
+      ],
+      "software": [
+        "Outlook",
+        "Slack",
+        "Gmail",
+        "Node.js"
+      ],
+      "functions": [
+        "setCookie"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/surveillance-malware-hidden-in-npm-and-pypi-packages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-23",
+      "title": "Researching a new loader running TorNet and PureHVNC",
+      "completeness": "Medium",
+      "threats": [
+        "Tornet",
+        "Purehvnc_tool",
+        "Bloat_technique",
+        "Dll_sideloading_technique",
+        "Junk_code_technique",
+        "Lumma_stealer",
+        "Unicorn_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "net framework",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "lzma",
+        "zip",
+        "sha256",
+        "aes-128-ecb",
+        "aes",
+        "base64",
+        "murmur2",
+        "aes-256-cbc",
+        "gzip"
+      ],
+      "functions": [
+        "main"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2025/07/loader-executing-tornet-and-purehvnc/"
+      ]
+    }
+  }
+]
