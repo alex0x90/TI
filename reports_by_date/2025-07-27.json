@@ -1,0 +1,227 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-27",
+      "title": "Threat Actors Lure Victims Into Downloading .HTA Files Using ClickFix To Spread Epsilon Red Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Epsilonred",
+        "Red_ransomware",
+        "Clickfix_technique",
+        "Revil",
+        "Quasar_rat"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 9,
+      "software": [
+        "Discord",
+        "curl"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/threat-actors-lure-victims-into-downloading-hta-files-using-clickfix-to-spread-epsilon-red-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-27",
+      "title": "In-Depth Analysis of an Obfuscated Web Shell Script",
+      "completeness": "Low",
+      "geo": [
+        "Middle",
+        "east"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "GetBasicServerInfo",
+        "GetBasicServerApplicationInfo",
+        "GetDrives",
+        "GetDriveInformation",
+        "GetWebRoot",
+        "GetFileSystemsList",
+        "DeleteDirectory",
+        "GetDirectoryInformation",
+        "SetDirectoryTime",
+        "SetDirectoryAttributes",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "c_language"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/in-depth-analysis-of-an-obfuscated-web-shell-script"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-27",
+      "title": "ANDROID MALWARE POSING AS INDIAN BANK APPS",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Smishing_technique",
+        "Seo_poisoning_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Indian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 16,
+      "software": [
+        "ANDROID",
+        "WhatsApp",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/android-malware-posing-as-indian-bank-apps/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-27",
+      "title": "RAVEN STEALER UNMASKED: Telegram-Based Data Exfiltration.",
+      "completeness": "High",
+      "threats": [
+        "Raven_stealer",
+        "Dll_injection_technique",
+        "Credential_harvesting_technique",
+        "Zerotrace_tool",
+        "Octalyn",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 16,
+      "software": [
+        "Chromium",
+        "Telegram",
+        "Chrome",
+        "curl",
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "chacha20"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "delphi"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/raven-stealer-unmasked-telegram-based-data-exfiltration/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-27",
+      "title": "ToolShell: An all-you-can-eat buffet for threat actors",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln"
+      ],
+      "geo": [
+        "Germany",
+        "Ukraine",
+        "Vietnam",
+        "China",
+        "Italy"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 4,
+      "software": [
+        "SharePoint Server",
+        "Microsoft SharePoint",
+        "Outlook",
+        "SharePoint Server ASP.NET",
+        "icrosoft SharePoint se"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/toolshell-an-all-you-can-eat-buffet-for-threat-actors/",
+        "https://github.com/eset/malware-ioc/tree/master/toolshell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-27",
+      "title": "Inside The ToolShell Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln",
+        "Keysiphon"
+      ],
+      "software": [
+        "Microsoft SharePoint",
+        "Microsoft SharePoint Server",
+        "CURL",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/inside-the-toolshell-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-27",
+      "title": "Bulletproof Hosting Hunt",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer",
+        "Makoob",
+        "Cloudeye",
+        "Agent_tesla",
+        "Mirai",
+        "Qakbot",
+        "Condi",
+        "Amadey",
+        "Zapchast",
+        "Vidar_stealer",
+        "Darkgate"
+      ],
+      "geo": [
+        "Germany",
+        "Russia",
+        "Finland",
+        "Russian",
+        "Estonia",
+        "Netherlands"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://intelinsights.substack.com/p/bulletproof-hosting-hunt"
+      ]
+    }
+  }
+]

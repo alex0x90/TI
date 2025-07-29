@@ -1,0 +1,48 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-28",
+      "title": "Phishing Campaign Imitating U.S. Department of Education (G5) BforeAI",
+      "completeness": "Low",
+      "threats": [
+        "Cloaking_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://bfore.ai/report/phishing-campaign-imitating-united-states-department-of-education-g5/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-28",
+      "title": "XWorm V6: Advanced Evasion and AMSI Bypass Capabilities Revealed",
+      "completeness": "Low",
+      "threats": [
+        "Amsi_bypass_technique",
+        "Xworm_rat",
+        "Asyncrat",
+        "Obfdldr"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/xworm-v6-0-enhanced-malware-protection-and-stealthy-delivery",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Malware/XWorm/IOCs/2025-07-25",
+        "https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell?tab=readme-ov-file#Patching-Clr",
+        "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/blob/master/AsyncRAT-C%23/Client/Helper/Anti\\_Analysis.cs"
+      ]
+    }
+  }
+]

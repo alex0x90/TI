@@ -1,0 +1,492 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Threat actors go gaming: Electron-based stealers in disguise",
+      "completeness": "Medium",
+      "threats": [
+        "Hexon",
+        "Cooee",
+        "Findzip",
+        "Growtopia"
+      ],
+      "geo": [
+        "Turkish",
+        "Brazil",
+        "Portuguese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Electron",
+        "Node.js",
+        "Chromium",
+        "Slack",
+        "Microsoft Teams",
+        "Telegram",
+        "Steam",
+        "Android",
+        "macOS",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.acronis.com/en-us/tru/posts/threat-actors-go-gaming-electron-based-stealers-in-disguise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Unmasking the new Chaos RaaS group attacks",
+      "completeness": "High",
+      "threats": [
+        "Chaos_ransomware",
+        "Blacksuit_ransomware",
+        "Royal_ransomware",
+        "Lolbin_technique",
+        "Microsoft_quick_assist_tool",
+        "Nltest_tool",
+        "Atexec_tool",
+        "Impacket_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Optitune_tool",
+        "Syncro_tool",
+        "Splashtop_tool",
+        "Kerberoasting_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "New zealand",
+        "India"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 2,
+      "software": [
+        "ESXi",
+        "Linux",
+        "Windows delivery optimization",
+        "Windows registry",
+        "active directory",
+        "GoodSync",
+        "Photoshop",
+        "Microsoft Outlook",
+        "Hyper-V",
+        "OpenSSH",
+        "have more..."
+      ],
+      "algorithms": [
+        "ecdh",
+        "curve25519",
+        "aes-256",
+        "ecc",
+        "xor"
+      ],
+      "functions": [
+        "Set-Location"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/new-chaos-ransomware/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2025/07/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Cyber Stealer Analysis: When Your Malware Developer Has FOMO About Features",
+      "completeness": "High",
+      "threats": [
+        "Growtopia",
+        "Putty_tool",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Dns_amplification_technique",
+        "Slowloris_technique",
+        "Xmr_miner",
+        "Realvnc_tool",
+        "Ultra_vnc_tool",
+        "Remmina_tool",
+        "Radmin_tool"
+      ],
+      "software": [
+        "Google Chrome",
+        "Mozilla Firefox",
+        "Microsoft Edge",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "Comodo Dragon",
+        "Orbitum",
+        "Amigo",
+        "Torch",
+        "Kometa",
+        "have more..."
+      ],
+      "wallets": [
+        "atomicwallet",
+        "jaxx",
+        "electrum",
+        "bitcoincore",
+        "metamask",
+        "coinomi",
+        "trezor",
+        "daedalus",
+        "yoroi",
+        "wassabi",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "cardano",
+        "monero",
+        "dogecoin",
+        "binance",
+        "solana",
+        "tezos",
+        "kucoin",
+        "pancakeswap",
+        "uniswap",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "aes",
+        "base64",
+        "aes-gcm"
+      ],
+      "functions": [
+        "GetMasterKey"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/cyber-stealer-analysis-when-your-malware-developer-has-fomo-about-features",
+        "https://pastebin.com/u/cyberproduct"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "APT-C-06 (DarkHotel) attack campaign using malware as bait",
+      "completeness": "Low",
+      "threats": [
+        "Darkseal",
+        "Dll_hijacking_technique",
+        "Meterpreter_tool",
+        "Thinmon_tool",
+        "Double_kill_vuln",
+        "Double_star_vuln",
+        "Nightmare_formula_vuln"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/Cx-v95Ua8U7I77-yQFckpA"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Imperva Customers Protected Against Critical ToolShell ZeroDay in Microsoft SharePoint",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln"
+      ],
+      "software": [
+        "Microsoft SharePoint",
+        "SharePoint Server"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/imperva-customers-protected-against-critical-toolshell-zero%E2%80%91day-in-microsoft-sharepoint/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Fire Ant: A Deep-Dive into Hypervisor-Level Espionage",
+      "completeness": "Low",
+      "threats": [
+        "Virtualpita",
+        "Lsadump_tool",
+        "Neo-regeorg_tool",
+        "Medusa_rootkit",
+        "Credential_harvesting_technique",
+        "Portproxy_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "Linux",
+        "esxcli",
+        "Active Directory"
+      ],
+      "languages": [
+        "java",
+        "python",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.sygnia.co/blog/fire-ant-a-deep-dive-into-hypervisor-level-espionage/",
+        "https://github.com/3gstudent/Homework-of-Python/blob/master/vCenter\\_ExtraCertFromMdb.py",
+        "https://github.com/3gstudent/Homework-of-Python/blob/master/vCenter\\_GenerateLoginCookie.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Dropping Elephant APT Group Targets Turkish Defense Industry With New Campaign and Capabilities: LOLBAS, VLC Player, and Encrypted Shellcode",
+      "completeness": "High",
+      "threats": [
+        "Lolbas_technique",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Watering_hole_technique",
+        "Badnews_rat",
+        "Vajraspy",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Timestomp_technique",
+        "Allakore_rat",
+        "Systembc",
+        "Giftedcrook",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "Indian",
+        "Mexico",
+        "Ukraine",
+        "China",
+        "Asia",
+        "Japanese",
+        "Swedish",
+        "Iran",
+        "Turkey",
+        "Turkish",
+        "United kingdom",
+        "Norwegian",
+        "German",
+        "Dutch",
+        "French",
+        "Pakistan",
+        "Nederlands"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 21,
+      "software": [
+        "Task Scheduler",
+        "Linux",
+        "Windows Defender Application Control"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "functions": [
+        "strtok"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/dropping-elephant-apt-group-targets-turkish-defense-industry/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "EncryptHub Hacker Infiltrates Steam Game with Dual Malware Attack",
+      "completeness": "Low",
+      "threats": [
+        "Fickle_stealer",
+        "Hijackloader",
+        "Plaguebot",
+        "Vidar_stealer",
+        "Ransomhub",
+        "Blacksuit_ransomware",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Uac_bypass_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Steam",
+        "Telegram",
+        "Windows Defender",
+        "Discord"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/encrypt-hub-hacker-infiltrates-steam-game-with-dual-malware-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Active exploitation of on-premise SharePoint Server vulnerabilities ToolShell",
+      "completeness": "Medium",
+      "threats": [
+        "Toolshell_vuln",
+        "Godzilla_webshell",
+        "Godzilla_loader",
+        "Remoteexec_tool",
+        "Asmloader_tool",
+        "Shellcodeloader",
+        "Netstat_tool",
+        "Badpotato_tool",
+        "Hrsword_tool",
+        "Process_injection_technique",
+        "W32/w3wplaunch.a!deepguard"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "SharePoint Server",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "cbc",
+        "aes",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "getBasicsInfo",
+        "GetSystemInformation"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://labs.withsecure.com/publications/toolshell.html",
+        "https://github.com/BeichenDream/BadPotato",
+        "https://github.com/Ridter/cve-2020-0688/blob/master/ExchangeCmdPy.py#L338",
+        "https://github.com/Ridter/MSSQL\\_CLR/blob/6f1df259cbd7f8790550861f6a72d6d2f4cbe241/Database/CLR\\_module/Sharploader.cs#L190"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "A Spike in the Desert: How GreyNoise Uncovered a Global Pattern of VOIP-Based Telnet Attacks",
+      "completeness": "Low",
+      "threats": [
+        "Mirai"
+      ],
+      "geo": [
+        "Mexico"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/how-greynoise-uncovered-global-pattern-voip-based-telnet-attacks",
+        "https://github.com/GreyNoise-Intelligence/greynoise-mcp-server"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Hybrid Analysis Blog: New Advanced Stealer (SHUYAL) Targets Credentials Across 19 Popular Browsers",
+      "completeness": "Medium",
+      "threats": [
+        "Shuyal"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Opera",
+        "OperaGx",
+        "Vivaldi",
+        "Chromium",
+        "Waterfox",
+        "Slimjet",
+        "Coccoc",
+        "Maxthon",
+        "360browser",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "des"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://hybrid-analysis.blogspot.com/2025/07/new-advanced-stealer-shuyal-targets.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-24",
+      "title": "Azure Front Door AiTM Phishing",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique"
+      ],
+      "geo": [
+        "France"
+      ],
+      "software": [
+        "sendgrid",
+        "CryptoJS",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "decodeURIComponent"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.aitm-feed.com/blog/azure-front-door-aitm-phishing"
+      ]
+    }
+  }
+]

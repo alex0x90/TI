@@ -1,0 +1,526 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Geopolitical game under the tariff stick: APT organization targets the China-Africa community with a shared future",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Harpoon_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Africa",
+        "China"
+      ],
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.ctfiot.com/262515.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Oyster Backdoor: The Malvertising Menace Masquerading as Popular Tools",
+      "completeness": "Medium",
+      "threats": [
+        "Oyster",
+        "Seo_poisoning_technique",
+        "Putty_tool",
+        "Rhysida",
+        "Screenconnect_tool"
+      ],
+      "software": [
+        "WinSCP",
+        "Google Chrome",
+        "Microsoft Teams",
+        "FireFox"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/oyster-backdoor-the-malvertising-menace-masquerading-as-popular-tools/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Atomic Stealer Evolves",
+      "completeness": "Low",
+      "threats": [
+        "Amos_stealer",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Italy",
+        "Canada",
+        "United kingdom",
+        "Russia",
+        "France"
+      ],
+      "software": [
+        "macos"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/atomic-stealer-evolves"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Gunra Ransomware Group Unveils Efficient Linux Variant",
+      "completeness": "Low",
+      "threats": [
+        "Gunra",
+        "Conti",
+        "Bert_ransomware"
+      ],
+      "geo": [
+        "Japan",
+        "Turkiye",
+        "Brazil",
+        "Canada",
+        "Korea",
+        "Taiwan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/g/gunra-ransomware-linux-variant.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Revisiting UNC3886 Tactics to Defend Against Present Risk",
+      "completeness": "Medium",
+      "threats": [
+        "Tinyshell",
+        "Reptile",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Credential_dumping_technique",
+        "Medusa_rootkit",
+        "Cloaking_technique",
+        "Mopsled_shell",
+        "Riflespine",
+        "Cryptopp_tool",
+        "Castletap",
+        "Tableflip_tool",
+        "Lmpad"
+      ],
+      "geo": [
+        "Singapore"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 23,
+      "software": [
+        "Fortinet FortiOS",
+        "Junos",
+        "Linux",
+        "Unix",
+        "ESXi"
+      ],
+      "algorithms": [
+        "aes",
+        "chacha20"
+      ],
+      "functions": [
+        "pam_prompt",
+        "syslog"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/g/revisiting-unc3886-tactics-to-defend-against-present-risk.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "ToxicPanda: The Android Banking Trojan Targeting Europe",
+      "completeness": "Medium",
+      "threats": [
+        "Toxicpanda",
+        "Tgtoxic",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Morocco",
+        "Spain",
+        "Asia",
+        "Latin america",
+        "Chinese",
+        "Peru",
+        "Italy",
+        "Greece",
+        "Portuguese",
+        "Portugal"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Twitter",
+        "Google Chrome",
+        "qemu"
+      ],
+      "algorithms": [
+        "cbc",
+        "des",
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "dga_domain_hash_substring",
+        "setDisConnect",
+        "closeNewWin",
+        "setDomain",
+        "onStart",
+        "onDestroy"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/toxicpanda-android-banking-malware-2025-study",
+        "https://github.com/bitsight-research/threat\\_research/tree/67971717defb7c28e10bb17a5b8693a6287c8b99/toxicpanda/h5pages\\_overlays-04\\_2025",
+        "https://github.com/bitsight-research/threat\\_research/blob/ffdfa676eac200cc6dc37d24ad986898f29a5ab9/toxicpanda/dga\\_domain\\_names\\_2025",
+        "https://github.com/bitsight-research/threat\\_research/blob/67971717defb7c28e10bb17a5b8693a6287c8b99/toxicpanda/toxicpanda\\_dga.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Spear phishing campaign delivers VIP keylogger via EMAIL Attachment",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Steganography_technique",
+        "Process_hollowing_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "Chrome"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "autoit",
+        "python"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/8681-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "MaaS Appeal: An Infostealer Rises From TheAshes",
+      "completeness": "High",
+      "threats": [
+        "Novablight",
+        "Nova_stealer",
+        "Malicord",
+        "Shadow_copies_delete_technique",
+        "Credential_stealing_technique",
+        "Xaitax_tool",
+        "Big_head"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Steam",
+        "Electron",
+        "Windows Defender",
+        "virtualbox",
+        "qemu",
+        "Windows security",
+        "chrome",
+        "Windows Security Center",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "atomicwallet"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "setValues",
+        "setPassphrase",
+        "captureSystemInfo",
+        "captureScreen",
+        "captureTaskList",
+        "captureAVDetails",
+        "Get-CimInstance",
+        "captureClipboardContent",
+        "Get-Clipboard",
+        "captureWebcamVideo",
+        "have more..."
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/maas-appeal-an-infostealer-rises-from-the-ashes",
+        "https://github.com/KSCHcuck1",
+        "https://web.archive.org/web/20231216010712/https:/github.com/KSCH-58",
+        "https://github.com/CrackedProgramer412/caca"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Sealed Chain of Deception: Actors leveraging Node.JS to Launch JSCeal",
+      "completeness": "Medium",
+      "threats": [
+        "Jsceal",
+        "Weevilproxy",
+        "Man-in-the-browser_technique",
+        "Zeus",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Russian",
+        "German"
+      ],
+      "software": [
+        "Node.JS",
+        "TradingView",
+        "Windows Defender",
+        "Telegram"
+      ],
+      "wallets": [
+        "harmony_wallet",
+        "bybit",
+        "solflare",
+        "metamask"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "monero",
+        "bitcoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "TaskScheduler",
+        "TaskService",
+        "GetFolder",
+        "TaskCreation",
+        "CreateOrUpdate",
+        "TaskLogonType",
+        "Remove-Item",
+        "Get-ChildItem",
+        "Set-ItemProperty"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/jsceal-targets-crypto-apps/",
+        "https://github.com/wixtoolset",
+        "https://github.com/rprichard/winpty",
+        "https://github.com/dahall/taskscheduler"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Geopolitical game under the tariff stick: APT Group target the China-Africa community with a shared future",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Asia",
+        "China",
+        "Africa",
+        "Asian"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://ti.qianxin.com/blog/articles/apt-group-target-the-china-africa-community-with-a-shared-future-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Who is TraderTraitor?",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Jump_cloud_tool",
+        "Rn_stealer",
+        "Spear-phishing_technique",
+        "Volgmer",
+        "Rn_loader",
+        "Gophergrabber",
+        "Go-stealer",
+        "Golangghost",
+        "Clickfix_technique",
+        "Threatneedle",
+        "Agamemnon",
+        "Wagent",
+        "Signbt",
+        "Copperhedge",
+        "Tiedye",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Korea",
+        "North korean",
+        "Indian",
+        "North korea",
+        "Korean",
+        "Japan",
+        "Japanese"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 26,
+      "software": [
+        "Slack",
+        "Telegram",
+        "Node.js",
+        "Docker",
+        "macOS",
+        "Innorix Agent",
+        "Electron",
+        "Discord"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "bitcoin",
+        "axie_infinity"
+      ],
+      "algorithms": [
+        "rc4",
+        "aes-256",
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/north-korean-tradertraitor-crypto-heist",
+        "https://github.com/wiz-sec-public/wiz-research-iocs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Comprehensive analysis of ArmouryLoader loader - - Typical loader family series analysis 5",
+      "completeness": "Low",
+      "threats": [
+        "Armouryloader",
+        "Smokeloader",
+        "Coffeeloader",
+        "Hijackloader",
+        "Shipcome",
+        "Spybind",
+        "Trojan/win32.armouryloader-"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "xor",
+        "md5"
+      ],
+      "functions": [
+        "in",
+        "GetDeviceIndex",
+        "Certificate-related"
+      ],
+      "links": [
+        "https://www.4hou.com/posts/xyE9"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "RedHook: A New Android Banking Trojan Targeting Users in Vietnam",
+      "completeness": "Medium",
+      "threats": [
+        "Redhook"
+      ],
+      "geo": [
+        "Indonesian",
+        "Vietnamese",
+        "Vietnam",
+        "Chinese"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cyble.com/blog/redhook-new-android-banking-targeting-in-vietnam/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-25",
+      "title": "ToolShell Aftermath: What Defenders Should Do After Patching CVE-2025-53770",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln",
+        "Thor"
+      ],
+      "software": [
+        "Event Tracing for Windows",
+        "SharePoint server",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2025/07/25/toolshell-aftermath-what-defenders-should-do-after-patching-cve-2025-53770/",
+        "https://github.com/SigmaHQ/sigma/pull/5537/files",
+        "https://github.com/Neo23x0/signature-base/blob/master/yara/expl\\_sharepoint\\_jul25.yar",
+        "https://github.com/Neo23x0/signature-base/blob/60a9c5269564f11ac05f8e828283a1716c89ed21/yara/gen\\_webshells.yar#L5078"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-25",
+      "title": "Reverse engineering a Lumma infection",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Amadey",
+        "Process_injection_technique",
+        "Heavens_gate_technique",
+        "Lolbin_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Russian"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1027",
+        "T1055.002",
+        "T1057",
+        "T1059.003",
+        "T1071.001",
+        "T1082",
+        "T1105",
+        "T1119",
+        "T1140",
+        "T1204.002",
+        "have more..."
+      ],
+      "software": [
+        "Telegram",
+        "Steam",
+        "DiscordCanary",
+        "DiscordPTB",
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor",
+        "chacha20"
+      ],
+      "functions": [
+        "Main",
+        "LookupPointer",
+        "eval",
+        "CallWindowsProcA"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "dotnet"
+      ],
+      "links": [
+        "https://labs.withsecure.com/publications/reverse-engineering-a-lumma-infection.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-25",
+      "title": "Watch out: Instagram users targeted in novel phishing campaign",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "Instagram",
+        "gmail"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/07/watch-out-instagram-users-targeted-in-novel-phishing-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-25",
+      "title": "Critical SonicWall SMA Vulnerability CVE-2025-40599: What You Need to Know",
+      "completeness": "Low",
+      "threats": [
+        "Overstep",
+        "Abyss_locker",
+        "Vsociety"
+      ],
+      "software": [
+        "- sonicwall sma_200_firmware (10.2.0.8-37sv",
+        "10.2.1.1-19sv",
+        "10.2.1.2-24sv)  CVE-2025-40599  [Vulners]     CVSS V3.1: 9.1"
+      ],
+      "links": [
+        "https://socradar.io/critical-sonicwall-sma-vulnerability-cve-2025-40599/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-25",
+      "title": "Steam games abused to deliver malware once again",
+      "completeness": "Low",
+      "threats": [
+        "Fickle_stealer",
+        "Hijackloader",
+        "Vidar_stealer",
+        "Danabot",
+        "Redline_stealer"
+      ],
+      "software": [
+        "Steam"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/07/steam-games-abused-to-deliver-malware-once-again"
+      ]
+    }
+  }
+]

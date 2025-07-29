@@ -527,5 +527,40 @@
         "https://socket.dev/blog/npm-is-package-hijacked-in-expanding-supply-chain-attack"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-22",
+      "title": "Threat Intelligence: An Analysis of a Malicious Solana Open-source Trading Bot",
+      "completeness": "Low",
+      "software": [
+        "SlowMist",
+        "Zoom"
+      ],
+      "crypto": [
+        "solana",
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "base58"
+      ],
+      "functions": [
+        "create_coingecko_proxy",
+        "import_wallet",
+        "import_env_var",
+        "from_utf8",
+        "to_base58_string",
+        "main",
+        "new"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://slowmist.medium.com/threat-intelligence-an-analysis-of-a-malicious-solana-open-source-trading-bot-ab580fd3cc89",
+        "https://github.com/slowmist/Blockchain-dark-forest-selfguard-handbook/blob/main/README\\_CN.md"
+      ]
+    }
   }
 ]
