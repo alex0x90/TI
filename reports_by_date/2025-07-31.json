@@ -1,0 +1,738 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Unmasking LockBit: A Deep Dive into DLL Sideloading and Masquerading Tactics",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Lockbit",
+        "Redline_stealer",
+        "Meshagent_tool",
+        "Teamviewer_tool",
+        "Nssm_tool",
+        "Nltest_tool",
+        "Ransom.blackmatter!gm1"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Windows service",
+        "PsExec"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/lockbit-ransomware-attack-techniques"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Silver Fox Intelligence Sharing Issue 2 \\| Silver Fox Arsenal Update: RootKit Added for Multiple Stealth",
+      "completeness": "Medium",
+      "threats": [
+        "Byovd_technique",
+        "Lojax",
+        "Watering_hole_technique",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Asian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 19,
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "GetWindowTextGetWindowTextLength",
+        "GetWindowTextAPI"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/w3Q5MwiP_6kk_9eOG474Gw"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Frozen in transit: Secret Blizzards AiTM campaign against diplomats",
+      "completeness": "High",
+      "threats": [
+        "Aitm_technique",
+        "Apolloshadow",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia",
+        "Chinese",
+        "Moscow"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Component Object Model",
+        "Firefox",
+        "Chromium",
+        "Twitter",
+        "macOS"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "GetTokenInformationType",
+        "Windows"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/07/31/frozen-in-transit-secret-blizzards-aitm-campaign-against-diplomats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Microsoft OAuth App Impersonation Campaign Leads to MFA Phishing",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Tycoon_framework",
+        "Clickfix_technique",
+        "Antibot"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SendGrid"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/microsoft-oauth-app-impersonation-campaign-leads-mfa-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Reverse engineering a Lumma infection",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Amadey",
+        "Process_injection_technique",
+        "Heavens_gate_technique",
+        "Lolbin_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Russian"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1005",
+        "T1027",
+        "T1055.002",
+        "T1071.001",
+        "T1078",
+        "T1105",
+        "T1140",
+        "T1204.002",
+        "T1497.001",
+        "T1555",
+        "have more..."
+      ],
+      "software": [
+        "Telegram",
+        "Steam",
+        "DiscordCanary",
+        "DiscordPTB",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Main",
+        "Finder",
+        "LookupPointer",
+        "eval",
+        "CallWindowsProcA"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "dotnet"
+      ],
+      "links": [
+        "https://labs.withsecure.com/publications/reverse-engineering-a-lumma-infection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Pixels of Deception: How VMDetector Loader Hides in Plain Sight",
+      "completeness": "Low",
+      "threats": [
+        "Vmdetector",
+        "Formbook",
+        "Cloaking_technique"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.sonicwall.com/blog/pixels-of-deception-how-vmdetector-loader-hides-in-plain-sight"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "The Covert Operator's Playbook: Infiltration of Global Telecom Networks",
+      "completeness": "High",
+      "threats": [
+        "Pingpull",
+        "Authdoor",
+        "Cordscan",
+        "Gtpdoor",
+        "Echobackdoor",
+        "Chronosrat",
+        "Nodepdns",
+        "Fscan_tool",
+        "Microsocks_tool",
+        "Proxychains_tool",
+        "Slapstick",
+        "Pingpong",
+        "Dns_tunneling_technique",
+        "Dirty_cow_vuln",
+        "Pkexec_tool",
+        "Pwnkit_tool",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "SELinux",
+        "Linux",
+        "Unix",
+        "sudo",
+        "sshpass"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "golang",
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/infiltration-of-global-telecom-networks/",
+        "https://github.com/firefart/dirtycow/blob/master/dirty.c#L47",
+        "https://github.com/miekg/dns/",
+        "https://github.com/ly4k/PwnKit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "BadSuccessor",
+      "completeness": "Low",
+      "threats": [
+        "Badsuccessor_technique",
+        "Credential_harvesting_technique",
+        "Kerberoasting_technique",
+        "Logan",
+        "Sharpsuccessor",
+        "Rubeus_tool"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1078.002",
+        "T1098.002",
+        "T1136.002",
+        "T1550.003"
+      ],
+      "software": [
+        "Active Directory",
+        "Panos"
+      ],
+      "languages": [
+        "dotnet"
+      ],
+      "links": [
+        "https://ipurple.team/2025/07/28/badsuccessor/",
+        "https://github.com/logangoins/SharpSuccessor/",
+        "https://github.com/GhostPack/Rubeus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Anubis and the Death of Data: A New Era of Ransomware Operations",
+      "completeness": "Low",
+      "threats": [
+        "Anubis",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "France",
+        "Peru",
+        "Australian",
+        "Russian",
+        "Australia",
+        "Canada"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 8,
+      "software": [
+        "Twitter",
+        "android"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/anubis-ransomware-group-overview-and-evolution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Maritime Sector Faces Surge in APT and Hacktivist Cyber Threats",
+      "completeness": "Low",
+      "threats": [
+        "Dusttrap",
+        "Shadowpad",
+        "Velvetshell",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Australia",
+        "Hong kong",
+        "Singapore",
+        "Ukraine",
+        "China",
+        "Russian",
+        "Turkey",
+        "Vietnam",
+        "Spain",
+        "Norway",
+        "Netherlands",
+        "Taiwan",
+        "Djibouti",
+        "Russia",
+        "Israeli",
+        "Greece",
+        "Thailand",
+        "Cambodia",
+        "Iranian",
+        "Yemen",
+        "Italy",
+        "Asian",
+        "Asia-pacific",
+        "American",
+        "Chinese",
+        "Bangladesh",
+        "Egypt"
+      ],
+      "software": [
+        "- citrix netscaler_application_delivery_controller (<13.1-37.236",
+        "<13.1-59.19",
+        "<14.1-47.46)"
+      ],
+      "links": [
+        "https://cyble.com/blog/cyberattacks-targets-maritime-industry/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "From Phishing Sites to SilverFox: A Practical Infrastructure Expansion Analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Watering_hole_technique",
+        "Todesk_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "ZoomEye",
+        "Zoom",
+        "Feishu",
+        "Chrome"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://medium.com/@knownsec404team/from-phishing-sites-to-silverfox-a-practical-infrastructure-expansion-analysis-0970a3fd3a50?source=rss-f1efd6b74751------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "APT28s New Arsenal: LAMEHUG, the First AI-Powered Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Lamehug_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russia",
+        "Russian",
+        "Ukrainian"
+      ],
+      "software": [
+        "PyInstaller",
+        "Hugging Face"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.logpoint.com/en/blog/apt28s-new-arsenal-lamehug-the-first-ai-powered-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "1. What is a silver fox and a horse",
+      "completeness": "Medium",
+      "threats": [
+        "Todesk_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "ZoomEye",
+        "Feishu",
+        "Chrome"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://paper.seebug.org/3347/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Scattered Spider",
+      "completeness": "Medium",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Mfa_bombing_technique",
+        "Mimikatz_tool",
+        "Ngrok_tool",
+        "Screenconnect_tool",
+        "Splashtop_tool",
+        "Tailscale_tool",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Avemaria_rat",
+        "Raccoon_stealer",
+        "Vidar_stealer",
+        "Rattyrat",
+        "Lolbin_technique",
+        "Smishing_technique",
+        "Spear-phishing_technique",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Canadian",
+        "United kingdom",
+        "Australian",
+        "Russia"
+      ],
+      "ttp_tactics": 14,
+      "ttp_techniques": 43,
+      "software": [
+        "Pulseway",
+        "Active Directory",
+        "ESXi",
+        "Slack",
+        "Microsoft Teams",
+        "Microsoft Exchange",
+        "remote desktop services",
+        "Windows Security"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a",
+        "https://github.com/cisagov/Decider/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Lazarus Group Enhances Malware with New OtterCookie Payload Delivery Technique",
+      "completeness": "Medium",
+      "threats": [
+        "Ottercookie",
+        "Beavertail",
+        "Invisibleferret",
+        "Teamviewer_tool",
+        "Doubletrouble",
+        "Lamehug_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Singapore",
+        "Russian",
+        "Spanish",
+        "North korean"
+      ],
+      "software": [
+        "Twitter",
+        "WhatsApp",
+        "curl"
+      ],
+      "functions": [
+        "eval",
+        "errorHandler"
+      ],
+      "links": [
+        "https://gbhackers.com/lazarus-group-malware-with-ottercookie/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "PAY2KEY: New player in the RAAS market with an eye on Russia",
+      "completeness": "High",
+      "threats": [
+        "Pay2key",
+        "Uac_bypass_technique",
+        "Themida_tool",
+        "Lockbit",
+        "Babuk"
+      ],
+      "geo": [
+        "Chelyabinsk",
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "Dropbox",
+        "Gmail",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "curve25519",
+        "sha1",
+        "chacha20",
+        "ecdh"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/pay2key/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "UNC2891 Bank Heist: Physical ATM Backdoor & Linux Forensic Evasion Evasion",
+      "completeness": "Low",
+      "threats": [
+        "Caketap",
+        "Tinyshell"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1018",
+        "T1036",
+        "T1195.003",
+        "T1564.013",
+        "T1568.003"
+      ],
+      "software": [
+        "Linux",
+        "Raspberry Pi"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/unc2891-bank-heist"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Analysis of the latest Silver Fox attack campaign disguised as a Flash plugin",
+      "completeness": "Low",
+      "threats": [
+        "Winos"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Zoom",
+        "Youdao",
+        "letsvpn"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://medium.com/@knownsec404team/analysis-of-the-latest-silver-fox-attack-campaign-disguised-as-a-flash-plugin-7cd92d193de1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Mimo gang weaponizes religious symbols to deliver 4L4MD4r ransomware using Microsoft SharePoint RCE vulnerability",
+      "completeness": "Medium",
+      "threats": [
+        "Hezb",
+        "4l4md4r",
+        "Raindrop_tool"
+      ],
+      "geo": [
+        "Italian"
+      ],
+      "software": [
+        "Microsoft SharePoint",
+        "Microsoft SharePoint server",
+        "SharePoint server"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/h6_ijQAHhq4tersaBE5fXQ"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Proxyware malware distributed on YouTube video download sites",
+      "completeness": "Low",
+      "threats": [
+        "Dropper/win.proxyware.c5783593",
+        "Trojan/win.proxyware.c5783607",
+        "Trojan/win.proxyware.c5783598",
+        "Digitalpulse"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89293/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-31",
+      "title": "Dark Web Profile: SafePay Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Safepay",
+        "Mimikatz_tool",
+        "Screenconnect_tool",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Credential_dumping_technique",
+        "Lolbin_technique",
+        "Qdoor",
+        "Credential_harvesting_technique",
+        "Sharefinder_tool"
+      ],
+      "geo": [
+        "Australia",
+        "Asia-pacific",
+        "Canada",
+        "Georgian",
+        "Russian",
+        "Latin america",
+        "Belarusian",
+        "Germany",
+        "Azerbaijani",
+        "United kingdom",
+        "America",
+        "Asia",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 17,
+      "software": [
+        "Microsoft Teams",
+        "Windows Registry",
+        "Microsoft Defender"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-safepay-ransomware/"
+      ]
+    }
+  }
+]

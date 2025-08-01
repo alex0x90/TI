@@ -1,0 +1,167 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-07-30",
+      "title": "Email-Delivered RMM: Abusing PDFs for Silent Initial",
+      "completeness": "Low",
+      "threats": [
+        "Fleetdeck_tool",
+        "Atera_tool",
+        "Bluetrait_tool",
+        "Screenconnect_tool",
+        "Blackbasta",
+        "Conti",
+        "Blackcat",
+        "Action1_tool",
+        "Optitune_tool",
+        "Syncro_tool",
+        "Superops_tool"
+      ],
+      "geo": [
+        "Luxembourg",
+        "Dutch",
+        "France",
+        "Netherlands"
+      ],
+      "software": [
+        "Microsoft Word"
+      ],
+      "links": [
+        "https://labs.withsecure.com/publications/email-delivered-rmm.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-30",
+      "title": "Cobalt Strike Beacon delivered via GitHub and social media",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Spear-phishing_technique",
+        "Dll_hijacking_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Peru",
+        "Malaysia",
+        "Japan",
+        "China",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 4,
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "links": [
+        "https://securelist.com/cobalt-strike-attacks-using-quora-github-social-media/117085/",
+        "https://opentip.kaspersky.com/https%3a%2f%2fgithub.com%2fmashcheeva/?icid=gl\\_OpenTIP\\_acq\\_ona\\_smm\\_\\_onl\\_b2b\\_securelist\\_lnk\\_sm-team\\_\\_\\_\\_\\_\\_\\_800905ef70012b0a&utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL",
+        "https://opentip.kaspersky.com/https%3a%2f%2fgithub.com%2fkimoeli/?icid=gl\\_OpenTIP\\_acq\\_ona\\_smm\\_\\_onl\\_b2b\\_securelist\\_lnk\\_sm-team\\_\\_\\_\\_\\_\\_\\_cfb3ac56d75a208b&utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-30",
+      "title": "Analysis of the latest Silver Fox attack campaign disguised as a Flash plugin",
+      "completeness": "Low",
+      "threats": [
+        "Winos"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Zoom",
+        "Youdao",
+        "letsvpn"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://medium.com/@knownsec404team/analysis-of-the-latest-silver-fox-attack-campaign-disguised-as-a-flash-plugin-7cd92d193de1?source=rss-f1efd6b74751------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-30",
+      "title": "Google Redirect Abuse in 2024: Key Trends & Tactics",
+      "completeness": "Low",
+      "geo": [
+        "Austria",
+        "France",
+        "Brazil",
+        "Albanian"
+      ],
+      "links": [
+        "https://cofense.com/blog/google-redirect-abuse-in-2024-key-trends-tactics"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-30",
+      "title": "Intel Drops #1",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "links": [
+        "https://intelinsights.substack.com/p/intel-drops-1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-30",
+      "title": "GOLD BLADE remote DLL sideloading attack deploys RedLoader",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Redloader"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip",
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/07/29/gold-blade-remote-dll-sideloading-attack-deploys-redloader/",
+        "https://github.com/sophoslabs/IoCs/blob/master/2507%20Gold%20Blade%20DLL%20sideloading%20RedLoader.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-30",
+      "title": "Behind Random Words: DoubleTrouble Mobile Banking Trojan Revealed",
+      "completeness": "Low",
+      "threats": [
+        "Doubletrouble",
+        "Jsonpacker_tool"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "Discord",
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://zimperium.com/blog/behind-random-words-doubletrouble-mobile-banking-trojan-revealed",
+        "https://github.com/aritraroy/PatternLockView",
+        "https://github.com/Zimperium/IOC/tree/master/2025-07-DoubleTrouble",
+        "https://github.com/aritraroy/PinLockView"
+      ]
+    }
+  }
+]

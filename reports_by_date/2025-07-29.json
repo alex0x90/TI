@@ -522,5 +522,57 @@
         "https://cyble.com/blog/redhook-new-android-banking-targeting-in-vietnam/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Scattered Spider",
+      "completeness": "Medium",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Mfa_bombing_technique",
+        "Mimikatz_tool",
+        "Ngrok_tool",
+        "Screenconnect_tool",
+        "Splashtop_tool",
+        "Tailscale_tool",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Avemaria_rat",
+        "Raccoon_stealer",
+        "Vidar_stealer",
+        "Rattyrat",
+        "Lolbin_technique",
+        "Smishing_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Australian",
+        "Russia",
+        "Canadian",
+        "United kingdom"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 43,
+      "software": [
+        "Pulseway",
+        "Active Directory",
+        "ESXi",
+        "Slack",
+        "Microsoft Teams",
+        "Microsoft Exchange",
+        "remote desktop services"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/scattered-spider",
+        "https://github.com/cisagov/Decider/"
+      ]
+    }
   }
 ]
