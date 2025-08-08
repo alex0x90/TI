@@ -574,5 +574,69 @@
         "https://github.com/cisagov/Decider/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-07-29",
+      "title": "Auto-Color Backdoor: How Darktrace Thwarted a Stealthy Linux Intrusion",
+      "completeness": "High",
+      "threats": [
+        "Auto-color",
+        "Credential_harvesting_technique",
+        "Supershell",
+        "Aitm_technique",
+        "Shadowpad",
+        "Remcos_rat",
+        "Zerologon_vuln",
+        "Anydesk_tool",
+        "Systembc",
+        "Ransomhub",
+        "Sim_swapping_technique",
+        "Lolbin_technique",
+        "Mfa_bombing_technique",
+        "Mimikatz_tool",
+        "Ngrok_tool",
+        "Teamviewer_tool",
+        "Teleport_tool",
+        "Byovd_technique",
+        "Smishing_technique",
+        "Blackcat",
+        "Qilin_ransomware",
+        "Dns_tunneling_technique"
+      ],
+      "geo": [
+        "America",
+        "China",
+        "American",
+        "Asia",
+        "Asian",
+        "Colombia",
+        "Germany",
+        "Latin america"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 28,
+      "software": [
+        "Linux",
+        "SAP NetWeaver",
+        "Unix",
+        "WinSCP",
+        "Telegram",
+        "Pulseway",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "dladdr"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/auto-color-backdoor-how-darktrace-thwarted-a-stealthy-linux-intrusion"
+      ]
+    }
   }
 ]

@@ -1,0 +1,371 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "APT36 Expands Beyond Military: New Attacks Hit Indian Railways, Oil & Government Systems",
+      "completeness": "Medium",
+      "threats": [
+        "Mythic_c2",
+        "Poseidon",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "Germany",
+        "Indian",
+        "Bulgaria",
+        "India",
+        "Singapore",
+        "Kashmir",
+        "Netherlands"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://hunt.io/blog/apt36-india-infrastructure-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Modular Malware Suite Sold by Threat Actors Through Public Storefront Domains",
+      "completeness": "Low",
+      "threats": [
+        "Growtopia",
+        "Mitm_technique",
+        "Process_injection_technique",
+        "Polymorphism_technique"
+      ],
+      "software": [
+        "Twitter",
+        "WhatsApp"
+      ],
+      "links": [
+        "https://gbhackers.com/modular-malware-suite-sold-by-threat-actors/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Fingerprinting Malware C2s with Tags",
+      "completeness": "Low",
+      "threats": [
+        "Neptune_tool",
+        "Gremlin_stealer",
+        "Unamwebpanel_tool",
+        "Silentcryptominer_tool",
+        "Seo_poisoning_technique"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1071.001",
+        "T1078",
+        "T1496",
+        "T1539",
+        "T1555.003",
+        "T1566.002",
+        "T1583.002",
+        "T1595.002"
+      ],
+      "software": [
+        "Telegram",
+        "Chrome",
+        "Steam",
+        "Discord"
+      ],
+      "links": [
+        "https://www.team-cymru.com/post/fingerprinting-malware-c2s-with-tags",
+        "https://github.com/UnamSanctam/UnamWebPanel",
+        "https://github.com/NotiPeru/SilentCryptoMiner"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Trojan.WinLNK/Powershell Runner",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat"
+      ],
+      "geo": [
+        "Romania"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "CHROME",
+        "Windows PowerShell",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "base64",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "Set-Content"
+      ],
+      "languages": [
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/trojan-winlnk-powershell-runner"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Malware spread through Facebook ads disguised as cryptocurrency exchanges.",
+      "completeness": "Low",
+      "software": [
+        "Telegram",
+        "TradingView"
+      ],
+      "crypto": [
+        "binance",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89347/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Android SpyBanker: Rerouting Calls to Attackers",
+      "completeness": "Low",
+      "threats": [
+        "Spybanker"
+      ],
+      "geo": [
+        "Indian",
+        "Deutsche",
+        "Kashmir",
+        "Bahrain",
+        "India",
+        "Kuwait"
+      ],
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Google Play",
+        "Twitter"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/android-spybanker-rerouting-calls-to-attackers/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Famous Chollima APT Adversary Simulation",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Invisibleferret",
+        "Bear-c2"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "Zoom",
+        "sudo",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://medium.com/@S3N4T0R/famous-chollima-apt-adversary-simulation-58fbdf241d0e"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Smart Contract Scams \\| Ethereum Drainers Pose as Trading Bots to Steal Crypto",
+      "completeness": "Low",
+      "software": [
+        "Telegram"
+      ],
+      "crypto": [
+        "ethereum",
+        "uniswap"
+      ],
+      "algorithms": [
+        "sha1",
+        "xor"
+      ],
+      "functions": [
+        "getDexRouter",
+        "Start",
+        "StartNative"
+      ],
+      "languages": [
+        "solidity"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/smart-contract-scams-ethereum-drainers-pose-as-trading-bots-to-steal-crypto/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Rapid Breach: Social Engineering to Remote Access in 300 Seconds",
+      "completeness": "High",
+      "threats": [
+        "Microsoft_quick_assist_tool",
+        "Netsupportmanager_rat",
+        "Bitsadmin_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 6,
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "xor",
+        "sha1",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.nccgroup.com/research-blog/rapid-breach-social-engineering-to-remote-access-in-300-seconds/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "GRITREP: Observed Malicious Driver Use Associated with Akira SonicWall Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Akira_ransomware",
+        "Byovd_technique"
+      ],
+      "software": [
+        "Windows Defender",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/gritrep-akira-sonicwall/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "GenAI Used For Phishing Websites Impersonating Brazils Government",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Brazilian"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/genai-used-phishing-websites-impersonating-brazil-s-government"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "Imperva Detects and Mitigates Rejetto HFS Spray-and-Pray Ransomware/Trojan Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Farfli",
+        "Zenpak"
+      ],
+      "geo": [
+        "Hong",
+        "kong"
+      ],
+      "software": [
+        "- rejetto http_file_server (le2.4)"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/imperva-detects-and-mitigates-rejetto-hfs-spray-and-pray-ransomware-trojan-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-05",
+      "title": "RoKRAT Shellcode and Steganographic Threats: Analysis and EDR Response Strategies",
+      "completeness": "Medium",
+      "threats": [
+        "Rokrat",
+        "Steganography_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "North korea",
+        "North korean",
+        "China",
+        "Russia",
+        "Korea"
+      ],
+      "software": [
+        "Visual Studio",
+        "Dropbox",
+        "ShellRunas",
+        "Sysinternals"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "Get-Content",
+        "Write-Host",
+        "GetMyFirstResult"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/rokrat_shellcode_steganographic"
+      ]
+    }
+  }
+]

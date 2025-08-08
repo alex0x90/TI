@@ -1,0 +1,163 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-03",
+      "title": "Arctic Wolf Observes July 2025 Uptick in Akira Ransomware Activity Targeting SonicWall SSL VPN Copy",
+      "completeness": "Low",
+      "threats": [
+        "Akira_ransomware"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog-uk/arctic-wolf-observes-july-2025-uptick-in-akira-ransomware-activity-targeting-sonicwall-ssl-vpn-copy/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-03",
+      "title": "FAKE TELEGRAM PREMIUM SITE DISTRIBUTES NEW LUMMA STEALER VARIANT",
+      "completeness": "High",
+      "threats": [
+        "Lumma_stealer",
+        "Credential_harvesting_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 24,
+      "software": [
+        "TELEGRAM",
+        "Steam"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "FindNextFileExW"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/fake-telegram-premium-site-distributes-new-lumma-stealer-variant/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-03",
+      "title": "APT36: A PHISHING CAMPAIGN TARGETING INDIAN GOVERNMENT ENTITIES",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Credential_harvesting_technique",
+        "Watering_hole_technique",
+        "Clickfix_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Austria",
+        "Pakistani",
+        "Bulgaria",
+        "Nepal",
+        "Usa",
+        "Mongolia",
+        "Turkey",
+        "Netherlands",
+        "Australia",
+        "Botswana",
+        "China",
+        "Afghanistan",
+        "Belgium",
+        "Oman",
+        "Iran",
+        "Pakistan",
+        "Thailand",
+        "Kenya",
+        "Czech",
+        "Malaysia",
+        "Sweden",
+        "Azerbaijan",
+        "Romania",
+        "Saudi arabia",
+        "India",
+        "Kazakhstan",
+        "Canada",
+        "Spain",
+        "Germany",
+        "Indian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt36-a-phishing-campaign-targeting-indian-government-entities/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-03",
+      "title": "SharePoint Zero-Day Exploit (ToolShell) - Network Infrastructure Mapping",
+      "completeness": "Medium",
+      "threats": [
+        "Toolshell_vuln",
+        "X2anylock"
+      ],
+      "geo": [
+        "Vietnamese",
+        "India",
+        "Korean",
+        "Korea",
+        "Hong kong",
+        "Berlin",
+        "Australia",
+        "Netherlands",
+        "Romania",
+        "Brazilian",
+        "Brazil",
+        "Chinese",
+        "Germany",
+        "China",
+        "Vietnam",
+        "Japan",
+        "Panama",
+        "Indian",
+        "Taiwan",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "SharePoint server",
+        "Ivanti",
+        "CyberGhost",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Set-Content"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/sharepoint-zero-day-exploit-cve-2025-53770-network-infrastructure-mapping",
+        "https://github.com/your-repo/CVE-2025-53770-Scanner"
+      ]
+    }
+  }
+]

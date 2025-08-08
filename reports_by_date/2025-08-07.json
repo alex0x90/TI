@@ -1,0 +1,482 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "MSPs a top target for Akira and Lynx ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Akira_ransomware",
+        "Lynx",
+        "Shadow_copies_delete_technique",
+        "Lockbit",
+        "Conti",
+        "Inc_ransomware"
+      ],
+      "geo": [
+        "Russian",
+        "Spain"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio",
+        "Linux",
+        "ESXI",
+        "Docker"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-128-ctr",
+        "sha512",
+        "curve25519-donna",
+        "chacha20",
+        "base64",
+        "sha256",
+        "ecc"
+      ],
+      "functions": [
+        "GetQuedCompletionStatus",
+        "FindFirstFile",
+        "FindNextFile"
+      ],
+      "languages": [
+        "typescript",
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.acronis.com/en-us/tru/posts/msps-a-top-target-for-akira-and-lynx-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "ScarCrufts New Language: Whispering in PubNub, Crafting Backdoor in Rust, Striking with Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Chinotto",
+        "Nubspy",
+        "Lightpeek",
+        "Txpyloader",
+        "W4sp",
+        "Chillychino",
+        "Goably"
+      ],
+      "geo": [
+        "Russia",
+        "North korea",
+        "North korean",
+        "Vietnam",
+        "Nepal",
+        "Japan",
+        "Middle east",
+        "Korean"
+      ],
+      "software": [
+        "PubNub",
+        "Zoom"
+      ],
+      "languages": [
+        "rust",
+        "powershell",
+        "autoit",
+        "python"
+      ],
+      "links": [
+        "https://medium.com/s2wblog/scarcrufts-new-language-whispering-in-pubnub-crafting-backdoor-in-rust-striking-with-ransomware-21628cb8b56e",
+        "https://github.com/S2W-TALON/Threat-Intelligence-Report/blob/main/250807\\_ScarCruft's%20New%20Language%3A%20Whispering%20in%20PubNub%2C%20Crafting%20Backdoor%20in%20Rust%2C%20Striking%20with%20Ransomware/%5BS2W%5D%20ScarCruft%E2%80%99s%20New%20Language\\_%20Whispering%20in%20PubNub%2C%20Crafting%20Backdoor%20in%20Rust%2C%20Striking%20with%20Ransomware.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Shared secret: EDR killer in the kill chain",
+      "completeness": "Low",
+      "threats": [
+        "Edr-killer",
+        "Ransomhub",
+        "Qilin_ransomware",
+        "Heartcrypt_tool",
+        "Av-killer",
+        "Royal_ransomware",
+        "Medusa_ransomware",
+        "Crytox",
+        "Lynx",
+        "Medusalocker",
+        "Simplehelp_tool",
+        "Inc_ransomware"
+      ],
+      "geo": [
+        "Hong kong",
+        "China"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "xor",
+        "sha1"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/08/06/shared-secret-edr-killer-in-the-kill-chain/",
+        "https://github.com/sophoslabs/IoCs/blob/master/06082025-edrkiller-iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Unveiling a New Variant of the DarkCloud Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Darkcloud",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "FoxMail",
+        "Microsoft Outlook",
+        "CoreFTP",
+        "WinSCP",
+        "Mozilla Thunderbird",
+        "Task Scheduler",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Invoke",
+        "TaskScheduler-related",
+        "VAI",
+        "NtUnmapViewOfSection",
+        "rtcEnvironVar",
+        "sqlite3_prepare_v2",
+        "sqlite3_column_text",
+        "sqlite3_column_blob"
+      ],
+      "languages": [
+        "visual_basic",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/unveiling-a-new-variant-of-the-darkcloud-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "A spy that pretends to be an antivirus",
+      "completeness": "Low",
+      "threats": [
+        "Lunaspy",
+        "Sparkcat",
+        "Finfisher"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "software": [
+        "Android",
+        "Telegram"
+      ],
+      "links": [
+        "https://www.kaspersky.ru/blog/disguised-spy-for-android/40244/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Unmasking the SVG Threat: How Hackers Use Vector Graphics for Phishing Attacks",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Burma"
+      ],
+      "software": [
+        "Dropbox",
+        "Office 365"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/unmasking-the-svg-threat-how-hackers-use-vector-graphics-for-phishing-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Subtle Snail Group Indicators of Compromise",
+      "completeness": "Low",
+      "geo": [
+        "Iran"
+      ],
+      "software": [
+        "Outlook"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://github.com/prodaft/malware-ioc/blob/master/SubtleSnail/README.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "CAPTCHAgeddon Unmasking the Viral Evolution of the ClickFix Browser-Based Threat",
+      "completeness": "Medium",
+      "threats": [
+        "Captchageddon_technique",
+        "Clickfix_technique",
+        "Spear-phishing_technique",
+        "Fakecaptcha_technique",
+        "Clearfake",
+        "Lumma_stealer",
+        "Etherhiding_technique",
+        "Filefix_technique",
+        "Polymorphism_technique"
+      ],
+      "software": [
+        "WordPress",
+        "macOS",
+        "Linux",
+        "curl"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Invoke-Expression"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://guard.io/labs/captchageddon-unmasking-the-viral-evolution-of-the-clickfix-browser-based-threat",
+        "https://github.com/JohnHammond/recaptcha-phish"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Akira Exploits SonicWall SSLVPN in Suspected Zero-Day Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Akira_ransomware",
+        "Cloudflared_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "software": [
+        "OpenSSH",
+        "Active Directory",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/akira-exploits-sonicwall-sslvpn-zero-day-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "New Infection Chain and ConfuserEx-Based Obfuscation for DarkCloud Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Confuserex_tool",
+        "Darkcloud",
+        "Process_hollowing_technique",
+        "Process_injection_technique",
+        "Runpe_tool"
+      ],
+      "software": [
+        "NET Framework",
+        "Telegram"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "rc4",
+        "3des"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell",
+        "javascript",
+        "autoit",
+        "jscript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/new-darkcloud-stealer-infection-chain/",
+        "https://github.com/javascript-obfuscator/javascript-obfuscator",
+        "https://github.com/ViRb3/de4dot-cex",
+        "https://github.com/yck1509/ConfuserEx/blob/master/Confuser.Core/ConfuserEngine.cs#L303"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "A Deep Dive into the Ryuk Ransomware Attack Chain and Its Impact",
+      "completeness": "Medium",
+      "threats": [
+        "Ryuk",
+        "Spear-phishing_technique",
+        "Emotet",
+        "Trickbot",
+        "Shadow_copies_delete_technique",
+        "Nltest_tool",
+        "Adfind_tool",
+        "Kerberoasting_technique",
+        "Rubeus_tool",
+        "Powerview_tool",
+        "Powerline_tool",
+        "Blackbasta",
+        "Medusa_ransomware",
+        "Rhysida",
+        "Cobalt_strike_tool",
+        "Systembc"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "ChatGPT",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256",
+        "rsa-4096"
+      ],
+      "functions": [
+        "PowerView"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/ryuk-ransomware-attack-chain-impact"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "SCENE 1: SoupDealer - Technical Analysis of a Stealth Java Loader Used in Phishing Campaigns Targeting Trkiye",
+      "completeness": "Medium",
+      "threats": [
+        "Soupdealer",
+        "Junk_code_technique",
+        "Adwind_rat"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "aes",
+        "exhibit",
+        "sha256",
+        "sha512",
+        "rc4"
+      ],
+      "functions": [
+        "h",
+        "findClass",
+        "getResourceAsStream",
+        "if",
+        "ri"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwation.com/blog/technical-analysis-of-a-stealth-java-loader-used-in-phishing-campaigns-targeting-turkiye",
+        "https://github.com/java-deobfuscator/deobfuscator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Mustang Panda Targets Windows Users with ToneShell Malware Disguised as Google Chrome",
+      "completeness": "Medium",
+      "threats": [
+        "Toneshell",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Doplugs",
+        "Pubload"
+      ],
+      "geo": [
+        "Tibetan",
+        "Hong kong",
+        "Asia-pacific",
+        "China"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1005",
+        "T1012",
+        "T1027",
+        "T1036.005",
+        "T1053.005",
+        "T1055",
+        "T1057",
+        "T1071.001",
+        "T1105",
+        "T1112",
+        "have more..."
+      ],
+      "software": [
+        "Google Chrome",
+        "Twitter",
+        "WhatsApp",
+        "Chrome",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://gbhackers.com/mustang-panda-targets-windows-users/"
+      ]
+    }
+  }
+]
