@@ -1,0 +1,243 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "60 Malicious Ruby Gems Used in Targeted Credential Theft Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Korean",
+        "Korea"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Domain:",
+        "14",
+        "Url:",
+        "4",
+        "Email:",
+        "3"
+      ],
+      "software": [
+        "Outlook",
+        "Telegram",
+        "Instagram",
+        "TikTok",
+        "WordPress",
+        "m"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "php",
+        "ruby"
+      ],
+      "links": [
+        "https://socket.dev/blog/60-malicious-ruby-gems-used-in-targeted-credential-theft-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "SmartLoader malware distribution through GitHub repository disguised as a normal project",
+      "completeness": "Low",
+      "threats": [
+        "Smartloader",
+        "Rhadamanthys",
+        "Lumma_stealer",
+        "Redline_stealer"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89498/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "Silent Watcher: Dissecting Cmimai Stealer s VBS Payload",
+      "completeness": "Low",
+      "threats": [
+        "Cmimai_stealer"
+      ],
+      "software": [
+        "Discord",
+        "Chrome",
+        "chromium"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "AttemptDiagnosticReportViaPS"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/silent-watcher-dissecting-cmimai-stealers-vbs-payload/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "Scammers mass-mailing the Efimer Trojan to steal crypto",
+      "completeness": "Medium",
+      "threats": [
+        "Efimer",
+        "Typosquatting_technique",
+        "Clipbanker"
+      ],
+      "geo": [
+        "Brazil",
+        "Russia",
+        "Germany",
+        "Spain",
+        "India",
+        "Italy"
+      ],
+      "software": [
+        "WordPress",
+        "Windows Defender",
+        "curl",
+        "Google Chrome"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "monero",
+        "solana"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "md5"
+      ],
+      "functions": [
+        "createGUID",
+        "PingToOnion",
+        "GetWikiWords",
+        "GetRandWords",
+        "getSeDomains",
+        "GetWalletsList",
+        "checkUpdate",
+        "GetPageLinks"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://securelist.com/efimer-trojan/117148/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "GreedyBear: 650 Attack Tools, One Coordinated Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Luca_stealer",
+        "Iobit_tool",
+        "Karma",
+        "Auslogics",
+        "Mobaxterm_tool",
+        "Softperfect_networx_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Firefox",
+        "Chrome",
+        "VSCode",
+        "Hugging Face"
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "exodus_wallet",
+        "rabby",
+        "trezor",
+        "leapwallet",
+        "xverse_wallet",
+        "braavos_wallet",
+        "coin98"
+      ],
+      "crypto": [
+        "filecoin"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.koi.security/greedy-bear-massive-crypto-wallet-attack-spans-across-multiple-vectors-3e8628831a05"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "Eleven Malicious Go Packages Deploy Obfuscated Remote Payloads in Sophisticated Supply Chain Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Royal_ransomware",
+        "Blacksuit_ransomware"
+      ],
+      "geo": [
+        "Latin american",
+        "German",
+        "South africa",
+        "Indonesian",
+        "Chinese",
+        "Vietnam",
+        "African",
+        "Dutch",
+        "Ukrainian"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "whatsapp",
+        "telegram",
+        "chrome",
+        "microsoft sharepoint",
+        "microsoft sharepoint server"
+      ],
+      "languages": [
+        "swift",
+        "javascript"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/eleven-malicious-go-packages-deploy-obfuscated-remote-payloads-in-sophisticated-supply-chain-attack"
+      ]
+    }
+  }
+]

@@ -478,5 +478,57 @@
         "https://gbhackers.com/mustang-panda-targets-windows-users/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Adult sites trick users into Liking Facebook posts using a clickjack Trojan",
+      "completeness": "Low",
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/08/adult-sites-trick-users-into-liking-facebook-posts-using-a-clickjack-trojan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-07",
+      "title": "Odyssey Stealer: ClickFix Malware Attacks macOS Users for Credentials and Crypto Wallet Details",
+      "completeness": "Medium",
+      "threats": [
+        "Odyssey_stealer",
+        "Clickfix_technique",
+        "Fakecaptcha_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "firefox",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera"
+      ],
+      "wallets": [
+        "electrum",
+        "exodus_wallet",
+        "wassabi"
+      ],
+      "crypto": [
+        "litecoin"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "applescript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.forcepoint.com/blog/x-labs/odyssey-stealer-attacks-macos-users"
+      ]
+    }
   }
 ]
