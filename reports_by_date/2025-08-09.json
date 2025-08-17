@@ -1,0 +1,121 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-09",
+      "title": "Paper Werewolf Attacks Russia Using WinRAR Zero-Day Vulnerability",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "- rarlab winrar (<7.12)"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/paper-werewolf-atakuet-rossiyu-s-ispolzovaniem-uyazvimosti-nulevogo-dnya-v-winrar/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-09",
+      "title": "Echoes in the Shell: Legacy Tooling Behind Ongoing SharePoint ToolShell Exploitation",
+      "completeness": "Medium",
+      "threats": [
+        "Toolshell_vuln",
+        "Credential_harvesting_technique",
+        "Chinachopper",
+        "Antsword",
+        "Proxynotshell_vuln",
+        "Valleyrat"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft SharePoint",
+        "ASP.NET",
+        "Active Directory",
+        "curl",
+        "Visual Studio Code"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "GetApplicationConfig",
+        "WriteAllBytes",
+        "eval"
+      ],
+      "languages": [
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/echoes-in-the-shell-legacy-tooling-behind-ongoing-sharepoint-toolshell-exploitation/",
+        "https://github.com/AntSwordProject/antSword"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-09",
+      "title": "From Bitmaps to Payloads: Echoes of TA558 in Italian-Language Campaigns",
+      "completeness": "High",
+      "threats": [
+        "Steganography_technique",
+        "Purelogs",
+        "Remcos_rat",
+        "Ngrok_tool",
+        "Stego_loader",
+        "Purehvnc_tool",
+        "Terminator_tool",
+        "Opendir_technique"
+      ],
+      "geo": [
+        "Italy",
+        "Colombian",
+        "Spanish",
+        "French",
+        "Italian",
+        "Latin american",
+        "Italia",
+        "Portuguese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Visual C++",
+        "Windows PowerShell"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "VAI",
+        "Replace"
+      ],
+      "languages": [
+        "cscript",
+        "powershell"
+      ],
+      "links": [
+        "https://raw.githubusercontent.com/ShadowOpCode/From-Bitmaps-to-Payloads/main/From%20Bitmaps%20to%20Payloads.pdf"
+      ]
+    }
+  }
+]

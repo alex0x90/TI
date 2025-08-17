@@ -1,0 +1,65 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-11",
+      "title": "CVE-2025-8088: WinRAR Zero-Day Exploited in Targeted Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Romcom_rat",
+        "Spear-phishing_technique",
+        "Com_hijacking_technique",
+        "Mythic_c2",
+        "Snipbot",
+        "Putty_tool",
+        "Rustyclaw",
+        "Meltingclaw"
+      ],
+      "geo": [
+        "Canada",
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "UnRAR",
+        "Microsoft Word"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://socradar.io/cve-2025-8088-winrar-zero-day-exploited-targeted/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-11",
+      "title": "Keys to the Kingdom: Erlang/OTP SSH Vulnerability Analysis and Exploits Observed in the Wild",
+      "completeness": "Low",
+      "geo": [
+        "India",
+        "Asia",
+        "Ecuador",
+        "Netherlands",
+        "American",
+        "Brazil",
+        "France",
+        "Middle east",
+        "Japan",
+        "Australia",
+        "America",
+        "Ireland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "- erlang erlang\\/otp (<25.3.2.20",
+        "<26.2.5.11",
+        "<27.3.3)"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/erlang-otp-cve-2025-32433/"
+      ]
+    }
+  }
+]

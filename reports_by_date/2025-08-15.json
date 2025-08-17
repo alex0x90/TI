@@ -1,0 +1,148 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-15",
+      "title": "'Blue Locker' Analysis: Ransomware Targeting Oil & Gas Sector in Pakistan",
+      "completeness": "High",
+      "threats": [
+        "Blue_locker",
+        "Blackbasta",
+        "Shinra_ransomware",
+        "Conti",
+        "Proton_ransomware",
+        "Limba",
+        "Zola",
+        "Shadow_copies_delete_technique",
+        "Timestomp_technique",
+        "Process_injection_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Israeli",
+        "Iran",
+        "Asia",
+        "Pakistani",
+        "Asian",
+        "Chinese",
+        "Pakistan",
+        "China",
+        "Iranian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 15,
+      "software": [
+        "Chrome",
+        "Protonmail",
+        "Jabber"
+      ],
+      "algorithms": [
+        "xor",
+        "exhibit",
+        "aes"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/blue-locker-analysis-ransomware-targeting-oil-gas-sector-in-pakistan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-15",
+      "title": "Supply Chain Risk in Python: Termncolor and Colorinal Explained",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Colorinal",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 5,
+      "software": [
+        "Zulip",
+        "Linux"
+      ],
+      "algorithms": [
+        "cbc",
+        "aes"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/supply-chain-risk-python-termncolor-and-colorinal-explained"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-15",
+      "title": "Dark Web Profile: Void Blizzard",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Password_spray_technique",
+        "Spear-phishing_technique",
+        "Typosquatting_technique",
+        "Evilginx_tool",
+        "Aitm_technique",
+        "Azurehound_tool",
+        "Qshing_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russian",
+        "Dutch"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft Teams",
+        "Azure AD"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-void-blizzard/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-15",
+      "title": "UAT-7237 targets Taiwanese web hosting infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Soundbill_tool",
+        "Meterpreter_tool",
+        "Lolbin_technique",
+        "Sharpwmi_tool",
+        "Wmicmd_tool",
+        "Spear-phishing_technique",
+        "Mimikatz_tool",
+        "Juicypotato_tool",
+        "Fscan_tool",
+        "Netstat_tool"
+      ],
+      "geo": [
+        "Taiwanese",
+        "Chinese",
+        "Taiwan"
+      ],
+      "software": [
+        "SoftEther",
+        "Local Security Authority"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-7237-targets-web-hosting-infra/",
+        "https://github.com/GhostPack/SharpWMI",
+        "https://github.com/nccgroup/WMIcmd",
+        "https://github.com/cdxiaodong/some-function-in-binary/blob/08b66e5504f03373bd70341a4493a7450091c471/%E5%BC%82%E6%88%96%2B%E6%B7%B7%E6%B7%86/%E5%BC%82%E6%88%96%2B%E6%B7%B7%E6%B7%86/%E5%BC%82%E6%88%96%2B%E6%B7%B7%E6%B7%86.cpp"
+      ]
+    }
+  }
+]

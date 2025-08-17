@@ -239,5 +239,43 @@
         "https://www.secureblink.com/cyber-security-news/eleven-malicious-go-packages-deploy-obfuscated-remote-payloads-in-sophisticated-supply-chain-attack"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "CastleLoader",
+      "completeness": "Low",
+      "threats": [
+        "Castleloader",
+        "Netsupportmanager_rat",
+        "Stealc",
+        "Redline_stealer",
+        "Deerstealer",
+        "Hijackloader",
+        "Sectop_rat",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "SQL Server Management Studio",
+        "Docker"
+      ],
+      "languages": [
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/castleloader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-08",
+      "title": "APT Sidewinder Spoofs Government and Military Institutions to Target South Asian Countries with Credential Harvesting Techniques",
+      "completeness": "Low",
+      "links": [
+        "https://hunt.io/blog/apt-sidewinder-netlify-government-phishing"
+      ]
+    }
   }
 ]

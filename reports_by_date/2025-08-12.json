@@ -1,0 +1,374 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "Salesforce-Related Data Breach Affecting Multiple Companies",
+      "completeness": "Low",
+      "threats": [
+        "Pandora",
+        "Qilin_ransomware",
+        "Qtox_tool",
+        "Lockbit",
+        "Mfa_bombing_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Asia",
+        "India",
+        "Korean",
+        "Korea",
+        "Brazilian",
+        "French"
+      ],
+      "software": [
+        "Office 365",
+        "Telegram",
+        "Linux"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin"
+      ],
+      "links": [
+        "https://socradar.io/salesforce-data-breach-affecting-multiple-companies/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "Detecting Linux PAM Exploit Malware Attacks Using AhnLab EDR",
+      "completeness": "Low",
+      "threats": [
+        "Plague"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1056.004",
+        "T1574.006"
+      ],
+      "software": [
+        "Linux",
+        "sudo",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "pam_authenticate",
+        "pam_sm_authenticate"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89515/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "Detecting LodaRAT malware with Wazuh",
+      "completeness": "Medium",
+      "threats": [
+        "Lodarat",
+        "Process_injection_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Path:",
+        "4",
+        "Hash:",
+        "2",
+        "File:",
+        "37"
+      ],
+      "software": [
+        "Sysinternals",
+        "Pyinstaller"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "message"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://wazuh.com/blog/detecting-lodarat-malware-with-wazuh/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "New Ransomware Charon Uses Earth Baxia APT Techniques to Target Enterprises",
+      "completeness": "Medium",
+      "threats": [
+        "Charon",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Swordldr",
+        "Shadow_copies_delete_technique",
+        "Dark-kill_tool"
+      ],
+      "geo": [
+        "Middle",
+        "east"
+      ],
+      "software": [
+        "Windows service",
+        "DefWatch"
+      ],
+      "algorithms": [
+        "sha1",
+        "chacha20",
+        "exhibit",
+        "curve25519"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/h/new-ransomware-charon.html",
+        "https://github.com/SaadAhla/dark-kill"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "Picture Paints a Thousand Codes: Dissecting Image-Based Steganography in a .NET (Quasar) RAT Loader",
+      "completeness": "Medium",
+      "threats": [
+        "Quasar_rat",
+        "Steganography_technique",
+        "Spear-phishing_technique",
+        "Motw_bypass_technique",
+        "Agent_tesla",
+        "Formbook",
+        "Masslogger"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "12",
+        "Hash:",
+        "14"
+      ],
+      "software": [
+        "Opera",
+        "Firefox",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Windows registry",
+        "WinSCP",
+        "windows scheduled task",
+        "Internet Explorer",
+        "Slack"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "xor"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/image-steganography-quasar-rat-detection.html",
+        "https://github.com/tccontre/KnowledgeBase/tree/main/malware\\_re\\_tools/pixdig",
+        "https://gist.github.com/tccontre/9b3630d80c0e15bd6c75010c68df4ee2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "From ClickFix to Command: A Full PowerShell Attack Chain",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Israeli"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256",
+        "gzip",
+        "base64"
+      ],
+      "functions": [
+        "Get-Decompress",
+        "Get-File"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/clickfix-to-command-a-full-powershell-attack-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "VexTrio Unmasked: A Legacy of Spam and Homegrown Scams",
+      "completeness": "Medium",
+      "threats": [
+        "Vextrio",
+        "Fakecaptcha_technique",
+        "Holacode",
+        "Adspro",
+        "Lospollos",
+        "Locomind",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "German",
+        "Ukraine",
+        "Belarus",
+        "Japanese",
+        "Belarussian",
+        "Bulgaria",
+        "Switzerland",
+        "Czechia"
+      ],
+      "software": [
+        "Instagram",
+        "Google Play",
+        "SendGrid",
+        "Tinder",
+        "TikTok",
+        "Dropbox",
+        "Gmail"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/vextrio-unmasked-a-legacy-of-spam-and-homegrown-scams/",
+        "https://github.com/infobloxopen/threat-intelligence/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "Shedding Light on PoisonSeed s Phishing Kit",
+      "completeness": "Low",
+      "threats": [
+        "Cryptochameleon_tool",
+        "Spear-phishing_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SendGrid",
+        "Cloudflare Turnstile",
+        "Windows Hello",
+        "gatekeeper"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "setError",
+        "getItem",
+        "setTimeout",
+        "setCanVerify",
+        "setShouldRedirect",
+        "setIsChecked",
+        "setItem",
+        "setEncryptedEmail",
+        "setMessage",
+        "setIsLoading",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.nviso.eu/2025/08/12/shedding-light-on-poisonseeds-phishing-kit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-12",
+      "title": "Malvertising campaign leads to PS1Bot, a multi-stage malware framework",
+      "completeness": "Medium",
+      "threats": [
+        "Ps1bot",
+        "Ahkbot",
+        "Skitnet",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Canadian",
+        "Czech"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Chromium",
+        "Kometa",
+        "Microsoft Edge",
+        "7Star",
+        "Maxthon",
+        "Opera",
+        "Netbox",
+        "Orbitum",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "trezor",
+        "atomicwallet",
+        "bitkeep_wallet",
+        "coinbase",
+        "xverse_wallet",
+        "exodus_wallet",
+        "coin98",
+        "kardiachain",
+        "terra_station",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "uniswap",
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "Sleep",
+        "SetWindowsHookEx"
+      ],
+      "languages": [
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/ps1bot-malvertising-campaign/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2025/08/ps1bot-malvertising-campaign.txt"
+      ]
+    }
+  }
+]

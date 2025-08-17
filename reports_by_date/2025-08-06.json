@@ -409,5 +409,52 @@
         "https://socket.dev/blog/malicious-npm-packages-target-whatsapp-developers-with-remote-kill-switch"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-06",
+      "title": "Dissecting the CastleBot Malware-as-a-Service operation",
+      "completeness": "High",
+      "threats": [
+        "Castlebot",
+        "Process_injection_technique",
+        "Netsupportmanager_rat",
+        "Warmcookie",
+        "Seo_poisoning_technique",
+        "Clickfix_technique",
+        "Castleloader",
+        "Sandbox_evasion_technique",
+        "Dave_loader",
+        "Stealc",
+        "Rhadamanthys",
+        "Remcos_rat",
+        "Deerstealer",
+        "Sectop_rat",
+        "Hijackloader",
+        "Shadowladder",
+        "Monster_ransomware"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Instagram",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "rc4",
+        "xor",
+        "chacha20",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ibm.com/think/x-force/dissecting-castlebot-maas-operation",
+        "https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/ibm-xti"
+      ]
+    }
   }
 ]
