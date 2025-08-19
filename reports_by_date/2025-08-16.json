@@ -1,0 +1,143 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-16",
+      "title": "Scattered Spider: A Threat Profile",
+      "completeness": "Medium",
+      "threats": [
+        "Sim_swapping_technique",
+        "Blackcat",
+        "Qilin_ransomware",
+        "Ransomhub",
+        "Hellcat",
+        "Supply_chain_technique",
+        "Dragonforce_ransomware",
+        "Smishing_technique",
+        "Credential_dumping_technique",
+        "Byovd_technique",
+        "Mfa_bombing_technique",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Splashtop_tool",
+        "Fleetdeck_tool",
+        "Raccoon_stealer",
+        "Vidar_stealer",
+        "Redline_stealer",
+        "Avemaria_rat",
+        "Spectre_rat"
+      ],
+      "geo": [
+        "United",
+        "kingdom"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 16,
+      "software": [
+        "Telegram",
+        "twitter",
+        "Pulseway"
+      ],
+      "links": [
+        "https://flashpoint.io/blog/scattered-spider-threat-profile/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-16",
+      "title": "Threat Actor Profile: Interlock Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Interlock",
+        "Clickfix_technique",
+        "Rhysida",
+        "Lolbin_technique",
+        "Filefix_technique",
+        "Lumma_stealer",
+        "Asyncrat",
+        "Danabot",
+        "Darkgate",
+        "Cobalt_strike_tool",
+        "Interlockrat",
+        "Nodesnake",
+        "Systembc"
+      ],
+      "geo": [
+        "America",
+        "Australia",
+        "Canada",
+        "Mexico"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "Linux",
+        "Twitter",
+        "PyInstaller",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Chrome",
+        "trycloudflare",
+        "Windows registry",
+        "ESXi",
+        "WordPress",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "gzip",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Get-Service",
+        "Get-PSDrive"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/threat-actor-profile-interlock-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-16",
+      "title": "Lazarus Stealer : Android Malware for Russian Bank Credential Theft Through Overlay and SMS Manipulation",
+      "completeness": "High",
+      "threats": [
+        "Lazarus_stealer",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "Android",
+        "Telegram"
+      ],
+      "functions": [
+        "m1717s",
+        "m1718t",
+        "m1715q",
+        "RunnableC0131y",
+        "RunnableC0193J",
+        "m1711g",
+        "a",
+        "c",
+        "r",
+        "sendTextMessage",
+        "have more..."
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/lazarus-stealer-android-malware-for-russian-bank-credential-theft-through-overlay-and-sms-manipulation/"
+      ]
+    }
+  }
+]

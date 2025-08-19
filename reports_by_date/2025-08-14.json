@@ -630,5 +630,43 @@
         "https://blog.sucuri.net/2025/08/malicious-javascript-injects-fullscreen-iframe-on-a-wordpress-website.html"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-14",
+      "title": "Hunt.io Exposes and Analyzes ERMAC V3.0 Banking Trojan Full Source Code Leak",
+      "completeness": "Medium",
+      "threats": [
+        "Ermac",
+        "Cerberus"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Laravel",
+        "Android",
+        "Docker",
+        "Gmail",
+        "Google Play"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "aes-cbc"
+      ],
+      "languages": [
+        "golang",
+        "javascript",
+        "kotlin",
+        "php"
+      ],
+      "links": [
+        "https://hunt.io/blog/ermac-v3-banking-trojan-source-code-leak",
+        "https://github.com/ClaudiuGeorgiu/Obfuscapk"
+      ]
+    }
   }
 ]

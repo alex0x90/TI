@@ -61,5 +61,34 @@
         "https://unit42.paloaltonetworks.com/erlang-otp-cve-2025-32433/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-11",
+      "title": "Detecting the ToolShell SharePoint Exploit",
+      "completeness": "Low",
+      "threats": [
+        "Toolshell_vuln",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft SharePoint",
+        "SharePoint Server"
+      ],
+      "functions": [
+        "system"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.anomali.com/blog/detecting-the-toolshell-sharepoint-exploit"
+      ]
+    }
   }
 ]
