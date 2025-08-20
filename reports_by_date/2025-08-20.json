@@ -1,0 +1,247 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-20",
+      "title": "A Cereal Offender: Analyzing the CORNFLAKE.V3 Backdoor",
+      "completeness": "High",
+      "threats": [
+        "Cornflake",
+        "Clickfix_technique",
+        "Fakecaptcha_technique",
+        "Netsupportmanager_rat",
+        "Voltmarker",
+        "Seo_poisoning_technique",
+        "Credential_harvesting_technique",
+        "Kerberoasting_technique",
+        "Nltest_tool",
+        "Windytwist"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "UNIX",
+        "QEMU",
+        "active directory",
+        "Trycloudflare"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "Get-WmiObject",
+        "Get-Service",
+        "Get-PSDrive",
+        "mainloop",
+        "Get-LocalGroup",
+        "Get-LocalGroupMember",
+        "Get-Clipboard"
+      ],
+      "languages": [
+        "powershell",
+        "java",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/analyzing-cornflake-v3-backdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-20",
+      "title": "Russian state-sponsored espionage group Static Tundra compromises unpatched end-of-life network devices",
+      "completeness": "Low",
+      "threats": [
+        "Synful_knock"
+      ],
+      "geo": [
+        "Africa",
+        "Ukraine",
+        "Ukrainian",
+        "Russia",
+        "America",
+        "Russian",
+        "Asia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "- cisco ios (15.2\\(5\\)e)"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/static-tundra/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-20",
+      "title": "Dark Web Profile: Beast Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Beast_ransomware",
+        "Monster_ransomware",
+        "Shadow_copies_delete_technique",
+        "Boramae",
+        "Vidar_stealer",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Denmark",
+        "Guatemala",
+        "Belgium",
+        "Czechia",
+        "Chinese",
+        "Russian",
+        "India"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 19,
+      "software": [
+        "Linux",
+        "ESXi",
+        "OpenSSL",
+        "MSSQL",
+        "QuickBooks",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "ecdh",
+        "chacha20",
+        "xor"
+      ],
+      "languages": [
+        "delphi",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-beast-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-20",
+      "title": "DIANNA Explains 3DBatLoader: Master of Disguise",
+      "completeness": "Low",
+      "threats": [
+        "Dbatloader"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://www.deepinstinct.com/blog/dianna-explains-3-dbatloader-master-of-disguise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-20",
+      "title": "Warlock: From SharePoint Vulnerability Exploit to Enterprise Ransomware",
+      "completeness": "High",
+      "threats": [
+        "X2anylock",
+        "Rclone_tool",
+        "Blackbasta",
+        "Toolshell_vuln",
+        "Trojan.bat.killlav.h",
+        "Trojan.win64.killlav.i",
+        "Cloudflared_tool",
+        "Nltest_tool",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Crackmapexec_tool",
+        "Secretsdump_tool",
+        "Lockbit",
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Xiebroc2_tool",
+        "Ransom.win32.warlock.a",
+        "Jadtre"
+      ],
+      "geo": [
+        "Portugal",
+        "Africa",
+        "Turkey",
+        "America",
+        "Middle east",
+        "Asia",
+        "Croatia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft SharePoint",
+        "Microsoft SharePoint server",
+        "nginx",
+        "PccNTMon",
+        "SharePoint server",
+        "Active Directory",
+        "Windows registry",
+        "QuickBooks",
+        "DefWatch",
+        "firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "7zip"
+      ],
+      "functions": [
+        "Get-Veeam-Creds"
+      ],
+      "languages": [
+        "powershell",
+        "swift",
+        "java"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/h/warlock-ransomware.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-20",
+      "title": "Patching for persistence: How DripDropper Linux malware moves through the cloud",
+      "completeness": "Low",
+      "threats": [
+        "Dripdropper",
+        "Tellyouthepass",
+        "Ransomhub",
+        "Hellokitty",
+        "Kinsing_miner",
+        "Sliver_c2_tool",
+        "Chimneysweep",
+        "Whispergate",
+        "Godzilla_webshell",
+        "Lambert"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ActiveMQ",
+        "PyInstaller",
+        "Dropbox",
+        "Discord",
+        "Telegram",
+        "curl",
+        "Apache Maven"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://redcanary.com/blog/threat-intelligence/dripdropper-linux-malware/",
+        "https://github.com/BishopFox/sliver"
+      ]
+    }
+  }
+]
