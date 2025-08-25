@@ -1,0 +1,229 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-22",
+      "title": "Examining the tactics of BQTLOCK Ransomware & its variants",
+      "completeness": "Medium",
+      "threats": [
+        "Bqtlock",
+        "Process_hollowing_technique",
+        "Uac_bypass_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Saudi",
+        "Lebanon"
+      ],
+      "software": [
+        "Telegram",
+        "Twitter",
+        "Discord",
+        "Windows Explorer",
+        "OpenSSL",
+        "Google Chrome",
+        "Mozilla Firefox",
+        "Microsoft Edge",
+        "Opera",
+        "Firefox"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "aes",
+        "rsa-4096",
+        "aes-256"
+      ],
+      "functions": [
+        "OutputDebugString"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/examining-the-tactics-of-bqtlock-ransomware-its-variants/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-22",
+      "title": "SpyNote Malware Part 2",
+      "completeness": "High",
+      "threats": [
+        "Spynote_rat"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 30,
+      "software": [
+        "Android",
+        "Google Play",
+        "nginx",
+        "Chrome",
+        "Zoom"
+      ],
+      "algorithms": [
+        "gzip",
+        "exhibit",
+        "aes"
+      ],
+      "functions": [
+        "JavaScript",
+        "download"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://dti.domaintools.com/spynote-malware-part-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-22",
+      "title": "Fortune telling on Goffee grounds: current tools and features of the Goffee group in attacks on Russia",
+      "completeness": "High",
+      "threats": [
+        "Sauropsida",
+        "Dquic",
+        "Bindsycler",
+        "Mirat",
+        "Powertaskel",
+        "Ebowla_tool",
+        "Owowa",
+        "Mythic_c2",
+        "Chisel_tool",
+        "Tinyshell",
+        "Sliver_c2_tool",
+        "Dll_sideloading_technique",
+        "Infinity_loader",
+        "Rawcopy_tool",
+        "Impacket_tool",
+        "Reptile",
+        "Garble_tool",
+        "Gophish_tool",
+        "Metasploit_tool",
+        "Powerprepare",
+        "Powermodule",
+        "Spear-phishing_technique",
+        "Goloader",
+        "Qwakmyagent"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 27,
+      "software": [
+        "Unix",
+        "Linux",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "base64",
+        "aes",
+        "hmac",
+        "xor",
+        "sha1",
+        "rolmod13"
+      ],
+      "functions": [
+        "Get-ProcAddress",
+        "Get-DelegateType",
+        "Emit-CallThreadStub",
+        "CreateThread"
+      ],
+      "languages": [
+        "dotnet",
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.ptsecurity.com/ru-ru/research/pt-esc-threat-intelligence/fortune-telling-on-goffee-grounds/",
+        "https://github.com/fortra/impacket",
+        "https://github.com/milabs/khook",
+        "https://github.com/jpillora/chisel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-22",
+      "title": "FileFix The Evolved ClickFix",
+      "completeness": "Medium",
+      "threats": [
+        "Filefix_technique",
+        "Clickfix_technique",
+        "Seo_poisoning_technique",
+        "Clearfake",
+        "Socgholish_loader",
+        "Fakecaptcha_technique",
+        "Kongtuke",
+        "Mintsloader",
+        "Ghostweaver",
+        "Stealc",
+        "Interlock",
+        "8base",
+        "Akira_ransomware",
+        "Blackcat",
+        "Rhysida"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "chrome",
+        "WordPress",
+        "trycloudflare"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.bridewell.com/insights/blogs/detail/filefix-the-evolved-clickfix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-22",
+      "title": "Android Document Readers and Deception: Tracking the Latest Updates to Anatsa",
+      "completeness": "Medium",
+      "threats": [
+        "Anatsa",
+        "Robinhood",
+        "Joker",
+        "Harly",
+        "Facestealer",
+        "Exobot"
+      ],
+      "geo": [
+        "Korea",
+        "Germany"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "des"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/android-document-readers-and-deception-tracking-latest-updates-anatsa"
+      ]
+    }
+  }
+]

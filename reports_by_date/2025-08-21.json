@@ -1,0 +1,549 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Smuggling Requests with Chunked Extensions: A New HTTP Desync Trick",
+      "completeness": "Low",
+      "threats": [
+        "Smuggling_technique",
+        "Desync_technique"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/smuggling-requests-with-chunked-extensions-a-new-http-desync-trick/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Falcon Platform Prevents COOKIE SPIDER s SHAMOS Delivery on macOS",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Cuckoo_stealer"
+      ],
+      "geo": [
+        "Japan",
+        "Russia",
+        "Mexico",
+        "Australia",
+        "Colombia",
+        "Russian",
+        "China",
+        "Italy",
+        "Canada"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 5,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "curl",
+        "Ledger Live",
+        "Sudo"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/falcon-prevents-cookie-spider-shamos-delivery-macos/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Investigation Report: APT36 Malware Campaign Using Desktop Entry Files and Google Drive Payload Delivery",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Antidebugging_technique",
+        "Spear-phishing_technique",
+        "Supply_chain_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "Indian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "Linux",
+        "Unix",
+        "Firefox",
+        "curl",
+        "Gmail",
+        "Systemd"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "sha1",
+        "md5",
+        "zip"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/investigation-report-apt36-malware-campaign-using-desktop-entry-files-and-google-drive-payload-delivery"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Phishing in the Cloud: SendGrid Campaign Exploits Account Security",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "SendGrid"
+      ],
+      "links": [
+        "https://cofense.com/blog/phishing-in-the-cloud-sendgrid-campaign-exploits-account-security"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "IBM X-Force Threat Analysis: QuirkyLoader - A new malware loader delivering infostealers and RATs",
+      "completeness": "Medium",
+      "threats": [
+        "Quirkyloader",
+        "Dll_sideloading_technique",
+        "Process_hollowing_technique",
+        "Snake_keylogger",
+        "Remcos_rat",
+        "Asyncrat",
+        "Agent_tesla"
+      ],
+      "geo": [
+        "Mexico",
+        "Taiwan"
+      ],
+      "software": [
+        "Instagram",
+        "Zimbra"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "ZwUnmapViewOfSection",
+        "ZwWriteVirtualMemory"
+      ],
+      "links": [
+        "https://www.ibm.com/think/x-force/ibm-x-force-threat-analysis-quirkyloader",
+        "https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/ibm-xti"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "APT MuddyWater Deploys Multi-Stage Phishing to Target CFOs",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Netbird_tool",
+        "Gophish_tool",
+        "Atera_tool"
+      ],
+      "geo": [
+        "Asia",
+        "French",
+        "New york",
+        "Africa",
+        "America"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenSSH",
+        "CryptoJS",
+        "OpenSSL",
+        "Twitter",
+        "Microsoft SharePoint"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "aes-ecb",
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "decryptAndRedirect"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://hunt.io/blog/apt-muddywater-deploys-multi-stage-phishing-to-target-cfos",
+        "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt\\_muddywater.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Internet Archive Abused for Hosting Stealthy JScript Loader Malware",
+      "completeness": "Low",
+      "threats": [
+        "Remcos_rat",
+        "X2anylock"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/internet-archive-abused/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Malicious Go Module Disguised as SSH Brute Forcer Exfiltrates Credentials via Telegram",
+      "completeness": "Medium",
+      "threats": [
+        "Webadmin_tool",
+        "Selica-c2",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 8,
+      "software": [
+        "Telegram",
+        "Outlook",
+        "alpine",
+        "Linux",
+        "phpMyAdmin",
+        "Fortnite"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials",
+        "https://github.com/IllDieAnyway",
+        "https://pkg.go.dev/github.com/illdieanyway/golang-random-ip-ssh-bruteforce@v0.0.0-20220624110449-9d819518d4fc",
+        "https://socket.dev/go/package/github.com/illdieanyway/golang-random-ip-ssh-bruteforce?version=v0.0.0-20220624110449-9d819518d4fc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "MITM6 + NTLM Relay: How IPv6 Auto-Configuration Leads to Full Domain Compromise",
+      "completeness": "Low",
+      "threats": [
+        "Mitm6_technique",
+        "Ntlmrelayx_tool",
+        "Impacket_tool",
+        "Credential_stealing_technique",
+        "Crackmapexec_tool",
+        "Wmiexec_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Sudo",
+        "PsExec"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/mitm6-ntlm-relay-how-ipv6-auto-configuration-leads-to-full-domain-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Proxyware malware distributed on YouTube video download sites 2",
+      "completeness": "Low",
+      "threats": [
+        "Dropper/win.proxyware.c5783593",
+        "Dropper/win.proxyware.c5790716"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89737/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "DragonForce Ransomware Attack Analysis Targets, TTPs and IoCs",
+      "completeness": "High",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Lockbit",
+        "Conti",
+        "Spear-phishing_technique",
+        "Log4shell_vuln",
+        "Anydesk_tool",
+        "Systembc"
+      ],
+      "geo": [
+        "Iran",
+        "Palau",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "Ivanti"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/dragonforce-ransomware-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "ESC2. I sign what I want",
+      "completeness": "Low",
+      "threats": [
+        "Esc2_vuln",
+        "Certipy_tool",
+        "Rubeus_tool",
+        "Mimikatz_tool",
+        "Cobalt_strike_tool",
+        "Empire_loader",
+        "Mitm_technique"
+      ],
+      "software": [
+        "Active Directory",
+        "Adfs"
+      ],
+      "functions": [
+        "Get-ChildItem",
+        "Get-ADObject"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/active-directory-certificate-services/esc2-podpisyvayu-chto-khochu/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Think before you Click(Fix): Analyzing the ClickFix social engineering technique",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Xworm_rat",
+        "Asyncrat",
+        "Netsupportmanager_rat",
+        "Sectop_rat",
+        "Latrodectus",
+        "Mintsloader",
+        "Lolbin_technique",
+        "Lampion",
+        "Darkgate",
+        "Screenconnect_tool",
+        "R77rk_tool",
+        "Amos_stealer",
+        "Fakecaptcha_technique",
+        "Poseidon",
+        "Odyssey_stealer",
+        "Uac_bypass_technique",
+        "Polymorphism_technique",
+        "Clickflix_technique",
+        "Bitsadmin_tool"
+      ],
+      "geo": [
+        "Mexico",
+        "Italian",
+        "Germany",
+        "Canada",
+        "Switzerland",
+        "France",
+        "Luxembourg",
+        "Brazilian",
+        "Portugal",
+        "Spanish",
+        "Hungary",
+        "French",
+        "German",
+        "Portuguese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "macOS",
+        "Windows Terminal",
+        "Windows PowerShell",
+        "Microsoft Word",
+        "WordPress",
+        "Cloudflare Turnstile",
+        "Discord",
+        "Telegram",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "runVerification"
+      ],
+      "languages": [
+        "powershell",
+        "jscript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/08/21/think-before-you-clickfix-analyzing-the-clickfix-social-engineering-technique/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "The Ghost in the Machine: The Complete Dossier on TA-NATALSTATUS and the Cryptojacking Turf War",
+      "completeness": "Medium",
+      "threats": [
+        "Cloaking_technique",
+        "Empire_loader",
+        "Timestomp_technique",
+        "Masscan_tool",
+        "Pnscan_tool",
+        "Kinsing_miner",
+        "Xmrig_miner",
+        "Minerd"
+      ],
+      "geo": [
+        "Indonesia",
+        "Korea",
+        "Hong kong",
+        "China",
+        "Germany",
+        "Singapore",
+        "Brazil",
+        "India",
+        "United kingdom",
+        "Netherlands",
+        "Finland",
+        "Japan",
+        "France",
+        "Australia",
+        "Canada",
+        "Russia",
+        "Ireland",
+        "Vietnam"
+      ],
+      "software": [
+        "Redis",
+        "curl",
+        "Linux",
+        "crontab",
+        "SELinux"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/the-ghost-in-the-machine-the-complete-dossier-on-ta-natalstatus-and-the-cryptojacking-turf-war"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "The Silent, Fileless Threat of VShell",
+      "completeness": "Medium",
+      "threats": [
+        "Vshell",
+        "Snowlight",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 11,
+      "software": [
+        "Linux",
+        "curl",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "recv",
+        "main",
+        "fexecve"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/the-silent-fileless-threat-of-vshell/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-21",
+      "title": "Hunting for Malware Networks",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Amadey",
+        "Deerstealer",
+        "Redline_stealer",
+        "Rugmi",
+        "Blackbasta",
+        "Darkgate"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://dti.domaintools.com/hunting-for-malware-networks/"
+      ]
+    }
+  }
+]
