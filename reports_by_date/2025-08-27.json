@@ -1,0 +1,404 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "NightSpire ransomware alert issued as domestic damage cases emerge",
+      "completeness": "Low",
+      "threats": [
+        "Nightspire",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1946",
+        "Ransom/mdp.event.m4353"
+      ],
+      "geo": [
+        "Japan",
+        "Taiwan",
+        "Hong kong",
+        "Chinese",
+        "Poland",
+        "Thailand"
+      ],
+      "software": [
+        "ProtonMail",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "aes"
+      ],
+      "functions": [
+        "os_Stat"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89878/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "The Price of Trust: Analyzing the Malware Campaign Exploiting TASPEN's Legacy to Target Indonesian Senior Citizens",
+      "completeness": "Medium",
+      "threats": [
+        "Lockbit"
+      ],
+      "geo": [
+        "Australian",
+        "China",
+        "Singapore",
+        "Indonesia",
+        "Chinese",
+        "Indonesian",
+        "Asia"
+      ],
+      "software": [
+        "Android",
+        "Google Play",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/taspen-malware-campaign-targeting-indonesian-senior-citizens"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "Countering Chinese State-Sponsored Actors Compromise of Networks Worldwide to Feed Global Espionage System",
+      "completeness": "High",
+      "threats": [
+        "Sicherheit_rat",
+        "Findzip",
+        "Iox_tool",
+        "Stowaway_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Germany",
+        "Netherlands",
+        "China",
+        "Spain",
+        "Canada",
+        "Polish",
+        "United kingdom",
+        "New zealand",
+        "Australian",
+        "Japan",
+        "Canadian",
+        "Australia",
+        "Italian",
+        "Czech"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 42,
+      "software": [
+        "Linux",
+        "Microsoft Exchange",
+        "Ivanti",
+        "PAN-OS",
+        "sudo",
+        "systemd",
+        "openssl"
+      ],
+      "algorithms": [
+        "sha384",
+        "aes",
+        "aes-256",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-239a"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "MystRodX: The Covert Dual-Mode Backdoor Threat",
+      "completeness": "Low",
+      "threats": [
+        "Mystrodx",
+        "Mirai",
+        "Synful_knock"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "aes",
+        "cbc"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/mystrodx_covert_dual-mode_backdoor_en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "Nx npm Packages Compromised in Supply Chain Attack Leveraging AI CLI Tools",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "sudo",
+        "macOS"
+      ],
+      "wallets": [
+        "electrum",
+        "metamask",
+        "trezor",
+        "exodus_wallet",
+        "solflare"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "forceAppendAgentLine"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/nx-packages-compromised",
+        "https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c",
+        "https://github.com/marketplace/socket-security"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "ShadowSilk: A Cross-Border Binary Union for Data Exfiltration",
+      "completeness": "High",
+      "threats": [
+        "Morf_tool",
+        "Cobalt_strike_tool",
+        "Donut",
+        "Dumpert_tool",
+        "Filelessremotepe_tool",
+        "Mirrordump_tool",
+        "Neo-regeorg_tool",
+        "Portscan_tool",
+        "Powerview_tool",
+        "Resocks_tool",
+        "Reversesocks5_tool",
+        "Seatbelt_tool",
+        "Sharpchromium_tool",
+        "Sharpersist_tool",
+        "Bloodhound_tool",
+        "Sharpview_tool",
+        "Socat_tool",
+        "Uacme_tool",
+        "Printnightmare_vuln",
+        "Struts2vulstools_tool",
+        "Godzilla_webshell",
+        "Behinder",
+        "Fscan_tool",
+        "Sqlmap_tool",
+        "Wpscan_tool",
+        "Dirsearch_tool",
+        "Metasploit_tool",
+        "Chisel_tool",
+        "Antsword",
+        "Weblogictool",
+        "Finalshell",
+        "Snetcracker_tool",
+        "Drupalgeddon_vuln",
+        "Jrat_rat",
+        "Meterpreter_tool",
+        "Spear-phishing_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "Kyrgyzstan",
+        "Russian",
+        "Turkmenistan",
+        "Chinese",
+        "Tajikistan",
+        "Myanmar",
+        "Uzbekistan",
+        "Asia-pacific",
+        "Apac",
+        "Asia"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 48,
+      "software": [
+        "Telegram",
+        "proxifier",
+        "rsocx",
+        "wordpress",
+        "Windows registry",
+        "Chrome",
+        "Drupal"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/shadowsilk/",
+        "https://github.com/BeichenDream/Godzilla",
+        "https://github.com/AntSwordProject/antSword",
+        "https://github.com/KimJun1010/WeblogicTool"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "First known AI-powered ransomware uncovered by ESET Research",
+      "completeness": "Low",
+      "threats": [
+        "Promptlock"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "software": [
+        "OpenAI",
+        "Ollama",
+        "Linux"
+      ],
+      "languages": [
+        "lua",
+        "golang"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/ransomware/first-known-ai-powered-ransomware-uncovered-eset-research/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "Storm-0501s evolving techniques lead to cloud-based ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Embargo_ransomware",
+        "Evil-winrm_tool",
+        "Winrm_tool",
+        "Dcsync_technique",
+        "Azurehound_tool",
+        "Aadinternals_tool",
+        "Azcopy_tool",
+        "Impacket_tool",
+        "Trojan:win32/suspadsyncaccess.a"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Active Directory",
+        "Entra Connect",
+        "Microsoft Teams",
+        "local security authority",
+        "Microsoft Azure Active Directory Connect",
+        "Azure Active Directory",
+        "Twitter"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/08/27/storm-0501s-evolving-techniques-lead-to-cloud-based-ransomware/",
+        "https://github.com/Hackplayers/evil-winrm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "Threat Actors Deploy Sinobi Ransomware via Compromised SonicWall SSL VPN Credentials",
+      "completeness": "Medium",
+      "threats": [
+        "Sinobi",
+        "More_eggs",
+        "Lynx",
+        "Inc_ransomware",
+        "Rclone_tool",
+        "Babuk",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory"
+      ],
+      "algorithms": [
+        "aes",
+        "sha512",
+        "aes-128-ctr",
+        "base64",
+        "curve25519"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/threat-actors-deploy-sinobi-ransomware-via-compromised-sonicwall-ssl-vpn-credentials",
+        "https://github.com/eSentire/iocs/blob/main/Sinobi/curve-25519%2Baes-128-ctr.py",
+        "https://github.com/eSentire/iocs/blob/main/Sinobi/Sinobi-Ransomware-IoCs-08-14-2025.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-27",
+      "title": "Mosyle identifies new Mac malware that evades detection through fake PDF conversion tool",
+      "completeness": "Low",
+      "threats": [
+        "Jscorerunner"
+      ],
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "Chrome",
+        "Google Chrome",
+        "Twitter"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://9to5mac.com/2025/08/27/mosyle-identifies-new-mac-malware-that-evades-detection-through-fake-pdf-conversion-tool/"
+      ]
+    }
+  }
+]

@@ -97,5 +97,163 @@
         "https://www.cyfirma.com/research/apt36-targets-indian-boss-linux-systems-with-weaponized-autostart-files/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-25",
+      "title": "Like PuTTY in Admins Hands",
+      "completeness": "Medium",
+      "threats": [
+        "Putty_tool",
+        "Kerberoasting_technique",
+        "Oyster",
+        "Nltest_tool",
+        "Rubeus_tool",
+        "Impacket_tool",
+        "Powersploit_tool",
+        "Lolbin_technique",
+        "Plink_tool",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "Active Directory",
+        "WordPress",
+        "FireFox"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "GetUserSPNs"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://levelblue.com/blogs/security-essentials/like-putty-in-admins-hands"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-25",
+      "title": "Deception in Depth: PRC-Nexus Espionage Campaign Hijacks Web Traffic to Target Diplomats",
+      "completeness": "High",
+      "threats": [
+        "Staticplugin",
+        "Plugx_rat",
+        "Aitm_technique",
+        "Canonstager"
+      ],
+      "geo": [
+        "Asia",
+        "China"
+      ],
+      "software": [
+        "Gmail",
+        "Chrome",
+        "openssl",
+        "Windows security"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "myFunction",
+        "GetCurrentDirectoryW"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/prc-nexus-espionage-targets-diplomats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-25",
+      "title": "Underground ransomware distributed to the world, including Korea",
+      "completeness": "Medium",
+      "threats": [
+        "Underground_ransomware",
+        "Underground_team_ransomware",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Ransomware/win.grounde.c5771977",
+        "Ransomware/win.x64.c5768642",
+        "Ransom/mdp.behavior.m2813",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1946"
+      ],
+      "geo": [
+        "France",
+        "Slovakia",
+        "Korea",
+        "Germany",
+        "Singapore",
+        "United arab emirates",
+        "Canada",
+        "Spain",
+        "Australia",
+        "Taiwan",
+        "Arab emirates"
+      ],
+      "algorithms": [
+        "aes",
+        "cbc",
+        "md5",
+        "bcrypt"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89786/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-25",
+      "title": "New Netflix scam is trying to steal your Facebook credentials",
+      "completeness": "Low",
+      "links": [
+        "https://moonlock.com/new-netflix-scam-facebook-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-25",
+      "title": "Android Droppers: The Silent Gatekeepers of Malware",
+      "completeness": "Low",
+      "threats": [
+        "Securidropper",
+        "Brokewell",
+        "Tiramisudropper",
+        "Spynote_rat"
+      ],
+      "geo": [
+        "Asia",
+        "India",
+        "Brazil",
+        "Singapore",
+        "Thailand"
+      ],
+      "software": [
+        "Android",
+        "Gatekeepers",
+        "Google Play",
+        "WhatsApp"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/android-droppers-the-silent-gatekeepers-of-malware"
+      ]
+    }
   }
 ]

@@ -1,0 +1,68 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-30",
+      "title": "How attackers adapt to built-in macOS protection",
+      "completeness": "Low",
+      "threats": [
+        "Motw_bypass_technique",
+        "Chromeloader"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 4,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "curl"
+      ],
+      "algorithms": [
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/macos-security-and-typical-attacks/117367/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-30",
+      "title": "Fake macOS tutorials are spreading the new Shamos stealer",
+      "completeness": "Low",
+      "threats": [
+        "Amos_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Colombia",
+        "Asian",
+        "China",
+        "Australia",
+        "Italy",
+        "Russian",
+        "Chinese",
+        "African",
+        "Canada",
+        "Mexico",
+        "Asia",
+        "United kingdom",
+        "Africa",
+        "Japan"
+      ],
+      "software": [
+        "macOS",
+        "Slack",
+        "Gatekeeper",
+        "Ledger Live"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://moonlock.com/fake-mac-tutorials-shamos"
+      ]
+    }
+  }
+]

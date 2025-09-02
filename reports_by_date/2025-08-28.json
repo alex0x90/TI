@@ -1,0 +1,447 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "Phishing Kits Uncovered: Methods and Tactics Used to Evade SEGs, Sandboxes, and Analysts",
+      "completeness": "Low",
+      "threats": [
+        "Mispadu",
+        "Clickfix_technique",
+        "Glitch"
+      ],
+      "software": [
+        "TikTok",
+        "SendGrid",
+        "Microsoft Word",
+        "Cloudflare Turnstile"
+      ],
+      "links": [
+        "https://cofense.com/blog/phishing-kits-uncovered-methods-and-tactics-used-to-evade-segs%2C-sandboxes%2C-and-analysts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "AppSuite PDF Editor Backdoor: A Detailed Technical Analysis",
+      "completeness": "Low",
+      "threats": [
+        "Justaskjacky"
+      ],
+      "software": [
+        "Windows Installer",
+        "Electron",
+        "NSIS installer",
+        "Task Scheduler",
+        "chromium",
+        "Chrome",
+        "Mastodon"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "aes-128-cbc",
+        "xor",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "get_sid",
+        "TaskScheduler",
+        "GetPsList",
+        "GetRtc",
+        "GetOsCKey"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.gdatasoftware.com/blog/2025/08/38257-appsuite-pdf-editor-backdoor-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "TAOTH Campaign Exploits End-of-Support Software to Target Traditional Chinese Users and Dissidents",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Toshis",
+        "C6door",
+        "Desfy",
+        "Gtelam",
+        "Xiangoop",
+        "Cobalt_strike_tool",
+        "Dll_sideloading_technique",
+        "Merlin_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Chinese",
+        "Japan",
+        "Taiwanese",
+        "Norway",
+        "Taiwan",
+        "Asia",
+        "Hong kong",
+        "Korea",
+        "China"
+      ],
+      "software": [
+        "Sogou",
+        "Visual Studio Code",
+        "VSCode",
+        "gmail",
+        "YouDao"
+      ],
+      "algorithms": [
+        "aes",
+        "md5"
+      ],
+      "functions": [
+        "GetAllProcessNames"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/h/taoth-campaign.html",
+        "https://github.com/MythicAgents/merlin/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "Malicious Screen Connect Campaign Abuses AI-Themed Lures for Xworm Delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Xworm_rat",
+        "Screenconnect_tool",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 6,
+      "software": [
+        "DeepSeek",
+        "OpenAI",
+        "chrome",
+        "Windows Security"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/malicious-screen-connect-campaign-abuses-ai-themed-lures-for-xworm-delivery/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "Traps under fault repair: Lazarus (APT-Q-1) recent attack analysis using ClickFix techniques",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Beavertail",
+        "Invisibleferret"
+      ],
+      "geo": [
+        "Asian"
+      ],
+      "software": [
+        "Node.js",
+        "macOS",
+        "Android",
+        "WeChat"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.ctfiot.com/267223.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "Analysis of APT-C-53 (Gamaridon) attacks on Ukrainian government functional departments",
+      "completeness": "Medium",
+      "threats": [
+        "Dev_tunnels_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "software": [
+        "Telegram",
+        "dropbox",
+        "WeChat"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.ctfiot.com/267368.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "Chasing the Silver Fox: Cat & Mouse in Kernel Shadows",
+      "completeness": "High",
+      "threats": [
+        "Av-killer",
+        "Valleyrat",
+        "Zemana_tool",
+        "Winos",
+        "Terminator_tool",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Asian",
+        "China",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows kernel"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/silver-fox-apt-vulnerable-drivers/",
+        "https://github.com/ZeroMemoryEx/Terminator",
+        "https://github.com/upx/upx",
+        "https://github.com/magicsword-io/LOLDrivers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "Belarus-Linked DSLRoot Proxy Network Deploys Hardware in U.S. Residences, Including Military Homes",
+      "completeness": "High",
+      "threats": [
+        "Dslroot",
+        "Residential_proxy_technique",
+        "Dslpylon"
+      ],
+      "geo": [
+        "American",
+        "Moscow",
+        "Minsk",
+        "Belarus",
+        "Russian",
+        "Russia",
+        "Belarusian"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "Chrome",
+        "Firefox",
+        "Raspberry Pi"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "SetBinaryState"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://infrawatch.app/blog/dslroot-us-proxy-investigation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "TINKYWINKEY KEYLOGGER",
+      "completeness": "High",
+      "threats": [
+        "Tinkywinkey",
+        "Dll_injection_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "France",
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "Windows Service"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "write_to_file",
+        "get_windows_info",
+        "get_cpu_info",
+        "get_ip_address",
+        "get_ram_info",
+        "GetVersionEx",
+        "Windows",
+        "CPUID",
+        "FindTargetPID",
+        "CreateProcessAsUser",
+        "have more..."
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/tinkywinkey-keylogger/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "From Campus to C2: Tracking a Persistent Chinese Operation Against Vietnamese Universities",
+      "completeness": "High",
+      "threats": [
+        "Godzilla_webshell",
+        "Metasploit_tool",
+        "Cobalt_strike_tool",
+        "Vshell",
+        "Juicypotato_tool",
+        "Sqlmap_tool",
+        "Godpotato_tool",
+        "Fscan_tool",
+        "Snowlight",
+        "Process_hollowing_technique",
+        "Netstat_tool",
+        "Credential_dumping_technique",
+        "Teamviewer_tool",
+        "Frpc_tool",
+        "Domain_fronting_technique",
+        "Lolbin_technique",
+        "Meterpreter_tool"
+      ],
+      "geo": [
+        "China",
+        "Vietnam",
+        "Vietnamese",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat",
+        "openssl",
+        "Chrome",
+        "Linux",
+        "curl",
+        "Remote Desktop Services",
+        "Windows Defender",
+        "Windows registry",
+        "psexec",
+        "ASP.NET",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "md5",
+        "gzip"
+      ],
+      "functions": [
+        "CreateService",
+        "GetCLSID",
+        "Get-WinEvent",
+        "CreateEncryptor",
+        "GetString",
+        "CreateDecryptor",
+        "GetMethod",
+        "CreateInstance",
+        "GetBytes",
+        "eval",
+        "have more..."
+      ],
+      "languages": [
+        "php",
+        "jscript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://ctrlaltint3l.github.io/threat%20research/china-vietnam-campaign/",
+        "https://github.com/ctrlaltint3l/intelligence/blob/main/VietnameseCampaign/CobaltStrike/CDN.profile",
+        "https://github.com/ctrlaltint3l/intelligence/blob/main/VietnameseCampaign/CobaltStrike/CatServer.properties",
+        "https://github.com/ctrlaltint3l/intelligence/blob/main/VietnameseCampaign/CobaltStrike/cfcert.store"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "ScreenConnect Super Admin Credential Harvesting",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Screenconnect_tool",
+        "Spear-phishing_technique",
+        "Aitm_technique",
+        "Evilginx_tool",
+        "Qilin_ransomware"
+      ],
+      "links": [
+        "https://www.mimecast.com/threat-intelligence-hub/screenconnect-super-admin-credential/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-28",
+      "title": "SikkahBot Malware Campaign Lures and Defrauds Students in Bangladesh",
+      "completeness": "Medium",
+      "threats": [
+        "Sikkahbot",
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Bangladesh"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 6,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "USSD"
+      ],
+      "links": [
+        "https://cyble.com/blog/sikkahbot-malware-defrauds-students-in-bangladesh/"
+      ]
+    }
+  }
+]

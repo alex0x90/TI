@@ -1,0 +1,342 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "Operation HanKook Phantom: North Korean APT37 targeting South Korea",
+      "completeness": "High",
+      "threats": [
+        "Rokrat",
+        "Spear-phishing_technique",
+        "Procmon_tool",
+        "Dll_injection_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "Nepal",
+        "Romania",
+        "China",
+        "Russia",
+        "Kuwait",
+        "Vietnam",
+        "Japan",
+        "Asia",
+        "Middle east",
+        "Korean",
+        "Korea",
+        "North korean",
+        "India",
+        "Russian",
+        "North korea"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 23,
+      "software": [
+        "Dropbox",
+        "Chrome"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "xor",
+        "crc-32"
+      ],
+      "functions": [
+        "Windows",
+        "Get-Content"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-hankook-phantom-north-korean-apt37-targeting-south-korea/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "Cache Me If You Can (Sitecore Experience Platform Cache Poisoning to RCE)",
+      "completeness": "Low",
+      "software": [
+        "Sitecore",
+        "Twitter"
+      ],
+      "functions": [
+        "GetHandler",
+        "GetIndexOfFirstMatchToken",
+        "GetXamlPageHandler",
+        "SetRenderMethodDelegate",
+        "GetSystemFormValue",
+        "GetLegacyEvent",
+        "FindControl",
+        "FindClientControl",
+        "GetHandlers",
+        "GetMethodFiltered",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://labs.watchtowr.com/cache-me-if-you-can-sitecore-experience-platform-cache-poisoning-to-rce/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "Wallet-Draining npm Package Impersonates Nodemailer to Hijack Crypto Transactions",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "12",
+        "Email:",
+        "1",
+        "Coin:",
+        "2"
+      ],
+      "software": [
+        "Outlook",
+        "Electron"
+      ],
+      "wallets": [
+        "atomicwallet",
+        "exodus_wallet",
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "tether",
+        "solana"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/wallet-draining-npm-package-impersonates-nodemailer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "PromptLock: The First AI-Powered Ransomware & How It Works",
+      "completeness": "Low",
+      "threats": [
+        "Promptlock"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "Ollama",
+        "unix"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "golang",
+        "lua"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/promptlock-first-ai-powered-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "Sindoor Dropper: New Phishing Campaign",
+      "completeness": "High",
+      "threats": [
+        "Sindoor",
+        "Spear-phishing_technique",
+        "Meshagent_tool",
+        "Smuggling_technique"
+      ],
+      "geo": [
+        "India"
+      ],
+      "software": [
+        "Linux",
+        "QEMU"
+      ],
+      "algorithms": [
+        "aes-ctr",
+        "base64",
+        "des",
+        "sha256",
+        "aes",
+        "des-cbc"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2025/08/29/sindoor-dropper-new-phishing-campaign/",
+        "https://github.com/Ylianst/MeshAgent"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "VAIZ, FDN3, TK-NET: A nebula of Ukrainian networks engaged in brute force and password spraying attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Password_spray_technique",
+        "Amadey",
+        "Global-group-raas",
+        "Blackbasta",
+        "Bruted_framework",
+        "Ransomhub",
+        "Smokeloader",
+        "Masscan_tool"
+      ],
+      "geo": [
+        "Bulgarian",
+        "Dutch",
+        "Swedish",
+        "Seychelles",
+        "Russia",
+        "United kingdom",
+        "Ukrainian",
+        "Russian",
+        "Ukraine",
+        "Netherlands",
+        "Turkish",
+        "Israel"
+      ],
+      "links": [
+        "https://www.intrinsec.com/wp-content/uploads/2025/08/TLP-CLEAR-20250828-VAIZ-FDN3-TK-NET-EN.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "Explaining the AI-Assisted Koske Linux Cryptomining Malware Hidden in JPEGs",
+      "completeness": "Low",
+      "threats": [
+        "Koske",
+        "Polyglot_technique",
+        "Xmrig_miner",
+        "Melofee"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 8,
+      "software": [
+        "Linux",
+        "ChatGPT",
+        "unix",
+        "curl",
+        "sudo",
+        "systemd",
+        "task scheduler",
+        "crontab",
+        "openssl"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "readdir"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/explaining-the-ai-assisted-koske-linux-cryptomining-malware-hidden-in-jpegs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "UNVEILING A PYTHON STEALER INF0S3C STEALER",
+      "completeness": "High",
+      "threats": [
+        "Inf0s3c_stealer",
+        "Uac_bypass_technique",
+        "Blankgrabber",
+        "Umbral",
+        "Timestomp_technique",
+        "Credential_dumping_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 23,
+      "software": [
+        "PyInstaller",
+        "Discord",
+        "Telegram",
+        "Roblox"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "SetConsoleCtrlHandler",
+        "GetDirectoryTree"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/unveiling-a-python-stealer-inf0s3c-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "Attackers Target Hotelier Accounts in Malvertising and Phishing Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "functions": [
+        "sendRequest"
+      ],
+      "links": [
+        "https://sec.okta.com/articles/2025/08/attackers-target-hotelier-accounts-in-broad-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-08-29",
+      "title": "Amazon disrupts watering hole campaign by Russias APT29",
+      "completeness": "Low",
+      "threats": [
+        "Watering_hole_technique",
+        "Credential_harvesting_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russias"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/amazon-disrupts-watering-hole-campaign-by-russias-apt29/"
+      ]
+    }
+  }
+]

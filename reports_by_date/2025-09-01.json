@@ -1,0 +1,81 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-01",
+      "title": "Dire Wolf Ransomware: A Threat That Combines Data Encryption with Exfiltration",
+      "completeness": "Medium",
+      "threats": [
+        "Dire_wolf",
+        "Shadow_copies_delete_technique",
+        "Wevtutil_tool"
+      ],
+      "geo": [
+        "Thailand",
+        "Italy",
+        "Australia",
+        "Taiwan",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "bcdedit",
+        "MSSQL",
+        "onenote",
+        "outlook"
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256",
+        "curve25519",
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/89938/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-01",
+      "title": "AI Waifu RAT: A Ring3 malware-like RAT based on LLM manipulation is circulating in the wild",
+      "completeness": "Medium",
+      "threats": [
+        "Ai_waifu_rat",
+        "Timebomb_technique",
+        "Lolbin_technique",
+        "Mitm_technique",
+        "Supply_chain_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "China",
+        "Guangdong",
+        "Chinese",
+        "Taiwanese",
+        "Taiwan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 22,
+      "algorithms": [
+        "aes-256",
+        "sha256",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "eval",
+        "Function",
+        "Windows",
+        "system"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://ryingo.gitbook.io/writeups-ai_waifu_rat"
+      ]
+    }
+  }
+]
