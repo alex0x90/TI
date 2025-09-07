@@ -1,0 +1,272 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-06",
+      "title": "Unmasked: Salat Stealer A Deep Dive into Its Advanced Persistence Mechanisms and C2 Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Webrat",
+        "Procmon_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "Windows Defender",
+        "Telegram",
+        "Windows Error Reporting",
+        "Windows Registry",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Edge",
+        "ChromePlus",
+        "have more..."
+      ],
+      "wallets": [
+        "coinomi",
+        "mymonero",
+        "atomicwallet",
+        "zcash",
+        "guarda_wallet",
+        "electrum",
+        "metamask",
+        "coinbase",
+        "rabby",
+        "nami_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "md5",
+        "exhibit"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/unmasked-salat-stealer-a-deep-dive-into-its-advanced-persistence-mechanisms-and-c2-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-06",
+      "title": "SafePay Ransomware: How a Non-RaaS Group Executes Rapid Fire Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Safepay",
+        "Lockbit",
+        "Qilin_ransomware",
+        "Akira_ransomware",
+        "Sharefinder_tool",
+        "Blackbasta"
+      ],
+      "geo": [
+        "Great britain",
+        "Germany",
+        "Russian",
+        "Canada",
+        "United kingdom"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "PsExec"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/safepay-ransomware-attacks-ttps"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-06",
+      "title": "GPUGate Malware: Malicious GitHub Desktop Implants Use Hardware-Specific Decryption, Abuse Google Ads to Target Western Europe",
+      "completeness": "High",
+      "threats": [
+        "Gpugate",
+        "Gpugate_technique",
+        "Bloat_technique",
+        "Dll_sideloading_technique",
+        "Amos_stealer",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 31,
+      "software": [
+        "Windows Installer",
+        "Windows Defender",
+        "Microsoft Defender",
+        "Windows service",
+        "macOS",
+        "Telegram",
+        "gatekeepers",
+        "chrome",
+        "Microsoft Visual C++",
+        "Mac OS",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "aes",
+        "sha256",
+        "zip",
+        "sha1",
+        "md5",
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/gpugate-malware-malicious-github-desktop-implants-use-hardware-specific-decryption-abuse-google-ads-target-western-europe/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-06",
+      "title": "GhostRedirector poisons Windows servers: Backdoors with a side of Potatoes",
+      "completeness": "High",
+      "threats": [
+        "Zunput",
+        "Rungan",
+        "Gamshen",
+        "Iiserpent",
+        "Badpotato_tool",
+        "Lolbin_technique",
+        "Gotohttp_tool",
+        "Dotnet_reactor_tool",
+        "Comdai",
+        "Rid_hijacking_tool",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "China",
+        "Peru",
+        "Canada",
+        "Chinese",
+        "Usa",
+        "Vietnam",
+        "America",
+        "Ukraine",
+        "Philippines",
+        "Netherlands",
+        "Thailand",
+        "India",
+        "Brazil",
+        "Asia",
+        "Finland",
+        "Singapore",
+        "Portuguese"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 25,
+      "software": [
+        "EfsPotato",
+        "NET Reactor",
+        "Windows registry",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1",
+        "aes",
+        "cbc"
+      ],
+      "functions": [
+        "CreatePorcessA"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/ghostredirector-poisons-windows-servers-backdoors-side-potatoes/",
+        "https://github.com/minhangxiaohui/AvoidRandomKill/blob/main/AvoidRandomKill/AES.cpp",
+        "https://github.com/zcgonvh/EfsPotato/",
+        "https://github.com/BeichenDream/BadPotato/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-06",
+      "title": "Threat Actors Impersonate Microsoft Teams To Deliver Odyssey macOS Stealer Via Clickfix",
+      "completeness": "Medium",
+      "threats": [
+        "Odyssey_stealer",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 21,
+      "software": [
+        "Microsoft Teams",
+        "macOS",
+        "Ledger Live",
+        "Tradingview",
+        "Chrome",
+        "Chromium",
+        "Vivaldi",
+        "Opera",
+        "OperaGX",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "electrum",
+        "coinomi",
+        "exodus_wallet",
+        "wassabi",
+        "bitcoincore",
+        "litecoincore",
+        "electron_cash",
+        "guarda_wallet",
+        "trezor",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/threat-actors-impersonate-microsoft-teams-to-deliver-odyssey-macos-stealer-via-clickfix"
+      ]
+    }
+  }
+]

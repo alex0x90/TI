@@ -1,0 +1,247 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-04",
+      "title": "Operation BarrelFire: NoisyBear targets entities linked to Kazakhstans Oil & Gas Sector.",
+      "completeness": "High",
+      "threats": [
+        "Downshell",
+        "Lolbin_technique",
+        "Powersploit_tool",
+        "Meterpreter_tool",
+        "Dll_injection_technique",
+        "Metasploit_tool"
+      ],
+      "geo": [
+        "Kazakhstans",
+        "Russian",
+        "Asia",
+        "Asian",
+        "Kazakhstan"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 13,
+      "software": [
+        "gatekeeper",
+        "Outlook"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Add-Type",
+        "GetModuleHandle",
+        "getDelegateType",
+        "Create-RemoteThread"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-barrelfire-noisybear-kazakhstan-oil-gas-sector/",
+        "https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1",
+        "https://gist.github.com/rattlemind/bd624e9e6010f6ac095c318a921e9c82"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-04",
+      "title": "Salesloft Drift Breach: Everything You Need to Know",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Tanium_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Salesloft Drift",
+        "Salesforce",
+        "Slack",
+        "Gmail",
+        "Telegram",
+        "MOVEit"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/salesloft-drift-breach-everything-you-need-to-know/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-04",
+      "title": "s1ngularity's Aftermath: AI, TTPs, and Impact in the Nx Supply Chain Attack",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "sudo",
+        "Linux",
+        "OpenAI"
+      ],
+      "wallets": [
+        "electrum",
+        "metamask",
+        "trezor",
+        "exodus_wallet",
+        "solflare"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/s1ngularitys-aftermath",
+        "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-04",
+      "title": "Dark Web Profile: GLOBAL Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Global-group-raas",
+        "Mamona",
+        "Eldorado_ransomware",
+        "Windows_locker",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Belgium",
+        "Brazil",
+        "Ireland",
+        "United kingdom",
+        "Russian",
+        "Australia",
+        "Italy",
+        "Mexico",
+        "Lebanon",
+        "Sweden"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 30,
+      "software": [
+        "Linux",
+        "ESXi",
+        "macOS",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "chacha20-poly1305"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-global-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-04",
+      "title": "Not Safe for Work: Tracking and Investigating Stealerium and Phantom Infostealers",
+      "completeness": "Medium",
+      "threats": [
+        "Phantom_stealer",
+        "Stealerium_stealer",
+        "Lumma_stealer",
+        "Amatera_stealer",
+        "Snake_keylogger"
+      ],
+      "geo": [
+        "Canadian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam",
+        "Zulip",
+        "Windows Defender",
+        "chrome",
+        "Outlook",
+        "Discord",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5",
+        "aes"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers",
+        "https://github.com/witchfindertr/Stealerium",
+        "https://github.com/Stealerium/Stealerium"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-04",
+      "title": "Cato CTRL Threat Research: Threat Actors Abuse Simplified AI to Steal Microsoft 365 Credentials",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-threat-actors-abuse-simplified-ai-to-steal-microsoft-365-credentials/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-04",
+      "title": "Contagious Interview \\| North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Contagiousdrop",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Japanese",
+        "North korea",
+        "North korean"
+      ],
+      "software": [
+        "Slack",
+        "Gmail",
+        "curl",
+        "Astrill VPN",
+        "Node.js",
+        "Starlink",
+        "macOS",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/",
+        "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt\\_lazarus.txt",
+        "https://github.com/stamparm/maltrail/tree/master"
+      ]
+    }
+  }
+]

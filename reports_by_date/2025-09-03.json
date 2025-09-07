@@ -1,0 +1,274 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "Analyzing NotDoor: Inside APT28s Expanding Arsenal",
+      "completeness": "Medium",
+      "threats": [
+        "Notdoor",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Microsoft OneDrive",
+        "curl",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://lab52.io/blog/analyzing-notdoor-inside-apt28s-expanding-arsenal/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "Ethereum smart contracts used to push malicious code on npm",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Ethers-provider2"
+      ],
+      "software": [
+        "Twitter",
+        "Microsoft OneDrive",
+        "VSCode"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/ethereum-contracts-malicious-code"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "Model Namespace Reuse: An AI Supply-Chain Attack Exploiting Model Name Trust",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Australia",
+        "Japan",
+        "Middle east",
+        "India"
+      ],
+      "software": [
+        "Hugging Face",
+        "toothfAIry"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/model-namespace-reuse/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "Obscura, an Obscure New Ransomware Variant",
+      "completeness": "Low",
+      "threats": [
+        "Obscura",
+        "Windows_locker",
+        "Shadow_copies_delete_technique",
+        "Octopus",
+        "Crux_ransomware",
+        "Cephalus"
+      ],
+      "software": [
+        "Windows firewall",
+        "Windows security",
+        "mysql",
+        "mariadb",
+        "Winlogon",
+        "docker"
+      ],
+      "algorithms": [
+        "base64",
+        "xchacha20",
+        "curve25519",
+        "sha256",
+        "chacha20"
+      ],
+      "functions": [
+        "main_run",
+        "main_windows_api_IsRunAsAdmin",
+        "Windows",
+        "main_windows_api_KillProcesses",
+        "main_windows_api_GetPCRole",
+        "encryptFileRange",
+        "main_windows_api_generateEphemeralKeyPair",
+        "main_hasExcludedExtension"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/obscura-ransomware-variant",
+        "https://github.com",
+        "https://gist.github.com/gleeda/1781b0db8cbc78b4ef39dbe2aed77f38/raw/e3526be6bb47c1ecbf459a63e40a787f1e8c0e70/README\\_Obscura.txt",
+        "https://gist.github.com/gleeda/1781b0db8cbc78b4ef39dbe2aed77f38#file-readme\\_obscura-txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "Trojanized ScreenConnect installers evolve, dropping multiple RATs on a single machine",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Asyncrat",
+        "Purehvnc_tool",
+        "Amsi_bypass_technique",
+        "Xworm_rat",
+        "Dcrat",
+        "Remcos_rat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.acronis.com/en-us/tru/posts/trojanized-screenconnect-installers-evolve-dropping-multiple-rats-on-a-single-machine/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "P2Pinfect - New Variant Targets MIPS Devices",
+      "completeness": "High",
+      "threats": [
+        "P2pinfect",
+        "Mirai",
+        "Supply_chain_technique",
+        "Nbminer",
+        "Process_injection_technique",
+        "Uac_bypass_technique",
+        "Fodhelper_technique",
+        "Spear-phishing_technique",
+        "Splashtop_tool"
+      ],
+      "geo": [
+        "India",
+        "Saudi",
+        "Poland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 27,
+      "software": [
+        "Redis",
+        "OpenWRT",
+        "Linux",
+        "Windows Defender"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "kawpow",
+        "sha256"
+      ],
+      "languages": [
+        "lua",
+        "autoit",
+        "javascript",
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/p2pinfect-new-variant-targets-mips-devices"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "MintsLoader campaign activities resume",
+      "completeness": "Low",
+      "threats": [
+        "Mintsloader"
+      ],
+      "software": [
+        "cURL"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/riprende-la-campagna-mintsloader/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-03",
+      "title": "ViewState Deserialization Zero-Day Vulnerability in Sitecore Products (CVE-2025-53690)",
+      "completeness": "Medium",
+      "threats": [
+        "Viewstate_deserialization_vuln",
+        "Weepsteel",
+        "Earthworm_tool",
+        "Dwagent_tool",
+        "Bloodhound_tool",
+        "Ghostcontainer",
+        "Netstat_tool",
+        "Rssock_tool",
+        "Credential_dumping_technique",
+        "Nltest_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Sitecore",
+        "ASP.NET",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256",
+        "aes"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/viewstate-deserialization-zero-day-vulnerability/",
+        "https://github.com/Ridter/cve-2020-0688/blob/master/ExchangeCmdPy.py"
+      ]
+    }
+  }
+]

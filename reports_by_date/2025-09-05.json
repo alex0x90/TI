@@ -1,0 +1,136 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-05",
+      "title": "New Botnet Emerges from the Shadows: NightshadeC2",
+      "completeness": "High",
+      "threats": [
+        "Nightshade",
+        "Clickfix_technique",
+        "Uac_bypass_technique",
+        "Lumma_stealer",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam",
+        "Windows Defender",
+        "Chromium",
+        "Microsoft Defender",
+        "Winlogon",
+        "Firefox",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "rc4",
+        "exhibit"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/new-botnet-emerges-from-the-shadows-nightshadec2",
+        "https://github.com/esentire/iocs/tree/main/Nightshade/SandboxBypass/bin/Release",
+        "https://github.com/Kudaes/Elevator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-05",
+      "title": "Malicious npm Packages Impersonate Flashbots SDKs, Targeting Ethereum Wallet Credentials",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Vietnamese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 6,
+      "software": [
+        "Telegram",
+        "Outlook"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "signBundle",
+        "create",
+        "initFlashbotBundle"
+      ],
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-npm-packages-impersonate-flashbots-sdks-targeting-ethereum-wallet-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-05",
+      "title": "Inside the Kimsuky Leak: How the Kim Dump Exposed North Koreas Credential Theft Playbook",
+      "completeness": "High",
+      "threats": [
+        "Aitm_technique",
+        "Credential_harvesting_technique",
+        "Titanldr",
+        "Blacklotus",
+        "Netstat_tool",
+        "Supply_chain_technique",
+        "Api_obfuscation_technique"
+      ],
+      "geo": [
+        "Kor",
+        "China",
+        "North korea",
+        "Asia",
+        "Dprk",
+        "North korean",
+        "Korean",
+        "Taiwanese",
+        "North koreas",
+        "Chinese",
+        "Taiwan",
+        "Korea"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 12,
+      "software": [
+        "Linux",
+        "Weibo",
+        "Firefox"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "functions": [
+        "Win32"
+      ],
+      "links": [
+        "https://dti.domaintools.com/inside-the-kimsuky-leak-how-the-kim-dump-exposed-north-koreas-credential-theft-playbook/"
+      ]
+    }
+  }
+]
