@@ -1,0 +1,270 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "SAP NetWeaver Metadata Uploader Vulnerability (CVE-2025-31324)",
+      "completeness": "Medium",
+      "threats": [
+        "Auto-color",
+        "Havoc"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "1",
+        "Hash:",
+        "4"
+      ],
+      "software": [
+        "SAP NetWeaver",
+        "Linux"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/cve-2025-31324-sap-vulnerability-protection/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "Technical Analysis of kkRAT",
+      "completeness": "High",
+      "threats": [
+        "Kkrat",
+        "Valleyrat",
+        "Fatalrat",
+        "Gh0st_rat",
+        "Gotohttp_tool",
+        "Byovd_technique",
+        "Realblindingedr_tool",
+        "Junk_code_technique",
+        "Go-socks5_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 20,
+      "software": [
+        "Sunlogin",
+        "Windows registry",
+        "Telegram",
+        "WeChat",
+        "Internet Explorer",
+        "Firefox",
+        "Google Chrome",
+        "Sogou"
+      ],
+      "crypto": [
+        "tether",
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-kkrat",
+        "https://github.com/myzxcg/RealBlindingEDR",
+        "https://github.com/ThreatLabz/tools/blob/main/kkrat/kkrat\\_driver\\_list.txt",
+        "https://github.com/hasherezade/pe\\_to\\_shellcode/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "Akira Ransomware Group Utilizing SonicWall Devices for Initial Access",
+      "completeness": "Low",
+      "threats": [
+        "Akira_ransomware"
+      ],
+      "software": [
+        "Active Directory"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/dr-akira-ransomware-group-utilizing-sonicwall-devices-for-initial-access"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "Frankenstein Variant of the ToneShell Backdoor Targeting Myanmar",
+      "completeness": "Medium",
+      "threats": [
+        "Toneshell",
+        "Dll_sideloading_technique",
+        "Faketls_tool",
+        "Toolshell_vuln"
+      ],
+      "geo": [
+        "Myanmar",
+        "Israel",
+        "China"
+      ],
+      "software": [
+        "Task Scheduler",
+        "OpenAI"
+      ],
+      "algorithms": [
+        "prng",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "rand"
+      ],
+      "links": [
+        "https://intezer.com/blog/frankenstein-variant-of-the-toneshell-backdoor-targeting-myanmar/",
+        "https://github.com/OALabs/hashdb/blob/main/algorithms/tonepipeshell.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "AsyncRAT in Action: Fileless Malware Techniques and Analysis of a Remote Access Trojan",
+      "completeness": "Low",
+      "threats": [
+        "Asyncrat",
+        "Screenconnect_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows security"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "aes-256",
+        "base64"
+      ],
+      "functions": [
+        "Main",
+        "PatchAMSI",
+        "GetModuleHandle",
+        "CreateLoginTask"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://levelblue.com/blogs/security-essentials/asyncrat-in-action-fileless-malware-techniques-and-analysis-of-a-remote-access-trojan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "Newly Identified Domains Likely Linked to Continued Activity from PoisonSeed E-Crime Actor",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique",
+        "Sim_swapping_technique"
+      ],
+      "geo": [
+        "Canada"
+      ],
+      "software": [
+        "SendGrid"
+      ],
+      "links": [
+        "https://dti.domaintools.com/newly-identified-domains-likely-linked-to-continued-activity-from-poisonseed-e-crime-actor/",
+        "https://github.com/DomainTools/SecuritySnacks/blob/main/2025/PoisonSeed\\_Domains\\_July2025.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "Pre-approved GLP-1 prescription scam could be bad for your health",
+      "completeness": "Low",
+      "geo": [
+        "California"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/09/pre-approved-glp-1-prescription-scam-could-be-bad-for-your-health"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "AI-Generated Phishing: How One Email Triggered a Global NPM Supply Chain Crisis",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "SushiSwap",
+        "Twitter"
+      ],
+      "wallets": [
+        "tron",
+        "core_wallet"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "solana",
+        "litecoin",
+        "uniswap",
+        "pancakeswap"
+      ],
+      "functions": [
+        "fetch",
+        "setItem",
+        "createElement"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/npm-hijacking"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-10",
+      "title": "The Great NPM Heist September 2025",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Twitter",
+        "Node.js"
+      ],
+      "wallets": [
+        "metamask",
+        "tron"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "litecoin"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyberint.com/blog/threat-intelligence/the-great-npm-heist-september-2025/"
+      ]
+    }
+  }
+]

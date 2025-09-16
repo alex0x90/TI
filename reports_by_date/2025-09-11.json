@@ -1,0 +1,507 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Malware Campaign Leverages SVGs, Email Attachments, and CDNs to Drop XWorm and Remcos via BAT Scripts",
+      "completeness": "Medium",
+      "threats": [
+        "Xworm_rat",
+        "Remcos_rat",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Windows security",
+        "Event Tracing for Windows"
+      ],
+      "algorithms": [
+        "gzip",
+        "cbc",
+        "zip",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "GetModuleHandle",
+        "Script_"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/xworm-remcos-bat-svg-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Trigona rebranding suspicions and global threats, Blacknevas ransomware analysis",
+      "completeness": "Low",
+      "threats": [
+        "Trigona",
+        "Blacknevas",
+        "Ransom/mdp.decoy.m1171"
+      ],
+      "geo": [
+        "Japan",
+        "Asia-pacific",
+        "Thailand",
+        "Lithuania",
+        "Asian",
+        "Italy",
+        "Asia",
+        "Korea",
+        "America",
+        "United kingdom"
+      ],
+      "algorithms": [
+        "aes",
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90052/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Behind the Mask of Madgicx Plus: A Chrome Extension Campaign Targeting Meta Advertisers",
+      "completeness": "Medium",
+      "threats": [
+        "Man-in-the-browser_technique"
+      ],
+      "ioc_domain": 2,
+      "ioc_url": 19,
+      "ioc_ip": 1,
+      "ioc_file": 3,
+      "ioc_command": 2,
+      "software": [
+        "Chrome",
+        "Instagram",
+        "Gmail"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cybereason.com/blog/chrome-extension-campaign-madgicx"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "AdaptixC2: A New Open-Source Framework Leveraged in Real-World Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Adaptixc2_tool",
+        "Microsoft_quick_assist_tool",
+        "Dll_hijacking_technique",
+        "Fog_ransomware",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Logmein_tool"
+      ],
+      "geo": [
+        "India",
+        "Asia",
+        "Middle east",
+        "Australia",
+        "Japan"
+      ],
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "GetDelegateForFunctionPointer",
+        "Invoke",
+        "Write-Output",
+        "GetProcesses"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/adaptixc2-post-exploitation-framework/",
+        "https://github.com/Adaptix-Framework/AdaptixC2",
+        "https://github.com/Adaptix-Framework/AdaptixC2/blob/main/Extenders/agent\\_beacon/src\\_beacon/beacon/AgentConfig.cpp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Unknown Malware Using Azure Functions as C2",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Malaysia"
+      ],
+      "software": [
+        "Azure Functions"
+      ],
+      "algorithms": [
+        "lznt1",
+        "sha2",
+        "rc4",
+        "sha256"
+      ],
+      "functions": [
+        "GetConsoleWindow"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/AzureFunctionsMalware/",
+        "https://github.com/dmpdump"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "ChillyHell: A Deep Dive into a Modular macOS Backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Chillyhell",
+        "Matanbuchus_maas",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Dropbox",
+        "Unix"
+      ],
+      "functions": [
+        "TransportInit",
+        "mainCycle",
+        "proc_listpids",
+        "_getuid",
+        "_utime",
+        "WaitForNetworkReachability",
+        "GateServersInit",
+        "callsGateServersInit",
+        "Execute",
+        "Query",
+        "have more..."
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/chillyhell-a-modular-macos-backdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Dark Web Profile: Mr Hamza",
+      "completeness": "Low",
+      "threats": [
+        "V-rebirth",
+        "Ryzer_stresser_tool",
+        "Cindy_network_tool",
+        "Monacoc2",
+        "Wraithc2",
+        "Sapphire",
+        "Hyperion_tool",
+        "Email-tracker_tool",
+        "Chiasmodon_tool",
+        "Http_spectral_phantom_tool",
+        "Dns_amplification_technique"
+      ],
+      "geo": [
+        "United arab emirates",
+        "Jordan",
+        "Kurdish",
+        "France",
+        "Arab emirates",
+        "Saudi arabia",
+        "Taiwan",
+        "India",
+        "Spain",
+        "Morocco",
+        "Israel",
+        "Latin american",
+        "Germany",
+        "Netherlands"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-mr-hamza/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Dual Threat: Threat Actors Combine Credential Phishing and Malware",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Muck_stealer"
+      ],
+      "geo": [
+        "American"
+      ],
+      "software": [
+        "Android",
+        "Google Play",
+        "Microsoft Office"
+      ],
+      "links": [
+        "https://cofense.com/blog/dual-threat-threat-actors-combine-credential-phishing-and-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "FinalDraft Malware: The Stealthy Threat Using Microsoft Services",
+      "completeness": "High",
+      "threats": [
+        "Finaldraft",
+        "Pathloader",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Asia",
+        "America"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 6,
+      "software": [
+        "Linux",
+        "Microsoft Outlook",
+        "Graph API",
+        "Outlook"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/finaldraft-malware-the-stealthy-threat-using-microsoft-services/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "EggStreme Malware: Unpacking a New APT Framework Targeting a Philippine Military Company",
+      "completeness": "High",
+      "threats": [
+        "Eggstreme_agent",
+        "Dll_sideloading_technique",
+        "Eggstreme_fuel",
+        "Eggstreme_loader",
+        "Eggstreme_reflectiveloader",
+        "Eggstreme_keylogger",
+        "Eggstreme_wizard",
+        "Process_injection_technique",
+        "Shadow_copies_delete_technique",
+        "Impacket_tool",
+        "Timestomp_technique",
+        "Stowaway_tool",
+        "Proxychains_tool"
+      ],
+      "geo": [
+        "China",
+        "Philippine",
+        "Philippines",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "winlogon",
+        "Windows service",
+        "Windows Defender",
+        "process explorer",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "gzip",
+        "md5",
+        "rc4",
+        "xor",
+        "aes"
+      ],
+      "functions": [
+        "CreateProcessWithToken",
+        "Create",
+        "DllMain",
+        "EggStremeAgent",
+        "CoStartOutlookExpressW",
+        "CorGetSvc",
+        "ServiceMain"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/eggstreme-fileless-malware-cyberattack-apac",
+        "https://github.com/ph4ntonn/Stowaway/releases",
+        "https://github.com/bitdefender/malware-ioc/blob/master/2025\\_09\\_10-eggstreme-iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "How an Attackers Blunder Gave Us a Rare Look Inside Their Day-to-Day Operations",
+      "completeness": "Medium",
+      "threats": [
+        "Evilginx_tool",
+        "Mitm_technique",
+        "Graphspy_tool",
+        "Bloodhound_tool",
+        "Teamfiltration_tool",
+        "Residential_proxy_technique",
+        "Lunaproxy_tool",
+        "Supply_chain_technique",
+        "Roadtools_tool"
+      ],
+      "geo": [
+        "California",
+        "Portuguese",
+        "Nigeria",
+        "Canada",
+        "Brazil"
+      ],
+      "software": [
+        "Google Chrome",
+        "Chrome",
+        "Telegram"
+      ],
+      "wallets": [
+        "nifty"
+      ],
+      "algorithms": [
+        "7zip"
+      ],
+      "functions": [
+        "getUpdates"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/rare-look-inside-attacker-operation",
+        "https://github.com/dirkjanm/ROADtools/wiki/ROADtools-Token-eXchange-(roadtx)"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Analysis of Backdoor.WIN32.Buterat",
+      "completeness": "Low",
+      "threats": [
+        "Buterat"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "Obfuscated"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/analysis-of-backdoor-win32-buterat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Analysis of APT-C-24 (Sidewinder) Recent LNK File Phishing Attacks",
+      "completeness": "Medium",
+      "geo": [
+        "Pakistan",
+        "Afghanistan",
+        "Nepal",
+        "Sri lanka",
+        "Asia",
+        "Bhutan",
+        "Myanmar"
+      ],
+      "software": [
+        "nginx",
+        "WeChat"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "xor"
+      ],
+      "languages": [
+        "jscript"
+      ],
+      "links": [
+        "https://www.ctfiot.com/270213.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "Fake Bureau of Motor Vehicles texts are after your personal and banking details",
+      "completeness": "Low",
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/09/fake-bureau-motor-vehicles-texts-are-after-your-personal-and-banking-details"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-11",
+      "title": "F6 and RuStore blocked over 600 domains that distributed the Android Trojan DeliveryRAT",
+      "completeness": "Low",
+      "threats": [
+        "Deliveryrat"
+      ],
+      "software": [
+        "RuStore",
+        "Android",
+        "Telegram",
+        "WhatsApp",
+        "Viber"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/android-troyan-deliveryrat/"
+      ]
+    }
+  }
+]

@@ -268,5 +268,53 @@
         "https://www.cloudsek.com/blog/threat-actors-impersonate-microsoft-teams-to-deliver-odyssey-macos-stealer-via-clickfix"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-06",
+      "title": "An MDR Analysis of the AMOS Stealer Campaign Targeting macOS via Cracked Apps",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Fakecaptcha_technique",
+        "Seo_poisoning_technique",
+        "Lolbin_technique",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "Telegram",
+        "Chrome",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Chromium",
+        "Vivaldi",
+        "curl",
+        "Windows Explorer",
+        "have more..."
+      ],
+      "wallets": [
+        "tonkeeper"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip"
+      ],
+      "languages": [
+        "applescript",
+        "javascript",
+        "swift"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/i/an-mdr-analysis-of-the-amos-stealer-campaign.html"
+      ]
+    }
   }
 ]

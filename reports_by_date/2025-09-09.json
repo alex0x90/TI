@@ -1,0 +1,401 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "APT \\| Patchwork organizes DarkSamural false flag attack campaign",
+      "completeness": "High",
+      "threats": [
+        "Grimresource_technique",
+        "Spear-phishing_technique",
+        "Remcos_rat",
+        "Badnews_rat",
+        "Quasar_rat",
+        "Asyncrat",
+        "Mythic_c2",
+        "Northstar_tool"
+      ],
+      "geo": [
+        "Pakistan",
+        "Bangladesh",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Mac OS",
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "jscript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.ctfiot.com/269659.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "DuckDB npm Account Compromised in Continuing Supply Chain Attack",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "solana",
+        "litecoin"
+      ],
+      "links": [
+        "https://socket.dev/blog/duckdb-npm-account-compromised-in-continuing-supply-chain-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "CyberVolk Ransomware: Analysis of its Dual Encryption Structure and Disguised Decryption Logic",
+      "completeness": "Low",
+      "threats": [
+        "Cybervolk_ransomware",
+        "Eldorado_ransomware",
+        "Ransom/mdp.behavior.m2649",
+        "Ransom/mdp.decoy.m1171"
+      ],
+      "geo": [
+        "Russian",
+        "Japan",
+        "France"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "aes",
+        "chacha20-poly1305",
+        "aes-256",
+        "md5",
+        "sha256",
+        "aes-gcm"
+      ],
+      "functions": [
+        "crypto_rand_Read"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90033/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "MostereRAT Deployed AnyDesk/TightVNC for Covert Full Access",
+      "completeness": "High",
+      "threats": [
+        "Mostererat",
+        "Anydesk_tool",
+        "Tightvnc_tool",
+        "Nsudo_tool",
+        "Edrsilencer_tool",
+        "Tigervnc_tool"
+      ],
+      "geo": [
+        "Japanese",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TightVNC",
+        "Windows Service",
+        "Task Scheduler",
+        "Windows Defender",
+        "Windows Security",
+        "wuauserv"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "CreateSvcRpc",
+        "CreateService"
+      ],
+      "languages": [
+        "ruby"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/mostererat-deployed-anydesk-tightvnc-for-covert-full-access",
+        "https://github.com/wxWidgets/wxWidgets/tree/master/samples/menu",
+        "https://github.com/netero1010/EDRSilencer",
+        "https://github.com/M2TeamArchived/NSudo"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "The Rise of RatOn: From NFC heists to remote control and ATS",
+      "completeness": "Medium",
+      "threats": [
+        "Raton",
+        "Nfskate"
+      ],
+      "geo": [
+        "Czech",
+        "Russian",
+        "Slovakia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "WhatsApp"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "exported"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/the-rise-of-raton-from-nfc-heists-to-remote-control-and-ats"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "Unmasking The Gentlemen Ransomware: Tactics, Techniques, and Procedures Revealed",
+      "completeness": "High",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Anydesk_tool",
+        "Nmap_tool",
+        "Putty_tool",
+        "Lolbin_technique",
+        "Wevtutil_tool",
+        "Shadow_copies_delete_technique",
+        "Credential_dumping_technique",
+        "Ransom.win64.gentleman.thhaibe",
+        "Burntcigar"
+      ],
+      "geo": [
+        "Thailand",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 25,
+      "software": [
+        "WinSCP",
+        "PSExec",
+        "Active Directory",
+        "Windows Defender",
+        "MySQL",
+        "MSSQL",
+        "postgresql",
+        "MariaDB",
+        "msexchange",
+        "docker",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Get-ADDomain",
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/i/unmasking-the-gentlemen-ransomware.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "Blurring the Lines: Intrusion Shows Connection With Three Major Ransomware Gangs",
+      "completeness": "High",
+      "threats": [
+        "Ransomhub",
+        "Sectop_rat",
+        "Systembc",
+        "Betruger",
+        "Softperfect_netscan_tool",
+        "Adfind_tool",
+        "Bloodhound_tool",
+        "Grixba",
+        "Impacket_tool",
+        "Wmiexec_tool",
+        "Playcrypt",
+        "Dragonforce_ransomware",
+        "Netscan_tool",
+        "Dcsync_technique",
+        "Nltest_tool",
+        "Winrm_tool",
+        "Process_injection_technique",
+        "Timestomp_technique",
+        "Credential_harvesting_technique",
+        "Screen_shotting_technique",
+        "Credential_dumping_technique",
+        "Bitsadmin_tool",
+        "Lolbin_technique",
+        "Mimikatz_tool",
+        "Qakbot"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 37,
+      "software": [
+        "WinSCP",
+        "PsExec",
+        "Microsoft Defender",
+        "Windows Background Intelligent Transfer Service",
+        "Chrome",
+        "Sysinternals PsExec",
+        "Windows Defender",
+        "Steam",
+        "Discord",
+        "Telegram",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Get-ADComputer"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/",
+        "https://github.com/fortra/impacket/blob/master/examples/wmiexec.py",
+        "https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules/blob/main/Defender%20For%20Endpoint/ttp\\_t1127-001\\_suspNetworkConnMSBuild.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "LunoBotnet: A Self-Healing Linux Botnet with Modular DDoS and Cryptojacking Capabilities",
+      "completeness": "High",
+      "threats": [
+        "Lunobotnet",
+        "Polymorphism_technique",
+        "Xmrig_miner",
+        "Udpflood_technique",
+        "Process_camouflage_technique",
+        "Tcpflood_technique",
+        "Synflood_technique",
+        "Ackflood_technique",
+        "Icmpflood_technique",
+        "Httpflood_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 8,
+      "software": [
+        "Linux",
+        "Roblox",
+        "Telegram",
+        "curl",
+        "OpenWrt",
+        "Alpine Linux",
+        "Valorant",
+        "systemd",
+        "firefox",
+        "chromium",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256"
+      ],
+      "links": [
+        "https://cyble.com/blog/lunobotnet-a-self-healing-linux-botnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "The Price of Free: How Nulled Plugins Are Used to Weaken Your Defense",
+      "completeness": "Low",
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2025/09/the-price-of-free-how-nulled-plugins-are-used-to-weaken-your-defense/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-09",
+      "title": "ZynorRAT technical analysis: Reverse engineering a novel, Turkish Go-based RAT",
+      "completeness": "Medium",
+      "threats": [
+        "Zynorrat",
+        "Silenteye"
+      ],
+      "geo": [
+        "Turkish",
+        "Asia",
+        "Deutsche"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Linux",
+        "systemd",
+        "sudo",
+        "curl",
+        "VSCode"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/zynorrat-technical-analysis-reverse-engineering-a-novel-turkish-go-based-rat",
+        "https://github.com/kbinani/screenshot",
+        "https://github.com/drego85/tosint",
+        "https://github.com/radareorg/radare2"
+      ]
+    }
+  }
+]

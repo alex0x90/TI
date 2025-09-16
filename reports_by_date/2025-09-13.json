@@ -1,0 +1,305 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "Echoleak- Send a prompt , extract secret from Copilot AI!( CVE-2025-32711)",
+      "completeness": "Low",
+      "threats": [
+        "Echoleak_vuln"
+      ],
+      "software": [
+        "Microsoft Office",
+        "Outlook"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/echoleak-send-a-prompt-extract-secret-from-copilot-ai-cve-2025-32711/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "You re invited: Four phishing lures in campaigns dropping RMM tools",
+      "completeness": "Medium",
+      "threats": [
+        "Itarian_tool",
+        "Simplehelp_tool",
+        "Atera_tool",
+        "Pdq_connect_tool",
+        "Hijackloader",
+        "Deerstealer",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Chrome",
+        "SysInternals",
+        "Microsoft Teams",
+        "Zoom",
+        "Microsoft Excel",
+        "Android",
+        "Telegram",
+        "Cloudflare R2"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://redcanary.com/blog/threat-intelligence/phishing-rmm-tools/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "Uncloaking VoidProxy: a Novel and Evasive Phishing-as-a-Service Framework",
+      "completeness": "Low",
+      "threats": [
+        "Voidproxy_tool",
+        "Aitm_technique",
+        "Bec_technique"
+      ],
+      "software": [
+        "gatekeeper",
+        "Office 365",
+        "Telegram"
+      ],
+      "links": [
+        "https://sec.okta.com/articles/uncloakingvoidproxy/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "Mac.c stealer evolves into MacSync: Now with a backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Macc_stealer",
+        "Amos_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "America",
+        "Germany",
+        "Ukraine"
+      ],
+      "software": [
+        "macOS",
+        "Cloudflare Turnstile",
+        "BurpSuite",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://moonlock.com/macc-stealer-macsync-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "Introducing HybridPetya: Petya/NotPetya copycat with UEFI Secure Boot bypass",
+      "completeness": "Low",
+      "threats": [
+        "Hybridpetya",
+        "Petya",
+        "Eternal_petya",
+        "Notpetyaagain",
+        "Blacklotus",
+        "Bootkitty",
+        "Logofail_vuln"
+      ],
+      "geo": [
+        "Ukraine",
+        "Poland"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "Hyper-V"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base58",
+        "salsa20"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/introducing-hybridpetya-petya-notpetya-copycat-uefi-secure-boot-bypass/",
+        "https://github.com/FirstBlood12/RedPetyaOpenSSL",
+        "https://github.com/microsoft/secureboot\\_objects/blob/main/Archived/dbx\\_info\\_msft\\_1\\_14\\_25.json",
+        "https://github.com/rdp-studio/NotPetyaAgain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "Operation Eastwood: Measuring the Real Impact on NoName057(16)",
+      "completeness": "Low",
+      "threats": [
+        "Ddosia_botnet"
+      ],
+      "geo": [
+        "Iranian",
+        "Israeli",
+        "Belgium",
+        "Russian",
+        "France",
+        "Italy",
+        "Czechia",
+        "Poland",
+        "Ukraine",
+        "Italian",
+        "Spain",
+        "Romania",
+        "Lithuania",
+        "Spanish",
+        "Russia",
+        "Moscow",
+        "German",
+        "Germany"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/operation-eastwood-measuring-the-real-impact-on-noname05716/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "EvilAI Operators Use AI-Generated Code and Fake Apps for Far-Reaching Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Evilai",
+        "Justaskjacky"
+      ],
+      "geo": [
+        "Middle east",
+        "United kingdom",
+        "Brazil",
+        "Africa",
+        "France",
+        "Germany",
+        "Canada",
+        "India",
+        "Asia",
+        "Spain",
+        "Italy",
+        "Americas",
+        "Norway"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Windows Registry",
+        "Microsoft Edge",
+        "Google Chrome",
+        "chrome"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256-cbc",
+        "murmur3",
+        "base64"
+      ],
+      "functions": [
+        "u",
+        "unref"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "swift"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/i/evilai.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "Inboxfuscation: Because Rules Are Meant to Be Broken",
+      "completeness": "Low",
+      "threats": [
+        "Inboxfuscation_technique",
+        "Right-to-left_override_technique"
+      ],
+      "software": [
+        "Microsoft Exchange",
+        "Outlook",
+        "Graph API"
+      ],
+      "functions": [
+        "Get-InboxRule",
+        "Find-ObfuscatedInboxRules"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://permiso.io/blog/inboxfuscation-because-rules-are-meant-to-be-broken",
+        "https://github.com/Permiso-io-tools/Inboxfuscation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-13",
+      "title": "SEO Poisoning Attack Targets Chinese-Speaking Users with Fake Software Sites",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Hiddengh0st",
+        "Winos"
+      ],
+      "software": [
+        "Windows Installer",
+        "Windows Defender",
+        "Telegram"
+      ],
+      "crypto": [
+        "tether",
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/seo-poisoning-attack-targets-chinese-speaking-users-with-fake-software-sites"
+      ]
+    }
+  }
+]

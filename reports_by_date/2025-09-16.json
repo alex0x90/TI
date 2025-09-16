@@ -1,0 +1,228 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "RevengeHotels: a new wave of attacks leveraging LLMs and VenomRAT",
+      "completeness": "Medium",
+      "threats": [
+        "Venomrat",
+        "Revenge_rat",
+        "Nanocore_rat",
+        "Njrat",
+        "Xworm_rat",
+        "Desckvbrat",
+        "Quasar_rat",
+        "Hvnc_tool",
+        "Ngrok_tool",
+        "Trojan.win32.generic"
+      ],
+      "geo": [
+        "Portuguese",
+        "Spain",
+        "Mexico",
+        "Argentina",
+        "Costa rica",
+        "Latin america",
+        "Belarus",
+        "Turkey",
+        "Brazil",
+        "Brazilian",
+        "Spanish",
+        "Russia",
+        "Bolivia",
+        "Chile"
+      ],
+      "software": [
+        "Windows Registry",
+        "Windows Defender",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "aes",
+        "lzma",
+        "base64",
+        "md5",
+        "exhibit",
+        "aes-128"
+      ],
+      "functions": [
+        "RAT"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://securelist.com/revengehotels-attacks-with-ai-and-venomrat-across-latin-america/117493/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "AWSDoor: Persistence on AWS",
+      "completeness": "Low",
+      "threats": [
+        "Awsdoor"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "DynamoDB",
+        "boto3",
+        "curl",
+        "systemd",
+        "GuardDuty"
+      ],
+      "algorithms": [
+        "zip",
+        "hmac"
+      ],
+      "functions": [
+        "CreatePolicy",
+        "CreatePolicyVersion",
+        "SetDefaultPolicyVersion",
+        "get",
+        "CreateSnapshot",
+        "GetCommandInvocation",
+        "LeaveOrganization"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.riskinsight-wavestone.com/en/2025/09/awsdoor-persistence-on-aws/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Deniability by Design: DNS-Driven Insights into a Malicious Ad Network",
+      "completeness": "Medium",
+      "threats": [
+        "4shared",
+        "Cloaking_technique",
+        "Lumma_stealer",
+        "Spear-phishing_technique",
+        "Gozi",
+        "Triada_trojan",
+        "Dollyway"
+      ],
+      "geo": [
+        "Malta",
+        "Moscow",
+        "Anguilla",
+        "German",
+        "Singapore",
+        "London",
+        "Russia",
+        "Panama",
+        "Seychelles",
+        "Cyprus",
+        "Russian"
+      ],
+      "software": [
+        "Webzilla",
+        "Monetag",
+        "BeMob",
+        "RollerAds",
+        "Opera"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "functions": [
+        "Every"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/deniability-by-design-dns-driven-insights-into-a-malicious-ad-network/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "UNMASKING A PYTHON STEALER XillenStealer",
+      "completeness": "High",
+      "threats": [
+        "Xillenstealer",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "Telegram",
+        "Chrome",
+        "Discord",
+        "Steam",
+        "PyInstaller",
+        "qemu",
+        "virtualbox",
+        "Linux",
+        "Task Scheduler",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "atomicwallet",
+        "coinomi",
+        "electrum"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "functions": [
+        "check_vm_sandbox",
+        "install_persistence",
+        "get_system_info",
+        "get_browser_data",
+        "get_encryption_key",
+        "decrypt_password",
+        "get_wallets",
+        "get_discord_tokens",
+        "get_steam_data",
+        "get_telegram_sessions",
+        "have more..."
+      ],
+      "languages": [
+        "rust",
+        "python",
+        "javascript",
+        "java"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/unmasking-a-python-stealer-xillenstealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Malware campaign abuses legitimate RMM tools via fake document sharing",
+      "completeness": "Low",
+      "threats": [
+        "Pdq_connect_tool",
+        "Action1_tool"
+      ],
+      "geo": [
+        "Italy"
+      ],
+      "software": [
+        "Microsoft Outlook"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/campagna-malware-abusa-di-strumenti-di-rmm-legittimi-tramite-falsa-condivisione-di-documenti/"
+      ]
+    }
+  }
+]

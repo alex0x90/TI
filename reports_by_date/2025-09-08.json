@@ -1,0 +1,156 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-08",
+      "title": "Salt Typhoon and UNC4841: Silent Push Discovers New Domains; Urges Defenders to Check Telemetry and Log Data",
+      "completeness": "Low",
+      "threats": [
+        "Demodex_tool",
+        "Deed_rat",
+        "Ghostspider"
+      ],
+      "geo": [
+        "Chinese",
+        "American",
+        "China",
+        "Hong kong",
+        "Los angeles"
+      ],
+      "software": [
+        "ProtonMail"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/salt-typhoon-2025/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-08",
+      "title": "Uncovering ALVIVA HOLDING: Links to Russian Shell Companies and Cybercrime",
+      "completeness": "Medium",
+      "threats": [
+        "Clop",
+        "Cobalt_strike_tool",
+        "Spectr",
+        "Spear-phishing_technique",
+        "Nokoyawa",
+        "Credential_harvesting_technique",
+        "Bianlian_ransomware",
+        "Koiloader",
+        "Brc4_tool",
+        "L3mon_tool",
+        "Sliver_c2_tool"
+      ],
+      "geo": [
+        "England",
+        "Luhansk",
+        "Belize",
+        "Ukraine",
+        "Seychelles",
+        "Indian",
+        "Croatia",
+        "Russian federation",
+        "Germany",
+        "Vanuatu",
+        "Ireland",
+        "London",
+        "Russia",
+        "Panama",
+        "Kaliningrad",
+        "Ukrainian",
+        "Russian"
+      ],
+      "software": [
+        "Roundcube",
+        "Twitter"
+      ],
+      "links": [
+        "https://theravenfile.com/2025/09/08/uncovering-alviva-holding-links-to-russian-shell-companies-and-cybercrime/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-08",
+      "title": "CVE-2025-53690: Sitecore Deployments Targeted via WEEPSTEEL Malware",
+      "completeness": "Low",
+      "threats": [
+        "Weepsteel",
+        "Viewstate_deserialization_vuln",
+        "Earthworm_tool",
+        "Dwagent_tool",
+        "Bloodhound_tool",
+        "Rssock_tool"
+      ],
+      "software": [
+        "Sitecore",
+        "ASP.NET",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "base64",
+        "aes"
+      ],
+      "links": [
+        "https://socradar.io/cve-2025-53690-sitecore-deployments-weepsteel-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-08",
+      "title": "APT37 Targets Windows with Rust Backdoor and Python Loader",
+      "completeness": "High",
+      "threats": [
+        "Chillychino",
+        "Chinotto",
+        "W4sp",
+        "Spear-phishing_technique",
+        "Process_doppelganging_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Korean",
+        "North korean",
+        "Korea",
+        "North korea"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Hash:",
+        "8",
+        "Path:",
+        "11",
+        "File:",
+        "17",
+        "Registry:",
+        "1"
+      ],
+      "software": [
+        "curl",
+        "Windows registry",
+        "Windows Task Scheduler"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript",
+        "rust",
+        "php"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/apt37-targets-windows-rust-backdoor-and-python-loader"
+      ]
+    }
+  }
+]

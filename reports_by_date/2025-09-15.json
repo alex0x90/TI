@@ -1,0 +1,77 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-15",
+      "title": "The strongest in history? Revealing the inside story of AISURU, a super-large botnet in 11.5T",
+      "completeness": "Medium",
+      "threats": [
+        "Aisuru",
+        "Airashi",
+        "Fodcha",
+        "Catddos",
+        "Rapperbot"
+      ],
+      "geo": [
+        "China",
+        "Germany",
+        "Hong kong",
+        "United kingdom"
+      ],
+      "software": [
+        "Zyxel",
+        "Zyxel",
+        "Zyxel",
+        "Zyxel",
+        "Zyxel",
+        "VirtualBox",
+        "QEMU",
+        "Linux"
+      ],
+      "algorithms": [
+        "rc4",
+        "chacha20",
+        "xor",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "golang",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/super-large-scale-botnet-aisuru/",
+        "https://github.com/wy876/POC/blob/main/%E4%B8%89%E6%B1%87%E7%BD%91%E5%85%B3%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/%E4%B8%89%E6%B1%87%E7%BD%91%E5%85%B3%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6debug.php%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E.md?ref=blog.xlab.qianxin.com",
+        "https://github.com/netsecfish/tbk\\_dvr\\_command\\_injection?ref=blog.xlab.qianxin.com",
+        "https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/admin/http/cnpilot\\_r\\_cmd\\_exec.rb?ref=blog.xlab.qianxin.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-15",
+      "title": "All that glitters is not gold: how malicious MCP servers emerged on the wave of AI popularity",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "send_metrics_via_api"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.ru/model-context-protocol-for-ai-integration-abused-in-supply-chain-attacks/113452/"
+      ]
+    }
+  }
+]

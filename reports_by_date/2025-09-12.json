@@ -1,0 +1,183 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-12",
+      "title": "Yurei & The Ghost of Open Source Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Yurei",
+        "Prince_ransomware",
+        "Shadow_copies_delete_technique",
+        "Crazyhunter_ransomware",
+        "Satanlock"
+      ],
+      "geo": [
+        "Morocco",
+        "India",
+        "Nigeria",
+        "Japanese"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/yurei-the-ghost-of-open-source-ransomware/",
+        "https://github.com/oakkaya/Prince-Ransomware/tree/main/Encryptor",
+        "https://github.com/oakkaya/Prince-Ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-12",
+      "title": "NightMARE on 0xelm Street, a guidedtour",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer",
+        "Blister",
+        "Ghostpulse",
+        "Latrodectus",
+        "Lobshot",
+        "Netwire_rat",
+        "Redline_stealer",
+        "Remcos_rat",
+        "Smokeloader",
+        "Stealc",
+        "Strela_stealer",
+        "Xorddos"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam",
+        "Qiling"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "functions": [
+        "Emulate",
+        "ChaCha20"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/nightmare-on-0xelm-street",
+        "https://github.com/elastic/nightMARE",
+        "https://github.com/capstone-engine/capstone",
+        "https://github.com/lief-project/LIEF"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-12",
+      "title": "Head Mare in the Wild: Backdoor Chain and SSH Tunnel to Penetrate Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Phantomremote",
+        "Polyglot_technique",
+        "Phantomcsloader",
+        "Phantomsagent",
+        "Spear-phishing_technique",
+        "Phantompsupload"
+      ],
+      "geo": [
+        "Russian",
+        "Belarus"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 10,
+      "software": [
+        "Microsoft Excel",
+        "Windows SSH"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "WriteAllBytes",
+        "ReadAllBytes",
+        "DllentryPoint",
+        "InternetTgetConNETEDATATE",
+        "taskName",
+        "taskAction",
+        "taskTrigger",
+        "taskSettings",
+        "GetString",
+        "GetEncoding",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://securelist.ru/head-mare-new-phantom-backdoors-and-ssh-tunneling/113473/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-12",
+      "title": "Deconstructing a Cyber Deception: An Analysis of the Clickfix HijackLoader Phishing Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Hijackloader",
+        "Seo_poisoning_technique",
+        "Deerstealer",
+        "Castleloader",
+        "Castlebot",
+        "Process_doppelganging_technique",
+        "Pe_injection_technique",
+        "Nekostealer",
+        "Lumma_stealer",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 17,
+      "software": [
+        "VirtualBox"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/deconstructing-a-cyber-deception-an-analysis-of-the-clickfix-hijackloader-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-12",
+      "title": "Sidewinder APT leverages Nepal protests to push mobile malware",
+      "completeness": "Low",
+      "geo": [
+        "Nepal"
+      ],
+      "software": [
+        "Android"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://strikeready.com/blog/sidewinder-apt-leverages-nepal-protests-to-push-mobile-malware/",
+        "https://github.com/StrikeReady-Inc/research/tree/main/2025-09-10%20sidewinder%20targets%20nepal"
+      ]
+    }
+  }
+]

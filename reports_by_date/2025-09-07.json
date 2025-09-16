@@ -1,0 +1,54 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-07",
+      "title": "From Compromised Keys to Phishing Campaigns: Inside a Cloud Email Service Takeover",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Domain:",
+        "5"
+      ],
+      "functions": [
+        "GetCallerIdentity",
+        "GetSendQuota",
+        "GetAccount",
+        "CreateCase",
+        "CreateEmailIdentity",
+        "SES"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/wiz-discovers-cloud-email-abuse-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-07",
+      "title": "LockBit 5.0 & Ransomware Cartel: What You Need To Know?",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit",
+        "Eldorado_ransomware",
+        "Stealbit",
+        "Qilin_ransomware",
+        "Supply_chain_technique",
+        "Blackcat"
+      ],
+      "wallets": [
+        "zcash"
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin"
+      ],
+      "links": [
+        "https://socradar.io/lockbit-5-0-ransomware-cartel-what-you-need-to-know/"
+      ]
+    }
+  }
+]
