@@ -224,5 +224,637 @@
         "https://cert-agid.gov.it/news/campagna-malware-abusa-di-strumenti-di-rmm-legittimi-tramite-falsa-condivisione-di-documenti/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "WhiteCobra Playbook Exposed: Critical Mistake Reveals 24-Extension Campaign Targeting VS Code and Cursor",
+      "completeness": "Unknown",
+      "threats": [
+        "Screenconnect_tool",
+        "Lumma_stealer",
+        "Anydesk_tool"
+      ],
+      "software": [
+        "VSCode",
+        "Twitter",
+        "chrome",
+        "Hugging Face"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "ShowPrompt",
+        "Remove-Item",
+        "writeFileSync",
+        "setTimeout",
+        "createTmpDir"
+      ],
+      "languages": [
+        "solidity",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.koi.security/blog/whitecobra-vscode-cursor-extensions-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Elons (Proxima/Black Shadow related) ransomware attack via Oracle DBS External Jobs",
+      "completeness": "Medium",
+      "threats": [
+        "Proxima",
+        "Ngrok_tool",
+        "Process_hacker_tool",
+        "Rclone_tool",
+        "Quasar_rat"
+      ],
+      "geo": [
+        "Russian",
+        "Morocco"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 20,
+      "software": [
+        "Windows Performance Monitor",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.yarix.com/2025/09/elons-proxima-black-shadow-related-ransomware-attack-via-oracle-dbs-external-jobs/",
+        "http://\"https://github.com/quentinhardy/odat/blob/master-python3/DbmsScheduler.py\"",
+        "https://github.com/facct-ransomware/Ransomware/blob/main/Proxima/ransom\\_notes/BlackShadow/Elons\\_Help.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "KillSec Ransomware is Attacking Healthcare Institutions in Brazil",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Peru",
+        "Colombia",
+        "Brazilian",
+        "Saudi",
+        "Latin america",
+        "Brazil",
+        "Usa"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/killsec-ransomware-is-attacking-healthcare-institutions-in-brazil"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Raven Stealer",
+      "completeness": "Low",
+      "threats": [
+        "Raven_stealer",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Trojan.w32.100925.ravenstealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chromium",
+        "Telegram",
+        "Chrome",
+        "Microsoft Visual C++"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "sha1",
+        "aes",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/raven-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "S1ngularity/nx attackers strike again",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://www.aikido.dev/blog/s1ngularity-nx-attackers-strike-again"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Under the Pure Curtain: From RAT to Builder to Coder",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Purehvnc_tool",
+        "Sliver_c2_tool",
+        "Purecryptor",
+        "Purerat",
+        "Purelogs",
+        "Lolbin_technique",
+        "Amsi_bypass_technique",
+        "Hvnc_tool",
+        "Httpflood_technique",
+        "Tcpflood_technique",
+        "Silentcryptominer_tool",
+        "Pureminer",
+        "Fakerat",
+        "Runpe_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Russia",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Windows Defender",
+        "Chromium",
+        "Authy",
+        "Chrome",
+        "QQBrowser",
+        "ChromePlus",
+        "7Star",
+        "CentBrowser",
+        "Chedot",
+        "have more..."
+      ],
+      "wallets": [
+        "harmony_wallet",
+        "tronlink",
+        "metamask",
+        "yoroi",
+        "jaxx",
+        "bitapp",
+        "iwallet",
+        "terra_station",
+        "bitclip",
+        "equal_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "ethereum",
+        "ravencoin",
+        "monero",
+        "binance",
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "chacha20-poly1305",
+        "aes",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "getURL",
+        "getTime",
+        "getDaysDiff",
+        "getListElement",
+        "Date",
+        "Get-ScheduledTask",
+        "Get-Date",
+        "TaskManager",
+        "DeletePlugins",
+        "DeleteRestorePoints",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/under-the-pure-curtain-from-rat-to-builder-to-coder/",
+        "https://github.com/SychicBoy/NETReactorSlayer",
+        "https://github.com/aj3423/protod",
+        "https://github.com/protobuf-net/protobuf-net"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "From Red Team to Rogue, Villager Threatens to Become the Next Cobalt Strike",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Villager_tool",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Docker",
+        "Chromium"
+      ],
+      "functions": [
+        "create",
+        "run",
+        "pyeval"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/from-red-team-to-rogue-villager-threatens-to-become-the-next-cobalt-strike"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "The Return of El Dorado: Analyzing the Fast-Growing BlackLock Ransomware Group",
+      "completeness": "Low",
+      "threats": [
+        "Eldorado_ransomware",
+        "Shadow_copies_delete_technique",
+        "Ransom/mdp.behavior.m2649",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1946",
+        "Ransom/mdp.event.m1785",
+        "Ransom/mdp.event.m4353",
+        "Ransom/mdp.event.m4428",
+        "Trojan/win.generic.c5775331"
+      ],
+      "geo": [
+        "Japan",
+        "Korea"
+      ],
+      "software": [
+        "Linux",
+        "ESXi"
+      ],
+      "algorithms": [
+        "xchacha20",
+        "ecdh",
+        "md5"
+      ],
+      "functions": [
+        "NewUnauthenticatedCipher",
+        "XORKeyStream"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90157/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "DIGITAL FRONTLINES : INDIA UNDER MULTI-NATION HACKTIVIST ATTACK",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Pakistani",
+        "China",
+        "Bangladesh",
+        "Indonesia",
+        "India",
+        "Turkey",
+        "Pakistan",
+        "Palestine",
+        "Russian",
+        "Chinese",
+        "Russia",
+        "Indian",
+        "Indonesian"
+      ],
+      "software": [
+        "Windows file explorer"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "CreateFile",
+        "CloseFile"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/digital-frontlines-india-under-multi-nation-hacktivist-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "SmokeLoader Rises From the Ashes",
+      "completeness": "Low",
+      "threats": [
+        "Smokeloader",
+        "Credential_harvesting_technique",
+        "Smokebuster"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian"
+      ],
+      "software": [
+        "Firefox"
+      ],
+      "algorithms": [
+        "md5",
+        "crc-32",
+        "xor",
+        "rc4"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/smokeloader-rises-ashes",
+        "https://github.com/ThreatLabz/smokebuster"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Inside Maranho Stealer: Node.js-Powered InfoStealer Using Reflective DLL Injection",
+      "completeness": "High",
+      "threats": [
+        "Dll_injection_technique",
+        "Maranho",
+        "Credential_harvesting_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 12,
+      "software": [
+        "Node.js",
+        "Chrome",
+        "PsExec",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Google Chrome",
+        "Chromium",
+        "Mozilla Firefox",
+        "Waterfox",
+        "Pale Moon",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "atomicwallet",
+        "coinomi",
+        "guarda_wallet"
+      ],
+      "algorithms": [
+        "zip",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "Win32",
+        "CreateThreadEx"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cyble.com/blog/inside-maranhao-stealer-node-js-powered-infostealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "APT28 Operation Phantom Net Voxel",
+      "completeness": "High",
+      "threats": [
+        "Beardshell_tool",
+        "Covenant_tool",
+        "Spear-phishing_technique",
+        "Slimagent_tool",
+        "Steganography_technique",
+        "Grunt",
+        "Com_hijacking_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian",
+        "Tajikistan",
+        "French",
+        "Ukraine",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Windows CryptoAPI"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "sha1",
+        "base64",
+        "aes",
+        "aes-cbc",
+        "poly1305",
+        "chacha20-poly1305",
+        "aes-256",
+        "xor"
+      ],
+      "functions": [
+        "GetImageResolution",
+        "b",
+        "bb",
+        "DllMain",
+        "main"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic",
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/apt28-operation-phantom-net-voxel/",
+        "https://github.com/naacbin/CovenantDecryptor?tab=readme-ov-file#how-covenant-communication-works",
+        "https://github.com/cobbr/Covenant/tree/master/Covenant/Data/Tasks",
+        "https://github.com/cobbr/Covenant"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "FileFix in the wild! New FileFix campaign goes beyond POC and leverages steganography",
+      "completeness": "High",
+      "threats": [
+        "Filefix_technique",
+        "Steganography_technique",
+        "Clickfix_technique",
+        "Stealc",
+        "Promptfix_technique",
+        "Fakecaptcha_technique"
+      ],
+      "geo": [
+        "Japanese",
+        "German",
+        "Bangladesh",
+        "Dominican republic",
+        "Russian",
+        "Tunisia",
+        "Peru",
+        "Polish",
+        "Nepal",
+        "Spanish",
+        "China",
+        "Germany",
+        "Philippines",
+        "Chinese",
+        "French",
+        "Serbia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "FireFox",
+        "Maxthon",
+        "Electrum-LTC",
+        "Ledger Live",
+        "Telegram",
+        "Discord",
+        "Pidgin",
+        "OLLVM"
+      ],
+      "wallets": [
+        "daedalus",
+        "mainnet",
+        "wassabi",
+        "electrum",
+        "electron_cash",
+        "multidoge",
+        "jaxx",
+        "atomicwallet",
+        "coinomi",
+        "guarda_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "dogecoin",
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "xor",
+        "rc4"
+      ],
+      "functions": [
+        "getNtAllocateVirtualMemory",
+        "getEnumDisplayDevicesA"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.acronis.com/en-us/tru/posts/filefix-in-the-wild-new-filefix-campaign-goes-beyond-poc-and-leverages-steganography/",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-05-16-IOCs-on-recent-ClickFix-activity.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Self-replicating Shai-hulud worm spreads token-stealing malware on npm",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Sobig",
+        "Wannacry",
+        "Eternal_petya"
+      ],
+      "software": [
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/shai-hulud-worm-npm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-16",
+      "title": "Satori Threat Intelligence Alert: SlopAds Covers Fraud with Layers of Obfuscation",
+      "completeness": "Low",
+      "threats": [
+        "Steganography_technique",
+        "Fatmodule"
+      ],
+      "geo": [
+        "Brazil",
+        "India"
+      ],
+      "software": [
+        "Google Play",
+        "Android"
+      ],
+      "algorithms": [
+        "zip",
+        "exhibit"
+      ],
+      "languages": [
+        "java",
+        "javascript"
+      ],
+      "links": [
+        "https://www.humansecurity.com/learn/blog/satori-threat-intelligence-alert-slopads-covers-fraud-with-layers-of-obfuscation/",
+        "https://github.com/packing-box/awesome-executable-packing"
+      ]
+    }
   }
 ]

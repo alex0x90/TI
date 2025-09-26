@@ -1,0 +1,514 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "The Phantom Extension: Backdooring chrome through uncharted pathways",
+      "completeness": "Low",
+      "threats": [
+        "Chromeloader",
+        "Cursedchrome_tool"
+      ],
+      "software": [
+        "chrome",
+        "Chromium",
+        "Microsoft Edge",
+        "Active Directory",
+        "Twitter"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "base64",
+        "hmac"
+      ],
+      "functions": [
+        "GetFlags",
+        "value",
+        "size"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.synacktiv.com/en/publications/the-phantom-extension-backdooring-chrome-through-uncharted-pathways.html",
+        "https://github.com/mandatoryprogrammer/CursedChrome",
+        "https://github.com/Pica4x6/SecurePreferencesFile/blob/main/Seed.py#L60"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "LARVA-25004 Tracking Report",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Nikidoor",
+        "Httpspy",
+        "Http_troy",
+        "Memload"
+      ],
+      "geo": [
+        "Korea",
+        "Korean",
+        "North korea"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "4",
+        "Hash:",
+        "4",
+        "IP:",
+        "1",
+        "Url:",
+        "4"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90292/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "Exploring a yearlong AiTM Phishing Campaign Abusing npm, GitHub and Public CDNs",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Tycoon_2fa",
+        "Evilginx_tool"
+      ],
+      "geo": [
+        "Usa",
+        "Germany"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.orangecyberdefense.com/global/blog/cybersecurity/exploring-a-year-long-aitm-phishing-campaign-abusing-npm-github-and-public-cdns",
+        "https://github.com/javascript-obfuscator/javascript-obfuscator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "CISA Shares Lessons Learned from an Incident Response Engagement",
+      "completeness": "High",
+      "threats": [
+        "Chinachopper",
+        "Dirty_cow_vuln",
+        "Ringq_tool",
+        "Fscan_tool",
+        "Netstat_tool",
+        "Lolbin_technique",
+        "Bitsadmin_tool",
+        "Stowaway_tool",
+        "Iox_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 22,
+      "software": [
+        "GeoServer",
+        "GeoServers",
+        "Burp Suite",
+        "Linux",
+        "curl",
+        "BusyBox"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-266a",
+        "https://github.com/T4y1oR/RingQ",
+        "https://github.com/geotools/geotools/security/advisories/GHSA-w3pj-wh35-fq8w",
+        "https://github.com/firefart/dirtycow"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "From El Dorado to BlackLock: Inside a Fast-Rising RaaS Threat",
+      "completeness": "Low",
+      "threats": [
+        "Eldorado_ransomware",
+        "Shadow_copies_delete_technique",
+        "Ransom/mdp.behavior.m2649",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1946",
+        "Ransom/mdp.event.m1785",
+        "Ransom/mdp.event.m4353",
+        "Ransom/mdp.event.m4428",
+        "Trojan/win.generic.c5775331"
+      ],
+      "geo": [
+        "Russian",
+        "Korea",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXi"
+      ],
+      "algorithms": [
+        "ecdh",
+        "md5",
+        "xchacha20"
+      ],
+      "functions": [
+        "NewUnauthenticatedCipher",
+        "XORKeyStream"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/en/90175/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "BlockBlasters: Infected Steam game downloads malware disguised as patch",
+      "completeness": "Low",
+      "threats": [
+        "Stealc"
+      ],
+      "software": [
+        "BlockBlasters",
+        "Steam",
+        "BlockBlaster",
+        "SteamDB",
+        "Windows Defender",
+        "Microsoft Defender",
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "exhibit"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.gdatasoftware.com/blog/2025/09/38265-steam-blockblasters-game-downloads-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "A new attack using Phantomrshell backdor",
+      "completeness": "Low",
+      "threats": [
+        "Phantomrshell",
+        "Polyglot_technique",
+        "Proxyshell_vuln",
+        "Proxylogon_exploit",
+        "Phantomcore"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Outlook"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "curve25519",
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/947258/",
+        "https://gist.github.com/EvanMcBroom/ace2a9af19fb5e7b2451b1cd4c07bf96"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "Kawa4096 ransomware targets branding through imitation.",
+      "completeness": "High",
+      "threats": [
+        "Kawalocker",
+        "Qilin_ransomware",
+        "Qtox_tool",
+        "Shadow_copies_delete_technique",
+        "Ransomware/win.kawacrypt.c5774792",
+        "Ransomware/win.kawacrypt.c5783637",
+        "Ransom/mdp.command.m1026",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1785",
+        "Akira_ransomware"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "firefox",
+        "outlook",
+        "wordpad"
+      ],
+      "algorithms": [
+        "md5",
+        "salsa20"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90189/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "From MUSE to Manual: Cyberattack Analysis on European Airport Operations",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Babuk",
+        "Rhysida",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Russia",
+        "Iran",
+        "London",
+        "Russian",
+        "North korea",
+        "North korean",
+        "Berlin"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 13,
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/from-muse-to-manual-cyberattack-analysis-on-european-airport-operations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "Bearlyfy: Evolution of a new group of extortionists and its connection with Phantomcore",
+      "completeness": "Medium",
+      "threats": [
+        "Phantomcore",
+        "Lockbit",
+        "Babuk",
+        "Sipper",
+        "Psexec_tool",
+        "Zerologon_vuln",
+        "Winrm_tool",
+        "Psmapexec_tol",
+        "Cloudflared_tool",
+        "Winsw_tool",
+        "Impacket_tool",
+        "Shinysocks_tool",
+        "Meshagent_tool",
+        "Meshcentral_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Belarusian",
+        "Moscow",
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "ESXI",
+        "ESXcli",
+        "Psexec",
+        "Bitrix",
+        "Active Directory",
+        "Windows Defender",
+        "systemd"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/bearlyfy/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "GUNRA RANSOMWARE: What You DontKnow!",
+      "completeness": "High",
+      "threats": [
+        "Gunra",
+        "Screenconnect_tool",
+        "Lumma_stealer",
+        "Conti",
+        "Akira_ransomware",
+        "Shadow_copies_delete_technique",
+        "Lockbit",
+        "Vanhelsing",
+        "Monti",
+        "Siggen",
+        "Remoteadmin_tool",
+        "Eldorado_ransomware",
+        "Trojan.win32.multiinjector.dd",
+        "Phobos",
+        "Credential_dumping_technique",
+        "Process_injection_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Colombian",
+        "Japan",
+        "Asia",
+        "Korea",
+        "Columbia",
+        "Canada",
+        "Spanish",
+        "Brazil",
+        "Croatia",
+        "Panama",
+        "Egypt",
+        "Italy",
+        "Nicaragua"
+      ],
+      "ttp_tactics": 16,
+      "ttp_techniques": 29,
+      "software": [
+        "Linux",
+        "WhatsApp",
+        "Slack",
+        "Office 365",
+        "Ubuntu",
+        "nginx",
+        "Debian",
+        "Visual Studio",
+        "Tor Browser",
+        "Twitter",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64",
+        "murmur2",
+        "xor",
+        "chacha20",
+        "salsa20",
+        "md5"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://theravenfile.com/2025/09/23/gunra-ransomware-what-you-dont-know/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "ShadowV2: An emerging DDoS for hire botnet",
+      "completeness": "High",
+      "threats": [
+        "Shadowv2",
+        "Httpflood_technique",
+        "Fasthttp_tool",
+        "Chromedp_tool"
+      ],
+      "geo": [
+        "Canada",
+        "Singapore"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "GitHub CodeSpaces",
+        "Pydantic",
+        "Ubuntu",
+        "unix",
+        "WordPress",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/shadowv2-an-emerging-ddos-for-hire-botnet",
+        "https://github.com/chromedp/chromedp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-23",
+      "title": "Operation Rewrite: Chinese-Speaking Threat Actors Deploy BadIIS in a Wide Scale SEO Poisoning Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Badiis",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Vietnamese",
+        "Vietnam",
+        "Chinese"
+      ],
+      "software": [
+        "ASP.NET",
+        "coccoc"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "SetRequestNotifications",
+        "Page_Load",
+        "RegisterModule"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/operation-rewrite-seo-poisoning-campaign/"
+      ]
+    }
+  }
+]

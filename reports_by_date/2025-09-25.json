@@ -1,0 +1,448 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Botnet Loader-as-a-Service Infrastructure Distributing RondoDoX and Mirai Payloads",
+      "completeness": "Medium",
+      "threats": [
+        "Rondodox",
+        "Mirai",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 8,
+      "software": [
+        "WebLogic",
+        "WordPress",
+        "vBulletin",
+        "busybox",
+        "Linux",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Monitor"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/botnet-loader-as-a-service-infrastructure-distributing-rondodox-and-mirai-payloads"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Massive npm infection: the Shai-Hulud worm and patient zero",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "Node.js"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/shai-hulud-worm-infects-500-npm-packages-in-a-supply-chain-attack/117547/",
+        "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows",
+        "https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository",
+        "https://github.com/trufflesecurity/trufflehog"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Cavalry Werewolf attacks Russia through trusting relations between states",
+      "completeness": "High",
+      "threats": [
+        "Foalshell",
+        "Stallionrat",
+        "Netstat_tool",
+        "Asyncrat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Middle east",
+        "Kyrgyzstan",
+        "Russian",
+        "Tajikistan",
+        "Russian federation"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Outlook"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "getUpdates"
+      ],
+      "languages": [
+        "powershell",
+        "c_language",
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/cavalry-werewolf-atakuet-rossiyu-cherez-doveritelnye-otnosheniya-mezhdu-gosudarstvami/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Bookworm to Stately Taurus Using the Unit 42 Attribution Framework",
+      "completeness": "Medium",
+      "threats": [
+        "Bookworm",
+        "Toneshell",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Impacket_tool",
+        "Pubload"
+      ],
+      "geo": [
+        "Asia",
+        "Asian",
+        "Chinese"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1021",
+        "T1027",
+        "T1046",
+        "T1105",
+        "T1566.001",
+        "T1570",
+        "T1583.001"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/bookworm-to-stately-taurus/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "[Advanced Threat Hunting (APT)\\] In-depth Analysis of the Encrypted Payloads in the Pseudo Hunter Github Repository",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Korean",
+        "Singapore",
+        "Asian",
+        "Japan",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "rc4"
+      ],
+      "functions": [
+        "CreateProcessWCreateEventW"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/A1UhFfqnGRLsEZywvaQA4A"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Updated Bo Team grouping tools",
+      "completeness": "Medium",
+      "threats": [
+        "Brockendoor",
+        "Zeronetkit"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/bo-team-upgrades-brockendoor-and-zeronetkit-backdoors/113536/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Where Are my Keys?! Ransomware Group Steals AWS Keys to Advance",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Pacu",
+        "GuardDuty",
+        "Twitter"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/aws-keys",
+        "https://github.com/RhinoSecurityLabs/pacu"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "XWorm Malware Analysis: SOC & IR Perspective on Persistence, C2, and Anti-Analysis Tactics",
+      "completeness": "Medium",
+      "threats": [
+        "Xworm_rat"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 6,
+      "software": [
+        "Telegram",
+        "VirtualBox"
+      ],
+      "algorithms": [
+        "md5",
+        "aes-cbc",
+        "sha1",
+        "cbc",
+        "aes",
+        "sha256"
+      ],
+      "links": [
+        "https://medium.com/@0xzyadelzyat/xworm-malware-analysis-soc-ir-perspective-on-persistence-c2-and-anti-analysis-tactics-ed41d335b2ce?source=rss-b460882b1cf8------2",
+        "https://github.com/kant2002/de4dot"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Hidden WordPress Backdoors Creating Admin Accounts",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blog.sucuri.net/2025/09/hidden-wordpress-backdoors-creating-admin-accounts.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "New LockBit 5.0 Targets Windows, Linux, ESXi",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "software": [
+        "Linux",
+        "ESXi",
+        "Windows Event Tracing"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/i/lockbit-5-targets-windows-linux-esxi.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "NodeJS backdoors delivering proxyware and monetization schemes",
+      "completeness": "Medium",
+      "threats": [
+        "Obfuscator_io_tool"
+      ],
+      "software": [
+        "linux",
+        "sysctl",
+        "curl",
+        "Ubuntu",
+        "Node.JS",
+        "chrome"
+      ],
+      "algorithms": [
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "_0x24cdb4",
+        "s"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "It Is Bad (Exploitation of Fortra GoAnywhere MFT CVE-2025-10035) - Part 2",
+      "completeness": "Low",
+      "threats": [
+        "Simplehelp_tool"
+      ],
+      "software": [
+        "GoAnywhere"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://labs.watchtowr.com/it-is-bad-exploitation-of-fortra-goanywhere-mft-cve-2025-10035-part-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "New SVG-based phishing campaign is a recipe for disaster",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique"
+      ],
+      "software": [
+        "Microsoft Edge",
+        "Chrome"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/09/new-svg-based-phishing-campaign-is-a-recipe-for-disaster"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "NPM Compromise: The Wrath of the Shai-Hulud Supply Chain Attack",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "solana"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "makeRepo"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.pulsedive.com/npm-compromise-the-wrath-of-the-shai-hulud-supply-chain-attack/",
+        "https://gist.github.com/sindresorhus/2b7466b1ec36376b8742dc711c24db20"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "XCSSET evolves again: Analyzing the latest updates to XCSSET s inventory",
+      "completeness": "Medium",
+      "threats": [
+        "Xcsset",
+        "Hackbrowser"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Firefox",
+        "Telegram",
+        "macOS",
+        "sudo",
+        "openssl",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "boot",
+        "dec",
+        "oD",
+        "doMainFunc",
+        "runMe"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/09/25/xcsset-evolves-again-analyzing-the-latest-updates-to-xcssets-inventory/",
+        "https://github.com/moonD4rk/HackBrowserData/tree/main",
+        "https://github.com/Jinmo/applescript-disassembler"
+      ]
+    }
+  }
+]

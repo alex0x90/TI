@@ -1,0 +1,428 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "Another BRICKSTORM: Stealthy Backdoor Enabling Espionage into Tech and Legal Sectors",
+      "completeness": "High",
+      "threats": [
+        "Brickstorm",
+        "Garble_tool",
+        "Bricksteal",
+        "Slaystyle"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXi",
+        "Apache Tomcat",
+        "Active Directory",
+        "Active Directory Domain Services",
+        "systemd",
+        "Windows Explorer",
+        "sudo",
+        "Outlook"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/brickstorm-espionage-campaign/",
+        "https://github.com/burrowers/garble",
+        "https://github.com/mandiant/brickstorm-scanner",
+        "https://github.com/denandz/SecretServerSecretStealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "COLDRIVER Updates Arsenal with BAITSWITCH and SIMPLEFIX",
+      "completeness": "High",
+      "threats": [
+        "Baitswitch",
+        "Simplefix",
+        "Clickfix_technique",
+        "Netstat_tool",
+        "Lostkeys",
+        "Clickflix_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 27,
+      "software": [
+        "Cloudflare Turnstile",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/coldriver-updates-arsenal-baitswitch-and-simplefix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "YiBackdoor: A New Malware Family With Links to IcedID and Latrodectus",
+      "completeness": "High",
+      "threats": [
+        "Yibackdoor",
+        "Icedid",
+        "Latrodectus",
+        "Z_loader",
+        "Qakbot",
+        "Sandbox_evasion_technique",
+        "Antidebugging_technique",
+        "Nltest_tool",
+        "Icedid_loader"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "gzip",
+        "rc4",
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "YiBackdoor",
+        "__rdtsc"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/yibackdoor-new-malware-family-links-icedid-and-latrodectus",
+        "https://github.com/ThreatLabz/tools/blob/main/yibackdoor/yibackdoor\\_rand.py",
+        "https://github.com/ThreatLabz/tools/blob/main/yibackdoor/yibackdoor\\_rand.py#L175",
+        "https://github.com/ThreatLabz/tools/blob/main/yibackdoor/yibackdoor\\_rand.py#L58"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "Investigation Report on Jaguar Land Rover Cyberattack",
+      "completeness": "Low",
+      "threats": [
+        "Hellcat",
+        "Spear-phishing_technique",
+        "Sliver_c2_tool"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 15,
+      "software": [
+        "Telegram"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/investigation-report-on-jaguar-land-rover-cyberattack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "From LNK to RAT: Deep Dive into the LNK Malware Infection Chain",
+      "completeness": "Medium",
+      "threats": [
+        "Lolbin_technique",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Israel"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Windows Event Tracing",
+        "Nuget",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "function",
+        "Get-MultiPic"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/from-lnk-to-rat-deep-dive-into-the-lnk-malware-infection-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "AI vs. AI: Detecting an AI-obfuscated phishing campaign",
+      "completeness": "Low",
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Office 365",
+        "Microsoft Exchange",
+        "Microsoft Edge",
+        "Twitter"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/09/24/ai-vs-ai-detecting-an-ai-obfuscated-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "Inside Vietnamese Threat Actor Lone Nones Copyright Takedown-Spoofing Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Pxa_stealer",
+        "Purelogs",
+        "Xworm_rat",
+        "Xenorat",
+        "Purehvnc_tool"
+      ],
+      "geo": [
+        "Korean",
+        "Chinese",
+        "French",
+        "German",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Microsoft Office",
+        "Dropbox",
+        "Windows registry"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "dogecoin",
+        "ethereum",
+        "litecoin",
+        "primecoin",
+        "ripple",
+        "tezos",
+        "solana"
+      ],
+      "algorithms": [
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cofense.com/blog/inside-vietnamese-threat-actor-lone-none-s-copyright-takedown-spoofing-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "Securing LLM Superpowers: The Invisible Backdoors in MCP",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/securing-llm-superpowers-the-invisible-backdoors-in-mcp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "The Evolution of RomCom",
+      "completeness": "High",
+      "threats": [
+        "Romcom_rat",
+        "Underground_ransomware",
+        "Cuba_ransomware",
+        "Meltingclaw",
+        "Shadyhammock",
+        "Spear-phishing_technique",
+        "Damascened_peacock",
+        "Com_hijacking_technique",
+        "Peapod",
+        "Snipbot",
+        "Credential_harvesting_technique",
+        "Emotet",
+        "Pid_spoofing_technique",
+        "Nltest_tool",
+        "Shadow_copies_delete_technique",
+        "Hancitor",
+        "Proxyshell_vuln",
+        "Cobalt_strike_tool",
+        "Mimikatz_tool",
+        "Netstat_tool",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "Russian",
+        "United kingdom",
+        "Ukrainian",
+        "Russia",
+        "Russian federation",
+        "Hungarian",
+        "Montenegro",
+        "Poland",
+        "Canada",
+        "Hungary",
+        "Ukraine"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 32,
+      "software": [
+        "Component Object Model",
+        "Windows COM",
+        "Microsoft Edge",
+        "Active Directory",
+        "Microsoft Exchange",
+        "PsExec",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "salsa20",
+        "3des",
+        "zip",
+        "rsa-1024"
+      ],
+      "functions": [
+        "Windows",
+        "Get-Volume"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "lua"
+      ],
+      "links": [
+        "https://www.attackiq.com/wp-content/uploads/2025/09/romcom-report.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "Inside Salt Typhoon: Chinas State-Corporate Advanced Persistent Threat",
+      "completeness": "High",
+      "threats": [
+        "Lolbin_technique",
+        "Credential_harvesting_technique",
+        "Plugx_rat",
+        "Demodex_tool",
+        "Chinachopper",
+        "Credential_dumping_technique",
+        "Netstat_tool",
+        "Wevtutil_tool"
+      ],
+      "geo": [
+        "Asian",
+        "France",
+        "Taiwan",
+        "United kingdom",
+        "Germany",
+        "Los angeles",
+        "Asia",
+        "China",
+        "Chinese",
+        "American",
+        "Chinas",
+        "Netherlands"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 21,
+      "software": [
+        "Protonmail",
+        "Ivanti",
+        "PAN-OS"
+      ],
+      "algorithms": [
+        "exhibit",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://dti.domaintools.com/inside-salt-typhoon-chinas-state-corporate-advanced-persistent-threat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-24",
+      "title": "Two Malicious Rust Crates Impersonate Popular Logger to Steal Wallet Keys",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 6,
+      "software": [
+        "Outlook",
+        "Linux",
+        "macOS"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base58"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://socket.dev/blog/two-malicious-rust-crates-impersonate-popular-logger-to-steal-wallet-keys"
+      ]
+    }
+  }
+]

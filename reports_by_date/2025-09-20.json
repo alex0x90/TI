@@ -1,0 +1,78 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-20",
+      "title": "Gamaredon X Turla collab",
+      "completeness": "High",
+      "threats": [
+        "Kazuar",
+        "Pteroodd",
+        "Pteropaste",
+        "Pterographin",
+        "Pterolnk",
+        "Pterostew",
+        "Pteroeffigy",
+        "Spear-phishing_technique",
+        "Andromeda",
+        "Amadey",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Asia",
+        "Ukrainian",
+        "Iran",
+        "Pakistan",
+        "Russia",
+        "Kyrgyzstan",
+        "Crimea",
+        "Ukraine",
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 17,
+      "software": [
+        "Telegram",
+        "WordPress"
+      ],
+      "algorithms": [
+        "3des",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab/",
+        "https://github.com/eset/malware-ioc/tree/master/turla"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-20",
+      "title": "EDR-Freeze: A Tool That Puts EDRs And Antivirus Into A Coma State",
+      "completeness": "Low",
+      "threats": [
+        "Edr-freeze_tool",
+        "Byovd_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Error Reporting",
+        "Process Explorer",
+        "Windows Defender"
+      ],
+      "functions": [
+        "CreateProcessAsPPL"
+      ],
+      "links": [
+        "https://www.zerosalarium.com/2025/09/EDR-Freeze-Puts-EDRs-Antivirus-Into-Coma.html",
+        "https://github.com/TwoSevenOneT/WSASS",
+        "https://github.com/TwoSevenOneT/CreateProcessAsPPL"
+      ]
+    }
+  }
+]

@@ -1,0 +1,605 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "NGC6061: a series of phishing attacks on authorities",
+      "completeness": "High",
+      "threats": [
+        "Metasploit_tool",
+        "Dll_sideloading_technique",
+        "Darkgate"
+      ],
+      "geo": [
+        "Asian",
+        "Spanish",
+        "Russia",
+        "Russian",
+        "Russian federation"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Microsoft Word",
+        "OLLVM"
+      ],
+      "algorithms": [
+        "aes-128-ecb",
+        "xor",
+        "base64",
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Get-ChildItem"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6064/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "From the Depths: Analyzing the Cthulhu Stealer Malware for macOS",
+      "completeness": "High",
+      "threats": [
+        "Cthulhu_stealer",
+        "Amos_stealer",
+        "Silversparrow",
+        "Keranger",
+        "Chainbreak_tool",
+        "Seo_poisoning_technique",
+        "Putty_tool",
+        "Oyster",
+        "Typosquatting_technique",
+        "Rhysida",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 18,
+      "software": [
+        "macOS",
+        "Chrome",
+        "Telegram",
+        "Firefox",
+        "Gatekeeper",
+        "acOS St",
+        "Windows Scheduled Task",
+        "WordPress",
+        "curl"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "wassabi",
+        "daedalus",
+        "electrum",
+        "atomicwallet",
+        "harmony_wallet",
+        "coinomi"
+      ],
+      "crypto": [
+        "enjin"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "golang",
+        "applescript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/from-the-depths-analyzing-the-cthulhu-stealer-malware-for-macos",
+        "https://github.com/n0fate/chainbreaker"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "Going Underground: China-aligned TA415 Conducts U.S.-China Economic Relations Targeting Using VS Code Remote Tunnels",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Voldemort",
+        "Whirlcoil"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "Visual Studio",
+        "Dropbox",
+        "OpenDrive",
+        "VSCode"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/going-underground-china-aligned-ta415-conducts-us-china-economic-relations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "Mapping the Infrastructure and Malware Ecosystem of MuddyWater",
+      "completeness": "High",
+      "threats": [
+        "Muddyrot",
+        "Stealthcache",
+        "Phoenix_keylogger",
+        "Fooder",
+        "Spear-phishing_technique",
+        "Liteinject",
+        "Atera_tool",
+        "Simplehelp_tool",
+        "Ehorus_tool",
+        "N-able_tool",
+        "Screenconnect_tool",
+        "Syncro_tool",
+        "Dchspy",
+        "Dll_sideloading_technique",
+        "Cannonrat",
+        "Udpgangster",
+        "Hackbrowser",
+        "Go-socks5_tool"
+      ],
+      "geo": [
+        "Iran",
+        "Israel",
+        "Middle east",
+        "Israeli",
+        "Hungary",
+        "Turkey",
+        "Iranian",
+        "Azerbaijan",
+        "Tehran",
+        "Asian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Android",
+        "macOS",
+        "Linux",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "md5",
+        "exhibit",
+        "xor",
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "DllEntryPoint"
+      ],
+      "languages": [
+        "golang",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/muddywater-infrastructure-malware/",
+        "https://github.com/moonD4rk/HackBrowserData",
+        "https://github.com/hashicorp/yamux",
+        "https://github.com/armon/go-socks5"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "Tech Note - BeaverTail variant distributed via malicious repositories and ClickFix lure",
+      "completeness": "High",
+      "threats": [
+        "Beavertail",
+        "Clickfix_technique",
+        "Invisibleferret",
+        "Fakecaptcha_technique",
+        "Golangghost",
+        "Flexibleferret",
+        "Ottercookie",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Russian",
+        "Polish"
+      ],
+      "software": [
+        "curl",
+        "sudo",
+        "macOS",
+        "Linux",
+        "PyInstaller",
+        "payuniversal2",
+        "e",
+        "Chrome"
+      ],
+      "wallets": [
+        "tronlink",
+        "exodus_wallet",
+        "binancechain",
+        "enkrypt",
+        "unisat"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "7zip",
+        "base64",
+        "exhibit"
+      ],
+      "languages": [
+        "visual_basic",
+        "javascript",
+        "golang",
+        "python"
+      ],
+      "links": [
+        "https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/north-korean-malware-sept-2025/",
+        "https://github.com/vercel/pkg",
+        "https://github.com/nvm-sh/nvm",
+        "https://github.com/pyinstaller/pyinstaller"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "ShinyHunters Calling: Financially Motivated Data Extortion Group Targeting Enterprise Cloud Applications",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Sim_swapping_technique",
+        "Qtox_tool",
+        "Screenconnect_tool",
+        "Anydesk_tool",
+        "Mfa_bombing_technique",
+        "Spear-phishing_technique",
+        "Credential_dumping_technique",
+        "Evilginx_tool"
+      ],
+      "geo": [
+        "French",
+        "Japanese",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 30,
+      "software": [
+        "ESXi",
+        "Telegram",
+        "Salesforce",
+        "Slack",
+        "Unix"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blog.eclecticiq.com/shinyhunters-calling-financially-motivated-data-extortion-group-targeting-enterprise-cloud-applications"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "GOLD SALEMs Warlock operation joins busy ransomware landscape",
+      "completeness": "Medium",
+      "threats": [
+        "X2anylock",
+        "Hunters_international",
+        "Toolshell_vuln",
+        "Byovd_technique",
+        "Mimikatz_tool",
+        "Impacket_tool"
+      ],
+      "geo": [
+        "China",
+        "Russia",
+        "America",
+        "Russian",
+        "Russian federation"
+      ],
+      "software": [
+        "ESXi",
+        "curl",
+        "Local Security Authority",
+        "PsExec",
+        "Velociraptor",
+        "Visual Studio Code"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/09/17/gold-salems-warlock-operation-joins-busy-ransomware-landscape/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "Comicform, beginning: F6 analysts studied the phishing campaigns of a new attacking",
+      "completeness": "Medium",
+      "threats": [
+        "Formbook"
+      ],
+      "geo": [
+        "Belarusian",
+        "Kazakhstan",
+        "Russian"
+      ],
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/comicform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "Tracking Diicot: An Emerging Romanian Threat Actor",
+      "completeness": "High",
+      "threats": [
+        "Mirai",
+        "Cayosin",
+        "Xmrig_miner",
+        "Seo_poisoning_technique",
+        "Putty_tool",
+        "Oyster",
+        "Typosquatting_technique",
+        "Rhysida",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Romania",
+        "Romanian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 8,
+      "software": [
+        "Discord",
+        "OpenWrt",
+        "Opera",
+        "systemd",
+        "Chrome",
+        "curl",
+        "l -O -",
+        "Windows Scheduled Task",
+        "WordPress"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "readLines"
+      ],
+      "languages": [
+        "golang",
+        "java"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/tracking-diicot-an-emerging-romanian-threat-actor",
+        "https://github.com/neurobin/shc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "New FileFix Campaign Exploits Steganography to Deploy StealC Infostealer",
+      "completeness": "Low",
+      "threats": [
+        "Filefix_technique",
+        "Steganography_technique",
+        "Stealc",
+        "Clickfix_technique",
+        "Promptfix_technique"
+      ],
+      "software": [
+        "Windows File Explorer",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Discord",
+        "Telegram"
+      ],
+      "algorithms": [
+        "rc4",
+        "gzip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/new-file-fix-campaign-exploits-steganography-to-deploy-steal-c-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "Malicious PyPI Packages Deliver SilentSync RAT",
+      "completeness": "High",
+      "threats": [
+        "Silentsync",
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Argentina"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "curl",
+        "Linux",
+        "macOS",
+        "crontab"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "search"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/malicious-pypi-packages-deliver-silentsync-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "AppSuite, OneStart & ManualFinder: The Nexus of Deception",
+      "completeness": "Low",
+      "threats": [
+        "Manualfinder",
+        "Browserassistant"
+      ],
+      "software": [
+        "Chromium",
+        "electron"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.gdatasoftware.com/blog/2025/09/38262-appsuite-onestart-deception"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "When the Dash Hits the Fan: Artificial Intelligence Exposes the Homoglyph Hustle",
+      "completeness": "Medium",
+      "threats": [
+        "Homoglyph_technique",
+        "Smuggling_technique"
+      ],
+      "geo": [
+        "Australia",
+        "Italy",
+        "Canada",
+        "India",
+        "France"
+      ],
+      "software": [
+        "NeutralinoJS",
+        "Electron",
+        "Chromium",
+        "Microsoft Edge",
+        "Twitter"
+      ],
+      "functions": [
+        "clean",
+        "eval",
+        "loadHolidayFromAPI",
+        "loadHolidaysFromAPI"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/ai-exposes-homoglyph-hustle/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-17",
+      "title": "Modus Operandi of Subtle Snail",
+      "completeness": "High",
+      "threats": [
+        "Minibike",
+        "Dll_sideloading_technique",
+        "Process_hollowing_technique",
+        "Spear-phishing_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Dutch"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 22,
+      "software": [
+        "Chrome",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Windows Hello",
+        "Outlook",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "xor",
+        "exhibit",
+        "zip"
+      ],
+      "links": [
+        "https://catalyst.prodaft.com/public/report/modus-operandi-of-subtle-snail/overview"
+      ]
+    }
+  }
+]

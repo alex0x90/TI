@@ -73,5 +73,227 @@
         "https://securelist.ru/model-context-protocol-for-ai-integration-abused-in-supply-chain-attacks/113452/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-15",
+      "title": "Dark Web Profile: BQTLock Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Bqtlock",
+        "Uac_bypass_technique",
+        "Process_hollowing_technique",
+        "Supply_chain_technique",
+        "Lolbin_technique",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Fodhelper_technique"
+      ],
+      "geo": [
+        "Usa",
+        "Lebanon",
+        "Middle east",
+        "Australia",
+        "Israel",
+        "Canada",
+        "Saudi arabia",
+        "India"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 18,
+      "software": [
+        "Telegram",
+        "OpenSSL",
+        "Discord",
+        "Brotli",
+        "Linux",
+        "systemd",
+        "bcdedit"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "aes-256",
+        "rsa-4096",
+        "base64"
+      ],
+      "functions": [
+        "Windows",
+        "GetThreatContext"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-bqtlock-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-15",
+      "title": "The Most Powerful Ever? Inside the 11.5Tbps-Scale Mega Botnet AISURU",
+      "completeness": "Medium",
+      "threats": [
+        "Aisuru",
+        "Airashi",
+        "Fodcha",
+        "Catddos",
+        "Rapperbot",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Columbia",
+        "Czech",
+        "England",
+        "New york",
+        "Hong kong",
+        "China",
+        "United kingdom",
+        "Usa",
+        "Germany"
+      ],
+      "software": [
+        "Zyxel",
+        "Zyxel",
+        "Zyxel",
+        "Zyxel",
+        "Zyxel",
+        "VirtualBox",
+        "QEMU",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64",
+        "chacha20",
+        "xor",
+        "rc4"
+      ],
+      "languages": [
+        "golang",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/super-large-scale-botnet-aisuru-en/",
+        "https://github.com/wy876/POC/blob/main/%E4%B8%89%E6%B1%87%E7%BD%91%E5%85%B3%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6/%E4%B8%89%E6%B1%87%E7%BD%91%E5%85%B3%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6debug.php%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E.md?ref=blog.xlab.qianxin.com",
+        "https://github.com/netsecfish/tbk\\_dvr\\_command\\_injection?ref=blog.xlab.qianxin.com",
+        "https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/admin/http/cnpilot\\_r\\_cmd\\_exec.rb?ref=blog.xlab.qianxin.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-15",
+      "title": "Threat Actor Profile: APT27",
+      "completeness": "High",
+      "threats": [
+        "Proxylogon_exploit",
+        "Hyperbro",
+        "Supply_chain_technique",
+        "Sysupdate",
+        "Polar_ransomware",
+        "Drbcontrol",
+        "Plugx_rat",
+        "Devman",
+        "Akira_ransomware",
+        "Spear-phishing_technique",
+        "Watering_hole_technique",
+        "Zxshell",
+        "Gh0st_rat",
+        "Httpbrowser",
+        "Aspxspy_shell",
+        "Chinachopper",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Gsecdump",
+        "Pandora",
+        "Fscan_tool",
+        "Owaauth",
+        "Shadowpad",
+        "Proxyshell_vuln",
+        "Log4shell_vuln",
+        "Tmanger",
+        "Dll_sideloading_technique",
+        "Antak",
+        "Pwdump_tool",
+        "Nbtscan_tool",
+        "Impacket_tool",
+        "Psexec_tool",
+        "Smbexec_tool",
+        "Eternalblue_vuln",
+        "Godzilla_webshell",
+        "Nglite",
+        "Kdcsponge_stealer",
+        "Rshell",
+        "Cobalt_strike_tool",
+        "Lazagne_tool",
+        "Iox_tool",
+        "Credential_harvesting_technique",
+        "Lolbin_technique",
+        "Adfind_tool",
+        "Secretsdump_tool",
+        "Passworddumper_tool",
+        "Kekeo_tool",
+        "Twoface",
+        "Dll_hijacking_technique",
+        "Shadow_copies_delete_technique",
+        "Process_injection_technique",
+        "Screen_shotting_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "America",
+        "Middle east",
+        "Germany",
+        "German",
+        "Hong kong",
+        "Afghanistan",
+        "Chinese",
+        "Philippines",
+        "Asian",
+        "China",
+        "Pakistan",
+        "Lithuania",
+        "Taiwan",
+        "Mongolia",
+        "Singapore",
+        "Asia",
+        "Iran",
+        "India",
+        "Taiwanese"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 45,
+      "software": [
+        "Microsoft Exchange",
+        "Linux",
+        "BitLocker",
+        "Twitter",
+        "ASP.NET",
+        "Apache Tomcat",
+        "Outlook",
+        "psexec",
+        "Microsoft Exchange Server",
+        "macOS",
+        "have more..."
+      ],
+      "algorithms": [
+        "des",
+        "exhibit",
+        "shikata_ga_nai"
+      ],
+      "functions": [
+        "CreateMedia",
+        "CreateTsMediaAdm"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.dexpose.io/threat-actor-profile-apt27/"
+      ]
+    }
   }
 ]

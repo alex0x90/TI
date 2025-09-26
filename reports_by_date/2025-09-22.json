@@ -1,0 +1,105 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-22",
+      "title": "Malicious fezbox npm Package Steals Browser Passwords from Cookies via Innovative QR Code Steganographic Technique",
+      "completeness": "Low",
+      "threats": [
+        "Steganography_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 9,
+      "software": [
+        "Outlook"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-fezbox-npm-package-steals-browser-passwords-from-cookies-via-innovative-qr-code"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-22",
+      "title": "Technical Analysis of Zloader Updates",
+      "completeness": "Low",
+      "threats": [
+        "Z_loader",
+        "Zeus",
+        "Dns_tunneling_technique"
+      ],
+      "algorithms": [
+        "deflate",
+        "xor",
+        "rc4",
+        "gzip",
+        "base32",
+        "sha256"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-zloader-updates"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-22",
+      "title": "Nimbus Manticore Deploys New Malware Targeting Europe",
+      "completeness": "High",
+      "threats": [
+        "Minijunk",
+        "Minibrowse",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Minibike",
+        "Junk_code_technique",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Denmark",
+        "Middle east",
+        "Portugal",
+        "Iran",
+        "Sweden",
+        "Iranian",
+        "Israel"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Chrome",
+        "OLLVM",
+        "Azure App Service",
+        "Outlook"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "exhibit"
+      ],
+      "functions": [
+        "NT",
+        "GetModuleHandle"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/",
+        "https://github.com/prodaft/malware-ioc/tree/master/SubtleSnail"
+      ]
+    }
+  }
+]
