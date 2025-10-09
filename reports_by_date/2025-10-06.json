@@ -1,0 +1,176 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-06",
+      "title": "Detecting DLL hijacking with machine learning: real-world cases",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_hijacking_technique",
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Netstat_tool",
+        "Nltest_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Microsoft Edge",
+        "Chrome"
+      ],
+      "languages": [
+        "dotnet",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/detecting-dll-hijacking-with-machine-learning-in-kaspersky-siem/117567/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-06",
+      "title": "Attacks aimed at Italian targets, new data breach notified, vulnerabilities exploited ITW",
+      "completeness": "Low",
+      "threats": [
+        "Purelogs",
+        "Rhadamanthys",
+        "Klopatra",
+        "Virbox_tool",
+        "Datacarry",
+        "Citrix_bleed_vuln"
+      ],
+      "geo": [
+        "Swedish",
+        "China",
+        "Canadian",
+        "Italian",
+        "Italy",
+        "Spain"
+      ],
+      "software": [
+        "Android",
+        "Salesforce",
+        "Telegram",
+        "GoAnywhere",
+        "Sudo"
+      ],
+      "links": [
+        "https://www.telsy.com/attacchi-rivolti-a-target-italiani-notificati-nuovi-data-breach-vulnerabilita-sfruttate-itw/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-06",
+      "title": "NGC4141: East Asian group attacks custom web applications",
+      "completeness": "Medium",
+      "threats": [
+        "Netstat_tool",
+        "Proxychains_tool",
+        "Hping3_tool",
+        "Netcat_tool",
+        "Nmap_tool",
+        "Wso_webshell",
+        "Godzilla_webshell"
+      ],
+      "geo": [
+        "Russian",
+        "Asia",
+        "Moscow",
+        "Asian",
+        "Korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Bitrix",
+        "curl",
+        "docker",
+        "vim-cmd",
+        "sudo"
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes-256-cbc",
+        "base64",
+        "md5",
+        "xor",
+        "aes",
+        "cbc",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "getBasicsInfo",
+        "eval"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6097/",
+        "https://github.com/808Mak1r/GodzillaSource/blob/main/src/main/resources/shell/php/template/base64.bin",
+        "https://github.com/mIcHyAmRaNe/wso-webshell/blob/master/wso.php"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-06",
+      "title": "Investigating active exploitation of CVE-2025-10035 GoAnywhere Managed File Transfer vulnerability",
+      "completeness": "Medium",
+      "threats": [
+        "Medusa_ransomware",
+        "Simplehelp_tool",
+        "Meshagent_tool",
+        "Netscan_tool",
+        "Rclone_tool",
+        "Nltest_tool",
+        "Bitsadmin_tool"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "GoAnywhere",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/10/06/investigating-active-exploitation-of-cve-2025-10035-goanywhere-managed-file-transfer-vulnerability/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-06",
+      "title": "Fake Microsoft Teams Installers Deliver Oyster Backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Oyster",
+        "Seo_poisoning_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "links": [
+        "https://socradar.io/fake-microsoft-teams-installers-oyster-backdoor/"
+      ]
+    }
+  }
+]

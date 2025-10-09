@@ -1,0 +1,439 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "APT PROFILE HAFNIUM",
+      "completeness": "Medium",
+      "threats": [
+        "Covenant_tool",
+        "Impacket_tool",
+        "Nishang_tool",
+        "Powercat_tool",
+        "Chinachopper",
+        "Aspxspy_shell",
+        "Tarrask",
+        "Plugx_rat",
+        "Whitebird",
+        "Seo_poisoning_technique",
+        "Password_spray_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Japan",
+        "United kingdom",
+        "Australia",
+        "Vietnam",
+        "Mexico",
+        "America",
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 44,
+      "software": [
+        "Microsoft SharePoint",
+        "PsExec"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-hafnium/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "The Exploitation of Legitimate Remote Access Tools in Modern Ransomware Campaigns",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Ultraviewer_tool",
+        "Rustdesk_tool",
+        "Clonedesk_tool",
+        "Splashtop_tool",
+        "Wevtutil_tool",
+        "Shadow_copies_delete_technique",
+        "Lolbin_technique",
+        "Lockbit",
+        "Targetcompany",
+        "D3adcrypt",
+        "Makop",
+        "Phobos",
+        "Dharma",
+        "Shinra_ransomware",
+        "Medusalocker",
+        "C3rb3r",
+        "Lolkek",
+        "Spiderprey",
+        "Ryuk",
+        "Lockxxx",
+        "Ransomhub",
+        "Proxima"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 7,
+      "software": [
+        "AppAnywhere",
+        "TightVNC"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/exploiting-legitimate-remote-access-tools-in-ransomware-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "New CipherWolf RaaS, Oracle EBS 0Day Exploit & Money Laundering Service Detected on Hacker Forums",
+      "completeness": "Low",
+      "threats": [
+        "Cipherwolf",
+        "Blitz_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "United",
+        "kingdom"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Active Directory"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://socradar.io/cipherwolf-raas-oracle-ebs-0day-money-laundering-service-hacker-forums/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "The Crown Prince, Nezha: A New Tool Favored by China-Nexus Threat Actors",
+      "completeness": "High",
+      "threats": [
+        "Nezha_tool",
+        "Gh0st_rat",
+        "Chinachopper",
+        "Antsword",
+        "Winrm_tool",
+        "Runningrat",
+        "Procmon_tool",
+        "Zhong_stealer"
+      ],
+      "geo": [
+        "Ireland",
+        "Angola",
+        "Finland",
+        "Argentina",
+        "Nepal",
+        "Philippines",
+        "Chinese",
+        "Peru",
+        "Zambia",
+        "Sri lanka",
+        "Saudi arabia",
+        "Russian",
+        "Indonesia",
+        "Bosnia and herzegovina",
+        "Morocco",
+        "China",
+        "America",
+        "Greece",
+        "Georgia",
+        "Laos",
+        "Malaysia",
+        "Belgium",
+        "Germany",
+        "Kenya",
+        "India",
+        "Serbia",
+        "Korea",
+        "France",
+        "Thailand",
+        "Nigeria",
+        "Colombia",
+        "Kazakhstan",
+        "Canada",
+        "Tanzania",
+        "Australia",
+        "Taiwan",
+        "Vietnam",
+        "Pakistan",
+        "Hong kong",
+        "Mongolia",
+        "Mexico",
+        "Tibetan",
+        "Slovakia",
+        "Chile",
+        "Portugal",
+        "United arab emirates",
+        "Singapore",
+        "United kingdom",
+        "Arab emirates",
+        "Japan",
+        "Bangladesh",
+        "Guatemala",
+        "Russia",
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "phpMyAdmin",
+        "MariaDB",
+        "curl",
+        "openWRT",
+        "Windows Defender",
+        "SQLlite"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "MainThread"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "swift",
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/nezha-china-nexus-threat-actor-tool",
+        "https://github.com/nezhahq/nezha",
+        "https://github.com/AntSwordProject/antSword/blob/6112ab2c3f6dceda68421cf02ca2dc43a940a01f/source/modules/terminal/index.js#L461"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "Disrupting threats targeting Microsoft Teams",
+      "completeness": "Medium",
+      "threats": [
+        "Roadtools_tool",
+        "Teamfiltration_tool",
+        "Email_bombing_technique",
+        "Reedbed",
+        "3am_ransomware",
+        "Blacksuit_ransomware",
+        "Teamsphisher_tool",
+        "Darkgate",
+        "Anydesk_tool",
+        "Aadinternals_tool",
+        "Credential_stealing_technique",
+        "Device_code_phishing_technique",
+        "Jssloader",
+        "Password_spray_technique",
+        "Azurehound_tool",
+        "Ad_explorer_tool",
+        "Veildrive",
+        "Brc4_tool",
+        "Convoc2",
+        "Microsoft_quick_assist_tool",
+        "Qshing_technique",
+        "Clickfix_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Entra",
+        "Graph API",
+        "Active Directory",
+        "Office 365",
+        "Jupyter notebooks",
+        "Twitter"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Teams",
+        "Graph",
+        "count"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/10/07/disrupting-threats-targeting-microsoft-teams/",
+        "https://github.com/sse-secure-systems/TeamsEnum#readme-ov-file",
+        "https://github.com/copyleftdev/msft-recon-rs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "The ClickFix Factory: First Exposure of IUAM ClickFix Generator",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Deerstealer",
+        "Odyssey_stealer",
+        "Clipboard_injection_technique",
+        "Clickflix_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Amer"
+      ],
+      "software": [
+        "macOS",
+        "tradingview"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "JavaScript"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/clickfix-generator-first-of-its-kind/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "Can you test my game? Fake itch.io pages spread hidden malware to gamers",
+      "completeness": "Low",
+      "software": [
+        "Discord",
+        "Dropbox",
+        "Node.js",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Steam"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2025/10/can-you-test-my-game-fake-itch-io-pages-spread-hidden-malware-to-gamers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "Angara MTDR specialists have recorded increased activity by the Rare Werewolf group.",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Defendercontrol_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Moscow",
+        "Kazakhstan",
+        "Russia",
+        "Belarus"
+      ],
+      "software": [
+        "Windows Defender",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://www.angarasecurity.ru/stati/spetsialisty-angara-mtdr-zafiksirovali-aktivizatsiyu-deyatelnosti-gruppirovki-rare-werewolf/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "The Evolution of Chaos Ransomware: Faster, Smarter, and More Dangerous",
+      "completeness": "Medium",
+      "threats": [
+        "Chaos_ransomware",
+        "Shadow_copies_delete_technique",
+        "Blacksnake",
+        "Lucky_ghost"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "bcdedit",
+        "Windows CryptoAPI"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "WriteFileW"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/evolution-of-chaos-ransomware-faster-smarter-and-more-dangerous"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "The Evolution of Qilin RaaS",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Supply_chain_technique",
+        "Lockbit",
+        "Blackcat",
+        "Ransomhub",
+        "Nokoyawa",
+        "Conti",
+        "Ryuk",
+        "Devman",
+        "Arkana",
+        "Screenconnect_tool",
+        "Winrm_tool",
+        "Blackbasta"
+      ],
+      "geo": [
+        "Canada",
+        "Russian",
+        "North korean",
+        "Chinese"
+      ],
+      "software": [
+        "Outlook",
+        "ESXi",
+        "Telegram",
+        "PsExec"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://www.sans.org/blog/evolution-qilin-raas"
+      ]
+    }
+  }
+]

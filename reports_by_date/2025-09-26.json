@@ -1,0 +1,246 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "Eye of the Storm: Analyzing DarkCloud's Latest Capabilities",
+      "completeness": "High",
+      "threats": [
+        "Darkcloud",
+        "More_eggs",
+        "Spear-phishing_technique",
+        "Redline_stealer",
+        "Procmon_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "VirtualBox",
+        "Firefox",
+        "Pidgin",
+        "CoreFTP",
+        "WinSCP",
+        "Outlook"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "visual_basic",
+        "python",
+        "php",
+        "autoit",
+        "swift"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/eye-of-the-storm-analyzing-darkclouds-latest-capabilities",
+        "https://github.com/eSentire/iocs/blob/main/DarkCloud/DarkCloud-IoCs-09-19-2025.txt",
+        "https://github.com/eSentire/iocs/blob/main/DarkCloud/DarkCloud-IDA.py",
+        "https://github.com/eSentire/iocs/blob/main/DarkCloud/DarkCloud.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "Silent Push Examines the Dark Side of Dynamic DNS Providers",
+      "completeness": "Low",
+      "threats": [
+        "Darkcomet_rat",
+        "Quietexit"
+      ],
+      "geo": [
+        "Ukraine",
+        "Chinese"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/dynamic-dns-providers/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "FBI warns of threat actors spoofing the FBI crime complaint website",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "links": [
+        "https://moonlock.com/fbi-spoofing-crime-complaint-website"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "XWorm RAT Delivered via Shellcode: Multi-Stage Attack Analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Xworm_rat",
+        "Steganography_technique",
+        "Dll_injection_technique",
+        "Process_injection_technique"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "CreateEncryptor"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.forcepoint.com/blog/x-labs/xworm-rat-shellcode-multi-stage-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "Potentially Unwanted Applications (PUAs) weaponized for covert delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Tamperedchef",
+        "Imagelooker",
+        "Residential_proxy_technique",
+        "Credential_harvesting_technique",
+        "Seo_poisoning_technique"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "NeutralinoJS"
+      ],
+      "algorithms": [
+        "md5",
+        "exhibit",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://fieldeffect.com/blog/potentially-unwanted-applications"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "HeartCrypt s wholesale impersonation effort",
+      "completeness": "Medium",
+      "threats": [
+        "Heartcrypt_tool",
+        "Dll_sideloading_technique",
+        "Lumma_stealer",
+        "Asyncrat",
+        "Rhadamanthys",
+        "Raspberry_robin",
+        "Av-killer",
+        "Ransomhub",
+        "Vmprotect_tool",
+        "Medusalocker"
+      ],
+      "geo": [
+        "Mexico",
+        "Korea",
+        "Ukraine",
+        "Brazil",
+        "Colombia",
+        "Argentina",
+        "France",
+        "Peru",
+        "Romania",
+        "Kazakhstan",
+        "Russia",
+        "Taiwan",
+        "Italian",
+        "Netherlands",
+        "Greece",
+        "Italy",
+        "Columbia"
+      ],
+      "software": [
+        "Dropbox"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "zip",
+        "xor",
+        "des",
+        "md5"
+      ],
+      "functions": [
+        "CrowdStrike"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/09/26/heartcrypts-wholesale-impersonation-effort/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "APT35 plays the same music again",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Sweden",
+        "Middle east",
+        "Israel",
+        "Iranian"
+      ],
+      "software": [
+        "twitter"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.stormshield.com/news/apt35-plays-same-music-again/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-26",
+      "title": "From SEO Poisoning to Malware Deployment: Malvertising campaign uncovered",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Lolbin_technique",
+        "Oyster"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://conscia.com/blog/from-seo-poisoning-to-malware-deployment-malvertising-campaign-uncovered/"
+      ]
+    }
+  }
+]

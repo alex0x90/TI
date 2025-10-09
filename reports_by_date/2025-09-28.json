@@ -1,0 +1,201 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-28",
+      "title": "September 2025 Update on Aggressive Ongoing Akira Ransomware Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Akira_ransomware",
+        "Impacket_tool"
+      ],
+      "geo": [
+        "Usa"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "SonicOS",
+        "AnyConnect",
+        "Linux"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog-uk/september-2025-update-on-aggressive-ongoing-akira-ransomware-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-28",
+      "title": "SVG Phishing hits Ukraine with Amatera Stealer, PureMiner",
+      "completeness": "High",
+      "threats": [
+        "Amatera_stealer",
+        "Pureminer",
+        "Countloader",
+        "Process_hollowing_technique",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Process_hacker_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Process Explorer",
+        "Firefox",
+        "Waterfox",
+        "Pale Moon",
+        "IceDragon",
+        "Cliqz",
+        "Cyberfox",
+        "BlackHawk",
+        "IceCat",
+        "have more..."
+      ],
+      "wallets": [
+        "math_wallet",
+        "coin98",
+        "metamask",
+        "coinbase",
+        "ronin_wallet",
+        "tronlink",
+        "keplr",
+        "bitcoincore",
+        "dashcore",
+        "litecoincore",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "rc4",
+        "zip",
+        "3des",
+        "sha256"
+      ],
+      "functions": [
+        "getUpdates"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/svg-phishing-hits-ukraine-with-amatera-stealer-pureminer",
+        "https://github.com/naksyn/PythonMemoryModule"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-28",
+      "title": "Smash and Grab: Aggressive Akira Campaign Targets SonicWall VPNs, Deploys Ransomware in an Hour or Less",
+      "completeness": "Medium",
+      "threats": [
+        "Akira_ransomware",
+        "Byovd_technique",
+        "Cloudflared_tool",
+        "Impacket_tool",
+        "Blackbasta",
+        "Wmiexec_tool",
+        "Nltest_tool",
+        "Sharpshares_tool",
+        "Netexec_tool",
+        "Bloodhound_tool",
+        "Ldapdomaindump_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Rustdesk_tool",
+        "Splashtop_tool",
+        "Shadow_copies_delete_technique",
+        "Rclone_tool",
+        "Advanced-port-scanner_tool",
+        "Meshagent_tool",
+        "Atera_tool",
+        "Crackmapexec_tool",
+        "Krbrelayup_tool",
+        "Mobaxterm_tool",
+        "Cobalt_strike_tool",
+        "Winrm_tool",
+        "Softperfect_netscan_tool"
+      ],
+      "geo": [
+        "Georgian",
+        "Georgia",
+        "Uzbekistan",
+        "Estonia",
+        "Latvia",
+        "Moldova",
+        "Belarus",
+        "Ukrainian",
+        "Romanian",
+        "Azerbaijani",
+        "Russia",
+        "Tajikistan",
+        "Kazakhstan",
+        "Iranian",
+        "Ukraine",
+        "Asian",
+        "Turkmenistan",
+        "Kyrgyzstan",
+        "Armenia",
+        "Russian",
+        "Usa",
+        "Latvian",
+        "Lithuania",
+        "Belarusian",
+        "Azerbaijan"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 17,
+      "software": [
+        "Active Directory",
+        "SonicOS",
+        "SoftPerfect Network Scanner",
+        "MSSQL",
+        "PostgreSQL",
+        "MS SQL",
+        "OpenSSH",
+        "Windows Defender",
+        "Hyper-V",
+        "SysInternals",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "base64",
+        "sha1"
+      ],
+      "functions": [
+        "Get-ADUser",
+        "Get-ADComputer",
+        "Get-EncryptionSalt",
+        "Get-Date",
+        "Get-WmiObject",
+        "Remove-WmiObject",
+        "Set-MpPreference",
+        "ZwCreateFile",
+        "RtlCreateAcl",
+        "ZwSetSecurityObject",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/smash-and-grab-aggressive-akira-campaign-targets-sonicwall-vpns/",
+        "https://github.com/xoreaxeaxeax/movfuscator",
+        "https://github.com/cloudflare/cloudflared"
+      ]
+    }
+  }
+]

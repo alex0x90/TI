@@ -1,0 +1,232 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-29",
+      "title": "She Sells Web Shells by the Seashore (Part I)",
+      "completeness": "Low",
+      "threats": [
+        "Proxyshell_vuln"
+      ],
+      "software": [
+        "Microsoft Exchange",
+        "Microsoft Exchange server",
+        "Microsoft SharePoint"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "eval",
+        "shell_exec",
+        "gzuncompress",
+        "str_rot13",
+        "base64_decode"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/she-sells-web-shells-by-the-seashore-part-1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-29",
+      "title": "XiebroC2 identified in MS-SQL server attack cases",
+      "completeness": "Low",
+      "threats": [
+        "Xiebroc2_tool",
+        "Cobalt_strike_tool",
+        "Juicypotato_tool",
+        "Potato_tool"
+      ],
+      "software": [
+        "MS-SQL",
+        "Linux",
+        "macOS"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90326/",
+        "https://github.com/INotGreen/XiebroC2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-29",
+      "title": "Crypto24 Ransomware Uncovered: Stealth, Persistence, and Enterprise-Scale Impact",
+      "completeness": "High",
+      "threats": [
+        "Crypto24",
+        "Lolbin_technique",
+        "Realblindingedr_tool",
+        "Blackcat",
+        "Lockbit",
+        "Netuser_tool",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "Usa",
+        "Asia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "PsExec",
+        "Windows Defender",
+        "Windows Firewall",
+        "Windows service",
+        "WinINet API",
+        "Dropbox",
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/crypto24-ransomware-uncovered-stealth-persistence-and-enterprise-scale-impact"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-29",
+      "title": "Dont Sweat the *Fix Techniques",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Filefix_technique",
+        "Terminalfix_technique",
+        "Downloadfix_technique",
+        "Seo_poisoning_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "curl",
+        "Windows File Explorer",
+        "Google Chrome",
+        "Windows Explorer",
+        "trycloudflare",
+        "chrome"
+      ],
+      "functions": [
+        "getElementById",
+        "createElement",
+        "setTimeout",
+        "writeText",
+        "setClipboardCopyData",
+        "removeChild",
+        "removeEventListener",
+        "createObjectURL"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/dont-sweat-clickfix-techniques",
+        "https://gist.github.com/tyler-bohlmann/87cc53d1ca2c4dcf222b604aab6f4dfd/raw/c72af203c96fbe8624e0f47afacd51541fcb1f8b/downloadfix\\_fake\\_download.js",
+        "https://github.com",
+        "https://gist.github.com/tyler-bohlmann/87cc53d1ca2c4dcf222b604aab6f4dfd#file-downloadfix\\_fake\\_download-js"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-29",
+      "title": "The Fake Bureau of Investigation: How Cybercriminals Are Impersonating Government Pages",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Spear-phishing_technique"
+      ],
+      "software": [
+        "Twitter"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/fbi-phishing-website"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-29",
+      "title": "From a Single Click: How Lunar Spider Enabled a Near Two-Month Intrusion",
+      "completeness": "High",
+      "threats": [
+        "Brc4_tool",
+        "Cobalt_strike_tool",
+        "Latrodectus",
+        "Rclone_tool",
+        "Nltest_tool",
+        "Adfind_tool",
+        "Zerologon_vuln",
+        "Metasploit_tool",
+        "Rustscan_tool",
+        "Process_injection_technique",
+        "Icedid",
+        "Keyhole_tool",
+        "Dll_injection_technique",
+        "Uac_bypass_technique",
+        "Blackcat",
+        "Powerview_tool",
+        "Nmap_tool",
+        "Credential_harvesting_technique",
+        "Psexec_tool",
+        "Paexec_tool",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "Russian",
+        "German"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "PsExec",
+        "Speakeasy",
+        "Windows authentication",
+        "Windows security",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Yandex Browser",
+        "Vivaldi",
+        "Comodo Dragon",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "crc-32",
+        "zip",
+        "rc4",
+        "exhibit"
+      ],
+      "functions": [
+        "CreateNoWindow",
+        "Settings"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://thedfirreport.com/2025/09/29/from-a-single-click-how-lunar-spider-enabled-a-near-two-month-intrusion/",
+        "https://github.com/sadshade/veeam-creds",
+        "https://github.com/The-DFIR-Report/Yara-Rules/blob/main/28761/28761.yar"
+      ]
+    }
+  }
+]

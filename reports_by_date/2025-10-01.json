@@ -1,0 +1,470 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "WARMCOOKIE One Year Later: New Features and FreshInsights",
+      "completeness": "Medium",
+      "threats": [
+        "Warmcookie",
+        "Castlebot"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256",
+        "rc4",
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/revisiting-warmcookie",
+        "https://github.com/elastic/protections-artifacts/blob/ecde1dfa1aaeb6ace99e758c2ba7d2e499f93515/behavior/rules/execution\\_suspicious\\_powershell\\_downloads.toml",
+        "https://github.com/elastic/protections-artifacts/blob/ecde1dfa1aaeb6ace99e758c2ba7d2e499f93515/behavior/rules/execution\\_suspicious\\_powershell\\_execution.toml",
+        "https://github.com/elastic/protections-artifacts/blob/ecde1dfa1aaeb6ace99e758c2ba7d2e499f93515/behavior/rules/persistence\\_scheduled\\_task\\_creation\\_by\\_an\\_unusual\\_process.toml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "FunkSecs FunkLocker: How AI Is Powering the Next Wave of Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Funklocker",
+        "Funksec_ransomware",
+        "Promptlock",
+        "Lockbit",
+        "Wevtutil_tool",
+        "Vssadmin_tool",
+        "Mamona",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Mongolia",
+        "Spain",
+        "India"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 8,
+      "software": [
+        "Windows Defender",
+        "Chrome",
+        "Firefox",
+        "Steam",
+        "Windows Service",
+        "hrome",
+        "Firefox",
+        "E"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/funklocker-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "FlipSwitch: a Novel Syscall HookingTechnique",
+      "completeness": "Low",
+      "threats": [
+        "Diamorphine_rootkit",
+        "Pumakit"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "functions": [
+        "somehow",
+        "we"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/flipswitch-linux-rootkit",
+        "https://github.com/1337-42/FlipSwitch-dev/",
+        "https://github.com/torvalds/linux/blob/v6.9/arch/x86/entry/syscall\\_64.c"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "Qilin",
+      "completeness": "Low",
+      "threats": [
+        "Qilin_ransomware",
+        "Psexec_tool",
+        "Ransomware/win.qilincrypt.c5545083",
+        "Trojan/win.generic.c5503103",
+        "Trojan/win.evo-gen.c5771612",
+        "Trojan/win.generic.c5545081",
+        "Ransom/mdp.delete.m2117",
+        "Ransom/mdp.command.m2255",
+        "Ransom/mdp.event.m1946",
+        "Ransom/mdp.edit.m1870",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "PsExec",
+        "MSSQL",
+        "Hyper-V",
+        "QuickBooks",
+        "msexchange",
+        "firefox",
+        "onenote",
+        "outlook",
+        "steam",
+        "thebat",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "chacha20",
+        "aes-256",
+        "sha256",
+        "sha2",
+        "aes"
+      ],
+      "functions": [
+        "AES-256",
+        "Get-WinEvent",
+        "Get-Unique"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "golang"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90360/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "Phantom Taurus: A New Chinese Nexus APT and the Discovery of the NET-STAR Malware Suite",
+      "completeness": "Medium",
+      "threats": [
+        "Potato_tool",
+        "Chinachopper",
+        "Impacket_tool",
+        "Ntospy_tool",
+        "Timestomp_technique",
+        "Amsi_bypass_technique",
+        "Htran_tool",
+        "Yasso_tool",
+        "Juicypotato_tool",
+        "Nbtscan_tool",
+        "Ladon_tool",
+        "Sharpefspotato_tool",
+        "Mimikatz_tool",
+        "Gh0st_rat",
+        "Tunnelspecter",
+        "Sweetspecter",
+        "Raccoon_stealer",
+        "Plugx_rat"
+      ],
+      "geo": [
+        "Afghanistan",
+        "China",
+        "Pakistan",
+        "Africa",
+        "Asia",
+        "Middle east",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows",
+        "Windows security"
+      ],
+      "algorithms": [
+        "md5",
+        "gzip",
+        "sha256",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "GetContext",
+        "SetContext",
+        "createDir",
+        "createFile",
+        "removeShell"
+      ],
+      "languages": [
+        "visual_basic"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/phantom-taurus/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "Lunar Spider Expands their Web via FakeCaptcha",
+      "completeness": "High",
+      "threats": [
+        "Fakecaptcha_tool",
+        "Latrodectus",
+        "Dllsearchorder_hijacking_technique",
+        "Icedid",
+        "Blackcat",
+        "Telecaptcha_tool",
+        "Nltest_tool",
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Msi_loader"
+      ],
+      "geo": [
+        "India",
+        "Moldova",
+        "Germany",
+        "Ukraine"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 20,
+      "software": [
+        "Telegram",
+        "WordPress",
+        "curl",
+        "Firefox",
+        "Chrome",
+        "Internet Explorer",
+        "Microsoft Edge",
+        "macOS",
+        "Linux",
+        "Android",
+        "have more..."
+      ],
+      "algorithms": [
+        "rc4",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "createElement",
+        "setTimeout",
+        "createIframe",
+        "setAttribute",
+        "getElementById",
+        "writeText",
+        "removeChild",
+        "setClipboardCopyData",
+        "getItem",
+        "setItem",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.nviso.eu/2025/10/01/lunar-spider-expands-their-web-via-fakecaptcha/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "MatrixPDF Puts Gmail Users at Risk with Malicious PDF Attachments",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique",
+        "Smishing_technique",
+        "Putty_tool"
+      ],
+      "software": [
+        "Gmail",
+        "Twitter"
+      ],
+      "functions": [
+        "JavaScript"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/matrixpdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "Rhadamanthys 0.9.x walk through the updates",
+      "completeness": "Medium",
+      "threats": [
+        "Rhadamanthys",
+        "Process_injection_technique",
+        "Lumma_stealer",
+        "Clickfix_technique",
+        "Hidden_bee",
+        "Elysium_stealer",
+        "Bandit_stealer",
+        "Skuld",
+        "Steganography_technique",
+        "Procmon_tool",
+        "Putty_tool",
+        "Teamviewer_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "LedgerLive",
+        "webrtc",
+        "CoreFTP",
+        "CuteFTP",
+        "Cyberduck",
+        "FlashFXP",
+        "FTPRush",
+        "SmartFTP",
+        "Total Commander",
+        "have more..."
+      ],
+      "wallets": [
+        "keplr",
+        "ledgerlive",
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "cbc",
+        "sha256",
+        "xor",
+        "rc4",
+        "base64",
+        "chacha20",
+        "sha1"
+      ],
+      "functions": [
+        "main",
+        "getWebRTCInfo",
+        "getWebAudioInfo",
+        "collectAllFingerprints",
+        "Date",
+        "collectSystemInfo",
+        "collectBrowserInfo",
+        "collectWebGLInfo",
+        "collectCanvasInfo",
+        "collectNetworkInfo",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "lua",
+        "java",
+        "golang"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/rhadamanthys-0-9-x-walk-through-the-updates/",
+        "https://github.com/hasherezade/hidden\\_bee\\_tools/releases",
+        "https://github.com/hasherezade/hollows\\_hunter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "Datzbro: RAT Hiding Behind Senior Travel Scams",
+      "completeness": "Low",
+      "threats": [
+        "Datzbro"
+      ],
+      "geo": [
+        "Malaysia",
+        "Canada",
+        "Chinese",
+        "South africa",
+        "Australia",
+        "Singapore"
+      ],
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Google Play",
+        "WeChat"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/datzbro-rat-hiding-behind-senior-travel-scams"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "ForcedLeak and the Future of AI Agent Security",
+      "completeness": "Low",
+      "threats": [
+        "Forcedleak_vuln"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "Twitter"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/forcedleak"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-01",
+      "title": "Silent Smishing : The Hidden Abuse of Cellular Router APIs",
+      "completeness": "Medium",
+      "threats": [
+        "Smishing_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Italian",
+        "French",
+        "Swedish",
+        "Turkey",
+        "Australia",
+        "Sweden",
+        "Russian",
+        "Danish",
+        "France",
+        "Spain",
+        "Denmark",
+        "Thailand",
+        "Dutch",
+        "Belgium"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.sekoia.io/silent-smishing-the-hidden-abuse-of-cellular-router-apis/"
+      ]
+    }
+  }
+]

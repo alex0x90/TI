@@ -444,5 +444,330 @@
         "https://github.com/Jinmo/applescript-disassembler"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "RayInitiator & LINE VIPER",
+      "completeness": "Medium",
+      "threats": [
+        "Line_viper",
+        "Rayinitiator",
+        "Line_dancer_tool",
+        "Line_runner",
+        "Code_cave_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "Linux",
+        "anyconnect"
+      ],
+      "algorithms": [
+        "sha512",
+        "gzip",
+        "aes-256-cbc",
+        "base64",
+        "xor",
+        "md5",
+        "aes"
+      ],
+      "functions": [
+        "YY",
+        "for"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "From Custom Scripts to Commodity RATs: A Threat Actors Evolution to PureRAT",
+      "completeness": "High",
+      "threats": [
+        "Purerat",
+        "Dll_sideloading_technique",
+        "Pxa_stealer",
+        "Process_hollowing_technique",
+        "Dotnet_reactor_tool",
+        "Mitm_technique",
+        "Hvnc_tool",
+        "Purecryptor",
+        "Blueloader",
+        "Pureminer",
+        "Purelogs",
+        "Pure_clipper",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Vietnamese",
+        "Vietnam"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "Windows Update Service",
+        "Telegram",
+        "Chrome",
+        "Event Tracing for Windows",
+        "NET Reactor",
+        "Outlook",
+        "Steam"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "rc4",
+        "aes-256",
+        "xor",
+        "sha256",
+        "md5",
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "exec",
+        "getEntryPoint",
+        "GetType",
+        "GetMethod",
+        "PlaySubscriber",
+        "RemoveSelector",
+        "DecideFlexibleController"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/purerat-threat-actor-evolution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "From Prompt to Payload: LAMEHUGs LLM-Driven Cyber Intrusion",
+      "completeness": "Medium",
+      "threats": [
+        "Lamehug_tool",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "software": [
+        "Hugging Face",
+        "HuggingFace",
+        "Slack"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "LLM_QUERY_EX",
+        "Main",
+        "xlsx_open"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/lamehug-ai-driven-malware-llm-cyber-intrusion-analysis.html",
+        "https://github.com/splunk/attack\\_data/",
+        "https://github.com/splunk/security\\_content"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Trinity of Chaos: The LAPSUS$, ShinyHunters, and Scattered Spider Alliance Embarks on Global Cybercrime Spree",
+      "completeness": "Low",
+      "threats": [
+        "Conti",
+        "Sim_swapping_technique",
+        "Mfa_bombing_technique",
+        "Dragonforce_ransomware",
+        "Supply_chain_technique",
+        "Hellcat",
+        "Lumma_stealer",
+        "Azorult",
+        "Redline_stealer",
+        "Raccoon_stealer",
+        "Vidar_stealer"
+      ],
+      "geo": [
+        "Italian",
+        "Canada",
+        "Vietnam",
+        "Russian",
+        "United kingdom",
+        "French",
+        "Turkey",
+        "France",
+        "German",
+        "Belarus",
+        "Russia"
+      ],
+      "software": [
+        "Salesforce",
+        "Telegram",
+        "ESXi"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "functions": [
+        "Qantas"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/trinity-of-chaos-the-lapsus-shinyhunters-and-scattered-spider-alliance-embarks-on-global-cybercrime-spree"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "Olymp Loader: A new Malware-as-a-Service written in Assembly",
+      "completeness": "High",
+      "threats": [
+        "Olymp_loader",
+        "Lumma_stealer",
+        "Stealc",
+        "Code_cave_technique",
+        "Olymp_botnet",
+        "Amadey",
+        "Putty_tool",
+        "Webrat",
+        "Salatstealer",
+        "Quasar_rat",
+        "Raccoon_stealer",
+        "Kleenscan_tool",
+        "Brsteal",
+        "Browsersnatch",
+        "Olymp_crypter",
+        "Uac_bypass_technique",
+        "Process_injection_technique",
+        "Snatch_ransomware",
+        "Ultrasurf_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 15,
+      "software": [
+        "Telegram",
+        "Windows Defender",
+        "Node.js",
+        "OpenSSL",
+        "Zoom",
+        "Capcut",
+        "SumatraPDF",
+        "Nuitka",
+        "Chrome",
+        "7Star",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "wassabi",
+        "bitcoincore"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "java",
+        "javascript",
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://outpost24.com/blog/olymp-loader-a-new-malware-as-a-service/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "First Malicious MCP in the Wild: The Postmark Backdoor That's Stealing Your Emails",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://www.koi.security/blog/postmark-mcp-npm-malicious-backdoor-email-theft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-25",
+      "title": "DeceptiveDevelopment: From primitive crypto theft to sophisticated AI-based deception",
+      "completeness": "High",
+      "threats": [
+        "Beavertail",
+        "Invisibleferret",
+        "Flexibleferret",
+        "Tsunami_framework",
+        "Signbt",
+        "Tropidoor",
+        "Akdoortea",
+        "Clickfix_technique",
+        "Ottercookie",
+        "Anydesk_tool",
+        "Pylangghost",
+        "Tsunami_botnet",
+        "Xmrig_miner",
+        "Nbminer",
+        "Akdoor",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Ukraine",
+        "Ukrainian",
+        "Albania",
+        "Poland",
+        "China",
+        "France",
+        "North korean",
+        "North korea",
+        "Asia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 16,
+      "software": [
+        "Linux",
+        "macOS",
+        "Microsoft Defender",
+        "Node.js"
+      ],
+      "algorithms": [
+        "rc4",
+        "zip",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-from-primitive-crypto-theft-to-sophisticated-ai-based-deception/",
+        "https://github.com/eset/malware-ioc/tree/master/deceptivedevelopment"
+      ]
+    }
   }
 ]

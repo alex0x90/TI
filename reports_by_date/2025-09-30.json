@@ -1,0 +1,279 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "Detour Dog: DNS Malware Powers Strela Stealer Campaigns",
+      "completeness": "Medium",
+      "threats": [
+        "Detour_dog",
+        "Strela_stealer",
+        "Starfish",
+        "Tofsee",
+        "Lospollos_tds_tool",
+        "Help_tds_tool",
+        "Webmonitor_rat",
+        "Fakecaptcha_technique",
+        "Vextrio_tds_tool"
+      ],
+      "geo": [
+        "Taiwan",
+        "Russian",
+        "Ukrainian",
+        "German",
+        "Kazakhstan",
+        "Moscow",
+        "Germany"
+      ],
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/detour-dog-dns-malware-powers-strela-stealer-campaigns/",
+        "https://github.com/infobloxopen/threat-intelligence/blob/main/indicators/csv/detour\\_dog\\_20250930\\_iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "Phishing for clues, part 2: Exploring a yearlong AiTM Phishing Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Evilginx_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.orangecyberdefense.com/global/blog/cybersecurity/phishing-for-clues-part-2-exploring-a-year-long-aitm-phishing-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "Breakingdown of Patchwork APT",
+      "completeness": "Medium",
+      "geo": [
+        "Asia"
+      ],
+      "software": [
+        "Windows Scheduled Task",
+        "Twitter"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "xop",
+        "Protean",
+        "bkj",
+        "ghjk",
+        "dsffds",
+        "Charm"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/breakingdown-of-patchwork-apt/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "Klopatra: exposing a new Android banking trojan operation with roots in Turkey",
+      "completeness": "Medium",
+      "threats": [
+        "Klopatra",
+        "Virbox_tool",
+        "Hvnc_tool",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "Spain",
+        "Italy",
+        "Georgia",
+        "Italian",
+        "Qatar",
+        "Chinese",
+        "Turkish",
+        "Germany",
+        "Lithuania",
+        "Spanish",
+        "Turkey",
+        "Kuwait"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "java",
+        "kotlin"
+      ],
+      "links": [
+        "https://www.cleafy.com/cleafy-labs/klopatra-exposing-a-new-android-banking-trojan-operation-with-roots-in-turkey"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "Check Your Socks - A Deep Dive into soopsocks PyPI Package",
+      "completeness": "Medium",
+      "threats": [
+        "Uac_bypass_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "BitTorrent",
+        "Windows service",
+        "Internet Explorer",
+        "Windows Firewall"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip"
+      ],
+      "functions": [
+        "main",
+        "_elevate_and_rerun",
+        "_try_pywin32_service",
+        "_auto_task_fallback"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://research.jfrog.com/post/check-your-socks-a-deep-dive-into-soopsocks-pypi/",
+        "http://github.com/kardianos/service"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "CABINETRAT Backdoor used by UAC-0245 for targeted cyberattacks against IAs (CERT-UA#17479)",
+      "completeness": "Low",
+      "threats": [
+        "Cabinetrat",
+        "Sandbox_evasion_technique",
+        "Antidebugging_technique"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "software": [
+        "Windows registry",
+        "VirtualBox",
+        "QEMU",
+        "Hyper-V"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6285549"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "0day .ICS attack in the wild",
+      "completeness": "Medium",
+      "geo": [
+        "Russian",
+        "Libyan",
+        "Spanish",
+        "Portuguese",
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Zimbra",
+        "Roundcube",
+        "Outlook"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "createHiddenFieldsForUsernameAndPasswordCapturing",
+        "stealUsernameAndPasswordFromLoginForm",
+        "startActivityMonitoring",
+        "isMetadataLoaded",
+        "setMetadataLoaded",
+        "searchForEmailsInFolderAndSendToAttackerServer",
+        "addMaliciousFilters",
+        "stealScratchCodeTrustedDevicesGetAppSpecificPasswords",
+        "stealContactsAndDistributionLists",
+        "stealSharedFolders",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://strikeready.com/blog/0day-ics-attack-in-the-wild/",
+        "https://github.com/StrikeReady-Inc/research/tree/main/2025-09-29%20ics%200day"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-09-30",
+      "title": "GhostSocks: From Initial Access to Residential Proxy",
+      "completeness": "Medium",
+      "threats": [
+        "Ghostsock",
+        "Residential_proxy_technique",
+        "Blackbasta",
+        "Lumma_stealer",
+        "Garble_tool",
+        "Go-socks5_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://synthient.com/blog/ghostsocks-from-initial-access-to-residential-proxy",
+        "https://github.com/things-go/go-socks5",
+        "https://github.com/burrowers/garble"
+      ]
+    }
+  }
+]

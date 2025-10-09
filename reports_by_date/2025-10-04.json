@@ -1,0 +1,77 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-04",
+      "title": "RomCom Threat Actor Evolution (20232025)",
+      "completeness": "High",
+      "threats": [
+        "Romcom_rat",
+        "Snipbot",
+        "Rustyclaw",
+        "Mythic_c2",
+        "Spear-phishing_technique",
+        "Slipscreen",
+        "Com_hijacking_technique",
+        "Dustyhammock",
+        "Shadyhammock",
+        "Meltingclaw",
+        "Dll_hijacking_technique",
+        "Transferloader",
+        "Cuba_ransomware",
+        "Dllsearchorder_hijacking_technique",
+        "Smbexec_tool",
+        "Wmiexec_tool"
+      ],
+      "geo": [
+        "America",
+        "Canada",
+        "Ukraine",
+        "Russia",
+        "Russian",
+        "Ukrainian",
+        "Poland"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 14,
+      "software": [
+        "ChatGPT",
+        "Microsoft Word",
+        "Firefox",
+        "Microsoft OneDrive",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "swift",
+        "rust"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/romcom-threat-actor-evolution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-04",
+      "title": "Malvertising Campaign Hides in Plain Sight on WordPress Websites",
+      "completeness": "Low",
+      "software": [
+        "WordPress",
+        "cPanel"
+      ],
+      "functions": [
+        "ti_custom_javascript"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.sucuri.net/2025/10/malvertising-campaign-hides-in-plain-sight-on-wordpress-websites.html"
+      ]
+    }
+  }
+]
