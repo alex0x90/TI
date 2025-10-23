@@ -1,0 +1,641 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Warlock Ransomware: Old Actor, New Tricks?",
+      "completeness": "Medium",
+      "threats": [
+        "X2anylock",
+        "Toolshell_vuln",
+        "Lockbit",
+        "Dll_sideloading_technique",
+        "Ak47c2_tool",
+        "Project_ak47_tool",
+        "Blackbasta",
+        "Byovd_technique",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Brazil",
+        "Taiwan",
+        "India",
+        "Japan",
+        "China",
+        "Russia",
+        "Chinese",
+        "Middle east"
+      ],
+      "software": [
+        "Microsoft SharePoint",
+        "Curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "7zip"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/warlock-ransomware-origins"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "TA585 In-depth technical analysis of an organization's deployment of MonsterV2 RAT using ClickFix phishing technology",
+      "completeness": "High",
+      "threats": [
+        "Monster_ransomware",
+        "Clickfix_technique",
+        "Coresecthree",
+        "Hvnc_tool",
+        "Rhadamanthys",
+        "Steganography_technique",
+        "Soniccrypt"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russia",
+        "Belarus"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows runtime",
+        "Chrome",
+        "Firefox",
+        "Outlook",
+        "WeChat"
+      ],
+      "algorithms": [
+        "chacha20",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "typescript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/275404.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Jingle Thief: Inside a Cloud-Based Gift Card Fraud Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Smishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Australia",
+        "Asia",
+        "Japan",
+        "Middle east",
+        "Morocco"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "WordPress",
+        "ServiceNow",
+        "Microsoft Entra"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/cloud-based-gift-card-fraud-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "TransparentTribe targets Indian military organisations with DeskRAT",
+      "completeness": "High",
+      "threats": [
+        "Deskrat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Indian",
+        "India",
+        "China",
+        "Kashmir",
+        "Pakistan",
+        "Pakistani"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Firefox",
+        "curl",
+        "Linux",
+        "Chrome"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "RunInStealthMode",
+        "InstallPersistenceFeatures",
+        "CreateSystemdServiceUnit",
+        "CreateAutostartDesktopFile",
+        "CreateBashStartupScript",
+        "NewClientInstance",
+        "EstablishConnection",
+        "math_rand_Float64"
+      ],
+      "languages": [
+        "golang",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/transparenttribe-targets-indian-military-organisations-with-deskrat/",
+        "https://github.com/gorilla/websocket"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "The Rise of Collaborative Tactics Among China-aligned Cyber Espionage Campaigns",
+      "completeness": "Medium",
+      "threats": [
+        "Trillclient",
+        "Crowdoor",
+        "Shadowpad",
+        "Cobalt_strike_tool",
+        "Sparrowdoor",
+        "Draculoader",
+        "Hemigate",
+        "Dll_sideloading_technique",
+        "Logserver",
+        "Supply_chain_technique",
+        "Pteroodd",
+        "Pteropaste",
+        "Kazuar"
+      ],
+      "geo": [
+        "Latin america",
+        "Taiwan",
+        "South africa",
+        "China",
+        "Apac",
+        "Asia-pacific",
+        "Asian",
+        "Asia",
+        "America",
+        "Russia",
+        "Middle east"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows registry",
+        "Ivanti",
+        "ORB networks",
+        "VSCode"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/j/premier-pass-as-a-service.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "The Smishing Deluge: China-Based Campaign Flooding Global Text Messages",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Germany",
+        "United arab emirates",
+        "Philippines",
+        "Poland",
+        "France",
+        "China",
+        "Russia",
+        "Middle east",
+        "Israel",
+        "Canada",
+        "Chinese",
+        "Malaysia",
+        "Arab emirates",
+        "Mexico",
+        "Hong kong",
+        "Ireland",
+        "Singapore",
+        "Lithuania",
+        "Australia",
+        "Argentina"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "iMessage"
+      ],
+      "functions": [
+        "ReadME"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/global-smishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "ToolShell Used to Compromise Telecoms Company in Middle East",
+      "completeness": "Medium",
+      "threats": [
+        "Toolshell_vuln",
+        "Zingdoor",
+        "Krustyloader",
+        "X2anylock",
+        "Shadowpad",
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Sliver_c2_tool",
+        "Lolbin_technique",
+        "Revsocks_tool",
+        "Procdump_tool",
+        "Minidump_tool",
+        "Powersploit_tool",
+        "Lsass_dumper_tool",
+        "Petitpotam_vuln"
+      ],
+      "geo": [
+        "America",
+        "Chinese",
+        "American",
+        "Middle east",
+        "African",
+        "China",
+        "Africa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Adobe ColdFusion",
+        "Sysinternals",
+        "Local Security Authority",
+        "Windows LSA"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/toolshell-china-zingdoor",
+        "https://github.com/chainreactors/gogo",
+        "https://github.com/BishopFox/sliver"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Bitter (APT-Q-37) uses diverse means to deliver new backdoor components",
+      "completeness": "Low",
+      "geo": [
+        "China",
+        "Asia",
+        "Asian",
+        "Pakistan"
+      ],
+      "software": [
+        "NET framework"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "base64",
+        "aes"
+      ],
+      "links": [
+        "https://ti.qianxin.com/blog/articles/bitter-uses-diverse-means-to-deliver-new-backdoor-components-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "SessionReaper (CVE-2025-54236): Critical Adobe Commerce Vulnerability Actively Exploited",
+      "completeness": "Low",
+      "threats": [
+        "Cosmicsting_vuln",
+        "Trojanorder_vuln"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "functions": [
+        "phpinfo"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/sessionreaper-cve-2025-54236-adobe-commerce-exploit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Vault Viper: High Stakes, Hidden Threats",
+      "completeness": "High",
+      "threats": [
+        "Vigorish_viper",
+        "Supply_chain_technique",
+        "Domain_fronting_technique",
+        "Ramnit",
+        "Alman",
+        "Bankreptile_tool",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Philippines",
+        "America",
+        "Taiwan",
+        "China",
+        "Malaysia",
+        "Macau",
+        "Hong kong",
+        "Myanmar",
+        "Malta",
+        "Asia",
+        "Latin america",
+        "Asia-pacific",
+        "United kingdom",
+        "Korea",
+        "Dprk",
+        "Cambodia",
+        "Asian",
+        "Chinese",
+        "Philippine",
+        "Samoa",
+        "Australia",
+        "Pacific",
+        "Vietnam",
+        "Belize"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Android",
+        "Chromium",
+        "Chrome",
+        "Google Chrome",
+        "Instagram",
+        "Windows installer"
+      ],
+      "algorithms": [
+        "sha256",
+        "7zip",
+        "zip"
+      ],
+      "functions": [
+        "QT"
+      ],
+      "languages": [
+        "javascript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/vault-viper-high-stakes-hidden-threats/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Threat Actors Allegedly Selling Monolock Ransomware on Dark Web Forums",
+      "completeness": "Low",
+      "threats": [
+        "Monolock"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows registry"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "aes-256"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/threat-actors-allegedly-selling-monolock-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Dissecting YouTubes Malware Distribution Network",
+      "completeness": "Medium",
+      "threats": [
+        "Rhadamanthys",
+        "Hijackloader",
+        "Lumma_stealer",
+        "Stargazers_ghost_network",
+        "Stealc",
+        "Redline_stealer",
+        "Phemedrone"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "software": [
+        "Windows Defender",
+        "Photoshop",
+        "Dropbox",
+        "Lightroom",
+        "Roblox"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Set-Up"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/youtube-ghost-network/",
+        "https://github.com/activescott/lessmsi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Baohuo's Eminence Grs: An Android backdoor hijacks Telegram accounts, gaining complete control over them.",
+      "completeness": "Low",
+      "threats": [
+        "Baohuo",
+        "Lspatch_tool"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "Redis",
+        "Redis Android"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15076&lng=ru&c=5",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/DoctorWebLtd/malware-iocs/blob/master/Android.Backdoor.Baohuo.1.origin/README.adoc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Librarian Likho updated its toolset",
+      "completeness": "Low",
+      "software": [
+        "UnRAR"
+      ],
+      "links": [
+        "https://www.kaspersky.ru/blog/librarian-likho-new-tools/40695/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Shadow Alliance: who are the Cloaked Shadow",
+      "completeness": "Medium",
+      "threats": [
+        "Reversesocks5_tool",
+        "Dropbear_tool",
+        "Tinyshell",
+        "Dquic",
+        "Chisel_tool",
+        "Garble_tool",
+        "Socat_tool",
+        "Dns_tunneling_technique",
+        "Vasilek"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "linux",
+        "redis",
+        "ollvm",
+        "Telegram",
+        "Zabbix"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/ru_mts/articles/958950/",
+        "https://github.com/Acebond/ReverseSocks5",
+        "https://github.com/Fahrj/reverse-ssh",
+        "https://github.com/mkj/dropbear/tree/master"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "RedTiger: New Red Teaming Tool in the Wild Targeting Gamers and Discord Accounts",
+      "completeness": "Medium",
+      "threats": [
+        "Red_tiger",
+        "Cobalt_strike_tool",
+        "Procdump_tool",
+        "Process_hacker_tool",
+        "Nodestealer"
+      ],
+      "geo": [
+        "French"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "PyInstaller",
+        "Roblox",
+        "Linux",
+        "macOS",
+        "Visual studio",
+        "sysinternals",
+        "Process explorer",
+        "Stripe API",
+        "Google Chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "ImageGrab"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/redtiger-new-red-teaming-tool-in-the-wild-targeting-gamers-and-discord-accounts",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Malware/RedTiger/IOCs",
+        "https://github.com/loxy0dev/RedTiger-Tools"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "F5 BIG-IP Source Code Leak Tied to State-Linked Campaigns Using BRICKSTORM Backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Brickstorm",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "BIG-IP",
+        "Unix",
+        "systemd"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/f5-big-ip-source-code-leak-tied-to-state-linked-campaigns-using-brickstorm-backdoor"
+      ]
+    }
+  }
+]

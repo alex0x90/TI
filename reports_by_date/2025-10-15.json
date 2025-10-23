@@ -1,0 +1,544 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Mysterious Elephant: a growing threat",
+      "completeness": "High",
+      "threats": [
+        "Babshell",
+        "Memloader_tool",
+        "Vtyrei",
+        "Spear-phishing_technique",
+        "Remcos_rat",
+        "Vxrat",
+        "Chromestealer_exfiltrator"
+      ],
+      "geo": [
+        "Bangladesh",
+        "Asia",
+        "Apac",
+        "Asia-pacific",
+        "Sri lanka",
+        "Nepal",
+        "Afghanistan",
+        "Pakistan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "curl",
+        "Google Chrome",
+        "Chrome"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "rc4",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/mysterious-elephant-apt-ttps-and-tools/117596/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "StealthServer: A Dual-Platform Backdoor from a South Asian APT Group",
+      "completeness": "High",
+      "threats": [
+        "Stealthserver",
+        "Junk_code_technique",
+        "Antidebugging_technique"
+      ],
+      "geo": [
+        "Bulgaria",
+        "Switzerland",
+        "Israeli",
+        "Netherlands",
+        "Asian",
+        "France"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Firefox",
+        "curl",
+        "crontab",
+        "systemd",
+        "VirtualBox",
+        "QEMU",
+        "Hyper-V",
+        "Node.js",
+        "Windows Defender",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "exhibit",
+        "xor",
+        "base64",
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/apt-stealthserver-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Anatomy of an Attack: The \"BlackSuit Blitz\" at a Global Equipment Manufacturer",
+      "completeness": "Low",
+      "threats": [
+        "Blacksuit_ransomware",
+        "Blitz_tool",
+        "Dcsync_technique",
+        "Smbexec_tool",
+        "Anydesk_tool",
+        "Rclone_tool",
+        "Petitpotam_vuln"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/anatomy-of-an-attack-blacksuit-ransomware-blitz/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Jewelbug: Chinese APT Group Widens Reach to Russia",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_dumping_technique",
+        "Anydesk_tool",
+        "Dll_sideloading_technique",
+        "Smbexec_tool",
+        "Bitsadmin_tool",
+        "Byovd_technique",
+        "Shadowpad",
+        "Burntcigar",
+        "Echodrv_tool",
+        "Mimikatz_tool",
+        "Coercedpotato_tool",
+        "Sweetpotato_tool",
+        "Printnotifypotato_tool",
+        "Earthworm_tool",
+        "Finaldraft",
+        "Pathloader",
+        "Guidloader",
+        "Squidoor",
+        "Winrm_tool",
+        "Wevtutil_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Taiwanese",
+        "Russia",
+        "America",
+        "Taiwan",
+        "China",
+        "American",
+        "Ukraine",
+        "Russian",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Graph API",
+        "Linux"
+      ],
+      "functions": [
+        "HttpSendRequestWPtr"
+      ],
+      "languages": [
+        "cscript"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/jewelbug-apt-russia"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "An Insider Look At The IRGC-linked APT35 Operations: Ep3 - Malware Arsenal & Tooling",
+      "completeness": "Medium",
+      "threats": [
+        "Saqeb",
+        "Rat-2ac2",
+        "Spear-phishing_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Turkey",
+        "Egypt",
+        "Saudi arabia",
+        "Israel",
+        "Jordan"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 65,
+      "software": [
+        "Flask",
+        "Visual Studio",
+        "Firefox",
+        "Telegram",
+        "NET Framework",
+        "Linux Debian",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "base64",
+        "exhibit",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "snrProc",
+        "SetWindowsHookEx"
+      ],
+      "languages": [
+        "python",
+        "php",
+        "powershell",
+        "c_language"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/an-insider-look-at-the-irgc-linked-apt35-operations-ep3---malware-arsenal-tooling",
+        "https://github.com/KittenBusters/CharmingKitten"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "TigerJack's Malicious VSCode Extensions Steal Code, Mine Crypto, and Plant Backdoors",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Coinimp"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "Visual Studio Code",
+        "Discord",
+        "Ethcode"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/tiger-jack-s-malicious-vs-code-extensions-steal-code-mine-crypto-and-plant-backdoors"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Scammers are still sending us their fake Robinhood security alerts",
+      "completeness": "Low",
+      "geo": [
+        "Congo"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/10/scammers-are-still-sending-us-their-fake-robinhood-security-alerts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "PhantomVAI Loader Delivers a Range of Infostealers",
+      "completeness": "Medium",
+      "threats": [
+        "Phantomvai_loader",
+        "Asyncrat",
+        "Formbook",
+        "Xworm_rat",
+        "Katz_stealer",
+        "Steganography_technique",
+        "Dcrat",
+        "Vmdetectloader",
+        "Vmdetector",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge",
+        "Telegram",
+        "Discord",
+        "Steam"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/phantomvai-loader-delivers-infostealers/",
+        "https://github.com/robsonfelix/VMDetector"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Comprehensive Threat Intelligence Report: Charming Kitten",
+      "completeness": "Medium",
+      "threats": [
+        "Nuclei_tool",
+        "Proxyshell_vuln",
+        "Screenconnect_tool",
+        "Log4shell_vuln",
+        "Sqlmap_tool",
+        "Bellaciao",
+        "Rat-2ac2",
+        "Credential_dumping_technique",
+        "Nmap_tool",
+        "Process_hollowing_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Jordan",
+        "Cyprus",
+        "Middle east",
+        "Iran",
+        "Arab emirates",
+        "Kuwait",
+        "Korea",
+        "United arab emirates",
+        "Israel",
+        "Turkish",
+        "Saudi arabia",
+        "Afghanistan",
+        "Deutsche",
+        "Lebanon",
+        "Turkey"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 0,
+      "software": [
+        "ZoomEye",
+        "Microsoft Exchange",
+        "Ivanti",
+        "WordPress",
+        "Confluence",
+        "Jenkins",
+        "Gmail",
+        "ASP.NET",
+        "Windows Service",
+        "Active Directory",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "delphi"
+      ],
+      "links": [
+        "https://gist.github.com/Hamid-K/f4288dae3a1f2dea8905b1cf16d59c1b"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Singularity: Deep Dive into a Modern Stealth Linux Kernel Rootkit",
+      "completeness": "Low",
+      "threats": [
+        "Singularity_rootkit"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Systemd",
+        "sudo"
+      ],
+      "functions": [
+        "ftrace_set_filter_ip",
+        "kill",
+        "filter_dirents",
+        "should_hide_path",
+        "sysinfo",
+        "readlink",
+        "chdir",
+        "skb_linearize",
+        "prepare_creds",
+        "commit_creds",
+        "have more..."
+      ],
+      "links": [
+        "https://blog.kyntra.io/Singularity-A-final-boss-linux-kernel-rootkit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Defrosting PolarEdge s Backdoor",
+      "completeness": "Low",
+      "threats": [
+        "Polaredge"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Mac OS",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "ecdh",
+        "rsa-2048",
+        "xor",
+        "sha256",
+        "sha1"
+      ],
+      "links": [
+        "https://blog.sekoia.io/polaredge-backdoor-qnap-cve-2023-20118-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "BombShell: The Signed Backdoor Hiding in Plain Sight on Framework Devices",
+      "completeness": "Low",
+      "threats": [
+        "Bombshell",
+        "Blacklotus",
+        "Bootkitty",
+        "Hybridpetya",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Qemu",
+        "Ubuntu"
+      ],
+      "functions": [
+        "LoadImage"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://eclypsium.com/blog/bombshell-the-signed-backdoor-hiding-in-plain-sight-on-framework-devices/",
+        "https://github.com/tianocore/edk2/blob/62cd7d338b389aa21c00f0fc35f14a6fa9ba23b0/MdeModulePkg/Core/Dxe/DxeMain.h#L250",
+        "https://github.com/tianocore/edk2/pull/11486"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Maverick: a new banking Trojan abusing WhatsApp in a mass-scale distribution",
+      "completeness": "Medium",
+      "threats": [
+        "Maverick",
+        "Coyote",
+        "Powenot"
+      ],
+      "geo": [
+        "Portuguese",
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Chrome",
+        "Selenium",
+        "Firefox",
+        "Internet Explorer",
+        "zoom",
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256",
+        "hmac",
+        "gzip",
+        "sha256",
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "IsValidBrazilianTimezone",
+        "IsBrazilianLocale",
+        "IsBrazilianRegion",
+        "IsBrazilianDateFormat"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/maverick-banker-distributing-via-whatsapp/117715/",
+        "https://github.com/wppconnect-team/wppconnect"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-15",
+      "title": "Operation Zero Disco: Attackers Exploit Cisco SNMP Vulnerability to Deploy Rootkits",
+      "completeness": "Low",
+      "threats": [
+        "Netcat_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "guest shell"
+      ],
+      "functions": [
+        "Get-Request"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/j/operation-zero-disco-cisco-snmp-vulnerability-exploit.html"
+      ]
+    }
+  }
+]

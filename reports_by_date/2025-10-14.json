@@ -1,0 +1,290 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "A variant of BlackTech's Kivars malware discovered in 2025",
+      "completeness": "Low",
+      "threats": [
+        "Kivars"
+      ],
+      "geo": [
+        "Taiwan",
+        "China",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2025/10/blacktech-malware-kivars-2025/",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/mopisec/research/blob/main/decrypt\\_kivars\\_21201\\_config.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "Weaponized Trust: Microsofts Logo as a Gateway to Tech Support Scams",
+      "completeness": "Low",
+      "geo": [
+        "Syria"
+      ],
+      "links": [
+        "https://cofense.com/blog/weaponized-trust-microsoft-s-logo-as-a-gateway-to-tech-support-scams"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "FileFix in the wild! New FileFix campaign goes beyond POC and leverages steganography",
+      "completeness": "High",
+      "threats": [
+        "Filefix_technique",
+        "Steganography_technique",
+        "Clickfix_technique",
+        "Stealc",
+        "Promptfix_technique"
+      ],
+      "geo": [
+        "Nepal",
+        "Philippines",
+        "Germany",
+        "Spanish",
+        "Bangladesh",
+        "China",
+        "Polish",
+        "French",
+        "Chinese",
+        "Russian",
+        "Dominican republic",
+        "Tunisia",
+        "Serbia",
+        "Japanese",
+        "German",
+        "Peru"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "FireFox",
+        "Maxthon",
+        "Electrum-LTC",
+        "Ledger Live",
+        "Telegram",
+        "Discord",
+        "Pidgin",
+        "OLLVM"
+      ],
+      "wallets": [
+        "daedalus",
+        "mainnet",
+        "wassabi",
+        "electrum",
+        "electron_cash",
+        "multidoge",
+        "jaxx",
+        "atomicwallet",
+        "coinomi",
+        "guarda_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "dogecoin",
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "gzip",
+        "rc4"
+      ],
+      "functions": [
+        "getNtAllocateVirtualMemory",
+        "getEnumDisplayDevicesA"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/filefix-in-the-wild-new-filefix-campaign-goes-beyond-poc-and-leverages-steganography/",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-05-16-IOCs-on-recent-ClickFix-activity.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "Kaiji Malware: Anatomy, Persistence and Detection",
+      "completeness": "Medium",
+      "threats": [
+        "Kaiji",
+        "Sshscan_tool",
+        "Billgates",
+        "Mirai"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "SELinux",
+        "linux"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://www.aquasec.com/blog/kaiji-malware-anatomy-persistence-detection/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "LinkPro: eBPF rootkit analysis",
+      "completeness": "High",
+      "threats": [
+        "Linkpro",
+        "Bpfdoor",
+        "Symbiote",
+        "J-magic",
+        "Ebpfexploit_tool",
+        "Mitm_technique",
+        "Vshell",
+        "Dns_tunneling_technique",
+        "Snowlight",
+        "Dynamic_linker_hijacking_technique",
+        "Timestomp_technique",
+        "Resocks_tool"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 13,
+      "software": [
+        "Linux",
+        "Jenkins",
+        "docker",
+        "systemd",
+        "nginx",
+        "Ubuntu",
+        "Unix",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "LinkPro",
+        "direct",
+        "bpf_ktime_get_ns",
+        "get_in_port"
+      ],
+      "languages": [
+        "rust",
+        "golang"
+      ],
+      "links": [
+        "https://www.synacktiv.com/en/publications/linkpro-ebpf-rootkit-analysis.html",
+        "https://github.com/synacktiv/synacktiv-rules/",
+        "https://github.com/link-pro"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "Search, Click, Steal: The Hidden Threat of Spoofed Ivanti VPN Client Sites",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Credential_stealing_technique",
+        "Akira_ransomware",
+        "Hawkeye_keylogger"
+      ],
+      "software": [
+        "Ivanti"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/spoofed-ivanti-vpn-client-sites"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "\"Countering Russian DRGs\": UAC-0239 carries out cyberattacks using the OrcaC2 framework and the FILEMESS stealer (CERT-UA#17691)",
+      "completeness": "Medium",
+      "threats": [
+        "Orcac2",
+        "Filemess",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainians",
+        "Ukraine"
+      ],
+      "software": [
+        "telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6285731"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-14",
+      "title": "SOE-phisticated Persistence: Inside Flax Typhoon's ArcGIS Compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Lolbin_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "SoftEther",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-inside-flax-typhoons-arcgis-compromise/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-13",
+      "title": "Mapping latest Lumma infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer"
+      ],
+      "software": [
+        "Ubuntu"
+      ],
+      "links": [
+        "https://intelinsights.substack.com/p/mapping-latest-lumma-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-13",
+      "title": "Catch them while you can",
+      "completeness": "Low",
+      "threats": [
+        "Defendercontrol_tool",
+        "Mimikatz_tool",
+        "Impacket_tool",
+        "Credential_dumping_technique",
+        "Anydesk_tool",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "French",
+        "Spanish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "PsExec",
+        "MSSQL"
+      ],
+      "links": [
+        "https://medium.com/@DCSO_CyTec/catch-them-while-you-can-5c43007ae99e?source=rss-7c32125308fc------2",
+        "https://github.com/pgkt04/defender-control/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-13",
+      "title": "Oracle E-Business Suite Hit by Zero-Day Exploits & CL0P Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Clop",
+        "Sagegift",
+        "Sageleaf",
+        "Sagewave_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "GoAnywhere",
+        "MOVEit",
+        "Telegram"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/oracle-e-business-suite-hit-by-zero-day-exploits-and-cl-0-p-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-13",
+      "title": "CTI The Dark Cloak",
+      "completeness": "Low",
+      "threats": [
+        "Akira_ransomware",
+        "Steganography_technique",
+        "Spear-phishing_technique",
+        "Process_hollowing_technique",
+        "Dcrat",
+        "Asyncrat",
+        "Njrat",
+        "Shadow_copies_delete_technique",
+        "Lolbas_technique",
+        "More_eggs"
+      ],
+      "geo": [
+        "Dprk",
+        "Spanish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "GetType",
+        "GetMethod"
+      ],
+      "languages": [
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://rexorvc0.com/2025/10/13/CTI_Dark-Cloak/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-13",
+      "title": "Judicial Notification Phish Targets Colombian Users .SVG Attachment Deploys Info-stealer Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Asyncrat",
+        "Junk_code_technique",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "Colombian",
+        "Colombia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 22,
+      "software": [
+        "VirtualBox"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "VBS",
+        "openDocument",
+        "createObjectURL"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/judicial-notification-phish-colombia-svg-asyncrat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-13",
+      "title": "When the monster bytes: tracking TA585 and its arsenal",
+      "completeness": "High",
+      "threats": [
+        "Monster_ransomware",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Clickfix_technique",
+        "Coresecthree",
+        "Stealc",
+        "Hvnc_tool",
+        "Soniccrypt",
+        "Remcos_rat",
+        "Uac_bypass_technique",
+        "Bloat_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Belarus",
+        "Turkmenistan",
+        "Kyrgyzstan",
+        "Kazakhstan",
+        "Uzbekistan",
+        "Armenia",
+        "Tajikistan",
+        "Russian",
+        "Moldova",
+        "Lithuania",
+        "Latvia",
+        "Estonia",
+        "Ukraine",
+        "Russia"
+      ],
+      "software": [
+        "Steam",
+        "Telegram",
+        "Discord",
+        "Chrome",
+        "Windows Defender",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "chacha20"
+      ],
+      "functions": [
+        "TaskScheduler"
+      ],
+      "languages": [
+        "typescript",
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal",
+        "https://github.com/prodaft/malware-ioc/tree/master/CoreSecThree"
+      ]
+    }
+  }
+]

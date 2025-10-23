@@ -265,5 +265,59 @@
         "https://github.com/trufflesecurity/trufflehog"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-07",
+      "title": "Akira Reloaded",
+      "completeness": "High",
+      "threats": [
+        "Akira_ransomware",
+        "Impacket_tool",
+        "Anydesk_tool",
+        "Rustdesk_tool",
+        "Nltest_tool",
+        "Rclone_tool",
+        "Cloudflared_tool",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Italy",
+        "Australia",
+        "America",
+        "Asian",
+        "Spain",
+        "Canada",
+        "India",
+        "Africa",
+        "Germany"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "SonicOS",
+        "SoftPerfect Network Scanner",
+        "MSSQL",
+        "PostgreSQL",
+        "Windows Defender",
+        "Linux",
+        "ESXi"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Get-ADUser"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "swift"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/akira-reloaded"
+      ]
+    }
   }
 ]

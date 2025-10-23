@@ -1,0 +1,709 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Malicious NuGet Packages Typosquat Nethereum to Exfiltrate Wallet Keys",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Homoglyph_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 3,
+      "software": [
+        "NuGet",
+        "Nethereum"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "dotnet"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-nuget-packages-typosquat-nethereum-to-exfiltrate-wallet-keys"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "WARMCOOKIE: A Technical Deep Dive into a Persistent Backdoor's Evolution",
+      "completeness": "Medium",
+      "threats": [
+        "Warmcookie",
+        "Snipbot",
+        "Slipscreen",
+        "Rustyclaw"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "rc4",
+        "des",
+        "sha256"
+      ],
+      "functions": [
+        "rand"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/warmcookie-a-technical-deep-dive-into-a-persistent-backdoors-evolution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Inside the attack chain: Threat activity targeting Azure Blob Storage",
+      "completeness": "Medium",
+      "threats": [
+        "Goblob_tool",
+        "Quickaz_tool",
+        "Blob_url_obfuscation_technique",
+        "Aadinternals_tool",
+        "Azurehound_tool",
+        "Azcopy_tool",
+        "Clop",
+        "Spear-phishing_technique",
+        "Credential_dumping_technique"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 11,
+      "software": [
+        "Azure Blob",
+        "Microsoft Defender",
+        "Microsoft Entra",
+        "Azure Functions",
+        "MOVEit",
+        "Twitter"
+      ],
+      "algorithms": [
+        "aes",
+        "exhibit"
+      ],
+      "functions": [
+        "DeleteBlob",
+        "DeleteContainer"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/10/20/inside-the-attack-chain-threat-activity-targeting-azure-blob-storage/",
+        "https://github.com/appsecco/breaking-and-pwning-apps-and-servers-aws-azure-training/blob/master/documentation/bapazure/cloud-storage/attacking-azure-storage-blobs.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Brazilian Caminho Loader Employs LSB Steganography and Fileless Execution to Deliver Multiple Malware Families Across South America, Africa, and Eastern Europe",
+      "completeness": "High",
+      "threats": [
+        "Caminho",
+        "Steganography_technique",
+        "Remcos_rat",
+        "Katz_stealer",
+        "Xworm_rat",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Process_hacker_tool",
+        "Process_hollowing_technique",
+        "Credential_harvesting_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "Ukraine",
+        "Africa",
+        "America",
+        "American",
+        "Portuguese",
+        "Brazil",
+        "Poland",
+        "South africa",
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 29,
+      "software": [
+        "NET Framework",
+        "VirtualBox",
+        "Hyper-V",
+        "Process Explorer",
+        "Windows Task Scheduler"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/brazilian-caminho-loader-employs-lsb-steganography-to-deliver-multiple-malware-families/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Rhadamanthys malware disguised as a game built with RenPy",
+      "completeness": "Low",
+      "threats": [
+        "Rhadamanthys",
+        "Lumma_stealer",
+        "Trojan/win.generic.r729425",
+        "Trojan/win.injector.r729869",
+        "Trojan/win.injector.r729189",
+        "Trojan/win.injector.r731064",
+        "Trojan/win.injector.r730188",
+        "Trojan/win.injector.r730185"
+      ],
+      "software": [
+        "RenPy",
+        "Steam"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90628/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Analysis of Gunra ransomware using a vulnerable random number generator (targeting Linux environments, ELF format)",
+      "completeness": "Low",
+      "threats": [
+        "Gunra",
+        "Malware/mdp.ransom.m1355",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1946",
+        "Ransom/mdp.event.m1785",
+        "Magniber",
+        "Ransom/mdp.event.m4428",
+        "Ransom/mdp.event.m4353",
+        "Malware/mdp.ransom.m1876"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "chacha20"
+      ],
+      "functions": [
+        "time",
+        "rand"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90671/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Analysis of the Lumma infostealer",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Chrome",
+        "Outlook"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/lumma-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Cavalry Werewolf APT: Exposing FoalShell and StallionRAT Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Foalshell",
+        "Stallionrat",
+        "Spear-phishing_technique",
+        "Asyncrat",
+        "Reversesocks5_tool",
+        "Snipbot",
+        "Slipscreen",
+        "Rustyclaw"
+      ],
+      "geo": [
+        "Tajikistan",
+        "Russia",
+        "Middle east",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "Outlook",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/cavalry-werewolf-apt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Fast, Broad, and Elusive: How Vidar Stealer 2.0 Upgrades Infostealer Capabilities",
+      "completeness": "Low",
+      "threats": [
+        "Vidar_stealer",
+        "Lumma_stealer",
+        "Stealc",
+        "Arkei_stealer",
+        "Raccoon_stealer",
+        "Redline_stealer",
+        "Dll_injection_technique",
+        "Polymorphism_technique",
+        "Process_injection_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 20,
+      "software": [
+        "Chrome",
+        "Discord",
+        "Telegram",
+        "Chrome",
+        "Firefox",
+        "Firefox",
+        "Office 365",
+        "Azure AD",
+        "Steam",
+        "Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/j/how-vidar-stealer-2-upgrades-infostealer-capabilities.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "New Rust Malware \"ChaosBot\" Leverages Discord for Stealthy Command and Control",
+      "completeness": "Medium",
+      "threats": [
+        "Chaosbot",
+        "Dll_sideloading_technique",
+        "Ultraviewer_tool",
+        "Discord-c2",
+        "Frpc_tool",
+        "Snipbot",
+        "Slipscreen",
+        "Rustyclaw"
+      ],
+      "geo": [
+        "Vietnam",
+        "Asia pacific",
+        "Hong kong",
+        "Vietnamese",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "ChatGPT",
+        "Active Directory",
+        "Microsoft Edge",
+        "Event Tracing for Windows",
+        "VirtualBox",
+        "Visual Studio Code"
+      ],
+      "algorithms": [
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "Get-Location",
+        "Remove-Item",
+        "D6"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/new-rust-malware-chaosbot-leverages-discord-for-stealthy-command-and-control"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "GlassWorm Self-Propagating VSCode Extension Worm",
+      "completeness": "Low",
+      "threats": [
+        "Googlecalendarc2",
+        "Hvnc_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/glassworm-self-propagating-vscode-extension"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "The evolving landscape of email phishing attacks: how threat actors are reusing and refining established techniques",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "links": [
+        "https://securelist.com/email-phishing-techniques-2025/117801/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Tracking Malware and Attack Expansion: A Hacker Groups Journey across Asia",
+      "completeness": "Medium",
+      "threats": [
+        "Holdinghands",
+        "Winos"
+      ],
+      "geo": [
+        "China",
+        "Malaysian",
+        "Asia",
+        "Japanese",
+        "Malaysia",
+        "Japan",
+        "Taiwan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "Windows service"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/tracking-malware-and-attack-expansion-a-hacker-groups-journey-across-asia"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Mirai: The IoT Botnet",
+      "completeness": "Low",
+      "threats": [
+        "Mirai",
+        "Upx_tool",
+        "Backdoor.w32.300821.linux",
+        "Backdoor.w32.131025.linux"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "curl",
+        "BusyBox",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/mirai-the-iot-botnet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Unmasking MuddyWaters New Malware Toolkit Driving International Espionage",
+      "completeness": "High",
+      "threats": [
+        "Phoenix_keylogger",
+        "Chromiumstealer",
+        "Socgholish_loader",
+        "Cannonrat",
+        "Credential_harvesting_technique",
+        "Action1_tool",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "America",
+        "Africa",
+        "Middle east",
+        "Iran",
+        "France"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Word",
+        "Gmail",
+        "Component Object Model",
+        "Winlogon",
+        "Google Chrome",
+        "Opera",
+        "Microsoft Edge",
+        "Chromium"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "visual_basic",
+        "python"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/muddywater-espionage/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "131 Malicious Chrome Extensions Abused WhatsApp Web in a Massive Spam Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "Chrome",
+        "WhatsApp",
+        "Firefox"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/131-chrome-extensions-abused-whatsapp-web/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Unpacking the Phishing Script Behind a Server-Orchestrated Deception",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1056.003",
+        "T1071.001",
+        "T1204.001",
+        "T1566.002",
+        "T1583.001",
+        "T1589.002"
+      ],
+      "software": [
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "uuidv4"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cofense.com/blog/unpacking-the-phishing-script-behind-a-server-orchestrated-deception"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "Deep analysis of the flaw in BetterBank reward logic",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "BetterBank",
+        "PulseX"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "functions": [
+        "logBuy",
+        "_transfer",
+        "getTokenTWAP",
+        "swapExactTokensForFavorAndTrackBonus",
+        "calculateFavorBonuses",
+        "createPair",
+        "setAllowedDirectPair"
+      ],
+      "links": [
+        "https://securelist.com/betterbank-defi-protocol-esteem-token-bonus-minting/117822/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "PhantomCaptcha \\| Multi-Stage WebSocket RAT Targets Ukraine in Single-Day Spearphishing Operation",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Norwegian",
+        "Russia",
+        "India",
+        "Belarus",
+        "Russian",
+        "Finland",
+        "Slovakia",
+        "Donetsk",
+        "Ukraine",
+        "Italy",
+        "Ukrainian"
+      ],
+      "software": [
+        "Android",
+        "Zoom"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "generateRandomId",
+        "JavaScript",
+        "copyToken",
+        "Set-PSReadlineOption",
+        "collectAndSendAllData"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "swift"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/phantomcaptcha-multi-stage-websocket-rat-targets-ukraine-in-single-day-spearphishing-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-22",
+      "title": "New Python RAT Targets Gamers via Minecraft",
+      "completeness": "Low",
+      "threats": [
+        "Evil_ant",
+        "Zeon"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "Discord",
+        "Linux",
+        "PyInstaller",
+        "Chrome",
+        "Firefox",
+        "Opera"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/new-python-rat-targets-gamers-via-minecraft",
+        "https://github.com/pyinstxtractor/pyinstxtractor-ng",
+        "https://github.com/zrax/pycdc"
+      ]
+    }
+  }
+]

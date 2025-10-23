@@ -1,0 +1,194 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-21",
+      "title": "Tykit Analysis: New Phishing KitStealing Hundreds of Microsoft Accounts in Finance & Construction",
+      "completeness": "High",
+      "threats": [
+        "Tykit",
+        "Spear-phishing_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Emea",
+        "America",
+        "Asia",
+        "Middle east",
+        "Latam",
+        "South-east asia",
+        "Canada"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare Turnstile"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "eval",
+        "atob",
+        "parseInt",
+        "charCodeAt",
+        "fromCodePoint"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/tykit-technical-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-21",
+      "title": "TOLLBOOTH: What's yours, IISmine",
+      "completeness": "High",
+      "threats": [
+        "Tollbooth",
+        "Cloaking_technique",
+        "Gotohttp_tool",
+        "Credential_dumping_technique",
+        "Godzilla_webshell",
+        "Z-godzilla_ekp",
+        "Amsi_bypass_technique",
+        "Hiddendriver",
+        "Hiddencli"
+      ],
+      "geo": [
+        "China",
+        "Hong kong",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "ASP.NET",
+        "Navicat",
+        "WinSCP",
+        "Windows registry",
+        "Process Explorer"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "gzip",
+        "base64"
+      ],
+      "functions": [
+        "InitializeConfigs",
+        "InitializeKernelAnalyzer",
+        "InitializePsMonitor",
+        "InitializeFSMiniFilter",
+        "InitializeRegistryFilter",
+        "InitializeDevice",
+        "InitializeStealthMode",
+        "IsProcessExcluded",
+        "IsDriverEnabled"
+      ],
+      "languages": [
+        "javascript",
+        "java",
+        "swift",
+        "php"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/tollbooth",
+        "https://github.com/pwntester/ysoserial.net",
+        "https://github.com/ekkoo-z/Z-Godzilla\\_ekp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-21",
+      "title": "Home Depot Halloween phish gives users a fright, not a freebie",
+      "completeness": "Low",
+      "geo": [
+        "Los",
+        "angeles"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/10/home-depot-halloween-phish-gives-users-a-fright-not-a-freebie"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-21",
+      "title": "BlackStink: How a Fake Chrome Extension Is Changing Banking Malware",
+      "completeness": "Low",
+      "threats": [
+        "Blackstink",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Argentina",
+        "Mexico",
+        "Spanish",
+        "Brazil",
+        "Colombia",
+        "Latin america"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 4,
+      "software": [
+        "Chrome"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blackstink-fake-chrome-extension-banking-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-21",
+      "title": "PassiveNeuron: a sophisticated campaign targeting servers of high-profile organizations",
+      "completeness": "Medium",
+      "threats": [
+        "Neursite",
+        "Neuralexecutor",
+        "Cobalt_strike_tool",
+        "Dll_hijacking_technique",
+        "Vmprotect_tool",
+        "Confuserex_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Asia",
+        "Latin america",
+        "Africa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft SQL"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "exhibit"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/passiveneuron-campaign-with-apt-implants-and-cobalt-strike/117745/"
+      ]
+    }
+  }
+]

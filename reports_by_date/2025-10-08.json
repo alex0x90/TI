@@ -435,5 +435,83 @@
         "https://www.sans.org/blog/evolution-qilin-raas"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "X-Labs Q3 2025 Threat Brief: Obfuscated JavaScript & Steganography Enabling Malware Delivery",
+      "completeness": "High",
+      "threats": [
+        "Steganography_technique",
+        "Agent_tesla",
+        "Darkcloud",
+        "Remcos_rat",
+        "Formbook",
+        "Cloaking_technique",
+        "Dotnet_reactor_tool",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Bulgaria",
+        "Iran"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Reactor",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "FTP"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "swift"
+      ],
+      "links": [
+        "https://www.forcepoint.com/blog/x-labs/q3-2025-threat-brief-obfuscated-javascript-steganography"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-08",
+      "title": "Variants of BlackTech's Kivars malware identified in 2025.",
+      "completeness": "Medium",
+      "threats": [
+        "Kivars",
+        "Nailaolocker",
+        "Lumma_stealer",
+        "Rig_tool",
+        "Matrix_ransom",
+        "Mirai",
+        "Tinyshell"
+      ],
+      "geo": [
+        "Taiwan",
+        "Japan",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "Twitter",
+        "Linux"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2025/10/blacktech-malware-kivars-2025/",
+        "https://github.com/mopisec/research/blob/main/decrypt\\_kivars\\_21201\\_config.py"
+      ]
+    }
   }
 ]

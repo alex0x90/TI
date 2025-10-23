@@ -1,0 +1,206 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-17",
+      "title": "OtterCandy, malware used by WaterPlum",
+      "completeness": "Low",
+      "threats": [
+        "Ottercandy",
+        "Beavertail",
+        "Flexibleferret",
+        "Frostyferret",
+        "Ottercookie",
+        "Clickfix_technique",
+        "Invisibleferret",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russian",
+        "North korean",
+        "Japan",
+        "Dprk",
+        "North korea"
+      ],
+      "software": [
+        "macOS",
+        "Linux",
+        "Node.js"
+      ],
+      "links": [
+        "https://jp.security.ntt/insights_resources/tech_blog/ottercandy_malware_e/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-17",
+      "title": "Operation MotorBeacon : Threat Actor targets Russian Automotive Sector using .NET Implant",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Minidump_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Russian federation"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Chrome",
+        "Firefox"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "ReceiveCommands",
+        "GetExecutingAssembly"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/seqrite-capi-backdoor-dotnet-stealer-russian-auto-commerce-oct-2025/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-17",
+      "title": "The post-exploitation framework is now delivered in npm as well",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Adaptixc2_tool",
+        "Dll_sideloading_technique",
+        "Shai-hulud",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Linux",
+        "macOS"
+      ],
+      "links": [
+        "https://securelist.ru/adaptixc2-agent-found-in-an-npm-package/113825/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-17",
+      "title": "Odyssey Stealer and AMOS Campaign Targets macOS Developers Through Fake Tools",
+      "completeness": "Medium",
+      "threats": [
+        "Odyssey_stealer",
+        "Amos_stealer",
+        "Logmein_tool",
+        "Credential_harvesting_technique",
+        "Clickfix_technique",
+        "Clickflix_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Finland",
+        "Polish"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "TradingView",
+        "curl",
+        "Gatekeeper",
+        "sudo",
+        "QEMU",
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://hunt.io/blog/macos-odyssey-amos-malware-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-17",
+      "title": "Scattered LAPSUS$ Hunters: 2025's Most Dangerous Cybercrime Supergroup",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Credential_dumping_technique",
+        "Ntdsutil_tool",
+        "Redline_stealer",
+        "Rustscan_tool",
+        "Ad_explorer_tool",
+        "Adrecon_tool",
+        "Screenconnect_tool",
+        "Teamviewer_tool",
+        "Splashtop_tool"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "ChatGPT",
+        "Salesforce",
+        "Telegram",
+        "Salesloft Drift",
+        "ForgeRock OpenAM",
+        "Active Directory",
+        "curl",
+        "ESXi",
+        "Office 365",
+        "Pulseway",
+        "have more..."
+      ],
+      "functions": [
+        "Get-ADUser"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/scattered-lapsus-hunters-2025s-most-dangerous-cybercrime-supergroup"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-17",
+      "title": "PhishinGit GitHub.io pages abused for malware distribution",
+      "completeness": "High",
+      "threats": [
+        "Bitm_technique",
+        "Screenconnect_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Canada"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 13,
+      "software": [
+        "Salesforce",
+        "Dropbox",
+        "Telegram",
+        "Windows Service",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyjax.com/resources/blog/phishingit-github-io-pages-abused-for-malware-distribution"
+      ]
+    }
+  }
+]
