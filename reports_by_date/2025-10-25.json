@@ -1,0 +1,109 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-25",
+      "title": "GHOSTGRAB ANDROID MALWARE",
+      "completeness": "High",
+      "threats": [
+        "Ghostgrab",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "software": [
+        "ANDROID",
+        "Google Play",
+        "Telegram"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "sendTextMessage",
+        "startForegroundService"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/ghostgrab-android-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-25",
+      "title": "Android.Backdoor.Baohuo.1.origin",
+      "completeness": "High",
+      "threats": [
+        "Baohuo",
+        "Lspatch_tool",
+        "Cloaking_technique",
+        "Mobidash"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 27,
+      "software": [
+        "Android",
+        "Telegram",
+        "Redis",
+        "Unix",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "functions": [
+        "getName",
+        "setBlackList"
+      ],
+      "links": [
+        "https://vms.drweb.ru/virus/?i=30931099",
+        "https://github.com/DoctorWebLtd/malware-iocs/blob/master/Android.Backdoor.Baohuo.1.origin/README.adoc",
+        "https://github.com/ehang-io/nps"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-25",
+      "title": "Cloud Discovery With AzureHound",
+      "completeness": "Medium",
+      "threats": [
+        "Azurehound_tool",
+        "Bloodhound_tool",
+        "Mfa_bombing_technique",
+        "Raccoon_stealer",
+        "Redline_stealer"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "Active Directory",
+        "Graph API",
+        "Microsoft Entra"
+      ],
+      "functions": [
+        "Graph",
+        "AzureHound",
+        "count"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/threat-actor-misuse-of-azurehound/",
+        "https://github.com/SpecterOps/BloodHound",
+        "https://github.com/SpecterOps/AzureHound"
+      ]
+    }
+  }
+]

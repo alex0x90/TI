@@ -637,5 +637,96 @@
         "https://www.resecurity.com/blog/article/f5-big-ip-source-code-leak-tied-to-state-linked-campaigns-using-brickstorm-backdoor"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Unpacking NetSupport RAT Loaders Delivered via ClickFix",
+      "completeness": "Medium",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique",
+        "Msi_loader",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Moldova",
+        "United kingdom",
+        "Russia",
+        "Ukrainians",
+        "Lithuania",
+        "California",
+        "Bulgaria",
+        "Arab emirates",
+        "United arab emirates"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "Remove_null_bytes"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/unpacking-netsupport-rat-loaders-delivered-via-clickfix",
+        "https://github.com/eSentire/iocs/blob/main/NetSupport/NetSupport\\_PowerShell\\_Unpacker.py",
+        "https://github.com/eSentire/iocs/blob/main/NetSupport/NetSupport-IoCs\\_10-15-2025.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Help Wanted: Vietnamese Actors Using Fake Job Posting Campaigns to Deliver Malware and Steal Credentials",
+      "completeness": "Low",
+      "geo": [
+        "Vietnamese",
+        "Vietnam"
+      ],
+      "software": [
+        "Salesforce",
+        "Outlook"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/vietnamese-actors-fake-job-posting-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Mass Exploit Campaign Targeting Arbitrary Plugin Installation Vulnerabilities",
+      "completeness": "Low",
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "install_and_activate_plugin_from_external",
+        "tp_install"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2025/10/mass-exploit-campaign-targeting-arbitrary-plugin-installation-vulnerabilities/",
+        "https://github.com/xwopen/xwopen/raw/refs/heads/main/up.zip"
+      ]
+    }
   }
 ]
