@@ -1,0 +1,153 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-27",
+      "title": "Update on Attack by Attack Group APT-C-60",
+      "completeness": "Low",
+      "threats": [
+        "Spyglace",
+        "Com_hijacking_technique",
+        "Goldbar"
+      ],
+      "geo": [
+        "Japan",
+        "Asian"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "algorithms": [
+        "xor",
+        "rc4",
+        "base64",
+        "aes-128-cbc",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/ja/2025/10/APT-C-60_update.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-27",
+      "title": "Mem3nt0 mori The Hacking Team is back!",
+      "completeness": "Medium",
+      "threats": [
+        "Dante",
+        "Spear-phishing_technique",
+        "Com_hijacking_technique",
+        "Metasploit_tool",
+        "Donut",
+        "Leetagent",
+        "Rclone_tool",
+        "Sharpchrome_tool",
+        "Finfisher",
+        "Vmprotect_tool",
+        "Sandbox_evasion_technique",
+        "Trojan.win64.agent",
+        "Trojan.win64.convagent.gen",
+        "Trojan.win32.generic"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Italian",
+        "Belarus"
+      ],
+      "software": [
+        "Google Chrome",
+        "Chrome",
+        "Firefox",
+        "Component Object Model",
+        "OLLVM"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "aes-gcm",
+        "sha256",
+        "chacha20",
+        "xor",
+        "base64",
+        "ecdh"
+      ],
+      "functions": [
+        "JavaScript",
+        "sleep"
+      ],
+      "links": [
+        "https://securelist.com/forumtroll-apt-hacking-team-dante-spyware/117851/",
+        "https://github.com/MarcoCiaramella/sha256-gpu"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-27",
+      "title": "Uncovering Qilin attack methods exposed through multiple cases",
+      "completeness": "High",
+      "threats": [
+        "Qilin_ransomware",
+        "Nltest_tool",
+        "Netscan_tool",
+        "Mimikatz_tool",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Sharpdecryptpwd_tool",
+        "Teamviewer_tool",
+        "Distant_desktop_tool",
+        "Anydesk_tool",
+        "Microsoft_quick_assist_tool",
+        "Screenconnect_tool",
+        "Dark-kill_tool",
+        "Hrsword_tool",
+        "Cobalt_strike_tool",
+        "Systembc",
+        "Shadow_copies_delete_technique",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Canada",
+        "France",
+        "Germany",
+        "United kingdom"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 25,
+      "software": [
+        "Cyberduck",
+        "PsExec",
+        "WinSCP",
+        "Navicat",
+        "Foxmail",
+        "Google Chrome",
+        "RDCMan",
+        "SunLogin",
+        "Chrome",
+        "Windows kernel",
+        "Active Directory",
+        "have more..."
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "functions": [
+        "Get-ADComputer",
+        "Get-WinEvent",
+        "Get-Unique"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uncovering-qilin-attack-methods-exposed-through-multiple-cases/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2025/10/uncovering-qilin-attack-methods-exposed-through-multiple-cases.txt",
+        "https://github.com/d1rkmtrr/dark-kill"
+      ]
+    }
+  }
+]

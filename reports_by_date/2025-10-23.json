@@ -728,5 +728,120 @@
         "https://github.com/xwopen/xwopen/raw/refs/heads/main/up.zip"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Agenda Ransomware Deploys Linux Variant on Windows Systems Through Remote Management Tools and BYOVD Techniques",
+      "completeness": "High",
+      "threats": [
+        "Qilin_ransomware",
+        "Byovd_technique",
+        "Meshagent_tool",
+        "Meshcentral_tool",
+        "Splashtop_tool",
+        "Anydesk_tool",
+        "Atera_tool",
+        "Screenconnect_tool",
+        "Nltest_tool",
+        "Netscan_tool",
+        "Akira_ransomware",
+        "Dll_sideloading_technique",
+        "Putty_tool",
+        "Coroxy"
+      ],
+      "geo": [
+        "France",
+        "United kingdom",
+        "Japan",
+        "Canada"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "WinSCP",
+        "Cloudflare R2",
+        "ThrottleStop",
+        "ESXi"
+      ],
+      "algorithms": [
+        "sha1",
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/j/agenda-ransomware-deploys-linux-variant-on-windows-systems.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-23",
+      "title": "Gotta fly: Lazarus targets the UAV sector",
+      "completeness": "High",
+      "threats": [
+        "Scoringmathtea",
+        "Imprudentcook",
+        "Blindingcan",
+        "Miniblindingcan",
+        "Lightlesscan",
+        "Simplextea",
+        "Dll_sideloading_technique",
+        "Supply_chain_technique",
+        "Quanpinloader",
+        "Binmergeloader",
+        "Mistpen",
+        "Foresttiger",
+        "Polymorphism_technique",
+        "Nukesped_rat",
+        "Dll_injection_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "Polish",
+        "Ukraine",
+        "Chinese",
+        "Portugal",
+        "Russia",
+        "North korean",
+        "Korean",
+        "North korea",
+        "Moscow",
+        "Germany",
+        "Indian",
+        "Italian",
+        "Spain",
+        "Italy"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 19,
+      "software": [
+        "Linux",
+        "WordPress",
+        "Graph API",
+        "TightVNC",
+        "DirectX"
+      ],
+      "algorithms": [
+        "sha1",
+        "chacha20",
+        "aes-128",
+        "aes"
+      ],
+      "functions": [
+        "ScoringMathTea"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector/",
+        "https://github.com/nektro/pcre-8.45",
+        "https://github.com/fancycode/MemoryModule"
+      ]
+    }
   }
 ]

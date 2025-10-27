@@ -105,5 +105,51 @@
         "https://github.com/SpecterOps/AzureHound"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-25",
+      "title": "Convert Master Browser Hijacker Analysis",
+      "completeness": "Low",
+      "threats": [
+        "Convert_master"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "FireFox"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://malasada.tech/convert-master-browser-hijacker-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-25",
+      "title": "Android backdoor Baohuo steals Telegram accounts",
+      "completeness": "Low",
+      "threats": [
+        "Baohuo",
+        "Lspatch_tool"
+      ],
+      "geo": [
+        "Indonesian",
+        "Indonesia",
+        "Portuguese",
+        "Brazil"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "Redis"
+      ],
+      "links": [
+        "https://xakep.ru/2025/10/24/baohuo/"
+      ]
+    }
   }
 ]

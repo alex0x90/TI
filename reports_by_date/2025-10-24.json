@@ -100,5 +100,78 @@
         "https://github.com/decoder-it/NetworkServiceExploit"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-24",
+      "title": "WSUS Deserialization Exploit in the Wild (CVE202559287)",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "CreateException",
+        "ReadToEnd"
+      ],
+      "links": [
+        "https://research.eye.security/wsus-deserialization-exploit-in-the-wild-cve-2025-59287/",
+        "https://github.com/pwntester/ysoserial.net?"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-24",
+      "title": "Analysis of APT-C-08 (Manlinghua) Recent Phishing Attack Campaign Using Application Files",
+      "completeness": "Low",
+      "threats": [
+        "Clickonce"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5",
+        "aes"
+      ],
+      "languages": [
+        "php",
+        "dotnet"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247507424&idx=1&sn=8fbea6c6d8317d18e1265119afbeda67&chksm=f9c1eee9ceb667fff6f470da2ce299e7985376f32da97717ccceb96fff6ba1ede966ced02c0e&cur_album_id=1955835290309230595&scene=189"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-24",
+      "title": "Exploitation of Windows Server Update Services Remote Code Execution Vulnerability (CVE-2025-59287)",
+      "completeness": "Low",
+      "geo": [
+        "Chad"
+      ],
+      "software": [
+        "curl",
+        "Windows Update Service"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "POST"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/exploitation-of-windows-server-update-services-remote-code-execution-vulnerability",
+        "https://gist.github.com/JohnHammond/83c1fa83475f7b444059dfa824b31409#file-susp\\_wsusservice\\_child-yml",
+        "https://github.com",
+        "https://gist.github.com/JohnHammond/83c1fa83475f7b444059dfa824b31409/raw/95c642cde93f930ba297815bf7d8f4cb815da3e0/susp\\_wsusservice\\_child.yml"
+      ]
+    }
   }
 ]
