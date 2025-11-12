@@ -1,0 +1,171 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-03",
+      "title": "Analysis of NGate malware campaign (NFC relay)",
+      "completeness": "Medium",
+      "threats": [
+        "Ngate"
+      ],
+      "geo": [
+        "Polish"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "getPackageManager",
+        "getPackageName",
+        "getAssets",
+        "safeExit",
+        "reader",
+        "vts",
+        "hexToBytes",
+        "writeInt",
+        "readInt",
+        "readFully",
+        "have more..."
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://cert.pl/en/posts/2025/11/analiza-ngate/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-03",
+      "title": "Remote access, real cargo: cybercriminals targeting trucking and logistics",
+      "completeness": "High",
+      "threats": [
+        "Pdq_connect_tool",
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Fleetdeck_tool",
+        "N-able_tool",
+        "Logmein_tool",
+        "Credential_harvesting_technique",
+        "Passview_tool",
+        "Netsupportmanager_rat",
+        "Lumma_stealer",
+        "Danabot",
+        "Stealc",
+        "Supply_chain_technique",
+        "Gotoresolve_tool"
+      ],
+      "geo": [
+        "Mexico",
+        "Germany",
+        "Brazil",
+        "Chile",
+        "South africa",
+        "India",
+        "American"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/remote-access-real-cargo-cybercriminals-targeting-trucking-and-logistics"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-03",
+      "title": "Operation Peek-a-Baku: Silent Lynx APT makes sluggish shift to Dushanbe",
+      "completeness": "High",
+      "threats": [
+        "Silent_loader",
+        "Laplasclipper",
+        "Silentsweeper",
+        "Spear-phishing_technique",
+        "Ligolo-ng_tool",
+        "Resocks_tool"
+      ],
+      "geo": [
+        "Tajikistan",
+        "South-east asia",
+        "Chinese",
+        "China",
+        "Russia",
+        "Kazakhstan",
+        "Asian",
+        "Netherlands",
+        "Kyrgyzstan",
+        "Turkmenistan",
+        "Asia",
+        "Russian",
+        "Azerbaijan",
+        "Uzbekistan"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 11,
+      "software": [
+        "Windows Task Scheduler"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-peek-a-baku-silent-lynx-apt-dushanbe-espionage/",
+        "https://github.com/nicocha30/ligolo-ng"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-03",
+      "title": "Beating XLoader at Speed: Generative AI as a Force Multiplier for Reverse Engineering",
+      "completeness": "Low",
+      "threats": [
+        "Formbook"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "macOS"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "crc-32",
+        "xor",
+        "rc4",
+        "base64",
+        "md5",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "MCP",
+        "Presumed",
+        "and",
+        "Find"
+      ],
+      "languages": [
+        "javascript",
+        "golang",
+        "python"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/generative-ai-for-reverse-engineering/"
+      ]
+    }
+  }
+]

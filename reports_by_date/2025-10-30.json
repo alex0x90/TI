@@ -1,0 +1,365 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "Analysis of Recent Phishing Attacks Using Application Files in APT-C-08 (Manlingflower)",
+      "completeness": "Low",
+      "threats": [
+        "Clickonce",
+        "Vulture"
+      ],
+      "algorithms": [
+        "aes",
+        "md5"
+      ],
+      "languages": [
+        "php",
+        "dotnet"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247507424&idx=1&sn=8fbea6c6d8317d18e1265119afbeda67&chksm=f9c1eee9ceb667fff6f470da2ce299e7985376f32da97717ccceb96fff6ba1ede966ced02c0e&scene=178&cur_album_id=1955835290309230595&search_click_id"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "Silent Push Unearths AdaptixC2's Ties to Russian Criminal Underworld, Tracks Threat Actors Harnessing Open-Source Tool for Malicious Payloads",
+      "completeness": "Medium",
+      "threats": [
+        "Adaptixc2_tool",
+        "Countloader",
+        "Akira_ransomware",
+        "Evilginx_tool"
+      ],
+      "geo": [
+        "America",
+        "Russian",
+        "Russia",
+        "Australia"
+      ],
+      "software": [
+        "Telegram",
+        "Linux",
+        "macOS",
+        "Active Directory"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/adaptix-c2/",
+        "https://github.com/Adaptix-Framework/AdaptixC2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "Possible CryptoChameleon Social Engineering Campaign Targeting LastPass Customers, Crypto Exchange Customers, Passkeys, and More",
+      "completeness": "Low",
+      "software": [
+        "LastPass",
+        "Gmail",
+        "confluence",
+        "cpanel"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "links": [
+        "https://blog.lastpass.com/posts/possible-cryptochameleon-social-engineering-campaign-targeting-lastpass-customers-and-more"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "Cobalt Strike Overview",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Dll_injection_technique",
+        "Reflectiveloader",
+        "Trojan.w32.171025.cobaltstrike"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Mac OS"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1"
+      ],
+      "functions": [
+        "CreateNamedPipe"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/cobalt-strike-overview"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "SideWinder's Shifting Sands: Click Once for Espionage",
+      "completeness": "High",
+      "threats": [
+        "Clickonce",
+        "Stealerbot",
+        "Polymorphism_technique",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "Sri lanka",
+        "China",
+        "India",
+        "Asia",
+        "Pakistani",
+        "Bangladesh"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 26,
+      "software": [
+        "Microsoft Word",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "sha1",
+        "xor",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/sidewinders-shifting-sands-click-once-for-espionage/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "An Insider Look At The IRGC-linked APT35 Operations: Ep3 - Malware Arsenal & Tooling",
+      "completeness": "Medium",
+      "threats": [
+        "Saqeb",
+        "Rat-2ac2",
+        "Spear-phishing_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Egypt",
+        "Israel",
+        "Jordan",
+        "Saudi arabia",
+        "Turkey"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 52,
+      "software": [
+        "Flask",
+        "Visual Studio",
+        "NET Framework",
+        "Telegram",
+        "Linux Debian",
+        "Firefox",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "xor",
+        "exhibit"
+      ],
+      "functions": [
+        "snrProc",
+        "SetWindowsHookEx"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "python",
+        "c_language"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/an-insider-look-at-the-irgc-linked-apt35-operations-ep3-malware-arsenal-tooling"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "ASERT Threat Summary: Aisuru and Related TurboMirai Botnet DDoS Attack Mitigation and Suppression - October 2025 - v1.0",
+      "completeness": "Low",
+      "threats": [
+        "Aisuru",
+        "Turbomirai",
+        "Residential_proxy_technique",
+        "Mirai"
+      ],
+      "links": [
+        "https://www.netscout.com/blog/asert/asert-threat-summary-aisuru-and-related-turbomirai-botnet-ddos"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "Earth Estries alive and kicking",
+      "completeness": "Low",
+      "threats": [
+        "Deed_rat",
+        "Shadowpad"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://bartblaze.blogspot.com/2025/10/earth-estries-alive-and-kicking.html?m=1",
+        "https://github.com/bartblaze/Yara-rules"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "DPRKs Playbook: Kimsukys HttpTroy and Lazaruss New BLINDINGCAN Variant",
+      "completeness": "Medium",
+      "threats": [
+        "Http_troy",
+        "Blindingcan",
+        "Comebacker",
+        "Memload"
+      ],
+      "geo": [
+        "North korea",
+        "Dprk",
+        "Dprks",
+        "Korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-128-cbc",
+        "base64",
+        "rsa-2048",
+        "prng",
+        "rc4",
+        "xor",
+        "hc-256",
+        "md5"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/dprk-kimsuky-lazarus-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "BRONZE BUTLER exploits Japanese asset management software vulnerability",
+      "completeness": "Low",
+      "threats": [
+        "Gokcpdoor",
+        "Havoc"
+      ],
+      "geo": [
+        "Chinese",
+        "China",
+        "Japanese",
+        "Japan"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/10/30/bronze-butler-exploits-japanese-asset-management-software-vulnerability/",
+        "https://github.com/xtaci/smux",
+        "https://github.com/HavocFramework/Havoc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-10-30",
+      "title": "UNC6384 Weaponizes ZDI-CAN-25373 Vulnerability to Deploy PlugX Against Hungarian and Belgian Diplomatic Entities",
+      "completeness": "High",
+      "threats": [
+        "Plugx_rat",
+        "Dll_sideloading_technique",
+        "Canonstager",
+        "Spear-phishing_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Tigerplug",
+        "Aitm_technique",
+        "Process_injection_technique",
+        "Staticplugin"
+      ],
+      "geo": [
+        "Hungary",
+        "China",
+        "Asia",
+        "Netherlands",
+        "Italian",
+        "Russia",
+        "North korea",
+        "Chinese",
+        "Italy",
+        "Serbian",
+        "Hungarian",
+        "Iran",
+        "Ukraine",
+        "Serbia",
+        "Belgium"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 22,
+      "software": [
+        "Windows Registry",
+        "Windows Explorer",
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/unc6384-weaponizes-zdi-can-25373-vulnerability-to-deploy-plugx/"
+      ]
+    }
+  }
+]

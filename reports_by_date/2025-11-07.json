@@ -1,0 +1,92 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-07",
+      "title": "Bulwark: Unpacking the Packer That Redefines Malware Evasion",
+      "completeness": "Low",
+      "threats": [
+        "Bulwark_tool",
+        "Polymorphism_technique",
+        "Process_injection_technique"
+      ],
+      "software": [
+        "Telegram",
+        "Microsoft Defender",
+        "Windows Defender"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/bulwark-unpacking-packer-redefines-malware-evasion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-07",
+      "title": "Alert! APT-C-08 (Manlinghua) group first used WinRAR vulnerability CVE-2025-6218 to carry out cyber attacks.",
+      "completeness": "Low",
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.ctfiot.com/278343.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-07",
+      "title": "Lazarus Group targets Aerospace and Defense with new Comebacker variant",
+      "completeness": "High",
+      "threats": [
+        "Comebacker",
+        "Typosquatting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Indian",
+        "North korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 18,
+      "software": [
+        "Microsoft Word",
+        "Visual Studio",
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "base64",
+        "xor",
+        "hc-256",
+        "rc4",
+        "md5",
+        "chacha20",
+        "aes-128-cbc"
+      ],
+      "functions": [
+        "GetWindowSizedW",
+        "GetSysStartTime"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.enki.co.kr/en/media-center/blog/lazarus-group-targets-aerospace-and-defense-with-new-comebacker-variant"
+      ]
+    }
+  }
+]

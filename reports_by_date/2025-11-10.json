@@ -1,0 +1,174 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-10",
+      "title": "No Place Like Localhost: Unauthenticated Remote Access via Triofox Vulnerability CVE-2025-12480",
+      "completeness": "Medium",
+      "threats": [
+        "Plink_tool",
+        "Zoho_assist_tool",
+        "Anydesk_tool",
+        "Putty_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Triofox",
+        "MySQL",
+        "ASP.NET",
+        "telnet client"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "CanRunCrticalPage",
+        "CanRunCriticalPage"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/triofox-vulnerability-cve-2025-12480/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-10",
+      "title": "Threat Actors Using Paste-Jacking to Achieve Remote Code Execution",
+      "completeness": "Low",
+      "threats": [
+        "Paste-jacking_technique",
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Raspberry_robin",
+        "Socgholish_loader"
+      ],
+      "software": [
+        "macOS"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/threat-actors-paste-jacking-remote-code-execution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-10",
+      "title": "BlueNoroff Group cryptoaffair: \"ghost\" investments and bogus job offers",
+      "completeness": "High",
+      "threats": [
+        "Rustbucket",
+        "Clickfix_technique",
+        "Downtroy",
+        "Cosmicdoor",
+        "Rootroy",
+        "Sysphon",
+        "Sneakmain",
+        "Zoomclutch",
+        "Realtimetroy",
+        "Sysphone",
+        "Teamsclutch",
+        "Gillyinjector",
+        "Viper",
+        "Silentsiphon",
+        "Supply_chain_technique",
+        "Nimcore",
+        "Xscreen",
+        "Cryptobot",
+        "Nimdoor",
+        "Corekitagent",
+        "Sugarloader",
+        "Kandykorn",
+        "Uac_bypass_technique",
+        "Pid_spoofing_technique",
+        "Goloader",
+        "Themida_tool",
+        "Objcshellz",
+        "Trojan.vbs.agent.gen",
+        "Sbadur",
+        "Trojan.vbs.cobalt.gen",
+        "Trojan.vbs.runner",
+        "Kryptik",
+        "Nukesped_rat",
+        "Netchk_tool",
+        "Triplewatch"
+      ],
+      "geo": [
+        "Italy",
+        "Indian",
+        "India",
+        "Sweden",
+        "Spain",
+        "Australia",
+        "Asia-pacific",
+        "Japan",
+        "France",
+        "Turkey",
+        "Singapore",
+        "Hong kong"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Telegram",
+        "Zoom",
+        "Microsoft Teams",
+        "OpenAI",
+        "curl",
+        "Bitwarden",
+        "LastPass",
+        "1Password",
+        "Dashlane",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "coinbase",
+        "coin98",
+        "sui_wallet",
+        "tonkeeper",
+        "mytonwallet",
+        "metamask"
+      ],
+      "crypto": [
+        "solana",
+        "algorand"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256",
+        "sha256",
+        "xor",
+        "md5",
+        "base64",
+        "pbkdf2",
+        "zip",
+        "rc4"
+      ],
+      "functions": [
+        "GetUniRoute",
+        "getenv",
+        "posix_spawn"
+      ],
+      "languages": [
+        "rust",
+        "typescript",
+        "python",
+        "powershell",
+        "applescript",
+        "javascript",
+        "swift"
+      ],
+      "links": [
+        "https://securelist.ru/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/113883/"
+      ]
+    }
+  }
+]

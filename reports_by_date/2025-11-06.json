@@ -1,0 +1,472 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "Cavalry Werewolf hacker group attacks Russian government agencies Dr.Web vxCube sandbox update coming",
+      "completeness": "High",
+      "threats": [
+        "Bitsadmin_tool",
+        "Reversesocks5_tool",
+        "Siggen",
+        "Rshell",
+        "Adaptixc2_tool",
+        "Havoc",
+        "Meterpreter_tool",
+        "Cobalt_strike_tool",
+        "Asyncrat"
+      ],
+      "geo": [
+        "Russian",
+        "Russian federation"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 11,
+      "software": [
+        "Telegram",
+        "NET Framework",
+        "Visual Studio Code",
+        "Sumatra PDF",
+        "firefox",
+        "curl",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15078&lng=ru&c=5",
+        "https://github.com/Acebond/ReverseSocks5",
+        "https://github.com/xcyraxx/Reverse-Shell-CS"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "China-linked Actors Maintain Focus on Organizations Influencing U.S. Policy",
+      "completeness": "Medium",
+      "threats": [
+        "Log4shell_vuln",
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Deed_rat",
+        "Dcsync_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "Russian",
+        "Thailand",
+        "Ukraine",
+        "Asian",
+        "China",
+        "Chinese",
+        "Malaysia",
+        "Indonesia",
+        "Taiwan",
+        "Korean",
+        "Japanese"
+      ],
+      "software": [
+        "Apache Struts",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/china-apt-us-policy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "The hacker group Cavalry Werewolf is targeting Russian government agencies.",
+      "completeness": "High",
+      "threats": [
+        "Bitsadmin_tool",
+        "Reversesocks5_tool",
+        "Siggen",
+        "Rshell",
+        "Adaptixc2_tool",
+        "Havoc",
+        "Meterpreter_tool",
+        "Cobalt_strike_tool",
+        "Asyncrat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 11,
+      "software": [
+        "NET Framework",
+        "Visual Studio Code",
+        "Sumatra PDF",
+        "firefox",
+        "curl",
+        "Telegram",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15078&c=5&lng=ru",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/xcyraxx/Reverse-Shell-CS",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/Acebond/ReverseSocks5"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "LockBit 5.0 Analysis: Technical Deep Dive into the RaaS Giants Latest Upgrade",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Philippines"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xchacha20",
+        "curve25519",
+        "rc4"
+      ],
+      "functions": [
+        "ReadMeForDecrypt"
+      ],
+      "links": [
+        "https://flashpoint.io/blog/lockbit-5-0-analysis-technical-deep-dive-into-the-raas-giants-latest-upgrade/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "New Kimsuky Malware EndClient RAT: First Technical Report and IOCs",
+      "completeness": "High",
+      "threats": [
+        "Xrat_rat",
+        "Quasar_rat",
+        "Superbear",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "Korean",
+        "Korea",
+        "North korea",
+        "Chinese",
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "KakaoTalk"
+      ],
+      "algorithms": [
+        "base64",
+        "lzma"
+      ],
+      "functions": [
+        "Windows",
+        "DLL",
+        "_BINARYCALL_CREATE",
+        "DLLCALLADDRESS"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://www.0x0v1.com/endclientrat/",
+        "https://gist.github.com/0x0v1/fee5b144bfbfc12259adf45d989e8556?ref=0x0v1.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "Tracking a Dragon: Investigating a DragonForce-affiliated ransomware attack with Darktrace",
+      "completeness": "Medium",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Netscan_tool",
+        "Dns_tunneling_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Registry",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "zip",
+        "gzip"
+      ],
+      "functions": [
+        "ReadWrite"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/tracking-a-dragon-investigating-a-dragonforce-affiliated-ransomware-attack-with-darktrace"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "Vidar Malware: Azure Credential Targeting and Chrome v20 Decryption Analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Vidar_stealer",
+        "Lumma_stealer"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 19,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Vivaldi",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "Opera GX",
+        "Waterfox",
+        "Palemoon",
+        "have more..."
+      ],
+      "wallets": [
+        "atomicwallet",
+        "exodus_wallet",
+        "electrum",
+        "bitcoincore"
+      ],
+      "crypto": [
+        "ethereum",
+        "monero",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "bcrypt",
+        "aes-gcm",
+        "aes-256-gcm",
+        "aes"
+      ],
+      "links": [
+        "https://www.ontinue.com/resource/blog-vidar-stealer-malware-analysis/",
+        "https://github.com/ontinue-research/threat-intel-iocs/blob/main/Public/Vidar\\_Malware\\_Family/yara\\_rules.md",
+        "https://github.com/ontinue-research/threat-intel-iocs/blob/main/Public/Vidar\\_Malware\\_Family/Ioc.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "[Threat Analysis\\] Malware disguised as a health screening guidance document",
+      "completeness": "Medium",
+      "geo": [
+        "North korea",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS"
+      ],
+      "algorithms": [
+        "cbc",
+        "base64",
+        "md5",
+        "rc4",
+        "aes-128"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://logpresso.com/en/blog/2025-11-06-healthcheckup-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "Fantasy Hub: Another Russian Based RAT as M-a-a-S",
+      "completeness": "Medium",
+      "threats": [
+        "Fantasyhub",
+        "Hyperrat",
+        "Clayrat"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 12,
+      "software": [
+        "Android",
+        "Google Play",
+        "WebRTC",
+        "Telegram",
+        "Burp suite"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "gzip"
+      ],
+      "functions": [
+        "getContacts",
+        "createImagesZip",
+        "deleteNotification",
+        "deleteZipArchive",
+        "getCallLogs",
+        "getDeviceInfo",
+        "getMediaFiles",
+        "getZipArchivesList",
+        "setInvisibleIntercept"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://zimperium.com/blog/fantasy-hub-another-russian-based-rat-as-m-a-a-s",
+        "https://github.com/Zimperium/IOC/tree/master/2025-11-FantasyHUB"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "GootLoader New Evasion Methods Target Search Driven Workflows",
+      "completeness": "High",
+      "threats": [
+        "Gootkit",
+        "Seo_poisoning_technique",
+        "Cobalt_strike_tool",
+        "Kronos",
+        "Snowcone",
+        "Rhysida",
+        "Blackcat",
+        "Zeppelin",
+        "Fonelaunch",
+        "Kerberoasting_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Windows Explorer",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "jscript",
+        "php",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/gootloader-new-evasion-methods-target-search-driven-workflows/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "9 Malicious NuGet Packages Deliver Time-Delayed Destructive Payloads",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Sharp7extend",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "software": [
+        "NuGet",
+        "PostgreSQL",
+        "Unix",
+        "OpenSSL"
+      ],
+      "functions": [
+        "QueryPage",
+        "GetMyDateTime",
+        "WriteDBSingleByte",
+        "WriteDBSingleInt",
+        "WriteDBSingleDInt",
+        "BeginTran"
+      ],
+      "links": [
+        "https://socket.dev/blog/9-malicious-nuget-packages-deliver-time-delayed-destructive-payloads"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-06",
+      "title": "Close Those Ports: Exploring Splashtop RMM and Relays",
+      "completeness": "Low",
+      "threats": [
+        "Splashtop_tool",
+        "Winvnc_tool",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Medusa_ransomware",
+        "Simplehelp_tool",
+        "Tailscale_tool",
+        "Empire_loader"
+      ],
+      "software": [
+        "Android",
+        "curl",
+        "Wireguard",
+        "Nginx",
+        "Docker",
+        "Linux"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.axelarator.net/close-those-ports-exploring-splashtop-rmm-and-relays/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,295 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "DarkComet RAT Malware Hidden Inside Fake Bitcoin Tool",
+      "completeness": "Medium",
+      "threats": [
+        "Darkcomet_rat",
+        "Upx_tool",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 7,
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/darkcomet-rat-malware-hidden-inside-fake-bitcoin-tool"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "Booking.com Hotels Hacked in 'I Paid Twice' Scam",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Purerat",
+        "Spear-phishing_technique",
+        "Bec_technique",
+        "Dll_sideloading_technique",
+        "Dll_hijacking_technique",
+        "Dotnet_reactor_tool",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 8,
+      "software": [
+        "NET Reactor",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "JavaScript"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/booking-com-hotels-hacked-in-i-paid-twice-scam"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "GlassWorm Returns: New Wave Strikes as We Expose Attacker Infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Glassworm"
+      ],
+      "geo": [
+        "Middle east",
+        "America",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "VSCode",
+        "Hugging Face"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.koi.ai/blog/glassworm-returns-new-wave-openvsx-malware-expose-attacker-infrastructure",
+        "https://github.com/Darkrain2009/RedExt?tab=readme-ov-file"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "North Korean hackers rely on Google to locate and find opportunities, and remotely destroy the core data of the target's phone after stealing the secret.",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "software": [
+        "Android",
+        "KakaoTalk",
+        "Gmail"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://www.secrss.com/articles/84887"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "Analysis of the Yurei ransomware's Go-based builder encryption structure.",
+      "completeness": "Low",
+      "threats": [
+        "Yurei",
+        "Ransom/mdp.event.m1785",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1875",
+        "Ransomware/win.yureicrypt.r721068",
+        "Ransomware/win.yureicrypt.r721188",
+        "Prince_ransomware"
+      ],
+      "geo": [
+        "Nigeria",
+        "Sri lanka"
+      ],
+      "software": [
+        "nuget",
+        "vscode"
+      ],
+      "algorithms": [
+        "md5",
+        "chacha20-poly1305",
+        "ecdh",
+        "aes-gcm"
+      ],
+      "languages": [
+        "dotnet"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90933/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "Danabot Malware Reemerges with Version 669 After Operation Endgame",
+      "completeness": "Low",
+      "threats": [
+        "Danabot"
+      ],
+      "software": [
+        "Twitter",
+        "WhatsApp"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "litecoin"
+      ],
+      "links": [
+        "https://gbhackers.com/danabot-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "New KomeX Android RAT Hits Hacker Forums with Tiered Subscriptions",
+      "completeness": "Low",
+      "threats": [
+        "Komex",
+        "Btmob_rat"
+      ],
+      "software": [
+        "Android",
+        "Twitter",
+        "WhatsApp",
+        "Google Play"
+      ],
+      "links": [
+        "https://gbhackers.com/komex-android-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "Maverick and Coyote: Analyzing the Link Between Two Evolving Brazilian Banking Trojans",
+      "completeness": "Medium",
+      "threats": [
+        "Maverick",
+        "Coyote",
+        "Sorvepotel"
+      ],
+      "geo": [
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Microsoft Defender",
+        "chrome",
+        "firefox",
+        "opera",
+        "chromium"
+      ],
+      "wallets": [
+        "electrum"
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256",
+        "md5",
+        "aes",
+        "zip",
+        "cbc",
+        "sha1",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/maverick-and-coyote-analyzing-the-link-between-two-evolving-brazilian-banking-trojans/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-11",
+      "title": "How RMM abuse fuelled Medusa & DragonForce attacks",
+      "completeness": "High",
+      "threats": [
+        "Medusa_ransomware",
+        "Simplehelp_tool",
+        "Dragonforce_ransomware",
+        "Rclone_tool",
+        "Restic_tool",
+        "Medusa_rootkit",
+        "Anydesk_tool",
+        "Abyssworker",
+        "Credential_harvesting_technique",
+        "Cobalt_strike_tool"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "PDQ Deploy",
+        "Microsoft Defender",
+        "Windows Defender",
+        "PDQdeploy",
+        "Telegram",
+        "Hyper-V"
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Get-Veeam-Creds"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://zensec.co.uk/blog/how-rmm-abuse-fuelled-medusa-dragonforce-attacks/"
+      ]
+    }
+  }
+]

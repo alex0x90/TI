@@ -1,0 +1,641 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Tycoon 2FA Phishing Kit Analysis",
+      "completeness": "Low",
+      "threats": [
+        "Tycoon_2fa",
+        "Aitm_technique",
+        "Tycoon_framework",
+        "Mitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Dropbox",
+        "CryptoJS",
+        "PhantomJS",
+        "Burp Suite"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cybereason.com/blog/tycoon-phishing-kit-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Crossed wires: a case study of Iranian espionage and attribution",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Pdq_connect_tool",
+        "Isl_online_tool",
+        "Minijunk",
+        "Minibike",
+        "Minibus",
+        "Phoenix_keylogger"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian",
+        "Israel"
+      ],
+      "software": [
+        "OnlyOffice",
+        "Gmail",
+        "Microsoft Teams",
+        "Outlook",
+        "ProtonMail"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/crossed-wires-case-study-iranian-espionage-and-attribution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "SleepyDuck malware invades Cursor through Open VSX",
+      "completeness": "Low",
+      "threats": [
+        "Sleepyduck"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio",
+        "nethereum"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "languages": [
+        "solidity"
+      ],
+      "links": [
+        "https://secureannex.com/blog/sleepyduck-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Operation South Star: 0day Espionage Activities against Domestic Mobile phones",
+      "completeness": "Low",
+      "threats": [
+        "Zipperdown_vuln"
+      ],
+      "geo": [
+        "Chinese",
+        "North koreans",
+        "North korean",
+        "Asia"
+      ],
+      "software": [
+        "Android",
+        "firefox",
+        "foxmail"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "BackClass"
+      ],
+      "links": [
+        "https://translated.turbopages.org/proxy_u/zh-en.ru.ff4a3b61-690b937d-506ac835-74722d776562/https/www.secrss.com/articles/84661"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "IOC by BO Team",
+      "completeness": "Low",
+      "threats": [
+        "Brockendoor"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://telegra.ph/IOC-po-BO-Team-11-03"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Erudite Mogwai phishing campaign in Russia",
+      "completeness": "Medium",
+      "threats": [
+        "Scythe_tool",
+        "Pinocchio",
+        "Orcac2",
+        "Hermes",
+        "Htran_tool",
+        "Godzilla_webshell",
+        "Shadowpad",
+        "Quasar_rat"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Chinese",
+        "Asian",
+        "China"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "19",
+        "Path:",
+        "33",
+        "Command:",
+        "4",
+        "IP:",
+        "3",
+        "Domain:",
+        "2",
+        "Hash:",
+        "16"
+      ],
+      "software": [
+        "curl",
+        "chrome; firefox",
+        "opera",
+        "steam",
+        "vivaldi",
+        "task scheduler",
+        "Windows Task Scheduler",
+        "unix",
+        "chrome",
+        "firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "base64",
+        "aes",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "closeClient"
+      ],
+      "languages": [
+        "golang",
+        "python",
+        "php",
+        "cscript"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6190/",
+        "https://github.com/808Mak1r/GodzillaSource/blob/main/src/main/resources/shell/java/template/base64Code.bin",
+        "https://github.com/bGN4/HTran"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "SesameOp: Novel backdoor uses OpenAI Assistants API for command and control",
+      "completeness": "Low",
+      "threats": [
+        "Openaiagent-netapi64"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Visual Studio",
+        "Visual Studio",
+        "Microsoft JScript",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "gzip"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "dotnet"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/11/03/sesameop-novel-backdoor-uses-openai-assistants-api-for-command-and-control/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Scattered LAPSUS$ Hunters: Anatomy of a Federated Cybercriminal Brand",
+      "completeness": "Low",
+      "threats": [
+        "Medusa_rootkit",
+        "Blacklotus",
+        "Medusa_ransomware",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Clop"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Salesforce",
+        "Telegram",
+        "SAP NetWeaver"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/scattered-lapsuss-hunters-anatomy-of-a-federated-cybercriminal-brand/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Gootloader Returns: What Goodies Did They Bring?",
+      "completeness": "High",
+      "threats": [
+        "Gootkit",
+        "Supper_backdoor",
+        "Seo_poisoning_technique",
+        "Rhysida",
+        "Blackcat",
+        "Zeppelin",
+        "Api_hammering_technique",
+        "Kerberoasting_technique",
+        "Winrm_tool",
+        "Oyster_loader",
+        "Oyster",
+        "Textshell",
+        "Nltest_tool",
+        "Impacket_tool",
+        "Vssadmin_tool",
+        "Dcsync_technique",
+        "Meowbackconn",
+        "Ntdsutil_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "WordPress",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "zip",
+        "exhibit",
+        "lzma",
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Exec",
+        "Get-CimInstance",
+        "Get-Random",
+        "First",
+        "Subsequent",
+        "Write-Host"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/gootloader-threat-detection-woff2-obfuscation",
+        "https://gist.github.com/RussianPanda95/d3398ff9aa03740c8dc2577d4b4ec7e7/raw/73aacca69f182023d000ec26dca1fa02c7ee4445/xor\\_obf.js",
+        "https://github.com/RussianPanda95/Yara-Rules/blob/main/VanillaTempest/win\\_mal\\_TextShell.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Coordinated Hacktivist Threat Activity Targeting Belgium",
+      "completeness": "Low",
+      "threats": [
+        "Httpflood_technique"
+      ],
+      "geo": [
+        "Luxembourg",
+        "Belgium",
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://socradar.io/coordinated-hacktivist-threat-activity-target-belgium/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Inside the Storm: A Cyber Defenders View on Chinas Typhoon Campaigns",
+      "completeness": "Low",
+      "geo": [
+        "Chinas",
+        "Chinese",
+        "China"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securityunfiltered.medium.com/inside-the-storm-a-cyber-defenders-view-on-china-s-typhoon-campaigns-5015db1cc046"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Analysis of Cephalus Ransomware: The Unstoppable Spear",
+      "completeness": "Low",
+      "threats": [
+        "Cephalus",
+        "Ransom/mdp.behavior.m2813",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1785"
+      ],
+      "software": [
+        "Windows Defender",
+        "MSSQL"
+      ],
+      "algorithms": [
+        "md5",
+        "aes-ctr",
+        "sha256",
+        "xor",
+        "aes"
+      ],
+      "functions": [
+        "LockMemory",
+        "SetData",
+        "GetData"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90859/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "A Deep Dive Into Warlock Ransomware Deployed Via ToolShell SharePoint Chained Vulnerabilities",
+      "completeness": "Low",
+      "threats": [
+        "X2anylock",
+        "Toolshell_vuln",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "curve25519",
+        "chacha20"
+      ],
+      "links": [
+        "https://hybrid-analysis.blogspot.com/2025/10/a-deep-dive-into-warlock-ransomware.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Update on Attacks by Threat Group APT-C-60",
+      "completeness": "Low",
+      "threats": [
+        "Spyglace",
+        "Spear-phishing_technique",
+        "Com_hijacking_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Japan"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-128-cbc",
+        "rc4",
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/en/2025/11/APT-C-60_update.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "The DragonForce Cartel: Scattered Spider at the gate",
+      "completeness": "Medium",
+      "threats": [
+        "Devman",
+        "Conti",
+        "Mamona",
+        "Lockbit",
+        "Byovd_technique",
+        "Akira_ransomware",
+        "Sim_swapping_technique",
+        "Dragonforce_ransomware",
+        "Spear-phishing_technique",
+        "Screenconnect_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Splashtop_tool",
+        "Advobfuscator_tool",
+        "Rentdrv2_tool",
+        "Eldorado_ransomware",
+        "Blackcat",
+        "Ransomhub",
+        "Qilin_ransomware",
+        "Blackbasta"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "Active Directory",
+        "Linux",
+        "ESXi",
+        "firefox",
+        "onenote",
+        "outlook",
+        "steam",
+        "thebat",
+        "wordpad",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "functions": [
+        "InitializeApiModule",
+        "leveraged"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/the-dragonforce-cartel-scattered-spider-at-the-gate/",
+        "https://github.com/andrivet/ADVobfuscator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Dissecting the Infection Chain: Technical Analysis of the Kimsuky JavaScript Dropper",
+      "completeness": "High",
+      "threats": [
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://blog.pulsedive.com/dissecting-the-infection-chain-technical-analysis-of-the-kimsuky-javascript-dropper/",
+        "https://github.com/pulsedive-threat-research/Threat-Research/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Curly COMrades: Evasion and Persistence via Hidden Hyper-V Virtual Machines",
+      "completeness": "Medium",
+      "threats": [
+        "Curlyshell",
+        "Curlcat",
+        "Resocks_tool",
+        "Rsockstun_tool",
+        "Ligolo-ng_tool",
+        "Ccproxy_tool",
+        "Stunnel_tool",
+        "Atexec_tool",
+        "Ticketinjector_tool"
+      ],
+      "geo": [
+        "Georgian",
+        "Georgia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Hyper-V",
+        "Alpine Linux",
+        "curl",
+        "Windows Subsystem for Linux",
+        "Linux",
+        "crontab",
+        "NGINX"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "main",
+        "init",
+        "WriteFunction",
+        "to_run",
+        "popen",
+        "Load",
+        "RemoteWorker"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "swift"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/curly-comrades-evasion-persistence-hidden-hyper-v-virtual-machines",
+        "https://github.com/MzHmO/PowershellKerberos/blob/d3ab4634dfbff1bba10b9765295e2d40236f08c5/injector.ps1",
+        "https://github.com/bitdefender/malware-ioc/blob/master/2025\\_11\\_04-curlycomrades-iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-05",
+      "title": "Gootloader Is Back (BackAgain)",
+      "completeness": "Low",
+      "threats": [
+        "Gootkit"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Explorer",
+        "ChatGPT"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "jscript",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://gootloader.wordpress.com/2025/11/05/gootloader-is-back-back-again/"
+      ]
+    }
+  }
+]
