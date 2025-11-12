@@ -1,0 +1,243 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "Payroll Pirates: The Widespread Malvertising Network",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Cloaking_technique",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Kazakhstan",
+        "Ukraine"
+      ],
+      "software": [
+        "Twitter",
+        "telegram",
+        "Microsoft ad"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://cyberint.com/blog/threat-intelligence/payroll-pirates-the-widespread-malvertising-network/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "Report Title: Quick Overview of CLOBELSECTEAM: #OpJapan Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Residelocker"
+      ],
+      "geo": [
+        "North korea",
+        "United kingdom",
+        "Ukraine",
+        "Italy",
+        "Russia",
+        "Japanese",
+        "Indonesia",
+        "Kurdish",
+        "Chinese",
+        "Russian",
+        "Japan",
+        "Vietnam",
+        "France",
+        "China"
+      ],
+      "software": [
+        "Telegram",
+        "Twitter",
+        "Instagram"
+      ],
+      "links": [
+        "https://s2w.inc/en/resource/detail/953"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "CVE-2025-21042: Samsung Galaxy Zero-Day Exploited in LANDFALL Spyware Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Landfall"
+      ],
+      "geo": [
+        "Iran",
+        "Morocco",
+        "Middle east",
+        "Iraq",
+        "Turkey"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Android",
+        "SELinux"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "links": [
+        "https://socradar.io/cve-2025-21042-samsung-galaxy-0day-landfall-spyware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "Backdoor malware with a legitimate signature is being distributed disguised as a Steam cleanup tool.",
+      "completeness": "Medium",
+      "threats": [
+        "Trojan/js.proxyware.sc295915"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam",
+        "SteamCleaner",
+        "Node.js",
+        "InnoSetup",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "md5",
+        "gzip",
+        "deflate"
+      ],
+      "functions": [
+        "TaskScheduler"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/90915/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "APT PROFILE BRONZE BUTLER",
+      "completeness": "Medium",
+      "threats": [
+        "9002_rat",
+        "Lilith_rat",
+        "Gh0st_rat",
+        "Symonloader",
+        "Gofarer",
+        "Datper",
+        "Daserf",
+        "Gsecdump",
+        "Elirks",
+        "Mimikatz_tool",
+        "Minzen",
+        "Shadowpad",
+        "Rarstar",
+        "Procdump_tool",
+        "Korlia",
+        "Shadowpy",
+        "Netboy",
+        "Ghostdown",
+        "Revbshell",
+        "Gokcpdoor",
+        "Dll_sideloading_technique",
+        "Havoc",
+        "Spear-phishing_technique",
+        "Steganography_technique",
+        "Right-to-left_override_technique",
+        "Credential_dumping_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Japanese",
+        "Russia",
+        "Taiwan",
+        "Korea",
+        "China"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 40,
+      "software": [
+        "PsExec",
+        "Microsoft Exchange Server",
+        "Microsoft Office",
+        "Active Directory"
+      ],
+      "languages": [
+        "python",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-bronze-butler/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "Rhadamanthys Stealer Servers Reportedly Seized; Admin Urges Immediate Reinstallation",
+      "completeness": "Low",
+      "threats": [
+        "Rhadamanthys"
+      ],
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "WhatsApp"
+      ],
+      "links": [
+        "https://gbhackers.com/rhadamanthys-stealer-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "MacOS Infection Vector: Using AppleScripts to bypass Gatekeeper",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Odyssey_stealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MacOS",
+        "Gatekeeper",
+        "Chrome",
+        "Zoom",
+        "curl",
+        "wordpress"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "applescript"
+      ],
+      "links": [
+        "https://pberba.github.io/security/2025/11/11/macos-infection-vector-applescript-bypass-gatekeeper/",
+        "https://github.com/t3l3machus/PowerShell-Obfuscation-Bible",
+        "https://github.com/pberba"
+      ]
+    }
+  }
+]
