@@ -239,5 +239,60 @@
         "https://github.com/pberba"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "Phishing emails disguised as spam filter alerts are stealing logins",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/11/phishing-emails-disguised-as-spam-filter-alerts-are-stealing-logins",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-11-07-IOCs-for-phishing-activity-spoofing-spam-filters.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "Malicious Chrome Extension Exfiltrates Seed Phrases, Enabling Wallet Takeover",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "Chrome"
+      ],
+      "wallets": [
+        "safery_wallet",
+        "sui_wallet",
+        "metamask",
+        "enkrypt"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-chrome-extension-exfiltrates-seed-phrases"
+      ]
+    }
   }
 ]

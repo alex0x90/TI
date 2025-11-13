@@ -1,0 +1,547 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Unexpected artifacts in the recent GoRed campaign",
+      "completeness": "High",
+      "threats": [
+        "Bulldog_backdoor",
+        "Supply_chain_technique",
+        "Proxyshell_vuln",
+        "Dns_tunneling_technique",
+        "Dumplsass_tool",
+        "Netscan_tool",
+        "Crackmapexec_tool",
+        "Cobalt_strike_tool",
+        "Fake_potato_vuln"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "PostgreSQL",
+        "Microsoft Exchange",
+        "KeePass",
+        "Sysinternals",
+        "Process Explorer",
+        "Telegram",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "ReadAll",
+        "CreateObject",
+        "WriteText",
+        "SetWallpaper"
+      ],
+      "languages": [
+        "cscript",
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/gored-backdoor-new-attacks/113980/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Unleashing the Kraken ransomware group",
+      "completeness": "Medium",
+      "threats": [
+        "Kraken",
+        "Kraken_cryptor",
+        "Hellokitty",
+        "Cloudflared_tool"
+      ],
+      "geo": [
+        "Denmark",
+        "Canada",
+        "Kuwait",
+        "United kingdom",
+        "Panama"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXi",
+        "Hyper-V",
+        "Microsoft SQL server",
+        "esxcli",
+        "Ubuntu Linux",
+        "ubuntu",
+        "ESXi esxcli"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "exhibit",
+        "chacha20"
+      ],
+      "functions": [
+        "unlink",
+        "fork_as_daemon"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/kraken-ransomware-group/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2025/11/kraken-ransomware-group.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "We opened a fake invoice and fell down a retro XWorm-shaped wormhole",
+      "completeness": "Low",
+      "threats": [
+        "Xworm_rat"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "gzip",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "WriteLine"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threats/2025/11/we-opened-a-fake-invoice-and-fell-down-a-retro-xworm-shaped-wormhole"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Operation Endgame Quakes Rhadamanthys",
+      "completeness": "High",
+      "threats": [
+        "Rhadamanthys",
+        "Elysium_stealer",
+        "Clickfix_technique",
+        "Hijackloader",
+        "Icedid",
+        "Bumblebee",
+        "Systembc",
+        "Pikabot",
+        "Smokeloader",
+        "Danabot",
+        "Warmcookie",
+        "Trickbot",
+        "Lumma_stealer",
+        "Steganography_technique",
+        "Seo_poisoning_technique",
+        "Darkgate",
+        "Cloudeye",
+        "Smartloader",
+        "Doubleloader",
+        "Doiloader",
+        "Latrodectus",
+        "Castleloader",
+        "Amadey",
+        "Remcos_rat",
+        "Quasar_rat",
+        "Ahkbot",
+        "Screenshotter",
+        "Bitrat",
+        "Xworm_rat",
+        "Formbook",
+        "Macropack_tool",
+        "Amatera_stealer",
+        "Nightshade"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare turnstile"
+      ],
+      "crypto": [
+        "ripple"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/operation-endgame-quakes-rhadamanthys"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "NGate: NFC Relay Malware Enabling ATM Withdrawals Without Physical Cards",
+      "completeness": "Low",
+      "threats": [
+        "Ngate"
+      ],
+      "geo": [
+        "Polish"
+      ],
+      "software": [
+        "Android"
+      ],
+      "links": [
+        "https://zimperium.com/blog/ngate-nfc-relay-malware-enabling-atm-withdrawals-without-physical-cards"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Security brief: VenomRAT is defanged",
+      "completeness": "Low",
+      "threats": [
+        "Venomrat",
+        "Quasar_rat",
+        "Remcos_rat",
+        "Pdq_connect_tool",
+        "Njrat",
+        "Xworm_rat",
+        "Hijackloader",
+        "Icedid",
+        "Bumblebee",
+        "Systembc",
+        "Pikabot",
+        "Smokeloader",
+        "Danabot",
+        "Warmcookie",
+        "Trickbot",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "Portuguese",
+        "Spanish",
+        "America",
+        "Greece",
+        "Latin america"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/security-brief-venomrat-defanged"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "GTIG AI Threat Tracker: Advances in Threat Actor Usage of AI Tools",
+      "completeness": "Low",
+      "threats": [
+        "Promptflux",
+        "Lamehug_tool",
+        "Fruitshell",
+        "Promptlock",
+        "Quietvault",
+        "Credential_harvesting_technique",
+        "Bigmacho",
+        "Cobalt_strike_tool",
+        "Metasploit_tool",
+        "Osstun_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Dprk",
+        "Iran",
+        "Iranian",
+        "North korean",
+        "China",
+        "Korea",
+        "Israeli",
+        "North korea",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "PyInstaller",
+        "Hugging Face",
+        "Discord",
+        "MacOS",
+        "Zoom"
+      ],
+      "functions": [
+        "Gemini"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "lua",
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Quantum Route Redirect: Anonymous Tool Streamlining Global Phishing Attack",
+      "completeness": "Low",
+      "threats": [
+        "Quantum_route_redirect_tool",
+        "Credential_harvesting_technique",
+        "Qshing_technique"
+      ],
+      "software": [
+        "Microsoft Exchange"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blog.knowbe4.com/quantum-route-redirect-anonymous-tool-streamlining-global-phishing-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Mines, training, crypto: F6 detected malicious mailings by cyber group CapFIX",
+      "completeness": "Medium",
+      "threats": [
+        "Capdoor",
+        "Dll_sideloading_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "CryptoPro"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/F6/articles/966072/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Contagious Interview Actors Now Utilize JSON Storage Services for Malware Delivery",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Beavertail",
+        "Ottercookie",
+        "Invisibleferret",
+        "Tsunami_botnet",
+        "Tsunami_framework",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "Northkorea",
+        "Korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "Node.JS",
+        "Windows Defender"
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "languages": [
+        "swift",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.nviso.eu/2025/11/13/contagious-interview-actors-now-utilize-json-storage-services-for-malware-delivery/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Uncovering a Multi-Stage Phishing Kit Targeting Italy's Infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Italy",
+        "Aruba",
+        "Italian"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/uncover-phishing-italy/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "October 2025 Infostealer Trends Report",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Rhadamanthys",
+        "Acr_stealer",
+        "Lumma_stealer",
+        "Dll_sideloading_technique",
+        "Amatera_stealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91022/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Digit stealer: a JXA-based infostealer that leaves little footprint",
+      "completeness": "Medium",
+      "threats": [
+        "Digitstealer",
+        "Odyssey_stealer",
+        "Macsyncstealer",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "curl",
+        "sysctl",
+        "Ledger Live",
+        "Chrome",
+        "Firefox",
+        "Telegram"
+      ],
+      "wallets": [
+        "electrum",
+        "coinomi"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "applescript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/jtl-digitstealer-macos-infostealer-analysis/",
+        "https://github.com/electron/asar",
+        "https://github.com/search?q=org%3Aapple-oss-distributions+FEAT\\_ECV&type=code"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Unmasking Vo1d: Inside Darktraces Botnet Detection",
+      "completeness": "Low",
+      "threats": [
+        "Vo1d"
+      ],
+      "geo": [
+        "South africa",
+        "African"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Android"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/unmasking-vo1d-inside-darktraces-botnet-detection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "North Korean Hackers Weaponize Google Find Hub to Wipe Phones",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Remcos_rat",
+        "Quasar_rat",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Korean"
+      ],
+      "software": [
+        "Android",
+        "KakaoTalk"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/north-korean-hackers-weaponize-google-find-hub-to-wipe-phones"
+      ]
+    }
+  }
+]
