@@ -1,0 +1,454 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-17",
+      "title": "SpearSpecter: Unmasking Iran s IRGC Cyber Operations Targeting High-Profile Individuals",
+      "completeness": "Medium",
+      "threats": [
+        "Tamecat",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Nicecurl_backdoor"
+      ],
+      "geo": [
+        "Iran",
+        "Israel",
+        "Iranian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Telegram",
+        "WhatsApp",
+        "Windows Explorer",
+        "Chrome",
+        "curl",
+        "Outlook",
+        "Microsoft Edge",
+        "Sysinternals",
+        "Internet Explorer",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256",
+        "zip",
+        "base64",
+        "cbc",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "DavSetCookie",
+        "start",
+        "Get-Random",
+        "setRequestHeader",
+        "Set-ItemProperty"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://govextra.gov.il/national-digital-agency/cyber/research/spearspecter/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-17",
+      "title": "NKNShell malware being distributed on VPN homepage",
+      "completeness": "Medium",
+      "threats": [
+        "Nknshell",
+        "Spark_rat",
+        "Meshagent_tool",
+        "Sliver_c2_tool",
+        "Gs-netcat",
+        "Null-amsi_tool",
+        "Sqlmap_tool",
+        "Uac_bypass_technique",
+        "Meshcentral_tool",
+        "Netcat_tool",
+        "Nkabuse",
+        "Nglite",
+        "Gsocket_tool"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Event Tracing for Windows",
+        "Microsoft Edge",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91056/",
+        "https://github.com/EvilBytecode/GoDefender",
+        "https://github.com/BlackShell256/Null-AMSI"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-17",
+      "title": "Snake Evolution",
+      "completeness": "High",
+      "threats": [
+        "Snake_keylogger",
+        "Matiex_keylogger",
+        "Agent_tesla",
+        "Formbook",
+        "Steganography_technique",
+        "Remcos_rat",
+        "Loki_bot",
+        "Cloudeye",
+        "Xworm_rat",
+        "Quirkyloader",
+        "Asyncrat",
+        "Masslogger",
+        "Rhadamanthys",
+        "Process_injection_technique",
+        "Realvnc_tool",
+        "Procmon_tool",
+        "Darkcloud",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Chrome",
+        "Chrome Canary",
+        "Chromium",
+        "Microsoft Edge",
+        "Vivaldi",
+        "Opera",
+        "CocCoc",
+        "Comodo Dragon",
+        "CentBrowser",
+        "have more..."
+      ],
+      "crypto": [
+        "tether"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "autoit",
+        "javascript",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://rexorvc0.com/2025/11/17/Snake/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-17",
+      "title": "Nation-State Actors Arsenal: An In-Depth Look at Lazarus ScoringMathTea",
+      "completeness": "Medium",
+      "threats": [
+        "Scoringmathtea",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Ukraine"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "cbc",
+        "xor",
+        "base64",
+        "crc-32"
+      ],
+      "functions": [
+        "rand"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://0x0d4y.blog/arsenal-analysis-of-a-nation-state-actor-an-in-depth-look-at-lazarus-scoringmathtea/",
+        "https://github.com/OALabs/hashdb/commit/d66ae38be618d0654d375986a41202b1441b5030",
+        "https://github.com/0xx0d4y/RE\\_AutomationPythonScripts/blob/main/RE\\_Automation/Lazarus/ScoringMathTea/smt\\_string\\_decryption.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-17",
+      "title": "npm Malware Campaign Uses Adspect Cloaking to Deliver Malicious Redirects",
+      "completeness": "Low",
+      "threats": [
+        "Cloaking_technique",
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 11,
+      "crypto": [
+        "uniswap",
+        "solana",
+        "ethereum"
+      ],
+      "algorithms": [
+        "gzip",
+        "base64",
+        "deflate"
+      ],
+      "functions": [
+        "getOrCreateContainer",
+        "setInterval",
+        "Adspect",
+        "setTimeout"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/npm-malware-campaign-uses-adspect-cloaking-to-deliver-malicious-redirects"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-17",
+      "title": "Frontline Intelligence: Analysis of UNC1549 TTPs, Custom Tools, and Malware Targeting the Aerospace and Defense Ecosystem",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dcsync_technique",
+        "Minibike",
+        "Twostroke",
+        "Deeproot",
+        "Dllsearchorder_hijacking_technique",
+        "Crashpad",
+        "Ghostline_tool",
+        "Lightrail",
+        "Pollblend",
+        "Sightgrab",
+        "Twostrike_tool",
+        "Lastenzug_tool",
+        "Trusttrap",
+        "Kerberoasting_technique",
+        "Dcsyncer_tool",
+        "Mimikatz_tool",
+        "Ad_explorer_tool",
+        "Sccmvnc_tool",
+        "Minibus",
+        "Ngrok_tool",
+        "Password_spray_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Iran",
+        "Germany"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 7,
+      "software": [
+        "Linux",
+        "Active Directory",
+        "Azure AD",
+        "Microsoft Outlook",
+        "ZEROTIER",
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/analysis-of-unc1549-ttps-targeting-aerospace-defense/",
+        "https://github.com/hashicorp/yamux",
+        "https://github.com/codewhitesec/Lastenzug"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-17",
+      "title": "APT Activity Report",
+      "completeness": "High",
+      "threats": [
+        "Aitm_technique",
+        "Supply_chain_technique",
+        "Watering_hole_technique",
+        "Romcom_rat",
+        "Smac",
+        "Bloodalchemy",
+        "Spear-phishing_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Clickfix_technique",
+        "Kazuar",
+        "Zerolot",
+        "Sting",
+        "Kalambur",
+        "Calarat",
+        "Kidsrat",
+        "Rustvoralix",
+        "Holdinghands",
+        "Sparrowdoor",
+        "Proxylogon_exploit",
+        "Windealer",
+        "Spydealer",
+        "Edgestepper",
+        "Slowstepper",
+        "Atera_tool",
+        "Confuserex_tool",
+        "Akdoor",
+        "Akdoortea",
+        "Threatneedle",
+        "Signbt",
+        "Rokrat",
+        "Qilin_ransomware",
+        "Articletea",
+        "Imprudentcook",
+        "Scoringmathtea",
+        "Memload",
+        "Sessionrunner_tool",
+        "Eternalblue_vuln",
+        "Eggshell_rat",
+        "Snipbot",
+        "Rustyclaw",
+        "Mythic_c2",
+        "Smuggling_technique",
+        "Pterographin",
+        "Pteroodd",
+        "Pteropaste",
+        "Pteropsdoor",
+        "Pterovdoor",
+        "Dev_tunnels_tool",
+        "Backorder",
+        "Avremover_tool"
+      ],
+      "geo": [
+        "Latin america",
+        "Korea",
+        "Malaysia",
+        "Arab emirates",
+        "Cyprus",
+        "Americas",
+        "Asian",
+        "Cambodia",
+        "North korea",
+        "Taiwanese",
+        "Guatemala",
+        "Egypt",
+        "Taiwan",
+        "Japanese",
+        "Argentina",
+        "Russia",
+        "Ukrainian",
+        "Asia",
+        "Korean",
+        "America",
+        "Armenia",
+        "Nigeria",
+        "Middle east",
+        "Asia-pacific",
+        "Saudi arabia",
+        "Panama",
+        "Latin american",
+        "Albania",
+        "Ukraine",
+        "Canada",
+        "China",
+        "Italian",
+        "United arab emirates",
+        "Iraq",
+        "Honduras",
+        "Azerbaijan",
+        "Uzbekistan",
+        "Polish",
+        "North korean",
+        "India",
+        "Lithuania",
+        "Chinese",
+        "Iran",
+        "Poland",
+        "Ecuador",
+        "Malaysian",
+        "Hong kong",
+        "Russian",
+        "Greece",
+        "Africa",
+        "Israel"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "Roundcube",
+        "Android",
+        "SoftEther",
+        "macOS",
+        "Telegram",
+        "WhatsApp",
+        "Instagram",
+        "Sogou",
+        "Youdao",
+        "Windows Defender",
+        "have more..."
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip"
+      ],
+      "functions": [
+        "WhatsApp",
+        "Defender",
+        "DLL",
+        "f"
+      ],
+      "languages": [
+        "javascript",
+        "applescript",
+        "powershell",
+        "php",
+        "rust"
+      ],
+      "links": [
+        "https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-apt-activity-report-q2-2025-q3-2025.pdf"
+      ]
+    }
+  }
+]

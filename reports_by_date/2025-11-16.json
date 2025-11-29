@@ -1,0 +1,51 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-16",
+      "title": "Hide Me Again: The Updated Multi-Payload .NET Steganography Loader That Includes Lokibot",
+      "completeness": "Medium",
+      "threats": [
+        "Hide_me_again",
+        "Steganography_technique",
+        "Loki_bot",
+        "Process_injection_technique",
+        "Quasar_rat",
+        "Putty_tool",
+        "Superputty_tool",
+        "Credential_dumping_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 7,
+      "software": [
+        "Windows Scheduled Task",
+        "Android",
+        "Mozilla Firefox",
+        "IceDragon",
+        "Cyberfox",
+        "Waterfox",
+        "Pale Moon",
+        "K-Meleon",
+        "SeaMonkey",
+        "Opera",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "get_crc",
+        "get_IVBD",
+        "LoadFile",
+        "UrlDownloadToFileW"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/updated-net-steganography-loader-lokibot-malware-analysis.html",
+        "https://github.com/tccontre/KnowledgeBase/tree/main/malware\\_re\\_tools/pixdig"
+      ]
+    }
+  }
+]

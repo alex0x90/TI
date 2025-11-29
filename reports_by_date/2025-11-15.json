@@ -1,0 +1,45 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-15",
+      "title": "Analyzing What Appears to Be GNNCRY's macOS Test Build",
+      "completeness": "Medium",
+      "threats": [
+        "Gonnacry"
+      ],
+      "geo": [
+        "Portuguese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "Gatekeeper"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "_get_home_enviroment",
+        "_get_desktop_enviroment",
+        "_get_username",
+        "_get_trash_path",
+        "_get_media_path",
+        "_find_files",
+        "_encrypt_files",
+        "_create_files_desktop",
+        "strtok",
+        "_get_filename_ext",
+        "have more..."
+      ],
+      "links": [
+        "https://denwp.com/gnncrys-macos-test-build/",
+        "https://github.com/tarcisio-marinho/GonnaCry?ref=denwp.com",
+        "https://github.com/tarcisio-marinho?ref=denwp.com"
+      ]
+    }
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "SNOWLIGHT Malware for Windows by UNC5174",
+      "completeness": "Medium",
+      "threats": [
+        "Snowlight",
+        "Vshell",
+        "Snowshell",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "Asian",
+        "Chinese",
+        "Vietnamese",
+        "Canada",
+        "Japan",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "BIG-IP",
+        "Twitter"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "xor",
+        "sha256",
+        "ror13"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2025/11/unc5174-windows-snowlight-in-2025/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "Analysis of Recent Phishing Attack Activity by the MuddyWater Group",
+      "completeness": "Medium",
+      "threats": [
+        "Udpgangster",
+        "Phoenix_keylogger"
+      ],
+      "geo": [
+        "Azerbaijani",
+        "Israel",
+        "Israeli",
+        "Azerbaijan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/282122.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "Be careful responding to unexpected job interviews",
+      "completeness": "Low",
+      "threats": [
+        "Logmein_tool"
+      ],
+      "software": [
+        "Zoom",
+        "Gmail"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/11/be-careful-responding-to-unexpected-job-interviews"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "In the arsenal of Shedding Zmiy: a tool for attacks through flaws in the system environment settings of a popular CMS.",
+      "completeness": "Low",
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Bitrix",
+        "nginx",
+        "sudo",
+        "Apparmor",
+        "SELinux"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6220/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "FortiWeb Path Traversal Exploit Actively Targeted: What You Need to Know",
+      "completeness": "Low",
+      "links": [
+        "https://socradar.io/fortiweb-path-traversal-exploit-actively-targeted/",
+        "https://github.com/watchtowrlabs/watchTowr-vs-Fortiweb-AuthBypass"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "Microsoft Office Russian Dolls",
+      "completeness": "Low",
+      "threats": [
+        "Formbook"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://dshield.org/diary/Microsoft+Office+Russian+Dolls/32484/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "NotDoor Insights: A Closer Look at Outlook Macros and More",
+      "completeness": "Medium",
+      "threats": [
+        "Notdoor",
+        "Dll_hijacking_technique",
+        "Dll_sideloading_technique",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Spanish"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "software": [
+        "Outlook",
+        "curl",
+        "Microsoft Outlook",
+        "Windows Registry",
+        "Slack"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/notdoor-insights-a-closer-look-at-outlook-macros-and-more.html",
+        "https://github.com/splunk/attack\\_data/",
+        "https://github.com/splunk/security\\_content"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "Top 10 Malware Q3 2025",
+      "completeness": "Low",
+      "threats": [
+        "Socgholish_loader",
+        "Coinminer",
+        "Agent_tesla",
+        "Venomrat",
+        "Gh0st_rat",
+        "Nanocore_rat",
+        "Lumma_stealer",
+        "Jackpos",
+        "Netsupportmanager_rat",
+        "Asyncrat",
+        "Cobalt_strike_tool"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cisecurity.org/insights/blog/top-10-malware-q3-2025"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "Digital Doppelgangers: Anatomy of Evolving Impersonation Campaigns Distributing Gh0st RAT",
+      "completeness": "High",
+      "threats": [
+        "Gh0st_rat",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "China",
+        "Japan",
+        "Asia",
+        "India",
+        "Hong kong",
+        "Australia",
+        "Middle east",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "Youdao",
+        "Sogou",
+        "DeepSeek",
+        "Windows Defender",
+        "macOS"
+      ],
+      "algorithms": [
+        "deflate",
+        "exhibit",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/impersonation-campaigns-deliver-gh0st-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-14",
+      "title": "Microsoft Issues Emergency Patch for Windows Server Update Services RCE Vulnerability CVE-2025-59287",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "functions": [
+        "Get-WindowsFeature"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/microsoft-issues-emergency-patch-for-windows-server-update-services-rce-vulnerability-cve-2025-59287/"
+      ]
+    }
+  }
+]

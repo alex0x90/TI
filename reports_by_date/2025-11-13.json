@@ -543,5 +543,319 @@
         "https://www.secureblink.com/cyber-security-news/north-korean-hackers-weaponize-google-find-hub-to-wipe-phones"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "RONINGLOADER: DragonBreaths New Path to PPLAbuse",
+      "completeness": "High",
+      "threats": [
+        "Roningloader",
+        "Gh0st_rat",
+        "Cloudeye",
+        "Agent_tesla",
+        "Hooksigntool_tool",
+        "Process_injection_technique",
+        "Uac_bypass_technique",
+        "Edr-freeze_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Microsoft Teams",
+        "Microsoft Defender",
+        "Windows Defender",
+        "Google Chrome",
+        "Microsoft Teams",
+        "NSIS installer",
+        "ollama",
+        "Windows Defender Application Control",
+        "m installe",
+        "m.exe runn",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "dotnet"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/roningloader",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/defense\\_evasion\\_potential\\_evasion\\_via\\_clipup\\_execution.toml",
+        "https://github.com/Jemmy1228/HookSigntool"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Cross-Chain TxDataHiding Crypto Heist: A Very Chainful Process (Part 3)",
+      "completeness": "Medium",
+      "threats": [
+        "Txdatahiding_technique",
+        "Cobalt_strike_tool",
+        "Viper",
+        "Krnrat",
+        "Moriya",
+        "Beavertail",
+        "Ottercookie",
+        "Clearfake",
+        "Etherhiding_technique",
+        "Rhadamanthys",
+        "Sliver_c2_tool",
+        "Remcos_rat",
+        "Xworm_rat",
+        "Supershell",
+        "Venomrat",
+        "Dcrat",
+        "Gophish_tool",
+        "Adaptixc2_tool",
+        "Mythic_c2",
+        "Asyncrat",
+        "Quasar_rat",
+        "Plugx_rat",
+        "Deimos_botnet",
+        "Shadowpad",
+        "Quarterrig",
+        "Avemaria_rat",
+        "Danabot",
+        "Redline_stealer",
+        "Agent_tesla"
+      ],
+      "geo": [
+        "United kingdom",
+        "Indonesia",
+        "Germany",
+        "Russian",
+        "Mongolia",
+        "Japan",
+        "North korea",
+        "Dprk",
+        "Hong kong",
+        "North korean",
+        "Argentina",
+        "Korea",
+        "China",
+        "Chinese",
+        "Ukraine",
+        "Malaysia",
+        "Russia",
+        "Asia"
+      ],
+      "software": [
+        "NET Framework",
+        "NET Core",
+        "Linux",
+        "PostgreSQL",
+        "Microsoft SQL"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/cross-chain-txdatahiding-crypto-heist-part-3/",
+        "https://github.com/unosquare/embedio"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "APT41 Cyber-Espionage Campaign Targets U.S. Policy Institutions",
+      "completeness": "High",
+      "threats": [
+        "Log4shell_vuln",
+        "Dll_sideloading_technique",
+        "Deed_rat",
+        "Dcsync_technique",
+        "Lolbin_technique",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 19,
+      "software": [
+        "Confluence",
+        "Apache Struts",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://hivepro.com/threat-advisory/apt41-cyber-espionage-campaign-targets-u-s-policy-institutions/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Formbook Delivered Through Multiple Scripts",
+      "completeness": "Low",
+      "threats": [
+        "Formbook"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "sleep"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/32480"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "The Deepfake Threat: Chollima APT Group Uses AI Filters to Infiltrate Crypto and Web3 Companies",
+      "completeness": "Low",
+      "geo": [
+        "Mexican",
+        "Dprk",
+        "Spanish",
+        "North korea",
+        "North korean"
+      ],
+      "ttp_list": [
+        "Soft:",
+        "Astrill",
+        "VPN"
+      ],
+      "links": [
+        "https://socradar.io/deepfake-threat-chollima-apt-group-uses-ai-crypto/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "Increase in Lumma Stealer Activity Coincides with Use of Adaptive Browser Fingerprinting Tactics",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Stealc",
+        "Process_injection_technique",
+        "Ghostsock"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "chrome",
+        "WebRTC",
+        "Telegram"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/k/lumma-stealer-browser-fingerprinting.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-13",
+      "title": "EVALUSION Campaign Delivers Amatera Stealer and NetSupport RAT",
+      "completeness": "High",
+      "threats": [
+        "Amatera_stealer",
+        "Netsupportmanager_rat",
+        "Clickfix_technique",
+        "Acridrain",
+        "Acr_stealer",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Purecryptor",
+        "Process_injection_technique",
+        "Meduza",
+        "Anydesk_tool",
+        "Amadey"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Google Chrome SxS",
+        "Google Chrome",
+        "Google Chrome Canary",
+        "Epic Privacy Browser",
+        "Vivaldi",
+        "360Browser",
+        "CocCoc",
+        "Orbitum",
+        "Torch",
+        "CentBrowser",
+        "have more..."
+      ],
+      "wallets": [
+        "bybit",
+        "mytonwallet",
+        "tonkeeper",
+        "math_wallet",
+        "dappplay",
+        "hycon",
+        "sollet",
+        "liquality_wallet",
+        "binancechain",
+        "auro_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "tezos",
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "zip",
+        "base64",
+        "aes-256",
+        "aes-256-cbc",
+        "cbc"
+      ],
+      "functions": [
+        "Amatera"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/evalusion-campaign-delivers-amatera-stealer-and-netsupport-rat",
+        "https://github.com/eSentire/iocs/blob/main/Amatera/config.json",
+        "https://github.com/eSentire/iocs/blob/main/Amatera/Amatera.py"
+      ]
+    }
   }
 ]

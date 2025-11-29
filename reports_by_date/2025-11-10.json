@@ -170,5 +170,47 @@
         "https://securelist.ru/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/113883/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-10",
+      "title": "Multi-Brand themed Phishing Campaign Harvests Credentials via Telegram Bot API",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Spanish",
+        "Czech",
+        "Korean",
+        "Slovakia",
+        "Deutschland",
+        "Hungary",
+        "German"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 5,
+      "software": [
+        "Telegram",
+        "CryptoJS",
+        "Outlook",
+        "WeTransfer",
+        "Roundcube"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "sendData"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyble.com/blog/multi-brand-phishing-campaign-harvests-credentials/"
+      ]
+    }
   }
 ]

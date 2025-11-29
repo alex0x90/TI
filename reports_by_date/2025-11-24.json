@@ -1,0 +1,320 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "What You Need To Know About Gainsight Breach",
+      "completeness": "Low",
+      "threats": [
+        "Nsocks_tool",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Salesforce",
+        "Salesloft Drift",
+        "Telegram",
+        "Active Directory"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/what-you-need-to-know-about-gainsight-breach/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "Shai-Hulud 2.0: Ongoing Supply Chain Attack",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "docker",
+        "ubuntu",
+        "Linux",
+        "MacOS"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/shai-hulud-2-0-ongoing-supply-chain-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "Xillen Stealer v5 Advanced Credential Theft and Loader Platform",
+      "completeness": "Medium",
+      "threats": [
+        "Xillenstealer",
+        "Polymorphism_technique",
+        "Polyglot_technique",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "AnyConnect",
+        "Docker",
+        "Slack",
+        "Discord",
+        "Chrome",
+        "Firefox",
+        "Chromium"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Telegram"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/xillen-stealer-v5-advanced-credential-theft-and-loader-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "ClickFix Gets Creative: Malware Buried in Images",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Stego_loader",
+        "Donut",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Steganography_technique",
+        "Blob_url_obfuscation_technique",
+        "Junk_code_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "aes",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "hexToKey",
+        "b64ToUint8Array",
+        "xorDecode",
+        "uint8ToUtf8",
+        "reinject",
+        "drkdbVkywZ",
+        "GetManifestResourceStream",
+        "LockBits",
+        "injectAndExecute",
+        "sendStat",
+        "have more..."
+      ],
+      "languages": [
+        "jscript",
+        "powershell",
+        "python",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/clickfix-malware-buried-in-images",
+        "https://gist.github.com/polygonben/b897daea0d8a7f6983fef9dc0e3bf152/raw/10edd10cad29c5be74da7b47a962c13a6156b0bd/stage1.hta",
+        "https://gist.github.com/polygonben/b897daea0d8a7f6983fef9dc0e3bf152#file-stage1-hta",
+        "https://github.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "Morphisec Thwarts Russian-Linked StealC V2 Campaign Targeting Blender Users via Malicious .blend Files",
+      "completeness": "High",
+      "threats": [
+        "Stealc",
+        "Pyramid_c2_tool",
+        "Blenderx",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "Chromium",
+        "Firefox",
+        "Opera",
+        "Chrome",
+        "Telegram",
+        "Discord",
+        "Pidgin"
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/morphisec-thwarts-russian-linked-stealc-v2-campaign-targeting-blender-users-via-malicious-blend-files/",
+        "https://github.com/cessen/rigify/tree/master"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "Browser Notification Hijack via Matrix Push C2",
+      "completeness": "Medium",
+      "threats": [
+        "Clearfake",
+        "Clearshort",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Netsupportmanager_rat",
+        "Amos_stealer",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Latrodectus",
+        "Bitsadmin_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "WordPress",
+        "macOS",
+        "Linux",
+        "Android",
+        "curl"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/browser-notification-hijack-via-matrix-push-c2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "Shai Hulud Launches Second Supply-Chain Attack: Zapier, ENS, AsyncAPI, PostHog, Postman Compromised",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Unix",
+        "curl"
+      ],
+      "functions": [
+        "isBunOnPath",
+        "reloadPath",
+        "downloadAndSetupBun",
+        "findBunExecutable",
+        "main"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains",
+        "https://github.com/search?q=Sha1-Hulud%3A+The+Second+Coming.&ref=opensearch&type=repositories"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "CVE-2025-61757: Oracle Identity Manager Auth Bypass Flaw Added to CISAs KEV",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "- oracle identity_manager (12.2.1.4.0",
+        "14.1.2.1.0)"
+      ],
+      "languages": [
+        "groovy"
+      ],
+      "links": [
+        "https://socradar.io/cve-2025-61757-oracle-identity-manager/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-24",
+      "title": "Morphisec Thwarts Russian-Linked StealC V2 Campaign Targeting Blender Users via Malicious .blend Files",
+      "completeness": "High",
+      "threats": [
+        "Stealc",
+        "Pyramid_c2_tool",
+        "Blenderx",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "Chromium",
+        "Firefox",
+        "Opera",
+        "Chrome",
+        "Telegram",
+        "Discord",
+        "Pidgin"
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/morphisec-thwarts-russian-linked-stealc-v2-campaign-targeting-blender-users-via-malicious-blend-files/",
+        "https://github.com/cessen/rigify/tree/master"
+      ]
+    }
+  }
+]

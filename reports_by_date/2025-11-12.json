@@ -294,5 +294,70 @@
         "https://socket.dev/blog/malicious-chrome-extension-exfiltrates-seed-phrases"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "DEV-1084 and MERCURY: Inside Irans DarkBit Ransomware Operations",
+      "completeness": "High",
+      "threats": [
+        "Ligolo_tool",
+        "Log4shell_vuln",
+        "Ehorus_tool",
+        "Aadinternals_tool",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Quicksand"
+      ],
+      "geo": [
+        "Israeli",
+        "Iranian",
+        "Asia",
+        "Africa",
+        "Irans",
+        "Middle east",
+        "America",
+        "Iran"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 9,
+      "software": [
+        "ChatGPT",
+        "Rport",
+        "Azure AD",
+        "Active Directory",
+        "OpenSSH",
+        "ESXi"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "Microsoft",
+        "Set-Mailbox",
+        "GetItem"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/dev-1084-and-mercury-inside-irans-darkbit-ransomware-operations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-12",
+      "title": "New Threat Alert: Danabot Malware Emerges with Version 669 After Operation Endgame",
+      "completeness": "Low",
+      "threats": [
+        "Danabot",
+        "Spear-phishing_technique"
+      ],
+      "links": [
+        "https://www.cyberaccord.com/new-threat-alert-danabot-malware-emerges-with-version-669-after-operation-endgame/"
+      ]
+    }
   }
 ]

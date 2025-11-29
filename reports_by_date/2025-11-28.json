@@ -1,0 +1,313 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Rare Earth Material Lure Delivering Shellcode Loader",
+      "completeness": "Medium",
+      "geo": [
+        "China",
+        "Singapore"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/Reia/",
+        "https://github.com/dmpdump/ShellcodeFiber/blob/main/main.cpp",
+        "https://github.com/dmpdump"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "MooBot or Flodrix with intermittent activity",
+      "completeness": "Low",
+      "threats": [
+        "Moobot",
+        "Flodrix_botnet",
+        "Mirai",
+        "Rapperbot",
+        "Mountbot"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "TeamSpeak3",
+        "Langflow"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://blog.nicter.jp/2025/11/moobot_2025_3g/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Sketchware-based malware analysis report",
+      "completeness": "Low",
+      "threats": [
+        "Arsink"
+      ],
+      "software": [
+        "Android",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91275/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Tomiris wreaks Havoc: New tools and techniques of the APT group",
+      "completeness": "High",
+      "threats": [
+        "Havoc",
+        "Adaptixc2_tool",
+        "Rshell",
+        "Telebot",
+        "Trojan.win32.rproxy.gen",
+        "Trojan.win32.tjlort.a",
+        "Bitsadmin_tool",
+        "Pyarmor_tool",
+        "Distopia",
+        "Telemiris",
+        "Reversesocks_tool",
+        "Reversesocks5_tool",
+        "Spear-phishing_technique",
+        "Jlorat"
+      ],
+      "geo": [
+        "Uzbekistan",
+        "Russian",
+        "Turkmenistan",
+        "Tajikistan",
+        "Russian federation",
+        "Kyrgyzstan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "curl",
+        "PyInstaller"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "CreateObject"
+      ],
+      "languages": [
+        "cscript",
+        "golang",
+        "powershell",
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://securelist.com/tomiris-new-tools/118143/",
+        "https://github.com/Acebond/ReverseSocks5",
+        "https://github.com/Neosama/Reverse-SOCKS5"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "IRATA Malware Analysis Report",
+      "completeness": "Medium",
+      "threats": [
+        "Irata",
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91274/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Malicious VS Code Extension Impersonating \"Material Icon Theme\" Found in Marketplace",
+      "completeness": "Low",
+      "threats": [
+        "Glassworm"
+      ],
+      "software": [
+        "Docker",
+        "Chrome"
+      ],
+      "languages": [
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2025/11/28/malicious-vs-code-extension-impersonating-material-icon-theme-found-in-marketplace/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Summary summary of malicious campaigns during the week of November 22 - 28",
+      "completeness": "Low",
+      "threats": [
+        "Formbook",
+        "Phantom_stealer",
+        "Grandoreiro",
+        "Snake_keylogger",
+        "Vipkeylogger",
+        "Supercard-x",
+        "Cloudeye",
+        "Herodotus",
+        "Remcos_rat",
+        "Relaynfc",
+        "Agent_tesla",
+        "Nanocore_rat",
+        "Xworm_rat",
+        "Albiriox",
+        "Darkcloud",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "Italy",
+        "Italian"
+      ],
+      "software": [
+        "Office365"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/sintesi-riepilogativa-delle-campagne-malevole-nella-settimana-del-22-28-novembre/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Thor vs. Silver Fox - Uncovering and Defeating a Sophisticated ValleyRat Campaign",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Dll_sideloading_technique",
+        "Byovd_technique",
+        "Spear-phishing_technique",
+        "Uac_bypass_technique",
+        "Icmluautil_tool",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "WinSCP",
+        "Google Chrome",
+        "Microsoft Teams",
+        "Microsoft Defender",
+        "Windows installer",
+        "Chrome",
+        "WinSCP"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2025/11/28/thor-vs-silver-fox-uncovering-and-defeating-a-sophisticated-valleyrat-campaign/",
+        "https://github.com/SigmaHQ/sigma/blob/43b6fae2a001d3af9a53984167dd39d2319fbb40/rules/windows/builtin/windefend/win\\_defender\\_config\\_change\\_exclusion\\_added.yml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Operation Hanoi Thief: Threat Actor targets Vietnamese IT professionals and recruitment teams.",
+      "completeness": "Medium",
+      "threats": [
+        "Lotusharvest",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Plugx_rat",
+        "Lolbin_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Vietnam",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 13,
+      "software": [
+        "WinINet API",
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/9479-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Inside Morte Loader: How Loader as a Service Builds Modern Botnets",
+      "completeness": "Low",
+      "threats": [
+        "Morte_loader",
+        "Mirai",
+        "Rondodox"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WebLogic",
+        "busybox",
+        "curl"
+      ],
+      "links": [
+        "https://socradar.io/blog/inside-morte-loader-loader-as-a-service-botnets/"
+      ]
+    }
+  }
+]

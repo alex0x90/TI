@@ -1,0 +1,417 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "New Android/BankBot-YNRK Trojan Reinforces Mobile Banking Threats",
+      "completeness": "Low",
+      "threats": [
+        "Bankbot-ynrk"
+      ],
+      "software": [
+        "Android"
+      ],
+      "links": [
+        "https://zimperium.com/blog/mobile-threat-watch/new-android/bankbot-ynrk-trojan-reinforces-mobile-banking-threats"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "Cats Got Your Files: Lynx Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Lynx",
+        "Credential_stealing_technique",
+        "Netscan_tool",
+        "Credential_dumping_technique",
+        "Anydesk_tool",
+        "Password_spray_technique",
+        "Netexec_tool",
+        "Lolbin_technique",
+        "Softperfect_netscan_tool"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 0,
+      "software": [
+        "SoftPerfect Network Scanner",
+        "Active Directory",
+        "Windows Security",
+        "Microsoft Edge",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://thedfirreport.com/2025/11/17/cats-got-your-files-lynx-ransomware/",
+        "https://github.com/Pennyw0rth/NetExec",
+        "https://github.com/Pennyw0rth/NetExec/blob/c19841398fc72f5e1aacdd59980b45ef5a034432/nxc/data/nxc.conf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "SmartApeSG campaign uses ClickFix page to push NetSupport RAT",
+      "completeness": "Low",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "Mastodon"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/SmartApeSG+campaign+uses+ClickFix+page+to+push+NetSupport+RAT/32474"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "Analysis Report of AI-Based Obfuscated Malware Apps Using Compromised Legitimate Sites as C2 Servers",
+      "completeness": "Medium",
+      "threats": [
+        "Proguard_tool",
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91077/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "Qilin ransomwares newest tactics: Widespread encryption by any means necessary",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Sandbox_evasion_technique",
+        "Shadow_copies_delete_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 7,
+      "software": [
+        "active directory",
+        "PsExec",
+        "Sysinternals",
+        "ESXi",
+        "BCDEdit",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "aes",
+        "chacha20"
+      ],
+      "functions": [
+        "Get-ADComputer",
+        "Get-ItemProperty",
+        "Get-WinEvent",
+        "Get-Unique",
+        "Set-SCPItem"
+      ],
+      "languages": [
+        "rust",
+        "powershell",
+        "swift"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/qilin-ransomwares-newest-tactics-widespread-encryption-by-any-means-necessary"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "Morphisec Thwarts Sophisticated Tuoni C2 Attack on U.S. Real Estate Firm",
+      "completeness": "Medium",
+      "threats": [
+        "Tuoni_tool",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "Invoke-DataBlock"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/morphisec-thwarts-sophisticated-tuoni-c2-attack-on-us-real-estate-firm/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "UNC5174 Windows Malware Snowlight",
+      "completeness": "Medium",
+      "threats": [
+        "Snowlight",
+        "Vshell",
+        "Snowshell",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "Vietnamese",
+        "Japan",
+        "Asian",
+        "Canada",
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "BIG-IP"
+      ],
+      "algorithms": [
+        "sha256",
+        "ror13",
+        "aes-gcm",
+        "xor"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2025/11/unc5174-windows-snowlight-in-2025/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "Distribution of Malware Abusing LogMeIn and PDQ Connect",
+      "completeness": "Medium",
+      "threats": [
+        "Pdq_connect_tool",
+        "Logmein_tool",
+        "Patorat",
+        "Hvnc_tool",
+        "Localtonet_tool"
+      ],
+      "geo": [
+        "Korea",
+        "Portuguese"
+      ],
+      "software": [
+        "Telegram",
+        "chatgpt",
+        "OpenAI"
+      ],
+      "algorithms": [
+        "xor",
+        "md5"
+      ],
+      "languages": [
+        "delphi",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/en/90968/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "DDoSia Targets Denmark: A Clear Look at the Threat",
+      "completeness": "Low",
+      "threats": [
+        "Ddosia_botnet",
+        "Httpflood_technique",
+        "Synflood_technique",
+        "Ackflood_technique",
+        "Udpflood_technique"
+      ],
+      "geo": [
+        "Danish",
+        "Ukraine",
+        "Denmark",
+        "Russia"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://socradar.io/ddosia-targets-denmark-a-clear-look-at-the-threat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "Cyberattack UAC-0241 against an educational institution in eastern Ukraine using the GAMYBEAR software tool (CERT-UA#18329)",
+      "completeness": "High",
+      "threats": [
+        "Gamybear",
+        "Lazagne_tool",
+        "Resocks_tool"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "software": [
+        "OPENSSH",
+        "curl",
+        "Gmail"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "cscript",
+        "powershell"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6286219"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "ShadowRay 2.0: Attackers Turn AI Against Itself in Global Campaign that Hijacks AI Into Self-Propagating Botnet",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Minerd",
+        "Sockstress_tool",
+        "Interactsh_tool"
+      ],
+      "geo": [
+        "China",
+        "Ireland",
+        "Indonesia",
+        "Chinese",
+        "Brazil",
+        "Korea",
+        "Finland",
+        "United kingdom",
+        "Usa",
+        "Russia",
+        "Moscow"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "systemd",
+        "Linux",
+        "crontab",
+        "MySQL"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1",
+        "base64"
+      ],
+      "functions": [
+        "syscall"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.oligo.security/blog/shadowray-2-0-attackers-turn-ai-against-itself-in-global-campaign-that-hijacks-ai-into-self-propagating-botnet",
+        "https://github.com/ray-project/ray-open-ports-checker",
+        "https://github.com/projectdiscovery/interactsh"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-18",
+      "title": "Autumn Dragon",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Autumn_backdoor",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Canada",
+        "New zealand",
+        "Indo-pacific",
+        "Philippines",
+        "Laos",
+        "Philippine",
+        "Myanmar",
+        "Asia",
+        "Indonesia",
+        "China",
+        "Australia",
+        "Singapore",
+        "Cambodia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 15,
+      "software": [
+        "Telegram",
+        "Task Scheduler",
+        "Windows Defender",
+        "Dropbox",
+        "OperaGX",
+        "curl"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "sha256",
+        "xor",
+        "sha1",
+        "aes"
+      ],
+      "functions": [
+        "TaskScheduler",
+        "Get-MpThreat"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cdn.prod.website-files.com/68cd99b1bd96b42702f97a39/691bf999a544b31f93edb11d_1ef2574b3561b372b9c766a6638315ff_CyberArmor-AutumnDragon-China-nexus-APT-group-target-se-asia.pdf",
+        "https://github.com/bartblaze/Yara-rules"
+      ]
+    }
+  }
+]

@@ -1,0 +1,437 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "Brazilian Campaign: Spreading the Malware via WhatsApp",
+      "completeness": "Medium",
+      "threats": [
+        "Sorvepotel"
+      ],
+      "geo": [
+        "Brasil",
+        "Ita",
+        "Brazilian",
+        "Brazil"
+      ],
+      "software": [
+        "WhatsApp",
+        "Selenium",
+        "Selenium Chrome",
+        "Chrome",
+        "Firefox",
+        "Windows Registry",
+        "Windows Defender",
+        "Chrome",
+        "Twitter"
+      ],
+      "wallets": [
+        "coinbase",
+        "bybit"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "OBJGET",
+        "ExecQuery",
+        "PROCESSEXISTS",
+        "WINLIST",
+        "DLL"
+      ],
+      "languages": [
+        "autoit",
+        "javascript",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/brazilian-campaign-spreading-the-malware-via-whatsapp/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "ToddyCat: your hidden email assistant. Part 1",
+      "completeness": "Medium",
+      "threats": [
+        "Tomberbil",
+        "Procdump_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "Microsoft Exchange Server",
+        "Gmail",
+        "Chrome",
+        "Firefox",
+        "NET Framework",
+        "Google Chrome",
+        "Mozilla Firefox",
+        "Microsoft Edge",
+        "windows service",
+        "Outlook",
+        "Office 365",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "ReadLine"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/toddycat-apt-steals-email-data-from-outlook/118044/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "Xillen Stealer Updates to Version 5 to Evade AI Detection",
+      "completeness": "Medium",
+      "threats": [
+        "Xillenstealer",
+        "Polymorphism_technique",
+        "Dll_hijacking_technique",
+        "Process_hollowing_technique",
+        "Atom_bombing_technique",
+        "Process_doppelganging_technique",
+        "Steganography_technique",
+        "Polyglot_technique",
+        "Ddosia_botnet",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Russian",
+        "Germany",
+        "United kingdom",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 15,
+      "software": [
+        "Docker",
+        "Telegram",
+        "Visual Studio",
+        "JetBrains",
+        "Navicat",
+        "DBeaver",
+        "MySQL",
+        "WinSCP",
+        "WireGuard",
+        "CyberGhost",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "mutate_code"
+      ],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/xillen-stealer-updates-to-version-5-to-evade-ai-detection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "Cl0ps Oracle EBS Zero-Day Campaign: What We Know So Far",
+      "completeness": "Low",
+      "threats": [
+        "Clop"
+      ],
+      "geo": [
+        "Australia",
+        "Kuwait",
+        "Sri lanka",
+        "Japan",
+        "Mexico",
+        "China",
+        "Saudi arabia",
+        "France",
+        "Pakistan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MOVEit",
+        "GoAnywhere",
+        "Telegram"
+      ],
+      "links": [
+        "https://socradar.io/cl0p-oracle-ebs-zeroday-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "ClickFix malware is infecting Macs via Facebook ads for fake AI apps",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Macc_stealer",
+        "Macsyncstealer",
+        "Amos_stealer"
+      ],
+      "geo": [
+        "America",
+        "Australia",
+        "India",
+        "Morocco",
+        "Argentina",
+        "Japan",
+        "Ukraine",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TradingView",
+        "macOS",
+        "Instagram",
+        "OpenAI",
+        "Ledger Live",
+        "Telegram",
+        "Bitwarden",
+        "1Password",
+        "Dashlane",
+        "LastPass",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor",
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "litecoincore",
+        "metamask",
+        "coinbase",
+        "rabby",
+        "bybit",
+        "solflare",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "binance"
+      ],
+      "links": [
+        "https://moonlock.com/clickfix-targeting-macs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "EtherHiding: Fake CAPTCHAs, Click-Fix Lures, and Blockchain-Backed Payload Delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Etherhiding_technique",
+        "Clickfix_technique",
+        "Credential_harvesting_technique",
+        "Amos_stealer",
+        "Vidar_stealer",
+        "Socgholish_loader"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Telegram",
+        "Steam",
+        "curl"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "exhibit"
+      ],
+      "functions": [
+        "load_",
+        "authAndSync",
+        "getPassword",
+        "listenCommands",
+        "taskData",
+        "setDomain",
+        "RPC"
+      ],
+      "languages": [
+        "applescript",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://censys.com/blog/etherhiding-fake-captchas-click-fix-lures-blockchain-backed-payload-delivery",
+        "https://github.com/ethers-io/ethers.js"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "Gainsight Breach Investigation: Another SalesLoft-Style Attack Unfolds",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Salesforce",
+        "SalesLoft Drift"
+      ],
+      "functions": [
+        "Query"
+      ],
+      "languages": [
+        "python",
+        "swift"
+      ],
+      "links": [
+        "https://permiso.io/blog/gainsight-breach-investigation-another-salesloft-style-attack-unfolds"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "Threat Intelligence Report: APT35 Internal Leak of Hacking Campaigns Against Lebanon, Kuwait, Turkey, Saudi Arabia, Korea, and Domestic Iranian Targets",
+      "completeness": "High",
+      "threats": [
+        "Proxyshell_vuln",
+        "Credential_harvesting_technique",
+        "Mimikatz_tool",
+        "Thaqib_rat",
+        "Supply_chain_technique",
+        "Proxylogon_exploit",
+        "Masscan_tool",
+        "Aitm_technique",
+        "Cobalt_strike_tool",
+        "Dns_tunneling_technique",
+        "Rat-2ac2",
+        "Reverserdp_technique"
+      ],
+      "geo": [
+        "China",
+        "Israel",
+        "Iran",
+        "Saudi",
+        "Cyprus",
+        "Jordan",
+        "Qatar",
+        "Singapore",
+        "Korea",
+        "Kuwait",
+        "Iranian",
+        "Asia",
+        "Turkey",
+        "Afghanistan",
+        "Israeli",
+        "Yemen",
+        "Saudi arabia",
+        "Middle east",
+        "Turkish",
+        "Egypt",
+        "Tehran",
+        "Iraq",
+        "Syria",
+        "Lebanon"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 8,
+      "software": [
+        "Ivanti",
+        "curl",
+        "aegis",
+        "Microsoft Exchange",
+        "PyInstaller",
+        "Dropbox",
+        "ProtonDrive",
+        "Telegram",
+        "Windows service",
+        "ASP.NET",
+        "have more..."
+      ],
+      "algorithms": [
+        "7zip"
+      ],
+      "functions": [
+        "TaskClient"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://dti.domaintools.com/threat-intelligence-report-apt35-internal-leak-of-hacking-campaigns-against-lebanon-kuwait-turkey-saudi-arabia-korea-and-domestic-iranian-targets/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-21",
+      "title": "Summary summary of malicious campaigns during the week of November 15 - 21",
+      "completeness": "Medium",
+      "threats": [
+        "Snake_keylogger",
+        "Formbook",
+        "Btmob_rat",
+        "Copybara",
+        "Sturnus",
+        "Phantom_stealer",
+        "Xworm_rat",
+        "Remcos_rat",
+        "Mintsloader",
+        "Smishing_technique",
+        "Agent_tesla",
+        "Grandoreiro",
+        "Donutloader",
+        "Cloudeye",
+        "Dbatloader"
+      ],
+      "geo": [
+        "Aruba",
+        "Italia",
+        "Italy",
+        "Italian"
+      ],
+      "software": [
+        "Zimbra"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/sintesi-riepilogativa-delle-campagne-malevole-nella-settimana-del-15-21-novembre/"
+      ]
+    }
+  }
+]

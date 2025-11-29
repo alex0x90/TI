@@ -1,0 +1,567 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "The Golden Scale: 'Tis the Season for Unwanted Gifts",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "New",
+        "york"
+      ],
+      "software": [
+        "Salesforce",
+        "Telegram",
+        "Salesloft Drift",
+        "Linux",
+        "ESXi",
+        "HubSpot"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/new-shinysp1d3r-ransomware/",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-11-21-IOCs-for-ShinySp1d3r-ransomware.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Old tech, new vulnerabilities: NTLM abuse, ongoing exploitation in 2025",
+      "completeness": "Medium",
+      "threats": [
+        "Smbrelay_tool",
+        "Mitm_technique",
+        "Petitpotam_vuln",
+        "Printerbug_tool",
+        "Passthehash_technique",
+        "Mimikatz_tool",
+        "Impacket_tool",
+        "Ntlmrelayx_tool",
+        "Wmiexec_tool",
+        "Remcos_rat",
+        "Smokeloader",
+        "Shadowladder",
+        "Secretsdump_tool",
+        "Smbexec_tool",
+        "Smbmap_tool",
+        "Phantomcore",
+        "Avemaria_rat"
+      ],
+      "geo": [
+        "Uzbekistan",
+        "Russian",
+        "Belarusian",
+        "Colombian",
+        "Russia",
+        "Latin american"
+      ],
+      "software": [
+        "MSSQL",
+        "Active Directory",
+        "PsExec",
+        "MSHTML engine",
+        "Internet Explorer",
+        "SMB server",
+        "Windows SMB client"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "Out-Minidump"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/ntlm-abuse-in-2025/118132/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Bloody Wolf: A Blunt Crowbar Threat To Justice",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Netsupportmanager_rat",
+        "Strrat",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Russia",
+        "Kyrgyzstan",
+        "Russian",
+        "Uzbekistan",
+        "Kazakhstan",
+        "Asia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "createTempFiles"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/bloody-wolf/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Dark Web Profile: Berserk Bear",
+      "completeness": "Medium",
+      "threats": [
+        "Havex_rat",
+        "Teamspy",
+        "Teamviewer_tool",
+        "Watering_hole_technique",
+        "Supply_chain_technique",
+        "Oldrea",
+        "Synful_knock",
+        "Passthehash_technique",
+        "Credential_dumping_technique",
+        "Hydra",
+        "Crackmapexec_tool",
+        "Mimikatz_tool",
+        "Secretsdump_tool",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "America",
+        "Russian",
+        "Hungarian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 58,
+      "software": [
+        "PsExec",
+        "Outlook"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-berserk-bear/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "VSCode Marketplace Hit by Rogue Prettier Extension Delivering Anivia Stealer",
+      "completeness": "Low",
+      "threats": [
+        "Anivia"
+      ],
+      "software": [
+        "VSCode",
+        "Twitter",
+        "WhatsApp",
+        "Visual Studio Code"
+      ],
+      "algorithms": [
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "swift"
+      ],
+      "links": [
+        "https://gbhackers.com/vscode-marketplace-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Discord Bot backdoor malware from the UNC5174 group",
+      "completeness": "Low",
+      "threats": [
+        "Vshell",
+        "Discord_c2_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "aes"
+      ],
+      "functions": [
+        "AddHandler"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91228/",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/bwmarrin/discordgo"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Zscaler Threat Hunting Discovers and Reconstructs a Sophisticated Water Gamayun APT Group Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Eviltwin_technique",
+        "Credential_harvesting_technique",
+        "Silentprism",
+        "Darkwisp",
+        "Rhadamanthys"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "UnRAR"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "TaskPad"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/water-gamayun-apt-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "FlexibleFerret malware continues to strike",
+      "completeness": "High",
+      "threats": [
+        "Flexibleferret",
+        "Terminalfix_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "Chrome",
+        "Dropbox",
+        "Gatekeeper"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "RunDLL_5179_Main",
+        "generate_5179_UUID",
+        "RunDLL",
+        "main",
+        "recover"
+      ],
+      "languages": [
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/flexibleferret-malware-continues-to-adapt/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Whisper Leak: A novel side-channel attack on remote language models",
+      "completeness": "Low",
+      "geo": [
+        "San",
+        "francisco"
+      ],
+      "software": [
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "ecdh",
+        "chacha20",
+        "aes"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/11/07/whisper-leak-a-novel-side-channel-cyberattack-on-remote-language-models/",
+        "http://github.com/yo-yo-yo-jbo/whisper\\_leak"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Fake adult websites pop realistic Windows Update screen to deliver stealers via ClickFix",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Jackfix_technique",
+        "Rhadamanthys",
+        "Vidar_stealer",
+        "Redline_stealer",
+        "Amadey",
+        "Filefix_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Guinea",
+        "Australia",
+        "Russian",
+        "Indonesia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Security",
+        "Steam",
+        "Telegram",
+        "Chrome",
+        "Firefox",
+        "Microsoft Defender",
+        "twitter"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/fake-adult-websites-pop-realistic-windows-update-screen-to-deliver-stealers-via-clickfix/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Inside the GitHub Infrastructure Powering North Koreas Contagious Interview npm Attacks",
+      "completeness": "High",
+      "threats": [
+        "Ottercookie",
+        "Beavertail",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Japan",
+        "North koreas",
+        "Dprk",
+        "North korean",
+        "North korea"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 23,
+      "software": [
+        "Chrome",
+        "macOS",
+        "Linux",
+        "Node.js",
+        "virtualbox",
+        "qemu",
+        "virtualbox\\|qemu",
+        "WalletConnect"
+      ],
+      "wallets": [
+        "keplr",
+        "metamask",
+        "core_wallet",
+        "tonkeeper",
+        "xdefi",
+        "solflare",
+        "safepal",
+        "unisat",
+        "coinbase",
+        "rabby",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "functions": [
+        "eval",
+        "setHeader",
+        "main",
+        "s",
+        "ss",
+        "aa",
+        "bb",
+        "unref",
+        "setInterval",
+        "getBasePaths",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/north-korea-contagious-interview-npm-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "RMM Tools Under Attack: Exploring More Effective Detections",
+      "completeness": "Low",
+      "threats": [
+        "Meshcentral_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Meshagent_tool",
+        "Anonvnc_tool"
+      ],
+      "geo": [
+        "Ukrainian"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1036.003",
+        "T1219",
+        "T1543.003"
+      ],
+      "software": [
+        "Linux",
+        "Windows service"
+      ],
+      "functions": [
+        "main"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.immersivelabs.com/resources/blog/rmm-tools-under-attack-exploring-more-effective-detections",
+        "https://github.com/Ylianst/MeshAgent/blob/add1d7fef3b341a3474fbce86cdab54ddcde2af9/modules/interactive.js#L223",
+        "https://github.com/Ylianst/MeshCentral"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "CastleLoader & CastleRAT: Behind TAG150s Modular Malware Delivery System",
+      "completeness": "Medium",
+      "threats": [
+        "Castleloader",
+        "Nightshade",
+        "Sectop_rat",
+        "Warmcookie",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "gzip",
+        "zip"
+      ],
+      "functions": [
+        "unsecuredCopyToClipboard"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/castleloader-castlerat-behind-tag150s-modular-malware-delivery-system"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "ShadowV2 Casts a Shadow Over IoT Devices \\| FortiGuard Lab",
+      "completeness": "Medium",
+      "threats": [
+        "Shadowv2",
+        "Mirai",
+        "Udpflood_technique",
+        "Tcpflood_technique"
+      ],
+      "geo": [
+        "Saudi arabia",
+        "Oceania",
+        "Kazakhstan",
+        "Czechia",
+        "Croatia",
+        "Egypt",
+        "Thailand",
+        "Japan",
+        "South africa",
+        "United kingdom",
+        "Africa",
+        "Morocco",
+        "America",
+        "Canada",
+        "Greece",
+        "Belgium",
+        "Russia",
+        "Australia",
+        "Taiwan",
+        "Bolivia",
+        "Asia",
+        "Netherlands",
+        "Italy",
+        "China",
+        "Mexico",
+        "Chile",
+        "Turkey",
+        "France",
+        "Brazil",
+        "Austria",
+        "Philippines"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "DigiEver",
+        "Mac OS"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/shadowv2-casts-a-shadow-over-iot-devices"
+      ]
+    }
+  }
+]

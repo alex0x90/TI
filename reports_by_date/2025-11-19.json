@@ -1,0 +1,252 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "Masked in Memory: A Hidden .PYC fragment utilises cvtres.exe to communicate with C&C",
+      "completeness": "Low",
+      "threats": [
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows kernel",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/masked-in-memory-a-hidden-pyc-fragment-utilises-cvtres-exe-to-communicate-with-cc/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "Unwanted Gifts: Major Campaign Lures Targets with Fake Party Invites",
+      "completeness": "Low",
+      "threats": [
+        "Logmein_tool",
+        "Naverisk_tool",
+        "Screenconnect_tool",
+        "Hidemouse",
+        "Passview_tool",
+        "Defendercontrol_tool",
+        "Simplehelp_tool",
+        "Atera_tool"
+      ],
+      "software": [
+        "Zoom",
+        "Windows Defender"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/rmm-logmein-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "What We Do In The Shadow (AI): New Malware Strain Vamps Up",
+      "completeness": "High",
+      "threats": [
+        "Lamehug_tool",
+        "Promptlock",
+        "Sesameop",
+        "Todesk_tool",
+        "Juicypotato_tool",
+        "Pwdump_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "curl",
+        "Hugging Face",
+        "Azure Functions",
+        "SunLogin",
+        "NetSarang",
+        "Chrome",
+        "TightVNC"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2025/nov/new-malware-chat-completions-llm-shadow-ai"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "Analyzing the latest Sneaky2FA Browser-in-the-Browser phishing page",
+      "completeness": "Low",
+      "threats": [
+        "Sneaky_2fa_tool",
+        "Bitm_technique",
+        "Tycoon_framework",
+        "Nakedpages_tool",
+        "Flowerstorm_tool",
+        "Salty_2fa_tool",
+        "Evilginx_tool",
+        "Aitm_technique"
+      ],
+      "software": [
+        "Telegram",
+        "Cloudflare Turnstile"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://pushsecurity.com/blog/analyzing-the-latest-sneaky2fa-phishing-page/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "ShadowPad attack case analysis exploiting WSUS remote code execution vulnerability (CVE-2025-59287)",
+      "completeness": "Medium",
+      "threats": [
+        "Shadowpad",
+        "Powercat_tool",
+        "Netcat_tool",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "gzip",
+        "deflate",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91101/",
+        "https://github.com/besimorhino/powercat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "Fake Malware TOAD via Malvertizing",
+      "completeness": "Low",
+      "threats": [
+        "Toad_technique"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "links": [
+        "https://malasada.tech/fake-malware-toad-via-malvertizing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "New Amazon Threat Intelligence findings: Nation-state actors bridging cyber and kinetic warfare",
+      "completeness": "Low",
+      "geo": [
+        "Iran",
+        "Israeli",
+        "Iranian"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/new-amazon-threat-intelligence-findings-nation-state-actors-bridging-cyber-and-kinetic-warfare/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "Reframing Insights",
+      "completeness": "Low",
+      "geo": [
+        "Tanzania",
+        "Middle east",
+        "Russia",
+        "Laos",
+        "Guinea",
+        "Russian",
+        "China",
+        "Africa",
+        "Korea",
+        "Chinese",
+        "American",
+        "Hong kong",
+        "Oman",
+        "Seychelles",
+        "Dprk",
+        "North korean",
+        "Vietnam",
+        "Nigeria",
+        "Armenia",
+        "Bangladesh",
+        "Iraq",
+        "North koreans",
+        "Nigerian",
+        "Korean",
+        "North koreas"
+      ],
+      "software": [
+        "Instagram",
+        "Chrome"
+      ],
+      "links": [
+        "https://chollima-group.io/posts/reframing-insights-our-research-msmt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-19",
+      "title": "Thousands of ASUS Routers Hijacked in Global Operation \"WrtHug\" in a Suspected China-Backed Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Lapdogs",
+        "Ayysshush"
+      ],
+      "geo": [
+        "Russia",
+        "Hong kong",
+        "Chinese",
+        "China",
+        "Taiwan",
+        "Sweden",
+        "America",
+        "Asia",
+        "Korea",
+        "Asian",
+        "Japan"
+      ],
+      "software": [
+        "ORB Networks",
+        "Ruckus"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://securityscorecard.com/wp-content/uploads/2025/11/STRIKE_Asus_WrtHug-Report_V6.pdf"
+      ]
+    }
+  }
+]

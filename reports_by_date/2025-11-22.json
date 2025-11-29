@@ -1,0 +1,157 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-11-22",
+      "title": "Tycoon 2FA: A Technical Analysis of its Adversary-in-the-Middle Phishing Operation",
+      "completeness": "Medium",
+      "threats": [
+        "Tycoon_2fa",
+        "Aitm_technique",
+        "Credential_harvesting_technique",
+        "Mitm_technique",
+        "Spear-phishing_technique",
+        "Right-to-left_override_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 18,
+      "software": [
+        "Gmail",
+        "Outlook",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "rc4",
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/tycoon-2fa-a-technical-analysis-of-its-adversary-in-the-middle-phishing-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-22",
+      "title": "Analysis of suspected APT-C-26 (Lazarus) group's attack operation using remote IT to deploy monitoring programs in disguise",
+      "completeness": "Low",
+      "geo": [
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Shell",
+        "Windows Defender",
+        "Windows Firewall",
+        "Windows Update service",
+        "Windows service",
+        "WeChat"
+      ],
+      "algorithms": [
+        "xor",
+        "md5"
+      ],
+      "links": [
+        "https://www.ctfiot.com/283366.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-22",
+      "title": "WhatsApp compromise leads to Astaroth deployment",
+      "completeness": "Medium",
+      "threats": [
+        "Astaroth",
+        "Maverick"
+      ],
+      "geo": [
+        "Brazil",
+        "Austria",
+        "Latin american"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Selenium Chrome"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "autoit",
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/11/20/whatsapp-compromise-leads-to-astaroth-deployment/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-22",
+      "title": "Detecting and responding to Funklocker ransomware with Wazuh",
+      "completeness": "Medium",
+      "threats": [
+        "Funksec_ransomware",
+        "Wevtutil_tool",
+        "Vssadmin_tool",
+        "Shadow_copies_delete_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 7,
+      "software": [
+        "Windows Defender",
+        "Windows Security",
+        "Sysinternals",
+        "Windows service"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Set-MpPreference",
+        "Set-ExecutionPolicy",
+        "Write-Output"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://wazuh.com/blog/detecting-and-responding-to-funklocker-ransomware-with-wazuh/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-22",
+      "title": "Security Advisory: Unusual Activity related to the Gainsight application",
+      "completeness": "Low",
+      "threats": [
+        "Nsocks_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "Salesloft Drift"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://help.salesforce.com/s/articleView?id=005229029&type=1"
+      ]
+    }
+  }
+]
