@@ -563,5 +563,140 @@
         "https://www.fortinet.com/blog/threat-research/shadowv2-casts-a-shadow-over-iot-devices"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Defending Against Sha1-Hulud: The Second Coming",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/defending-against-sha1-hulud-the-second-coming/",
+        "https://github.com/asyncapi/spec-json-schemas/issues/603"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "The story of how we almost got hacked",
+      "completeness": "Medium",
+      "threats": [
+        "Bec_technique",
+        "Aitm_technique",
+        "Evilproxy_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Asian",
+        "African",
+        "Spain",
+        "India",
+        "Germany",
+        "Belgium",
+        "Denmark"
+      ],
+      "software": [
+        "WeTransfer"
+      ],
+      "links": [
+        "https://www.invictus-ir.com/news/the-story-of-how-we-almost-got-hacked",
+        "https://github.com/invictus-ir/IOCs/blob/main/IOCs%20-%20VendorVandals%20-%20How%20we%20almost%20got%20hacked%20-%20Nov%202025.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Dark Web Profile: ByteToBreach",
+      "completeness": "Low",
+      "geo": [
+        "Portugal",
+        "India",
+        "Singapore",
+        "Latin america",
+        "Chile",
+        "Kazakhstan",
+        "Panama",
+        "Finland",
+        "Uzbekistan",
+        "Italy",
+        "Netherlands",
+        "Ukraine",
+        "Asia",
+        "Russian",
+        "France",
+        "Cyprus",
+        "Poland",
+        "Seychelles",
+        "Spain",
+        "Russia",
+        "Algeria",
+        "Africa",
+        "Thailand",
+        "America"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "WordPress",
+        "Telegram",
+        "Instagram",
+        "WebLogic"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-bytetobreach/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-26",
+      "title": "Fake Battlefield 6 Pirated Versions and Game Trainers Used to Deploy Stealers and C2 Agents",
+      "completeness": "Low",
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Vivaldi",
+        "Discord",
+        "Steam"
+      ],
+      "wallets": [
+        "iwallet",
+        "yoroi"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/fake-battlefield-6-pirated-games-trainers"
+      ]
+    }
   }
 ]

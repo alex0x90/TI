@@ -460,5 +460,70 @@
         "https://www.jamf.com/blog/flexibleferret-macos-malware-recruitment-lure/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-25",
+      "title": "Inside Valkyrie Stealer: Capabilities, Evasion Techniques, and Operator Profile",
+      "completeness": "High",
+      "threats": [
+        "Valkyrie_stealer",
+        "Valkyrie",
+        "Themida_tool",
+        "Akira_ransomware",
+        "Lumma_stealer",
+        "Credential_harvesting_technique",
+        "Prysmax",
+        "Polymorphism_technique",
+        "Scylla",
+        "Procmon_tool",
+        "Process_hacker_tool"
+      ],
+      "geo": [
+        "Egyptian",
+        "Usa",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Chrome",
+        "Steam",
+        "qemu",
+        "Discord Canary",
+        "Discord PTB",
+        "Valorant",
+        "Fortnite"
+      ],
+      "wallets": [
+        "metamask",
+        "atomicwallet",
+        "electrum",
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "chacha20",
+        "aes-gcm",
+        "zip",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "Sleep",
+        "build_key_and_nonce",
+        "GDI"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://www.dexpose.io/inside-valkyrie-stealer-capabilities-evasion-techniques-and-operator-profile/",
+        "https://github.com/ergrelet/unlicense"
+      ]
+    }
   }
 ]

@@ -113,5 +113,257 @@
         "https://www.trendmicro.com/en_us/research/25/k/shai-hulud-2-0-targets-cloud-and-developer-systems.html"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-27",
+      "title": "Trouble in the air: A spree of campaigns targeting the aerospace industry in Russia",
+      "completeness": "High",
+      "threats": [
+        "Formbook",
+        "Cloudeye",
+        "Remcos_rat",
+        "Phantomremote",
+        "Spear-phishing_technique",
+        "Typosquatting_technique",
+        "Darkwatchman",
+        "Lolbin_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "London",
+        "Kazakhstan",
+        "Russian",
+        "Russian federation",
+        "Nigeria",
+        "Qatar",
+        "Nigerian",
+        "Moscow",
+        "American",
+        "Abu dhabi",
+        "Belarus",
+        "Crimea",
+        "Russia",
+        "Berlin",
+        "Ukrainian",
+        "Switzerland",
+        "Canada",
+        "Germany",
+        "America",
+        "Ukraine",
+        "German",
+        "Japan",
+        "Pol"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 25,
+      "software": [
+        "Telegram",
+        "Outlook",
+        "Office365",
+        "Starlink",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.intrinsec.com/wp-content/uploads/2025/11/INTRINSEC-2025-Threat-Report-Trouble_in_the_air.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-27",
+      "title": "Analysis of the WhatsWorm campaign leading to the implementation of the Eternity Stealer",
+      "completeness": "High",
+      "threats": [
+        "Eternity_stealer",
+        "Whatsworm",
+        "Babuk2",
+        "Akira_ransomware",
+        "Dll_injection_technique",
+        "Process_hollowing_technique",
+        "Eternidade",
+        "Astaroth",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Brasil",
+        "Portuguese",
+        "United kingdom",
+        "Brazil",
+        "Mexico",
+        "Portugal",
+        "Ita",
+        "Spain",
+        "Brazilian",
+        "Spanish"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "selenium",
+        "Chrome",
+        "Windows Defender",
+        "sushiswap",
+        "Ledger Live",
+        "Mozilla Firefox",
+        "Microsoft Edge"
+      ],
+      "wallets": [
+        "coinbase",
+        "bybit",
+        "cryptocom",
+        "electrum",
+        "exodus_wallet",
+        "atomicwallet",
+        "metamask",
+        "ledgerlive",
+        "trezor",
+        "mycrypto",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "uniswap",
+        "pancakeswap",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1",
+        "zip",
+        "xor",
+        "lznt1"
+      ],
+      "functions": [
+        "Get-ItemProperty",
+        "Get-FileHash",
+        "bytearray",
+        "getContacts",
+        "sendBatch"
+      ],
+      "languages": [
+        "delphi",
+        "autoit",
+        "visual_basic",
+        "python",
+        "php",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://ish.com.br/wp-content/uploads/2025/11/Analise-da-Campanha-do-WhatsWorm-levando-a-implementacao-do-Eternidade-Stealer-1-1.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-27",
+      "title": "Albiriox Exposed: A New RAT Mobile Malware Targeting Global Finance and Crypto Wallets",
+      "completeness": "High",
+      "threats": [
+        "Albiriox",
+        "Credential_harvesting_technique",
+        "Hvnc_tool",
+        "Penny",
+        "Jsonpacker_tool"
+      ],
+      "geo": [
+        "Austrian"
+      ],
+      "software": [
+        "Google Play",
+        "Android",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "md5",
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cleafy.com/cleafy-labs/albiriox-rat-mobile-malware-targeting-global-finance-and-crypto-wallets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-27",
+      "title": "TangleCrypt: a sophisticated but buggy malware packer",
+      "completeness": "Medium",
+      "threats": [
+        "Tanglecrypt_tool",
+        "Edr-killer",
+        "Stonestop",
+        "Abyssworker",
+        "Byovd_technique",
+        "Qilin_ransomware",
+        "Vmprotect_tool",
+        "Poortry",
+        "Burntcigar",
+        "Code_virtualizer_tool",
+        "Heartcrypt_tool",
+        "Xworm_rat",
+        "Bloat_technique"
+      ],
+      "software": [
+        "Visual Studio",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "links": [
+        "https://labs.withsecure.com/publications/tanglecrypt",
+        "https://github.com/WithSecureLabs/iocs/blob/master/TangleCrypt/TangleCrypt\\_YARA.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-27",
+      "title": "3 OAuth TTPs Seen This Month - and How to Detect Them with Entra ID Logs",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "Asia"
+      ],
+      "software": [
+        "Graph API",
+        "Azure AD",
+        "Azure Active Directory",
+        "Windows Hello"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/recent-oauth-attacks-detection-strategies"
+      ]
+    }
   }
 ]

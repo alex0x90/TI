@@ -1,0 +1,526 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "ShadowV2: Advanced Technical Threat Analysis of a New Mirai-Based Botnet",
+      "completeness": "High",
+      "threats": [
+        "Shadowv2",
+        "Mirai",
+        "Satori",
+        "Masuta",
+        "Murdoc_botnet",
+        "Nugache",
+        "Udpflood_technique",
+        "Icmpflood_technique",
+        "Synflood_technique",
+        "Ackflood_technique",
+        "Tcpstomp_technique",
+        "Httpflood_technique",
+        "Dns_amplification_technique",
+        "Dropbear_tool",
+        "Polymorphism_technique",
+        "Mitm_technique",
+        "Credential_harvesting_technique",
+        "Netscan_tool",
+        "Procdump_tool",
+        "Puremasuta",
+        "Owari"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "Asia",
+        "America",
+        "California"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 18,
+      "software": [
+        "VirtualBox",
+        "QEMU",
+        "curl",
+        "Linux",
+        "Chrome",
+        "Firefox"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "exhibit",
+        "prng",
+        "xor",
+        "rc4"
+      ],
+      "functions": [
+        "mprotect"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-research/shadow-v2-advanced-technical-threat-analysis-of-a-new-mirai-based-botnet",
+        "https://github.com/Yara-Rules/rules"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "NGC5081 attacks telecom with an advanced IDFKA backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Idfka",
+        "Tinyshell",
+        "Vshell",
+        "Snowlight",
+        "Portscan_tool",
+        "Garble_tool",
+        "Goblinrat"
+      ],
+      "geo": [
+        "Asian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "PostgreSQL",
+        "Linux",
+        "sudo",
+        "zabbix",
+        "nginx"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "aes",
+        "sha1",
+        "aes-ecb",
+        "chacha20",
+        "sha256"
+      ],
+      "functions": [
+        "access"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6247/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "Arkanix Stealer: Newly discovered short term profit malware",
+      "completeness": "Low",
+      "threats": [
+        "Arkanix",
+        "Vmprotect_tool",
+        "Process_injection_technique",
+        "Elevator"
+      ],
+      "software": [
+        "Discord",
+        "Steam",
+        "Nuitka",
+        "telegram",
+        "Chrome",
+        "Opera",
+        "Vivaldi",
+        "Chrome",
+        "Chromium",
+        "BlockBlasters"
+      ],
+      "wallets": [
+        "exodusweb3",
+        "metamask",
+        "electrum"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.gdatasoftware.com/blog/2025/12/38306-arkanix-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "New Mac malware DigitStealer can steal your files, passwords, and browser data",
+      "completeness": "Medium",
+      "threats": [
+        "Digitstealer",
+        "Clickfix_technique",
+        "Amos_stealer",
+        "Banshee",
+        "Macc_stealer",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Asia",
+        "North korea",
+        "Hong kong"
+      ],
+      "software": [
+        "macOS",
+        "Ledger Live",
+        "Instagram"
+      ],
+      "languages": [
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://moonlock.com/new-mac-malware-digitstealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "Chinese APT targets Uzbekistan",
+      "completeness": "Medium",
+      "threats": [
+        "Plugx_rat",
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Uzbekistan"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "Set-Variable"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "http://www.tgsoft.it/italy/news_archivio.asp?id=1693"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "Attacks of the Striking Panda: APT31 Today",
+      "completeness": "High",
+      "threats": [
+        "Localplugx",
+        "Cloudsorcerer",
+        "Coffproxy",
+        "Vtchatter",
+        "Cloudyloader",
+        "Onedrivedoor",
+        "Yaleak",
+        "Grewapacha",
+        "Cobalt_strike_tool",
+        "Dll_sideloading_technique",
+        "Tailscale_tool",
+        "Dev_tunnels_tool",
+        "Impacket_tool",
+        "Wmiexec_tool",
+        "Smbexec_tool",
+        "Mimikatz_tool",
+        "Passthehash_technique",
+        "Radmin_tool",
+        "Mstsc_tool",
+        "Owowa",
+        "Coffloader",
+        "Vmprotect_tool",
+        "Plugx_rat",
+        "Garble_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 1,
+      "software": [
+        "MACOSX",
+        "Chrome",
+        "Unix macOS",
+        "Windows Setup",
+        "Outlook",
+        "Linux",
+        "Wolfssl",
+        "winlogon",
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "lznt1",
+        "base64",
+        "rc4",
+        "xor",
+        "aes",
+        "md5",
+        "sha256",
+        "sha1",
+        "ror13"
+      ],
+      "functions": [
+        "Get-WinEvent",
+        "Write-Output",
+        "GetUserNameW"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/striking-panda-attacks-apt31-today/",
+        "https://github.com/evilashz/SharpADUserIP",
+        "https://github.com/GhostPack/SharpDPAPI"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "DNS Uncovers Infrastructure Used in SSO Attacks",
+      "completeness": "Low",
+      "threats": [
+        "Evilginx_tool",
+        "Aitm_technique",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "California"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/dns-uncovers-infrastructure-used-in-sso-attacks/",
+        "https://github.com/kgretzky/evilginx2",
+        "https://github.com/infobloxopen/threat-intelligence/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "Frankenstein in a smartphone: a new hybrid of NFCGate and RatOn Trojan is being prepared to attack Russian bank customers",
+      "completeness": "Medium",
+      "threats": [
+        "Nfcgate_tool",
+        "Raton",
+        "Craxsrat",
+        "Supercard",
+        "Smartapp"
+      ],
+      "geo": [
+        "Brazil",
+        "Russia",
+        "Italy",
+        "Germany",
+        "Ukrainian",
+        "Czech",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "TikTok",
+        "RuStore",
+        "WhatsApp",
+        "Telegram",
+        "Viber"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "setMode"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/raton/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "A Tsunami Sweeping the Cyber Battlefield Analysis of SectorA01s Hacking Activities",
+      "completeness": "High",
+      "threats": [
+        "Anydesk_tool",
+        "Lolbin_technique",
+        "Pyobfuscate_tool",
+        "Beavertail",
+        "Invisibleferret"
+      ],
+      "geo": [
+        "Brazil",
+        "United kingdom",
+        "North korea",
+        "North korean",
+        "Russia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 22,
+      "software": [
+        "Electron",
+        "Node.js",
+        "curl",
+        "Linux",
+        "chrome",
+        "Google Chrome",
+        "Task Scheduler",
+        "Windows Defender",
+        "Opera",
+        "Microsoft Store",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "startServer",
+        "eval",
+        "download_payload",
+        "hk_loop",
+        "ssh_run",
+        "bro_down",
+        "download_browse",
+        "ss_upd",
+        "ld",
+        "ss_upf",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://medium.com/@nshcthreatrecon/a-tsunami-sweeping-the-cyber-battlefield-analysis-of-sectora01s-hacking-activities-e4d006baae2f"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "ByteToBreach: A Deep Dive into a Persistent Data Leak Operator",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Raccoon_stealer",
+        "Stealc"
+      ],
+      "geo": [
+        "Cyprus",
+        "Singapore",
+        "Uzbekistan",
+        "Ukraine",
+        "Algeria",
+        "Kazakhstan",
+        "Chile",
+        "Poland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "WordPress",
+        "ProtonMail",
+        "Gmail",
+        "Instagram"
+      ],
+      "links": [
+        "https://www.kelacyber.com/blog/bytetobreach-a-deep-dive-into-a-persistent-data-leak-operator/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "Coin miner malware continuously distributed via USB",
+      "completeness": "Low",
+      "threats": [
+        "Dirtybulk",
+        "Cutfail",
+        "Xmrig_miner",
+        "Process_hacker_tool",
+        "Selfdel",
+        "Trojan/win.evo-gen.r731187",
+        "Coinminer",
+        "Trojan/win.miner3.r512976",
+        "Trojan/bat.runner.s3110",
+        "Trojan/vbs.runner.s3111"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "software": [
+        "Windows Defender",
+        "Process Explorer"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "TaskMgr"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91280/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-01",
+      "title": "GitLab discovers widespread npm supply chain attack",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Shai-hulud",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "downloadAndSetupBun",
+        "scanFilesystem",
+        "fetchToken",
+        "aL0"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://about.gitlab.com/blog/gitlab-discovers-widespread-npm-supply-chain-attack/"
+      ]
+    }
+  }
+]

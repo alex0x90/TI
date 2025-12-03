@@ -309,5 +309,164 @@
         "https://socradar.io/blog/inside-morte-loader-loader-as-a-service-botnets/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Arcane Werewolf is back with an updated Loki implant",
+      "completeness": "High",
+      "threats": [
+        "Loki_stealer",
+        "Loki_loader",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Mythic_c2",
+        "Havoc"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "aes",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "SetCurrentDirectoryW",
+        "GetCurrentDirectoryW"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/arcane-werewolf-vernulsya-s-obnovlennym-implantom-loki/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "CloudSEK Detects Over 2,000 Holiday-Themed Fake Stores Exploiting Black Friday and Festive Sales",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "London",
+        "Guangdong",
+        "China"
+      ],
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Instagram",
+        "Gmail"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/cloudsek-detects-over-2-000-holiday-themed-fake-stores-exploiting-black-friday-and-festive-sales"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "SetcodeRat Exposed: A Telegram Secret Stealing Trojan Customized for Chinese-speaking Regions",
+      "completeness": "Medium",
+      "threats": [
+        "Setcoderat",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "China",
+        "Taiwan",
+        "Chinese",
+        "Hong kong"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "links": [
+        "https://ti.qianxin.com/blog/articles/setcoderat-customized-for-chinese-speaking-regions-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-28",
+      "title": "Not Thor anymore: how we tracked down one faction and \"woke up\" another.",
+      "completeness": "High",
+      "threats": [
+        "Krustyloader",
+        "Sliver_c2_tool",
+        "Nltest_tool",
+        "Adrecon_tool",
+        "Godpotato_tool",
+        "Secretsdump_tool",
+        "Mimikatz_tool",
+        "Lockbit",
+        "Babuk",
+        "Tactical_rmm_tool",
+        "Meshcentral_tool",
+        "Meshagent_tool",
+        "Process_injection_technique",
+        "Credential_dumping_technique",
+        "Fscan_tool",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "American",
+        "Russia",
+        "America",
+        "Russian"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 50,
+      "software": [
+        "Ivanti",
+        "Linux",
+        "SharePoint server",
+        "WireGuard",
+        "Active Directory",
+        "Telegram",
+        "Microsoft Outlook",
+        "Microsoft SharePoint Server",
+        "ASP.NET",
+        "Windows Service",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "base64",
+        "xor",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "java",
+        "rust",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/967426/"
+      ]
+    }
   }
 ]

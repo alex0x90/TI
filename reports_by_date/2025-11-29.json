@@ -29,5 +29,92 @@
         "https://www.ctfiot.com/284246.html"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-29",
+      "title": "Analysis of the Rust implants found in the malicious VS Code extension",
+      "completeness": "Low",
+      "threats": [
+        "Glassworm"
+      ],
+      "software": [
+        "macOS"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2025/11/29/analysis-of-the-rust-implants-found-in-the-malicious-vs-code-extension/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-29",
+      "title": "Weekly Threat Infrastructure Investigation(Week47)",
+      "completeness": "Low",
+      "threats": [
+        "Brc4_tool",
+        "Cobalt_strike_tool",
+        "Supershell"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "links": [
+        "https://disconinja.hatenablog.com/entry/2025/11/29/212128"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-11-29",
+      "title": "APT36 Python Based ELF Malware Targeting Indian Government Entities",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "California",
+        "Los angeles",
+        "Indian",
+        "Pakistan",
+        "Germany"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 20,
+      "software": [
+        "Linux",
+        "libreoffice",
+        "systemd",
+        "PyInstaller",
+        "Debian Linux",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip",
+        "md5",
+        "exhibit",
+        "deflate"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt36-python-based-elf-malware-targeting-indian-government-entities/"
+      ]
+    }
   }
 ]
