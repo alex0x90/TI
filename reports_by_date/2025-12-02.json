@@ -296,5 +296,118 @@
         "https://www.ctfiot.com/284804.html"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-02",
+      "title": "Arkanix Stealer Jumps from Discord to Browser Sessions and Corporate Logins",
+      "completeness": "High",
+      "threats": [
+        "Arkanix",
+        "Process_injection_technique",
+        "Clickfix_technique",
+        "Vmprotect_tool",
+        "Credential_dumping_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Chromium",
+        "Chrome",
+        "Google Chrome",
+        "PyInstaller",
+        "DirectX",
+        "Opera",
+        "Vivaldi",
+        "Steam",
+        "Roblox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "electrum"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/arkanix-stealer-jumps-from-discord-to-browser-sessions-and-corporate-logins/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-02",
+      "title": "Malicious Rust Crate evm-units Serves Cross-Platform Payloads for Silent Execution",
+      "completeness": "High",
+      "threats": [
+        "Evm-units",
+        "Supply_chain_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "China",
+        "Asian",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 10,
+      "software": [
+        "Linux",
+        "MacOS",
+        "Outlook"
+      ],
+      "crypto": [
+        "ethereum",
+        "uniswap"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "get_evm_version",
+        "check",
+        "temp_dir",
+        "main"
+      ],
+      "languages": [
+        "applescript",
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-rust-crate-evm-units-serves-cross-platform-payloads"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-02",
+      "title": "Glassworm's resurgence",
+      "completeness": "Low",
+      "threats": [
+        "Glassworm"
+      ],
+      "software": [
+        "Flutter"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://secureannex.com/blog/glassworm-continued/"
+      ]
+    }
   }
 ]

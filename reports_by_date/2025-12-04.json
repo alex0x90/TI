@@ -1,0 +1,524 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "SEEDSNATCHER : Dissecting an Android Malware Targeting Multiple Crypto Wallet Mnemonic Phrases",
+      "completeness": "Medium",
+      "threats": [
+        "Seedsnatcher"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 27,
+      "software": [
+        "Android",
+        "Telegram",
+        "Weibo"
+      ],
+      "wallets": [
+        "tokenpocket",
+        "imtoken",
+        "metamask",
+        "coinbase",
+        "tronlink",
+        "tronglobal"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256"
+      ],
+      "functions": [
+        "Task-Visibility",
+        "Manipulation",
+        "Exfiltrates"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/seedsnatcher-dissecting-an-android-malware-targeting-multiple-crypto-wallet-mnemonic-phrases/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Silver Foxs Russian Ruse: ValleyRAT Hits China via Fake Microsoft Teams Attack",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Russia",
+        "American",
+        "Chinese",
+        "China",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Telegram",
+        "Chrome",
+        "Windows Defender",
+        "Embarcadero"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-silver-foxs-russian-ruse-fake-microsoft-teams-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Analysis of the new Trojan StreamSpy using WebSocket, which is called Mahayana (APT-Q-36).",
+      "completeness": "High",
+      "threats": [
+        "Streamspy",
+        "Spyder",
+        "Dunaochong"
+      ],
+      "geo": [
+        "Asian",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "aes",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "getCommand",
+        "CreateProcessW"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://zhuanlan.zhihu.com/p/1979499278541017681"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Velociraptor Misuse, Pt. II: The Eye of the Storm",
+      "completeness": "High",
+      "threats": [
+        "X2anylock",
+        "Toolshell_vuln",
+        "Cloudflared_tool",
+        "Tightvnc_tool",
+        "Dll_sideloading_technique"
+      ],
+      "software": [
+        "Velociraptor",
+        "Visual Studio Code",
+        "OpenSSH",
+        "Microsoft Defender for Endpoint",
+        "Windows Defender",
+        "Fedora",
+        "Active Directory",
+        "SharePoint server",
+        "Windows service",
+        "TightVNC",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/velociraptor-misuse-part-two-eye-of-the-storm",
+        "https://gist.github.com/james-northey/2baf62d1d06ae39aec44fd4b736ac858#file-toolshell-log",
+        "https://github.com",
+        "https://gist.github.com/james-northey/2baf62d1d06ae39aec44fd4b736ac858/raw/07b263c85835279af17d89d0d149603fa08832a8/toolshell.log"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Sanctioned but Still Spying: Intellexas Prolific Zero-Day Exploits Continue",
+      "completeness": "Medium",
+      "threats": [
+        "Predator_spyware",
+        "Watering_hole_technique",
+        "Preyhunter"
+      ],
+      "geo": [
+        "Uzbekistan",
+        "Saudi arabia",
+        "Mongolian",
+        "Pakistan",
+        "Russian",
+        "Egypt",
+        "Tajikistan",
+        "Mali",
+        "Kazakhstan",
+        "Angola"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/intellexa-zero-day-exploits-continue/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "The Next Target of Scattered LAPSUS$ Hunters Zendesk",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Evilginx_tool",
+        "Sim_swapping_technique",
+        "Supply_chain_technique",
+        "Mfa_bombing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Zendesk",
+        "Salesloft Drift",
+        "Salesforce"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/the-next-target-of-scattered-lapsus-hunters-zendesk"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "New Stealth KGB RAT Marketed by Threat Actors on Underground Forums",
+      "completeness": "Low",
+      "threats": [
+        "Kgb_rat",
+        "Hvnc_tool"
+      ],
+      "software": [
+        "Twitter",
+        "WhatsApp",
+        "Windows Defender"
+      ],
+      "links": [
+        "https://gbhackers.com/k-g-b-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "ValleyRAT Campaign Targets Job Seekers, Abuses Foxit PDF Reader for DLL Side-loading",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Valleyrat",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Foxit"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "exhibit",
+        "7zip",
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/l/valleyrat-campaign.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Windows Stealers: How Modern Infostealers Harvest Credentials",
+      "completeness": "Low",
+      "threats": [
+        "Sryxen"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "Firefox",
+        "Discord",
+        "curl",
+        "telegram",
+        "macOS"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "aes-256-gcm",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "SetBreakpoint",
+        "GetMasterKey",
+        "GetCookie",
+        "MainBlock",
+        "system"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://deceptiq.com/blog/windows-stealers-technical-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "MuddyWater: Snakes by the riverbank",
+      "completeness": "High",
+      "threats": [
+        "Fooder",
+        "Muddyviper",
+        "Gosocks5_tool",
+        "Quicksand",
+        "Muddyrot",
+        "Lazagne_tool",
+        "Crackmapexec_tool",
+        "Spear-phishing_technique",
+        "Danabot",
+        "Shark",
+        "Marlin",
+        "Mango",
+        "Oilforcegtx",
+        "Syncro_tool",
+        "Mimikatz_tool",
+        "Atera_tool",
+        "Simplehelp_tool",
+        "Anydesk_tool",
+        "Hackbrowser",
+        "Yamux_tool",
+        "Resocks_tool",
+        "Go-socks5_tool",
+        "Credential_harvesting_technique",
+        "Trojan-proxy"
+      ],
+      "geo": [
+        "Iranian",
+        "Israel",
+        "Ukraine",
+        "Egypt",
+        "Iran",
+        "America",
+        "Middle east",
+        "Ireland",
+        "Israeli"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 42,
+      "software": [
+        "Firefox",
+        "Windows Security",
+        "Chromium",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "Opera",
+        "Microsoft Edge",
+        "Google Chrome",
+        "steam",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "sha1",
+        "aes-cbc"
+      ],
+      "functions": [
+        "Sleep"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/muddywater-snakes-riverbank/",
+        "https://github.com/AlessandroZ/LaZagne",
+        "https://github.com/byt3bl33d3r/CrackMapExec"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Hook for Gold: Inside GoldFactory's ampaign That Turns Apps Into Goldmines",
+      "completeness": "High",
+      "threats": [
+        "Gigaflower",
+        "Gigabud_rat",
+        "Skyhook_tool",
+        "Frihook",
+        "Pinehook",
+        "Mmrat",
+        "Smishing_technique",
+        "Remo_trojan",
+        "Dobby_hook_framework"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "Apac",
+        "Vietnamese",
+        "Thailand",
+        "Indonesia",
+        "Vietnam"
+      ],
+      "software": [
+        "Android",
+        "WebRTC",
+        "Google Play"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "VoIP",
+        "onTransact",
+        "IPC"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/turning-apps-into-gold/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Albiriox Exposed: A New RAT Mobile Malware Targeting Global Finance and Crypto Wallets",
+      "completeness": "High",
+      "threats": [
+        "Albiriox",
+        "Credential_harvesting_technique",
+        "Acvnc_tool",
+        "Hvnc_tool",
+        "Penny",
+        "Jsonpacker_tool"
+      ],
+      "geo": [
+        "Austrian"
+      ],
+      "software": [
+        "Google Play",
+        "Android",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "md5",
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cleafy.com/cleafy-labs/albiriox-rat-mobile-malware-targeting-global-finance-and-crypto-wallets#6"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Return of ClayRat: Expanded Features and Techniques",
+      "completeness": "Low",
+      "threats": [
+        "Clayrat"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 18,
+      "software": [
+        "Android",
+        "Dropbox",
+        "Google Play",
+        "Whatsapp"
+      ],
+      "algorithms": [
+        "aes",
+        "cbc"
+      ],
+      "functions": [
+        "onNotificationPosted"
+      ],
+      "links": [
+        "https://zimperium.com/blog/return-of-clayrat-expanded-features-and-techniques",
+        "https://github.com/Zimperium/IOC/tree/master/2025-12-ClayRatv3"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Shai Hulud 2.0, now with a wiper flavor",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Trufflehog_tool"
+      ],
+      "geo": [
+        "Vietnam",
+        "Brazil",
+        "India",
+        "France",
+        "Russia",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/shai-hulud-2-0/118214/"
+      ]
+    }
+  }
+]

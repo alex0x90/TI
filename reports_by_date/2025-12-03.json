@@ -1,0 +1,153 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "Shai-Hulud V2 Poses Risk To NPM Supply Chain",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "macOS",
+        "Linux",
+        "Docker",
+        "ubuntu"
+      ],
+      "algorithms": [
+        "deflate",
+        "base64",
+        "gzip",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/shai-hulud-v2-poses-risk-npm-supply-chain",
+        "https://github.com/trufflesecurity/trufflehog"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "Operation DupeHike : UNG0902 targets Russian employees with DUPERUNNER and AdaptixC2",
+      "completeness": "High",
+      "threats": [
+        "Duperunner",
+        "Adaptixc2_tool",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian federation",
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 21,
+      "algorithms": [
+        "zip",
+        "7zip",
+        "sha256"
+      ],
+      "functions": [
+        "GetTargetPID",
+        "CreateToolHelp"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/9512-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "DIANNA Explains 4: Nimbus ManticoreMonstrous Malware",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "exhibit"
+      ],
+      "functions": [
+        "RPC"
+      ],
+      "links": [
+        "https://www.deepinstinct.com/blog/dianna-explains-4-nimbus-manticore-monstrous-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "Technical Analysis of Matanbuchus 3.0",
+      "completeness": "Medium",
+      "threats": [
+        "Matanbuchus_maas",
+        "Junk_code_technique",
+        "Rhadamanthys",
+        "Netsupportmanager_rat",
+        "Microsoft_quick_assist_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "chacha20",
+        "murmur"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-matanbuchus-3-0",
+        "https://github.com/ThreatLabz/tools/blob/main/matanbuchus/matanbuchus.proto"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "4.3 Million Browsers Infected: Inside ShadyPanda's 7-Year Malware Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Mitm_technique",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.koi.ai/blog/4-million-browsers-infected-inside-shadypanda-7-year-malware-campaign"
+      ]
+    }
+  }
+]
