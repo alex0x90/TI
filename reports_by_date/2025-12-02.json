@@ -409,5 +409,36 @@
         "https://secureannex.com/blog/glassworm-continued/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-02",
+      "title": "QuasarRAT Malware Campaign using CVE-2025-6218",
+      "completeness": "Medium",
+      "threats": [
+        "Quasar_rat",
+        "Steganography_technique",
+        "Tinba",
+        "Kuaibu8"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows remote access"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "visual_basic"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/quasarrat-malware-campaign-using-cve-2025-6218/",
+        "https://github.com/Levbohol"
+      ]
+    }
   }
 ]

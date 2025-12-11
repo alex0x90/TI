@@ -1,0 +1,621 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "AMOS Stealer Exploits AI Trust: Malware Delivered Through ChatGPT and Grok",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Credential_harvesting_technique",
+        "Clickfix_technique",
+        "Seo_poisoning_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "macOS",
+        "OpenAI",
+        "Gatekeeper",
+        "curl",
+        "sudo",
+        "Node.js",
+        "Ledger Live",
+        "macOS Gatekeeper",
+        "Claude",
+        "have more..."
+      ],
+      "wallets": [
+        "ledger_wallet",
+        "trezor",
+        "electrum",
+        "metamask",
+        "coinbase"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "applescript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/amos-stealer-chatgpt-grok-ai-trust"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "Spiderman Phishing Kit Mimics Top European Banks With A Few Clicks",
+      "completeness": "Low",
+      "threats": [
+        "Spiderman_tool",
+        "Bec_technique",
+        "Smishing_technique",
+        "Spamgpt_tool",
+        "Matrixpdf_tool",
+        "Atroposia"
+      ],
+      "geo": [
+        "Germany",
+        "Polish",
+        "Deutsche",
+        "Switzerland",
+        "Belgium",
+        "Austria"
+      ],
+      "software": [
+        "Android",
+        "Twitter"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/spiderman-phishing-kit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "macOS Stealers: How Modern Infostealers Harvest Credentials",
+      "completeness": "Low",
+      "threats": [
+        "Chainbreaker_tool",
+        "Banshee_stealer",
+        "Banshee"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 14,
+      "software": [
+        "macOS",
+        "Firefox",
+        "Chrome",
+        "Chromium",
+        "Unix"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "3des",
+        "pbkdf2",
+        "xor",
+        "zip",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "getMacOSPassword",
+        "getProfiles",
+        "getIP",
+        "writeToFile",
+        "NSUserName"
+      ],
+      "languages": [
+        "applescript",
+        "objective_c",
+        "c_language"
+      ],
+      "links": [
+        "https://deceptiq.com/blog/macos-stealers-technical-analysis",
+        "https://github.com/n0fate/chainbreaker",
+        "https://github.com/vxunderground/MalwareSourceCode/blob/main/MacOS/MacOS.Stealer.Banshee.7z"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "To be expected: CVE-2025-55182 is being actively exploited by attackers",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Mirai",
+        "Bashlite",
+        "Rondodox",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "curl",
+        "AppArmor",
+        "SELinux",
+        "busybox",
+        "Linux"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/cve-2025-55182-exploitation/114236/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "Pro-Russia Hacktivists Conduct Opportunistic Attacks Against US and Global Critical Infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Password_spray_technique",
+        "Ddosia_botnet",
+        "Nmap_tool"
+      ],
+      "geo": [
+        "Czech",
+        "Swedish",
+        "Australian",
+        "French",
+        "Ukraine",
+        "United kingdom",
+        "Canadian",
+        "Russia",
+        "France",
+        "Russian",
+        "Ukrainian",
+        "Latvian",
+        "Romanian",
+        "Italian",
+        "Spain",
+        "New zealand",
+        "Spanish",
+        "German",
+        "Italy"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 18,
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-343a",
+        "https://github.com/cisagov/Decider/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "Cracking ValleyRAT: From Builder Secrets to Kernel Rootkits",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Winos",
+        "Boxedapp_packer_tool",
+        "Uacme_tool",
+        "Uac_bypass_technique",
+        "Apc_injection_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio",
+        "Windows kernel",
+        "Microsoft Defender",
+        "Windows Registry",
+        "Telegram",
+        "Chrome",
+        "Sogou",
+        "WeChat",
+        "telegram telegram"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "sha512",
+        "sha384",
+        "sha1",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "main",
+        "DropAndInstallRootkit",
+        "GetProcID_dwm",
+        "CreateProcessMalseclogon",
+        "IrpDeviceControlHandler",
+        "UMInjection",
+        "ForceDeleteFile",
+        "SetDriverStartType_SystemStart",
+        "UMInjectionRoutine",
+        "UMInject",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/cracking-valleyrat-from-builder-secrets-to-kernel-rootkits/",
+        "https://github.com/GkaMei/winos4.0",
+        "https://github.com/Logkiss/Rat-winos4.0-gh0st/tree/master/%E9%93%B6%E7%8B%90Winos"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "PeerBlight Linux Backdoor Exploits React2Shell CVE-2025-55182",
+      "completeness": "High",
+      "threats": [
+        "Peerblight",
+        "React2shell_vuln",
+        "Rotajakiro",
+        "Cowtunnel_tool",
+        "Zinfoq",
+        "Timestomp_technique",
+        "Kaiji",
+        "Xmrig_miner",
+        "Torii_botnet",
+        "Bittorrent_tool",
+        "Utorrent_tool",
+        "Mstsc_tool",
+        "Sliver_c2_tool",
+        "Udpflood_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "BitTorrent",
+        "curl",
+        "systemd",
+        "nginx",
+        "Unix",
+        "sudo",
+        "macOS",
+        "Mac OS",
+        "Docker",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "prng",
+        "cbc",
+        "des",
+        "aes-256",
+        "aes",
+        "md5",
+        "xor",
+        "aes-128-cbc",
+        "rsa-2048",
+        "exhibit"
+      ],
+      "functions": [
+        "prctl"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/peerblight-linux-backdoor-exploits-react2shell",
+        "https://gist.github.com/import-pandas-as-numpy/aa73e4bc73bb6b23ec6e8ea982687ace#file-annotated\\_react2shell-js",
+        "https://gist.github.com/import-pandas-as-numpy/aa73e4bc73bb6b23ec6e8ea982687ace/raw/b11d75096a580720cf5744203ff00f411199e254/annotated\\_react2shell.js",
+        "https://github.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "APT PROFILE GROUP 123",
+      "completeness": "Medium",
+      "threats": [
+        "Reaper",
+        "Slowdrift",
+        "Oceansalt",
+        "Happywork",
+        "Freenki",
+        "N1stagent",
+        "Kevdroid",
+        "Poohmilk",
+        "Winerack",
+        "Karae",
+        "Ruhappy",
+        "Gelcapsule",
+        "Ricecurry",
+        "Soundwave",
+        "Zumkong",
+        "Nokki",
+        "Syscon",
+        "Carrotball",
+        "Greezebackdoor",
+        "Navrat_rat",
+        "Rokrat",
+        "Carrotbat",
+        "Coraldeck",
+        "Pooraim",
+        "Milkdrop",
+        "Shutterspeed",
+        "Final1stspy",
+        "Erebus",
+        "Bluelight",
+        "Chinotto",
+        "Kospy",
+        "M2rat",
+        "Spear-phishing_technique",
+        "Mauicrypt",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Romania",
+        "Kuwait",
+        "Middle east",
+        "Poland",
+        "North korean",
+        "Asia",
+        "Japan",
+        "Korea",
+        "China",
+        "Nepal",
+        "India",
+        "Vietnam",
+        "Czechia",
+        "Russia"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 29,
+      "software": [
+        "Flash Player",
+        "Scripting Engine",
+        "Internet Explorer"
+      ],
+      "languages": [
+        "python",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-group-123/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "New Vishing Attack Leverages Microsoft Teams Calls and QuickAssist to Deploy .NET Malware",
+      "completeness": "Low",
+      "threats": [
+        "Microsoft_quick_assist_tool"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "NET Core"
+      ],
+      "algorithms": [
+        "xor",
+        "aes-cbc"
+      ],
+      "functions": [
+        "Teams"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/new-vishing-attack-leverages-microsoft-teams-call/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "Goldeneye Dog (APT-Q-27) abuses AWS S3 storage buckets to distribute latest malicious payloads",
+      "completeness": "Medium",
+      "threats": [
+        "Procmon_tool",
+        "Process_hacker_tool"
+      ],
+      "geo": [
+        "Tokyo",
+        "Philippines",
+        "China",
+        "California",
+        "India",
+        "Japan",
+        "San francisco",
+        "Hong kong"
+      ],
+      "software": [
+        "qemu",
+        "process explorer",
+        "Internet Explorer",
+        "Chrome",
+        "Firefox",
+        "Sogou",
+        "WeChat"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "crc-32",
+        "sha1",
+        "deflate",
+        "base64",
+        "gzip"
+      ],
+      "functions": [
+        "main"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.ctfiot.com/286193.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "APT-C-53 (Gamaredon) uses CVE-2025-8088 to conduct phishing attacks.",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "- rarlab winrar (<7.13)"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/zerWPti8aO8ymhOT1Ij-ig"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "01flip: Multi-Platform Ransomware Written in Rust",
+      "completeness": "High",
+      "threats": [
+        "01flip",
+        "Sliver_c2_tool",
+        "Lockbit",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "Asia",
+        "Philippines",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Zimbra",
+        "fsutil"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "aes-128-cbc",
+        "rsa-2048"
+      ],
+      "functions": [
+        "setZeroData"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust/",
+        "https://github.com/BishopFox/sliver",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-06-24-IOCs-for-01flip-ransomware.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "NANOREMOTE, cousin of FINALDRAFT",
+      "completeness": "High",
+      "threats": [
+        "Nanoremote",
+        "Finaldraft",
+        "Wmloader",
+        "Minidump_tool",
+        "Pathloader"
+      ],
+      "geo": [
+        "Chinese",
+        "Philippines"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "aes",
+        "xor",
+        "base64",
+        "aes-cbc",
+        "sha256",
+        "md5",
+        "exhibit"
+      ],
+      "functions": [
+        "GetStdHandle"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/nanoremote",
+        "https://github.com/hasherezade/libpeconv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "[Includes IOC\\] Analysis of Wild Exploitation Incidents of Next.js RCE Vulnerability",
+      "completeness": "Low",
+      "threats": [
+        "Nezha_tool"
+      ],
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/a0uB8-dr25TSdeIb2Towrw"
+      ]
+    }
+  }
+]

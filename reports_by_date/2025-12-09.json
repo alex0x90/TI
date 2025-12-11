@@ -1,0 +1,514 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "React2Shell: Technical Deep-Dive & In-the-Wild Exploitation of CVE-2025-55182",
+      "completeness": "High",
+      "threats": [
+        "React2shell_vuln",
+        "Credential_harvesting_technique",
+        "Sliver_c2_tool",
+        "Xmrig_miner",
+        "C3pool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Node.js",
+        "Docker"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1"
+      ],
+      "functions": [
+        "Function",
+        "eval"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/nextjs-cve-2025-55182-react2shell-deep-dive"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "LLM's M.O.: F6 analysts examine the attack using PureCrypter and DarkTrack RATs",
+      "completeness": "Medium",
+      "threats": [
+        "Purecryptor",
+        "Darktrack",
+        "Darktrack_rat",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Norway"
+      ],
+      "software": [
+        "Opera_GX",
+        "Opera",
+        "Telegram",
+        "Viber",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/purecrypter-darktrack-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "Inside the Triada Battle: A Five-Year Investigation and the Security Upgrades It Triggered",
+      "completeness": "Low",
+      "threats": [
+        "Triada_trojan",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "India",
+        "Turkey",
+        "France",
+        "Turkish"
+      ],
+      "software": [
+        "PropellerAds",
+        "Android",
+        "Discord",
+        "WhatsApp",
+        "Gmail",
+        "Chrome"
+      ],
+      "links": [
+        "https://adex.com/blog/triada-malvertising-case-study/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "JS#SMUGGLER: Multi-Stage - Hidden iframes, Obfuscated JavaScript, Silent Redirectors & NetSupport RAT Delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Js-smuggler",
+        "Netsupportmanager_rat",
+        "Lolbas_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 13,
+      "software": [
+        "Android",
+        "Node.js",
+        "Windows ActiveX",
+        "Windows security",
+        "Windows Defender",
+        "Windows Powershell"
+      ],
+      "algorithms": [
+        "aes",
+        "gzip",
+        "aes-256-ecb",
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "_0x19d1",
+        "DOM",
+        "createScript",
+        "_0x4eba19",
+        "generateRandomString",
+        "checkLastVisit",
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://www.securonix.com/blog/jssmuggler-multi-stage-hidden-iframes-obfuscated-javascript-silent-redirectors-netsupport-rat-delivery/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "Makop ransomware: GuLoader and privilege escalation in attacks against Indian businesses",
+      "completeness": "Medium",
+      "threats": [
+        "Makop",
+        "Cloudeye",
+        "Phobos",
+        "Mimikatz_tool",
+        "Agent_tesla",
+        "Formbook",
+        "Loki_bot",
+        "Credential_dumping_technique",
+        "Vmprotect_tool",
+        "Nlbrute_tool",
+        "Password_spray_technique",
+        "Netscan_tool",
+        "Advanced-port-scanner_tool",
+        "Masscan_tool",
+        "Defendercontrol_tool",
+        "Byovd_technique",
+        "Medusalocker",
+        "Akira_ransomware",
+        "Qilin_ransomware",
+        "Process_hacker_tool",
+        "Lazagne_tool",
+        "Netpass_tool",
+        "Ransomhub",
+        "Blackbasta",
+        "Rhysida",
+        "Av-killer"
+      ],
+      "geo": [
+        "Indian",
+        "Brazil",
+        "Germany",
+        "India"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Microsoft Defender",
+        "ThrottleStop",
+        "Local Security Authority",
+        "twitter"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/makop-ransomware-guloader-and-privilege-escalation-in-attacks-against-indian-businesses/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "Deceptive Layoff-Themed HR Email Distributes Remcos RAT Malware",
+      "completeness": "Low",
+      "threats": [
+        "Remcos_rat"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "UNIX"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/deceptive-layoff-themed-hr-email-distributes-remcos-rat-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "EtherRAT: DPRK uses novel Ethereum implant in React2Shell attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Etherrat",
+        "React2shell_vuln",
+        "Cobalt_strike_tool",
+        "Sliver_c2_tool",
+        "Vshell",
+        "Xmrig_miner",
+        "Etherhiding_technique",
+        "Beavertail",
+        "Credential_harvesting_technique",
+        "Invisibleferret",
+        "Supply_chain_technique",
+        "Log4shell_vuln"
+      ],
+      "geo": [
+        "China",
+        "North korean",
+        "Korea",
+        "Dprk",
+        "North korea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Node.js",
+        "curl",
+        "Systemd",
+        "crontab"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc",
+        "aes",
+        "md5"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "MetaRAT-based Attack Campaign Targeting Japanese Organizations",
+      "completeness": "High",
+      "threats": [
+        "Metarat",
+        "Talisman",
+        "Plugx_rat",
+        "Shadowpad",
+        "Ratels",
+        "Antidebugging_technique",
+        "Keylogdump_tool",
+        "Dll_sideloading_technique",
+        "Rainyday",
+        "Turian",
+        "Timestomp_technique",
+        "Eagerbee",
+        "Littlelamb_wooltea",
+        "Pitsock",
+        "Pitfuel"
+      ],
+      "geo": [
+        "Asia",
+        "China",
+        "Kazakhstan",
+        "Japanese",
+        "Chinese",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "Ivanti",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "aes-256-ecb",
+        "gzip",
+        "xor",
+        "lznt1",
+        "sha256",
+        "aes",
+        "rc4"
+      ],
+      "functions": [
+        "Code"
+      ],
+      "languages": [
+        "c_language"
+      ],
+      "links": [
+        "https://www.lac.co.jp/lacwatch/report/20251208_004569.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "Threat Spotlight: Storm-0249 Moves from Mass Phishing to Precision EDR Exploitation",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Lolbin_technique",
+        "Clickfix_technique",
+        "Lockbit",
+        "Blackcat",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "software": [
+        "curl",
+        "Windows Installer",
+        "Microsoft Defender",
+        "Windows Registry"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://reliaquest.com/threat-spotlight-storm-0249-precision-endpoint-exploitation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "New eBPF Filters for Symbiote and BPFdoor Malware",
+      "completeness": "Low",
+      "threats": [
+        "Symbiote",
+        "Bpfdoor",
+        "Bvp47",
+        "Ebpfkit",
+        "Triplecross",
+        "Timestomp_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Claude"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/new-ebpf-filters-for-symbiote-and-bpfdoor-malware",
+        "https://github.com/radareorg/radare2-mcp",
+        "https://github.com/radareorg/radare2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "Lumma Stealer: Danger lurking in fake game updates from itch.io and Patreon",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer"
+      ],
+      "software": [
+        "Steam",
+        "Node.js",
+        "burpsuite",
+        "virtualbox",
+        "hyper-v",
+        "qemu",
+        "BlockBlasters"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.gdatasoftware.com/blog/2025/12/38310-lumma-stealer-itchio-patreon",
+        "https://github.com/nexe/nexe",
+        "https://github.com/unex/nexeDecompiler"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "New BYOVD loader behind DeadLock ransomware attack",
+      "completeness": "Medium",
+      "threats": [
+        "Byovd_technique",
+        "Deadlock",
+        "Shadow_copies_delete_technique",
+        "Winrm_tool",
+        "Anydesk_tool",
+        "Mstsc_tool",
+        "Process_hollowing_technique",
+        "Rustdesk_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 3,
+      "software": [
+        "Windows Defender",
+        "Windows service",
+        "Dropbox",
+        "Microsoft SQL Server",
+        "MySQL",
+        "QuickBooks",
+        "Microsoft Exchange",
+        "Apache Tomcat"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "CreateFile",
+        "ZwTerminateProcess",
+        "Test-Admin"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/byovd-loader-deadlock-ransomware/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2025/12/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-09",
+      "title": "React2Shell exploited to deploy EtherRAT across cloud servers",
+      "completeness": "High",
+      "threats": [
+        "React2shell_vuln",
+        "Etherrat"
+      ],
+      "geo": [
+        "China",
+        "Dprk",
+        "North korea"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Systemd",
+        "crontab",
+        "curl",
+        "linux"
+      ],
+      "crypto": [
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/react2shell-exploited-to-deploy-etherrat-across-cloud-servers/"
+      ]
+    }
+  }
+]

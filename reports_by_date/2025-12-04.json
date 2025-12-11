@@ -520,5 +520,58 @@
         "https://securelist.com/shai-hulud-2-0/118214/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Dangerous Invitations: Russian Threat Actor Spoofs European Security Events in Targeted Phishing Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Device_code_phishing_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Serbia",
+        "Russia",
+        "Indo pacific",
+        "Russian",
+        "Indo-pacific",
+        "Belgium"
+      ],
+      "software": [
+        "WhatsApp",
+        "Microsoft Entra",
+        "Linux",
+        "Android",
+        "Gmail",
+        "Volexity Volcano"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.volexity.com/blog/2025/12/04/dangerous-invitations-russian-threat-actor-spoofs-european-security-events-in-targeted-phishing-attacks/",
+        "https://github.com/denniskniep/DeviceCodePhishing",
+        "https://github.com/volexity/threat-intel/blob/main/2025/2025-12-03%20UTA0355/iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-04",
+      "title": "Decoding Brickstorms Garble strings",
+      "completeness": "Low",
+      "threats": [
+        "Brickstorm",
+        "Garble_tool"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/decoding-brickstorms-garble-strings-b0a60828b3cc?source=rss-36e34fe15919------2"
+      ]
+    }
   }
 ]

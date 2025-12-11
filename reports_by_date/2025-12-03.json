@@ -149,5 +149,208 @@
         "https://www.koi.ai/blog/4-million-browsers-infected-inside-shadypanda-7-year-malware-campaign"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "Malicious VSCode Extension Launches Multi-Stage Attack Chain with Anivia Loader and OctoRAT",
+      "completeness": "Medium",
+      "threats": [
+        "Anivia",
+        "Octorat",
+        "Process_hollowing_technique",
+        "Uac_bypass_technique",
+        "Fodhelper_technique",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Germany"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 18,
+      "software": [
+        "VSCode",
+        "Visual Studio Code",
+        "Windows COM",
+        "NET Framework",
+        "Windows security",
+        "Chrome",
+        "Firefox",
+        "Windows Task Scheduler",
+        "Windows service",
+        "Windows Firewall",
+        "have more..."
+      ],
+      "wallets": [
+        "bitcoincore",
+        "electrum",
+        "exodus_wallet",
+        "atomicwallet",
+        "coinomi"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "aes-256",
+        "cbc",
+        "aes",
+        "sha256"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/malicious-vscode-extension-anivia-octorat-attack-chain",
+        "https://github.com/biwwwwwwwwwww/vscode",
+        "https://github.com/biwwwwwwwwwww/vscode/commits/main/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "From KPOT to Koi: The privatisation of a stealer family",
+      "completeness": "Medium",
+      "threats": [
+        "Kpot_stealer",
+        "Koiloader",
+        "Koibackdoor",
+        "Koi_stealer",
+        "Koifusion",
+        "Cuckoo_stealer",
+        "Revil",
+        "Junk_code_technique",
+        "Cryptowallet-draining_technique",
+        "Amadey",
+        "Rustdoor"
+      ],
+      "geo": [
+        "Dprk",
+        "Ukrainian",
+        "Belarusian",
+        "Russian",
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Windows Task Scheduler",
+        "Firefox",
+        "Mozilla Firefox",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Discord",
+        "WinSCP",
+        "Steam",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "electron_cash",
+        "jaxx",
+        "guarda_wallet",
+        "bitpay",
+        "mymonero",
+        "coinomi",
+        "daedalus",
+        "wassabi",
+        "exodus_wallet",
+        "trezor",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/from-kpot-to-koi.html",
+        "https://github.com/PwCUK-CTO/TI-blog-2025-From-KPOT-to-Koi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "Investigating Indonesias Gambling Ecosystem: Indicators of National-Level Cyber Operations",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Credential_harvesting_technique",
+        "Gsocket_tool",
+        "Domain_fronting_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Mexican",
+        "Ecuador",
+        "Apac",
+        "Indonesia",
+        "Asia",
+        "Indonesian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Android",
+        "WordPress",
+        "Slack",
+        "Instagram",
+        "TikTok",
+        "WhatsApp",
+        "Docker",
+        "ORB network",
+        "NGINX"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.malanta.ai/blog-posts/investigating-indonesias-gambling-ecosystem-indicators-of-national-level-cyber-operations",
+        "https://github.com/malanta-ai/iopas/tree/main/Indonesian-Gambling-Infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-03",
+      "title": "Cydome Research Team Identified \"Broadside\", A New Mirai Botnet Variant, Active In The Wild",
+      "completeness": "Medium",
+      "threats": [
+        "Broadside",
+        "Mirai",
+        "Polymorphism_technique",
+        "Udpflood_technique",
+        "Credential_dumping_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 7,
+      "software": [
+        "curl",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cydome.io/cydome-identifies-broadside-a-new-mirai-botnet-variant-targeting-maritime-iot/"
+      ]
+    }
   }
 ]

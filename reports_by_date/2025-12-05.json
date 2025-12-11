@@ -1,0 +1,598 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "SessionReaper (CVE-2025-54236) Discussions on the Dark Web and Telegram",
+      "completeness": "Low",
+      "threats": [
+        "Sessionreaper_vuln",
+        "Residential_proxy_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 6,
+      "software": [
+        "Telegram",
+        "Redis",
+        "nginx",
+        "Unix"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/sessionreaper-cve-2025-54236-dark-web-and-telegram/",
+        "https://github.com/amalpvatayam67/day01-sessionreaper-lab"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "V3G4 Botnet Evolves: From DDoS to Covert Cryptomining",
+      "completeness": "Medium",
+      "threats": [
+        "Mirai",
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 15,
+      "software": [
+        "Linux",
+        "curl",
+        "Unix"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "links": [
+        "https://cyble.com/blog/v3g4-mirai-botnet-evolves/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Shai-Hulud 2.0: Inside the NPM Supply Chain Worm",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Linux",
+        "sudo",
+        "Docker",
+        "Unix",
+        "macOS"
+      ],
+      "crypto": [
+        "ripple"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://the-sequence.com/investigating-shai-hulud"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Malicious Go Packages Impersonate Googles UUID Library and Exfiltrate Data",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "Outlook"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data",
+        "https://socket.dev/go/package/github.com/bpoorman/uuid",
+        "https://socket.dev/go/package/github.com/bpoorman/uid?version=v0.0.0-20210528062104-e068190dd06b"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Weyhro C2: Because Ransomware Wasnt Paying the Bills Anymore",
+      "completeness": "High",
+      "threats": [
+        "Weyhro-c2_tool",
+        "Lumma_stealer",
+        "Residential_proxy_technique",
+        "Proxychains_tool",
+        "Hvnc_tool",
+        "Polymorphism_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows",
+        "Local Security Authority"
+      ],
+      "algorithms": [
+        "xor",
+        "aes-128",
+        "chacha20",
+        "aes-128-ctr",
+        "aes"
+      ],
+      "functions": [
+        "FindFirstFile",
+        "FindNextFile",
+        "CreateRemoteThread-based",
+        "send"
+      ],
+      "links": [
+        "https://lumma-labs.com/weyhro-c2-because-ransomware-wasnt-paying-the-bills-anymore-b136fd7ef100?gi=0d5f4ec2222c",
+        "https://github.com/RussianPanda95/Yara-Rules/blob/main/WeyhroC2/win\\_mal\\_weyhroc2.yar?source=post\\_page-----b136fd7ef100---------------------------------------"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "UDPGangster Campaigns Target Multiple Countries",
+      "completeness": "High",
+      "threats": [
+        "Udpgangster",
+        "Phoenix_keylogger"
+      ],
+      "geo": [
+        "Israel",
+        "Middle east",
+        "Azerbaijan",
+        "Israeli",
+        "Turkish",
+        "Cyprus",
+        "Turkey"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Word",
+        "VirtualBox",
+        "QEMU"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "Document_Open",
+        "SmartToggle"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/udpgangster-campaigns-target-multiple-countries"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "French NGO Reporters Without Borders targeted by Calisto in recent campaign",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Clickfix_technique",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Evilginx_tool",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Australia",
+        "New zealand",
+        "Russia",
+        "Russian",
+        "Usa",
+        "Ukrainian",
+        "French"
+      ],
+      "software": [
+        "Twitter",
+        "ProtonMail",
+        "ProtonDrive",
+        "Nginx"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.sekoia.io/ngo-reporters-without-borders-targeted-by-calisto-in-recent-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Weekly Threat Infrastructure Investigation(Week48)",
+      "completeness": "Low",
+      "threats": [
+        "Venomrat",
+        "Cobalt_strike_tool",
+        "Viper",
+        "Sliver_c2_tool",
+        "Octopus"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "links": [
+        "https://disconinja.hatenablog.com/entry/2025/12/05/234503"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Atomic Stealer: Darktraces Investigation of a Growing macOS Threat",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Realst"
+      ],
+      "geo": [
+        "Americas",
+        "Apac",
+        "Africa",
+        "Asia pacific",
+        "Emea",
+        "Netherlands",
+        "Middle east"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 3,
+      "software": [
+        "macOS",
+        "Telegram",
+        "cURL"
+      ],
+      "wallets": [
+        "electrum"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/atomic-stealer-darktraces-investigation-of-a-growing-macos-threat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Unveiling WARP PANDA: A New Sophisticated China-Nexus Adversary",
+      "completeness": "High",
+      "threats": [
+        "Brickstorm",
+        "Junction",
+        "Guestconduit_tool",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Asia pacific",
+        "Chinese",
+        "America",
+        "China"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 31,
+      "software": [
+        "ESXi",
+        "Active Directory Domain Services",
+        "Ivanti",
+        "BIG-IP",
+        "Graph API",
+        "Office365"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/warp-panda-cloud-threats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Behind the Walls: Techniques and Tactics in Castle RAT Client Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Nightshade",
+        "Dead_drop_technique",
+        "Uac_bypass_technique",
+        "Fodhelper_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 12,
+      "software": [
+        "chrome",
+        "firefox",
+        "Steam",
+        "Slack"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256"
+      ],
+      "functions": [
+        "SetWindowsHookEx",
+        "MFEnumDeviceSources"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/castlerat-malware-detection-splunk-mitre-attck.html",
+        "https://github.com/Kudaes/Elevator/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "China-nexus cyber threat groups rapidly exploit React2Shell vulnerability (CVE-2025-55182)",
+      "completeness": "Low",
+      "threats": [
+        "React2shell_vuln"
+      ],
+      "geo": [
+        "Latin america",
+        "Middle east",
+        "China",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/china-nexus-cyber-threat-groups-rapidly-exploit-react2shell-vulnerability-cve-2025-55182/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "New FvncBot Android banking trojan targets Poland",
+      "completeness": "Medium",
+      "threats": [
+        "Fvncbot",
+        "Hvnc_tool",
+        "Ermac"
+      ],
+      "geo": [
+        "Poland",
+        "Polish"
+      ],
+      "software": [
+        "Android",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.intel471.com/blog/new-fvncbot-android-banking-trojan-targets-poland"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Malicious Crate Mimicking Finch Exfiltrates Credentials via a Hidden Dependency",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Finch-rust",
+        "Sha-rust",
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 4,
+      "software": [
+        "Outlook"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "_API_URL",
+        "_S4",
+        "_S5",
+        "_S10"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-crate-mimicking-finch-exfiltrates-credentials",
+        "http://github.com/onecodex/finch-rshttps://github.com/onecodex/finch-rs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Weyhro C2: Because Ransomware Wasnt Paying the Bills Anymore",
+      "completeness": "High",
+      "threats": [
+        "Weyhro-c2_tool",
+        "Proxychains_tool",
+        "Hvnc_tool",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows",
+        "Local Security Authority"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "aes-128",
+        "aes-128-ctr",
+        "chacha20"
+      ],
+      "functions": [
+        "FindFirstFile",
+        "FindNextFile",
+        "CreateRemoteThread-based",
+        "send"
+      ],
+      "links": [
+        "https://lumma-labs.com/weyhro-c2-because-ransomware-wasnt-paying-the-bills-anymore-b136fd7ef100",
+        "https://github.com/RussianPanda95/Yara-Rules/blob/main/WeyhroC2/win\\_mal\\_weyhroc2.yar?source=post\\_page-----b136fd7ef100---------------------------------------"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "CVE-2025-55182 (React2Shell) Opportunistic Exploitation In The Wild: What The GreyNoise Observation Grid Is Seeing So Far",
+      "completeness": "Medium",
+      "threats": [
+        "React2shell_vuln",
+        "Mirai",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Hong kong",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "Chrome",
+        "curl"
+      ],
+      "functions": [
+        "GetField",
+        "SetValue"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/cve-2025-55182-react2shell-opportunistic-exploitation-in-the-wild-what-the-greynoise-observation-grid-is-seeing-so-far"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-05",
+      "title": "Sharpening the knife: GOLD BLADEs strategic evolution",
+      "completeness": "High",
+      "threats": [
+        "Qwcrypt",
+        "Redloader",
+        "Edr-killer",
+        "Byovd_technique",
+        "Zemana_tool",
+        "Terminator_tool",
+        "Hack-for-hire_technique",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Ad_explorer_tool",
+        "Rpivot_tool",
+        "Chisel_tool",
+        "Nssm_tool",
+        "Impacket_tool",
+        "Shadow_copies_delete_technique",
+        "Hardbit",
+        "Lockbit"
+      ],
+      "geo": [
+        "Canadian",
+        "America",
+        "Canada"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Sysinternals",
+        "Windows service",
+        "Windows security",
+        "curl",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "bcrypt",
+        "sha256",
+        "zip",
+        "xor",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/12/05/sharpening-the-knife-gold-blades-strategic-evolution/",
+        "https://github.com/ZeroMemoryEx/Terminator/tree/master"
+      ]
+    }
+  }
+]

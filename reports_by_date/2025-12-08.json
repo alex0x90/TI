@@ -1,0 +1,244 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-08",
+      "title": "Operation Tornado: Cyber Espionage Against Domestic Xinchuang Platforms",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "China",
+        "Asia-pacific",
+        "India"
+      ],
+      "software": [
+        "Linux",
+        "Openssl",
+        "pyinstaller"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "java"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/qcsO7RYvM1gTGnjeianfPw"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-08",
+      "title": "APT44 - Sandworm Team",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Credential_dumping_technique",
+        "Adminer",
+        "Prestige_ransomware",
+        "Killdisk",
+        "Olympic_destroyer",
+        "Eternal_petya",
+        "Industoyer2",
+        "Credential_harvesting_technique",
+        "Chisel_tool",
+        "Swiftslicer",
+        "Vpnfilter",
+        "Kalambur",
+        "Brushpass",
+        "Sharpivory",
+        "Arguepatch_loader",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 34,
+      "software": [
+        "Windows Service",
+        "Systemd",
+        "Android",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/apt44-sandworm-team/",
+        "https://github.com/Mr128Bit/apt-malware-samples/tree/main/APT44/VPNFilter",
+        "https://github.com/Mr128Bit/apt-malware-samples/tree/main/APT44/Industroyer",
+        "https://github.com/Mr128Bit/apt-malware-samples/tree/main/APT44/Kalambur"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-08",
+      "title": "Bellerophonte never dreamed of such a thing. The ChimeraWire Trojan scams the popularity of websites by skillfully pretending to be human Dr.Web vxCube sandbox update coming",
+      "completeness": "High",
+      "threats": [
+        "Chimerawire",
+        "Dllsearchorder_hijacking_technique",
+        "Buster_tool",
+        "Nopecha_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 18,
+      "software": [
+        "Google Chrome",
+        "Windows shell",
+        "Linux",
+        "macOS",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15090&lng=ru&c=5",
+        "https://github.com/DoctorWebLtd/malware-iocs/blob/master/Trojan.ChimeraWire/README.adoc",
+        "https://github.com/sohaha/zlsgo"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-08",
+      "title": "Advent of Configuration Extraction - Part 2: Unwrapping QuasarRAT s Configuration",
+      "completeness": "Low",
+      "threats": [
+        "Quasar_rat",
+        "Xrat_rat"
+      ],
+      "software": [
+        "Jupyter Notebook",
+        "NET Framework",
+        "Docker"
+      ],
+      "algorithms": [
+        "cbc",
+        "aes-256",
+        "pbkdf2",
+        "hmac",
+        "aes",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/advent-of-configuration-extraction-part-2-unwrapping-quasarrats-configuration/",
+        "https://github.com/pythonnet/pythonnet",
+        "https://github.com/dnSpy/dnSpy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-08",
+      "title": "Operation FrostBeacon: Multi-Cluster Cobalt Strike Campaign Targets Russia",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Metasploit_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Asia",
+        "Russian federation",
+        "Sri lanka",
+        "Russia",
+        "Bangladesh",
+        "Pakistan"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft Word",
+        "openai"
+      ],
+      "algorithms": [
+        "base64",
+        "deflate",
+        "zip",
+        "md5",
+        "gzip",
+        "xor"
+      ],
+      "functions": [
+        "GetModuleHandle"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-frostbeacon-multi-cluster-cobalt-strike-campaign-targets-russia/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-08",
+      "title": "Chinese Malware Delivery Domains Part IV",
+      "completeness": "Medium",
+      "threats": [
+        "Vmprotect_tool",
+        "Aspack_tool",
+        "Asprotect_tool",
+        "Mpress_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "China",
+        "Chinese",
+        "Asia-pacific",
+        "Moscow",
+        "Asia"
+      ],
+      "software": [
+        "Chrome",
+        "Telegram",
+        "WhatsApp",
+        "Youdao",
+        "Sogou",
+        "Google Chrome"
+      ],
+      "wallets": [
+        "imtoken"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://dti.domaintools.com/chinese-malware-delivery-domains-part-iv/"
+      ]
+    }
+  }
+]
