@@ -1,0 +1,580 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "RTO Challan Fraud: A Technical Report on APK-Based Financial and Identity Theft",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Chinese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "Android",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "sendTextMessage"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/rto-challan-fraud-a-technical-report-on-apk-based-financial-and-identity-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "VS Code extensions use fake image containing a trojan",
+      "completeness": "Low",
+      "threats": [
+        "Timebomb_technique",
+        "Lolbin_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Twitter",
+        "Visual Studio Code",
+        "ETHCode"
+      ],
+      "algorithms": [
+        "sha1",
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "typescript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/malicious-vs-code-fake-image"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Total Takeover: DroidLock Hijacks Your Device",
+      "completeness": "Low",
+      "threats": [
+        "Droidlock",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Spanish"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 20,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://zimperium.com/blog/total-takeover-droidlock-hijacks-your-device",
+        "https://github.com/Zimperium/IOC/tree/master/2025-12-DroidLock"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "GOLD SALEM tradecraft for deploying Warlock ransomware",
+      "completeness": "High",
+      "threats": [
+        "X2anylock",
+        "Toolshell_vuln",
+        "Av-killer",
+        "Dll_sideloading_technique",
+        "Cloudflared_tool",
+        "Mimikatz_tool",
+        "Lockbit",
+        "Babuk",
+        "Credential_harvesting_technique",
+        "Byovd_technique",
+        "Radmin_tool",
+        "Donutldr",
+        "Edr-killer"
+      ],
+      "geo": [
+        "Chinese",
+        "Russia",
+        "Asia",
+        "Russian",
+        "Taiwan",
+        "China",
+        "Taiwanese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Velociraptor",
+        "Protonmail",
+        "Visual Studio Code",
+        "vscode",
+        "Azure blob",
+        "MinIO",
+        "Linux",
+        "OpenSSH",
+        "UNIX",
+        "ESXi",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "MiniDump"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://news.sophos.com/en-us/2025/12/11/gold-salem-tradecraft-for-deploying-warlock-ransomware/",
+        "https://github.com/minio/mc",
+        "https://github.com/cloudflare/cloudflared/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "It didnt take long: CVE-2025-55182 is now under active exploitation",
+      "completeness": "Medium",
+      "threats": [
+        "React2shell_vuln",
+        "Xmrig_miner",
+        "Mirai",
+        "Bashlite",
+        "Rondodox",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "curl",
+        "AppArmor",
+        "SELinux",
+        "BusyBox",
+        "Linux"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/cve-2025-55182-exploitation/118331/",
+        "https://github.com/ejpir/CVE-2025-55182-poc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Bellerophon never dreamed of such a thing. The ChimeraWire Trojan boosts website popularity by skillfully impersonating a human.",
+      "completeness": "Medium",
+      "threats": [
+        "Chimerawire",
+        "Dllsearchorder_hijacking_technique",
+        "Nopecha_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 18,
+      "software": [
+        "Google Chrome",
+        "Linux macOS",
+        "Windows Task Scheduler",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "aes-gcm"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "visual_basic"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?lng=ru&i=15090",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/DoctorWebLtd/malware-iocs/blob/master/Trojan.ChimeraWire/README.adoc",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/sohaha/zlsgo"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Hamas-Affiliated Ashen Lepus Targets Middle Eastern Diplomatic Entities With New AshTag Malware Suite",
+      "completeness": "High",
+      "threats": [
+        "Ashtag",
+        "Ashenloader",
+        "Ashenstager",
+        "Ashenorchestrator",
+        "Dll_sideloading_technique",
+        "Rclone_tool",
+        "Ironwind"
+      ],
+      "geo": [
+        "Japan",
+        "Middle east",
+        "Korea",
+        "Turkish",
+        "Turkey",
+        "Egypt",
+        "Asia",
+        "Palestine",
+        "Morocco",
+        "Palestinian",
+        "Oman",
+        "India",
+        "Syria",
+        "Jordan",
+        "Australia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-256-ctr",
+        "xor",
+        "aes"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Hunting for Mythic in network traffic",
+      "completeness": "Low",
+      "threats": [
+        "Mythic_c2",
+        "Cobalt_strike_tool",
+        "Brc4_tool",
+        "Sliver_c2_tool",
+        "Havoc",
+        "Adaptixc2_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "macOS",
+        "Linux",
+        "Discord",
+        "Slack"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256"
+      ],
+      "functions": [
+        "WriteRequest",
+        "Discord"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/detecting-mythic-in-network-traffic/118291/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Analyzing the Gentlemen Ransomware: The Threat Behind a Gentleman's Mask",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Byovd_technique",
+        "Ransomware/win.gentlemencrypt.c5799091",
+        "Ransomware/win.gentlemencrypt.c5825597",
+        "Ransom/mdp.decoy.m961",
+        "Ransom/mdp.delete.m1105",
+        "Ransom/mdp.event.m1784",
+        "Ransom/mdp.command.m2255"
+      ],
+      "geo": [
+        "America",
+        "Pacific",
+        "Apac",
+        "Middle east",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 2,
+      "software": [
+        "Windows Defender",
+        "MSSQL"
+      ],
+      "algorithms": [
+        "xchacha20",
+        "ecdh",
+        "base64",
+        "curve25519",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91514/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Extortion-as-a-Service: The Latest Threat Actor Criminal Ecosystem",
+      "completeness": "Low",
+      "threats": [
+        "Locky",
+        "Quattro_tool",
+        "Callmix_tool",
+        "Procallmix_tool",
+        "Voicephishing_tool",
+        "Shebyte_tool",
+        "Angel_drainer"
+      ],
+      "geo": [
+        "German",
+        "French",
+        "Russia",
+        "Spanish",
+        "Italian"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://levelblue.com/blogs/levelblue-blog/extortion-as-a-service-the-latest-threat-actor-criminal-ecosystem/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Cato CTRL Threat Research: A Deep Dive into a New JSCEAL Infostealer Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Jsceal"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-deep-dive-into-new-jsceal-infostealer-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "OT Network Security Threats: Industrial Routers Under Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Rondodox",
+        "Redtail",
+        "Shadowv2",
+        "Residential_proxy_technique",
+        "Ngioweb",
+        "Mozi",
+        "Mirai"
+      ],
+      "geo": [
+        "Israel",
+        "Poland",
+        "America"
+      ],
+      "software": [
+        "Twitter",
+        "PAN OS",
+        "curl",
+        "busybox",
+        "UNIX"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.forescout.com/blog/ot-network-security-threats-industrial-routers-under-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "From Armillaria Loader to EDR Killer",
+      "completeness": "Medium",
+      "threats": [
+        "Armillaria",
+        "Edr-killer",
+        "Akira_ransomware",
+        "Byovd_technique",
+        "Shadow_copies_delete_technique",
+        "Rclone_tool"
+      ],
+      "software": [
+        "ThrottleStop",
+        "PSExec"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/from-armillaria-loader-to-edr-killer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "PyStoreRAT: A New AI-Driven Supply Chain Malware Campaign Targeting IT & OSINT Professionals",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Pystorerat",
+        "Rhadamanthys"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/pystorerat-a-new-ai-driven-supply-chain-malware-campaign-targeting-it-osint-professionals/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "Technical Analysis of the BlackForce Phishing Kit",
+      "completeness": "Medium",
+      "threats": [
+        "Blackforce_tool",
+        "Man-in-the-browser_technique",
+        "Nmap_tool",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 7,
+      "software": [
+        "Telegram",
+        "Scripting Engine"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-blackforce-phishing-kit",
+        "https://github.com/faisalman/ua-parser-js"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "CyberVolk Returns \\| Flawed VolkLocker Brings New Features With Growing Pains",
+      "completeness": "Medium",
+      "threats": [
+        "Volklocker",
+        "Uac_bypass_technique",
+        "Cybervolk_ransomware",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Telegram",
+        "Linux",
+        "VirtualBox",
+        "Windows Defender"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes-256"
+      ],
+      "functions": [
+        "backupMasterKey",
+        "triggerDestruction",
+        "SystemCorruptor",
+        "DestroySystem",
+        "NtRaiseHardError",
+        "telegramReporter"
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/cybervolk-returns-flawed-volklocker-brings-new-features-with-growing-pains/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "One newsletter to rule them all",
+      "completeness": "Low",
+      "threats": [
+        "Deadlock",
+        "Byovd_technique",
+        "Win.ransomware.deadlock-10058428-0",
+        "Brickstorm",
+        "Coinminer"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/one-newsletter-to-rule-them-all/"
+      ]
+    }
+  }
+]

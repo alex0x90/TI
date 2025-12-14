@@ -1,0 +1,205 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-13",
+      "title": "Technical Analysis of APT-C-26 (Lazarus) Group Deploying Blank Grabber Trojan Using WinRAR Vulnerability",
+      "completeness": "Low",
+      "threats": [
+        "Blankgrabber",
+        "Tsunami_framework",
+        "Credential_stealing_technique",
+        "Steganography_technique",
+        "Vmprotect_tool",
+        "Uac_bypass_technique",
+        "Hideconsole_tool"
+      ],
+      "software": [
+        "Chromium",
+        "Discord",
+        "Telegram",
+        "Windows Defender",
+        "Chrome",
+        "Opera",
+        "Microsoft Edge",
+        "Yandex Browser",
+        "Firefox",
+        "Steam",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet",
+        "electrum",
+        "zcash",
+        "jaxx",
+        "atomicwallet",
+        "coinomi",
+        "tronlink"
+      ],
+      "crypto": [
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "exec"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.ctfiot.com/286651.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-13",
+      "title": "Digging through Rust to find Gold: Extracting Secrets from Rust Malware",
+      "completeness": "Low",
+      "threats": [
+        "Luca_stealer",
+        "Blackcat"
+      ],
+      "software": [
+        "Linux",
+        "Node.js"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "golang",
+        "rust"
+      ],
+      "links": [
+        "https://binarydefense.com/resources/blog/digging-through-rust-to-find-gold-extracting-secrets-from-rust-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-13",
+      "title": "Multiple Threat Actors Exploit React2Shell (CVE-2025-55182)",
+      "completeness": "High",
+      "threats": [
+        "React2shell_vuln",
+        "Minocat_tool",
+        "Snowlight",
+        "Hisonic",
+        "Compood",
+        "Xmrig_miner",
+        "Vshell",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Taiwan",
+        "Vietnam",
+        "China",
+        "Asia pacific",
+        "Apac"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "systemd",
+        "Linux",
+        "cURL",
+        "OpenSSH",
+        "Outlook"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "swift"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/threat-actors-exploit-react2shell-cve-2025-55182/",
+        "https://github.com/ejpir/CVE-2025-55182-research",
+        "https://github.com/ejpir/CVE-2025-55182-research/tree/e6f3f7f275a20c0ebc282b5cef37b833b458a16e",
+        "https://github.com/ejpir/CVE-2025-55182-research/blob/main/test-chunked-bypass.cjs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-13",
+      "title": "APT15 Cyber Espionage: Campaigns and TTPs Analysis",
+      "completeness": "High",
+      "threats": [
+        "Graphican",
+        "Spear-phishing_technique",
+        "Steganography_technique",
+        "Bs2005",
+        "Silkbean",
+        "Doubleagent",
+        "Carbonsteal",
+        "Goldeneagle",
+        "Ketrican",
+        "Tidepool",
+        "Royalcli",
+        "Royal_dns",
+        "Miragefox",
+        "Okrum",
+        "Leeson",
+        "Neoichor",
+        "Driveletterview_tool"
+      ],
+      "geo": [
+        "Indian",
+        "Chinese",
+        "Guatemala",
+        "China",
+        "Brazil",
+        "America",
+        "Middle east",
+        "Slovakia",
+        "Chile",
+        "Belgium",
+        "Russia",
+        "Syrian"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 23,
+      "software": [
+        "ChatGPT",
+        "ORB3",
+        "Microsoft Exchange",
+        "Android",
+        "Graph API",
+        "SPACEHOP",
+        "Microsoft Word",
+        "Component Object Model",
+        "Internet Explorer",
+        "Foxit",
+        "have more..."
+      ],
+      "algorithms": [
+        "deflate",
+        "gzip",
+        "rc4",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "sub_10002003",
+        "Set-Cookie"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/apt15-cyber-espionage-campaigns-and-ttps-analysis"
+      ]
+    }
+  }
+]
