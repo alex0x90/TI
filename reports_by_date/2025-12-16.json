@@ -1,0 +1,523 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "Type 1 Backdoor: DRBControl malware executed by Mofu Loader",
+      "completeness": "Medium",
+      "threats": [
+        "Mofu_loader",
+        "Drbcontrol",
+        "Dll_sideloading_technique",
+        "Micdown",
+        "Ratels",
+        "Shadowpad"
+      ],
+      "geo": [
+        "Columbia",
+        "Pakistani",
+        "Chinese",
+        "Taiwan",
+        "Japan"
+      ],
+      "software": [
+        "winlogon",
+        "chrome",
+        "Telnet client",
+        "Dropbox",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256",
+        "lznt1",
+        "xor"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2025/12/mofu-loader-executing-drbcontrol-malware/",
+        "https://github.com/mopisec/research/blob/main/mofuloader\\_ror11\\_apihash\\_resolver.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "The Detection & Response Chronicles: Exploring Telegram Abuse",
+      "completeness": "Medium",
+      "threats": [
+        "Deerstealer",
+        "Xworm_rat",
+        "Raven_stealer",
+        "Fakecaptcha_tool",
+        "Latrodectus",
+        "Telecaptcha_tool",
+        "Socgholish_loader",
+        "Hijackloader",
+        "Lumma_stealer"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Microsoft Defender for Endpoint",
+        "Google Chrome",
+        "WordPress",
+        "curl",
+        "Discord"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.nviso.eu/2025/12/16/the-detection-response-chronicles-exploring-telegram-abuse/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "Say hello to Nextron s RuneAI",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "readFilePath",
+        "writeFilePath"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2025/12/16/say-hello-to-nextrons-runeai/",
+        "https://github.com/Neo23x0/signature-base/blob/master/yara/mal\\_etoroloro\\_nodepackage\\_dec25.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "Inside Ink Dragon: Revealing the Relay Network and Inner Workings of a Stealthy Offensive Operation",
+      "completeness": "High",
+      "threats": [
+        "Shadowpad",
+        "Cdbloader",
+        "Lalsdumper",
+        "032loader",
+        "Finaldraft",
+        "Viewstate_deserialization_vuln",
+        "Credential_harvesting_technique",
+        "Toolshell_vuln",
+        "Printnotifypotato_tool",
+        "Scatterbrain_tool",
+        "Tollbooth",
+        "Gotohttp_tool"
+      ],
+      "geo": [
+        "Africa",
+        "Asia",
+        "Chinese",
+        "America"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "ASP.NET",
+        "Microsoft SharePoint",
+        "CredSSP",
+        "Graph API",
+        "Outlook",
+        "Remote Desktop Services",
+        "Windows security"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "aes",
+        "rc4",
+        "xor"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/ink-dragons-relay-network-and-offensive-operation/",
+        "https://github.com/JKornev/hidden",
+        "https://github.com/mandiant/poisonplug-scatterbrain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "French Interior Ministry Email Servers Compromised in Targeted Cyberattack",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "French",
+        "America",
+        "Russia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 5,
+      "software": [
+        "Roundcube"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/french-interior-ministry-email-servers-compromised-in-targeted-cyberattack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "BlindEagle Targets Colombian Government Agency with Caminho and DCRAT",
+      "completeness": "High",
+      "threats": [
+        "Caminho",
+        "Dcrat",
+        "Spear-phishing_technique",
+        "Steganography_technique",
+        "Vmdetectloader",
+        "Xworm_rat",
+        "Junk_code_technique",
+        "Process_hollowing_technique",
+        "Asyncrat",
+        "Remcos_rat",
+        "Amsi_bypass_technique",
+        "Smuggling_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Swedish",
+        "Brazilian",
+        "Colombian",
+        "Portuguese",
+        "Colombia",
+        "America"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 22,
+      "software": [
+        "Discord"
+      ],
+      "algorithms": [
+        "aes-256",
+        "md5",
+        "sha1",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "int_to_char",
+        "chr",
+        "Create"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/blindeagle-targets-colombian-government-agency-caminho-and-dcrat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "Cryptomining campaign targeting Amazon EC2 and Amazon ECS",
+      "completeness": "Low",
+      "geo": [
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "GuardDuty",
+        "Docker",
+        "AWS Fargate",
+        "FARGATE"
+      ],
+      "functions": [
+        "GetServiceQuota",
+        "CreateServiceLinkedRole",
+        "CreateRole",
+        "CreateService",
+        "CreateLaunchTemplate",
+        "CreateAutoScalingGroup",
+        "CreateFunctionUrlConfig",
+        "CreateUser",
+        "CreateAccessKey",
+        "CreateLoginProfile",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/cryptomining-campaign-targeting-amazon-ec2-and-amazon-ecs/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "The APT35 Dump Episode 4: Leaking The Backstage Pass To An Iranian Intelligence Operation",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Pydcrypt",
+        "Dcsrv",
+        "Strifewater_rat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Israel",
+        "Cyprus",
+        "Iranian",
+        "Korea",
+        "Tehran",
+        "Israeli",
+        "Bulgarian",
+        "Russian",
+        "Bulgaria",
+        "Kuwait",
+        "American",
+        "Iran",
+        "Saudi arabia"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 28,
+      "software": [
+        "ProtonMail",
+        "WordPress",
+        "Microsoft Exchange",
+        "Ivanti"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://dti.domaintools.com/the-apt35-dump-episode-4-leaking-the-backstage-pass-to-an-iranian-intelligence-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "Parked Domains Become Weapons with Direct Search Advertising",
+      "completeness": "High",
+      "threats": [
+        "Fastflux_technique",
+        "Typosquatting_technique",
+        "Residential_proxy_technique",
+        "Tedy",
+        "Clickfix_technique",
+        "Babar",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Canadian",
+        "Japanese",
+        "Russian"
+      ],
+      "software": [
+        "chrome",
+        "linux",
+        "Gmail",
+        "Opera GX",
+        "Firefox"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/parked-domains-become-weapons-with-direct-search-advertising/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "EtherRAT dissected: How a React2Shell implant delivers 5 payloads through blockchain C2",
+      "completeness": "Medium",
+      "threats": [
+        "Etherrat",
+        "React2shell_vuln",
+        "Credential_harvesting_technique",
+        "Shai-hulud"
+      ],
+      "geo": [
+        "Tajikistan",
+        "Uzbekistan",
+        "Georgian",
+        "Kyrgyzstan",
+        "Kazakhstan",
+        "Korea",
+        "Belarus",
+        "Azerbaijan",
+        "Dprk",
+        "China",
+        "Russia",
+        "Armenia",
+        "Georgia",
+        "Belarusian",
+        "Russian",
+        "North korean",
+        "Azerbaijani"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Systemd",
+        "Microsoft Defender",
+        "Active Directory",
+        "Linux",
+        "SendGrid",
+        "Slack",
+        "OpenAI",
+        "Docker",
+        "HashiCorp Vault",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet",
+        "electrum"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "getDomainInfo",
+        "getHWID",
+        "getPublicIP"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/etherrat-dissected-how-a-react2shell-implant-delivers-5-payloads-through-blockchain-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "Inside GhostPoster: How a PNG Icon Infected 50,000 Firefox Users",
+      "completeness": "Medium",
+      "threats": [
+        "Ghostposter",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Firefox",
+        "ChatGPT",
+        "Claude"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.koi.ai/blog/inside-ghostposter-how-a-png-icon-infected-50-000-firefox-browser-users"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "React2Shell used as initial access vector for Weaxor ransomware deployment",
+      "completeness": "Medium",
+      "threats": [
+        "React2shell_vuln",
+        "Weaxor",
+        "Targetcompany",
+        "Cobalt_strike_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "software": [
+        "Microsoft SQL",
+        "Windows Defender",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.s-rminform.com/latest-thinking/react2shell-used-as-initial-access-vector-for-weaxor-ransomware-deployment"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-16",
+      "title": "Meet Cellik - A New Android RAT With Play Store Integration",
+      "completeness": "Low",
+      "threats": [
+        "Cellik",
+        "Hyperrat",
+        "Phantomos",
+        "Nebula"
+      ],
+      "software": [
+        "Android",
+        "Google Play",
+        "Gmail"
+      ],
+      "links": [
+        "https://iverify.io/blog/meet-cellik---a-new-android-rat-with-play-store-integration"
+      ]
+    }
+  }
+]

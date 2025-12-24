@@ -1,0 +1,107 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-20",
+      "title": "APT36 sample analysis",
+      "completeness": "High",
+      "geo": [
+        "Pakistan",
+        "India",
+        "Chinese",
+        "Indian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "systemd",
+        "PyInstaller",
+        "Zoom",
+        "WeChat"
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "xor",
+        "sha1",
+        "gzip",
+        "aes-ecb",
+        "sha256",
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "listall",
+        "upload",
+        "download",
+        "zip",
+        "runcmd",
+        "python",
+        "screenshot",
+        "clean",
+        "crack",
+        "CanPingGoogleDns",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/287443.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-20",
+      "title": "Zscaler Threat Hunting Catches Evasive SideWinder APT Campaign",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Indian",
+        "India",
+        "Asian",
+        "Asia pacific"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft Defender",
+        "Windows Defender"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/zscaler-threat-hunting-catches-evasive-sidewinder-apt-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-20",
+      "title": "Original Paper \\| React2Shell Exploit Analysis Report",
+      "completeness": "Low",
+      "threats": [
+        "React2shell_vuln"
+      ],
+      "geo": [
+        "China",
+        "Germany"
+      ],
+      "software": [
+        "curl",
+        "busybox",
+        "WeChat"
+      ],
+      "languages": [
+        "javascript",
+        "java"
+      ],
+      "links": [
+        "https://www.ctfiot.com/287795.html"
+      ]
+    }
+  }
+]

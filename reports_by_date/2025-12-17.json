@@ -1,0 +1,413 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "Kimwolf Exposed: The Massive Android Botnet with 1.8 Million Infected Devices",
+      "completeness": "Medium",
+      "threats": [
+        "Kimwolf",
+        "Etherhiding_technique",
+        "Aisuru",
+        "Mirai",
+        "Bigpanzi",
+        "Vo1d"
+      ],
+      "geo": [
+        "Philippines",
+        "Brazil",
+        "Argentina",
+        "Morocco",
+        "Saudi arabia",
+        "South africa",
+        "Germany",
+        "Usa",
+        "Algeria",
+        "Turkey",
+        "Chinese",
+        "France",
+        "Thailand",
+        "Pakistan",
+        "Indonesia",
+        "Mexico",
+        "Dprk",
+        "India",
+        "China",
+        "Iraq",
+        "Canada"
+      ],
+      "software": [
+        "Android",
+        "wolfSSL",
+        "Unix"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "md5",
+        "crc-32",
+        "sha1",
+        "xor"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/kimwolf-botnet-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "Phantom 3.5: Initial Vector Analysis & Forensics",
+      "completeness": "High",
+      "threats": [
+        "Phantom_stealer",
+        "Process_injection_technique",
+        "Procdump_tool",
+        "Heavens_gate_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "BLACKHAWK",
+        "Chromium",
+        "Chrome",
+        "outlook",
+        "Discord",
+        "Firefox",
+        "Telegram",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "rc4",
+        "aes",
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/phantom-3-5-initial-vector-analysis-forensics/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "Operation ForumTroll continues: Russian political scientists targeted using plagiarism reports",
+      "completeness": "Medium",
+      "threats": [
+        "Leetagent",
+        "Dante",
+        "Com_hijacking_technique",
+        "Tuoni_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russian federation",
+        "Russia",
+        "Belarus"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/operation-forumtroll-new-targeted-campaign/118492/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "GachiLoader: Defeating Node.js Malware with API Tracing",
+      "completeness": "High",
+      "threats": [
+        "Gachiloader",
+        "Kidkadi",
+        "Pe_injection_technique",
+        "Rhadamanthys",
+        "Vmprotect_tool",
+        "Themida_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Windows Defender",
+        "whatsapp",
+        "twitter",
+        "KeePass",
+        "Windows Media Player",
+        "hyper-v",
+        "virtualbox",
+        "qemu"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/gachiloader-node-js-malware-with-api-tracing/",
+        "https://github.com/CheckPointSW/Nodejs-Tracer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "UAT-9686 actively targets Cisco Secure Email Gateway and Secure Email and Web Manager",
+      "completeness": "Low",
+      "threats": [
+        "Aquashell",
+        "Aquatunnel_tool",
+        "Chisel_tool",
+        "Aquapurge_tool",
+        "Reversessh_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-9686/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2025/12",
+        "https://github.com/Fahrj/reverse-ssh"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "NuGet malware targets Nethereum tools",
+      "completeness": "Medium",
+      "threats": [
+        "Nethereumnet",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NuGet",
+        "Nethereum",
+        "Twitter"
+      ],
+      "wallets": [
+        "bitcoincore",
+        "coinbase"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "exhibit",
+        "sha1"
+      ],
+      "languages": [
+        "csharp",
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/nuget-malware-crypto-oauth-tokens"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "From Linear to Complex: An Upgrade in RansomHouse Encryption",
+      "completeness": "Low",
+      "threats": [
+        "Ransomhouse",
+        "Mragent",
+        "Spear-phishing_technique",
+        "Mario",
+        "Junk_code_technique",
+        "Esxiargs"
+      ],
+      "geo": [
+        "Japan",
+        "Korea",
+        "Middle east",
+        "India",
+        "Australia",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "Telegram",
+        "esxcli",
+        "VirtualBox"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/ransomhouse-encryption-upgrade/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "Inside DPRK Operations: New Lazarus and Kimsuky Infrastructure Uncovered Across Global Campaigns",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Http_troy",
+        "Blindingcan",
+        "Memload",
+        "Supply_chain_technique",
+        "Badcall",
+        "Passview_tool",
+        "Passwordfox_tool",
+        "Netpass_tool",
+        "Dialupass_tool",
+        "Pstpassword_tool",
+        "Rclone_tool",
+        "Mythic_c2",
+        "Quasar_rat",
+        "Sqlmap_tool",
+        "Masscan_tool",
+        "Nmap_tool",
+        "Ngrok_tool",
+        "Microsocks_tool",
+        "Frpc_tool",
+        "Impacket_tool",
+        "Nuclei_tool",
+        "Mimikatz_tool",
+        "Poolrat",
+        "Fastreverseproxy_tool",
+        "Opendir_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Chinese",
+        "Singapore",
+        "North korean",
+        "Dprk",
+        "Ireland"
+      ],
+      "software": [
+        "Linux",
+        "Burp Suite"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit",
+        "zip"
+      ],
+      "functions": [
+        "Fake_Cmd",
+        "logMessage"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/dprk-lazarus-kimsuky-infrastructure-uncovered"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "Coordinated Credential-Based Campaign Targets Cisco and Palo Alto Networks VPN Gateways",
+      "completeness": "Low",
+      "geo": [
+        "Germany",
+        "Pakistan",
+        "Mexico"
+      ],
+      "software": [
+        "Slack",
+        "PAN-OS",
+        "Firefox"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/credential-based-campaign-cisco-palo-alto-networks-vpn-gateways"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-17",
+      "title": "There's Payloads, And Then There's pAIloads: A Look At Selected Opportunistic (And Possibly AI-\"Enhanced\") React2Shell Probes and Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "React2shell_vuln",
+        "Mirai",
+        "Bashlite"
+      ],
+      "geo": [
+        "Spanish",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Alpine",
+        "Linux",
+        "Slack",
+        "curl",
+        "macOS",
+        "Claude",
+        "polyfill",
+        "Alpine Linux",
+        "busybox",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "exhibit"
+      ],
+      "functions": [
+        "getuid"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/react2shell-payload-analysis"
+      ]
+    }
+  }
+]

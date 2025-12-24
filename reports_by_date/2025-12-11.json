@@ -576,5 +576,63 @@
         "https://blog.talosintelligence.com/one-newsletter-to-rule-them-all/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-11",
+      "title": "PyStoreRAT Intelligence Report",
+      "completeness": "High",
+      "threats": [
+        "Pystorerat",
+        "Rhadamanthys",
+        "Bitsadmin_tool",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "French",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Instagram",
+        "Telegram",
+        "Twitter",
+        "Ledger Live",
+        "Task Scheduler",
+        "curl"
+      ],
+      "wallets": [
+        "coinbase",
+        "trezor",
+        "exodus_wallet",
+        "guarda_wallet"
+      ],
+      "algorithms": [
+        "xor",
+        "des",
+        "zip"
+      ],
+      "functions": [
+        "checkUpdates",
+        "subscase",
+        "random",
+        "context",
+        "getArgs",
+        "setRequest",
+        "eval"
+      ],
+      "languages": [
+        "typescript",
+        "powershell",
+        "python",
+        "javascript",
+        "jscript"
+      ],
+      "links": [
+        "https://engage.morphisec.com/hubfs/2025_PDFs/PyStoreRAT_ThreatAnalysis.pdf"
+      ]
+    }
   }
 ]

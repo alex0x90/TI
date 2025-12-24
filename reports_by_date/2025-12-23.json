@@ -1,0 +1,112 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-23",
+      "title": "From cheats to exploits: Webrat spreading via GitHub",
+      "completeness": "Medium",
+      "threats": [
+        "Webrat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "Roblox",
+        "Windows Defender",
+        "Telegram",
+        "Discord",
+        "Steam"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://securelist.com/webrat-distributed-via-github/118555/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-23",
+      "title": "From Email to Exfiltration: How Threat Actors Steal ADP Login and Personal Data",
+      "completeness": "Low",
+      "links": [
+        "https://cofense.com/blog/from-email-to-exfiltration-how-threat-actors-steal-adp-login-and-personal-data"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-23",
+      "title": "B2B2C Supply Chain Attack: Hotels Booking Accounts Compromised to Target Customers",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Netsupportmanager_rat",
+        "Telekopye"
+      ],
+      "geo": [
+        "Russia",
+        "Moscow"
+      ],
+      "software": [
+        "Debian Linux",
+        "Nginx"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://dti.domaintools.com/b2b2c-supply-chain-attack-hotels-booking-accounts-compromised-to-target-customers/",
+        "https://github.com/DomainTools/SecuritySnacks/blob/main/2025/Bookingcom-ScamIOCs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-23",
+      "title": "Spearphishing Campaign Abuses npm Registry to Target U.S. and Allied Manufacturing and Healthcare Organizations",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Evilginx_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "America",
+        "Spain",
+        "Belgium",
+        "Germany",
+        "Asia",
+        "Taiwan",
+        "Italy",
+        "Portugal",
+        "United kingdom",
+        "Canada",
+        "France",
+        "Sweden",
+        "Turkey",
+        "Austria"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 16,
+      "software": [
+        "Outlook",
+        "Selenium",
+        "Node.js"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/spearphishing-campaign-abuses-npm-registry"
+      ]
+    }
+  }
+]

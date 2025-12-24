@@ -1,0 +1,359 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "Frogblight threatens you with a court case: a new Android banker targets Turkish users",
+      "completeness": "Medium",
+      "threats": [
+        "Frogblight",
+        "Smishing_technique",
+        "Exobot"
+      ],
+      "geo": [
+        "Turkish",
+        "Turkey"
+      ],
+      "software": [
+        "Android",
+        "Chrome"
+      ],
+      "functions": [
+        "getAllPackages",
+        "getPackageUrl",
+        "getFileCommands",
+        "getContactCommands"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/frogblight-banker/118440/",
+        "https://opentip.kaspersky.com/https%3a%2f%2fgithub.com%2feraykarakaya0020%2fe-ifade-vercel/?icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_887fcbcb699e1e20&utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL",
+        "https://opentip.kaspersky.com/https%3a%2f%2fgithub.com%2fchromeapk/?icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_8ab0fa5de09d8dee&utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "SantaStealer is Coming to Town: A New, Ambitious Infostealer Advertised on Underground Forums",
+      "completeness": "High",
+      "threats": [
+        "Santastealer",
+        "Bluelinestealer",
+        "Polymorphism_technique",
+        "Raccoon_stealer",
+        "Credential_stealing_technique",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Process_hollowing_technique",
+        "Stealc",
+        "Redline_stealer"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 37,
+      "software": [
+        "Telegram",
+        "VirtualBox",
+        "Discord",
+        "Steam",
+        "Chrome"
+      ],
+      "algorithms": [
+        "chacha20",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "named"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-santastealer-is-coming-to-town-a-new-ambitious-infostealer-advertised-on-underground-forums"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "Amazon Threat Intelligence identifies Russian cyber threat group targeting Western critical infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Curlyshell",
+        "Curlcat"
+      ],
+      "geo": [
+        "Middle east",
+        "Russia",
+        "Russian",
+        "America"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Confluence",
+        "Hyper-V",
+        "GuardDuty"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-russian-cyber-threat-group-targeting-western-critical-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "Advent of Configuration Extraction - Part 3: Mapping GOT/PLT and Disassembling the SNOWLIGHT Loader",
+      "completeness": "Low",
+      "threats": [
+        "Snowlight",
+        "Vshell",
+        "Polaredge"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "PLT",
+        "section_from_virtual_address",
+        "disasm"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/advent-of-configuration-extraction-part-3-mapping-got-plt-and-disassembling-the-snowlight-loader/",
+        "https://github.com/SEKOIA-IO/Community/tree/main/Configuration\\_extractors",
+        "https://github.com/SEKOIA-IO/Community/blob/main/Configuration\\_extractors/SNOWLIGHT.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "Malicious NuGet Package Typosquats Popular .NET Tracing Library to Steal Wallet Passwords",
+      "completeness": "Medium",
+      "threats": [
+        "Homoglyph_technique",
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Moscow",
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 9,
+      "software": [
+        "NuGet",
+        "Outlook"
+      ],
+      "functions": [
+        "WebClient",
+        "Any"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-nuget-package-typosquats-popular-net-tracing-library"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "What AWS Security learned from responding to recent npm supply chain threat campaigns",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "GuardDuty"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/what-aws-security-learned-from-responding-to-recent-npm-supply-chain-threat-campaigns/",
+        "https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "Arctic Wolf Observes Malicious SSO Logins on FortiGate Devices Following Disclosure of CVE-2025-59718 and CVE-2025-59719",
+      "completeness": "Low",
+      "software": [
+        "- fortinet fortiweb (le7.4.9",
+        "le7.6.4",
+        "8.0.0)"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/arctic-wolf-observes-malicious-sso-logins-following-disclosure-cve-2025-59718-cve-2025-59719/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "Defending against the CVE-2025-55182 (React2Shell) vulnerability in React Server Components",
+      "completeness": "High",
+      "threats": [
+        "React2shell_vuln",
+        "Cobalt_strike_tool",
+        "Meshagent_tool",
+        "Vshell",
+        "Etherrat",
+        "Snowlight",
+        "Shadowpad",
+        "Xmrig_miner",
+        "Trufflehog_tool",
+        "Trojan:js/cve-2025-55182.a",
+        "Trojan:vbs/cve-2025-55182.da",
+        "Lolbin_technique",
+        "Bitsadmin_tool"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Linux",
+        "trycloudflare",
+        "OpenAI",
+        "Azure App Service Microsoft Defender for Endpoint",
+        "Node.js",
+        "Azure App Service",
+        "macOS",
+        "curl",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2025/12/15/defending-against-the-cve-2025-55182-react2shell-vulnerability-in-react-server-components/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "LLMs & Ransomware \\| An Operational Accelerator, Not a Revolution",
+      "completeness": "Medium",
+      "threats": [
+        "Lockbit",
+        "Conti",
+        "Revil",
+        "Termite",
+        "Punisher",
+        "Obscura",
+        "Babuk2",
+        "Qilin_ransomware",
+        "Blackcat",
+        "Promptlock",
+        "Quietvault",
+        "React2shell_vuln",
+        "Seo_poisoning_technique",
+        "Amos_stealer",
+        "Spamgpt_tool"
+      ],
+      "geo": [
+        "Japanese",
+        "German",
+        "Spanish",
+        "Turkish",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ollama",
+        "Claude",
+        "macOS",
+        "Linux"
+      ],
+      "wallets": [
+        "metamask",
+        "electrum",
+        "trezor",
+        "exodus_wallet",
+        "solflare"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "AI-augmented"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/llms-ransomware-an-operational-accelerator-not-a-revolution/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "Russian APT actor phishes the Baltics and the Balkans",
+      "completeness": "Low",
+      "geo": [
+        "Russian",
+        "Macedonia",
+        "Bosnia and herzegovina",
+        "Spain",
+        "Bulgaria",
+        "Moldova",
+        "Montenegro",
+        "Ukraine",
+        "Lithuania"
+      ],
+      "software": [
+        "Outlook"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://strikeready.com/blog/russian-apt-actor-phishes-the-baltics-and-the-balkans/",
+        "https://github.com/StrikeReady-Inc/research/blob/main/2025-12-13%20RU%20phishing/files.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-15",
+      "title": "GhostPairing Attacks: from phone number to full access in WhatsApp",
+      "completeness": "Low",
+      "threats": [
+        "Ghostpairing_technique"
+      ],
+      "geo": [
+        "Czechia"
+      ],
+      "software": [
+        "WhatsApp"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/ghostpairing-whatsapp-attack"
+      ]
+    }
+  }
+]

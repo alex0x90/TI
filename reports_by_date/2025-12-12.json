@@ -222,5 +222,37 @@
         "https://habr.com/ru/companies/F6/news/975730/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-12",
+      "title": "ClickFix: DarkGate",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Darkgate",
+        "Clipboard_injection_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 5,
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip",
+        "exhibit",
+        "des"
+      ],
+      "functions": [
+        "Set-Clipboard"
+      ],
+      "languages": [
+        "autoit",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/clickfix-darkgate"
+      ]
+    }
   }
 ]

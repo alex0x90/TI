@@ -617,5 +617,30 @@
         "https://mp.weixin.qq.com/s/a0uB8-dr25TSdeIb2Towrw"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-10",
+      "title": "Gogs 0-Day Exploited in the Wild",
+      "completeness": "Low",
+      "threats": [
+        "Garble_tool",
+        "Supershell"
+      ],
+      "software": [
+        "- gogs (<0.13.1)"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/wiz-research-gogs-cve-2025-8110-rce-exploit",
+        "https://github.com/advisories/GHSA-qf5v-rp47-55gg",
+        "https://github.com/gogs/gogs"
+      ]
+    }
   }
 ]

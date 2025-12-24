@@ -1,0 +1,39 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-24",
+      "title": "Evasive Panda APT poisons DNS requests to deliver MgBot",
+      "completeness": "High",
+      "threats": [
+        "Mgbot",
+        "Aitm_technique",
+        "Dll_sideloading_technique",
+        "Macma",
+        "Supply_chain_technique",
+        "Watering_hole_technique"
+      ],
+      "geo": [
+        "India",
+        "Asian",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "lzma"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/evasive-panda-apt/118576/"
+      ]
+    }
+  }
+]

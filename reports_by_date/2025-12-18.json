@@ -1,0 +1,686 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "CVE-2025-20393: Cisco AsyncOS Zero-Day Impacts Secure Email Appliances",
+      "completeness": "Low",
+      "threats": [
+        "Aquashell",
+        "Aquatunnel_tool",
+        "Chisel_tool",
+        "Aquapurge_tool",
+        "Reversessh_tool"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2025-20393-cisco-asyncos-zero-day-email/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2025/12"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Access granted: phishing with device code authorization for account takeover",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Device_code_phishing_technique",
+        "Squarephish_tool",
+        "Graphish_tool",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Ukraine",
+        "China"
+      ],
+      "software": [
+        "Microsoft OneDrive"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/access-granted-phishing-device-code-authorization-account-takeover",
+        "https://github.com/secureworks/SquarePhish",
+        "https://github.com/secureworks/squarephish"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Actively Exploited Authentication Bypass Vulnerabilities in FortiGate SSO",
+      "completeness": "Low",
+      "software": [
+        "- fortinet fortiproxy (<7.0.22",
+        "<7.2.15",
+        "<7.4.11",
+        "<7.6.4)     - fortinet fortiswitchmanager (<7.0.6",
+        "<7.2.7)     - fortinet fortios (<7.0.18",
+        "<7.2.12",
+        "<7.4.9",
+        "<7.6.4)"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/actively-exploited-authentication-bypass-vulnerabilities-in-fortigate-sso"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Hunting for Live Phishing Infrastructure Based on Cybercrime Intelligence",
+      "completeness": "Low",
+      "threats": [
+        "Bitm_technique",
+        "Aitm_technique",
+        "Tycoon_2fa",
+        "Evilproxy_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Taiwanese",
+        "Hungarian",
+        "Italian",
+        "French",
+        "Russian",
+        "Korean",
+        "Portuguese",
+        "Spanish",
+        "German",
+        "Polish"
+      ],
+      "software": [
+        "Gmail",
+        "Office365",
+        "Outlooks",
+        "Node.js",
+        "Chrome",
+        "kubelet"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/hunting-for-live-phishing-infrastructure/",
+        "https://gist.github.com/flareio-research/cf10531327c8070a85a75c859e4c0c66"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "CVE-2025-55182: First Days of React2Shell Exploitations",
+      "completeness": "Medium",
+      "threats": [
+        "React2shell_vuln",
+        "Outlaw_botnet",
+        "Infectedslurs_botnet",
+        "Rondodox",
+        "Mirai",
+        "Xmrig_miner",
+        "Reactonmynuts",
+        "Shellbot",
+        "Rustobot"
+      ],
+      "software": [
+        "Twitter",
+        "busybox",
+        "curl",
+        "systemd"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "perl"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/cve-2025-55182-analysis-of-react2shell-exploitations",
+        "https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp",
+        "https://github.com/xmrig/xmrig-proxy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Acronis TRU Alliance {Hunt.io}: Hunting DPRK threats - New Global Lazarus & Kimsuky campaigns",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Supply_chain_technique",
+        "Badcall",
+        "Poolrat",
+        "Passview_tool",
+        "Fastreverseproxy_tool",
+        "Opendir_technique",
+        "Credential_harvesting_technique",
+        "Http_troy",
+        "Blindingcan",
+        "Memload",
+        "Passwordfox_tool",
+        "Netpass_tool",
+        "Dialupass_tool",
+        "Pstpassword_tool",
+        "Rclone_tool",
+        "Mythic_c2",
+        "Quasar_rat",
+        "Sqlmap_tool",
+        "Masscan_tool",
+        "Nmap_tool",
+        "Ngrok_tool",
+        "Microsocks_tool",
+        "Frpc_tool",
+        "Impacket_tool",
+        "Nuclei_tool",
+        "Mimikatz_tool"
+      ],
+      "geo": [
+        "Singapore",
+        "Hong kong",
+        "Korean",
+        "Chinese",
+        "Dprk",
+        "Dutch",
+        "Ireland"
+      ],
+      "software": [
+        "Linux",
+        "twitter",
+        "Burp Suite"
+      ],
+      "algorithms": [
+        "zip",
+        "exhibit",
+        "sha256"
+      ],
+      "functions": [
+        "Fake_Cmd",
+        "logMessage"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/acronis-tru-alliance-huntio-hunting-dprk-threats-new-global-lazarus-and-kimsuky-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "In depth analysis of the alleged Qilin, DragonForce and LockBit alliance",
+      "completeness": "Low",
+      "threats": [
+        "Qilin_ransomware",
+        "Lockbit",
+        "Dragonforce_ransomware",
+        "Blackcat",
+        "Ransomhub",
+        "Hunters_international",
+        "Hive_ransomware",
+        "Playcrypt",
+        "Akira_ransomware",
+        "Clop",
+        "Inc_ransomware",
+        "Safepay",
+        "Lynx",
+        "Babuk"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "GoAnywhere",
+        "MOVEit",
+        "Salesforce"
+      ],
+      "languages": [
+        "solidity"
+      ],
+      "links": [
+        "https://labs.yarix.com/2025/12/in-depth-analysis-of-the-alleged-qilin-dragonforce-and-lockbit-alliance/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Defeating AuraStealer: Practical Deobfuscation Workflows for Modern Infostealers",
+      "completeness": "High",
+      "threats": [
+        "Aurastealer",
+        "Antivm_technique",
+        "Sandbox_evasion_technique",
+        "Antidebugging_technique",
+        "Heavens_gate_technique",
+        "Dll_sideloading_technique",
+        "Glassworm",
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Stealc",
+        "Vidar_stealer",
+        "Rhadamanthys",
+        "Unicorn_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "Lithuania",
+        "Estonia",
+        "Russian",
+        "Latvia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TikTok",
+        "Microsoft Defender",
+        "Discord",
+        "Telegram",
+        "Steam",
+        "KeePass",
+        "Bitwarden",
+        "1Password",
+        "LastPass"
+      ],
+      "algorithms": [
+        "mersenne_twister",
+        "xor",
+        "murmur3",
+        "fnv-1a",
+        "aes-cbc",
+        "exhibit"
+      ],
+      "functions": [
+        "NTDLL",
+        "IDA",
+        "AuraStealer"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/defeating-aurastealer-obfuscation",
+        "https://github.com/avast/ioc/blob/master/AuraStealer/extras/aurastealer\\_config\\_extractor.py",
+        "https://github.com/avast/ioc/blob/master/AuraStealer/extras/aurastealer\\_decrypt\\_strings.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "ShadyPanda: The Silent Browser Takeover Threat and How Qualys TruRisk Eliminate Helps You Stop It",
+      "completeness": "Low",
+      "software": [
+        "Chrome",
+        "Firefox"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.qualys.com/product-tech/patch-management/2025/12/17/shadypanda-malicious-browser-extensions-prevention"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Quishing Campaigns : Advanced QR-Code Phishing Evaluation and Insights",
+      "completeness": "Low",
+      "threats": [
+        "Qshing_technique",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/quishing-campaigns-advanced-qr-code-phishing-evaluation-and-insights/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "LongNosedGoblin tries to sniff out governmental affairs in Southeast Asia and Japan",
+      "completeness": "Medium",
+      "threats": [
+        "Nosyhistorian",
+        "Nosydoor",
+        "Nosystealer",
+        "Nosydownloader",
+        "Nosylogger",
+        "Lolbin_technique",
+        "Luckystrike",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "China",
+        "Asia",
+        "Japan",
+        "Asian",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft OneDrive",
+        "Active Directory",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Windows scheduled task"
+      ],
+      "algorithms": [
+        "base64",
+        "des"
+      ],
+      "functions": [
+        "GetBrowserHistory"
+      ],
+      "languages": [
+        "csharp"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "A Series of Unfortunate (RMM) Events",
+      "completeness": "Medium",
+      "threats": [
+        "Gotoresolve_tool",
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Itarian_tool",
+        "Teamviewer_tool",
+        "Atera_tool",
+        "Ninjarmm_tool",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Usa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Windows Scheduled task",
+        "Chrome",
+        "Firefox",
+        "Microsoft Teams",
+        "ChatGPT",
+        "Claude"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/series-of-unfortunate-rmm-events"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "I am not a robot: ClickFix used to deploy StealC and Qilin",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Stealc",
+        "Qilin_ransomware",
+        "Netsupportmanager_rat",
+        "Shanya_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/i-am-not-a-robot-clickfix-used-to-deploy-stealc-and-qilin"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Prince of Persia: A Decade of Iranian Nation-State APT Campaign Activity under the Microscope",
+      "completeness": "Medium",
+      "threats": [
+        "Foudre",
+        "Tonnerre",
+        "Maxpinner",
+        "Rugissement",
+        "Deep_freeze",
+        "Amaqfinder"
+      ],
+      "geo": [
+        "French",
+        "Iraq",
+        "Iranian",
+        "Canada",
+        "Tehran",
+        "Brazil",
+        "Danish",
+        "Germany",
+        "Turkey",
+        "India",
+        "Iran",
+        "Saudi arabia"
+      ],
+      "software": [
+        "Telegram",
+        "Microsoft Excel",
+        "windows media player",
+        "Linux",
+        "LiteSpeed"
+      ],
+      "algorithms": [
+        "crc-32",
+        "zip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.safebreach.com/blog/prince-of-persia-a-decade-of-an-iranian-nation-state-apt-campaign-activity/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Black Hole of Trust: SEO Poisoning in Silver Fox's Space Odyssey",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Valleyrat",
+        "Gh0st_rat",
+        "Cringe",
+        "Holdinghands",
+        "Todesk_tool",
+        "Typosquatting_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Cambodia",
+        "Chinese",
+        "Arab emirates",
+        "Japan",
+        "Malaysia",
+        "Canada",
+        "China",
+        "Korea",
+        "Taiwan",
+        "Vietnam",
+        "America",
+        "Hong kong",
+        "Myanmar",
+        "Asia-pacific",
+        "Singapore",
+        "United kingdom",
+        "Germany",
+        "Asia",
+        "Thailand",
+        "Laos",
+        "Australia",
+        "United arab emirates",
+        "Philippines",
+        "Netherlands"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 15,
+      "software": [
+        "Microsoft Teams",
+        "Telegram",
+        "AweSun",
+        "Youdao",
+        "Sogou",
+        "Android",
+        "Kuailian VPN",
+        "NSIS installer",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "fetch"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.nccgroup.com/media/yc3dlppc/black-hole-of-trust-seo-poisoning-in-silver-fox-s-space-odyssey.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "HubSpot users targeted by active phishing campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Bec_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1071.001",
+        "T1190",
+        "T1556.003",
+        "T1566.002",
+        "T1583.001",
+        "T1584.004"
+      ],
+      "software": [
+        "HubSpot",
+        "Plesk",
+        "SendGrid",
+        "Salesforce"
+      ],
+      "links": [
+        "https://evalian.co.uk/phishing-campaign-targets-hubspot-users/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "Scripted Sparrow: A Prolific BEC Threat Group",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique"
+      ],
+      "geo": [
+        "San francisco",
+        "Canada",
+        "South africa",
+        "America",
+        "American",
+        "Nigeria"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.fortra.com/resources/guides/scripted-sparrow-prolific-bec-threat-group"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-18",
+      "title": "ResidentBat: A new spyware family used by Belarusian KGB",
+      "completeness": "Medium",
+      "threats": [
+        "Residentbat",
+        "Novispy",
+        "Massistant_tool",
+        "Monokle",
+        "Screen_shotting_technique"
+      ],
+      "geo": [
+        "Belarusian",
+        "Belarussian",
+        "Switzerland",
+        "Belarus"
+      ],
+      "software": [
+        "Android",
+        "android.chrome",
+        "instagram.android",
+        "viber",
+        "whatsapp",
+        "firefox",
+        "telegram",
+        "zoom",
+        "Google Play",
+        "Chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "removeActiveAdmin"
+      ],
+      "links": [
+        "https://rsf.org/sites/default/files/medias/file/2025/12/report1.pdf"
+      ]
+    }
+  }
+]

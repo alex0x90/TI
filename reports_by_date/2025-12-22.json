@@ -1,0 +1,231 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "UEFI Firmack Flaw Bypasses Early-Boot DMA Protections",
+      "completeness": "Low",
+      "ttp_tactics": 7,
+      "ttp_techniques": 7,
+      "software": [
+        "Linux"
+      ],
+      "functions": [
+        "EnableDmaProtection",
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/uefi-firmack-flaw-bypasses-early-boot-dma-protections"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "Malicious Chrome Extensions Phantom Shuttle Masquerade as a VPN to Intercept Traffic and Exfiltrate Credentials",
+      "completeness": "Medium",
+      "threats": [
+        "Mitm_technique",
+        "Supply_chain_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Hong kong",
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 8,
+      "software": [
+        "Chrome",
+        "Outlook",
+        "WeChat",
+        "docker",
+        "twitter",
+        "instagram"
+      ],
+      "functions": [
+        "FindProxyForURL",
+        "Q",
+        "U",
+        "setProxyMode",
+        "jerry"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-chrome-extensions-phantom-shuttle",
+        "http://github.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "UNG0801: Tracking Threat Clusters obsessed with AV Icon Spoofing targeting Israel",
+      "completeness": "High",
+      "threats": [
+        "Pytric",
+        "Spear-phishing_technique",
+        "Rustric"
+      ],
+      "geo": [
+        "Israeli",
+        "Israel",
+        "Asia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "PyInstaller",
+        "Outlook",
+        "Dropbox",
+        "Telegram",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "WriteHexToFile"
+      ],
+      "languages": [
+        "rust",
+        "visual_basic",
+        "python"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/ung0801-tracking-threat-clusters-obsessed-with-av-icon-spoofing-targeting-israel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "Crimson RAT Delivered via Malicious Excel",
+      "completeness": "Medium",
+      "threats": [
+        "Crimson_rat"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 11,
+      "software": [
+        "Microsoft Excel",
+        "Microsoft Office",
+        "Microsoft Visual Studio"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "userAldiLoadr",
+        "ar1Aldi",
+        "btsAldi",
+        "dhrwarhsavserverIPD",
+        "dhrwarhsavget_command",
+        "dhrwarhsavload_app"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2025/12/23/crimson-rat-delivered-via-malicious-excel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "GamaWiper Explained: Gamaredon s \"New\" Anti-Analysis Weapon",
+      "completeness": "Low",
+      "threats": [
+        "Gamawiper",
+        "Litterdrifter",
+        "Gamaload"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "budget cuts"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/gamawiper-explained-gamaredon-anti-analysis/",
+        "https://github.com/Mr128Bit/apt-malware-samples/blob/main/Russia/Gamaredon/GamaLoad.vbs",
+        "https://github.com/Mr128Bit/apt-malware-samples/blob/main/Russia/Gamaredon/GamaWiper.vbs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "Indian Income Tax-Themed Phishing Campaign Targets Local Businesses",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Asyncrat"
+      ],
+      "geo": [
+        "India",
+        "Indian",
+        "Chinese",
+        "Colombian",
+        "China"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Outlook",
+        "Windows service",
+        "NSIS installer",
+        "curl",
+        "Sysinternals"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/indian-income-tax-themed-phishing-campaign-targets-local-businesses/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "Advent Of Configuration Extraction - Part 4: Turning capa Into A Configuration Extractor For TinyShell variant",
+      "completeness": "Low",
+      "threats": [
+        "Tinyshell",
+        "Process_injection_technique"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/advent-of-configuration-extraction-part-4-turning-capa-into-a-configuration-extractor-for-tinyshell-variant/",
+        "https://github.com/creaktive/tsh/tree/master",
+        "https://github.com/SEKOIA-IO/Community/blob/main/Configuration\\_extractors/TShVariant.py"
+      ]
+    }
+  }
+]
