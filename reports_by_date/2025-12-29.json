@@ -1,0 +1,241 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "ConsentFix: A New way to Phish for Tokens",
+      "completeness": "Low",
+      "threats": [
+        "Consentfix_technique",
+        "Clickfix_technique",
+        "Filefix_technique",
+        "Ngrok_tool"
+      ],
+      "links": [
+        "https://newtonpaul.com/blog/consentfix-phishing-for-tokens/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "Fire Ant: A Chinese Espionage Group Operating Beneath the Hypervisor",
+      "completeness": "Low",
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "links": [
+        "https://www.sygnia.co/webinars/fire-ant-apt-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "Lateral Movement via Checkmk Edit",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Checkmk",
+        "Linux",
+        "curl"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://pentest.party/posts/2025/checkmk/",
+        "https://github.com/dadevel/blog/blob/main/content/posts/2025/checkmk/",
+        "https://github.com/ufrisk/memprocfs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "Amazon Threat Intelligence identifies Russian cyber threat group targeting Western critical infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Curlyshell",
+        "Curlcat"
+      ],
+      "geo": [
+        "America",
+        "Russian",
+        "Middle east",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Confluence",
+        "Hyper-V",
+        "GuardDuty"
+      ],
+      "links": [
+        "https://aws.amazon.com/ru/blogs/security/amazon-threat-intelligence-identifies-russian-cyber-threat-group-targeting-western-critical-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "The HoneyMyte APT evolves with a kernel-mode rootkit and a ToneShell backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Toneshell",
+        "Tonedisk_tool",
+        "Plugx_rat"
+      ],
+      "geo": [
+        "Thailand",
+        "Asia",
+        "Myanmar"
+      ],
+      "software": [
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "xor",
+        "prng"
+      ],
+      "links": [
+        "https://securelist.com/honeymyte-kernel-mode-rootkit/118590/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "Golden Eye Dog (APT-Q-27) abused AWS S3 buckets to distribute the latest malicious payloads",
+      "completeness": "Medium",
+      "threats": [
+        "Procmon_tool",
+        "Process_hacker_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "Japan",
+        "India",
+        "China",
+        "California",
+        "San francisco",
+        "Philippines",
+        "Tokyo"
+      ],
+      "software": [
+        "qemu",
+        "process explorer",
+        "Chrome",
+        "Firefox",
+        "Sogou"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "md5",
+        "crc-32",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "smethod_0"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://xz.aliyun.com/news/90793?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ru&_x_tr_pto=wapp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "RondoDoX Botnet Weaponizes React2Shell",
+      "completeness": "Low",
+      "threats": [
+        "Rondodox",
+        "React2shell_vuln",
+        "Coinminer",
+        "Mirai",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WebLogic",
+        "Drupal",
+        "WordPress",
+        "curl"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/rondodox-botnet-weaponizes-react2shell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "The Industrialization of \"ClickFix\": Inside ErrTraffic",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Errtraffic",
+        "Glitch",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Cerberus",
+        "Amos_stealer"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Android",
+        "Linux",
+        "Chrome",
+        "opera",
+        "WordPress",
+        "cPanel",
+        "Joomla"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/the-industrialization-of-clickfix-inside-errtraffic/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-29",
+      "title": "Zestix Threat Actor Profile \\| TTPs, Victims, and Breach Activity",
+      "completeness": "Low",
+      "geo": [
+        "Brazilian",
+        "Brazil",
+        "Spanish",
+        "Spain"
+      ],
+      "software": [
+        "Twitter",
+        "Telegram"
+      ],
+      "links": [
+        "https://cyberint.com/blog/threat-intelligence/zestix-threat-actor-profile-ttps-victims-and-breach-activity/"
+      ]
+    }
+  }
+]

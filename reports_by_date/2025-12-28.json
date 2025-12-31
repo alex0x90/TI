@@ -1,0 +1,211 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-28",
+      "title": "Attackers exploit CVE-2025-55182 vulnerability in attacks on Russian companies",
+      "completeness": "High",
+      "threats": [
+        "Xmrig_miner",
+        "React2shell_vuln",
+        "Kaiji",
+        "Rustobot",
+        "Sliver_c2_tool",
+        "Synflood_technique",
+        "Ackflood_technique",
+        "Udpflood_technique",
+        "Runnv",
+        "Cobalt_strike_tool",
+        "Crossc2_tool",
+        "Tactical_rmm_tool",
+        "Vshell",
+        "Etherrat",
+        "Dns_tunneling_technique",
+        "Tcpflood_technique",
+        "Garble_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "systemd",
+        "crontab",
+        "macOS",
+        "Linux",
+        "Docker",
+        "curl",
+        "UNIX",
+        "Node.js",
+        "OpenAI",
+        "PostgreSQL",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "aes-128-cbc",
+        "base64",
+        "gzip",
+        "aes-256-cbc",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/zloumyshlenniki-ekspluatiruyut-uyazvimost-cve-2025-55182-v-atakakh-na-rossiyskie-kompanii/",
+        "https://github.com/C3Pool/xmrig\\_setup/blob/master/setup\\_c3pool\\_miner.sh?roistat\\_visit=1939431",
+        "https://github.com/amidaware/tacticalrmm/?roistat\\_visit=1939431"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-28",
+      "title": "DriverFixer0428 macOS Credential Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Driverfixer0428",
+        "Flexibleferret",
+        "Frostyferret",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "North korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 5,
+      "software": [
+        "macOS",
+        "chrome",
+        "Dropbox",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://www.lunchm0n3y.com/blogs-1/driverfixer0428-macos-credential-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-28",
+      "title": "PSN Satellite Data Re-Listed, CryptoRipper Tool, and Chromium 0-Day Advertised",
+      "completeness": "Low",
+      "threats": [
+        "Cryptoripper"
+      ],
+      "geo": [
+        "Indonesia",
+        "Canadian",
+        "Canada",
+        "Indonesian"
+      ],
+      "software": [
+        "Chromium",
+        "Google Chrome"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "monero"
+      ],
+      "links": [
+        "https://socradar.io/blog/psn-satellite-cryptoripper-chromium-data-breach/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-28",
+      "title": "NtKiller Malware Advertised on Dark Web With Claims of Antivirus and EDR Bypass",
+      "completeness": "Low",
+      "threats": [
+        "Ntkiller_tool",
+        "Byovd_technique",
+        "Uac_bypass_technique"
+      ],
+      "software": [
+        "Twitter",
+        "WhatsApp",
+        "Windows security",
+        "Microsoft Defender"
+      ],
+      "links": [
+        "https://gbhackers.com/ntkiller-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-28",
+      "title": "DFIR Report: TamperedChef Malware via Malvertising and Trojanized Utility",
+      "completeness": "Low",
+      "threats": [
+        "Tamperedchef",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://medium.com/@suryaraj78425/dfir-report-tamperedchef-malware-via-malvertising-and-trojanized-utility-9edc92948e8c"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-28",
+      "title": "Mamont is on the hunt: Let's analyze the new version of Android Trojan.",
+      "completeness": "Low",
+      "threats": [
+        "Mamont_spy",
+        "Nfcgate_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Telegram",
+        "Google Play",
+        "Viber",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "getUpdates"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/mamont-rat/"
+      ]
+    }
+  }
+]

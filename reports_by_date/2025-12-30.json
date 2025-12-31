@@ -1,0 +1,82 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-30",
+      "title": "EmEditor Supply Chain Incident Details Disclosed: Distribution of Information-Stealing Malware Sweeps Through Domestic Government and Enterprise Entities",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Putty_tool",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "China",
+        "Iran"
+      ],
+      "software": [
+        "Discord",
+        "Slack",
+        "Zoom",
+        "WinSCP",
+        "Steam",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://ti.qianxin.com/blog/articles/emeditor-supply-chain-incident-details-disclosed-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-30",
+      "title": "APT36 : Multi-Stage LNK Malware Campaign Targeting Indian Government Entities",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Indian",
+        "Pakistan"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 30,
+      "algorithms": [
+        "sha256",
+        "zip",
+        "md5",
+        "base64",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "ReadOnly",
+        "WriteOnly",
+        "Work",
+        "parse",
+        "getsystem",
+        "GetDeepInfo",
+        "CopyFromScreen",
+        "getclipboardtext",
+        "setclipboardtext",
+        "Send",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt36-multi-stage-lnk-malware-campaign-targeting-indian-government-entities/"
+      ]
+    }
+  }
+]

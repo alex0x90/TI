@@ -227,5 +227,187 @@
         "https://github.com/SEKOIA-IO/Community/blob/main/Configuration\\_extractors/TShVariant.py"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "2025 Holiday Scams: Docusign Phishing Meets Loan Spam",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Bec_technique"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.forcepoint.com/blog/x-labs/docusign-phishing-holiday-loan-spam"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "From ClickFix to code signed: the quiet shift of MacSync Stealer malware",
+      "completeness": "Medium",
+      "threats": [
+        "Macsyncstealer",
+        "Clickfix_technique",
+        "Odyssey_stealer",
+        "Macstealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "LibreOffice",
+        "curl",
+        "macOS",
+        "Gatekeeper"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "daemon_function",
+        "_NSHomeDirectory",
+        "checkInternet",
+        "runInstaller",
+        "log",
+        "print",
+        "_runInstaller",
+        "therunInstaller"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/macsync-stealer-evolution-code-signed-swift-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "Trial, Error, and Typos: Why Some Malware Attacks Aren't as 'Sophisticated' as You Think",
+      "completeness": "High",
+      "threats": [
+        "X2anylock",
+        "Lolbin_technique",
+        "Shellcoderunner",
+        "Gotohttp_tool",
+        "Spark_rat"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "software": [
+        "Velociraptor",
+        "OpenSSH",
+        "Windows Defender",
+        "Microsoft Defender",
+        "Windows service",
+        "ChatGPT",
+        "Claude"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Get-MpPreference"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/trial-error-typos-malware-attacks-sophisticated"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "React2Shell to real-world breach: How an unpatched dev server led to a Windows compromise",
+      "completeness": "High",
+      "threats": [
+        "React2shell_vuln",
+        "Anydesk_tool",
+        "Xmrig_miner",
+        "Runnv",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "busybox",
+        "UNIX",
+        "curl",
+        "PSExec"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/react2shell-unpatched-dev-server-windows-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-22",
+      "title": "GeoServer is being attacked by various coin miners.",
+      "completeness": "High",
+      "threats": [
+        "Netcat_tool",
+        "Spear-phishing_technique",
+        "Goreverse",
+        "Sidewalk",
+        "Mirai",
+        "Condi",
+        "Coinminer",
+        "Xmrig_miner",
+        "Nssm_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "Taiwan"
+      ],
+      "software": [
+        "GeoServer",
+        "GeoServers",
+        "Linux",
+        "systemd",
+        "Windows Defender",
+        "WebLogic"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91678/"
+      ]
+    }
   }
 ]

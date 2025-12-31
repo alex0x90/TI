@@ -1,0 +1,39 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-27",
+      "title": "UAC-0184 \\| \"Fallen Files Blackout\" Fishing Operation",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Remcos_rat",
+        "Hijackloader",
+        "Rshell",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Viber",
+        "Windows Defender",
+        "Telegram",
+        "WeChat"
+      ],
+      "algorithms": [
+        "zip",
+        "crc-32",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/289066.html"
+      ]
+    }
+  }
+]

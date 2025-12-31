@@ -108,5 +108,84 @@
         "https://socket.dev/blog/spearphishing-campaign-abuses-npm-registry"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-23",
+      "title": "RTO Scam Wave Continues: A Surge in Browser-Based e-Challan Phishing and Shared Fraud Infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Indian",
+        "Spanish"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "Android",
+        "Microsoft Defender"
+      ],
+      "links": [
+        "https://cyble.com/blog/rto-scam-wave-continues/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/tree/main/The\\_RTO\\_Scam\\_Wave\\_Continues\\_A\\_Surge\\_in\\_Browser-Based\\_e-Challan\\_Phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-23",
+      "title": "Fake \"Stable Genesis Airdrop\" Campaign Delivering a Crypto Wallet Drainer via Phishing",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "trezor",
+        "rabby"
+      ],
+      "crypto": [
+        "ethereum",
+        "uniswap",
+        "binance"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2025/12/23/fake-stable-genesis-airdrop-campaign-delivering-a-crypto-wallet-drainer-via-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-23",
+      "title": "Recap of a Suspicious Surge in Cobalt Strike",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Malaysia",
+        "American"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "deflate",
+        "gzip",
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://censys.com/blog/recap-of-a-suspicious-surge-in-cobalt-strike"
+      ]
+    }
   }
 ]

@@ -1,0 +1,119 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-26",
+      "title": "How a Compromised Browser Extension Drained $7 Million in Crypto",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/how-a-compromised-browser-extension-drained-7-million-in-crypto"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-26",
+      "title": "SideWinder APT's Latest \"Stealth\" Attack Chain Analysis",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Lolbin_technique",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "Indian",
+        "Asian",
+        "Chinese",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 9,
+      "software": [
+        "Microsoft Defender",
+        "Windows Defender",
+        "WeChat"
+      ],
+      "algorithms": [
+        "aes-128"
+      ],
+      "links": [
+        "https://www.ctfiot.com/288986.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-26",
+      "title": "Bincrypter",
+      "completeness": "Low",
+      "threats": [
+        "Bincrypter_tool"
+      ],
+      "software": [
+        "Telegram",
+        "openssl"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-cbc",
+        "gzip",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "perl"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6303/",
+        "https://github.com/hackerschoice/bincrypter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-26",
+      "title": "Unpacking SantaStealer A Stealer Rebranded from BlueLine Stealer",
+      "completeness": "Low",
+      "threats": [
+        "Bluelinestealer",
+        "Santastealer",
+        "Credential_harvesting_technique",
+        "Elevator",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20"
+      ],
+      "functions": [
+        "DllMain",
+        "ChromeElevator"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://medium.com/@maurice.fielenbach/unpacking-santa-stealer-a-stealer-rebranded-from-blueline-stealer-e74f429ce11d",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  }
+]

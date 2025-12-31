@@ -1,0 +1,65 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-25",
+      "title": "First Sophisticated Malware Discovered on Maven Central via Typosquatting Attack on Jackson",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Cobalt_strike_tool",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Unix",
+        "linux",
+        "macOS"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-ecb",
+        "base64"
+      ],
+      "functions": [
+        "String"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/maven-central-jackson-typosquatting-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-25",
+      "title": "Sneaky NPM Malware Grants Attackers Permanent Access to WhatsApp Accounts",
+      "completeness": "Medium",
+      "threats": [
+        "Lotusbail",
+        "Mitm_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 6,
+      "software": [
+        "WhatsApp",
+        "Node.js"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "WhatsApp"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/sneaky-npm-malware-grants-attackers-permanent-access-to-whats-app-accounts"
+      ]
+    }
+  }
+]

@@ -399,5 +399,55 @@
         "https://www.cyfirma.com/research/apt36-lnk-based-malware-campaign-leveraging-msi-payload-delivery/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-19",
+      "title": "BRICKSTORM Backdoor",
+      "completeness": "High",
+      "threats": [
+        "Brickstorm",
+        "Yamux_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Canadian",
+        "China"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "sudo",
+        "ESXI",
+        "Active Directory Federation Services",
+        "ADFS",
+        "Active Directory",
+        "PowerCLI",
+        "Linux",
+        "Nessus",
+        "Ivanti"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "md5",
+        "sha1",
+        "sha512"
+      ],
+      "functions": [
+        "Set-ExecutionPolicy",
+        "Get-Module"
+      ],
+      "languages": [
+        "rust",
+        "powershell",
+        "java",
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://www.cisa.gov/sites/default/files/2025-12/AR25-338A_Malware_Analysis_Report_Brickstorm_Backdoor.pdf"
+      ]
+    }
   }
 ]

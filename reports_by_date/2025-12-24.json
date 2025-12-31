@@ -35,5 +35,177 @@
         "https://securelist.com/evasive-panda-apt/118576/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-24",
+      "title": "CVE-2025-14733: WatchGuard Firebox RCE Vulnerability",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "- watchguard fireware (<12.5.15)"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2025-14733-watchguard-firebox-rce-flaw/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-24",
+      "title": "Atera Under the Spotlight: Exploring More Effective Detections",
+      "completeness": "Medium",
+      "threats": [
+        "Atera_tool",
+        "Lockbit",
+        "Blackcat",
+        "Zerolot",
+        "Conti"
+      ],
+      "geo": [
+        "Iranian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.immersivelabs.com/resources/blog/atera-under-the-spotlight-exploring-more-effective-detections"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-24",
+      "title": "REVISITING MEDUSA LOCKER RANSOMWARE",
+      "completeness": "Medium",
+      "threats": [
+        "Medusalocker",
+        "Medusa_ransomware",
+        "Cobalt_strike_tool",
+        "Raccoon_stealer",
+        "Rusty_stealer",
+        "Donut",
+        "Dcrat",
+        "Flawedammyy",
+        "Gozi",
+        "Emotet",
+        "Asyncrat",
+        "Industoyer2",
+        "Babylockerkz",
+        "Marlock",
+        "Marnet_ransomware",
+        "Mamai_ransomware",
+        "Keversen",
+        "Sunnyday",
+        "Huylock",
+        "Farattack",
+        "Lolkek",
+        "Ako_ransomware"
+      ],
+      "geo": [
+        "Russian",
+        "Ukraine"
+      ],
+      "software": [
+        "Node.js",
+        "GMAIL",
+        "Telegram"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://theravenfile.com/2025/12/24/revisiting-medusa-locker-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-24",
+      "title": "Silver Fox Targeting India Using Tax Themed Phishing Lures",
+      "completeness": "High",
+      "threats": [
+        "Dll_hijacking_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Process_injection_technique",
+        "Donut",
+        "Donutloader",
+        "Valleyrat",
+        "Credential_harvesting_technique",
+        "Process_hollowing_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Chinese"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 23,
+      "software": [
+        "NSIS Installer",
+        "Windows Update service(wuauserv",
+        "Windows registry",
+        "Windows Update service",
+        "wuauserv"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "sub_405E40"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/silver-fox-targeting-india-using-tax-themed-phishing-lures",
+        "https://github.com/listinvest/undonut",
+        "https://github.com/volexity/donut-decryptor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-24",
+      "title": "Malicious Chrome Extensions Turn Browsers Into Credential Stealing Proxies",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_stealing_technique",
+        "Aitm_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Domain:",
+        "1",
+        "File:",
+        "1",
+        "Email:",
+        "1",
+        "IP:",
+        "1"
+      ],
+      "software": [
+        "Chrome",
+        "twitter",
+        "Windows PowerShell",
+        "Squid"
+      ],
+      "functions": [
+        "Get-ChildItem"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/malicious-chrome-extensions-turn-browsers-into-credential-stealing-proxies"
+      ]
+    }
   }
 ]
