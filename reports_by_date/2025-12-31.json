@@ -1,0 +1,63 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-12-31",
+      "title": "DarkSpectre: Unmasking the Threat Actor Behind 8.8 Million Infected Browsers",
+      "completeness": "Medium",
+      "threats": [
+        "Ghostposter",
+        "Timebomb_technique",
+        "Wetab",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Russian",
+        "China",
+        "North korean",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Twitter",
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.koi.ai/blog/darkspectre-unmasking-the-threat-actor-behind-7-8-million-infected-browsers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-12-31",
+      "title": "Fake WordPress Domain Renewal Phishing Email Stealing Credit Card And 3-D Secure OTP",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Telegram"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2025/12/31/fake-wordpress-domain-renewal-phishing-email-stealing-credit-card-and-3-d-secure-otp/"
+      ]
+    }
+  }
+]
