@@ -1,0 +1,85 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-02",
+      "title": "The Intriguing Lotus: A Deep Dive into Sagerunex Securite360",
+      "completeness": "Low",
+      "threats": [
+        "Sagerunex",
+        "Plugx_rat",
+        "Shadowpad"
+      ],
+      "geo": [
+        "Asian",
+        "Canada",
+        "French",
+        "Philippines",
+        "Hong kong",
+        "France",
+        "Vietnam",
+        "Taiwan",
+        "China",
+        "Chinese",
+        "Asia",
+        "Indonesia"
+      ],
+      "software": [
+        "Internet Explorer",
+        "Firefox",
+        "Dropbox",
+        "Twitter",
+        "Zimbra",
+        "WordPress"
+      ],
+      "links": [
+        "https://securite360.net/the-intriguing-lotus-a-deep-dive-into-sagerunex"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-02",
+      "title": "VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion",
+      "completeness": "Medium",
+      "threats": [
+        "Vvs_stealer",
+        "Pyarmor_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Telegram",
+        "PyInstaller",
+        "Electron",
+        "Chrome",
+        "7Star",
+        "Amigo",
+        "CentBrowser",
+        "Epic Privacy Browser",
+        "Kometa",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "zip",
+        "aes",
+        "aes-128-ctr"
+      ],
+      "functions": [
+        "deopt_code"
+      ],
+      "languages": [
+        "cpython",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/vvs-stealer/",
+        "https://github.com/python/cpython/blob/3.11/Python/marshal.c",
+        "https://github.com/dashingsoft/pyarmor"
+      ]
+    }
+  }
+]
