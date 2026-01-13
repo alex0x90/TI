@@ -1,0 +1,63 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-12",
+      "title": "The Ransomware Ground Game: How A Christmas Scanning Campaign Will Fuel 2026 Attacks",
+      "completeness": "Low",
+      "threats": [
+        "Interactsh_tool",
+        "Nuclei_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "FUNNULL"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/christmas-scanning-campaign-fuel-2026-attacks",
+        "https://github.com/GreyNoise-Intelligence/gn-research-supplemental-data/blob/main/2025-12-30-iab-campaign/LABScon-2024\\_Jarocki\\_OAST2OAST\\_final.pdf",
+        "https://github.com/GreyNoise-Intelligence/gn-research-supplemental-data/tree/main/2025-12-30-iab-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-12",
+      "title": "Malicious Chrome Extension Steals MEXC API Keys for Account Takeover",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_stealing_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Singapore",
+        "French",
+        "China",
+        "United kingdom",
+        "Canada",
+        "Spanish",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 6,
+      "software": [
+        "Chrome",
+        "Telegram",
+        "Outlook",
+        "Twitter"
+      ],
+      "functions": [
+        "getTranslatedMessage",
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-chrome-extension-steals-mexc-api-keys"
+      ]
+    }
+  }
+]

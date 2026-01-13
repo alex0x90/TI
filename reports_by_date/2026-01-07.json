@@ -1,0 +1,193 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-07",
+      "title": "Malicious NPM Packages Deliver NodeCordRAT",
+      "completeness": "Medium",
+      "threats": [
+        "Nodecordrat",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "Discord",
+        "Chrome",
+        "Linux",
+        "macOS",
+        "Node.js"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "jscript",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/malicious-npm-packages-deliver-nodecordrat",
+        "https://github.com/bitcoinjs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-07",
+      "title": "Inside GoBruteforcer: AI-Generated Server Defaults, Weak Passwords, and Crypto-Focused Campaigns",
+      "completeness": "High",
+      "threats": [
+        "Gobruteforcer_botnet",
+        "Garbler_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "mysql",
+        "wordpress",
+        "wordpress:wordpress",
+        "phpMyAdmin",
+        "PostgreSQL",
+        "Linux",
+        "Docker"
+      ],
+      "wallets": [
+        "tron",
+        "harmony_wallet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "perl",
+        "php"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/inside-gobruteforcer-ai-generated-server-defaults-weak-passwords-and-crypto-focused-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-07",
+      "title": "How Scareware Emails Now Push Legitimate Subscriptions",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "twitter"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/01/08/how-scareware-emails-now-push-legitimate-subscriptions/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-07",
+      "title": "Ghost Tapped: Tracking the Rise of Chinese Tap-to-pay Android Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Ghost_tap_technique",
+        "Nfcgate_tool",
+        "X-nfc_tool",
+        "Smishing_technique",
+        "Ngate",
+        "Z-nfc_tool",
+        "Supercard",
+        "Phantomcard",
+        "Jiagu"
+      ],
+      "geo": [
+        "China",
+        "Italy",
+        "Chinese",
+        "Czech",
+        "Singapore",
+        "Asia",
+        "Malaysian",
+        "Brazil",
+        "Middle east",
+        "Africa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/ghost-tapped-chinese-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-07",
+      "title": "The Great VM Escape: ESXi Exploitation in the Wild",
+      "completeness": "Medium",
+      "threats": [
+        "Maestro",
+        "Vsockpuppet",
+        "Impacket_tool",
+        "Sharefinder_tool",
+        "Toctou_vuln",
+        "Getshell"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "Microsoft Defender for Endpoint",
+        "Windows firewall",
+        "Linux",
+        "Unix",
+        "ChatGPT",
+        "Claude"
+      ],
+      "functions": [
+        "SetGuestInfo",
+        "socket",
+        "GetShell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/esxi-vm-escape-exploit",
+        "https://github.com/hfiref0x/KDU"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-07",
+      "title": "A phishing campaign with QR codes rendered using an HTML table",
+      "completeness": "Low",
+      "threats": [
+        "Qshing_technique"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/32606"
+      ]
+    }
+  }
+]

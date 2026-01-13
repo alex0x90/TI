@@ -1,0 +1,77 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-10",
+      "title": "Q4 2025 Malware Statistics Report for Linux SSH Servers",
+      "completeness": "High",
+      "threats": [
+        "P2pinfect",
+        "Prometei_botnet",
+        "Xmrig_miner",
+        "Mirai",
+        "Bashlite",
+        "Tsunami_botnet",
+        "Shellbot",
+        "Xorddos",
+        "Coinminer",
+        "Perlbot",
+        "Logcleaner_tool",
+        "Nmap_tool",
+        "Udpflood_technique"
+      ],
+      "geo": [
+        "Romanian"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "perl"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91969/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-10",
+      "title": "Q4 2025 Malware Statistics Report for Windows Database Servers",
+      "completeness": "Medium",
+      "threats": [
+        "Clrshell",
+        "Coinminer",
+        "Gh0st_rat",
+        "Cobalt_strike_tool",
+        "Meterpreter_tool",
+        "Anydesk_tool",
+        "Rustdesk_tool",
+        "Trigona",
+        "Bitsadmin_tool",
+        "Juicypotato_tool",
+        "Loveminer",
+        "Mykings",
+        "Netcat_tool"
+      ],
+      "software": [
+        "MS-SQL",
+        "MySQL",
+        "Curl",
+        "Bat2Exe"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/91968/"
+      ]
+    }
+  }
+]

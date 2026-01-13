@@ -34,5 +34,76 @@
         "https://malwr-analysis.com/2026/01/05/large-scale-parasite-seo-campaign-using-amazon-style-pages-on-cloudflare-pages/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-05",
+      "title": "Analyzing PHALT#BLYX: How Fake BSODs and Trusted Build Tools Are Used to Construct a Malware Infection",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Dcrat",
+        "Process_hollowing_technique",
+        "Meta_stealer",
+        "Redline_stealer",
+        "Vidar_stealer",
+        "Clipboard_injection_technique",
+        "Asyncrat",
+        "Dead_drop_technique",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Spear-phishing_technique",
+        "Runpe_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "Windows Defender",
+        "Active Directory",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "sha256",
+        "base64",
+        "exhibit",
+        "pbkdf2",
+        "aes-256",
+        "hmac"
+      ],
+      "functions": [
+        "Set-MpPreference",
+        "DeleteApp",
+        "ComputerInfo",
+        "ReadServertData"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.securonix.com/blog/analyzing-phaltblyx-how-fake-bsods-and-trusted-build-tools-are-used-to-construct-a-malware-infection/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-05",
+      "title": "CNCERT: Risk Warning Regarding the \"Black Cat\" Gang's Use of Search Engines to Spread Counterfeit Notepad++ Download Remote Control Backdoors",
+      "completeness": "Low",
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzI4NDY2MDMwMw==&mid=2247515424&idx=2&sn=d07dc41546fd6db93f14582cea697821&poc_token=HMFfYmmjPID9iFf7ZAm5VM7e3vTVBCEV81T7nR6v"
+      ]
+    }
   }
 ]

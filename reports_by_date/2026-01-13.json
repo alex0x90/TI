@@ -1,0 +1,140 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "Unveiling VoidLink A Stealthy, Cloud-Native Linux Malware Framework",
+      "completeness": "Medium",
+      "threats": [
+        "Voidlink",
+        "Cobalt_strike_tool",
+        "Supply_chain_technique",
+        "Dns_tunneling_technique",
+        "Process_injection_technique",
+        "Credential_harvesting_technique",
+        "Timestomp_technique",
+        "Credential_dumping_technique",
+        "Dirty_pipe_vuln"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Docker",
+        "systemd",
+        "Chrome",
+        "Firefox"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/voidlink-the-cloud-native-malware-framework/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "Silent Push Uncovers New Magecart Network: Disrupting Online Shoppers Worldwide",
+      "completeness": "Low",
+      "geo": [
+        "American",
+        "Portuguese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/magecart/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "deVixor: An Evolving Android Banking RAT with Ransomware Capabilities Targeting Iran",
+      "completeness": "Medium",
+      "threats": [
+        "Devixor",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Middle east",
+        "Iranian"
+      ],
+      "ttp_tactics": 19,
+      "ttp_techniques": 22,
+      "software": [
+        "Android",
+        "Google Play",
+        "Telegram"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyble.com/blog/devixor-an-evolving-android-banking-rat-with-ransomware-capabilities-targeting-iran/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/tree/main/devixor\\_evolving\\_android\\_banking\\_rat\\_ransomware\\_capabilities"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "CastleLoader: A Deep Dive into Stealthy LoaderTargetingGovernment Sector",
+      "completeness": "High",
+      "threats": [
+        "Castleloader",
+        "Process_hollowing_technique",
+        "Pe_injection_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 6,
+      "software": [
+        "NET Framework",
+        "AutoHotKey"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "SetError",
+        "SetExtended",
+        "GetProcAddressByHash",
+        "GetMalwareConfig"
+      ],
+      "languages": [
+        "delphi",
+        "autoit",
+        "python",
+        "pascal"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/castleloader-malware-analysis/",
+        "https://github.com/anyrun/blog-scripts/tree/main/Extractors/CastleLoader"
+      ]
+    }
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-11",
+      "title": "Fake \"Fast Ray VPN\" Site on Cloudflare Pages Leading to PUA Downloads",
+      "completeness": "Low",
+      "threats": [
+        "Pixelsee"
+      ],
+      "ioc_domain": 8,
+      "ioc_url": 6,
+      "ioc_ip": 0,
+      "ioc_file": 2,
+      "ioc_command": 1,
+      "software": [
+        "Opera",
+        "TikTok",
+        "Google Play"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/01/11/fake-fast-ray-vpn-site-on-cloudflare-pages-leading-to-pua-downloads/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-11",
+      "title": "MuddyWater: When Your Build System Becomes an IOC \"Jacob\"",
+      "completeness": "Low",
+      "threats": [
+        "Rusty_stealer"
+      ],
+      "geo": [
+        "Middle east",
+        "Iran",
+        "Russian",
+        "Iranian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Docker"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "aes-gcm"
+      ],
+      "functions": [
+        "WriteHexToFile",
+        "main"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/muddywater-when-your-build-system-becomes-an-ioc/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-11",
+      "title": "North Korean APT malware attack campaign analysis targeting macOS users",
+      "completeness": "Medium",
+      "threats": [
+        "Go-stealer",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Chrome",
+        "WeChat"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "md5",
+        "gzip",
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "main",
+        "Run_DLL_Func",
+        "procesInfo",
+        "processInfo",
+        "procesOsShell",
+        "cChromeLoginData",
+        "processExit"
+      ],
+      "links": [
+        "https://www.ctfiot.com/291611.html"
+      ]
+    }
+  }
+]

@@ -145,5 +145,89 @@
         "https://www.group-ib.com/blog/docusign-impersonation-logokit/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-06",
+      "title": "Behavioral and Code Analysis Findings",
+      "completeness": "Low",
+      "threats": [
+        "Pkr_mtsi_tool",
+        "Seo_poisoning_technique",
+        "Vanguard_stealer",
+        "Oyster",
+        "Vidar_stealer",
+        "Supper_backdoor",
+        "Shellcoderunner",
+        "Textshell",
+        "Junk_code_technique",
+        "Antidebugging_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit",
+        "xor"
+      ],
+      "functions": [
+        "Obfuscated",
+        "Conditional",
+        "Many"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/unpacking-pkr_mtsi",
+        "https://github.com/OALabs/hashdb",
+        "https://github.com/upx/upx/blob/1ebd3356f36780960a03354a8ded23410ebc7e79/src/stub/src/amd64-win64.pe.S#L480-L507"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-06",
+      "title": "The Ghost in the Machine: Unmasking CrazyHunter's Stealth Tactics",
+      "completeness": "High",
+      "threats": [
+        "Crazyhunter_ransomware",
+        "Prince_ransomware",
+        "Sharpgpoabuse_tool",
+        "Byovd_technique",
+        "Zemana_tool",
+        "Av-killer",
+        "Donut",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Taiwan"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 11,
+      "software": [
+        "Active Directory",
+        "nuget",
+        "vscode",
+        "Telegram"
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256"
+      ],
+      "functions": [
+        "getDrives",
+        "EncryptDirectory",
+        "setWallpaper",
+        "main_getDrives"
+      ],
+      "languages": [
+        "powershell",
+        "dotnet"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/the-ghost-in-the-machine-crazyhunters-stealth-tactics/"
+      ]
+    }
   }
 ]
