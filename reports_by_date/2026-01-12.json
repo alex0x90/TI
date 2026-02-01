@@ -59,5 +59,121 @@
         "https://socket.dev/blog/malicious-chrome-extension-steals-mexc-api-keys"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-12",
+      "title": "Analyzing a Multi-Stage AsyncRAT Campaign via Managed Detection and Response",
+      "completeness": "High",
+      "threats": [
+        "Asyncrat",
+        "Lolbin_technique",
+        "Apc_injection_technique",
+        "Polymorphism_technique",
+        "Donut",
+        "Doghousepower"
+      ],
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TryCloudflare",
+        "Dropbox",
+        "Outlook"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "DavSetCookie"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/a/analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-12",
+      "title": "\"Unsafe Fund\": UAC-0190 targeted cyberattacks against CMAs using PLUGGYAPE (CERT-UA#19092)",
+      "completeness": "Medium",
+      "threats": [
+        "Pluggyape"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "software": [
+        "PyInstaller"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6286942"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-12",
+      "title": "ValleyRAT_S2 Chinese campaign",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Dll_sideloading_technique",
+        "Shadow_copies_delete_technique",
+        "Api_obfuscation_technique",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Supply_chain_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Hong kong",
+        "Taiwan",
+        "Asia"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 22,
+      "software": [
+        "Task Scheduler",
+        "csgo",
+        "Steam",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "SetWindowsHookEx",
+        "FindFirstFileEx",
+        "GetLocaleInfo"
+      ],
+      "languages": [
+        "cscript",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://apophis133.medium.com/valleyrat-s2-chinese-campaign-4504b890f416"
+      ]
+    }
   }
 ]

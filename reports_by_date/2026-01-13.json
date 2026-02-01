@@ -136,5 +136,232 @@
         "https://github.com/anyrun/blog-scripts/tree/main/Extractors/CastleLoader"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "Kimwolf Howls from Inside the Enterprise",
+      "completeness": "Low",
+      "threats": [
+        "Kimwolf",
+        "Residential_proxy_technique",
+        "Aisuru"
+      ],
+      "software": [
+        "Android"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/kimwolf-howls-from-inside-the-enterprise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "Key Insights on SHADOW-AETHER-015 and Earth Preta from the 2025 MITRE ATT&CK Evaluation with TrendAI Vision One",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Hermes",
+        "Aitm_technique",
+        "Mfa_bombing_technique",
+        "Sim_swapping_technique",
+        "Orpheus",
+        "Plugx_rat",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Hodur_rat",
+        "Doplugs",
+        "Pubload",
+        "Starproxy",
+        "Toneshell",
+        "Faketls_tool",
+        "Snakedisk_tool",
+        "Yokai"
+      ],
+      "geo": [
+        "Canada",
+        "Asian",
+        "Thailand",
+        "Australia",
+        "China",
+        "Asia",
+        "India",
+        "Singapore",
+        "Brazil"
+      ],
+      "software": [
+        "Active Directory",
+        "Linux"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/a/shadow-aether-015-earth-preta-mitre.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "Microsoft login page abused as phishing redirector",
+      "completeness": "Low",
+      "threats": [
+        "Nakedpages_tool",
+        "Aitm_technique"
+      ],
+      "software": [
+        "ADFS"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://research.eye.security/microsoft-login-page-abused-as-phishing-redirector/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "SmarterMail Version Enumeration: Threat Actors Building Target Lists Post-CVE-2025-52691",
+      "completeness": "Low",
+      "geo": [
+        "Spain",
+        "India",
+        "Indonesia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "url -s",
+        "Ubuntu",
+        "Linux",
+        "Fedora",
+        "Debian",
+        "Chrome",
+        "Firefox"
+      ],
+      "links": [
+        "https://www.labs.greynoise.io/grimoire/2026-01-13-smartermail-version-enumeration/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "APT PROFILE KIMSUKI",
+      "completeness": "Medium",
+      "threats": [
+        "Babyshark",
+        "Appleseed",
+        "Kgh_spy",
+        "Alphaseed",
+        "Gold_dragon",
+        "Bitsadmin_tool",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Timestomp_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Passthehash_technique",
+        "Aitm_technique",
+        "Credential_dumping_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Thailand",
+        "Vietnam",
+        "Norway",
+        "Denmark",
+        "Montenegro",
+        "Canada",
+        "Italy",
+        "Portugal",
+        "Usa",
+        "Greece",
+        "Luxembourg",
+        "North macedonia",
+        "Croatia",
+        "Romania",
+        "Netherlands",
+        "Czech",
+        "Lithuania",
+        "France",
+        "Latvia",
+        "Germany",
+        "Slovakia",
+        "Albania",
+        "Japan",
+        "Finland",
+        "Slovenia",
+        "Hungary",
+        "Estonia",
+        "Poland",
+        "Korea",
+        "North korea",
+        "Asia-pacific",
+        "Asia",
+        "Korean",
+        "Bulgaria",
+        "Belgium",
+        "America",
+        "Iceland"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 72,
+      "software": [
+        "Android",
+        "Microsoft Office",
+        "Remote Desktop Services"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-kimsuki/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-13",
+      "title": "deVixor: An Evolving Android Banking RAT with Ransomware Capabilities Targeting Iran",
+      "completeness": "Medium",
+      "threats": [
+        "Devixor",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Iran",
+        "Iranian"
+      ],
+      "ttp_tactics": 19,
+      "ttp_techniques": 22,
+      "software": [
+        "Android",
+        "Google Play",
+        "Telegram"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyble.com/blog/devixor-android-banking-rat-ransomware-iran/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/tree/main/devixor\\_evolving\\_android\\_banking\\_rat\\_ransomware\\_capabilities"
+      ]
+    }
   }
 ]

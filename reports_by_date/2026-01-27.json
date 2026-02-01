@@ -1,0 +1,306 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "Malicious Chrome Extension Performs Hidden Affiliate Hijacking",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 2,
+      "software": [
+        "Chrome",
+        "Outlook"
+      ],
+      "functions": [
+        "initAffiliateLinker"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-chrome-extension-performs-hidden-affiliate-hijacking"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "Threat Actors Using AWS WorkMail in Phishing Campaigns",
+      "completeness": "Low",
+      "threats": [
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "WorkMail",
+        "Firefox"
+      ],
+      "functions": [
+        "RequestServiceQuotaIncrease",
+        "CreateAlias",
+        "EmailMessage"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/dr-threat-actors-aws-workmail-phishing-campaigns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "HoneyMyte updates CoolClient and deploys multiple stealers in recent campaigns",
+      "completeness": "High",
+      "threats": [
+        "Coolclient",
+        "Toneshell",
+        "Plugx_rat",
+        "Qreverse",
+        "Tonedisk_tool",
+        "Snakedisk_tool",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Uac_bypass_technique",
+        "Passuac_tool",
+        "Nbtscan_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Malaysia",
+        "Pakistan",
+        "Thailand",
+        "Asia",
+        "Myanmar",
+        "Mongolia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Microsoft Edge",
+        "curl",
+        "Firefox",
+        "Opera",
+        "pixeldrain",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "aes",
+        "md5",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/honeymyte-updates-coolclient-uses-browser-stealers-and-scripts/118664/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "EMERGING THREATS",
+      "completeness": "Low",
+      "threats": [
+        "Crazyhunter_ransomware",
+        "Prince_ransomware",
+        "Byovd_technique",
+        "Zemana_tool",
+        "Sharpgpoabuse_tool"
+      ],
+      "geo": [
+        "Taiwan"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 4,
+      "links": [
+        "https://go.intel471.com/hubfs/Emerging%20Threats/2026%20Emerging%20Threats/Intel%20471%20%7C%20Emerging%20Threat%20-%20CrazyHunter%20Ransomware%20Group.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "APT Attacks Target Indian Government Using SHEETCREEP, FIREPOWER, and MAILCREEP \\| Part 2",
+      "completeness": "High",
+      "threats": [
+        "Sheetcreep",
+        "Mailcreep",
+        "Deskrat",
+        "Go-stealer",
+        "Elizarat",
+        "Curlback",
+        "Spear-phishing_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Asia",
+        "India",
+        "Indian",
+        "Pakistan"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 30,
+      "software": [
+        "Graph API",
+        "OpenAI",
+        "Linux",
+        "chrome"
+      ],
+      "algorithms": [
+        "aes-256",
+        "zip",
+        "base64",
+        "3des",
+        "cbc"
+      ],
+      "functions": [
+        "Get-FolderContents",
+        "Get-ChildItem"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/apt-attacks-target-indian-government-using-sheetcreep-firepower-and"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "Diverse Threat Actors Exploiting Critical WinRAR Vulnerability CVE-2025-8088",
+      "completeness": "Medium",
+      "threats": [
+        "Romcom_rat",
+        "Spear-phishing_technique",
+        "Nestpacker",
+        "Snipbot",
+        "Stockstay",
+        "Poison_ivy",
+        "Xworm_rat",
+        "Asyncrat"
+      ],
+      "geo": [
+        "Indonesia",
+        "Russian",
+        "Latam",
+        "Brazilian",
+        "Ukrainian",
+        "Russia",
+        "China",
+        "Ukraine"
+      ],
+      "software": [
+        "Gmail",
+        "Dropbox",
+        "Telegram",
+        "Chrome",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/exploiting-critical-winrar-vulnerability/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "Fake Clawdbot VS Code Extension Installs ScreenConnect RAT",
+      "completeness": "High",
+      "threats": [
+        "Screenconnect_tool",
+        "Remoteadmin_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Trojan.win64.injector",
+        "Dll_sideloading_technique",
+        "Process_camouflage_technique"
+      ],
+      "geo": [
+        "Seychelles"
+      ],
+      "software": [
+        "Clawdbot",
+        "OpenAI",
+        "Ollama",
+        "Electron",
+        "Chromium",
+        "Dropbox",
+        "Zoom",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "activate",
+        "initCore"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/fake-clawdbot-vscode-extension-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "Why Is a North Korean Mail Server Using a .cc Domain? - Threat Intelligence Beyond Malware",
+      "completeness": "Low",
+      "geo": [
+        "Japan",
+        "Korea",
+        "China",
+        "North korean",
+        "Russia",
+        "North korea",
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://blog.synapticsystems.de/why-is-a-north-korean-mail-server-using-a-cc-domain-threat-intelligence-beyond-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "How Predator spyware defeats iOS recording indicators",
+      "completeness": "Low",
+      "threats": [
+        "Predator_spyware",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "functions": [
+        "TestHooker",
+        "VoIP",
+        "ExtAudioFileWrite",
+        "memmem"
+      ],
+      "languages": [
+        "objective_c"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/predator-spyware-ios-recording-indicator-bypass-analysis/"
+      ]
+    }
+  }
+]

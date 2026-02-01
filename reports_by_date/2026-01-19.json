@@ -1,0 +1,435 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "Operation Covert Access: Weaponized LNK-Based Spear-Phishing Targeting Argentinas Judicial Sector to Deploy a Covert RAT",
+      "completeness": "High",
+      "threats": [
+        "Covertrat",
+        "Spear-phishing_technique",
+        "Cobalt_strike_tool",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "Argentina",
+        "America",
+        "Burma"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 48,
+      "software": [
+        "Microsoft Edge",
+        "Windows registry",
+        "VirtualBox",
+        "Hyper-V",
+        "qemu",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "exit"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-covert-access-weaponized-lnk-based-spear-phishing-targeting-argentinas-judicial-sector-to-deploy-a-covert-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "How threat actors are using self-hosted GitHub Actions runners as backdoors",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "linux",
+        "systemd"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/how-threat-actors-are-using-self-hosted-github-actions-runners-as-backdoors",
+        "https://resources.github.com/actions/2026-pricing-changes-for-github-actions/",
+        "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/configure-the-application"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "SHADOW#REACTOR - Text-Only Staging, .NET Reactor, and In-Memory Remcos RAT Deployment",
+      "completeness": "High",
+      "threats": [
+        "Dotnet_reactor_tool",
+        "Remcos_rat",
+        "Lolbin_technique",
+        "Procmon_tool",
+        "Lolbas_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "NET Reactor",
+        "VirtualBox",
+        "Windows Powershell"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Ruseysn",
+        "ReverseString",
+        "Decode"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.securonix.com/blog/shadowreactor-text-only-staging-net-reactor-and-in-memory-remcos-rat-deployment/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "Proxyware being distributed under the guise of Notepad++ tool.",
+      "completeness": "Medium",
+      "threats": [
+        "Proxyjacking_technique",
+        "Digitalpulse",
+        "Autoclicker_tool",
+        "Dploader",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "software": [
+        "SteamCleaner",
+        "Task Scheduler",
+        "dot net",
+        "WIndows Defender"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/92163/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "From Extension to Infection: An In-Depth Analysis of the Evelyn Stealer Campaign Targeting Software Developers",
+      "completeness": "Low",
+      "threats": [
+        "Evelyn_stealer",
+        "Dll_injection_technique",
+        "Process_hollowing_technique",
+        "Process_injection_technique",
+        "Trojan.win32.downloader.cm",
+        "Trojan.win64.malinjector.a",
+        "Trojan.win64.badbrowser.a"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio Code",
+        "Hyper-V",
+        "VirtualBox",
+        "QEMU",
+        "Linux"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-256-cbc",
+        "aes",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/a/analysis-of-the-evelyn-stealer-campaign.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "Hunting Lazarus: Inside the Contagious Interview C2 Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Winrm_tool",
+        "Tsunami_botnet",
+        "Xmrig_miner",
+        "Dead_drop_technique",
+        "Beavertail",
+        "Tsunami_framework",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Australia",
+        "North korean",
+        "Dprk",
+        "Ukrainian",
+        "Japan"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 16,
+      "software": [
+        "VSCode",
+        "Node.js",
+        "Chrome"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "getCookie"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://redasgard.com/blog/hunting-lazarus-contagious-interview-c2-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "Operation Nomad Leopard: Targeted Spear-Phishing Campaign Against Government Entities in Afghanistan",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Falsecub",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Emirates",
+        "Pakistan",
+        "Afghanistan",
+        "Afghan"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "GetUserNameWand"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-nomad-leopard-targeted-spear-phishing-campaign-against-government-entities-in-afghanistan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "COMmand & Evade: Turla's Kazuar v3 Loader",
+      "completeness": "High",
+      "threats": [
+        "Kazuar",
+        "Amsi_bypass_technique",
+        "Native_loader",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "software": [
+        "Component Object Model",
+        "Event Tracing for Windows",
+        "Windows COM",
+        "Windows Registry",
+        "NET Framework",
+        "Windows Defender",
+        "WordPress"
+      ],
+      "algorithms": [
+        "cbc",
+        "md5",
+        "sha256",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "CreateObject",
+        "CreateFolder",
+        "SetRequestHeader",
+        "GetFolder",
+        "GetModuleHandle",
+        "GetDelegateForFunctionPointer"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://r136a1.dev/2026/01/14/command-and-evade-turlas-kazuar-v3-loader/",
+        "https://github.com/TheEnergyStory/LoadLibraryControlFlowRedirection",
+        "https://github.com/TheEnergyStory/PatchlessEtwAndAmsiBypass"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "Dissecting CrashFix: KongTuke's New Toy",
+      "completeness": "High",
+      "threats": [
+        "Crashfix",
+        "Kongtuke",
+        "Modelorat",
+        "Mintsloader",
+        "Clickfix_technique",
+        "Typosquatting_technique",
+        "Socgholish_loader",
+        "Process_hacker_tool",
+        "Junk_code_technique",
+        "Amsi_bypass_technique",
+        "Credential_harvesting_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "GateKeeper",
+        "Chrome",
+        "Active Directory",
+        "VirtualBox",
+        "QEMU",
+        "Windows Remote Access",
+        "Windows Registry",
+        "Discord",
+        "curl",
+        "Dropbox",
+        "have more..."
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "md5",
+        "aes-256",
+        "gzip",
+        "cbc",
+        "aes",
+        "sha256",
+        "aes-256-cbc",
+        "pbkdf2",
+        "xor"
+      ],
+      "functions": [
+        "makeBatch",
+        "Remove-Item",
+        "GetTypes",
+        "GetMethod",
+        "Get-MpComputerStatus",
+        "GetModuleHandle",
+        "GetGroups",
+        "GetPermissions",
+        "Main"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/malicious-browser-extention-crashfix-kongtuke",
+        "https://github.com/RussianPanda95/Yara-Rules/blob/main/KongTuke/gatekeeper\\_payload.yar",
+        "https://github.com/uBlockOrigin/uBOL-home"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "Planned failure: Gootloaders malformed ZIP actually works perfectly",
+      "completeness": "Low",
+      "threats": [
+        "Gootkit",
+        "Rhysida"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "7zip",
+        "zip",
+        "xor",
+        "crc-32"
+      ],
+      "languages": [
+        "jscript",
+        "cscript",
+        "powershell"
+      ],
+      "links": [
+        "https://expel.com/blog/gootloaders-malformed-zip/",
+        "https://github.com/expel-io/expel-intel/blob/main/2026/01/gootloader\\_zip\\_archive\\_2025\\_11\\_17",
+        "https://github.com/WerWolv/ImHex"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-19",
+      "title": "New Infostealer Campaign Targets Users via Spoofed Software Installers",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://blog.virustotal.com/2026/01/malicious-infostealer-january-26.html"
+      ]
+    }
+  }
+]

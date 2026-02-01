@@ -1,0 +1,406 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "Stanley A $6,000 Russian Malware Toolkit with Chrome Web Store Guarantee",
+      "completeness": "Medium",
+      "threats": [
+        "Stanley_tool",
+        "Bec_technique",
+        "Smishing_technique",
+        "Crashfix"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 5,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "ChatGPT",
+        "DeepSeek",
+        "Twitter"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "functions": [
+        "setTimeout",
+        "getElementById",
+        "createElement",
+        "setAttribute"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/stanley-malware-kit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "Weaponized WinRAR Exploitation and Stealth Deployment of Fileless .NET RAT",
+      "completeness": "High",
+      "threats": [
+        "Motw_bypass_technique",
+        "Process_injection_technique",
+        "Donut",
+        "Quasar_rat",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 17,
+      "software": [
+        "Windows security"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/weaponized-winrar-exploitation-and-stealth-deployment-of-fileless-net-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "G_Wagon: npm Package Deploys Python Stealer Targeting 100+ Crypto Wallets",
+      "completeness": "High",
+      "threats": [
+        "G_wagon",
+        "Supply_chain_technique",
+        "Dll_injection_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Chrome",
+        "macOS",
+        "OpenSSL",
+        "Ledger Live",
+        "Telegram",
+        "Steam"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "trezor",
+        "exodus_wallet",
+        "polkadot"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana",
+        "cardano",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "downloadAndExtract"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/npm-malware-g-wagon-python-stealer-crypto-wallets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "MacSync stealer is using SEO poisoning and fake GitHub repositories",
+      "completeness": "Low",
+      "threats": [
+        "Macsyncstealer",
+        "Seo_poisoning_technique",
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "macOS",
+        "WordPress",
+        "CorelCAD"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "ReadMe"
+      ],
+      "links": [
+        "https://moonlock.com/macsync-stealer-fake-github-repositories"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "EMERGING THREATS",
+      "completeness": "Low",
+      "threats": [
+        "Devman",
+        "Dragonforce_ransomware",
+        "Blackbasta",
+        "Conti",
+        "Impacket_tool",
+        "Donpapi_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Africa"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 13,
+      "software": [
+        "- paloaltonetworks pan-os (10.2.0",
+        "10.2.1",
+        "10.2.2",
+        "10.2.3",
+        "10.2.4)"
+      ],
+      "links": [
+        "https://go.intel471.com/hubfs/Emerging%20Threats/2026%20Emerging%20Threats/Intel%20471%20%7C%20Emerging%20Threat%20-%20DevMan%20Ransomware.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "Vercel-hosted RMM abuse campaign evolves with Telegram C2 for victim filtering",
+      "completeness": "Low",
+      "threats": [
+        "Gotoresolve_tool",
+        "Logmein_tool",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.cloudflare.com/en-au/cloudforce-one/research/report/vercel-hosted-rmm-abuse-campaign-evolves-with-telegram-c2-for-victim-filtering/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "The new Mac stealer in town: MonetaStealer is after crypto wallets",
+      "completeness": "Low",
+      "threats": [
+        "Monetastealer",
+        "Monetastaler",
+        "Macc_stealer"
+      ],
+      "software": [
+        "macOS",
+        "Telegram",
+        "Chrome"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "electrum",
+        "metamask",
+        "coinbase"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://moonlock.com/new-monetastealer-crypto-wallets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "Fake Booking.com ClickFix attack abuses Cloudflare verification to deliver malware",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Hijackloader",
+        "Purelogs",
+        "Cobalt_strike_tool",
+        "Remcos_rat",
+        "Purerat",
+        "Stealc",
+        "Dotnet_reactor_tool",
+        "Vmprotect_tool",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare turnstile",
+        "Node.js",
+        "Curl",
+        "NET Reactor"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "RegWrite"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/fake-booking-com-clickfix-attack-abuses-cloudflare-verification-to-deliver-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "Revisiting GPUGate: Repo Squatting and OpenCL Deception to Deliver HijackLoader",
+      "completeness": "High",
+      "threats": [
+        "Repo_squatting_technique",
+        "Gpugate_technique",
+        "Hijackloader",
+        "Dll_sideloading_technique",
+        "Amos_stealer",
+        "Sectop_rat",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "Japanese",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Apache Spark",
+        "macOS",
+        "Windows installer",
+        "NET core",
+        "Microsoft Defender",
+        "BinDiff"
+      ],
+      "algorithms": [
+        "aes-128",
+        "cbc",
+        "sha256",
+        "sha1",
+        "xor"
+      ],
+      "functions": [
+        "GenerateKey",
+        "generate_key",
+        "DecryptPayload",
+        "OpenCL",
+        "GetByteArrayAsync"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://gmo-cybersecurity.com/blog/revisiting-gpugate-repo-squatting-and-opencl-deception-to-deliver-hijackloader/",
+        "https://github.com/gmoierae-div-soc/deceiving-developers-abusing-legitimate-gitbub-repositories-to-deliver-malware/blob/main/Repo%20Squatting%20and%20OpenCL%20Deception%20to%20Deliver%20HijackLoader.md#key-takeaways",
+        "https://github.com/gmoierae-div-soc/deceiving-developers-abusing-legitimate-gitbub-repositories-to-deliver-malware/blob/main/Repo%20Squatting%20and%20OpenCL%20Deception%20to%20Deliver%20HijackLoader.md#introduction",
+        "https://github.com/gmoierae-div-soc/deceiving-developers-abusing-legitimate-gitbub-repositories-to-deliver-malware/blob/main/Repo%20Squatting%20and%20OpenCL%20Deception%20to%20Deliver%20HijackLoader.md#malware-delivery-malvertising--github-repo-squatting"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "ESET Research: Sandworm behind cyberattack on Polands power grid in late 2025",
+      "completeness": "Low",
+      "threats": [
+        "Dynowiper",
+        "Killfiles"
+      ],
+      "geo": [
+        "Ukraine",
+        "Polands",
+        "Russia",
+        "Ukrainian",
+        "Poland"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/eset-research-sandworm-cyberattack-poland-power-grid-late-2025/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-23",
+      "title": "Weaponized in China, Deployed in India: The SyncFuture Espionage Targeted Campaign",
+      "completeness": "High",
+      "threats": [
+        "Krbanker",
+        "Dll_sideloading_technique",
+        "Uac_bypass_technique",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Asian",
+        "Korea",
+        "China",
+        "India",
+        "Indian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "Windows explorer",
+        "Windows service",
+        "Sendgrid",
+        "Microsoft Defender",
+        "Windows Defender",
+        "Process Explorer",
+        "Windows installer",
+        "AutoHotKey",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "md5",
+        "sha256",
+        "exhibit",
+        "lznt1"
+      ],
+      "functions": [
+        "LZNT1_Decompress",
+        "TaskList",
+        "SetPermissions"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/weaponized-in-china-deployed-in-india-the-syncfuture-espionage-targeted-campaign",
+        "https://github.com/eSentire/iocs/blob/main/SyncFuture%20Espionage%20Campaign/SyncFuture\\_Espionage\\_Campaign\\_IOCS\\_Jan2026.txt",
+        "https://github.com/OALabs/hashdb/blob/main/algorithms/mul83\\_add.py"
+      ]
+    }
+  }
+]

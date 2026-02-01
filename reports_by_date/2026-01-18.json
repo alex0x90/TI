@@ -1,0 +1,109 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-18",
+      "title": "PDFSIDER Malware - Exploitation of DLL Side-Loading for AV and EDR Evasion",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Pdfsider",
+        "Spear-phishing_technique",
+        "Microsoft_quick_assist_tool",
+        "Lotuslite",
+        "Agent_tesla",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Remcos_rat",
+        "Quasar_rat",
+        "Cryptbot_stealer",
+        "Formbook",
+        "Dcrat",
+        "Xworm_rat"
+      ],
+      "geo": [
+        "Venezuela"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 6,
+      "algorithms": [
+        "aes-gcm",
+        "aes-256",
+        "aes-256-gcm",
+        "md5",
+        "zip"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/pdfsider-malware-exploitation-of-dll-side-loading-for-av-and-edr-evasion"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-18",
+      "title": "Operation Poseidon: Spear-Phishing Attacks Abusing Google Ads Redirection Mechanisms",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Endrat",
+        "Autoitrat"
+      ],
+      "geo": [
+        "Korean",
+        "Asia",
+        "Korea",
+        "Vietnamese",
+        "Japan",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "PHPMailer"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "php",
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/spear-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-18",
+      "title": "RustyStealer: Your Compiler Is Snitching on You",
+      "completeness": "Medium",
+      "threats": [
+        "Rusty_stealer",
+        "Rustywater",
+        "Rustric"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64",
+        "aes",
+        "aes-gcm"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/rustystealer-your-compiler-is-snitching-on-you/"
+      ]
+    }
+  }
+]

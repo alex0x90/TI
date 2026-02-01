@@ -1,0 +1,209 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-16",
+      "title": "HUMINT Operations Uncover Cryptojacking Campaign: Discord-Based Distribution of Clipboard Hijacking Malware Targeting Cryptocurrency Communities",
+      "completeness": "High",
+      "threats": [
+        "Redlinecyber",
+        "Redline_stealer",
+        "Credential_harvesting_technique",
+        "Clipbanker",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Australia",
+        "United kingdom",
+        "New zealand"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 5,
+      "software": [
+        "Discord",
+        "PyInstaller",
+        "Windows Registry",
+        "Telegram",
+        "OpenSSL"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "dogecoin",
+        "litecoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "SetClipboardText"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/humint-operations-uncover-cryptojacking-campaign-discord-based-distribution-of-clipboard-hijacking-malware-targeting-cryptocurrency-communities",
+        "https://github.com/extremecoders-re/pyinstxtractor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-16",
+      "title": "SOLYXIMMORTAL : PYTHON MALWARE ANALYSIS",
+      "completeness": "Low",
+      "threats": [
+        "Solyximmortal"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Discord",
+        "Chrome",
+        "Telegram"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/solyximmortal-python-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-16",
+      "title": "TamperedChef serves bad ads, with infostealers as the main course",
+      "completeness": "Medium",
+      "threats": [
+        "Tamperedchef",
+        "Evilai",
+        "Appsuite",
+        "Epibrowser",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "France",
+        "Malaysia",
+        "United kingdom",
+        "Germany"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/tamperedchef-serves-bad-ads-with-infostealers-as-the-main-course",
+        "https://github.com/sophoslabs/IoCs/blob/master/TamperedChef\\_IOCs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-16",
+      "title": "New Remcos Campaign Distributed Through Fake Shipping Document",
+      "completeness": "High",
+      "threats": [
+        "Remcos_rat",
+        "Process_hollowing_technique",
+        "Agent_tesla",
+        "Drakcloud"
+      ],
+      "geo": [
+        "Vietnamese",
+        "Vietnam"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Task Scheduler",
+        "Microsoft Word",
+        "Microsoft Visual C++"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "VAI",
+        "URLDownloadToFileW",
+        "TaskScheduler-related",
+        "TaskService"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/new-remcos-campaign-distributed-through-fake-shipping-document"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-16",
+      "title": "Dark Web Profile: Orion Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Orion_ransomware",
+        "Babuk2",
+        "Lockbit",
+        "Blackcat",
+        "Babuk"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-orion-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-16",
+      "title": "Remcos RAT is distributing to domestic users",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat",
+        "Clipbanker",
+        "Passview_tool"
+      ],
+      "geo": [
+        "Korean",
+        "Korea"
+      ],
+      "software": [
+        "VeraCrypt",
+        "Telegram",
+        "Discord"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "dotnet",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/92135/"
+      ]
+    }
+  }
+]

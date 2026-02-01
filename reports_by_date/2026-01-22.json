@@ -1,0 +1,406 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Resurgence of a multistage AiTM phishing and BEC campaign abusing SharePoint",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Bec_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft SharePoint",
+        "Microsoft Entra",
+        "Microsoft Edge",
+        "Office 365",
+        "Microsoft Defender for Endpoint"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/01/21/multistage-aitm-phishing-bec-campaign-abusing-sharepoint/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Arctic Wolf Observes Malicious Configuration Changes On Fortinet FortiGate Devices via SSO Accounts",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "- fortinet fortiproxy (<7.0.22",
+        "<7.2.15",
+        "<7.4.11",
+        "<7.6.4)     - fortinet fortiswitchmanager (<7.0.6",
+        "<7.2.7)     - fortinet fortios (<7.0.18",
+        "<7.2.12",
+        "<7.4.9",
+        "<7.6.4)"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/arctic-wolf-observes-malicious-configuration-changes-fortinet-fortigate-devices-via-sso-accounts/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Osiris: New Ransomware, Experienced Attackers?",
+      "completeness": "Medium",
+      "threats": [
+        "Osiris_ransomware",
+        "Inc_ransomware",
+        "Poortry",
+        "Rustdesk_tool",
+        "Locky",
+        "Byovd_technique",
+        "Mimikatz_tool",
+        "Rclone_tool",
+        "Netscan_tool",
+        "Netexec_tool",
+        "Meshagent_tool",
+        "Abyssworker",
+        "Medusa_ransomware",
+        "Stonestop",
+        "Burntcigar"
+      ],
+      "geo": [
+        "Asia"
+      ],
+      "software": [
+        "hyperv",
+        "curl",
+        "msexchange"
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "aes-128-ctr",
+        "ecc",
+        "aes"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/new-ransomware-osiris"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "KONNI Adopts AI to Generate PowerShell Backdoors",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Uac_bypass_technique",
+        "Procmon_tool",
+        "Fodhelper_technique",
+        "Simplehelp_tool"
+      ],
+      "geo": [
+        "Apac",
+        "North korean",
+        "Australia",
+        "India",
+        "North korea",
+        "Korea",
+        "Japan",
+        "Korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/konni-targets-developers-with-ai-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Dark Web Profile: Anubis Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Anubis",
+        "Sphinx",
+        "Anubisbackdoor",
+        "Spear-phishing_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Russian",
+        "America",
+        "Apac"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 2,
+      "software": [
+        "Android"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-anubis-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Darktrace Identifies Campaign Targeting South Korea Leveraging VS Code for Remote Access",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Korea",
+        "Chinese",
+        "Asia",
+        "Korean",
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "Visual Studio Code",
+        "VSCode"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/darktrace-identifies-campaign-targeting-south-korea-leveraging-vs-code-for-remote-access"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "ClearFake gets more evasive with new living off the land (LOTL) techniques",
+      "completeness": "Low",
+      "threats": [
+        "Clearfake",
+        "Lolbin_technique",
+        "Clickfix_technique",
+        "Etherhiding_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "atob",
+        "eval",
+        "set",
+        "get",
+        "GetSmartContractData",
+        "fetch",
+        "RPC",
+        "load_",
+        "Get-Alias",
+        "Get-Command",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://expel.com/blog/clearfake-new-lotl-techniques/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Malware MoonPeak Executed via LNK Files",
+      "completeness": "High",
+      "threats": [
+        "Moonpeak",
+        "Xenorat",
+        "Confuserex_tool"
+      ],
+      "geo": [
+        "North korean",
+        "Korea",
+        "Japan",
+        "Korean",
+        "Dprk",
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WinDump",
+        "gmail",
+        "Twitter"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "sha256",
+        "gzip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/01/dprk-moonpeak-executed-via-malicious-lnk-file/",
+        "https://github.com/ViRb3/de4dot-cex"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Restless spirit: PhantomCore spies have carried out new attacks on Russian companies",
+      "completeness": "Medium",
+      "threats": [
+        "Phantomcore",
+        "Phantomeremote"
+      ],
+      "geo": [
+        "Belarusian",
+        "Russian"
+      ],
+      "software": [
+        "Windows Task Scheduler"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/F6/articles/987734/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Watering Hole Attack Targets EmEditor Users with Information-Stealing Malware",
+      "completeness": "Low",
+      "threats": [
+        "Watering_hole_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Georgia",
+        "Armenia",
+        "Belarus",
+        "Kyrgyzstan",
+        "Japanese",
+        "Russian",
+        "Kazakhstan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/a/watering-hole-attack-targets-emeditor-users.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Living Off the Web: How Trust Infrastructure Became a Malware Delivery Interface",
+      "completeness": "High",
+      "threats": [
+        "Fakecaptcha_tool",
+        "Matrix_push_c2_tool",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Installer",
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://censys.com/blog/living-off-the-web-how-trust-infrastructure-became-a-malware-delivery-interface"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-22",
+      "title": "Organized Traffer Gang on the Rise Targeting Web3 Employees and Crypto Holders",
+      "completeness": "High",
+      "threats": [
+        "Traffer_technique",
+        "Opulous",
+        "Amos_stealer",
+        "Rhadamanthys",
+        "Lumma_stealer",
+        "Meeten",
+        "Hijackloader"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "software": [
+        "Electron",
+        "Linux",
+        "tradingview",
+        "MacOS",
+        "NSIS installer",
+        "Telegram",
+        "QEMU",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256"
+      ],
+      "functions": [
+        "sendClientName"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://hybrid-analysis.blogspot.com/2026/01/organized-traffer-gang-on-rise.html",
+        "https://github.com/6nz/virustotal-vm-blacklist"
+      ]
+    }
+  }
+]

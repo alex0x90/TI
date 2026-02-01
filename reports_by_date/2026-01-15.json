@@ -1,0 +1,152 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-15",
+      "title": "UAT-8837 targets critical infrastructure sectors in North America",
+      "completeness": "Medium",
+      "threats": [
+        "Earthworm_tool",
+        "Bloodhound_tool",
+        "Dwagent_tool",
+        "Certipy_tool",
+        "Viewstate_deserialization_vuln",
+        "Gotokentheft_tool",
+        "Impacket_tool",
+        "Sharpwmi_tool",
+        "Rubeus_tool",
+        "Supply_chain_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "China",
+        "America"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "SiteCore"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-8837/",
+        "https://github.com/Aquilao/GoTokenTheft",
+        "https://github.com/Kevin-Robertson/Invoke-TheHash"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-15",
+      "title": "LOTUSLITE: Targeted espionage leveraging geopolitical themes",
+      "completeness": "High",
+      "threats": [
+        "Lotuslite",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Claimloader"
+      ],
+      "geo": [
+        "Chinese",
+        "Venezuela",
+        "Dutch",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "GetComputerName",
+        "GetUserName"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/lotuslite-targeted-espionage-leveraging-geopolitical-themes/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-15",
+      "title": "5 Malicious Chrome Extensions Enable Session Hijacking in Enterprise HR and ERP Systems",
+      "completeness": "Low",
+      "ttp_tactics": 3,
+      "ttp_techniques": 5,
+      "software": [
+        "Chrome",
+        "Outlook"
+      ],
+      "functions": [
+        "removeRuleIds",
+        "setTimeout",
+        "getDomainFromURL",
+        "removeSpecially",
+        "setCookie",
+        "getAuthTokenFromCookie",
+        "setInterval",
+        "getSession"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/5-malicious-chrome-extensions-enable-session-hijacking"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-15",
+      "title": "DeadLock Ransomware: Smart Contracts for Malicious Purposes",
+      "completeness": "High",
+      "threats": [
+        "Deadlock",
+        "Anydesk_tool",
+        "Dosvc",
+        "Winrm_tool",
+        "Etherhiding_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "India",
+        "North korean",
+        "Dprk",
+        "Italy",
+        "Spain"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 6,
+      "software": [
+        "Wuauserv",
+        "Shopware",
+        "WordPress",
+        "cPanel",
+        "Ubuntu"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "setProxy"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/deadlock-ransomware-polygon-smart-contracts/"
+      ]
+    }
+  }
+]

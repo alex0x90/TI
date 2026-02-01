@@ -1,0 +1,60 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-31",
+      "title": "GlassWorm Loader Hits Open VSX via Developer Account Compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Moscow",
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Outlook",
+        "vscode",
+        "Mozilla Firefox",
+        "Ledger Live",
+        "Visual Studio",
+        "Visual Studio Code",
+        "Node.js",
+        "Chromium",
+        "curl",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "electrum",
+        "exodus_wallet",
+        "trezor",
+        "tonkeeper"
+      ],
+      "crypto": [
+        "solana",
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/glassworm-loader-hits-open-vsx-via-suspected-developer-account-compromise",
+        "https://github.com/oorzc/vscode\\_sync\\_tool/issues/25"
+      ]
+    }
+  }
+]

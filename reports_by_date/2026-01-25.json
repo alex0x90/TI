@@ -1,0 +1,63 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-25",
+      "title": "Cyber Counterintelligence (CCI): When 'Shiny Objects' trick 'Shiny Hunters'",
+      "completeness": "Low",
+      "geo": [
+        "Russia",
+        "American",
+        "Korea",
+        "Turkey",
+        "Canadian"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.resecurity.com/es/blog/article/cyber-counterintelligence-cci-when-shiny-objects-trick-shiny-hunters"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-25",
+      "title": "UAC-0184 \\| \"Fallen Files Blackout\" Phishing Operation",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Remcos_rat",
+        "Hijackloader",
+        "Rshell",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Viber",
+        "Windows Defender",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "zip",
+        "crc-32"
+      ],
+      "functions": [
+        "createChildProcess",
+        "createScheduledTask"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247507757&idx=1&sn=cf6b118e88395af45a000aae80811264&poc_token=HAgPdmmjK5dFMw7BETEoQQ4_nW02p-Tw9WIodC0G"
+      ]
+    }
+  }
+]

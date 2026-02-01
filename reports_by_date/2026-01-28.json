@@ -1,0 +1,374 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "PureRAT: Attacker Now Using AI to Build Toolset",
+      "completeness": "Medium",
+      "threats": [
+        "Purerat",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "American",
+        "Vietnam",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Microsoft Excel",
+        "Foxit",
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "7zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/ai-purerat-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "Novel Fake CAPTCHAChainDelivering AmateraStealer",
+      "completeness": "Medium",
+      "threats": [
+        "Amatera_stealer",
+        "Lolbin_technique",
+        "Steganography_technique",
+        "Acr_stealer",
+        "Googlecalendarc2"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "gzip",
+        "md5"
+      ],
+      "functions": [
+        "Get-Alias",
+        "Get-Command",
+        "Get-Clipboard",
+        "ManualResetEvent",
+        "GetEndpoints"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blackpointcyber.com/blog/novel-fake-captcha-chain-delivering-amatera-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "AttackersAre TakingOverRealEmail Threadsto DeliverPhishing: New Enterprise Risk",
+      "completeness": "Low",
+      "threats": [
+        "Evilproxy_tool",
+        "Aitm_technique",
+        "Antibot",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Middle",
+        "east"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare Turnstile"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/enterprise-email-thread-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "The Mystery Behind a Backslash: Anti-Sandbox Bypass Techniques for Undisclosed APT32 Samples",
+      "completeness": "Medium",
+      "threats": [
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Italy"
+      ],
+      "software": [
+        "Sogou",
+        "WeChat"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip",
+        "aes",
+        "crc-32",
+        "md5"
+      ],
+      "functions": [
+        "GetCurrentDirectoryW",
+        "GetBrowserManagerInstance"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.ctfiot.com/293464.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "Cant stop, wont stop: TA584 innovates initial access",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Tsundere",
+        "Ettersilent_tool",
+        "Gozi",
+        "Keitaro_tds_tool",
+        "Xworm_rat",
+        "Cobalt_strike_tool",
+        "Xenorat",
+        "Warmcookie",
+        "Dcrat",
+        "Etherhiding_technique",
+        "Process_hollowing_technique",
+        "Sharphide_tool"
+      ],
+      "geo": [
+        "American",
+        "Ukrainian",
+        "Ireland",
+        "German",
+        "America",
+        "Australia",
+        "Germany",
+        "Russian",
+        "Belarusian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SendGrid",
+        "Node.js",
+        "Windows Registry",
+        "Windows Powershell"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "xor",
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access",
+        "https://github.com/outflanknl/SharpHide"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "Unveiling the Weaponized Web Shell EncystPHP",
+      "completeness": "High",
+      "threats": [
+        "Encystphp",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Indian",
+        "Brazil"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 15,
+      "software": [
+        "FreePBX",
+        "Elastix",
+        "crontab",
+        "Unix",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/unveiling-the-weaponized-web-shell-encystphp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "The PyRAT Code: Python Based RAT and its Internals",
+      "completeness": "Low",
+      "threats": [
+        "Pyrat"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Debian",
+        "Windows Registry",
+        "Twitter"
+      ],
+      "algorithms": [
+        "deflate",
+        "zip"
+      ],
+      "functions": [
+        "Upload",
+        "download",
+        "exec"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/the-pyrat-code-python-based-rat-and-its-internals/",
+        "https://github.com/extremecoders-re/pyinstxtractor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "Prince of Persia - APT-C-07 Analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Foudre",
+        "Tonnerre",
+        "Maxpinner",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "French",
+        "Israeli"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 23,
+      "software": [
+        "Telegram",
+        "Gmail",
+        "Microsoft PowerPoint",
+        "Windows Shell",
+        "Windows Service",
+        "Microsoft Edge",
+        "Internet Explorer",
+        "Google Chrome",
+        "Opera",
+        "Firefox",
+        "WeChat",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "crc-32"
+      ],
+      "languages": [
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.ctfiot.com/293188.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "No Place Like Home Network: Disrupting the World's Largest Residential Proxy Network",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Ipidea",
+        "Aisuru",
+        "Kimwolf",
+        "Password_spray_technique",
+        "922proxy_tool",
+        "Abcproxy_tool",
+        "Lunaproxy_tool",
+        "Piaproxy_tool",
+        "Radish_vpn_tool",
+        "Badbox",
+        "Island_tool"
+      ],
+      "geo": [
+        "Canada",
+        "Hongkong",
+        "Iran",
+        "Russia",
+        "Dprk",
+        "Hong kong",
+        "China"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/disrupting-largest-residential-proxy-network/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "ErrTraffic Under the Hood: A look at the source code",
+      "completeness": "Low",
+      "threats": [
+        "Errtraffic",
+        "Clickfix_technique",
+        "Aeternum"
+      ],
+      "software": [
+        "MacOS",
+        "Android",
+        "Linux",
+        "MySQL"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/threat%20research/ErrTraffic/"
+      ]
+    }
+  }
+]

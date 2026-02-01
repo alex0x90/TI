@@ -1,0 +1,387 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "When Malware Talks Back",
+      "completeness": "High",
+      "threats": [
+        "Pulsar_rat",
+        "Donut",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Credential_harvesting_technique",
+        "Stealer37",
+        "Costura_tool",
+        "Anydesk_tool",
+        "Putty_tool",
+        "Mobaxterm_tool",
+        "Ngrok_tool",
+        "Teamviewer_tool",
+        "Radmin_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "Discord",
+        "Telegram",
+        "Process Explorer",
+        "Microsoft Visual Studio",
+        "Windows security",
+        "Windows Scheduled Task",
+        "Coreftp",
+        "CyberDuck",
+        "FoxMail",
+        "FTPGetter",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "chaskey",
+        "zip",
+        "xor",
+        "base64",
+        "exhibit"
+      ],
+      "functions": [
+        "Main",
+        "CreateNoWindow",
+        "PostAsync",
+        "SendToTelegram"
+      ],
+      "languages": [
+        "ruby",
+        "powershell",
+        "jscript",
+        "dotnet",
+        "visual_basic",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/when-malware-talks-back",
+        "https://github.com/TheWover/donut",
+        "https://github.com/volexity/donut-decryptor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "ShadowHS: A Fileless Linux PostExploitation Framework Built on a Weaponized hackshell",
+      "completeness": "High",
+      "threats": [
+        "Shadowhs_tool",
+        "Hackshell_tool",
+        "Credential_harvesting_technique",
+        "Rondodox",
+        "Kinsing_miner",
+        "Xmrig_miner",
+        "Ebury",
+        "Credential_stealing_technique",
+        "Gminer",
+        "Lolminer",
+        "Gsocket_tool",
+        "Gs-netcat",
+        "Rustscan_tool",
+        "Dirty_pipe_vuln"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 1,
+      "software": [
+        "Linux",
+        "OpenSSL",
+        "Microsoft Defender",
+        "OpenSSH",
+        "AppArmor",
+        "Bitrix",
+        "WordPress",
+        "Docker",
+        "rsync"
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256",
+        "base64",
+        "kawpow",
+        "aes-256-cbc",
+        "exhibit"
+      ],
+      "functions": [
+        "_once",
+        "gpu",
+        "rs",
+        "rs1"
+      ],
+      "languages": [
+        "golang",
+        "perl"
+      ],
+      "links": [
+        "https://cyble.com/blog/shadowhs-fileless-linux-post-exploitation-framework/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "From Code to Coverage (Part 4): Hunting SOAPHound - The (!FALSE) Pattern",
+      "completeness": "Low",
+      "threats": [
+        "Soaphound_tool",
+        "Impacket_tool",
+        "Bloodhound_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "ChatGPT",
+        "Claude"
+      ],
+      "functions": [
+        "Write-Host",
+        "GetUserSPNs"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/ldap-active-directory-detection-part-four",
+        "https://github.com/FalconForce/SOAPHound/blob/main/SOAPHound/LDAP/LDAPFilter.cs",
+        "https://github.com/FalconForceTeam/SOAPHound"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "Inside the EmEditor supply chain compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Twitter",
+        "Windows Installer",
+        "NGINX"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "functions": [
+        "RemoveShortcut"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/emeditor-supply-chain-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "Vishing for Access: Tracking the Expansion of ShinyHunters-Branded SaaS Data Theft",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Residential_proxy_technique",
+        "Nsocks_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "Slack",
+        "Microsoft Office",
+        "Chrome",
+        "Mac OS",
+        "Gmail",
+        "Outlook",
+        "OFFICE_365"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/expansion-shinyhunters-saas-data-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "CVE-2026-24858: Patch Released for Fortinet FortiOS SSO Authentication Bypass",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Fortinet FortiOS",
+        "Active Directory",
+        "Microsoft Office",
+        "Microsoft Defender"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2026-24858-fortinet-fortios-sso-patch/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "PlayCloak: A Play StoreDistributed Travel Utility Covertly Operating as a Financial Fraud and Cybercrime Platform",
+      "completeness": "High",
+      "threats": [
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Hong kong",
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/playcloak-a-play-store-distributed-travel-utility-covertly-operating-as-a-financial-fraud-and-cybercrime-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "Energy Sector Incident Report 29 December",
+      "completeness": "High",
+      "threats": [
+        "Dynowiper",
+        "Lazywiper",
+        "Impacket_tool",
+        "Nircmd_tool",
+        "Rubeus_tool",
+        "Rsocx_tool",
+        "Advanced-port-scanner_tool",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Antidebugging_technique",
+        "Arguepatch_loader",
+        "Ransomboggs",
+        "Prestige_ransomware",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Polish",
+        "Poland"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 49,
+      "software": [
+        "Linux",
+        "Active Directory",
+        "PsExec",
+        "rsocx",
+        "Microsoft Edge",
+        "Dropbox",
+        "Slack"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64",
+        "exhibit",
+        "des"
+      ],
+      "functions": [
+        "Get-Service",
+        "GetDriveType",
+        "FindFirstFile",
+        "FindNextFile",
+        "SetFileAttributesEx",
+        "CreateException",
+        "WriteRandomBytes",
+        "NewGuid"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cert.pl/uploads/docs/CERT_Polska_Energy_Sector_Incident_Report_2025.pdf",
+        "https://github.com/b23r0/rsocx",
+        "https://github.com/fortra/impacket"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-30",
+      "title": "PhantomVAI: custom loader built on an old RunPE utility used in worldwide campaigns",
+      "completeness": "High",
+      "threats": [
+        "Phantomvai_loader",
+        "Runpe_tool",
+        "Mandark_tool",
+        "Darkcloud",
+        "Process_hollowing_technique",
+        "Remcos_rat",
+        "Xworm_rat",
+        "Asyncrat",
+        "Smokeloader",
+        "Loki_bot",
+        "Rhadamanthys",
+        "Matanbuchus_maas",
+        "Lumma_stealer",
+        "Katz_stealer",
+        "Dcrat",
+        "Vmdetector",
+        "Steganography_technique",
+        "Caminho",
+        "Vmdetectloader",
+        "Antidebugging_technique",
+        "Polymorphism_technique",
+        "Vailoader"
+      ],
+      "geo": [
+        "Brazilian",
+        "America",
+        "Africa",
+        "Azerbaijan",
+        "Latin america",
+        "Portuguese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Task Scheduler",
+        "Whatsapp"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "GetThreadContextlong",
+        "TaskScheduler"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.intrinsec.com/wp-content/uploads/2026/01/TLP-CLEAR-20260130-PhantomVAI_Loader.pdf",
+        "https://github.com/nantmamamb/pePolymorpher/blob/master/pePolymorpher/Mandark.cs",
+        "https://github.com/decay88/Mandark/"
+      ]
+    }
+  }
+]

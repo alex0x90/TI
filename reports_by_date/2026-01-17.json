@@ -1,0 +1,130 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-17",
+      "title": "UNO reverse card: stealing cookies from cookie stealers",
+      "completeness": "Low",
+      "threats": [
+        "Stealc",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Italian",
+        "Kazakhstan",
+        "Ukrainian",
+        "Russia",
+        "Asian"
+      ],
+      "software": [
+        "Twitter",
+        "Photoshop"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyberark.com/resources/threat-research-blog/uno-reverse-card-stealing-cookies-from-cookie-stealers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-17",
+      "title": "New ClickFix tool is spreading malware via fake error pop-ups",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Errtraffic"
+      ],
+      "geo": [
+        "Japan",
+        "Italy",
+        "Australia",
+        "Spain",
+        "Brazil",
+        "Netherlands",
+        "France",
+        "Germany",
+        "Canada"
+      ],
+      "software": [
+        "macOS",
+        "ChatGPT",
+        "Android",
+        "Linux",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Gatekeeper"
+      ],
+      "links": [
+        "https://moonlock.com/clickfix-tool-fake-error-popups"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-17",
+      "title": "VoidLink threat analysis: Sysdig discovers C2-compiled kernel rootkits",
+      "completeness": "Medium",
+      "threats": [
+        "Voidlink",
+        "Krasue",
+        "Drovorub",
+        "Diamorphine_rootkit",
+        "Bpfdoor",
+        "Dynamic_linker_hijacking_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "Linux",
+        "aegis",
+        "Docker",
+        "Mac OS"
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "finit_module"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/voidlink-threat-analysis-sysdig-discovers-c2-compiled-kernel-rootkits",
+        "https://github.com/draios/sysdig"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-17",
+      "title": "Mamba Phishing-as-a-Service Kit: How Modern adversary-in-the-middle (AiTM) Attacks Operate",
+      "completeness": "Low",
+      "threats": [
+        "Mamba_2fa_tool",
+        "Aitm_technique",
+        "Mamba",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 13,
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/mamba-phishing-as-a-service-kit-how-modern-adversary-in-the-middle-aitm-attacks-operate/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-26",
+      "title": "APT Attacks Target Indian Government Using GOGITTER, GITSHELLPAD, and GOSHELL \\| Part 1",
+      "completeness": "High",
+      "threats": [
+        "Gogitter",
+        "Gitshellpad",
+        "Goshell",
+        "Cobalt_strike_tool",
+        "Process_injection_technique",
+        "Motw_bypass_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Indian",
+        "Pakistan"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 39,
+      "software": [
+        "curl",
+        "Microsoft Edge update"
+      ],
+      "algorithms": [
+        "gzip",
+        "xor",
+        "zip",
+        "base64",
+        "deflate"
+      ],
+      "functions": [
+        "GetResponse"
+      ],
+      "languages": [
+        "golang",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/apt-attacks-target-indian-government-using-gogitter-gitshellpad-and-goshell",
+        "https://github.com/threatexpress/malleable-c2/blob/master/jquery-c2.4.2.profile",
+        "https://github.com/ThreatLabz/iocs/blob/main/gopherstrike/commands.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-26",
+      "title": "Okta Vishing Campaign Allegedly Linked to ShinyHunters: What You Need to Know",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Bec_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://socradar.io/blog/okta-vishing-campaign-shinyhunters/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-26",
+      "title": "PeckBirdy: A Versatile Script Framework for LOLBins Exploitation Used by China-aligned Threat Groups",
+      "completeness": "High",
+      "threats": [
+        "Peckbirdy_tool",
+        "Lolbin_technique",
+        "Holodonut",
+        "Mkdoor",
+        "Cobalt_strike_tool",
+        "Watering_hole_technique",
+        "Credential_harvesting_technique",
+        "Nexload",
+        "Donut",
+        "Grayrabbit",
+        "Dll_sideloading_technique",
+        "Wizardnet",
+        "Darknimbus",
+        "Biopass_rat"
+      ],
+      "geo": [
+        "China",
+        "Korean",
+        "African",
+        "Chinese",
+        "Asian",
+        "Philippine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Electron",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha1",
+        "md5",
+        "aes",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "jscript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/a/peckbirdy-script-framework.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-26",
+      "title": "Dark Web Profile: BravoX Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Bravox"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-bravox-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-26",
+      "title": "Impending cyclone: Vortex Werewolf attacks Russia",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Belarusian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Windows Task Scheduler",
+        "curl",
+        "OpenSSH",
+        "Dropbox",
+        "OpenSSH for Windows",
+        "OpenSSL"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/nadvigayushchiysya-tsiklon-vortex-werewolf-atakuet-rossiyu/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-26",
+      "title": "BEWARE! Suspicious ads appeared in Google search results which contain harmful content for Mac users",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://mackeeper.com/blog/suspicious-ads-on-google-which-contain-harmful-content-for-mac-users/"
+      ]
+    }
+  }
+]

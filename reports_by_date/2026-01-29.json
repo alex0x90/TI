@@ -1,0 +1,704 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "A LinkedIn Job Offer Tried to Install Malware on My Machine",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "London"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "SendGrid",
+        "OpenAI",
+        "Gmail"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "Get-Clipboard",
+        "eval",
+        "Function"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://codecrank.ai/blog/linkedin-malware-warning/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Android Trojan Campaign Uses Hugging Face Hosting for RAT Payload Delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Polymorphism_technique",
+        "Trustbastion"
+      ],
+      "software": [
+        "Android",
+        "Hugging Face",
+        "Google Play",
+        "Linux",
+        "WeChat"
+      ],
+      "algorithms": [
+        "gzip"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/android-trojan-campaign-hugging-face-hosting-rat-payload"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Revisiting MoonBounce: Research Notes",
+      "completeness": "Low",
+      "threats": [
+        "Moonbounce",
+        "Lojax",
+        "Inline_hooking_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5",
+        "sha1"
+      ],
+      "functions": [
+        "CreateEventEx"
+      ],
+      "links": [
+        "https://malwareanalysisspace.blogspot.com/2026/01/revisiting-moonbounce-research-notes.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Dissecting UAT-8099: New persistence mechanisms and regional focus",
+      "completeness": "Medium",
+      "threats": [
+        "Gotohttp_tool",
+        "Badiis",
+        "Easytier_tool",
+        "Blackseo_technique",
+        "Sharp4removelog_tool",
+        "Cncrypt_protect_tool",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Vietnam",
+        "Pakistan",
+        "Chinese",
+        "China",
+        "Japan",
+        "India",
+        "Asia",
+        "Thailand"
+      ],
+      "software": [
+        "Linux",
+        "SoftEther",
+        "OpenArk64"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-8099-new-persistence-mechanisms-and-regional-focus/",
+        "https://github.com/c1earyy/OpenArk64"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "LABYRINTH CHOLLIMA Evolves into Three Adversaries",
+      "completeness": "Medium",
+      "threats": [
+        "Kordll_tool",
+        "Hawup_tool",
+        "Wannacry",
+        "Dozer",
+        "Brambul",
+        "Joanap",
+        "Koredos",
+        "Nachocheese",
+        "Jeus",
+        "Pipedown",
+        "Devobrat",
+        "Anycon",
+        "Snakebaker",
+        "Nodalbaker",
+        "Tradertraitor_downloader",
+        "Scuzzyfuss",
+        "Hoplight",
+        "Fudmodule_rootkit",
+        "Hawup_rat",
+        "Volgmer",
+        "Httphoplight_tool",
+        "Undergroundrat",
+        "Neddnloader",
+        "Hiberrat",
+        "Winwebdown",
+        "Matanet",
+        "Magikcookie",
+        "Ghostship",
+        "Citriloader"
+      ],
+      "geo": [
+        "Dprk",
+        "Italian",
+        "Japanese",
+        "Korean",
+        "India",
+        "Korea",
+        "Canada",
+        "North korea",
+        "Russia"
+      ],
+      "software": [
+        "Outlook",
+        "macOS",
+        "Chromium",
+        "Node.js",
+        "Chrome",
+        "WhatsApp",
+        "SumatraPDF",
+        "TightVNC",
+        "GuardDuty",
+        "OpenSSL",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/labyrinth-chollima-evolves-into-three-adversaries/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "TAMECAT - Analysis of an Iranian PowerShell-Based Backdoor",
+      "completeness": "High",
+      "threats": [
+        "Tamecat",
+        "Powerstar"
+      ],
+      "geo": [
+        "Israel",
+        "Iranian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Discord",
+        "Telegram",
+        "Microsoft Edge",
+        "Chrome",
+        "curl"
+      ],
+      "algorithms": [
+        "aes",
+        "sha1",
+        "md5",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Get-Command",
+        "xs"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://blog.pulsedive.com/tamecat-analysis-of-an-iranian-powershell-based-backdoor/",
+        "https://github.com/pulsedive-research/resources/tree/main/TAMECAT",
+        "https://github.com/volexity/threat-intel/blob/main/2023/2023-06-28%20POWERSTAR/indicators/rules.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "MoonPeak and the Growing Sophistication of DPRK Intrusions",
+      "completeness": "Medium",
+      "threats": [
+        "Moonpeak",
+        "Xenorat",
+        "Lolbin_technique",
+        "Quasar_rat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "gzip",
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/moonpeak-and-the-growing-sophistication-of-dprk-intrusions/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Clawdbots rename to Moltbot sparks impersonation campaign",
+      "completeness": "Low",
+      "threats": [
+        "Clawbot_tool",
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Clawdbots",
+        "Clawdbot",
+        "Claude",
+        "WhatsApp",
+        "Telegram",
+        "Discord",
+        "Twitter",
+        "OpenAI",
+        "Slack",
+        "Microsoft Office",
+        "have more..."
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/01/clawdbots-rename-to-moltbot-sparks-impersonation-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Worms lurking in code extensions",
+      "completeness": "Medium",
+      "threats": [
+        "Etherhiding_technique",
+        "Supply_chain_technique",
+        "Dead_drop_technique",
+        "Glassworm"
+      ],
+      "geo": [
+        "Kaliningrad",
+        "Moscow",
+        "Russian",
+        "Asia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "macOS",
+        "Linux",
+        "VSCode",
+        "Ledger Live",
+        "Chrome",
+        "Firefox",
+        "Visual Studio"
+      ],
+      "wallets": [
+        "mainnet",
+        "metamask"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc",
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "activate",
+        "eval",
+        "Date"
+      ],
+      "languages": [
+        "javascript",
+        "typescript",
+        "powershell"
+      ],
+      "links": [
+        "https://secureannex.com/blog/worms-lurking"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Love? Actually: Fake dating app used as lure in targeted spyware campaign in Pakistan",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Ghostpairing_technique"
+      ],
+      "geo": [
+        "Pakistani",
+        "Ukraine",
+        "Pakistan"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Google Play"
+      ],
+      "algorithms": [
+        "base64",
+        "exhibit",
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/love-actually-fake-dating-app-used-lure-targeted-spyware-campaign-pakistan/",
+        "https://github.com/eset/malware-ioc/tree/master/ghostchat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Interlock Ransomware: New Techniques, Same Old Tricks",
+      "completeness": "High",
+      "threats": [
+        "Interlock",
+        "Interlockrat",
+        "Screenconnect_tool",
+        "Mintsloader",
+        "Cornflake",
+        "Azcopy_tool",
+        "Lolbin_technique",
+        "Byovd_technique",
+        "Clickfix_technique",
+        "Kryptik",
+        "Rhysida"
+      ],
+      "geo": [
+        "America",
+        "American"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 17,
+      "software": [
+        "Firefox",
+        "Node.js",
+        "trycloudflare",
+        "Linux",
+        "Windows Defender",
+        "Chromium",
+        "Chrome",
+        "Opera",
+        "Opera-GX",
+        "PsExec",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "base64",
+        "zip",
+        "xor",
+        "aes"
+      ],
+      "functions": [
+        "a0n",
+        "DLL",
+        "DriverEntry",
+        "IoCreateDevice",
+        "IoCreateSymbolicLink",
+        "ZwTerminateProcess"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/interlock-ransomware-new-techniques-same-old-tricks",
+        "https://github.com/pollotherunner/CVE-2025-61155/blob/main/advisory.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Threat Bulletin: Critical eScan Supply Chain Compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "eScan"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/critical-escan-threat-bulletin/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Supply chain attack on eScan antivirus: detecting and remediating malicious updates",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Indian"
+      ],
+      "software": [
+        "eScan"
+      ],
+      "links": [
+        "https://securelist.com/escan-supply-chain-attack/118688/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "PeckBirdy Exposes a New Living off the Land Threat",
+      "completeness": "Medium",
+      "threats": [
+        "Peckbirdy_tool",
+        "Watering_hole_technique",
+        "Holodonut",
+        "Mkdoor",
+        "Nexload",
+        "Credential_harvesting_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "exhibit",
+        "md5",
+        "aes"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/peckbirdy-exposes-a-new-living-off-the-land-threat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Meet IClickFix: a widespread WordPress-targeting framework using the ClickFix tactic",
+      "completeness": "High",
+      "threats": [
+        "Iclickfix_tool",
+        "Clickfix_technique",
+        "Netsupportmanager_rat",
+        "Emmenhtal",
+        "Xfiles_stealer",
+        "Clearfake",
+        "Watering_hole_technique"
+      ],
+      "geo": [
+        "Ghana"
+      ],
+      "software": [
+        "WordPress",
+        "Cloudflare Turnstile"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "getFaviconPath"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.sekoia.io/meet-iclickfix-a-widespread-wordpress-targeting-framework-using-the-clickfix-tactic/",
+        "https://github.com/SEKOIA-IO/Community/blob/main/IOCs/iclickfix/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Inside the Infrastructure: Whos Scanning for Ivanti Connect Secure?",
+      "completeness": "Low",
+      "threats": [
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Romania",
+        "Moldova"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ivanti"
+      ],
+      "links": [
+        "https://www.labs.greynoise.io/grimoire/2026-01-29-inside-the-infrastructure-whos-scanning-for-ivanti-connect-secure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Tycoon 2FA Campaign Abusing *.contractors Domains for Gmail and Microsoft 365 Credential Harvesting",
+      "completeness": "Low",
+      "threats": [
+        "Tycoon_2fa",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Gmail",
+        "Outlook"
+      ],
+      "algorithms": [
+        "zip",
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/01/29/tycoon-2fa-campaign-abusing-contractors-domains-for-gmail-and-microsoft-365-credential-harvesting/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Matanbuchus Malware Downloader Evading AV Detections by Changing Components",
+      "completeness": "Low",
+      "threats": [
+        "Matanbuchus_maas",
+        "Msi_loader"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/matanbuchus-malware-downloader-evading-av-detections/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "RedKitten: AI-accelerated campaign targeting Iranian protests",
+      "completeness": "Medium",
+      "threats": [
+        "Sloppymio",
+        "Dead_drop_technique",
+        "Steganography_technique",
+        "Drokbk"
+      ],
+      "geo": [
+        "Tehran",
+        "Netherlands",
+        "Pacific",
+        "Iran",
+        "Israel",
+        "Iranian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "Run",
+        "TaskScheduler"
+      ],
+      "links": [
+        "https://harfanglab.io/insidethelab/redkitten-ai-accelerated-campaign-targeting-iranian-protests/",
+        "https://github.com/HarfangLab/iocs/tree/main/TRR260101"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-29",
+      "title": "Match Group breach exposes data from Hinge, Tinder, OkCupid, and Match",
+      "completeness": "Low",
+      "software": [
+        "Tinder",
+        "Dropbox"
+      ],
+      "links": [
+        "https://www.bleepingcomputer.com/news/security/match-group-breach-exposes-data-from-hinge-tinder-okcupid-and-match/"
+      ]
+    }
+  }
+]

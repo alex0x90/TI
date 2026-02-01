@@ -1,0 +1,81 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-01",
+      "title": "INPS-themed smishing: CUD data and employment information also end up in the crosshairs",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/smishing-a-tema-inps-finiscono-nel-mirino-anche-i-dati-del-cud-e-le-informazioni-lavorative/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-01",
+      "title": "DynoWiper update: Technical analysis and attribution",
+      "completeness": "High",
+      "threats": [
+        "Dynowiper",
+        "Eternal_petya",
+        "Supply_chain_technique",
+        "Olympic_destroyer",
+        "Industoyer2",
+        "Prestige_ransomware",
+        "Sting",
+        "Hermeticwiper",
+        "Partyticket",
+        "Killdisk",
+        "Doublezero",
+        "Arguepatch_loader",
+        "Orcshred",
+        "Soloshred",
+        "Awfulshred",
+        "Ransomboggs",
+        "Sdelete_tool",
+        "Bidswipe",
+        "Roarbat",
+        "Swiftslicer",
+        "Nikowiper",
+        "Sharpnikowiper",
+        "Zerolot",
+        "Greyenergy",
+        "Rubeus_tool",
+        "Powergap",
+        "Killfiles",
+        "Rsocx_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Polish",
+        "Poland",
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "rsocx",
+        "Active Directory"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/dynowiper-update-technical-analysis-attribution/",
+        "https://github.com/GhostPack/Rubeus",
+        "https://github.com/b23r0/rsocx"
+      ]
+    }
+  }
+]
