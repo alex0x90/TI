@@ -1,0 +1,110 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-07",
+      "title": "DynoWiper: From Russia with Love",
+      "completeness": "Medium",
+      "threats": [
+        "Dynowiper"
+      ],
+      "geo": [
+        "Polish",
+        "Russian",
+        "Russia",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 5,
+      "algorithms": [
+        "sha256",
+        "prng"
+      ],
+      "links": [
+        "https://t0asts.com/dynowiper",
+        "https://github.com/horsicq/Detect-It-Easy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-07",
+      "title": "Re-Emerging Telegram Phishing Campaign Targeting User Authorization Prompts",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 6,
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/re-emerging-telegram-phishing-campaign-targeting-user-authorization-prompts/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-07",
+      "title": "Novel Technique to Detect Cloud Threat Actor Operations",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Smishing_technique",
+        "Adrecon_tool",
+        "Spring4shell"
+      ],
+      "geo": [
+        "Asia",
+        "Japan",
+        "India",
+        "China",
+        "Middle east",
+        "Australia"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 24,
+      "software": [
+        "Active Directory",
+        "Microsoft Exchange",
+        "Graph API"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/tracking-threat-groups-through-cloud-logging/",
+        "https://github.com/sense-of-security/ADRecon"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-07",
+      "title": "Analysis of active exploitation of SolarWinds Web Help Desk",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique",
+        "Dll_sideloading_technique",
+        "Dcsync_technique",
+        "Hijackwebhelpdesk",
+        "Passthehash_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "QEMU",
+        "Microsoft Defender for Endpoint"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/02/06/active-exploitation-solarwinds-web-help-desk/"
+      ]
+    }
+  }
+]

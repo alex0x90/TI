@@ -302,5 +302,68 @@
         "https://www.jamf.com/blog/predator-spyware-ios-recording-indicator-bypass-analysis/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "Threat Intelligence Dossier: TOXICSNAKE",
+      "completeness": "Medium",
+      "threats": [
+        "Toxicsnake",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "ChatGPT",
+        "Curl"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://themalwarefiles.com/threat-intelligence-dossier-toxicsnake-b3e954bd644b"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-27",
+      "title": "From XLoader to Phantom Stealer: A DHL-Themed multi-stage Infection Chain",
+      "completeness": "Low",
+      "threats": [
+        "Phantom_stealer",
+        "Formbook",
+        "Dll_sideloading_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Telegram"
+      ],
+      "algorithms": [
+        "cbc",
+        "aes-256-cbc",
+        "aes",
+        "zip",
+        "pbkdf2",
+        "xor",
+        "aes-256"
+      ],
+      "functions": [
+        "main"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://medium.com/@mk7912/from-xloader-to-phantom-stealer-a-dhl-themed-multi-stage-infection-chain-5d552eee828d"
+      ]
+    }
   }
 ]

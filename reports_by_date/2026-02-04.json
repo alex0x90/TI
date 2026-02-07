@@ -1,0 +1,433 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Web Traffic Hijacking: When Your Nginx Configuration Turns Malicious",
+      "completeness": "Medium",
+      "threats": [
+        "React2shell_vuln",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Emea",
+        "Asian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 7,
+      "software": [
+        "Nginx",
+        "curl",
+        "Linux",
+        "Unix",
+        "twitter"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/web-traffic-hijacking-nginx-configuration-malicious/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Breaking AppSec Myths - Obfuscated Packages",
+      "completeness": "Medium",
+      "threats": [
+        "Pyarmor_tool",
+        "Pyobfuscate_tool",
+        "Hyperion_tool",
+        "Confuserex_tool",
+        "Shai-hulud",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://jfrog.com/blog/breaking-appsec-myths-obfuscated-packages/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Hunting Lazarus Part III: The Infrastructure That Was Too Perfect",
+      "completeness": "High",
+      "threats": [
+        "Ottercookie",
+        "Beavertail",
+        "Invisibleferret",
+        "Smuggling_technique",
+        "Winrm_tool",
+        "Polyglot_technique",
+        "Dead_drop_technique",
+        "Xmrig_miner",
+        "Tsunami_framework",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russian",
+        "North korean",
+        "American",
+        "Dprk"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 19,
+      "software": [
+        "VSCode",
+        "macOS",
+        "Linux",
+        "virtualbox",
+        "qemu",
+        "xen",
+        "Hyper-V",
+        "IndexedDB",
+        "Node.js",
+        "Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "keplr",
+        "tonkeeper",
+        "coinbase",
+        "rabby",
+        "safepal",
+        "tronlink",
+        "trezor"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "Get-ItemProperty",
+        "Get-ScheduledTask",
+        "Get-Process",
+        "captureAllMonitors"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://redasgard.com/blog/hunting-lazarus-part3-infrastructure-too-perfect"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "New year, new sector: Transparent Tribe targets Indias startup ecosystem",
+      "completeness": "Medium",
+      "threats": [
+        "Crimson_rat",
+        "Ares_rat",
+        "Allakore_rat",
+        "Getarat",
+        "Deskrat",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Motw_bypass_technique",
+        "Gymrat"
+      ],
+      "geo": [
+        "Pakistan",
+        "Indian",
+        "Asia",
+        "India",
+        "Afghanistan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "exhibit"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/new-year-new-sector-transparent-tribe-targets-indias-startup-ecosystem/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Hunting Lazarus Part II: When the Dead Drop Moved to the Blockchain",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 6,
+      "software": [
+        "Node.js",
+        "VSCode",
+        "VirtualBox",
+        "1Password",
+        "LastPass",
+        "Bitwarden",
+        "KeePass",
+        "DashLane",
+        "Chrome",
+        "Firefox",
+        "Tor Browser",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "keplr"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "The",
+        "getMemo",
+        "configureCollection",
+        "Function"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://redasgard.com/blog/hunting-lazarus-part2-blockchain-dead-drop"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Silent Push Identifies More Than 10,000 Infected IPs as Part of SystemBC Botnet Malware Family",
+      "completeness": "Medium",
+      "threats": [
+        "Systembc",
+        "Droxidat"
+      ],
+      "geo": [
+        "Singapore",
+        "France",
+        "Africa",
+        "Vietnamese",
+        "India",
+        "Russian",
+        "Vietnam",
+        "Germany"
+      ],
+      "software": [
+        "Linux",
+        "WordPress"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256"
+      ],
+      "languages": [
+        "perl"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/systembc/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Amaranth-Dragon: Weaponizing CVE-2025-8088 for Targeted Espionage in the Southeast Asia",
+      "completeness": "High",
+      "threats": [
+        "Amaranth_loader",
+        "Cryptopp_tool",
+        "Havoc",
+        "Amaranth_rat",
+        "Dodgebox",
+        "Dustpan",
+        "Dusttrap",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "China",
+        "Asian",
+        "Philippines",
+        "Chinese",
+        "Laos",
+        "Cambodia",
+        "Singapore",
+        "Philippine",
+        "Indonesia",
+        "Asia",
+        "Thailand"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "dropbox",
+        "Telegram",
+        "Windows Defender"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "gzip",
+        "rc4",
+        "aes",
+        "xor",
+        "aes-cbc",
+        "zip",
+        "deflate"
+      ],
+      "functions": [
+        "NUL",
+        "CreateWzAddrBook"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/amaranth-dragon-weaponizes-cve-2025-8088-for-targeted-espionage/",
+        "https://github.com/zero2504/Anti-Debugging",
+        "https://github.com/HavocFramework/Havoc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Hunting Lazarus Part IV: Real Blood on the Wire",
+      "completeness": "High",
+      "threats": [
+        "Anydesk_tool",
+        "Beavertail",
+        "Invisibleferret",
+        "Ottercookie",
+        "Tsunami_botnet",
+        "Xmrig_miner",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "France",
+        "Nigeria",
+        "Sri lanka",
+        "Hungary",
+        "Asia",
+        "Russia",
+        "Croatia",
+        "Pakistan",
+        "Bangladesh",
+        "India",
+        "Vietnam",
+        "Singapore",
+        "America",
+        "Costa rica",
+        "Spain"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 22,
+      "software": [
+        "VSCode",
+        "Chrome"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Get-Content",
+        "Write-Warning",
+        "Get-ItemProperty",
+        "Get-ScheduledTask"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://redasgard.com/blog/hunting-lazarus-part4-real-blood-on-the-wire"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Shaping Shadows: Breaking Down New ShadowSyndicate Methods and Infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Metasploit_tool",
+        "Havoc",
+        "Mythic_c2",
+        "Sliver_c2_tool",
+        "Asyncrat",
+        "Meshagent_tool",
+        "Brc4_tool",
+        "Clop",
+        "Truebot",
+        "Blackcat",
+        "Ryuk",
+        "Blackbasta",
+        "Meshcentral_tool",
+        "Batloader",
+        "Lockbit",
+        "Cicada_ransomware",
+        "Nokoyawa",
+        "Cactus_ransomware"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenSSH",
+        "Linux",
+        "macOS"
+      ],
+      "algorithms": [
+        "chacha20",
+        "aes",
+        "sha1"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/new-shadowsyndicate-infrastructure/",
+        "https://github.com/HavocFramework/Havoc",
+        "https://github.com/its-a-feature/Mythic"
+      ]
+    }
+  }
+]

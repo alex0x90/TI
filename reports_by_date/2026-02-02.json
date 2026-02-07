@@ -1,0 +1,255 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-02",
+      "title": "North Koreas Prospect Call Trap: Lazarus Turns Teams Meetings into macOS Credential Theft",
+      "completeness": "Low",
+      "geo": [
+        "North koreas",
+        "North korean",
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Telegram",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Teams"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://daylight.ai/blog/prospect-call-microsoft-teams-meetings"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-02",
+      "title": "\"Danger Bulletin\": UAC-0001 (APT28) conducts cyberattacks against Ukraine and EU countries via CVE-2026-21509 (CERT-UA#19542) exploit",
+      "completeness": "Medium",
+      "threats": [
+        "Com_hijacking_technique",
+        "Covenant_c2_tool"
+      ],
+      "geo": [
+        "Pol",
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "software": [
+        "Microsoft Office",
+        "Windows registry"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6287250"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-02",
+      "title": "APT28 Leverages CVE-2026-21509 in Operation Neusploit",
+      "completeness": "High",
+      "threats": [
+        "Minidoor",
+        "Pixynetloader",
+        "Covenant_c2_tool",
+        "Grunt",
+        "Notdoor",
+        "Steganography_technique",
+        "Com_hijacking_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Romania",
+        "Russia",
+        "Slovakia",
+        "Romanian",
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 15,
+      "software": [
+        "Outlook",
+        "Microsoft Outlook Visual Basic for Applications",
+        "Windows registry",
+        "Microsoft Outlook",
+        "Windows scheduled task",
+        "Microsoft Office",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "DeleteAfterSubmit",
+        "Sleep"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/apt28-leverages-cve-2026-21509-operation-neusploit",
+        "https://github.com/ThreatLabz/tools/blob/main/apt28/operation\\_neusploit/minidoor.txt",
+        "https://github.com/ThreatLabz/tools/blob/main/apt28/operation\\_neusploit/office.xml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-02",
+      "title": "Dual-Mode Citrix Gateway Reconnaissance: When Residential Proxies Meet Version Hunting",
+      "completeness": "Low",
+      "threats": [
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Mexico",
+        "Canada",
+        "Vietnam",
+        "Iraq",
+        "Algeria",
+        "Argentina"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Linux"
+      ],
+      "links": [
+        "https://www.labs.greynoise.io/grimoire/2026-02-02-citrix-recon-residential-proxies/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-02",
+      "title": "How fake party invitations are being used to install remote access tools",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "TikTok"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/02/how-fake-party-invitations-are-being-used-to-install-remote-access-tools"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-02",
+      "title": "The Chrysalis Backdoor: A Deep Dive into Lotus Blossoms toolkit",
+      "completeness": "High",
+      "threats": [
+        "Chrysalis",
+        "Dll_sideloading_technique",
+        "Warbird_loader",
+        "Microsoft_warbird_tool",
+        "Metasploit_tool",
+        "Cobalt_strike_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "America",
+        "Chinese",
+        "Malaysia",
+        "Asia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 20,
+      "software": [
+        "NSIS installer",
+        "Google Chrome",
+        "Windows Service",
+        "Mac OS"
+      ],
+      "algorithms": [
+        "fnv1-a",
+        "rc4",
+        "murmur",
+        "sha256",
+        "fnv-1a",
+        "xor"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit",
+        "https://github.com/rapid7/metasploit-framework/blob/master/external/source/shellcode/windows/x86/src/block/block\\_api.asm",
+        "https://github.com/phoenixthrush/Tiny-C-Compiler"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-02",
+      "title": "Infostealers without borders: macOS, Python stealers, and platform abuse",
+      "completeness": "High",
+      "threats": [
+        "Credential_stealing_technique",
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Digitstealer",
+        "Macc_stealer",
+        "Eternidade",
+        "Pxa_stealer",
+        "Supply_chain_technique",
+        "Bec_technique",
+        "Seo_poisoning_technique",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Purerat"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Microsoft Defender",
+        "WhatsApp",
+        "Telegram",
+        "CrystalPDF",
+        "Firefox",
+        "Chrome",
+        "Microsoft Defender for Endpoint",
+        "Unix",
+        "curl",
+        "have more..."
+      ],
+      "wallets": [
+        "coinbase",
+        "metamask"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "delphi",
+        "visual_basic",
+        "powershell",
+        "python",
+        "applescript",
+        "autoit"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/02/02/infostealers-without-borders-macos-python-stealers-and-platform-abuse/"
+      ]
+    }
+  }
+]

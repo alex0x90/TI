@@ -1,0 +1,221 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-06",
+      "title": "Malicious dYdX Packages Published to npm and PyPI After Maintainer Compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Dns_hijacking_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 5,
+      "software": [
+        "Outlook"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "createRegistry",
+        "getDeviceUuid",
+        "list_prices",
+        "init",
+        "run_script_async"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-dydx-packages-published-to-npm-and-pypi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-06",
+      "title": "New Wave of Odyssey Stealer Actively Targeting macOS Users",
+      "completeness": "Low",
+      "threats": [
+        "Odyssey_stealer",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "France",
+        "United kingdom",
+        "Spain",
+        "Canada",
+        "Brazil",
+        "India",
+        "Italy",
+        "Germany",
+        "Asia",
+        "Africa"
+      ],
+      "software": [
+        "macOS",
+        "Chrome",
+        "twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/new-wave-of-odyssey-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-06",
+      "title": "APT36 LNK-based malware activity",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_hijacking_technique",
+        "Antivm_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 16,
+      "software": [
+        "Windows Runtime",
+        "WhatsApp",
+        "WeChat"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "functions": [
+        "PDfiums",
+        "dropHijackDll",
+        "Pensisting"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/297073.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-06",
+      "title": "NFCShare Android Trojan: NFC card data theft via malicious APK",
+      "completeness": "Medium",
+      "threats": [
+        "Nfcshare",
+        "Supercard-x",
+        "Relaynfc",
+        "Ngate"
+      ],
+      "geo": [
+        "Italian",
+        "Chinese",
+        "Deutsche"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.d3lab.net/nfcshare-android-trojan-nfc-card-data-theft-via-malicious-apk"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-06",
+      "title": "Russian Hacktivist Group Russian Legion Initiate OpDenmark",
+      "completeness": "Low",
+      "geo": [
+        "Russian",
+        "Danish",
+        "Russia",
+        "Denmark",
+        "Swedish",
+        "Poland"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/russian-hacktivist-group-russian-legion-initiate-opdenmark"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-06",
+      "title": "Security Alert for APT-C-28 (ScarCruft) Launching Cyber Attacks with MiradorShell",
+      "completeness": "Medium",
+      "threats": [
+        "Miradorshell",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Korean",
+        "Korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "autoit",
+        "php"
+      ],
+      "links": [
+        "https://www.ctfiot.com/297233.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-06",
+      "title": "AppleScript Abuse: Unpacking a macOS Phishing Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 10,
+      "software": [
+        "macOS",
+        "Node.js",
+        "Gatekeeper",
+        "Curl",
+        "Linux",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "getCSReq"
+      ],
+      "languages": [
+        "applescript",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/applescript-abuse-unpacking-a-macos-phishing-campaign"
+      ]
+    }
+  }
+]

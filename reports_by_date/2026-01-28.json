@@ -370,5 +370,114 @@
         "https://ctrlaltintel.com/threat%20research/ErrTraffic/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "Exposed Open Directory Leaks a Full BYOB Deployment Across Windows, Linux, and macOS",
+      "completeness": "High",
+      "threats": [
+        "Byob_tool",
+        "Uac_bypass_technique",
+        "Xmrig_miner",
+        "Coinminer"
+      ],
+      "geo": [
+        "Panama",
+        "Singapore",
+        "Los angeles"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 17,
+      "software": [
+        "Linux",
+        "macOS",
+        "Outlook",
+        "VirtualBox",
+        "Unix",
+        "Hyper-V",
+        "Windows Subsystem for Linux",
+        "Windows Explorer",
+        "Windows Registry",
+        "Task Scheduler",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "md5",
+        "base64",
+        "deflate"
+      ],
+      "functions": [
+        "urlopen",
+        "exec",
+        "mac_address",
+        "architecture",
+        "device",
+        "username",
+        "administrator",
+        "geolocation",
+        "chr",
+        "HookKeyboard",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://hunt.io/blog/exposed-byob-c2-infrastructure-multi-stage-malware-deployment"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "Exploitation of Magento CVE-2025-54236: Independent Intrusions Leading to Root Compromise and Web Shell Deployment",
+      "completeness": "Low",
+      "threats": [
+        "Sessionreaper_vuln"
+      ],
+      "geo": [
+        "Japan",
+        "Canada",
+        "Finland"
+      ],
+      "software": [
+        "- adobe commerce (2.4.4",
+        "2.4.5",
+        "2.4.6",
+        "2.4.7",
+        "2.4.8)"
+      ],
+      "links": [
+        "https://oasis-security.io/blog/260128-Magento-CVE"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-01-28",
+      "title": "Operation Bizarre Bazaar: First Attributed LLMjacking Campaign with Commercial Marketplace Monetization",
+      "completeness": "Medium",
+      "threats": [
+        "Llmjacking_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Ollama",
+        "Discord",
+        "Telegram",
+        "Slack"
+      ],
+      "links": [
+        "https://www.pillar.security/resources/operation-bizarre-bazaar"
+      ]
+    }
   }
 ]

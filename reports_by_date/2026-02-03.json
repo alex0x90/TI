@@ -1,0 +1,381 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "CVE-2026-21509: APT28 Actively Exploits Microsoft Office Vulnerability in Ukraine",
+      "completeness": "Medium",
+      "threats": [
+        "Com_hijacking_technique",
+        "Covenant_c2_tool"
+      ],
+      "geo": [
+        "Pol",
+        "Ukraine",
+        "Ukrainian",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Office",
+        "Microsoft Word",
+        "Windows Registry"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2026-21509-apt28-microsoft-office-ukraine/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "The Rise of Arsink Rat",
+      "completeness": "Low",
+      "threats": [
+        "Arsink"
+      ],
+      "geo": [
+        "Algeria",
+        "Americas",
+        "African",
+        "Pakistan",
+        "Africa",
+        "India",
+        "Indonesia",
+        "Egypt",
+        "Iraq",
+        "Bangladesh",
+        "Yemen",
+        "Asia",
+        "Middle east",
+        "Morocco"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 14,
+      "software": [
+        "Android",
+        "Telegram",
+        "Discord",
+        "WhatsApp",
+        "Instagram",
+        "TikTok",
+        "Google Play"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "links": [
+        "https://zimperium.com/blog/the-rise-of-arsink-rat",
+        "https://github.com/Zimperium/IOC/tree/master/2026-01-ArsinkRAT"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "Illusion of Robbery: F6 analyzed \"Team Legion\" activity and its connection to the NyashTeam cyber group",
+      "completeness": "Medium",
+      "threats": [
+        "Legion_tool",
+        "Webrat",
+        "Dcrat",
+        "Salatstealer"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "VirtualBox",
+        "Telegram",
+        "Roblox"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/nyashteam-legion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "Notepad++ Infrastructure Hijacked in State-Linked Supply Chain Attack",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Chrysalis",
+        "Microsoft_warbird_tool",
+        "Supply_chain_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 20,
+      "software": [
+        "NSIS installer",
+        "Windows Service"
+      ],
+      "links": [
+        "https://socradar.io/blog/notepad-infrastructure-hijacked/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "The Notepad++ supply chain attack unnoticed execution chains and new IoCs",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Metasploit_tool",
+        "Chrysalis",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "El salvador",
+        "Australia",
+        "Philippines",
+        "Vietnam",
+        "Taiwan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NSIS installer",
+        "curl"
+      ],
+      "algorithms": [
+        "sha1",
+        "xor"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://securelist.com/notepad-supply-chain-attack/118708/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "Ricochet Chollima APT Adversary Simulation",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Bear-c2"
+      ],
+      "geo": [
+        "Korean",
+        "Korea",
+        "North korea",
+        "North korean",
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "xor",
+        "aes",
+        "cbc"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://medium.com/@S3N4T0R/ricochet-chollima-apt-adversary-simulation-b0258be69c37"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "APT28: Geofencing as a Targeting Signal (CVE-2026-21509 Campaign)",
+      "completeness": "Low",
+      "threats": [
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Romania",
+        "Romanian",
+        "Moldova",
+        "Slovenia",
+        "Russian",
+        "Czech",
+        "Ukraine",
+        "Poland",
+        "Pol"
+      ],
+      "software": [
+        "Microsoft Office"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/apt28-geofencing-as-a-targeting-signal-cve-2026-21509/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "Exploring the C2 Infrastructure of the Notepad++ Compromise",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ubuntu",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://www.validin.com/blog/exploring_notepad_plus_plus_network_indicators/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "Malicious VS Code tasks.json abuse enables multi-stage infostealer deployment",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NET framework",
+        "Visual Studio Code",
+        "Node.js",
+        "Curl",
+        "vscode"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "hmac"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/malicious-vs-code-tasks-json-abuse-enables-multi-stage-infostealer-deployment"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "[Op Report\\] Hands-on-Keyboard Intrusion Abusing Multiple RMMs",
+      "completeness": "High",
+      "threats": [
+        "Bluetrait_tool",
+        "Fleetdeck_tool",
+        "Msp360_tool",
+        "Superops_tool",
+        "Syncro_tool"
+      ],
+      "geo": [
+        "France",
+        "Spanish",
+        "Tunisia",
+        "French",
+        "German",
+        "Turkish",
+        "Africa"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Firefox",
+        "Mozilla Thunderbird"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/hok-intrusion-abusing-multiple-rmms-jan2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "OpenClaw AI Hit by Massive Malware Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Clickfix_technique",
+        "Amos_stealer",
+        "Typosquatting_technique",
+        "Clawbot_tool"
+      ],
+      "software": [
+        "OpenClaw",
+        "ClawHub",
+        "macOS",
+        "Telegram",
+        "Chrome",
+        "Firefox",
+        "ClawdBot Moltbot OpenClaw"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/open-claw-ai-hit-by-massive-malware-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-03",
+      "title": "Vive La Vulnrabilit: French Kubernetes Cluster Hunts Your Webhook Endpoints",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "France",
+        "French"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubelet",
+        "Debian",
+        "OpenSSH",
+        "curl",
+        "Linux"
+      ],
+      "links": [
+        "https://www.labs.greynoise.io/grimoire/2026-02-03-vive-la-vulnerabilite-french-kubernetes-cluster-hunts-your-webhook-endpoints/"
+      ]
+    }
+  }
+]
