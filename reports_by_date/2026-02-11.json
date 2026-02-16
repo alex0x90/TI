@@ -1,0 +1,551 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "A Peek Into Muddled Libras Operational Playbook",
+      "completeness": "High",
+      "threats": [
+        "Smishing_technique",
+        "Chisel_tool",
+        "Adrecon_tool",
+        "Lolbin_technique",
+        "Ad_explorer_tool"
+      ],
+      "geo": [
+        "American",
+        "Korea",
+        "Australia",
+        "Middle east",
+        "Japan",
+        "Asia",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "SysInternals",
+        "Hyper-V",
+        "MSSQL",
+        "Dropbox",
+        "PsExec",
+        "Outlook",
+        "Microsoft Defender",
+        "S3 Browser",
+        "ESXi",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/muddled-libra-ops-playbook/",
+        "https://github.com/adrecon/ADRecon",
+        "https://github.com/jpillora/chisel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "Emerging Ransomware BQTLock& GREENBLOOD Disrupt Businessesin Minutes",
+      "completeness": "Low",
+      "threats": [
+        "Bqtlock",
+        "Greenblood",
+        "Uac_bypass_technique",
+        "Remcos_rat",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Android"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/emerging-ransomware-bqtlock-greenblood/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "The game is over: when free comes at too high a price. What we know about RenEngine",
+      "completeness": "Medium",
+      "threats": [
+        "Renengine",
+        "Lumma_stealer",
+        "Acr_stealer",
+        "Hijackloader",
+        "Rshell",
+        "Penguish",
+        "Vidar_stealer"
+      ],
+      "geo": [
+        "Turkey",
+        "Brazil",
+        "Russia",
+        "Germany",
+        "Spain"
+      ],
+      "software": [
+        "process explorer"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/renengine-campaign-with-hijackloader-lumma-and-acr-stealer/118891/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "Inside Gunra RaaS: From Affiliate Recruitment on the Dark Web to Full Technical Dissection of their Locker",
+      "completeness": "High",
+      "threats": [
+        "Gunra",
+        "Procmon_tool",
+        "Conti",
+        "Blackbasta",
+        "Qakbot",
+        "Rhysida",
+        "Akira_ransomware",
+        "Qilin_ransomware",
+        "Blacksuit_ransomware",
+        "Darkrace",
+        "Api_obfuscation_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "Linux",
+        "ESXi",
+        "PsExec"
+      ],
+      "algorithms": [
+        "sha256",
+        "bcrypt",
+        "md5",
+        "aes-256-ctr",
+        "xor",
+        "curve25519",
+        "rsa-4096",
+        "chacha20"
+      ],
+      "functions": [
+        "CreateFile"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/inside-gunra-raas-from-affiliate-recruitment-on-the-dark-web-to-full-technical-dissection-of-their-locker"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "New threat actor, UAT-9921, leverages VoidLink framework in campaigns",
+      "completeness": "Low",
+      "threats": [
+        "Voidlink",
+        "Cobalt_strike_tool",
+        "Manjusaka_tool",
+        "Alchimist_tool",
+        "Supershell",
+        "Fscan_tool",
+        "Sliver_c2_tool",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Linux",
+        "MacOS",
+        "Docker"
+      ],
+      "languages": [
+        "java",
+        "ziglang",
+        "golang"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/voidlink/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "Fake recruiter campaign targets crypto devs",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "North korea",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "VMConnect"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/fake-recruiter-campaign-crypto-devs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "Mispadu Phishing Malware Baseline: Delivery Chains, Capabilities, and Common Campaigns",
+      "completeness": "Low",
+      "threats": [
+        "Mispadu",
+        "Grandoreiro",
+        "Delphiloader",
+        "Jsdropper"
+      ],
+      "geo": [
+        "Argentina",
+        "Portugal",
+        "Latin american",
+        "Portuguese",
+        "Spain",
+        "Mexico",
+        "Italy",
+        "Spanish",
+        "Latin america",
+        "Colombia",
+        "Brazil"
+      ],
+      "software": [
+        "Outlook"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "autoit"
+      ],
+      "links": [
+        "https://cofense.com/blog/mispadu-phishing-malware-baseline"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "Cato CTRL Threat Research: Foxveil New Malware Loader Abusing Cloudflare, Discord, and Netlify as Staging Infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Foxveil",
+        "Apc_injection_technique",
+        "Donut",
+        "Meterpreter_tool",
+        "Cobalt_strike_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Windows service",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-foxveil-new-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "APT Profile Fancy Bear",
+      "completeness": "Medium",
+      "threats": [
+        "Computrace_tool",
+        "Dealerschoice_tool",
+        "Sedkit_tool",
+        "Mimikatz_tool",
+        "Xagent",
+        "Steelhook",
+        "Headlace",
+        "Sedreco",
+        "Oceanmap",
+        "Oldbait",
+        "Procdump_tool",
+        "Downdelph",
+        "Advstoreshell",
+        "Gooseegg_tool",
+        "Xtunnel",
+        "Cannon",
+        "Usbstealer",
+        "Foozer",
+        "Vpnfilter",
+        "Koadic_tool",
+        "Coreshell",
+        "Komplex",
+        "Slimagent_tool",
+        "Sedup_loader",
+        "Zebrocy",
+        "Beardshell_tool",
+        "Pocodown",
+        "Masepie_tool",
+        "Nimcy",
+        "Lojax",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique",
+        "Pkexec_tool",
+        "Timestomp_technique",
+        "Passthehash_technique",
+        "Eviltwin_technique",
+        "Aitm_technique",
+        "Password_spray_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "France",
+        "Georgia",
+        "Ukraine",
+        "Syria",
+        "Moldova",
+        "India",
+        "Romania",
+        "Russian",
+        "Brazil",
+        "Australia",
+        "Malaysia",
+        "Afghanistan",
+        "Vietnam",
+        "South africa",
+        "Cambodia",
+        "Pakistan",
+        "Kazakhstan",
+        "Mexico",
+        "Germany",
+        "Indonesia",
+        "Thailand",
+        "Turkey",
+        "Russia"
+      ],
+      "ttp_tactics": 14,
+      "ttp_techniques": 83,
+      "software": [
+        "Microsoft Office",
+        "Linux",
+        "Microsoft Exchange",
+        "Component Object Model"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-fancy-bear-3/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "ScreenConnect Under Attack: SmartScreen Evasion and RMM Abuse",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Ireland",
+        "Canada",
+        "Iran"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.forcepoint.com/blog/x-labs/screenconnect-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "AgreeToSteal: The First Malicious Outlook Add-In Leads to 4,000 Stolen Credentials",
+      "completeness": "Low",
+      "geo": [
+        "Canadian"
+      ],
+      "software": [
+        "Outlook",
+        "Microsoft Outlook",
+        "Microsoft Office",
+        "Chrome",
+        "Graph API",
+        "Telegram"
+      ],
+      "functions": [
+        "ReadWriteItem",
+        "JavaScript",
+        "fetch"
+      ],
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.koi.ai/blog/agreetosteal-the-first-malicious-outlook-add-in-leads-to-4-000-stolen-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "Lotus Blossom (G0030) and the Notepad++ Supply-Chain Espionage Campaign",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Chrysalis",
+        "Sagerunex",
+        "Elise",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Lolbin_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "China",
+        "Philippines",
+        "Asian",
+        "Australia",
+        "Taiwan",
+        "Hong kong",
+        "America",
+        "Indonesia",
+        "Vietnam",
+        "Asia",
+        "Chinese",
+        "El salvador",
+        "Oceania"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Dropbox",
+        "Twitter",
+        "WireGuard",
+        "NSIS installer",
+        "Windows service"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "http://dti.domaintools.com/research/lotus-blossom-and-the-notepad-supply-chain-espionage-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-11",
+      "title": "Odyssey Stealer: Inside a macOS Crypto-Stealing Operation",
+      "completeness": "High",
+      "threats": [
+        "Odyssey_stealer",
+        "Amos_stealer",
+        "Yamux_tool",
+        "Clickfix_technique",
+        "Poseidon_stealer"
+      ],
+      "geo": [
+        "Germany",
+        "Holland",
+        "Singapore",
+        "Moscow",
+        "Lithuania",
+        "Russian",
+        "Russia",
+        "Netherlands",
+        "Austria"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Ledger Live",
+        "Telegram",
+        "Chromium",
+        "Firefox",
+        "Chrome",
+        "sudo",
+        "curl",
+        "Gatekeeper",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "electrum",
+        "trezor",
+        "coinbase",
+        "tronlink",
+        "ronin_wallet",
+        "exodus_wallet",
+        "bitcoincore",
+        "wassabi",
+        "ledger_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "readFileContents",
+        "readFileContentsrepeat"
+      ],
+      "languages": [
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://censys.com/blog/odyssey-stealer-macos-crypto-stealing-operation"
+      ]
+    }
+  }
+]

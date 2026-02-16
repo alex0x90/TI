@@ -106,5 +106,53 @@
         "https://www.microsoft.com/en-us/security/blog/2026/02/06/active-exploitation-solarwinds-web-help-desk/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-07",
+      "title": "GreyNoise Labs Weekly OAST (Well-known Out-of-band Interaction Domains) Report Week Ending 2026-02-06",
+      "completeness": "Medium",
+      "threats": [
+        "Nuclei_tool",
+        "Interactsh_tool",
+        "Log4shell_vuln"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Apache Log4j",
+        "Confluence",
+        "Linux",
+        "Apache OFBiz",
+        "WebLogic",
+        "Zyxel",
+        "WordPress",
+        "Joomla",
+        "Drupal"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.labs.greynoise.io/grimoire/2026-02-06-weekly-oast-report/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-07",
+      "title": "Hackers Exploit Free Firebase Accounts to Launch Phishing Campaigns",
+      "completeness": "Low",
+      "software": [
+        "Twitter",
+        "WhatsApp"
+      ],
+      "links": [
+        "https://gbhackers.com/hackers-exploit-free-firebase-accounts/"
+      ]
+    }
   }
 ]

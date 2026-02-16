@@ -1,0 +1,135 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-14",
+      "title": "Cloudflare Pages \"Continue Read\" Redirect Kit Abused for Phishing, Adware, and Malware Delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Seo_poisoning_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Opera"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/02/15/cloudflare-pages-continue-read-redirect-kit-abused-for-phishing-adware-and-malware-delivery/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-14",
+      "title": "0APT RANSOMWARE: The RealFAKE!",
+      "completeness": "Medium",
+      "threats": [
+        "0apt_syndicate",
+        "Promptlock"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Url:",
+        "3",
+        "File:",
+        "10",
+        "Hash:",
+        "7",
+        "Domain:",
+        "1"
+      ],
+      "software": [
+        "Linux",
+        "NGINX",
+        "OpenSSL",
+        "Ubuntu"
+      ],
+      "algorithms": [
+        "murmur3",
+        "rc4",
+        "sha512",
+        "xor",
+        "salsa20",
+        "md5",
+        "sha256",
+        "chacha20",
+        "aes",
+        "aes-256",
+        "sha1",
+        "base64"
+      ],
+      "functions": [
+        "ReadMe"
+      ],
+      "languages": [
+        "php",
+        "rust"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/02/14/0apt-ransomware-the-real-fake/",
+        "https://github.com/TheRavenFile/Daily-Hunt/blob/main/0APT%20Ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-14",
+      "title": "New Clickfix Exploit Tricks Users into Changing DNS Settings for Malware Installation",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Dns_hijacking_technique",
+        "Modelorat"
+      ],
+      "software": [
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/new-clickfix-attack-uses-dns-hijacking/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-14",
+      "title": "Threat Actors Exploit Claude Artifacts and Google Ads to Target macOS Users",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "macOS",
+        "Twitter",
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/threat-actors-exploit-claude-artifacts-and-google-ads/"
+      ]
+    }
+  }
+]

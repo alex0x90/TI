@@ -1,0 +1,274 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-09",
+      "title": "Fake 7-Zip downloads are turning home PCs into proxy nodes",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Malgent",
+        "Antidebugging_technique"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "VirtualBox",
+        "QEMU",
+        "Clawdbot",
+        "Moltbot"
+      ],
+      "algorithms": [
+        "camellia",
+        "aes",
+        "chaskey",
+        "xor",
+        "base64",
+        "rc4",
+        "7zip",
+        "sha256"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-7-zip-downloads-are-turning-home-pcs-into-proxy-nodes"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-09",
+      "title": "Malicious ClawHub Skills Use External Websites to Hide in Plain Sight (and bypass security scanning)",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "ClawHub",
+        "curl",
+        "Telegram",
+        "MacOS",
+        "OpenClaw",
+        "Clawdbot",
+        "Discord",
+        "Instagram",
+        "WeChat"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/malicious-clawhub-skills-hide-in-plain-sight",
+        "https://github.com/openclaw/skills"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-09",
+      "title": "UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering",
+      "completeness": "High",
+      "threats": [
+        "Silencelift",
+        "Deepbreath",
+        "Chromepush",
+        "Clickfix_technique",
+        "Sugarloader",
+        "Bigmacho",
+        "Waveshaper",
+        "Hypercall",
+        "Hiddencall",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Korea",
+        "North korean",
+        "North korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Zoom",
+        "macOS",
+        "curl",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "sudo",
+        "sysctl",
+        "macOS Chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "rc4",
+        "zip"
+      ],
+      "functions": [
+        "Zoom",
+        "NSCreateObjectFileImageFromMemory"
+      ],
+      "languages": [
+        "swift",
+        "golang",
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-09",
+      "title": "Detecting Russian Threats to Critical Energy Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Dynowiper",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique",
+        "Mimikatz_tool",
+        "Crackmapexec_tool",
+        "Psexec_tool",
+        "Credential_dumping_technique",
+        "Secretsdump_tool",
+        "Hydra"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian",
+        "Ukraine",
+        "Polish",
+        "Russia"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 73,
+      "software": [
+        "Microsoft Exchange",
+        "Microsoft Office",
+        "Outlook",
+        "Flash Player",
+        "Dropbox",
+        "PsExec",
+        "Slack"
+      ],
+      "algorithms": [
+        "prng"
+      ],
+      "functions": [
+        "Windows",
+        "Get-Service"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/detecting-russian-threats-to-critical-energy-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-09",
+      "title": "Technical Analysis of GuLoader Obfuscation Techniques",
+      "completeness": "Low",
+      "threats": [
+        "Cloudeye",
+        "Polymorphism_technique",
+        "Trap_flag_technique"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "GuLoader"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-guloader-obfuscation-techniques"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-09",
+      "title": "Old-School IRC, New Victims: Inside the Newly Discovered SSHStalker Linux Botnet",
+      "completeness": "Medium",
+      "threats": [
+        "Sshstalker",
+        "Tsunami_framework",
+        "Keiten",
+        "Nmap_tool",
+        "Logcleaner_tool",
+        "Outlaw_botnet",
+        "Phoenixminer",
+        "Prochider",
+        "Ircbot"
+      ],
+      "geo": [
+        "German",
+        "Apac",
+        "Asia",
+        "Romanian",
+        "Chinese",
+        "French",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Ubuntu"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "perl",
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/old-school-irc-new-victims-inside-the-newly-discovered-sshstalker-linux-botnet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-09",
+      "title": "Sleeper Shells: How Attackers Are Planting Dormant Backdoors in Ivanti EPMM",
+      "completeness": "Low",
+      "geo": [
+        "America",
+        "Netherlands",
+        "Usa"
+      ],
+      "software": [
+        "Ivanti EPMM",
+        "Ivanti",
+        "appstore",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "toString"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://defusedcyber.com/ivanti-epmm-sleeper-shells-403jsp"
+      ]
+    }
+  }
+]

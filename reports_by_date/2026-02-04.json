@@ -429,5 +429,146 @@
         "https://github.com/its-a-feature/Mythic"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "Prince of Persia, Part II: Covering Tracks, Striking Back & a Revealing Link to the Iranian Regime Amid the Countrys Internet Blackout",
+      "completeness": "High",
+      "threats": [
+        "Stormkitty_stealer",
+        "Foudre",
+        "Tonnerre",
+        "Phantom_stealer",
+        "Stealerium_stealer",
+        "Remcos_rat",
+        "Confuser_tool",
+        "Phemedrone",
+        "Hookspoofer",
+        "Prynt_stealer",
+        "Asyncrat",
+        "Snake_keylogger",
+        "Maxpinner",
+        "Amaqfinder",
+        "Deep_freeze",
+        "Metasploit_tool",
+        "Confuserex_tool"
+      ],
+      "geo": [
+        "Jordan",
+        "France",
+        "Germany",
+        "Switzerland",
+        "Colombia",
+        "Canada",
+        "Netherlands",
+        "Austria",
+        "Czechia",
+        "Russia",
+        "Saudi arabia",
+        "Senegal",
+        "Nigeria",
+        "Iraq",
+        "Vietnam",
+        "United kingdom",
+        "Iranian",
+        "Singapore",
+        "Iran",
+        "Korea",
+        "India",
+        "Israel",
+        "Kosovo",
+        "Italy",
+        "Indonesia",
+        "Ghana"
+      ],
+      "software": [
+        "Telegram",
+        "FlashFXP",
+        "Kitty",
+        "Hyper-V",
+        "chrome",
+        "Discord"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1",
+        "sha256",
+        "rc4",
+        "xor",
+        "zip",
+        "pbkdf2",
+        "base32",
+        "aes"
+      ],
+      "functions": [
+        "TaskKill",
+        "main"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.safebreach.com/blog/prince-of-persia-part-ii/",
+        "https://github.com/LimerBoy/StormKitty"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-04",
+      "title": "APT28s Stealthy Multi-Stage Campaign Leveraging CVE202621509 and Cloud C2 Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Notdoor",
+        "Beardshell_tool",
+        "Process_injection_technique",
+        "Covenant_c2_tool",
+        "Simpleloader",
+        "Grunt",
+        "Outlook_backdoor",
+        "Koofr_tool",
+        "Com_hijacking_technique",
+        "Smuggling_technique"
+      ],
+      "geo": [
+        "Slovenia",
+        "Ukraine",
+        "Romania",
+        "Bolivia",
+        "Syria",
+        "Russia",
+        "Greece",
+        "Russian",
+        "Ukrainian",
+        "Turkey",
+        "Romanian",
+        "Poland"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 18,
+      "software": [
+        "Microsoft Office",
+        "Outlook",
+        "Component Object Model",
+        "Microsoft Outlook",
+        "ProtonMail"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "md5",
+        "aes-256",
+        "cbc",
+        "exhibit",
+        "xor",
+        "sha256"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/apt28-stealthy-campaign-leveraging-cve-2026-21509-cloud-c2/"
+      ]
+    }
   }
 ]

@@ -1,0 +1,209 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-13",
+      "title": "Multiple Threat Actors Rapidly Exploit React2Shell: A Case Study of Active Compromise",
+      "completeness": "Low",
+      "threats": [
+        "React2shell_vuln",
+        "Xmrig_miner",
+        "Hisonic",
+        "Snowlight",
+        "Crossc2_tool",
+        "Cobalt_strike_tool",
+        "Gsocket_tool"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "golang",
+        "javascript",
+        "java"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/en/2026/02/multiple-threat-actors-rapidly-exploit-react2shell-a-case-study-of-active-compromise.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-13",
+      "title": "Malicious Chrome Extension Steals Meta Business Manager Exports and TOTP 2FA Seeds",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "Chrome",
+        "Telegram",
+        "Outlook",
+        "Google Chrome",
+        "Instagram"
+      ],
+      "functions": [
+        "getClientIP"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-chrome-extension-steals-meta-business-manager-exports-and-totp-2fa-seeds"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-13",
+      "title": "Fake shops target Winter Olympics 2026 fans",
+      "completeness": "Low",
+      "geo": [
+        "Italy",
+        "Ireland",
+        "Czech",
+        "China",
+        "Italian"
+      ],
+      "software": [
+        "Outlook"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/02/fake-shops-target-winter-olympics-2026-fans"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-13",
+      "title": "Into the heart of it: taking apart the new Head Mare toolkit",
+      "completeness": "High",
+      "threats": [
+        "Phantomheart",
+        "Lolbin_technique",
+        "Phantomproxylite_tool",
+        "Lite_manager_tool",
+        "Netscan_tool",
+        "Microsocks_tool",
+        "Ransom.win32.*",
+        "Mimikatz_tool",
+        "Advanced-port-scanner_tool",
+        "Lockbit"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TrueConf",
+        "OpenSSH",
+        "task scheduler",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "aes-128-cbc"
+      ],
+      "functions": [
+        "Create-SSHServiceTask",
+        "TaskName"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-13",
+      "title": "Operation MacroMaze: new APT28 campaign using basic tooling and legit infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Spain"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Word",
+        "Windows Scheduled Task",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "exhibit"
+      ],
+      "links": [
+        "https://lab52.io/blog/operation-macromaze-new-apt28-campaign-using-basic-tooling-and-legit-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-13",
+      "title": "Top Security Incidents of 2025: The Emergence of the ChainedShark APT Group",
+      "completeness": "Low",
+      "threats": [
+        "Linkedshell",
+        "Grimresource_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://nsfocusglobal.com/top-security-incidents-of-2025-the-emergence-of-the-chainedshark-apt-group/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-13",
+      "title": "Phishing on the Edge of the Web and Mobile Using QR Codes",
+      "completeness": "Low",
+      "threats": [
+        "Qshing_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian",
+        "Russia"
+      ],
+      "software": [
+        "Outlook",
+        "Android",
+        "Telegram",
+        "WeChat",
+        "WhatsApp"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/qr-codes-as-attack-vector/"
+      ]
+    }
+  }
+]

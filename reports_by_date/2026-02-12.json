@@ -1,0 +1,837 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use",
+      "completeness": "Medium",
+      "threats": [
+        "Honestcue",
+        "Xanthorox_tool",
+        "Spear-phishing_technique",
+        "Coinbait_tool",
+        "Promptflux",
+        "Credential_harvesting_technique",
+        "Clickfix_technique",
+        "Amos_stealer"
+      ],
+      "geo": [
+        "China",
+        "Ukraine",
+        "Iranian",
+        "Dprk",
+        "Pakistan",
+        "Korea",
+        "Iran",
+        "North korean",
+        "Saudi arabia",
+        "Russia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Supabase",
+        "macOS",
+        "ChatGPT",
+        "DeepSeek"
+      ],
+      "functions": [
+        "HONESTCUE"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/distillation-experimentation-integration-ai-adversarial-use/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "BADIIS to the Bone: New Insights to a Global SEO Poisoning Campaign",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Badiis",
+        "Vmprotect_tool",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Apac",
+        "Vietnam",
+        "Vietnamese",
+        "Bangladesh",
+        "India",
+        "Australia",
+        "Japan",
+        "Chinese",
+        "Brazil",
+        "Korea",
+        "Asia",
+        "Lithuania",
+        "China",
+        "Pakistan",
+        "Asian",
+        "Nepal"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "NET Framework",
+        "Android"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-128"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/badiis-to-the-bone-new-insights-to-global-seo-poisoning-campaign",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/initial\\_access\\_suspicious\\_microsoft\\_iis\\_worker\\_descendant.toml",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/privilege\\_escalation\\_privilege\\_escalation\\_via\\_seimpersonateprivilege.toml",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/privilege\\_escalation\\_potential\\_privilege\\_escalation\\_via\\_token\\_impersonation.toml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Dark Web Profile: The Gentlemen Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Indonesia",
+        "France",
+        "Colombia",
+        "Brazil",
+        "Vietnam",
+        "Thailand",
+        "United kingdom"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 32,
+      "software": [
+        "Linux",
+        "ESXi",
+        "Active Directory",
+        "PsExec"
+      ],
+      "algorithms": [
+        "curve25519",
+        "xchacha20"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-the-gentlemen-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Four Seconds to Botnet - Analyzing a Self Propagating SSH Worm with Cryptographically Signed C2 [Guest Diary\\]",
+      "completeness": "Low",
+      "threats": [
+        "Ssh_worm"
+      ],
+      "geo": [
+        "Germany",
+        "Deutschland"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "sshpass",
+        "Raspberry Pi",
+        "Twitter"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/32708",
+        "https://github.com/bruneaug/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Emulating the Elusive Cephalus Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Cephalus",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 13,
+      "software": [
+        "Windows Defender",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256",
+        "rsa-1024",
+        "aes",
+        "aes-256"
+      ],
+      "functions": [
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.attackiq.com/2026/02/05/emulating-cephalus-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Nation-State Actors Exploit Notepad++ Supply Chain",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Dll_sideloading_technique",
+        "Supply_chain_technique",
+        "Chrysalis",
+        "Microsoft_warbird_tool",
+        "Lolbin_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "America",
+        "Australia",
+        "India",
+        "Middle east",
+        "Japan",
+        "Asia",
+        "Korea"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "21",
+        "IP:",
+        "5",
+        "Url:",
+        "9",
+        "Hash:",
+        "13",
+        "Domain:",
+        "4"
+      ],
+      "software": [
+        "NSIS installer"
+      ],
+      "languages": [
+        "php",
+        "lua"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/notepad-infrastructure-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "How a Complex Multi Payload Infostealer Hid in NPM Disguised as 'Console Visibility'",
+      "completeness": "Low",
+      "threats": [
+        "Bada_stealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "telegram",
+        "discordcanary",
+        "discordptb",
+        "lightcord",
+        "Chrome",
+        "Opera",
+        "Steam",
+        "Electron"
+      ],
+      "wallets": [
+        "brave_wallet",
+        "exodus_wallet",
+        "atomicwallet"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "links": [
+        "https://research.jfrog.com/post/duer-js-malicious-package/",
+        "https://github.com/xSalca/Viral",
+        "https://github.com/xSalca/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "The macOS Stealer Gold Rush: How Cybercriminals Are Racing to Exploit Apples Ecosystem",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Clearfake",
+        "Amos_stealer",
+        "Etherhiding_technique",
+        "Clickfix_technique",
+        "Fakecop"
+      ],
+      "software": [
+        "macOS",
+        "Chrome",
+        "Gatekeeper",
+        "WordPress",
+        "ChatGPT",
+        "Mac OS",
+        "OpenAI",
+        "LastPass"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "trezor"
+      ],
+      "languages": [
+        "swift",
+        "javascript"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/the-macos-stealer-gold-rush-how-cybercriminals-are-racing-to-exploit-apples-ecosystem"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Tenant from Hell: Prometei's Unauthorized Stay in Your Windows Server",
+      "completeness": "High",
+      "threats": [
+        "Prometei_botnet",
+        "Credential_harvesting_technique",
+        "Lolbin_technique",
+        "Nop_sled_technique",
+        "Miwalk",
+        "Mimikatz_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Service",
+        "Windows Firewall",
+        "Microsoft Defender",
+        "Windows Registry",
+        "Remote Desktop services",
+        "Windows Defender Application Control"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "rsa-1024",
+        "lznt1",
+        "base64",
+        "sha256",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "bytearray",
+        "Sleep",
+        "LZNT1_Decompress"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/tenant-from-hell-prometeis-unauthorized-stay-in-your-windows-server",
+        "https://github.com/eSentire/iocs/blob/main/Prometei/Prometei\\_Unpacker.py",
+        "https://github.com/eSentire/iocs/blob/main/Prometei/Prometei\\_Additional\\_Module\\_Decrypter.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "OysterLoader Unmasked: The Multi-Stage Evasion Loader",
+      "completeness": "Medium",
+      "threats": [
+        "Oyster_loader",
+        "Oyster",
+        "Rhysida",
+        "Vidar_stealer",
+        "Gootkit",
+        "Textshell",
+        "Api_hammering_technique",
+        "Steganography_technique",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WinSCP",
+        "xz-utils",
+        "task scheduler",
+        "Mozilla Firefox",
+        "Node.js",
+        "Microsoft ASP.NET Core",
+        "Microsoft Visual C++"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "rc4",
+        "lzma"
+      ],
+      "functions": [
+        "GDI",
+        "DLLs",
+        "DLL"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/oysterloader-unmasked-the-multi-stage-evasion-loader/",
+        "https://gist.github.com/lbpierre/73efce1af55792af7644161da9ed1290",
+        "https://gist.github.com/lbpierre/282e2c40bfed6352e750736f35801b9b"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Quick analysis of Netdragon, a botnet for Feiniu NAS",
+      "completeness": "Medium",
+      "threats": [
+        "Netdragon"
+      ],
+      "geo": [
+        "Japan",
+        "China",
+        "Tokyo",
+        "Australia",
+        "Singapore"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "systemd",
+        "Telegram"
+      ],
+      "algorithms": [
+        "chacha20",
+        "xor"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/netdragon/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Inside the Ecosystem, Operations: DragonForce",
+      "completeness": "Low",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Eldorado_ransomware",
+        "Ransomhub",
+        "Devman",
+        "Lockbit",
+        "Conti",
+        "Ransombay_raas",
+        "Qilin_ransomware",
+        "Byovd_technique"
+      ],
+      "software": [
+        "Linux",
+        "ESXi"
+      ],
+      "links": [
+        "https://medium.com/s2wblog/inside-the-ecosystem-operations-dragonforce-11048db4cbb0"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Carding-as-a-Service: The Underground Market of Stolen Cards",
+      "completeness": "Low",
+      "threats": [
+        "Majik_pos",
+        "Blackpos",
+        "Chrysalis"
+      ],
+      "geo": [
+        "France",
+        "Peru",
+        "China",
+        "Norway",
+        "Canada",
+        "American",
+        "Russian",
+        "United kingdom"
+      ],
+      "wallets": [
+        "zcash"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-carding-as-a-service-stolen-credit-cards-fraud"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Employee Monitoring and SimpleHelp Software Abused in Ransomware Operations",
+      "completeness": "Medium",
+      "threats": [
+        "Simplehelp_tool",
+        "Crazy_ransomware",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Voidcrypt"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft OneDrive",
+        "Windows Defender",
+        "Windows registry",
+        "Windows service",
+        "JWrapper",
+        "ChatGPT",
+        "Claude"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet",
+        "bybit"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/employee-monitoring-simplehelp-abused-in-ransomware-operations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "LockBit strikes with new 5.0 version, targeting Windows, Linux and ESXI systems",
+      "completeness": "High",
+      "threats": [
+        "Lockbit",
+        "Smokeloader",
+        "Process_hollowing_technique",
+        "Stealbit",
+        "Blackmatter",
+        "Blackcat"
+      ],
+      "geo": [
+        "Russian",
+        "American"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXI",
+        "twitter",
+        "Event Tracing for Windows"
+      ],
+      "algorithms": [
+        "curve25519",
+        "xchacha20",
+        "exhibit",
+        "chacha20"
+      ],
+      "functions": [
+        "fork",
+        "SetInformationByHandle"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/lockbit-strikes-with-new-50-version-targeting-windows-linux-and-esxi-systems/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Attackers Weaponize Signed RMM Tools via Zoom, Meet, & Teams Lures",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Centrastage_tool",
+        "Logmein_tool",
+        "Screenconnect_tool"
+      ],
+      "software": [
+        "Zoom",
+        "Microsoft Teams"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/attackers-weaponize-signed-rmm-tools-via-zoom-meet-teams-lures",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Phishing/ConferenceInvites/IOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "How ClickFix Opens the Door to Stealthy StealC Information Stealer",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Stealc",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Donut"
+      ],
+      "geo": [
+        "Vietnamese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam",
+        "Outlook",
+        "Microsoft Visual C++",
+        "Windows service",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "Chromium",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "atomicwallet",
+        "electrum",
+        "exodus_wallet",
+        "bitcoincore"
+      ],
+      "crypto": [
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "rc4",
+        "aes-gcm",
+        "base64"
+      ],
+      "functions": [
+        "DPAPI"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/how-clickfix-opens-the-door-to-stealthy-stealc-information-stealer",
+        "https://github.com/drole/StealC-C2-Traffic-Decryption-Tool"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "LummaStealer Is Getting a Second Life Alongside CastleLoader",
+      "completeness": "High",
+      "threats": [
+        "Lumma_stealer",
+        "Castleloader",
+        "Clickfix_technique",
+        "Rugmi",
+        "Donutloader",
+        "Anydesk_tool",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam",
+        "KeePass",
+        "Authy",
+        "Gmail",
+        "Outlook",
+        "Discord",
+        "TradingView"
+      ],
+      "wallets": [
+        "metamask",
+        "electrum",
+        "coinomi",
+        "bitcoincore",
+        "jaxx",
+        "steem",
+        "trezor"
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "lznt1",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/lummastealer-second-life-castleloader",
+        "https://github.com/bitdefender/malware-ioc/blob/master/2026\\_02\\_11-Lumma-Stealer-ioc.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Have you tried turning it off and on again?On bricking OT devices (part 1)",
+      "completeness": "Low",
+      "threats": [
+        "Industoyer2",
+        "Metasploit_tool",
+        "Eternal_petya",
+        "Disttrack",
+        "Killdisk",
+        "Acidpour",
+        "Fuxnet"
+      ],
+      "geo": [
+        "Polish",
+        "Polands",
+        "Moscow",
+        "Poland",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://www.midnightblue.nl/blog/have-you-tried-turning-it-off-and-on-again-part-1",
+        "https://github.com/torvalds/linux/blob/2687c848e57820651b9f69d30c4710f4219f7dbf/include/uapi/mtd/mtd-abi.h#L208",
+        "https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/dos/scada/siemens\\_siprotec4.rb"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "AiFrame- Fake AI Assistant Extensions Targeting 260,000 Chrome Users via injected iframes",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 5,
+      "software": [
+        "Chrome",
+        "ChatGPT",
+        "Claude",
+        "Gmail",
+        "DeepSeek"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://layerxsecurity.com/blog/aiframe-fake-ai-assistant-extensions-targeting-260000-chrome-users-via-injected-iframes/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-12",
+      "title": "Unpacking the New Matryoshka ClickFix Variant: Typosquatting Campaign Delivers macOS Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Typosquatting_technique",
+        "Clipboard_injection_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "macOS",
+        "curl",
+        "url -s",
+        "url -X",
+        "Ledger Live",
+        "Electron"
+      ],
+      "wallets": [
+        "trezor"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "daemon_function"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.intego.com/mac-security-blog/matryoshka-clickfix-macos-stealer/"
+      ]
+    }
+  }
+]
