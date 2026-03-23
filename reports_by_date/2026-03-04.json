@@ -1,0 +1,367 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "RedAlert Trojan Campaign: Fake Emergency Alert App Spread via SMS Spoofing Israeli Home Front Command",
+      "completeness": "High",
+      "threats": [
+        "Redalert",
+        "Smishing_technique",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Israeli",
+        "Israel",
+        "Iranian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Play",
+        "Android"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "getInstallerPackageName"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/redalert-trojan-campaign-fake-emergency-alert-app-spread-via-sms-spoofing-israeli-home-front-command"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Hacktivist campaigns increase as United States, Iran, and Israel conflict intensifies",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_mystique",
+        "Bqtlock",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Iran",
+        "Israeli",
+        "Israel",
+        "Iranian"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/hacktivist-campaigns-increase-as-united-states-iran-and-israel-conflict-intensifies"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Exposing a Russian Campaign Targeting Ukraine Using New Malware Duo: BadPaw and MeowMeow",
+      "completeness": "Low",
+      "threats": [
+        "Badpaw",
+        "Meowmeow",
+        "Dotnet_reactor_tool",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian",
+        "Russian"
+      ],
+      "software": [
+        "NET Reactor"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.clearskysec.com/russian-campaign-targeting-ukraine-badpaw-and-meowmeow/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Copy, Paste, Ransom: Making Data Exfiltration As Easy as AzCopy",
+      "completeness": "Low",
+      "threats": [
+        "Azcopy_tool",
+        "Rclone_tool",
+        "Megasync_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/azcopy-data-exfiltration"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Major Cyber Attacks in February 2026: BQTLock, Thread-Hijack Phishing, and MFA Bypass Evolution",
+      "completeness": "Medium",
+      "threats": [
+        "Thread-hijack_phishing_technique",
+        "Bqtlock",
+        "Greenblood",
+        "Moonrise_rat",
+        "Karsto",
+        "Evilproxy_tool",
+        "Process_injection_technique",
+        "Uac_bypass_technique",
+        "Remcos_rat",
+        "Supply_chain_technique",
+        "Aitm_technique",
+        "Typosquatting_technique",
+        "Sneaky_2fa_tool",
+        "Tycoon_2fa"
+      ],
+      "geo": [
+        "Middle",
+        "east"
+      ],
+      "software": [
+        "Linux",
+        "Android",
+        "Cloudflare Turnstile",
+        "Azure Blob"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/february-26-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Inside Tycoon2FA: How a leading AiTM phishing kit operated at scale",
+      "completeness": "Medium",
+      "threats": [
+        "Tycoon_2fa",
+        "Aitm_technique",
+        "Caffeine_tool",
+        "Raccoono365_tool",
+        "Bec_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Outlook",
+        "Gmail",
+        "Telegram",
+        "docker",
+        "zendesk",
+        "Cloudflare Turnstile",
+        "PhantomJS",
+        "Burp Suite",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/03/04/inside-tycoon2fa-how-a-leading-aitm-phishing-kit-operated-at-scale/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Connecting Dots with SSL Certificates: Finding Threat Actors with Graph Theory",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "rdga"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/security/connecting-dots-with-ssl-certificates-finding-threat-actors-with-graph-theory/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Cloudflare participates in global operation to disrupt Tycoon 2FA",
+      "completeness": "Medium",
+      "threats": [
+        "Tycoon_2fa",
+        "Dadsec_tool",
+        "Bec_technique",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Telegram",
+        "Gmail",
+        "PhantomJS",
+        "Burp Suite",
+        "CryptoJS"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "links": [
+        "https://www.cloudflare.com/en-au/threat-intelligence/research/report/tycoon-2fa-takedown/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Iranian APT Infrastructure in Focus: Mapping State-Aligned Clusters During Geopolitical Escalation",
+      "completeness": "High",
+      "threats": [
+        "Sliver_c2_tool",
+        "Tsundere",
+        "Credential_harvesting_technique",
+        "Tamecat",
+        "Spear-phishing_technique",
+        "Foudre",
+        "Tonnerre"
+      ],
+      "geo": [
+        "Mena",
+        "Iran",
+        "Africa",
+        "Israel",
+        "Iranian",
+        "Israeli",
+        "Middle east"
+      ],
+      "software": [
+        "Microsoft Word",
+        "WhatsApp",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://hunt.io/blog/iranian-apt-infrastructure-state-aligned-clusters",
+        "https://github.com/stamparm/maltrail/commit/b1746197022348b4cbbdacbc3271f1620f737d0b"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "The Economics of Clops Zero-Day Campaigns: Why Mass Exploitation Isnt Paying Off",
+      "completeness": "Low",
+      "threats": [
+        "Clop",
+        "Akira_ransomware",
+        "Lemurloot",
+        "Qilin_ransomware"
+      ],
+      "software": [
+        "GoAnywhere",
+        "MOVEit",
+        "Twitter"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/the-economics-of-clops-zero-day-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Breaking down a supply chain attack leveraging a malicious Google Workspace OAuth app",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Gmail"
+      ],
+      "links": [
+        "https://redcanary.com/blog/threat-detection/google-workspace-oauth-attack/",
+        "https://github.com/GAM-team/GAM"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-04",
+      "title": "Malware, from the Outside!: How a Threat Actor Used Fake OpenClaw Installers to Infect Systems with GhostSocks and Information Stealers",
+      "completeness": "High",
+      "threats": [
+        "Ghostsocks",
+        "Stealth_packer_tool",
+        "Amos_stealer",
+        "Antivm_technique",
+        "Blackbasta",
+        "Bloat_technique",
+        "Vidar_stealer",
+        "Purelogs",
+        "Antidebugging_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenClaw",
+        "macOS",
+        "ChatGPT",
+        "Clawdbot",
+        "Moltbot",
+        "Telegram",
+        "Steam",
+        "Windows installer",
+        "GateKeeper",
+        "curl",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "applescript",
+        "rust"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/openclaw-github-ghostsocks-infostealer",
+        "https://gist.github.com/JPMinty/98a1ea598bbfa97c779d9ad338280374/raw/cf1f83cd0a59b1bcb07ece9724339031403e8982/Debug%20comments%20from%20identified%20'Stealth%20Packer'%20packed%20Malware",
+        "https://gist.github.com/JPMinty/98a1ea598bbfa97c779d9ad338280374#file-debug-comments-from-identified-stealth-packer-packed-malware",
+        "https://github.com"
+      ]
+    }
+  }
+]

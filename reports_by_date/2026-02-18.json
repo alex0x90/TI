@@ -1,0 +1,247 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-18",
+      "title": "The Curious Case of the Triton Malware Fork",
+      "completeness": "Medium",
+      "threats": [
+        "Triton"
+      ],
+      "geo": [
+        "America",
+        "German",
+        "Portuguese"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 8,
+      "software": [
+        "MacOS",
+        "OpenClaw",
+        "Forgejo",
+        "Raspberry Pi"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "lua",
+        "java"
+      ],
+      "links": [
+        "https://brennan.day/the-curious-case-of-the-triton-malware-fork/",
+        "https://github.com/otaviocc/Triton",
+        "https://github.com/OP-Future/.github/issues/2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-18",
+      "title": "Sticky trail: exploring the attacks of the PseudoSticky faction",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat",
+        "Darktrack_rat",
+        "Defendnot_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian",
+        "Belarus",
+        "Russia",
+        "Chelyabinsk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Windows Defender",
+        "Viber",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/pseudo-sticky/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-18",
+      "title": "Dark Web Profile: Sinobi Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Sinobi",
+        "Inc_ransomware",
+        "Lynx",
+        "Lolbin_technique",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Australia",
+        "United kingdom",
+        "Canada"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 19,
+      "software": [
+        "BinDiff",
+        "Tor browser"
+      ],
+      "algorithms": [
+        "aes-128-ctr",
+        "curve25519"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-sinobi-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-18",
+      "title": "Fake Homebrew Typosquats Used to Deliver Cuckoo Stealer via ClickFix",
+      "completeness": "High",
+      "threats": [
+        "Cuckoo_stealer",
+        "Clickfix_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Belarusian",
+        "Russian",
+        "Netherlands"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 30,
+      "software": [
+        "macOS",
+        "curl",
+        "Chromium",
+        "Discord",
+        "Telegram",
+        "sudo",
+        "Gatekeeper",
+        "IndexedDB",
+        "Steam",
+        "Unix",
+        "have more..."
+      ],
+      "wallets": [
+        "coinbase",
+        "rabby",
+        "bitpay"
+      ],
+      "crypto": [
+        "binance",
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "curve25519",
+        "xor",
+        "ecdh",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "applescript",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://hunt.io/blog/fake-homebrew-clickfix-cuckoo-stealer-macos"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-18",
+      "title": "Beyond the Backdoor: How Contagious Interview Is Surgically Tampering with MetaMask Wallets",
+      "completeness": "Low",
+      "threats": [
+        "Beavertail",
+        "Invisibleferret"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "macOS",
+        "Linux",
+        "KeePass",
+        "Chrome"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "hmac"
+      ],
+      "functions": [
+        "report",
+        "submitPassword"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://sp4rk.medium.com/beyond-the-backdoor-how-contagious-interview-is-surgically-tampering-with-metamask-wallets-0314ae901d85"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-18",
+      "title": "Pwning Malware with Ninjas and Unicorns",
+      "completeness": "Low",
+      "threats": [
+        "Sysupdate"
+      ],
+      "software": [
+        "Linux",
+        "unicorn"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "main",
+        "setup_memory_mappings",
+        "write_memory_mappings",
+        "generate_key_internal",
+        "generate_key",
+        "xor_and_UNK_1",
+        "setup_registers",
+        "setup_xor_unk_decrypt"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/pwning-malware-with-ninjas-and-unicorns",
+        "https://github.com/unicorn-engine/unicorn/tree/master/bindings/rust"
+      ]
+    }
+  }
+]

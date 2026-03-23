@@ -1,0 +1,672 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "SloppyLemming Deploys BurrowShell and Rust-Based RAT to Target Pakistan and Bangladesh",
+      "completeness": "High",
+      "threats": [
+        "Burrowshell",
+        "Clickonce_tool",
+        "Dll_sideloading_technique",
+        "Havoc",
+        "Cobalt_strike_tool",
+        "Nekrowire",
+        "Typosquatting_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Spear-phishing_technique",
+        "Portscan_tool",
+        "Polymorphism_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Bangladesh",
+        "Pakistan",
+        "Asian",
+        "Sri lanka",
+        "Pakistani",
+        "India",
+        "Asia"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 18,
+      "software": [
+        "Windows Update service",
+        "NET Framework",
+        "Microsoft Excel"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "rc4"
+      ],
+      "functions": [
+        "SystemFunction033",
+        "GetCurrentDirectoryA",
+        "SetCurrentDirectoryA"
+      ],
+      "languages": [
+        "visual_basic",
+        "rust"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/sloppylemming-deploys-burrowshell-and-rust-based-rat-to-target-pakistan-and-bangladesh/",
+        "https://github.com/Hopding/pdf-lib"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Fake VCs target crypto talent in a new ClickFix campaign",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Typosquatting_technique",
+        "Credential_harvesting_technique",
+        "Junk_code_technique",
+        "Sugarloader",
+        "Waveshaper",
+        "Hypercall",
+        "Hiddencall",
+        "Silencelift",
+        "Deepbreath",
+        "Chromepush"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Zoom",
+        "Twitter",
+        "curl",
+        "Telegram",
+        "Linux",
+        "m",
+        "Zoom Telegram",
+        "Zoom macOS"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "Zoom"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "swift",
+        "javascript"
+      ],
+      "links": [
+        "https://moonlock.com/fake-vcs-target-crypto-talent-clickfix-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Infected by GTA 5 Cheats: How an Infostealer Infection Unmasked a North Korean Agent",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer",
+        "Craxsrat"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk",
+        "Chinese",
+        "Indonesian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "TikTok",
+        "Zoom",
+        "ChatGPT",
+        "ThinkPHP",
+        "Linux",
+        "YouTube music",
+        "FiveM",
+        "Twitter"
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "solflare"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "functions": [
+        "bind"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/infected-by-gta-5-cheats-how-an-infostealer-infection-unmasked-a-north-korean-agent/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Infiltrate the office through Office",
+      "completeness": "Low",
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Microsoft Office"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1004518/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Keeping our hand on Pulse. Mythic Likho cyberattacks on Russia's C.I.A.",
+      "completeness": "High",
+      "threats": [
+        "Loki_backdoor",
+        "Merlin_tool",
+        "Huloader",
+        "Reflectpulse",
+        "Lockbit",
+        "Bloodhound_tool",
+        "Xenarmor_tool",
+        "Ligolo-ng_tool",
+        "Nmap_tool",
+        "Mimikatz_tool",
+        "Impacket_tool",
+        "Socat_tool",
+        "Putty_tool",
+        "Loki_stealer",
+        "Rclone_tool",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Credential_dumping_technique",
+        "Loki_loader",
+        "Trojan.win32.networkgeneric.c",
+        "Xenallpasswordpro_tool",
+        "Qtox_tool",
+        "Mythic_c2_tool",
+        "Havoc",
+        "Chisel_tool",
+        "Megatsune"
+      ],
+      "geo": [
+        "Netherlands",
+        "American",
+        "Canadian",
+        "Russian",
+        "German",
+        "Russia"
+      ],
+      "ttp_tactics": 14,
+      "ttp_techniques": 82,
+      "software": [
+        "Nessus",
+        "PsExec",
+        "Windows registry",
+        "WireGuard",
+        "Active Directory",
+        "bitwarden",
+        "nginx",
+        "Local Security Authority",
+        "LastPass",
+        "1Password",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "base64",
+        "cbc",
+        "sha256",
+        "sha1",
+        "md5",
+        "deflate"
+      ],
+      "functions": [
+        "Get-ADUser",
+        "Get-ADDefaultDomainPasswordPolicy",
+        "Get-WssPasswordPolicy",
+        "Get-Process",
+        "Get-SMBShare",
+        "Get-Volume",
+        "Get-PSDrive"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/mythic-likho-cyberattacks-on-russian-critical-information-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Investigating Suspected DPRK-Linked Crypto Intrusions",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Vshell",
+        "React2shell_vuln",
+        "Credential_harvesting_technique",
+        "Xmrig_miner",
+        "Simplehelp_tool",
+        "Tradertraitor_downloader",
+        "Etherrat"
+      ],
+      "geo": [
+        "Chinese",
+        "Korea",
+        "Dprk",
+        "Korean"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 20,
+      "software": [
+        "Docker",
+        "curl",
+        "FlyVPN",
+        "PostgreSQL"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "java",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/threat%20research/DPRK-Crypto-Heist/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Analysis of AuraStealer, an emerging infostealer",
+      "completeness": "High",
+      "threats": [
+        "Aurastealer",
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Vidar_stealer",
+        "Stealc",
+        "Antidebugging_technique",
+        "Anydesk_tool",
+        "Donut",
+        "Salatstealer",
+        "Njrat",
+        "Rusty_stealer",
+        "Maskgram",
+        "Dcrat",
+        "Quasar_rat",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Malaysian",
+        "Russian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 39,
+      "software": [
+        "TikTok",
+        "Chromium",
+        "Telegram",
+        "Photoshop",
+        "Ubuntu",
+        "Microsoft Defender",
+        "KeePass",
+        "Bitwarden",
+        "1Password",
+        "LastPass",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "fnv-1a",
+        "aes",
+        "base64",
+        "sha256",
+        "murmur3",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "visual_basic",
+        "php",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.intrinsec.com/wp-content/uploads/2026/02/TLP-CLEAR-AuraStealer-EN.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Forbidden Hyena attacks with new remote access trojan BlackReaperRAT",
+      "completeness": "High",
+      "threats": [
+        "Blackreaperrat",
+        "Blackout_locker",
+        "Garble_tool",
+        "Sliver_c2_tool",
+        "Viper",
+        "Powerview_tool",
+        "Powersploit_tool",
+        "Anydesk_tool",
+        "Shadow_copies_delete_technique",
+        "Putty_tool",
+        "Proxychains_tool",
+        "Netcat_tool",
+        "Junk_code_technique",
+        "Procmon_tool",
+        "Credential_dumping_technique",
+        "Vssadmin_tool"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows registry",
+        "Unix",
+        "winlogon",
+        "Windows Defender",
+        "Linux",
+        "msexchange",
+        "outlook",
+        "telegram",
+        "firefox",
+        "onenote",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "aes-128",
+        "aes-256"
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "visual_basic"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/forbidden-hyena-atakuet-s-novym-troyanom-udalennogo-dostupa-blackreaperrat/",
+        "https://github.com/The-Viper-One/PsMapExec",
+        "https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1",
+        "https://github.com/haad/proxychains"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Malicious Packagist Packages Disguised as Laravel Utilities Deploy Encrypted RAT",
+      "completeness": "Low",
+      "ttp_tactics": 4,
+      "ttp_techniques": 7,
+      "software": [
+        "Laravel",
+        "Outlook",
+        "Unix",
+        "Linux",
+        "Windows registry",
+        "macOS"
+      ],
+      "algorithms": [
+        "aes-128-ctr",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "BsYhQ",
+        "TB0sT",
+        "register",
+        "class_exists",
+        "stream_socket_client",
+        "imagegrabscreen"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-packagist-packages-disguised-as-laravel-utilities"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Silver Dragon Targets Organizations in Southeast Asia and Europe",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Silverscreen",
+        "Sshcmd_tool",
+        "Geardoor",
+        "Dns_tunneling_technique",
+        "Bamboloader",
+        "Toolshell_vuln",
+        "Monikerloader",
+        "Junk_code_technique",
+        "Process_injection_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Uzbekistan",
+        "Italian",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "NET Framework",
+        "Windows Registry",
+        "Windows service",
+        "Windows Update Service",
+        "Windows shell"
+      ],
+      "algorithms": [
+        "md5",
+        "des",
+        "xor",
+        "base64",
+        "lznt1",
+        "sha256",
+        "gzip",
+        "rc4"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/silver-dragon-targets-organizations-in-southeast-asia-and-europe/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Analysis of an Integrated Phishing Campaign Utilizing Google Cloud Infrastructure",
+      "completeness": "Low",
+      "software": [
+        "gatekeeper"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/03/03/analysis-of-an-integrated-phishing-campaign-utilizing-google-cloud-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Signed malware impersonating workplace apps deploys RMM backdoors",
+      "completeness": "Medium",
+      "threats": [
+        "Trustconnect",
+        "Tactical_rmm_tool",
+        "Screenconnect_tool",
+        "Meshagent_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Zoom",
+        "Microsoft Teams",
+        "Windows service",
+        "Windows registry",
+        "Office365",
+        "Microsoft Defender for Endpoint"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/03/03/signed-malware-impersonating-workplace-apps-deploys-rmm-backdoors/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Mass exploitation of CVE-2026-1281 and CVE-2026-1340 in Ivanti EPMM",
+      "completeness": "High",
+      "threats": [
+        "Ncat_tool",
+        "Credential_harvesting_technique",
+        "Nezha_tool"
+      ],
+      "geo": [
+        "Australia",
+        "China",
+        "Germany",
+        "Canada",
+        "German"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Ivanti EPMM",
+        "Ivanti",
+        "RPORT",
+        "curl",
+        "mysql"
+      ],
+      "algorithms": [
+        "sha256",
+        "lzma",
+        "base64"
+      ],
+      "functions": [
+        "getMethod",
+        "getClass",
+        "getParameter",
+        "getClassLoader"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://github.security.telekom.com/2026/03/ivanti-CVE-2026-1281-exploitation.html",
+        "https://github.com/telekom-security/malware\\_analysis/blob/main/iocs/Ivanti-CVE-2026-1281-Exploitation.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "Coruna: Inside the Nation-State-Grade iOS Exploit Kit We've Been Tracking",
+      "completeness": "Medium",
+      "threats": [
+        "Coruna_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "whatsapp.WhatsApp",
+        "WhatsApp",
+        "iMessage",
+        "Mac OS"
+      ],
+      "wallets": [
+        "bitkeep_wallet",
+        "coin98",
+        "exodus_wallet",
+        "metamask",
+        "mytonwallet",
+        "solflare",
+        "tonkeeper",
+        "tronlink"
+      ],
+      "crypto": [
+        "uniswap"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://iverify.io/blog/coruna-inside-the-nation-state-grade-ios-exploit-kit-we-ve-been-tracking"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-03",
+      "title": "PDF-Borne Living-off-the-Land Attacks with RMM Abuse",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique",
+        "Screenconnect_tool",
+        "Msp360_tool"
+      ],
+      "software": [
+        "Dropbox"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "swift",
+        "powershell"
+      ],
+      "links": [
+        "https://www.sonicwall.com/blog/pdf-borne-living-off-the-land-attacks-with-rmm-abuse"
+      ]
+    }
+  }
+]

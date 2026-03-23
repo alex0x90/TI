@@ -1,0 +1,274 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-23",
+      "title": "FriendlyDealer mimics official app stores to push unvetted gambling apps",
+      "completeness": "Low",
+      "threats": [
+        "Friendlydealer_tool"
+      ],
+      "geo": [
+        "Mexico",
+        "Russia",
+        "San francisco",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "Chrome",
+        "Instagram",
+        "TikTok"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/03/friendlydealer-mimics-official-app-stores-to-push-unvetted-gambling-apps"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-23",
+      "title": "Threat Intelligence Report: MANGO SANDSTORM Dindoor / Fakeset Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Dindoor",
+        "Fakeset",
+        "Credential_harvesting_technique",
+        "Powgoop",
+        "Powerstats",
+        "Starwhale",
+        "Muddyviper",
+        "Ghostbackdoor",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Rclone_tool",
+        "Stagecomp",
+        "Darkcomp",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Canadian",
+        "Africa",
+        "America",
+        "Israeli",
+        "Iranian",
+        "Asia",
+        "Middle east",
+        "Israel",
+        "Canada"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "powershell",
+        "typescript",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://krypt3ia.wordpress.com/2026/03/20/threat-intelligence-report-mango-sandstorm-indoor-fakeset-activity/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-23",
+      "title": "When Trust Becomes the Attack Vector: Analysis of the EmEditor Supply-Chain Compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Lolbin_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "EmEditor",
+        "Windows Installer",
+        "Microsoft Defender",
+        "WordPress",
+        "chrome",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://techcommunity.microsoft.com/blog/microsoftsecurityexperts/when-trust-becomes-the-attack-vector-analysis-of-the-emeditor-supply-chain-compr/4499552"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-23",
+      "title": "Pro-Iranian Nasir Security is Targeting The Energy Sector in the Middle East",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Oman",
+        "Saudi arabia",
+        "Iraq",
+        "Turkey",
+        "Iranian",
+        "American",
+        "Israel",
+        "Israeli",
+        "Lebanon",
+        "Syria",
+        "Iran",
+        "Palestinian",
+        "Middle east"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "Url:",
+        "1"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/pro-iranian-nasir-security-is-targeting-the-energy-sector-in-the-middle-east"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-23",
+      "title": "CECbot: a TV box botnet that grabs the remote and maps the house",
+      "completeness": "Medium",
+      "threats": [
+        "Cecbot",
+        "Mirai",
+        "Kimwolf",
+        "Jackskid",
+        "Mossadproxy",
+        "Fastflux_technique",
+        "Aisuru",
+        "Tcpsynflood_technique",
+        "Synflood_technique",
+        "Httpflood_technique",
+        "Residential_proxy_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "WireGuard",
+        "iMessage",
+        "ndroid.up",
+        "Linux",
+        "TeamSpeak3",
+        "Discord",
+        "MySQL",
+        "FiveM",
+        "Chrome",
+        "Firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "curve25519",
+        "deflate",
+        "ed25519",
+        "chacha20-poly1305",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "FiveM"
+      ],
+      "languages": [
+        "c_language",
+        "java"
+      ],
+      "links": [
+        "https://github.com/deepfield/public-research/blob/main/cecbot/report.md",
+        "https://github.com/deepfield/public-research/blob/main/katana/report.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-23",
+      "title": "“Say My Name”: How MioLab is building MacOS Stealer Empire",
+      "completeness": "Medium",
+      "threats": [
+        "Miolab",
+        "Empire_loader",
+        "Traffer_technique",
+        "Credential_harvesting_technique",
+        "Clickfix_technique",
+        "Nova_stealer"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "software": [
+        "OS Stea",
+        "MacOS",
+        "Unix",
+        "Chromium",
+        "LastPass",
+        "Telegram",
+        "Yandex browser",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor",
+        "metamask",
+        "electrum",
+        "exodus_wallet",
+        "electron_cash",
+        "wassabi",
+        "dashcore",
+        "atomicwallet",
+        "guarda_wallet",
+        "tonkeeper",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "_system"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/say-my-name-how-miolab-is-building-macos-stealer-empire"
+      ]
+    }
+  }
+]

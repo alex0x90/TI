@@ -1,0 +1,339 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "Kimsuky malware using Dropbox API",
+      "completeness": "Low",
+      "geo": [
+        "North korea",
+        "Korea",
+        "Korean"
+      ],
+      "software": [
+        "Dropbox",
+        "task scheduler",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/03/dropbox-api-kimsuky-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "Iranian Cyber Threat Evolution: From MBR Wipers to Identity Weaponization",
+      "completeness": "Low",
+      "threats": [
+        "Disttrack",
+        "Supply_chain_technique",
+        "Lolbin_technique",
+        "Spear-phishing_technique",
+        "Zerocleare_wiper",
+        "Dustman_wiper",
+        "Apostle",
+        "Fantasy_wiper",
+        "Hatef",
+        "Hamsa",
+        "Bfg_agonizer"
+      ],
+      "geo": [
+        "Iranian",
+        "Israeli",
+        "Iran"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Outlook",
+        "Linux"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/evolution-of-iran-cyber-threats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "CursorJack: weaponizing Deeplinks to exploit Cursor IDE",
+      "completeness": "Low",
+      "threats": [
+        "Cursorjack_technique",
+        "Metasploit_tool",
+        "Credential_harvesting_technique",
+        "Meterpreter_tool",
+        "Motw_bypass_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "docker",
+        "Outlook",
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/cursorjack-weaponizing-deeplinks-exploit-cursor-ide",
+        "https://github.com/EmergingThreats/threatresearch/tree/master/CursorJack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "Middle East CyberWarfareIntensifies: Rising Attacks, Hacktivist Surge, and Global Risk Exposure",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Lotuslite"
+      ],
+      "geo": [
+        "Middle east",
+        "Israeli",
+        "Iranian",
+        "Iran",
+        "Russia",
+        "Jordan",
+        "India",
+        "Israel"
+      ],
+      "software": [
+        "Microsoft Exchange"
+      ],
+      "links": [
+        "https://cyble.com/blog/middle-east-cyber-warfare-2026-hybrid-conflict/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "When Reality Diverges from the Playbook: Darktrace Identifies Encryption in a World Leaks Ransomware Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Hunters_international",
+        "Hive_ransomware",
+        "Secp0",
+        "Rclone_tool",
+        "Lolbin_technique",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "Canada"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 20,
+      "software": [
+        "PsExec",
+        "Chrome",
+        "OpenSSH"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/when-reality-diverges-from-the-playbook-darktrace-identifies-encryption-in-a-world-leaks-ransomware-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "Operation GhostMail: Russian APT exploits Zimbra Webmail to Target Ukraine State Agency",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "Zimbra",
+        "Chrome",
+        "Zimbra Collaboration Suite",
+        "Roundcube",
+        "MDaemon"
+      ],
+      "algorithms": [
+        "xor",
+        "base32",
+        "base64"
+      ],
+      "functions": [
+        "atob",
+        "SOAP",
+        "GetIdentitiesRequest",
+        "GetInfoRequest",
+        "GetScratchCodesRequest",
+        "CreateAppSpecificPasswordRequest",
+        "GetDeviceStatusRequest",
+        "GetOAuthConsumersRequest"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-ghostmail-zimbra-xss-russian-apt-ukraine/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "Glassworm Strikes Popular React Native Phone Number Packages",
+      "completeness": "High",
+      "threats": [
+        "Glassworm",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Firefox",
+        "chrome"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet",
+        "coinomi",
+        "daedalus",
+        "braavos_wallet",
+        "electrum",
+        "guarda_wallet",
+        "mainnet",
+        "coinbase",
+        "rabby",
+        "have more..."
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "aes-256-cbc",
+        "sha256"
+      ],
+      "functions": [
+        "getSignaturesForAddress"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/glassworm-strikes-react-packages-phone-numbers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "MITRE ATT&CK Mapping",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "Telegram",
+        "Windows Defender",
+        "Twitter",
+        "Windows installer",
+        "Embarcadero"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/fake-telegram-malware-campaign-analysis-of-a-multi-stage-loader-delivered-via-typosquatted-websites/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-17",
+      "title": "Boggy Serpens Threat Assessment",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Udpgangster",
+        "Blackbeard",
+        "Lolbin_technique",
+        "Atera_tool",
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Lazagne_tool",
+        "Crackmapexec_tool",
+        "Supply_chain_technique",
+        "Ghostbackdoor",
+        "Http_vip",
+        "Muddyrot",
+        "Process_hollowing_technique",
+        "Runpe_tool",
+        "Pe_injection_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Turkmenistan",
+        "Asia",
+        "Saudi",
+        "Azerbaijan",
+        "Turkey",
+        "America",
+        "Israeli",
+        "Middle east",
+        "Iranian",
+        "Egypt",
+        "Tehran",
+        "Hungary",
+        "Saudi arabia",
+        "Israel"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Microsoft Word",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/boggy-serpens-threat-assessment/"
+      ]
+    }
+  }
+]

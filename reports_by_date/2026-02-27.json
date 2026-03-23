@@ -1,0 +1,759 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Combating the FunNULL Black Market: In-depth Analysis of the RingH23 and MacCMS Poisoning Attack Chain",
+      "completeness": "High",
+      "threats": [
+        "Ringh23_tool",
+        "Badredis2s_tool",
+        "Badhide2s_tool",
+        "Supply_chain_technique",
+        "Auto-color",
+        "Dns_tunneling_technique",
+        "Iodine_tool",
+        "Mitm_technique",
+        "Sedexp"
+      ],
+      "geo": [
+        "China",
+        "Philippines",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "ioc_domain": 48,
+      "ioc_url": 28,
+      "ioc_ip": 0,
+      "ioc_file": 14,
+      "ioc_command": 30,
+      "software": [
+        "Nginx",
+        "Azure Blob",
+        "Polyfill",
+        "ThinkPHP",
+        "MySQL",
+        "Chrome",
+        "Android",
+        "Linux"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "cbc",
+        "xor",
+        "aes-128-cbc",
+        "aes-cbc",
+        "gzip",
+        "aes"
+      ],
+      "functions": [
+        "isPc",
+        "step1"
+      ],
+      "languages": [
+        "golang",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/exposing-funnull-how-ringh23-maccms-are-poisoning-the-web/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Inside a fake Google security check that becomes a browser RAT",
+      "completeness": "Low",
+      "software": [
+        "Android",
+        "Chrome",
+        "Chromium",
+        "Firefox",
+        "macOS"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/privacy/2026/02/inside-a-fake-google-security-check-that-becomes-a-browser-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Dark Web Profile: Andariel",
+      "completeness": "Medium",
+      "threats": [
+        "Shatteredglass",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Watering_hole_technique",
+        "Lolbin_technique",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Procdump_tool",
+        "Putty_tool",
+        "Plink_tool",
+        "Stunnel_tool",
+        "Dtrack_rat",
+        "Process_hollowing_technique",
+        "Trurat",
+        "Tiger_rat",
+        "Earlyrat",
+        "Log4shell_vuln",
+        "Atharvan",
+        "Dora_rat",
+        "Dll_sideloading_technique",
+        "Durianbeacon",
+        "Nukesped_rat",
+        "Byovd_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "Asia",
+        "Japan",
+        "North korea",
+        "Korea"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 12,
+      "software": [
+        "Apache Tomcat",
+        "Microsoft SharePoint",
+        "WinSCP",
+        "3Proxy"
+      ],
+      "algorithms": [
+        "aes-128",
+        "xor",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-andariel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "StegaBin: 26 Malicious npm Packages Use Pastebin Steganography to Deploy Multi-Stage Credential Stealer",
+      "completeness": "High",
+      "threats": [
+        "Steganography_technique",
+        "Trufflehog_tool",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Stegabin_loader"
+      ],
+      "geo": [
+        "North korea",
+        "North korean"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "Linux",
+        "macOS",
+        "Outlook",
+        "curl",
+        "Node.js",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "keplr"
+      ],
+      "crypto": [
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "bcrypt",
+        "base64",
+        "sha256",
+        "rc4",
+        "aes-256-cbc",
+        "xor"
+      ],
+      "functions": [
+        "checkNodeVersion",
+        "noEffectEnvCheck",
+        "getVSCodeUserDir",
+        "getOrCreateEncryptionKey",
+        "setInterval",
+        "writeEvent",
+        "SetWindowsHookEx",
+        "getActiveWindowTitle",
+        "GetWindowText",
+        "eval",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "solidity"
+      ],
+      "links": [
+        "https://socket.dev/blog/stegabin-26-malicious-npm-packages-use-pastebin-steganography"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "APT37's \"Ruby Jumper\" Uses USB Drives to Breach Networks That Were Never Online",
+      "completeness": "Medium",
+      "threats": [
+        "Restleaf",
+        "Snakedropper",
+        "Thumbsbd",
+        "Virustask",
+        "Footwine",
+        "Bluelight",
+        "Stuxnet"
+      ],
+      "geo": [
+        "North korea",
+        "Dprk",
+        "Korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Explorer",
+        "Android"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "ruby",
+        "powershell"
+      ],
+      "links": [
+        "https://www.codeaintel.com/p/apt37s-ruby-jumper-uses-usb-drives"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Unraveling the WSUS Exploit Chain Incident Analysis and Actor Insights",
+      "completeness": "High",
+      "threats": [
+        "Radmin_tool",
+        "Petitpotam_vuln",
+        "Efspotato_tool",
+        "Cloudflared_tool",
+        "Skuld",
+        "Atera_tool",
+        "Lockbit",
+        "Babuk",
+        "X2anylock",
+        "Toolshell_vuln",
+        "Hiddengh0st",
+        "Zoho_assist_tool",
+        "Mimikatz_tool",
+        "Impacket_tool"
+      ],
+      "geo": [
+        "Japan",
+        "China"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Velociraptor",
+        "Visual Studio Code",
+        "VSCode",
+        "OpenSSH",
+        "Windows Service",
+        "curl",
+        "TightVNC",
+        "SharePoint Server",
+        "PsExec",
+        "Azure Blob",
+        "have more..."
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-128-cbc"
+      ],
+      "functions": [
+        "GetCookie",
+        "E",
+        "CreateFolder",
+        "Write-Host",
+        "Add"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_2_6_shohei_iwata-teruki_yoshikawa_en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Zerobot Malware Targets n8n Automation Platform",
+      "completeness": "High",
+      "threats": [
+        "Zerobot",
+        "Mirai",
+        "Netcat_tool",
+        "Socat_tool",
+        "Aisuru"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Tenda",
+        "curl",
+        "Discord",
+        "Mac OS"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "perl",
+        "python"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2026/feb/zerobot-malware-targets-n8n-automation-platform",
+        "https://github.com/panda666-888/vuls/blob/main/tenda/ac1206/formSetMacFilterCfg.md#poc",
+        "https://github.com/TheStingR/CVE-2025-68613-POC/tree/master"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "From Access to Encryption: Uncovering Qilin's Attack Lifecycle",
+      "completeness": "High",
+      "threats": [
+        "Qilin_ransomware",
+        "Lynx",
+        "Safepay",
+        "Inc_ransomware",
+        "Clop",
+        "Ransomhub",
+        "Nightspire",
+        "Rhysida",
+        "Ransomhouse",
+        "Kawalocker",
+        "Gunra",
+        "Devman",
+        "Cicada_ransomware",
+        "Hunters_international",
+        "Fog_ransomware",
+        "Deadbolt",
+        "D4rk4rmy",
+        "Dharma",
+        "Cephalus",
+        "Cactus_ransomware",
+        "Eldorado_ransomware",
+        "Royal_ransomware",
+        "Blacknevas",
+        "Kerberoasting_technique",
+        "Mimikatz_tool",
+        "Nltest_tool",
+        "Shadow_copies_delete_technique",
+        "Netscan_tool",
+        "Credential_dumping_technique",
+        "Pingcastle_tool",
+        "Mimik_tool",
+        "Chromepass_tool",
+        "Netpass_tool",
+        "Passview_tool",
+        "Teamviewer_tool",
+        "Lsadump_tool",
+        "Screenconnect_tool",
+        "Hrsword_tool",
+        "Dark-kill_tool",
+        "Truesightkiller_tool",
+        "Edr-killer",
+        "Powertool_tool",
+        "Cobalt_strike_tool",
+        "Systembc",
+        "Sandbox_evasion_technique",
+        "Psexec_tool",
+        "Sharpdecryptpwd_tool"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 2,
+      "software": [
+        "Telegram",
+        "SoftPerfect Network Scanner",
+        "Active Directory",
+        "AzureAD",
+        "PostgreSQL",
+        "WinSCP",
+        "Navicat",
+        "Foxmail",
+        "RDCMan",
+        "chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "onekey"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-ctr",
+        "base64",
+        "rc4"
+      ],
+      "functions": [
+        "Get-WinEvent",
+        "Get-Unique",
+        "Write-Host",
+        "Get-Datacenter",
+        "Get-Cluster",
+        "Set-Cluster",
+        "Get-VMHost"
+      ],
+      "languages": [
+        "swift",
+        "powershell"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_2_8_takahiro_takeda_en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "A deep-dive into RapperBot C2 operation and DDoS attacks",
+      "completeness": "Low",
+      "threats": [
+        "Rapperbot",
+        "Mirai",
+        "Udpflood_technique",
+        "Synflood_technique",
+        "Ackflood_technique",
+        "Tcpflood_technique",
+        "Tcpstomp_technique",
+        "Httpflood_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "Brazil",
+        "Pacific",
+        "Ireland",
+        "Turkey",
+        "Chinese",
+        "Russia",
+        "Japan",
+        "China",
+        "Hong kong",
+        "Netherlands",
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "xor",
+        "chacha20",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_2_5_hideyuki-furukawa_en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Unmasking the CoGUI Phishing Kit, the Major Chinese Phishing-as-a-Service Targeting Japan",
+      "completeness": "High",
+      "threats": [
+        "Cogui",
+        "Fishingmaster_tool",
+        "Cloaking_technique",
+        "Lighthouse_tool",
+        "Haozi_tool",
+        "Pheonix",
+        "Panda_shop_tool",
+        "Lucid_tool"
+      ],
+      "geo": [
+        "Italia",
+        "Niger",
+        "China",
+        "Tokyo",
+        "America",
+        "American",
+        "New york",
+        "Chinese",
+        "Mali",
+        "Japan",
+        "Japanese",
+        "Asia"
+      ],
+      "software": [
+        "Telegram",
+        "curl",
+        "Ubuntu",
+        "Ubuntu Sudo",
+        "sudo",
+        "Android"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "algorithms": [
+        "aes-128-cbc",
+        "des",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "createOrGetUserInfo",
+        "getState",
+        "Zr",
+        "4",
+        "m4",
+        "up",
+        "w3",
+        "f299",
+        "f365",
+        "f307",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_2_2_%20shadow_liu-lime_chen-albert_song_en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "APT36 : Multi-Vector Execution Malware Campaign Targeting Indian Government Entities",
+      "completeness": "High",
+      "threats": [
+        "Junk_code_technique",
+        "Motw_bypass_technique",
+        "Spear-phishing_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Indian",
+        "Pakistan"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 29,
+      "software": [
+        "Microsoft PowerPoint",
+        "Windows security",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "Auto_Open",
+        "lauoksrimv"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt36-multi-vector-execution-malware-campaign-targeting-indian-government-entities/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Hook, line, and vault: A technical deep dive into the 1Phish kit",
+      "completeness": "Medium",
+      "threats": [
+        "1phish_tool",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Emea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "1Password",
+        "Selenium",
+        "PhantomJS",
+        "chrome",
+        "twitter"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "createElement",
+        "getAttribute",
+        "getContext",
+        "getParameter",
+        "getExtension",
+        "getElementById"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/hook-line-vault-a-deep-dive-into-1phish/",
+        "https://github.com/DataDog/indicators-of-compromise/tree/main/1Phish"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Github VSCode Contagious Interview",
+      "completeness": "High",
+      "threats": [
+        "Beavertail",
+        "Invisibleferret",
+        "Ottercookie",
+        "Anydesk_tool",
+        "Supply_chain_technique",
+        "Dead_drop_technique",
+        "Tsunami_framework",
+        "Etherrat"
+      ],
+      "geo": [
+        "North korean",
+        "Bulgaria",
+        "India",
+        "America"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 31,
+      "software": [
+        "VSCode",
+        "Visual Studio Code",
+        "linux",
+        "macOS",
+        "onenote",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Chromium",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "rabby",
+        "coinbase",
+        "exodus_wallet",
+        "trezor",
+        "electrum",
+        "brave_wallet",
+        "coin98",
+        "math_wallet",
+        "solflare",
+        "have more..."
+      ],
+      "crypto": [
+        "solana",
+        "bitcoin",
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "base64",
+        "sha256",
+        "hmac"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.enki.co.kr/media-center/blog/contagious-interview-campaign-abusing-vscode-distributed-on-github"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-27",
+      "title": "Microsoft Defender Discovers Trojanized Gaming Utility Campaign Stealing Data with RATs",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Twitter",
+        "WhatsApp",
+        "Microsoft Defender for Endpoint"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://gbhackers.com/gaming-utility-campaign/"
+      ]
+    }
+  }
+]

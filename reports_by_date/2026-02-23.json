@@ -1,0 +1,142 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-23",
+      "title": "Four Malicious NuGet Packages Target ASP.NET Developers With JIT Hooking and Credential Exfiltration",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Ncryptyo",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique",
+        "Ncrypto",
+        "Dotnet_reactor_tool",
+        "Eziriz_tool",
+        "Timebomb_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "NuGet",
+        "ASP.NET",
+        "Outlook",
+        "NET Reactor",
+        "Linux",
+        "macOS",
+        "Unix"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256-cbc",
+        "sha1",
+        "base64",
+        "sha256",
+        "gzip"
+      ],
+      "functions": [
+        "GetManifestResourceStream",
+        "HTTP",
+        "GetUserPermissions",
+        "GetRolePermissions",
+        "UpdateRolePermissions",
+        "UpdateUserPermissions",
+        "ConvertHtmlToPDF",
+        "CreateNoWindow",
+        "getJit"
+      ],
+      "links": [
+        "https://socket.dev/blog/four-malicious-nuget-packages-target-asp-net-developers-with-jit-hooking-and-credential"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-23",
+      "title": "Fake Huorong security site infects users with ValleyRAT",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Winos",
+        "Typosquatting_technique",
+        "Dll_sideloading_technique",
+        "Catena",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "Huorong",
+        "NSIS installer",
+        "Cloudflare R2",
+        "Windows Defender",
+        "VirtualBox",
+        "LetsVPN"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/02/huorong"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-23",
+      "title": "Malicious OpenClaw Skills Used to Distribute Atomic macOS Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Supply_chain_technique",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenClaw",
+        "macOS",
+        "ClawHub",
+        "KeePass",
+        "Telegram",
+        "Claude",
+        "curl",
+        "Discord",
+        "Ledger Live"
+      ],
+      "wallets": [
+        "trezor",
+        "metamask",
+        "tron",
+        "exodus_wallet",
+        "coin98",
+        "mytonwallet",
+        "guarda_wallet",
+        "martian_wallet",
+        "cyano",
+        "jaxx",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/b/openclaw-skills-used-to-distribute-atomic-macos-stealer.html"
+      ]
+    }
+  }
+]

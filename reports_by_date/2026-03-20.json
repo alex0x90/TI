@@ -1,0 +1,434 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "Attack case against MS-SQL server installing ICE Cloud scanner (Larva-26002)",
+      "completeness": "Medium",
+      "threats": [
+        "Ice_cloud_tool",
+        "Mimic_ransomware",
+        "Trigona",
+        "Anydesk_tool",
+        "Teramind_tool",
+        "Bitsadmin_tool"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MS-SQL",
+        "Curl",
+        "mssql"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/92987/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "CVE-2025-32975: Arctic Wolf Observes Exploitation of Quest KACE Systems Management Appliance",
+      "completeness": "Low",
+      "threats": [
+        "Quest_kace_tool",
+        "Credential_harvesting_technique",
+        "Mimikatz_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog-uk/cve-2025-32975-arctic-wolf-observes-exploitation-of-quest-kace-systems-management-appliance/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "GhostClaw expands beyond npm: GitHub repositories and AI workflows deliver macOS infostealer",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_stealing_technique",
+        "Ghostloader",
+        "Glassworm"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "OpenClaw",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "applescript",
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/ghostclaw-ghostloader-malware-github-repositories-ai-workflows/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "ClayRat: What was that?",
+      "completeness": "Low",
+      "threats": [
+        "Clayrat",
+        "Gorilla",
+        "Dcrat"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Android",
+        "apktool"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6472/",
+        "https://github.com/messede-degod/Gembe"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "Trivy Under Attack Again: Widespread GitHub Actions Tag Compromise Exposes CI/CD Secrets",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenVSX",
+        "sudo",
+        "Linux",
+        "macOS",
+        "Docker",
+        "MYSQL",
+        "REDIS",
+        "slack",
+        "discord",
+        "openssl",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "ripple",
+        "monero",
+        "ethereum",
+        "cardano",
+        "solana"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "aes-256-cbc",
+        "rsa-4096",
+        "base64",
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "get_pid"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/trivy-under-attack-again-github-actions-compromise",
+        "https://docs.github.com/en/code-security/concepts/supply-chain-security/immutable-releases"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "EDR killers explained: Beyond the drivers",
+      "completeness": "High",
+      "threats": [
+        "Edr-killer",
+        "Byovd_technique",
+        "Pchunter_tool",
+        "Gmer_tool",
+        "Hrsword_tool",
+        "Abyssworker",
+        "Edrsilencer_tool",
+        "Edr-freeze_tool",
+        "Edrkillshifter_tool",
+        "Ransomhub",
+        "Embargo_ransomware",
+        "Ms4killer_tool",
+        "S4killer_tool",
+        "Deadlock",
+        "Dlkiller",
+        "Susanoo_tool",
+        "Lockbit",
+        "Babuk",
+        "Bdapiutil-killer_tool",
+        "Tfsysmon-killer_tool",
+        "Monti",
+        "Dead-av_tool",
+        "Ghostdriver_tool",
+        "Dire_wolf",
+        "Smilingkiller_tool",
+        "Kill-floor_tool",
+        "K7terminator_tool",
+        "Demokiller_tool",
+        "Qilin_ransomware",
+        "Akira_ransomware",
+        "Ransomhouse",
+        "Heartcrypt_tool",
+        "Abysskiller_tool",
+        "Medusa_ransomware",
+        "Cardspacekiller_tool",
+        "Shanya_tool",
+        "Bumblebee",
+        "Crytox",
+        "Medusalocker",
+        "Hexkiller_tool",
+        "Sevexkiller_tool",
+        "Vmprotect_tool",
+        "Themida_tool",
+        "Burntcigar",
+        "Rentdrv2_tool",
+        "Kryptik"
+      ],
+      "geo": [
+        "Ukraine",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 16,
+      "software": [
+        "Velociraptor",
+        "ThrottleStop",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "sha1",
+        "exhibit"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/edr-killers-explained-beyond-the-drivers/",
+        "https://github.com/szdyg/HRSword",
+        "https://github.com/wavestone-cdt/EDRSandblast/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "That “job brief” on Google Forms could infect your device",
+      "completeness": "High",
+      "threats": [
+        "Purehvnc_tool",
+        "Dll_hijacking_technique",
+        "Donut"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Foxmail",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "zip",
+        "gzip"
+      ],
+      "functions": [
+        "time64"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/that-job-brief-on-google-forms-could-infect-your-device"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "Trivy Compromised a Second Time - Malicious v0.69.4 Release, aquasecurity/setup-trivy, aquasecurity/trivy-action GitHub Actions Compromised",
+      "completeness": "Medium",
+      "threats": [
+        "Hackerbot-claw_tool",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Pacific"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "Open VSX",
+        "Linux",
+        "Docker",
+        "curl"
+      ],
+      "crypto": [
+        "solana",
+        "bitcoin",
+        "ethereum",
+        "cardano"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc",
+        "rsa-4096",
+        "sha256"
+      ],
+      "functions": [
+        "DeleteEvent",
+        "CreateEvent"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/trivy-compromised-a-second-time---malicious-v0-69-4-release",
+        "https://github.com/aquasecurity/setup-trivy/commit/8afa9b9f9183b4e00c46e2b82d34047e3c177bd0",
+        "https://github.com/Homebrew/homebrew-core/pull/273304"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "RegPhantom Backdoor Threat Analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Regphantom",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Singapore",
+        "China",
+        "Chinese",
+        "Usa",
+        "Japan",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows kernel",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256",
+        "xor"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2026/03/20/regphantom-backdoor-threat-analysis/",
+        "https://gist.github.com/pierrehpezier/a37984b91c2054032e856faf2700d278",
+        "https://gist.github.com/pierrehpezier/35c90c38b2c579d612d5970b04702df8"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "Libyan Oil Refinery Among Targets in Long-running Likely Espionage Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Asyncrat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Israeli",
+        "Libyan",
+        "Iran",
+        "Middle east",
+        "Libya",
+        "Iranian"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/asyncrat-libya-oil-cyberattack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-20",
+      "title": "Tycoon2FA Phishing-as-a-Service Platform Persists Following Takedown",
+      "completeness": "Medium",
+      "threats": [
+        "Tycoon_2fa",
+        "Aitm_technique",
+        "Raccoono365_tool",
+        "Bec_technique",
+        "Salty_2fa_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Romania",
+        "United kingdom",
+        "Latvia",
+        "Lithuania",
+        "Spain",
+        "Portugal",
+        "Poland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Exchange",
+        "Outlook"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/tycoon2fa-phishing-as-a-service-platform-persists-following-takedown/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1109 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "From a Sophisticated Browser-Extension Supply-Chain Compromise to a VibeCoded Twist: A Chrome Extension as the Initial Access Vector for a Broader Malware Chain",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "Firefox",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "debugLog",
+        "Get-WinEvent",
+        "Task-ID"
+      ],
+      "languages": [
+        "powershell",
+        "swift",
+        "javascript"
+      ],
+      "links": [
+        "https://monxresearch-sec.github.io/shotbird-extension-malware-report/",
+        "https://github.com/monxresearch-sec/shotbird-extension-malware-report"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "OAuth Device Code Phishing: A New Microsoft 365 Account Breach Vector",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "India"
+      ],
+      "software": [
+        "Linux",
+        "Android",
+        "Microsoft Office"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/oauth-device-code-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Active Phishing Campaign on Hosting Infrastructure with Alleged Links to Iranian State Aligned Activity",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "North korea",
+        "Pakistan",
+        "Iranian",
+        "America",
+        "Tehran",
+        "Vietnam",
+        "American",
+        "Iran",
+        "Canada",
+        "Canadian",
+        "India",
+        "China",
+        "Columbia",
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "remote desktop services"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/phishing-campaign-hosting-infrastructure-alleged-links-iranian-state-aligned-activity"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Silence of the hops: The KadNap botnet",
+      "completeness": "Medium",
+      "threats": [
+        "Kadnap",
+        "Faceless_tool",
+        "Moon_botnet",
+        "Residential_proxy_technique",
+        "Remproxy",
+        "Quad7",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Russia",
+        "Taiwan"
+      ],
+      "software": [
+        "Kademlia",
+        "Twitter",
+        "BitTorrent"
+      ],
+      "algorithms": [
+        "sha1",
+        "aes",
+        "xor"
+      ],
+      "links": [
+        "https://blog.lumen.com/silence-of-the-hops-the-kadnap-botnet/",
+        "https://github.com/blacklotuslabs/IOCs/blob/main/KadNap\\_IOCs.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "GhostWeaver - a malware that lives up to its name",
+      "completeness": "High",
+      "threats": [
+        "Ghostweaver",
+        "Pantera",
+        "Mintsloader",
+        "Uac_bypass_technique",
+        "Boinc_tool",
+        "Socgholish_loader",
+        "Parrot_tds_tool",
+        "Amsi_bypass_technique",
+        "Asyncrat",
+        "Nmap_tool",
+        "Formgrabber",
+        "Mitm_technique",
+        "Polymorphism_technique",
+        "Remcos_rat",
+        "Interlock",
+        "Rhysida",
+        "Oyster",
+        "Stealc",
+        "Obfus",
+        "Process_injection_technique",
+        "Violet_rat"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 19,
+      "software": [
+        "Telegram",
+        "WordPress",
+        "Chrome",
+        "Firefox",
+        "Outlook",
+        "curl",
+        "Task Scheduler",
+        "Zimbra"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "gzip",
+        "sha512",
+        "sha1",
+        "xor",
+        "prng"
+      ],
+      "functions": [
+        "PowerShell",
+        "Get-Content",
+        "Get-MpComputerStatus"
+      ],
+      "languages": [
+        "autoit",
+        "powershell",
+        "python",
+        "visual_basic",
+        "jscript",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.derp.ca/research/ghostweaver-tag124-powershell-rat/",
+        "https://github.com/kirkderp/yara",
+        "https://github.com/CybercentreCanada/CCCS-Yara"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "GhostLoader Malware Spreads Through Fake OpenClaw npm Package",
+      "completeness": "Low",
+      "threats": [
+        "Ghostloader",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenClaw",
+        "macOS",
+        "Firefox",
+        "Docker",
+        "iMessage"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/ghostloader-malware-fake-openclaw-npm-package/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Amos Stealer malext variant spread in a global malvertising campaign using free text-sharing websites",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Traffer_technique",
+        "Odyssey_stealer"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "MacOS",
+        "curl",
+        "MacOS Gatekeeper",
+        "sudo",
+        "QEMU",
+        "Claude",
+        "Chrome",
+        "Telegram",
+        "Firefox",
+        "Waterfox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tonkeeper",
+        "ledger_wallet",
+        "trezor"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "gzip",
+        "base64",
+        "zip",
+        "caesar_cipher"
+      ],
+      "functions": [
+        "chr",
+        "system"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://gi7w0rm.medium.com/amos-stealer-malext-variant-spread-in-a-global-malvertising-campaign-using-free-text-sharing-4d240e11d7e2",
+        "https://github.com/Gi7w0rm/Blogposts/blob/main/AMOSStealerMalext/TargetedExtensions.txt",
+        "https://github.com/Gi7w0rm/Blogposts/blob/main/AMOSStealerMalext/IoC\\_AMOSCampaign.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "When Trusted Websites Turn Malicious: WordPress Compromises Advance Global Stealer Operation",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Donut",
+        "Doubledonut",
+        "Vidar_stealer",
+        "Dead_drop_technique",
+        "Vodkastealer",
+        "Process_injection_technique",
+        "Antidebugging_technique",
+        "Donut_loader",
+        "Lumma_stealer",
+        "Stealc",
+        "Purelogs",
+        "Rhadamanthys",
+        "Aurastealer",
+        "Chromelevator_tool",
+        "Password_spray_technique",
+        "Filefix_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Norwegian",
+        "India",
+        "Czech",
+        "Switzerland",
+        "Danish",
+        "Latvian",
+        "Slovakia",
+        "Vietnamese",
+        "German",
+        "Ukrainian",
+        "Russia",
+        "Swedish",
+        "French",
+        "Australia",
+        "Germany",
+        "Czechia",
+        "Romanian",
+        "Italian",
+        "Brazil",
+        "Bulgarian",
+        "Canada",
+        "Portuguese",
+        "Dutch",
+        "Turkish",
+        "Indonesian",
+        "Australian",
+        "Belarus",
+        "Serbian",
+        "Hungarian",
+        "Polish",
+        "Israel",
+        "Spanish",
+        "Singapore"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 30,
+      "software": [
+        "WordPress",
+        "Steam",
+        "Twitter",
+        "phantomjs\\|curl",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "jaxx",
+        "guarda_wallet",
+        "ledger_wallet",
+        "trezor",
+        "coinomi"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin"
+      ],
+      "algorithms": [
+        "rc4",
+        "3des",
+        "aes-256-cbc",
+        "base64",
+        "chacha20",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "Write-Host",
+        "Write-Error",
+        "function"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python",
+        "java",
+        "php"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-malicious-websites-wordpress-compromise-advances-global-stealer-operation",
+        "https://github.com/rapid7/Rapid7-Labs/blob/main/Misc/ClickFix\\_DoubleDonut\\_Deobfuscated\\_Payload.js.txt",
+        "https://github.com/rapid7/Rapid7-Labs/blob/main/Misc/ClickFix\\_DoubleDonut\\_Deobfuscated\\_Injector.js.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Exfiltration in Plain Sight: SafePays OneDrive Play",
+      "completeness": "Medium",
+      "threats": [
+        "Safepay",
+        "Sharpshares_tool",
+        "Sharefinder_tool",
+        "Netscan_tool",
+        "Snaffler_tool",
+        "Lolbin_technique",
+        "Credential_dumping_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft OneDrive",
+        "active directory",
+        "Hyper-V",
+        "ESXI",
+        "Chrome"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.sygnia.co/blog/safepay-onedrive-exfiltration-technique/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "xygeni-action Compromised: C2 Reverse Shell Backdoor Injected via Tag Poisoning",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "xygeni-action",
+        "curl",
+        "Dependabot"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/xygeni-action-compromised-c2-reverse-shell-backdoor-injected-via-tag-poisoning",
+        "https://github.com/xygeni/xygeni-action/commit/4bf1d4e19ad81a3e8d4063755ae0f482dd3baf12",
+        "https://github.com/xygeni/xygeni-action"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Iranian MOIS Actors & the Cyber Crime Connection",
+      "completeness": "Medium",
+      "threats": [
+        "Rhadamanthys",
+        "Tsundere",
+        "Dindoor",
+        "Fakeset",
+        "Qilin_ransomware",
+        "Rclone_tool",
+        "Castleloader",
+        "Stagecomp"
+      ],
+      "geo": [
+        "Iranian",
+        "Tehran",
+        "Middle east",
+        "Israeli",
+        "Swedish",
+        "Albania",
+        "Sweden",
+        "Israel",
+        "Iran"
+      ],
+      "software": [
+        "Node.js"
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/iranian-mois-actors-the-cyber-crime-connection/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "China-Nexus Activity Against Qatar Observed Amid Expanding Regional Tensions",
+      "completeness": "Medium",
+      "threats": [
+        "Plugx_rat",
+        "Cobalt_strike_tool",
+        "Dll_hijacking_technique",
+        "Voldemort"
+      ],
+      "geo": [
+        "Chinese",
+        "China",
+        "Turkish",
+        "Myanmar",
+        "Philippines",
+        "Qatar",
+        "Israeli",
+        "American",
+        "Iranian",
+        "Bahrain",
+        "Middle east"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://blog.checkpoint.com/research/china-nexus-activity-against-qatar-observed-amid-expanding-regional-tensions/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "CastleRAT attack first to abuse Deno JavaScript runtime to evade enterprise security",
+      "completeness": "Medium",
+      "threats": [
+        "Nightshade",
+        "Clickfix_technique",
+        "Pyarmor_tool"
+      ],
+      "software": [
+        "Windows terminal",
+        "Telegram",
+        "Discord",
+        "Windows media"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "SetWindowsHookEx",
+        "MFEnumDeviceSources"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.threatdown.com/blog/castlerat-cyber-attack-is-the-first-to-abuse-deno-javascript-runtime-to-evade-enterprise-security/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "BeatBanker: A dual-mode Android Trojan",
+      "completeness": "Medium",
+      "threats": [
+        "Beatbanker",
+        "Btmob_rat",
+        "Xmrig_miner",
+        "Craxsrat",
+        "Spynote_rat",
+        "Spysolr"
+      ],
+      "geo": [
+        "Brazil",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "StarLink",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "crypto": [
+        "binance",
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "xor",
+        "sha1"
+      ],
+      "functions": [
+        "CipherInputStream"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://securelist.com/beatbanker-miner-and-banker/119121/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "APT36: A Nightmare of Vibeware",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Havoc",
+        "Polyglot_ransomware",
+        "Warcode",
+        "Crystalshell",
+        "Lolbin_technique",
+        "Nimshellcodeloader",
+        "Creepdropper",
+        "Sheetcreep",
+        "Mailcreep",
+        "Google_rat",
+        "Gc2-sheet_tool",
+        "Supaserv",
+        "Luminousstealer",
+        "Crystallshell",
+        "Zigshell",
+        "Crystalfile_tool",
+        "Luminouscookies",
+        "Process_injection_technique",
+        "Xaitax_tool",
+        "Process_hollowing_technique",
+        "Backupspy",
+        "Zigloader",
+        "Timestomp_technique",
+        "Gatesentinel_tool",
+        "Allrounder_tool",
+        "Filecopyu_tool",
+        "Mythic_c2_tool",
+        "Xaitaz_cromeelevator_tool",
+        "Carved4_tool"
+      ],
+      "geo": [
+        "Asian",
+        "Pakistan",
+        "Pakistani",
+        "Afghanistan",
+        "Indian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "Discord",
+        "Supabase",
+        "chrome",
+        "Google Chrome",
+        "Graph API",
+        "PostgreSQL",
+        "curl",
+        "Chromium",
+        "Google Chrome",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "md5",
+        "cbc",
+        "sha256",
+        "xor",
+        "zip",
+        "des"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://businessinsights.bitdefender.com/apt36-nightmare-vibeware",
+        "https://github.com/ytisf/theZoo",
+        "https://github.com/vxunderground/MalwareSourceCode"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "FortiGate Edge Intrusions \\| Stolen Service Accounts Lead to Rogue Workstations and Deep AD Compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Password_spray_technique",
+        "Meshagent_tool",
+        "Dll_sideloading_technique",
+        "Shadow_copies_delete_technique",
+        "Credential_harvesting_technique",
+        "Impacket_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Kazakhstan"
+      ],
+      "software": [
+        "Active Directory",
+        "SoftPerfect Network Scanner",
+        "SQL Server Management Studio",
+        "Pulseway",
+        "Windows Registry",
+        "PsExec"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://www.sentinelone.com/blog/fortigate-edge-intrusions/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "NetSupport RAT: How Legitimate Tools Can Be as Damaging as Malware",
+      "completeness": "Low",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique",
+        "Seo_poisoning_technique",
+        "Rhadamanthys"
+      ],
+      "geo": [
+        "Middle east",
+        "Asia",
+        "Africa",
+        "Americas",
+        "Emea"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/netsupport-rat-how-legitimate-tools-can-be-as-damaging-as-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Behind the console: Active phishing campaign targeting AWS console credentials",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Emea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/behind-the-console-aws-aitm-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "FakeGit: LuaJIT malware distributed via GitHub at scale",
+      "completeness": "High",
+      "threats": [
+        "Fakegit_tool",
+        "Dead_drop_technique",
+        "Stealc",
+        "Process_injection_technique",
+        "Etherhiding_technique",
+        "Ocrfix_technique",
+        "Luca_stealer",
+        "Aurora_stealer",
+        "Andromeda",
+        "Wallstealer",
+        "Lumma_stealer",
+        "Spear-phishing_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Vietnamese",
+        "Pol"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 19,
+      "software": [
+        "Chrome",
+        "Dropbox",
+        "Slack",
+        "Zoom",
+        "Roblox",
+        "Fortnite",
+        "Valorant",
+        "Node.js",
+        "Ubuntu",
+        "Pydantic",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "algorithms": [
+        "xor",
+        "rc4",
+        "base64",
+        "aes",
+        "aes-256",
+        "aes-ecb",
+        "zip",
+        "aes-256-ecb",
+        "sha256"
+      ],
+      "functions": [
+        "GetConsoleWindow",
+        "getDomain",
+        "updateDomain",
+        "destroyContract",
+        "getData",
+        "updateData"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "lua",
+        "python"
+      ],
+      "links": [
+        "https://www.derp.ca/research/fakegit-luajit-github-campaign/",
+        "https://github.com/kirkderp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "5 Malicious Rust Crates Posed as Time Utilities to Exfiltrate .env Files",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 6,
+      "software": [
+        "Outlook",
+        "curl"
+      ],
+      "functions": [
+        "check_params"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://socket.dev/blog/5-malicious-rust-crates-posed-as-time-utilities-to-exfiltrate-env-files"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "TENGU RANSOMWARE",
+      "completeness": "Medium",
+      "threats": [
+        "Tengu_ransomware",
+        "Stealtengu_tool",
+        "Residential_proxy_technique",
+        "React2shell_vuln",
+        "Lockbit",
+        "Blacksuit_ransomware",
+        "Akira_ransomware",
+        "Fortirdp_tool",
+        "Cobalt_strike_tool",
+        "Qakbot",
+        "Asyncrat",
+        "Lolbin_technique",
+        "Zerologon_vuln",
+        "Stealtg_tool",
+        "Devman"
+      ],
+      "geo": [
+        "Bulgaria",
+        "Monaco",
+        "Japanese",
+        "Poland",
+        "Panama",
+        "Dprk",
+        "Spain",
+        "France",
+        "Asia",
+        "Morocco",
+        "Iranian",
+        "India",
+        "Qatar",
+        "Middle east",
+        "Iran",
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TWITTER",
+        "ESXi",
+        "Linux",
+        "PixelDrain",
+        "PsExec",
+        "Telegram",
+        "Active Directory",
+        "Tor Browser"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/03/10/tengu-ransomware/",
+        "https://github.com/TheRavenFile/Daily-Hunt/blob/main/Tengu%20Ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "BlackSanta EDR-Killer: A Silent Threat Targeting Recruitment Workflows",
+      "completeness": "High",
+      "threats": [
+        "Blacksanta_tool",
+        "Dll_sideloading_technique",
+        "Edr-killer",
+        "Spear-phishing_technique",
+        "Steganography_technique",
+        "Antidebugging_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "SumatraPDF",
+        "Ubuntu",
+        "ASP.NET",
+        "VirtualBox",
+        "qemu xen",
+        "Hyper-V",
+        "QEMU",
+        "Xen",
+        "Windows Defender",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "Get-ChildItem"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.aryaka.com/docs/reports/blacksanta-edr-killer-threat-report.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Uncovering a New Device Code Phishing Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "Monaco"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "Android"
+      ],
+      "functions": [
+        "sf",
+        "getElementById",
+        "setTimeout",
+        "writeText"
+      ],
+      "links": [
+        "https://newtonpaul.com/blog/device-code-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "Tranium wiper: static analysis of a Go binary",
+      "completeness": "High",
+      "threats": [
+        "Tranium",
+        "Ransom.win32.agent.gen",
+        "Stampado",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Fodhelper_technique",
+        "Vssadmin_tool",
+        "Ironchain"
+      ],
+      "geo": [
+        "American"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "huorong",
+        "Windows service",
+        "BOOTNXT",
+        "winlogon",
+        "Windows Defender",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "md5",
+        "aes-cbc",
+        "sha1",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "FindWindow",
+        "CreateFont"
+      ],
+      "links": [
+        "https://www.derp.ca/research/tranium-wiper-analysis/",
+        "https://github.com/kirkderp/yara"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-10",
+      "title": "The Return of PhantomRaven: Detecting Three New Waves of npm Supply Chain Attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Phantomraven",
+        "Slopsquatting_technique",
+        "Babel_tool",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Jenkins",
+        "outlook",
+        "gmail",
+        "Chrome",
+        "Ubuntu"
+      ],
+      "functions": [
+        "fetch"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.endorlabs.com/learn/return-of-phantomraven"
+      ]
+    }
+  }
+]

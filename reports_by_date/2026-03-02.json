@@ -1,0 +1,285 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "Unauthorized AI Agent Execution Code Published to OpenVSX in Aqua Trivy VS Code Extension",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Slack"
+      ],
+      "functions": [
+        "pl"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/unauthorized-ai-agent-execution-code-published-to-openvsx-in-aqua-trivy-vs-code-extension",
+        "https://github.com/aquasecurity/trivy-vscode-extension/security/advisories/GHSA-8mr6-gf9x-j8qg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "Purchase order attachment isnt a PDF. Its phishing for your password",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/purchase-order-attachment-isnt-a-pdf-its-phishing-for-your-password"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "Cyber Reflections of the U.S. & Israel-Iran War",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique",
+        "Dns_hijacking_technique",
+        "Remexi",
+        "Supply_chain_technique",
+        "Watering_hole_technique",
+        "Inc_ransomware"
+      ],
+      "geo": [
+        "Kuwait",
+        "Israeli",
+        "Tehran",
+        "Middle east",
+        "Bahrain",
+        "Oman",
+        "Iranian",
+        "Saudi",
+        "Jordan",
+        "Riyadh",
+        "Cyprus",
+        "Israel",
+        "Iran",
+        "Saudi arabia",
+        "Abu dhabi",
+        "Egypt",
+        "Iraq",
+        "Qatar"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Twitter",
+        "WhatsApp"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/cyber-reflections-us-israel-iran-war/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "A fake FileZilla site hosts a malicious download",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Credential_harvesting_technique",
+        "Process_injection_technique"
+      ],
+      "software": [
+        "VirtualBox",
+        "Windows DNS"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/a-fake-filezilla-site-hosts-a-malicious-download"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "Dust Specter APT Targets Government Officials in Iraq",
+      "completeness": "High",
+      "threats": [
+        "Splitdrop",
+        "Twintask_tool",
+        "Twintalk_tool",
+        "Ghostform",
+        "Dll_sideloading_technique",
+        "Clickfix_technique",
+        "Smuggling_technique"
+      ],
+      "geo": [
+        "Iraq",
+        "Iran"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 11,
+      "software": [
+        "Windows registry",
+        "Unix",
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "hmac-sha1",
+        "zip",
+        "aes-256",
+        "pbkdf2",
+        "cbc"
+      ],
+      "functions": [
+        "CreateEvent"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/dust-specter-apt-targets-government-officials-iraq"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "OAuth redirection abuse enables phishing and malware delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Evilproxy_tool",
+        "Smuggling_technique",
+        "Dll_sideloading_technique",
+        "Malgent",
+        "Plugx_rat",
+        "Trojan:win32/znyonm",
+        "Trojan:win32/greedyrobin.b",
+        "Trojan:win32/winlnk",
+        "Sonbokli"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Entra",
+        "Node.js",
+        "Microsoft Defender for Endpoint",
+        "Office 365"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/03/02/oauth-redirection-abuse-enables-phishing-malware-delivery/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "Scam Alerts Deceiving Users to Download Harmful Android Applications",
+      "completeness": "Low",
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.sonicwall.com/blog/scam-alerts-deceiving-users-to-download-harmful-android-applications"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "Tracking CyberStrikeAI Usage",
+      "completeness": "Low",
+      "threats": [
+        "Cyberstrikeai_tool",
+        "Steganography_technique",
+        "Privhunterai_tool",
+        "Infiltratex_tool"
+      ],
+      "geo": [
+        "Singapore",
+        "China",
+        "Chinese",
+        "Hong kong",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "DeepSeek",
+        "Starlink",
+        "Outlook"
+      ],
+      "links": [
+        "https://www.team-cymru.com/post/tracking-cyberstrikeai-usage",
+        "https://github.com/Ed1s0nZ/CyberStrikeAI",
+        "https://github.com/Ed1s0nZ"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-02",
+      "title": "Before the Proxy: Uncovering Active PlugX Staging Infrastructure Linked to Three PRC Actors",
+      "completeness": "Low",
+      "threats": [
+        "Plugx_rat",
+        "Staticplugin",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Asia",
+        "United kingdom",
+        "Taiwan",
+        "Germany",
+        "Japan",
+        "Malaysia",
+        "Hong kong",
+        "Mongolia",
+        "Asian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "rc4"
+      ],
+      "links": [
+        "https://cyberandramen.net/2026/03/02/before-the-proxy-uncovering-active-plugx-staging-infrastructure-linked-to-three-prc-actors/"
+      ]
+    }
+  }
+]

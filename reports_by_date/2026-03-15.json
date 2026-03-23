@@ -1,0 +1,101 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-15",
+      "title": "Malicious Polymarket Bot Hides in Hijacked dev-protocol GitHub Org and Steals Wallet Keys",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "J2team_tool"
+      ],
+      "geo": [
+        "Japan",
+        "Japanese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "sudo",
+        "udo ch",
+        "o chow",
+        "udo uf",
+        "o ufw",
+        "Slack"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "functions": [
+        "from_str",
+        "Maximum"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "solidity",
+        "rust"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/malicious-polymarket-bot-hides-in-hijacked-dev-protocol-github-org-and-steals-wallet-keys",
+        "https://github.com/dev-protocol",
+        "https://github.com/dev-protocol/polymarket-copytrading-bot-sport"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-15",
+      "title": "Payload ransomware group: mutex MakeAmericaGreatAgain",
+      "completeness": "Medium",
+      "threats": [
+        "Payload_ransomware",
+        "Babuk",
+        "Shadow_copies_delete_technique",
+        "Win.ransomware.babuk-10032520-1",
+        "Nitrogen",
+        "Schoolboy",
+        "Neshta"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXi",
+        "nginx",
+        "QuickBooks",
+        "Microsoft Office",
+        "outlook",
+        "onenote",
+        "thebat",
+        "firefox",
+        "steam",
+        "have more..."
+      ],
+      "algorithms": [
+        "curve25519-donna",
+        "sha512",
+        "hc-128",
+        "crc-32",
+        "xor",
+        "md5",
+        "base64",
+        "ecdh",
+        "curve25519",
+        "rc4",
+        "chacha20",
+        "sha256",
+        "salsa20"
+      ],
+      "functions": [
+        "MakeAmericaGreatAgain"
+      ],
+      "links": [
+        "https://www.derp.ca/research/payload-ransomware-babuk-derivative/",
+        "https://github.com/kirkderp/yara",
+        "https://github.com/Hildaboo/BabukRansomwareSourceCode"
+      ]
+    }
+  }
+]

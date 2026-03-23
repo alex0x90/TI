@@ -1,0 +1,524 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "XWorm Malware Delivered via Fake Financial Receipts Targeting Windows Systems to Steal Logins and Sessions",
+      "completeness": "High",
+      "threats": [
+        "Xworm_rat",
+        "Steganography_technique",
+        "Lolbin_technique",
+        "Stego_loader"
+      ],
+      "geo": [
+        "Latin american",
+        "Brazilian",
+        "Brazil",
+        "Latam"
+      ],
+      "software": [
+        "Windows Task Scheduler",
+        "NET framework"
+      ],
+      "algorithms": [
+        "aes-ecb",
+        "base64",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "TaskService",
+        "TaskDefinition"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/xworm-malware-fake-financial-receipts/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Beyond Tax Returns: How Shared Malware Infrastructure Scales Brand Abuse In Indonesia",
+      "completeness": "High",
+      "threats": [
+        "Gigabud_rat",
+        "Mmrat",
+        "Taotie",
+        "Smishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Thailand",
+        "South africa",
+        "Peru",
+        "Vietnam",
+        "Indonesia",
+        "Indonesian",
+        "Philippines"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Coretax",
+        "WhatsApp",
+        "Android"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha1"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/indonesia-tax-impersonation-goldfactory-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "(Don't) TrustConnect: It's a RAT in an RMM hat",
+      "completeness": "High",
+      "threats": [
+        "Trustconnect",
+        "Redline_stealer",
+        "Docconnect",
+        "Simplehelp_tool",
+        "Superops_tool",
+        "N-able_tool",
+        "Logmein_tool",
+        "Screenconnect_tool",
+        "Uac_bypass_technique",
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Rhadamanthys"
+      ],
+      "geo": [
+        "French",
+        "Dutch",
+        "South africa"
+      ],
+      "software": [
+        "Zoom",
+        "Microsoft Teams",
+        "NET Core",
+        "Telegram",
+        "Supabase",
+        "SignalR"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/dont-trustconnect-its-a-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Technical Deep Dive: The Monero Mining Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Coinhive_miner",
+        "Xmrig_miner",
+        "Timebomb_technique",
+        "Typosquatting_technique",
+        "Byovd_technique",
+        "Hydra",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 17,
+      "software": [
+        "Microsoft Edge",
+        "Windows Explorer",
+        "Windows kernel",
+        "BinDiff",
+        "Windows Defender Application Control",
+        "Windows Service"
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "exhibit",
+        "randomx"
+      ],
+      "functions": [
+        "It",
+        "Loop"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/technical-deep-dive-the-monero-mining-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Massiv: When your IPTV app terminates your savings",
+      "completeness": "Low",
+      "threats": [
+        "Massiv"
+      ],
+      "geo": [
+        "Portugal",
+        "France",
+        "Spain",
+        "Portuguese",
+        "Turkey"
+      ],
+      "software": [
+        "Android",
+        "Google Play",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/massiv-when-your-iptv-app-terminates-your-savings"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Arkanix Stealer: a C++ & Python infostealer",
+      "completeness": "High",
+      "threats": [
+        "Arkanix",
+        "Disco",
+        "Hvnc_tool",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "French"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "PyInstaller",
+        "Nuitka",
+        "Google Chrome",
+        "Tor Browser",
+        "Chrome",
+        "Telegram",
+        "Steam",
+        "Visual Studio"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "hmac",
+        "sha256",
+        "pbkdf2",
+        "zip",
+        "aes",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/arkanix-stealer/119006/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "macOS Malware Analysis: Music Plugin DMG Loader",
+      "completeness": "Low",
+      "threats": [
+        "Odyssey_stealer",
+        "Macc_stealer",
+        "Clickfix_technique",
+        "Ozone"
+      ],
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "Curl"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "links": [
+        "https://the-sequence.com/macos-malware-loader-music-plugin-dmg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Remcos Revisited: Inside the RATs Evolving Command-and-Control Techniques",
+      "completeness": "High",
+      "threats": [
+        "Remcos_rat",
+        "Credential_harvesting_technique",
+        "Trojan.w32.111125.remcos",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 8,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "xor",
+        "md5"
+      ],
+      "languages": [
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/remcos-revisited-inside-the-rats-evolving-command-and-control-techniques/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "MIMICRAT: ClickFix Campaign Delivers Custom RAT via Compromised LegitimateWebsites",
+      "completeness": "High",
+      "threats": [
+        "Mimicrat",
+        "Clickfix_technique",
+        "Amsi_bypass_technique",
+        "Trurat",
+        "Meterpreter_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "German",
+        "French",
+        "Indian",
+        "Korean",
+        "Indonesian",
+        "Portuguese",
+        "Russian",
+        "Turkish",
+        "Italian",
+        "Vietnamese",
+        "Usa",
+        "Dutch",
+        "Polish",
+        "Spanish",
+        "Japanese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows token",
+        "Event Tracing for Windows",
+        "Microsoft Visual Studio"
+      ],
+      "algorithms": [
+        "sha256",
+        "rsa-1024",
+        "xor",
+        "base64",
+        "rc4",
+        "zip",
+        "aes"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "powershell",
+        "lua"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/mimicrat-custom-rat-mimics-c2-frameworks",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/execution\\_execution\\_via\\_obfuscated\\_powershell\\_script.toml",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/execution\\_suspicious\\_command\\_shell\\_execution\\_via\\_windows\\_run.toml",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/command\\_and\\_control\\_dns\\_query\\_to\\_suspicious\\_top\\_level\\_domain.toml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Brand Trust as a Weapon: Multi-Brand Impersonation Campaigns Deliver JWrapper Malware",
+      "completeness": "Low",
+      "threats": [
+        "Simplehelp_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "JWrapper",
+        "Zoom"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://cofense.com/blog/brand-trust-as-a-weapon-multi-brand-impersonation-campaigns-deliver-jwrapper-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "PromptSpy ushers in the era of Android threats using GenAI",
+      "completeness": "Medium",
+      "threats": [
+        "Promptspy",
+        "Promptlock",
+        "Vncspy"
+      ],
+      "geo": [
+        "Spanish",
+        "Chinese",
+        "Ukraine",
+        "Argentina",
+        "Hong kong"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 10,
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha1",
+        "aes"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/promptspy-ushers-in-era-android-threats-using-genai/",
+        "https://github.com/eset/malware-ioc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Cloud Atlas phishing campaign analysis",
+      "completeness": "Low",
+      "threats": [
+        "Vbshower_tool",
+        "Phantomdl",
+        "Phantomcore",
+        "Phantomremote",
+        "Pinocchio",
+        "Hermes",
+        "Vbcloud_tool",
+        "Powershower_tool",
+        "Ngrok_tool"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Microsoft Office",
+        "Microsoft Word"
+      ],
+      "algorithms": [
+        "md5",
+        "rc4",
+        "sha256",
+        "sha1"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6397/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "\"Charity\" phishing: What we know about attacks using the Solana blockchain",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Moldova",
+        "Russian",
+        "Germany",
+        "Russia",
+        "Mexico",
+        "Ukraine"
+      ],
+      "software": [
+        "Node.js",
+        "Outlook"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "createMutex"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1001196/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-19",
+      "title": "Increase in Malware Enabled ATM Jackpotting Incidents Across United States",
+      "completeness": "Low",
+      "threats": [
+        "Atm_jackpotting_technique",
+        "Ploutus",
+        "Teamviewer_tool",
+        "Anydesk_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows security"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260219.pdf"
+      ]
+    }
+  }
+]

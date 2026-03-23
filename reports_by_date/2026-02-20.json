@@ -1,0 +1,577 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "Facebook ads spread fake Windows 11 downloads that steal passwords and crypto wallets",
+      "completeness": "Medium",
+      "threats": [
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows installer",
+        "Electron",
+        "Slack",
+        "Visual Studio Code",
+        "Node.js",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "hc-128",
+        "xor",
+        "sha256",
+        "rc4",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/02/facebook-ads-spread-fake-windows-11-downloads-that-steal-passwords-and-crypto-wallets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+      "completeness": "High",
+      "threats": [
+        "Vshell",
+        "Spark_rat",
+        "Beyondtrust_tool",
+        "Simplehelp_tool",
+        "Anydesk_tool",
+        "Chinachopper",
+        "Antsword",
+        "Nezha_tool",
+        "Metasploit_tool",
+        "Meterpreter_tool",
+        "Bomgar_tool",
+        "Ncat_tool",
+        "Netcat_tool",
+        "Socat_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Canada",
+        "Korea",
+        "Germany",
+        "Japan",
+        "Middle east",
+        "India",
+        "France",
+        "Australia",
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 1,
+      "software": [
+        "Unix",
+        "Linux",
+        "curl",
+        "busybox",
+        "Burp Suite",
+        "PostgreSQL",
+        "crontab"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "php",
+        "java",
+        "lua"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/",
+        "https://github.com/XZB-1248/Spark"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "SANDWORM_MODE: Shai-Hulud-Style npm Worm Hijacks CI Workflows and Poisons AI Toolchains",
+      "completeness": "High",
+      "threats": [
+        "Sandworm_mode",
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Typosquatting_technique",
+        "Polymorphism_technique",
+        "Dns_tunneling_technique",
+        "Credential_harvesting_technique",
+        "Timebomb_technique"
+      ],
+      "geo": [
+        "Japanese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Claude",
+        "OpenClaw",
+        "Linux",
+        "OpenAI",
+        "Ollama",
+        "Bitwarden",
+        "1Password",
+        "LastPass",
+        "macOS",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "solana",
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base32",
+        "aes-256-gcm",
+        "hmac",
+        "aes",
+        "sha256",
+        "md5",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "eval",
+        "require",
+        "unlink",
+        "setTimeout",
+        "scorePackages",
+        "downloadAndExtract",
+        "bumpPatch",
+        "writeFileSync",
+        "patchNpmLockfile",
+        "patchYarnLockfile",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "swift"
+      ],
+      "links": [
+        "https://socket.dev/blog/sandworm-mode-npm-worm-ai-toolchain-poisoning",
+        "http://api.github.com",
+        "https://github.com/ci-quality/code-quality-check/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "AI-augmented threat actor accesses FortiGate devices at scale",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Nuclei_tool",
+        "Meterpreter_tool",
+        "Mimikatz_tool",
+        "Dcsync_technique",
+        "Passthehash_technique",
+        "Impacket_tool"
+      ],
+      "geo": [
+        "Africa",
+        "Asia",
+        "Latin america"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "GuardDuty"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "Scammers are Targeting Crypto Users Through the Mail",
+      "completeness": "Low",
+      "software": [
+        "Chrome"
+      ],
+      "wallets": [
+        "trezor"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/scammers-targeting-crypto-users-mail"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "Incident Response at the Edge: Unmasking the Massive Exploitation of Ivanti",
+      "completeness": "Low",
+      "threats": [
+        "Textdoor",
+        "Debttheft",
+        "Prawns",
+        "Spawnchimera",
+        "Spawnmole",
+        "Spawnsnail",
+        "Spawnsloth"
+      ],
+      "geo": [
+        "Germany",
+        "Sweden",
+        "United arab emirates",
+        "United kingdom",
+        "Austria",
+        "Japan",
+        "Singapore",
+        "Korea",
+        "France",
+        "China",
+        "Pakistan",
+        "Poland",
+        "Turkey",
+        "Malaysia",
+        "Taiwan",
+        "Canada",
+        "Arab emirates",
+        "Spain",
+        "Australia",
+        "Barbados"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Ivanti",
+        "Linux",
+        "BusyBox",
+        "SELinux",
+        "sudo",
+        "Ubuntu",
+        "Debian",
+        "UNIX"
+      ],
+      "algorithms": [
+        "crc-32",
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "strlcpy"
+      ],
+      "languages": [
+        "c_language",
+        "python"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_7_Greg_chen_Sharon_liu_en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "Continuous Evolution of Tianwu's Pangolin8RAT and Custom Cobalt Strike Beacon",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Pangolin8rat",
+        "Corex_loader",
+        "Ketugya",
+        "Plugx_rat",
+        "Shadowpad",
+        "Sleepmask",
+        "Vmprotect_tool"
+      ],
+      "geo": [
+        "Tokyo",
+        "Chinese",
+        "Berlin",
+        "Japan",
+        "Singapore",
+        "Apac",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Nginx",
+        "Linux",
+        "Flash Player"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "crc-32",
+        "xor",
+        "lznt1",
+        "sha256",
+        "exhibit"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_6_naoki_takayama_en.pdf",
+        "https://github.com/mopisec/jsac2026-continuous-evolution-of-tianwu/blob/main/detection/Tianwu.yara"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "Attribution in Action",
+      "completeness": "High",
+      "threats": [
+        "Crimson_rat",
+        "Eggstreme_agent",
+        "Eggstreme_fuel",
+        "Masol",
+        "Fluffygh0st",
+        "Pubload",
+        "Hiupan",
+        "Coolclient",
+        "Eggstreme_loader",
+        "Poshrat",
+        "Trackbak",
+        "Darkloadlibrary_tool",
+        "Timestomp_technique",
+        "Ccoredoor",
+        "Etherealgh0st",
+        "Dll_sideloading_technique",
+        "Gh0st_rat",
+        "Hypnosis_loader",
+        "Insidiousgh0st",
+        "Mistcloak",
+        "Claimloader",
+        "Bookworm"
+      ],
+      "geo": [
+        "China",
+        "Asia",
+        "Philippine",
+        "Malaysia",
+        "Singapore",
+        "Chinese",
+        "Taiwan",
+        "Philippines",
+        "Myanmar",
+        "Mongolia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Windows service",
+        "winlogon",
+        "Dropbox",
+        "splwow64",
+        "Linux",
+        "OpenSSL"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "lznt1",
+        "gzip"
+      ],
+      "functions": [
+        "1800013E0",
+        "deobfuscate",
+        "Micro"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_4_hiroaki_hara-doel_santos_en.pdf",
+        "https://github.com/Idcsaa/HP-Socket"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "Konni's New Arsenal: Unmasking GSRAT in North Korea-linked APT Operation",
+      "completeness": "High",
+      "threats": [
+        "Gsrat",
+        "Spear-phishing_technique",
+        "Konni_rat",
+        "Babyface",
+        "Fxfdoor",
+        "Amadey",
+        "Quasar_rat",
+        "Xrat_rat",
+        "Lilith_rat",
+        "Remcos_rat",
+        "Rftrat",
+        "Linkon",
+        "Curkon",
+        "Appleseed",
+        "Babyshark",
+        "Gold_dragon",
+        "Rokrat",
+        "Chinotto",
+        "Navrat_rat",
+        "M2rat",
+        "Alphaseed",
+        "Randomquery",
+        "Pubnubrat_rat",
+        "Flowerpower",
+        "Endclientrat",
+        "Endrat"
+      ],
+      "geo": [
+        "North korea",
+        "Usa",
+        "Russian federation",
+        "Japan",
+        "Japanese",
+        "Korean",
+        "Indonesia",
+        "Russian",
+        "Russia",
+        "Korea",
+        "North korean"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "WordPress",
+        "KakaoTalk",
+        "Android",
+        "Windows Defender Application Control",
+        "AutoHotkey"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "xor",
+        "prng"
+      ],
+      "functions": [
+        "Directly",
+        "ISMULTIPLE",
+        "rand"
+      ],
+      "languages": [
+        "java",
+        "autoit",
+        "php",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_9_takuma_matsumoto-yoshihiro_ishikawa_en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "Ghost in Your Network: How Earth Kurma Stays Hidden and Exfiltrates Your Data",
+      "completeness": "High",
+      "threats": [
+        "Nbtscan_tool",
+        "Ladon_tool",
+        "Frpc_tool",
+        "Kmlog_tool",
+        "Krnrat",
+        "Moriya",
+        "Mmload",
+        "Dunloader",
+        "Tesdat",
+        "Dmloader",
+        "Downbegin",
+        "Wmihacker_tool",
+        "Odriz_tool",
+        "Simpoboxspy_tool",
+        "Simpowebexspy",
+        "Downtown",
+        "Cobalt_strike_tool",
+        "Vikturi",
+        "Victorydll"
+      ],
+      "geo": [
+        "Indonesia",
+        "Philippines",
+        "Asia",
+        "Thailand",
+        "Malaysia",
+        "Vietnam"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Windows Filter Manager",
+        "Windows Security",
+        "Microsoft Word",
+        "Microsoft Excel"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_5_nick_dai_sunny-w-lu_en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-20",
+      "title": "The Betrayed Update: Beyond the Signpost",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Eviltwin_technique",
+        "Supply_chain_technique",
+        "Mitm_technique",
+        "Dns_hijacking_technique",
+        "Xiangoop",
+        "Entryshell",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "youdao"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://jsac.jpcert.or.jp/archive/2026/pdf/JSAC2026_1_1_yamamoto_en.pdf"
+      ]
+    }
+  }
+]

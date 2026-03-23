@@ -1,0 +1,165 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-22",
+      "title": "Ransomware 3.0: The Autonomous Threat That Changed Everything",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Polymorphism_technique",
+        "Supply_chain_technique",
+        "Wannacry",
+        "Petya",
+        "Eternal_petya",
+        "Maze",
+        "Lockbit",
+        "Promptlock",
+        "Edr-killer",
+        "Royal_ransomware",
+        "Medusa_ransomware",
+        "Qilin_ransomware",
+        "Ransomhub",
+        "Byovd_technique",
+        "Edrkillshifter_tool",
+        "Lolbin_technique",
+        "Akira_ransomware"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "crypto": [
+        "ethereum"
+      ],
+      "functions": [
+        "LLM",
+        "HTTPS"
+      ],
+      "languages": [
+        "lua",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/ransomware-3-0-the-autonomous-threat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-22",
+      "title": "Government of Iran Cyber Actors Deploy Telegram C2 to Push Malware to Identified Targets",
+      "completeness": "Medium",
+      "geo": [
+        "Iran",
+        "Iranian",
+        "Middle east"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "KeePass",
+        "Zoom",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "Zoom"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260320.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-22",
+      "title": "Hackers Compromise Trivy Scanner to Inject malicious Scripts and Steal Login Credentials",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "Trivy",
+        "sudo",
+        "Linux",
+        "Docker"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes-256-cbc"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/malicious-script-injection-in-trivy/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-22",
+      "title": "Oblivion RAT - An Android Spyware Platform With a Built-In APK Factory",
+      "completeness": "Medium",
+      "threats": [
+        "Oblivion_rat"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 8,
+      "software": [
+        "Android",
+        "Google Play",
+        "apktool"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "aes",
+        "zip",
+        "deflate"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://iverify.io/blog/oblivion-rat-android-spyware-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-22",
+      "title": "Malicious Pyronut Package Backdoors Telegram Bots with Remote Code Execution",
+      "completeness": "Low",
+      "threats": [
+        "Pyronut",
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "functions": [
+        "init_secret",
+        "eval_func",
+        "globals"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.endorlabs.com/learn/malicious-pyronut-package-backdoors-telegram-bots-with-remote-code-execution"
+      ]
+    }
+  }
+]

@@ -1,0 +1,760 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Amazon threat intelligence teams identify Interlock ransomware campaign targeting enterprise firewalls",
+      "completeness": "High",
+      "threats": [
+        "Interlock",
+        "Screenconnect_tool",
+        "Volatility_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Hyper-V",
+        "Chrome",
+        "Firefox",
+        "Internet Explorer",
+        "GlassFish",
+        "HAProxy",
+        "systemd",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "md5",
+        "aes-128"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "java"
+      ],
+      "links": [
+        "https://aws.amazon.com/ru/blogs/security/amazon-threat-intelligence-teams-identify-interlock-ransomware-campaign-targeting-enterprise-firewalls/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "APT28: Geofencing as Targeting Signal (CVE-2026-21509 Attack Activity)",
+      "completeness": "Low",
+      "geo": [
+        "Poland",
+        "Ukraine",
+        "Pol",
+        "Romania",
+        "Slovenia",
+        "Czech",
+        "Moldova",
+        "Russian",
+        "Romanian"
+      ],
+      "software": [
+        "Internet Explorer",
+        "WeChat"
+      ],
+      "functions": [
+        "Navigate"
+      ],
+      "links": [
+        "https://www.ctfiot.com/302421.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "When tax season becomes cyberattack season: Phishing and malware campaigns using tax-related lures",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Tycoon_2fa",
+        "Energy365",
+        "Sneaky_log",
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Datto_tool",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "OneNote",
+        "Office 365",
+        "Microsoft Office",
+        "Microsoft Exchange",
+        "Microsoft Edge",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/03/19/when-tax-season-becomes-cyberattack-season-phishing-and-malware-campaigns-using-tax-related-lures/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Kimsuky malware uses the Dropbox API.",
+      "completeness": "Low",
+      "geo": [
+        "Korea",
+        "Korean",
+        "North korea"
+      ],
+      "software": [
+        "Dropbox",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/03/dropbox-api-kimsuky-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "StoatWaffle, malware used by WaterPlum",
+      "completeness": "Low",
+      "threats": [
+        "Stoatwaffle",
+        "Ottercookie"
+      ],
+      "geo": [
+        "North",
+        "korea"
+      ],
+      "software": [
+        "vscode",
+        "Node.js",
+        "Chromium",
+        "Firefox",
+        "macOS",
+        "Linux"
+      ],
+      "links": [
+        "https://jp.security.ntt/insights_resources/tech_blog/stoatwaffle_malware_en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "fast-draft Open VSX Extension Compromised by BlokTrooper",
+      "completeness": "Low",
+      "threats": [
+        "Bloktrooper"
+      ],
+      "software": [
+        "Open VSX",
+        "open-vsx",
+        "curl",
+        "virtualbox",
+        "qemu",
+        "xen",
+        "Chrome",
+        "Opera",
+        "macOS",
+        "Linux",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "coinbase",
+        "solflare",
+        "rabby",
+        "keplr",
+        "unisat",
+        "enkrypt",
+        "safepal"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "Get-Clipboard"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/fast-draft-open-vsx-bloktrooper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "GlassWorm Hides a RAT Inside a Malicious Chrome Extension",
+      "completeness": "High",
+      "threats": [
+        "Glassworm",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Belarus",
+        "Azerbaijan",
+        "Kazakhstan",
+        "Moscow",
+        "Tajikistan",
+        "Moldova",
+        "Armenia",
+        "Kyrgyzstan",
+        "Uzbekistan",
+        "Russia",
+        "Asia",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "linux",
+        "Docker",
+        "macOS",
+        "Ledger Live",
+        "bittorrent",
+        "utorrent",
+        "WebRTC",
+        "Opera",
+        "Opera GX",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "keplr",
+        "trezor",
+        "bybit"
+      ],
+      "crypto": [
+        "solana",
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "getSignaturesForAddress",
+        "eval"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/glassworm-chrome-extension-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Casting a Wider Net: ClickFix, Deno, and LeakNets Scaling Threat",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Deno_loader",
+        "Psexec_tool",
+        "Dll_sideloading_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "PsExec",
+        "Node.js",
+        "Cloudflare Turnstile",
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "typescript",
+        "powershell",
+        "java",
+        "visual_basic"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-casting-a-wider-net-clickfix-deno-and-leaknets-scaling-threat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "New Malware Targets Users of Cobra DocGuard Software",
+      "completeness": "Medium",
+      "threats": [
+        "Speagle",
+        "Supply_chain_technique",
+        "Plugx_rat"
+      ],
+      "geo": [
+        "Chinese",
+        "Asian",
+        "Hong kong"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "deflate",
+        "cbc",
+        "aes-128",
+        "sha256"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/speagle-cobradocguard-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Perseus: DTO malware that takes notes",
+      "completeness": "Low",
+      "threats": [
+        "Perseus",
+        "Cerberus",
+        "Medusa_ransomware",
+        "Ermac",
+        "Massiv",
+        "Klopatra",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Portugal",
+        "Turkey",
+        "Italy",
+        "Poland",
+        "Turkish",
+        "Germany",
+        "France"
+      ],
+      "software": [
+        "Android",
+        "Google Play",
+        "onenote"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "takeScreenshot"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/perseus-dto-malware-that-takes-notes"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "New Malware Highlights Increased Systematic Targeting of Network Infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Condibot",
+        "Condi",
+        "Mirai",
+        "Xmrig_miner",
+        "Xmrigcc_tool",
+        "Brickstorm",
+        "J-magic",
+        "Tinyshell",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Monaco",
+        "Chinese",
+        "India"
+      ],
+      "software": [
+        "Linux",
+        "curl",
+        "ubuntu",
+        "Ivanti"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "exhibit",
+        "sha256"
+      ],
+      "functions": [
+        "select"
+      ],
+      "links": [
+        "https://eclypsium.com/blog/condibot-monaco-malware-network-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Head Mare campaign with PhantomPxPigeon backdoor and infected TrueConf software installation files",
+      "completeness": "Low",
+      "geo": [
+        "Russia"
+      ],
+      "software": [
+        "TrueConf"
+      ],
+      "links": [
+        "https://securelist.ru/head-mare-campaign-phantompxpigeon-backdoor-and-trueconf-software/114998/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Linux & Cloud Detection Engineering - TeamPCP Container AttackScenario",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Socat_tool",
+        "Netcat_tool",
+        "Ncat_tool",
+        "Iodine_tool",
+        "Ngrok_tool",
+        "Wstunnel_tool",
+        "Proxychains_tool",
+        "React2shell_vuln",
+        "Frpc_tool"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "curl",
+        "busybox",
+        "aegis",
+        "Systemd",
+        "openssl",
+        "3proxy"
+      ],
+      "algorithms": [
+        "base64",
+        "base32"
+      ],
+      "languages": [
+        "perl",
+        "ruby",
+        "php",
+        "lua",
+        "python"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/teampcp-container-attack-scenario",
+        "https://github.com/elastic/detection-rules/blob/ce3916f99fdf7e886d2889d7a815f59a248b7aff/rules/integrations/cloud\\_defend/impact\\_process\\_killing.toml",
+        "https://github.com/elastic/detection-rules/blob/ce3916f99fdf7e886d2889d7a815f59a248b7aff/rules/integrations/cloud\\_defend/execution\\_payload\\_downloaded\\_and\\_piped\\_to\\_shell.toml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "MacSync Stealer: SEO Poisoning and ClickFix-Based macOS Malware Delivery Chain",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Seo_poisoning_technique",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Ledger Live",
+        "curl",
+        "Mac OS",
+        "openssl",
+        "Chrome",
+        "Opera",
+        "Firefox",
+        "IndexedDB",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "bitcoincore"
+      ],
+      "algorithms": [
+        "zip",
+        "gzip",
+        "base64"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/macsync-stealer-seo-poisoning-and-clickfix-based-macos-malware-delivery-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "VoidStealer: Debugging Chrome to Steal Its Secrets",
+      "completeness": "Medium",
+      "threats": [
+        "Voidstealer",
+        "Chromelevator_tool",
+        "Process_injection_technique",
+        "Elevationkatz_tool",
+        "Cookiekatz_tool",
+        "Credentialkatz_tool"
+      ],
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Chromium"
+      ],
+      "algorithms": [
+        "aes-gcm"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/voidstealer-abe-bypass",
+        "https://github.com/chromium/chromium/blob/main/chrome/elevation\\_service/elevator.cc#L229-L239",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Hasta la vista, Hastalamuerte: An Overview of The Gentlemen's TTPs",
+      "completeness": "High",
+      "threats": [
+        "Procmon_tool",
+        "Mstsc_tool",
+        "Chisel_tool",
+        "Proxychains_tool",
+        "Winrm_tool",
+        "Petitpotam_vuln",
+        "Donpapi_tool",
+        "Byovd_technique",
+        "Antsword",
+        "Meshcentral_tool",
+        "Anydesk_tool",
+        "Rclone_tool",
+        "Medusa_ransomware",
+        "Qilin_ransomware",
+        "Clop",
+        "Akira_ransomware",
+        "Gentlemen_ransomware",
+        "Babuk",
+        "Lockbit",
+        "Devman",
+        "Aitm_technique",
+        "Nightspire",
+        "Badsuccessor_technique",
+        "Burntcigar",
+        "Credential_dumping_technique",
+        "Impacket_tool",
+        "Netexec_tool",
+        "Wevtutil_tool",
+        "Shadow_copies_delete_technique",
+        "Edr-freeze_tool",
+        "Conti",
+        "Adaptixc2_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 25,
+      "software": [
+        "Windows PowerShell",
+        "Windows Firewall",
+        "Windows Defender",
+        "Task Scheduler",
+        "MySQL",
+        "MSSQL",
+        "postgresql",
+        "MariaDB",
+        "MSExchange",
+        "docker",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Write-Warning",
+        "Write-Host",
+        "Write-Error",
+        "Get-ADComputer"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/hastalamuerte-gentlemen-raas-ttps/",
+        "https://github.com/emdnaia/CVE-2025-32463",
+        "https://gist.github.com/snovvcrash/a1ae180ab3b49acb43da8fd34e7e93df"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Dark Web Profile: DieNet",
+      "completeness": "Low",
+      "threats": [
+        "Chrysaor",
+        "Dns_amplification_technique",
+        "Synflood_technique",
+        "Locknet"
+      ],
+      "geo": [
+        "United kingdom",
+        "India",
+        "Azerbaijan",
+        "Saudi arabia",
+        "Egyptian",
+        "Israel",
+        "Columbia",
+        "United arab emirates",
+        "Oman",
+        "Bahrain",
+        "Asia",
+        "American",
+        "Arab emirates",
+        "Kuwait",
+        "Qatar",
+        "Iran",
+        "Turkey",
+        "Poland",
+        "Cyprus",
+        "Abu dhabi",
+        "Israeli",
+        "Indian",
+        "Middle east",
+        "Asian",
+        "Iranian",
+        "Jordan",
+        "African",
+        "Los angeles",
+        "Riyadh"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Telegram",
+        "TikTok"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-dienet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Copyright Lures Mask a Multi‑Stage PureLog Stealer Attack on Key Industries",
+      "completeness": "High",
+      "threats": [
+        "Purelogs",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Confuserex_tool",
+        "Shellcodeloader"
+      ],
+      "geo": [
+        "Australia",
+        "Germany",
+        "Canada",
+        "German"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "ome brow",
+        "curl",
+        "Chrome",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Windows Defender",
+        "Windows GDI"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "xor",
+        "sha1",
+        "base64",
+        "gzip",
+        "des"
+      ],
+      "functions": [
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/c/copyright-lures-mask-a-multistage-purelog-stealer-attack.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-19",
+      "title": "Android devices ship with firmware-level malware",
+      "completeness": "Low",
+      "threats": [
+        "Keenadu",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Android",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/android-devices-ship-with-firmware-level-malware",
+        "https://github.com/KswCarProject/ZxwLauncher3QuickStepKsw"
+      ]
+    }
+  }
+]

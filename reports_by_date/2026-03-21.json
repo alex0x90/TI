@@ -1,0 +1,133 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-21",
+      "title": "CanisterWorm: npm Publisher Compromise Deploys Backdoor Across 29+ Packages",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "software": [
+        "systemd",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/canisterworm-npm-publisher-compromise-deploys-backdoor-across-29-packages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-21",
+      "title": "Trivy Compromised: Everything You Need to Know about the Latest Supply Chain Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Trivy",
+        "Docker",
+        "trycloudflare",
+        "Twitter",
+        "Slack",
+        "systemd"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes-256",
+        "base64",
+        "aes-256-cbc"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/trivy-compromised-teampcp-supply-chain-attack",
+        "https://github.com/aquasecurity/trivy/discussions/10425"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-21",
+      "title": "Observed Telegram Bot Naming Patterns in Recent MuddyWater Malware Activity",
+      "completeness": "Low",
+      "threats": [
+        "Lamporat"
+      ],
+      "software": [
+        "Telegram",
+        "Windows shell",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/observed-telegram-bot-naming-patterns-in-recent-muddywater-malware-activity/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-21",
+      "title": "From Scanner to Stealer: Inside the trivy-action Supply Chain Compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Trivy",
+        "sudo",
+        "Docker",
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "Travis",
+        "Jenkins",
+        "Helm",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "cardano"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "base64",
+        "exhibit",
+        "sha256"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/from-scanner-to-stealer-inside-the-trivy-action-supply-chain-compromise/",
+        "https://github.com/aquasecurity/trivy/discussions/10425",
+        "https://github.com/features/actions"
+      ]
+    }
+  }
+]

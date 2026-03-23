@@ -1,0 +1,70 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-14",
+      "title": "Promptmorphism: How LLMs Are Mass-Producing Disposable Stage 1 Loaders",
+      "completeness": "Low",
+      "threats": [
+        "Promptmorphism_technique",
+        "Polymorphism_technique",
+        "Wincir",
+        "Stealc"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "aes",
+        "chacha20"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/promptmorphism"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-14",
+      "title": "ForceMemo: Hundreds of GitHub Python Repos Compromised via Account Takeover and Force-Push",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Supply_chain_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Django",
+        "ion of No",
+        "bject",
+        "Node.js",
+        "macOS",
+        "Flask"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/forcememo-hundreds-of-github-python-repos-compromised-via-account-takeover-and-force-push",
+        "https://gist.github.com/tip-o-deincognito/d0d05e148e87a515f534b5a8e9ed3b36",
+        "https://github.com/search?q=lzcdrtfxyqiplpd&type=code"
+      ]
+    }
+  }
+]

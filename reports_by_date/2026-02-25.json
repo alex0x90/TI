@@ -1,0 +1,469 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "Developer-targeting campaign using malicious Next.js repositories",
+      "completeness": "Medium",
+      "threats": [
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Node.js",
+        "Visual Studio Code",
+        "Microsoft Defender for Endpoint",
+        "chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "base64"
+      ],
+      "functions": [
+        "Function",
+        "count"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "http://microsoft.com/en-us/security/blog/2026/02/24/c2-developer-targeting-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "Violet RAT v4.7: The Most Dangerous Payload in a 9-RAT Toolkit",
+      "completeness": "High",
+      "threats": [
+        "Violet_rat",
+        "Purelogs",
+        "Purecryptor",
+        "Ninerat",
+        "Donut",
+        "Hvnc_tool",
+        "Process_injection_technique",
+        "Ngrok_tool",
+        "Asyncrat",
+        "Venomrat",
+        "Wdkillernew_tool",
+        "Xworm_rat",
+        "Dcrat",
+        "Remcos_rat",
+        "Purehvnc_tool",
+        "Pureminer",
+        "Purerat",
+        "Heracles",
+        "Xenocode_tool"
+      ],
+      "geo": [
+        "Budapest"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Discord",
+        "Windows Defender",
+        "Chrome",
+        "macOS",
+        "Linux",
+        "Firefox",
+        "iPadOS",
+        "TryCloudflare"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "sha256",
+        "rc4",
+        "7zip",
+        "aes",
+        "aes-128-ecb",
+        "aes-ecb",
+        "aes-128",
+        "aes-256-cbc",
+        "xor"
+      ],
+      "functions": [
+        "closeKL",
+        "ENC",
+        "Close",
+        "CreateInstance"
+      ],
+      "languages": [
+        "python",
+        "autoit"
+      ],
+      "links": [
+        "https://www.derp.ca/violet-rat-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "Librarian Likho scales attacks: analyze the group's new campaign",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Passview_tool",
+        "Defendercontrol_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "curl",
+        "Windows Defender",
+        "Microsoft Defender"
+      ],
+      "links": [
+        "https://securelist.ru/librarian-likho-ongoing-campaign/114879/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "PureCrypter: Reverse Engineering a .NET Loader From the PureCoder Ecosystem",
+      "completeness": "Low",
+      "threats": [
+        "Purecryptor",
+        "Confuserex_tool",
+        "Purelogs",
+        "Credential_harvesting_technique",
+        "Purehvnc_tool",
+        "Asyncrat",
+        "Venomrat",
+        "Dcrat",
+        "Xworm_rat"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "gzip",
+        "sha256",
+        "3des"
+      ],
+      "functions": [
+        "Main",
+        "Orchestrator",
+        "ArgumentException",
+        "CopyTo",
+        "SetDecider"
+      ],
+      "languages": [
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/purecrypter-loader-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "Remcos Banking Fraud via Three AutoIt Persistence Chains",
+      "completeness": "High",
+      "threats": [
+        "Remcos_rat",
+        "Purehvnc_tool",
+        "Violet_rat",
+        "Purelogs",
+        "Purecryptor",
+        "Process_hollowing_technique",
+        "Dcrat",
+        "Asyncrat",
+        "Venomrat",
+        "Screen_shotting_technique",
+        "Hvnc_tool",
+        "Donut"
+      ],
+      "geo": [
+        "American",
+        "Canadian",
+        "Budapest"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "EcoOptimize",
+        "WealthWise",
+        "NET Framework",
+        "ledger live",
+        "EcoOptimize WealthWise"
+      ],
+      "wallets": [
+        "bitpay",
+        "exodus_wallet",
+        "atomicwallet",
+        "metamask"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "aes-256",
+        "lznt1",
+        "sha256",
+        "ecc",
+        "gzip",
+        "base64",
+        "aes",
+        "rsa-4096",
+        "rc4"
+      ],
+      "functions": [
+        "TestFunction"
+      ],
+      "languages": [
+        "autoit",
+        "python"
+      ],
+      "links": [
+        "https://www.derp.ca/remcos-autoit-persistence/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "Python Loader Evolution: Five Encryption Generations",
+      "completeness": "Medium",
+      "threats": [
+        "Violet_rat",
+        "Purelogs",
+        "Purecryptor",
+        "Remcos_rat",
+        "Donut",
+        "Amsi_bypass_technique",
+        "Process_injection_technique",
+        "Mof_obfuscation_technique",
+        "Junk_code_technique",
+        "Apc_injection_technique",
+        "Dcrat",
+        "Purehvnc_tool",
+        "Asyncrat",
+        "Venomrat",
+        "Polymorphism_technique",
+        "Bloat_technique",
+        "Xworm_rat",
+        "Hvnc_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "trycloudflare"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "double-xor",
+        "aes",
+        "rc4",
+        "aes-256-cbc",
+        "chaskey",
+        "cbc",
+        "base64",
+        "xor",
+        "3des",
+        "gzip",
+        "aes-256"
+      ],
+      "functions": [
+        "print",
+        "exit",
+        "shellcode_func",
+        "execute_shellcode",
+        "Get-CimInstance",
+        "Get-Process"
+      ],
+      "languages": [
+        "autoit",
+        "python"
+      ],
+      "links": [
+        "https://www.derp.ca/python-loader-evolution/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "PureLogs: Reverse Engineering a .NET RAT From the PureCoder Ecosystem",
+      "completeness": "High",
+      "threats": [
+        "Purelogs",
+        "Purehvnc_tool",
+        "Confuserex_tool",
+        "Asyncrat",
+        "Venomrat",
+        "Dcrat",
+        "Xworm_rat",
+        "Remcos_rat",
+        "Process_injection_technique",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Xen",
+        "TryCloudflare",
+        "Chromium",
+        "Chrome",
+        "Vivaldi",
+        "Opera",
+        "CocCoc",
+        "Amigo",
+        "Torch",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "keplr",
+        "tronlink",
+        "xdefi",
+        "math_wallet",
+        "bitkeep_wallet",
+        "electrum",
+        "atomicwallet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-cbc",
+        "aes",
+        "xor",
+        "base64",
+        "md5",
+        "gzip"
+      ],
+      "functions": [
+        "GetWindowText",
+        "SetWindowsHookEx"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/plog-rat-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "Exposing the Undercurrent: Disrupting the GRIDTIDE Global Cyber Espionage Campaign",
+      "completeness": "High",
+      "threats": [
+        "Gridtide",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Asia",
+        "China",
+        "Africa",
+        "Americas"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "SoftEther",
+        "Curl",
+        "Sudo",
+        "firefox",
+        "systemd"
+      ],
+      "algorithms": [
+        "cbc",
+        "sha256",
+        "base64",
+        "aes-128",
+        "gzip"
+      ],
+      "functions": [
+        "Sheets"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/disrupting-gridtide-global-espionage-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "Active exploitation of Cisco Catalyst SD-WAN by UAT-8616",
+      "completeness": "Low",
+      "software": [
+        "- cisco catalyst_sd-wan_manager (<20.6.3",
+        "<20.7.2",
+        "20.8)     - cisco sd-wan_vbond_orchestrator (<20.6.3",
+        "<20.7.2",
+        "20.8)     - cisco sd-wan_vsmart_controller (<20.6.3",
+        "<20.7.2",
+        "20.8)"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-8616-sd-wan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-25",
+      "title": "OCRFix: Botnet Trojan delivered through ClickFix and EtherHiding",
+      "completeness": "High",
+      "threats": [
+        "Ocrfix_technique",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Typosquatting_technique",
+        "Seo_poisoning_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Russian",
+        "North korean"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 25,
+      "software": [
+        "ChatGPT",
+        "Windows PowerShell",
+        "Instagram",
+        "BitLocker",
+        "Windows Defender"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "visual_basic",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyjax.com/resources/blog/ocrfix-botnet-trojan-delivered-through-clickfix-and-etherhiding"
+      ]
+    }
+  }
+]

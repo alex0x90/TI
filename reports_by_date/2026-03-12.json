@@ -1,0 +1,705 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Contagious Interview: Malware delivered through fake developer job interviews",
+      "completeness": "Low",
+      "threats": [
+        "Ottercookie",
+        "Invisibleferret",
+        "Beavertail",
+        "Flexibleferret"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Visual Studio Code",
+        "KeePass",
+        "1Password",
+        "macOS",
+        "Node.js",
+        "curl",
+        "Microsoft Defender for Endpoint",
+        "qemu",
+        "virtualbox",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/03/11/contagious-interview-malware-delivered-through-fake-developer-job-interviews/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "MicroStealer Analysis: A Fast-Spreading Infostealer with Limited Detection",
+      "completeness": "High",
+      "threats": [
+        "Microstealer",
+        "Junk_code_technique",
+        "Zelix_klassmaster_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 16,
+      "software": [
+        "Node.js",
+        "Steam",
+        "Linux",
+        "Android",
+        "Electron",
+        "Discord",
+        "Dropbox",
+        "NSIS installer",
+        "Windows Task Scheduler",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "electrum",
+        "atomicwallet",
+        "jaxx"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "InitializeStringTable",
+        "GetString",
+        "readFi",
+        "Robot",
+        "getToken"
+      ],
+      "languages": [
+        "java",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/microstealer-technical-analysis/",
+        "https://github.com/horsicq/Detect-It-Easy",
+        "https://github.com/NationalSecurityAgency/ghidra"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "You've been visited by a Labooboo extortionist: Toy Ghouls encrypt Russian companies' data",
+      "completeness": "High",
+      "threats": [
+        "Lockbit",
+        "Redalert",
+        "Babuk",
+        "1c-shell_tool",
+        "Nssm_tool",
+        "Wevtutil_tool",
+        "Localtonet_tool",
+        "Cloudflared_tool",
+        "Fscan_tool",
+        "Netscan_tool",
+        "Ad_explorer_tool",
+        "Ntdsutil_tool",
+        "Paexec_tool",
+        "Minidump_tool",
+        "Mimikatz_tool",
+        "Passthehash_technique",
+        "Dcsync_technique",
+        "Devolutions_remote_desktop_tool",
+        "Meshagent_tool",
+        "Rudesktop_tool",
+        "Anydesk_tool",
+        "Shadow_copies_delete_technique",
+        "Phantomproxylite_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXI",
+        "OpenSSH",
+        "rsocx",
+        "Sysinternals",
+        "Active Directory",
+        "PsExec",
+        "Hyper-V",
+        "Windows shell",
+        "SoftPerfect network scanner",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "chacha20",
+        "poly1305",
+        "salsa20",
+        "ntruencrypt"
+      ],
+      "functions": [
+        "Get-VM"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://securelist.ru/toy-ghouls/114942/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Russian Spy Hackers Weaponize Signal & WhatsApp to Infiltrate Encrypted Conversations",
+      "completeness": "Low",
+      "geo": [
+        "Russian",
+        "Dutch"
+      ],
+      "ttp_list": [
+        "Soft:",
+        "WhatsApp"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/russian-spy-hackers-weaponize-signal-and-whats-app-to-infiltrate-encrypted-conversations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "6 Malicious Packagist Themes Ship Trojanized jQuery and FUNNULL Redirect Payloads",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Ringh23_tool"
+      ],
+      "geo": [
+        "Macau",
+        "Philippines",
+        "Los angeles",
+        "Chinese",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 3,
+      "software": [
+        "OphimCMS",
+        "Outlook",
+        "Laravel",
+        "ophimcms Laravel",
+        "Android",
+        "Chrome",
+        "Polyfill"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "atob"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/6-malicious-packagist-themes-ship-trojanized-jquery",
+        "https://github.com/hacoidev/ophim-core"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Storm-2561 uses SEO poisoning to distribute fake VPN clients for credential theft",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Malgent",
+        "Trojanspy:win64/hyrax"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Windows Installer",
+        "Windows security",
+        "rosoft Defender for Endpoint VPN",
+        "Ivanti",
+        "Twitter"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "exhibit"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/03/12/storm-2561-uses-seo-poisoning-to-distribute-fake-vpn-clients-for-credential-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Operation Roundish: Uncovering an APT28 Roundcube Toolkit Used Against Ukrainian Government Targets",
+      "completeness": "High",
+      "threats": [
+        "Ligolo-ng_tool",
+        "Typosquatting_technique",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique",
+        "Spypress",
+        "Metasploit_tool",
+        "Meterpreter_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Indian",
+        "Germany",
+        "Romanian",
+        "Russian",
+        "Ukrainian",
+        "Polish",
+        "Ukraine",
+        "Russia",
+        "India",
+        "French"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 20,
+      "software": [
+        "Roundcube",
+        "OpenSSH",
+        "Ubuntu",
+        "Firefox",
+        "Chrome",
+        "Linux",
+        "systemd",
+        "SELinux",
+        "MDaemon",
+        "Zimbra",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64",
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "log_visit",
+        "is_credential_exists",
+        "genResponse",
+        "getChromeCredentialsAndSend",
+        "downd",
+        "eval",
+        "addressbook",
+        "btoa",
+        "addRedirectMailBox",
+        "getUserCredentials",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://hunt.io/blog/operation-roundish-apt28-roundcube-exploitation",
+        "https://github.com/cgvwzq"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Handala Hack Unveiling Groups Modus Operandi",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Handala_wiper",
+        "Karma",
+        "Netbird_tool",
+        "Adrecon_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Iran",
+        "Palestinian",
+        "Albania",
+        "Israeli",
+        "Israel"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 18,
+      "software": [
+        "Starlink",
+        "Windows Defender",
+        "Active Directory",
+        "VeraCrypt"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/handala-hack-unveiling-groups-modus-operandi/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "China-nexus Threat Actor Targets Persian Gulf Region With PlugX",
+      "completeness": "High",
+      "threats": [
+        "Plugx_rat",
+        "Dll_sideloading_technique",
+        "Dll_injection_technique",
+        "Doplugs",
+        "Lotuslite",
+        "Uac_bypass_technique",
+        "Fodhelper_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Iranian",
+        "Bahrain",
+        "China"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 32,
+      "software": [
+        "cURL",
+        "Windows service"
+      ],
+      "algorithms": [
+        "xor",
+        "prng",
+        "rc4",
+        "lznt1",
+        "zip"
+      ],
+      "functions": [
+        "DLL"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/china-nexus-threat-actor-targets-persian-gulf-region-plugx"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Suspected China-Based Espionage Operation Against Military Targets in Southeast Asia",
+      "completeness": "High",
+      "threats": [
+        "Applechris",
+        "Memfun",
+        "Getpass_tool",
+        "Mimikatz_tool",
+        "Dll_hijacking_technique",
+        "Shadow_copies_delete_technique",
+        "Dead_drop_technique",
+        "Tunneler",
+        "Timestomp_technique",
+        "Process_hollowing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "China",
+        "Asian",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Windows authentication"
+      ],
+      "algorithms": [
+        "aes",
+        "rsa-1024",
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/espionage-campaign-against-military-targets/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Detecting and responding to GreenBlood ransomware with Wazuh",
+      "completeness": "Medium",
+      "threats": [
+        "Greenblood",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Sdelete_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 5,
+      "software": [
+        "Windows Defender Firewall",
+        "Microsoft Defender",
+        "bcdedit",
+        "Sysinternals"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256"
+      ],
+      "functions": [
+        "Write-Output"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://wazuh.com/blog/detecting-and-responding-to-greenblood-ransomware-with-wazuh/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Cipher Infostealer masquerades as Solara executor - Malware analysis",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Opera",
+        "Windows defender",
+        "Fivem",
+        "roblox",
+        "Electron",
+        "Discord",
+        "Windows service",
+        "Chromium",
+        "Node.js",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "zcash",
+        "jaxx",
+        "electrum",
+        "atomicwallet",
+        "guarda_wallet",
+        "coinomi"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "setTimeout",
+        "updateCheck"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://research.jfrog.com/post/solara-cipher-npm/",
+        "https://github.com/jpassing/elevate/tree/master"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Endgame Harvesting: Inside ACRStealers Modern Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Acr_stealer",
+        "Hijackloader",
+        "Dead_drop_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "Germany",
+        "Mongolia",
+        "Usa"
+      ],
+      "software": [
+        "Steam",
+        "Chrome",
+        "Discord"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256",
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "connect",
+        "GetArrayField",
+        "PowerShell"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.gdatasoftware.com/2026/03/38385-acr-stealer-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "CO-PILOT, DISENGAGE AUTOPHISH: The New Phishing Surface Hiding Inside AI Email Summaries",
+      "completeness": "Low",
+      "threats": [
+        "Cross_prompt_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook"
+      ],
+      "links": [
+        "https://permiso.io/blog/copilot-prompt-injection-ai-email-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "Windows and macOS Malware Spreads via Fake Claude Code Google Ads",
+      "completeness": "Medium",
+      "threats": [
+        "Zilla",
+        "Kuaibu8",
+        "Clickfix_technique",
+        "Amos_stealer"
+      ],
+      "geo": [
+        "Malaysian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Claude",
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/fake-claude-code-google-ads-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-12",
+      "title": "A Slopoly start to AI-enhanced ransomware attacks",
+      "completeness": "Medium",
+      "threats": [
+        "Slopoly",
+        "Interlock",
+        "Nodesnake",
+        "Interlockrat",
+        "Junkfiction",
+        "Polymorphism_technique",
+        "Clickfix_technique",
+        "Azcopy_tool",
+        "Oyster",
+        "Supper_backdoor",
+        "Zapcat",
+        "Portstarter",
+        "Systembc",
+        "Rhysida",
+        "Socgholish_loader",
+        "Kongtuke",
+        "Promptspy",
+        "Promptlock",
+        "Promptflux",
+        "Voidlink"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Instagram",
+        "Linux",
+        "Windows Task Scheduler",
+        "Windows Defender",
+        "OpenSSL"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-gcm",
+        "aes"
+      ],
+      "functions": [
+        "remove"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "java",
+        "php"
+      ],
+      "links": [
+        "https://www.ibm.com/think/x-force/slopoly-start-ai-enhanced-ransomware-attacks",
+        "https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/ibm-xti"
+      ]
+    }
+  }
+]

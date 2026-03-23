@@ -1,0 +1,206 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-21",
+      "title": "CharlieKirk GRABBER : A PYTHON-BASED INFOSTEALER",
+      "completeness": "Medium",
+      "threats": [
+        "Charliekirk_grabber",
+        "Credential_harvesting_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Usa"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 11,
+      "software": [
+        "PyInstaller",
+        "Discord",
+        "Telegram",
+        "Microsoft Defender",
+        "Firefox",
+        "Chromium",
+        "Steam"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "IsUserAnAdmin"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/charliekirk-grabber-a-python-based-infostealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-21",
+      "title": "Inside the Fix: Analysis of In-the-Wild Exploit of CVE-2026-21513",
+      "completeness": "Low",
+      "threats": [
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1202",
+        "T1204",
+        "T1204.001",
+        "T1566.001"
+      ],
+      "software": [
+        "Internet Explorer"
+      ],
+      "functions": [
+        "The"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2026/feb/inside-the-fix-cve-2026-21513-mshtml-exploit-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-21",
+      "title": "Operation Olalampo: Inside MuddyWaters Latest Campaign",
+      "completeness": "High",
+      "threats": [
+        "Ghostfetch",
+        "Ghostbackdoor",
+        "Http_vip",
+        "Char",
+        "Spear-phishing_technique",
+        "Anydesk_tool",
+        "Blackbeard",
+        "Rustric"
+      ],
+      "geo": [
+        "Middleeast",
+        "Mena",
+        "Iranian",
+        "Middle east"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Microsoft Office",
+        "curl",
+        "sudo",
+        "flask",
+        "Microsoft Excel",
+        "Microsoft Word",
+        "linux"
+      ],
+      "algorithms": [
+        "aes",
+        "sha1",
+        "exhibit"
+      ],
+      "functions": [
+        "Workbook_Open",
+        "wait"
+      ],
+      "languages": [
+        "rust",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/muddywater-operation-olalampo/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-21",
+      "title": "January 2026 APT Attack Trends Report (Domestic)",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Endrat",
+        "Hadesdoor",
+        "Mudsdoor",
+        "Thumbstealer",
+        "Xenorat"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "software": [
+        "curl",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "autoit"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/92647/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-21",
+      "title": "Massive Winos 4.0 Campaigns Target Taiwan",
+      "completeness": "High",
+      "threats": [
+        "Winos",
+        "Byovd_technique",
+        "Dll_sideloading_technique",
+        "Valleyrat",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Chinese",
+        "Taiwanese",
+        "China",
+        "Taiwan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Windows kernel-mode driver",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "RunUAC"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/massive-winos-40-campaigns-target-taiwan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-21",
+      "title": "Crypto Compensation Scam: Fake BTC Payout Lure Abusing Survey & Payment Flows",
+      "completeness": "Low",
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/02/22/crypto-compensation-scam-fake-btc-payout-lure-abusing-survey-payment-flows/"
+      ]
+    }
+  }
+]

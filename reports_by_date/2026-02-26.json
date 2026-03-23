@@ -1,0 +1,625 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "New Head Mare newsletter: the phantom contract",
+      "completeness": "Medium",
+      "threats": [
+        "Phantomheart",
+        "Phantomcore",
+        "Phantomdl",
+        "Com_hijacking_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/head-mare-new-campaign/114892/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Chronology of MuddyWater APT Attacks Targeting the Middle East",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Syncro_tool",
+        "Atera_tool",
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "N-able_tool",
+        "Splashtop_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool"
+      ],
+      "geo": [
+        "Jordan",
+        "Oman",
+        "Americas",
+        "Malaysia",
+        "Iraq",
+        "Malaysian",
+        "Asia",
+        "Middle east",
+        "Iran",
+        "United kingdom",
+        "Turkmenistan",
+        "Egypt",
+        "Africa",
+        "France",
+        "America",
+        "Israel"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Office",
+        "Microsoft Word",
+        "Dropbox",
+        "Microsoft OneDrive",
+        "Windows Installer",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "Document_Open",
+        "dddd",
+        "love_me_"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/muddywater-apt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "GTFire Phishing Scheme: Avoiding Detection Using Google Services",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "India",
+        "Spain",
+        "Mexico",
+        "Argentina",
+        "Spanish",
+        "Latin american"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteSpeed",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/gtfire-phishing-scheme/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "New Dohdoor malware campaign targets education and health care",
+      "completeness": "Medium",
+      "threats": [
+        "Dohdoor",
+        "Lolbin_technique",
+        "Cobalt_strike_tool",
+        "Dll_sideloading_technique",
+        "Api_obfuscation_technique",
+        "Process_hollowing_technique",
+        "Lazarloader",
+        "Mauicrypt"
+      ],
+      "geo": [
+        "North korean",
+        "North korea"
+      ],
+      "software": [
+        "curl"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/new-dohdoor-malware-campaign/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/02/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Unmasking Agent Tesla: A Deep Dive into a Multi-Stage Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Agent_tesla",
+        "Process_hollowing_technique",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "VirtualBox",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "aes-cbc",
+        "sha256"
+      ],
+      "languages": [
+        "jscript",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/unmasking-agent-tesla-deep-dive-into-multi-stage-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "PlugX Meeting Invitation via MSBuild and GDATA",
+      "completeness": "High",
+      "threats": [
+        "Plugx_rat",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Lolbin_technique",
+        "Envyscout",
+        "Wineloader",
+        "Grapeloader",
+        "Tonedeaf",
+        "Credential_stealing_technique",
+        "Emissary"
+      ],
+      "geo": [
+        "America",
+        "Asia",
+        "Russia",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64",
+        "rc4"
+      ],
+      "links": [
+        "https://lab52.io/blog/plugx-meeting-invitation-via-msbuild-and-gdata/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Steaelite RAT Enables Double Extortion Attacks from a Single Panel",
+      "completeness": "Medium",
+      "threats": [
+        "Steaelite",
+        "Hvnc_tool",
+        "Uac_bypass_technique",
+        "Credential_harvesting_technique",
+        "Redline_stealer",
+        "Lumma_stealer",
+        "Vidar_stealer"
+      ],
+      "geo": [
+        "San francisco",
+        "Ireland",
+        "London",
+        "United kingdom"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Embarcadero",
+        "Android",
+        "Windows Defender",
+        "ClawdBot",
+        "OpenClaw"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.blackfog.com/steaelite-rat-double-extortion-from-single-panel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Abusing .arpa: The TLD That Isnt Supposed to Host Anything",
+      "completeness": "Low",
+      "software": [
+        "TikTok"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/abusing-arpa-the-tld-that-isnt-supposed-to-host-anything/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Malicious Go crypto Module Steals Passwords and Deploys Rekoobe Backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Rekoobe_rootkit",
+        "Tinyshell",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 12,
+      "ioc_domain": 4,
+      "ioc_url": 11,
+      "ioc_ip": 0,
+      "ioc_file": 12,
+      "ioc_command": 2,
+      "software": [
+        "Linux",
+        "Outlook",
+        "curl",
+        "ubuntu",
+        "sudo",
+        "sudo curl",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256",
+        "bcrypt",
+        "chacha20"
+      ],
+      "functions": [
+        "ReadPassword",
+        "String"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-go-crypto-module-steals-passwords-and-deploys-rekoobe-backdoor",
+        "https://socket.dev/go/package/github.com/xinfeisoft/crypto?section=files&version=v0.15.0&path=ssh%2Fterminal%2Fterminal.go",
+        "https://socket.dev/go/package/github.com/xinfeisoft/crypto"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Fake Zoom and Google Meet scams install Teramind: A technical deep dive",
+      "completeness": "Low",
+      "software": [
+        "Zoom",
+        "Windows installer",
+        "Microsoft Store",
+        "Ubuntu",
+        "LiteSpeed",
+        "Windows Performance Monitor"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "ReadPropertiesFromMsiName"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-zoom-and-google-meet-scams-install-teramind-a-technical-deep-dive"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "[Op Report\\] Velvet Tempest linked to ClickFix campaigns for Termite Ransomware, HoK Activity Observed",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Termite",
+        "Donutloader",
+        "Nightshade",
+        "Credential_harvesting_technique",
+        "Lolbin_technique",
+        "Dead_drop_technique",
+        "Credential_dumping_technique",
+        "Nltest_tool",
+        "Bitsadmin_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Active Directory",
+        "Chrome",
+        "curl",
+        "Steam",
+        "Chromium",
+        "Windows PowerShell",
+        "Windows Installer"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/clickfix-hok-velvet-tempest-termite"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "APT37 Adds New Capabilities for Air-Gapped Networks",
+      "completeness": "High",
+      "threats": [
+        "Restleaf",
+        "Snakedropper",
+        "Thumbsbd",
+        "Virustask",
+        "Footwine",
+        "Bluelight",
+        "Chinotto",
+        "Process_injection_technique",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 20,
+      "software": [
+        "Android",
+        "Windows registry",
+        "Microsoft OneDrive",
+        "DropBox"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "rand"
+      ],
+      "languages": [
+        "powershell",
+        "ruby"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/apt37-adds-new-capabilities-air-gapped-networks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "What to Know About the Notepad++ Supply-Chain Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Mitm_technique",
+        "Cobalt_strike_tool",
+        "Chrysalis",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 20,
+      "software": [
+        "NSIS installer",
+        "Windows Service"
+      ],
+      "links": [
+        "https://flashpoint.io/blog/what-to-know-about-the-notepad-supply-chain-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Active Reconnaissance Campaign Targets SonicWall Firewalls Through Commercial Proxy Infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Fog_ransomware",
+        "Akira_ransomware",
+        "Residential_proxy_technique",
+        "Ipidea"
+      ],
+      "geo": [
+        "Germany",
+        "Seychelles",
+        "Canadian",
+        "Netherlands"
+      ],
+      "software": [
+        "Slack",
+        "SonicOS",
+        "Chrome",
+        "Linux"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/active-reconnaissance-campaign-targets-sonicwall-firewalls-through-commercial-proxy-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Detecting and responding to Salat stealer with Wazuh",
+      "completeness": "Low",
+      "threats": [
+        "Salatstealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 6,
+      "software": [
+        "CredSSP",
+        "pyinstaller",
+        "Telegram",
+        "Sysinternals"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "message"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://wazuh.com/blog/detecting-and-responding-to-salat-stealer-with-wazuh/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Free Games, Costly Consequences",
+      "completeness": "Medium",
+      "threats": [
+        "Hijackloader",
+        "Process_injection_technique",
+        "Acr_stealer",
+        "Dll_sideloading_technique",
+        "Riseprostealer",
+        "Uac_bypass_technique",
+        "Rshell",
+        "Process_doppelganging_technique",
+        "Antivm_technique",
+        "Process_hollowing_technique",
+        "Heavens_gate_technique"
+      ],
+      "geo": [
+        "Spanish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip",
+        "lznt1",
+        "xor",
+        "crc-32"
+      ],
+      "functions": [
+        "srand",
+        "rand"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://blog.gdatasoftware.com/2026/02/38373-pivigames-spreads-hijackloader",
+        "https://github.com/struppigel/hedgehog-tools/blob/main/HijackLoader/python3\\_hijackloader\\_stage2\\_decrypter.py",
+        "https://github.com/struppigel/hedgehog-tools/tree/main/HijackLoader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Moonrise remote access trojan analysis: live surveillance and crypto theft capabilities",
+      "completeness": "Low",
+      "threats": [
+        "Moonrise_rat",
+        "Cobalt_strike_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Dial",
+        "SetReadDeadline",
+        "WriteJSON"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://evalian.co.uk/inside-a-new-malware-trojan-moonrise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-26",
+      "title": "Exploring Aeternum C2: a new botnet that lives on the blockchain",
+      "completeness": "Low",
+      "threats": [
+        "Aeternum",
+        "Emotet",
+        "Trickbot",
+        "Qakbot",
+        "Glupteba",
+        "Kleenscan_tool"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://qrator.net/blog/details/Exploring-Aeternum-C2/"
+      ]
+    }
+  }
+]

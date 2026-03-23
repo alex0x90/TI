@@ -1,0 +1,805 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Four Arms, One Monster: GlassWorm Invades GitHub, NPM, VS Code and PyPI",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Supply_chain_technique",
+        "Etherhiding_technique",
+        "Beavertail",
+        "Invisibleferret",
+        "Ottercookie"
+      ],
+      "geo": [
+        "Russian",
+        "Moscow",
+        "Dprk"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "Node.js",
+        "BitTorrent"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "_isRussianSystem"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/four-arms-one-monster"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Analysis of Konni Group's spearphishing-Chaotalk tied threat campaign",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Endrat",
+        "Rftrat",
+        "Remcos_rat"
+      ],
+      "geo": [
+        "Japan",
+        "North korea",
+        "Japanese",
+        "Finland",
+        "Netherlands",
+        "North korean"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "KakaoTalk",
+        "Android",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "exhibit",
+        "md5",
+        "rc4",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "GETFILELIST",
+        "SCANDIRECTORY",
+        "DOWNLOADPROCESS"
+      ],
+      "languages": [
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/kakaotalk"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "AI-Assisted Phishing Campaign Exploits Browser Permissions to Capture Victim Data",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 4,
+      "software": [
+        "Telegram",
+        "TikTok",
+        "Instagram",
+        "Google Chrome"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyble.com/ai-assisted-phishing-campaign/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/tree/main/AI-Assisted%20Phishing%20Uses%20Browser%20Permissions%20to%20Steal%20Data"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Bench.sh: How Threat Actors Repurpose a Legitimate Benchmarking Tool for Post-Exploitation Recon",
+      "completeness": "Low",
+      "geo": [
+        "Asian",
+        "Chinese",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Jupyter Notebook",
+        "Apache Tomcat",
+        "curl",
+        "Telegram"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/bench-sh-post-exploitation-recon"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Free real estate: GoPix, the banking Trojan living off your memory",
+      "completeness": "High",
+      "threats": [
+        "Gopix",
+        "Lolbin_technique",
+        "Mitm_technique",
+        "Grandoreiro"
+      ],
+      "geo": [
+        "Brazilian",
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Google Chrome",
+        "NSIS installer",
+        "Chrome",
+        "Firefox",
+        "Opera"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "crc-32"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/gopix-banking-trojan/119173/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Winos4.0 malware disguised as KakaoTalk installation file",
+      "completeness": "Medium",
+      "threats": [
+        "Winos",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "KakaoTalk",
+        "Windows Defender",
+        "task scheduler",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "CreateShortCut",
+        "WriteRegStr",
+        "TaskScheduler"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/92924/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "AI-Assisted Phishing Campaign Exploits Browser Permissions to Capture Victim Data",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 4,
+      "software": [
+        "Telegram",
+        "TikTok",
+        "Instagram",
+        "Google Chrome"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyble.com/blog/ai-assisted-phishing-campaign/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/tree/main/AI-Assisted%20Phishing%20Uses%20Browser%20Permissions%20to%20Steal%20Data"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "LiveChat Abuse: How Phishers Are Exploiting SaaS Support Tools to Steal Sensitive Data",
+      "completeness": "Low",
+      "links": [
+        "https://cofense.com/blog/livechat-abuse-how-phishers-are-exploiting-saas-support-tools-to-steal-sensitive-data"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Introduction",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Crystal_palace_tool",
+        "Meteor_wiper",
+        "Crystal-kit_tool",
+        "Rubeus_tool",
+        "Powerpick_tool",
+        "Process_hollowing_technique",
+        "Dll_injection_technique",
+        "Reflectiveloader",
+        "Havoc"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows"
+      ],
+      "algorithms": [
+        "ror13",
+        "xor"
+      ],
+      "functions": [
+        "go",
+        "Win32",
+        "findModuleByHash",
+        "findFunctionByHash",
+        "__resolve_hook",
+        "ReflectiveLoader"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://lorenzomeacci.com/bypassing-edr-in-a-crystal-clear-way",
+        "https://github.com/kapla0011/KaplaStrike"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Southeast Asia Region-specific Iran-israel War Threat Intelligence",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Sidetwist",
+        "Menorah",
+        "Spear-phishing_technique",
+        "Dns_tunneling_technique",
+        "Stealhook_tool",
+        "Quadagent",
+        "Mimikatz_tool",
+        "Lazagne_tool",
+        "Typosquatting_technique",
+        "Powerstar",
+        "Charmpower",
+        "Bellaciao",
+        "Noknok",
+        "Sqlmap_tool",
+        "Disttrack",
+        "Stonedrill_wiper",
+        "Turnedup",
+        "Nanocore_rat",
+        "Dll_sideloading_technique",
+        "Powgoop",
+        "Lolbin_technique",
+        "Powerstats",
+        "Koadic_tool",
+        "Chisel_tool",
+        "Ngrok_tool",
+        "Plink_tool",
+        "Handala_wiper",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "London",
+        "Thailand",
+        "Tehran",
+        "Malaysia",
+        "Vietnam",
+        "Philippines",
+        "Russian",
+        "Apac",
+        "Kuwait",
+        "China",
+        "Qatar",
+        "Vietnamese",
+        "Palestinian",
+        "United kingdom",
+        "Bahrain",
+        "Indonesia",
+        "Asian",
+        "Singapore",
+        "Iran",
+        "Philippine",
+        "Cambodia",
+        "Israel",
+        "India",
+        "Iranian",
+        "Chinese",
+        "Malaysian",
+        "Asia",
+        "Israeli",
+        "Indonesian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 26,
+      "software": [
+        "WordPress",
+        "macOS",
+        "Telegram",
+        "NSIS installer",
+        "outlook",
+        "chrome",
+        "firefox"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Bot",
+        "Internet-Facing",
+        "Telegram"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cdn.cloudsek.com/cloudsek-blog-pdfs/sea.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Malware Insights : MacOS Phexia Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Phexia",
+        "Clickfix_technique",
+        "Amatera_stealer"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MacOS",
+        "Telegram",
+        "curl",
+        "Ubuntu"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://cookie.engineer/weblog/articles/malware-insights-macos-phexia-campaign.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "COVERT RAT: Phishing Campaign",
+      "completeness": "High",
+      "threats": [
+        "Covertrat",
+        "Cobalt_strike_tool",
+        "Spear-phishing_technique",
+        "Antivm_technique",
+        "Antidebugging_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Argentina"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge",
+        "Windows registry",
+        "VirtualBox",
+        "HyperV",
+        "QEMU",
+        "Hyper V",
+        "Xen",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256",
+        "zip",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/covert-rat-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Web Shells, Tunnels, and Ransomware: Dissecting a Warlock Attack",
+      "completeness": "High",
+      "threats": [
+        "Yuze_tool",
+        "Byovd_technique",
+        "X2anylock",
+        "Rclone_tool",
+        "Cobalt_strike_tool",
+        "Dll_sideloading_technique",
+        "Mimikatz_tool",
+        "Dcsync_technique",
+        "Cloudflared_tool",
+        "Nsec-killer_tool",
+        "Credential_dumping_technique",
+        "Av-killer"
+      ],
+      "geo": [
+        "Germany",
+        "Russia"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 19,
+      "software": [
+        "TightVNC",
+        "Microsoft SharePoint",
+        "Velociraptor",
+        "Windows service",
+        "PsExec",
+        "Microsoft Edge",
+        "SharePoint server",
+        "Supabase",
+        "PccNTMon",
+        "Active Directory",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/c/dissecting-a-warlock-attack.html",
+        "https://github.com/BlackSnufkin/BYOVD"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Remcos Banking Fraud via Three AutoIt Persistence Chains",
+      "completeness": "High",
+      "threats": [
+        "Remcos_rat",
+        "Purehvnc_tool",
+        "Violet_rat",
+        "Purelogs",
+        "Purecryptor",
+        "Process_hollowing_technique",
+        "Screen_shotting_technique",
+        "Hvnc_tool",
+        "Donut_loader",
+        "Donut"
+      ],
+      "geo": [
+        "Canadian",
+        "American",
+        "Budapest"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "EcoOptimize",
+        "WealthWise",
+        "NET Framework",
+        "ledger live",
+        "EcoOptimize WealthWise"
+      ],
+      "wallets": [
+        "bitpay",
+        "exodus_wallet",
+        "atomicwallet",
+        "metamask"
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes-256-cbc",
+        "lznt1",
+        "rc4",
+        "base64",
+        "ecc",
+        "gzip",
+        "aes",
+        "sha256",
+        "rsa-4096"
+      ],
+      "functions": [
+        "TestFunction"
+      ],
+      "languages": [
+        "autoit",
+        "python"
+      ],
+      "links": [
+        "https://www.derp.ca/research/remcos-autoit-persistence/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "GhostWeaver - a malware that lives up to its name",
+      "completeness": "High",
+      "threats": [
+        "Ghostweaver",
+        "Pantera",
+        "Mintsloader",
+        "Uac_bypass_technique",
+        "Boinc_tool",
+        "Socgholish_loader",
+        "Parrot_tds_tool",
+        "Amsi_bypass_technique",
+        "Asyncrat",
+        "Nmap_tool",
+        "Formgrabber",
+        "Mitm_technique",
+        "Polymorphism_technique",
+        "Remcos_rat",
+        "Interlock",
+        "Rhysida",
+        "Oyster",
+        "Stealc",
+        "Obfus",
+        "Process_injection_technique",
+        "Violet_rat"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 19,
+      "software": [
+        "Telegram",
+        "WordPress",
+        "Chrome",
+        "Firefox",
+        "Outlook",
+        "curl",
+        "Task Scheduler",
+        "Zimbra"
+      ],
+      "algorithms": [
+        "prng",
+        "base64",
+        "sha512",
+        "xor",
+        "sha256",
+        "gzip",
+        "sha1"
+      ],
+      "functions": [
+        "PowerShell",
+        "Get-Content",
+        "Get-MpComputerStatus"
+      ],
+      "languages": [
+        "autoit",
+        "javascript",
+        "php",
+        "visual_basic",
+        "jscript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/briefings/ghostweaver-powershell-rat/",
+        "https://github.com/kirkderp/yara",
+        "https://github.com/CybercentreCanada/CCCS-Yara"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "PureLogs: Reverse Engineering a .NET RAT From the PureCoder Ecosystem",
+      "completeness": "High",
+      "threats": [
+        "Purelogs",
+        "Purehvnc_tool",
+        "Donut_loader",
+        "Confuserex_tool",
+        "Asyncrat",
+        "Venomrat",
+        "Dcrat",
+        "Xworm_rat",
+        "Violet_rat",
+        "Remcos_rat",
+        "Process_injection_technique",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Xen",
+        "TryCloudflare",
+        "Chromium",
+        "Chrome",
+        "Vivaldi",
+        "Opera",
+        "CocCoc",
+        "Amigo",
+        "Torch",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "keplr",
+        "tronlink",
+        "xdefi",
+        "math_wallet",
+        "bitkeep_wallet",
+        "electrum",
+        "atomicwallet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "gzip",
+        "xor",
+        "md5",
+        "sha256",
+        "aes-256-cbc",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "SetWindowsHookEx",
+        "GetWindowText"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.derp.ca/research/plog-rat-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "PureCrypter: Reverse Engineering a .NET Loader From the PureCoder Ecosystem",
+      "completeness": "Medium",
+      "threats": [
+        "Purecryptor",
+        "Confuserex_tool",
+        "Purelogs",
+        "Credential_harvesting_technique",
+        "Purehvnc_tool",
+        "Asyncrat",
+        "Venomrat",
+        "Dcrat",
+        "Xworm_rat"
+      ],
+      "algorithms": [
+        "md5",
+        "gzip",
+        "base64",
+        "xor",
+        "sha256",
+        "3des"
+      ],
+      "functions": [
+        "SetWindowsHookEx",
+        "Main",
+        "Orchestrator",
+        "ArgumentException",
+        "CopyTo",
+        "SetDecider"
+      ],
+      "languages": [
+        "powershell",
+        "autoit"
+      ],
+      "links": [
+        "https://www.derp.ca/research/purecrypter-loader-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-16",
+      "title": "Hacked sites deliver Vidar infostealer to Windows users",
+      "completeness": "Medium",
+      "threats": [
+        "Vidar_stealer",
+        "Clickfix_technique",
+        "Coruna_tool"
+      ],
+      "geo": [
+        "Brazil",
+        "France",
+        "United kingdom",
+        "Italy"
+      ],
+      "software": [
+        "WordPress",
+        "Chrome"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/hacked-sites-deliver-vidar-infostealer-to-windows-users"
+      ]
+    }
+  }
+]

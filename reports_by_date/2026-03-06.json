@@ -1,0 +1,613 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "Fake imToken Chrome Extension Steals Seed Phrases via Phishing Redirects",
+      "completeness": "Low",
+      "threats": [
+        "Homoglyph_technique",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 9,
+      "software": [
+        "Chrome",
+        "Outlook"
+      ],
+      "wallets": [
+        "imtoken"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/fake-imtoken-chrome-extension-steals-seed-phrases-via-phishing-redirects"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "One click on this fake Google Meet update can give attackers control of your PC",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/one-click-on-this-fake-google-meet-update-can-give-attackers-control-of-your-pc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "Middle East Conflict Fuels Opportunistic Cyber Attacks",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Lotuslite",
+        "Stealc",
+        "Pdq_connect_tool"
+      ],
+      "geo": [
+        "Iran",
+        "Israeli",
+        "Middle east",
+        "Israel",
+        "Bahrain",
+        "Venezuela",
+        "Iranian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "cURL",
+        "Chrome",
+        "Telegram"
+      ],
+      "algorithms": [
+        "rc4",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "DLL"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/middle-east-conflict-fuels-opportunistic-cyber-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "Fake CleanMyMac site installs SHub Stealer and backdoors crypto wallets",
+      "completeness": "Medium",
+      "threats": [
+        "Sparrow",
+        "Macc_stealer",
+        "Odyssey_stealer",
+        "Amos_stealer",
+        "Credential_stealing_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ledger Live",
+        "macOS",
+        "Telegram",
+        "Chrome",
+        "Opera",
+        "OperaGX",
+        "Vivaldi",
+        "Coccoc",
+        "Chrome Canary",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "atomicwallet",
+        "ledger_wallet",
+        "trezor",
+        "metamask",
+        "coinbase",
+        "keplr",
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "dogecoin",
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/fake-cleanmymac-site-installs-shub-stealer-and-backdoors-crypto-wallets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "Dark Web Profile: APT41",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Lolbin_technique",
+        "Log4shell_vuln",
+        "Spear-phishing_technique",
+        "Mimikatz_tool",
+        "Ntdsutil_tool",
+        "Process_hollowing_technique",
+        "Toughprogress",
+        "Credential_dumping_technique",
+        "Process_injection_technique",
+        "Passthehash_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "Thailand",
+        "Italy",
+        "Spain",
+        "Turkey",
+        "China",
+        "United kingdom"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 94,
+      "software": [
+        "Active Directory",
+        "Unix",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-apt41/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "MAAS VIP_Keylogger Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Vipkeylogger",
+        "Spear-phishing_technique",
+        "Steganography_technique",
+        "Process_hollowing_technique",
+        "Antivm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Slimjet",
+        "Blisk",
+        "Nichrome",
+        "Vivaldi",
+        "Sleipnir",
+        "Kometa",
+        "Torch",
+        "Kinza",
+        "Chrome_Canary",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/maas-vip_keylogger-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "Analysis of VioletRAT malware carried in Italy",
+      "completeness": "Medium",
+      "threats": [
+        "Violet_rat",
+        "Ngrok_tool",
+        "Hvnc_tool",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Italy"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "aes",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "GetTok"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/analisi-del-malware-violetrat-veicolato-in-italia/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "TAXISPY RAT : Analysis of TaxiSpy RAT Russian Banking Focused Android Malware with Full Remote Control",
+      "completeness": "High",
+      "threats": [
+        "Taxispy"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 26,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "getBotId",
+        "getServerListNative",
+        "getWebviewUrlNative",
+        "getWorkerKeyNative",
+        "A12",
+        "A213"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/taxispy-rat-analysis-of-taxispy-rat-russian-banking-focused-android-malware-with-full-remote-control/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "INC Ransom Affiliate Model Enabling Targeting of Critical Networks",
+      "completeness": "Low",
+      "threats": [
+        "Inc_ransomware",
+        "Spear-phishing_technique",
+        "Rclone_tool",
+        "Lynx",
+        "Nemty",
+        "Karma",
+        "Nokoyawa",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Byovd_technique",
+        "Credential_dumping_technique",
+        "Netscan_tool"
+      ],
+      "geo": [
+        "New zealand",
+        "Australian",
+        "Pacific",
+        "United kingdom",
+        "Australia",
+        "Tonga"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 29,
+      "links": [
+        "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/inc-ransom-affiliate-model-enabling-targeting-of-critical-networks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "APT36: A Nightmare of Vibeware",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Havoc",
+        "Polyglot_ransomware",
+        "Warcode",
+        "Crystalshell",
+        "Lolbin_technique",
+        "Nimshellcodeloader",
+        "Creepdropper",
+        "Sheetcreep",
+        "Mailcreep",
+        "Google_rat",
+        "Gc2-sheet_tool",
+        "Supaserv",
+        "Luminousstealer",
+        "Zigshell",
+        "Crystalfile_tool",
+        "Luminouscookies",
+        "Process_injection_technique",
+        "Xaitax_tool",
+        "Process_hollowing_technique",
+        "Backupspy",
+        "Zigloader",
+        "Timestomp_technique",
+        "Gatesentinel_tool",
+        "Allrounder_tool",
+        "Filecopyu_tool",
+        "Mythic_c2_tool",
+        "Xaitaz_cromeelevator_tool",
+        "Carved4_tool"
+      ],
+      "geo": [
+        "Pakistani",
+        "Indian",
+        "Pakistan",
+        "Asian",
+        "Afghanistan"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "Discord",
+        "Supabase",
+        "chrome",
+        "Google Chrome",
+        "Graph API",
+        "PostgreSQL",
+        "curl",
+        "Chromium",
+        "Google Chrome",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "cbc",
+        "aes",
+        "xor",
+        "des",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/apt36-nightmare-vibeware",
+        "https://github.com/vxunderground/MalwareSourceCode",
+        "https://github.com/ytisf/theZoo"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "An Investigation Into Years of Undetected Operations Targeting High-Value Sectors",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Scanportplus_tool",
+        "Xnote",
+        "Superdump_tool",
+        "Mimikatz_tool",
+        "Lsarecorder_tool",
+        "Dumpit_tool",
+        "Volatility_tool",
+        "Sliver_c2_tool",
+        "Pwnkit_tool",
+        "Lolbin_technique",
+        "Godzilla_webshell",
+        "Antsword",
+        "Printspoofer_tool",
+        "Synflood_technique",
+        "Udpflood_technique",
+        "Putty_tool",
+        "Chinachopper",
+        "Wevtutil_tool",
+        "Realvnc_tool",
+        "Tightvnc_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "SQL Server Management Studio",
+        "MSSQL",
+        "Local Security Authority",
+        "Navicat",
+        "WinSCP",
+        "Internet Explorer",
+        "NetSarang",
+        "Microsoft SQL Server Management Studio",
+        "Windows Security",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/cl-unk-1068-targets-critical-sectors/",
+        "https://github.com/fatedier/frp",
+        "https://github.com/BeichenDream/Godzilla/",
+        "https://github.com/AntSwordProject"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "CVE-2026-1731: Finding a critical RCE in an age of AI-driven vulnerability research",
+      "completeness": "Medium",
+      "threats": [
+        "Simplehelp_tool",
+        "Impacket_tool",
+        "Interactsh_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Claude",
+        "Active Directory",
+        "PsExec"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.intel471.com/blog/cve-2026-1731-finding-a-critical-rce-in-an-age-of-ai-driven-vulnerability-research",
+        "https://github.com/win3zz/CVE-2026-1731/blob/main/exploit.py",
+        "https://github.com/win3zz/CVE-2026-1731/blob/main/README.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "Mobile spyware campaign impersonates Israel's Red Alert rocket warning system",
+      "completeness": "High",
+      "threats": [
+        "Smishing_technique",
+        "Credential_harvesting_technique",
+        "Alertx"
+      ],
+      "geo": [
+        "Middle east",
+        "Israel",
+        "Israeli"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 16,
+      "software": [
+        "twitter",
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "getApkContentsSigners",
+        "getSigningCertificateHistory",
+        "getInstallerPackageName",
+        "onSmsPermissionGranted",
+        "onContactsPermissionGranted",
+        "Maynt",
+        "Shatters",
+        "getAccounts",
+        "Unflush"
+      ],
+      "languages": [
+        "java",
+        "php"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/mobile-spyware-campaign-impersonates-israels-red-alert-rocket-warning-system/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "InstallFix: How attackers are weaponizing malvertized install guides",
+      "completeness": "Low",
+      "threats": [
+        "Installfix_technique",
+        "Clickfix_technique",
+        "Consentfix_technique",
+        "Amatera_stealer",
+        "Acr_stealer",
+        "Ghostsocks"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "curl",
+        "MacOS"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://pushsecurity.com/blog/installfix/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-06",
+      "title": "Phishing Emails Push Fake ChatGPT and Gemini iOS Apps To Steal Logins",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Australian"
+      ],
+      "software": [
+        "ChatGPT",
+        "OpenAI"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/phishing-emails-push-fake-chatgpt/"
+      ]
+    }
+  }
+]

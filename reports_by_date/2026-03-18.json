@@ -1,0 +1,714 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Transparent Tribe (APT36) sets its sights on the Indian startup ecosystem",
+      "completeness": "Medium",
+      "threats": [
+        "Crimson_rat",
+        "Spear-phishing_technique",
+        "Motw_bypass_technique",
+        "Gymrat"
+      ],
+      "geo": [
+        "Afghanistan",
+        "Asian",
+        "India",
+        "Indian",
+        "Usa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/302267.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "FancyBear Exposed: Major OPSEC Blunder Inside Russian Espionage Ops",
+      "completeness": "High",
+      "threats": [
+        "Opendir_technique",
+        "Clickfix_technique",
+        "Typosquatting_technique",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique",
+        "Metasploit_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Romanian",
+        "Ukrainian",
+        "Denmark",
+        "Russia",
+        "Bulgaria",
+        "Greece",
+        "Serbian",
+        "Ukranian",
+        "Serbia",
+        "Bulgarian",
+        "Spanish",
+        "Ukraine",
+        "North macedonia",
+        "Romania"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 18,
+      "software": [
+        "Roundcube",
+        "MDAEMON",
+        "ZIMBRA",
+        "oundcube JS",
+        "gmail"
+      ],
+      "algorithms": [
+        "base32",
+        "base64"
+      ],
+      "functions": [
+        "eval",
+        "getUserCredentials",
+        "delTwoAuth",
+        "getUserCredentialsOLD",
+        "getChromeCredentialsAndSend",
+        "getElementById",
+        "createElement",
+        "getAddressBook"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/threat%20research/FancyBear/",
+        "https://github.com/ctrlaltint3l/intelligence/tree/main/FancyBear/roundish",
+        "https://github.com/JohnHammond/recaptcha-phish"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Vidar Stealer 2.0 distributed via fake game cheats on GitHub and Reddit",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Polymorphism_technique",
+        "Dead_drop_technique",
+        "Process_injection_technique",
+        "Arkei_stealer",
+        "Ps2exe_tool",
+        "Themida_tool",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "Korea",
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "Telegram",
+        "Discord",
+        "Steam",
+        "Fortnite",
+        "Valorant",
+        "Windows Defender",
+        "Microsoft Defender",
+        "Outlook",
+        "Google Chrome",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/vidar-stealer-20-distributed-via-fake-game-cheats-on-github-and-reddit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Opportunistic threat actors using Ramadan coupon as a lure to target retail store customers in Middle East",
+      "completeness": "Low",
+      "geo": [
+        "Egyptian",
+        "Saudi",
+        "Middle east"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/opportunistic-threat-actors-using-ramadan-coupon-as-a-lure-to-target-retail-store-customers-in-middle-east"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Analysis of the Spear-Phishing and KakaoTalk-Linked Threat Campaign by the Konni Group",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Endrat",
+        "Rftrat",
+        "Remcos_rat"
+      ],
+      "geo": [
+        "North korea",
+        "North korean",
+        "Finland",
+        "Japan",
+        "Netherlands"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "KakaoTalk",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor",
+        "rc4",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "GETFILELIST",
+        "SCANDIRECTORY",
+        "DOWNLOADPROCESS"
+      ],
+      "languages": [
+        "autoit",
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/kakaotalk"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "The Proliferation of DarkSword: iOS Exploit Chain Adopted by Multiple Threat Actors",
+      "completeness": "High",
+      "threats": [
+        "Darksword_exploitkit",
+        "Ghostblade",
+        "Ghostknife",
+        "Ghostsaber",
+        "Coruna_tool",
+        "Watering_hole_technique"
+      ],
+      "geo": [
+        "Turkey",
+        "Malaysia",
+        "Russian",
+        "Turkish",
+        "Ukrainian",
+        "Saudi arabia",
+        "Ukraine",
+        "Saudi arabian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "EvalJs",
+        "iMessage",
+        "Telegram",
+        "WhatsApp",
+        "Outlook"
+      ],
+      "algorithms": [
+        "aes",
+        "ecdh"
+      ],
+      "functions": [
+        "TextDecoder",
+        "getJS",
+        "canUseApplePay",
+        "supportsWebGL2",
+        "getDeviceInputInfo",
+        "deleteCrashReports",
+        "startSandworm"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/darksword-ios-exploit-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Stryker Cyberattack: What You Need to Know",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Adrecon_tool",
+        "Netbird_tool",
+        "Handala_wiper"
+      ],
+      "geo": [
+        "Iran",
+        "Israel",
+        "Iranian",
+        "Israeli"
+      ],
+      "software": [
+        "Microsoft Entra",
+        "VeraCrypt"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/stryker-cyberattack-what-you-need-to-know/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "The SOC Files: Time to Sapecar. Unpacking a new Horabot campaign in Mexico",
+      "completeness": "High",
+      "threats": [
+        "Horabot_botnet",
+        "Lumma_stealer",
+        "Amadey",
+        "Polymorphism_technique",
+        "Metamorfo",
+        "Tinba"
+      ],
+      "geo": [
+        "Mexico",
+        "Spanish",
+        "Brazilian",
+        "Portuguese"
+      ],
+      "software": [
+        "OpenSSL"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "createElement",
+        "setAttribute",
+        "getElementsByTagName",
+        "decode_str"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell",
+        "delphi",
+        "autoit"
+      ],
+      "links": [
+        "https://securelist.com/horabot-campaign/119033/",
+        "https://github.com/abalad/Delphi\\_Remote\\_Access\\_PC"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Katana: a Mirai variant that compiles its own rootkit on Android TV set-top boxes",
+      "completeness": "High",
+      "threats": [
+        "Mirai",
+        "Residential_proxy_technique",
+        "Kimwolf",
+        "Putty_tool",
+        "Tcpstomp_technique",
+        "Udpflood_technique",
+        "Httpflood_technique",
+        "Pandora",
+        "Bigpanzi",
+        "Dns_hijacking_technique",
+        "Vo1d",
+        "Badbox",
+        "Supply_chain_technique",
+        "Cobalt_strike_tool",
+        "Asyncrat",
+        "Xworm_rat",
+        "Remcos_rat",
+        "Rhadamanthys",
+        "Jackskid",
+        "Dropbear_tool",
+        "Nmap_tool",
+        "Ncat_tool",
+        "Netcat_tool",
+        "Socat_tool",
+        "Screencap"
+      ],
+      "geo": [
+        "Seychelles",
+        "Latvian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "Busybox",
+        "FiveM",
+        "CitizenFX",
+        "MySQL",
+        "TeamSpeak",
+        "Chrome",
+        "Discord",
+        "OpenSSL",
+        "have more..."
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "xxtea",
+        "xor"
+      ],
+      "functions": [
+        "getEndpoints",
+        "getConfiguration"
+      ],
+      "languages": [
+        "python",
+        "perl",
+        "ruby"
+      ],
+      "links": [
+        "https://github.com/deepfield/public-research/blob/main/katana/report.md",
+        "https://github.com/deepfield/public-research/blob/main/katana/detection/katana.yar",
+        "https://github.com/deepfield/public-research/blob/main/katana/detection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Iranian Botnet Exposed via Open Directory: 15-Node Relay Network and Active C2",
+      "completeness": "High",
+      "threats": [
+        "Paqet_tool",
+        "Mhddos_tool",
+        "Synflood_technique",
+        "Udpflood_technique"
+      ],
+      "geo": [
+        "Finland",
+        "Iranian",
+        "London",
+        "Iran"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "FiveM"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "c_language",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/iran-botnet-operation-open-directory"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Cato CTRL Threat Research: Vishing and Microsoft Teams Used to Deliver PhantomBackdoor",
+      "completeness": "High",
+      "threats": [
+        "Phantombackdoor",
+        "Spear-phishing_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Italy"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-vishing-and-microsoft-teams-used-deliver-phantombackdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "GlassWorm Sleeper Extensions Activate on Open VSX, Shift to GitHub-Hosted VSIX Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Typosquatting_technique",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Moscow",
+        "Asia",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "Open VSX",
+        "OpenVSX",
+        "Claude",
+        "macOS",
+        "Node.js"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64"
+      ],
+      "functions": [
+        "activate",
+        "deactivate",
+        "getSignaturesForAddress",
+        "setTimeout",
+        "c",
+        "GetBlock",
+        "x",
+        "setImmediate",
+        "setInterval"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://socket.dev/blog/glassworm-sleeper-extensions-activated-on-open-vsx",
+        "https://github.com/posit-dev/positron"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "AI Wrote This Malware: Dissecting the Insides of a Vibe-Coded Malware Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Salatstealer",
+        "Zephyrus",
+        "Panther-stealer",
+        "Zerotrace-stealer",
+        "Xmrig_miner",
+        "Coinminer",
+        "Trojan:win/phishing.ap",
+        "Trojan:win/dropper.at",
+        "Ethminer",
+        "Meshagent_tool",
+        "Lolminer"
+      ],
+      "geo": [
+        "America",
+        "United kingdom",
+        "Australia",
+        "France",
+        "Canada",
+        "India",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "Discord",
+        "Roblox",
+        "DeepSeek",
+        "UNIX",
+        "Windows Defender",
+        "Curl",
+        "Opera"
+      ],
+      "crypto": [
+        "ravencoin",
+        "monero",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/ai-written-malware-vibe-coded-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "Technical Analysis of SnappyClient",
+      "completeness": "High",
+      "threats": [
+        "Snappyclient",
+        "Hijackloader",
+        "Amsi_bypass_technique",
+        "Heavens_gate_technique",
+        "Ghostpulse",
+        "Clickfix_technique",
+        "Sandbox_evasion_technique",
+        "Uac_bypass_technique",
+        "Hvnc_tool",
+        "Hvncbrowser_tool",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 19,
+      "software": [
+        "Twitter",
+        "Chromium",
+        "360Browser",
+        "Opera",
+        "Chrome",
+        "CocCoc",
+        "Firefox",
+        "Slimjet",
+        "Vivaldi",
+        "Waterfox"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "atomicwallet",
+        "coinbase",
+        "metamask",
+        "tronlink",
+        "bitcoincore",
+        "coinomi",
+        "electrum",
+        "ledgerlive",
+        "wassabi",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "aes-256",
+        "fnv-1a",
+        "base64",
+        "sha1",
+        "crc-32",
+        "chacha20-poly1305",
+        "sha256",
+        "xor",
+        "chacha20",
+        "base58",
+        "ripemd-160"
+      ],
+      "functions": [
+        "exit"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-snappyclient",
+        "https://github.com/ThreatLabz/tools/blob/main/snappyclient/Decrypted%20EventsDB.txt",
+        "https://github.com/ThreatLabz/tools/blob/main/snappyclient/decrypt\\_db.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-18",
+      "title": "From Invitation to Infection: How SILENTCONNECT DeliversScreenConnect",
+      "completeness": "High",
+      "threats": [
+        "Silentconnect",
+        "Screenconnect_tool",
+        "Lolbin_technique",
+        "Uac_bypass_technique",
+        "Syncro_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare Turnstile",
+        "Windows Defender",
+        "curl",
+        "Microsoft Defender",
+        "Windows service",
+        "Microsoft Teams",
+        "Windows Powershell"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "NT",
+        "Replace",
+        "Chr"
+      ],
+      "languages": [
+        "php",
+        "csharp",
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/silentconnect-delivers-screenconnect",
+        "https://gist.github.com/api0cradle/d4aaef39db0d845627d819b2b6b30512",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/execution\\_suspicious\\_windows\\_script\\_downloaded\\_from\\_the\\_internet.toml"
+      ]
+    }
+  }
+]

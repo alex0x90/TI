@@ -56,5 +56,140 @@
         "https://www.bridewell.com/insights/blogs/detail/the-booking.com-phishing-campaign-targeting-hotels-and-customers"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-16",
+      "title": "Operation DoppelBrand: Massive Fortune 500 Brand Impersonation Campaign Uncovered",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Itarian_tool",
+        "Logmein_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "Brazilian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/operation-doppelbrand-fortune-500-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-16",
+      "title": "Aeternum Loader: When your C2 lives forever",
+      "completeness": "Medium",
+      "threats": [
+        "Aeternum",
+        "Errtraffic",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "ioc_domain": 20,
+      "ioc_url": 18,
+      "ioc_ip": 0,
+      "ioc_file": 5,
+      "ioc_command": 2,
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "sha256",
+        "md5",
+        "aes-gcm",
+        "base64",
+        "pbkdf2",
+        "aes"
+      ],
+      "functions": [
+        "updateDomain",
+        "getItem",
+        "getRandomValues",
+        "setItem",
+        "encryptPrivateKey",
+        "setEncryptionKey",
+        "Wallet",
+        "getAddress",
+        "getNetwork",
+        "admin",
+        "have more..."
+      ],
+      "languages": [
+        "solidity",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/threat%20research/Aeternum-Part-1/",
+        "https://github.com/ctrlaltint3l/intelligence/blob/main/Aeternum%20Loader/Smart%20Contract%20Log.csv",
+        "https://github.com/ctrlaltint3l/intelligence/blob/main/Aeternum%20Loader/aeternum\\_c2\\_command\\_decrypt.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-02-16",
+      "title": "Aeternum Loader: Inside the binary",
+      "completeness": "Medium",
+      "threats": [
+        "Aeternum",
+        "Motw_bypass_technique",
+        "Sandbox_evasion_technique",
+        "Hijackloader",
+        "Cloudeye",
+        "Errtraffic",
+        "Latrodectus",
+        "Stealthcache"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xor",
+        "pbkdf2",
+        "base64",
+        "aes-gcm",
+        "sha256",
+        "prng",
+        "md5",
+        "aes",
+        "crc-32"
+      ],
+      "functions": [
+        "Loader",
+        "getDomain"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/threat%20research/Aeternum-Part-2/",
+        "https://github.com/LloydLabs/delete-self-poc",
+        "https://github.com/ctrlaltint3l/intelligence/blob/main/Aeternum%20Loader/PolygonRPC.txt"
+      ]
+    }
   }
 ]

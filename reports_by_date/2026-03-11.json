@@ -1,0 +1,588 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Sednit reloaded: Back in the trenches",
+      "completeness": "High",
+      "threats": [
+        "Slimagent_tool",
+        "Beardshell_tool",
+        "Covenant_c2_tool",
+        "Xagent",
+        "Xtunnel",
+        "Usbstealer",
+        "Graphite",
+        "Grunt",
+        "C2bridge_tool",
+        "Spear-phishing_technique",
+        "Empire_loader"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russia",
+        "Russian",
+        "German",
+        "French",
+        "Ukraine",
+        "Russian federation"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 19,
+      "software": [
+        "Linux",
+        "Icedrive",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/sednit-reloaded-back-trenches/",
+        "https://github.com/cobbr/Covenant",
+        "https://github.com/cobbr/Covenant/blob/5decc3ccfab04e6e881ed00c9de649740dac8ad1/Covenant/Data/Grunt/GruntBridge/GruntBridgeStager.cs#L128"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Kernel in the Crosshairs: The BlackSanta Threat Campaign Targeting Recruitment Workflows",
+      "completeness": "Low",
+      "threats": [
+        "Blacksanta_tool",
+        "Edr-killer",
+        "Process_hollowing_technique",
+        "Credential_harvesting_technique",
+        "Byovd_technique",
+        "Lolbin_technique",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.aryaka.com/blog/kernel-in-the-crosshairs-blacksanta-edr-killer-recruitment-workflows/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Germany & Israel Under DDoS Attacks: Weekly DDoS Threat Intelligence Analysis",
+      "completeness": "Low",
+      "threats": [
+        "Ddosia_botnet",
+        "Httpflood_technique",
+        "Synflood_technique",
+        "Ackflood_technique",
+        "Udpflood_technique",
+        "Icmpflood_technique",
+        "Tcpsynflood_technique"
+      ],
+      "geo": [
+        "Poland",
+        "Spain",
+        "Russia",
+        "Italy",
+        "Israeli",
+        "Israel",
+        "Berlin",
+        "Russian",
+        "Greenland",
+        "Germany",
+        "Ukraine",
+        "Middle east",
+        "Denmark",
+        "German",
+        "Deutsche",
+        "Czechia",
+        "Japan"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://socradar.io/blog/germany-israel-under-ddos-10-mar26/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Evil evolution: ClickFix and macOS infostealers",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Macc_stealer",
+        "Amos_stealer"
+      ],
+      "geo": [
+        "Usa",
+        "Belgium",
+        "India",
+        "Russian",
+        "America"
+      ],
+      "software": [
+        "macOS",
+        "OpenAI",
+        "chatgpt",
+        "Gatekeeper",
+        "Telegram",
+        "curl",
+        "Chromium",
+        "Firefox",
+        "Ledger Live",
+        "Electron",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "gzip",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "applescript"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/evil-evolution-clickfix-and-macos-infostealers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "GIBCRYPTO: The Destructive Ransomware with a Snake Keylogger Connection",
+      "completeness": "Medium",
+      "threats": [
+        "Snake_keylogger",
+        "Gibcrypto",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 9,
+      "software": [
+        "Windows Defender",
+        "Windows security",
+        "telegram",
+        "Twitter"
+      ],
+      "algorithms": [
+        "salsa20"
+      ],
+      "languages": [
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/gibcrypto-the-destructive-ransomware-with-a-snake-keylogger-connection/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Weaponizing Telegram Bots: How Threat Actors Exfiltrate Credentials",
+      "completeness": "Low",
+      "threats": [
+        "Agent_tesla"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "functions": [
+        "Bot",
+        "getMe",
+        "getUpdates"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cofense.com/blog/weaponizing-telegram-bots-how-threat-actors-exfiltrate-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Iran conflict drives heightened espionage activity against Middle East targets",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Israel",
+        "Iraq",
+        "Iran",
+        "Pakistan",
+        "India",
+        "Israeli",
+        "Middle east",
+        "Iranian",
+        "Syria",
+        "Belarus",
+        "China"
+      ],
+      "software": [
+        "Microsoft Outlook",
+        "Outlook",
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Proofpoint",
+        "Research"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/iran-conflict-drives-heightened-espionage-activity-against-middle-east-targets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "The Install Command Was the Attack: How InstallFix Is Weaponizing Claude Codes Popularity",
+      "completeness": "Low",
+      "threats": [
+        "Installfix_technique",
+        "Clickfix_technique",
+        "Acr_stealer",
+        "Amatera_stealer",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "macOS",
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.codeaintel.com/p/the-install-command-was-the-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Cracker of secrets: F6 investigated a new version of the Android Trojan Falcon",
+      "completeness": "Medium",
+      "threats": [
+        "Falconrat",
+        "Killbot",
+        "Anubis",
+        "Mamont_spy",
+        "Nfcgate_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Chinese",
+        "Australia"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "RuStore",
+        "Google Play",
+        "VKontakte",
+        "Viber",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "rc4",
+        "md5"
+      ],
+      "functions": [
+        "USSD",
+        "removeApp",
+        "SelfDefense",
+        "UpdateData",
+        "Insert_Or_Update_Bot_Info",
+        "getJSONArrayOfUIElems"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/falcon-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "RondoDox Botnet: From Zero to 174 Exploited Vulnerabilities",
+      "completeness": "Low",
+      "threats": [
+        "Rondodox",
+        "Rapperbot",
+        "Mirai",
+        "Xmrig_miner",
+        "React2shell_vuln"
+      ],
+      "geo": [
+        "Sweden",
+        "America",
+        "Tunisia",
+        "Canada",
+        "Brazil",
+        "Netherlands",
+        "Germany",
+        "Iran",
+        "China",
+        "Congo",
+        "Russia"
+      ],
+      "software": [
+        "Twitter",
+        "Android"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/rondodox-botnet-infrastructure-analysis",
+        "https://github.com/ray-project/ray/security/advisories/GHSA-q279-jhrf-cc6v",
+        "https://github.com/bitsight-research/threat\\_research/tree/main/rondodox"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "PixRevolution: The Agent-Operated Android Trojan Hijacking Brazils PIX Payments in Real Time",
+      "completeness": "Low",
+      "threats": [
+        "Pixrevolution"
+      ],
+      "geo": [
+        "Ita",
+        "Brazil",
+        "Polish",
+        "Portuguese",
+        "Brazilian",
+        "India",
+        "Brasil"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 10,
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "onInstallFinished",
+        "isEditable",
+        "dispatchGesture",
+        "getBoundsInScreen"
+      ],
+      "links": [
+        "https://zimperium.com/blog/pixrevolution-the-agent-operated-android-trojan-hijacking-brazils-pix-payments-in-real-time",
+        "https://github.com/Zimperium/IOC/tree/master/2026-03-PixRevolution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "APT Profile Earth Lusca",
+      "completeness": "Medium",
+      "threats": [
+        "Spyder",
+        "Sodamaster",
+        "Shadowpad",
+        "Xdealer",
+        "Reshell",
+        "Ktlvdoor",
+        "Cobalt_strike_tool",
+        "Spear-phishing_technique",
+        "Steganography_technique",
+        "Credential_dumping_technique",
+        "Dcsync_technique"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "China",
+        "Asia"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 44,
+      "software": [
+        "CHROMIUM",
+        "Linux",
+        "Openfire",
+        "Jenkins",
+        "Windows Service"
+      ],
+      "languages": [
+        "visual_basic",
+        "javascript",
+        "powershell",
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-earth-lusca/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Phishers hide scam links with IPv6 trick in free toothbrush emails",
+      "completeness": "Low",
+      "software": [
+        "Azure Blob"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/03/phishers-hide-scam-links-with-ipv6-trick-in-free-toothbrush-emails"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "Fileless Multi-Stage Remcos RAT: From Phishing to Memory-Resident Execution",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Lolbin_technique",
+        "Spear-phishing_technique",
+        "Tedy",
+        "Agent_tesla"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 15,
+      "algorithms": [
+        "base64",
+        "aes-256",
+        "aes",
+        "rc4",
+        "cbc"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/fileless-multi-stage-remcos-rat-phishing-to-memory/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-11",
+      "title": "HellsUchecker: ClickFix to blockchain-backed backdoor",
+      "completeness": "High",
+      "threats": [
+        "Hellsuchecker",
+        "Clickfix_technique",
+        "Lolbin_technique",
+        "Etherhiding_technique",
+        "Hellsgate_technique",
+        "Amos_stealer",
+        "Ocrfix_technique",
+        "Odyssey_stealer",
+        "Trojan.bat.agent.crd",
+        "Dropper/bat.agent.br",
+        "Polyglot_technique",
+        "Process_hacker_tool",
+        "Process_camouflage_technique",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Armenia",
+        "Russia",
+        "Moscow",
+        "Belarus",
+        "Azerbaijan",
+        "Tajikistan",
+        "Moldova",
+        "Georgia",
+        "Kyrgyzstan",
+        "Ukraine",
+        "Kazakhstan",
+        "Uzbekistan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare Turnstile",
+        "macOS",
+        "Windows TCP/IP",
+        "Unix",
+        "curl",
+        "Huorong",
+        "Visual Studio",
+        "NET Framework",
+        "gatekeeper",
+        "Xen",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-128-cbc",
+        "deflate",
+        "sha3",
+        "sha256",
+        "prng",
+        "xor",
+        "rc4",
+        "base64",
+        "chacha20",
+        "zip"
+      ],
+      "functions": [
+        "name",
+        "CreateObject",
+        "LastIndexOf",
+        "RPC",
+        "C2",
+        "GetStdHandle"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.derp.ca/research/hellsuchecker-clickfix-etherhiding/",
+        "https://github.com/kirkderp/yara"
+      ]
+    }
+  }
+]

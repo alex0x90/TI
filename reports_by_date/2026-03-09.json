@@ -1,0 +1,169 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-09",
+      "title": "Weaponizing LSPosed: Remote SMS Injection and Identity Spoofing in Modern Payment Ecosystems",
+      "completeness": "Medium",
+      "threats": [
+        "Lsposed_tool",
+        "Edxposed_tool",
+        "Hinatabot",
+        "Watering_hole_technique",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "India",
+        "Nepal",
+        "Berlin",
+        "Indian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "Telegram",
+        "WhatsApp",
+        "Flutter"
+      ],
+      "functions": [
+        "sender",
+        "getLine1Number"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/weaponizing-lsposed-remote-sms-injection-and-identity-spoofing-in-modern-payment-ecosystems",
+        "https://github.com/LSPosed/LSPosed"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-09",
+      "title": "Iranian APT MuddyWater Uses Dindoor Malware to Target U.S. Networks",
+      "completeness": "Low",
+      "threats": [
+        "Dindoor",
+        "Spear-phishing_technique",
+        "Fakeset",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "Israel",
+        "Israeli",
+        "Canadian",
+        "Iranian",
+        "Iran"
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "languages": [
+        "typescript",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/iran-muddywater-dindoor-malware-us-networks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-09",
+      "title": "Extended IOCs for TaxiSpy Android Banking Malware",
+      "completeness": "Low",
+      "threats": [
+        "Taxispy",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Android"
+      ],
+      "links": [
+        "https://zimperium.com/blog/extended-iocs-for-taxispy-android-banking-malware",
+        "https://github.com/Zimperium/IOC/tree/master/2026-03-TaxiSpyRat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-09",
+      "title": "OPERATION FALSE SIREN ANDROID SPYWARE CAMPAIGN",
+      "completeness": "High",
+      "threats": [
+        "Redalert",
+        "Smishing_technique",
+        "Umgdn",
+        "Tsunami_botnet",
+        "Alertx"
+      ],
+      "geo": [
+        "Israeli",
+        "Israel"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 16,
+      "software": [
+        "ANDROID",
+        "Google Play",
+        "APKTOOL"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "getInstallerPackageName",
+        "PackageManager",
+        "getApkContentsSigners",
+        "getSigningCertificateHistory",
+        "startForegroundService",
+        "startService",
+        "Gonomery",
+        "Petchary",
+        "onMessageReceived",
+        "Deifies",
+        "have more..."
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/operation-false-siren-android-spyware-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-09",
+      "title": "Quiz sites trick users into enabling unwanted browser notifications",
+      "completeness": "Low",
+      "geo": [
+        "Germany",
+        "Japan",
+        "Canada",
+        "France"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Adguard",
+        "Chromium",
+        "Android",
+        "MacOS",
+        "Linux",
+        "Chrome",
+        "Firefox"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/quiz-sites-trick-users-into-enabling-unwanted-browser-notifications"
+      ]
+    }
+  }
+]

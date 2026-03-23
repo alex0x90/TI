@@ -1,0 +1,45 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-01",
+      "title": "The Ghost in the Resolver: Abusing Windows nslookup for Clickfix Payloads",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ubuntu",
+        "sudo",
+        "Linux",
+        "Windows Event Viewer",
+        "Windows DNS"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://medium.com/@Mr.AnyThink/the-ghost-in-the-resolver-abusing-windows-nslookup-for-clickfix-payloads-d8e78c8468b3?source=rss-b61b59bd2c7c------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-01",
+      "title": "Yoroi Wallet Phishing Abuses GoTo Resolve and ScreenConnect for Device Takeover",
+      "completeness": "Low",
+      "threats": [
+        "Gotoresolve_tool",
+        "Screenconnect_tool",
+        "Logmein_tool"
+      ],
+      "wallets": [
+        "yoroi"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/03/02/yoroi-wallet-phishing-abuses-goto-resolve-and-screenconnect-for-device-takeover/"
+      ]
+    }
+  }
+]
