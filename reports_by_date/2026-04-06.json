@@ -1,0 +1,385 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Weaponizing CorMem.sys to Terminate Protected Processes",
+      "completeness": "Low",
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "GetNtoskrnlBaseQSI",
+        "GetNtoskrnlBaseVAScan",
+        "FindKernelExport",
+        "GetSystemEprocess",
+        "GetNtoskrnlBase",
+        "FindEprocess"
+      ],
+      "links": [
+        "https://t0asts.com/cormem",
+        "https://github.com/t0asts/cormemterminator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Million-dollar letter: Hive0117 hacks accountants' computers and steals money under the guise of wages",
+      "completeness": "Low",
+      "threats": [
+        "Darkwatchman"
+      ],
+      "geo": [
+        "Kazakhstan",
+        "Russian",
+        "Belarus",
+        "Moscow",
+        "Estonia",
+        "Lithuania",
+        "Russia"
+      ],
+      "links": [
+        "https://www.f6.ru/media-center/press-releases/hive0117-attacks-accountants/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Zero detection, three domain robocalls and a cloud credential collector: Inside the APT41 Winnti ELF backdoor revealed",
+      "completeness": "Medium",
+      "threats": [
+        "Pwnlnx_tool",
+        "Redxor_backdoor",
+        "Azazelfork",
+        "Sprysock",
+        "Melofee"
+      ],
+      "geo": [
+        "Singapore",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Kubernetes",
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://www.ctfiot.com/304685.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "RGB-Team: who is behind the CMoon stealer and where it came from",
+      "completeness": "Medium",
+      "threats": [
+        "Cmoon",
+        "Eternity_ransomware",
+        "Antivm_technique",
+        "Darkbuilder",
+        "Whitesnake_stealer",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "WordPress",
+        "QEMU",
+        "Windows Defender",
+        "bot",
+        "Flutter"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "WinAPI"
+      ],
+      "links": [
+        "https://securelist.ru/rgb-team/115109/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Advisory: Middle East Conflict & Cyber Escalation",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Dindoor",
+        "Stealc",
+        "Bibi-wiper",
+        "Hatef",
+        "Fakeset",
+        "Stagecomp",
+        "Darkcomp",
+        "Rclone_tool",
+        "Credential_harvesting_technique",
+        "Clickfix_technique",
+        "Splitdrop",
+        "Twintask_tool",
+        "Twintalk_tool",
+        "Ghostform",
+        "Lotuslite",
+        "Claimloader",
+        "Hoppingant",
+        "Canisterworm",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Pdq_connect_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Israel",
+        "Riyadh",
+        "Israeli",
+        "Iran",
+        "Russian",
+        "Canadian",
+        "Algeria",
+        "Tehran",
+        "Ireland",
+        "Cyprus",
+        "Lebanon",
+        "Qatar",
+        "Iraq",
+        "Africa",
+        "Jordan",
+        "Iranian",
+        "Asia",
+        "Middle east",
+        "Mongolia",
+        "Bahrain",
+        "Turkey",
+        "Kuwait",
+        "China",
+        "Turkish"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Instagram",
+        "Telegram",
+        "Starlink",
+        "Trivy",
+        "KeePass",
+        "WhatsApp",
+        "Kubernetes",
+        "Chrome",
+        "Zoom",
+        "Desktop se",
+        "have more..."
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "rc4",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/iran-us-israel-cyberwar-2026-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Mapping Ottercookie Infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Ottercookie",
+        "Invisibleferret",
+        "Beavertail"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "languages": [
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/mapping-ottercookie-infrastructure-1c49f0cd3883?source=rss-36e34fe15919------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Inside an AI‑enabled device code phishing campaign",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Bitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Node.js",
+        "Microsoft Office",
+        "Microsoft Entra",
+        "Office 365",
+        "Microsoft Exchange"
+      ],
+      "functions": [
+        "GetCredentialType",
+        "checkStatus"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "From ClickFix to MaaS: Exposing a Modular Windows RAT and Its Admin Panel",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Legionloader",
+        "Lumma_stealer"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Windows Registry",
+        "Windows Defender",
+        "Telegram"
+      ],
+      "algorithms": [
+        "xor",
+        "pbkdf2",
+        "base64",
+        "sha256",
+        "ecdh",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "setTimeout",
+        "reshuffleConfig"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/from-clickfix-to-maas-exposing-a-modular-windows-rat-and-its-admin-panel",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/blob/main/Malware/NodeJS\\_MAAS/IOCs/README.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Shub Stealers Fake Crypto Apps",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Amos_stealer",
+        "Odyssey_stealer"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "wallets": [
+        "ledgerlive",
+        "trezor"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/shub-stealers-fake-crypto-apps-d5e2a65618b7?source=rss-36e34fe15919------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Weaponizing Fear: Iran Conflict-Themed Phishing Uses Fake Emergency Alerts",
+      "completeness": "Low",
+      "geo": [
+        "Middle east",
+        "Iran",
+        "Israel"
+      ],
+      "links": [
+        "https://cofense.com/blog/weaponizing-fear-iran-conflict-themed-phishing-uses-fake-emergency-alerts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-06",
+      "title": "Storm-1175 focuses gaze on vulnerable web-facing assets in high-tempo Medusa ransomware operations",
+      "completeness": "High",
+      "threats": [
+        "Medusa_ransomware",
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Lolbin_technique",
+        "Atera_tool",
+        "N-able_tool",
+        "Dwagent_tool",
+        "Meshagent_tool",
+        "Anydesk_tool",
+        "Impacket_tool",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Rclone_tool",
+        "Samdumpz_tool",
+        "Psexecremote_tool"
+      ],
+      "geo": [
+        "Australia",
+        "United kingdom"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Exchange",
+        "Papercut",
+        "Ivanti",
+        "JetBrains TeamCity",
+        "GoAnywhere",
+        "SAP NetWeaver",
+        "look Web",
+        "Linux",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/04/06/storm-1175-focuses-gaze-on-vulnerable-web-facing-assets-in-high-tempo-medusa-ransomware-operations/"
+      ]
+    }
+  }
+]

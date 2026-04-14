@@ -1,0 +1,940 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "TasksJacker: Latest DPRK Attack Skips the Fake Interview and Goes Straight to Compromising GitHub Users",
+      "completeness": "High",
+      "threats": [
+        "Shai-hulud",
+        "Glassworm",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Dprk"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 12,
+      "software": [
+        "Visual Studio Code",
+        "curl",
+        "vscode",
+        "Linux",
+        "macOS",
+        "Node.js",
+        "Chrome",
+        "Firefox",
+        "Telegram",
+        "Discord",
+        "inux",
+        "have more..."
+      ],
+      "wallets": [
+        "tron",
+        "metamask",
+        "mainnet"
+      ],
+      "crypto": [
+        "aptos",
+        "binance",
+        "solana"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/tasksjacker-blog-post"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Threat Intelligence \\| APT41 group's latest Winnti ELF backdoor",
+      "completeness": "Low",
+      "threats": [
+        "Vmprotect_tool"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "WeChat"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "links": [
+        "https://www.ctfiot.com/304410.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "vSphere and BRICKSTORM Malware: A Defender's Guide",
+      "completeness": "Medium",
+      "threats": [
+        "Brickstorm",
+        "Bitlocker",
+        "Bricksteal",
+        "Lolbin_technique",
+        "Slaystyle",
+        "Mitm_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "vSphere",
+        "ESXi",
+        "Linux",
+        "Photon OS",
+        "Active Directory",
+        "BitLocker",
+        "vSphere ESXi",
+        "esxcli",
+        "vSphere Client",
+        "sudo",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha512"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/vsphere-brickstorm-defender-guide/",
+        "https://github.com/vmware/vcf-security-and-compliance-guidelines/tree/main/security-configuration-hardening-guide/vsphere",
+        "https://github.com/mandiant/vcsa-hardening-tool"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "STARDUST CHOLLIMA Likely Compromises Axios npm Package",
+      "completeness": "Low",
+      "threats": [
+        "Zshbucket",
+        "Invisibleferret",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "software": [
+        "Linux",
+        "macOS"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/stardust-chollima-likely-compromises-axios-npm-package/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "UAT-10608: Inside a large-scale automated credential harvesting operation targeting web applications",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Nexus_listener_tool",
+        "React2shell_vuln",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Stripe API",
+        "Node.js",
+        "k8s",
+        "Kubernetes",
+        "docker",
+        "OpenAI",
+        "Anthropic",
+        "SendGrid",
+        "Telegram",
+        "phpMyAdmin",
+        "have more..."
+      ],
+      "algorithms": [
+        "ed25519",
+        "base64"
+      ],
+      "functions": [
+        "getServerSideProps",
+        "getStaticProps"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-10608-inside-a-large-scale-automated-credential-harvesting-operation-targeting-web-applications/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2026/04"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "EtherRAT & SYS_INFO Module: C2 on Ethereum (EtherHiding), Target Selection, CDN-Like Beacons",
+      "completeness": "High",
+      "threats": [
+        "Etherrat",
+        "Etherhiding_technique",
+        "Tsundere",
+        "Clickfix_technique",
+        "Microsoft_quick_assist_tool",
+        "Lolbin_technique",
+        "Msi_loader"
+      ],
+      "geo": [
+        "Azerbaijani",
+        "Georgian",
+        "Russian",
+        "North korean",
+        "Belarusian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Microsoft Teams",
+        "EtherScan",
+        "Linux",
+        "OpenGL",
+        "macOS",
+        "Windows Defender Application Control",
+        "CURL",
+        "Active Directory"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "aes-256-cbc",
+        "aes"
+      ],
+      "functions": [
+        "setString",
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/etherrat-sys-info-module-c2-on-ethereum-etherhiding-target-selection-cdn-like-beacons",
+        "https://github.com/ben-sb/obfuscator-io-deobfuscator",
+        "https://github.com/ben-sb/obfuscator-io-deobfuscator/pull/52"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Malicious LNKs distributing Python-based backdoors and changes in distribution methods (Kimsuky Group)",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "task scheduler",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/93150/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "DPRK-Related Campaigns with LNK and GitHub C2",
+      "completeness": "Medium",
+      "threats": [
+        "Xenorat",
+        "Procmon_tool",
+        "Process_hacker_tool",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "Korea",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WinDump"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Ransomware with a Twizt: Inside the Phorpiex Botnet",
+      "completeness": "High",
+      "threats": [
+        "Phorpiex",
+        "Twizt_botnet",
+        "Lockbit",
+        "Vnc-scanner_tool",
+        "Bitsadmin_tool",
+        "Cryptoclip",
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Ukraine",
+        "Pakistan",
+        "China",
+        "Iran",
+        "Kazakhstan",
+        "Uzbekistan",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "Tor-Browser",
+        "Component Object Model",
+        "Windows Firewall"
+      ],
+      "wallets": [
+        "atomicwallet",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "crc-32",
+        "exhibit",
+        "zip",
+        "rc4",
+        "murmur3",
+        "murmur"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/ransomware-twizt-inside-phorpiex-botnet",
+        "https://github.com/Tennessene/LockBit",
+        "https://github.com/mandiant/flare-floss"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "AVrecon Malware-Infected Routers Exploited as Residential Proxies by SocksEscort",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Avrecon_rat",
+        "Socksescort",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "France",
+        "Dutch",
+        "Austria"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zyxel"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.fbi.gov/file-repository/cyber-alerts/avrecon-malware-infected-routers-exploited-as-residential-proxies-by-socksescort.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Venom Stealer Turns ClickFix Into a Full Exfiltration Pipeline",
+      "completeness": "Low",
+      "threats": [
+        "Venom_stealer",
+        "Clickfix_technique",
+        "Credential_harvesting_technique",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Redline_stealer",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Ireland",
+        "London",
+        "San francisco",
+        "United kingdom"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 10,
+      "software": [
+        "Embarcadero",
+        "macOS",
+        "curl",
+        "Chromium",
+        "Chrome",
+        "Unix"
+      ],
+      "wallets": [
+        "metamask",
+        "solflare",
+        "electrum",
+        "bitcoincore",
+        "tonkeeper"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.blackfog.com/venom-stealer-turns-clickfix-into-a-full-exfiltration-pipeline/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Qilin EDR killer infection chain",
+      "completeness": "Medium",
+      "threats": [
+        "Edr-killer",
+        "Qilin_ransomware",
+        "Shanya_tool",
+        "Iat_hooking_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows",
+        "Windows kernel",
+        "ThrottleStop",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "ResolveExportByHash",
+        "SetMemLayoutPointer"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/qilin-edr-killer/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/04/overview-of-ransomware-threats-in-japan.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "IndoHaxSec: Inside the Expanding Network of a Pro-Palestinian Hacktivist Collective",
+      "completeness": "Low",
+      "geo": [
+        "Israel",
+        "India",
+        "Pakistan",
+        "Indonesian",
+        "Iran",
+        "Israeli",
+        "Korean",
+        "Koreans",
+        "Palestine"
+      ],
+      "software": [
+        "Telegram",
+        "WhatsApp"
+      ],
+      "links": [
+        "https://stealthmole-intelligence-hub.blogspot.com/2026/03/indohaxsec-inside-expanding-network-of.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Breaking Aura: five obfuscation layers & hates sandboxes",
+      "completeness": "Medium",
+      "threats": [
+        "Aurastealer",
+        "Lumma_stealer",
+        "Heavens_gate_technique",
+        "Fragtor",
+        "Anydesk_tool",
+        "Qtox_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "OLE automation",
+        "Firefox",
+        "fsutil",
+        "Electrum-LTC",
+        "KeePass",
+        "Discord",
+        "Telegram",
+        "Steam",
+        "have more..."
+      ],
+      "wallets": [
+        "anoncoin",
+        "bbqcoin",
+        "coinomi",
+        "daedalus",
+        "dashcore",
+        "electron_cash",
+        "electrum",
+        "florincoin",
+        "freicoin",
+        "iocoin",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "bitcoin",
+        "dogecoin",
+        "ethereum",
+        "litecoin",
+        "megacoin",
+        "mincoin",
+        "namecoin",
+        "primecoin",
+        "terracoin",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "aes",
+        "fnv-1a",
+        "aes-256",
+        "base64",
+        "prng",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "pointer",
+        "setZeroData"
+      ],
+      "links": [
+        "https://www.derp.ca/research/aura-stealer-reverse-engineering/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Mustard Tempest and the multi-stage malware delivery chain",
+      "completeness": "Medium",
+      "threats": [
+        "Socgholish_loader",
+        "Rtf_template_inject_technique",
+        "Hijackloader",
+        "Deerstealer"
+      ],
+      "geo": [
+        "French",
+        "France",
+        "United kingdom",
+        "Russian",
+        "Germany",
+        "Singapore",
+        "Netherlands",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Google Chrome",
+        "rome lan",
+        "Microsoft Defender",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1017942/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Mass PolyShell attack wave hits 471 stores in one hour",
+      "completeness": "Low",
+      "threats": [
+        "Polyshell_vuln"
+      ],
+      "software": [
+        "Shopware"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://sansec.io/research/polyshell-mass-attack-wave"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "New Whitepaper: Stealthy BPFDoor Variants are a Needle That Looks Like Hay",
+      "completeness": "High",
+      "threats": [
+        "Bpfdoor",
+        "Httpshell_tool",
+        "Icmpshell_tool",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "Unix",
+        "Gatekeeper",
+        "docker",
+        "nginx",
+        "OpenSSL",
+        "Linux"
+      ],
+      "algorithms": [
+        "exhibit",
+        "rc4"
+      ],
+      "functions": [
+        "socket",
+        "fork",
+        "dup2"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/new-whitepaper-stealthy-bpfdoor-variants-are-a-needle-that-looks-like-hay",
+        "https://github.com/gwillgues/BPFDoor/blob/main/bpfdoor.c",
+        "https://github.com/rapid7/Rapid7-Labs/tree/main/BPFDoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Joyce Malave From Boeing Wants a Quote: Inside a 6-Stage Cobalt Strike Campaign With Static Encryption Keys and a Live Filemail Payload",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Spear-phishing_technique",
+        "Freddybeardropper",
+        "Lolbin_technique",
+        "Lolbas_technique",
+        "Neptune_tool"
+      ],
+      "geo": [
+        "Norwegian",
+        "Italian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Microsoft Office Word",
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc",
+        "sha256",
+        "aes",
+        "xor",
+        "zip",
+        "aes-256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/boeing-rfq-nkfz5966-cobalt-strike-6-stage-filemail"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "PlugX : Mustang Panda APT",
+      "completeness": "High",
+      "threats": [
+        "Plugx_rat",
+        "Spear-phishing_technique",
+        "Junk_code_technique",
+        "Dll_sideloading_technique",
+        "Modern_loader"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256",
+        "zip",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "mw_ReflectiveLoader",
+        "GetProcAddress"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://0x3obad.github.io/posts/plugx-writeup/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "BLACKNET-00: The Ransomware-as-a-Service Platform That Weaponizes Mediocrity",
+      "completeness": "Medium",
+      "threats": [
+        "Blacknet-00_tool",
+        "C3rb3r",
+        "Lockbit",
+        "Revil",
+        "Blackcat",
+        "Dll_hijacking_technique",
+        "Conficker",
+        "Wannacry",
+        "Eternalblue_vuln",
+        "Ransomhub",
+        "Qilin_ransomware",
+        "Akira_ransomware",
+        "Babuk",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_list": [
+        "Soft: Telegram",
+        "Windows Defender",
+        "Windows security"
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes",
+        "chacha20"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/blacknet-00-ransomware-as-a-service-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Iran-nexus Password Spray Campaign Targeting Cloud Environments, with a Focus on the Middle East",
+      "completeness": "Low",
+      "threats": [
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Middle east",
+        "Israeli",
+        "Saudi arabia",
+        "Israel",
+        "United kingdom",
+        "United arab emirates",
+        "Iran",
+        "Arab emirates"
+      ],
+      "software": [
+        "Internet Explorer"
+      ],
+      "links": [
+        "https://blog.checkpoint.com/research/iran-nexus-password-spray-campaign-targeting-cloud-environments-with-a-focus-on-the-middle-east/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Inside TeamPCP’s Shell Arsenal",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Credential_harvesting_technique",
+        "Dual_loader",
+        "Canisterworm",
+        "Credential_dumping_technique",
+        "Frpc_tool",
+        "Trufflehog_tool",
+        "Adaptixc2_tool",
+        "Havoc",
+        "Steganography_technique",
+        "Multiverze"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 12,
+      "software": [
+        "TRIVY",
+        "LITELLM",
+        "Docker",
+        "Kubernetes",
+        "Curl",
+        "k8s",
+        "trycloudflare",
+        "8s en",
+        "udo) t",
+        "penssl rs",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "rsa-4096",
+        "md5",
+        "aes-256",
+        "aes",
+        "aes-256-cbc",
+        "pbkdf2"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/04/02/inside-teampcps-shell-arsenal/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "From Axios NPM Supply Chain Attack to Tracking DPRK’s BlueNoroff",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "Canadian"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1059.002",
+        "T1059.004",
+        "T1059.007",
+        "T1071.001",
+        "T1078",
+        "T1105",
+        "T1195.001",
+        "T1585.002"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "Node.js",
+        "curl",
+        "Unix"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://medium.com/@DCSO_CyTec/from-axios-npm-supply-chain-attack-to-tracking-dprks-bluenoroff-c9080c9b4ce3?source=rss-7c32125308fc------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-02",
+      "title": "Cookie-controlled PHP webshells: A stealthy tradecraft in Linux hosting environments",
+      "completeness": "Low",
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "Linux",
+        "Microsoft Defender",
+        "php-fpm",
+        "cPanel",
+        "Microsoft Defender for Endpoint",
+        "efender coverage",
+        "Panel",
+        "icrosoft Defender for Endpoint",
+        "efender coverage",
+        "nginx",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/04/02/cookie-controlled-php-webshells-tradecraft-linux-hosting-environments/"
+      ]
+    }
+  }
+]

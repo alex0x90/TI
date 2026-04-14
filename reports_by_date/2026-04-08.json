@@ -1,0 +1,421 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "Velora (formerly ParaSwap) SDK Version 9.4.1 Compromised And Installing Malware",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Velora",
+        "ParaSwap",
+        "curl",
+        "macOS",
+        "Node.js",
+        "Linux",
+        "Dependabot"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/velora-hacked",
+        "https://github.com/VeloraDEX/paraswap-sdk/issues"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "ClickFix technique uses Script Editor instead of Terminal on macOS",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Amos_stealer"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "base64"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/clickfix-macos-script-editor-atomic-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "CamoLeak: How GitHub Copilot Became An Exfiltration Channel",
+      "completeness": "Low",
+      "threats": [
+        "Camoleak_vuln",
+        "Venom_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Ireland",
+        "London",
+        "San francisco"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Embarcadero",
+        "Outlook"
+      ],
+      "links": [
+        "https://www.blackfog.com/camoleak-how-github-copilot-became-an-exfiltration-channel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "Notorious hacker returns with a new Mac stealer targeting $10K+ crypto wallets",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Notnullosx",
+        "Garble_tool",
+        "Supply_chain_technique",
+        "Traffer_technique",
+        "Cthulhu_stealer",
+        "Amos_stealer",
+        "Banshee",
+        "Poseidon_stealer"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine",
+        "Spain",
+        "Vietnam",
+        "Taiwan",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "iMessage",
+        "Firefox",
+        "Telegram",
+        "Chrome",
+        "IndexedDB",
+        "Ledger Live",
+        "curl"
+      ],
+      "wallets": [
+        "bitcoincore",
+        "electrum",
+        "wassabi",
+        "exodus_wallet",
+        "trezor",
+        "metamask"
+      ],
+      "algorithms": [
+        "sha256",
+        "pbkdf2",
+        "base64",
+        "3des",
+        "gzip",
+        "aes-cbc"
+      ],
+      "functions": [
+        "SetOffline",
+        "WriteOutbox"
+      ],
+      "links": [
+        "https://moonlock.com/notorious-hacker-returns-notnullosx-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "Beyond BITTER: MENA Civil Society Targeted in Hack-For-Hire Operation Linked to BITTER APT",
+      "completeness": "High",
+      "threats": [
+        "Hack-for-hire_technique",
+        "Prospy",
+        "Spear-phishing_technique",
+        "Darksword_exploitkit",
+        "Coruna_tool",
+        "Tospy",
+        "Sockpuppet_vuln",
+        "Qshing_technique",
+        "Dracarys",
+        "Bitterdawn"
+      ],
+      "geo": [
+        "United kingdom",
+        "Egypt",
+        "China",
+        "Saudi arabia",
+        "Arab emirates",
+        "Pakistan",
+        "Mena",
+        "Bahraini",
+        "Bahrain",
+        "Egyptian",
+        "Indian",
+        "Middle east",
+        "Bangladesh",
+        "Asia",
+        "United arab emirates",
+        "Columbia",
+        "Lebanon",
+        "Turkey",
+        "Russian"
+      ],
+      "software": [
+        "Android",
+        "ChromeOS",
+        "iMessage",
+        "Zoom",
+        "Microsoft Teams",
+        "Microsoft Office 365",
+        "Google Play",
+        "Telegram",
+        "Whatsapp",
+        "Twitter",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha1"
+      ],
+      "languages": [
+        "java",
+        "php",
+        "javascript",
+        "kotlin"
+      ],
+      "links": [
+        "https://security.lookout.com/threat-intelligence/article/bitter-hack-for-hire",
+        "https://github.com/stamparm/maltrail",
+        "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt\\_BITTER.txt#L1428"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "FortiGate CVE-2025-59718 Exploitation: Incident Response Findings",
+      "completeness": "Medium",
+      "threats": [
+        "Mimikatz_tool",
+        "Credential_dumping_technique",
+        "Advanced-port-scanner_tool",
+        "Akira_ransomware"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "PsExec",
+        "Windows Registry",
+        "sysinternals",
+        "Velociraptor"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/ve-fortigate-cve-2025-59718-exploitation-incident-response-ir-findings"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "Cracks in the Bedrock: Escaping the AWS AgentCore Sandbox",
+      "completeness": "Low",
+      "threats": [
+        "Dns_tunneling_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "AgentCore",
+        "PAN-OS"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/bypass-of-aws-sandbox-network-isolation-mode/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "Remus: Unmasking The 64-bit Variant of the Infamous Lumma Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Remus",
+        "Dead_drop_technique",
+        "Antivm_technique",
+        "Sandbox_evasion_technique",
+        "Etherhiding_technique",
+        "Tenzor",
+        "Voidstealer",
+        "Rhadamanthys",
+        "Aurastealer",
+        "Heavens_gate_technique"
+      ],
+      "software": [
+        "Steam",
+        "Telegram",
+        "Chromium",
+        "chrome",
+        "VirtualBox",
+        "Xen",
+        "Outlook"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "crc-32",
+        "fnv-1a",
+        "sha256",
+        "prng",
+        "chacha20"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/remus-64bit-variant-of-lumma-stealer",
+        "https://github.com/gendigitalinc/ioc/tree/master/Remus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "Advisory on DPRK (UNC1069) Fake Microsoft Teams and Zoom calls",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "Korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Zoom",
+        "Telegram",
+        "Slack",
+        "macOS",
+        "Linux",
+        "1Password",
+        "Bitwarden"
+      ],
+      "functions": [
+        "Zoom"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://radar.securityalliance.org/advisory-on-dprk-unc1069-fake-microsoft-teams-and-zoom-calls/",
+        "https://github.com/MetaMask/eth-phishing-detect?ref=radar.securityalliance.org",
+        "https://github.com/axios/axios/issues/10636?ref=radar.securityalliance.org"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "New Lua-based malware “LucidRook” observed in targeted attacks against Taiwanese organizations",
+      "completeness": "High",
+      "threats": [
+        "Lucidrook",
+        "Spear-phishing_technique",
+        "Lucidpawn",
+        "Lucidknight",
+        "Lolbin_technique",
+        "Lolbas_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Lucid_tool"
+      ],
+      "geo": [
+        "China",
+        "Taiwan",
+        "Taiwanese",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Microsoft Edge",
+        "NET framework"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "rust",
+        "powershell",
+        "lua"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/new-lua-based-malware-lucidrook/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/04/new-lua-based-malware-lucidrook.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-08",
+      "title": "Ghost Gist",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Nircmd_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian"
+      ],
+      "software": [
+        "Windows Firewall"
+      ],
+      "algorithms": [
+        "xor",
+        "deflate",
+        "zip"
+      ],
+      "functions": [
+        "ReadOnly"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1020534/"
+      ]
+    }
+  }
+]

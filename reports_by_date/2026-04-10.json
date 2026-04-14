@@ -1,0 +1,306 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-10",
+      "title": "Fake Claude site installs malware that gives attackers access to your computer",
+      "completeness": "Low",
+      "threats": [
+        "Plugx_rat",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_list": [
+        "ChatGPT TTPs: do not use without manual check T1027",
+        "T1036.005",
+        "T1059.005",
+        "T1070.004",
+        "T1140",
+        "T1204.002",
+        "T1547.001",
+        "T1564.003",
+        "T1574.002",
+        "T1583.001",
+        "have more..."
+      ],
+      "software": [
+        "Claude",
+        "Anthropic",
+        "Anthropic Claude"
+      ],
+      "algorithms": [
+        "xor",
+        "zip"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/04/fake-claude-site-installs-malware-that-gives-attackers-access-to-your-computer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-10",
+      "title": "LOLBins - Analyzing Attack Techniques with MSBuild",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique",
+        "Dll_sideloading_technique"
+      ],
+      "software": [
+        "Windows Defender",
+        "Outlook"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/93289/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-10",
+      "title": "The AI-Assisted Breach of Mexico's Government Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Vulmap_tool",
+        "Residential_proxy_technique",
+        "Chisel_tool",
+        "Proxychains_tool",
+        "Petitpotam_vuln",
+        "Printerbug_tool",
+        "Password_spray_technique",
+        "Eternalblue_vuln",
+        "As-rep_roasting_technique",
+        "Secretsdump_tool",
+        "Kerbrute_tool",
+        "Dcsync_technique",
+        "Crackmapexec_tool",
+        "Ntlmrelayx_tool",
+        "Pwnkit_tool"
+      ],
+      "geo": [
+        "Mexico",
+        "Mexican",
+        "Spanish"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Anthropic",
+        "Claude",
+        "GPT-4",
+        "Active Directory",
+        "Zimbra",
+        "Crontab",
+        "psexec",
+        "curl",
+        "Flask"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "base64",
+        "rsa-1024"
+      ],
+      "functions": [
+        "execute"
+      ],
+      "languages": [
+        "powershell",
+        "java",
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://cdn.prod.website-files.com/69944dd945f20ca4a27a7c47/69d8bb5aea59e31efb3b8a7f_Tech_Report_ai_breach_mex_gov.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-10",
+      "title": "Dissection of a BEC: The Entry",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique",
+        "Password_spray_technique",
+        "Aitm_technique",
+        "Evilproxy_tool",
+        "Evilginx_tool"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Azure AD",
+        "Outlook",
+        "Microsoft Office",
+        "Windows authentication",
+        "Node.js",
+        "Windows Hello"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://odiesec.io/blog/bec-the-entry/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-10",
+      "title": "Cracking a .NET Crypter to Extract a Weaponized XWorm: Bootkit, Rootkit, and a Zero-Day UAC Bypass",
+      "completeness": "High",
+      "threats": [
+        "Uac_bypass_technique",
+        "Xworm_rat",
+        "R77rk_tool",
+        "Blacklotus",
+        "Confuserex_tool",
+        "Dll_injection_technique",
+        "Process_injection_technique",
+        "Mitm_technique",
+        "Amsi_bypass_technique",
+        "Logofail_vuln",
+        "Dinvoke_tool"
+      ],
+      "geo": [
+        "Rus"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 15,
+      "software": [
+        "Windows kernel",
+        "Windows Error Reporting",
+        "indows Defender (a",
+        "Windows Defender",
+        "bcdedit",
+        "Linux",
+        "Ubuntu",
+        "Fedora",
+        "Debian",
+        "Windows setup",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-128-cbc",
+        "sha256",
+        "aes",
+        "pbkdf2",
+        "md5",
+        "rc4",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "CreateDecryptor",
+        "GetBytes",
+        "GetExecutingAssembly",
+        "GetEnvironmentVariable",
+        "WriteAllBytes",
+        "GetObject",
+        "TaskClient",
+        "TaskWatchDog",
+        "SetProcessCritical",
+        "CreateFileMapping",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "dotnet",
+        "python"
+      ],
+      "links": [
+        "https://taogoldi.github.io/reverse-engineer/blog/xworm-crypter-bootkit-rootkit/",
+        "https://github.com/taogoldi/reverse-engineer",
+        "https://github.com/bytecode77/r77-rootkit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-10",
+      "title": "Dark Web Profile: TeamPCP",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "React2shell_vuln",
+        "Credential_harvesting_technique",
+        "Canisterworm",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Iran"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 11,
+      "software": [
+        "Docker",
+        "OpenVSX",
+        "Kubernetes",
+        "Trivy",
+        "LiteLLM",
+        "Telegram",
+        "systemd",
+        "PostgreSQL",
+        "Trivy Docker",
+        "OpenAI",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes-256-cbc",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-teampcp/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-10",
+      "title": "APT-C-49 (OilRig) Multi-Stage Phishing Attack Campaign Analysis Using the Latest Hot Social Events in Iran as Bait",
+      "completeness": "Low",
+      "threats": [
+        "Steganography_technique",
+        "Saitama"
+      ],
+      "geo": [
+        "Iranian",
+        "Iran",
+        "Middle east",
+        "Asia"
+      ],
+      "software": [
+        "Telegram",
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "InitializeNewDomain",
+        "ExecuteCoreLogic"
+      ],
+      "links": [
+        "https://www.ctfiot.com/305053.html"
+      ]
+    }
+  }
+]

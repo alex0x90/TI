@@ -1,0 +1,485 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Axios supply chain attack: How a compromised npm package delivered RAT malware",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "Node.js",
+        "MacOS",
+        "Linux",
+        "curl",
+        "url -o"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Do-Action-Scpt",
+        "getModified",
+        "getCreated",
+        "MakeStatusString"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/axios-supply-chain-attack-how-a-compromised-npm-package-delivered-rat-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Mirax: a new Android RAT turning infected devices into potential residential proxy nodes",
+      "completeness": "High",
+      "threats": [
+        "Residential_proxy_technique",
+        "Mirax",
+        "Yamux_tool",
+        "Goldcrypt_tool",
+        "Virbox_tool",
+        "Albiriox",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "French",
+        "Japanese",
+        "Italian",
+        "German",
+        "Israeli",
+        "Polish",
+        "Slovenian",
+        "Chinese",
+        "Hungarian",
+        "Spain",
+        "Spanish",
+        "Portuguese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Instagram",
+        "Google Play",
+        "Telegram"
+      ],
+      "algorithms": [
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "getBlockedApps",
+        "getAvailableCameras",
+        "getCameraStatus",
+        "getClipboard",
+        "getDeviceState",
+        "getExternalTemplatesList",
+        "getExternalTemplatesPath",
+        "getHtmlInjectionStatus",
+        "getHtmlTemplates",
+        "getInstalledApps",
+        "have more..."
+      ],
+      "links": [
+        "https://www.cleafy.com/cleafy-labs/mirax-a-new-android-rat-turning-infected-devices-into-potential-residential-proxy-nodes",
+        "https://github.com/deepfield/public-research/blob/main/cecbot/report.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Janela RAT — Advanced Multi-Stage Attack on LATAM FinTech",
+      "completeness": "Medium",
+      "threats": [
+        "Janelarat",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Chile",
+        "Latam",
+        "Mexico",
+        "Colombia",
+        "India",
+        "Latin america"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "CollectRefresh"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://assets.kpmg.com/content/dam/kpmgsites/in/pdf/2025/07/kpmg-ctip-janela-rat-22-jul-2025.pdf.coredownload.inline.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Kimsuky APT 组织钓鱼样本分析",
+      "completeness": "Medium",
+      "threats": [
+        "Chrome_remote_desktop_tool",
+        "Appleseed",
+        "Icmluautil_tool",
+        "Lolbin_technique",
+        "Anydesk_tool",
+        "Uac_bypass_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "Japan",
+        "Korea"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "curl",
+        "载器并落盘",
+        "I Crea",
+        "esktop 安",
+        "Chrome",
+        "e Chrome Remote",
+        "Google Chrome",
+        "Google",
+        "mote Des",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "shellexec",
+        "GetType",
+        "Write-Output"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://sadsec.com/redteaming/ir-dprk-apt-phishing/",
+        "https://github.com/selectarget"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Pretexting-based target penetration by APT37: Analyzing Facebook reconnaissance and software tampering attacks",
+      "completeness": "High",
+      "threats": [
+        "Process_camouflage_technique",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Code_cave_technique",
+        "Process_injection_technique",
+        "Cryptopp_tool",
+        "Rokrat",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Japanese",
+        "Korean",
+        "North korea",
+        "North korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Sysinternals",
+        "Dropbox",
+        "Astrill VPN"
+      ],
+      "algorithms": [
+        "exhibit",
+        "aes-cbc",
+        "zip",
+        "aes",
+        "md5",
+        "xor",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "get-EIP",
+        "InternetOpenUrlA",
+        "InternetReadFile"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/pretexting"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Post-Sanction Persistence: Triad Nexus' Operations Infrastructure Reborn as Threat Actor Distances Activity from FUNNULL CDN",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Canada",
+        "Hong kong",
+        "Asia",
+        "Vietnam",
+        "Chinese",
+        "America",
+        "Vietnamese",
+        "Indonesian",
+        "Spanish"
+      ],
+      "software": [
+        "Audacity",
+        "Telegram"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/triad-nexus-funnull-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "When Trust Becomes a Weapon: Google Cloud Storage Phishing Deploying Remcos RAT",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat",
+        "Process_injection_technique",
+        "Credential_harvesting_technique",
+        "Process_hollowing_technique",
+        "Lolbin_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Android",
+        "Windows Registry"
+      ],
+      "crypto": [
+        "ripple"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/phishing-google-drive-remcos/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Stardrop Supply Chain Attack Targets Venture Capital Firms, Luxury Brands, and AI Companies",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Riyadh",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "OpenAI",
+        "Anthropic",
+        "Cloudflare R2",
+        "MacOS",
+        "Linux"
+      ],
+      "crypto": [
+        "arbitrum"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/stardrop-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "Iranian-Affiliated APT Targeting of Rockwell/Allen-Bradley PLCs",
+      "completeness": "Low",
+      "threats": [
+        "Webadmin_tool"
+      ],
+      "geo": [
+        "Spain",
+        "Iran",
+        "Iceland",
+        "Italy",
+        "Romania",
+        "American",
+        "Iranian",
+        "Taiwan"
+      ],
+      "software": [
+        "Windows image",
+        "Windows shell"
+      ],
+      "links": [
+        "https://censys.com/blog/iranian-affiliated-apt-targeting-rockwell-allen-bradley-plcs/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "CPU-Z / HWMonitor watering hole infection – a copy-pasted attack",
+      "completeness": "Medium",
+      "threats": [
+        "Watering_hole_technique",
+        "Dll_sideloading_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "China",
+        "Brazil",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "CPU-Z",
+        "HWMonitor"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/tr/cpu-z/119365/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "JitterDropper",
+      "completeness": "Low",
+      "threats": [
+        "Jitterdropper",
+        "Donut",
+        "Vidar_stealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "pixeldrain"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "bcrypt",
+        "aes-256-gcm",
+        "xor"
+      ],
+      "functions": [
+        "Sleep"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://research.openanalysis.net/jitterdropper/dropper/rust/srdi/donut/pixeldrain/2026/04/13/jitterdropper.html",
+        "https://github.com/OALabs/research/tree/master/\\_notebooks/2026-04-13-jitterdropper.ipynb",
+        "https://github.com/OALabs/UnpacMe-IDA-Byte-Search"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "STX RAT: A new RAT in 2026 with Infostealer Capabilities",
+      "completeness": "High",
+      "threats": [
+        "Stxrat",
+        "Hvnc_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "VirtualBox",
+        "QEMU",
+        "Windows Terminal",
+        "Windows Defender",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Epic Privacy Browser",
+        "WinSCP",
+        "Litecoin-Qt",
+        "Bitcoin-Qt",
+        "Windows Defender Application Control",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash",
+        "electrum"
+      ],
+      "algorithms": [
+        "curve25519",
+        "xxtea",
+        "xor",
+        "aes-128-ctr",
+        "chacha20-poly1305",
+        "ecdh",
+        "base64",
+        "sha1",
+        "poly1305",
+        "ed25519",
+        "chacha20",
+        "aes"
+      ],
+      "functions": [
+        "bytearray"
+      ],
+      "languages": [
+        "jscript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/stx-rat-a-new-rat-in-2026-with-infostealer-capabilities",
+        "https://github.com/eSentire/iocs/blob/main/STX%20RAT/STXRATIdaPython.zip"
+      ]
+    }
+  }
+]

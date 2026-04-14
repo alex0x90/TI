@@ -1,0 +1,478 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Powercat malware campaign: Fake game cheats deliver infostealer targeting Discord, Roblox, and crypto wallets",
+      "completeness": "High",
+      "threats": [
+        "Powercat_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Roblox",
+        "Telegram",
+        "VirtualBox",
+        "Qemu",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Vivaldi"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "tronlink",
+        "safepal"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/powercat-malware-campaign-fake-game-cheats-deliver-infostealer-targeting-discord-roblox-and-crypto-wallets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Dead Drop Resolver technique in Spotify and Chess",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique",
+        "Maskgram"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Steam",
+        "Chromium",
+        "Deezer"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "sha1",
+        "rc4",
+        "xor",
+        "sha256"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6482/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "A Sliver dropper that asks GPT-4 for permission",
+      "completeness": "Low",
+      "threats": [
+        "Sliver_c2_tool",
+        "Rportfwd_tool",
+        "Wgsocks_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 3,
+      "software": [
+        "GPT-4",
+        "OpenAI",
+        "chrome",
+        "firefox",
+        "outlook",
+        "WireGuard",
+        "wolfSSL"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "rc4",
+        "base64",
+        "xor",
+        "salsa20",
+        "murmur3",
+        "md5",
+        "aes"
+      ],
+      "functions": [
+        "CreateNamedPipePivotListener",
+        "CreateTCPPivotListener",
+        "GetSystem",
+        "MakeToken",
+        "GetPrivs"
+      ],
+      "links": [
+        "https://www.derp.ca/research/ai-gated-sliver-dropper/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Ivanti EPMM Exploi",
+      "completeness": "Low",
+      "threats": [
+        "Antsword"
+      ],
+      "software": [
+        "Ivanti EPMM",
+        "Ivanti"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://labs.withsecure.com/publications/ivanti-epmm-exploitation.html",
+        "https://github.com/AntSwordProject/AntSword-JSP-Template?tab=readme-ov-file#shell",
+        "https://github.com/AntSwordProject/AntSword-JSP-Template/blob/master/src/base/Info.java"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Bearlyfy released a genie",
+      "completeness": "Low",
+      "threats": [
+        "Genielocker",
+        "Cloudflared_tool",
+        "Localtonet_tool",
+        "Neo-regeorg_tool",
+        "Meshcentral_tool",
+        "Rudesktop_tool",
+        "Softperfect_netscan_tool",
+        "Fscan_tool",
+        "Adrecon_tool",
+        "Impacket_tool",
+        "Psexec_tool",
+        "Paexec_tool",
+        "Rubeus_tool",
+        "Lockbit",
+        "Babuk",
+        "Hellokitty",
+        "Fivehands",
+        "Venus_ransomware"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian"
+      ],
+      "software": [
+        "Bitrix",
+        "TrueConf",
+        "ществляется с испо",
+        "азличных встроенных оснасток"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.securitylab.ru/blog/company/F6/360061.php",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/f6-dfir&utm\\_source=Securitylab.ru",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/f6-dfir/Ransomware/tree/main/Bearlyfy/GenieLocker&utm\\_source=Securitylab.ru"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "InterLock: full tooling teardown of a ransomware operation",
+      "completeness": "High",
+      "threats": [
+        "Interlock",
+        "Screenconnect_tool",
+        "Nodesnake",
+        "Ntlmthief_tool",
+        "Cridex"
+      ],
+      "geo": [
+        "African"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Unix",
+        "ESXi",
+        "Windows Defender",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "prng",
+        "aes-cbc",
+        "murmur3",
+        "aes",
+        "sha256",
+        "aes-256",
+        "aes-256-cbc",
+        "xor",
+        "rsa-4096",
+        "rc4"
+      ],
+      "functions": [
+        "rand",
+        "clock",
+        "ReadFileThread",
+        "WriteFileThread",
+        "generateKey",
+        "cbc_encrypt",
+        "InternetDB",
+        "TaskSystem"
+      ],
+      "languages": [
+        "java",
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.derp.ca/research/interlock-tooling-teardown/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Riding the Rails: Threat Actors Abuse Railway.com PaaS as Microsoft 365 Token Attack Infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Eviltokens_tool",
+        "Credential_harvesting_technique",
+        "Bitm_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Canada",
+        "New zealand",
+        "Australia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Dynamics 365",
+        "telegram",
+        "Office 365",
+        "AWS Amplify",
+        "Chrome",
+        "macOS Chrome",
+        "Firefox",
+        "Linux Chrome",
+        "Linux",
+        "Microsoft Entra",
+        "have more..."
+      ],
+      "links": [
+        "https://www.huntress.com/blog/railway-paas-m365-token-replay-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Kamasers Analysis: A Multi-Vector DDoS Botnet Targeting Organizations Worldwide",
+      "completeness": "Medium",
+      "threats": [
+        "Kamasers",
+        "Dead_drop_technique",
+        "Gcleaner",
+        "Amadey",
+        "Httpflood_technique",
+        "Tcpflood_technique",
+        "Udados",
+        "Latrodectus",
+        "Udpflood_technique",
+        "Slowloris_technique",
+        "Dns_amplification_technique",
+        "Synflood_technique",
+        "Ackflood_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Poland",
+        "France",
+        "Latam",
+        "Switzerland",
+        "Germany",
+        "Spanish"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Android",
+        "Telegram",
+        "Dropbox",
+        "Etherscan"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/kamasers-technical-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "TeamPCP’s Checkmarx GitHub Actions Attack: What You Need to Know",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Credential_stealing_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Tehran",
+        "Iran",
+        "Iranian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 11,
+      "software": [
+        "Trivy",
+        "Docker",
+        "Kubernetes",
+        "OpenVSX",
+        "Trivy Docker",
+        "litellm",
+        "Telegram",
+        "trycloudflare",
+        "K8s",
+        "systemd",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes-256-cbc",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/teampcp-checkmarx-github-actions-attack/",
+        "https://github.com/aquasecurity/trivy/security/advisories/GHSA-69fq-xp46-6x23",
+        "https://github.com/aquasecurity/trivy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "SmartApeSG campaign pushes Remcos RAT, NetSupport RAT, StealC, and Sectop RAT (ArechClient2)",
+      "completeness": "Low",
+      "threats": [
+        "Remcos_rat",
+        "Netsupportmanager_rat",
+        "Sectop_rat",
+        "Stealc",
+        "Clickfix_technique",
+        "Dll_sideloading_technique"
+      ],
+      "algorithms": [
+        "zip",
+        "deflate",
+        "sha256"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/32826"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Who Runs Cl0p? Inside the Most Elusive Ransomware Operation in the World",
+      "completeness": "Low",
+      "threats": [
+        "Clop",
+        "Hvnc_tool",
+        "Blackbasta",
+        "Darkgate",
+        "Emotet",
+        "Angler_tool",
+        "Royal_ransomware",
+        "Devman",
+        "Qakbot",
+        "Lockbit"
+      ],
+      "geo": [
+        "Russia",
+        "Poland",
+        "Kaliningrad",
+        "Russian",
+        "Berlin",
+        "Ukrainian"
+      ],
+      "software": [
+        "Jabber",
+        "Linux",
+        "Ivanti",
+        "Telegram",
+        "MOVEit",
+        "Windows Defender"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://rmoskovy.github.io/posts/who-runs-clop-ransomware-investigation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-25",
+      "title": "Illuminating VoidLink: Technical analysis of the VoidLink rootkit framework",
+      "completeness": "Medium",
+      "threats": [
+        "Voidlink",
+        "Diamorphine_rootkit"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Ubuntu"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "kallsyms_lookup_name",
+        "find_symbol_flexible",
+        "filp_open",
+        "tcp4_seq_show",
+        "such",
+        "bpf_probe_write_user",
+        "NLMSG_NEXT",
+        "prepare_creds",
+        "commit_creds",
+        "module_init",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/illuminating-voidlink"
+      ]
+    }
+  }
+]

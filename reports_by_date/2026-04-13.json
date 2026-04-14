@@ -1,0 +1,217 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-13",
+      "title": "108 Chrome Extensions Linked to Data Exfiltration and Session Theft via Shared C2 Infrastructure",
+      "completeness": "Medium",
+      "threats": [
+        "Zeus"
+      ],
+      "geo": [
+        "Russian",
+        "French",
+        "Indian",
+        "Ukraine",
+        "American",
+        "Pol",
+        "Egypt",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 6,
+      "software": [
+        "Chrome",
+        "Telegram",
+        "Outlook",
+        "TikTok",
+        "PostgreSQL",
+        "Kitty"
+      ],
+      "functions": [
+        "loadInfo",
+        "getSessionDataJson",
+        "getInfo",
+        "setInterval",
+        "setTimeout"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://socket.dev/blog/108-chrome-ext-linked-to-data-exfil-session-theft-shared-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-13",
+      "title": "Phantom in the vault: Obsidian abused to deliver PhantomPulse RAT",
+      "completeness": "High",
+      "threats": [
+        "Phantompulse_rat",
+        "Process_injection_technique",
+        "Dead_drop_technique",
+        "Phantompull",
+        "Bloat_technique",
+        "Spear-phishing_technique",
+        "Antidebugging_technique"
+      ],
+      "geo": [
+        "Polish"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Obsidian",
+        "Telegram",
+        "macOS",
+        "Electron",
+        "WinHTTP",
+        "curl",
+        "Chrome",
+        "Windows Powershell"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "exhibit",
+        "aes-256-cbc",
+        "bcrypt",
+        "sha256"
+      ],
+      "functions": [
+        "Invoke-Expression",
+        "anti_tamper_integrity_checksum",
+        "GetProcessAddress"
+      ],
+      "languages": [
+        "applescript",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/phantom-in-the-vault",
+        "https://github.com/kepano/obsidian-hider",
+        "https://github.com/Taitava/obsidian-shellcommands"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-13",
+      "title": "3.000 Stealer Samples, One Misconfigured Apache Server",
+      "completeness": "Medium",
+      "threats": [
+        "Icmluautil_tool",
+        "Uac_bypass_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "electrum"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "base64",
+        "zip",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/3000-stealer-samples-one-misconfigured-apache-server/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-13",
+      "title": "[Op Report\\] Trojanized CPU-Z Delivers STXRAT, Steals Credentials, and Exfils Data Through a Hidden QEMU VM",
+      "completeness": "High",
+      "threats": [
+        "Stxrat",
+        "Purelogs",
+        "Rclone_tool",
+        "Dll_sideloading_technique",
+        "Credential_harvesting_technique",
+        "Purehvnc_tool",
+        "Lolbin_technique",
+        "Quasar_rat",
+        "Meterpreter_tool",
+        "Poshc2_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "QEMU",
+        "QEMU Alpine Linux",
+        "Chrome",
+        "QEMU Alpine",
+        "Active Directory",
+        "Windows PowerShell",
+        "U Alpine VM →",
+        "Windows search",
+        "EMU Alpine pr",
+        "Alpine",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/cpuz-trojan-stxrat-purelogs-data-exfil-april-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-13",
+      "title": "JanelaRAT: a financial threat targeting users in Latin America",
+      "completeness": "High",
+      "threats": [
+        "Janelarat",
+        "Dll_sideloading_technique",
+        "Eazfuscator_tool",
+        "Confuserex_tool"
+      ],
+      "geo": [
+        "Mexico",
+        "Brazilian",
+        "Portuguese",
+        "Latin america",
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64",
+        "md5",
+        "zip",
+        "aes"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/janelarat-financial-threat-in-latin-america/119332/"
+      ]
+    }
+  }
+]

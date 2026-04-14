@@ -1,0 +1,201 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-04",
+      "title": "Axios NPM Package Compromised: Supply Chain Attack Hits JavaScript HTTP Client with 100M+ Weekly Downloads",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool",
+        "Trojan.js.tpcpsteal.a",
+        "Trojan.js.axiosdrop.thccabf",
+        "Trojan.vbs.axiosdrop.aa",
+        "Backdoor.ps1.axiosrat.thccabf",
+        "Trojan.ps1.axiosdrop.thccabf",
+        "Trojan.ps1.axiosdrop.thccabg"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 10,
+      "software": [
+        "macOS",
+        "Linux",
+        "ProtonMail",
+        "Windows Terminal",
+        "curl",
+        "Windows PowerShell",
+        "OpenClaw"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Number",
+        "atob",
+        "require"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/c/axios-npm-package-compromised.html",
+        "https://github.com/axios/axios/issues/10604"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-04",
+      "title": "SERPENTINE#CLOUD returns: ClickFix lure drops five RATs",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Purelogs",
+        "Brc4_tool",
+        "Venomrat",
+        "Asyncrat",
+        "Xworm_rat",
+        "Purehvnc_tool",
+        "Dcrat",
+        "Dll_injection_technique",
+        "Sparkle_tool",
+        "Donut",
+        "Apc_injection_technique",
+        "Confuserex_tool",
+        "Donut_loader",
+        "Process_hacker_tool",
+        "Hvnc_tool",
+        "Ngrok_tool",
+        "Violet_rat",
+        "Purecryptor",
+        "Remcos_rat"
+      ],
+      "geo": [
+        "Hungary",
+        "Budapest",
+        "Netherlands"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "trycloudflare",
+        "curl",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "base64",
+        "fnv-1a",
+        "rc4",
+        "pbkdf2",
+        "sha256",
+        "zip",
+        "cbc",
+        "aes",
+        "aes-cbc",
+        "aes-256-cbc",
+        "deflate",
+        "xor"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "python",
+        "jscript",
+        "autoit"
+      ],
+      "links": [
+        "https://www.derp.ca/research/serpentine-cloud-clickfix-return/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-04",
+      "title": "Six Accounts, One Actor: Inside the prt-scan Supply Chain Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Hackerbot-claw_tool"
+      ],
+      "geo": [
+        "Polish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "curl",
+        "Linux",
+        "DOCKER",
+        "SENDGRID",
+        "OPENAI",
+        "ANTHROPIC",
+        "DEEPSEEK"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/six-accounts-one-actor-inside-the-prt-scan-supply-chain-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-04",
+      "title": "Supply Chain Malware Alert: plain-crypto-js Compromises Axios Packages",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool",
+        "Lolbin_technique",
+        "Credential_dumping_technique",
+        "Trojan.js.axiosdrop.thccabf",
+        "Trojan.ps1.axiosdrop.thccabg",
+        "Backdoor.ps1.axiosrat.thccabf"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 7,
+      "software": [
+        "Linux",
+        "macOS",
+        "Node.js",
+        "acOS ta",
+        "ode.js OS",
+        "acOS\"linux",
+        "inux",
+        "curl",
+        "Jenkins"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor",
+        "sha1"
+      ],
+      "functions": [
+        "_entry"
+      ],
+      "languages": [
+        "applescript",
+        "python",
+        "javascript",
+        "powershell",
+        "cscript"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/supply-chain-malware-alert-plain-crypto-js-compromises-axios-packages"
+      ]
+    }
+  }
+]

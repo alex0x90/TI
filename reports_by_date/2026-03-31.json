@@ -1,0 +1,1084 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Operation DualScript - A Multi-Stage PowerShell Malware Campaign Targeting Cryptocurrency and Financial Activity",
+      "completeness": "Medium",
+      "threats": [
+        "Retrorat"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 12,
+      "software": [
+        "tradingview"
+      ],
+      "wallets": [
+        "coinbase",
+        "metamask",
+        "bitpay",
+        "bybit"
+      ],
+      "crypto": [
+        "bitcoin",
+        "binance",
+        "kucoin"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "smethod_5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-dualscript-powershell-malware-retrorat-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "‘CanisterWorm’ Springs Wiper Attack Targeting Iran",
+      "completeness": "Low",
+      "threats": [
+        "Canisterworm",
+        "React2shell_vuln",
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Hackerbot-claw_tool"
+      ],
+      "geo": [
+        "Iran"
+      ],
+      "software": [
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "Telegram",
+        "Trivy"
+      ],
+      "links": [
+        "https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/",
+        "https://github.com/aquasecurity/trivy/discussions/10425"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Malicious Axios Packages Published to npm in New Supply Chain Compromise",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/malicious-axios-packages-npm-in-supply-chain-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "New widespread EvilTokens kit: device code phishing as-a-service – Part 1",
+      "completeness": "High",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Eviltokens_tool",
+        "Aitm_technique",
+        "Bec_technique",
+        "Supply_chain_technique",
+        "Antibot"
+      ],
+      "geo": [
+        "Canada",
+        "United arab emirates",
+        "Arab emirates",
+        "Switzerland",
+        "Americas",
+        "Australia",
+        "Oceania",
+        "America",
+        "France",
+        "Middle-east",
+        "Asia",
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Gmail",
+        "Microsoft Office",
+        "Microsoft SharePoint",
+        "Microsoft Teams",
+        "PostgreSQL",
+        "Outlook",
+        "Graph API",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "aes-gcm"
+      ],
+      "functions": [
+        "cleanupExpiredSessions",
+        "First",
+        "exchangeRefreshToken",
+        "TextDecoder"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.sekoia.io/new-widespread-eviltokens-kit-device-code-phishing-as-a-service-part-1/",
+        "https://github.com/SEKOIA-IO/Community/tree/main/IOCs/eviltokens"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Browser-in-the-Browser phishing is on the rise: Here’s how to spot it",
+      "completeness": "Low",
+      "threats": [
+        "Bitm_technique",
+        "Sneaky_2fa_tool",
+        "Raccoon0365_tool"
+      ],
+      "software": [
+        "Steam"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.helpnetsecurity.com/2026/01/13/browser-in-the-browser-bitb-phishing/#new_tab?utm_source=rss&utm_medium=rss&utm_campaign=browser-in-the-browser-phishing-is-on-the-rise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "From Inbox to Intrusion: Multi‑Stage Remcos RAT and C2‑Delivered Payloads in Network",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Mpress_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/from-inbox-to-intrusion-multi-stage-remcos-rat-and-c2-delivered-payloads-in-network/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Weaponizing Legitimate Low-Level Tools: How Ransomware Evades Antivirus Protections",
+      "completeness": "Medium",
+      "threats": [
+        "Process_hacker_tool",
+        "Iobit_tool",
+        "Powerrun_tool",
+        "Aukill_tool",
+        "Disabling_antivirus_technique",
+        "Wannacry",
+        "Ryuk",
+        "Doppelpaymer",
+        "Conti",
+        "Lockbit",
+        "Blackcat",
+        "Ydark_tool",
+        "Mimikatz_tool",
+        "Unlock_it_tool",
+        "Atool_expermodel_tool",
+        "Tdsskiller_tool",
+        "Processko_tool",
+        "Hrsword_tool",
+        "Weaxor",
+        "Shinra_ransomware",
+        "Makop",
+        "Dharma",
+        "Targetcompany",
+        "Phobos",
+        "Lolkek",
+        "Medusalocker",
+        "Blackbit",
+        "Trigona",
+        "Inc_ransomware",
+        "Credential_dumping_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "Windows Kernel"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/weaponizing-legitimate-tools-ransomware-antivirus-evasion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "RoadK1ll: A WebSocket Based Pivoting Implant",
+      "completeness": "Low",
+      "threats": [
+        "Roadk1ll_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "ode.js bu"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "RoadK1ll",
+        "setTimeout",
+        "connect"
+      ],
+      "links": [
+        "https://blackpointcyber.com/blog/roadk1ll-a-websocket-based-pivoting-implant/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "WhatsApp malware campaign delivers VBS payloads and MSI backdoors",
+      "completeness": "High",
+      "threats": [
+        "Lolbin_technique",
+        "Uac_bypass_technique",
+        "Anydesk_tool",
+        "Trojan:vbs/obfuse.kpp"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Microsoft Defender",
+        "tsApp deli",
+        "curl",
+        "Microsoft Defender for Endpoint",
+        "rosoft Defender cove",
+        "hatsApp",
+        "wher",
+        "exe",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "LinkPoint"
+      ],
+      "languages": [
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/03/31/whatsapp-malware-campaign-delivers-vbs-payloads-msi-backdoors/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Axios npm Hijack 2026: Everything You Need to Know – IOCs, Impact & Remediation",
+      "completeness": "Medium",
+      "threats": [
+        "Plain-crypto-js_tool",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ProtonMail",
+        "macOS",
+        "Linux",
+        "Node.js",
+        "Jenkins",
+        "CircleCI",
+        "Dependabot",
+        "Trivy"
+      ],
+      "algorithms": [
+        "sha1",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/axios-npm-supply-chain-attack-2026-ciso-guide/",
+        "https://gist.github.com/joe-desimone/36061dabd2bc2513705e0d083a9673e7"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Supply Chain Attack on Axios Pulls Malicious Dependency from npm",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Node.js",
+        "curl",
+        "Linux",
+        "Windows Terminal",
+        "Internet Explorer",
+        "OpenClaw"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "applescript",
+        "cscript",
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/axios-npm-package-compromised",
+        "https://gist.github.com/joe-desimone/f9b205b6a5c2a826987e27b6ecc84c05",
+        "https://github.com/axios/axios/issues/10604"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Popular Development Framework Neutralinojs Compromised In DPRK Attack",
+      "completeness": "High",
+      "threats": [
+        "Beavertail",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Neutralinojs",
+        "Dependabot",
+        "Discord",
+        "VSCode",
+        "macOS",
+        "Linux"
+      ],
+      "wallets": [
+        "tron",
+        "nifty"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "JSON-RPC"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/neutralinojs-compromise",
+        "https://github.com/neutralinojs",
+        "https://github.com/neutralinojs/neutralino.js"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Patterns, Pirates, and Provider Action: What We Learned Working with Keitaro",
+      "completeness": "Medium",
+      "threats": [
+        "Keitaro_tds_tool",
+        "Cloaking_technique",
+        "Supply_chain_technique",
+        "Imklo",
+        "Hideclick_tool",
+        "Adspect_tool",
+        "Socgholish_loader",
+        "Lospollos_tds_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Germany",
+        "Japanese",
+        "Switzerland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Keitaro",
+        "eitaro Tr",
+        "Android",
+        "oogle Play",
+        "TikTok",
+        "WordPress"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "autoit"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/patterns-pirates-and-provider-action-what-we-learned-working-with-keitaro/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "ClickFix Attacks Are Targeting VC and Fintech Talent with New Multi-Stage Loader Techniques",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Installfix_technique",
+        "Typosquatting_technique",
+        "Macc_stealer",
+        "Credential_harvesting_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk"
+      ],
+      "ioc_domain": 5,
+      "ioc_url": 2,
+      "ioc_ip": 0,
+      "ioc_file": 1,
+      "ioc_command": 3,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "Zoom",
+        "curl",
+        "Telegram",
+        "Linux",
+        "m"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "swift"
+      ],
+      "links": [
+        "https://hackernoon.com/clickfix-attacks-are-targeting-vc-and-fintech-talent-with-new-multi-stage-loader-techniques?source=rss"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Operation TrueChaos: 0-Day Exploitation Against Southeast Asian Government Targets",
+      "completeness": "Medium",
+      "threats": [
+        "Havoc",
+        "Dll_sideloading_technique",
+        "Uac_bypass_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Shadowpad"
+      ],
+      "geo": [
+        "Asia",
+        "Russia",
+        "Americas",
+        "Chinese",
+        "China",
+        "Asian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TrueConf",
+        "curl"
+      ],
+      "functions": [
+        "Internet-Exposed"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/operation-truechaos-0-day-exploitation-against-southeast-asian-government-targets/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "PolinRider: DPRK Threat Actor Implants Malware in Hundreds of GitHub Repos",
+      "completeness": "Medium",
+      "threats": [
+        "Beavertail",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Neutralinojs",
+        "Linux",
+        "MacOS",
+        "Gmail",
+        "Instagram",
+        "TikTok",
+        "Mysql",
+        "Docker",
+        "Node.js",
+        "PostgreSQL",
+        "have more..."
+      ],
+      "wallets": [
+        "tron",
+        "mainnet"
+      ],
+      "crypto": [
+        "binance",
+        "solana",
+        "convex"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "eval",
+        "taskEarn"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/polinrider-attack",
+        "https://github.com/OpenSourceMalware/PolinRider/blob/main/polinrider-scanner.sh",
+        "https://github.com/Codechef-VITC-Student-Chapter/Club-Integration-and-Management-Platform"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Inside the Axios supply chain compromise - one RAT to rule them all",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool",
+        "Waveshaper",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "curl",
+        "Windows Terminal",
+        "Windows Terminal Linux",
+        "sysctl"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64",
+        "exhibit"
+      ],
+      "functions": [
+        "getuid",
+        "getpwuid",
+        "localtime_r",
+        "sysctlbyname"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python",
+        "applescript"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/axios-one-rat-to-rule-them-all"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Latest Xloader Obfuscation Methods and Network Protocol",
+      "completeness": "Low",
+      "threats": [
+        "Formbook",
+        "Inline_hooking_technique",
+        "Credential_stealing_technique"
+      ],
+      "software": [
+        "Google Chrome",
+        "Microsoft Outlook",
+        "WinINet API",
+        "Windows Explorer"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "sha1",
+        "rc4",
+        "base64"
+      ],
+      "functions": [
+        "HttpSendRequest"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/latest-xloader-obfuscation-methods-and-network-protocol",
+        "https://github.com/cea-sec/miasm",
+        "https://github.com/ThreatLabz/tools/blob/main/xloader/custom\\_rc4.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Axios npm compromise: XOR dropper to cross-platform RAT",
+      "completeness": "High",
+      "threats": [
+        "Plain-crypto-js_tool",
+        "Supply_chain_technique",
+        "Process_hollowing_technique",
+        "Purecryptor"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Windows PowerShell",
+        "Linux",
+        "Node.js",
+        "curl",
+        "Gatekeeper",
+        "sysctl",
+        "OpenClaw"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Number",
+        "GetDetailedFileList",
+        "popen",
+        "GetUsername",
+        "GetOSVersion",
+        "GetModel",
+        "GetCPUType",
+        "GetTimezone",
+        "GetBootTime",
+        "GetOSInstallTime",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "applescript",
+        "c_language",
+        "python",
+        "cscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/axios-npm-supply-chain-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Elastic releases detections for the Axios supply chain compromise",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "Node.js",
+        "url -o",
+        "curl",
+        "Gatekeeper",
+        "Node.js Linux Linux",
+        "macOS macOS macOS",
+        "Node.js Linux"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "work",
+        "main_work",
+        "init_dir_info"
+      ],
+      "languages": [
+        "powershell",
+        "applescript",
+        "python"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/axios-supply-chain-compromise-detections",
+        "https://github.com/elastic/detection-rules/blob/c932ececd9c3b1257fc0350ec2dc13a1af0d6f88/rules/linux/execution\\_process\\_backgrounded\\_by\\_unusual\\_parent.toml",
+        "https://github.com/elastic/detection-rules/blob/c932ececd9c3b1257fc0350ec2dc13a1af0d6f88/rules/cross-platform/command\\_and\\_control\\_curl\\_wget\\_spawn\\_via\\_nodejs\\_parent.toml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Axios supply chain attack chops away at npm trust",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "node.js",
+        "Electron",
+        "acOS",
+        "W",
+        "inux",
+        "macOS",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/03/axios-supply-chain-attack-chops-away-at-npm-trust"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "TeamPCP's Telnyx Attack Marks a Shift in Tactics Beyond LiteLLM",
+      "completeness": "Low",
+      "threats": [
+        "Steganography_technique",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "inux",
+        "m",
+        "acOS",
+        "a",
+        "Linux",
+        "macOS",
+        "OpenSSL",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "base64",
+        "aes-256-cbc",
+        "xor"
+      ],
+      "functions": [
+        "_d"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/c/teampcp-telnyx-attack-marks-a-shift-in-tactics.html",
+        "https://github.com/team-telnyx/telnyx-python/issues/235"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Analysis of FvncBot campaign",
+      "completeness": "High",
+      "threats": [
+        "Fvncbot",
+        "Clipboard_injection_technique"
+      ],
+      "geo": [
+        "Polish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "rc4",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "getDir",
+        "getConstructor",
+        "getContentResolver",
+        "getPROVIDER_AUTHORITY",
+        "getString",
+        "getCacheDir",
+        "getAssets",
+        "setData",
+        "createEventData",
+        "getDeviceId",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cert.pl/en/posts/2026/03/fvncbot-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Phantom Stealer: Credential Theft as a Service",
+      "completeness": "Low",
+      "threats": [
+        "Phantom_stealer",
+        "Bec_technique",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Chrome",
+        "Discord",
+        "Telegram",
+        "Outlook"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/phantom-stealer-credential-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Open Sesame: How a Fail-Open Bug in Open VSX's New Scanner Let Malware Walk Right In",
+      "completeness": "Low",
+      "software": [
+        "Open VSX",
+        "open-vsx",
+        "OpenVSX"
+      ],
+      "functions": [
+        "enqueue"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.koi.ai/blog/open-sesame-how-a-fail-open-bug-in-open-vsxs-new-scanner-let-malware-walk-right-in",
+        "https://github.com/eclipse/openvsx/issues/1331",
+        "https://github.com/eclipse/openvsx/pull/1529"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "North Korea-Nexus Threat Actor Compromises Widely Used Axios NPM Package in Supply Chain Attack",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Plain-crypto-js_tool",
+        "Waveshaper",
+        "Silkbell",
+        "Pe_injection_technique",
+        "Sandclock"
+      ],
+      "geo": [
+        "North",
+        "korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "curl",
+        "Windows Terminal",
+        "AstrillVPN",
+        "Outlook",
+        "Trivy",
+        "LiteLLM",
+        "Node.js"
+      ],
+      "crypto": [
+        "ripple"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor",
+        "md5"
+      ],
+      "languages": [
+        "applescript",
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/north-korea-threat-actor-targets-axios-npm-package/",
+        "https://github.com/ByteNess/aws-vault?tab=readme-ov-file"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-31",
+      "title": "Fake Installers to Monero: A Multi-Tool Mining Operation",
+      "completeness": "High",
+      "threats": [
+        "Xmrig_miner",
+        "Dotnet_reactor_tool",
+        "Themida_tool",
+        "Lolbin_technique",
+        "Purerat",
+        "Pureminer",
+        "Process_hacker_tool",
+        "Procmon_tool",
+        "Silentcryptominer_tool",
+        "Process_injection_technique",
+        "Purecryptor",
+        "Asyncrat",
+        "Pulsar_rat"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Reactor",
+        "Microsoft Defender",
+        "VirtualBox",
+        "qemu",
+        "xen",
+        "Unix",
+        "Claude"
+      ],
+      "crypto": [
+        "monero",
+        "ethereum"
+      ],
+      "algorithms": [
+        "3des",
+        "xor",
+        "aes",
+        "randomx",
+        "gzip",
+        "des",
+        "aes-256-cbc",
+        "base64",
+        "cbc",
+        "hmac",
+        "pbkdf2",
+        "rsa-2048",
+        "sha256"
+      ],
+      "functions": [
+        "ReadMe",
+        "Start",
+        "FetchRemoteConfig",
+        "ExtractResources",
+        "StartEvasionTimer",
+        "IsAnalysisToolRunning",
+        "KillMinerProcess",
+        "CheckAndRunMiner",
+        "LaunchMiner"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/fake-installers-to-monero",
+        "https://github.com/ergrelet/unlicense",
+        "https://github.com/SychicBoy/NETReactorSlayer"
+      ]
+    }
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "Russian Spies Hijack Signal Accounts Bypassing Encryption",
+      "completeness": "Low",
+      "geo": [
+        "French",
+        "Dutch",
+        "France",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "hatsApp (S"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/russian-spies-hijack-signal-accounts-bypassing-encryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "APT-C-13 (Sandworm) RDP Backdoor Attack Activity",
+      "completeness": "Low",
+      "threats": [
+        "Dll_injection_technique",
+        "Kalambur",
+        "Sumbur",
+        "Double_kill_vuln",
+        "Double_star_vuln",
+        "Nightmare_formula_vuln"
+      ],
+      "software": [
+        "OpenSSH",
+        "TOR browser"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "Get-Led"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/QWe2m4qdp45u1cuA5rgLwQ"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "litellm: Credential Stealer Hidden in PyPI Wheel",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "litellm",
+        "Kubernetes",
+        "OpenAI",
+        "Trivy",
+        "curl",
+        "Docker",
+        "travis",
+        "openssl",
+        "systemd",
+        "alpine",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "ethereum",
+        "solana",
+        "cardano"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "sha256",
+        "aes-256-cbc",
+        "aes-256",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "run",
+        "GetSecretValue"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/litellm-credential-stealer-hidden-in-pypi-wheel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "OpenClaw Trap: AI-Assisted Lure Factory Targets Developers & Gamers",
+      "completeness": "Medium",
+      "threats": [
+        "Prometheus_obfuscator_tool",
+        "Credential_stealing_technique",
+        "Redline_stealer",
+        "Lumma_stealer",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "OpenClaw",
+        "Roblox",
+        "Docker",
+        "OpenClaw Docker",
+        "Linux",
+        "Valorant",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/openclaw-trap-ai-assisted-lure-factory-targets-developers-gamers",
+        "https://github.com/AAAbiola/openclaw-docker",
+        "https://github.com/coteyn/phone-number-location-tracking-tool",
+        "https://github.com/B3RZ3RK/fishing-planet-enhanced-menu"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "Silver Fox: The Only Tax Audit Where the Fine Print Installs Malware",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Winos",
+        "Gh0st_rat",
+        "Holdinghands",
+        "Krbanker",
+        "Seo_poisoning_technique",
+        "Cleversoar",
+        "Nidhogg",
+        "Dll_sideloading_technique",
+        "Crazyhunter_ransomware",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Mongolia",
+        "Taiwanese",
+        "Indonesia",
+        "Chinese",
+        "China",
+        "India",
+        "Singapore",
+        "Asia",
+        "Malaysia",
+        "Taiwan",
+        "Thailand",
+        "Japanese",
+        "Philippines",
+        "Asian",
+        "Japan"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/silver-fox-the-only-tax-audit-where-the-fine-print-installs-malware/",
+        "https://github.com/GkaMei/winos4.0"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "Brbbot: Full Malware Analysis & Reverse Engineering",
+      "completeness": "Low",
+      "threats": [
+        "Brbbot",
+        "Procmon_tool",
+        "Process_hacker_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "functions": [
+        "FindRecource"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://7amthereaper.github.io/posts/brbbot-full-analysis/",
+        "https://github.com/7amthereaper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "Atomic macOS stealer is mimicking an AI agent tool for Mac",
+      "completeness": "Low",
+      "threats": [
+        "Amos_stealer",
+        "Junk_code_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 4,
+      "software": [
+        "macOS",
+        "OpenClaw",
+        "Gatekeeper"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "links": [
+        "https://moonlock.com/chip-ransomware-cal-lock-files-mac"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "TeamPCP Hijacks LiteLLM's PyPI Package - Credential Stealer Hits 40k-Star Project",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Luxembourg"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "Trivy",
+        "Kubernetes",
+        "Docker",
+        "travis",
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "systemd",
+        "Linux",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "cardano",
+        "monero",
+        "litecoin",
+        "dogecoin",
+        "ripple"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "sha256",
+        "rsa-4096",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/teampcp-litellm-pypi-supply-chain-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "Inside Pay2Key: Technical Analysis of a Linux Ransomware Variant",
+      "completeness": "Low",
+      "threats": [
+        "Pay2key"
+      ],
+      "software": [
+        "Linux",
+        "SELinux",
+        "AppArmor"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/inside-pay2key-technical-analysis-of-a-linux-ransomware-variant/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "TheGentlemen Ransomware Exposed on Russian Proton66 Server: Complete Toolkit, Victim Credentials, and Ngrok Tokens",
+      "completeness": "Medium",
+      "threats": [
+        "Ngrok_tool",
+        "Defendercontrol_tool",
+        "Mimikatz_tool",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Superblack",
+        "Weaxor",
+        "Xworm_rat",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Passrecpk_tool",
+        "Pchunter_tool",
+        "Powertool_tool",
+        "Rustdesk_tool",
+        "Aveyo_tool",
+        "Firebird_rat",
+        "Teamviewer_tool",
+        "Netscan_tool",
+        "Pchunter64_tool",
+        "Vssadmin_tool",
+        "Wevtutil_tool"
+      ],
+      "geo": [
+        "Middle east",
+        "Russia",
+        "Russian",
+        "Americas",
+        "Spanish"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "SoftPerfect Network Scanner",
+        "active directory",
+        "Windows Defender",
+        "Microsoft Edge",
+        "PostgreSQL",
+        "Hyper-V",
+        "Windows Registry",
+        "credssp",
+        "Linux",
+        "ESXi",
+        "have more..."
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://hunt.io/blog/thegentlemen-ransomware-toolkit-russian-proton66-server"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "The AI Malware Surge: Behavior, Attribution, and Defensive Readiness",
+      "completeness": "High",
+      "threats": [
+        "Deepseek_rootkit",
+        "Telegramrat",
+        "Alastor",
+        "Bunnykit",
+        "Nyxstealer",
+        "Supply_chain_technique",
+        "Mimikatz_tool",
+        "Process_injection_technique",
+        "Byovd_technique",
+        "Polymorphism_technique",
+        "Troystealer",
+        "Blueskyinject",
+        "Sihost32",
+        "D0minag0n",
+        "Phantom_realm",
+        "Wannacry",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "Portuguese",
+        "Turkish",
+        "Russian",
+        "French",
+        "Indonesian",
+        "Chinese",
+        "Spanish"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "DeepSeek R1",
+        "DeepSeek",
+        "Redis",
+        "elegram RA",
+        "Android",
+        "Flask",
+        "Node.js",
+        "cOS",
+        "an",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit",
+        "xor",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/the-ai-malware-surge-behavior-attribution-and-defensive-readiness/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "TheGentlemen Ransomware Exposed on Russian Proton66 Server: Complete Toolkit, Victim Credentials, and Ngrok Tokens",
+      "completeness": "Medium",
+      "threats": [
+        "Ngrok_tool",
+        "Defendercontrol_tool",
+        "Mimikatz_tool",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Superblack",
+        "Weaxor",
+        "Xworm_rat",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Passrecpk_tool",
+        "Pchunter_tool",
+        "Powertool_tool",
+        "Rustdesk_tool",
+        "Aveyo_tool",
+        "Teamviewer_tool",
+        "Netscan_tool",
+        "Pchunter64_tool",
+        "Vssadmin_tool",
+        "Wevtutil_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Spanish",
+        "Americas",
+        "Russia",
+        "Middle east"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "SoftPerfect Network Scanner",
+        "active directory",
+        "Windows Defender",
+        "Microsoft Edge",
+        "PostgreSQL",
+        "Hyper-V",
+        "Windows Registry",
+        "credssp",
+        "Linux",
+        "ESXi",
+        "have more..."
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://hunt.io/blog/thegentlemen-ransomware-toolkit-russian-proton66-server"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "5 Malicious npm Packages Typosquat Solana and Ethereum Libraries to Steal Private Keys",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "Telegram",
+        "Outlook",
+        "Node.js",
+        "Raydium"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "base58"
+      ],
+      "functions": [
+        "decode",
+        "fetch",
+        "getChatAdministrators",
+        "_0x46b3"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "links": [
+        "https://socket.dev/blog/5-malicious-npm-packages-typosquat-solana-and-ethereum-libraries-steal-private-keys"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "The Operations of the Swarm: Inside the Complex World of Mirai-Based Botnets",
+      "completeness": "Medium",
+      "threats": [
+        "Mirai",
+        "Aisuru-kimwolf",
+        "Jackskid",
+        "Kimwolf",
+        "Satori",
+        "Metasploit_tool",
+        "Aisuru",
+        "Residential_proxy_technique",
+        "Ipidea"
+      ],
+      "geo": [
+        "Germany",
+        "China",
+        "Canada"
+      ],
+      "software": [
+        "Linux",
+        "Android",
+        "Discord",
+        "Telegram"
+      ],
+      "links": [
+        "https://blog.pulsedive.com/the-operations-of-the-swarm-inside-the-complex-world-of-mirai-based-botnets/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-24",
+      "title": "Attack path (12): Nighthawk APT steganography attack",
+      "completeness": "Low",
+      "threats": [
+        "Steganography_technique",
+        "Nighthawk_tool",
+        "Cloaking_technique",
+        "Chisel_tool"
+      ],
+      "software": [
+        "ASP.NET",
+        "WeChat"
+      ],
+      "links": [
+        "https://www.ctfiot.com/303460.html"
+      ]
+    }
+  }
+]

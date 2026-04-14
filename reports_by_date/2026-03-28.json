@@ -1,0 +1,227 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-28",
+      "title": "Malicious IoliteLabs VSCode Extensions Target Solidity Developers on Windows, macOS, and Linux with Backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Lolbin_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "macOS",
+        "Linux",
+        "Chrome",
+        "Gatekeeper",
+        "Windows installer",
+        "curl",
+        "SCode st",
+        "url",
+        "Unix",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "require",
+        "SetDesktopMonitorHook",
+        "SetWindowsHookEx",
+        "showInformationMessage",
+        "Remove-Item"
+      ],
+      "languages": [
+        "solidity",
+        "python"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/malicious-iolitelabs-vscode-extensions-target-solidity-developers-on-windows-macos-and-linux-with-backdoor",
+        "https://github.com/step-security/dev-machine-guard"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-28",
+      "title": "A cunning predator: How Silver Fox preys on Japanese firms this tax season",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Valleyrat"
+      ],
+      "geo": [
+        "Asia",
+        "Japan",
+        "America",
+        "Japanese"
+      ],
+      "software": [
+        "WeTransfer"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/business-security/cunning-predator-how-silver-fox-preys-japanese-firms-tax-season/",
+        "https://github.com/eset/malware-ioc/tree/master/silver\\_fox"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-28",
+      "title": "Prompt poaching runs rampant in extensions",
+      "completeness": "Low",
+      "threats": [
+        "Prompt_poaching_technique"
+      ],
+      "software": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://secureannex.com/blog/prompt-poaching/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-28",
+      "title": "On the radar: ChatGPT Stealer",
+      "completeness": "Low",
+      "threats": [
+        "Prompt_poaching_technique"
+      ],
+      "software": [
+        "ChatGPT",
+        "Chrome",
+        "Claude",
+        "Deepseek"
+      ],
+      "links": [
+        "https://expel.com/blog/on-the-radar-chatgpt-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-28",
+      "title": "CrySome RAT : An Advanced Persistent .NET Remote Access Trojan",
+      "completeness": "High",
+      "threats": [
+        "Crysomerat",
+        "Av-killer",
+        "Hvnc_tool",
+        "Costura_tool",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Windows service",
+        "Microsoft Defender",
+        "Windows registry",
+        "Windows Defender",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "RegisterHandlers",
+        "GetDrivesRequest",
+        "GetDirectoryRequest",
+        "ReadFileRequest",
+        "DeleteFileRequest",
+        "GetProcessListRequest",
+        "GetAudioDevicesPacket",
+        "GetCameraDevicesPacket",
+        "GetScreensRequest",
+        "Install",
+        "have more..."
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/crysome-rat-an-advanced-persistent-net-remote-access-trojan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-28",
+      "title": "The Certificate Decoding Illusion: How Blank Grabber Stealer Hides Its Loader",
+      "completeness": "High",
+      "threats": [
+        "Blankgrabber",
+        "Xworm_rat",
+        "Uac_bypass_technique",
+        "Ngrok_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 16,
+      "software": [
+        "PyInstaller",
+        "Windows DNS Query",
+        "Telegram",
+        "Instagram",
+        "Discord",
+        "Chromium",
+        "Firefox",
+        "Windows Defender",
+        "Roblox",
+        "Steam",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash",
+        "exodus_wallet",
+        "electrum"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "sha256",
+        "aes-gcm",
+        "base64",
+        "aes-ctr"
+      ],
+      "functions": [
+        "RemoveDefinitions"
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/blankgrabber-trojan-stealer-analysis-detection.html",
+        "https://github.com/splunk/attack\\_data/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "An AI gateway designed to steal your data",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Russia",
+        "Netherlands",
+        "China"
+      ],
+      "software": [
+        "LiteLLM",
+        "Kubernetes",
+        "MySQL",
+        "PostgreSQL",
+        "WireGuard",
+        "Helm",
+        "Slack",
+        "Discord",
+        "systemd",
+        "OpenVSX",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/litellm-supply-chain-attack/119257/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "Coruna: the framework used in Operation Triangulation",
+      "completeness": "Low",
+      "threats": [
+        "Coruna_tool",
+        "Watering_hole_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "China"
+      ],
+      "software": [
+        "- apple ipados (<15.7.8",
+        "<16.6)     - apple iphone_os (<15.7.8",
+        "<16.6)     - apple macos (<11.7.9",
+        "<12.6.8",
+        "<13.5)     - apple tvos (<16.6)     - apple watchos (<9.6)     have more..."
+      ],
+      "algorithms": [
+        "chacha20",
+        "lzma"
+      ],
+      "links": [
+        "https://securelist.com/coruna-framework-updated-operation-triangulation-exploit/119228/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "No Reach, No Risk: The Keitaro Abuse in Modern Cybercrime Distribution",
+      "completeness": "High",
+      "threats": [
+        "Sitting_ducks_technique",
+        "Clickbait_technique",
+        "Supply_chain_technique",
+        "Clickfix_technique",
+        "Cloaking_technique",
+        "Donut_loader",
+        "Stealc",
+        "Screenconnect_tool",
+        "Rusty_stealer",
+        "Credential_harvesting_technique",
+        "Ymir_ransomware",
+        "White_rabbit_ransomware",
+        "Cloakilio_tool",
+        "Remcos_rat",
+        "Faikast",
+        "Hideclick_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Moscow",
+        "Italy",
+        "Canadian",
+        "Netherlands",
+        "Brazilian",
+        "Singapore",
+        "Switzerland",
+        "Canada"
+      ],
+      "software": [
+        "Keitaro",
+        "taro gate",
+        "eitaro Tr",
+        "Chrome",
+        "Microsoft Edge",
+        "ikTok st",
+        "Etherscan",
+        "telegram",
+        "eitaro"
+      ],
+      "wallets": [
+        "electrum",
+        "electron_cash",
+        "mainnet",
+        "wassabi"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "rdga",
+        "rc4",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/no-reach-no-risk-the-keitaro-abuse-in-modern-cybercrime-distribution/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "Active Magecart Campaign Targets Spain, Leveraging Redsys Payment Mimicry and Hijacking",
+      "completeness": "Medium",
+      "geo": [
+        "France",
+        "Spain",
+        "United kingdom",
+        "French",
+        "Spanish",
+        "Denmark"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Linux",
+        "macOS"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "getData"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/banks-magecart-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "BPFdoor in Telecom Networks: Sleeper Cells in the Backbone",
+      "completeness": "Medium",
+      "threats": [
+        "Bpfdoor",
+        "Crossc2_tool",
+        "Tinyshell",
+        "Credential_harvesting_technique",
+        "Sliver_c2_tool",
+        "Libpcap_tool",
+        "Netcat_tool",
+        "Nmap_tool",
+        "Redxor_backdoor",
+        "Symbiote"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 2,
+      "software": [
+        "Linux",
+        "Ivanti",
+        "JunOS",
+        "ESXi",
+        "Apache Struts",
+        "Kubernetes",
+        "Docker"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-bpfdoor-telecom-networks-sleeper-cells-threat-research-report",
+        "https://github.com/rapid7/Rapid7-Labs/tree/main/BPFDoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "Xiaomi Phishing Attempt - Red Flags You Can't Afford to Ignore",
+      "completeness": "Low",
+      "geo": [
+        "China",
+        "India",
+        "Asia"
+      ],
+      "links": [
+        "https://cofense.com/blog/xiaomi-phishing-attempt-red-flags-you-can-t-afford-to-ignore"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "Pawn Storm Campaign Deploys PRISMEX, Targets Government and Critical Infrastructure Entities",
+      "completeness": "High",
+      "threats": [
+        "Prismex_tool",
+        "Supply_chain_technique",
+        "Steganography_technique",
+        "Com_hijacking_technique",
+        "Prismexdrop",
+        "Prismexloader",
+        "Covenant_c2_tool",
+        "Grunt",
+        "Prismexstager",
+        "Notdoor",
+        "Spear-phishing_technique",
+        "Smuggling_technique",
+        "Minidoor",
+        "Prismexsheet",
+        "Dll_hijacking_technique",
+        "Gruntstager",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Poland",
+        "Czech",
+        "Turkey",
+        "Romanian",
+        "Slovenian",
+        "Slovakia",
+        "Slovenia",
+        "Romania",
+        "Russian",
+        "Ukrainian",
+        "Pol",
+        "Moscow",
+        "Polish",
+        "Ukraine",
+        "Russia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "component object model",
+        "icrosoft Office Ob",
+        "rosoft Office vuln",
+        "rosoft Office Obje",
+        "Microsoft Office",
+        "Internet Explorer",
+        "Microsoft OneDrive",
+        "k 4.0 or later",
+        "Outlook",
+        "Microsoft Office d",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/c/pawn-storm-targets-govt-infra.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "Infiniti Stealer: a new macOS infostealer using ClickFix and Python/Nuitka",
+      "completeness": "Medium",
+      "threats": [
+        "Infiniti_stealer",
+        "Clickfix_technique",
+        "Macc_stealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Nuitka",
+        "curl",
+        "PyInstaller",
+        "irefox",
+        "VirtualBox",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "upload_complete"
+      ],
+      "languages": [
+        "applescript",
+        "python"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/infiniti-stealer-a-new-macos-infostealer-using-clickfix-and-python-nuitka"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "Elastic Security Labs uncovers BRUSHWORM and BRUSHLOGGER",
+      "completeness": "High",
+      "threats": [
+        "Brushworm",
+        "Brushlogger",
+        "Dll_sideloading_technique",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Asian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Xen",
+        "HYPERV",
+        "QEMU",
+        "Hyper-V",
+        "NuGet",
+        "Windows scheduled task",
+        "Task Scheduler",
+        "Windows CryptoAPI"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "aes",
+        "md5",
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/brushworm-targets-financial-services"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-26",
+      "title": "A puppet made me cry and all I got was this t-shirt",
+      "completeness": "Low",
+      "threats": [
+        "React2shell_vuln",
+        "Toolshell_vuln",
+        "Qilin_ransomware",
+        "Supply_chain_technique",
+        "Purelogs",
+        "Coinminer"
+      ],
+      "geo": [
+        "Turkey",
+        "Middle east",
+        "France"
+      ],
+      "software": [
+        "- oracle identity_manager (12.2.1.4.0",
+        "14.1.2.1.0)     - oracle web_services_manager (12.2.1.4.0",
+        "14.1.2.1.0)"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/a-puppet-made-me-cry-and-all-i-got-was-this-t-shirt/"
+      ]
+    }
+  }
+]

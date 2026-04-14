@@ -1,0 +1,978 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Converging Interests: Analysis of Threat Clusters Targeting a Southeast Asian Government",
+      "completeness": "High",
+      "threats": [
+        "Pubload",
+        "Claimloader",
+        "Coolclient",
+        "Eggstreme_fuel",
+        "Masol",
+        "Eggstreme_loader",
+        "Trackbak",
+        "Fluffygh0st",
+        "Hypnosis_loader",
+        "Hiupan",
+        "Eggstreme_agent",
+        "Gh0st_rat",
+        "Gorem",
+        "Darkloadlibrary_tool",
+        "Dll_sideloading_technique",
+        "Process_hypnosis_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Japanese",
+        "China",
+        "Asian",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows registry",
+        "Microsoft Edge",
+        "Linux",
+        "Windows service",
+        "Windows Explorer",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "md5",
+        "lznt1",
+        "rc4",
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/espionage-campaigns-target-se-asian-government-org/",
+        "https://github.com/bats3c/DarkLoadLibrary",
+        "https://github.com/hasherezade/libpeconv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "From Phishing to Exfiltration: A Deep Dive into PXA Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Pxa_stealer",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Redline_stealer",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Photoshop",
+        "Telegram",
+        "Outlook"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/a-deep-dive-into-pxa-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "TeamPCP Plants WAV Steganography Credential Stealer in telnyx PyPI Package",
+      "completeness": "Medium",
+      "threats": [
+        "Steganography_technique",
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Lolbin_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "litellm",
+        "Linux",
+        "macOS",
+        "openssl",
+        "curl",
+        "Trivy",
+        "penssl en",
+        "nssl pkey",
+        "ellm and",
+        "Ubuntu",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "sha256",
+        "aes",
+        "base64",
+        "xor",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "setup",
+        "FetchAudio",
+        "audioimport",
+        "_d"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/teampcp-plants-wav-steganography-credential-stealer-in-telnyx-pypi-package",
+        "https://github.com/team-telnyx/telnyx-python/issues/235"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Phantom Footprints: Tracking GhostSocks Malware",
+      "completeness": "High",
+      "threats": [
+        "Ghostsocks",
+        "Residential_proxy_technique",
+        "Lumma_stealer",
+        "Blackbasta",
+        "Fastflux_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 1,
+      "algorithms": [
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/phantom-footprints-tracking-ghostsocks-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "AI Infrastructure LiteLLM Supply Chain Poisoning Alert",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Usa",
+        "Iran",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "Trivy",
+        "K8s",
+        "systemd",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://nsfocusglobal.com/ai-infrastructure-litellm-supply-chain-poisoning-alert/",
+        "https://github.com/BerriAI/litellm/issues/24518",
+        "https://github.com/pypa/advisory-database/blob/main/vulns/litellm/PYSEC-2026-2.yaml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "A new infostealer is targeting iPhones, evading built-in defenses",
+      "completeness": "Low",
+      "threats": [
+        "Darksword_exploitkit",
+        "Chrysaor",
+        "Coruna_tool",
+        "Ghostblade",
+        "Ghostknife",
+        "Ghostsaber",
+        "Kraken_cryptor"
+      ],
+      "geo": [
+        "Malaysia",
+        "Turkey",
+        "North korea",
+        "Saudi arabia",
+        "Ukraine",
+        "Russian"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Instagram",
+        "Telegram",
+        "WhatsApp",
+        "macOS"
+      ],
+      "wallets": [
+        "coinbase",
+        "trezor",
+        "metamask",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "uniswap"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://moonlock.com/darkstorm-infostealer-targeting-iphones"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "The Close Relationship Between Telegram Bots and Threat Actors: New Stealers, Hunters Becoming the Hunted",
+      "completeness": "High",
+      "threats": [
+        "Phantom_stealer",
+        "Blankgrabber",
+        "Snake_keylogger",
+        "Xworm_rat",
+        "Stealerium_stealer",
+        "Nettyrat",
+        "Edustealer",
+        "Joker",
+        "Credential_harvesting_technique",
+        "Raven_stealer",
+        "Fox_stealer",
+        "Matrix-lw",
+        "Nivana",
+        "Naytilyss",
+        "Red-handed",
+        "Vipkeylogger",
+        "Tria_stealer",
+        "Intelx",
+        "Zerotrace_tool",
+        "Screen_shotting_technique"
+      ],
+      "geo": [
+        "Ethiopia",
+        "Russia",
+        "China",
+        "India",
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Unix",
+        "Android",
+        "DeepSeek",
+        "Discord",
+        "Steam",
+        "Roblox",
+        "Growtopia",
+        "Linux",
+        "Chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "Get-SavedPasswords"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://cti.monster/blog/2026/03/24/new-stealers.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Your AI Gateway Was a Backdoor: Inside the LiteLLM Supply Chain Compromise",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Dead_drop_technique",
+        "Adaptixc2_tool",
+        "Akira_ransomware",
+        "Pystealer"
+      ],
+      "geo": [
+        "Turkey",
+        "Chile",
+        "Russian",
+        "Ukraine",
+        "Uzbekistan",
+        "Vietnam",
+        "Korea",
+        "Chinese",
+        "India",
+        "Dprk",
+        "Netherlands",
+        "Brazil",
+        "Iran",
+        "Israel",
+        "Philippines",
+        "South africa",
+        "China"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 13,
+      "software": [
+        "LiteLLM",
+        "Kubernetes",
+        "Trivy",
+        "Docker",
+        "OpenVSX",
+        "iteLLM co",
+        "OpenAI",
+        "HashiCorp Vault",
+        "WireGuard",
+        "systemd",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "zcash"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "litecoin",
+        "dogecoin",
+        "ripple",
+        "monero",
+        "cardano"
+      ],
+      "algorithms": [
+        "sha256",
+        "rsa-4096",
+        "base64",
+        "pbkdf2",
+        "aes-256",
+        "aes",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "LLM",
+        "run",
+        "GetSecretValue",
+        "SigV4",
+        "emit",
+        "VirusTotal"
+      ],
+      "languages": [
+        "python",
+        "cpython"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/c/inside-litellm-supply-chain-compromise.html",
+        "https://github.com/BerriAI/litellm/issues/24512",
+        "https://github.com/python/cpython/issues/113659"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Trust the Tunnel, Get the Trojan: Silver Fox Delivers AtlasCross RAT via Weaponized VPN Installers",
+      "completeness": "High",
+      "threats": [
+        "Atlasagent",
+        "Powerchell_tool",
+        "Ultraviewer_tool",
+        "Typosquatting_technique",
+        "Gh0st_rat",
+        "Valleyrat",
+        "Winos",
+        "Dll_injection_technique",
+        "Supply_chain_technique",
+        "Amsi_bypass_technique",
+        "Process_injection_technique",
+        "Byovd_technique",
+        "Credential_harvesting_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Vietnamese",
+        "Vietnam",
+        "Korea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat",
+        "Telegram",
+        "Zoom",
+        "Microsoft Teams",
+        "Huorong",
+        "WangWang",
+        "Windows installer",
+        "Electron",
+        "Xen",
+        "Jenkins",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "ror13",
+        "rc4",
+        "chacha20",
+        "prng",
+        "zip",
+        "salsa20",
+        "lzma"
+      ],
+      "functions": [
+        "Sleep",
+        "recv",
+        "AddScript",
+        "Invoke",
+        "CloseRDP"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://hexastrike.com/resources/blog/threat-intelligence/trust-the-tunnel-get-the-trojan-silver-fox-delivers-atlascross-rat-via-weaponized-vpn-installers",
+        "https://github.com/grimlockx/Surfing-in-the-Shadows-Inside-the-AtlasCross-RAT-Campaign-Delivered-via-Weaponized-VPN-Installers/blob/main/README.md#executive-summary",
+        "https://github.com/grimlockx/Surfing-in-the-Shadows-Inside-the-AtlasCross-RAT-Campaign-Delivered-via-Weaponized-VPN-Installers/blob/main/README.md#trust-the-tunnel-get-the-trojan-silver-fox-delivers-atlascross-rat-via-weaponized-vpn-installers",
+        "https://github.com/grimlockx/Surfing-in-the-Shadows-Inside-the-AtlasCross-RAT-Campaign-Delivered-via-Weaponized-VPN-Installers/blob/main/README.md#delivery-fake-download-sites-for-apps-chinese-users-trust"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Bogus Avast website fakes virus scan, installs Venom Stealer instead",
+      "completeness": "Medium",
+      "threats": [
+        "Venom_stealer",
+        "Zeus",
+        "Quasar_rat",
+        "Venomrat",
+        "Stormkitty_stealer"
+      ],
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Firefox",
+        "Mozilla Firefox",
+        "Microsoft Edge",
+        "Outlook",
+        "Windows registry",
+        "Windows kernel"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/03/bogus-avast-website-fakes-virus-scan-installs-venom-stealer-instead"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Torg Grabber: Anatomy of a New Credential Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Vidar_stealer",
+        "Stealc",
+        "Polymorphism_technique",
+        "Clickfix_technique",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Reflectiveloader",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Palau",
+        "Deus",
+        "Turkey",
+        "Peru",
+        "Malaysia",
+        "Kazakhstan",
+        "Hong kong",
+        "Ukraine",
+        "Germany",
+        "Russia",
+        "Bangladesh",
+        "Finland",
+        "Netherlands",
+        "Belarus",
+        "Seychelles",
+        "India",
+        "England",
+        "Lithuania"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "speakeasy",
+        "Chrome",
+        "Chromium",
+        "opera",
+        "Firefox",
+        "Discord",
+        "Steam",
+        "InnoSetup",
+        "Chrome InnoSetup",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet",
+        "electrum",
+        "daedalus",
+        "coinbase",
+        "tronlink",
+        "keplr",
+        "rabby",
+        "solflare",
+        "sui_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "zip",
+        "prng",
+        "aes-256-cbc",
+        "base64",
+        "lznt1",
+        "aes-256",
+        "aes-cbc",
+        "chacha20",
+        "aes",
+        "xor",
+        "sha256",
+        "chacha20-poly1305",
+        "ror13"
+      ],
+      "functions": [
+        "that",
+        "GetIp",
+        "DLL"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/torg-grabber-credential-stealer-analysis",
+        "https://github.com/gendigitalinc/ioc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "This malicious browser extension can infect a Mac via a PNG file",
+      "completeness": "Low",
+      "threats": [
+        "Ghostposter"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Firefox",
+        "macOS",
+        "Gatekeeper",
+        "Linux"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://moonlock.com/malicious-extenshion-ghostposter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "When Malware Talks Back: Real-Time Interaction with a Threat Actor During the Analysis of Kiss Loader",
+      "completeness": "Medium",
+      "threats": [
+        "Kiss_loader",
+        "Process_injection_technique",
+        "Asyncrat",
+        "Apc_injection_technique",
+        "Venomrat",
+        "Kryptik"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TryCloudflare",
+        "Process Explorer"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "rust",
+        "jscript",
+        "python"
+      ],
+      "links": [
+        "https://blog.gdatasoftware.com/2026/03/38399-analysis-kissloader",
+        "https://github.com/volexity/donut-decryptor",
+        "https://github.com/TheWover/donut"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "TeamPCP Compromises Telnyx Python SDK to Deliver Credential-Stealing Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "WhatsApp",
+        "Linux",
+        "macOS",
+        "openssl",
+        "curl",
+        "systemd",
+        "Unix"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "rsa-4096",
+        "aes-256-cbc",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "audioimport",
+        "Telnyx",
+        "setup",
+        "FetchAudio",
+        "exec"
+      ],
+      "languages": [
+        "cpython",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/telnyx-python-sdk-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Triune Evil: Werewolves Attack Law Enforcement Officers",
+      "completeness": "High",
+      "threats": [
+        "Echogather",
+        "Aquilarat",
+        "Go2tunnel_tool",
+        "Sliver_c2_tool",
+        "Code_virtualizer_tool",
+        "Dll_sideloading_technique",
+        "Soullessrat",
+        "Spear-phishing_technique",
+        "Junk_code_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Moscow"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "Starlink",
+        "Telegram",
+        "Windows Task Scheduler",
+        "Node.js",
+        "Outlook",
+        "device re",
+        "Winlogon",
+        "Microsoft Office",
+        "Windows Service"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-256",
+        "xor",
+        "pbkdf2",
+        "sha256",
+        "base64",
+        "aes",
+        "cbc",
+        "gzip",
+        "aes-256-cbc",
+        "md5"
+      ],
+      "functions": [
+        "taskItemId",
+        "taskType",
+        "Set-ItemProperty"
+      ],
+      "languages": [
+        "rust",
+        "visual_basic",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/triedinoe-zlo-oborotni-atakuyut-sotrudnikov-silovykh-struktur/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Operation Storming Tide: A massive multi-stage intrusion campaign",
+      "completeness": "High",
+      "threats": [
+        "Astarionrat",
+        "Matanbuchus_maas",
+        "Systembc",
+        "Rclone_tool",
+        "Quasar_rat",
+        "Mimicrat",
+        "Superblack",
+        "Charon",
+        "Droxidat",
+        "Blackbasta",
+        "Lockbit",
+        "Lolbin_technique",
+        "Akira_ransomware",
+        "Clop",
+        "Dll_sideloading_technique",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Latin america",
+        "Asia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "Dropbox",
+        "Active Directory",
+        "PsExec"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://fortgale.com/blog/defence/operation-storming-tide/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Attackers are now targeting business TikTok accounts using session-stealing phishing kits",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Clickfix_technique",
+        "Aurastealer",
+        "Vidar_stealer",
+        "Stealc"
+      ],
+      "software": [
+        "TikTok",
+        "Cloudflare Turnstile",
+        "CapCut"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://pushsecurity.com/blog/tiktok-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "Investigating Two Variants of the Trivy Supply-Chain Compromise",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique",
+        "Trufflehog_tool",
+        "Bomgar_tool",
+        "Beyondtrust_tool",
+        "Polyshell_vuln"
+      ],
+      "geo": [
+        "New zealand",
+        "Croatia",
+        "New york",
+        "Sweden",
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Trivy",
+        "Docker",
+        "OpenVSX",
+        "LiteLLM",
+        "Kubernetes",
+        "Boto3",
+        "Linux",
+        "macOS",
+        "DynamoDB",
+        "systemd",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "GetCallerIdentity",
+        "g"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://kudelskisecurity.com/research/investigating-two-variants-of-the-trivy-supply-chain-compromise",
+        "https://github.com/aquasecurity/trivy-action/commit/e0198fd2b6e1679e36d32933941182d9afa82f6f"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-03-27",
+      "title": "33K Exposed LiteLLM Deployments and the C2 Servers Behind TeamPCP's Supply Chain Attack",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Havoc",
+        "Adaptixc2_tool",
+        "Cobalt_strike_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Luxembourg"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "Kubernetes",
+        "Docker",
+        "systemd",
+        "Trivy",
+        "OpenAI",
+        "Anthropic",
+        "AWS Bedrock",
+        "PostgreSQL",
+        "MySQL",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "ripple",
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "aes-256-cbc",
+        "aes",
+        "rsa-4096"
+      ],
+      "functions": [
+        "Internet-Facing",
+        "run",
+        "emit",
+        "walk"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/33k-exposed-litellm-teampcp-c2-supply-chain-attack",
+        "https://github.com/BerriAI/litellm/issues/24512"
+      ]
+    }
+  }
+]
