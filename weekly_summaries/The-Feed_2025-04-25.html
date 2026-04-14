@@ -1,0 +1,3317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>The Feed 2025-04-25</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-deep: #070b10;
+      --bg-page: #0c1118;
+      --surface: #121926;
+      --surface-raised: #1a2433;
+      --border: #2c394d;
+      --border-strong: #415575;
+      --text: #edf2ff;
+      --text-muted: #9db0c9;
+      --accent: #62b0ff;
+      --accent-dim: rgba(98, 176, 255, 0.16);
+      --success: #3fb950;
+      --warning: #d4a72c;
+      --danger: #f97373;
+      --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --radius: 12px;
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.36);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 1.25rem;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 1.03rem;
+      line-height: 1.68;
+      color: var(--text);
+      background: var(--bg-deep);
+      background-image:
+        radial-gradient(ellipse 130% 85% at 50% -25%, rgba(98, 176, 255, 0.1), transparent 52%),
+        linear-gradient(180deg, var(--bg-page) 0%, var(--bg-deep) 100%);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    @media (min-width: 960px) {
+      .page { padding: 2rem 1.5rem 4rem; }
+    }
+
+    /* —— Masthead —— */
+    .masthead {
+      margin-bottom: 2rem;
+      padding: 1.1rem 1.2rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(98,176,255,0.08) 0%, rgba(98,176,255,0.02) 36%, rgba(98,176,255,0) 100%);
+      box-shadow: var(--shadow);
+    }
+
+    .masthead__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .masthead__eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 10px var(--success);
+    }
+
+    .masthead h1 {
+      font-size: clamp(1.85rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0 0 0.5rem;
+      color: var(--text);
+    }
+
+    .masthead__sub {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 72ch;
+    }
+
+    .masthead__stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .stat-pill {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      padding: 0.35rem 0.75rem;
+      background: var(--surface-raised);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text-muted);
+    }
+
+    .stat-pill strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* —— Panels & TOC —— */
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .panel__title {
+      font-size: 0.74rem;
+      font-family: var(--mono);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 0 1rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .toc-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .toc-list li {
+      margin: 0;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .toc-list li:last-child { border-bottom: none; }
+
+    .toc-list a {
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      line-height: 1.45;
+    }
+
+    .toc-list a:hover { text-decoration: underline; }
+
+    .toc-list .blurb {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .panel__hint {
+      margin: 0.75rem 0 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .panel__hint code {
+      font-family: var(--mono);
+      font-size: 0.8em;
+      padding: 0.15rem 0.4rem;
+      background: var(--bg-deep);
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    /* —— Mermaid containers —— */
+    .mermaid-wrap {
+      margin: 0;
+      overflow-x: auto;
+      background: var(--bg-deep);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .mermaid-wrap.mindmap-article { min-height: 360px; }
+
+    pre.mermaid {
+      margin: 0;
+      background: transparent !important;
+    }
+
+    /* —— Report cards —— */
+    .report-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      scroll-margin-top: 1rem;
+    }
+
+    .report-card__head {
+      padding: 1.25rem 1.35rem;
+      background: linear-gradient(135deg, rgba(98,176,255,0.08) 0%, var(--surface) 68%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .report-card__index {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-dim);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      margin-bottom: 0.6rem;
+    }
+
+    .report-card__head h2 {
+      margin: 0;
+      font-size: 1.26rem;
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    .source-row {
+      margin-top: 0.85rem;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      word-break: break-all;
+      line-height: 1.5;
+    }
+
+    .report-meta {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .meta-pill {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      background: rgba(7, 11, 16, 0.55);
+      border-radius: 999px;
+      padding: 0.2rem 0.55rem;
+    }
+
+    .source-row a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .source-row a:hover { text-decoration: underline; }
+
+    .quality-badge {
+      display: inline-block;
+      margin-left: 0.5rem;
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      background: var(--surface-raised);
+      border: 1px solid var(--border-strong);
+      color: var(--accent);
+    }
+
+    .report-card__body {
+      padding: 0 1.35rem 1.35rem;
+    }
+
+    .report-section {
+      margin-top: 1.35rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .report-section:first-of-type {
+      margin-top: 1rem;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .report-section h3 {
+      font-size: 0.78rem;
+      font-family: var(--mono);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 0 0.75rem;
+    }
+
+    .report-section h4 {
+      font-size: 0.68rem;
+      font-family: var(--mono);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin: 1rem 0 0.5rem;
+    }
+
+    .report-section p {
+      margin: 0 0 0.75rem;
+      color: var(--text);
+    }
+
+    .summary-callout {
+      background: rgba(98, 176, 255, 0.08);
+      border: 1px solid rgba(98, 176, 255, 0.33);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 0.9rem 1rem 0.65rem;
+    }
+
+    .report-section .section-hint {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin: 0 0 0.85rem;
+    }
+
+    .report-section .section-hint code {
+      font-family: var(--mono);
+      font-size: 0.85em;
+      padding: 0.1rem 0.35rem;
+      background: var(--bg-deep);
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    ul.plain {
+      margin: 0;
+      padding-left: 1.15rem;
+      color: var(--text);
+    }
+
+    ul.plain li { margin: 0.4rem 0; }
+
+    ul.plain li::marker { color: var(--accent); }
+
+    .muted { color: var(--text-muted); font-style: italic; }
+
+    .disclaimer {
+      border-left: 4px solid var(--warning);
+      background: rgba(212, 167, 44, 0.08);
+    }
+
+    .disclaimer strong {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--warning);
+      margin-bottom: 0.5rem;
+    }
+
+    .week-synth ul { margin: 0.35rem 0 0; padding-left: 1.2rem; }
+
+    .week-synth li { margin: 0.35rem 0; }
+
+    .risk-list li::marker { color: var(--warning); }
+
+    .ioc-week-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--mono);
+      font-size: 0.76rem;
+      margin: 0.5rem 0 1.25rem;
+    }
+
+    .ioc-week-table th,
+    .ioc-week-table td {
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.55rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .ioc-week-table th { color: var(--text-muted); font-weight: 600; }
+    .ioc-week-table tbody tr:nth-child(even) { background: rgba(98,176,255,0.04); }
+
+    .ioc-week-table .src-count { color: var(--accent); white-space: nowrap; }
+
+    .exports-bar {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .conf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 0.45rem;
+      margin: 0.5rem 0 0.75rem;
+    }
+
+    .conf-chip {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      padding: 0.35rem 0.5rem;
+      background: var(--bg-deep);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .conf-chip span { color: var(--text-muted); display: block; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    .coa-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .coa-grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    .coa-col h4 { margin-top: 0; }
+
+    .date-line {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin: 0 0 0.75rem;
+    }
+
+    .quick-jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 0.25rem 0 1.25rem;
+    }
+
+    .quick-jump a {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.68rem;
+      text-decoration: none;
+      color: var(--text-muted);
+      background: rgba(98, 176, 255, 0.07);
+    }
+
+    .quick-jump a:hover {
+      border-color: var(--border-strong);
+      color: var(--text);
+    }
+
+    .article-actions {
+      margin-top: 0.9rem;
+      text-align: right;
+    }
+
+    .article-actions a {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.28rem 0.65rem;
+      background: rgba(7,11,16,0.45);
+    }
+
+    .article-actions a:hover {
+      color: var(--text);
+      border-color: var(--border-strong);
+    }
+
+    /* —— Code / IOC —— */
+    pre.ioc {
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      line-height: 1.55;
+      background: var(--bg-deep) !important;
+      color: #c9d1d9 !important;
+      padding: 1rem 1.1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      overflow-x: auto;
+      margin: 0 0 0.5rem;
+    }
+
+    /* —— Footer —— */
+    .page-footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      font-family: var(--mono);
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* —— Option A: light, professional, highly readable —— */
+    :root {
+      --bg-deep: #f4f7fc;
+      --bg-page: #ffffff;
+      --surface: #ffffff;
+      --surface-raised: #f7faff;
+      --border: #d9e2f0;
+      --border-strong: #b8c8df;
+      --text: #1a2942;
+      --text-muted: #5f738f;
+      --accent: #1f6feb;
+      --accent-dim: rgba(31, 111, 235, 0.1);
+      --radius: 12px;
+      --shadow: 0 10px 28px rgba(25, 51, 89, 0.09);
+    }
+
+    body {
+      background: linear-gradient(180deg, #f4f7fc 0%, #eef3f9 100%);
+      font-size: 1.02rem;
+      line-height: 1.72;
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1120px;
+      padding-top: 1.7rem;
+    }
+
+    .masthead {
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 2px);
+      background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+      box-shadow: var(--shadow);
+      padding: 1.45rem 1.5rem 1.75rem;
+    }
+
+    .masthead__eyebrow {
+      color: var(--accent);
+    }
+
+    .masthead h1 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      line-height: 1.2;
+      margin-bottom: 0.65rem;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__sub {
+      color: var(--text-muted);
+      max-width: 82ch;
+    }
+
+    .stat-pill {
+      background: #f7faff;
+      border: 1px solid #d7e2f4;
+      color: #4f6584;
+      border-radius: 999px;
+    }
+
+    .panel,
+    .report-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .panel__title {
+      color: #4c6484;
+    }
+
+    .panel__hint {
+      color: #5f738f;
+    }
+
+    .quick-jump a {
+      background: #ffffff;
+      border: 1px solid #d7e2f2;
+      color: #4f6584;
+      transition: all 0.15s ease;
+    }
+
+    .quick-jump a:hover {
+      border-color: #a9bddc;
+      color: #274a7f;
+      background: #f2f7ff;
+    }
+
+    .toc-list li {
+      border-bottom: 1px solid #e0e8f4;
+      padding: 0.86rem 0;
+    }
+
+    .toc-list a {
+      color: #244d85;
+      font-size: 1rem;
+    }
+
+    .toc-list .blurb {
+      color: #5f738f;
+      font-size: 0.94rem;
+    }
+
+    .report-card {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .report-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, #1f6feb 0%, #4aa2ff 100%);
+      opacity: 0.85;
+    }
+
+    .report-card__head {
+      background: linear-gradient(135deg, #f8fbff 0%, #f2f7ff 100%);
+      border-bottom: 1px solid #dce6f4;
+      padding-left: 1.55rem;
+    }
+
+    .report-card__head h2 {
+      color: #183154;
+      font-size: 1.3rem;
+      line-height: 1.35;
+      text-wrap: balance;
+    }
+
+    .report-card__index {
+      border: 1px solid #b8cbe8;
+      background: #eef5ff;
+      color: #2a5c9b;
+      border-radius: 999px;
+      padding: 0.22rem 0.63rem;
+    }
+
+    .source-row {
+      color: #58708f;
+      font-size: 0.81rem;
+    }
+
+    .source-row a {
+      color: #24579b;
+    }
+
+    .quality-badge {
+      color: #2a5c9b;
+      background: #edf5ff;
+      border-color: #b8cbe8;
+      border-radius: 999px;
+    }
+
+    .meta-pill {
+      background: #f7faff;
+      border: 1px solid #d7e3f2;
+      color: #59708f;
+    }
+
+    .report-card__body {
+      padding-left: 1.55rem;
+    }
+
+    .report-section {
+      border-top: 1px solid #e0e8f4;
+      margin-top: 1.4rem;
+      padding-top: 1.25rem;
+    }
+
+    .report-section h3 {
+      color: #4a6383;
+      font-size: 0.79rem;
+      letter-spacing: 0.12em;
+    }
+
+    .report-section h4 {
+      color: #577192;
+      font-size: 0.7rem;
+    }
+
+    .report-section p {
+      color: #1f2f49;
+      text-wrap: pretty;
+    }
+
+    .summary-callout {
+      background: linear-gradient(135deg, #eef5ff 0%, #f4f8ff 100%);
+      border: 1px solid #c8d9f0;
+      border-left: 4px solid #2f76d4;
+      border-radius: 10px;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+    }
+
+    .muted {
+      color: #6b809d;
+    }
+
+    .date-line {
+      color: #5f738f;
+    }
+
+    ul.plain li::marker {
+      color: #3a79d4;
+    }
+
+    .ioc-week-table {
+      font-size: 0.8rem;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .ioc-week-table th,
+    .ioc-week-table td {
+      border-color: #d8e2f0;
+      padding: 0.5rem 0.62rem;
+      color: #22344f;
+    }
+
+    .ioc-week-table thead th {
+      background: #eff5ff;
+      color: #385b88;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .ioc-week-table tbody tr:nth-child(even) {
+      background: #f8fbff;
+    }
+
+    .conf-chip {
+      background: #f7faff;
+      border: 1px solid #d8e3f2;
+      color: #2a415f;
+      border-radius: 10px;
+    }
+
+    .conf-chip span {
+      color: #5f738f;
+    }
+
+    pre.ioc {
+      background: #f5f8fd !important;
+      border: 1px solid #d4deeb;
+      color: #213650 !important;
+      border-radius: 10px;
+      font-size: 0.84rem;
+      line-height: 1.6;
+      padding: 1.02rem 1.14rem;
+    }
+
+    .mermaid-wrap {
+      border: 1px solid #d6e1ef;
+      border-radius: 10px;
+      background: #f8fbff;
+    }
+
+    .disclaimer {
+      border-left: 4px solid #b8860b;
+      border: 1px solid #efdca6;
+      background: linear-gradient(120deg, #fff8e6 0%, #fffdf5 100%);
+    }
+
+    .disclaimer p {
+      color: #3d3a2c !important;
+    }
+
+    .article-actions a {
+      border: 1px solid #d7e2f2;
+      color: #5b708f;
+      background: #f7faff;
+    }
+
+    .article-actions a:hover {
+      color: #2d4f80;
+      border-color: #b8cbe8;
+      background: #eef5ff;
+    }
+
+    .page-footer {
+      border-top: 1px solid #d6e1ef;
+      color: #68809f;
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 900px) {
+      .page {
+        max-width: 100%;
+      }
+      .report-card__head,
+      .report-card__body {
+        padding-left: 1.25rem;
+      }
+      .report-card::before {
+        width: 3px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #111;
+      }
+      .page {
+        max-width: 100%;
+        padding: 0.5rem;
+      }
+      .panel, .report-card, .mermaid-wrap {
+        box-shadow: none;
+        border-color: #ccc;
+        break-inside: avoid;
+      }
+      .masthead__eyebrow::before { background: #333; box-shadow: none; }
+      a { color: #000; text-decoration: underline; }
+      pre.ioc {
+        background: #f5f5f5 !important;
+        color: #111 !important;
+        border-color: #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page" id="top">
+    <header class="masthead">
+      <div class="masthead__eyebrow">Threat intelligence digest</div>
+      <h1>The Feed 2025-04-25</h1>
+      <p class="masthead__sub">ISO week <strong style="color: var(--text);">2025-04-25</strong> — structured for SOC, detection engineering, and IR. Each block is grounded in sourced reporting; verify before enforcement.</p>
+      <div class="masthead__stats">
+        <span class="stat-pill"><strong>9</strong> reports</span>
+        <span class="stat-pill">Graph: <strong>The-Feed_2025-04-25.graph.json</strong></span>
+        <span class="stat-pill">STIX: <strong>The-Feed_2025-04-25.stix.json</strong></span>
+        <span class="stat-pill">IOC CSV: <strong>The-Feed_2025-04-25.iocs.csv</strong></span>
+        <span class="stat-pill">Built: <strong>2026-03-23T23:46:57Z</strong> UTC</span>
+      </div>
+    </header>
+
+    <aside class="panel disclaimer" role="note">
+      <strong>Operational notice — human review required</strong>
+      <p style="margin:0; font-size:0.9rem; line-height:1.55; color: var(--text);">Summaries, IOCs, graphs, and STIX indicators are <em>machine-generated</em> from open web content and an LLM. They may omit context, miscopy indicators, reflect single-source bias, or be influenced by adversarial web text. <strong>Validate against originals before blocking, alerting at scale, or sharing with customers.</strong> TLP:Amber marking is applied in the STIX bundle as a default for unreviewed automation output.</p>
+    </aside>
+
+    <div class="quick-jump" aria-label="Quick jump">
+      <a href="#week-synth-h">Week synthesis</a>
+      <a href="#ioc-week-h">IOC index</a>
+      <a href="#toc-h">Table of contents</a>
+      <a href="#graph-heading">Knowledge graph</a>
+    </div>
+
+    <section class="panel week-synth" aria-labelledby="week-synth-h">
+      <h2 class="panel__title" id="week-synth-h">Week synthesis</h2>
+      <p class="panel__hint">Cross-report executive view (second LLM pass). Omitted if you used <code>--skip-week-brief</code>.</p>
+      
+      
+      
+      
+      <p style="margin-top:1rem; font-size:0.9rem; color:var(--text-muted);"><strong>Synthesis note:</strong> Week-level brief skipped (--skip-week-brief).</p>
+      
+    </section>
+
+    <section class="panel" aria-labelledby="ioc-week-h">
+      <h2 class="panel__title" id="ioc-week-h">Week IOC index (deduplicated)</h2>
+      <p class="panel__hint">Same value may appear in multiple reports; <span class="src-count"># sources</span> counts distinct article URLs. “Other” is not exported to STIX patterns.</p>
+      
+      
+        
+        
+        <h4 style="font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin:1rem 0 0.35rem;">hash</h4>
+        <table class="ioc-week-table">
+          <thead><tr><th>Value</th><th>Sources</th><th>Source URLs (preview)</th></tr></thead>
+          <tbody>
+            
+            <tr>
+              <td>251d313029b900f1060b5aef7914cc258f937b7b4de9aa6c83b1d6c02b36863e</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/</td>
+            </tr>
+            
+            <tr>
+              <td>3a7d034a793a0f03dc9930446aebf326320140584eeb171909962ec7123f9e5e</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</td>
+            </tr>
+            
+            <tr>
+              <td>55ea07bbd700488fd6330d289f210b2da119401a9e27009472d1afec2f6c6339</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</td>
+            </tr>
+            
+            <tr>
+              <td>5a8794fa12ff401f9f7212e497d5d877010f493e3bb028abd54cb12f60fc550f</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</td>
+            </tr>
+            
+            <tr>
+              <td>d18961f7777d329e17cfb824926d9e12</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/</td>
+            </tr>
+            
+            <tr>
+              <td>f69330c83662ef3dd691f730cc05d9c4439666ef363531417901a86e7c4d31c8</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+        
+      
+        
+        
+        <h4 style="font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin:1rem 0 0.35rem;">ipv4</h4>
+        <table class="ioc-week-table">
+          <thead><tr><th>Value</th><th>Sources</th><th>Source URLs (preview)</th></tr></thead>
+          <tbody>
+            
+            <tr>
+              <td>172.16.94.187</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://github.com/rootclay/WMIHACKER</td>
+            </tr>
+            
+            <tr>
+              <td>62.60.226.64</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+        
+      
+        
+        
+        <h4 style="font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin:1rem 0 0.35rem;">domain</h4>
+        <table class="ioc-week-table">
+          <thead><tr><th>Value</th><th>Sources</th><th>Source URLs (preview)</th></tr></thead>
+          <tbody>
+            
+            <tr>
+              <td>0x9c.xyz</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://www.aikido.dev/blog/xrp-supplychain-attack-official-npm-package-infected-with-crypto-stealing-backdoor</td>
+            </tr>
+            
+            <tr>
+              <td>hannibal.dev</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+        
+      
+        
+        
+        <h4 style="font-family:var(--mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin:1rem 0 0.35rem;">url</h4>
+        <table class="ioc-week-table">
+          <thead><tr><th>Value</th><th>Sources</th><th>Source URLs (preview)</th></tr></thead>
+          <tbody>
+            
+            <tr>
+              <td>45.61.141.160:8001/login/</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/</td>
+            </tr>
+            
+            <tr>
+              <td>http://104.168.7.38/xampp/knct/Lightgreatloversonhereforlovingpeoplesalot.hta</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</td>
+            </tr>
+            
+            <tr>
+              <td>http://104.168.7.38/xampp/knct/nicefeelingwithbestgoodthinksfor.txt</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</td>
+            </tr>
+            
+            <tr>
+              <td>http://216.9.224.185/33/eco/goodthingsforbestfeaturesgivenmegoodthingsforbest_______________goodthingsforbestfeaturesgivenme_____________goodthingsforbestfeaturesgivenme.doc</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</td>
+            </tr>
+            
+            <tr>
+              <td>http://45.61.151.60/login/</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/</td>
+            </tr>
+            
+            <tr>
+              <td>http://k8gege.org/Ladon</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://github.com/k8gege/Ladon</td>
+            </tr>
+            
+            <tr>
+              <td>https://github.com/k8gege/Ladon/releases</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://github.com/k8gege/Ladon</td>
+            </tr>
+            
+            <tr>
+              <td>https://k8gege.org/Download</td>
+              <td class="src-count">1</td>
+              <td style="word-break:break-all; font-size:0.7rem;">https://github.com/k8gege/Ladon</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    </section>
+
+    <nav class="panel" aria-label="Table of contents">
+      <h2 class="panel__title" id="toc-h">Table of contents</h2>
+      <ol class="toc-list">
+        
+        <li>
+          <a href="#article-1">EQNEDT32.EXE Posteler is a XLOADER (CVE-2017-11882) distributed using past vulnerabilities</a>
+          <span class="blurb">Analysis of XLoader infostealer distributed via phishing emails exploiting CVE-2017-11882 vulnerability.</span>
+        </li>
+        
+        <li>
+          <a href="#article-2">Crypters AndTools. Part2: Different Paws Same Tangle</a>
+          <span class="blurb">Analysis of the Crypters and Tools report highlighting various RATs and their geographical impact.</span>
+        </li>
+        
+        <li>
+          <a href="#article-3">Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</a>
+          <span class="blurb">Analysis of the Ladon tool&#39;s capabilities and its association with the Earth Kurma APT campaign targeting Southeast Asian sectors.</span>
+        </li>
+        
+        <li>
+          <a href="#article-4">Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</a>
+          <span class="blurb">Analysis of the WMIHACKER tool and its implications for cybersecurity in Southeast Asia.</span>
+        </li>
+        
+        <li>
+          <a href="#article-5">Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</a>
+          <span class="blurb">Analysis of the Earth Kurma APT campaign targeting Southeast Asian sectors with various tools and techniques.</span>
+        </li>
+        
+        <li>
+          <a href="#article-6">Crypters AndTools. Part2: Different Paws Same Tangle</a>
+          <span class="blurb">Analysis of Crypters And Tools reveals interconnected threat groups and their evolving tactics, highlighting ongoing phishing campaigns and malware distribution.</span>
+        </li>
+        
+        <li>
+          <a href="#article-7">XRP supply chain attack: Official NPM package infected with crypto stealing backdoor</a>
+          <span class="blurb">Analysis of a supply chain attack on the XRP NPM package, detailing the backdoor&#39;s functionality and remediation steps.</span>
+        </li>
+        
+        <li>
+          <a href="#article-8">HANNIBAL Stealer: A Rebranded Threat Born from Sharp and TX Lineage</a>
+          <span class="blurb">Analysis of the Hannibal Stealer, a rebranded malware variant with advanced capabilities for data theft and exfiltration.</span>
+        </li>
+        
+        <li>
+          <a href="#article-9">Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</a>
+          <span class="blurb">The Earth Kurma APT campaign targets Southeast Asian government and telecom sectors using advanced malware and rootkits for cyberespionage.</span>
+        </li>
+        
+      </ol>
+    </nav>
+
+    <section class="panel" aria-labelledby="graph-heading">
+      <h2 class="panel__title" id="graph-heading">Weekly knowledge graph</h2>
+      <p class="panel__hint">Entity subgraphs per source article. Full merge for Gephi / Neo4j: <code>The-Feed_2025-04-25.graph.json</code></p>
+      <div class="mermaid-wrap" style="margin-top: 1rem;">
+        <pre class="mermaid">flowchart LR
+  subgraph SG0["EQNEDT32.EXE Posteler is a XLOADER (CVE-2017-11882) distributed using past vulnerabilities"]
+    a0_n1["XLoader"]
+    a0_n2["Exploitation of CVE-2017-11882"]
+    a0_n3["Command and Scripting Interpreter"]
+    a0_n4["Input Capture"]
+    a0_n5["Application Layer Protocol"]
+    a0_n1 -->|uses| a0_n2
+    a0_n1 -->|uses| a0_n3
+    a0_n1 -->|uses| a0_n4
+    a0_n1 -->|uses| a0_n5
+  end
+  subgraph SG1["Crypters AndTools. Part2: Different Paws Same Tangle"]
+  end
+  subgraph SG2["Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors"]
+    a2_n1["Earth Kurma APT"]
+    a2_n2["Ladon"]
+    a2_n3["Network Scanning"]
+    a2_n4["Credential Dumping"]
+    a2_n5["Exploitation of Vulnerability"]
+    a2_n6["Ladon URLs"]
+    a2_n1 -->|uses| a2_n2
+    a2_n2 -->|delivers| a2_n3
+    a2_n2 -->|delivers| a2_n4
+    a2_n2 -->|delivers| a2_n5
+  end
+  subgraph SG3["Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors"]
+    a3_n1["WMIHACKER Tool"]
+    a3_n2["172.16.94.187"]
+    a3_n1 -->|uses| a3_n2
+  end
+  subgraph SG4["Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors"]
+  end
+  subgraph SG5["Crypters AndTools. Part2: Different Paws Same Tangle"]
+    a5_n1["TA558"]
+    a5_n2["Blind Eagle"]
+    a5_n3["Aggah"]
+    a5_n4["Remcos RAT"]
+    a5_n5["Async RAT"]
+    a5_n6["Agent Tesla"]
+    a5_n7["FormBook"]
+    a5_n8["XWorm"]
+    a5_n9["LokiBot"]
+    a5_n10["Revenge RAT"]
+    a5_n1 -->|related_to| a5_n2
+    a5_n1 -->|related_to| a5_n3
+    a5_n2 -->|related_to| a5_n3
+    a5_n1 -->|uses| a5_n4
+    a5_n1 -->|uses| a5_n5
+    a5_n1 -->|uses| a5_n6
+    a5_n1 -->|uses| a5_n7
+    a5_n1 -->|uses| a5_n8
+    a5_n1 -->|uses| a5_n9
+    a5_n1 -->|uses| a5_n10
+  end
+  subgraph SG6["XRP supply chain attack: Official NPM package infected with crypto stealing backdoor"]
+    a6_n1["0x9c.xyz"]
+    a6_n2["Supply Chain Attack"]
+    a6_n3["Command and Control"]
+    a6_n4["Application Layer Protocol"]
+    a6_n1 -->|delivers| a6_n2
+    a6_n2 -->|uses| a6_n3
+    a6_n2 -->|uses| a6_n4
+  end
+  subgraph SG7["HANNIBAL Stealer: A Rebranded Threat Born from Sharp and TX Lineage"]
+    a7_n1["Hannibal Stealer"]
+    a7_n2["Sharp Stealer"]
+    a7_n3["Process Injection"]
+    a7_n4["DLL Side-Loading"]
+    a7_n5["Credential Dumping"]
+    a7_n6["Credential Harvesting"]
+    a7_n7["f69330c83662ef3dd691f730cc05d9e12"]
+    a7_n8["f69330c83662ef3dd691f730cc05d9e12"]
+    a7_n9["hannibal.dev"]
+    a7_n10["http://45.61.151.60/login/"]
+  end
+  subgraph SG8["Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors"]
+    a8_n1["Earth Kurma"]
+    a8_n2["MORIYA"]
+    a8_n3["KRNRAT"]
+    a8_n4["SIMPOBOXSPY"]
+    a8_n5["DUNLOADER"]
+    a8_n6["ODRIZ"]
+    a8_n1 -->|uses| a8_n2
+    a8_n1 -->|uses| a8_n3
+    a8_n1 -->|uses| a8_n4
+    a8_n1 -->|uses| a8_n5
+    a8_n1 -->|uses| a8_n6
+  end</pre>
+      </div>
+    </section>
+
+    
+    <article class="report-card" id="article-1">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 1 / 9</span>
+        <h2>EQNEDT32.EXE Posteler is a XLOADER (CVE-2017-11882) distributed using past vulnerabilities</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://asec.ahnlab.com/ko/87689/" rel="noopener noreferrer" target="_blank">https://asec.ahnlab.com/ko/87689/</a>
+          <span class="quality-badge">full_text</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 0</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The article discusses the distribution of the XLoader infostealer malware via phishing emails that exploit the CVE-2017-11882 vulnerability in the equation editor EQNEDT32.EXE. It highlights the use of malicious DOCX documents that trigger the execution of the malware through an RTF document embedded within.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2025-04-25</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 105884
+content_kind: html
+content_type: text/html; charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:23:16Z
+final_url: https://asec.ahnlab.com/ko/87689/
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2025-04-25
+request_url: https://asec.ahnlab.com/ko/87689/
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>medium</div>
+            <div class="conf-chip"><span>IOCs</span>high</div>
+            <div class="conf-chip"><span>TTPs</span>high</div>
+            <div class="conf-chip"><span>Summary</span>high</div>
+            <div class="conf-chip"><span>Recommendations</span>high</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The analysis is based on a single source, which may introduce bias. The context of the report is limited to the information provided in the article, and there may be additional relevant details not covered. The extraction of IOCs and TTPs is based solely on the text, and further validation is needed before implementing any defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((XLoader infostealer exploiting CVE-2017-11882))
+    Malware Distribution
+      Distributed via phishing emails.
+      Uses DOCX documents to trigger malware execution.
+    Exploitation Technique
+      Exploits CVE-2017-11882 vulnerability.
+      Involves execution of RTF documents.
+    Malware Characteristics
+      XLoader identified as the final payload.
+      Uses HorusProtector for distribution.
+    Defensive Recommendations
+      Remove vulnerable Office versions.
+      Apply security updates regularly.</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;EQNEDT32.EXE Posteler is a XLOADER (CVE-2017-11882) distributed using past vulnerabilities&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2025-04-25&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Postealer&quot;,
+    &quot;Formbook&quot;,
+    &quot;Horus_protector&quot;
+  ],
+  &quot;geo&quot;: [],
+  &quot;ttp_tactics&quot;: 2,
+  &quot;ttp_techniques&quot;: 4,
+  &quot;ttp_list&quot;: [
+    &quot;T1203&quot;,
+    &quot;T1059.001&quot;,
+    &quot;T1056.001&quot;,
+    &quot;T1071.001&quot;
+  ],
+  &quot;ioc_domain&quot;: 0,
+  &quot;ioc_url&quot;: 0,
+  &quot;ioc_ip&quot;: 0,
+  &quot;ioc_file&quot;: 0,
+  &quot;ioc_command&quot;: 1,
+  &quot;software&quot;: [
+    &quot;microsoft office (2007)&quot;,
+    &quot;microsoft office (2010)&quot;,
+    &quot;microsoft office (2013)&quot;,
+    &quot;microsoft office (2016)&quot;
+  ],
+  &quot;wallets&quot;: [],
+  &quot;crypto&quot;: [],
+  &quot;algorithms&quot;: [
+    &quot;base64&quot;,
+    &quot;md5&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [],
+  &quot;links&quot;: [
+    &quot;https://asec.ahnlab.com/ko/87689/&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>The XLoader infostealer is distributed using phishing emails disguised as purchase order confirmations. The attack exploits the CVE-2017-11882 vulnerability in Microsoft Office&#39;s equation editor, leading to the execution of a malicious RTF document that runs a VBE script to download and execute the malware.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          
+          <ul class="plain"><li>Remove vulnerable versions of Microsoft Office.</li><li>Apply security updates to prevent malware infections.</li><li>Exercise caution when opening attachments from unknown sources.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          
+          <ul class="plain"><li>Monitor for unusual registry changes related to malware execution.</li><li>Detect execution of cmd.exe with suspicious parameters.</li><li>Analyze email attachments for known malicious document patterns.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+          <p class="muted">No IOCs listed in source text (or fetch/metadata-only).</p>
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-2">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 2 / 9</span>
+        <h2>Crypters AndTools. Part2: Different Paws Same Tangle</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://github.com/ThreatLabz/iocs/blob/main/blindeagle/blindeagle\_domains.txt" rel="noopener noreferrer" target="_blank">https://github.com/ThreatLabz/iocs/blob/main/blindeagle/blindeagle\_domains.txt</a>
+          <span class="quality-badge">metadata_only</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 0</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The report discusses various remote access trojans (RATs) and their operational details, but the article text is missing, limiting the extraction of specific IOCs and technical details.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+            
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 0
+content_kind: empty
+content_type: 
+error: Client error &#39;404 Not Found&#39; for url &#39;https://github.com/ThreatLabz/iocs/blob/main/blindeagle/blindeagle\_domains.txt&#39;
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:23:44Z
+final_url: https://github.com/ThreatLabz/iocs/blob/main/blindeagle/blindeagle\_domains.txt
+from_cache: False
+http_status: 0
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: None
+request_url: https://github.com/ThreatLabz/iocs/blob/main/blindeagle/blindeagle\_domains.txt
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>unknown</div>
+            <div class="conf-chip"><span>IOCs</span>low</div>
+            <div class="conf-chip"><span>TTPs</span>low</div>
+            <div class="conf-chip"><span>Summary</span>low</div>
+            <div class="conf-chip"><span>Recommendations</span>low</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The article text is missing, limiting the ability to extract specific IOCs and detailed technical information. The analysis is based solely on metadata and parsed hints, which may not fully represent the content of the original report. Further validation is required before implementing any defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((Crypters AndTools. Part2: Different Paws Same Tangle))
+    Overview
+      Open the summary and structured profile below
+    Intel brief
+      Use --force to regenerate AI mind map</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;Crypters AndTools. Part2: Different Paws Same Tangle&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: null,
+  &quot;completeness&quot;: &quot;Low&quot;,
+  &quot;threats&quot;: [
+    &quot;Remcos_rat&quot;,
+    &quot;Asyncrat&quot;,
+    &quot;Quasar_rat&quot;,
+    &quot;Njrat&quot;,
+    &quot;Sbit_rat&quot;,
+    &quot;Limerat&quot;,
+    &quot;Agent_tesla&quot;,
+    &quot;Xworm_rat&quot;,
+    &quot;Loki_bot&quot;,
+    &quot;Formbook&quot;,
+    &quot;Revenge_rat&quot;,
+    &quot;Avemaria_rat&quot;,
+    &quot;Nanocore_rat&quot;,
+    &quot;Rhadamanthys&quot;,
+    &quot;Azorult&quot;,
+    &quot;Swaetrat&quot;,
+    &quot;Screenconnect_tool&quot;,
+    &quot;Darktrack_rat&quot;,
+    &quot;Meta_stealer&quot;,
+    &quot;Meduza&quot;,
+    &quot;Lumma_stealer&quot;,
+    &quot;3losh&quot;,
+    &quot;Headmaster&quot;,
+    &quot;Ande_loader&quot;,
+    &quot;Steganography_technique&quot;,
+    &quot;Manatools_tool&quot;,
+    &quot;Mana_tool&quot;,
+    &quot;0bj3ctivity_stealer&quot;,
+    &quot;Rtf_template_inject_technique&quot;
+  ],
+  &quot;geo&quot;: [
+    &quot;Asia&quot;,
+    &quot;Ukrainian&quot;,
+    &quot;Singapore&quot;,
+    &quot;Chile&quot;,
+    &quot;India&quot;,
+    &quot;Morocco&quot;,
+    &quot;Iraq&quot;,
+    &quot;Malaysia&quot;,
+    &quot;Panama&quot;,
+    &quot;Middle east&quot;,
+    &quot;Colombia&quot;,
+    &quot;Armenia&quot;,
+    &quot;Belarus&quot;,
+    &quot;Colombian&quot;,
+    &quot;Pakistan&quot;,
+    &quot;Moldova&quot;,
+    &quot;Nigeria&quot;,
+    &quot;Spain&quot;,
+    &quot;Pakistani&quot;,
+    &quot;America&quot;,
+    &quot;Latin america&quot;,
+    &quot;Zimbabwe&quot;,
+    &quot;Portuguese&quot;,
+    &quot;Greece&quot;,
+    &quot;Ecuador&quot;,
+    &quot;Italy&quot;,
+    &quot;Brazil&quot;,
+    &quot;Romania&quot;,
+    &quot;Turkey&quot;,
+    &quot;Saudi arabia&quot;,
+    &quot;Russian&quot;,
+    &quot;Cyprus&quot;,
+    &quot;Romanian&quot;,
+    &quot;Poland&quot;,
+    &quot;Ukraine&quot;,
+    &quot;Russia&quot;,
+    &quot;Spanish&quot;
+  ],
+  &quot;ttp_tactics&quot;: 0,
+  &quot;ttp_techniques&quot;: 0,
+  &quot;ttp_list&quot;: [],
+  &quot;ioc_domain&quot;: 0,
+  &quot;ioc_url&quot;: 0,
+  &quot;ioc_ip&quot;: 0,
+  &quot;ioc_file&quot;: 0,
+  &quot;ioc_command&quot;: 0,
+  &quot;software&quot;: [
+    &quot;Telegram&quot;,
+    &quot;Discord&quot;
+  ],
+  &quot;wallets&quot;: [
+    &quot;yoroi&quot;
+  ],
+  &quot;crypto&quot;: [],
+  &quot;algorithms&quot;: [
+    &quot;sha256&quot;,
+    &quot;md5&quot;,
+    &quot;exhibit&quot;,
+    &quot;base64&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [
+    &quot;powershell&quot;,
+    &quot;javascript&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://github.com/ThreatLabz/iocs/blob/main/blindeagle/blindeagle\\_domains.txt&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p></p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+          <p class="muted">No IOCs listed in source text (or fetch/metadata-only).</p>
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-3">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 3 / 9</span>
+        <h2>Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://github.com/k8gege/Ladon" rel="noopener noreferrer" target="_blank">https://github.com/k8gege/Ladon</a>
+          <span class="quality-badge">full_text</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 4</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The article provides a comprehensive overview of the Ladon tool, detailing its functionalities for internal network penetration testing, including various scanning and exploitation capabilities. It highlights its use in the Earth Kurma APT campaign, which targets government and telecom sectors in Southeast Asia.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2024-09-11</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 1290483
+content_kind: html
+content_type: text/html; charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:24:04Z
+final_url: https://github.com/k8gege/Ladon
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2024-09-11
+request_url: https://github.com/k8gege/Ladon
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>high</div>
+            <div class="conf-chip"><span>IOCs</span>high</div>
+            <div class="conf-chip"><span>TTPs</span>high</div>
+            <div class="conf-chip"><span>Summary</span>high</div>
+            <div class="conf-chip"><span>Recommendations</span>low</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The analysis is based on a single source, which may introduce bias. The context of the publication date and the potential for truncation in the article could affect the completeness of the information. Additionally, the extraction of IOCs and TTPs must be validated before implementing any defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((Earth Kurma APT + Ladon + Targeting Southeast Asia))
+    Ladon Tool Capabilities
+      Internal network penetration scanner
+      Supports PowerShell and Cobalt Strike
+      Batch scanning across multiple IP segments
+    Targeted Sectors
+      Government
+      Telecom
+      Southeast Asia
+    Exploitation Techniques
+      Credential dumping
+      Vulnerability exploitation
+      Network scanning
+    Detection Recommendations
+      Monitor for network scanning activity
+      Analyze logs for unauthorized access
+      Implement alerts for known vulnerabilities</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2024-09-11&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Simpoboxspy_tool&quot;,
+    &quot;Krnrat&quot;,
+    &quot;Moriya&quot;,
+    &quot;Nbtscan_tool&quot;,
+    &quot;Ladon_tool&quot;,
+    &quot;Frpc_tool&quot;,
+    &quot;Wmihacker_tool&quot;,
+    &quot;Kmlog_tool&quot;,
+    &quot;Dunloader&quot;,
+    &quot;Cobalt_strike&quot;,
+    &quot;Lolbin_technique&quot;,
+    &quot;Downtown&quot;,
+    &quot;Odriz_tool&quot;
+  ],
+  &quot;geo&quot;: [
+    &quot;Philippines&quot;,
+    &quot;Asia&quot;,
+    &quot;Thailand&quot;,
+    &quot;Malaysia&quot;,
+    &quot;Vietnam&quot;,
+    &quot;Asian&quot;
+  ],
+  &quot;ttp_tactics&quot;: 4,
+  &quot;ttp_techniques&quot;: 0,
+  &quot;ttp_list&quot;: [],
+  &quot;ioc_domain&quot;: 0,
+  &quot;ioc_url&quot;: 3,
+  &quot;ioc_ip&quot;: 0,
+  &quot;ioc_file&quot;: 0,
+  &quot;ioc_command&quot;: 40,
+  &quot;software&quot;: [
+    &quot;Dropbox&quot;,
+    &quot;PyInstaller&quot;,
+    &quot;Active Directory&quot;
+  ],
+  &quot;wallets&quot;: [],
+  &quot;crypto&quot;: [],
+  &quot;algorithms&quot;: [
+    &quot;zip&quot;,
+    &quot;aes&quot;,
+    &quot;xor&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [
+    &quot;powershell&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://github.com/k8gege/Ladon&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>Ladon is a large-scale internal network penetration scanner and lateral movement tool that supports PowerShell modules and Cobalt Strike plugins. It features functionalities such as port scanning, service identification, network asset discovery, password auditing, vulnerability detection, and exploitation. The tool can perform batch scans across multiple IP segments and supports various protocols for network asset detection.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          
+          <ul class="plain"><li>Philippines</li><li>Thailand</li><li>Malaysia</li><li>Vietnam</li></ul>
+          
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          
+          <ul class="plain"><li>Monitor for unusual network scanning activity</li><li>Analyze logs for unauthorized access attempts</li><li>Implement alerts for known vulnerabilities being exploited</li><li>Review PowerShell execution logs for suspicious commands</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+            
+            
+            
+            
+            <h4>URLs</h4>
+            <pre class="ioc">https://github.com/k8gege/Ladon/releases
+https://k8gege.org/Download
+http://k8gege.org/Ladon
+</pre>
+            
+            
+            
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-4">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 4 / 9</span>
+        <h2>Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://github.com/rootclay/WMIHACKER" rel="noopener noreferrer" target="_blank">https://github.com/rootclay/WMIHACKER</a>
+          <span class="quality-badge">full_text</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 4</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The article discusses WMIHACKER, a tool designed to bypass antivirus software for lateral movement and command execution, highlighting its functionalities and usage examples. It emphasizes the tool&#39;s potential for malicious use while claiming its intent for security learning.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2020-07-02</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 259301
+content_kind: html
+content_type: text/html; charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:24:36Z
+final_url: https://github.com/rootclay/WMIHACKER
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2020-07-02
+request_url: https://github.com/rootclay/WMIHACKER
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>unknown</div>
+            <div class="conf-chip"><span>IOCs</span>high</div>
+            <div class="conf-chip"><span>TTPs</span>high</div>
+            <div class="conf-chip"><span>Summary</span>high</div>
+            <div class="conf-chip"><span>Recommendations</span>unknown</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The analysis is based on a single source, which may introduce bias. The context of the tool&#39;s usage and its implications may not be fully captured. The article&#39;s focus on security learning could downplay potential malicious uses. Validation of the tool&#39;s effectiveness and real-world usage is necessary before implementing any defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <ul class="plain"><li>Monitor for unusual WMI command executions.</li><li>Detect unauthorized file uploads/downloads.</li></ul>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((WMIHACKER Tool Enables Bypass of Antivirus for Command Execution))
+    Tool Overview
+      Designed to bypass antivirus for lateral movement.
+      Allows command execution, file upload, and download.
+    Usage Examples
+      Commands for executing system info on remote hosts.
+      File upload and download commands demonstrated.
+    Geographical Focus
+      Targets Southeast Asian countries.
+      Potential implications for government and telecom sectors.
+    Security Implications
+      Tool can be misused for malicious purposes.
+      Emphasizes need for robust security measures.</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2020-07-02&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Wmihacker_tool&quot;
+  ],
+  &quot;geo&quot;: [
+    &quot;Philippines&quot;,
+    &quot;Thailand&quot;,
+    &quot;Malaysia&quot;,
+    &quot;Vietnam&quot;
+  ],
+  &quot;ttp_tactics&quot;: 4,
+  &quot;ttp_techniques&quot;: 0,
+  &quot;ttp_list&quot;: [],
+  &quot;ioc_domain&quot;: 0,
+  &quot;ioc_url&quot;: 0,
+  &quot;ioc_ip&quot;: 1,
+  &quot;ioc_file&quot;: 0,
+  &quot;ioc_command&quot;: 4,
+  &quot;software&quot;: [
+    &quot;Dropbox&quot;,
+    &quot;PyInstaller&quot;,
+    &quot;Active Directory&quot;
+  ],
+  &quot;wallets&quot;: [],
+  &quot;crypto&quot;: [],
+  &quot;algorithms&quot;: [
+    &quot;zip&quot;,
+    &quot;aes&quot;,
+    &quot;xor&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [
+    &quot;powershell&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://github.com/rootclay/WMIHACKER&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>WMIHACKER is a command execution tool that allows for file uploads and downloads without requiring port 445. It uses Windows Management Instrumentation (WMI) for lateral movement and can execute commands on remote hosts.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          
+          <ul class="plain"><li>Philippines</li><li>Thailand</li><li>Malaysia</li><li>Vietnam</li></ul>
+          
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          
+          <ul class="plain"><li>Monitor for unusual WMI command executions in logs.</li><li>Detect unauthorized file uploads/downloads on endpoints.</li><li>Implement strict access controls on administrative accounts.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+            
+            
+            <h4>IP addresses</h4>
+            <pre class="ioc">172.16.94.187
+</pre>
+            
+            
+            
+            
+            
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-5">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 5 / 9</span>
+        <h2>Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://github.com/w1nds/ishellcode" rel="noopener noreferrer" target="_blank">https://github.com/w1nds/ishellcode</a>
+          <span class="quality-badge">partial</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 4</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The article discusses the Inject-ShellCode tool for shellcode injection, supporting both user and kernel mode for 32-bit and 64-bit processes. However, it lacks detailed context on the Earth Kurma APT campaign and its specific activities.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2019-07-31</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 238670
+content_kind: html
+content_type: text/html; charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:24:57Z
+final_url: https://github.com/w1nds/ishellcode
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2019-07-31
+request_url: https://github.com/w1nds/ishellcode
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>medium</div>
+            <div class="conf-chip"><span>IOCs</span>low</div>
+            <div class="conf-chip"><span>TTPs</span>medium</div>
+            <div class="conf-chip"><span>Summary</span>medium</div>
+            <div class="conf-chip"><span>Recommendations</span>unknown</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The analysis is based on a single source, which may introduce bias. The article text is limited, providing minimal context on the APT campaign. Further validation is needed before implementing any defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Se…))
+    APT Campaign
+      Targets Southeast Asian government and telecom sectors
+      Utilizes various tools for operations
+    Tools & Techniques
+      Inject-ShellCode for shellcode injection
+      Supports user and kernel mode
+    Geographic Focus
+      Philippines, Thailand, Malaysia, Vietnam
+      Broader focus on Southeast Asia
+    Software Used
+      Dropbox, PyInstaller, Active Directory
+      Employs various algorithms like zip, aes, xor</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2019-07-31&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Simpoboxspy_tool&quot;,
+    &quot;Krnrat&quot;,
+    &quot;Moriya&quot;,
+    &quot;Nbtscan_tool&quot;,
+    &quot;Ladon_tool&quot;,
+    &quot;Frpc_tool&quot;,
+    &quot;Wmihacker_tool&quot;,
+    &quot;Kmlog_tool&quot;,
+    &quot;Dunloader&quot;,
+    &quot;Cobalt_strike&quot;,
+    &quot;Lolbin_technique&quot;,
+    &quot;Downtown&quot;,
+    &quot;Odriz_tool&quot;
+  ],
+  &quot;geo&quot;: [
+    &quot;Philippines&quot;,
+    &quot;Asia&quot;,
+    &quot;Thailand&quot;,
+    &quot;Malaysia&quot;,
+    &quot;Vietnam&quot;,
+    &quot;Asian&quot;
+  ],
+  &quot;ttp_tactics&quot;: 4,
+  &quot;ttp_techniques&quot;: 0,
+  &quot;ttp_list&quot;: [],
+  &quot;ioc_domain&quot;: 0,
+  &quot;ioc_url&quot;: 0,
+  &quot;ioc_ip&quot;: 0,
+  &quot;ioc_file&quot;: 0,
+  &quot;ioc_command&quot;: 0,
+  &quot;software&quot;: [
+    &quot;Dropbox&quot;,
+    &quot;PyInstaller&quot;,
+    &quot;Active Directory&quot;
+  ],
+  &quot;wallets&quot;: [],
+  &quot;crypto&quot;: [],
+  &quot;algorithms&quot;: [
+    &quot;zip&quot;,
+    &quot;aes&quot;,
+    &quot;xor&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [
+    &quot;powershell&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://github.com/w1nds/ishellcode&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>The Inject-ShellCode tool facilitates shellcode injection in both user and kernel modes, compatible with 32-bit and 64-bit processes.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          
+          <ul class="plain"><li>Philippines</li><li>Thailand</li><li>Malaysia</li><li>Vietnam</li></ul>
+          
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+          <p class="muted">No IOCs listed in source text (or fetch/metadata-only).</p>
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-6">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 6 / 9</span>
+        <h2>Crypters AndTools. Part2: Different Paws Same Tangle</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle" rel="noopener noreferrer" target="_blank">https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle</a>
+          <span class="quality-badge">full_text</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 0</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The article discusses the use of Crypters And Tools by various threat actor groups, including TA558, Blind Eagle, and Aggah, detailing their tactics, techniques, and the malware they deploy. It highlights the interconnectedness of these groups and their continued activity in phishing campaigns and malware distribution, despite previous claims of inactivity.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2025-04-25</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 447601
+content_kind: html
+content_type: text/html; charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:25:17Z
+final_url: https://global.ptsecurity.com/en/research/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle/
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2025-04-25
+request_url: https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>high</div>
+            <div class="conf-chip"><span>IOCs</span>high</div>
+            <div class="conf-chip"><span>TTPs</span>high</div>
+            <div class="conf-chip"><span>Summary</span>high</div>
+            <div class="conf-chip"><span>Recommendations</span>medium</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The analysis is based on a single source, which may introduce bias. The context of the publication date and the evolving nature of threat actors may not be fully captured. Additionally, the extraction of IOCs and TTPs relies on the fidelity of the article&#39;s content, which should be validated before implementing any defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((Crypters AndTools. Part2: Different Paws Same Tangle))
+    Overview
+      Open the summary and structured profile below
+    Intel brief
+      Use --force to regenerate AI mind map</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;Crypters AndTools. Part2: Different Paws Same Tangle&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2025-04-25&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Remcos_rat&quot;,
+    &quot;Asyncrat&quot;,
+    &quot;Quasar_rat&quot;,
+    &quot;Njrat&quot;,
+    &quot;Sbit_rat&quot;,
+    &quot;Limerat&quot;,
+    &quot;Agent_tesla&quot;,
+    &quot;Xworm_rat&quot;,
+    &quot;Loki_bot&quot;,
+    &quot;Formbook&quot;,
+    &quot;Revenge_rat&quot;,
+    &quot;Avemaria_rat&quot;,
+    &quot;Nanocore_rat&quot;,
+    &quot;Rhadamanthys&quot;,
+    &quot;Azorult&quot;,
+    &quot;Swaetrat&quot;,
+    &quot;Screenconnect_tool&quot;,
+    &quot;Darktrack_rat&quot;,
+    &quot;Meta_stealer&quot;,
+    &quot;Meduza&quot;,
+    &quot;Lumma_stealer&quot;,
+    &quot;3losh&quot;,
+    &quot;Headmaster&quot;,
+    &quot;Ande_loader&quot;,
+    &quot;Steganography_technique&quot;,
+    &quot;Manatools_tool&quot;,
+    &quot;Mana_tool&quot;,
+    &quot;0bj3ctivity_stealer&quot;,
+    &quot;Rtf_template_inject_technique&quot;
+  ],
+  &quot;geo&quot;: [
+    &quot;Asia&quot;,
+    &quot;Ukrainian&quot;,
+    &quot;Singapore&quot;,
+    &quot;Chile&quot;,
+    &quot;India&quot;,
+    &quot;Morocco&quot;,
+    &quot;Iraq&quot;,
+    &quot;Malaysia&quot;,
+    &quot;Panama&quot;,
+    &quot;Middle east&quot;,
+    &quot;Colombia&quot;,
+    &quot;Armenia&quot;,
+    &quot;Belarus&quot;,
+    &quot;Colombian&quot;,
+    &quot;Pakistan&quot;,
+    &quot;Moldova&quot;,
+    &quot;Nigeria&quot;,
+    &quot;Spain&quot;,
+    &quot;Pakistani&quot;,
+    &quot;America&quot;,
+    &quot;Latin america&quot;,
+    &quot;Zimbabwe&quot;,
+    &quot;Portuguese&quot;,
+    &quot;Greece&quot;,
+    &quot;Ecuador&quot;,
+    &quot;Italy&quot;,
+    &quot;Brazil&quot;,
+    &quot;Romania&quot;,
+    &quot;Turkey&quot;,
+    &quot;Saudi arabia&quot;,
+    &quot;Russian&quot;,
+    &quot;Cyprus&quot;,
+    &quot;Romanian&quot;,
+    &quot;Poland&quot;,
+    &quot;Ukraine&quot;,
+    &quot;Russia&quot;,
+    &quot;Spanish&quot;
+  ],
+  &quot;ttp_tactics&quot;: 5,
+  &quot;ttp_techniques&quot;: 10,
+  &quot;ttp_list&quot;: [
+    &quot;T1071.001&quot;,
+    &quot;T1071.003&quot;,
+    &quot;T1203&quot;,
+    &quot;T1566&quot;,
+    &quot;T1583&quot;,
+    &quot;T1584&quot;,
+    &quot;T1204.001&quot;,
+    &quot;T1204.002&quot;,
+    &quot;T1204.003&quot;,
+    &quot;T1204.004&quot;
+  ],
+  &quot;ioc_domain&quot;: 0,
+  &quot;ioc_url&quot;: 3,
+  &quot;ioc_ip&quot;: 1,
+  &quot;ioc_file&quot;: 3,
+  &quot;ioc_command&quot;: 1,
+  &quot;software&quot;: [
+    &quot;Telegram&quot;,
+    &quot;Discord&quot;
+  ],
+  &quot;wallets&quot;: [
+    &quot;yoroi&quot;
+  ],
+  &quot;crypto&quot;: [],
+  &quot;algorithms&quot;: [
+    &quot;sha256&quot;,
+    &quot;md5&quot;,
+    &quot;exhibit&quot;,
+    &quot;base64&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [
+    &quot;powershell&quot;,
+    &quot;javascript&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/crypters-and-tools-part-2-different-paws-same-tangle&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>The article outlines the operational tactics of several threat groups using Crypters And Tools, including phishing, steganography, and the deployment of various RATs (Remote Access Trojans) such as Remcos, AsyncRAT, and Agent Tesla. It also discusses the use of serverless infrastructure for hosting malicious payloads and the misattribution of certain techniques to specific groups.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          
+          <ul class="plain"><li>Monitor for phishing emails with specific subject lines and attachments related to hospitality and travel.</li><li>Analyze traffic to known dynamic DNS services used by threat actors.</li><li>Implement detection for common malware signatures associated with Remcos, AsyncRAT, and Agent Tesla.</li><li>Utilize threat intelligence feeds to correlate observed IOCs with known threat actor activity.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+            
+            <h4>Hashes</h4>
+            <pre class="ioc">55ea07bbd700488fd6330d289f210b2da119401a9e27009472d1afec2f6c6339
+5a8794fa12ff401f9f7212e497d5d877010f493e3bb028abd54cb12f60fc550f
+3a7d034a793a0f03dc9930446aebf326320140584eeb171909962ec7123f9e5e
+</pre>
+            
+            
+            <h4>IP addresses</h4>
+            <pre class="ioc">62.60.226.64
+</pre>
+            
+            
+            
+            <h4>URLs</h4>
+            <pre class="ioc">http://104.168.7.38/xampp/knct/nicefeelingwithbestgoodthinksfor.txt
+http://104.168.7.38/xampp/knct/Lightgreatloversonhereforlovingpeoplesalot.hta
+http://216.9.224.185/33/eco/goodthingsforbestfeaturesgivenmegoodthingsforbest_______________goodthingsforbestfeaturesgivenme_____________goodthingsforbestfeaturesgivenme.doc
+</pre>
+            
+            
+            
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-7">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 7 / 9</span>
+        <h2>XRP supply chain attack: Official NPM package infected with crypto stealing backdoor</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://www.aikido.dev/blog/xrp-supplychain-attack-official-npm-package-infected-with-crypto-stealing-backdoor" rel="noopener noreferrer" target="_blank">https://www.aikido.dev/blog/xrp-supplychain-attack-official-npm-package-infected-with-crypto-stealing-backdoor</a>
+          <span class="quality-badge">full_text</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 0</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>A supply chain attack compromised the official XRP NPM package, introducing a backdoor that steals cryptocurrency private keys. The malicious code was detected in multiple new package versions, prompting urgent remediation steps for affected users.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2025-04-22</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 362380
+content_kind: html
+content_type: text/html; charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:26:27Z
+final_url: https://www.aikido.dev/blog/xrp-supplychain-attack-official-npm-package-infected-with-crypto-stealing-backdoor
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2025-04-22
+request_url: https://www.aikido.dev/blog/xrp-supplychain-attack-official-npm-package-infected-with-crypto-stealing-backdoor
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>medium</div>
+            <div class="conf-chip"><span>IOCs</span>high</div>
+            <div class="conf-chip"><span>TTPs</span>high</div>
+            <div class="conf-chip"><span>Summary</span>high</div>
+            <div class="conf-chip"><span>Recommendations</span>medium</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The analysis is based solely on the provided article, which may not cover all aspects of the attack. There may be additional context or updates not included in this source. Analysts should validate findings against multiple sources before taking action.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <ul class="plain"><li>Block outbound connections to 0x9c.xyz.</li></ul>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <ul class="plain"><li>Monitor for signs of compromise in the xrpl package.</li></ul>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((Supply Chain Attack on XRP NPM Package))
+    Attack Overview
+      Compromised official XRP SDK package.
+      Introduced backdoor for stealing private keys.
+    Malicious Code
+      Function checks validity of private keys.
+      Sends keys to suspicious domain.
+    Detection
+      Identified through Aikido Intel monitoring.
+      Multiple versions released with malicious code.
+    Remediation Steps
+      Inspect package.json for compromised versions.
+      Move assets from affected wallets.</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;XRP supply chain attack: Official NPM package infected with crypto stealing backdoor&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2025-04-22&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Supply_chain_technique&quot;,
+    &quot;Typosquatting_technique&quot;
+  ],
+  &quot;geo&quot;: [],
+  &quot;ttp_tactics&quot;: 2,
+  &quot;ttp_techniques&quot;: 3,
+  &quot;ttp_list&quot;: [
+    &quot;T1195&quot;,
+    &quot;T1071.001&quot;,
+    &quot;T1071&quot;
+  ],
+  &quot;ioc_domain&quot;: 1,
+  &quot;ioc_url&quot;: 0,
+  &quot;ioc_ip&quot;: 0,
+  &quot;ioc_file&quot;: 0,
+  &quot;ioc_command&quot;: 0,
+  &quot;software&quot;: [
+    &quot;xrpl&quot;
+  ],
+  &quot;wallets&quot;: [],
+  &quot;crypto&quot;: [
+    &quot;ripple&quot;
+  ],
+  &quot;algorithms&quot;: [
+    &quot;ecdsa&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [
+    &quot;javascript&quot;,
+    &quot;typescript&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://www.aikido.dev/blog/xrp-supplychain-attack-official-npm-package-infected-with-crypto-stealing-backdoor&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>The attack involved the introduction of a backdoor in the xrpl package, which is the official SDK for the XRP Ledger. The malicious code includes a function that checks the validity of private keys and sends them to a suspicious domain. The attack was executed through typosquatting and manipulation of package versions.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          
+          <ul class="plain"><li>Inspect package.json and package-lock.json for compromised versions.</li><li>Move assets associated with compromised keys to secure wallets.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          
+          <ul class="plain"><li>Monitor for outbound connections to suspicious domains.</li><li>Check logs for usage of the xrpl package versions 4.2.1 to 4.2.4.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+            
+            
+            
+            <h4>Domains</h4>
+            <pre class="ioc">0x9c.xyz
+</pre>
+            
+            
+            
+            
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-8">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 8 / 9</span>
+        <h2>HANNIBAL Stealer: A Rebranded Threat Born from Sharp and TX Lineage</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/" rel="noopener noreferrer" target="_blank">https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/</a>
+          <span class="quality-badge">full_text</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 8</span>
+          <span class="meta-pill">Industries: 0</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The Hannibal Stealer is a sophisticated rebranded variant of previous stealers, targeting sensitive data from various applications and browsers while employing advanced evasion techniques. Its operational infrastructure includes a Django-based control panel for managing stolen data and a marketing strategy that spans multiple platforms.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2024-12-24</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 121054
+content_kind: html
+content_type: text/html; charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:26:58Z
+final_url: https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2024-12-24
+request_url: https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>high</div>
+            <div class="conf-chip"><span>IOCs</span>high</div>
+            <div class="conf-chip"><span>TTPs</span>high</div>
+            <div class="conf-chip"><span>Summary</span>high</div>
+            <div class="conf-chip"><span>Recommendations</span>medium</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">This analysis is based on a single source, which may introduce bias. The context of the report may be limited by the publication date and the evolving nature of the threat landscape. The extraction of IOCs and TTPs is based on the provided text, and further validation is necessary before implementing any defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((HANNIBAL Stealer: A Rebranded Threat Born from Sharp and TX Lineage))
+    Overview
+      Open the summary and structured profile below
+    Intel brief
+      Use --force to regenerate AI mind map</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;HANNIBAL Stealer: A Rebranded Threat Born from Sharp and TX Lineage&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2024-12-24&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Hannibal_stealer&quot;,
+    &quot;Sharp_stealer&quot;
+  ],
+  &quot;geo&quot;: [
+    &quot;Moldova&quot;,
+    &quot;Belarus&quot;,
+    &quot;Armenia&quot;,
+    &quot;Kazakhstan&quot;,
+    &quot;Azerbaijan&quot;,
+    &quot;Kyrgyzstan&quot;,
+    &quot;Turkey&quot;,
+    &quot;Russia&quot;
+  ],
+  &quot;ttp_tactics&quot;: 9,
+  &quot;ttp_techniques&quot;: 36,
+  &quot;ttp_list&quot;: [
+    &quot;T1047&quot;,
+    &quot;T1106&quot;,
+    &quot;T1129&quot;,
+    &quot;T1055&quot;,
+    &quot;T1543&quot;,
+    &quot;T1547&quot;,
+    &quot;T1574&quot;,
+    &quot;T1574.002&quot;,
+    &quot;T1027&quot;,
+    &quot;T1003&quot;,
+    &quot;T1552&quot;,
+    &quot;T1552.001&quot;,
+    &quot;T1555&quot;,
+    &quot;T1555.003&quot;,
+    &quot;T1010&quot;,
+    &quot;T1016&quot;,
+    &quot;T1018&quot;,
+    &quot;T1033&quot;,
+    &quot;T1057&quot;,
+    &quot;T1082&quot;,
+    &quot;T1083&quot;,
+    &quot;T1087&quot;,
+    &quot;T1518&quot;,
+    &quot;T1518.001&quot;,
+    &quot;T1614&quot;,
+    &quot;T1005&quot;,
+    &quot;T1113&quot;,
+    &quot;T1115&quot;,
+    &quot;T1213&quot;,
+    &quot;T1071&quot;,
+    &quot;T1102&quot;,
+    &quot;T1105&quot;,
+    &quot;T1573&quot;,
+    &quot;T1041&quot;,
+    &quot;T1485&quot;,
+    &quot;T1496&quot;
+  ],
+  &quot;ioc_domain&quot;: 1,
+  &quot;ioc_url&quot;: 2,
+  &quot;ioc_ip&quot;: 0,
+  &quot;ioc_file&quot;: 3,
+  &quot;ioc_command&quot;: 2,
+  &quot;software&quot;: [
+    &quot;NET Framework&quot;,
+    &quot;Chromium&quot;,
+    &quot;Chrome&quot;,
+    &quot;Total Commander&quot;,
+    &quot;Steam&quot;,
+    &quot;Telegram&quot;,
+    &quot;Discord&quot;,
+    &quot;Windows Registry&quot;,
+    &quot;TotalCommander&quot;,
+    &quot;Google Chrome&quot;,
+    &quot;Opera&quot;
+  ],
+  &quot;wallets&quot;: [
+    &quot;metamask&quot;,
+    &quot;jaxx&quot;,
+    &quot;electrum&quot;,
+    &quot;zcash&quot;,
+    &quot;bitcoincore&quot;,
+    &quot;dashcore&quot;
+  ],
+  &quot;crypto&quot;: [
+    &quot;monero&quot;,
+    &quot;binance&quot;,
+    &quot;litecoin&quot;,
+    &quot;bitcoin&quot;,
+    &quot;ethereum&quot;
+  ],
+  &quot;algorithms&quot;: [
+    &quot;sha256&quot;,
+    &quot;zip&quot;,
+    &quot;md5&quot;
+  ],
+  &quot;functions&quot;: [
+    &quot;GetLolocationInfo&quot;,
+    &quot;GetDomainDetect&quot;
+  ],
+  &quot;languages&quot;: [
+    &quot;python&quot;,
+    &quot;php&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://www.cyfirma.com/research/hannibal-stealer-a-rebranded-threat-born-from-sharp-and-tx-lineage/&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>Hannibal Stealer operates on the .NET Framework and is developed in C#. It targets Chromium and Gecko-based browsers for data extraction, compromises VPN credentials, and includes a crypto clipper module. The malware employs techniques such as process injection, DLL sideloading, and credential dumping, and utilizes a control panel for streamlined data management.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          
+          <ul class="plain"><li>Moldova</li><li>Belarus</li><li>Armenia</li><li>Kazakhstan</li><li>Azerbaijan</li><li>Kyrgyzstan</li><li>Turkey</li><li>Russia</li></ul>
+          
+          <h4>Industries</h4>
+          <p class="muted">Not explicitly stated in source.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          <p class="muted">None extracted.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          
+          <ul class="plain"><li>Monitor for unusual outbound connections to known C2 IPs or domains.</li><li>Implement detection for known malware hashes in endpoint security solutions.</li><li>Analyze clipboard activity for signs of clipboard hijacking.</li><li>Review logs for unauthorized access to sensitive applications like VPNs and cryptocurrency wallets.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+            
+            <h4>Hashes</h4>
+            <pre class="ioc">d18961f7777d329e17cfb824926d9e12
+f69330c83662ef3dd691f730cc05d9c4439666ef363531417901a86e7c4d31c8
+251d313029b900f1060b5aef7914cc258f937b7b4de9aa6c83b1d6c02b36863e
+</pre>
+            
+            
+            
+            <h4>Domains</h4>
+            <pre class="ioc">hannibal.dev
+</pre>
+            
+            
+            <h4>URLs</h4>
+            <pre class="ioc">http://45.61.151.60/login/
+45.61.141.160:8001/login/
+</pre>
+            
+            
+            
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+    <article class="report-card" id="article-9">
+      <header class="report-card__head">
+        <span class="report-card__index">Report 9 / 9</span>
+        <h2>Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors</h2>
+        <div class="source-row">
+          <span style="color: var(--text-muted);">Source ·</span>
+          <a href="https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html" rel="noopener noreferrer" target="_blank">https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html</a>
+          <span class="quality-badge">full_text</span>
+        </div>
+        <div class="report-meta">
+          <span class="meta-pill">Feed dates: 1</span>
+          <span class="meta-pill">Countries: 4</span>
+          <span class="meta-pill">Industries: 2</span>
+        </div>
+      </header>
+      <div class="report-card__body">
+        <section class="report-section">
+          <h3>Executive summary</h3>
+          <div class="summary-callout">
+            <p>The Earth Kurma APT campaign has been identified as targeting government and telecommunications sectors in Southeast Asia, employing sophisticated malware and rootkits for data exfiltration. The campaign poses significant risks due to its use of advanced techniques for maintaining persistence and evading detection.</p>
+          </div>
+          <p class="date-line">Feed dates: <span>2025-04-25</span>
+             · Article date (HTTP metadata): <strong style="color:var(--text);">2025-04-25</strong>
+          </p>
+        </section>
+
+        <section class="report-section">
+          <h3>Collection provenance</h3>
+          <p class="section-hint">How this text was retrieved; use with analyst confidence below.</p>
+          
+          <pre class="ioc" style="font-size:0.74rem; max-height:14rem;">bytes_downloaded: 180179
+content_kind: html
+content_type: text/html;charset=utf-8
+error: 
+fetch_truncated_max_bytes: False
+fetched_at_utc: 2026-03-23T23:27:47Z
+final_url: https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html
+from_cache: False
+http_status: 200
+max_fetch_bytes: 8000000
+max_text_chars: 120000
+pdf_pages_extracted: 0
+publish_date: 2025-04-25
+request_url: https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html
+text_truncated_to_chars: False
+</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Analyst confidence &amp; limitations</h3>
+          
+          <div class="conf-grid">
+            <div class="conf-chip"><span>Attribution</span>high</div>
+            <div class="conf-chip"><span>IOCs</span>high</div>
+            <div class="conf-chip"><span>TTPs</span>high</div>
+            <div class="conf-chip"><span>Summary</span>high</div>
+            <div class="conf-chip"><span>Recommendations</span>high</div>
+          </div>
+          
+          <p style="font-size:0.9rem;">The analysis is based on a single-source report, which may introduce bias. The context of the campaign&#39;s activities may not be fully captured, and the report&#39;s findings should be validated against additional sources before implementing defensive measures.</p>
+          
+        </section>
+
+        
+        <section class="report-section">
+          <h3>Course of action (prioritized)</h3>
+          <p class="section-hint">Immediate → short-term hunt/hardening → strategic. Grounded in source text only.</p>
+          <div class="coa-grid">
+            <div class="coa-col">
+              <h4>Immediate</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Short-term</h4>
+              <p class="muted">—</p>
+            </div>
+            <div class="coa-col">
+              <h4>Strategic</h4>
+              <p class="muted">—</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section">
+          <h3>Intel brief mind map</h3>
+          <p class="section-hint">Mermaid <code>mindmap</code> — campaign, malware, infrastructure, TTPs, detection themes when supported by the source.</p>
+          
+          <div class="mermaid-wrap mindmap-article">
+            <pre class="mermaid">mindmap
+  root((Earth Kurma APT Campaign Targets Southeast Asia))
+    Campaign Overview
+      Targets government and telecom sectors.
+      Utilizes advanced malware and rootkits.
+    Malware Tools
+      Employs tools like MORIYA and KRNRAT.
+      Uses cloud services for data exfiltration.
+    Tactics and Techniques
+      Maintains persistence with rootkits.
+      Employs credential theft via keyloggers.
+    Geographical Focus
+      Primarily targets Southeast Asia.
+      Countries include Philippines, Vietnam, Thailand, Malaysia.
+    Defensive Recommendations
+      Enforce strict driver policies.
+      Strengthen Active Directory controls.</pre>
+          </div>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Structured profile</h3>
+          <p class="section-hint">Telegram <code>parsed</code>-style JSON for pipelines and diffing against <code>reports_by_date</code>.</p>
+          
+          <pre class="ioc">{
+  &quot;title&quot;: &quot;Earth Kurma APT Campaign Targets Southeast Asian Government, Telecom Sectors&quot;,
+  &quot;report_date&quot;: &quot;2025-04-25&quot;,
+  &quot;report_dates&quot;: [
+    &quot;2025-04-25&quot;
+  ],
+  &quot;publish_date_http&quot;: &quot;2025-04-25&quot;,
+  &quot;completeness&quot;: &quot;High&quot;,
+  &quot;threats&quot;: [
+    &quot;Simpoboxspy_tool&quot;,
+    &quot;Krnrat&quot;,
+    &quot;Moriya&quot;,
+    &quot;Nbtscan_tool&quot;,
+    &quot;Ladon_tool&quot;,
+    &quot;Frpc_tool&quot;,
+    &quot;Wmihacker_tool&quot;,
+    &quot;Kmlog_tool&quot;,
+    &quot;Dunloader&quot;,
+    &quot;Cobalt_strike&quot;,
+    &quot;Lolbin_technique&quot;,
+    &quot;Downtown&quot;,
+    &quot;Odriz_tool&quot;
+  ],
+  &quot;geo&quot;: [
+    &quot;Philippines&quot;,
+    &quot;Thailand&quot;,
+    &quot;Malaysia&quot;,
+    &quot;Vietnam&quot;,
+    &quot;Asia&quot;
+  ],
+  &quot;ttp_tactics&quot;: 4,
+  &quot;ttp_techniques&quot;: 0,
+  &quot;ttp_list&quot;: [],
+  &quot;ioc_domain&quot;: 0,
+  &quot;ioc_url&quot;: 0,
+  &quot;ioc_ip&quot;: 0,
+  &quot;ioc_file&quot;: 0,
+  &quot;ioc_command&quot;: 12,
+  &quot;software&quot;: [
+    &quot;Dropbox&quot;,
+    &quot;PyInstaller&quot;,
+    &quot;Active Directory&quot;
+  ],
+  &quot;wallets&quot;: [],
+  &quot;crypto&quot;: [],
+  &quot;algorithms&quot;: [
+    &quot;zip&quot;,
+    &quot;aes&quot;,
+    &quot;xor&quot;
+  ],
+  &quot;functions&quot;: [],
+  &quot;languages&quot;: [
+    &quot;powershell&quot;
+  ],
+  &quot;links&quot;: [
+    &quot;https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html&quot;
+  ]
+}</pre>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Technical details</h3>
+          <p>The Earth Kurma group uses a variety of custom malware and tools, including rootkits like KRNRAT and MORIYA, to maintain a foothold in compromised networks. They utilize cloud services for data exfiltration and employ various techniques for lateral movement and credential theft.</p>
+        </section>
+
+        <section class="report-section">
+          <h3>Countries &amp; industries</h3>
+          <h4>Countries</h4>
+          
+          <ul class="plain"><li>Philippines</li><li>Thailand</li><li>Malaysia</li><li>Vietnam</li></ul>
+          
+          <h4>Industries</h4>
+          
+          <ul class="plain"><li>Government</li><li>Telecommunications</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Recommendations</h3>
+          
+          <ul class="plain"><li>Enforce strict driver installation policies.</li><li>Strengthen Active Directory and DFSR controls.</li><li>Limit SMB communications across the network.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Hunting &amp; detection</h3>
+          
+          <ul class="plain"><li>Scan for malware detections using keywords related to Earth Kurma tools.</li><li>Monitor for unusual SMB traffic and file transfers.</li><li>Audit Active Directory replication events.</li></ul>
+          
+        </section>
+
+        <section class="report-section">
+          <h3>Indicators of compromise</h3>
+          
+          
+          
+          <p class="muted">No IOCs listed in source text (or fetch/metadata-only).</p>
+          
+        </section>
+        <div class="article-actions"><a href="#top">Back to top ↑</a></div>
+      </div>
+    </article>
+    
+
+    <footer class="page-footer">
+      Weekly CTI feed · 2025-04-25 · offline-friendly static HTML
+    </footer>
+  </div>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+      securityLevel: "loose",
+      themeVariables: {
+        darkMode: true,
+        background: "#0b0e14",
+        primaryColor: "#1c2430",
+        primaryTextColor: "#e8eaed",
+        lineColor: "#4da3ff",
+        secondaryColor: "#151b24",
+        tertiaryColor: "#2a3444",
+      },
+    });
+  </script>
+</body>
+</html>

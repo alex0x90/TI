@@ -1,0 +1,90 @@
+At CYFIRMA, we are committed to delivering timely intelligence on emerging cyber threats and adversarial tactics targeting individuals and organizations. This report provides a detailed analysis of the Hannibal Stealer, a rebranded variant of the Sharp and TX stealers, which was recently cracked by the reverse engineering group, ‘llcppc_reverse’. The malware is developed in C#, operates on the .NET Framework, and is a sophisticated information stealer targeting Chromium – and Gecko-based browsers to extract sensitive data while bypassing Chrome Cookie V20 protection. Its data theft capabilities extend to cryptocurrency wallets, including Exodus, MetaMask, Monero, and more, as well as FTP clients like FileZilla and Total Commander.
+The Hannibal stealer compromises VPN credentials, Steam sessions, Telegram files, and Discord tokens, and performs comprehensive system profiling, capturing screenshots, and exfiltrating targeted files. It includes a crypto clipper module for clipboard hijacking, and it is controlled via a dedicated C2 user panel, enabling streamlined data management and exfiltration.
+The Hannibal Stealer was first advertised for sale on BreachForums on February 2, 2025, with a subscription pricing set at $150 for 1 month, $300 for 3 months, and $650 for 7 months.
+Initially, a Telegram channel was shared for contact, though it is currently inactive. Two Telegram usernames were listed on the post, suggesting they may be the developers behind the stealer. Notably, one of the users listed Hannibal Stealer for sale on a Turkish-speaking forum on February 3, 2025, followed by a post on Darkforums on February 5th, indicating a coordinated multi-platform promotion strategy.
+| File Name | CefSharp.BrowsersSubprocess.exe |
+| File Size | 127.50 KB |
+| Signed | The file is not Signed |
+| MD5 Hash | d18961f7777d329e17cfb824926d9e12 |
+| SHA256 Hash | f69330c83662ef3dd691f730cc05d9c4439666ef363531417901a86e7c4d31c8 |
+The function GetLolocationInfo retrieves the geolocation of a system and IP address by querying ip-api.com and parsing the JSON response to extract the country field. If the country matches one of several nations (e.g., Russia, Belarus, Moldova, Kazakhstan, Kyrgyzstan, Armenia, Azerbaijan, Tadjikistan), the malware terminates execution. This technique ensures the malware avoids running in specific regions. The intent is to evade analysis or prosecution by avoiding systems in the attacker’s likely home territory. This behavior is consistent with geofencing used in many advanced malware campaigns.
+The GetDomainDetect function plays a critical reconnaissance role in identifying high-value credentials stored by the victim:
+This SystemInfo class is part of a stealer malware component designed to gather and exfiltrate detailed system information from an infected machine.
+Comprehensive System Profiling: The malware collects critical host details such as OS version, CPU/GPU, RAM, screen resolution, BIOS, HWID, and MAC address using WMI queries (ManagementObjectSearcher). These attributes help uniquely identify the victim’s device.
+Network and Geolocation Data: It fetches IP address, country, BSSID (Wi-Fi info), and clipboard contents, potentially containing sensitive or credential-related data. Clipboard theft is often used to capture copied passwords or crypto wallet addresses.
+Attribution Marking: The ASCII art includes a Telegram handle (CoderSharp), indicating the threat actor’s branding channel.
+Log File Creation: All collected data is dumped into a file (Information.txt) for either local staging before exfiltration by the attacker.
+This code segment is part of an info-stealer malware specifically designed to target and exfiltrate cryptocurrency wallet data from locally-installed wallet applications such as Jaxx, Litecoin, Bitcoin, Electrum, Ethereum, Monero, and Zcash. By locating and copying wallet files from these applications, the malware aims to harvest sensitive information including private keys and transaction histories, posing a significant risk to the victim’s digital assets.
+The BitcoinCore and DashCore classes are engineered to specifically target and extract wallet files (wallet.dat) from the local installations of Bitcoin and Dash desktop clients. The malware leverages the Windows Registry to obtain the strDataDir key, which points to the storage location of the wallet files. Once identified, it copies these sensitive files to designated directories within the malware’s controlled structure (\Wallets\BitcoinCore\ or \DashCore\). These .dat files often contain private keys and transactional metadata, making them valuable assets for cybercriminals. Additionally, internal counters (Counting.bitcoincore, Counting.dashcore, and Counting.Wallets) are used to track the number of successfully exfiltrated wallets.
+The malware continuously monitors the clipboard for cryptocurrency wallet addresses. Using regular expressions, it detects addresses for various cryptocurrencies (BTC, ETH, LTC, etc.) and when a match is found, it replaces the victim’s address with the attacker’s predefined wallet address. As a result, the victim unknowingly transfers funds to the attacker’s wallet when pasting the address.
+The TotalCommander class is designed to steal the “wcx_ftp.ini” file from the user’s system if Total Commander is installed. It searches for the file in the Total Commander directory (under the user’s AppData folder) and copies it to the malware’s directory (C:\Users\<User>\AppData\Roaming\GHISLER\). This file typically contains FTP connection details, which could include sensitive login information. The counter Counting.totalcmd tracks the number of successful exfiltrations.
+The code below targets sensitive data from installed browsers, focusing on Chromium-based (e.g., Google Chrome, Opera, Brave) and Gecko-based (e.g., Firefox, Thunderbird) browsers. It searches predefined directories for browser data and extracts credentials, cookies, autofill, and credit card information. Using specialized functions, the malware decrypts encrypted data stored in files like “Login Data” and “Web Data”, storing this stolen data for later exfiltration. The decryption process relies on keys extracted from browser-specific files (e.g., “Local State” for Chromium).
+The below code involves two classes, CyberGhost and ExpressVPN, both of which are designed to copy files from directories (C:\Users\<User>\AppData\Roaming\CyberGhost) associated with the respective VPN services to a new directory.
+This info stealer also extracts details from several other VPN services, including NordVPN, OpenVPN, PIA VPN, and ProtonVPN.
+V20Collect Class Targets browser cookies and extracts sensitive data from web browsers.
+Otstuk Class Handles the creation of zip archives containing stolen data and sends it either to a Telegram bot or a private server.
+As of now, Hannibal Stealer maintains an active Telegram channel, boasting 9,587 subscribers. The group was created on September 21st, 2024.
+On March 16th, 2025, the group launched an EXE installer service branded as HANNIBAL INSTALL SERVICES, offering bulk install packages at the following rates:
+Buyers were directed to contact three different users, potentially pointing to multiple developers or operators’ involvement in the project.
+In addition to the main channel, there is a secondary Telegram channel, which has 18 subscribers.
+Additionally, a newer channel was launched on March 28th, 2025, and currently has 107 subscribers.
+This channel shared the latest Hannibal Stealer update on April 19th, indicating ongoing development and active maintenance of the malware.
+On April 14th, the Telegram channel linked to Hannibal Stealer promoted a hacktivist group, sharing a screenshot of their politically-charged defacement message.
+The hacktivist group claimed responsibility for hacking a server to protest anti-democratic practices in Turkey, framing their actions as socially motivated.
+The endorsement of this message by the stealer’s channel suggests a possible affiliation or ideological alignment with at least one of Hannibal’s developers.
+This convergence of financially driven malware and hacktivist agendas indicates a growing overlap between cybercrime and political activism in the threat landscape.
+Current findings reveal that the Telegram IDs listed in recent Hannibal Stealer sales posts on dark web forums directly match those found in older threads by the user “TXSUPPORT” on BreachForum, where “TX Stealer” was promoted on November 17th, 2024, followed by “SHARP Stealer” on December 24th, 2024.
+This overlap strongly suggests that Hannibal Stealer is likely a rebranded or incrementally modified version of earlier stealers, namely, SHARP and TX Stealer. The threat actor behind these appears to operate in cycles: first selling SHARP Stealer, then after being banned, pivoting to TX Stealer, and now promoting it as Hannibal Stealer. Despite the name changes, the marketing language and feature set have remained largely the same, pointing to minimal underlying innovation.
+Analysis of the Hannibal Stealer source code indicates that the main modification involves changes to the log delivery mechanism, transitioning from Telegram-based exfiltration to an alternative (C2) Server.
+From a functional standpoint, Hannibal appears to be a recycled variant built on the same core codebase as earlier stealers, with minimal innovation beyond its rebranded identity and updated communication methods.
+The HANNIBAL control panel, developed using the Django (Python) framework, provides a structured interface designed for executing targeted attacks, including the theft of Steam and Discord tokens. It actively collects and manages logs containing stolen credentials, tokens, and system data, while also handling stealer settings, user access, and payload deployment.
+In addition to these functions, the panel offers comprehensive monitoring capabilities, granting access to browser-stored passwords, cryptocurrency wallets, Telegram sessions, system details, files from specific directories, and captured screenshots, consolidating all the exfiltrated data into a unified log for easy access and management.
+Recent active panels associated with the Hannibal Stealer indicate ongoing operations and infrastructure maintenance, providing real-time access to stolen data and attacker tools, reflecting continued usage by threat actors. Below are the observed active panels:
+| Tactic | Technique ID | Technique |
+| Execution | T1047 | Windows Management Instrumentation |
+| T1106 | Native API | |
+| T1129 | Shared Modules | |
+| Privilege Escalation | T1055 | Process Injection |
+| T1543 | Create or Modify System Process | |
+| T1547 | Boot or Logon Autostart Execution | |
+| T1574 | Hijack Execution Flow | |
+| T1574.002 | DLL Side-Loading | |
+| Defense Evasion | T1027 | Obfuscated Files or Information |
+| Credential Access | T1003 | OS Credential Dumping |
+| T1552 | Unsecured Credentials | |
+| T1552.001 | Credentials In Files | |
+| T1555 | Credentials from Password Stores | |
+| T1555.003 | Credentials from Web Browsers | |
+| Discovery | T1010 | Application Window Discovery |
+| T1016 | System Network Configuration Discovery | |
+| T1018 | Remote System Discovery | |
+| T1033 | System Owner/User Discovery | |
+| T1057 | Process Discovery | |
+| T1082 | System Information Discovery | |
+| T1083 | File and Directory Discovery | |
+| T1087 | Account Discovery | |
+| T1518 | Software Discovery | |
+| T1518.001 | Security Software Discovery | |
+| T1614 | System Location Discovery | |
+| Collection | T1005 | Data from Local System |
+| T1113 | Screen Capture | |
+| T1115 | Clipboard Data | |
+| T1213 | Data from Information Repositories | |
+| Command and Control | T1071 | Application Layer Protocol |
+| T1102 | Web Service | |
+| T1105 | Ingress Tool Transfer | |
+| T1573 | Encrypted Channel | |
+| Exfiltration | T1041 | Exfiltration Over Command-and-Control Channel |
+| Impact | T1485 | Data Destruction |
+| T1496 | Resource Hijacking |
+The Hannibal Stealer exemplifies the modern evolution of info-stealers — modular, aggressively marketed, and persistently active across multiple platforms. While the codebase reveals minimal innovation compared to its predecessors (TX and SHARP), its expanded target set, efficient data exfiltration routines, and integration with a Django-based control panel make it a formidable tool in the cybercriminal arsenal.
+The use of geofencing, targeted domain matching, and modular collection mechanisms demonstrates a refined focus on monetizable assets. Moreover, the stealer’s active ecosystem, from installation services to public endorsement of hacktivist causes, highlights its dual role in financial cybercrime and ideological influence operations. Continued tracking of its infrastructure and evolution will be crucial for proactive defense and takedown efforts.
+Strategic Recommendations
+Tactical Recommendations
+Operational Recommendations
+| Sr. No. | Indicator | Type | Remarks |
+| 1 | f69330c83662ef3dd691f730cc05d9c4439666ef363531417901a86e7c4d31c8 | Sha256 | CefSharp.BrowsersSubprocess.exe |
+| 2 | 251d313029b900f1060b5aef7914cc258f937b7b4de9aa6c83b1d6c02b36863e | Sha256 | CefSharp.BrowsersSubprocess.dll |
+| 3 | hXXp://45.61.151[.60/login/ | URL | Control Panel |
+| 4 | 45[.]61.141.160:8001/login/ | URL | Control Panel |
+| 5 | www[.]hannibal[.]dev | URL | Control Panel |
