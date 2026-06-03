@@ -1,0 +1,1043 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Fake Microsoft Teams Campaign Delivers ValleyRAT via NSIS Installer and DLL Sideloading",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Valleyrat"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "NSIS Installer",
+        "Windows Defender",
+        "Twitter"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "SetFileAttributes"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/fake-microsoft-teams-campaign-delivers-valleyrat-via-nsis-installer-and-dll-sideloading/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "New VoidStealer Trojan bypasses Chrome’s stored data protection",
+      "completeness": "Low",
+      "threats": [
+        "Voidstealer",
+        "Meduza",
+        "Lumma_stealer",
+        "Whitesnake_stealer",
+        "Lumar",
+        "Poverty_stealer",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Vivaldi"
+      ],
+      "links": [
+        "https://www.kaspersky.com/blog/chrome-application-bound-encryption-bypass-voidstealer/55735/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Tracking TamperedChef Clusters via Certificate and Code Reuse",
+      "completeness": "Medium",
+      "threats": [
+        "Tamperedchef",
+        "Evilai",
+        "Appsuite",
+        "Justaskjacky",
+        "Residential_proxy_technique",
+        "Bloat_technique"
+      ],
+      "geo": [
+        "Israeli",
+        "Malaysia",
+        "Malaysian",
+        "Singapore",
+        "Ukraine",
+        "Ukrainian",
+        "Israel",
+        "Togo"
+      ],
+      "software": [
+        "CrystalPDF",
+        "DocuFlex",
+        "Neutralinojs",
+        "7zSFX",
+        "PDFPrime",
+        "SwiftNav",
+        "RapiDoc",
+        "RapiDoc RapiDoc",
+        "PAN-OS"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/tracking-tampered-chef-clusters/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Operation Dragon Whistle: UNG002 Targets Chinese Academia via Weaponized Institutional Lure",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Lolbin_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Korean",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 18,
+      "software": [
+        "macOS",
+        "Bandizip",
+        "Windows security",
+        "Event Tracing for Windows",
+        "Alibaba Cloud",
+        "Feishu",
+        "HiChina",
+        "baba Cloud spec"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "CreateArk"
+      ],
+      "languages": [
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-dragon-whistle-ung002-targets-chinese-academia-via-weaponized-institutional-lure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "PoisonX WindowsTelemetry: BYOVD-Assisted RAT With a Plugin Loader",
+      "completeness": "Medium",
+      "threats": [
+        "Poisonx",
+        "Byovd_technique",
+        "Rusty_stealer",
+        "Ailurophile_stealer",
+        "Mranon",
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Winrm_tool",
+        "Cridex",
+        "Domain_fronting_technique"
+      ],
+      "geo": [
+        "Hong",
+        "kong"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/poisonx-windowstelemetry-byovd-rat/",
+        "https://github.com/kirkderp/yara/tree/main/poisonx\\_windowstelemetry"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Telegram smishing is back after two years, and account takeovers are on again",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/93789/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "GhostTree: Unveiling Path Manipulation Techniques to Bypass Windows Security",
+      "completeness": "Low",
+      "threats": [
+        "Ghosttree_technique",
+        "Ghostbranch_tool"
+      ],
+      "software": [
+        "Windows Security",
+        "Windows Defender",
+        "Twitter"
+      ],
+      "functions": [
+        "LinkToFolder"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/ghosttree-ntfs-trick"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Inside SHADOW-WATER-063's Banana RAT: From Build Server to Banking Fraud",
+      "completeness": "High",
+      "threats": [
+        "Banana_rat",
+        "Polymorphism_technique",
+        "Bancos",
+        "Junk_code_technique",
+        "Process_injection_technique",
+        "Qshing_technique",
+        "Typosquatting_technique",
+        "Grandoreiro",
+        "Mekotio",
+        "Metamorfo",
+        "Astaroth",
+        "Chavecloak",
+        "Javali"
+      ],
+      "geo": [
+        "Portuguese",
+        "Brasil",
+        "Spain",
+        "Ita",
+        "Brazil",
+        "Mexican",
+        "Brazilian",
+        "Portugal",
+        "Chilean"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "FastAPI",
+        "NET Framework",
+        "Windows GDI",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes-256-cbc",
+        "sha256",
+        "hmac",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "Add-Type"
+      ],
+      "languages": [
+        "delphi",
+        "powershell",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/e/banana-rat.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Microsoft's MSHTA Legacy Tool Still Powers Malware Campaigns on Windows",
+      "completeness": "High",
+      "threats": [
+        "Lolbin_technique",
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Castleloader",
+        "Emmenhtal",
+        "Amatera_stealer",
+        "Countloader",
+        "Clipbanker",
+        "Purplefox",
+        "Seo_poisoning_technique",
+        "Amsi_bypass_technique",
+        "Procmon_tool",
+        "Xworm_rat",
+        "Danabot",
+        "Lalala_stealer"
+      ],
+      "software": [
+        "macOS",
+        "Claude",
+        "Internet Explorer",
+        "Microsoft Edge",
+        "Discord",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/microsofts-mshta-legacy-malware-windows"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "The World Cup Fraud Infrastructure is Nearly Three Times Larger Than We First Reported",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Mexico",
+        "Canada",
+        "China"
+      ],
+      "software": [
+        "GoDaddy",
+        "Alibaba Cloud",
+        "HiChina",
+        "Gmail"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/world-cup-fraud-infrastructure-three-times-larger-than-original-reporting"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "WantToCry ransomware remotely encrypts files",
+      "completeness": "Low",
+      "threats": [
+        "Wanttocry",
+        "Wannacry",
+        "Wannacryptor",
+        "Qtox_tool",
+        "Netsupportmanager_rat",
+        "Lockbit",
+        "Qilin_ransomware",
+        "Blackcat"
+      ],
+      "geo": [
+        "Russian federation",
+        "America",
+        "Russia",
+        "Singapore",
+        "Germany"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/wanttocry-ransomware-remotely-encrypts-files"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Reverse Shai-Hulud: Supply chain compromise impacts @antv packages",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-gcm"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/reverse-shai-hulud-supply-chain-compromise-impacts-antv-packages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Steganography Secrets: Malware Hidden in Plain Sight",
+      "completeness": "Low",
+      "threats": [
+        "Steganography_technique",
+        "Remcos_rat",
+        "Agent_tesla",
+        "Xworm_rat",
+        "Formbook"
+      ],
+      "software": [
+        "Windows Explorer",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "dotnet",
+        "javascript"
+      ],
+      "links": [
+        "https://cofense.com/blog/steganography-secrets-malware-hidden-in-plain-sight"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "CrystalX: unpacking a Go RAT through three encrypted layers",
+      "completeness": "High",
+      "threats": [
+        "Crystalx_rat",
+        "Webcrystal_rat",
+        "Mitm_technique",
+        "Wevtutil_tool",
+        "Procmon_tool",
+        "Process_hacker_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "discord",
+        "Windows Security",
+        "Chrome",
+        "Opera",
+        "discordcanary",
+        "discordptb",
+        "Telegram",
+        "Steam",
+        "Roblox",
+        "VirtualBox",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "aes",
+        "sha256",
+        "xor",
+        "chacha20",
+        "rc4",
+        "base64",
+        "deflate",
+        "aes-ctr",
+        "aes-gcm"
+      ],
+      "functions": [
+        "TaskScheduler"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/crystalx-go-rat/",
+        "https://github.com/kirkderp/yara/tree/main/crystalx\\_go\\_rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Lorem Ipsum Malware: Trojanized MS Teams Installers Deliver Multi-Stage Loader and Backdoor",
+      "completeness": "High",
+      "threats": [
+        "Lorem_ipsum_loader",
+        "Seo_poisoning_technique",
+        "Dll_sideloading_technique",
+        "Dead_drop_technique",
+        "Aitm_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Middle east",
+        "America",
+        "India",
+        "Asia",
+        "Iceland"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 16,
+      "software": [
+        "Microsoft Teams",
+        "Windows registry",
+        "Pastebin",
+        "Telegram",
+        "Twitter"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "base64",
+        "gzip"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.bluevoyant.com/blog/lorem-ipsum-trojanized-microsoft-teams-installers-multi-stage-loader-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Microsoft's durabletask PyPI Package Compromised in Supply Chain Attack",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Tailscale_tool",
+        "Firescale"
+      ],
+      "geo": [
+        "Tehran",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "systemd",
+        "Kubernetes",
+        "TanStack",
+        "LiteLLM",
+        "netes recon",
+        "nviro",
+        "reco",
+        "Linux",
+        "Claude",
+        "Docker",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "sha256",
+        "base64",
+        "aes-256-gcm",
+        "gzip"
+      ],
+      "functions": [
+        "PyPI",
+        "memfd_create"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/microsofts-durabletask-pypi-package-compromised-in-supply-chain-attack",
+        "https://github.com/step-security/harden-runner"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Eimeria: five layers from RAR5 to RunPE",
+      "completeness": "High",
+      "threats": [
+        "Eimeria",
+        "Runpe_tool",
+        "Darkgate",
+        "Process_hollowing_technique",
+        "Trojan.win32.gen.tl0101dn26zn",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "lznt1",
+        "aes-128-cbc",
+        "sha256",
+        "aes-cbc",
+        "rc4",
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://www.derp.ca/research/eimeria-multi-stage-loader/",
+        "https://github.com/kirkderp/yara/tree/main/eimeria\\_multi\\_stage\\_loader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Gremlin Stealer's Evolved Tactics: Hiding in Plain Sight With Resource Files",
+      "completeness": "Low",
+      "threats": [
+        "Gremlin_stealer",
+        "Agent_tesla",
+        "Cloudeye",
+        "Loki_bot",
+        "Quasar_rat"
+      ],
+      "software": [
+        "Discord",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "c"
+      ],
+      "languages": [
+        "csharp"
+      ],
+      "links": [
+        "https://buaq.net/go-416797.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Gamaredon’s infection chain: Spoofed emails, GammaDrop and GammaLoad",
+      "completeness": "High",
+      "threats": [
+        "Gammadrop",
+        "Gammaload",
+        "Spear-phishing_technique",
+        "Fastflux_technique",
+        "Pterolnk"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russia",
+        "Luhansk",
+        "Crimea",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "mac os",
+        "macOS"
+      ],
+      "algorithms": [
+        "base64",
+        "deflate",
+        "sha1",
+        "gzip",
+        "sha256"
+      ],
+      "links": [
+        "https://harfanglab.io/insidethelab/gamaredon-gammadrop-gammaload/",
+        "https://github.com/HarfangLab/iocs/tree/main/TRR260501",
+        "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt\\_gamaredon-1.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "DoublePulsar: A User-Defined Reflective Loader in the Crystal Palace and Tradecraft Garden Era",
+      "completeness": "Medium",
+      "threats": [
+        "Crystal_palace_tool",
+        "Doublepulsar",
+        "Cobalt_strike_tool",
+        "Crystal-kit_tool",
+        "Reflective_dll_injection_technique",
+        "Dll_injection_technique",
+        "Shadow_brokers_tool",
+        "Titanldr",
+        "Aceldr",
+        "Bokuloader",
+        "Disco",
+        "Iat_hooking_technique",
+        "Havoc",
+        "Polymorphism_technique",
+        "Meteor_wiper",
+        "Process_injection_technique",
+        "Ekko_tool",
+        "Dll_sideloading_technique",
+        "Silentmoonwalk_technique",
+        "Antidebugging_technique",
+        "Sleepmask",
+        "Beacongate",
+        "Foliage_tool",
+        "Zilean_tool",
+        "Hellsgate_technique",
+        "Tartarusgate_tool",
+        "Process_hollowing_technique"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "27",
+        "Path:",
+        "1"
+      ],
+      "software": [
+        "Microsoft Defender for Endpoint",
+        "Windows Defender Application Control",
+        "DirectX",
+        "WinHTTP",
+        "Windows kernel",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "rc4",
+        "xor",
+        "ror13"
+      ],
+      "functions": [
+        "ReflectiveLoader",
+        "Link-Time",
+        "GetIp",
+        "StubAddr",
+        "OFFSET",
+        "ace",
+        "loader",
+        "null_mut",
+        "G_END",
+        "hook_iat",
+        "have more..."
+      ],
+      "languages": [
+        "rust",
+        "java"
+      ],
+      "links": [
+        "https://memn0ps.github.io/doublepulsar-a-user-defined-reflective-loader-in-the-crystal-palace-and-tradecraft-garden-era/",
+        "https://github.com/kyleavery/AceLdr/",
+        "https://github.com/boku7/BokuLoader",
+        "https://github.com/benheise/TitanLdr"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Static Kitten APT Adversary Simulation",
+      "completeness": "Medium",
+      "threats": [
+        "Rustywater",
+        "Rustric",
+        "Process_injection_technique",
+        "Spear-phishing_technique",
+        "Process_hacker_tool",
+        "Bear-c2"
+      ],
+      "geo": [
+        "Turkmenistan",
+        "Middle east"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "VirtualBox",
+        "Xen",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Replace",
+        "Windows",
+        "WriteProcessMemory",
+        "CreateRemoteThread"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://medium.com/@S3N4T0R/static-kitten-apt-adversary-simulation-8f595aa74118"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Webworm: New burrowing techniques",
+      "completeness": "High",
+      "threats": [
+        "Echocreep",
+        "Graphworm",
+        "Wormfrp",
+        "Chainworm",
+        "Smuxproxy_tool",
+        "Wormsocket_tool",
+        "9002_rat",
+        "Mcrat",
+        "Trochilus_rat",
+        "Iox_tool",
+        "Impacket_tool",
+        "Mremoteng_tool",
+        "Nuclei_tool",
+        "Dirsearch_tool",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Serbian",
+        "South africa",
+        "China",
+        "Serbia",
+        "Ukraine",
+        "Asia",
+        "Hungary",
+        "Czechia",
+        "Spain",
+        "Nigeria",
+        "Poland",
+        "Belgium",
+        "Italy"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 29,
+      "software": [
+        "Discord",
+        "Graph API",
+        "SoftEther",
+        "Microsoft Visio",
+        "WordPress",
+        "curl",
+        "OpenSSL",
+        "Graph APIs"
+      ],
+      "algorithms": [
+        "aes-128-cbc",
+        "aes-256-cbc",
+        "base64",
+        "aes",
+        "sha1"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/webworm-new-burrowing-techniques/",
+        "https://github.com/EddieIvan01/iox",
+        "https://github.com/fatedier/frp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "KrakVM technical analysis",
+      "completeness": "Medium",
+      "threats": [
+        "Krakvm_tool",
+        "Flowerstorm_tool",
+        "Credential_harvesting_technique",
+        "Themida_tool",
+        "Asprotect_tool",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Turkey",
+        "German"
+      ],
+      "software": [
+        "GoDaddy"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "runVM",
+        "_0x52cb",
+        "sidedness"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://sublime.security/blog/flowerstorm-unleashes-the-krakvm-phaas-operators-turn-to-vm-based-obfuscation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "Mini Shai Hulud: Compromised @antv npm packages enable CI/CD credential theft",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Npmstealer",
+        "Trojan:js/obfusnpmjs"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Linux",
+        "HashiCorp Vault",
+        "Kubernetes",
+        "1Password",
+        "sudo",
+        "Dependabot",
+        "Microsoft Defender for Endpoint",
+        "Node.js",
+        "Twitter",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "pbkdf2"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/20/mini-shai-hulud-compromised-antv-npm-packages-enable-ci-cd-credential-theft/",
+        "https://github.com/advisories?query=type%3Amalware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-20",
+      "title": "DRAGONFORCE",
+      "completeness": "Medium",
+      "threats": [
+        "Ransomhub",
+        "Lockbit",
+        "Conti",
+        "Byovd_technique",
+        "Qilin_ransomware",
+        "Eldorado_ransomware",
+        "Ransombay_raas",
+        "Dragonforce_ransomware",
+        "Supply_chain_technique",
+        "Log4shell_vuln",
+        "Cobalt_strike_tool",
+        "Lolbin_technique",
+        "Dll_hijacking_technique",
+        "Rentdrv2_tool",
+        "Passview_tool",
+        "Mimikatz_tool",
+        "Lazagne_tool",
+        "Adfind_tool",
+        "Simplehelp_tool",
+        "Systembc",
+        "Timestomp_technique",
+        "Credential_dumping_technique",
+        "Pchunter_tool",
+        "Process_hacker_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "Malaysia",
+        "Belgium",
+        "German",
+        "Australia",
+        "Germany",
+        "Latin america",
+        "France",
+        "Asia-pacific",
+        "Palau",
+        "Dutch",
+        "French",
+        "Israel",
+        "United kingdom",
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 60,
+      "software": [
+        "Outlook",
+        "Ivanti",
+        "PsExec",
+        "Linux",
+        "ESXi",
+        "gatekeepers",
+        "SonicOS",
+        "Fortinet FortiOS",
+        "Tor Browser",
+        "Windows Service",
+        "have more..."
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://ccb.belgium.be/open-media/1275/download?inline&file=pdf"
+      ]
+    }
+  }
+]

@@ -1,0 +1,597 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Hackers are using shared Claude chats to drop malware",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "Claude",
+        "macOS",
+        "de Code",
+        "Anthropic"
+      ],
+      "links": [
+        "https://moonlock.com/shared-claude-chats-drop-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Inside The Gentlemen Ransomware Leak: When the Hunter Becomes the Hunted",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Qilin_ransomware",
+        "Edr-killer",
+        "Credential_harvesting_technique",
+        "Dumpbrowsersecrets_tool",
+        "Mimikatz_tool",
+        "Xenarmor_tool",
+        "Adaptixc2_tool",
+        "Uac_bypass_technique",
+        "Havoc",
+        "Zeropulse_tool",
+        "Sliver_c2_tool",
+        "Megacmd_tool",
+        "Robocopy_tool",
+        "Rclone_tool",
+        "Supply_chain_technique",
+        "Conti",
+        "Blackbasta"
+      ],
+      "geo": [
+        "Germany",
+        "Russia",
+        "Apac",
+        "Brazil",
+        "United kingdom",
+        "Turkish",
+        "India",
+        "Thailand",
+        "Turkiye"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXi",
+        "Velociraptor",
+        "NetDrive",
+        "Active Directory"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/gentlemen-ransomware-leak/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Attackers replaced JDownloader installer downloads with malware",
+      "completeness": "Low",
+      "software": [
+        "Linux",
+        "macOS"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/05/attackers-replaced-jdownloader-installer-downloads-with-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Sorry ransomware exploits cPanel authentication bypass",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "cPanel",
+        "Linux",
+        "postgresql",
+        "mariadb",
+        "redis",
+        "mysql",
+        "onenote",
+        "outlook",
+        "steam",
+        "ubuntu",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "aes-gcm",
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/sorry-ransomware-exploits-cpanel-authentication-bypass"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "INPS-themed smishing: fake fuel bonus",
+      "completeness": "Medium",
+      "threats": [
+        "Smishing_technique",
+        "Darcula_tool"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/smishing-a-tema-inps-falso-bonus-carburante/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Welcome to BlackFile: Inside a Vishing Extortion Operation",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "America",
+        "Australia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Zendesk",
+        "Salesforce",
+        "Microsoft Office",
+        "Gmail",
+        "ServiceNow",
+        "Microsoft Teams",
+        "Microsoft Defender",
+        "Outlook"
+      ],
+      "functions": [
+        "as"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/blackfile-vishing-extortion-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Gremlin Stealer's Evolved Tactics: Hiding in Plain Sight With Resource Files",
+      "completeness": "Low",
+      "threats": [
+        "Gremlin_stealer",
+        "Agent_tesla",
+        "Cloudeye",
+        "Loki_bot",
+        "Quasar_rat"
+      ],
+      "software": [
+        "Telegram",
+        "Discord"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "a",
+        "c"
+      ],
+      "languages": [
+        "csharp"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/gremlin-stealer-evolution/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "TeamPCP supply chain attack hits TanStack",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TanStack",
+        "Anthropic",
+        "claude",
+        "Kubernetes",
+        "Linux",
+        "macOS",
+        "HashiCorp Vault"
+      ],
+      "algorithms": [
+        "sha256",
+        "pbkdf2"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/teampcp-supply-chain-attack-hits-tanstack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Malicious Homebrew ads are spreading MacSync stealer",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "Claude",
+        "macOS"
+      ],
+      "links": [
+        "https://moonlock.com/homebrew-ads-spreading-macsync"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "Mini Shai-Hulud: The Worm Returns and Goes Public",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TanStack",
+        "OpenSearch",
+        "Trivy",
+        "Claude",
+        "LINUX",
+        "CyberGhost",
+        "EarthVPN",
+        "Kubernetes",
+        "vscode"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "ed25519"
+      ],
+      "functions": [
+        "getCA"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2026/may/mini-shai-hulud-worm-returns-goes-public"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "PureLogs: Delivery via PawsRunner Steganography",
+      "completeness": "High",
+      "threats": [
+        "Purelogs",
+        "Pawsrunner",
+        "Steganography_technique",
+        "Dotnet_reactor_tool",
+        "Ngrok_tool"
+      ],
+      "geo": [
+        "Japanese",
+        "Chinese",
+        "Korean",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Reactor",
+        "Google Chrome",
+        "Chrome",
+        "Chrome SxS",
+        "Chrome",
+        "Chrome Canary",
+        "Chromium",
+        "Epic Privacy Browser",
+        "Amigo",
+        "Vivaldi",
+        "Kometa",
+        "have more..."
+      ],
+      "wallets": [
+        "dashcore",
+        "wassabi",
+        "electron_cash",
+        "iocoin",
+        "bbqcoin",
+        "freicoin",
+        "goldcoin",
+        "mainnet",
+        "mymonero",
+        "mycrypto",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "dogecoin",
+        "monero",
+        "litecoin",
+        "mincoin",
+        "yacoin",
+        "binance",
+        "terracoin"
+      ],
+      "algorithms": [
+        "aes-256",
+        "rc4",
+        "sha256",
+        "gzip",
+        "cbc",
+        "3des",
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/purelogs-delivery-via-pawsrunner-steganography"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "SHADOW-EARTH-053 Uses Legacy Exchange Exploitation to Target Asia-Pacific Governments",
+      "completeness": "Medium",
+      "threats": [
+        "Shadowpad",
+        "Godzilla_webshell",
+        "Nood_rat",
+        "Iox_tool",
+        "Wstunnel_tool",
+        "Ringq_tool",
+        "Vshell",
+        "Proxylogon_exploit",
+        "Dll_sideloading_technique",
+        "Anydesk_tool",
+        "Powerview_tool",
+        "Mimikatz_tool",
+        "Evil-createdump_tool",
+        "Sharp-smbexec_tool",
+        "Lsadump_tool",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Malaysia",
+        "Thailand",
+        "Myanmar",
+        "China",
+        "India",
+        "Poland",
+        "Chinese",
+        "Sri lanka",
+        "Pakistan",
+        "Asian",
+        "Asia",
+        "Taiwan",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Exchange",
+        "Microsoft Exchange Server",
+        "Active Directory",
+        "Windows Registry"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/shadow-earth-053-uses-legacy-exchange-exploitation-to-target-asia-pacific-governments"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-15",
+      "title": "The Gentlemen Ransomware Group — Leak Analysis",
+      "completeness": "High",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Blackbasta",
+        "G-bot",
+        "Zeropulse_tool",
+        "Netexec_tool",
+        "Crackmapexec_tool",
+        "Freerdp_tool",
+        "Openconnect_tool",
+        "Rclone_tool",
+        "Mimikatz_tool",
+        "Credential_dumping_technique",
+        "Chisel_tool",
+        "Bloodhound_tool",
+        "Psexec_tool",
+        "Password_spray_technique",
+        "Ntlmrelayx_tool",
+        "Kslkatz_tool",
+        "Ksldump_tool",
+        "Dumpbrowsersecrets_tool",
+        "Qtox_tool",
+        "Fobosloader",
+        "Phemedrone",
+        "Htmlsmug_tool",
+        "Smuggling_technique",
+        "Clickfix_technique",
+        "Msi-dropper_tool",
+        "Polyglot_technique",
+        "Smtpsmug_tool",
+        "Uriurl_tool",
+        "Selfdelete_tool",
+        "Pydropper_tool",
+        "Bitmbmitb_tool",
+        "Bitm_technique",
+        "Js-smuggler",
+        "Xaitax_tool",
+        "Edrstartuphinder_tool",
+        "Nightmare_eclipse_tool",
+        "Redsun_tool",
+        "Titanis_tool",
+        "Regpwn_tool",
+        "Manspider_tool",
+        "Certihound_tool",
+        "Powerzure_tool",
+        "Chisel-ng_tool",
+        "Fobos_tool",
+        "Proxychains_tool",
+        "Nsocks_tool",
+        "Passthehash_technique",
+        "Credential_harvesting_technique",
+        "Qilin_ransomware",
+        "Clop",
+        "Gunra",
+        "Hyflock",
+        "Anubis",
+        "Bobthesmuggler_tool",
+        "Xenorat",
+        "Xenallpasswordpro_tool",
+        "Printerbug_tool",
+        "Petitpotam_vuln",
+        "Lockbit",
+        "Emotet",
+        "Deadbolt",
+        "Xenarmor_tool",
+        "Conti",
+        "Devman",
+        "Embargo_ransomware",
+        "Medusa_ransomware",
+        "Spear-phishing_technique",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Aitm_technique",
+        "Winrm_tool",
+        "Robocopy_tool",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "Koreans",
+        "Poland",
+        "Usa",
+        "China",
+        "Korea",
+        "Indian",
+        "Turkish",
+        "Brazilian",
+        "Asia",
+        "Thailand",
+        "African",
+        "Turkey",
+        "Ghana",
+        "Chinese",
+        "Singapore",
+        "Madagascar",
+        "South africa",
+        "Russia",
+        "Spanish",
+        "Russian",
+        "Asian"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 38,
+      "software": [
+        "Obsidian",
+        "Velociraptor",
+        "Claude",
+        "psexec",
+        "Tor Browser",
+        "ec / wmi",
+        "ec: 5",
+        "w",
+        "ciraptor 14 -",
+        "Browser - - O",
+        "WinSCP",
+        "have more..."
+      ],
+      "wallets": [
+        "guarda_wallet",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "VoIP",
+        "Get-PSDrive",
+        "Remove-Item"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/the-gentlemen-leak-analysis/",
+        "https://github.com/Ransom-ISAC-Org/LOCKSTAR/tree/main/The%20Gentlemen%20Leaks"
+      ]
+    }
+  }
+]

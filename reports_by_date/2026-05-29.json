@@ -1,0 +1,290 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "Typosquatted npm packages used to steal cloud and CI/CD secrets",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Microsoft Defender",
+        "OpenSearch",
+        "HashiCorp Vault",
+        "macOS",
+        "Microsoft Defender for Endpoint",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "require",
+        "GetCallerIdentity"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/28/typosquatted-npm-packages-used-steal-cloud-ci-cd-secrets/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "55+ Football Scam Campaigns Exploit FIFA World Cup 2026 Hype on Meta Platforms",
+      "completeness": "Low",
+      "geo": [
+        "Germany",
+        "Spain",
+        "Portugal",
+        "Belgium",
+        "Australia",
+        "China",
+        "Canada",
+        "Algeria",
+        "Chinese",
+        "Mexico",
+        "Brazil",
+        "England"
+      ],
+      "software": [
+        "Instagram",
+        "Gmail"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/55-football-scam-campaigns-exploit-fifa-world-cup-2026-hype-on-meta-platforms-1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "Universities and the energy industry are being attacked by an unknown group, active since at least 2024",
+      "completeness": "High",
+      "threats": [
+        "Ravage_tool",
+        "Purerat",
+        "Redline_stealer",
+        "Cobalt_strike_tool",
+        "Vidar_stealer",
+        "Lumma_stealer",
+        "Stealc",
+        "Battoexe_tool",
+        "Putty_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Microsoft Excel",
+        "NSIS installer"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "autoit"
+      ],
+      "links": [
+        "https://securelist.ru/unknown-group-targets-maritime-universities/115765/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "Operation XENOFISCAL: SideCopy deploying persistent XenoRAT targeting the MoF, Afghanistan",
+      "completeness": "High",
+      "threats": [
+        "Xenorat",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Donut",
+        "Asyncrat",
+        "Typosquatting_technique",
+        "Lolbas_technique",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Afghanistan",
+        "Pakistan",
+        "Afghan"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 32,
+      "software": [
+        "Microsoft Edge",
+        "Internet Explorer",
+        "NET Framework",
+        "Windows Scheduled Task",
+        "Windows Task Scheduler"
+      ],
+      "algorithms": [
+        "gzip",
+        "base64",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "atob",
+        "openthefile",
+        "RunProcessWithHiddenCmd",
+        "RegWorkExePathFromPublic",
+        "BSDSD94",
+        "CopyExeToUsersPublic",
+        "decompressdata",
+        "GetAntivirus",
+        "RemoveStartup"
+      ],
+      "languages": [
+        "javascript",
+        "jscript",
+        "php"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-xenofiscal-sidecopy-deploying-persistent-xenorat-targeting-the-mof-afghanistan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "Operation Dragon Weave : Uncovering a China-Linked Campaign Targeting Czech Republic and Taiwan Using Azure Cloud C2",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Adaptixc2_tool",
+        "Dll_sideloading_technique",
+        "Rustcloak",
+        "Azureveil",
+        "Dead_drop_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Czech",
+        "Taiwan",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 18,
+      "software": [
+        "Azure Blob",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "cbc",
+        "rc4",
+        "xor",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-dragon-weave-uncovering-a-china-linked-campaign-targeting-czech-republic-and-taiwan-using-azure-cloud-c2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "Rapid7 Observed Exploitation of PAN-OS GlobalProtect Authentication Bypass Vulnerability (CVE-2026-0257)",
+      "completeness": "Low",
+      "software": [
+        "PAN-OS",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/etr-rapid7-observed-exploitation-of-pan-os-globalprotect-authentication-bypass-vulnerability-cve-2026-0257",
+        "https://github.com/sfewer-r7/CVE-2026-0257"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "ChatGPhish: The Page Is the Payload",
+      "completeness": "Low",
+      "threats": [
+        "Qshing_technique"
+      ],
+      "geo": [
+        "Kosovo"
+      ],
+      "software": [
+        "ChatGPT",
+        "Firefox",
+        "OpenAI"
+      ],
+      "links": [
+        "https://permiso.io/blog/chatgpt-markdown-rendering-vulnerability"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-29",
+      "title": "Iran's Cyber Paradox: Degraded APTs, Empowered Proxies, and the Rise of Bootkit Wipers",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Dustyproxy",
+        "Minifast",
+        "Seo_poisoning_technique",
+        "Eriesnake",
+        "Iocontrol",
+        "Crucio",
+        "Confuserex_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Saudi",
+        "Saudi arabia",
+        "Russian",
+        "Turkey",
+        "Bahrain",
+        "Iranian",
+        "Middle east",
+        "Iran"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 8,
+      "software": [
+        "PAN-OS",
+        "Ivanti",
+        "OpenSSH",
+        "Ivanti EPMM"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.anomali.com/blog/irans-cyber-paradox-degraded-apts-empowered-proxies-and-the-rise-of-bootkit-wipers"
+      ]
+    }
+  }
+]

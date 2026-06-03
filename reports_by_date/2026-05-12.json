@@ -1,0 +1,374 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "Mini Shai-Hulud Strikes Again: TanStack + more npm Packages Compromised",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Shai-hulud"
+      ],
+      "geo": [
+        "Iran",
+        "Russian",
+        "Israel"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TanStack",
+        "mistralai",
+        "CircleCI",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "macOS",
+        "Linux systemd",
+        "Linux",
+        "systemd",
+        "1Password",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "typescript",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "How Dirty Frag rose from the Copy Fail exploit",
+      "completeness": "Medium",
+      "threats": [
+        "Copyfail_vuln",
+        "Multiverze",
+        "Dirtyfrag_vuln",
+        "Dirty_pipe_vuln",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "software": [
+        "Linux",
+        "Twitter",
+        "Ubuntu",
+        "Unix",
+        "Debian"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "b0",
+        "Shellcode"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/dirtyfrag-linux-privilege-escalation-exploit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "Flash Alert: EtherRat and TukTuk C2 End in The Gentleman Ransomware",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Tuktuk",
+        "Etherrat",
+        "Gotoresolve_tool",
+        "React2shell_vuln",
+        "Etherhiding_technique",
+        "Dll_sideloading_technique",
+        "Dead_drop_technique",
+        "Kerberoasting_technique",
+        "Winrm_tool",
+        "Netexec_tool",
+        "Mimikatz_tool",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 1,
+      "software": [
+        "curl",
+        "SoftPerfect Network Scanner",
+        "trycloudflare",
+        "supabase",
+        "clickhouse",
+        "Arweave",
+        "Linux",
+        "Sysinternals",
+        "Node.js",
+        "Dropbox",
+        "have more..."
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://thedfirreport.com/2026/05/11/flash-alert-etherrat-and-tuktuk-c2-end-in-the-gentleman-ransomware/",
+        "https://github.com/Pennyw0rth/NetExec"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "Shai-Hulud-Style npm Worm Hits @tanstack",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/shai-hulud-style-npm-worm-hits-tanstack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "Hackers Hijack Microsoft Teams Accounts to Spread ModeloRAT Malware",
+      "completeness": "Low",
+      "threats": [
+        "Modelorat",
+        "Crashfix",
+        "Kongtuke"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Twitter",
+        "WhatsApp",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://gbhackers.com/hackers-hijack-microsoft-teams/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "GhostLock Tool Leverages Windows API to Lock File Access Like Ransomware",
+      "completeness": "Low",
+      "threats": [
+        "Ghostlock"
+      ],
+      "software": [
+        "Microsoft Office",
+        "Microsoft Word",
+        "Active Directory",
+        "Twitter",
+        "Telegram"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/ghostlock-attack/",
+        "https://github.com/kimd155/GhostLock"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "Seedworm: Iran-Linked Hackers Breached Korean Electronics Maker in Global Spying Campaign",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Chromelevator_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Iranian",
+        "Korean",
+        "Tehran",
+        "Asian",
+        "Latin american",
+        "Middle east",
+        "Iran"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Windows security",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/iran-seedworm-electronics",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "TeamPCP hits 160+ packages including OpenSearch and Mistral AI",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Lolbin_technique",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenSearch",
+        "TanStack",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "Claude",
+        "mistralai",
+        "Linux",
+        "nSearch publ"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip",
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "createCommitOnBranch",
+        "fetch"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/teampcp-mistralai-opensearch-compromised",
+        "https://github.com/TanStack/router/issues/7383",
+        "https://github.com/opensourcemalware/osm-claude-automation/blob/main/reports/mini-shai-hulud-2026-05-12.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "Threat Intelligence \\| Analysis of a Fake TronLink Chrome Extension Phishing Campaign",
+      "completeness": "High",
+      "threats": [
+        "Homoglyph_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "SlowMist",
+        "Telegram",
+        "TronGrid"
+      ],
+      "wallets": [
+        "tronlink",
+        "tron"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://slowmist.medium.com/threat-intelligence-analysis-of-a-fake-tronlink-chrome-extension-phishing-campaign-768e8c0e8fb6"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-12",
+      "title": "Tycoon 2FA Operators Adopt OAuth Device Code Phishing",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Tycoon_2fa",
+        "Barracuda_tool",
+        "Luminati_tool",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Alibaba Cloud",
+        "CryptoJS",
+        "Node.js",
+        "Unix",
+        "Selenium",
+        "PhantomJS",
+        "ChatGPT",
+        "OpenAI",
+        "Claude",
+        "Anthropic",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "aes-cbc",
+        "aes",
+        "base64",
+        "cbc",
+        "xor"
+      ],
+      "functions": [
+        "preventDefault",
+        "WPTKdZGTUf",
+        "encryptData",
+        "decryptData",
+        "count"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/tycoon-2fa-operators-adopt-oauth-device-code-phishing",
+        "https://github.com/eSentire/iocs/tree/main/Tycoon2FA"
+      ]
+    }
+  }
+]

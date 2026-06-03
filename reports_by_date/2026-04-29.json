@@ -1,0 +1,147 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Meet Bluekit: The AI-Powered All-in-One Phishing Kit",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique",
+        "Smishing_technique",
+        "Credential_harvesting_technique",
+        "Antibot",
+        "Cloaking_technique",
+        "Mamont_spy"
+      ],
+      "software": [
+        "Telegram",
+        "Gmail",
+        "Outlook",
+        "ProtonMail",
+        "Twitter",
+        "GPT-4",
+        "Claude",
+        "DeepSeek"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/bluekit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Deep#Door Stealer: Stealthy Python Backdoor and Credential Stealer Leveraging Tunneling, Multi-Layer Persistence, and In-Memory Surveillance Capabilities",
+      "completeness": "High",
+      "threats": [
+        "Deepdoor",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique",
+        "Sandbox_evasion_technique",
+        "Process_injection_technique",
+        "Credential_dumping_technique",
+        "Procmon_tool",
+        "Timestomp_technique"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 30,
+      "software": [
+        "Windows security",
+        "Windows Defender",
+        "Microsoft Defender",
+        "Windows PowerShell",
+        "Windows Firewall",
+        "Event Tracing for Windows",
+        "Windows kernel",
+        "VirtualBox",
+        "Hyper-V",
+        "Xen",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Set-MpPreference",
+        "_chk_triage",
+        "find_bore_port",
+        "_find_bore_port",
+        "_patch_amsi",
+        "_patch_etw",
+        "_unhook_ntdll",
+        "_clear_cmdline",
+        "_stomp_pe_header",
+        "_kill_event_log",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.securonix.com/blog/deepdoor-python-backdoor-and-credential-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Manlinghua group using NUITKA packaged python samples for delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Steganography_technique",
+        "Remcos_rat"
+      ],
+      "geo": [
+        "Asian",
+        "Bangladesh",
+        "Pakistan",
+        "Asia"
+      ],
+      "software": [
+        "NUITKA"
+      ],
+      "algorithms": [
+        "aes",
+        "rc4",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247508516&idx=1&sn=a869f67294b5777615ad597c3730105e&chksm=f9c1912dceb6183b4f7f359de87814c613d58b671245307a99857eb03847a0860743516e7fae&scene=178&cur_album_id=1955835290309230595&search_click_id=#rd"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Increase in Email Bombing and IT Impersonation Campaigns",
+      "completeness": "Low",
+      "threats": [
+        "Email_bombing_technique",
+        "Microsoft_quick_assist_tool",
+        "Anydesk_tool",
+        "Rclone_tool",
+        "Megasync_tool"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "WinSCP",
+        "Office 365",
+        "Windows Security"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.esentire.com/security-advisories/increase-in-email-bombing-and-it-impersonation-campaigns"
+      ]
+    }
+  }
+]

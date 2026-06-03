@@ -1,0 +1,592 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Clickfix_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Australian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 16,
+      "software": [
+        "WordPress",
+        "elegram bo",
+        "team pr",
+        "Telegram",
+        "Steam"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Salat Stealer Analysis: Go-Based RAT, C2 Resilience, and Info-Stealing Capabilities",
+      "completeness": "High",
+      "threats": [
+        "Salatstealer",
+        "Credential_harvesting_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Steam",
+        "Chromium",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha1",
+        "xor",
+        "zip",
+        "aes-gcm",
+        "sha256",
+        "aes",
+        "md5"
+      ],
+      "functions": [
+        "Direct"
+      ],
+      "links": [
+        "https://darkatlas.io/blog/salat-stealer-analysis-go-based-rat-c2-resilience-and-info-stealing-capabilities"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "CVE-2026-23918: Apache HTTP Server HTTP/2 Double Free With Possible RCE",
+      "completeness": "Low",
+      "software": [
+        "- apache http_server (2.4.66)"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2026-23918-apache-http-server-http-2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "FEMITBOT: Abuse of Telegram Mini Apps for Large-Scale Fraud Campaigns",
+      "completeness": "Low",
+      "threats": [
+        "Femitbot",
+        "Golden_mine"
+      ],
+      "geo": [
+        "Bahrain"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "TikTok",
+        "Android",
+        "Chrome"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "gzip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cdn.prod.website-files.com/66fbdb04ee8bb0436308fc15/69f6093b2b8fcc3f49102d63_FEMITBOT%20-%20Report%20by%20CTM360%20-%202026.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "CVE-2026-26956: vm2 Sandbox Escape Enables Host RCE in Node.js 25",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Linux"
+      ],
+      "functions": [
+        "Symbol"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2026-26956-vm2-sandbox-escape-rce-node-js-25/",
+        "https://github.com/patriksimek/vm2/security/advisories/GHSA-ffh4-j6h5-pg66"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Operation HookedWing: 4-Year Multi-Sector Phishing Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Nigeria",
+        "Africa",
+        "Uganda",
+        "Pakistan",
+        "Senegal",
+        "French",
+        "Nepal",
+        "Asia",
+        "Sri lanka",
+        "Brazil",
+        "African",
+        "Afghanistan",
+        "Chile"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 13,
+      "software": [
+        "Outlook",
+        "Microsoft Outlook",
+        "office365",
+        "Azure Active Directory",
+        "Android"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "exhibit"
+      ],
+      "functions": [
+        "getInd__",
+        "getSlice__",
+        "getURLEm",
+        "AJAX",
+        "getSC"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/operation-hookedwing-4-year-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "PCPJack \\| Cloud Worm Evicts TeamPCP and Steals Credentials at Scale",
+      "completeness": "High",
+      "threats": [
+        "Pcpjack_tool",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "React2shell_vuln",
+        "Sliver_c2_tool",
+        "Typosquatting_technique",
+        "Garble_tool",
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "Trivy",
+        "LiteLLM",
+        "Slack",
+        "Linux",
+        "Telegram",
+        "WordPress",
+        "Gmail",
+        "have more..."
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana",
+        "binance",
+        "bitcoin",
+        "kucoin"
+      ],
+      "algorithms": [
+        "base64",
+        "chacha20-poly1305",
+        "ecdh",
+        "curve25519",
+        "xor",
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "_d",
+        "GetBeaconInterval"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/cloud-worm-evicts-teampcp-and-steals-credentials-at-scale/",
+        "https://github.com/urllib3/urllib3/blob/main/src/urllib3/poolmanager.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Operation GriefLure: Dissecting an APT Campaign Targeting Vietnam’s Military Telecom & Philippine Healthcare",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Polymorphism_technique",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Apc_injection_technique",
+        "Credential_harvesting_technique",
+        "Todesk_tool",
+        "Xshell_tool",
+        "Grief"
+      ],
+      "geo": [
+        "Burma",
+        "Asia-pacific",
+        "Vietnamese",
+        "Vietnam",
+        "Philippines",
+        "Asian",
+        "Philippine",
+        "China",
+        "Hong kong"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 24,
+      "software": [
+        "Windows service",
+        "Windows shell",
+        "WinHTTP",
+        "chrome",
+        "Chrome chrome",
+        "TightVNC",
+        "Windows Defender",
+        "Sunlogin",
+        "NetSarang",
+        "WeChat",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "zip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-grieflure-dissecting-an-apt-campaign-targeting-vietnams-military-telecom-philippine-healthcare/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Operation HumanitarianBait: An Infostealer Campaign in Disguise",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Pyarmor_tool",
+        "Rustdesk_tool",
+        "Anydesk_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Usa",
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 19,
+      "software": [
+        "Telegram",
+        "Windows Scheduled Task",
+        "Firefox",
+        "Chromium",
+        "Chrome",
+        "Opera",
+        "Yandex Browser",
+        "Ubuntu Linux",
+        "Flask"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-gcm",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://cyble.com/blog/operation-humanitarianbait-infostealer-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "OpenClaw’s Hologram: Fake Installer Ships Rust Infostealer",
+      "completeness": "High",
+      "threats": [
+        "Hologram",
+        "Typosquatting_technique",
+        "Stealth_packer_tool",
+        "Supply_chain_technique",
+        "Hookdeck_tool",
+        "Clroxide_tool",
+        "Vidar_stealer",
+        "Purelogs",
+        "Dead_drop_technique",
+        "Pathfinder",
+        "Com_hijacking_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "German",
+        "Brazilian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenClaw",
+        "Telegram",
+        "WinLogon",
+        "VirtualBox",
+        "Ledger Live",
+        "Bitwarden",
+        "LastPass",
+        "1Password",
+        "NordPass",
+        "Dashlane",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "rabby"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "CreateInterface"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/openclaw-hologram-fake-installer-ships-rust-infostealer",
+        "https://github.com/yamakadi/clroxide",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Malware/Hologram"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Fake call logs, real payments: How CallPhantom tricks Android users",
+      "completeness": "Medium",
+      "threats": [
+        "Callphantom"
+      ],
+      "geo": [
+        "Asia pacific",
+        "Ukraine",
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 2,
+      "software": [
+        "Android",
+        "Google Play",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "functions": [
+        "WhatsApp"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/fake-call-logs-real-payments-how-callphantom-tricks-android-users/",
+        "https://github.com/eset/malware-ioc/tree/master/callphantom"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "ClaudeBleed: A Flaw In Claude’s Browser Extension Allows Any Extension to Hijack It",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Chrome",
+        "Anthropic",
+        "Claude Chrome",
+        "Gmail"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://layerxsecurity.com/blog/a-flaw-in-claudes-browser-extension-allows-any-extension-to-hijack-it/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Abuse of Cloud-Native Infrastructure in Modern Phishing Campaigns",
+      "completeness": "Medium",
+      "threats": [
+        "Blobphish",
+        "Credential_harvesting_technique",
+        "Blob_url_obfuscation_technique",
+        "Aitm_technique",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Asia-pacific",
+        "Thailand",
+        "America",
+        "Asian",
+        "Middle east"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "Azure Blob"
+      ],
+      "functions": [
+        "SaaS"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/abuse-of-cloud-native-infrastructure-in-modern-phishing-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Unmasking a Multi-Stage Loader: AutoIt Abuse Leading to Vidar Stealer Command-and-Control Communication",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Arkei_stealer",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "WinINet API",
+        "Steam"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/unmasking-a-multi-stage-loader-autoit-abuse-leading-to-vidar-stealer-command-and-control-communication"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-07",
+      "title": "Malware Found in Trending Hugging Face Repository Open-OSS/privacy-filter",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Credential_harvesting_technique",
+        "Procmon_tool",
+        "Process_injection_technique",
+        "Winos"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Hugging Face",
+        "LiteLLM",
+        "OpenAI",
+        "Discord",
+        "Linux",
+        "macOS",
+        "Microsoft Defender",
+        "VirtualBox",
+        "QEMU",
+        "Xen",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "gzip"
+      ],
+      "functions": [
+        "_verify_checksum_integrity",
+        "Start-Process"
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.hiddenlayer.com/research/malware-found-in-trending-hugging-face-repository-open-oss-privacy-filter"
+      ]
+    }
+  }
+]

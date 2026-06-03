@@ -1,0 +1,264 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-01",
+      "title": "FSB’s matryoshka #1/3 – Gamaredon’s gifts that keeps unpacking – GammaPhish and GammaWorm",
+      "completeness": "High",
+      "threats": [
+        "Gammaphish",
+        "Gammaworm",
+        "Gammaload",
+        "Gammasteel",
+        "Pteranodon",
+        "Spear-phishing_technique",
+        "Rms_tool",
+        "Ultra_vnc_tool",
+        "Litterdrifter",
+        "Powerpunch",
+        "Quietsieves",
+        "Gammadrop",
+        "Gamawiper",
+        "Pterodoc",
+        "Pterolnk",
+        "Pterodousb",
+        "Usbstealer",
+        "Gammawipe",
+        "Dead_drop_technique",
+        "Smuggling_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russia",
+        "China",
+        "Russian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Gamma",
+        "Windows registry",
+        "Windows COM",
+        "Windows Explorer",
+        "curl"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "Get-Item"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.sekoia.io/fsbs-matryoshka-1-3-gamaredons-gifts-that-keeps-unpacking-gammaphish-and-gammaworm/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-01",
+      "title": "Fake BlueWallet steals passwords, accounts, and crypto from Macs",
+      "completeness": "Low",
+      "software": [
+        "macOS",
+        "Telegram",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Vivaldi",
+        "Opera",
+        "Opera GX",
+        "Chromium",
+        "Coccoc",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "bluewallet",
+        "electrum",
+        "atomicwallet",
+        "trezor",
+        "bitcoincore",
+        "litecoincore",
+        "dashcore",
+        "coinomi",
+        "tonkeeper",
+        "unisat",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "dogecoin",
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/06/fake-bluewallet-steals-passwords-accounts-and-crypto-from-macs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-01",
+      "title": "Mini Shai-Hulud Campaign Hits Red Hat Cloud Services npm Packages",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Shai-hulud",
+        "Blight_botnet"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "anthropic",
+        "curl",
+        "Docker",
+        "sudo"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "zip",
+        "aes-256-gcm",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/mini-shai-hulud-campaign-hits-red-hat-cloud-services-npm-packages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-01",
+      "title": "Detecting Nimbus Manticore and their sideloading infection chains",
+      "completeness": "High",
+      "threats": [
+        "Dllsearchorder_hijacking_technique",
+        "Appdomain_hijacking_technique",
+        "Asyncrat",
+        "Junk_code_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Middle east"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Visual Studio",
+        "Microsoft Word"
+      ],
+      "algorithms": [
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "TaskScheduler",
+        "CheckForUpdates"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2026/06/01/detecting-nimbus-manticore-and-their-sideloading-infection-chains/",
+        "https://github.com/NextronSystems/iocs/tree/master/reports/UNC1549%20(Nimbus%20Manticore)",
+        "https://github.com/Neo23x0/signature-base/pull/410/changes"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-01",
+      "title": "PHANTOMPULSE: anatomy of a hijackable blockchain-C2 RAT",
+      "completeness": "High",
+      "threats": [
+        "Phantompulse_rat",
+        "Phantompull",
+        "Process_injection_technique",
+        "Dll_injection_technique",
+        "Phantominject_tool",
+        "Dbgnexum_tool",
+        "Apc_injection_technique",
+        "Uac_bypass_technique",
+        "Trap_flag_technique",
+        "Uacme_tool",
+        "Dead_drop_technique",
+        "Etherhiding_technique",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Korean",
+        "Dprk",
+        "Indian",
+        "Chinese"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 0,
+      "software": [
+        "Obsidian",
+        "Windows Defender",
+        "winlogon",
+        "telegram",
+        "discord",
+        "viber",
+        "slack",
+        "whatsapp",
+        "outlook",
+        "authy",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor",
+        "bitcoincore",
+        "electrum",
+        "exodus_wallet",
+        "guarda_wallet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "lznt1",
+        "xor"
+      ],
+      "functions": [
+        "FindHostProcessEx",
+        "MainEntryLogic"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/blockchain-c2-phantompulse-rat-sinkhole",
+        "https://gist.github.com/0x-Apollyon/04b30400b51136a19c739a8ec4dc95d5",
+        "https://github.com/dis0rder0x00/DbgNexum",
+        "https://gist.github.com/soolidsnake/f5cc038aa919db19658dfe4430a62114"
+      ]
+    }
+  }
+]

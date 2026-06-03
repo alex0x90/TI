@@ -1,0 +1,57 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-16",
+      "title": "Fast16: Pre-Stuxnet Sabotage Tool Was Built to Subvert Nuclear Weapons Simulations",
+      "completeness": "Low",
+      "threats": [
+        "Fast16",
+        "Stuxnet"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/fast16-nuclear-sabotage"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-16",
+      "title": "Hunting Lazarus Part VIII: OtterCookie",
+      "completeness": "Medium",
+      "threats": [
+        "Ottercookie",
+        "Beavertail",
+        "Supply_chain_technique",
+        "Invisibleferret"
+      ],
+      "geo": [
+        "Dprk",
+        "North-korea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "macOS"
+      ],
+      "functions": [
+        "Write-Only"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://redasgard.com/blog/hunting-lazarus-part8-ottercookie"
+      ]
+    }
+  }
+]

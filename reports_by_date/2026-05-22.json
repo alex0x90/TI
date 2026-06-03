@@ -1,0 +1,489 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "The Gentlemen (Ransomware) in Disguise: Defense Evasion and other TTPs",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "ransomware.live",
+        "Anydesk_tool",
+        "Trojan:win32/mptamperbulkexcl.h",
+        "Ransom:win64/gentlemen.sh",
+        "Qilin_ransomware",
+        "Blackbyte",
+        "Trojan:win32/mptamperbulkexcl",
+        "Ransom:win64/gentlemen"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "ChatGPT",
+        "Claude"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Set-MpPreference",
+        "Set-Service",
+        "TaskScheduler"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/the-gentlemen-ransomware-defense-evasion-ttps",
+        "https://github.com/huntresslabs/threat-intel/tree/main",
+        "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-05/20260521\\_gentlemen.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "A New SonicWall Scanning Spike Echoes the Pattern That Preceded CVE-2026-0400",
+      "completeness": "Low",
+      "geo": [
+        "Netherlands",
+        "Ukraine"
+      ],
+      "software": [
+        "Slack",
+        "SonicOS",
+        "Chrome",
+        "Linux"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/sonicwall-scanning-spike-echoes-pattern-preceded-cve-2026-0400"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "VPN Exploitation When Patched Doesn't Mean Protected",
+      "completeness": "Low",
+      "threats": [
+        "Citrix_bleed_vuln",
+        "Cobalt_strike_tool",
+        "Byovd_technique",
+        "Edr-killer",
+        "Akira_ransomware"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Windows Defender Application Control"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-vpn-exploitation-when-patched-doesnt-mean-protected/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "From edge appliance to enterprise compromise: Multi-stage Linux intrusion via F5 and Confluence",
+      "completeness": "High",
+      "threats": [
+        "Nmap_tool",
+        "Gowitness_tool",
+        "Netexec_tool",
+        "Kerbrute_tool",
+        "Petitpotam_vuln",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 14,
+      "software": [
+        "Linux",
+        "Confluence",
+        "Microsoft Defender",
+        "Active Directory",
+        "BIG-IP",
+        "sudo",
+        "curl",
+        "Microsoft Defender for Endpoint",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/22/from-edge-appliance-to-enterprise-compromise-multi-stage-linux-intrusion-via-f5-and-confluence/",
+        "https://github.com/F5Networks/terraform-azure-bigip-module"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "Decentralized Threat: Stealthy P2P Cryptominer Targeting Ollama Endpoints",
+      "completeness": "Medium",
+      "threats": [
+        "Upx_tool",
+        "Xmrig_miner",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ollama",
+        "curl",
+        "supabase",
+        "WebRTC",
+        "crontab"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "functions": [
+        "exec"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2026/may/stealthy-p2p-cryptominer-ollama-endpoints"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "Help-Desk Lures Drop KongTuke's Evolved ModeloRAT",
+      "completeness": "Medium",
+      "threats": [
+        "Kongtuke",
+        "Modelorat",
+        "Clickfix_technique",
+        "Crashfix",
+        "Blackbasta",
+        "Pysoxy_tool",
+        "Winpython_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "WordPress",
+        "Slack",
+        "Zoom"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-help-desk-lures-drop-kongtukes-evolved-modelorat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "Fast and Furious – Nimbus Manticore Operations During the Iranian Conflict",
+      "completeness": "Medium",
+      "threats": [
+        "Minifast",
+        "Seo_poisoning_technique",
+        "Minijunk",
+        "Appdomain_hijacking_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Israeli",
+        "Saudi arabia",
+        "Iran",
+        "United arab emirates",
+        "Australia",
+        "Arab emirates",
+        "Africa",
+        "Israel",
+        "Iranian",
+        "Middle east"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "OnlyOffice",
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "TaskDescriptor",
+        "TaskRecord",
+        "taskId",
+        "taskIdLen",
+        "GetUserName"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "ClickFix Evolves with PySoxy Proxying",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Pysoxy_tool",
+        "Ai-clickfix_technique",
+        "Socgholish_loader"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Node.js"
+      ],
+      "functions": [
+        "taskId"
+      ],
+      "languages": [
+        "perl",
+        "cscript",
+        "powershell",
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-clickfix-evolves-with-pysoxy-proxying/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "ShinyHunters Delivers Outsized Impact",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Akira_ransomware",
+        "Qilin_ransomware",
+        "0apt_syndicate",
+        "Supply_chain_technique",
+        "Ransomhub",
+        "Blackcat",
+        "Disabling_antivirus_technique",
+        "Inc_ransomware",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Thailand",
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "Linux",
+        "ESXi"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-ransomware-and-cyber-extortion-in-q1-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "Cloud Atlas activity in the second half of 2025 and early 2026: new tools and a new payload",
+      "completeness": "High",
+      "threats": [
+        "Revsocks_tool",
+        "Vbcloud_tool",
+        "Powershower_tool",
+        "Kerberoasting_technique",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Paexec_tool",
+        "Ps2exe_tool",
+        "Phantomheart",
+        "Reversesocks_tool"
+      ],
+      "geo": [
+        "Belarus",
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Office",
+        "Active Directory",
+        "Remote Desktop Services",
+        "PsExec",
+        "OpenSSH",
+        "Tor Browser",
+        "Chrome",
+        "Firefox",
+        "Windows ime",
+        "Windows setup",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "rc4",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "WriteToSchedulerKillSSH",
+        "WriteToSchedulerGenerateKey"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://securelist.com/cloud-atlas-2026/119895/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "Malicious Postinstall Hook Found Across 700+ GitHub Repositories, Including Packagist and Node.js Projects",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Linux",
+        "curl",
+        "Laravel",
+        "Alpine",
+        "Livewire"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-postinstall-hook-found-across-700-github-repos",
+        "https://github.com/moritz-sauer-13/silverstripe-cms-theme/commit/7825479",
+        "https://github.com/thedevdojo/wave/commit/8f9127a",
+        "https://github.com/crosiersource/crosierlib-base/commit/551c319"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "Tracking Iranian APT Screening Serpens’ 2026 Espionage Campaigns",
+      "completeness": "High",
+      "threats": [
+        "Miniupdate",
+        "Minijunk",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Lolbin_technique",
+        "Junk_code_technique",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Iran",
+        "Israeli",
+        "Australia",
+        "Iranian",
+        "United arab emirates",
+        "India",
+        "Korea",
+        "Asia",
+        "Japan",
+        "Arab emirates",
+        "Israel"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "ONLYOFFICE",
+        "event tracing for Windows",
+        "Windows Task Scheduler",
+        "Task Scheduler",
+        "gatekeeper",
+        "Windows service",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "Pre-Main"
+      ],
+      "languages": [
+        "java",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-22",
+      "title": "Hunting Lazarus Part IX: The Google Mirror",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique",
+        "Beavertail",
+        "Ottercookie"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "chrome",
+        "Bitwarden",
+        "Node.js"
+      ],
+      "wallets": [
+        "tronlink",
+        "mainnet",
+        "tron"
+      ],
+      "crypto": [
+        "aptos",
+        "solana"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "HTTPS",
+        "RPC",
+        "fetch"
+      ],
+      "links": [
+        "https://redasgard.com/blog/hunting-lazarus-part9-google-mirror"
+      ]
+    }
+  }
+]

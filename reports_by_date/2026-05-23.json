@@ -1,0 +1,160 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-23",
+      "title": "Laravel Lang Compromised with RCE Backdoor Across 700+ Versions",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Awscollector_tool",
+        "Putty_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Laravel",
+        "Unix",
+        "Linux",
+        "macOS",
+        "Slack",
+        "Discord",
+        "Kubernetes",
+        "Helm",
+        "HashiCorp Vault",
+        "Jenkins",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "cscript",
+        "php"
+      ],
+      "links": [
+        "https://socket.dev/blog/laravel-lang-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-23",
+      "title": "Supply Chain Attack Targets Laravel-Lang Packages with Credential Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Putty_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Laravel",
+        "curl",
+        "Linux",
+        "macOS",
+        "HashiCorp Vault",
+        "Helm",
+        "Docker",
+        "mysql",
+        "Chrome",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash",
+        "electrum",
+        "exodus_wallet",
+        "trezor",
+        "wassabi",
+        "metamask",
+        "keplr",
+        "solflare",
+        "rabby"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "monero",
+        "litecoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "aes-256"
+      ],
+      "functions": [
+        "laravel_lang_locale",
+        "laravel_lang_fallback",
+        "exec"
+      ],
+      "languages": [
+        "cscript",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/supply-chain-attack-targets-laravel-lang-packages-with-credential-stealer",
+        "https://github.com/Laravel-Lang/common/issues/257",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-23",
+      "title": "GENTLEMEN RANSOMWARE LEAKS",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Openconnect_tool",
+        "Edr-killer",
+        "Petitpotam_vuln",
+        "Netexec_tool",
+        "Wevtutil_tool",
+        "Megacmd_tool",
+        "Rclone_tool",
+        "Lockbit"
+      ],
+      "geo": [
+        "Egyptian",
+        "Singapore",
+        "Germany",
+        "Sri lanka",
+        "Mexico",
+        "Mongolia",
+        "Russia",
+        "Russian",
+        "Austria",
+        "Netherlands",
+        "Egypt"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "OpenAI",
+        "ux 7 (V",
+        "PsExec"
+      ],
+      "algorithms": [
+        "des",
+        "sha512",
+        "md5"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/05/23/gentlemen-ransomware-leaks/"
+      ]
+    }
+  }
+]

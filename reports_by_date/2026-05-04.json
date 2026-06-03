@@ -1,0 +1,63 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-04",
+      "title": "Breaking the code: Multi-stage ‘code of conduct' phishing campaign leads to AiTM token compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Credential_harvesting_technique",
+        "Device_code_phishing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Entra",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/04/breaking-the-code-multi-stage-code-of-conduct-phishing-campaign-leads-to-aitm-token-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-04",
+      "title": "Analyzing Iranian Tradecraft: Leveraging Loader Scripts and Telegram for C2",
+      "completeness": "Medium",
+      "threats": [
+        "Bloat_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 7,
+      "software": [
+        "Telegram",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://blog.pulsedive.com/analyzing-iranian-tradecraft-leveraging-loader-scripts-and-telegram-for-c2/"
+      ]
+    }
+  }
+]

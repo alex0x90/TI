@@ -1,0 +1,78 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-25",
+      "title": "APT group UNG0002 launches precision phishing attack on Chinese universities",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Cobalt_strike_tool",
+        "Lolbin_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Procmon_tool",
+        "Amsi_bypass_technique",
+        "Harpoon_technique"
+      ],
+      "geo": [
+        "China",
+        "Korean",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Windows Security",
+        "Bandizip",
+        "Windows Defender",
+        "HiChina",
+        "Feishu",
+        "zip → DLL",
+        "WeChat"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "CreateArk"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/308741.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-25",
+      "title": "Exploitation of KnowledgeDeliver via ViewState Deserialization Vulnerability",
+      "completeness": "Low",
+      "threats": [
+        "Viewstate_deserialization_vuln",
+        "Godzilla_webshell",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ASP.NET",
+        "Sitecore",
+        "Outlook"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/knowledgedeliver-viewstate-deserialization-vulnerability/",
+        "https://github.com/mandiant/Vulnerability-Disclosures/blob/master/2026/MNDT-2026-0009.md"
+      ]
+    }
+  }
+]

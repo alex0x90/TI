@@ -1,0 +1,982 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Lookalike Domains Expose the iPhone Theft Economy",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique",
+        "Supply_chain_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Venezuela",
+        "Mexico",
+        "India",
+        "Brazil",
+        "Pakistan",
+        "Asia",
+        "Bangladesh"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "WhatsApp",
+        "Chrome"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/lookalike-domains-expose-the-iphone-theft-economy/",
+        "https://github.com/Infoblox-CTO/phoebe-openintel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Analyzing TeamPCP’s Supply Chain Attacks: Checkmarx KICS and elementary-data in CI/CD Credential Theft",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 21,
+      "software": [
+        "Docker",
+        "Kubernetes",
+        "LiteLLM",
+        "Xinference",
+        "Trivy",
+        "OpenVSX",
+        "Bitwarden",
+        "alpine",
+        "debian",
+        "claude",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "litecoin",
+        "dogecoin",
+        "ripple",
+        "monero",
+        "cardano"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "xor",
+        "ecdsa",
+        "ed25519"
+      ],
+      "functions": [
+        "SigV4-authenticated"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/e/analyzing-teampcp-supply-chain-attacks.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "OrBit (Re)turns: Tracking an open-source Linux rootkit across four years of forks and deployments",
+      "completeness": "Medium",
+      "threats": [
+        "Orbit",
+        "Rhombus_ransomware",
+        "Medusa_ransomware",
+        "Credential_harvesting_technique",
+        "Embargo_ransomware",
+        "Seaelf"
+      ],
+      "geo": [
+        "Israel",
+        "Russia"
+      ],
+      "software": [
+        "Linux",
+        "ChatGPT",
+        "Claude",
+        "sudo",
+        "sshpass",
+        "SELinux"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "read",
+        "xread",
+        "xor_dump",
+        "build_root"
+      ],
+      "links": [
+        "https://intezer.com/blog/orbit-returns/",
+        "https://github.com/ldpreload/Medusa",
+        "https://github.com/git/git/blob/master/wrapper.c#L228"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Kimsuky targets organizations with PebbleDash-based tools",
+      "completeness": "High",
+      "threats": [
+        "Pebbledash",
+        "Dwagent_tool",
+        "Spear-phishing_technique",
+        "Appleseed",
+        "Hellodoor",
+        "Httpmalice",
+        "Memload",
+        "Http_troy",
+        "Happydoor",
+        "Ngrok_tool",
+        "Babyshark",
+        "Randomquery",
+        "Xrat_rat",
+        "Xenorat",
+        "Trurat",
+        "Reger_dropper",
+        "Pidoc",
+        "Nikidoor",
+        "Troll_stealer",
+        "Httpspy",
+        "Dw_service_tool"
+      ],
+      "geo": [
+        "Germany",
+        "Brazilian",
+        "Korea",
+        "Brazil",
+        "Korean",
+        "German"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "Visual Studio Code",
+        "TryCloudflare",
+        "Dropbox",
+        "Windows service",
+        "Slack",
+        "unrar"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "rc4",
+        "zip",
+        "chacha20",
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://securelist.com/kimsuky-appleseed-pebbledash-campaigns/119785/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "LATAM Under Siege: Agent Tesla’s 18-Month Credential Theft Campaign Against Chilean Enterprises",
+      "completeness": "High",
+      "threats": [
+        "Agent_tesla",
+        "Process_hollowing_technique",
+        "Bec_technique",
+        "Dotnet_reactor_tool",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Realvnc_tool",
+        "Tigervnc_tool",
+        "Ultra_vnc_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Peru",
+        "Spanish",
+        "Chile",
+        "Romanian",
+        "Latam",
+        "Chilean",
+        "Latin america",
+        "Latin american"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "Linux",
+        "Android",
+        "NET Reactor",
+        "Chrome",
+        "Firefox",
+        "Outlook",
+        "Telegram",
+        "Salesforce",
+        "NET Framework",
+        "Opera",
+        "Vivaldi",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "aes-cbc",
+        "sha256",
+        "deflate",
+        "cbc",
+        "base64",
+        "aes",
+        "aes-256"
+      ],
+      "functions": [
+        "GetMethod",
+        "CreateInstance",
+        "CreateDelegate"
+      ],
+      "languages": [
+        "javascript",
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/agent-tesla-latam-enterprise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "From PyInstaller to XWorm V7.4: Infection Chain Analysis",
+      "completeness": "High",
+      "threats": [
+        "Xworm_rat",
+        "Amsi_bypass_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 6,
+      "software": [
+        "PyInstaller",
+        "Windows service"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "md5",
+        "sha512",
+        "aes-ecb",
+        "xor"
+      ],
+      "functions": [
+        "_IAT_PHANTOM_FIX"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/from-pyinstaller-to-xworm-v7-4-infection-chain-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "VELVET CHOLLIMA Infostealer Campaign Using Trading App as Lure",
+      "completeness": "High",
+      "threats": [
+        "Moonpeak",
+        "Xenorat",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "North korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Scheduled Task",
+        "Chrome",
+        "Android",
+        "ProtonMail"
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "GitLab",
+        "ReadMe"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://hybrid-analysis.blogspot.com/2026/05/velvet-chollima-infostealer-campaign.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "APT-C-55 (Kimsuky) group's attack activity analysis relying on GitHub+Dropbox to distribute malicious payloads",
+      "completeness": "Low",
+      "software": [
+        "WeChat"
+      ],
+      "links": [
+        "https://www.ctfiot.com/307971.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "HWMonitor Trojanized to Deliver Multi-Stage STX RAT via DLL Sideloading",
+      "completeness": "Medium",
+      "threats": [
+        "Stxrat",
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 13,
+      "software": [
+        "HWMonitor",
+        "Cloudflare R2"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "zip",
+        "ror13"
+      ],
+      "links": [
+        "https://gurucul.com/blog/hwmonitor-trojanized-to-deliver-multi-stage-stx-rat-via-dll-sideloading/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Device Code Phishing is an Evolution in Identity Takeover",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Eviltokens_tool",
+        "Bec_technique",
+        "Aitm_technique",
+        "Tycoon_2fa",
+        "Flowerstorm_tool",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "German"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/device-code-phishing-evolution-identity-takeover"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Kazuar: Anatomy of a nation-state botnet",
+      "completeness": "Medium",
+      "threats": [
+        "Kazuar",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Shadowloader"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Asia",
+        "Ukraine"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Event Tracing for Windows",
+        "Outlook",
+        "Microsoft Defender for Endpoint",
+        "Twitter"
+      ],
+      "algorithms": [
+        "md5",
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "TaskKill",
+        "taskIssue"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/14/kazuar-anatomy-of-a-nation-state-botnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Inside a Tor Backed Supply Chain Worm",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Xmrig_miner",
+        "Hellcat",
+        "Shai-hulud"
+      ],
+      "software": [
+        "systemd",
+        "Outlook",
+        "Claude",
+        "Travis",
+        "CircleCI",
+        "ledger-live",
+        "Linux"
+      ],
+      "wallets": [
+        "atomicwallet"
+      ],
+      "algorithms": [
+        "hmac",
+        "aes-cbc",
+        "pbkdf2",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "sendmsg"
+      ],
+      "languages": [
+        "javascript",
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/inside-a-tor-backed-supply-chain-worm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Why AMOS matters: The macOS malware stealing data at scale",
+      "completeness": "Low",
+      "threats": [
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Macc_stealer",
+        "Credential_harvesting_technique",
+        "Mainhelper"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 9,
+      "software": [
+        "macOS",
+        "curl",
+        "sudo",
+        "acOS an",
+        "Firefox",
+        "Chrome",
+        "QEMU",
+        "IndexedDB",
+        "Unix",
+        "Gatekeeper",
+        "have more..."
+      ],
+      "wallets": [
+        "ledger_wallet",
+        "trezor"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/why-amos-matters-the-macos-malware-stealing-data-at-scale",
+        "https://github.com/sophoslabs/IoCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Popular node-ipc npm Package Infected with Credential Stealer",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Remmina_tool"
+      ],
+      "geo": [
+        "Belarus",
+        "Russia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "macOS",
+        "Alibaba Cloud",
+        "MinIO",
+        "Salesforce",
+        "Kubernetes",
+        "Docker",
+        "Helm",
+        "Firefox",
+        "Linux",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "setImmediate",
+        "unlinkSync",
+        "resolveTxt"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/node-ipc-package-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Ongoing exploitation of Cisco Catalyst SD-WAN vulnerabilities",
+      "completeness": "Low",
+      "threats": [
+        "Xenshell",
+        "Godzilla_webshell",
+        "Behinder",
+        "Adaptixc2_tool",
+        "Mythic_c2_tool",
+        "Sliver_c2_tool",
+        "Xmrig_miner",
+        "Kscan_tool",
+        "Qscan_tool",
+        "Nimplant",
+        "Gsocket_tool"
+      ],
+      "geo": [
+        "Hong",
+        "kong"
+      ],
+      "software": [
+        "Unix"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "base58"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/",
+        "https://github.com/Tas9er/ByPassGodzilla",
+        "https://github.com/zerozenxlabs/CVE-2026-20127---Cisco-SD-WAN-Preauth-RCE/blob/main/cmd.jsp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "FrostyNeighbor: Fresh mischief and digital shenanigans",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Picassoloader",
+        "Cobalt_strike_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Poland",
+        "Belarus",
+        "Polish",
+        "Lithuania",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "software": [
+        "Slack",
+        "ndcube",
+        "whi"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "visual_basic",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/frostyneighbor-fresh-mischief-digital-shenanigans/",
+        "https://github.com/eset/malware-ioc/tree/master/frostyneighbor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Active Supply Chain Attack: Malicious node-ipc Versions Published to npm",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Kubernetes",
+        "Claude",
+        "Alibaba Cloud",
+        "MinIO",
+        "macOS",
+        "Linux",
+        "Anthropic",
+        "PostgreSQL",
+        "MySQL",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "hmac",
+        "sha256",
+        "gzip",
+        "sha1"
+      ],
+      "functions": [
+        "setImmediate",
+        "statSync",
+        "readdirSync",
+        "_0x485bae"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/node-ipc-npm-supply-chain-attack#indicators-of-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "How TeamPCP's Python Toolkit Survives a C2 Takedown: FIRESCALE, GitHub, and the Victim's Own Account",
+      "completeness": "High",
+      "threats": [
+        "Firescale",
+        "Dead_drop_technique",
+        "Adaptixc2_tool",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Luxembourg",
+        "Russian",
+        "Iran",
+        "Iranian",
+        "Israeli",
+        "Israel"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 19,
+      "software": [
+        "Linux",
+        "1Password",
+        "Bitwarden",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "systemd",
+        "Xinference",
+        "TanStack",
+        "Docker",
+        "Ubuntu",
+        "have more..."
+      ],
+      "algorithms": [
+        "cbc",
+        "aes-gcm",
+        "aes-cbc",
+        "aes-256",
+        "sha256",
+        "aes-256-gcm",
+        "base64"
+      ],
+      "functions": [
+        "SSM",
+        "Store"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/teampcp-python-toolkit-firescale-github-c2-takedown",
+        "https://api.github.com/search/commits?q=FIRESCALE"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Backdoored node-ipc npm releases steal developer credentials through DNS queries",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "node.js",
+        "macOS",
+        "Firefox",
+        "Linux",
+        "Microsoft Teams",
+        "twitter",
+        "K8s"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "gzip",
+        "xor"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/node-ipc-npm-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "YouTube DMCA Phishing Infrastructure: Six Months Later",
+      "completeness": "Low",
+      "threats": [
+        "Bitm_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "New",
+        "york"
+      ],
+      "links": [
+        "https://www.validin.com/blog/dmca_phishing_revisited/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Compromised node-ipc on npm: Credential Stealer via DNS Exfiltration",
+      "completeness": "Medium",
+      "threats": [
+        "Dns_tunneling_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Belarusian",
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Linux",
+        "macOS",
+        "claude",
+        "Node.js",
+        "curl",
+        "TanStack",
+        "OpenSearch"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "hmac"
+      ],
+      "functions": [
+        "require"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://safedep.io/malicious-node-ipc-npm-compromise/",
+        "https://github.com/safedep/pmg",
+        "https://github.com/RIAEvangelist/node-ipc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "Amatera Stealer 4.0.2 Beta: What's New in This Variant",
+      "completeness": "High",
+      "threats": [
+        "Amatera_stealer",
+        "Acridrain",
+        "Hellsgate_technique",
+        "Freshycalls_technique",
+        "Clickfix_technique",
+        "Pe_injection_technique",
+        "Antidebugging_technique",
+        "Sparrow"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Chromium",
+        "Discord",
+        "Bitwarden",
+        "1Password",
+        "NordPass",
+        "QEMU",
+        "VirtualBox",
+        "Active Directory",
+        "SRWare Iron",
+        "Comodo Dragon",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "swash",
+        "tokenpocket",
+        "harmony_wallet",
+        "finnie",
+        "core_wallet",
+        "exodus_wallet",
+        "multidoge",
+        "mymonero",
+        "mycrypto",
+        "have more..."
+      ],
+      "crypto": [
+        "ripple",
+        "tezos",
+        "vechain",
+        "zilliqa",
+        "litecoin",
+        "dogecoin",
+        "bitcoin",
+        "monero",
+        "binance",
+        "ethereum",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "zip",
+        "xor",
+        "sha256",
+        "ecdh",
+        "chacha20-poly1305",
+        "chacha20",
+        "base64"
+      ],
+      "functions": [
+        "DllMain"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/amatera-stealer-4-0-2-beta-whats-new-in-this-variant",
+        "https://github.com/eSentire/iocs/raw/refs/heads/main/Amatera/Amatera-4.0.2.zip"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-14",
+      "title": "The Supply Chain Strikes Again: Credential-Stealing Malware Hidden in node-ipc",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "French"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Node.js",
+        "Alibaba Cloud",
+        "Docker",
+        "Claude"
+      ],
+      "algorithms": [
+        "gzip",
+        "xor",
+        "md5",
+        "sha256",
+        "hmac"
+      ],
+      "functions": [
+        "main"
+      ],
+      "links": [
+        "https://www.upwind.io/feed/malicious-node-ipc-npm-package-credential-theft"
+      ]
+    }
+  }
+]

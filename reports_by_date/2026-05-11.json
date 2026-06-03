@@ -1,0 +1,272 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-11",
+      "title": "Checkmarx Jenkins Plugin Backdoored in New TeamPCP Supply Chain Attack",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Credential_stealing_technique",
+        "Canisterworm"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Jenkins",
+        "OpenVSX",
+        "Kubernetes",
+        "Trivy",
+        "litellm",
+        "Docker",
+        "trycloudflare"
+      ],
+      "links": [
+        "https://socradar.io/blog/checkmarx-jenkins-plugin-teampcp-backdoor/",
+        "https://github.com/jenkinsci/checkmarx-ast-scanner-plugin"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-11",
+      "title": "JDownloader Hack Spreads New Python RAT",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Twitter",
+        "WhatsApp",
+        "Linux",
+        "Windows installer",
+        "macOS"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://gbhackers.com/jdownloader-hack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-11",
+      "title": "macOS Malware Abuses Google Ads and Claude Shared Chats to Deliver Payloads",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "macOS",
+        "Claude",
+        "Twitter",
+        "WhatsApp",
+        "Anthropic Claude"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "links": [
+        "https://gbhackers.com/macos-malware-abuses-google-ads-and-claude-shared-chats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-11",
+      "title": "Threat Actor Mr_Rot13 Actively Exploits CVE-2026-41940 for Backdoor Deployment",
+      "completeness": "Medium",
+      "geo": [
+        "Brazil",
+        "Netherlands",
+        "Germany"
+      ],
+      "software": [
+        "cPanel",
+        "Linux",
+        "Telegram",
+        "curl",
+        "WordPress"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "bcrypt",
+        "rc4"
+      ],
+      "functions": [
+        "getChatAdministrators"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/mr_rot13-the-elusive-6-year-hacker-group-weaponizing-critical-cpanel-flaws-for-backdoor-deployment/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-11",
+      "title": "New TrickMo Variant: Device Take Over malware targeting Banking, Fintech, Wallet & Auth apps",
+      "completeness": "Medium",
+      "threats": [
+        "Trickmo",
+        "Ssh_tunnelling_technique",
+        "Godfather"
+      ],
+      "geo": [
+        "Turkish",
+        "Austria",
+        "France",
+        "Italy"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "TikTok",
+        "Telegram",
+        "curl",
+        "Google Play"
+      ],
+      "algorithms": [
+        "base32",
+        "sha256"
+      ],
+      "functions": [
+        "getScreenshot",
+        "setNotificationFilter",
+        "setKeyLoggerConfig",
+        "setVars",
+        "setSwitch",
+        "setServers",
+        "getInstalledApps",
+        "getState",
+        "getUsageStats",
+        "setRingerMode",
+        "have more..."
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/new-trickmo-variant-device-take-over-malware-targeting-banking-fintech-wallet-auth-app"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-11",
+      "title": "TanStack npm Packages Compromised in Ongoing Mini Shai-Hulud Supply-Chain Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "TanStack",
+        "HashiCorp Vault",
+        "Kubernetes",
+        "Claude",
+        "Node.js",
+        "laude ho",
+        "vscode",
+        "linux",
+        "macOS",
+        "ubernetes -i",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "xor",
+        "md5",
+        "base64",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "beautify",
+        "unref",
+        "REST",
+        "createCommitOnBranch",
+        "updateTarball"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/tanstack-npm-packages-compromised-mini-shai-hulud-supply-chain-attack",
+        "https://github.com/voicproducoes?tab=repositories&type=source",
+        "https://github.com/TanStack/router/commit/79ac49eedf774dd4b0cfa308722bc463cfe5885c"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-11",
+      "title": "TeamPCP's Mini Shai-Hulud Is Back: A Self-Spreading Supply Chain Attack Compromises TanStack npm Packages",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Dead_drop_technique",
+        "Masscan_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "TanStack",
+        "Claude",
+        "mistralai",
+        "o pyth",
+        "sudo",
+        "HashiCorp Vault",
+        "CyberGhost",
+        "Kubernetes",
+        "macOS",
+        "Linux",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "atomicwallet"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "aes-256-gcm",
+        "pbkdf2",
+        "aes",
+        "rsa-4096",
+        "base64"
+      ],
+      "functions": [
+        "beautify",
+        "w8",
+        "createDecipheriv",
+        "TextDecoder",
+        "get_pid",
+        "createCommitOnBranch"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem",
+        "https://github.com/TanStack/router/issues/7383",
+        "https://github.com/opensearch-project/opensearch-js/issues/1116",
+        "https://github.com/mistralai/client-ts/issues/217"
+      ]
+    }
+  }
+]

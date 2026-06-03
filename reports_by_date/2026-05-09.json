@@ -1,0 +1,72 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-09",
+      "title": "Mini Shai-Hulud: A Cross-Ecosystem Supply Chain Attack on PyTorch Lightning & Intercom Client",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "CircleCI",
+        "Docker",
+        "Helm",
+        "claude",
+        "vscode"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "aes",
+        "md5",
+        "aes-256"
+      ],
+      "functions": [
+        "download_bun",
+        "collectFilesystemSecrets",
+        "collectShellAndEnv",
+        "collectGitHubRunnerSecrets",
+        "createRepo"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/mini-shai-hulud-a-cross-ecosystem-supply-chain-attack-on-pytorch-lightning-intercom-client"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-09",
+      "title": "Technical Advisory: ShinyHunters Breach of Instructure Canvas LMS",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Australia",
+        "California"
+      ],
+      "software": [
+        "Salesforce",
+        "Zoom",
+        "Microsoft Teams",
+        "Microsoft Entra",
+        "Azure AD"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/technical-advisory-shinyhunters-breach-instructure-canvas-lms"
+      ]
+    }
+  }
+]

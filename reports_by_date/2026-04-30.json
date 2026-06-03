@@ -1,0 +1,182 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Popular lightning PyPI Package Backdoored in Latest Shai-Hulud Wave",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Jupyter notebook",
+        "Linux",
+        "macOS",
+        "claude",
+        "Anthropic",
+        "sudo",
+        "laude ex",
+        "laude ag"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "gzip",
+        "zip"
+      ],
+      "functions": [
+        "_run_runtime",
+        "print",
+        "getSecretsFromVault"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.endorlabs.com/learn/popular-lightning-pypi-package-backdoored-in-latest-shai-hulud-wave"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Anti-DDoS Firm Heaped Attacks on Brazilian ISPs",
+      "completeness": "Low",
+      "threats": [
+        "Dns_amplification_technique",
+        "Mirai"
+      ],
+      "geo": [
+        "Brazil",
+        "Brazilian"
+      ],
+      "software": [
+        "- tp-link archer_ax21_firmware (<1.1.4)"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.cryptika.com/anti-ddos-firm-heaped-attacks-on-brazilian-isps/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "1. IOCONTROL (CyberAv3ngers) - High Confidence",
+      "completeness": "High",
+      "threats": [
+        "Iocontrol",
+        "Zionsiphon",
+        "Tickler",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Israel",
+        "Iranian",
+        "Israeli"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Gasboy",
+        "Orpak",
+        "RabbitMQ"
+      ],
+      "algorithms": [
+        "sha1",
+        "aes-256-cbc",
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://krypt3ia.wordpress.com/2026/04/30/threat-intelligence-report-irgc-affiliated-ot-iot-malware-evolution/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Inside Shadow-Earth-053: A China-Aligned Cyberespionage Campaign Against Government and Defense Sectors in Asia",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Proxylogon_exploit",
+        "Godzilla_webshell",
+        "Shadowpad",
+        "Anydesk_tool",
+        "Nood_rat",
+        "React2shell_vuln",
+        "Nltest_tool",
+        "Powerview_tool",
+        "Iox_tool",
+        "Passthehash_technique",
+        "Wstunnel_tool",
+        "Ringq_tool",
+        "Smbexec_tool",
+        "Mimikatz_tool",
+        "Lsadump_tool",
+        "Dcsync_technique",
+        "Vshell",
+        "Squidoor",
+        "Vargeit",
+        "Finaldraft",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Thailand",
+        "Sri lanka",
+        "Brazil",
+        "China",
+        "Asia",
+        "Malaysia",
+        "Myanmar",
+        "Asian",
+        "India",
+        "Poland",
+        "Taiwan",
+        "Pakistan",
+        "Chinese",
+        "Latin america"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Exchange",
+        "Microsoft Exchange Server",
+        "Linux",
+        "Active Directory",
+        "MySQL",
+        "MS SQL",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "functions": [
+        "Get-DomainUser",
+        "Get-Mailbox",
+        "Get-User"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/d/inside-shadow-earth-053.html",
+        "https://github.com/EddieIvan01/iox/",
+        "https://github.com/checkymander/Sharp-SMBExec/"
+      ]
+    }
+  }
+]

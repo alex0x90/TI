@@ -1,0 +1,797 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "When IT Support Calls: Dissecting a ModeloRAT Campaign from Teams to Domain Compromise",
+      "completeness": "High",
+      "threats": [
+        "Modelorat",
+        "Lolbin_technique",
+        "Dumpit_tool",
+        "Kongtuke",
+        "Exobot",
+        "Sim_swapping_technique",
+        "Crashfix",
+        "Process_injection_technique",
+        "Winrm_tool",
+        "Nmap_tool",
+        "Credential_harvesting_technique",
+        "Kerberoasting_technique",
+        "Spear-phishing_technique",
+        "Pid_spoofing_technique",
+        "Credential_dumping_technique",
+        "Kyber_ransomware",
+        "Chrysalis",
+        "Empire_loader"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 42,
+      "software": [
+        "Microsoft Teams",
+        "Windows lock screen",
+        "Dropbox",
+        "Windows Cloud Files Mini Filter Driver",
+        "Active Directory",
+        "Microsoft Edge",
+        "ESXi"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Get-Process",
+        "Get-Service",
+        "Get-NetTCPConnection"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-it-support-dissecting-modelorat-campaign-microsoft-teams-compromise",
+        "https://github.com/rapid7/Rapid7-Labs/tree/main/IOCs/ModeloRat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "FamousSparrow APT Targets Azerbaijani Oil and Gas Industry",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Poisonplug",
+        "Terndoor",
+        "Proxynotshell_vuln",
+        "Proxyshell_vuln",
+        "Logmein_tool",
+        "Atexec_tool",
+        "Impacket_tool",
+        "Mofu_loader",
+        "Cobalt_strike_tool",
+        "Ratels",
+        "Microdown",
+        "Smbexec_tool"
+      ],
+      "geo": [
+        "Austria",
+        "Ukraine",
+        "China",
+        "Chinese",
+        "South africa",
+        "Asia",
+        "Germany",
+        "Middle east",
+        "Asia-pacific",
+        "Azerbaijan",
+        "Qatar",
+        "Russia",
+        "Azerbaijani"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft Exchange server",
+        "Microsoft Exchange",
+        "Windows Service",
+        "Unix",
+        "Internet Explorer",
+        "Linux"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "exhibit",
+        "lzma",
+        "aes-128-cbc",
+        "zip",
+        "rc4",
+        "gzip",
+        "lznt1",
+        "cbc",
+        "aes-cbc",
+        "prng",
+        "aes-128",
+        "deflate",
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/famoussparrow-apt-targets-azerbaijani-oil-gas-industry",
+        "https://github.com/bitdefender/malware-ioc/blob/master/2026\\_05\\_13-famoussparrow-iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Dark Web Profile: Keymous+",
+      "completeness": "Medium",
+      "threats": [
+        "Elitestress_tool",
+        "Dns_amplification_technique",
+        "Udpflood_technique",
+        "Icmpflood_technique",
+        "Megamedusa_tool",
+        "Mirai",
+        "Godzilla_webshell",
+        "Synflood_technique"
+      ],
+      "geo": [
+        "Africa",
+        "Netherlands",
+        "Israeli",
+        "Palestinians",
+        "Iranian",
+        "India",
+        "African",
+        "Chinese",
+        "Pakistan",
+        "Malaysian",
+        "Italy",
+        "Israel",
+        "France",
+        "Saudi",
+        "Algeria",
+        "Denmark",
+        "Morocco",
+        "Jordan",
+        "Sudan",
+        "Spain",
+        "Belgium",
+        "Asia",
+        "Palestine",
+        "United kingdom",
+        "Bangladesh",
+        "Ukraine",
+        "Germany",
+        "Kuwait",
+        "Saudi arabia",
+        "Sweden"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Telegram",
+        "egram chan",
+        "elegram ch",
+        "Discord"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-keymous/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Thus Spoke…The Gentlemen",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Systembc",
+        "Edr-killer",
+        "Vssadmin_tool",
+        "Netexec_tool",
+        "Shadow_copies_delete_technique",
+        "Mamba",
+        "Zeropulse_tool",
+        "Certihound_tool",
+        "Edrstartuphinder_tool",
+        "Gfreeze_tool",
+        "Glinker_tool",
+        "Dumpbrowsersecrets_tool",
+        "Winrm_tool",
+        "Bloodhound_tool",
+        "Titanis_tool",
+        "Manspider_tool",
+        "Powerzure_tool",
+        "Regpwn_tool",
+        "Ksldump_tool",
+        "Kslkatz_tool",
+        "Zerosalarium_tool",
+        "Blackbasta",
+        "Glocker_tool",
+        "Ntlmrelayx_tool",
+        "Hellokitty",
+        "Kraken_cryptor",
+        "Gunra",
+        "Hyflock",
+        "Anubis",
+        "Lockbit",
+        "Devman"
+      ],
+      "geo": [
+        "Turkey",
+        "Turkish",
+        "Chinese",
+        "United kingdom",
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows",
+        "Linux",
+        "ESXi",
+        "Active Directory",
+        "Velociraptor",
+        "ctive Directory di",
+        "WireGuard",
+        "DeepSeek",
+        "Kitty",
+        "riced and base",
+        "have more..."
+      ],
+      "wallets": [
+        "guarda_wallet",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "functions": [
+        "TaskHound"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/thus-spoke-the-gentlemen/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "GemStuffer Campaign Abuses RubyGems as Exfiltration Channel Targeting UK Local Government",
+      "completeness": "Medium",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Unix"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "gzip",
+        "sha256"
+      ],
+      "languages": [
+        "ruby"
+      ],
+      "links": [
+        "https://socket.dev/blog/gemstuffer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Cato CTRL Threat Research: Suspected China-Linked Threat Actor Targets Global Manufacturer with Undocumented TencShell Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Tencshell",
+        "Rshell",
+        "Donut",
+        "Reacon",
+        "Process_injection_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "India"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 20,
+      "software": [
+        "Chrome",
+        "Windows Registry"
+      ],
+      "functions": [
+        "TencShell",
+        "GetScreenWebSocket"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-suspected-china-linked-threat-actor-targets-global-manufacturer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "The French 2-Step: Exposing a Multi-stage Scam Targeting the National Railway Company in France",
+      "completeness": "Low",
+      "geo": [
+        "France",
+        "French"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/french-railway-two-step-scam/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Sinkholing CountLoader: Insights into Its Recent Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Countloader",
+        "Etherhiding_technique",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "India",
+        "Indonesia",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "des",
+        "xor"
+      ],
+      "functions": [
+        "taskType"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/sinkholing-countloader-insights-into-its-recent-campaign/",
+        "https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell?tab=readme-ov-file#patching-clr"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "NATS-as-C2: Inside a new technique attackers are using to harvest cloud credentials and AI API keys",
+      "completeness": "Medium",
+      "threats": [
+        "Nats-as-c2_technique",
+        "Dirtypipe_vuln",
+        "Dirtycreds_vuln",
+        "Keyhunter_tool",
+        "Credential_harvesting_technique",
+        "Llmjacking_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Langflow",
+        "Discord",
+        "Telegram",
+        "Flask",
+        "CodePen",
+        "JSFiddle",
+        "StackBlitz",
+        "CodeSandbox",
+        "boto3",
+        "LiteLLM",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "AWS",
+        "SetTaskProgress"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://webflow.sysdig.com/blog/nats-as-c2-inside-a-new-technique-attackers-are-using-to-harvest-cloud-credentials-and-ai-api-keys",
+        "https://github.com/fadidevv/keyhunter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Mini Shai-Hulud tears at OSS trust",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Trufflehog_tool",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "Twitter",
+        "TanStack"
+      ],
+      "crypto": [
+        "ripple"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/mini-shai-hulud-tears-at-oss-trust",
+        "https://github.com/guardrails-ai/guardrails/issues/1473"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "New TrickMo Variant: Device Take Over malware targeting Banking, Fintech, Wallet & Auth apps",
+      "completeness": "Medium",
+      "threats": [
+        "Trickmo",
+        "Ssh_tunnelling_technique",
+        "Godfather"
+      ],
+      "geo": [
+        "France",
+        "Turkish",
+        "Italy",
+        "Austria"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "TikTok",
+        "Telegram",
+        "curl",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha256",
+        "base32"
+      ],
+      "functions": [
+        "getScreenshot",
+        "setNotificationFilter",
+        "setKeyLoggerConfig",
+        "setVars",
+        "setSwitch",
+        "setServers",
+        "getInstalledApps",
+        "getState",
+        "getUsageStats",
+        "setRingerMode",
+        "have more..."
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/trickmo-unmasked-the-hidden-dex-module-and-the-variant-that-replaced-it"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Unusual Data Exfiltration Paths: Leveraging Rclone for SharePoint Data Theft",
+      "completeness": "High",
+      "threats": [
+        "Rclone_tool",
+        "Netscan_tool",
+        "Dcsync_technique",
+        "Mimikatz_tool",
+        "Golden_ticket_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Great britain",
+        "Netherlands",
+        "Russia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 12,
+      "software": [
+        "Linux",
+        "PsExec",
+        "Remote Desktop Services",
+        "Microsoft Defender",
+        "Active Directory",
+        "Chrome",
+        "Microsoft OneDrive",
+        "Microsoft SharePoint",
+        "Microsoft Windows Defender Windows Defender",
+        "icrosoft Windows Defender Windows Defender Ex",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "ReadWrite"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://labs.yarix.com/2026/05/unusual-data-exfiltration-paths-leveraging-rclone-for-sharepoint-data-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Multi-Stage SEO Poisoning Campaign Targets Chinese-Speaking Developers with Kong RAT",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Kong_rat",
+        "Dll_sideloading_technique",
+        "Uac_bypass_technique",
+        "Finalshell",
+        "Xshell_tool",
+        "Dllsearchorder_hijacking_technique",
+        "Icmluautil_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "Chinese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "QuickQ",
+        "Alibaba Cloud",
+        "Windows Scheduled Task",
+        "Task Scheduler",
+        "Windows Explorer",
+        "WeChat",
+        "Chrome",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "xor",
+        "sha256",
+        "prng"
+      ],
+      "functions": [
+        "GetAsyncKeyState-based",
+        "CreateAndExecuteTask",
+        "RPC",
+        "main",
+        "run",
+        "run_0",
+        "time64"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/multi-stage-seo-poisoning-campaign-targets-chinese-speaking-developers-with-kong-rat",
+        "https://github.com/eSentire/iocs/blob/main/KONG%20RAT/Kong-RAT-IoCs-04-16-2026.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Behind the Code: The Layered Defense-Evasion of VIP Keylogger",
+      "completeness": "Medium",
+      "threats": [
+        "Vipkeylogger",
+        "Steganography_technique",
+        "Process_injection_technique",
+        "Junk_code_technique",
+        "Snake_keylogger"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 17,
+      "software": [
+        "Chrome",
+        "Windows DNS Query",
+        "Telegram",
+        "Discord",
+        "Epic Privacy Browser",
+        "Blisk",
+        "Liebao",
+        "Nichrome",
+        "Chromium",
+        "Kometa",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero",
+        "ethereum",
+        "ripple",
+        "litecoin"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "smethod_15"
+      ],
+      "languages": [
+        "visual_basic",
+        "javascript",
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/behind-the-code-layered-defense-evasion-vip-keylogger.html",
+        "https://github.com/splunk/attack\\_data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "crpx0 Ransomware Operations Double Extortion, Crypto Theft, and Network Footprint",
+      "completeness": "High",
+      "threats": [
+        "Crpx0",
+        "Qtox_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Russian",
+        "Chinese"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 24,
+      "software": [
+        "MacOS",
+        "Linux",
+        "curl",
+        "Telegram",
+        "PostgreSQL"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "dogecoin",
+        "litecoin",
+        "solana",
+        "ripple"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "set",
+        "GET_IDENTIFIER"
+      ],
+      "languages": [
+        "python",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.aryaka.com/docs/reports/crpx0-ransomware-operations-report.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-13",
+      "title": "Phantom Stealer Analysis: Inside the Two-Layer Attack Chain Hidden Behind a Windows DLL",
+      "completeness": "High",
+      "threats": [
+        "Phantom_stealer",
+        "Dll_hijacking_technique",
+        "Process_hollowing_technique",
+        "Costura_tool",
+        "Heavens_gate_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Japanese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Telegram",
+        "Discord",
+        "VirtualBox",
+        "TelegramAPI",
+        "WinScp",
+        "twitter",
+        "viber",
+        "gmail",
+        "protonmail",
+        "have more..."
+      ],
+      "wallets": [
+        "coinbase",
+        "electrum",
+        "atomicwallet",
+        "atomicdex",
+        "wassabi",
+        "electron_cash",
+        "coinomi",
+        "tronlink",
+        "metamask",
+        "jaxx",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero",
+        "litecoin",
+        "binance",
+        "ethereum",
+        "dogecoin",
+        "mincoin",
+        "yacoin",
+        "starcoin",
+        "solana",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "zip",
+        "base64",
+        "aes-gcm",
+        "aes-256-cbc",
+        "bcrypt",
+        "md5",
+        "rc4"
+      ],
+      "functions": [
+        "COM",
+        "SetWindowsHookEx",
+        "GetKeyString"
+      ],
+      "languages": [
+        "java",
+        "swift",
+        "php"
+      ],
+      "links": [
+        "https://darkatlas.io/blog/phantom-stealer-analysis-inside-the-two-layer-attack-chain-hidden-behind-a-windows-dll"
+      ]
+    }
+  }
+]

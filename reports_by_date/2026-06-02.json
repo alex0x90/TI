@@ -1,0 +1,271 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-02",
+      "title": "From Fake Purchase Orders to Remote Access: Analyzing the JS.MonoGlyphRAT Threat to US Enterprises",
+      "completeness": "High",
+      "threats": [
+        "Monoglyph_rat",
+        "Bec_technique",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Turkey",
+        "Sweden",
+        "Germany",
+        "Costa rica",
+        "Australia",
+        "Poland",
+        "Greece"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "Linux",
+        "Android",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-128-cbc",
+        "aes-cbc",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "VirtualProtect"
+      ],
+      "languages": [
+        "powershell",
+        "jscript",
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/monoglyphrat-attacks-us-enterprise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-02",
+      "title": "Unidentified RAT pushes NetSupport RAT",
+      "completeness": "Low",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "Mastodon"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/Unidentified+RAT+pushes+NetSupport+RAT/33034"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-02",
+      "title": "Game Over: WeedHack – The Rise of Minecraft Malware-as-a-Service Campaigns",
+      "completeness": "Medium",
+      "threats": [
+        "Weedhack",
+        "Seo_poisoning_technique",
+        "Etherhiding_technique",
+        "Lumma_stealer",
+        "Xworm_rat",
+        "Residential_proxy_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Norway",
+        "United kingdom",
+        "Sweden",
+        "Spain",
+        "Finland",
+        "America",
+        "Canada",
+        "India",
+        "Vietnam",
+        "Italy"
+      ],
+      "software": [
+        "inecraft Ma",
+        "Minecraft",
+        "iscord ac",
+        "inecraft cl",
+        "Telegram",
+        "Discord",
+        "Steam",
+        "iscord se",
+        "windows defender",
+        "Apache Maven",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "litecoin"
+      ],
+      "algorithms": [
+        "lzma"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/weedhack-minecraft-malware-as-a-service-campaign-research/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-02",
+      "title": "MUSTANG PANDA x PLUGX - Analysis of the January 2026 sample: a multi-layer execution chain",
+      "completeness": "High",
+      "threats": [
+        "Plugx_rat",
+        "Dll_sideloading_technique",
+        "Api_obfuscation_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Vietnam"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 26,
+      "software": [
+        "WinHTTP",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "sha256",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "Read-Write-Execute",
+        "GetModuleHandle",
+        "fn_start_controller_runtime_100016E1",
+        "SetConsoleMode"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://bluecyber.hashnode.dev/mustang-panda-x-plugx-analysis-of-the-january-2026-sample-a-multi-layer-execution-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-02",
+      "title": "Crypto Guest at Dawn Endpoint (Midnight) Ransomware Analysis",
+      "completeness": "Low",
+      "threats": [
+        "Midnight_ransomware",
+        "Babuk",
+        "Shadow_copies_delete_technique",
+        "Trojan/win.generic.c5765109",
+        "Ransom/mdp.delete.m2117",
+        "Ransom/mdp.command.m2255",
+        "Ransom/mdp.decoy.m1171",
+        "Ransom/mdp.event.m1946",
+        "Ransom/mdp.event.m1875"
+      ],
+      "geo": [
+        "North korea",
+        "Asia"
+      ],
+      "software": [
+        "ESXi"
+      ],
+      "algorithms": [
+        "chacha20",
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/93931/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-02",
+      "title": "Operation FlutterBridge: macOS Malvertising Campaign Spreads New FlutterShell Backdoor",
+      "completeness": "Medium",
+      "threats": [
+        "Flutterbridge",
+        "Fluttershell",
+        "Jscorerunner",
+        "Tamperedchef",
+        "Sparkle_tool"
+      ],
+      "geo": [
+        "Germany",
+        "France",
+        "Australia",
+        "Canada",
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Flutter",
+        "Google Chrome",
+        "Flutter's",
+        "Chrome",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit",
+        "base64"
+      ],
+      "functions": [
+        "exit",
+        "setSize"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/flutterbridge-new-fluttershell-backdoor/",
+        "https://github.com/worawit/blutter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-02",
+      "title": "Miasma: Supply Chain Attack Targeting RedHat npm Packages",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Miasma",
+        "Blight_botnet"
+      ],
+      "software": [
+        "VSCode"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/miasma-supply-chain-attack-targeting-redhat-npm-packages"
+      ]
+    }
+  }
+]

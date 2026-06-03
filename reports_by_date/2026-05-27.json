@@ -1,0 +1,498 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "BTMOB: A stealthy RAT burrowing deep into Android devices",
+      "completeness": "Low",
+      "threats": [
+        "Btmob_rat",
+        "Spysolr"
+      ],
+      "geo": [
+        "Ukraine",
+        "Argentina",
+        "Latin america",
+        "Brazil"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "Instagram",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/malware/btmob-stealthy-rat-burrowing-deep-android-devices/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "Fluffy Wolf tested new products on Russian companies",
+      "completeness": "High",
+      "threats": [
+        "Powerloader",
+        "Purelogs",
+        "Purerat",
+        "Pay2key",
+        "Purecryptor",
+        "Dotnet_reactor_tool",
+        "Spear-phishing_technique",
+        "Uac_bypass_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Ngrok_tool",
+        "Donut",
+        "Mimic_ransomware"
+      ],
+      "geo": [
+        "Russian",
+        "Spanish"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "fsutil",
+        "NET Reactor",
+        "Mozilla Firefox",
+        "Windows Task Scheduler",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Telegram",
+        "FoxMail",
+        "Windows Registry",
+        "Outlook",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "3des",
+        "gzip",
+        "zip"
+      ],
+      "functions": [
+        "setZeroData"
+      ],
+      "languages": [
+        "rust",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/fluffy-wolf-ispytal-novinki-na-rossiyskikh-kompaniyakh/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "How TeamPCP Turned LiteLLM into a Credential Harvesting Tool",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Supply_chain_technique",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "OpenAI",
+        "Trivy",
+        "Docker",
+        "Anthropic",
+        "curl"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "base64",
+        "aes-256-cbc",
+        "aes"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.forcepoint.com/blog/x-labs/litellm-supply-chain-attack-teampcp",
+        "https://github.com/aquasecurity/trivy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "forge-jsxy: 22 Versions of an Actively Developed npm RAT",
+      "completeness": "High",
+      "threats": [
+        "Forge-jsx",
+        "Promptmink",
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Glassworm"
+      ],
+      "geo": [
+        "German",
+        "Dprk",
+        "Polish"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chromium",
+        "WebRTC",
+        "Hugging Face",
+        "Discord",
+        "Linux",
+        "macOS",
+        "Task Scheduler",
+        "Node.js",
+        "systemd",
+        "Google Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "rabby"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "ed25519",
+        "xor",
+        "aes",
+        "aes-256-gcm",
+        "fnv-1a"
+      ],
+      "languages": [
+        "typescript",
+        "javascript",
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://safedep.io/malicious-forge-jsxy-npm-rat-evolution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "OverlayPhantom: The Android Banking Trojan Hiding in Plain Sight",
+      "completeness": "Medium",
+      "threats": [
+        "Overlayphantom",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Spain",
+        "United kingdom",
+        "Australia",
+        "Belgium",
+        "Netherlands",
+        "France",
+        "Finland",
+        "Italy",
+        "Germany",
+        "Austria",
+        "Austrian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 8,
+      "software": [
+        "Android",
+        "TikTok",
+        "Google Play"
+      ],
+      "functions": [
+        "acquireLatestImage"
+      ],
+      "links": [
+        "https://cyble.com/blog/overlayphantom-android-banking-trojan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "Smart Contracts for C&C: How ClearFake Hid in Plain Sight on BSC Testnet",
+      "completeness": "Medium",
+      "threats": [
+        "Clearfake",
+        "Etherhiding_technique",
+        "Sectop_rat",
+        "Acr_stealer",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "WordPress",
+        "enium and",
+        "PhantomJS",
+        "efox ): C",
+        "ome",
+        "Safa",
+        "efox are",
+        "e.exe an",
+        "exe and",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "load_",
+        "VLC",
+        "JavaScript",
+        "isGoalReached"
+      ],
+      "languages": [
+        "solidity",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/e/smart-contracts-for-command-and-control.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "Disrupting Glassworm: Inside CrowdStrike’s Takedown of a Developer-Targeting Botnet",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "software": [
+        "VSCode",
+        "OpenVSX",
+        "macOS",
+        "Linux",
+        "Node.js",
+        "BitTorrent"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/inside-crowdstrike-takedown-of-a-developer-targeting-botnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "The GHOST STADIUM Score: Billions At Stake At The World’s Largest Football Tournament",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Vidar_stealer",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "Latin american",
+        "Korean",
+        "Brazil",
+        "Japanese",
+        "Hong kong",
+        "Colombia",
+        "Asian",
+        "German",
+        "Canada",
+        "Taiwan",
+        "Italian",
+        "French",
+        "Russian",
+        "Mexico",
+        "Chinese",
+        "Spanish",
+        "Colombian",
+        "Qatar",
+        "Portuguese",
+        "Indonesian",
+        "Argentina"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "WhatsApp",
+        "Instagram"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/ghost-stadium-football-fraud/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "SolyxImmortal - Analysis of a Python-based Information Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Solyximmortal"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 12,
+      "software": [
+        "Gmail",
+        "Discord",
+        "Firefox",
+        "Mozilla Firefox"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "aes",
+        "md5",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "persist",
+        "_collect_and_zip",
+        "sleep",
+        "start",
+        "_on_press",
+        "_key_logic",
+        "send"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.pulsedive.com/solyximmortal-analysis-of-a-python-based-information-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "Exposing a Global Smishing Operation Across 19 Countries: Governments, Postal Services, and Telecoms Targeted",
+      "completeness": "High",
+      "threats": [
+        "Smishing_technique",
+        "Credential_harvesting_technique",
+        "Tactical_rmm_tool",
+        "Cobalt_strike_tool",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Ireland",
+        "Romanian",
+        "Romania",
+        "Kosovo",
+        "Asian",
+        "Moldova",
+        "Latvia",
+        "Slovenia",
+        "Albania",
+        "Germany",
+        "Bulgaria",
+        "Greece",
+        "Armenia",
+        "American",
+        "Singapore",
+        "France",
+        "Montenegro",
+        "North macedonia",
+        "Spain",
+        "United kingdom",
+        "Lithuania",
+        "Americas",
+        "Chinese",
+        "Georgia",
+        "Estonia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Alibaba Cloud",
+        "nginx",
+        "OpenSSH",
+        "Linux",
+        "cPanel"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://hunt.io/blog/massive-smishing-campaign-governments-postal-telecoms"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-27",
+      "title": "Legitimate-Looking Codex Remote UI Secretly Steals Your AI Tokens",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "Android",
+        "Google Play",
+        "OpenClaw",
+        "Claude",
+        "Linux",
+        "Node.js"
+      ],
+      "languages": [
+        "kotlin"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/codex-remote-ui-steals-ai-tokens",
+        "https://github.com/friuns2/codex-mobile/issues/198"
+      ]
+    }
+  }
+]

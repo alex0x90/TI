@@ -1,0 +1,107 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-08",
+      "title": "MacSync Stealer: C2 Infrastructure Rotation",
+      "completeness": "Medium",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "software": [
+        "macOS",
+        "Chrome",
+        "IndexedDB",
+        "ChatGPT",
+        "curl",
+        "credential dialog",
+        "Mac OS",
+        "openssl"
+      ],
+      "algorithms": [
+        "gzip",
+        "md5",
+        "sha1",
+        "zip",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "daemon_function"
+      ],
+      "languages": [
+        "swift",
+        "applescript"
+      ],
+      "links": [
+        "https://www.rstcloud.com/macsync-stealer-c2-infrastructure-rotation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-08",
+      "title": "PamDOORa: Analyzing a New Linux PAM-Based Backdoor for Sale on the Dark Web",
+      "completeness": "Medium",
+      "threats": [
+        "Pamdoora",
+        "Credential_harvesting_technique",
+        "Linux-pam-backdoor",
+        "Pam_auth_backdoor",
+        "Pamdoor",
+        "Dayofd00m",
+        "Madlib_tool",
+        "Ssh-door",
+        "Duar-pamspy",
+        "Paminant",
+        "Libpam_spooky_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "OpenSSH",
+        "sudo",
+        "systemd",
+        "SELinux"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/pamdoora-new-linux-pam-based-backdoor-sale-dark-web"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-08",
+      "title": "DirtyFrag: Two Kernel Bugs Give Root on All Major Linux Distros",
+      "completeness": "Low",
+      "threats": [
+        "Dirtyfrag_vuln",
+        "Supply_chain_technique",
+        "Dirty_pipe_vuln",
+        "Copyfail_vuln"
+      ],
+      "software": [
+        "Linux",
+        "Ubuntu",
+        "Fedora"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/dirtyfrag-two-kernel-bugs-give-root-on-all-major-linux-distros",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Malware/Dirtyfrag",
+        "https://github.com/V4bel/dirtyfrag#mitigation"
+      ]
+    }
+  }
+]

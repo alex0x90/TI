@@ -1,0 +1,223 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-19",
+      "title": "From PDB strings to MaaS: Tracking a commodity BadIIS ecosystem used by Chinese-speaking threat",
+      "completeness": "Low",
+      "threats": [
+        "Badiis"
+      ],
+      "geo": [
+        "America",
+        "South africa",
+        "Chinese",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "n antivirus) versi",
+        "Windows service",
+        "active directory"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/from-pdb-strings-to-maas-tracking-a-commodity-badiis-ecosystem/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/05/commodity\\_badiis.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-19",
+      "title": "Exposing Fox Tempest: A malware-signing service operation",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Rhysida",
+        "Oyster",
+        "Vidar_stealer",
+        "Seo_poisoning_technique",
+        "Qilin_ransomware",
+        "Akira_ransomware",
+        "Spyder",
+        "Malgent",
+        "Tedy",
+        "Fragtor",
+        "Inc_ransomware",
+        "Blackbyte",
+        "Trojan:win32/malcert",
+        "Ransom:win64/inc"
+      ],
+      "geo": [
+        "Canada",
+        "India",
+        "Russian",
+        "China",
+        "France"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Telegram",
+        "Microsoft Teams",
+        "icrosoft Defender fo",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/19/exposing-fox-tempest-a-malware-signing-service-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-19",
+      "title": "How Storm-2949 turned a compromised identity into a cloud-wide breach",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Screenconnect_tool",
+        "Trojan:win32/suspadsyncaccess",
+        "Backdoor:win32/adsyncdump"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Entra",
+        "Graph API",
+        "cURL",
+        "Azure App Service",
+        "Microsoft Defender for Endpoint",
+        "Azure Blob",
+        "icrosoft Defender for Endpoint -",
+        "icrosoft Defender fo",
+        "icrosoft Defender for Endpoint Un",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/18/storm-2949-turned-compromised-identity-into-cloud-wide-breach/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-19",
+      "title": "Popular Go Decimal Library Targeted by Long-Running Typosquat with DNS Backdoor",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 6,
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "md5",
+        "sha1"
+      ],
+      "functions": [
+        "init",
+        "main",
+        "CombinedOutput"
+      ],
+      "links": [
+        "https://socket.dev/blog/popular-go-decimal-library-typosquat-dns-backdoor",
+        "https://socket.dev/go/package/github.com/shopsprint/decimal?version=v1.3.3"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-19",
+      "title": "The Worm That Keeps on Digging: TeamPCP Hits @antv in Latest Wave",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Kitty_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "VSCode",
+        "macOS",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/mini-shai-hulud-teampcp-hits-antv-supply-chain",
+        "https://github.com/nrwl/nx-console/issues/3139",
+        "https://github.com/nrwl/nx-console/security/advisories/GHSA-c9j4-9m59-847w"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-19",
+      "title": "Living off the Land with VS Code: Inside a Sophisticated Phishing Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Device_code_phishing_technique",
+        "Clickonce_tool"
+      ],
+      "geo": [
+        "Pakistan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Word",
+        "Discord",
+        "Visual Studio Code",
+        "Windows service",
+        "Internet Explorer",
+        "Chrome",
+        "Firefox",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "AutoOpen",
+        "IsCodeExeRunning"
+      ],
+      "links": [
+        "https://joesecurity.org/blog/8858614039441223943"
+      ]
+    }
+  }
+]

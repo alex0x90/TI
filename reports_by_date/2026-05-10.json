@@ -1,0 +1,257 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-10",
+      "title": "Instead of a job, stolen data and money. Fake online job interview applications hide a stealer trojan that attacks macOS and Windows users Dr.Web vxCube sandbox update coming",
+      "completeness": "Medium",
+      "threats": [
+        "Jobstealer"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 15,
+      "software": [
+        "macOS",
+        "Telegram",
+        "Chrome",
+        "Opera",
+        "OperaGX",
+        "Vivaldi",
+        "CocCoc",
+        "Ledger Live",
+        "Linux",
+        "Android",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor",
+        "tronlink",
+        "nifty",
+        "metamask",
+        "math_wallet",
+        "coinbase",
+        "binancechain",
+        "brave_wallet",
+        "guarda_wallet",
+        "equal_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "aptos",
+        "tezos",
+        "casper",
+        "multiversx",
+        "ethereum",
+        "bitcoin",
+        "dogecoin",
+        "hedera"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15253&lng=ru&c=5",
+        "https://github.com/DoctorWebLtd/malware-iocs/blob/master/Mac.PWS.JobStealer.1/README.adoc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-10",
+      "title": "Update: Ongoing Checkmarx Supply Chain Security Incident",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenVSX",
+        "Jenkins",
+        "Trivy",
+        "DockerHub",
+        "debian",
+        "alpine",
+        "Open VSX",
+        "Open-VSX",
+        "docker",
+        "VSCode",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://checkmarx.com/blog/ongoing-security-updates/",
+        "https://github.com/checkmarx/ast-github-action"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-10",
+      "title": "Industrialized Smishing Infrastructure Targeting the UAE and Singapore Transportation, Government, and Logistics Sectors",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Singapore",
+        "Middle east",
+        "Emirates"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Alibaba Cloud"
+      ],
+      "links": [
+        "https://medium.com/@raghavtiresearch/industrialized-smishing-infrastructure-targeting-the-uae-and-singapore-transportation-government-cd754e76a5c8?source=rss-2f156a402f32------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-10",
+      "title": "OPERATION SILENTCANVAS : JPEG BASED MULTISTAGE POWERSHELL INTRUSION",
+      "completeness": "High",
+      "threats": [
+        "Screenconnect_tool",
+        "Uac_bypass_technique",
+        "Amsi_bypass_technique",
+        "Lolbin_technique",
+        "Credential_harvesting_technique",
+        "Sysupdate",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 37,
+      "software": [
+        "Windows service",
+        "Active Directory",
+        "Windows authentication",
+        "Windows shell",
+        "NET Framework",
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "pbkdf2"
+      ],
+      "functions": [
+        "DeriveSecureRandomValuesForConnection",
+        "MaintainEphemeralUsers",
+        "MaintainClientProcesses",
+        "SetSafeModeReboot",
+        "AddWindowTaskbarButtonIfApplicable",
+        "RemoveWindowTaskbarButtonIfPresent",
+        "TryLaunch",
+        "CreateProcessAsUser",
+        "CreateRemoteProcess",
+        "EnableCurrentProcessPrivilege",
+        "have more..."
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/operation-silentcanvas-jpeg-based-multistage-powershell-intrusion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-10",
+      "title": "Donuts and Beagles: Fake Claude site spreads backdoor",
+      "completeness": "High",
+      "threats": [
+        "Donut",
+        "Beagle",
+        "Dll_sideloading_technique",
+        "Plugx_rat",
+        "Seo_poisoning_technique",
+        "Shadowpad",
+        "Adaptixc2_tool"
+      ],
+      "geo": [
+        "Asia",
+        "German",
+        "Usa",
+        "Budapest"
+      ],
+      "software": [
+        "Claude",
+        "Anthropic",
+        "Microsoft Defender",
+        "Alibaba Cloud",
+        "macOS"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "aes",
+        "sha256"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/donuts-and-beagles-fake-claude-site-spreads-backdoor",
+        "https://github.com/TheWover/donut",
+        "https://github.com/Adaptix-Framework/AdaptixC2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-10",
+      "title": "Python Backdoor Threat Analysis Following an AI Deepfake Impersonation Campaign",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Chinotto"
+      ],
+      "geo": [
+        "North korean",
+        "Korea",
+        "Korean",
+        "Italian",
+        "North korea",
+        "France",
+        "French"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Excel",
+        "Microsoft Office",
+        "curl",
+        "Windows security",
+        "Windows scheduled task",
+        "Flash Player"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "chr",
+        "exec",
+        "GetString"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "cpython",
+        "php"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/python"
+      ]
+    }
+  }
+]

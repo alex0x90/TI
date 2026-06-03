@@ -1,0 +1,205 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-05",
+      "title": "New Phishing Campaign Targets US with Credential Theft: What CISOs Need to Know",
+      "completeness": "Low",
+      "threats": [
+        "Centrastage_tool",
+        "Screenconnect_tool",
+        "Itarian_tool",
+        "Logmein_tool"
+      ],
+      "software": [
+        "Linux",
+        "Android",
+        "Gmail"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/us-fake-invitation-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-05",
+      "title": "Malicious OpenClaw Skill Distributes Remcos RAT and GhostLoader",
+      "completeness": "High",
+      "threats": [
+        "Remcos_rat",
+        "Ghostloader",
+        "Dllsearchorder_hijacking_technique",
+        "Amsi_bypass_technique",
+        "Credential_harvesting_technique",
+        "Dll_sideloading_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "OpenClaw",
+        "Clawdbot",
+        "Moltbot",
+        "Windows Installer",
+        "Event Tracing for Windows",
+        "macOS",
+        "Linux",
+        "Node.js",
+        "DeepSeek",
+        "Windows security",
+        "have more..."
+      ],
+      "algorithms": [
+        "ecc",
+        "rc4",
+        "xor",
+        "cbc"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/malicious-openclaw-skill-distributes-remcos-rat-and-ghostloader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-05",
+      "title": "CloudZ RAT potentially steals OTP messages using Pheno plugin",
+      "completeness": "Medium",
+      "threats": [
+        "Cloudz_rat",
+        "Pheno",
+        "Screenconnect_tool",
+        "Lolbin_technique",
+        "Confuserex_tool",
+        "Bitsadmin_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "task scheduler",
+        "NET Framework",
+        "Windows task scheduler",
+        "Pastebin",
+        "Mac OS",
+        "curl"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Get-CimInstance",
+        "GetWidgetLog",
+        "RemovePlugins"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/cloudz-pheno-infostealer/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/05/cloudz-pheno-infostealer.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-05",
+      "title": "Attackers Actively Exploiting Critical Vulnerability in Breeze Cache Plugin",
+      "completeness": "Low",
+      "software": [
+        "WordPress"
+      ],
+      "functions": [
+        "breeze_replace_gravatar_image",
+        "fetch_gravatar_from_remote",
+        "download_url",
+        "find_wordpress_installations",
+        "get_back",
+        "isset"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/05/attackers-actively-exploiting-critical-vulnerability-in-breeze-cache-plugin/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-05",
+      "title": "UAT-8302 and its box full of malware",
+      "completeness": "Medium",
+      "threats": [
+        "Netdraft",
+        "Finaldraft",
+        "Squiddoor",
+        "Cloudsorcerer",
+        "Vshell",
+        "Snowlight",
+        "Snowrust",
+        "Impacket_tool",
+        "Nosydoor",
+        "Luckystrike",
+        "Poisonplug",
+        "Zingdoor",
+        "Draculoader",
+        "Qscan_tool",
+        "Naabu_tool",
+        "Portqry_tool",
+        "Ad_explorer_tool",
+        "Squidoor",
+        "Costura_tool",
+        "Fringeporch_tool",
+        "Dll_sideloading_technique",
+        "Sliver_c2_tool",
+        "Hades",
+        "Stowaway_tool"
+      ],
+      "geo": [
+        "Japan",
+        "America",
+        "Russian",
+        "China",
+        "Asia",
+        "Americas",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Azure AD",
+        "Graph API",
+        "Dropbox",
+        "SoftEther"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "golang",
+        "rust",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-8302/",
+        "https://github.com/qi4L/qscan",
+        "https://github.com/chainreactors/gogo"
+      ]
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-30",
+      "title": "Meet DriveSurge: A New Threat Actor Using ClickFix and Fake Update Drive-By Attacks in Thousands of Compromised Sites",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Socgholish_loader"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Mozilla Firefox",
+        "Microsoft Edge",
+        "Opera",
+        "Yandex Browser",
+        "Vivaldi",
+        "Mozilla Firefox",
+        "Firefox",
+        "WordPress",
+        "macOS",
+        "curl",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "atob"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/drivesurge/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-30",
+      "title": "Malicious npm packages abuse dependency confusion to profile developer environments",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Capibar",
+        "Trojan:js/obfusnpmjs.sa",
+        "Trojan:js/obfusnpmjs"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "macOS",
+        "Linux",
+        "Node.js",
+        "Microsoft Defender for Endpoint"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "require"
+      ],
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/29/33-malicious-npm-packages-abuse-dependency-confusion-profile-developer-environments/"
+      ]
+    }
+  }
+]

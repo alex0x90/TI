@@ -1,0 +1,898 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Lazarus Group Uses Git Hooks To Hide Malware",
+      "completeness": "Low",
+      "threats": [
+        "Invisibleferret",
+        "Beavertail",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "software": [
+        "curl",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "TaskJacker"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/dprk-git-hooks-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Operation Silent Rotor: Targeted Campaign Compromises Unmanned Aviation Sector Ahead of Moscow Summit",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Tajikistan",
+        "Russian",
+        "Middle east",
+        "Moscow",
+        "Asia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "algorithms": [
+        "aes-256",
+        "xor",
+        "sha256",
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-silent-rotor-rust-malware-unmanned-aviation-sector/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Easter Bunny",
+      "completeness": "High",
+      "threats": [
+        "Easterbunny",
+        "Cobalt_strike_tool",
+        "Sliver_c2_tool",
+        "Trailblazer",
+        "Golden_ticket_technique",
+        "Golden_saml_technique",
+        "Supply_chain_technique",
+        "Junk_code_technique",
+        "Steganography_technique",
+        "Dcsync_technique",
+        "Mimikatz_tool",
+        "Process_injection_technique",
+        "Brc4_tool"
+      ],
+      "geo": [
+        "Spain",
+        "Italian",
+        "Russian",
+        "New zealand",
+        "Canada",
+        "Australia",
+        "German",
+        "Russian federation",
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 13,
+      "software": [
+        "Chrome",
+        "Visual Studio",
+        "Windows Error Reporting",
+        "virtualBox",
+        "Microsoft Powershell",
+        "Firefox",
+        "Mozilla Firefox",
+        "Nginx",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "des",
+        "xor",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "GetProcAddressO",
+        "GetUserName",
+        "GetComputerName",
+        "getPoraasfuddr",
+        "getAddrf"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://lab52.io/blog/easterbunny/",
+        "https://gist.github.com/",
+        "https://github.com/dlvoy/lzg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "DAEMON Tools software infected – supply chain attack ongoing since April 8, 2026",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Italy",
+        "China",
+        "Belarus",
+        "France",
+        "Turkey",
+        "Germany",
+        "Russia",
+        "Thailand",
+        "Brazil",
+        "Spain",
+        "Chinese"
+      ],
+      "software": [
+        "WolfSSL",
+        "eScan",
+        "CPU-Z"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/tr/daemon-tools-backdoor/119654/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Turbulence Ahead: Cyber Threats Targeting Aviation and Aerospace in 2026",
+      "completeness": "Low",
+      "threats": [
+        "Qilin_ransomware",
+        "Lockbit",
+        "Clop",
+        "Darkrace",
+        "Supply_chain_technique",
+        "Sim_swapping_technique"
+      ],
+      "geo": [
+        "Berlin"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://blog.polyswarm.io/turbulence-ahead-cyber-threats-targeting-aviation-and-aerospace-in-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "MicroStealer",
+      "completeness": "Medium",
+      "threats": [
+        "Microstealer",
+        "Donut_loader",
+        "Donut",
+        "Godfather",
+        "Grandoreiro",
+        "Btmob_rat",
+        "Asyncrat",
+        "Ssload",
+        "Discord-c2",
+        "Bec_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Brazil",
+        "Latin american",
+        "Spain",
+        "Mexico",
+        "Peru"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Android",
+        "lectron →",
+        "Electron",
+        "NSIS installer",
+        "Node.js",
+        "Chromium",
+        "Steam"
+      ],
+      "functions": [
+        "spawn"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://any.run/malware-trends/microstealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "InstallFix and Claude Code: How Fake Install Pages Lead to Real Compromise",
+      "completeness": "High",
+      "threats": [
+        "Installfix_technique",
+        "Amsi_bypass_technique",
+        "Clickfix_technique",
+        "Polyglot_ransomware",
+        "Redline_stealer"
+      ],
+      "geo": [
+        "Malaysia",
+        "Asia pacific",
+        "Thailand",
+        "Africa",
+        "Middle east",
+        "Netherlands",
+        "Americas"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 8,
+      "software": [
+        "Claude",
+        "Anthropic",
+        "MacOS",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "rc4",
+        "zip",
+        "sha256",
+        "sha1",
+        "exhibit",
+        "xor"
+      ],
+      "functions": [
+        "DisplayEmailGnu",
+        "GetBiosDebian",
+        "COM"
+      ],
+      "languages": [
+        "powershell",
+        "cscript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/e/installfix-and-claude-code.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Muddying the Tracks: The State-Sponsored Shadow Behind Chaos Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Chaos_ransomware",
+        "Credential_harvesting_technique",
+        "Dwagent_tool",
+        "Blacksuit_ransomware",
+        "Anydesk_tool",
+        "Stagecomp",
+        "Darkcomp",
+        "Qilin_ransomware",
+        "Dw_service_tool",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Bpfdoor"
+      ],
+      "geo": [
+        "Chinese",
+        "Israeli",
+        "Africa",
+        "Middle east",
+        "Mena",
+        "Iranian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 24,
+      "software": [
+        "Microsoft Teams",
+        "curl",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "md5",
+        "aes-256-gcm",
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "GetDriveTypesA"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-muddying-tracks-state-sponsored-shadow-behind-chaos-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Quasar Linux (QLNX) – A Silent Foothold in the Supply Chain: Inside a Full-Featured Linux RAT With Rootkit, PAM Backdoor, Credential Harvesting Capabilities",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Quasar_rat",
+        "Inline_hooking_technique",
+        "Ghostpenguin",
+        "Pkexec_tool",
+        "Process_injection_technique",
+        "Timestomp_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "inux RA",
+        "inux (Q",
+        "Kubernetes",
+        "Docker",
+        "systemd",
+        "crontab",
+        "Chrome",
+        "Chromium",
+        "Firefox",
+        "MySQL",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha1",
+        "sha256",
+        "xor",
+        "md5"
+      ],
+      "functions": [
+        "getuid",
+        "uname"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/e/quasar-linux-qlnx-a-silent-foothold-in-the-software-supply-chain.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "OceanLotus suspected of using PyPI to deliver ZiChatBot malware",
+      "completeness": "Low",
+      "threats": [
+        "Zichatbot",
+        "Supply_chain_technique",
+        "Colorinal"
+      ],
+      "geo": [
+        "Middle east",
+        "Asia-pacific"
+      ],
+      "software": [
+        "Linux",
+        "Zulip",
+        "crontab"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "cbc",
+        "lzma"
+      ],
+      "functions": [
+        "is_color_supported"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/oceanlotus-suspected-pypi-zichatbot-campaign/119603/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "TCLBANKER: Brazilian Banking Trojan Spreading via WhatsApp and Outlook",
+      "completeness": "High",
+      "threats": [
+        "Tclbanker",
+        "Maverick",
+        "Sorvepotel",
+        "Dotnet_reactor_tool",
+        "Credential_harvesting_technique",
+        "Dll_sideloading_technique",
+        "Antidebugging_technique",
+        "Megadumper_tool",
+        "Process_hacker_tool",
+        "Scylla",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Latin american",
+        "Latam",
+        "Portuguese",
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Outlook",
+        "NET Reactor",
+        "Microsoft Outlook",
+        "gmail",
+        "Flutter",
+        "VirtualBox",
+        "Xen",
+        "hyperv",
+        "Task Scheduler",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256",
+        "base64",
+        "xor",
+        "cbc",
+        "zip",
+        "crc-32",
+        "sha256",
+        "lznt1"
+      ],
+      "functions": [
+        "DbgUiRemoteBreakin",
+        "SetCursorPos"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/tclbanker-brazilian-banking-trojan",
+        "https://github.com/wppconnect-team/wppconnect",
+        "https://gist.github.com/jiayuchann/e298effb68bd472c9e577a630d0ceb20"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Iranian-Nexus Operation Against Oman's Government: 12 Ministries Hit and 26,000 Citizen Records Exposed",
+      "completeness": "High",
+      "threats": [
+        "Proxyshell_vuln",
+        "Spear-phishing_technique",
+        "Chisel_tool",
+        "Godpotato_tool"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian",
+        "Oman",
+        "Iranians",
+        "Switzerland",
+        "Arab emirates",
+        "United arab emirates",
+        "Ita"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "DotNetNuke",
+        "Joomla",
+        "MSSQL",
+        "Chrome",
+        "Dot Net"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/iranian-nexus-oman-government-intrusion"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "A rigged game: ScarCruft compromises gaming platform in a supply-chain attack",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Birdcall",
+        "Rokrat",
+        "Reaper"
+      ],
+      "geo": [
+        "North korea",
+        "Koreans",
+        "Korean",
+        "China",
+        "Asian",
+        "North korean",
+        "Korea",
+        "Chinese",
+        "Ukraine"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 47,
+      "software": [
+        "Android",
+        "Dropbox",
+        "Google Play",
+        "kaoTalk",
+        "We",
+        "Chat",
+        "an",
+        "KakaoTalk",
+        "WeChat"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "python",
+        "ruby"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/",
+        "https://github.com/eset/malware-ioc/tree/master/scarcruft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Someone published four versions of a fake tanstack package in 27 minutes to steal your .env files",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "linux",
+        "SendGrid",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/fake-tanstack-packages-steal-env-files"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Attackers adopt JavaScript runtime Bun to spread NWHStealer",
+      "completeness": "Low",
+      "threats": [
+        "Nwhstealer",
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "CoreFTP",
+        "Steam",
+        "Discord",
+        "Telegram",
+        "FiveM",
+        "qemu",
+        "virtualbox",
+        "xen"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-256-cbc",
+        "xor",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "Get-CimInstance",
+        "Get-Process"
+      ],
+      "languages": [
+        "typescript",
+        "powershell",
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/05/attackers-adopt-javascript-runtime-bun-to-spread-nwhstealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "ClickFix campaign uses fake macOS utilities lures to deliver infostealers",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Amos_stealer",
+        "Multiverze",
+        "Shubstealer",
+        "Macc_stealer",
+        "Mainhelper"
+      ],
+      "geo": [
+        "Russian",
+        "Japanese"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "icrosoft Defender An",
+        "curl",
+        "curl Microsoft Defender",
+        "Twitter",
+        "acOS us",
+        "Gatekeeper",
+        "Telegram",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor",
+        "electrum",
+        "coinomi",
+        "exodus_wallet",
+        "wassabi",
+        "dashcore",
+        "electron_cash",
+        "guarda_wallet",
+        "ledger_wallet",
+        "metamask",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin",
+        "litecoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "applescript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/05/06/clickfix-campaign-uses-fake-macos-utilities-lures-deliver-infostealers/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "5 Malicious NuGet Packages Impersonate Chinese UI Libraries to Distribute Crypto Wallet and Credential Stealer",
+      "completeness": "High",
+      "threats": [
+        "Dotnet_reactor_tool",
+        "Typosquatting_technique",
+        "Reactor_tool",
+        "Supply_chain_technique",
+        "Necrobit_technique",
+        "Credential_harvesting_technique",
+        "Process_injection_technique",
+        "Lumma_stealer",
+        "Arrow_rat"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "NuGet",
+        "NET Reactor",
+        "Outlook",
+        "Chromium",
+        "Linux",
+        "Visual Studio",
+        "macOS",
+        "Microsoft Edge",
+        "Chrome",
+        "avgbrowser",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "coinbase",
+        "electrum",
+        "coinomi",
+        "jaxx"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "rsa-1024",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "links": [
+        "https://socket.dev/blog/5-malicious-nuget-packages-impersonate-chinese-ui-libraries"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Threat Brief: Exploitation of PAN-OS Captive Portal Zero-Day for Unauthenticated Remote Code Execution",
+      "completeness": "Medium",
+      "threats": [
+        "Earthworm_tool",
+        "Reversesocks5_tool"
+      ],
+      "geo": [
+        "Asia",
+        "India",
+        "Australia",
+        "Middle east",
+        "Korea",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 2,
+      "software": [
+        "PAN-OS",
+        "AN-OS so",
+        "nginx",
+        "Active Directory",
+        "Linux",
+        "macOS"
+      ],
+      "functions": [
+        "SetUserID"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/captive-portal-zero-day/",
+        "https://github.com/rootkiter/EarthWorm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Coinbase Cartel: The Credential-Driven Extortion Group Targeting Enterprise Data",
+      "completeness": "Medium",
+      "threats": [
+        "Redline_stealer",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Supply_chain_technique",
+        "Psexec_tool"
+      ],
+      "geo": [
+        "America",
+        "Japanese",
+        "Middle east",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 19,
+      "software": [
+        "Telegram",
+        "Active Directory",
+        "ESXi",
+        "PsExec",
+        "Salesforce"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.provendata.com/blog/coinbase-cartel-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-06",
+      "title": "Hunting Lazarus Part VII: The Server That Was Not Just FTP",
+      "completeness": "Low",
+      "threats": [
+        "Beavertail",
+        "Ottercookie",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "North-korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "Node.js"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://redasgard.com/blog/hunting-lazarus-part7-server-not-just-ftp"
+      ]
+    }
+  }
+]

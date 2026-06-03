@@ -1,0 +1,531 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Satori Threat Intelligence Alert: Trapdoor Funnels Malvertising into Ad Fraud",
+      "completeness": "Low",
+      "threats": [
+        "Badbox"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.humansecurity.com/learn/resource/satori-threat-intelligence-alert-trapdoor-funnels-malvertising-into-ad-fraud/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Coruna Respawned: Compromised art-template npm Package Leads to iOS Browser Exploit Kit",
+      "completeness": "High",
+      "threats": [
+        "Coruna_tool",
+        "Watering_hole_technique",
+        "Supply_chain_technique",
+        "Blob_url_obfuscation_technique",
+        "Ironloader",
+        "Neuronloader",
+        "Gruber",
+        "Sparrow",
+        "Plasmagrid"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WebRTC",
+        "IndexedDB",
+        "macOS",
+        "Chrome",
+        "Firefox",
+        "Android",
+        "Chrome",
+        "Firefox",
+        "polyfill",
+        "Selenium",
+        "Mac OS",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "chacha20",
+        "sha1",
+        "md5",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "lr",
+        "loadScript",
+        "unescape",
+        "Example",
+        "fqMaGkNR",
+        "init",
+        "p",
+        "Yn",
+        "setTimeout",
+        "ZKvD0e",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/coruna-respawned-compromised-art-template-npm-package",
+        "https://github.com/goofychris/art-template/issues/665"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "GitHub breach likely caused by Nx Console compromise",
+      "completeness": "Medium",
+      "threats": [
+        "Kitty_tool",
+        "Dead_drop_technique",
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Dns_tunneling_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Bitwarden",
+        "1Password",
+        "linux",
+        "Docker",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "findRunnerWorkerPIDLinux"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/github-breach-likely-caused-by-nx-console-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Ghost CMS Mass Compromised via CVE-2026-26980, Now Fueling ClickFix Attacks",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Ghost_admin",
+        "Fakecaptcha_tool",
+        "Cloaking_technique",
+        "Adspect_tool",
+        "Putty_tool",
+        "Aeternum"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Electron"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "zip",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "setTimeout",
+        "setLoginItemSettings"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/ghost-cms-mass-compromised-via-cve-2026-26980-now-fueling-clickfix-attacks/",
+        "https://github.com/ubergrape/grape-electron?ref=blog.xlab.qianxin.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "UAC-0244 / UAC-0247: Malware Targeting FPV drone operators",
+      "completeness": "High",
+      "geo": [
+        "Ukrainian",
+        "Russian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Windows Search"
+      ],
+      "algorithms": [
+        "zip",
+        "lznt1",
+        "sha256",
+        "base64",
+        "md5",
+        "xor",
+        "crc-32"
+      ],
+      "functions": [
+        "_0x2ef8",
+        "function",
+        "_0x151a"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/uac-0247-malware-targeting-fpv-operators/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Inside the JDownloader Supply-Chain Attack: An r77 Rootkit Bot That Kills Your Antivirus",
+      "completeness": "High",
+      "threats": [
+        "R77rk_tool",
+        "Supply_chain_technique",
+        "Dead_drop_technique",
+        "Pyarmor_tool",
+        "Amsi_bypass_technique",
+        "Icarus",
+        "Reflective_dll_injection_technique",
+        "Dll_injection_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Sri lanka",
+        "Ghana"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 10,
+      "software": [
+        "JDownloader",
+        "Windows Defender Application Control",
+        "Windows Defender",
+        "Windows security",
+        "Linux",
+        "winlogon",
+        "Windows service",
+        "Linux PyInstaller",
+        "Windows installer"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "rsa-2048",
+        "xor",
+        "aes-256",
+        "aes-256-gcm",
+        "aes-gcm"
+      ],
+      "functions": [
+        "r77_hide_self",
+        "r77_hide_registry_path"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/inside-the-jdownloader-supply-chain-attack",
+        "https://github.com/bytecode77/r77-rootkit",
+        "https://github.com/avast/ioc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Misconfigured, Enrolled and Dormant: Anatomy of a P2Pinfect Kubernetes Compromise",
+      "completeness": "Low",
+      "threats": [
+        "P2pinfect",
+        "Metro4shell_vuln",
+        "Redishell_vuln",
+        "React2shell_vuln",
+        "Kryptik"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Redis",
+        "Linux"
+      ],
+      "algorithms": [
+        "chacha20",
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "lua"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/misconfigured-enrolled-and-dormant-anatomy-of-a-p2pinfect-kubernetes-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "JOMANGY: INJ3CTOR3’s Self-Healing FreePBX Toll Fraud Campaign",
+      "completeness": "High",
+      "threats": [
+        "Jomangy_webshell",
+        "Zenharr",
+        "Encystphp",
+        "B374k_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "Brazilian",
+        "Oceania",
+        "Asia",
+        "Netherlands",
+        "America",
+        "Singapore",
+        "Dutch",
+        "Middle east",
+        "Apac",
+        "China",
+        "Africa",
+        "Latin america"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "reePBX To",
+        "FreePBX",
+        "crontab",
+        "MySQL",
+        "Alibaba Cloud",
+        "Elastix",
+        "curl",
+        "ntab - co",
+        "url ht",
+        "lastix SQ",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "str_rot13",
+        "eval",
+        "system",
+        "setAdmin"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://cyble.com/blog/jomangy-inj3ctor3s-self-healing-freepbx-toll-fraud-campaign/",
+        "https://github.com/watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819",
+        "https://github.com/FreePBX/security-reporting/security/advisories/GHSA-vm9p-46mv-5xvw"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers",
+      "completeness": "Medium",
+      "threats": [
+        "Phorpiex",
+        "Metro4shell_vuln",
+        "Dynowiper",
+        "Rondodox",
+        "Hellsuchecker",
+        "Etherhiding_technique",
+        "Clickfix_technique",
+        "Termite",
+        "Tactical_rmm_tool",
+        "Cobalt_strike_tool",
+        "Hajime",
+        "Mozi",
+        "Mirai",
+        "Sliver_c2_tool",
+        "Acunetix_tool",
+        "Gophish_tool",
+        "Asyncrat",
+        "Lockbit",
+        "Xmrig_miner",
+        "Dll_sideloading_technique",
+        "Soullessrat",
+        "Aquilarat",
+        "Llmjacking_technique",
+        "Amatera_stealer",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Lebanon",
+        "Egypt",
+        "Palestine",
+        "Jordan",
+        "Bahrain",
+        "Poland",
+        "Kuwait",
+        "Cyprus",
+        "Syrian",
+        "Saudi arabia",
+        "Iranian",
+        "Iraq",
+        "Middle east",
+        "Egyptian",
+        "Israeli",
+        "Turkish",
+        "Iran",
+        "Saudi",
+        "Turkey",
+        "Israel",
+        "Syria"
+      ],
+      "software": [
+        "WordPress",
+        "Keitaro",
+        "Starlink",
+        "Telegram",
+        "Microsoft Defender",
+        "curl"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "functions": [
+        "ReadOnlyAccess"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://hunt.io/blog/middle-east-malicious-infrastructure-report"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Updated UAC-0057 toolkit: OYSTERFRESH, OYSTERSHUCK and OYSTERBLUES",
+      "completeness": "Medium",
+      "threats": [
+        "Oysterfresh",
+        "Oystershuck",
+        "Oysterblues",
+        "Oyster",
+        "Cobalt_strike_tool"
+      ],
+      "software": [
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6315762"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Megalodon: Mass GitHub Repo Backdooring via CI Workflows",
+      "completeness": "Medium",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "golang",
+        "python",
+        "java",
+        "csharp"
+      ],
+      "links": [
+        "https://safedep.io/megalodon-mass-github-repo-backdooring-ci-workflows/",
+        "https://github.com/Tiledesk/tiledesk-server/commit/acac5a9854650c4ae2883c4740bf87d34120c038",
+        "https://github.com/Tiledesk/tiledesk-server"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-21",
+      "title": "Introducing Showboat: A new malware family taunts defenses and targets international telecom firms",
+      "completeness": "Low",
+      "threats": [
+        "Showboat",
+        "Poison_ivy",
+        "Shadowpad",
+        "Nosydoor",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "America",
+        "China",
+        "Russian",
+        "Asia",
+        "Middle east",
+        "Azerbaijan",
+        "Ukrainian",
+        "Afghanistan"
+      ],
+      "software": [
+        "Linux m",
+        "Linux",
+        "Pastebin",
+        "Outlook"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "links": [
+        "https://www.lumen.com/blog/en-us/introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms"
+      ]
+    }
+  }
+]

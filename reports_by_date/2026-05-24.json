@@ -1,0 +1,165 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-24",
+      "title": "Analyzing Void Dokkaebi's Cython-Compiled InvisibleFerret Malware",
+      "completeness": "High",
+      "threats": [
+        "Invisibleferret",
+        "Beavertail",
+        "Credential_harvesting_technique",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "North",
+        "korea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 20,
+      "software": [
+        "macOS",
+        "Chrome",
+        "vscode"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "_rum",
+        "dnp_m",
+        "dnp",
+        "PyMemoryView_FromMemory",
+        "PyRun_StringFlags"
+      ],
+      "languages": [
+        "python",
+        "cpython",
+        "javascript",
+        "cython"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/e/analyzing-void-dokkaebi-invisibleferret-malware.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-24",
+      "title": "Paved With Intent: ROADtools and Nation-State Tactics in the Cloud",
+      "completeness": "Medium",
+      "threats": [
+        "Roadtools_tool",
+        "Roadrecon_tool",
+        "Spear-phishing_technique",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Iranian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 3,
+      "software": [
+        "Graph API",
+        "Microsoft Entra",
+        "Azure Active Directory",
+        "Azure AD Graph API",
+        "Azure AD",
+        "Office 365",
+        "curl"
+      ],
+      "functions": [
+        "Graph"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/roadtools-cloud-attacks/",
+        "https://github.com/dirkjanm/ROADtools",
+        "https://github.com/dirkjanm/ROADtools/wiki/Getting-started-with-ROADrecon",
+        "https://github.com/dirkjanm/ROADtools/tree/msgraph"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-24",
+      "title": "TrapDoor Crypto Stealer Supply Chain Attack Hits 34 Packages and Hundreds of Versions Across npm, PyPI, and Crates.io",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "CLAUDE",
+        "systemd"
+      ],
+      "wallets": [
+        "aptos_wallet"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "xor",
+        "ecdh"
+      ],
+      "functions": [
+        "GitHub"
+      ],
+      "languages": [
+        "rust",
+        "javascript",
+        "python",
+        "solidity"
+      ],
+      "links": [
+        "https://socket.dev/blog/trapdoor-crypto-stealer-npm-pypi-crates"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-24",
+      "title": "Fake Microsoft Teams Download Page Delivers ClickFix Chrome Update Payload – Malware Analysis, Phishing, and Email Scams",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Agent_tesla",
+        "Sectop_rat",
+        "Crimson_rat",
+        "Nanocore_rat",
+        "Njrat"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Chrome",
+        "Node.js",
+        "Microsoft Edge",
+        "Android"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/05/25/fake-microsoft-teams-download-page-delivers-clickfix-chrome-update-payload/"
+      ]
+    }
+  }
+]
