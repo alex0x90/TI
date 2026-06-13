@@ -1,0 +1,181 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-09",
+      "title": "Residential Proxies in the Wild",
+      "completeness": "Low",
+      "threats": [
+        "Residential_proxy_technique",
+        "Kimwolf",
+        "Ipidea"
+      ],
+      "software": [
+        "Android"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/residential-proxies-in-the-wild/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-09",
+      "title": "Technical Analysis of MLTBackdoor",
+      "completeness": "High",
+      "threats": [
+        "Mltbackdoor",
+        "Clickfix_technique",
+        "Antidebugging_technique",
+        "Sandbox_evasion_technique",
+        "Cobalt_strike_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "process explorer"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-gcm",
+        "aes",
+        "ecdh",
+        "xor",
+        "rc4"
+      ],
+      "functions": [
+        "GetWindowText"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/technical-analysis-mltbackdoor",
+        "https://github.com/ThreatLabz/tools/tree/main/mltbackdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-09",
+      "title": "Home-Field Disadvantage: AiTM, QR-Code Phishing, and Infostealers at the 2026 FIFA World Cup",
+      "completeness": "Medium",
+      "threats": [
+        "Qshing_technique",
+        "Aitm_technique",
+        "Supply_chain_technique",
+        "Putty_tool"
+      ],
+      "geo": [
+        "Canada",
+        "India",
+        "Brazil",
+        "Asian",
+        "Mexico"
+      ],
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Discord",
+        "Steam",
+        "WinSCP",
+        "KeePass",
+        "Android"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/aitm-qr-code-phishing-and-infostealers-at-the-2026-fifa-world-cup/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/aitm-qr-code-phishing-infostealers-at-the-2026-fifa-world-cup"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-09",
+      "title": "Miasma worm targets Microsoft, compromises 73 GitHub repositories",
+      "completeness": "Medium",
+      "threats": [
+        "Miasma",
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Hades"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Visual Studio Code",
+        "systemd",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256",
+        "aes-256-gcm",
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/miasma-worm-targets-microsoft-compromises-73-github-repositories"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-09",
+      "title": "From Phishing Email to Process Injection: Inside a Multi-Stage Agent Tesla Infection Chain",
+      "completeness": "Medium",
+      "threats": [
+        "Process_injection_technique",
+        "Agent_tesla",
+        "Process_hollowing_technique",
+        "Native_loader",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Spear-phishing_technique",
+        "Amsi_bypass_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 26,
+      "software": [
+        "Chromium",
+        "Internet Explorer",
+        "Microsoft Edge",
+        "Chrome",
+        "Opera",
+        "Vivaldi",
+        "Firefox",
+        "Pale Moon",
+        "SeaMonkey",
+        "Waterfox",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "FromBase64String",
+        "GetWindowText",
+        "Grab",
+        "BXX"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell",
+        "autoit"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/from-phishing-email-to-process-injection-inside-a-multi-stage-agent-tesla-infection-chain/"
+      ]
+    }
+  }
+]

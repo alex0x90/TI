@@ -1,0 +1,146 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-06",
+      "title": "Operation TaxShadow : Multi-Region Tax Phishing & In-Memory Malware Campaign",
+      "completeness": "High",
+      "threats": [
+        "Pe_injection_technique",
+        "Polymorphism_technique",
+        "Astral-pe_tool",
+        "Process_injection_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Japanese",
+        "Indian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "Windows DLL loading",
+        "SendGrid",
+        "2019",
+        "compilation ar",
+        "Visual Studio"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "ror13",
+        "rc4",
+        "prng",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "SbieDll_Hook",
+        "CryptServiceMain",
+        "__readgsqword"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/operation-taxshadow-multi-region-tax-phishing-in-memory-malware-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-06",
+      "title": "PulseRAT - Google Sheets-based RAT Using UAE-India Partnership Lure",
+      "completeness": "Low",
+      "threats": [
+        "Pulserat"
+      ],
+      "geo": [
+        "India",
+        "Afghanistan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Windows Task Scheduler"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "CreatePersistence"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/PulseRAT/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-06",
+      "title": "The Blight Reaches Microsoft: 73 Repos Disabled in 105 Seconds",
+      "completeness": "Low",
+      "threats": [
+        "Miasma",
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Azure Functions",
+        "Node.js",
+        "RabbitMQ",
+        "OpenAI",
+        "MSSQL"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/miasma-reaches-azure",
+        "https://github.com/Azure/functions-action"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-06",
+      "title": "Katz Stealer: Reverse Engineering a Information Stealer",
+      "completeness": "Medium",
+      "threats": [
+        "Katz_stealer",
+        "Dns_tunneling_technique",
+        "Katz_loader",
+        "Ngrok_tool"
+      ],
+      "software": [
+        "Discord",
+        "Firefox",
+        "Telegram",
+        "Foxmail",
+        "Minecraft",
+        "Steam",
+        "Chrome"
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "links": [
+        "https://medium.com/@ckant/katz-stealer-reverse-engineering-a-information-stealer-2e708948e511"
+      ]
+    }
+  }
+]

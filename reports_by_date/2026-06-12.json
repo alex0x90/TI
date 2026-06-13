@@ -1,0 +1,233 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-12",
+      "title": "Borrowed Trust – Systematic Exploitation of Abandoned Cloud DNS Delegations to serve Thai Gambling SEO Content",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Guangdong",
+        "Chinese",
+        "Thailand",
+        "Indian",
+        "Hong kong",
+        "China"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 8,
+      "software": [
+        "ThinkPHP",
+        "MySQL",
+        "Cloudflare R2"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyble.com/blog/borrowed-trust-cloud-dns-takeover-thai-gambling-seo-poisoning/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-12",
+      "title": "UNC1151/Ghostwriter phishing campaign targeting Gmail accounts",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Polish"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "links": [
+        "https://cert.pl/en/posts/2026/06/UNC1151-gmail-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-12",
+      "title": "Shai-Hulud Campaign Evolution: Miasma, Hades, and AI Scanner Evasion",
+      "completeness": "High",
+      "threats": [
+        "Shai-hulud",
+        "Miasma",
+        "Hades",
+        "Supply_chain_technique",
+        "Aitm_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Anthropic",
+        "Trivy",
+        "LiteLLM",
+        "jupyter notebook",
+        "TanStack",
+        "Mistral",
+        "OpenSearch",
+        "Claude"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "pbkdf2",
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/shai-hulud-campaign-evolution-miasma-hades-and-ai-scanner-evasion"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-12",
+      "title": "Active Exploitation of Oracle PeopleSoft Zero-Day (CVE-2026-35273)",
+      "completeness": "Medium",
+      "threats": [
+        "Meshcentral_tool",
+        "Meshagent_tool"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/etr-active-exploitation-of-oracle-peoplesoft-zero-day-cve-2026-35273"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-12",
+      "title": "astro.config.mjs Supply Chain Attack via Blockchain C2",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "software": [
+        "Node.js",
+        "Chrome",
+        "trongrid"
+      ],
+      "wallets": [
+        "tron",
+        "mainnet"
+      ],
+      "crypto": [
+        "aptos",
+        "binance"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "createRequire",
+        "eval",
+        "getJson"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://safedep.io/astro-config-blockchain-c2-supply-chain/",
+        "https://github.com/Egonex-AI/Understand-Anything/pull/206",
+        "https://github.com/Egonex-AI/Understand-Anything/issues/432",
+        "https://github.com/AsimRaza10/Understand-Anything/blob/8d30be36d2a0e22b848322902fce4085f5b0c0e6/homepage/astro.config.mjs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-12",
+      "title": "OceanLotus: From external espionage to domestic targeting",
+      "completeness": "High",
+      "threats": [
+        "Spectralviper",
+        "Supply_chain_technique",
+        "Dns_tunneling_technique",
+        "Soundbite",
+        "Phoreal",
+        "Cuegoe",
+        "Watering_hole_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Vietnam",
+        "Singapore",
+        "Asia",
+        "Germany",
+        "Vietnamese",
+        "China"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "Linux",
+        "Microsoft SQL server",
+        "Microsoft SQL",
+        "curl"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/oceanlotus-external-espionage-domestic-targeting/",
+        "https://github.com/eset/malware-ioc/tree/master/oceanlotus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-12",
+      "title": "The Package That Never Shipped: Following a USPS Smishing Kit Through Censys DNS Data",
+      "completeness": "High",
+      "threats": [
+        "Smishing_technique",
+        "Regre_ssh_ion_vuln",
+        "Lighthouse_tool"
+      ],
+      "geo": [
+        "United states",
+        "China",
+        "Singapore",
+        "Spanish",
+        "United kingdom",
+        "Chinese",
+        "Brazil",
+        "California",
+        "Asia"
+      ],
+      "software": [
+        "Caddy",
+        "OpenSSH",
+        "Linux"
+      ],
+      "functions": [
+        "JSONP"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://censys.com/blog/following-a-usps-smishing-kit-through-censys-dns-data/"
+      ]
+    }
+  }
+]

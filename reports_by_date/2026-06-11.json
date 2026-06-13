@@ -1,0 +1,482 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "A living fossil, or how the ProxyCB botnet survived",
+      "completeness": "Medium",
+      "threats": [
+        "Proxycb",
+        "Virut",
+        "Teamspy",
+        "Ponystealer",
+        "Nssm_tool",
+        "Teamviewer_tool"
+      ],
+      "geo": [
+        "Russian federation",
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Node.js",
+        "winlogon",
+        "uTorrent"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1",
+        "zip"
+      ],
+      "functions": [
+        "GetConfig",
+        "SetConfig"
+      ],
+      "languages": [
+        "jscript"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6652/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "[Op Report\\] From SSA Phish to AdaptixC2: A Multi-RAT Intrusion",
+      "completeness": "High",
+      "threats": [
+        "Adaptixc2_tool",
+        "Xworm_rat",
+        "Screenconnect_tool",
+        "Right-to-left_override_technique",
+        "Typosquatting_technique",
+        "Phantom_stealer",
+        "Pingcastle_tool",
+        "Mimikatz_tool",
+        "Tinba",
+        "Spear-phishing_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Polish",
+        "United states"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "WordPress",
+        "Active Directory",
+        "Telegram",
+        "Windows Powershell"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "RPC"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/xworm-sc-hok-may-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "Home Ground Disadvantage: AiTM, QR Code Phishing, and Information Theft Malware at the 2026 FIFA World Cup",
+      "completeness": "Medium",
+      "threats": [
+        "Qshing_technique",
+        "Aitm_technique",
+        "Supply_chain_technique",
+        "Putty_tool"
+      ],
+      "geo": [
+        "Mexico",
+        "India",
+        "Brazil",
+        "United states",
+        "Canada",
+        "Asian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Discord",
+        "Android",
+        "Steam",
+        "WinSCP",
+        "KeePass",
+        "1Password"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog-ja/atm-qrc-code-phishing-infostealer-malware-at-2026-fifa-world-cup/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/aitm-qr-code-phishing-infostealers-at-the-2026-fifa-world-cup"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "Adult Spam PDFs on Official EU Infrastructure: Trusted Domain, Dirty Search Results",
+      "completeness": "Low",
+      "threats": [
+        "Clickbait_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/spam-pdfs-on-official-eu-infrastructure-trusted-domain-dirty-search-results/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "Velvet Ant’s Operation Highland: How a China-Nexus Actor Infiltrated an Internal Network Undetected",
+      "completeness": "High",
+      "threats": [
+        "Velvetshell",
+        "Gs-netcat",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Timestomp_technique",
+        "Logcleaner_tool",
+        "Pnscan_tool",
+        "Pscan_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenSSH",
+        "systemd",
+        "Chrome",
+        "Nginx",
+        "FastCGI",
+        "SELinux",
+        "ELinux di",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1"
+      ],
+      "functions": [
+        "Internet-Facing"
+      ],
+      "languages": [
+        "perl"
+      ],
+      "links": [
+        "https://www.sygnia.co/blog/operation-highland-velvet-ant/",
+        "https://github.com/hackerschoice/gsocket",
+        "https://github.com/gnosek/fcgiwrap"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "APT28, an evolution of tradecraft",
+      "completeness": "Medium",
+      "threats": [
+        "Polyglot_ransomware",
+        "Credential_harvesting_technique",
+        "Spypress",
+        "Moobot",
+        "Aitm_technique",
+        "Xagent",
+        "Spear-phishing_technique",
+        "Sedkit_tool",
+        "Sedup_loader",
+        "Sedreco",
+        "Xtunnel",
+        "Screen_shotting_technique",
+        "Mimikatz_tool",
+        "Zebrocy",
+        "Gooseegg_tool",
+        "Headlace",
+        "Credomap",
+        "Masepie_tool",
+        "Oceanmap",
+        "Steelhook",
+        "Dns_hijacking_technique",
+        "Incontroller_tool",
+        "Bitm_technique",
+        "Covenant_c2_tool",
+        "Beardshell_tool",
+        "Slimagent_tool",
+        "Lamehug_tool"
+      ],
+      "geo": [
+        "America",
+        "Germany",
+        "American",
+        "Ukraine",
+        "Romania",
+        "Asia",
+        "Bulgaria",
+        "Polish",
+        "German",
+        "Russia",
+        "Crimea",
+        "Russian",
+        "Africa",
+        "Ukrainian",
+        "French"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Mistral",
+        "Windows Print Spooler",
+        "Microsoft Exchange",
+        "Roundcube",
+        "MDaemon",
+        "Zimbra",
+        "icedrive",
+        "Qwen",
+        "Hugging Face",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://blog.sekoia.io/apt28-an-evolution-of-tradecraft/",
+        "https://github.com/cobbr/Covenant"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "What Recent Reporting Gets Right About The Gentlemen RaaS and What Silent Push Learned Months Earlier",
+      "completeness": "Low",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Countloader",
+        "Cobalt_strike_tool",
+        "Blackbasta",
+        "Lockbit",
+        "Qilin_ransomware"
+      ],
+      "languages": [
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/the-gentlemen-raas/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit",
+      "completeness": "High",
+      "threats": [
+        "Meshcentral_tool",
+        "Meshagent_tool"
+      ],
+      "geo": [
+        "United",
+        "states"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "ioc_domain": 1,
+      "ioc_url": 1,
+      "ioc_ip": 0,
+      "ioc_file": 5,
+      "ioc_command": 5,
+      "software": [
+        "WebLogic",
+        "SimpleHTTP",
+        "Linux",
+        "macOS",
+        "sshpass"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "Chinese Origin Threat Actors Target FIFA World Cup 2026",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Mitm_technique",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Romania",
+        "Austria",
+        "Saudi arabia",
+        "South africa",
+        "Lithuania",
+        "Chinese",
+        "Polish",
+        "Mexico",
+        "Sweden",
+        "China",
+        "Australia",
+        "Canada",
+        "South korea",
+        "Germany",
+        "Hong kong",
+        "Italy",
+        "Philippines"
+      ],
+      "software": [
+        "Instagram",
+        "MySQL",
+        "Chrome",
+        "Opera"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/chinese-origin-threat-actors-target-fifa-world-cup-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "Arctic Wolf Observes an Increase in Palo Alto Networks GlobalProtect Authentication Bypass Exploitation via CVE-2026-0257",
+      "completeness": "Low",
+      "threats": [
+        "Impacket_tool"
+      ],
+      "geo": [
+        "America",
+        "United states"
+      ],
+      "software": [
+        "PAN-OS",
+        "Linux"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/arctic-wolf-observes-increase-in-palo-alto-networks-globalprotect-authentication-bypass-exploitation-via-cve-2026-0257/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/globalprotect-cve-2026-0257-increase"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "World Cup 2026 Mobile Targeted Phishing: The Global Social Engineering Threat",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Aitm_technique",
+        "Mishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "New york",
+        "Qatar",
+        "German",
+        "French",
+        "Spain",
+        "Croatia",
+        "Chinese",
+        "Colombia",
+        "Ecuador",
+        "Portugal",
+        "Germany",
+        "Spanish",
+        "France",
+        "England",
+        "Portuguese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "TikTok",
+        "Chrome"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://zimperium.com/blog/world-cup-2026-mobile-targeted-phishing-the-global-social-engineering-threat",
+        "https://github.com/Zimperium/IOC"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-11",
+      "title": "Threat Actors Weaponize AI Hype to Deliver AsyncRAT",
+      "completeness": "Medium",
+      "threats": [
+        "Asyncrat",
+        "Process_hollowing_technique",
+        "Runpe_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "PostgreSQL",
+        "Claude",
+        "AutoHotkey",
+        "NET Framework",
+        "Microsoft Defender",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "zip",
+        "gzip",
+        "exhibit",
+        "aes-cbc",
+        "pbkdf2",
+        "md5",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Execute"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/threat-actors-weaponize-ai-hype-to-deliver-asyncrat"
+      ]
+    }
+  }
+]

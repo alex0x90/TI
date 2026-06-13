@@ -1,0 +1,333 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "Seeking Counsel: Ongoing Targeted Campaign Against US Law Firms",
+      "completeness": "High",
+      "threats": [
+        "Microsoft_quick_assist_tool",
+        "Zoho_assist_tool",
+        "Anydesk_tool",
+        "Bomgar_tool",
+        "Superops_tool",
+        "Rclone_tool",
+        "Bazarbackdoor",
+        "Trickbot",
+        "Gozi",
+        "Z_loader",
+        "Spear-phishing_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Chad"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 26,
+      "software": [
+        "Zoom",
+        "Microsoft Teams",
+        "cURL",
+        "WinSCP",
+        "Windows Defender Application Control",
+        "Outlook"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/targeted-campaign-us-law-firms/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "GraphSpy in the Wild: Exposed Device Code Phishing Operation",
+      "completeness": "Low",
+      "threats": [
+        "Graphspy_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Graph API",
+        "Outlook",
+        "Azure AD",
+        "Windows Hello",
+        "systemd",
+        "trycloudflare",
+        "Claude",
+        "Twitter"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "Graph"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://newtonpaul.com/blog/threatclass-graphspy-device-code-phishing/",
+        "https://github.com/RedByte1337/GraphSpy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "completeness": "Low",
+      "geo": [
+        "Australia",
+        "Middle east",
+        "India",
+        "Korea",
+        "Japan",
+        "Asia"
+      ],
+      "software": [
+        "PAN-OS"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "Miasma Worm Targets AI Coding Agents via GitHub Repos",
+      "completeness": "Medium",
+      "threats": [
+        "Miasma",
+        "Shai-hulud",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "ubernetes",
+        "n"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "getBunPath"
+      ],
+      "languages": [
+        "typescript",
+        "ruby"
+      ],
+      "links": [
+        "https://safedep.io/miasma-worm-ai-coding-agent-config-injection/",
+        "https://github.com/icflorescu/mantine-datatable/commit/f72462d9e5fa90a483062a83e9ffcb2edc57bf7e",
+        "https://github.com/Azure/durabletask",
+        "https://github.com/icflorescu/mantine-datatable/discussions/813"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "Malicious Python Package Mimics Parsimonious Parser",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Pyronut"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://gbhackers.com/python-package-mimics-parsimonious/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "Silent Ransom Group (SRG): Uncovering DNS Fast Flux Infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Fastflux_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "London",
+        "Canadian",
+        "Latin america",
+        "Sydney",
+        "Dominican",
+        "New zealand",
+        "Egypt",
+        "Spanish",
+        "America",
+        "Russian",
+        "North macedonia",
+        "Costa rica",
+        "Tokyo",
+        "Colombia",
+        "Africa",
+        "Latin american",
+        "Middle east",
+        "Ecuador",
+        "Saudi arabia",
+        "Singapore",
+        "New york",
+        "South korea",
+        "Brazil",
+        "Dominican republic",
+        "Kyrgyzstan",
+        "Korea",
+        "Argentina",
+        "Saudi",
+        "Macedonia",
+        "Panama",
+        "Mexico",
+        "Croatia",
+        "Tunisia",
+        "Jamaica",
+        "Uzbekistan",
+        "Australian",
+        "Moscow",
+        "Riyadh",
+        "American",
+        "Asia",
+        "Gyeonggi-do",
+        "Bulgaria",
+        "Bolivia",
+        "Peru"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TOR browser"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/silent-ransom-group-srg-uncovering-dns-fast-flux-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "Dark Web Profile: Vect Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Conti",
+        "Lockbit",
+        "Qtox_tool",
+        "Devman",
+        "Credential_harvesting_technique",
+        "Shadow_copies_delete_technique",
+        "Winrm_tool",
+        "Rclone_tool",
+        "Canisterworm",
+        "Windows_locker"
+      ],
+      "geo": [
+        "Israel",
+        "Russia",
+        "South africa",
+        "Brazil",
+        "Kazakhstan",
+        "Italy",
+        "Egypt",
+        "Africa",
+        "Ukraine",
+        "India",
+        "Spain",
+        "Belarus"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 31,
+      "software": [
+        "Trivy",
+        "LiteLLM",
+        "Linux",
+        "ESXi",
+        "Kubernetes",
+        "Microsoft Defender",
+        "MariaDB",
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "poly1305",
+        "chacha20",
+        "xor",
+        "chacha20-poly1305",
+        "base64"
+      ],
+      "functions": [
+        "randombytes",
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-vect-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-05",
+      "title": "From Crypto Wallets to a 100M-User VPN: Inside an Active STX RAT Supply Chain Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Stxrat",
+        "Supply_chain_technique",
+        "Dll_sideloading_technique",
+        "Credential_harvesting_technique",
+        "Medusalocker"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "Steam",
+        "HWMonitor",
+        "LibreOffice",
+        "WireGuard",
+        "Google Play",
+        "Microsoft Store"
+      ],
+      "wallets": [
+        "bybit",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/cpuid-hwmonitor-xvpn-dll-sideloading-stx-rat"
+      ]
+    }
+  }
+]

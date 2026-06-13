@@ -1,0 +1,561 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "From Malspam to DesckVB RAT Deployment",
+      "completeness": "High",
+      "threats": [
+        "Desckvb",
+        "Runpe_tool",
+        "Process_injection_technique",
+        "Venomrat",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Portuguese",
+        "German"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "VirtualBox",
+        "Hyper-V",
+        "QEMU",
+        "Microsoft Defender",
+        "Internet Explorer",
+        "NET framework",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "base64",
+        "3des",
+        "pbkdf2",
+        "aes",
+        "gzip",
+        "cbc",
+        "xor",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "downloadFile",
+        "setupEmailAndUI",
+        "fetchLocationAndTime",
+        "vjwNvhDoHz"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "jscript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/malspam-to-deskcvb-rat-delivery-chain-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "ReliaQuest's Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "completeness": "High",
+      "threats": [
+        "Ghostkit_tool",
+        "Badpotato_tool",
+        "Sweetpotato_tool",
+        "Cobalt_strike_tool",
+        "Plugx_rat",
+        "Timestomp_technique",
+        "Meterpreter_tool",
+        "Potato_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "EfsPotato",
+        "NET Framework",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "base64",
+        "rc4"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-reliaquests-agentic-ai-uncovers-new-china-linked-cluster-op-512/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "FSB’s matryoshka #3/3 – Gamaredon’s gifts that keeps unpacking – GammaSteel",
+      "completeness": "High",
+      "threats": [
+        "Gammasteel",
+        "Gammaphish",
+        "Gammaworm",
+        "Gammaload",
+        "Pteranodon",
+        "Gammawipe",
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Junk_code_technique",
+        "Invisimole"
+      ],
+      "geo": [
+        "Moscow",
+        "Russian",
+        "Ukrainian",
+        "Russia",
+        "Ukraine",
+        "Crimea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Mac OS",
+        "Mastodon",
+        "TryCloudflare",
+        "Supabase",
+        "Windows COM",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "Get-PSDrive",
+        "Get-CimInstance",
+        "Remove-Item",
+        "Get-FileHash"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.sekoia.io/fsbs-matryoshka-3-3-gamaredons-gifts-that-keeps-unpacking-gammasteel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "Miasma npm Supply Chain Attack: Self-Spreading Worm via Phantom Gyp",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Phantom_gyp_technique",
+        "Miasma",
+        "Blight_botnet",
+        "Shai-hulud",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "sudo",
+        "Node.js",
+        "1Password",
+        "TanStack",
+        "Anthropic Claude",
+        "Claude",
+        "Visual Studio Code",
+        "curl",
+        "HashiCorp Vault",
+        "Kubernetes",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "eval",
+        "createCommitOnBranch"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "ruby"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/binding-gyp-npm-supply-chain-attack-spreads-like-worm",
+        "https://github.com/jagreehal/autotel/issues/197",
+        "https://github.com/jagreehal/ai-sdk-ollama/issues/975",
+        "https://github.com/liuende501?tab=repositories"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "Bait for the Commander: Examining SiribClone cyber spy group's attacks on the Russian military",
+      "completeness": "High",
+      "threats": [
+        "Rclone_tool",
+        "Siribgrabber",
+        "Safelovestealer"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "Android"
+      ],
+      "algorithms": [
+        "cbc",
+        "sha1",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "Down"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/siribclone/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "The Job Hunt Trap: Unmasking the PUMA Careers Phishing Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Typosquatting_technique"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/the-job-hunt-trap-unmasking-the-puma-careers-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "VerdantBamboo: Just Another BRICKSTORM in the Firewall",
+      "completeness": "Medium",
+      "threats": [
+        "Brickstorm",
+        "Grimbolt",
+        "Agentpsd",
+        "Gobfuscate_tool",
+        "Slaystyle"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Core",
+        "Linux",
+        "PyInstaller",
+        "sudo",
+        "Volexity Volcano",
+        "ESXi",
+        "vSphere"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "Volexity"
+      ],
+      "languages": [
+        "golang",
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://www.volexity.com/blog/2026/06/04/verdantbamboo-just-another-brickstorm-in-the-firewall/",
+        "https://github.com/unixpickle/gobfuscate",
+        "https://github.com/dotnet/Nerdbank.Streams",
+        "https://github.com/Washi1337/ghidra-nativeaot"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "AI-Powered Cheats & Stolen Secrets: Teardown of the Yuta/Solara Roblox Stealer",
+      "completeness": "High",
+      "threats": [
+        "Glove_stealer",
+        "Uac_bypass_technique",
+        "Dead_drop_technique",
+        "Silent_loader",
+        "Dll_injection_technique",
+        "Chromekatz_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 10,
+      "software": [
+        "Roblox",
+        "Windows Defender",
+        "DeepSeek",
+        "Google Chrome",
+        "PyInstaller",
+        "Discord",
+        "Pastebin",
+        "Telegram",
+        "Chrome",
+        "Authy",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "aes",
+        "xor",
+        "sha256",
+        "zip",
+        "base64",
+        "aes-gcm"
+      ],
+      "functions": [
+        "_is_sandbox",
+        "Set-MpPreference",
+        "DPAPI"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/yuta-solara-roblox-python-rat/",
+        "https://github.com/Meckazin/ChromeKatz",
+        "https://github.com/zrax/pycdc",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "FIFA World Cup 2026: Cyberthreat Landscape Report",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Lumma_stealer",
+        "Redline_stealer",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "African",
+        "Ecuador",
+        "Algeria",
+        "Brazil",
+        "Norway",
+        "Japan",
+        "France",
+        "Uzbekistan",
+        "Portugal",
+        "Argentina",
+        "Ghana",
+        "England",
+        "Senegal",
+        "Croatia",
+        "Germany",
+        "Netherlands",
+        "Usa",
+        "Morocco"
+      ],
+      "ttp_list": [
+        "IOCs:",
+        "File:",
+        "1",
+        "Hash:",
+        "1",
+        "Domain:",
+        "5",
+        "Email:",
+        "4",
+        "Coin:",
+        "1",
+        "Url:",
+        "2"
+      ],
+      "software": [
+        "Telegram",
+        "Instagram",
+        "GoDaddy",
+        "Gmail",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "salsa20",
+        "aes",
+        "sha256",
+        "chacha20"
+      ],
+      "links": [
+        "https://www.fortinet.com/content/dam/fortinet/assets/threat-reports/report-fifa-world-cup-2026-cyberthreat-landscape.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "How 56 npm packages used binding.gyp to steal CI/CD secrets",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Miasma"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "PostgreSQL",
+        "Node.js",
+        "TRAVIS",
+        "CIRCLECI",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "Telegram",
+        "Discord",
+        "Slack",
+        "Claude",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "pbkdf2",
+        "aes-256-gcm",
+        "bcrypt"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "typescript",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/npm-bindinggyp-cicd-secrets",
+        "https://api.github.com/user"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "Magecart skimmer turns Stripe into a malware command server",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Shopware"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "Function",
+        "getMetaString",
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://sansec.io/research/stripe-api-skimmer-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-04",
+      "title": "Attack Campaign against Japanese Organizations Using PoisonX Drivers",
+      "completeness": "Medium",
+      "threats": [
+        "Poisonx",
+        "Byovd_technique",
+        "Spear-phishing_technique",
+        "Pxdropper",
+        "Process_hacker_tool",
+        "Procmon_tool",
+        "Dll_sideloading_technique",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Japan",
+        "Japanese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "VirtualBox",
+        "Hyper-V",
+        "process explorer",
+        "Windows Service",
+        "Microsoft Defender",
+        "Windows kernel",
+        "Windows Defender",
+        "Windows Security Center",
+        "Telegram",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "coinbase",
+        "terra_station",
+        "safepal",
+        "yoroi",
+        "bitkeep_wallet",
+        "bitget_wallet",
+        "exodus_wallet",
+        "sollet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "uniswap",
+        "pancakeswap"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc",
+        "zip",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "DriverEntry"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.lac.co.jp/lacwatch/report/20260604_004759.html"
+      ]
+    }
+  }
+]

@@ -1,0 +1,950 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "TA4922: The Suspected Chinese Crime Group is Going Global",
+      "completeness": "High",
+      "threats": [
+        "Atlas_rat",
+        "Romulusloader",
+        "Silentrunloader",
+        "Valleyrat",
+        "Winos",
+        "Gh0st_rat",
+        "Anydesk_tool",
+        "Syncfuture_tool",
+        "Holdinghands",
+        "Dll_sideloading_technique",
+        "Vulkan_loader",
+        "Process_hollowing_technique",
+        "Syswhispers_tool",
+        "Dll_injection_technique",
+        "Bloat_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "South africa",
+        "India",
+        "Malaysia",
+        "German",
+        "Japan",
+        "Italy",
+        "Indonesia",
+        "Italian",
+        "Asia",
+        "Korea",
+        "Taiwan",
+        "Germany",
+        "Africa",
+        "Singapore",
+        "United kingdom"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Microsoft Teams",
+        "LimeWire",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Defender",
+        "Windows service",
+        "Hyper-V",
+        "Windows Defender",
+        "WeChat",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "ror13",
+        "chacha20",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "Send",
+        "AtlasInfo"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/ta4922-suspected-chinese-crime-group-going-global",
+        "https://github.com/jthuraisamy/syswhispers",
+        "https://github.com/EmergingThreats/threatresearch/commit/f7721c28c9f30b905a3ec0c66a0eec0edffec8cb"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Preinstall to persistence: Inside the Red Hat npm Miasma credential-stealing campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Miasma",
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Blight_botnet",
+        "Obfusnpmjs",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "HashiCorp Vault",
+        "Kubernetes",
+        "Linux",
+        "macOS",
+        "sudo",
+        "anthropic",
+        "claude",
+        "chrome",
+        "Microsoft Defender for Endpoint",
+        "have more..."
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "zip",
+        "xor",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Dark Web Profile: BlindEagle",
+      "completeness": "Medium",
+      "threats": [
+        "Asyncrat",
+        "Quasar_rat",
+        "Blotchyquasar",
+        "Spear-phishing_technique",
+        "Process_hollowing_technique",
+        "Caminho",
+        "Dcrat",
+        "Remcos_rat",
+        "Njrat",
+        "Limerat",
+        "Ande_loader",
+        "Dll_sideloading_technique",
+        "Hijackloader",
+        "Imminentmonitor_rat",
+        "Avemaria_rat",
+        "Bitrat",
+        "Supply_chain_technique",
+        "Heartcrypt_tool",
+        "Steganography_technique",
+        "Junk_code_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Ecuador",
+        "Russian",
+        "Portuguese",
+        "Colombia",
+        "Chile",
+        "America",
+        "American",
+        "Spanish",
+        "Brazilian",
+        "Spain",
+        "Panama",
+        "Colombian",
+        "Latin america"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 23,
+      "software": [
+        "Discord",
+        "Pastebin",
+        "Windows shell"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-blindeagle/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Argamal: Malware hidden in hentai games",
+      "completeness": "High",
+      "threats": [
+        "Argamal",
+        "Com_hijacking_technique",
+        "Trojan.win32.termixia",
+        "Trojan.win32.agent"
+      ],
+      "geo": [
+        "Russia",
+        "Germany",
+        "Chinese",
+        "Vietnam",
+        "Spanish",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "RenPy",
+        "PixelDrain",
+        "Google Chrome",
+        "Microsoft Excel"
+      ],
+      "algorithms": [
+        "xor",
+        "sha1",
+        "aes-cbc",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/",
+        "https://opentip.kaspersky.com/https%3a%2f%2fgithub.com%2fgmz159%2fu/?utm\\_source=sl&utm\\_medium=sl&utm\\_campaign=sl&icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_37a0b5b00eb4552b",
+        "https://opentip.kaspersky.com/https%3a%2f%2fgithub.com%2fdnyp%2ffiles/?utm\\_source=sl&utm\\_medium=sl&utm\\_campaign=sl&icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_f91a511412333a54",
+        "https://opentip.kaspersky.com/https%3a%2f%2fgithub.com%2fmgzv%2fp/?utm\\_source=sl&utm\\_medium=sl&utm\\_campaign=sl&icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_72477af80b581e26"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Inside the Cross-Platform Propagation of a New Gafgyt Variant C0XMO",
+      "completeness": "High",
+      "threats": [
+        "Bashlite",
+        "C0xmo",
+        "Tcpflood_technique",
+        "Udpflood_technique",
+        "Tcpsynflood_technique",
+        "Synflood_technique",
+        "Icmpflood_technique",
+        "Httpflood_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Japanese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "crontab",
+        "Discord",
+        "FiveM",
+        "Zyxel",
+        "Android"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/inside-cross-platform-propagation-of-new-gafgyt-variant-c0xmo"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "How attackers are gaining access to LLM inference",
+      "completeness": "High",
+      "threats": [
+        "Wormgpt_tool",
+        "Ghostgpt_tool",
+        "Kawaiigpt_tool",
+        "Xanthorox_tool",
+        "Lamehug_tool",
+        "Akira_ransomware",
+        "Mimikatz_tool",
+        "Credential_dumping_technique",
+        "Solarmarker",
+        "Seo_poisoning_technique",
+        "Llmjacking_technique",
+        "Nuclei_tool",
+        "Ni8mare_vuln",
+        "Malterminal_tool",
+        "Promptlock",
+        "Promptflux",
+        "Polymorphism_technique",
+        "Quietvault"
+      ],
+      "geo": [
+        "Israel",
+        "Italian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Groq",
+        "llama",
+        "llama3",
+        "Mistral",
+        "HuggingFace",
+        "GPT-5",
+        "GPT-4o",
+        "Qwen",
+        "penAI",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "lua",
+        "python",
+        "java",
+        "javascript"
+      ],
+      "links": [
+        "https://intezer.com/blog/how-attackers-access-llm-inference/",
+        "https://github.com/cheahjs/free-llm-api-resources",
+        "https://github.com/Chocapikk/CVE-2026-21858",
+        "https://github.com/mnfst/awesome-free-llm-apis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem",
+      "completeness": "High",
+      "threats": [
+        "Spiderfoot_tool",
+        "Remus",
+        "Animateclipper",
+        "Sessiongate",
+        "Watering_hole_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Turkey",
+        "Poland",
+        "United kingdom",
+        "Germany",
+        "France",
+        "Brazil",
+        "Russia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Opera",
+        "Chromium",
+        "Chrome",
+        "1Password",
+        "Bitwarden",
+        "LastPass",
+        "Dashlane",
+        "NordPass",
+        "KeePassXC",
+        "Authy",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "rabby",
+        "coinbase",
+        "bitget_wallet",
+        "solflare_wallet",
+        "keplr",
+        "subwallet",
+        "tronlink",
+        "ronin_wallet",
+        "tonkeeper",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "solana",
+        "cardano",
+        "bitcoin",
+        "aptos"
+      ],
+      "algorithms": [
+        "rc4",
+        "aes-256-cbc",
+        "base62",
+        "aes-cbc",
+        "aes",
+        "sha256",
+        "base64",
+        "zip",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/impersonation-click-hijacking-and-tds-inside-a-malware-distribution-ecosystem/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Sapphire Sleet Targets macOS in Multi-Stage Intrusion Campaign",
+      "completeness": "Medium",
+      "threats": [
+        "Mac-cur_tool"
+      ],
+      "geo": [
+        "North",
+        "korean"
+      ],
+      "software": [
+        "macOS",
+        "Zoom",
+        "Telegram",
+        "l → sh",
+        "curl",
+        "Ledger Live",
+        "l)",
+        "TC"
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "objective_c",
+        "applescript"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/sapphire-sleet-targets-macos-in-multi-stage-intrusion-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "From Conti to The Gentlemen: tooling evolved, gaps didn't.",
+      "completeness": "Medium",
+      "threats": [
+        "Conti",
+        "Blackbasta",
+        "Lockbit",
+        "Qilin_ransomware",
+        "Pikabot",
+        "Ryuk",
+        "Cobalt_strike_tool",
+        "G-bot",
+        "Phemedrone",
+        "Dumpbrowsersecrets_tool",
+        "Lumma_stealer",
+        "Anydesk_tool",
+        "Rclone_tool",
+        "Megacmd_tool",
+        "Icedid",
+        "Devman",
+        "Darkside"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russian",
+        "Ireland",
+        "Germany",
+        "Moscow",
+        "Ukrainian",
+        "French"
+      ],
+      "software": [
+        "Jabber",
+        "Twitter",
+        "Telegram",
+        "ChatGPT",
+        "Hugging Face",
+        "ESXi",
+        "Hyper-V",
+        "PAN-OS",
+        "Confluence",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://www.vectra.ai/blog/from-conti-to-the-gentlemen-tooling-evolved-gaps-didnt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Espionage Campaign Targeted Stock Exchange Executive for Five Months",
+      "completeness": "Low",
+      "threats": [
+        "Sharpdecryptpwd_tool",
+        "Frpc_tool",
+        "Uac_bypass_technique",
+        "Secretsdump_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Dropbox",
+        "microsoft onedrive",
+        "curl",
+        "Microsoft Outlook"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "OneDrive"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/stock-exchange-espionage"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Analysis of the APT-C-26 (Lazarus) group's attack operations using CVE-2025-55182 with Copperhedge components",
+      "completeness": "Medium",
+      "threats": [
+        "Copperhedge",
+        "Uac_bypass_technique",
+        "Volgmer",
+        "React2shell_vuln",
+        "Etherrat"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WeChat"
+      ],
+      "algorithms": [
+        "chacha20",
+        "base64"
+      ],
+      "links": [
+        "https://www.ctfiot.com/309562.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "FSB’s matryoshka #2/3 – Gamaredon’s gifts that keeps unpacking – GammaLoad",
+      "completeness": "High",
+      "threats": [
+        "Gammaload",
+        "Gammaphish",
+        "Gammaworm",
+        "Gammasteel",
+        "Pteranodon",
+        "Gammawipe",
+        "Dead_drop_technique",
+        "Bitsadmin_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russia",
+        "Russian",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "ExecuteGlobal"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.sekoia.io/fsbs-matryoshka-2-3-gamaredons-gifts-that-keeps-unpacking-gammaload/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "New Mac stealer SHub Reaper is spoofing Apple, Google, and Microsoft",
+      "completeness": "Medium",
+      "threats": [
+        "Reaper",
+        "Clickfix_technique",
+        "Shubstealer",
+        "Typosquatting_technique",
+        "Amos_stealer"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "macOS",
+        "WeChat",
+        "Telegram",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Vivaldi",
+        "Ledger Live",
+        "curl"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "electrum",
+        "trezor"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://moonlock.com/mac-stealer-shub-reaper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "The HazyBeacon Protocol – How Malware Weaponizes Amazon Web Services (AWS) Lambda Function URLs",
+      "completeness": "Medium",
+      "threats": [
+        "Hazybeacon",
+        "Stealthc2_tool"
+      ],
+      "geo": [
+        "Asian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "Node.js",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.qualys.com/qualys-insights/2026/06/02/hazybeacon-aws-lambda-function-url-command-control-abuse"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Error 524 Decoy: Unmasking a Global Smishing Operation Hiding Behind Error Pages",
+      "completeness": "Medium",
+      "threats": [
+        "Smishing_technique",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "America",
+        "Latam",
+        "Chile",
+        "Chinese",
+        "Australia",
+        "Apac",
+        "Latin america",
+        "Mexico",
+        "American",
+        "Asian",
+        "Netherlands",
+        "Colombia",
+        "Germany"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 11,
+      "software": [
+        "Caddy",
+        "Telegram"
+      ],
+      "algorithms": [
+        "exhibit",
+        "aes-256",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/error-524-decoy-smishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "From Token Bingo to MAX Takeover: Kali365 Operator Expands Operation Across Microsoft Outlook, Okta, Xerox DocuShare, and Other Services",
+      "completeness": "Medium",
+      "threats": [
+        "Kali365_tool",
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "German",
+        "China",
+        "Russian"
+      ],
+      "software": [
+        "Microsoft Outlook",
+        "Okta",
+        "DocuShare",
+        "MAX Messenger",
+        "Telegram",
+        "WeChat",
+        "cPanel"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "functions": [
+        "fetch"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/kali365-expands-into-aws-microsoft-okta-xerox-max-messenger/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/kali365-expands-into-aws-microsoft-okta-xerox-max-messenger"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "KeyCat Stealer Uncovered: Inside a $40 Multi-Platform Infostealer with Telegram C2 and Active Staging Infrastructure",
+      "completeness": "High",
+      "threats": [
+        "Keycat",
+        "Credential_dumping_technique",
+        "Lazagne_tool",
+        "Credential_harvesting_technique",
+        "Pxa_stealer",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Tunisia",
+        "Italian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 29,
+      "software": [
+        "Telegram",
+        "Linux",
+        "Matkap",
+        "WordPress",
+        "Pastebin",
+        "Ubuntu",
+        "Limewire",
+        "QEMU",
+        "Windows service",
+        "ImageMagick",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "anti_debug",
+        "setsid",
+        "Send_telegram",
+        "send_flle",
+        "install_persistence",
+        "hide_process",
+        "become_daemon"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/keycat-stealer-multi-platform-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Diamotrix",
+      "completeness": "Medium",
+      "threats": [
+        "Diamotrix",
+        "Svcstealer",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Stealc",
+        "Tiny_loader",
+        "Amadey",
+        "Redline_stealer",
+        "Reflective_dll_injection_technique",
+        "Dll_injection_technique",
+        "Reflectiveloader"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://rexorvc0.com/2026/06/03/Diamotrix/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "We found this fake-invoice campaign while scammers were still building it",
+      "completeness": "Low",
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/06/we-found-this-fake-invoice-campaign-while-scammers-were-still-building-it"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "IronWorm Supply Chain Malware Hits npm",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Ironworm"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.ox.security/blog/ironworm-supply-chain-malware-hits-npm/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "IronWorm: Shai-Hulud's rustier cousin",
+      "completeness": "Low",
+      "threats": [
+        "Ironworm",
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "claude",
+        "Arweave",
+        "dependabot",
+        "Kubernetes",
+        "Anthropic",
+        "OpenAI",
+        "Mistral",
+        "Groq",
+        "Electron",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "languages": [
+        "rust",
+        "c_language",
+        "javascript"
+      ],
+      "links": [
+        "https://research.jfrog.com/post/iron-worm-shai-hulud-rustier-cousin/",
+        "https://github.com/claude",
+        "https://github.com/asteroid-dao"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-03",
+      "title": "Codex Discovered a Hidden HTTP/2 Bomb",
+      "completeness": "Low",
+      "threats": [
+        "Slowloris_technique"
+      ],
+      "software": [
+        "nginx",
+        "Docker"
+      ],
+      "links": [
+        "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb",
+        "https://github.com/nginx/nginx/commit/365694160a85229a7cb006738de9260d49ff5fa2",
+        "https://github.com/apache/httpd/commit/47d3100b252dc6668a9e46ae885242be9eeca9cd",
+        "https://github.com/califio/publications/tree/main/MADBugs/http2-bomb"
+      ]
+    }
+  }
+]
