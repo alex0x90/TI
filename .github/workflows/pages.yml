@@ -1,0 +1,43 @@
+name: website
+
+on:
+  push:
+    branches: [main]
+    paths: ["reports_by_date/**", "site/**", "tiscraper/site.py", ".github/workflows/pages.yml"]
+  workflow_run:
+    workflows: [scrape-reports]   # the daily bot pushes with GITHUB_TOKEN, which does not trigger "push"
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build site (stdlib only, no dependencies needed)
+        run: python -c "from pathlib import Path; from tiscraper.site import build_site; m = build_site(Path('.'), Path('_site')); print(m['total'], 'reports')"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

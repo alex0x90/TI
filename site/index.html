@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Threat Intel Calendar</title>
+  <meta name="description" content="Daily threat intelligence reports: threats, targets and short summaries, by date.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Threat Intel Calendar</span>
+      </a>
+      <p class="stats" id="stats"></p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="panel calendar" aria-label="Calendar">
+      <div class="cal-head">
+        <button class="icon-btn" id="prev" aria-label="Previous month">‹</button>
+        <h2 id="month-label"></h2>
+        <button class="icon-btn" id="next" aria-label="Next month">›</button>
+      </div>
+      <div class="cal-grid" id="weekdays" aria-hidden="true"></div>
+      <div class="cal-grid" id="days" role="grid"></div>
+      <div class="cal-foot">
+        <button class="link-btn" id="latest">Latest day</button>
+        <div class="legend" aria-hidden="true">
+          <span>fewer</span><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><span>more</span>
+        </div>
+      </div>
+      <div class="day-top" id="day-top"></div>
+    </section>
+
+    <section class="day" aria-live="polite">
+      <div class="day-head">
+        <div>
+          <h1 id="day-title">Loading…</h1>
+          <p class="muted" id="day-sub"></p>
+        </div>
+        <input type="search" id="filter" placeholder="Filter this day: threat, country, software…" aria-label="Filter reports">
+      </div>
+      <div id="reports" class="reports"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Reports link to their original publishers. Summaries are AI-generated and may contain mistakes; always check the source.</p>
+    <p>Data: <a href="https://github.com/alex0x90/TI">github.com/alex0x90/TI</a> ·
+      <a href="https://www.buymeacoffee.com/YOUR_BMC_USERNAME">Buy me a coffee</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
