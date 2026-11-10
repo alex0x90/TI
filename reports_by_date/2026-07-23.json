@@ -23,6 +23,7 @@
     "parsed": {
       "report_date": "2026-07-23",
       "title": "Russian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite",
+      "summary": "Russian state-supported group LAUNDRY BEAR has targeted Western government and commercial organizations using Zimbra Collaboration Suite (ZCS) since at least July 2025, primarily to covertly collect email data for Russia. The campaign exploits CVE-2025-66376, a cross-site scripting flaw that runs a malicious JavaScript payload when a user merely views a crafted email, with no click required. The payload attempts to exfiltrate the last 90 days of email, the Global Address List, two-factor scratch codes, and passwords, and to create persistent IMAP access and Application Passcodes. Targets include the defense industrial base, government, energy, law enforcement, media, and technology sectors. The main takeaway for defenders is to patch ZCS immediately, avoid the classic webmail client if patching is not feasible, and hunt for \"ZimbraWeb\" Application Passcodes and unusual SOAP request activity in logs.",
       "completeness": "High",
       "threats": [
         "Password_spray_technique",
@@ -90,6 +91,87 @@
         "python",
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "ef1955ae757c8b966c83248350331bd3a30f658ced11f387f8ebf05ab3368629",
+          "98df604ecc57f884a2e6ce3266a0013ad64455cac48442c2312cfa4765007aaf",
+          "60db9abae75cd8ccc49dd7ea5feb41677566dcd442f12ebc5745ffd2810fb874",
+          "b1f5beb1175fc5c7d1806a2f0d900eb124c54f0286c5c52b66eea7a6633adb1d",
+          "1517b3caa495f6c4e832df9c75fc94667e3c233773f7fa4e056d5e30e5ead760"
+        ],
+        "sha1": [
+          "2e4f314bc9943cab5005d6fde0b271c74d47bc9d",
+          "50a87d926621dd06389ba50d86e0ff574ed713a8",
+          "c5a72420e7bb308d078e62128430897f82194c95",
+          "8959c4d29e29f02ea94ea8bb21c8df2594c5549d",
+          "62eb76432597694edb01c1fe57aab0cfe03a7178",
+          "cddf5c3be1e07f28140aed165b929bf2d614922a",
+          "18b3ad442ce73cc8656d51d75bbd7c855f2cb7e8",
+          "1b25041ececf2457eef0270fc1d785cec8ec9ded",
+          "e4fe6466a4f9a4249fe330651e914e45bbdca44a",
+          "b6b77c9a455225d525834a403ca9ef5481ed0447"
+        ],
+        "ipv4": [
+          "216.252.238.104",
+          "216.252.238.18",
+          "37.120.247.228",
+          "185.86.79.95",
+          "104.248.134.194",
+          "64.226.124.190",
+          "193.238.152.66",
+          "216.252.238.64",
+          "194.156.103.193"
+        ],
+        "domain": [
+          "zmailanalytics.com",
+          "zimbra-metadata.com",
+          "analyticemailmeter.com",
+          "emailanalytics.com.ua",
+          "mailnalysis.com",
+          "zimbrastat.com",
+          "zimbrasoft.com.ua",
+          "synacorzimbra.nl",
+          "istc-cloud.com",
+          "isofts.kiev.ua",
+          "navs.edu.ua",
+          "www.ncis.navy.mil",
+          "cyber.gov.au",
+          "www.seqrite.com",
+          "www.defensie.nl",
+          "dibnet.dod.mil",
+          "www.aivd.nl",
+          "www.sicurezzanazionale.gov.it"
+        ],
+        "url": [
+          "https://www.aivd.nl/site/binaries/site-content/collections/documents/2025/05/27/aivd-en-mivd-onderkennen-nieuwe-russische-cyberactor/Advisory+AIVD+en+MIVD+Public+report+on+new+cyber+actor.pdf",
+          "https://www.seqrite.com/blog/operation-ghostmail-zimbra-xss-russian-apt-ukraine/",
+          "https://dibnet.dod.mil",
+          "https://www.defensie.nl/onderwerpen/m/militaire-inlichtingen-en-veiligheid",
+          "https://www.aivd.nl",
+          "https://www.sicurezzanazionale.gov.it/"
+        ],
+        "email": [
+          "ivanka.zurabishvili@proton.me",
+          "zmul1@buildandconsulting.com",
+          "garrysmithme@pinmx.net",
+          "hostingclient@pinmx.net",
+          "c.laurent.ejfa@proton.me",
+          "j.moreau.epsc@proton.me",
+          "liberty.insights@proton.me",
+          "cybersecurityreports@nsa.gov",
+          "dib_defense@cyber.nsa.gov",
+          "mediarelations@nsa.gov",
+          "contact@cisa.dhs.gov",
+          "dcsa.ci.cyberops@mail.mil",
+          "dcsa.quantico.dcsa-hq.mbx.pa@mail.mil",
+          "dc3.dcise@us.af.mil",
+          "dc3.information@us.af.mil",
+          "contact@cyber.gc.ca",
+          "info@ncsc.govt.nz",
+          "info@valisluureamet.ee",
+          "cert-fr@ssi.gouv.fr"
+        ]
+      },
       "links": [
         "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a"
       ]

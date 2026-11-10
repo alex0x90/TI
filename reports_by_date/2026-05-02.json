@@ -68,6 +68,7 @@
     "parsed": {
       "report_date": "2026-05-02",
       "title": "Threat Brief: CVE-2026-41940: Critical cPanel & WHM Authentication Bypass Actively Exploited in the Wild",
+      "summary": "CVE-2026-41940 is a critical authentication bypass in cPanel & WHM, WP Squared, and DNSOnly, affecting cPanel versions after 11.40, that lets an unauthenticated remote attacker reach exposed hosting control panels. Attackers abuse a failed login to create a pre-authenticated session, then inject attacker-controlled attributes into the server-side session file via crafted headers. Because WHM often manages many domains and customer environments, a single compromise can become a multi-tenant incident affecting hosting providers and website owners. Cato observed exploitation attempts in the wild and virtually patched customers with IPS protections. cPanel recommends patching, blocking inbound traffic to ports 2083, 2087, 2095, and 2096 as a temporary measure, and checking session files for compromise artifacts.",
       "completeness": "Low",
       "threats": [
         "Seo_poisoning_technique"
@@ -85,6 +86,18 @@
       "languages": [
         "javascript"
       ],
+      "iocs": {
+        "ipv4": [
+          "24.144.95.61",
+          "146.190.146.169",
+          "134.199.225.24",
+          "108.131.133.224",
+          "104.234.140.30",
+          "104.234.140.28",
+          "104.234.140.18",
+          "104.234.140.13"
+        ]
+      },
       "links": [
         "https://www.catonetworks.com/blog/threat-brief-cve-2026-41940-critical-cpanel-whm-authentication-bypass-actively-exploited-in-the-wild/"
       ]

@@ -84,6 +84,7 @@
     "parsed": {
       "report_date": "2026-10-25",
       "title": "2026-10-24-confirmed-rce.md",
+      "summary": "Two source-address episodes used closely related exploit tooling against disposable PHP honeypots running PHP 8.4.26 under single-worker Apache mod_php. The four-stage multipart chain (memory pressure, memory disclosure via an oversized PHPSESSID, further memory pressure, then a target-adjusted execution stage) matches the public HTTP-only PoC family and is consistent with CVE-2026-109618. Thirty-five confirmed shells were recorded, each an Apache-parent /bin/sh process (uid=33) following a complete execution-stage POST. Source 15.204.59.70 produced three shells on T1, while 162.35.99.94 produced 32 shells across T1, T2, and T3. The report stresses that shared templates and different source IPs do not establish shared or separate actors. Defenders should treat an unexpected Apache-parent shell, not a PHP OOM, HTTP 200, or alert label, as the decisive execution indicator.",
       "completeness": "Low",
       "ttp_tactics": 1,
       "ttp_techniques": 0,
@@ -101,6 +102,29 @@
       "languages": [
         "php"
       ],
+      "iocs": {
+        "sha256": [
+          "8e8fc166e6b326d20bb7611d8ef3cee3bd5da46447985312c1492ab0a44d1eb6",
+          "b6c547e0e9a2bb26607df1521de96f4d5c9adf4621c28b7ab491587b21ae40f2",
+          "7af66c8f35c5fa6b47a539da6dca361d19543d9f62d61e4af891c2802bd5e236",
+          "e538361aa02f01bb9e00f53d2107eb1369f778203033e08506496a767c0e4abc",
+          "aab24fa5ec0df76f731c1ea4bac9fd36aa350eef9a42c33315e485178e1e5892",
+          "b8a67dc5173272afd95cd603b2bd7b49bb6e0900af53237096b8caf9fd48ca97",
+          "567659d699213c360e4598c257c40260cf0d7b1377e4a25851ca3f59a427899c",
+          "a744539cce8295ac07ca70fd5eab9601ef79fb62f142749373d855033fb101e0",
+          "675647c9919681e3f6a58c54be30a22942b523e036ee53f0e4fdccf22a506408",
+          "d2d86024e947cbdcecb725e3dae4930579b28f23bff80eedaad6b3f11544bcff",
+          "dcb4e2b4f6879827222d0bb5efa14dc838357251880302401bc8702bb3085370",
+          "b8e69e39c49c986a6edae77f08b11be1ab1675d4fda6c05dcf0628149eefbd06",
+          "c1263f68fcb9565dc3b162481574ed6f64ad11436e654751a9da4644352bbcee",
+          "c61540651b07f744fa9d43ff326daa7a81c51f90ffdd05b28d1b552ade5320a4",
+          "c1fc4df4a886aff090471f27a40c29358444b3668257e1b2074577477ba2e36c",
+          "ff73391d30efd875a28c65178a59cacf6b933f911ae51654b2ffb4d4d3fe850a",
+          "23b0d9cb7dce28dbeb9749d2664eacd64474f7a4fab3c152747603c33214e58a",
+          "77afd5bf9c28069616b514a2955dbf52dc62e3b5c5c04c1e86c7a3c3fc5a5156",
+          "e5a9ca54352814eaefc2051013aa424d4e6fd780a2c0d1085fdd35eac392e5c4"
+        ]
+      },
       "links": [
         "https://github.com/0x4D31/honeypot-data/blob/main/reports/php2shell/2026-10-24-confirmed-rce.md",
         "https://github.com/0x4D31/honeypot-data/blob/main/reports/php2shell/2026-10-22-to-24-initial-attempts.md",

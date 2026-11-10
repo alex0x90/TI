@@ -225,6 +225,7 @@
     "parsed": {
       "report_date": "2026-04-15",
       "title": "New 0-day revealed by Ivanti in Connect/Policy Secure and Neurons for ZTA",
+      "summary": "Chinese state-sponsored actor UNC5337, believed to be part of the UNC5221 cluster, has been exploiting CVE-2025-0282, a critical unauthenticated remote code execution flaw in Ivanti Connect Secure VPN appliances, since mid-December 2024. The flaw affects Connect Secure versions 22.7R2 to 22.7R2.4, and patches are available in version 22.7R2.5. The attackers use a stack-based buffer overflow to gain access, then disable SELinux, block syslog forwarding, and install malware such as PHASEJAM and SPAWNANT to persist through upgrades. They also tunnel to C2 servers, map internal networks, exfiltrate cache data, and steal VPN credentials with the DRYHOOK script. Defenders should run the updated External ICT checker, investigate any mismatches, hunt for signs of compromise, and then patch after a thorough investigation.",
       "completeness": "Low",
       "threats": [
         "Phasejam",

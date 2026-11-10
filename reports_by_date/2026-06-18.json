@@ -46,6 +46,7 @@
     "parsed": {
       "report_date": "2026-06-18",
       "title": "Someone's Hands Are on Your Keyboard Then Your Whole Network. Courtesy of ClickFix, Potemkin, RMMProject and EtherRAT",
+      "summary": "ClickFix lures led to a hands-on-keyboard intrusion across 11 hosts, beginning when a user ran a pasted command that silently installed the Potemkin loader on an unmonitored endpoint. Potemkin used a deterministic domain generation algorithm with a fixed seed to find its C2 and reflectively loaded RMMProject, a Lua-scriptable DLL that steals browser credentials and cookies, including via an App-Bound Encryption bypass, and provides remote desktop and process injection. The attacker also deployed EtherRAT, a Node.js backdoor that resolves its C2 from an Ethereum smart contract, plus a renamed Cloudflare tunnel. The operator disabled Windows Defender, ran Chisel SOCKS tunnels, and spread laterally with WMIExec and SMBExec. Defenders should ensure every endpoint has monitoring, alert on renamed cloudflared binaries, and treat Defender tampering commands as high-fidelity alerts.",
       "completeness": "High",
       "threats": [
         "Clickfix_technique",
@@ -112,6 +113,42 @@
         "python",
         "lua"
       ],
+      "iocs": {
+        "sha256": [
+          "3b7ae925e2d64522b4f69b56285b05aeca8c5aab5ab46a9c02c4fafb69d881ce",
+          "cd4e5e2c65b1660470d3446539ee68adf5faeece3eaeb46583623be9911ee145",
+          "2abe5dd3a057fdef935722e50e9251c272d29fd26113187b853a1f9a9cb89d9b",
+          "79f7b67ce8b39070f3e1c2b90fce0ce84134782a7dedcccc1edac197ee9e089b",
+          "2ada24dd6e517f37942b749c2bd57ddd97445e9853002cee70a0bc30d0b0ce3a"
+        ],
+        "sha1": [
+          "b3f2897f2bc797e5b9033faef8c81e92b01cb831",
+          "40b57c3622c1cbfd699207f71f2de5a8fe256893"
+        ],
+        "ipv4": [
+          "198.41.200.63",
+          "198.41.192.77",
+          "77.110.122.58",
+          "213.165.41.26"
+        ],
+        "domain": [
+          "sonra.eutialyson.com",
+          "anus-staylard.xyz",
+          "pestrear-lamp.xyz",
+          "uglyshop-mare.xyz",
+          "rule-bead-dust.xyz",
+          "fair-bath-fond.xyz",
+          "cl.distritovagas.com",
+          "resumeacceptable.com"
+        ],
+        "url": [
+          "https://cl.distritovagas.com/hte.hta",
+          "https://resumeacceptable.com",
+          "http://77.110.122.58:23205/lQhEQui9a4lZ.exe",
+          "http://77.110.122.58:23205/cons_1.0.1.msi",
+          "http://77.110.122.58:44479/bjxxUmG8K3uy.ps1"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/potemkin-loader-rmmproject-clickfix-attack"
       ]
@@ -666,6 +703,7 @@
     "parsed": {
       "report_date": "2026-06-18",
       "title": "Cybercrime Breaches Klue: Salesforce Data Impacted for Many Victims, including Huntress",
+      "summary": "The Icarus extortion group compromised Klue, a market intelligence platform, by using a stale credential to access its backend and steal OAuth tokens that customers used to connect Klue to their own systems. The attackers then queried customer Salesforce instances directly and exfiltrated sales-related data, including contact information, price quotes, and opportunity notes. Huntress confirmed its Salesforce data was affected but found no impact on its products, infrastructure, telemetry, passwords, or payment card data. Defenders are advised to review logs for the provided IOCs, request missing vendor logs, and consider revoking sessions for affected services, since harvested credentials make integration revocation alone insufficient. Impacted organizations should also watch for phishing that uses stolen sales data and should not trust the extortionists' ransom demands.",
       "completeness": "Low",
       "threats": [
         "Icarus",
@@ -690,6 +728,20 @@
         "swift",
         "python"
       ],
+      "iocs": {
+        "ipv4": [
+          "138.226.246.94",
+          "212.86.125.24",
+          "213.111.148.90",
+          "94.154.32.160"
+        ],
+        "domain": [
+          "gofile.io",
+          "house.com.au",
+          "robinskitchen.com.au",
+          "baccarat.com.au"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/klue-breach-investigation"
       ]

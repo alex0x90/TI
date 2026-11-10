@@ -3,6 +3,7 @@
     "parsed": {
       "report_date": "2026-07-12",
       "title": "Seven Steps to Ransomware: CitrixBleed 2 Weaponized by Initial Access Brokers",
+      "summary": "Huntress assesses with high confidence that an initial access broker is exploiting CVE-2025-5777 (CitrixBleed 2) against Citrix NetScaler gateways, with DragonForce ransomware deployed in observed cases. The flaw is a pre-authentication memory overread in which malformed login POST requests leak heap memory that can expose valid session tokens. Attackers replayed a stolen session from their own IP, so MFA provided no protection. After gaining access, the operator escalated to SYSTEM with a local privilege escalation tool, created a backdoor admin account, and installed remote-access software such as ScreenConnect. Defenders should patch NetScaler appliances, forward logs to a SIEM, and terminate outstanding sessions because harvested tokens may persist after patching.",
       "completeness": "Medium",
       "threats": [
         "Citrix_bleed_vuln",
@@ -32,6 +33,19 @@
         "sha256",
         "zip"
       ],
+      "iocs": {
+        "sha256": [
+          "c84739655ce1af0a0269138263d47567418f69e0f75e249f8e23bc21802209e2",
+          "eb083365dc70d0294e8c4f55a2e78be0edb0f3497f2a06a70c9f474dafab48d8",
+          "c4fcae3847946173bf0b3cedf5d97a9e3d18090023842f942ba544fa7fda180d"
+        ],
+        "domain": [
+          "relay.dltsolutions.top",
+          "relay.eurofin.digital",
+          "opa.tlsd.shop",
+          "vtps.us"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/citrixbleed-2-dragonforce-ransomware"
       ]

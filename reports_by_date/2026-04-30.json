@@ -721,6 +721,7 @@
     "parsed": {
       "report_date": "2026-04-30",
       "title": "Komari: The “Monitoring” Tool That Didn't Need Weaponising",
+      "summary": "Huntress observed a threat actor abusing Komari, a legitimate open-source monitoring tool, as a command-and-control channel on a partner workstation in April 2026. The actor entered via SSLVPN using stolen credentials for one account, then used a customised Impacket smbexec.py to dump registry hives, enable RDP, and gain interactive access. They installed the Komari agent from its official GitHub repository and registered it as a SYSTEM-level service named \"Windows Update Service\" using NSSM. Huntress notes that Komari ships with arbitrary command execution, an interactive terminal, and network ping features enabled by default, so no weaponisation is required. Huntress isolated the workstation, disabled the account, and severed the channel before any exec tasks ran. The takeaway is to hunt for the behaviour of long-lived outbound WebSocket C2 rather than relying only on tool-specific indicators.",
       "completeness": "High",
       "threats": [
         "Komari_tool",
@@ -759,6 +760,21 @@
       "languages": [
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "039e659ade3aa8ee7758c11fdb8fbfffd2491920046d638413cea2042f6d584c"
+        ],
+        "ipv4": [
+          "45.153.34.132"
+        ],
+        "domain": [
+          "vmheaven.io",
+          "regdump.sa"
+        ],
+        "url": [
+          "https://raw.githubusercontent.com/komari-monitor/komari-agent/refs/heads/main/install.ps1"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/komari-c2-agent-abuse"
       ]
@@ -941,6 +957,7 @@
     "parsed": {
       "report_date": "2026-04-30",
       "title": "ClickFix Removes Your Background but Leaves the Malware",
+      "summary": "ClickFix lures posing as a free background-removal tool trick victims into pasting a command that uses finger.exe to fetch and run a second-stage script from an attacker-controlled server. The chain delivers CastleLoader, which pulls a NetSupport RAT for hands-on access and a .NET stealer that targets browser credentials, cryptocurrency wallet extensions, and Telegram sessions. CastleLoader uses API hashing, reflective PE loading, and evasion techniques such as calling ReplaceTextW to execute decrypted payloads. Defenders can break the chain by disabling the Run dialog, blocking outbound TCP port 79, and keeping Chromium browsers updated to enable App-Bound Encryption.",
       "completeness": "High",
       "threats": [
         "Clickfix_technique",
@@ -996,6 +1013,42 @@
         "python",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "f5dbaa09e60343f252a80d4a313a36ac11442d96b0896022d1a83744e3c11feb",
+          "bde21d8be65d31e1c380f2daae2f73c79f3e1f4bca70fb990db6fdf6c3768c92",
+          "ed391a16389234f9ebb6727711baaf3e068d7f77c465708fa3e8b7d0565d7fb9"
+        ],
+        "ipv4": [
+          "38.146.28.30"
+        ],
+        "domain": [
+          "obelnamevalf.org",
+          "ai-scan.digital",
+          "bg-transparency.online",
+          "bg-go.online",
+          "background-off.com",
+          "bg-ready.online",
+          "bg-removerok.online",
+          "background-ready.online",
+          "backgroundformat.online",
+          "poronto.com",
+          "giovettiadv.com",
+          "brionter.com",
+          "trindastal.com"
+        ],
+        "url": [
+          "https://trindastal.com/4ba0af68-0037-5f6e-afd1-64f89fc0f554/loc8",
+          "https://trindastal.com/4ba0af68-0037-5f6e-afd1-64f89fc0f554/v8",
+          "https://trindastal.com/8250d149-9bf8-566d-9d7d-ea925eae0a4",
+          "https://trindastal.com/8250d149-9bf8-566d-9d7d-ea925eae0a4c/",
+          "https://obelnamevalf.org/OaTS7yE9zd/default",
+          "https://brionter.com/4ba0af68-0037-5f6e-afd1-64f89fc0f554/net40.bin"
+        ],
+        "email": [
+          "nrledhdesi@cheeshomireciple.com"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/clickfix-castleloader-backgroundfix",
         "https://gist.github.com/RussianPanda95/beefe07b6ead220de05fa63e2e5f556b#file-gistfile1-txt",

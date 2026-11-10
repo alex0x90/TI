@@ -413,6 +413,7 @@
     "parsed": {
       "report_date": "2026-08-18",
       "title": "#StopRansomware: Medusa Ransomware",
+      "summary": "Medusa is a ransomware-as-a-service variant first identified in June 2021, with over 500 victims across critical infrastructure sectors as of April 2026. Medusa actors use a double-extortion model, encrypting victim data and threatening to publish stolen data if no ransom is paid. They recruit initial access brokers and exploit unpatched vulnerabilities, including CVE-2025-10035 in Fortra GoAnywhere and CVE-2026-1731 in BeyondTrust, often within 24 hours of public disclosure. After gaining access, they rely on living-off-the-land tools, PowerShell obfuscation, remote management software, PsExec, and Mimikatz for lateral movement and credential theft. The Healthcare and Public Health sector has been a frequent victim. Defenders should prioritize timely patching, network segmentation, filtering untrusted access to remote services, and phishing-resistant MFA.",
       "completeness": "High",
       "threats": [
         "Medusa_ransomware",
@@ -476,6 +477,58 @@
         "php",
         "python"
       ],
+      "iocs": {
+        "sha1": [
+          "2df705c9be0465f1c73a9f5d35147723deb16b5e"
+        ],
+        "md5": [
+          "2c7f328feeb94608aaaf99ec70cb0323",
+          "d796259c44be852327623fd2e40c47f2",
+          "4d0b6e3c9c33550a005e41663a1977cb",
+          "eb05429d25fc57b476428cdb0a134b2f",
+          "44370f5c977e415981febf7dbb87a85c",
+          "8f11d9067da087cb4185fa804caac2df"
+        ],
+        "ipv4": [
+          "143.244.47.89",
+          "167.88.166.173",
+          "143.110.243.154",
+          "185.238.231.16",
+          "23.234.89.195",
+          "146.70.172.247",
+          "155.2.215.71",
+          "23.234.106.242",
+          "23.234.93.112",
+          "37.19.21.180",
+          "155.2.215.69",
+          "185.238.231.98",
+          "37.221.66.239",
+          "185.135.86.185",
+          "83.138.53.139",
+          "185.238.231.4",
+          "185.238.231.77",
+          "185.238.231.85",
+          "85.155.186.121",
+          "45.61.150.94",
+          "94.156.67.145"
+        ],
+        "domain": [
+          "stopransomware.gov",
+          "oast.site",
+          "oast.pro",
+          "oast.fun",
+          "erp.ranasons.com",
+          "3324.requestcatcher.com"
+        ],
+        "url": [
+          "https://3324.requestcatcher.com/hihi",
+          "http://45.61.150.94:8000/storm.exe"
+        ],
+        "email": [
+          "contact@cisa.dhs.gov",
+          "hhscyber@hhs.gov"
+        ]
+      },
       "links": [
         "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-071a?date=20260818",
         "https://github.com/cisagov/Decider/"

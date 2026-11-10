@@ -403,6 +403,7 @@
     "parsed": {
       "report_date": "2026-10-08",
       "title": "Threat Actors Exploit Critical AhsayCBS Flaws to Drop Webshells and XMRig Cryptominer",
+      "summary": "Threat actors are chaining two AhsayCBS flaws, CVE-2026-105133 (authentication bypass) and CVE-2026-105134 (unauthenticated remote code execution as SYSTEM), to compromise internet-exposed backup management consoles used mainly by managed service providers. After exploitation, attackers drop JSP webshells and download payloads from Alibaba Cloud Object Storage, including an XMRig Monero miner disguised as Microsoft Edge. The miner runs as a persistent Windows service built from a modified NSSM utility, and a PowerShell script hides it by stopping the service whenever Task Manager opens. The actors also loaded the vulnerable WinRing0x64.sys driver for kernel-level hardware access. Ahsay released hotfixes (10.3.4.45 for v10 and 9.15.2.70 for older versions), and defenders should apply them and restrict management interface access.",
       "completeness": "High",
       "threats": [
         "Xmrig_miner",
@@ -439,6 +440,34 @@
         "powershell, java",
         "SIGMA: Found"
       ],
+      "iocs": {
+        "sha256": [
+          "05f69ae6b2b89c1c4dcf836bff032232f11bf0109f2b498e2345045d06139034",
+          "4dcb0202fe8b2d4d7b183764e38184cd6ed50132786cc7e7d1f7f4bce1dd6f3d",
+          "481728a7c9c4c02be07051d9c1958d902ea6397ebb8952ab83944818e3d25d21"
+        ],
+        "ipv4": [
+          "51.195.127.124",
+          "177.4.12.11",
+          "38.60.252.110",
+          "107.191.47.199",
+          "185.220.236.49",
+          "104.234.26.10",
+          "123.202.208.37"
+        ],
+        "domain": [
+          "xmr.kryptex.network",
+          "imagefiles-backup.oss-ap-southeast-7.aliyuncs.com"
+        ],
+        "url": [
+          "http://imagefiles-backup.oss-ap-southeast-7.aliyuncs.com",
+          "http://imagefiles-backup.oss-ap-southeast-7.aliyuncs.com/javas/Office/win/Taskgmr.ps1",
+          "http://imagefiles-backup.oss-ap-southeast-7.aliyuncs.com/javas/Office/win/edge.exe",
+          "http://imagefiles-backup.oss-ap-southeast-7.aliyuncs.com/javas/Office/win/msedge.exe",
+          "http://imagefiles-backup.oss-ap-southeast-7.aliyuncs.com/javas/Office/win/config.json",
+          "http://imagefiles-backup.oss-ap-southeast-7.aliyuncs.com/javas/Office/win/WinRing0x64.sys"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/ahsaycbs-flaws-exploit",
         "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-10/AhsayCBS\\_XMRig\\_Miner/proc\\_creation\\_win\\_susp\\_ahsaycbs\\_unexpected\\_child\\_process.yml",

@@ -191,6 +191,7 @@
     "parsed": {
       "report_date": "2026-09-22",
       "title": "The Tale of Two INC Ransom Notes",
+      "summary": "INC ransomware hit an organization in August, encrypting at least 175 endpoints and leaving traces on its domain controllers. Attackers first registered randomly named scheduled tasks and moved laterally over RDP through a compromised user account, then went quiet for about 17 days. Later in August they installed AnyDesk and used it to deploy netscan.exe and a BYOVD driver to disable security tools, with Impacket's atexec.py launching the ransomware. Two ransom notes were dropped about 53 minutes apart, and the second listed detailed stolen files and threatened to contact the victim's stakeholders. Huntress could not determine the initial access vector because logs had rolled over, so defenders should monitor scheduled tasks, remote-access tools, and new driver services, and maintain tested offline backups.",
       "completeness": "Low",
       "threats": [
         "Inc_ransomware",
@@ -202,6 +203,14 @@
       "languages": [
         "powershell"
       ],
+      "iocs": {
+        "ipv4": [
+          "213.111.185.108"
+        ],
+        "domain": [
+          "throughoutes.net"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/two-inc-ransom-notes"
       ]
@@ -682,6 +691,7 @@
     "parsed": {
       "report_date": "2026-09-22",
       "title": "DarkMe Email Campaign Broadens Targeting For APT RAT",
+      "summary": "DarkMe, a VB6 spy trojan and RAT long attributed to the Water Hydra group, has shifted from zero-day exploits to a disguised executable delivered by phishing email. Victims receive a link that serves image.pif, a Windows executable masquerading as an image, and a double-click is enough to start the chain. The file calls msiexec to fetch a remote MSI, which stages components and runs a script that registers a COM object and launches it via rundll32 /sta. Three VB6 loaders then run an anti-sandbox gate that exits if common user applications are absent, establish persistence, and hollow a signed Microsoft binary, clspack.exe. Defenders should alert on .pif execution, rundll32 /sta calls without a DLL path, remote msiexec installs, and signed Microsoft binaries running from %AppData%.",
       "completeness": "High",
       "threats": [
         "Darkme",
@@ -725,6 +735,37 @@
         "powershell",
         "visual_basic"
       ],
+      "iocs": {
+        "sha256": [
+          "54ed18aa883b53794810be0428b3a0167758183c5b3ba5660af747dc81dd5b76",
+          "394c93dfbb7581c66a23c52b20cd90b31415c0825a2eab7107e60ee3fe693c04",
+          "9fb5888f9ac99227a35f3e08ca08bfb9eed676e1f91638599eba0d7a5aac847f",
+          "1c923c685f97e556f241d0f1880283500a61dc7ecae8cafe75f34c720ff6b918",
+          "52b242047a8055c0936b384b952c1c16c1072a590610140b01f4acefa8ae883a",
+          "4a18f65ab7de7be385cbcebc78c9ae49334294f93726822b8900f9b7a324a6b0",
+          "3052352ac811c48590f0239281312c35560fc06b4dc39790e365eb1e7cab8634",
+          "d7185bd7b450b478c793ece3025bdd867eed70bb7b739a5f26375b5ba6cf0d93",
+          "2915efecf2a01ce0b3ef49c47666ec43c326e7804df10e5859db5f08eeca8a37"
+        ],
+        "ipv4": [
+          "67.43.50.11"
+        ],
+        "domain": [
+          "thatawful.boutique",
+          "effectivecpmnetwork.com",
+          "megchartedbk7.com",
+          "storageonline.me",
+          "readonline365.com",
+          "viewdocument.live",
+          "advancedfuturetechnology.com",
+          "sharedfuturetech.com",
+          "onlineview365.com"
+        ],
+        "url": [
+          "https://readonline365.com/view/image.png",
+          "https://onlineview365.com/propi.msi"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
       ]

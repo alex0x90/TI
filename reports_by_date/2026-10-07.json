@@ -480,6 +480,7 @@
     "parsed": {
       "report_date": "2026-10-07",
       "title": "Phishing Campaign Abuses Microsoft Power BI to Deploy Rogue RMMs",
+      "summary": "Attackers sent phishing emails containing links to fake \"Reference\" documents hosted on Microsoft Power BI, a legitimate domain that helped the lures evade mail filters. Victims who clicked \"Download Reference\" were redirected to attacker-controlled landing pages that fingerprinted their browsers and reported telemetry through a Telegram bot. The pages then automatically downloaded malicious ScreenConnect installers that established rogue remote monitoring and management clients. These clients deployed a second ScreenConnect instance, a defense evasion tool, and a scheduled task for persistence. Defenders should scrutinize downloads linked from trusted cloud services and restrict remote management software to approved instances.",
       "completeness": "Medium",
       "threats": [
         "Screenconnect_tool",
@@ -498,6 +499,34 @@
       "languages": [
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "5956f9afb3ba610c38b2cfda88dd15be98783963769a12020c93ce05e749b3c3",
+          "f048400c23add8c75abe189393d33c873c02c74eeaf43d47b950c8d643763b35"
+        ],
+        "domain": [
+          "app.powerbi.com",
+          "dailylifeproject.site",
+          "check.vykyn.click",
+          "burnsworth.site",
+          "essaywritingservice.site",
+          "openpediatrics.site",
+          "hamham27.screenconnect.com",
+          "instance-g01s1n-relay.screenconnect.com",
+          "onthegotree.site"
+        ],
+        "url": [
+          "https://app.powerbi.com/view?r=eyJrIjoiNTk0NmViNDktYzM1Yy00MjEwLTkyZTctNGU5ZTJmYzMzYjEwIiwidCI6IjU1YTI4YmU2LTFiYzQtNDIzMS05MTA0LTdkMmFlYTVmMGZhNiJ9",
+          "https://dailylifeproject.site/S/",
+          "https://burnsworth.site/S/main.html",
+          "https://essaywritingservice.site/S/main.html",
+          "https://openpediatrics.site/S/main.html",
+          "https://hamham27.screenconnect.com/Bin/ScreenConnect.ClientSetup.exe?e=Access&y=Guest&t=ILEAYEASAN",
+          "https://onthegotree.site/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest",
+          "https://hamham27.screenconnect.com/Bin/ScreenConnect.ClientSetup.exe?e=Access&y=Guest&t=PERFECTO",
+          "https://hamham27.screenconnect.com/Bin/ScreenConnect.ClientSetup.exe?e=Access&y=Guest&t=PAPASUPE"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/screenconnect-power-bi"
       ]
@@ -709,6 +738,7 @@
     "parsed": {
       "report_date": "2026-10-07",
       "title": "FortiBleed Attack Campaign Exploiting Fortinet Firewalls and VPNs – FBI Warns",
+      "summary": "FBI and U.S. Secret Service advisory warns that the FortiBleed campaign targets internet-facing Fortinet FortiGate firewalls and SSL VPN gateways worldwide, reportedly affecting over 86,644 devices in 194 countries. It is not described as a new Fortinet vulnerability; instead, attackers abuse reused, leaked, or weak credentials, including through credential stuffing and password spraying. The operators act as access brokers, cracking legacy SHA-256 password hashes and selling verified access to other cybercriminals. After entry, attackers may create administrator accounts, enumerate Active Directory, and move laterally, sometimes locking legitimate administrators out of their own devices. The activity is linked to initial-access brokers supporting ransomware groups such as INC/Lynx and Payload. Defenders should restrict external management access, reset credentials, terminate sessions, and enforce phishing-resistant MFA.",
       "completeness": "Low",
       "threats": [
         "Password_spray_technique",
@@ -726,6 +756,27 @@
         "sha256",
         "pbkdf2"
       ],
+      "iocs": {
+        "ipv4": [
+          "45.154.12.132",
+          "154.202.59.169",
+          "103.27.186.156",
+          "45.155.250.158",
+          "85.11.187.8",
+          "193.8.187.2",
+          "193.8.187.42",
+          "104.28.155.27",
+          "185.136.15.43",
+          "185.136.15.66",
+          "193.8.186.33",
+          "45.227.254.210",
+          "77.91.118.10",
+          "80.75.212.113",
+          "87.251.64.13",
+          "66.175.220.111",
+          "185.199.199.56"
+        ]
+      },
       "links": [
         "https://cybersecuritynews.com/fortibleed-attack-campaign-exploiting/"
       ]

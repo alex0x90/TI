@@ -35,6 +35,7 @@
     "parsed": {
       "report_date": "2026-06-16",
       "title": "Cato CTRL™ Threat Research: Operation Poisson – Analyzing a Cybercriminal’s Entire Operation",
+      "summary": "Cato CTRL analyzed every command issued by a French-speaking actor, \"Poisson,\" over 33 days, from March 30 to May 1, 2026, against one French automotive small business and four French individuals. The operator used a multi-stage fileless attack ending in a Python keylogger that harvested banking and email credentials, with no exfiltration server or beacon. After the Havoc C2 server went offline on April 8, his access survived through OpenSSH and a Tailscale VPN mesh installed on a victim machine, and he resumed control 18 days later. The researchers conclude that VPN-mesh persistence is already in active use, so taking down a C2 server alone is insufficient for remediation. Defenders are advised to alert on unexpected OpenSSH Server or Tailscale installations, detect ssh -R reverse tunnels, and monitor powercfg standby changes.",
       "completeness": "High",
       "threats": [
         "Tailscale_tool",
@@ -61,6 +62,28 @@
         "powershell",
         "python"
       ],
+      "iocs": {
+        "sha256": [
+          "aa7ea19e34567458b4ee66a7cd274181764984bf32123f756a7fdc64d5857b31",
+          "3b7642b0f84e83a36334c608655c6cb7aae774839a6a3488526b853d89830a60",
+          "c79091ceae7cd592fc08e4854cda7c1182af762b6b126371cc604debdc995fc7",
+          "f06e7e1a4363a01ba2a4fee2e28abdd623abf4194bda373f23ff0e151b5c2b45",
+          "1f00fd604bb18bbe3081f9ce8d741c4029d2a2125eb8888ac4e0d955938059d6",
+          "291cb1fd0f2709b4457447cbb87adacf5c36c1bcb0f8754524024d44174bb195",
+          "0378a5ef51b008aa2d6b76bd44a0bf061339bc3b737a188ec82029444d4d18fe"
+        ],
+        "ipv4": [
+          "217.154.217.139",
+          "17.154.217.139",
+          "217.154.162.45"
+        ],
+        "domain": [
+          "wawsenti.duckdns.org",
+          "pois43.s3.eu-central-003.backblazeb2.com",
+          "w456w5.s3.eu-central-003.backblazeb2.com",
+          "sentiwaw.s3.eu-central-003.backblazeb2.com"
+        ]
+      },
       "links": [
         "https://www.catonetworks.com/blog/cato-ctrl-operation-poisson-analyzing-a-cybercriminals-entire-operation/"
       ]

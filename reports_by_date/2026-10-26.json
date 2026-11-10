@@ -252,6 +252,7 @@
     "parsed": {
       "report_date": "2026-10-26",
       "title": "AI, Scripts, Operator - Inside the ConnectWise Attack",
+      "summary": "Huntress analyzed how a compromised ConnectWise Cloud Backup credential was used to access Microsoft 365 tenants, focusing on whether scripts, human operators, or an AI agent drove the activity. Microsoft attributes the campaign to threat actor Storm-0940, which it says used ARTEX, an open-source multi-agent AI framework. Huntress observed a loop over nearly 1,000 tenants, a thread-pool burst that reused one tenant's secrets against other tenants, and rapid tooling changes between runs, including a retry loop added within 55 seconds of a failure. Huntress rates the involvement of an LLM at low to medium on its own telemetry and medium to high when Microsoft's attribution is included. Defenders are advised to alert on service principals assigning themselves privileged roles and on credential additions to high-privilege applications, and to enable Microsoft Graph activity logs.",
       "completeness": "Medium",
       "threats": [
         "Artex_tool",
@@ -269,6 +270,14 @@
       "languages": [
         "python"
       ],
+      "iocs": {
+        "ipv4": [
+          "144.172.64.99",
+          "144.172.64.128",
+          "194.165.16.21",
+          "144.172.64.60"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/connectwise-attack-ai"
       ]

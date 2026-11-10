@@ -127,6 +127,7 @@
     "parsed": {
       "report_date": "2026-04-23",
       "title": "Global Campaign Discovered with Modbus PLCs Targeted and China-Geolocated Infrastructure Observed",
+      "summary": "Cato Networks researchers observed a global campaign from September to November 2025 involving suspicious Modbus/TCP activity against internet-exposed PLCs, spanning 70 countries and 14,426 targeted IPs, with the largest share in the United States. The activity included mass reconnaissance, mostly Read Holding Registers requests from 233 source IPs, and a scripted pattern of device identification followed by a fixed register read. Some traffic used near-maximum bulk reads at high rates, which may aim to exhaust PLC resources, and a single source sent 3,240 Write Multiple Registers requests. Targets were concentrated in manufacturing (18%), with a small number of municipal government organizations also observed. The threat actors remain unidentified, and the report's core recommendation is to avoid exposing Modbus to the public internet, enforce segmentation, and block unsolicited inbound writes.",
       "completeness": "Low",
       "geo": [
         "Japan",

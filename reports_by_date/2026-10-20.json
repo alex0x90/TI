@@ -54,6 +54,7 @@
     "parsed": {
       "report_date": "2026-10-20",
       "title": "#StopRansomware: SafePay Ransomware",
+      "summary": "SafePay is a ransomware group that has been highly active since August 2024, affecting businesses and critical infrastructure in North America, South America, Europe, and Australia, with at least 600 victims. The actors gain initial access through credential exposure, brute force password attacks, VPN exploitation, phished accounts, and known edge device vulnerabilities. Once inside, they create or take over accounts, use legitimate tools such as PsExec, WinRM, and RDP to move laterally, and disable security software. They exfiltrate data using tools like RClone, WinSCP, and FileZilla before encrypting files with a hybrid ChaCha20 and RSA scheme. Defenders are advised to patch edge devices and known exploited vulnerabilities, enforce MFA and strong password policies, maintain immutable offline backups, and segment networks.",
       "completeness": "High",
       "threats": [
         "Safepay",
@@ -88,6 +89,39 @@
       "functions": [
         "PowerShell"
       ],
+      "iocs": {
+        "sha256": [
+          "921df888aaabcd828a3723f4c9f5fe8b8379c6b7067d16b2ea10152300417eae",
+          "6c1d36df94ebe367823e73ba33cfb4f40756a5e8ee1e30e8f0ae55d47e220a6a",
+          "e79608cf1d6b51324c14bef8883054c1238ed5f080222cc464810e6e14adc346",
+          "327b8b61eb446cc4f710771e44484f62b804ae3d262b57a56575053e2df67917",
+          "a0dc80a37eb7e2716c02a94adc8df9baedec192a77bde31669faed228d9ff526",
+          "bbdd3620a67aedec4b9a68b2c9cc880b6631215e129816aea19902a6f4bc6f41"
+        ],
+        "sha1": [
+          "07353237350c35d6dc2c8f143b649cd07c71f62b",
+          "b498a2683640c983bb069fa2ea9e67cef4a3797d",
+          "bbfed53e3bb1f306f4da97d995cf4ae5b73ad081",
+          "d711a5af5aed48a3b36b98f4fcf52809aebef7a2"
+        ],
+        "ipv4": [
+          "104.26.2.223",
+          "140.82.114.4",
+          "185.199.108.133",
+          "77.37.49.40",
+          "173.194.194.94",
+          "167.235.225.149",
+          "5.255.11.134",
+          "88.119.167.239",
+          "37.10.71.188"
+        ],
+        "domain": [
+          "stopransomware.gov"
+        ],
+        "email": [
+          "contact@cisa.dhs.gov"
+        ]
+      },
       "links": [
         "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
         "https://github.com/cisagov/Decider/"

@@ -71,6 +71,7 @@
     "parsed": {
       "report_date": "2026-07-08",
       "title": "The Gentlemen Ransomware With Custom EDR/AV Killers Scaling Faster to Attack Industries Worldwide",
+      "summary": "The Gentlemen is a human-operated ransomware-as-a-service group, tracked by Microsoft as Storm-2697, that emerged in mid-2025 after a payment dispute within the Qilin program and has claimed over 500 victims across 70+ countries. Its defining feature is an in-house EDR/AV killer suite, GentleKiller, with at least eight BYOVD variants, plus integrated third-party killers HexKiller, ThrottleBlood, and HavocKiller. The group gains initial access mainly through internet-facing FortiGate VPNs, using a large inventory of compromised devices and brute-forced credentials rather than phishing. Affiliates then move laterally with a self-propagating worm module, steal hundreds of gigabytes to terabytes of data, and encrypt systems while deleting backups and clearing logs. Manufacturing, business services, technology, and healthcare are the most-targeted sectors, and victim selection is driven largely by FortiGate misconfiguration. Defenders should prioritize patching CVE-2024-55591, blocking the vulnerable drivers used by the killers, enabling HVCI, and protecting backups with immutability.",
       "completeness": "High",
       "threats": [
         "Gentlemen_ransomware",
@@ -169,6 +170,53 @@
         "rust",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "22b38dad7da097ea03aa28d0614164cd25fafeb1383dbc15047e34c8050f6f67",
+          "078163d5c16f64caa5a14784323fd51451b8c831c73396b967b4e35e6879937b",
+          "fe1033335a045c696c900d435119d210361966e2fb5cd1ba3382608cfa2c8e68",
+          "f918535f974591ef031bd0f30a8171e3da27a6754e6426a8ba095f83195661c8",
+          "1eece1e1ba4b96e6c784729f0608ad2939cfb67bc4236dfababbe1d09268960c"
+        ],
+        "sha1": [
+          "c12c4d58541cc4f75ae19b65295a52c559570054",
+          "8ae6bd18b129061f63642531f1b684cf0383c75d",
+          "ba914fe77b177b45799403b16dd14765c510a074",
+          "d605994fc72a2bb59b5cfb1624a1b9170eca73a2",
+          "b0b912a3fd1c05d72080848ec4c92880004021a1",
+          "5aa3124e5c4921e5edfc60133b5d71da21b07da3",
+          "7556ae58c215b8245a43f764f0676c7a8f0fdd1a",
+          "331879f5eec8892bbd896f90bdbb1bad0bf63bd6",
+          "f11aebccb9a86a7e2e653f90baec697f233c255f",
+          "ef9cd06683159397f099caa244e94e6eaad96eba",
+          "711ef221526997039e804a18db9647c91680bbe2",
+          "68fec379f2ae76c3d2ce913f7be650cea1d06990",
+          "a11ee9cdc59e5caa59aefd27b30d104f3ad68e62",
+          "96f0dbf52aed0afd43e44500116b04b674f7358e",
+          "2f86898528c6cab3540c486a9bfaa0c029b73950",
+          "9ad51ad97c01e97ab59214116740785e0f6320a8",
+          "a19117175dbc9ba4d23b5dce8415e299a2e32192",
+          "12500f6c87ce62712a0ed6652c57468d15c14223",
+          "d29670e684e40ddc89b47010c37cbc96737035b6",
+          "56bee9df5833a637f5c54d5911df98b0812fe643",
+          "cf4d74df17a91b4a36a2911b22afec5d8fa93a01",
+          "ec296f9501ad71e430810cb5cdc38d954d4ba536",
+          "7131b377e96016dc1911020c9f95b1b4d042d7b4",
+          "82ed942a52cdcf120a8919730e00ba37619661a3",
+          "f0537cbb773ae12100b36731e7c39f5a9d852b14",
+          "1fa071303fb846308571e64727501fb98b1c2be6",
+          "a5cf917ec4a7dfbdfa43621398604805d860c718",
+          "d4b19141102015d436321e6f26976e98183cfd27",
+          "c0979ec20b87084317d1bfa50405f7149c3b5c5f",
+          "df249727c12741ca176d5f1ccba3ce188a546d28",
+          "e00293ce0eb534874efd615ae590cf6aa3858ba4"
+        ],
+        "ipv4": [
+          "193.233.202.17",
+          "77.110.122.137",
+          "45.86.230.112"
+        ]
+      },
       "links": [
         "https://cybersecuritynews.com/gentlemen-ransomware-global-attacks/"
       ]
@@ -511,6 +559,7 @@
     "parsed": {
       "report_date": "2026-07-08",
       "title": "SilverFox Hackers Use Go RAT, AV Killer, and Kernel Rootkit in Live ValleyRAT Campaign",
+      "summary": "ValleyRAT is a remote access trojan deployed by the SilverFox hacking group, and it uses an unusually layered chain of about eight stages to reach full control of a machine. The infection starts with DLL sideloading and trojanized installers that abuse legitimate signed applications, and later stages hide payloads inside PNG image pixel data. The malware disables logging and antivirus, injects a Go-based RAT into svchost, and communicates over WebSocket and QUIC to blend into web traffic. A kernel rootkit taking instructions from the RAT through named pipes is also installed, and the malware steals cryptocurrency wallet addresses by swapping clipboard contents and targets Telegram data. Defenders are advised to watch for unusual named pipe activity, unexpected child processes under svchost, and installers that do not match known good signatures.",
       "completeness": "Low",
       "threats": [
         "Av-killer",
@@ -525,6 +574,15 @@
       "algorithms": [
         "sha256"
       ],
+      "iocs": {
+        "sha256": [
+          "520304a1cabdd9aa05c0a769c3874bc3cc2608d8e71ae607ca2bdf96b298b5de"
+        ],
+        "domain": [
+          "3w.jxuw3.com",
+          "df.sjickdeh.org"
+        ]
+      },
       "links": [
         "https://cybersecuritynews.com/silverfox-hackers-use-go-rat-av-killer/"
       ]

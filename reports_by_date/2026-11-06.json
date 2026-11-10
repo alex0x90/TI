@@ -390,5 +390,60 @@
         "https://github.com/ossf/malicious-packages/pull/1701"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-06",
+      "title": "A signed “Abe Office” helper that opens your browser behind your back",
+      "summary": "AbeAgent.exe is a modular remote-access trojan that presents itself as an \"Abe Office\" helper and is signed with a certificate in the name of an individual, with no real Abe Office product behind it. Its starter program unlocks three encrypted add-ons after contacting its server, but the unlock key can be derived from a default password left in the file, so the add-ons and traffic could be fully decrypted. The add-ons give the operator a hidden desktop that reuses the victim's copied Chrome and Edge profiles, plus a browser stealer that bypasses App-Bound Encryption. In a multi-day sandbox run, the operator opened hidden browsers and went straight to saved-password pages. Defenders should watch for the AbeOffice folders, the Run value, and outbound traffic to the listed C2 servers on port 9090.",
+      "completeness": "Medium",
+      "threats": [
+        "Hvnc_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Opus 5",
+        "Claude Code",
+        "Chrome",
+        "Opera",
+        "Firefox",
+        "Windows Firewall",
+        "Windows service"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "eda3e8e4e87ccb0423886ae5cfd1d488481d4ce16ab5b5efdfbce6f9f1a35dd9",
+          "977f5a0124c4484772517336019d8f9a03d27abf9207b64ff225b7b35c7ff277",
+          "3cec97aadc8e0da11e89a4aa454829292599b6b852afa620bb0aa811e9662d71",
+          "681293cbcf1436de6d8ae4c358a1e76677593155fe393055376aa535809b5ffd",
+          "b659c968b1e7dab906c9c984faf88ca7390378d41cc4f103be846bc34905cd6e",
+          "af5dbf6c5590c3e805a272edec363d0caacc3491570971a84d58a921feb4997f",
+          "39b0650828531011c1c2ca7657067b6385a53c274c339c89563a111cac88737e"
+        ],
+        "md5": [
+          "5ca1aa263b09e43d349b735343eb2fdc"
+        ],
+        "ipv4": [
+          "2.26.230.54",
+          "87.199.195.141"
+        ],
+        "domain": [
+          "ssl.com"
+        ]
+      },
+      "links": [
+        "https://rogueauthority.org/signed-abe-office-agent-hidden-browser-stealer"
+      ]
+    }
   }
 ]

@@ -86,6 +86,7 @@
     "parsed": {
       "report_date": "2026-04-17",
       "title": "From Code to Coverage (Part 5A): When All Your Detections Fail: The ADWS Blind Spot",
+      "summary": "Huntress describes a threat actor who enumerated an entire Active Directory environment using native PowerShell, specifically a Get-ADComputer command with obfuscated casing and the -Properties * parameter. The traffic uses Active Directory Web Services on port 9389, which is encrypted SOAP/XML, so network-based LDAP detections on ports 389 and 636 never see it. When ADWS queries AD, Event 1644 records the client as localhost (::1 or 127.0.0.1), hiding the attacker's real IP. The report says the case obfuscation was irrelevant, since the domain controller logs the same LDAP query regardless of how the command was typed. Defenders should correlate Events 1138, 1139, 1644, 1166, and 1167 by Operation ID, and flag the [all_with_list] attribute prefix and SDflags:0x7 in server controls as indicators of bulk enumeration.",
       "completeness": "Low",
       "threats": [
         "Impacket_tool",
@@ -223,6 +224,7 @@
     "parsed": {
       "report_date": "2026-04-17",
       "title": "Not Just Annoying Ads: Adware Bundles Delivering Gh0st RAT",
+      "summary": "A Splunk Threat Research Team report describes a loader that delivers both Gh0st RAT, a remote access trojan, and CloverPlus adware, giving attackers long-term control and ad-based revenue. The loader hides two encrypted payloads in its resources, drops the Gh0st RAT DLL to a random location, and runs it via rundll32.exe. The RAT persists through the Windows Run key, a Remote Access service registry entry, and a Windows service. It also raises privileges with SeDebugPrivilege, blocks antivirus-related domains through spoofed DNS responses, and logs keystrokes during RDP sessions via mstsc.exe. Defenders can use the Splunk detections provided for rundll32 anomalies, ping sleep commands, persistence registry keys, and temp-directory execution.",
       "completeness": "Medium",
       "threats": [
         "Gh0st_rat",
@@ -248,6 +250,18 @@
         "cscript",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "fda9864b1aa230b60d0c736559415ac9c79e240cce411daed5da2facb9ced87c",
+          "ebba8f4342b65faccdd2a48be9f2654d3fa523360f17ff68d5498a453f76c205"
+        ],
+        "domain": [
+          "blog.sina.com.cn"
+        ],
+        "url": [
+          "http://blog.sina.com.cn/u/"
+        ]
+      },
       "links": [
         "https://www.splunk.com/en_us/blog/security/detecting-ghost-rat-cloverplus-adware-loader-analysis.html",
         "https://github.com/splunk/attack\\_data/"

@@ -562,6 +562,7 @@
     "parsed": {
       "report_date": "2026-09-08",
       "title": "Peeling Back the Layers: Inside Vidar - From Virtualized Code to Stolen Credentials",
+      "summary": "Splunk Threat Research Team analyzed a Vidar information stealer variant that uses a custom virtual machine to hide string decryption and other sensitive routines from static analysis. The malware checks for antivirus processes, sandbox hostnames and usernames, low CPU counts, small disk or RAM sizes, and debugger artifacts before running. Vidar is commonly distributed through phishing and fake cracked software, game cheats, and activators. It steals browser passwords, cryptocurrency wallet data, Azure authentication tokens, FileZilla FTP/SFTP credentials, and screenshots, and it communicates with attackers through Telegram-based resources.",
       "completeness": "Medium",
       "threats": [
         "Vidar_stealer",
@@ -587,6 +588,15 @@
         "python",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "34c7929e60aa09bffdf458f4ee0b618f65d77e1b77e161f66fb835e35c405cc4",
+          "e618dd67445e12d7c2bd9dada402f522b5456d891a81c7d1b0978b6409f21322",
+          "3a2e69ca13d76af3d9502d352802be4d6aa00cc675da69fccab33dc3a0c914fe",
+          "398633479c7d8c0c93616f50d1faaa7f01b5864c89de0911812da60bf90e3358",
+          "e42890753b9e9e08a29dab78db957677dfb9efd3dfa0aef84184d4257ad1a6f0"
+        ]
+      },
       "links": [
         "https://www.splunk.com/en_us/blog/security/inside-vidar-from-virtualized-code-to-stolen-credentials.html"
       ]

@@ -306,6 +306,7 @@
     "parsed": {
       "report_date": "2026-07-28",
       "title": "Ransomware Gangs Attack Palo Alto, Fortinet, Citrix, and Check Point VPNs to Target Corporate Networks",
+      "summary": "Qilin ransomware affiliates and other threat actors are exploiting edge VPN and firewall appliances from Palo Alto Networks, Fortinet, Citrix, and Check Point to gain access to corporate networks. The Palo Alto GlobalProtect flaw CVE-2026-0257 lets attackers forge authentication override cookies to access VPNs without credentials or MFA. The Check Point flaw CVE-2026-50751 allows authentication bypass through the deprecated IKEv1 protocol, and a Qilin affiliate exploited it. The Citrix NetScaler flaw CVE-2026-8451 is a CitrixBleed-style memory disclosure that attackers began probing less than 24 hours after disclosure. Defenders should patch promptly, disable IKEv1 and authentication override cookies where possible, rotate FortiGate credentials, and enforce MFA.",
       "completeness": "Medium",
       "threats": [
         "Qilin_ransomware",
@@ -337,6 +338,21 @@
       "algorithms": [
         "pbkdf2"
       ],
+      "iocs": {
+        "ipv4": [
+          "146.70.139.154",
+          "104.207.144.154",
+          "146.19.216.119",
+          "146.19.216.120",
+          "146.19.216.125",
+          "209.99.191.137",
+          "79.130.26.202",
+          "146.70.165.52",
+          "216.238.74.98",
+          "64.190.113.151",
+          "31.41.244.100"
+        ]
+      },
       "links": [
         "https://cybersecuritynews.com/ransomware-gangs-attack-vpn/"
       ]
@@ -827,12 +843,22 @@
     "parsed": {
       "report_date": "2026-07-28",
       "title": "Huntress Threat Advisory: Widespread SonicWall Credential Stuffing Campaign",
+      "summary": "Huntress reports a broad, opportunistic credential stuffing campaign against SonicWall VPNs and firewalls, detected on July 25, 2026, with no hands-on-keyboard activity observed after the logins. The attackers systematically validate credentials against remote access portals across unrelated organizations rather than targeting one entity. Traffic originated from five IP addresses registered to DigitalOcean, LLC. As of publication, 30 organizations had been compromised, with daily victim counts rising quickly. Huntress assesses the activity as automated credential validation and notes that some accounts were previously targeted in May 2026. Defenders are advised to restrict WAN management access, reset device secrets and credentials, and enforce MFA on admin and remote accounts.",
       "completeness": "Low",
       "geo": [
         "Jordan"
       ],
       "ttp_tactics": 1,
       "ttp_techniques": 0,
+      "iocs": {
+        "ipv4": [
+          "157.245.88.153",
+          "162.243.31.111",
+          "167.71.150.1",
+          "209.97.151.148",
+          "64.227.15.20"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/sonicwall-credential-stuffing-campaign"
       ]
@@ -842,6 +868,7 @@
     "parsed": {
       "report_date": "2026-07-28",
       "title": "The Mantis Grip: Endpoint Defenses Pinned Before Encryption",
+      "summary": "The Mantis Grip report describes a ransomware-affiliate support operation that supplies kernel-assisted killers to disable endpoint defenses before encryption. G12 and G13 form one operator-maintained line: their loaders decode embedded drivers with XOR 0xAB, install kernel services, and repeatedly scan a fixed list of about 180 security and management processes, sending matching PIDs to the driver for termination. G13 adds driver blocking, process-memory destruction, kernel writes, and minifilter control. DriverKiller is consistent with the public BYOVD-DriverKiller proof of concept and uses a legitimate TG Soft VirIT driver to terminate one operator-supplied process name per run. Defenders should correlate service installation, driver load, and security-agent termination on the same host within ten minutes.",
       "completeness": "High",
       "threats": [
         "Gentlekiller",
@@ -869,6 +896,26 @@
         "sha256",
         "md5"
       ],
+      "iocs": {
+        "sha256": [
+          "781728e15f1e31bb8976bdf4b2fe04a8254f9d0c658317177301aaebb8852060",
+          "8e92cc393a7f6acda90fff42925c42d2082dad593740ae2698d597dca5d1e7fc",
+          "84d28538e0a6f4763b3c508be889d3c4bf759210ff238ed7186b30b6a697fbf8",
+          "83f6b8e88a8aa9407587fd5b41a68cc9408b22a493d1e6b7347517638605d57f",
+          "d5d3143c6ef2c527f04bfb5e2d7f2429732803ea232ced1fc8b1dc2e3c8d09a6",
+          "fd28c1ef42dc959c875fff1104d3774ef0973f026498af08fc86dea2f849832a",
+          "2d91a78e739891c9854c254f5b2a6b84c0e167dfa253466cbccd2cdd1c20145d"
+        ],
+        "sha1": [
+          "79f4ebf179a36d7ef2bd4466c0a69a0fc689d351",
+          "9dda65f950496a46442d0100ee08e569327dfc6e",
+          "0188096c79f0cdde9233e52d4117c0f53e667e3d"
+        ],
+        "md5": [
+          "da98b83be3485e2854ea3a0fec9d966a",
+          "4f95bc0cb6171ef363d2c74c6281f797"
+        ]
+      },
       "links": [
         "https://catalyst.prodaft.com/public/report/the-mantis-grip-endpoint-defenses-pinned-before-encryption/overview/yq54e011"
       ]

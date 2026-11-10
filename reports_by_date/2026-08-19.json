@@ -452,6 +452,7 @@
     "parsed": {
       "report_date": "2026-08-19",
       "title": "Post-DEF CON Phishing Uses Google Doc Apps Script to Deliver Malware",
+      "summary": "A threat actor posing as a CoinDesk marketing executive contacted attendees after Black Hat and DEF CON on X, using a fake \"conference planning\" lure. The actor sent a malicious Google Doc with a custom Apps Script sidebar that presented a failed \"encryption key\" prompt, then served ClickFix-style instructions and downloads. macOS victims were pushed toward an AMOS infostealer that targeted browser data, wallets, keychains, and Telegram files, plus a persistent polling backdoor. Windows victims faced a second lure, a fake DocSend installer that delivered NetSupport RAT, a rogue certificate authority with a VirusTotal proxy, and a Ledger wallet implant. Defenders should treat unexpected terminal commands, Gatekeeper bypasses, and password prompts during conference-related outreach as strong signs of compromise.",
       "completeness": "High",
       "threats": [
         "Netsupportmanager_rat",
@@ -494,6 +495,53 @@
         "applescript",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "15afe14b5db2896d35a0c4f3139db85158da120fa90613c975c88f10bbbcc420"
+        ],
+        "md5": [
+          "8ca79bd95f73a7f984b95e487dc1552b",
+          "281f1d9e0638517ac90d61e47fd8be60",
+          "6dd77235aaa99153ad790b5e59b49372",
+          "f4769ba9e8065727ef26cca72e894f83",
+          "cd08e22dbfe032d15b54217f4f4ed350"
+        ],
+        "ipv4": [
+          "86.54.25.213",
+          "192.253.248.181",
+          "87.120.104.88"
+        ],
+        "domain": [
+          "1foqo.lat",
+          "apple.eu03hub.com",
+          "microsoft.eu02hub.com",
+          "signow.web12api.com",
+          "msedgewebview1.pro",
+          "msedgewebview2.pro",
+          "apple-googleapi.com",
+          "docsend.com",
+          "docsend.online",
+          "docsend.web12api.com",
+          "2fksf.lat",
+          "gapidriver.com",
+          "3pqow.lat",
+          "eu07connect.com"
+        ],
+        "url": [
+          "https://apple-googleapi.com/i",
+          "http://86.54.25.213/log",
+          "http://192.253.248.181/api/v1/getscpt/",
+          "https://gapidriver.com/installer/GapiUpdate.application",
+          "https://1foqo.lat/core4",
+          "https://2fksf.lat/res10.php",
+          "https://2fksf.lat/res11.php",
+          "https://3pqow.lat/res12.php",
+          "https://docsend.online/download/drivers",
+          "https://docsend.web12api.com/api/launcher/start",
+          "https://eu03hub.com/get_file?file=X",
+          "https://eu07connect.com/api/commands/"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/defcon-phishing-google-doc-malware",
         "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-08/20260819\\_google-maldoc-defcon-targets.csv"

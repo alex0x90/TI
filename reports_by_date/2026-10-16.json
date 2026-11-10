@@ -112,6 +112,7 @@
     "parsed": {
       "report_date": "2026-10-16",
       "title": "ConnectWise (SkyKick) Vendor Credentials Abused in M365 Attacks",
+      "summary": "ConnectWise Cloud Backup (formerly SkyKick) vendor credentials were abused from the hosting-provider address 144.172.64[.]128 to obtain Microsoft Graph tokens in customer Microsoft 365 tenants on October 15. Huntress confirmed unauthorized sign-ins in 162 tenants as of October 16, and Microsoft attributed the activity to a threat actor it tracks as Storm-0940. In one tenant, a ConnectWise Cloud Management application granted itself Global Administrator and added new secrets to other applications, including Huntress's own. Defenders should disable the affected ConnectWise and SkyKick applications without deleting them, and review application credentials and directory roles. Because Graph directory reads leave no audit trail, Huntress recommends acting without waiting for proof of access.",
       "completeness": "Low",
       "threats": [
         "Password_spray_technique"
@@ -131,6 +132,14 @@
       "languages": [
         "python"
       ],
+      "iocs": {
+        "ipv4": [
+          "144.172.64.128",
+          "144.172.64.99",
+          "144.172.64.60",
+          "144.172.94.243"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/vendor-credential-enables-unauthorized-access"
       ]

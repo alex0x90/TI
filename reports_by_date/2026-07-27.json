@@ -127,6 +127,7 @@
     "parsed": {
       "report_date": "2026-07-27",
       "title": "Cato CTRL™ Threat Research: SilverFox Evolves: Abuse of New Drivers and Trusted Software Hijacking Enable Remote Access with ValleyRAT in Japan",
+      "summary": "SilverFox, a group linked to ValleyRAT, targeted a Japanese industrial manufacturing organization with an invoice-themed phishing lure that delivered files through legitimate QQ and Tencent Cloud services. The attackers sideloaded a malicious PDFCORE8.dll through the legitimate ConvertToPDF.exe and PDFDirect.exe applications. The DLL embedded three vulnerable drivers (BootRepair.sys, EnPortv.sys, and wsftprm.sys) to terminate security processes from kernel mode, along with NTDLL unhooking and thread-context hijacking of a suspended svchost.exe. Two recovery layers, an internal payload monitor and an external watchdog script, restore execution if either component is stopped. Cato's NGAM blocked the DLL before ValleyRAT could establish remote access. Defenders should correlate DLL sideloading, driver-service creation, and suspicious process behavior rather than relying on filenames or signatures alone.",
       "completeness": "High",
       "threats": [
         "Valleyrat",
@@ -167,6 +168,35 @@
         "FUN_1000A350",
         "have more..."
       ],
+      "iocs": {
+        "sha256": [
+          "01ccc662c4b5d6ff79ede2e5dd7e508c7e2029fcc13e988e22345b0e5413ed01",
+          "0952f2aacbeb3477b2465dfe3bac85d7906e958f866478cdbffec9be8cdb01c9",
+          "0a0353fddca1ba1432b35411a8ce2536c9b35aad25d0819296748e13423c813b",
+          "18db6fbabcf73332eb9bb392f7ae0cc3381f3528983587e17b7ceba8dc37e9f6",
+          "25c5ef94956a60ea6bb764f8abc82898906662207b59506b9647fd1c57bbb66b",
+          "2a5c7af5106a2cbd6b0f5a96a3716b29271f0b476a3c21a7c9b59fdc7d5e561b",
+          "2b8a15c5d7e23a69b8052e1ec298c075324e8fa95ea06d191124326b848cb0ff",
+          "0ef3119504f8aa3a534bfdbe20ed88727deabdf4e8f6e3e31298a34eef768662",
+          "1355d2d73a1f21b4fa4e1b97432015052c004a0ca20a0b72d47011940fd51c6a",
+          "31a276aae8a45873beecf4137bb27cd5a6dedde882a7b1e79f70ad0abeaa3ee1",
+          "36eb85e475954e2815c40e0c1546895de5419aa704cadf01d9e096a70ee84517",
+          "5e9c2eb32e1c5e0e9f69c8eda4e5ff2ec9e46d43e75ce098b830016ae17f291a",
+          "c0ec1488902568be9a4960c670dfa5edac0e096d106d782fa6bc26ee56793b75",
+          "1f0f08699f74eb2fb690edd064cba4f2fad06761f67d0bbb585e5cd03c77ea17",
+          "381dbc9012d02b3a42916813b99e481b1cc89d15da918b58db40ce330cc13fca"
+        ],
+        "md5": [
+          "bb7bbb62fd9c76d5ddf37f17ddc3e7ff"
+        ],
+        "ipv4": [
+          "43.128.26.132"
+        ],
+        "domain": [
+          "file.wx2.qq.com",
+          "hrefbfdhfhgre-1422102728.cos.ap-hongkong.myqcloud.com"
+        ]
+      },
       "links": [
         "https://www.catonetworks.com/blog/cato-ctrl-silverfox-evolves/",
         "https://github.com/redteamfortress/PhantomKiller"

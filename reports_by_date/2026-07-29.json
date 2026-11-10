@@ -489,6 +489,7 @@
     "parsed": {
       "report_date": "2026-07-29",
       "title": "Fake Claude Install Guide Leads to MacSync Stealer and RAT: What We Pulled From the Attacker’s Servers",
+      "summary": "MacSync is a macOS stealer and remote access trojan delivered through a malicious sponsored Google search ad that led to a weaponised public claude.ai share posing as an Apple Support install guide. The victim was told to paste a Base64-obfuscated curl command into Terminal, which fetched a loader that pulled server-side AppleScript to steal browser data, keychain secrets, and the account password. The stealer also obtained Full Disk Access, installed a LaunchAgent-persisted native RAT with an interactive shell, and used a signed helper to obtain Screen Recording permission. Where crypto wallet apps were present, it rewrote them to display a fake recovery flow that harvested seed phrases. Defenders should hunt behaviours such as curl piped into zsh or osascript, com.apple.<8hex> LaunchAgents, and wallet apps with ad-hoc signatures rather than static hashes.",
       "completeness": "High",
       "threats": [
         "Macc_stealer",
@@ -549,6 +550,40 @@
         "objective_c",
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "3db8befc08dc02ab7a76b5193abd81653775e8f3ceac5864c7c2188b2dbd3c54",
+          "3ae26ed89d3a1a140edc89ca78513aba2895789ed0d0f64cad6605b6f2347c7e",
+          "78dea0693ac2d70bdf8be7588667a75910e43fd84397ad484e710e37369a30f7",
+          "9c09c303fa058c2d3e179969bd58ca5523775ff2d310fb2f8266ac74cb21ee81",
+          "071bd109208eb1080ef525b5be394244cec467c59ffef5b8782cfb5e4850401d",
+          "31566a1df7070f30cb990aa5eab310c1d4e0266c8776e9438138e5438ec1cff8",
+          "230dff4bf9442a951dcd6898b2110924969a20668c20a43e3ceed6fcef65963e"
+        ],
+        "md5": [
+          "9dd465d26c7d86b4a6f514a4b46b2295"
+        ],
+        "ipv4": [
+          "103.216.221.95",
+          "85.206.161.241"
+        ],
+        "domain": [
+          "agenticsora.com",
+          "malwareaudit.com",
+          "main.southcarolinacounselor.com",
+          "dan.com",
+          "main.sdhomeinspectors.com"
+        ],
+        "url": [
+          "http://agenticsora.com/curl/",
+          "http://agenticsora.com/dynamic?txd=",
+          "https://agenticsora.com/loader/agent/",
+          "https://main.sdhomeinspectors.com/modules/wallets",
+          "http://agenticsora.com/gate?buildtxd=",
+          "https://agenticsora.com/loader/capture-agent/",
+          "https://agenticsora.com/ledger/"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/macsync-stealer-rat-reverse-engineering"
       ]
@@ -558,6 +593,7 @@
     "parsed": {
       "report_date": "2026-07-29",
       "title": "ClickFix, EtherHiding & a DPRK Wallet Trail",
+      "summary": "A fake macOS \"update\" web page tricks victims into pasting a single Terminal command, which silently installs a Node.js backdoor on their machine. The backdoor reads its command-and-control address from an Ethereum smart contract, a technique called EtherHiding, which makes the infrastructure hard to take down. The malware runs attacker-supplied JavaScript, steals cryptocurrency wallet and browser data, and sideloads a malicious Chrome extension. The report links the activity to the DPRK cluster UNC5342 and its \"Contagious Interview\" campaign, with stolen funds laundered through exchange-funded wallets. Defenders should watch for clipboard-driven Terminal execution, unexpected LaunchAgents, and eth_call traffic from non-browser processes. Users should know that no legitimate macOS update asks them to paste a command into Terminal.",
       "completeness": "High",
       "threats": [
         "Clickfix_technique",
@@ -605,6 +641,36 @@
       "languages": [
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "529815d365a8ec8da165f3993ada3ad452381b56c736cd25cdf328968b4ab795",
+          "7eca7aef8dcc46f15349509ac3dff8c0a71295c233787872c3842e058f9d7c50",
+          "370a5ae7f91291559ce514f44c50430dd2c35ed866bedcf6ac5f4f896259fbed"
+        ],
+        "sha1": [
+          "2aca749b59529f5cbcd6fbd34b35b1a546713df6",
+          "85a6d913aac80286f01fa082ef0b96c188673043",
+          "277765fb63601ce5a9814daf68aa2a57f54ea968",
+          "89c5151236de544d077fc69813a4db89224ee8a1",
+          "df16a4d0a234a2bbc4d21645d4c7a19d2db8f192",
+          "75ac1ebf164c6f2ac24e73bb4c9518b8d93559e2"
+        ],
+        "md5": [
+          "9f10d0899beff7952f586a49305f8b14",
+          "2752df77aeb348657f5fb59a22d65f4a"
+        ],
+        "domain": [
+          "real-tumble.pro",
+          "th-updates.sbs",
+          "eth-mainnet.rpcfast.com",
+          "rg-telemetry.sbs"
+        ],
+        "url": [
+          "https://rg-telemetry.sbs/api",
+          "https://th-updates.sbs/analytics",
+          "https://eth-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf"
+        ]
+      },
       "links": [
         "https://www.allsecure.io/blog/clickfix-etherhiding-dprk-wallet/"
       ]

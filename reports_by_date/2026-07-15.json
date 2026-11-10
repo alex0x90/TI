@@ -3,6 +3,7 @@
     "parsed": {
       "report_date": "2026-07-15",
       "title": "How an Infostealer Infection Led to a Sophisticated ClickFix Campaign at Artlist",
+      "summary": "A ClickFix campaign was found in mid-July 2026 on new-blog.artlist, a subdomain of digital asset platform Artlist, injecting code that disguised a Remote Access Trojan as a CAPTCHA verification prompt. Researchers traced the root cause to an August 2023 infostealer infection on a freelance WordPress developer's machine, after they downloaded a pirated copy of Adobe Acrobat. Infostealer-harvested credentials belonging to a senior Artlist content executive were then used to log into the blog's WordPress backend and inject malicious JavaScript. The attackers used EtherHiding, querying a Polygon blockchain smart contract to resolve payload URLs, which lets them rotate infrastructure without re-accessing the site. Victims were tricked into pasting a PowerShell command that led to a side-loaded chain of DLLs delivering a RAT with Tor-based fallback C2. The main takeaway for defenders is that stolen credentials from infostealer markets can let attackers bypass perimeter defenses and abuse trusted corporate domains.",
       "completeness": "High",
       "threats": [
         "Clickfix_technique",
@@ -28,6 +29,31 @@
         "delphi",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "3a9b8eccad62d84fc59f86dae41e8c74ae6ae544f079b099b12b37de1abd7a60",
+          "26817725650583d99ca3e617a618dd75c0f71bd316b5761780b7361f5f824cad",
+          "d518964aa67c359d0a806909451130591e337276bea33b6d41ef79126904ca3a",
+          "2f592365de553d8bb023a9e11439c2e18dcbe84d22b0cd6025b043d7d9029ac7",
+          "a7c94343b51643b7477ba2c7630b168ce3cb1f03126a85c39363e70742e3afb5",
+          "6bc18b6c6050bdd554c4a945838b8b3a35b5c5813b950cf5f2e822b2396718cf",
+          "75d4b6cec5bdc40cda25b5b9be136ccca97d77843825796beace7ddbfe87b614",
+          "8035b177ca682962fd6501228ebd460ef174183ac08a87d81514bba3ecfd9502"
+        ],
+        "sha1": [
+          "b6bc9e1d0b2fb96ab7c47e04cb0be477410bc1f2"
+        ],
+        "ipv4": [
+          "45.151.74.119",
+          "109.172.95.184",
+          "151.236.4.135",
+          "62.60.156.11"
+        ],
+        "domain": [
+          "new-blog.artlist.io",
+          "auth-code-check.info"
+        ]
+      },
       "links": [
         "https://www.hudsonrock.com/blog/how-an-infostealer-infection-led-to-a-sophisticated-clickfix-campaign-at-artlist"
       ]
@@ -416,6 +442,7 @@
     "parsed": {
       "report_date": "2026-07-15",
       "title": "Hospitals, local governments, and FPV operators are the focus of the UAC-0247 (UAC-0244) cyberthreat cluster",
+      "summary": "CERT-UA, working with Ukrainian cybersecurity bodies, describes activity from the UAC-0145 cluster, specifically its UAC-0002 subcluster (also known as Sandworm, APT44, or Seashell Blizzard). Earlier, attackers gained access through trojanized Windows and Office installers on torrent sites, and one infected machine enabled a destructive attack on a central executive body. Later campaigns sent malware via Signal to servicemen, disguised as antivirus software. In spring and summer 2026, fake CAPTCHA pages on compromised websites used ClickFix to deliver GHETTOVIBE, SCOUTCURL, and other loaders and backdoors. CERT-UA also found COWARDDUCK, an Android backdoor disguised as a protection app. Website administrators and hosting providers are urged to harden their sites and act on CERT-UA alerts, since any site used in an attack is presumed compromised.",
       "completeness": "High",
       "threats": [
         "Ravenshell",
@@ -449,6 +476,47 @@
       "languages": [
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "0abaae3054d6dc5bee1f17684df98bf427e5c73eb3a0febb123f9ce670dbde78",
+          "488b2b1b5434db7a47471220c0bac940bc5900c258ed076589d45468c4f838c6",
+          "45ec265667be203aa552744cbb1c3d10f04f91d8de513eaf8f0ff99817e2b660",
+          "8bd8ab9eef9ebfa683a37c0bcd8a1e29ec032861e01f15bc3488586b400b0982",
+          "6065f5541d4c5e70d7ae821e275856755c900df2971e20d51314d738933bc81e",
+          "78e31b518516fd5b11f63dbe91f96aece7d95f027a612b9a8baf9989a0598693",
+          "157aca11cdd3482728e1f687cb643f6c063025aebaf488159b4d3bf6aa9aa46d",
+          "a000fd4ab4c951d246f9db7e9d77dd3f3e91bbafbb93499cadf4ac5e31b77ed6",
+          "0c6095acf2e075db839872a0a74000cfb8a3984fff719ac7e5cc11115eefedad",
+          "25606f1239350b2c93d72bfbd63aa165b922326a50a1c79fc9556e74731b673a"
+        ],
+        "md5": [
+          "a7ee9222e0e1856f8c1fe341c669ed9b",
+          "2b21e2c6ccb1645f45890baf07590600",
+          "20ee4a5c6422fef7f22b26bac3c1b7f2",
+          "ee85ed7f5d366d84001db0be6c340984",
+          "65eb40ec0156e2ef0e9732e6fa6fe002",
+          "df586c8f8bb6f3fda68d0f60345613f3",
+          "a35fc74528f0a03692288ba86dc92960",
+          "c1e7c4304ba17f77856e8cc809cd69a8",
+          "b674f1c1b941b6fa1373207a1d1431de",
+          "5d176e6eb88ccfe7d48945fec4262817"
+        ],
+        "domain": [
+          "update-requirements.com",
+          "entouchnetworks.com",
+          "delta.smartlinkupload.com",
+          "static.diagnostics-monitoring.com",
+          "static.opennetworkconnect.com",
+          "softupdater.org",
+          "soft.softchecker.org",
+          "pack.softpacker.org",
+          "offlce366.com",
+          "365softupdate.com",
+          "images.stockmemory.site",
+          "images.stockmemory.space",
+          "proxy.duckduckgo.com"
+        ]
+      },
       "links": [
         "https://cert.gov.ua/article/6318437"
       ]

@@ -30,6 +30,7 @@
     "parsed": {
       "report_date": "2026-10-21",
       "title": "Amazon-Themed ClickFix Campaign Serves Up Finger-Licking Malware",
+      "summary": "A ClickFix campaign themed as Amazon used a sponsored Google search result that led victims to a fake Amazon login page and a fake CAPTCHA. The fake CAPTCHA tricked users into pasting a disguised command into the Windows Run dialog, which used the legacy finger utility to fetch and run a hidden script. That script delivered a chain of malware, including the Doina loader, a Node.js-based component, Lumma Stealer, and a pirated NetSupport RMM. The attack hit at least three Huntress customers, and the researchers noted it also had a macOS variant. Defenders should train users that legitimate CAPTCHAs never ask them to paste commands, and they can restrict access to the Run dialog and watch for Google ad-click parameters in logs.",
       "completeness": "High",
       "threats": [
         "Clickfix_technique",
@@ -73,6 +74,47 @@
         "ironpython",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "bc9e2dac08fb4f83dddb44f89bf7082bb4134697fbf6a99ad8ce30c634e9fe8a",
+          "d864b28c302db9ed10baf8def0fb26bac0b97d27349d22c4e9390d30fce54649",
+          "891cc3ca2d29e9b185a8913e93810f48859d2be1f23ddd977a15cdbeed509e0e",
+          "87a047160eb1a9b92e6ede511252dfc624b0f5a7185ac2cec1c7ebde8cdf4eea",
+          "035d396b3a329f59d680dc36a0a639eb7fb306bea97e42f5f53293dce817e8b7",
+          "24a293a662600b2292d9259baebba1c09b41df82a5c9c20f8572625ae759696f",
+          "b8419a676a3d4af04ea98287a2b85052fae5c06e6278ca9d8bfa4b5b396b39a6",
+          "42527a4388ef4ade6f4eaf52706f0ab31cb4e9ced3a56a6b15402551f9f01208",
+          "408b7fc4f08f2a9044046025f05995e8cbd5c96c39844aaa8a7eb8ee4697ea89"
+        ],
+        "ipv4": [
+          "167.148.201.106"
+        ],
+        "domain": [
+          "orders-amazon.com.advancedfences.com",
+          "ashevilleroofingcontractor.com",
+          "thegrilljournal.com",
+          "homelygrill.com",
+          "perfectgrillrecipes.com",
+          "liokida.com",
+          "kiriosyka.com",
+          "orders-amazon-com.advancedfences.com",
+          "embersandbites.com",
+          "grillmasterchef.com"
+        ],
+        "url": [
+          "http://ashevilleroofingcontractor.com/curl/bc9e2dac08fb4f83dddb44f89bf7082bb4134697fbf6a99ad8ce30c634e9fe8a",
+          "http://grillmasterchef.com/90e4a147-1234-505c-a024-062e543b5df8/timer6",
+          "https://grillmasterchef.com/90e4a147-1234-505c-a024-062e543b5df8/v6",
+          "https://kiriosyka.com/KsxmmKiN5N0j/sqr-viewertr6",
+          "https://orders-amazon-com.advancedfences.com/?gadsource=1&gadcampaignid=24300910299&gbraid=0AAAAAB5-hUQ67k8UWBU5316Kpe0DHQvLm&gclid=Cj0KCQjw5vLVBhCiARIsAD56SFKcNIrijpItFZHromjAHhVv8sQjArpaK4rTubr7G3kENmeATgbev2QaAs7pEALw_wcB",
+          "https://sites.google.com/view/ch-pc/sign-in?gadsource=1&gadcampaignid=24300910299&gbraid=0AAAAAB5-hUQ67k8UWBU5316Kpe0DHQvLm&gclid=Cj0KCQjw5vLVBhCiARIsAD56SFKcNIrijpItFZHromjAHhVv8sQjArpaK4rTubr7G3kENmeATgbev2QaAs7pEALw_wcB",
+          "https://liokida.com/KsxmmKiN5N0j/sqr-viewertr6z",
+          "http://167.148.201.106:725/fakeurl.htm"
+        ],
+        "email": [
+          "dlvbucefff@grillrecipespro.com"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/amazon-clickfix-finger",
         "https://github.com/Veil-Framework/Veil",

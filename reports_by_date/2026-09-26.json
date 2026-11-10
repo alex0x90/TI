@@ -274,6 +274,7 @@
     "parsed": {
       "report_date": "2026-09-26",
       "title": "The Rogue RMM Stack: One Phish, Multiple Persistence Paths",
+      "summary": "Attackers are using phishing lures to install rogue remote monitoring and management (RMM) clients, such as ITarian and ScreenConnect, that look like the same trusted tools IT teams use. In one Huntress investigation, a secure-document email led to a ZIP file and PDF that installed a rogue ITarian client, followed by a ScreenConnect client, both set to persist with SYSTEM privileges. In two other incidents tied to one campaign, phishing emails referenced ScreenConnect by name and led to a lure page that installed a first rogue ScreenConnect client, which then deployed more rogue RMMs. Each environment ended up with two rogue installations, so removing only the first may not stop the attacker. Huntress reports a 277% spike in RMM abuse in 2025, and defenders should inventory approved RMM tools and detect unauthorized instances.",
       "completeness": "Low",
       "threats": [
         "Itarian_tool",

@@ -3,6 +3,7 @@
     "parsed": {
       "report_date": "2026-08-13",
       "title": "Eclipse Ransomware Launches RaaS Platform Targeting Windows, Linux, and ESXi Infrastructure",
+      "summary": "A threat actor using the handle EclipseSupport is recruiting affiliates on cybercrime forums for Eclipse Ransomware, a new Ransomware-as-a-Service platform. The operators claim it can compromise Windows, Linux, NAS devices, VMware ESXi, and Nutanix environments, using a Rust-based Windows payload and C++ variants for other platforms. Claimed features include ChaCha20 encryption with Kyber-based key exchange, routines to encrypt Hyper-V virtual machines, and disabling of Veeam backup infrastructure. The platform also reportedly supports lateral movement across Active Directory, endpoint security evasion, and double extortion. These claims have not been independently verified in real intrusions, so defenders should isolate virtualization management interfaces, harden backup systems with immutable storage, and enforce least-privilege controls in Active Directory.",
       "completeness": "Low",
       "threats": [
         "Kyber"
@@ -32,6 +33,7 @@
     "parsed": {
       "report_date": "2026-08-13",
       "title": "Akira Hits Safe Mode: Ransomware Rebooting Around EDR",
+      "summary": "Akira affiliates breached a victim through a SonicWall SSL VPN account lacking MFA after a credential spray, then moved to a domain controller and dumped Active Directory user and computer data. The attackers archived file shares with WinRAR and uploaded them to cloud storage using s5cmd for double extortion. Before detonation, they installed AnyDesk for hands-on control and payload delivery, then forced the host into Safe Mode with Networking, which took the Huntress agent and Windows Defender real-time protection offline. The ransomware then starved the Safe Mode system of virtual memory and failed to encrypt, and Defender quarantined the binary only after the host rebooted normally. Defenders should require MFA on VPN accounts, deploy EDR and SIEM coverage to all hosts, and alert on msconfig-driven Safe Mode boots and third-party service stops.",
       "completeness": "Medium",
       "threats": [
         "Akira_ransomware",
@@ -59,6 +61,15 @@
       "languages": [
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "e2356c742c74cce5c6b6100162d0071a3f71e2fed2ed895c2011061a95b3299a",
+          "414b9985f46714f44dd1bd63860d2a48dcfababcfe5c712a4b4f575378127a56"
+        ],
+        "ipv4": [
+          "72.23.77.35"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/akira-hits-safe-mode-ransomware-rebooting-around-edr"
       ]
@@ -343,6 +354,7 @@
     "parsed": {
       "report_date": "2026-08-13",
       "title": "CSS Bomb Attacks Turn Malicious Emails Into Password-Stealing Keyloggers",
+      "summary": "CSS bomb attacks are a new class of email-based techniques that abuse ordinary CSS styling to hijack webmail interfaces and capture passwords without JavaScript or traditional malware. PortSwigger researcher Gareth Heyes examined how webmail clients such as Gmail, Outlook, Yahoo Mail, AOL Mail, Fastmail, and ProtonMail sanitize incoming HTML and CSS. Attackers exploit discrepancies between what sanitizers deem safe and how browsers render content, using selectors and pseudo-elements to turn select menus into fake password fields that send a background request for each keystroke. Demonstrated flaws included a fake Microsoft login in Outlook, click hijacking and email open tracking in Fastmail, and image-proxy bypasses in Gmail and ProtonMail. Because these attacks rely only on CSS and HTML, they can evade antivirus, spam filters, and script blockers, and several flaws have been patched while an Outlook issue reportedly remains open. Defenders should avoid auto-loaded remote images and treat unexpected login prompts in email with suspicion.",
       "completeness": "Low",
       "threats": [
         "Css_bomb_technique"

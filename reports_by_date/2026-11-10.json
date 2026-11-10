@@ -1,0 +1,611 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Microsoft Workflow Notification Abuse: QuickBooks Phishing",
+      "summary": "A phishing campaign impersonated QuickBooks through legitimate Microsoft Dynamics 365 Customer Voice infrastructure, so SPF, DKIM, and DMARC all passed. The email, displayed as \"Intuit Accountants,\" used a fake \"enhanced Passkey\" update and a 48-hour deadline to push recipients to a verification button. That button led through a benign-looking storefront with automation-detection cloaking to a counterfeit QuickBooks sign-in page. The page rewrote Intuit service requests to attacker-controlled subdomains, consistent with an adversary-in-the-middle workflow, though credential theft was not confirmed. Defenders should evaluate attacker-controlled notification content, verify the business request itself, and follow the full navigation chain rather than trusting sender authentication alone.",
+      "completeness": "Low",
+      "threats": [
+        "Cloaking_technique"
+      ],
+      "software": [
+        "QuickBooks",
+        "Microsoft Dynamics 365",
+        "Power BI",
+        "Selenium",
+        "Playwright",
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "domain": [
+          "mail13.mailip.dyn365cv.com",
+          "intuit-redirect-production.up.railway.app",
+          "verify-amazon.netlify.app",
+          "accounts.intlartmintuit.top",
+          "identity.api.intuit.com",
+          "logging.api.intuit.com",
+          "ivid-prod.intuit.com",
+          "accounts.intuit.com",
+          "qbo.intlartmintuit.top",
+          "qbo.intuit.com"
+        ],
+        "url": [
+          "https://accounts.intuit.com"
+        ]
+      },
+      "links": [
+        "https://zerobec.com/blog/quickbooks-phishing-microsoft-customer-voice"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "How TeamPCP Turned Developer Tools Into a Route for Data Theft",
+      "summary": "TeamPCP, a financially motivated group that appeared in late 2025, compromised Aqua Security's Trivy scanner in March 2026 and used the credentials it stole to tamper with other tools, including Checkmarx KICS and LiteLLM. The group then poisoned the Nx Console VS Code extension, and it claims it stole about 3,800 internal GitHub repositories from one employee's device, a figure GitHub called \"directionally consistent\" with its investigation. Its operating sequence was to get into trusted software, harvest every reachable secret, encrypt and exfiltrate the data, maintain access, and then resell or use the credentials, sometimes weeks later. Defenders should pin third-party actions to full commit SHAs, limit secret scope, delay risky updates, and rotate exposed credentials even after malicious packages are removed. The report also argues that monitoring and blocking outbound data transfers is a useful control.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_stealing_technique",
+        "React2shell_vuln",
+        "Canisterworm",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Trivy",
+        "Checkmarx KICS",
+        "LiteLLM",
+        "Telegram",
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "Bitwarden",
+        "Xinference"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-256-cbc",
+        "rsa-4096"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.blackfog.com/how-teampcp-turned-developer-tools-into-a-route-for-data-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Dark Storm Team: Operations, Alliances and DDoS-for-Hire Services",
+      "completeness": "Low",
+      "threats": [
+        "Ddosia_botnet",
+        "Robinhood"
+      ],
+      "geo": [
+        "Saudi",
+        "Canada",
+        "French",
+        "Austrian",
+        "New york",
+        "Polish",
+        "South korean",
+        "Romania",
+        "Usa",
+        "Ukrainian",
+        "German",
+        "North korea",
+        "Russia",
+        "Swedish",
+        "Russian",
+        "Germany",
+        "Netherlands",
+        "Austria",
+        "Canadian",
+        "Italian",
+        "London",
+        "Indian",
+        "Czech republic",
+        "Poland",
+        "Ukraine",
+        "Italy",
+        "Japan",
+        "Danish",
+        "Yemen",
+        "Finland",
+        "Estonia",
+        "Israel",
+        "North korean",
+        "United states",
+        "Israeli",
+        "Luxembourg",
+        "France"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Instagram"
+      ],
+      "links": [
+        "https://stealthmole-intelligence-hub.blogspot.com/2026/11/dark-storm-team-operations-alliances.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Investigation: Operation Ghost-Campus: Artificial Intelligence Agents, Academic Fraud, and Global Credential Theft at the Shanghai College of Publishing and Printing",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "United states",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "DeepSeek",
+        "Docker",
+        "penai.co"
+      ],
+      "links": [
+        "https://medium.com/@vecert/investigation-operation-ghost-campus-artificial-intelligence-agents-academic-fraud-and-global-0ea0ded1e688"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "NotC2: How We Built an AI-Powered C2 Channel With AWS Services",
+      "summary": "Varonis Threat Labs built NotC2, a proof-of-concept post-compromise C2 framework that runs entirely on native AWS services and Amazon Bedrock. It assumes the attacker already holds AWS credentials and uses SQS for command input, Lambda for execution, SNS for returning results, and Bedrock to translate natural-language prompts into AWS API calls. Because traffic uses encrypted HTTPS to trusted AWS endpoints with valid credentials, traditional network indicators largely disappear, and the activity appears in the victim's CloudTrail, Lambda, SNS, and Bedrock logs. Defenders are advised to enforce strict IAM least privilege, restrict external SNS subscriptions, and monitor for unusual subscriptions and Bedrock activity under Lambda roles.",
+      "completeness": "Low",
+      "threats": [
+        "Notc2",
+        "Xrayc2",
+        "X-ray_tool",
+        "Cobalt_strike_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Slack",
+        "Pastebin",
+        "Azure Blob",
+        "Pacu",
+        "DynamoDB"
+      ],
+      "functions": [
+        "AWS",
+        "InvokeModel"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/notc2-ai-powered-c2-channel",
+        "https://github.com/rhinosecuritylabs/pacu"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Backdoored PyPI Package fragment-api-py 14.4.2 Drains TON Wallets on Startup",
+      "summary": "The malicious fragment-api-py 14.4.2 release on PyPI drains TON wallets when the client opens, before any purchase is made. The release is a copy of version 13.0.0 with a backdoor added in three files and a higher version number, so pip install -U selects it. The backdoor sends all USDT and nearly all TON from the user's wallet to an attacker-controlled address, and it runs only once per client. Two victims lost about 0.88 TON and 43.98 TON, and the attacker moved the combined funds out on November 10, 2026. Defenders should check installed versions and search site-packages for the backdoor strings.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "crypto": [
+        "tether"
+      ],
+      "algorithms": [
+        "base64",
+        "blake2b-256",
+        "sha256"
+      ],
+      "functions": [
+        "sweep_wallet_to_self",
+        "execute_prepared"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "24c402f3c47e3d8bc29597d000def922fa507970e47322d6fd7f28a4d253d447",
+          "bbf72edbdbf0bbd04d9fb1ab03d736b384b0afdfaeffd3979051b3d83ce3772d",
+          "f046a53fa9007ff4cecc3ca7c5811b3fe44b09905af162d260885d091519531e",
+          "df054024f33039dd480ceb888368fc4d04d28eff601f0fbbfb8c3bc768d71882",
+          "356850fb88116cb9a9d84ab5af5c21c6a3e3c06e41d4eafb1047dad68c718aa9",
+          "8bc3211ec1aac493181decdb15dc75887c187601fd9e85174bb3f6dfcd8214c7",
+          "384ceb536d9d2f2d2efe0a05a5a1c0e619371b5d5872da8172d12ed530a33b1e",
+          "0fa1040821dc03bd959654269b4ca9e42e9113af2b63e2dde591f9cb462d8bf1",
+          "2895f0bb7f27ffff41fed46cc6f72e59b55d823c2ef20e7a385b671256e62527",
+          "c9befa57b386c30550709e6721cb89c9f98db90a4e1105f1f3408db8d2a95561",
+          "75750f71be9253551faf6b464fa5866ada16b86f2a17a00c2c230fedaa584121"
+        ]
+      },
+      "links": [
+        "https://safedep.io/blog/fragment-api-py-pypi-ton-wallet-drainer",
+        "https://github.com/safedep/vet",
+        "https://github.com/S1qwy/fragment-api-py/issues/8"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "MA-1500.112026: MyCERT Advisory - C3RB3R Ransomware Mass-Encrypting Internet-Exposed Synology NAS and Active Exploitation of Node2Shell (CVE-2026-111497)",
+      "completeness": "Medium",
+      "threats": [
+        "C3rb3r",
+        "Node2shell_vuln",
+        "P2pshell_vuln",
+        "Conti",
+        "Tellyouthepass",
+        "Upx_tool"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Tor Browser",
+        "Brotli",
+        "Node.js",
+        "Linux",
+        "Docker",
+        "Unix",
+        "Task Scheduler",
+        "Twitter",
+        "Confluence"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Internet-Exposed"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://mycert.org.my/portal/advisory?id=MA-1500.112026",
+        "https://github.com/php/php-src/security/advisories"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "BluePhishing: Initial Access via Third-Party Agent Blueprint Consent",
+      "summary": "Proofpoint researchers describe BluePhishing, a proof-of-concept evolution of OAuth consent abuse that targets Microsoft Entra Agent ID. Attackers socially engineer victims into granting consent via a link to a malicious agent blueprint, which creates a blueprint principal in the victim tenant with the implicit AgentIdentity.CreateAsManager permission. The attacker then uses that permission to create agent identities that inherit permissions bundled through requiredResourceAccess and inheritable permissions. Because inherited permissions are hard to audit and agent activity resembles legitimate autonomous behavior, detection is harder, and one blueprint can yield up to 250 agent identities. Defenders should restrict user consent for third-party agents and track the blueprint ID, which is consistent across tenants. Proofpoint has not observed in-the-wild activity.",
+      "completeness": "Low",
+      "threats": [
+        "Bluephishing_technique",
+        "Graphrunner"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Entra",
+        "Microsoft 365"
+      ],
+      "functions": [
+        "GetCredentialType"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/BluePhishing-Initial-Access-via-Third-Party-Agent-Blueprint-Consent"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "CWPdoor: The Invisible Backdoor Living Inside Control Web Panel",
+      "summary": "CWPdoor is a passive backdoor embedded in cwpsrv, the web server for the Control Web Panel (CWP) management interface, and it was analyzed by XLab. Attackers replace the legitimate cwpsrv binary with a recompiled version using a disguised \"version update\" script that also hides file timestamps and command history. The backdoor activates only when it receives a crafted HTTP request with signed, encrypted headers, executes the attacker's commands, and suppresses logging for that request. Mainstream vendors had not detected it at publication, with a zero detection rate on one sample found in a Brazil-uploaded archive. Defenders are advised to check for the integrity Unix socket, rotate control panel credentials, and treat any confirmed host as compromised.",
+      "completeness": "Low",
+      "threats": [
+        "Cwpdoor",
+        "Ebury"
+      ],
+      "geo": [
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Nginx",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "xor",
+        "aes",
+        "aes-256-cbc",
+        "sha256",
+        "exhibit"
+      ],
+      "iocs": {
+        "md5": [
+          "e505d4ffa21cf494a5dc2d7c8f4f1236",
+          "965aea67fb40de1bab5169ada993349f",
+          "d3f4e95113d49ab3991b45e457bda75b"
+        ],
+        "ipv4": [
+          "136.0.141.71"
+        ],
+        "url": [
+          "http://136.0.141.71/static/cwpsrv_update.sh",
+          "http://136.0.141.71/static/cwpsrv_1.15.10",
+          "http://136.0.141.71/static/cwpsrv_1.24.0"
+        ]
+      },
+      "links": [
+        "https://blog.xlab.qianxin.com/cwpdoor-the-invisible-backdoor-living-inside-control-web-panel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Exchange for Breakfast: Turla's Cereal Tricks Are Not for Kids",
+      "summary": "Turla, a Russia-aligned APT group, has been using a modular toolset called \"Cereal\" against governmental organizations in Kazakhstan and Romania, with activity observed from late 2025 into early 2026. The attackers focused on Microsoft Exchange servers, though the initial access method could not be determined. Most components are .NET assemblies that are never written to disk and are decrypted and executed in memory. The key component, CerealNeuron, is a passive backdoor that uses the victim's own Exchange server as the command channel, avoiding external C&C infrastructure. A second component, CerealBox, is injected into Exchange's transport service to collect email from NATO and EU domains, a technique ESET describes as novel. Defenders should note that the lack of external infrastructure makes network-based tracking harder.",
+      "completeness": "High",
+      "threats": [
+        "Cerealloader",
+        "Cerealrunner",
+        "Cerealsprinter",
+        "Cerealneuron",
+        "Cerealhermit",
+        "Cereallron",
+        "Cerealbox",
+        "Kazuar",
+        "Lightneuron",
+        "Agent_btz",
+        "Crutch",
+        "Cerealmoth",
+        "Neuron",
+        "Dllsearchorder_hijacking_technique",
+        "Amsi_bypass_technique",
+        "Shadow_copies_delete_technique",
+        "Heavens_gate_technique",
+        "Confuserex_tool",
+        "Process_injection_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Kazakhstan",
+        "Russian federation",
+        "Moscow",
+        "Romanian",
+        "Russian",
+        "Iran",
+        "Ukraine",
+        "Romania",
+        "Asia",
+        "Russia",
+        "Middle east"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 31,
+      "software": [
+        "Microsoft Exchange",
+        "Outlook",
+        "vmtools",
+        "Active Directory",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "aes",
+        "gzip",
+        "rc4",
+        "sha384",
+        "hmac",
+        "rsa-2048",
+        "zip",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Main",
+        "ReadAllBytes",
+        "GetMethods",
+        "GetManifestResourceNames",
+        "GetManifestResourceStream",
+        "MainMethod",
+        "MainPublicMethod",
+        "GetEnumerableAssemblies",
+        "BinaryFormatter",
+        "RaiseOnRoutedMessage",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://web-assets.esetstatic.com/wls/en/papers/white-papers/turla-cereal-tricks.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Inside REVSTEALER's Growing Distribution Ecosystem",
+      "summary": "REVSTEALER is an emerging infostealer distributed through trojanized software, gaming cheats, and fake AI tools, with infrastructure spanning over 100 domains. It uses a multi-stage attack chain with VMProtect packing, sandbox scoring, API hashing, and indirect syscalls to evade detection. The malware harvests browser credentials, password managers, cryptocurrency wallets, and gaming platform account data. It uses Polygon blockchain smart contracts as dead-drop resolvers to retrieve fallback C2 addresses. It skips victims using Russian, Ukrainian, or Central Asian language settings. Defenders should enable PowerShell logging, alert on Defender exclusion changes, and monitor non-browser connections to blockchain RPC endpoints.",
+      "completeness": "High",
+      "threats": [
+        "Revstealer",
+        "Vmprotect_tool",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique",
+        "Remcos_rat",
+        "Process_injection_technique",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Dll_hijacking_technique",
+        "Etherhiding_technique",
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 58,
+      "software": [
+        "Electron",
+        "Anthropic",
+        "Claude",
+        "Opus 5",
+        "Steam",
+        "Roblox",
+        "Minecraft",
+        "Fortnite",
+        "Valorant",
+        "Discord",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "electrum",
+        "atomicwallet",
+        "trezor"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "sha256",
+        "md5",
+        "aes-256",
+        "aes-256-cbc",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "rust"
+      ],
+      "iocs": {
+        "sha256": [
+          "3ef2f9018a7594f0fc3fd2f99fed6ac58ee563fb410a4f45c6dfb203e7ed221e",
+          "8de144822802a17673a4f06767c9ae30458ac6a78c86fe418ce797d6184e25fb",
+          "44d72fd03a76d5a1357c1cbe0eb4b94d079e0e6820cc8c6ebcc82737767f7577",
+          "f6be9f1e47c2e2bb1a47c7f917bae7b6d73f0d4edd26c6a8d81f1375ce55475e",
+          "251aa2b0831d88a6f796bb6ca01d0242c11476b2fc6a5baa3f9c64a9134cd61d",
+          "d23b9609b06ab23243543ee0d8ff0d4c1966530576fa37bb2ecde97309ebbc9e",
+          "724b400afcec2064a3477abd9a117103abfb51f7f7c8acd9c429fcdabd656ffc",
+          "851383fb22dcb1d16367839178271eef6504199b8ca60405e1698879696e49d4"
+        ],
+        "md5": [
+          "23189bc66fc17afca7d0f8f81def27dc",
+          "23337b495bcb5c3635d9c89adb4e40ee",
+          "3c609886f8b49ebfd7c7c279abc74cb4",
+          "b2e255a8054625c702abf025752dd37d",
+          "c083a98b7041991528225a4b85bfae67"
+        ],
+        "domain": [
+          "elitecheatsx.live",
+          "elitemods.shop",
+          "satano.xyz",
+          "cheatseller.com",
+          "elitecheats.live",
+          "yimmodmenu.org",
+          "luxurycheats.live",
+          "betterdiscordapp.live",
+          "luxurycheat.live",
+          "yimmenu-gta5.com",
+          "dlss5swapper.pro",
+          "scoobymenu.live",
+          "m.trjobobet1.cfd",
+          "trumpware.org",
+          "rblxshop.net",
+          "cheapmarket.net",
+          "r4geshop.com",
+          "eclipsefortnite.com",
+          "donutheist.com",
+          "irw.plus",
+          "privatemarket.cc",
+          "aricado.shop",
+          "kryptstore.com",
+          "bulkr.cc",
+          "lemon.tf",
+          "dma-cheats.com",
+          "dma-hardware.com",
+          "dizzydma.com",
+          "hame.agency",
+          "shinobimarket.store",
+          "taobaohook.cc",
+          "rblxscripts.net",
+          "corefivem.mysellauth.com",
+          "069reselling.cc",
+          "nicks.lol",
+          "travocheats.com",
+          "nfaccount.com",
+          "pureboosts.rip",
+          "adwin.cc",
+          "galaxy2k.com",
+          "vacmodz.com",
+          "glpr0daja.mysellauth.com",
+          "magicstore.club",
+          "ogstockers.mysellauth.com",
+          "dsdailystore.mysellauth.com",
+          "revoxstore.mysellauth.com",
+          "stromstock.mysellauth.com",
+          "mmediaservices.mysellauth.com",
+          "ycalstore.mysellauth.com",
+          "synora.gg",
+          "eliteboostz.mysellauth.com",
+          "vantageservices.mysellauth.com",
+          "ecart.mysellauth.com",
+          "auto-boosts.mysellauth.com",
+          "cokixstocks.mysellauth.com",
+          "monkeymartservices.com",
+          "monkeymart.mysellauth.com",
+          "jewkeys.shop",
+          "chrasherout.mysellauth.com",
+          "spotify-market.mysellauth.com",
+          "polygon-rpc.com",
+          "rpc-mainnet.matic.network",
+          "rpc.ankr.com",
+          "polygon-mainnet.infura.io",
+          "matic-mainnet.chainstacklabs.com",
+          "polygon-mainnet.g.alchemy.com"
+        ]
+      },
+      "links": [
+        "https://akatsukilegion.com/post.php?slug=inside-revstealer-s-growing-distribution-ecosystem"
+      ]
+    }
+  }
+]

@@ -123,6 +123,7 @@
     "parsed": {
       "report_date": "2026-08-10",
       "title": "#StopRansomware: Gunra Ransomware",
+      "summary": "Gunra is a ransomware-as-a-service operation that first emerged in April 2025, derived from leaked Conti ransomware source code, and expanded into an affiliate program in early 2026. Affiliates use a double-extortion model, stealing data before encrypting it and threatening to publish it on a dedicated leak site if victims do not pay. Initial access commonly comes from exploiting internet-facing firewall and VPN appliances, such as certain FortiOS and FortiProxy vulnerabilities, followed by lateral movement using Impacket tools and RDP. The actors also dump credentials from domain controllers, bypass MFA, and delete volume shadow copies and backups before encryption. Targets span many sectors across multiple regions, including government, healthcare, and critical infrastructure. Defenders are urged to prioritize patching edge devices, maintain offline immutable backups, and segment networks to limit lateral movement.",
       "completeness": "High",
       "threats": [
         "Gunra",
@@ -159,6 +160,52 @@
       "functions": [
         "rand"
       ],
+      "iocs": {
+        "sha256": [
+          "2dc70a12d158d437e45a55b1d52f3d61c6082a1e1667573302ba3b62813e2751",
+          "834efe9b392c6c000877ea5613a079445affc16fe8af5997d68c55cafc95e5d1",
+          "91f8fc7a3290611e28a35a403fd815554d9d856006cc2ee91ccdb64057ae53b0",
+          "a82e496b7b5279cb6b93393ec167dd3f50aff1557366784b25f9e51cb23689d9"
+        ],
+        "ipv4": [
+          "23.239.119.2",
+          "23.239.119.3",
+          "23.239.119.4",
+          "23.239.119.5",
+          "23.239.119.6",
+          "86.54.28.216",
+          "103.125.234.14",
+          "70.36.99.82",
+          "211.21.210.181",
+          "123.184.143.105",
+          "182.204.21.240",
+          "182.204.16.112",
+          "123.244.187.144",
+          "182.204.39.118",
+          "67.43.53.10",
+          "123.246.37.108",
+          "91.201.66.146"
+        ],
+        "domain": [
+          "stopransomware.gov",
+          "datapub.news",
+          "intel.breakglass.tech",
+          "www.cloudsek.com",
+          "www.cyfirma.com"
+        ],
+        "url": [
+          "https://intel.breakglass.tech/post/gunra-ransomware-s-linux-variant-has-a-fatal-flaw-time-seeded-rand-makes-encrypted-files-recoverable-without-paying",
+          "https://www.cyfirma.com/research/gunra-ransomware-a-brief-analysis/",
+          "https://www.cloudsek.com/blog/inside-gunra-raas-from-affiliate-recruitment-on-the-dark-web-to-full-technical-dissection-of-their-locker"
+        ],
+        "email": [
+          "a00f105546345756@proton.me",
+          "4569f6322bc3b22e9@proton.me",
+          "ilovemycubscout@gmail.com",
+          "6449a3c1e612168526@proton.me",
+          "contact@cisa.dhs.gov"
+        ]
+      },
       "links": [
         "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-222a",
         "https://github.com/cisagov/Decider/",

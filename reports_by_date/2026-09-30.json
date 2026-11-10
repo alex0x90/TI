@@ -644,6 +644,7 @@
     "parsed": {
       "report_date": "2026-09-30",
       "title": "Determined Attacker Uploads Malicious Webshells to Parks and Rec Management Platform Servers",
+      "summary": "A threat actor compromised multiple tenants on a shared recreation management platform by registering a member account, uploading malicious files, and converting them into webshells. The attacker started with noisy brute-force and probing attempts against a first server, then succeeded through the upload function and used the webshells to enumerate hosts and hunt for database credentials and cardholder data in payment logs. On a second and third server, the attacker used quieter reconnaissance, timestomped webshells, and tried to plant persistence copies in payment module directories. After the third server was returned to production prematurely, the attacker returned and injected a trojan into a jQuery file loaded by the authentication page to harvest user credentials. Defenders should note that the attacker's repeated reuse of the same account registration and upload tradecraft after remediation was incomplete.",
       "completeness": "Medium",
       "threats": [
         "Timestomp_technique"
@@ -671,6 +672,25 @@
         "powershell",
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "0d8f7bf30aa1ac95d59fed24c433dd2b3d57767f38c088721699c841c6e861d3",
+          "5f69ff7a2e024f94cc5f816fa16c90054b09d9ac430b1f8b0631dfdd4472905e",
+          "e9dee286069afb6b411febb96b91a963cd16baffbf8b6aa951e0ef1a7e0e3879",
+          "0d93c3a8ded46887f79ac4ca7f238c458de2231243176f6c05062e34f238d19a",
+          "b06b581d91f4108900d188c3ee1af18502a8cb65d4e101663b791bd670867485",
+          "7bb594a77f726bf21a49f717024f2915f82f47eb623d2ad305259301de1f1ab4"
+        ],
+        "domain": [
+          "chat.ririmochii.workers.dev",
+          "fk.bubuneeko.workers.dev"
+        ],
+        "url": [
+          "https://chat.ririmochii.workers.dev/core.js",
+          "https://fk.bubuneeko.workers.dev/_cf/rel",
+          "https://fk.bubuneeko.workers.dev/_cf/ice"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/parks-recreation-platform-webshell-attack"
       ]

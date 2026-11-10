@@ -117,6 +117,7 @@
     "parsed": {
       "report_date": "2026-10-27",
       "title": "Hackers Sell ICMacOS Remote Access Trojan for $699 a Week to Target Mac Users",
+      "summary": "ICMacOS, also called Icarus macOS, is a Mac malware kit sold for $699 a week on Russian-speaking dark web forums, evolving from a basic data stealer into a tool with remote access. Its seller, GlowComa, is a financially motivated actor linked to the MADHASH crypto-draining affiliate group. Victims are lured by fake web pages that trick them into pasting a command into Terminal, after which a dropper shows a fake System Preferences password prompt. Version 2 adds a live WebSocket connection that lets operators run shell commands and receive output in real time, with persistence through a LaunchAgent disguised as an Apple process. The malware steals browser data, cryptocurrency wallets, Keychain data, and messaging app data, with developers at particular risk because it searches for SSH keys, cloud credentials, and Git secrets. Defenders should warn Mac users never to paste commands from websites into Terminal and to download software only from verified sources.",
       "completeness": "High",
       "threats": [
         "Icmacos",
@@ -146,6 +147,44 @@
       "languages": [
         "python"
       ],
+      "iocs": {
+        "sha256": [
+          "5dfb0c01ac5c075e23ec37873b30ba16cf28e290e9439d04101f0a8191f929d8",
+          "8cc449e7e240894e77187f6faff415bc8b9f2f9da73f60eef1f7605debd9144a",
+          "62e435102e1e1de74537f174ede7c8ff198dc4df3fd2e1167f537096e0b4dd17",
+          "857236d1902f4604acdf27519c0310064d21f8a82af3b95b1e4f02fef581b1d0",
+          "6917505bbdc8efa01ea1a0298eae62a93a57a8c98d3712a69d822dca4a667f05",
+          "dca852b53c259641e1782bd9122c5007130614a7a8fd17102400acb4f50f6e94",
+          "e7e8ac14aaee970c6d00c6cbb398decc56dfc128974c01bfc8e7acd13a18576e",
+          "ec37acd3bd15f50eee2941d5644ca0ee738b36ce4a39e9e08058e35ebc7961fc",
+          "fcf9de13ecc70b4fda3998ed7a93849edf86c48767a1a13f32f4a6a631a65ae2",
+          "3d4f70172c8f31813e7b37fc1a49bce193663e33c4eb65952bb5aec9d7176826",
+          "8b7606bdccdd6ff691db875283fdf5b6b658dd8d4d141b44e07f8f2583ff5604",
+          "bc8d70f000e73c0c7a69a2676805190e7109cab59df3e34c5a74d2cb7f13a7e4",
+          "a9b21ac0112855b835b5e5850ef167471eff7305d42b3a8104c1961b257a444d",
+          "c8136413ad38a1028050f5d508e25267b518c5fdeac80b6442103d1009d8924c",
+          "e52855d447d152bb698e565f361161cdc8946183ab09bf3cbea89765a2b5ff31",
+          "d9df05a3fb68d302ecf134a1214b609c6ec0a3fb9122907214afac3908b587f4",
+          "8b4303a065e18e80050ef22031ec60b1a4e84f958d9e56cc5cc34cd29d988d69"
+        ],
+        "ipv4": [
+          "85.137.253.61",
+          "45.13.186.247"
+        ],
+        "domain": [
+          "escapeai.live",
+          "mikoblico.xyz"
+        ],
+        "url": [
+          "https://escapeai.live/api/build_config",
+          "https://escapeai.live/icmacos_run_v2.command?t={date}",
+          "http://escapeai.live/loader_v2.sh?build={build_name}&owner={owner}",
+          "https://escapeai.live/ICMacOs?arch=arm64",
+          "https://escapeai.live/ICMacOs?arch=amd64",
+          "https://escapeai.live/payload.py",
+          "https://escapeai.live/upload"
+        ]
+      },
       "links": [
         "https://cybersecuritynews.com/icmacos-remote-access-trojan/"
       ]

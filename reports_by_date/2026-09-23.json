@@ -133,6 +133,7 @@
     "parsed": {
       "report_date": "2026-09-23",
       "title": "Threat Intel \\| One Kit, Forty Companies: How a Malware-as-a-Service Platform Used GitHub as a Distribution Network for its Campaign",
+      "summary": "The LastPass TIME Team and Delphos Labs disrupted a malware delivery campaign that impersonated LastPass Authenticator through fake GitHub pages and at least 40 other companies. The payload, a Rapuncel infostealer, ran alongside Alinubx.sys, a renamed CcProtect.sys kernel driver that terminated 145 antivirus and EDR processes. The driver carried a Microsoft hardware compatibility signature and scored 0 of 72 on VirusTotal, so signature-based controls missed it. Researchers assess with high confidence that the loader derives from the Cruciferra PUROSANGUE crypter and that the stealer is a BoryptGrab-related sibling, though the link is not confirmed. Defenders should hunt for driver lineage and behavior, such as service creation for NvFsFilter, rather than relying on file names or reputation. Machines that ran the installer should be treated as fully compromised, with credentials rotated from a clean device.",
       "completeness": "High",
       "threats": [
         "Rapuncel",
@@ -176,6 +177,37 @@
         "golang",
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "ea8c31a86fa785ab514022c278a2f6e571c86aac9283745a96605c44d88382d6",
+          "aefbc6e04320e9a0e80f2323f8a897c4fdb222a37b0b87d76e850109decbfadd",
+          "611b3ba687b7f46319a19609605ddfe5225e6d85277d8e923eea3fdb6f7b5b61",
+          "75018b06c7105a1dca391805d17b402aed35ebd515b92d461236eafbd606cb40",
+          "26db14b956e33f69b3397a36387d32e01eb63613acff91069dc76b6ed7de45a8",
+          "5f0cfe8357bb52b45068ddbac053e32bc38e6cb5e086746f5402657b0a5cfb1c",
+          "1e6c1766ac78d7adfdae71d361cb132d972771897ae9065503b135cb812d7c35"
+        ],
+        "ipv4": [
+          "2.26.126.50",
+          "104.21.27.38",
+          "172.67.168.224",
+          "172.67.212.253",
+          "104.21.20.224",
+          "104.21.18.89"
+        ],
+        "domain": [
+          "albinofennel.com",
+          "lastpass-authenticator.github.io",
+          "edgarcostartqd.github.io",
+          "dallikilic54.github.io",
+          "istatlmenus.com",
+          "macperformancetools.com",
+          "zaffersnouty.com",
+          "hanselarinmusky.com",
+          "icansamyope.com",
+          "ryanpresbrey.cc"
+        ]
+      },
       "links": [
         "https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer",
         "https://github.com/BlackSnufkin/BYOVD/tree/main/CcProtect-Killer"

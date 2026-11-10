@@ -501,6 +501,7 @@
     "parsed": {
       "report_date": "2026-07-07",
       "title": "Meta Phishers Abuse Business Account Manager Service",
+      "summary": "Threat actors abused Meta's Business Manager partner feature, sending phishing emails from the legitimate noreply@business.facebook.com address that passed validation. The emails placed a URL in place of a business name, so the message appeared to direct recipients to a link rather than to a Facebook login. Early variants led victims through Google Sites and fake Meta Agency Partner Program pages that harvested credentials, MFA codes, and business account details. A June variant added a Facebook Messenger chatbot and fake \"Meta Verified\" and \"Content Monetization\" pages that also requested identity documents. Stolen data was sent to a Telegram bot, and Meta has since blocked the technique, though defenders should still scrutinize unexpected emails even when they appear legitimate.",
       "completeness": "Low",
       "threats": [
         "Koobface"
@@ -513,6 +514,17 @@
         "Telegram",
         "Instagram"
       ],
+      "iocs": {
+        "domain": [
+          "aussiecleaningservices.com",
+          "api.goautolink.com",
+          "sw.run",
+          "businesshelpcenterpageid563252.netlify.app"
+        ],
+        "url": [
+          "https://sw.run/Verification"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/meta-business-manager-phishing",
         "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-07/20260707\\_fbphish-IOCs.csv"

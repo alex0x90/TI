@@ -56,6 +56,7 @@
     "parsed": {
       "report_date": "2026-09-01",
       "title": "Hackers Abuse Real ChatGPT Links to Trick Windows Users Into Installing Malware",
+      "summary": "Attackers are abusing genuine ChatGPT shared-conversation links to lure Windows users into running malware, without compromising the ChatGPT platform itself. The shared page displays a fake availability warning that sends victims to a fake backup site with a counterfeit human-verification screen. That page copies a PowerShell command to the clipboard and instructs users to paste it into the Windows Run dialog. The command retrieves a hidden MP4-disguised PowerShell bundle that profiles the victim's system and delivers a NetSupport remote-control client, enabling monitoring or unauthorized access. Defenders should treat any site asking users to open Run, Terminal, or PowerShell to prove they are human as malicious, and investigate any executed commands.",
       "completeness": "Medium",
       "threats": [
         "Clickfix_technique",
@@ -72,6 +73,38 @@
       "languages": [
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "28e36f00ecd31de79455c0ecf11bb1c6481f4d35d26ba5e2c60e5a55f784cbec",
+          "56ebaf8922749b9a9a7fa2575f691c53a6170662a8f747faeed11291d475c422",
+          "b11380f81b0a704e8c7e84e8a37885f5879d12fbece311813a41992b3e9787f2"
+        ],
+        "md5": [
+          "6a80bc61c434819190c3eae5932307e8",
+          "4a05f41fa3ab441ac14effeb6253bd77",
+          "0e660f7e5a6621a9185a7b8080364500",
+          "5be6fb8f28544d4f83c25a2b76ff7890",
+          "6d5c057efe144b31bce5b7cf90b066a5"
+        ],
+        "ipv4": [
+          "138.124.123.8",
+          "91.92.240.175"
+        ],
+        "domain": [
+          "brmconfig.com",
+          "chatgpt.com",
+          "ip-api.com",
+          "api.ipify.org"
+        ],
+        "url": [
+          "https://chatgpt.com/s/t_6a80bc61c434819190c3eae5932307e8?gad_source=1&gad_campaignid=24099424548&gbraid=0AAAABEYrb1R9FV_puc090W7fCw9EgqHXr&gclid=CjwKCAjwy5rUBhB5EiwAIoAtCt0ElCUp9KixnPoAmexDzPVBvBhgFtyU1LU7_zKvTAsElOB3HQrESRoCSmQQAvD_BwE",
+          "https://chatgpt.com/s/t_6a80bc61c434819190c3eae5932307e8",
+          "https://brmconfig.com",
+          "https://brmconfig.com/video.mp4",
+          "http://ip-api.com/json/?fields=query,country,city,regionName,isp,timezone",
+          "https://api.ipify.org"
+        ]
+      },
       "links": [
         "https://cybersecuritynews.com/hackers-abuse-real-chatgpt-links/"
       ]

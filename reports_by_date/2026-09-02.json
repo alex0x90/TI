@@ -70,6 +70,7 @@
     "parsed": {
       "report_date": "2026-09-02",
       "title": "The Crypto Wallet That Never Opened: Tampered Exodus Installer Hides a Modular RAT",
+      "summary": "A trojanized copy of Exodus Wallet 24.33.4 is delivered through a fake installer that opens no visible window while installing a modular remote access trojan. The malicious JavaScript and WebDAV-based search-ms delivery paths lure users with decoy documents or software update archives, and the MSI installs into a per-user AppData directory. The RAT provides credential and cookie theft, hidden VNC, a SOCKS proxy, and remote command execution, using Azure Table Storage as a dead-drop command channel. A scheduled task relaunches the wallet hourly, and another clears proxy settings to keep traffic direct. Defenders should treat affected hosts as full interactive compromises, rotate credentials and revoke sessions, and rely on structural behaviors such as explorer.exe-parented launches from AppData rather than hashes.",
       "completeness": "High",
       "threats": [
         "Hvnc_tool",
@@ -122,6 +123,76 @@
         "powershell",
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "c513a7346484ee69a2931c4a89956ee50aa63e4366ef989315e669d8f10d7485",
+          "8c3b41ea5a85778145a6e5772bfee2eb0f8b027d0af199fb71a76dfb8bb29e5a",
+          "fdd376562aac4be64fb635546a61e1912ff2c353360db73d2c553dcbb5a44f54",
+          "2f47cfbb13f7a8a2d30d287f4ddd974fabea6762ad9781d438eb53da41b4582d",
+          "84437d4239d2a3d90c4faad0a3c0630b2f61a40f7bbd12109bef74d7613b8756",
+          "5274e93e35586a341d14b50cdf8413d59c51fd94f32bdc70bfdfb77198367603",
+          "7e74f6e2eb7a17a8d25bb322a14c392c9d92c6ab29fc66b50221da134a1bdba8",
+          "5fe753945da0eaac2c2ef3845cba603dea6c3e8529fa581d7e0192f8af60391a"
+        ],
+        "ipv4": [
+          "35.212.159.20"
+        ],
+        "domain": [
+          "law.georgetown.edu",
+          "us05.org",
+          "winapi.table.core.windows.net",
+          "lgapistorage123.table.core.windows.net",
+          "api.27inbarbadostours.com",
+          "api.504guaratv.com",
+          "api.b2compages.com",
+          "api.elcaminodesermadre.com",
+          "api.ideasnation.net",
+          "api.jyfgarriga.com",
+          "api.onemkscleaningsolutions.com",
+          "api.rezperfect.com",
+          "api.shopfoora.com",
+          "api.shuyinla.com",
+          "app.bcntextilrep.com",
+          "app.conviertenoensi.com",
+          "app.geutex.com",
+          "app.micheladafestelpaso.com",
+          "app.rtpsenior4djp.com",
+          "app.sentiented.com",
+          "app.shuchipharmacy.com",
+          "app.springstore.net",
+          "app.stateyatra.com",
+          "auth.secureswallow.com",
+          "auth.speaktowinclients.com",
+          "auth.auravp3.com",
+          "auth.clubvp3.com",
+          "auth.esalesrep.net",
+          "auth.h-dsf1034.com",
+          "auth.nailedbynakole.com",
+          "auth.shuchimed.com",
+          "cdn.shinozen.com",
+          "cdn.speaktogrowbiz.com",
+          "cdn.baraldes.com",
+          "cdn.cobraporganardinero.com",
+          "cdn.estudiod2.com",
+          "cdn.jiyaoglass.com",
+          "cdn.planningportfolioweek.org",
+          "cdn.snsafirieik.com",
+          "cdn.yenoox.com",
+          "static.ariesglobalsoft.com",
+          "static.trythecrowdmakers.com",
+          "static.turboleadslab.com",
+          "static.cistecca360.com",
+          "static.emialvarez.com",
+          "static.gompl-rggsrve.com",
+          "static.metodorace.com",
+          "static.premios-king.com",
+          "static.suplenation.com",
+          "api.blockchain.info",
+          "api.moonpay.com",
+          "api.rampnetwork.com",
+          "api.segment.io"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/exodus-crypto-wallet-installer-rat"
       ]
@@ -599,6 +670,7 @@
     "parsed": {
       "report_date": "2026-09-02",
       "title": "Inside Knight Office, a New M365 AiTM Phishing Kit",
+      "summary": "Huntress researchers investigated Knight Office, a phishing kit whose operator console was found after an August 18, 2026 adversary-in-the-middle (AiTM) attack against a Microsoft 365 account. The attack began with a DocuSign-style lure using self-spoofed headers and redirects through Monday.com and a compromised Joomla site to hide the final phishing page. Victims were led to a fake Microsoft device-authentication page, and captured session tokens were replayed to bypass MFA and avoid password-based alerts. The threat actor then registered a rogue device in Microsoft Entra ID and bound a Windows Hello for Business credential to maintain persistent access. Huntress reports hundreds of related emails since April and at least nine linked token replay logins, so defenders should look beyond failed logins to unexpected post-MFA sign-ins from callback proxies and unfamiliar new device or WHfB registrations.",
       "completeness": "Medium",
       "threats": [
         "Knight_office_tool",
@@ -621,6 +693,41 @@
       "languages": [
         "python"
       ],
+      "iocs": {
+        "ipv4": [
+          "104.37.188.94",
+          "154.127.53.78"
+        ],
+        "domain": [
+          "idoej.com",
+          "advancedplacyncement.vu",
+          "amstardmzsmc.vu",
+          "arandasoftzfdware.vu",
+          "avisoretentiunionllc.vu",
+          "capitalflwxinancialpartners.vu",
+          "certififiycationedge.vu",
+          "connectivnqzityltd.vu",
+          "crrbcearegroup.vu",
+          "digitaltrafwwrficsystems.vu",
+          "exceltecbusinessbwpsolutions.vu",
+          "genamewwgdiamarketing.vu",
+          "globaieflsoftinc.vu",
+          "globalmixeucbdmodetechnologyinc.vu",
+          "globalprojectspvtltd.vu",
+          "joinbusinessmanagementconsdjeulting.vu",
+          "kentmanqhfufacturingcompany.vu",
+          "kleepxrnlinecorporation.vu",
+          "knsinternacshtional.vu",
+          "monttmmlrustcompany.vu",
+          "mtprormtductions.vu",
+          "realestatecotblrp.vu",
+          "siottxgroup.vu",
+          "summitcapitaltrapojininggroup.vu",
+          "techcompositnkoes.vu",
+          "techromixsolutionlonsinc.vu",
+          "monday.com"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/inside-knight-office-m365-aitm-attack"
       ]

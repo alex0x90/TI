@@ -1,0 +1,736 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Compromised bee-js and Swarm Desktop Steal Swarm Wallet Keys",
+      "summary": "Attackers published malicious versions of the JavaScript client @ethersphere/bee-js (13.3.0) and Swarm Desktop (0.56.2) through the project's own release pipeline, using a compromised release bot account. The npm package carried a postinstall loader that fetched a second-stage payload, which stole Swarm node wallet keys and installed a backdoor. On Linux and macOS the backdoor was a Go remote shell, and on Windows it was a hidden ScreenConnect client running as SYSTEM. The malicious release still carried valid npm provenance because it was published via a GitHub release, bypassing branch protection. Defenders who installed either version should treat the host as compromised, move wallet funds to a new key, and remove the backdoor.",
+      "completeness": "High",
+      "threats": [
+        "Screenconnect_tool",
+        "Uac_bypass_technique",
+        "Evjawbreaker",
+        "Uacme_tool",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "systemd"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "readFileSync",
+        "main"
+      ],
+      "languages": [
+        "solidity",
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "ee2f762e9ed3fd89f106e0b80c2e923bf1aed9a280277d3d998a5902c4d9ec0f",
+          "d01fdf241aa9e0a1ba6ebc19f8f667af1bf652745021c5050126cb7036f7ce58"
+        ],
+        "sha1": [
+          "f8a900db50b3331be6b768ba460bb59f3e40c344",
+          "de2f74e784b2eafa0d66fbb6d88b42ea11ee34cf",
+          "f112f36110ef51ae91aa814596621c2eafd99d1b",
+          "fd3fc58bcbd8ccc77b6000201438edfc636e7ca7",
+          "6a82595eeea0f4fdfb3ae13a2687bcbbe626e94b"
+        ],
+        "domain": [
+          "api.frameworkmetrics.xyz"
+        ],
+        "url": [
+          "https://api.frameworkmetrics.xyz/v1/analytics",
+          "https://api.frameworkmetrics.xyz/v1/electron",
+          "https://api.frameworkmetrics.xyz/v1/assets/",
+          "https://api.frameworkmetrics.xyz/v1/swarm/report",
+          "http://107.189.27.46:3000/app.js",
+          "http://91.108.240.156:3000/app.js",
+          "http://91.108.240.156:3000/app"
+        ]
+      },
+      "links": [
+        "https://safedep.io/blog/ethersphere-bee-js-npm-compromise",
+        "https://github.com/ethersphere/bee-js/blob/4568f7a408435044c0f38e0ec73b4131f7fb1a9b/.github/workflows/publish\\_npmjs.yaml",
+        "https://github.com/ethersphere/bee-js/commit/de2f74e784b2eafa0d66fbb6d88b42ea11ee34cf",
+        "https://github.com/ethersphere/bee-js/blob/de2f74e784b2eafa0d66fbb6d88b42ea11ee34cf/scripts/generate-version.cjs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Ethersphere Hijacked With Crypto Stealing Malware Via Github & npm",
+      "summary": "Threat actors compromised the Ethersphere npm package @ethersphere/bee-js and the swarm-desktop GitHub repository, likely using a stolen developer access key. The injected code targets local Swarm node configurations and encrypted wallet keys before establishing persistent remote access. The malware downloads platform-specific payloads, with Windows receiving a ScreenConnect remote access tool and Linux and macOS receiving the evjawbreaker Go-based RAT. A decoy script is returned to unsupported platforms. The tainted npm version was reverted, but the malicious GitHub release remained live at the time of writing. Defenders should check for affected versions and treat wallets accessible from affected environments as potentially compromised.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Screenconnect_tool",
+        "Evjawbreaker",
+        "Polinrider"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "MacOS"
+      ],
+      "crypto": [
+        "ethereum",
+        "binance",
+        "bitcoin"
+      ],
+      "languages": [
+        "solidity",
+        "golang"
+      ],
+      "iocs": {
+        "sha256": [
+          "735aba95e24f515a5cea4efea309f245952917d372b37b5fbea305986dbcd568",
+          "1f3a7afd2e43215f09f2a81063dc2796af556bae74aaf492fba2d66e5d65b14c",
+          "2496d74e6a913eba39c8537be31baeff9cf6ccdd8ee84a69475302815cfd4105",
+          "705b4aa2bc6fa35f8e6d448f3c6e193fac6027b9b5239e212e09732cc9fc0dba",
+          "37d14bff30762ca701e9c1f8bc6c57c065bb20ae3a2208cb7411a6530610f08e",
+          "7527e86d70e7c9493db4356f1c3775380431b310000f2602c1e993cf435d01da",
+          "9b73e7cd4e1425e770392549d8df46c706139ef476f4f7b9ac405165dc8d9696",
+          "b601776817363b96295119f7221338a122d5247a35a77a64b04f286e1bbcc565",
+          "80d2672e2599732d3c0ae2a4cd0d1e3fe4d555a60273ce33feb99db3f34d250f",
+          "fae61f31f00988fdc5cc9e7272b51e08af2e245d81003237875415930fd27358"
+        ],
+        "sha1": [
+          "de2f74e784b2eafa0d66fbb6d88b42ea11ee34cf",
+          "2de727046706062d38edfbbf8340f32d1eb2bdfb",
+          "f8a900db50b3331be6b768ba460bb59f3e40c344"
+        ],
+        "ipv4": [
+          "185.232.84.169",
+          "193.57.9.155"
+        ],
+        "domain": [
+          "metrics.xyz",
+          "api.frameworkmetrics.xyz"
+        ],
+        "url": [
+          "https://api.frameworkmetrics.xyz/v1/analytics",
+          "https://api.frameworkmetrics.xyz/v1/electron",
+          "https://api.frameworkmetrics.xyz/v1/assets/",
+          "https://api.frameworkmetrics.xyz/v1/swarm/report"
+        ]
+      },
+      "links": [
+        "https://www.ox.security/blog/ethersphere-hijacked-with-crypto-stealing-malware-via-github-npm/",
+        "https://github.com/ethersphere/swarm-desktop/commit/2de727046706062d38edfbbf8340f32d1eb2bdfb",
+        "https://github.com/ethersphere/bee-js/commit/de2f74e784b2eafa0d66fbb6d88b42ea11ee34cf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Malicious bee-js npm Release and Swarm Desktop Releases Deliver SleepyDuck Ethereum C2 Backdoor",
+      "summary": "A threat actor compromised Ethersphere's release pipeline on November 9, 2026, using maintainer and release-bot GitHub accounts to publish a malicious @ethersphere/bee-js 13.3.0 to npm and a trojanized Swarm Desktop 0.56.2 release on GitHub. The npm package gained a postinstall hook that downloads and executes remote JavaScript with full Node.js privileges, and the same loader was added to the Swarm Desktop Electron main process. The trusted-publishing workflow, which lacked branch and environment checks, published the malicious commit with valid provenance. The later stages use an Ethereum smart contract for C2 configuration, the same infrastructure Pluto Security tied to the SleepyDuck and EtherDuck Open VSX campaign, and they steal the Bee node password and wallet key before deploying a Go backdoor and ScreenConnect on macOS, Linux and Windows. Defenders should pin bee-js to 13.2.0, remove Swarm Desktop 0.56.2, rotate exposed wallet and CI credentials, and hunt for the listed domains and persistence artifacts.",
+      "completeness": "High",
+      "threats": [
+        "Sleepyduck",
+        "Etherduck",
+        "Evjawbreaker",
+        "Screenconnect_tool",
+        "Uacme_tool",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 14,
+      "software": [
+        "Node.js",
+        "Open VSX",
+        "Linux",
+        "macOS",
+        "Electron",
+        "Unix",
+        "sudo",
+        "Windows Setup",
+        "Gatekeeper",
+        "systemd",
+        "have more..."
+      ],
+      "wallets": [
+        "electronjs",
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "sha512"
+      ],
+      "functions": [
+        "main",
+        "param1",
+        "param2"
+      ],
+      "languages": [
+        "solidity",
+        "powershell",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "f81315968e679b48f6bdff1c9b928bb223230d07f44d7948412c2250c2a14deb",
+          "d01fdf241aa9e0a1ba6ebc19f8f667af1bf652745021c5050126cb7036f7ce58",
+          "ee2f762e9ed3fd89f106e0b80c2e923bf1aed9a280277d3d998a5902c4d9ec0f",
+          "92c6eb24f9910b3577d5939a8686f9bf6e52f1bdd5872bf96cab0132b4558025",
+          "e49afac84dbb6d5a5d101f87754575024b078d67a7ab9e767ff0f7b5b4368069",
+          "40a45d68aa49e9e6233c4eb6bb2eb2e92525deea5d17863f6910fc24b06ff20e",
+          "14f23342f4292ede4546070e0e3e1cacd06fa781a2937ac374d2b47dbaf77666",
+          "23f2d944a0dfa60df493667428d9304cfc1961270b6c68f8d0f38df7fe0e2d31",
+          "aed930fbf5993df4ce9bb5951a4092da8a28a12fb45a81ad9715c7b029606fd0",
+          "e0304260dcf2f29d1b4690dc46e9ceb35d5554a79ea749cd913687288d6e228b",
+          "94df8933a57cb9962a312a79c079fd0d43706a45066cda1f1b2322f403ad9217",
+          "718ae6ac77e119568dff50a6409996bd649c8e9daf7c8a5616856ff1909a916f",
+          "0ef1fbe5db17ec0ebd3bcac576f0f0f351a5ef5da67d5e45a9817e7a224acc5d",
+          "ffd280b8ff519b647041b7453754bfd35d341bbd26bce02cb325c512c8976645",
+          "6a37ce783e406f135ed8b60e0897e0e1146a9fa220c2e6c5ce4118fff967f395",
+          "9b73e7cd4e1425e770392549d8df46c706139ef476f4f7b9ac405165dc8d9696",
+          "b601776817363b96295119f7221338a122d5247a35a77a64b04f286e1bbcc565",
+          "80d2672e2599732d3c0ae2a4cd0d1e3fe4d555a60273ce33feb99db3f34d250f",
+          "fae61f31f00988fdc5cc9e7272b51e08af2e245d81003237875415930fd27358",
+          "37d14bff30762ca701e9c1f8bc6c57c065bb20ae3a2208cb7411a6530610f08e",
+          "7527e86d70e7c9493db4356f1c3775380431b310000f2602c1e993cf435d01da"
+        ],
+        "sha1": [
+          "f8a900db50b3331be6b768ba460bb59f3e40c344",
+          "fd3fc58bcbd8ccc77b6000201438edfc636e7ca7",
+          "a7b15a2b5f6992dc3babb946375d6895ff1171bf",
+          "6a82595eeea0f4fdfb3ae13a2687bcbbe626e94b",
+          "de2f74e784b2eafa0d66fbb6d88b42ea11ee34cf",
+          "2de727046706062d38edfbbf8340f32d1eb2bdfb",
+          "dc7d7455c95b3092eb14bff2bd93315b84b066fa"
+        ],
+        "ipv4": [
+          "185.232.84.169",
+          "107.189.16.215",
+          "91.108.240.156",
+          "107.189.27.46",
+          "107.189.27.223",
+          "178.16.54.222",
+          "193.57.9.17",
+          "193.57.9.155"
+        ],
+        "domain": [
+          "api.frameworkmetrics.xyz",
+          "webhook.site"
+        ],
+        "url": [
+          "https://api.frameworkmetrics.xyz/v1/swarm/report",
+          "http://91.108.240.156:3000/app.js",
+          "http://107.189.27.46:3000/app.js",
+          "https://api.frameworkmetrics.xyz/v1/analytics",
+          "https://api.frameworkmetrics.xyz/v1/electron"
+        ]
+      },
+      "links": [
+        "https://socket.dev/blog/bee-js-compromise",
+        "https://github.com/ethersphere/bee-js/commit/de2f74e784b2eafa0d66fbb6d88b42ea11ee34cf",
+        "https://github.com/ethersphere/swarm-desktop/commit/2de727046706062d38edfbbf8340f32d1eb2bdfb"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Inside an AhsayCBS Intrusion: Hidden Webshells, a CryptoMiner, and a C2 Implant",
+      "summary": "Huntress reports a months-long intrusion into an AhsayCBS backup server, exploiting CVE-2026-105133 (authentication bypass) and CVE-2026-105134 (unauthenticated remote code execution as SYSTEM) before Ahsay's hotfixes were released. The operator planted five JSP webshell families, including an image-steganography loader and a signed-API shell with download capability. Two XMRig miners were deployed, one persisted by a SYSTEM scheduled task that relaunches it every minute. A Python-based implant with a reflective DLL, configured to contact a C2 domain, was also found, along with tunneling tools, remote access software, and Defender exclusions. The operator also queried Veeam backup credentials, showing interest in backup infrastructure. Patching blocks the entry point but does not remove existing artifacts, so exposed servers should be hunted and likely re-imaged.",
+      "completeness": "High",
+      "threats": [
+        "Xmrig_miner",
+        "Netexec_tool",
+        "Chisel_tool",
+        "Anydesk_tool",
+        "Atera_tool",
+        "Splashtop_tool",
+        "Mimikatz_tool",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 16,
+      "software": [
+        "Microsoft Edge",
+        "Microsoft Defender",
+        "PostgreSQL",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "sha256",
+        "bcrypt",
+        "aes",
+        "lzma",
+        "base64"
+      ],
+      "functions": [
+        "equals",
+        "toString"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "java"
+      ],
+      "iocs": {
+        "sha256": [
+          "8245c7e7d944923f1608592f6c3473dcc6e3a3e43df3dd1c6257e7880948787b",
+          "a87002c32723f1849b3ad17b1fe6da732c9810b54b08501be21f5b1fcd882a59",
+          "f76dae028e0c43248c128b3bf609e8d660ce0bf44b53ab9e097887e6f5206eb5",
+          "8aac187bae71f75fa2dde03dcb4a9279c982182ee8254ae96e7a6626fe4c7617",
+          "91b3cc9d6421b651ec85a16062af3ba26700dad2eea4a8a7e42fdd2e422f8803",
+          "6953618238eb40f45b584e52aca22cebbe8ba03e9a80c15c6b593f51f7e49527",
+          "bb2472cf5dc7e5c94216d355bf84fba2c8d088d03d61a1ac0d78639049cf5e1f",
+          "e79c91e8157fef862be8cbe80bdf57b87a541416717265f81f669d751fca4a3d",
+          "6c7a4061bcf08df5fe4a49d37442dc650d751be1a91a8bc802edff213e4d5e61",
+          "6c695baad1d81ed49194d07a79381292c0466208ff1a9862c0c55f971d6a409f",
+          "e6e576a634166a16bdbfc09b14e7cf8eab90015d2dfa67dd73f3968ee869229b",
+          "7a13e59d816d68a071a8648e62a7c3c7f929a61c618a2133ab6f511da24f979d",
+          "875d0986ddaa51bfb5e03b06df1213cc3bb7966588d6153bdda57f2e3671e986",
+          "818bb464271a539c96bcbbfea1db7d5a722512041ed8ed10d3f6c7f366190044",
+          "6f6b66cbdc4a5aa5685d0017abd3f65843a28bcc2bb4e5b78d6d12a844a51aa8",
+          "ca5f8e5247f1a044b8be45ef03187726b9af3ac30fd93fb5bb54144e34ed3738"
+        ],
+        "md5": [
+          "acbe51127a7e4a3b8f7cde6e857b5e4d",
+          "d650dd0fc643fadabe5f41b94c7826d5",
+          "ee808b1dac987d19b1b864f18538116f",
+          "82e58ea5839581846e19be5d0c414436",
+          "c048c97c8160fb2df89e217d475c50b4",
+          "db64a245782d2d619d10eae73ef0f196",
+          "1b755d215b43b8e7da25a80386493568",
+          "7d33dc36088a8c20ee109f33d01d63c7",
+          "d5f0289bf84876023eb6ccdc92ddb05a",
+          "3b44593c393edff904c99fbdea0ea90c",
+          "f4f9b5b4836090e26a6ec717b26db7c8",
+          "38d0eff2318a20a88175704af57d1bc4",
+          "2df09294da360fffd01142f29b17c6cd",
+          "07043828c4e2c55eaf2be9e6cb7205cc",
+          "f08fc3eea3db76e7ba45cda42de5cafa",
+          "4126a061ddda3f433da5def0a7c79955",
+          "7de8cd835a7f6400bbb01d8b78bfc811",
+          "7dd5c4a904893cad2b757205dc224014",
+          "208143f41c1d6148842b7ed5d817f122",
+          "310161c45b193e923c8c99e0c21a2a0c"
+        ],
+        "ipv4": [
+          "104.243.43.115"
+        ],
+        "domain": [
+          "creepexplosiondarknight.com",
+          "pool.supportxmr.com",
+          "pool-fr.supportxmr.com"
+        ],
+        "url": [
+          "https://creepexplosiondarknight.com/d"
+        ]
+      },
+      "links": [
+        "https://www.huntress.com/blog/ahsaycbs-webshells"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Trusted by Default: Qubole Cross-Account Access Abused in the Wild",
+      "summary": "A threat actor used IAM credentials from an AWS account associated with Qubole to assume integration roles that customers had created to trust Qubole's account, operating between October 14 and October 26. The roles were assumed with valid External IDs, and in most affected environments the trust policies had no other legitimate vendor activity. Once inside, the actor enumerated resources, harvested secrets from Lambda, Secrets Manager and SSM Parameter Store, and used TruffleHog to validate discovered AWS, Entra ID and Okta credentials. The actor also downloaded S3 data opportunistically, sometimes entire buckets in a single session. Defenders should review CloudTrail for AssumeRole events from non-AWS source addresses, remove unused vendor trust, restrict trusted principals with source IP conditions, treat External IDs as non-secret, and enable S3 data event logging.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Trufflehog_tool",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Okta",
+        "linux"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "GetDatabases",
+        "GetKeyPolicy",
+        "GetFunctionConfiguration",
+        "GetSecretValue",
+        "GetParameter",
+        "GetCallerIdentity"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "65f061281c9a712e9502793dc4c5035cae490b84da05f7d4223cefa65ad396e4"
+        ],
+        "sha1": [
+          "1c7437dac21630f53c0b888b50662c6487e23fd7"
+        ],
+        "md5": [
+          "086d4a83181971e883c53a4c44f46da2"
+        ],
+        "ipv4": [
+          "45.83.220.211",
+          "57.129.54.120",
+          "185.209.199.73",
+          "89.37.63.175"
+        ]
+      },
+      "links": [
+        "https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Analyzing an Illegal Android Gambling App Built with Flutter",
+      "summary": "Android/TinstaPorn.A!tr is a Flutter-built Android app that poses as an online clone of a Macau casino but is actually an illegal online gambling platform. Victims play slots and roulette games whose odds are rigged in the operators' favor, and the platform encourages compulsive gambling through VIP recharges, rebates, and referrals. The app pulls its configuration from hard-coded servers and then connects to game servers, using AES keys and HMAC-SHA256 signing for communication. Beyond financial loss, it collects geolocation data and phone numbers, which are sent to backend servers. The report notes that Flutter's reverse-engineering difficulty helped the malware evade analysis, though improved tooling now makes analysis much more manageable. Fortinet detects the malware as Android/TinstaPorn.A!tr and blocks the associated servers through its web filtering service.",
+      "completeness": "Medium",
+      "threats": [
+        "Tinstaporn"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Flutter",
+        "Flutter's"
+      ],
+      "algorithms": [
+        "base64",
+        "hmac",
+        "aes"
+      ],
+      "iocs": {
+        "sha256": [
+          "d9020e64482821585245bf29fc96a046395b33d8e1830e17eeb949a2eb16a4d0"
+        ],
+        "domain": [
+          "reg.baidureg0627.xyz",
+          "www.ylhg250627linecfg.xyz",
+          "hsreg.youkureg510.xyz",
+          "www.game250522linecfg.xyz",
+          "up.logupload0628.xyz",
+          "reg.baidureg0621.xyz",
+          "api.testylhg24.online",
+          "zc.nationbj.com",
+          "gitee.com",
+          "www.tt250627linecfg.xyz",
+          "api.cloudfareproxy2618.xyz",
+          "reg.alibabareg0303.com",
+          "line.yongli250627linecfg.xyz",
+          "reg.gptreg0706.xyz",
+          "reg.gitshreg611.xyz"
+        ],
+        "url": [
+          "https://gitee.com/lspxgit/nocode/raw/master/address.txt",
+          "https://github.com/googleaidog/nocode/blob/master/address.txt",
+          "https://zc.nationbj.com/device/register",
+          "https://reg.gitshreg611.xyz/device/register|bydbikeend",
+          "https://gitee.com/lspxgit/yongli/raw/main/helpline.txt",
+          "https://raw.githubusercontent.com/kaerkaerkaerzzz/yongli/main/helpline.txt",
+          "https://up.logupload0628.xyz/app/log/raw/report",
+          "https://zc.nationbj.com",
+          "https://reg.gitshreg611.xyz/device/register",
+          "https://www.game250522linecfg.xyz",
+          "https://www.ylhg250627linecfg.xyz",
+          "https://www.tt250627linecfg.xyz",
+          "https://line.yongli250627linecfg.xyz",
+          "https://api.cloudfareproxy2618.xyz",
+          "https://api.testylhg24.online",
+          "https://reg.alibabareg0303.com",
+          "https://reg.baidureg0627.xyz",
+          "https://reg.baidureg0621.xyz",
+          "https://hsreg.youkureg510.xyz",
+          "https://reg.gptreg0706.xyz"
+        ]
+      },
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/analyzing-an-illegal-android-gambling-app-built-with-flutter",
+        "https://github.com/worawit/blutter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "On the hunt for ARTEX: understanding agentic attacks in AWS environments",
+      "summary": "ARTEX is an AI-native penetration framework in which LLM agents plan and run attacks once an operator supplies a target and objective, and it has been observed in the wild against several AWS environments. Using compromised long-term IAM access keys, it searched CloudWatch logs with FilterLogEvents for financial information, file paths and secrets such as AKIA access keys and passwords. It also abused public Amazon Cognito user pools through anonymous sign-ups, token collection, and follow-on AWS resource enumeration. Datadog tied the activity to hundreds of internet-exposed ARTEX consoles, often hosted in Asia. Defenders should hunt for ARTEX user agents and suspicious IPs, look for noisy permission-denied errors and unusual credential use, and rotate or remove long-lived access keys.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Chinese",
+        "China",
+        "Singapore"
+      ],
+      "software": [
+        "twitter",
+        "Okta",
+        "openai",
+        "DeepSeek",
+        "Qwen",
+        "anthropic",
+        "Active Directory",
+        "curl",
+        "Linux"
+      ],
+      "functions": [
+        "FilterLogEvents",
+        "SignUp",
+        "GetUser",
+        "GetTokensFromRefreshToken",
+        "GetRestApis"
+      ],
+      "iocs": {
+        "ipv4": [
+          "103.54.154.40",
+          "154.64.252.77",
+          "169.128.55.214",
+          "154.36.136.197",
+          "154.36.136.23",
+          "102.216.154.102",
+          "82.158.88.233",
+          "88.229.22.232",
+          "103.54.154.32",
+          "45.145.228.25"
+        ],
+        "domain": [
+          "zeofast.cn",
+          "yecaoyun.com"
+        ]
+      },
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/artex-agentic-attacks-aws-environments/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Arra Ghouls: A Feast Amid the Cyberplague",
+      "summary": "Arra Ghouls is a previously unknown cybercriminal group, also tracked as Mimbrob, that shifted from attacking private users with infostealers and banking trojans to targeting organizations in Russia and Belarus from April 2026. It used spear-phishing emails from lookalike domains, with RAR and ZIP archives containing DLL droppers disguised as legitimate Chromium or Notepad++ files. The droppers check system locale settings for CIS countries and Moldova, then establish persistence through scheduled tasks. Its main backdoor, Arra RAT, written in Go, communicates with command servers and supports file transfer, exfiltration and TCP tunneling, while Havoc, RootRat, Chisel and Metasploit were also observed. Eighteen victims were identified across telecommunications, pharmaceutical manufacturing, IT, commerce and finance. Defenders should monitor scheduled task creation and suspicious HTTP traffic tied to Arra RAT.",
+      "completeness": "High",
+      "threats": [
+        "Mimbrob",
+        "Havoc",
+        "Rootrat",
+        "Metasploit_tool",
+        "Typosquatting_technique",
+        "Msi-dropper_tool",
+        "Mitm_technique",
+        "Dll_hijacking_technique",
+        "Chisel_tool"
+      ],
+      "geo": [
+        "Moldova",
+        "Russia",
+        "Belarus",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chromium",
+        "Flutter",
+        "Yandex Browser",
+        "inux at",
+        "gamma"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "aes-gcm",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "GetPersistentClientID",
+        "io_ReadAtLeast",
+        "WM_INPUT",
+        "WM_CLIPBOARDUPDATE"
+      ],
+      "languages": [
+        "php",
+        "rust",
+        "golang"
+      ],
+      "iocs": {
+        "md5": [
+          "9a902953d52db5f33bbfef8bbd4afb0d",
+          "f35f74e71a46dac811992b39312d4d90",
+          "9fe6fe14c4b1be318ef293b90bf57b1c",
+          "74e8481b0712bfa8d8e7b4a4d0b4d021",
+          "427abe50dffb50250f751ff8faa4d8e3",
+          "6b81218a6622b86a5f2042c0b85e2788",
+          "8f2c41b0f20ddadbcedfd46a1a8374dd",
+          "3cd1bd34ea35ccfdd16fd3dbdfa683df",
+          "bb77650b74e339df8fc7f149b8111bf5",
+          "5a78f5089548657c05ac57712bfd8fc6",
+          "9282c4a105f1b6d32212f836debf21b2",
+          "25334e01a65c5bb07048ad6d74592d8a",
+          "097c504c717b61ca8c1eddc5e0afb7ab",
+          "2fcb3022680b2a7c4f9b003dd7f62121",
+          "de3f3649ddd184da25f281d14e5f1285",
+          "010bc800080b931b79af60ea05310aac",
+          "c29c460069e64713d73ce5b0e6cf0a04",
+          "f972fa463917960ff121b39a8cf22424",
+          "1d55ed8dfd38275322aa373a95e95f9c",
+          "a97e19773c8edfb0e90b990735666b47",
+          "28dc203a0e183f84b2056e9270ccd4a7",
+          "2aa2eb021e489df2045558b39f2f55ac",
+          "00c977e9a2c97341434ea74bdcb90cd1",
+          "cc891f54ef2fbf3550c1d6636519b701",
+          "9a0901dc40fb4695672cb21681c94bf6",
+          "6eec8bad7e38e87ecf9f7ca7fceb8256",
+          "76cd361dc647a17d55d64cdac36266a8",
+          "2bd29f1eaef10eea2971772be8290f77",
+          "7f629583b38c1ba6bb97cca5406f9926",
+          "9026741d9c7aa8fd0bc3c9feb2efa21a",
+          "6a9bf1e47f38582998c23e79a2656788",
+          "5ba419d5c4d9d99a09f74547636ffb2a",
+          "089b9e0fa13bda898a4f12b4194135e7",
+          "bedb538613bc51386ddedf62fb82033b",
+          "64968b176b3640f73eb78fecd143fe6d",
+          "e6ff9117456bcb91735d4fb0ff86d7f6",
+          "76d5801c291d4b235341cc6286cdf06d",
+          "36c8aeeb8a8d849186b8fc1d117eda45",
+          "bfde950a2ecbd8d707c448a17c200cb0",
+          "ea07448281b92499559db587752a1cf9",
+          "9ddd2a492d29052a42d6251c090ba4fe",
+          "430c8f4d32982fe5506e4193260da71a",
+          "93adf4b9dbe465ebb4848f3ebc050389",
+          "d33744c561ea0ee8cd612067756e1dca",
+          "76fb472223c4979210f9967364d71d01",
+          "8ce28a91007ab1fe043e0b7bdfa1adaa",
+          "c3ccd1c9a55ae2b32a4a47f0f601cf82",
+          "7a8a971e58a80d5df925f9f0c0719b1d",
+          "2930f11272f94037ff327f1021461591",
+          "0426d58893826924324fd95ad76f4c97",
+          "89eae0c2ae68011b654ae40a88fe0a25",
+          "1e5e97b1307a24bb2a8cb64dd87985fc",
+          "d8960f175d50aad077e716f0979f87cb",
+          "11b230f8728840517b5c273fd365de97",
+          "8b7d50e71fb149d3e4918848540856b1",
+          "a8b7bf5f66df7c006b9835667fb900a4",
+          "e86e8e01ca81362fd82ab7087dea3bd4",
+          "334ea603e4a9c65975ef5521401efefa",
+          "754b537574d8bf9f1d58d13209bd9433",
+          "4571dafdfa07bbaf4e10e6ab107bd103",
+          "1508343bf7901eb8645538f2a8de196b",
+          "4f6071182da55fa3f8069c60eb3b43ab",
+          "942446b4a242423c93092c2184cb5460",
+          "f633b2ae42f93ddfc796a4e382bd1bfb",
+          "a5deabbdc2e807d8d42de22b20907be4",
+          "ed50f533734f2c2a530c9fdb331f7a4b",
+          "cdce9624c1a819adefc65c4da401a35c",
+          "7afce9f5af6a214b36482a03471f7ea0",
+          "85c38c568a48e50d552ba88a224d5643",
+          "8b528c8cadcbcf5cec325406af953adf",
+          "01e9a165e8f629132e42ccbcc0178ca2",
+          "1d3aa9fdebbe39f4de07120f5bfc148d",
+          "632d21ade93cf7039ac50098c2d1e530",
+          "4880af251a605c5c56bde44716a17d21"
+        ],
+        "ipv4": [
+          "194.87.37.14"
+        ],
+        "domain": [
+          "npkarns.ru",
+          "urnpo.ru",
+          "klirnov.ru",
+          "vniirn.ru",
+          "thomas-service.pro",
+          "tndr-panel.online",
+          "update-yandexbrowser.ru",
+          "max-telemetry.online",
+          "crash.reporting.u.ya-user-experience.ru",
+          "yandex-tel.tech"
+        ],
+        "url": [
+          "https://crash.reporting.u.ya-user-experience.ru/index.php?search=d1M5S3JKa1kzTlQzSm1ld2xWbG5rV1RZCg==&sa=9&wv=10.0&wvhr=Windows%2010%20%2822H2%29%2c%20Build%2019045&hwid=2732475090-7dfbe045-bf9a-425b-8b20-94460d1858b2&u=",
+          "https://yandex-tel.tech/api/r/?bid=281603bc&sa=0&wv=10.0&wvhr=Windows",
+          "https://update-yandexbrowser.ru/rc/rf/?machine_id=2355938629-03ec10d0-a057-4570-9980-3cf5465ace95",
+          "http://45.9.14.77:443",
+          "http://194.87.37.14/ws",
+          "https://max-telemetry.online/api/r/?bid=2e8a9cb9",
+          "https://crash.reporting.u.ya-user-experience.ru/index.php?search=",
+          "https://yandex-tel.tech/api/r/?bid=",
+          "https://raw.githubusercontent.com/mellstroy0/z/refs/heads/main/.txt"
+        ]
+      },
+      "links": [
+        "https://securelist.ru/tr/new-cyber-threat-arra-ghouls-attacks-russian-organizations/117588/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "BECna, or Very Malicious Affairs",
+      "summary": "The PT ESC Threat Intelligence team observed mass BEC attacks against Russian organizations that used the BoryptGrab stealer, which researchers had publicly described in March 2026. The campaign is attributed to an actor the team calls VecnaHopper, which sent phishing emails in bulk, sometimes to more than 100 recipients at once, using compromised email accounts of Russian individual entrepreneurs. The infection chain relies on password-protected archives containing a legitimate Visual Studio debugger alongside a malicious DLL, enabling DLL side-loading of a C# dropper. The final payload harvests browser credentials, messenger and crypto wallet data, and files, then exfiltrates them as a ZIP archive via POST requests to C2 servers. Between May and September 2026, researchers confirmed 1256 targeted Russian organizations, with individual entrepreneurs making up 44% and banks, energy firms, and government bodies also frequently hit. Defenders should note that the targeting appears largely indiscriminate, consistent with automated spread through harvested contacts from earlier victims.",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique",
+        "Boryptgrab",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio",
+        "NativeAOT",
+        "Amigo",
+        "QQBrowser",
+        "Telegram",
+        "Discord",
+        "Steam",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1104152/"
+      ]
+    }
+  }
+]

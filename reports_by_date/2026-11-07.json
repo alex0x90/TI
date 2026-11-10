@@ -3,6 +3,7 @@
     "parsed": {
       "report_date": "2026-11-07",
       "title": "S5PIVOT – A Python Backconnect Proxy Hidden Inside a Qilin Ransomware Intrusion",
+      "summary": "S5PIVOT is a previously undocumented Python backconnect proxy that Hexastrike found alongside a Qilin ransomware intrusion at a mid-sized German company, and no security vendor detected it at the time. The attackers most likely entered through a SonicWall SSL-VPN that required only a valid password, then exploited long-standing weaknesses such as over 60 accounts holding Domain Admin rights and service passwords readable on member servers. The proxy runs as a SYSTEM scheduled task that launches an embeddable Python runtime without a script, loading a seven-layer encrypted payload that opens a single outbound TLS session on port 443. The operator cleared logs on ten servers and deleted tools, but a crash dump preserved AzCopy exfiltration to an attacker-controlled Azure container, and registry and journal artifacts survived. Key defender takeaways include phishing-resistant MFA on remote access, group managed service accounts, Windows LAPS, application control against interpreters in ProgramData, and central log forwarding.",
       "completeness": "Medium",
       "threats": [
         "S5pivot",
@@ -49,6 +50,31 @@
         "python",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "a59b1da93649db7f802c81be575034fa4e8def0e298c44aebcbd215027110160",
+          "228c7ac798b4ffe26fb8439a53fbcfe2453b3a7d6f606f7116e319063f5a9c05",
+          "f8681f691d1177dd3be9ada794b475d96c3514259cd8e68905101cac19130834",
+          "81cc9db1c0a1a979fdc9cb351f6e401f4d48fea7bcf69ad2d0ee601c8141832a",
+          "675e7aeac1e1a95c2a2608319ffd6a197130d17f58639724e28b9ee3cdc974f2",
+          "9fa892212460b6670fad23f702d12e18a2405ccb8845b20d59615141b9d3b2ba",
+          "709a5116d5634236a3d69db61261ee334d5f61a6537f299eb2114d91cf694399",
+          "cd578333a4be96988080597063b8e35a46452b578f5f70abf2f81374924bc45e",
+          "936bed238410aee76f4ad4ff385fdb8dbfbb88a4ba540923e42fdd14c698a5d1",
+          "c7effa4b730275ccb9df54a468ecda1b59b214d1f73f008bdfb2def53adcca08",
+          "f138753c6fd62f18317a7455d71dd1f45d0e9cb1edab7d0a0bbe21513c29a088",
+          "5eac10e0ff9e39597749b54b46400f1f0e5b217117a9be84a61ee1301ef467a4",
+          "8ab791f083e47086d8286f3ac20fb3d3c5640d3b7a2a68e2cad5e497aa49f31e",
+          "d651b5d26bcd0979bd85415664ddd73c18458f6fdbb1d3803dc8ae8050181fe9",
+          "3aabad36c1502b866410c7784c313f47b25d57d3403cb8380bffab9688a1d966"
+        ],
+        "domain": [
+          "sdf557hht5.blob.core.windows.net",
+          "sports-chamber.com",
+          "kyowa-spring.com",
+          "zeroseum.com"
+        ]
+      },
       "links": [
         "https://hexastrike.com/resources/blog/threat-intelligence/s5pivot-a-python-backconnect-proxy-hidden-inside-a-qilin-ransomware-intrusion/"
       ]
@@ -141,6 +167,50 @@
       },
       "links": [
         "https://michalkoczwara.substack.com/p/tracking-lazarus-group-tradertraitor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-07",
+      "title": "ARTEX abuse expands as cybercriminals target financial sector",
+      "summary": "Storm-3358, a financially motivated Cambodia-based intrusion cluster, began targeting financial organizations in October 2026 using the agentic AI offensive framework ARTEX. The actor combines ARTEX with conventional automated tools to scan internet-facing systems and exploit flaws such as anonymous file upload and server-side request forgery. It installs open-source remote access trojans, including WISP, vshell, and AdaptixC2, for persistence and lateral movement. Microsoft's key takeaway is that defenders should use AI to investigate and respond, since agentic tools move at machine speed. Defenders can watch for behavioral signals such as rapid varied requests and default tool user agents, and honeypots or decoys can divert autonomous attacks.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Vshell",
+        "Adaptixc2_tool",
+        "Netcat_tool",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Cambodia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "curl"
+      ],
+      "languages": [
+        "php"
+      ],
+      "iocs": {
+        "ipv4": [
+          "199.19.95.66",
+          "199.19.95.67",
+          "199.19.95.68",
+          "91.92.240.238",
+          "85.11.168.45",
+          "85.11.167.52",
+          "178.16.54.129",
+          "31.77.229.35"
+        ]
+      },
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/"
       ]
     }
   }

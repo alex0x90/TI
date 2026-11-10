@@ -545,6 +545,7 @@
     "parsed": {
       "report_date": "2026-09-09",
       "title": "[Op Report\\] Hands-on-Keyboard Activity from the DPRK PolinRider Supply Chain Attack",
+      "summary": "A North Korea linked operation, consistent with the PolinRider supply chain campaign tied to the Contagious Interview and Famous Chollima cluster, was observed by a Deception.Pro decoy environment in late August 2026. The threat actor found a decoy workstation within about three hours and used a lure involving a trojanized PyPI package and a fake coding assignment. The operator deployed a JavaScript command and control implant, a Python information stealer with clipboard monitoring and screen capture, and wallet-targeting tooling. Persistence was hidden under a fake Microsoft .NET optimization service running as SYSTEM. Defenders should hunt for MicrosoftCLROptimization tasks and Run keys under systemprofile paths, and scan developer dependencies.",
       "completeness": "High",
       "threats": [
         "Supply_chain_technique",
@@ -583,6 +584,31 @@
         "python",
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "75ad8365fce771294258a792fcd6b92be499714626aba0960aa1c1746e8672fd",
+          "7c4029b7f1383e25fb1b1ed10292e0bbe024952df2772c1d14f3bfee6ab29984",
+          "d4688428d0e99fd4f0320d14fdd6ed46445e775b25779cdea8790e6804426ac6",
+          "c197268f7e7cf2848b8c1ae59bbd0e0c14defe668a2d365302137ea929b47769",
+          "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"
+        ],
+        "ipv4": [
+          "23.27.13.135",
+          "150.251.113.223"
+        ],
+        "domain": [
+          "files.catbox.moe",
+          "gitlab.com",
+          "files.pythonhosted.org",
+          "1rpc.io",
+          "ethereum-rpc.publicnode.com",
+          "eth.drpc.org",
+          "malbeacon.com"
+        ],
+        "url": [
+          "https://MalBeacon.com"
+        ]
+      },
       "links": [
         "https://blog.deception.pro/blog/hok-dprk-polinrider-sep-2026"
       ]
@@ -710,6 +736,7 @@
     "parsed": {
       "report_date": "2026-09-09",
       "title": "Phishing Attacks Serve Browser-in-the-Browser Pages, Rogue RMM Persistence",
+      "summary": "Huntress observed two August incidents in which phishing emails led victims to browser-in-the-browser (BiTB) pages impersonating Adobe. The BiTB technique renders a fake browser window inside the webpage, which can bypass user checks of the address bar. Targets were told to install a fake Adobe Reader update, but the download was actually a rogue ScreenConnect installer. In both cases the installers deployed multiple rogue ScreenConnect clients registered as Windows services for persistent remote access. The attackers also ran defense-evasion binaries that hid cursor activity. Huntress recommends restricting remote-management tool installs, maintaining an approved RMM inventory, and alerting on unapproved ScreenConnect clients.",
       "completeness": "High",
       "threats": [
         "Bitm_technique",
@@ -729,6 +756,33 @@
       "languages": [
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "41d2097e8ac636a478aa011e12128c03b3b9bb3c8efca43d3c4f214ac8b1f07b",
+          "fc96a04c615847f0fb1391f04d9d1aac7f78ddfb7d459168df0a4172b98354e2",
+          "9f5910d69a4fbc56ff1854e7e0df3199fbfddd7fe6b374f7d816fa6ae70ef991",
+          "f048400c23add8c75abe189393d33c873c02c74eeaf43d47b950c8d643763b35"
+        ],
+        "ipv4": [
+          "144.172.115.59"
+        ],
+        "domain": [
+          "adoube.vu",
+          "hosthiifran.screenconnect.com",
+          "instance-uxh86b-relay.screenconnect.com",
+          "selectstructure.com.au",
+          "victory.mkc1.digitaloceanspaces.com",
+          "relay.goldenmelon.us",
+          "wir.consultingics.com",
+          "scx.illuminantgroup.net",
+          "relay.illuminantgroup.net"
+        ],
+        "url": [
+          "https://adoube.vu/2a8ed9baefcd",
+          "https://adoube.vu/filedocacess/file.html",
+          "https://wir.consultingics.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest&c=GOODVIBE&c=&c=&c=&c=&c=&c=&c="
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/phishing-bitb-rmm-attacks"
       ]
@@ -738,6 +792,7 @@
     "parsed": {
       "report_date": "2026-09-09",
       "title": "Grand Theft Auto VI Hype Leads to Malware",
+      "summary": "Fake Grand Theft Auto VI \"leaked\" ISO files are being distributed through SEO poisoning, gaming forums, torrent sites, and social media, exploiting fan demand before any official demo exists. The ISOs are padded with junk data to appear AAA-sized, and the bundled malware includes an installer that displays a Russian-language message and then a fake \"License not found\" error. The payload installs several NJRAT and DCRAT remote access trojans, the Mercurial Grabber infostealer targeting Discord, Roblox, and browser data, and Chaos ransomware used as a wiper with no ransom demand. The malware is largely several years old and opportunistic, and the report notes that current Windows Defender can detect it. Defenders should avoid cracked or unreleased games, and if infected, should isolate the machine, reset passwords, enable 2FA, and fully reimage it.",
       "completeness": "High",
       "threats": [
         "Seo_poisoning_technique",
@@ -771,6 +826,37 @@
         "exhibit",
         "md5"
       ],
+      "iocs": {
+        "md5": [
+          "a15e280a3fd65dfaa243bbe2dbf45e97",
+          "6b49f24d5d5b49127476bc385565f8b0",
+          "2a0834560ed3770fc33d7a42f8229722",
+          "57b9c56ef97a7ada98257b23577bf5e3",
+          "60a0f58001ea7be538cd42b651924cc7",
+          "15eca4a3f7350423cf4db0b4c30d1968",
+          "ea991bc9334b36a6b958f564ee716776",
+          "2a385fe7bed9899d77d05cb8e302d557",
+          "8da3fe3664d81226b0fb2a50a0537d4f",
+          "dfdf5e5b78d2ec764c0e5641cf9a0d26",
+          "b9648ec8cc806e7661aabcfc91dc836c",
+          "1ec9eff863dc4418d1498bc3d904899d",
+          "0e39e8d7b641bcda4376ebbfeff7b12e"
+        ],
+        "ipv4": [
+          "35.157.111.131",
+          "3.68.56.232",
+          "3.67.15.169",
+          "141.8.197.42"
+        ],
+        "domain": [
+          "7.tcp.eu.ngrok.io",
+          "a0700877.xsph.ru",
+          "clck.ru"
+        ],
+        "url": [
+          "https://clck.ru/34uJnp"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/fake-gta6-download-malware-analysis"
       ]

@@ -299,6 +299,7 @@
     "parsed": {
       "report_date": "2026-07-01",
       "title": "DuneSlide: Two Critical RCE vulnerabilities via Zero-Click Prompt Injection in Cursor IDE",
+      "summary": "Cato AI Labs disclosed two critical RCE vulnerabilities in the Cursor IDE, dubbed \"DuneSlide,\" each scored 9.8 CVSS and assigned CVE-2026-50548 and CVE-2026-50549. Both flaws let a prompt injection, delivered through an untrusted source such as an MCP server or web search result, cause the LLM agent to overwrite the cursorsandbox binary and escape the sandbox. The first flaw arises because an LLM-set working_directory parameter is added to the sandbox's write allowlist without validation. The second arises because symlink canonicalization falls back to the unresolved symlink path when it fails, letting attackers write outside the project. The attacks require no user interaction and can lead to full system compromise of the host and connected SaaS workspaces. Cursor fixed both issues in version 3.0.",
       "completeness": "Low",
       "threats": [
         "Duneslide_vuln",

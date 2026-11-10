@@ -759,6 +759,7 @@
     "parsed": {
       "report_date": "2026-08-05",
       "title": "Toolkit Installation via SQL Injection Shows the Classics Still Hit",
+      "summary": "Huntress observed the khunt toolkit, a database-resident post-exploitation framework, deployed through SQL injection against a public-facing Java/Tomcat application backed by an Oracle database. The attacker used the CREATE JAVA SOURCE statement to compile Java code inside the database as a stored schema object, avoiding files on disk. Khunt modules provided command execution, Oracle password extraction, file browsing, and a ping check, and the attacker used them to reach SYSTEM privileges on the Windows server. The attacker then dumped SAM, SECURITY, and SYSTEM registry hives, along with a service list, for credential theft. Defenders should prevent SQL injection through input validation and parameterization, and restrict database accounts from creating Java sources or running stored procedures, since EDR and AV rarely inspect objects stored inside Oracle.",
       "completeness": "Low",
       "threats": [
         "Khunt_tool"
@@ -769,6 +770,11 @@
         "powershell",
         "java"
       ],
+      "iocs": {
+        "ipv4": [
+          "178.162.151.229"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/khunt-malware-sql-injection-oracle",
         "https://github.com/0xdea/exploits/blob/master/oracle/raptor\\_oraexec.sql"

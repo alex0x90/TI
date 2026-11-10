@@ -868,6 +868,7 @@
     "parsed": {
       "report_date": "2026-10-22",
       "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
+      "summary": "Between July 14 and September 22, 2026, Huntress tracked a token replay campaign against Microsoft 365 that used hosts in the 193.26.115.0/24 range from German hosting provider 1337 Services GmbH. The attacker stole session tokens through adversary-in-the-middle relays and device-code phishing, then replayed them at volume, a pattern the researchers call token spraying. Successful sign-ins touched 79 victim organizations, and the operator registered rogue devices, swapped MFA methods, and hid inbox rules to maintain access. Defenders should revoke sessions and audit devices, MFA methods, and inbox rules, not just reset passwords. The report also advises requiring MFA through Conditional Access for all users and apps, and prioritizing response by credential validity rather than spray volume.",
       "completeness": "Low",
       "threats": [
         "Aitm_technique",
@@ -891,6 +892,24 @@
         "Outlook",
         "Office 365"
       ],
+      "iocs": {
+        "sha256": [
+          "d8a3fedb1a3cd1287ca47c6851a49e6052ab6116b43666e674765ca892d798ce"
+        ],
+        "ipv4": [
+          "193.26.115.221",
+          "193.26.115.72",
+          "193.26.115.16",
+          "193.26.115.21",
+          "193.26.115.199",
+          "185.238.2.195",
+          "124.198.132.33",
+          "193.26.115.210",
+          "167.148.41.96",
+          "45.83.31.44",
+          "192.159.99.172"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/token-replay-spray"
       ]

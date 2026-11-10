@@ -486,6 +486,7 @@
     "parsed": {
       "report_date": "2026-04-14",
       "title": "When PUPs Grow Fangs: Dragon Boss Solutions Left an Open Door on 25,000+ Endpoints",
+      "summary": "Dragon Boss Solutions LLC, a company signed with a legitimate code-signing certificate, distributes a browser-hijacking PUP whose update mechanism silently deploys an antivirus killer running with SYSTEM privileges. The payload, ClockRemoval.ps1, disables security tools, blocks AV update domains via the hosts file, adds Defender exclusions for future staging directories, and persists through WMI subscriptions and scheduled tasks. The update configuration's primary domain was unregistered, so anyone registering it could push arbitrary payloads to affected hosts. Huntress registered the domain and sinkholed it, observing about 23,565 infected IP addresses in 24 hours, including dozens within universities, utilities, and government networks. Defenders should hunt for the listed WMI subscriptions, scheduled tasks, hosts-file blocks, and Dragon Boss-signed processes.",
       "completeness": "High",
       "threats": [
         "Dragonboss",
@@ -526,6 +527,31 @@
       "languages": [
         "powershell"
       ],
+      "iocs": {
+        "sha256": [
+          "909539d3ef8dedc3be56381256713fa5545cc7fd3d3d0e0428f7efb94a7e71cb",
+          "40ac30ce1e88c47f317700cc4b5aa0a510f98c89e11c32265971564930418372",
+          "26ddd0712a101b27b018658b4072ad56bb4083026c797b0345b2cce43862fc83",
+          "feb13087c43406da7f2cea26b003a9b93db0e6b544b10bd57342d5dbbb18ba02",
+          "da6aba50f9908f5f29d877dfaaca1ef6e03d597bb7b52bd294b4ec644fe7e6c0"
+        ],
+        "domain": [
+          "chromsterabrowser.com",
+          "worldwidewebframework3.com",
+          "worldwidewebuniverse3.com",
+          "dl.isready26.online",
+          "www.dragonboss.com",
+          "www.chromnius.com",
+          "worldwidewebframework2.com",
+          "artificialupdates.com",
+          "dragonstraffic.com",
+          "updaterituals.com",
+          "chromsteraupdates.com"
+        ],
+        "url": [
+          "https://dl.isready26.online/image/ldk4945jfds.gif"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/pups-grow-fangs"
       ]

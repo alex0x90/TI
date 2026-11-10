@@ -184,6 +184,7 @@
     "parsed": {
       "report_date": "2026-10-28",
       "title": "Who Watches the Watchers?",
+      "summary": "Huntress observed a campaign in which attackers compromised legitimate camera management software (CMS.exe) to gain initial access to customer environments. The vendor could not be definitively identified, though the software's strings and a related download page pointed to a possible Korean source. After compromise, attackers dropped rs.win32.exe in a user's AppData folder, which ran as a reverse shell. They then abused a legitimate Windows binary, WpcMon.exe, to sideload malicious DLLs that beaconed to a command-and-control server. Defenders should inventory and restrict camera management platforms, monitor for unusual processes and outbound connections, and use application control to block unapproved executables and DLLs in user-writable paths.",
       "completeness": "Low",
       "threats": [
         "Dll_sideloading_technique"
@@ -199,6 +200,23 @@
       "algorithms": [
         "sha256"
       ],
+      "iocs": {
+        "sha256": [
+          "1fb4af4862643dcab1459872f723f574f1a588855b020916b600df5c20681144",
+          "8f8e88c54a9c56174974711eff99b4beb79536642fcca1902acdc3d4b1fd1035",
+          "70b2345302264c41504d59e6a63d6d908969740424b42b7373f10b4c8d74c87a"
+        ],
+        "ipv4": [
+          "144.172.116.37"
+        ],
+        "domain": [
+          "kvision.ai",
+          "cloudapi.3r-dataware.com"
+        ],
+        "url": [
+          "http://cloudapi.3r-dataware.com/sso/"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/camera-management-software-compromise-malware"
       ]
@@ -254,6 +272,7 @@
     "parsed": {
       "report_date": "2026-10-28",
       "title": "Managed for Malice: How Attackers Turn MDM into Remote Access",
+      "summary": "Attackers are abusing legitimate MDM platforms, including Hexnode and Rippling, to gain privileged, trusted management access to victim systems, typically after social engineering through business-themed lures. In one case, a fake DocuSign-style installer delivered a Hexnode MDM package, and the attacker later reinstalled ScreenConnect after it was removed, reconnecting to the same relay. In another, a lookalike Teams calendar page enrolled a receptionist's system into an attacker-controlled Rippling tenant, and the attacker then deployed ScreenConnect as SYSTEM through the MDM. Huntress stresses that MDM enrollment should be treated as security-sensitive, and that removing an RMM does not remove the unauthorized management channel behind it. Defenders should inventory authorized MDM and RMM tools and correlate identity, MDM, endpoint, and network telemetry.",
       "completeness": "Low",
       "threats": [
         "Screenconnect_tool"
@@ -267,6 +286,25 @@
         "Microsoft Teams",
         "Microsoft 365"
       ],
+      "iocs": {
+        "md5": [
+          "5d41402abc4b2a76b9719d911017c592",
+          "c4ca4238a0b923820dcc509a6f75849b"
+        ],
+        "domain": [
+          "relay.bobdthjau.com",
+          "relay.pronconetydesire.online",
+          "webdocusign.viewportal.es",
+          "teams-microsoftcom5d41402abc4b2a76b9719d911017c592.kiratham.com"
+        ],
+        "url": [
+          "https://webdocusign.viewportal.es/Windows/download/index.php",
+          "https://teams-microsoftcom5d41402abc4b2a76b9719d911017c592.kiratham.com",
+          "https://www.google.com/url?q=https://teams-microsoftcom5d41402abc4b2a76b9719d911017c592.kiratham.com/teams/?c4ca4238a0b923820dcc509a6f75849b&source=gmail&ust=1786728797008000&usg=AOvVaw1avg1ySoejqEF3554JUp0i",
+          "https://teams-microsoftcom5d41402abc4b2a76b9719d911017c592.kiratham.com/teams/?c4ca4238a0b923820dcc509a6f75849b",
+          "https://teams-microsoftcom5d41402abc4b2a76b9719d911017c592.kiratham.com/teams/14/enroll14.php"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/attackers-turn-mdm-into-remote-access"
       ]

@@ -728,6 +728,7 @@
     "parsed": {
       "report_date": "2026-04-20",
       "title": "Nightmare-Eclipse Tooling Moves From Public PoC to Real-World Intrusion",
+      "summary": "Huntress observed public Nightmare-Eclipse tooling (BlueHammer, RedSun, and UnDefend) used during a real-world intrusion, with BlueHammer's privilege escalation flaw (CVE-2026-33825) patched by Microsoft in April 2026 while RedSun and UnDefend remained unpatched. BlueHammer and RedSun are local privilege escalation techniques that can take an unprivileged user to SYSTEM, while UnDefend disrupts Defender only while it runs. Binaries were staged from user-writable paths such as Pictures and Downloads, and the operator's hands-on enumeration (whoami /priv, cmdkey /list, net group) suggested active intrusion. The intrusion likely began with FortiGate SSL VPN access using victim credentials from multiple geographies. Huntress also found BeigeBurrow, a Go-based Yamux reverse tunnel agent, for covert network access. Defenders should review VPN logs and hunt for the listed binaries and tunneling activity.",
       "completeness": "High",
       "threats": [
         "Nightmare_eclipse_tool",
@@ -762,6 +763,19 @@
         "runAgent",
         "DefaultConfig"
       ],
+      "iocs": {
+        "sha256": [
+          "a2b6c7a9c4490df70de3cdbfa5fc801a3e1cf6a872749259487e354de2876b7c"
+        ],
+        "ipv4": [
+          "78.29.48.29",
+          "212.232.23.69",
+          "179.43.140.214"
+        ],
+        "domain": [
+          "staybud.dpdns.org"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/nightmare-eclipse-intrusion",
         "https://github.com/hashicorp/yamux",

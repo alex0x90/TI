@@ -212,6 +212,7 @@
     "parsed": {
       "report_date": "2026-10-13",
       "title": "Clean Install, Stolen Creds: Fake WatchGuard VPN Site Serves Genuine Signed Client",
+      "summary": "A fake WatchGuard VPN download site, watchguard-vpn[.]net, was reached through a Bing search for a VPN client, a typo-laden query that led to an administrator's visit. The page asks victims for server, login, and password details through a fake prompt, which forces a second submission before sending the credentials to a separate collection domain. Unlike earlier iterations, the site then serves a genuine, validly signed WatchGuard installer from WatchGuard's own CDN, so no malware is delivered. Huntress attributes the broader campaign to SEO poisoning and notes that the lure domain was registered again after WatchGuard's January report. Defenders should enforce MFA, monitor for unusual SSL VPN logins, block the listed domains, and publish official download links.",
       "completeness": "Medium",
       "threats": [
         "Seo_poisoning_technique",
@@ -232,6 +233,22 @@
       "languages": [
         "javascript"
       ],
+      "iocs": {
+        "ipv4": [
+          "74.208.236.39",
+          "80.249.132.140",
+          "158.94.209.19"
+        ],
+        "domain": [
+          "watchguard-ssl.online",
+          "watchguard-vpn.com",
+          "www.watchguard-vpn.net"
+        ],
+        "url": [
+          "https://www.watchguard-vpn.net/",
+          "https://watchguard-ssl.online/"
+        ]
+      },
       "links": [
         "https://www.huntress.com/blog/fake-watchguard-vpn-credential-phishing"
       ]
