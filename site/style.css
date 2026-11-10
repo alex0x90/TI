@@ -70,6 +70,13 @@ a:hover { text-decoration: underline; }
 .brand:hover { text-decoration: none; }
 .brand-mark { width: 22px; height: 22px; border-radius: 6px; background: linear-gradient(135deg, var(--l2), var(--l4)); }
 .stats { margin: 0; color: var(--muted); font-size: 13.5px; }
+.top-right { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.coffee-btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px;
+  background: #ffdd00; color: #16181d; font-weight: 600; font-size: 14px; white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, .08); box-shadow: var(--shadow); }
+.coffee-btn:hover { text-decoration: none; background: #ffe433; }
+.coffee-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 560px) { .top-inner { padding-top: 10px; padding-bottom: 10px; } .top-right { width: 100%; justify-content: space-between; } }
 
 /* layout */
 .layout { display: grid; grid-template-columns: 340px 1fr; gap: 24px; padding-top: 24px; padding-bottom: 24px; align-items: start; }
