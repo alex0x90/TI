@@ -148,6 +148,19 @@ details.links summary { cursor: pointer; color: var(--accent); }
 details.links ul { margin: 6px 0 0; padding-left: 18px; }
 details.links li { overflow-wrap: anywhere; }
 
+details.iocs { margin-top: 12px; border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; }
+details.iocs > summary { cursor: pointer; font-weight: 600; font-size: 13.5px; display: flex; align-items: center; justify-content: space-between; gap: 8px; list-style: none; }
+details.iocs > summary::-webkit-details-marker { display: none; }
+details.iocs > summary::before { content: "▸"; color: var(--muted); margin-right: 6px; }
+details.iocs[open] > summary::before { content: "▾"; }
+details.iocs > summary { justify-content: flex-start; }
+.copy-btn { margin-left: auto; font: inherit; font-size: 12px; font-weight: 500; padding: 3px 10px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; }
+.copy-btn:hover { background: var(--chip); }
+.ioc-group { margin-top: 10px; }
+.ioc-label { font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: 4px; }
+.iocs pre { margin: 0; padding: 8px 10px; background: var(--chip); border-radius: 8px; font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-x: auto; max-height: 240px; white-space: pre; }
+.ioc-note { margin: 8px 0 2px; font-size: 12px; color: var(--muted); }
+
 .empty-state { text-align: center; padding: 48px 16px; color: var(--muted); }
 .skeleton { height: 140px; border-radius: 14px; background: linear-gradient(90deg, var(--l0), var(--chip), var(--l0)); background-size: 200% 100%; animation: sh 1.2s infinite; }
 @keyframes sh { to { background-position: -200% 0; } }

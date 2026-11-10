@@ -22,6 +22,19 @@
       "languages": [
         "php"
       ],
+      "iocs": {
+        "domain": [
+          "web.core.windows.net",
+          "call.adhelper.cc",
+          "aff.adhelper.cc",
+          "img.czlbb.site",
+          "tawk.to",
+          "wordpress.org"
+        ],
+        "url": [
+          "https://call.adhelper.cc/api/get-phone.php?callback=handlePhone"
+        ]
+      },
       "links": [
         "https://pixmsecurity.com/blog/blog/made-in-china-deployed-in-us-fake-microsoft-support-scam/"
       ]
@@ -83,6 +96,50 @@
         "c_language",
         "javascript"
       ],
+      "iocs": {
+        "sha256": [
+          "bee3e014e3df87ddce0250b0985b87f6868a427a7b650a74b7ffedb9d57f3088",
+          "35c0cd19a7334b544c193e392bcd9a8f1d1f43cf6b61be5bf1d9e35537aff2ef",
+          "621112712ec515e8791129c62feda8fff6654a0116882401609503cacc08054a",
+          "69b6cb327a4d5da99399718f6a66f84de69f89425b0a31f2dcee0682f811596f",
+          "ae3241d96cc2d99538c7aff60f382cc8dac13859bcbea3ee84992d24d22a8108",
+          "41e6fd33a30d36dabff9ea408d9766a6583edcc107968f6dc1499f2586381967",
+          "183d62d682aea8018491c8559544e8d6a9ab0e1abd05ecbb6c97daa4f438d2b8",
+          "387a7fb768db1350a9788d9704e7a72abe07152734e0ff026af72b417e36268c",
+          "a7d2493df00565c21587b0cad2a9fe7ca1e5590acf796da6e499be0ffde44cc3",
+          "c170fda024183645c0aa681149304e50506509c3498bb6b9a5f5ced6aa73e5fa",
+          "2ffb35e3f9e55286a930fb887e73764a913166648135fe0ca7551736d97d7bfa",
+          "29d283ebd08d0cd3b2e6f4a67718d3d6e7a6be01d0613d716bce218dba57a928",
+          "06c17b31d36838f3d29044784aa047d5c2d9174d3356c1211cf25f9df677445f"
+        ],
+        "ipv4": [
+          "109.104.106.107",
+          "192.121.46.25",
+          "188.190.17.232",
+          "95.133.231.28",
+          "195.58.140.105"
+        ],
+        "domain": [
+          "static.flux-telemetry.com",
+          "america250.holiday",
+          "theowo.club",
+          "a.plerdy.com",
+          "edge-ord.clouds-stacks.com",
+          "ads-it-assets.com",
+          "cdn.adv-static.com",
+          "wpvortex-mod.com",
+          "assets-int.com",
+          "ad.starx-net.com",
+          "adsprism-stat.com"
+        ],
+        "url": [
+          "https://static.flux-telemetry.com/module/5b4c8fea5cbcee273e8d830f52-temfp.js",
+          "https://a.plerdy.com/public/js/click/main.js",
+          "https://edge-ord.clouds-stacks.com/module/5b4c8fea5cbcee273e8d830f52-temfp.js",
+          "https://ad.starx-net.com/api/",
+          "https://ad.starx-net.com:8881/telemetry/v12"
+        ]
+      },
       "links": [
         "https://www.sekoia.com/blog/poisoned-source-apt29-watering-holes-targets-mobile-devices-with-n-day-exploits",
         "https://github.com/AntonioCiolino/DarkSword-Analysis"
@@ -150,6 +207,30 @@
       "languages": [
         "javascript"
       ],
+      "iocs": {
+        "ipv4": [
+          "112.121.185.218",
+          "156.240.109.26",
+          "49.158.237.136",
+          "202.160.76.153",
+          "202.160.76.154",
+          "202.160.76.155",
+          "202.160.76.156",
+          "202.160.76.157",
+          "202.160.76.174"
+        ],
+        "domain": [
+          "vps.xs1.ccwu.cc",
+          "xss.xs1.ccwu.cc",
+          "c.xs1.ccwu.cc",
+          "attacker-collector.com",
+          "boss.jytian.cc.cd",
+          "gdp.gasjy.kdns.fr",
+          "gds.gasjy.kdns.fr",
+          "888.bossjy.kdns.fr",
+          "ssh.gputw.ai"
+        ]
+      },
       "links": [
         "https://www.acronis.com/en/tru/posts/bossai-inside-the-ai-attack-mesh-that-targeted-taiwans-emergency-services/"
       ]
@@ -197,6 +278,19 @@
         "powershell",
         "javascript"
       ],
+      "iocs": {
+        "ipv4": [
+          "104.21.16.229",
+          "172.67.216.190",
+          "45.146.81.142"
+        ],
+        "domain": [
+          "crp2026.online",
+          "vpfinal142.myvnc.com",
+          "vpfinal138.myvnc.com",
+          "vpfinal146.myvnc.com"
+        ]
+      },
       "links": [
         "https://zenox.ai/en/last-heist-new-apt-c-36-infection-wave-in-latam/"
       ]
@@ -269,6 +363,35 @@
         "rust",
         "javascript"
       ],
+      "iocs": {
+        "ipv4": [
+          "209.112.91.74",
+          "173.231.39.244",
+          "123.60.2.245",
+          "14.47.118.194",
+          "66.42.94.67",
+          "47.123.2.193",
+          "159.89.18.165",
+          "190.114.197.2",
+          "165.22.159.246",
+          "70.32.112.20",
+          "46.39.24.98"
+        ],
+        "domain": [
+          "pentagi.senhai.store",
+          "snap.senhai.store",
+          "tavily.astrdark.cyou",
+          "agent.xxtt.me",
+          "sajuai.xyz",
+          "web.712019.xyz",
+          "mail2.bfvdoor.com",
+          "new74.osxwrong.us.com",
+          "vvbin.me"
+        ],
+        "url": [
+          "http://209.112.91.74:9997"
+        ]
+      },
       "links": [
         "https://socradar.io/blog/keyhunter-operation-harvard-alumni-stanford-llm-key-data/"
       ]
@@ -310,6 +433,15 @@
       "languages": [
         "python"
       ],
+      "iocs": {
+        "ipv4": [
+          "39.96.205.8"
+        ],
+        "url": [
+          "http://39.96.205.8:9001/",
+          "http://39.96.205.8:8081/"
+        ]
+      },
       "links": [
         "https://huntback.io/blog/artex-fork-learns-to-spot-honeypots",
         "https://github.com/Autumn-27/ARTEX"
@@ -430,6 +562,17 @@
       "languages": [
         "javascript"
       ],
+      "iocs": {
+        "sha1": [
+          "1eef0849eda15d87f64e51c73c8442cf3c8bcef3"
+        ],
+        "ipv4": [
+          "103.179.143.219",
+          "166.88.134.75",
+          "23.27.13.72",
+          "95.135.181.151"
+        ]
+      },
       "links": [
         "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/"
       ]
@@ -488,6 +631,32 @@
         "java",
         "python"
       ],
+      "iocs": {
+        "sha256": [
+          "c7a884afcd7f91408921890d9617bef6bfac3dae992bc25bb9c48c0395a60842"
+        ],
+        "ipv4": [
+          "38.244.50.120",
+          "23.248.226.250",
+          "154.201.79.246",
+          "130.94.31.86",
+          "156.251.11.39",
+          "202.95.14.60",
+          "118.107.47.11",
+          "212.129.221.26",
+          "149.88.85.20"
+        ],
+        "domain": [
+          "direct.xcai.pro",
+          "ldaprefserver.java",
+          "ldap2.java",
+          "u6ud2s.dnslog.cn",
+          "fofoapi.com"
+        ],
+        "url": [
+          "http://130.94.31.86:18888"
+        ]
+      },
       "links": [
         "https://hunt.io/blog/artex-south-korea-bank-infrastructure"
       ]
@@ -513,6 +682,18 @@
         "javascript",
         "lua"
       ],
+      "iocs": {
+        "sha256": [
+          "4bfaf98a6b863fa79554d9eeeb18870c3f92d552d62f4bd35a72d19ea68526af"
+        ],
+        "md5": [
+          "d6c049a09ba8ac3085c51ee9df24a4e5"
+        ],
+        "domain": [
+          "insightjs.com",
+          "insightjs.org"
+        ]
+      },
       "links": [
         "https://aviatrix.ai/threat-research-center/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
         "https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5"

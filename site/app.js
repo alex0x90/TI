@@ -145,6 +145,29 @@ function facet(label, items, mapper) {
   return el("div", { class: "facet" }, el("span", { class: "facet-label" }, label), chips(clean, mapper));
 }
 
+const IOC_LABELS = { sha256: "SHA256", sha1: "SHA1", md5: "MD5", ipv4: "IP", domain: "Domains", url: "URLs", email: "Emails" };
+
+function iocBlock(iocs) {
+  if (!iocs) return null;
+  const groups = Object.entries(iocs).filter(([, v]) => v && v.length);
+  if (!groups.length) return null;
+  const total = groups.reduce((n, [, v]) => n + v.length, 0);
+  const all = groups.map(([k, v]) => `# ${IOC_LABELS[k] || k}\n${v.join("\n")}`).join("\n\n");
+  const copy = el("button", { class: "copy-btn", type: "button" }, "Copy all");
+  copy.addEventListener("click", async (ev) => {
+    ev.preventDefault();
+    try { await navigator.clipboard.writeText(all); copy.textContent = "Copied"; }
+    catch { copy.textContent = "Copy failed"; }
+    setTimeout(() => { copy.textContent = "Copy all"; }, 1500);
+  });
+  return el("details", { class: "iocs" },
+    el("summary", {}, `IOCs (${total})`, copy),
+    groups.map(([k, v]) => el("div", { class: "ioc-group" },
+      el("div", { class: "ioc-label" }, `${IOC_LABELS[k] || k} · ${v.length}`),
+      el("pre", {}, v.join("\n")))),
+    el("p", { class: "ioc-note" }, "Extracted automatically from the article. Verify before blocking."));
+}
+
 function card(r) {
   const [src, ...extra] = r.links || [];
   const ttp = r.ttp_tactics !== undefined ? `ATT&CK: ${r.ttp_tactics} tactics, ${r.ttp_techniques} techniques` : null;
@@ -162,13 +185,15 @@ function card(r) {
       facet("Software", r.software, (s) => chip(s)),
       facet("Languages", r.languages, (s) => chip(s)),
       facet("Crypto", [...(r.crypto || []), ...(r.wallets || [])], (s) => chip(s))),
+    iocBlock(r.iocs),
     el("div", { class: "card-foot" },
       ttp ? el("span", {}, ttp) : null,
       extra.length ? el("details", { class: "links" },
         el("summary", {}, `${extra.length} related link${extra.length === 1 ? "" : "s"}`),
         el("ul", {}, extra.map((u) => el("li", {}, el("a", { href: u, target: "_blank", rel: "noopener" }, u))))) : null));
   node.dataset.search = [r.title, r.summary, ...(r.threats || []).map((t) => threat(t).label), ...(r.threats || []),
-    ...(r.geo || []), ...(r.software || []), ...(r.languages || []), host(src)].join(" ").toLowerCase();
+    ...(r.geo || []), ...(r.software || []), ...(r.languages || []), host(src),
+    ...Object.values(r.iocs || {}).flat()].join(" ").toLowerCase();
   return node;
 }
 
