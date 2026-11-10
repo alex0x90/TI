@@ -145,6 +145,18 @@ function facet(label, items, mapper) {
   return el("div", { class: "facet" }, el("span", { class: "facet-label" }, label), chips(clean, mapper));
 }
 
+// ATT&CK techniques found in the article: "T1574.002 DLL Side-Loading", full name and tactics on hover.
+function ttpLabel(t) { return `${t.id} ${t.name.split(": ").pop()}`; }
+
+function ttpFacet(ttps) {
+  if (!ttps || !ttps.length) return null;
+  const byLabel = new Map(ttps.map((t) => [ttpLabel(t), t]));
+  return facet("TTPs", [...byLabel.keys()], (label) => {
+    const t = byLabel.get(label);
+    return chip(label, "technique", `${t.name}\nTactics: ${t.tactics.join(", ") || "n/a"}`);
+  });
+}
+
 const IOC_LABELS = { sha256: "SHA256", sha1: "SHA1", md5: "MD5", ipv4: "IP", domain: "Domains", url: "URLs", email: "Emails" };
 
 function iocBlock(iocs) {
@@ -184,7 +196,8 @@ function card(r) {
       facet("Geo", r.geo, (g) => chip(g)),
       facet("Software", r.software, (s) => chip(s)),
       facet("Languages", r.languages, (s) => chip(s)),
-      facet("Crypto", [...(r.crypto || []), ...(r.wallets || [])], (s) => chip(s))),
+      facet("Crypto", [...(r.crypto || []), ...(r.wallets || [])], (s) => chip(s)),
+      ttpFacet(r.ttps)),
     iocBlock(r.iocs),
     el("div", { class: "card-foot" },
       ttp ? el("span", {}, ttp) : null,
@@ -193,6 +206,7 @@ function card(r) {
         el("ul", {}, extra.map((u) => el("li", {}, el("a", { href: u, target: "_blank", rel: "noopener" }, u))))) : null));
   node.dataset.search = [r.title, r.summary, ...(r.threats || []).map((t) => threat(t).label), ...(r.threats || []),
     ...(r.geo || []), ...(r.software || []), ...(r.languages || []), host(src),
+    ...(r.ttps || []).map((t) => `${t.id} ${t.name} ${t.tactics.join(" ")}`),
     ...Object.values(r.iocs || {}).flat()].join(" ").toLowerCase();
   return node;
 }
