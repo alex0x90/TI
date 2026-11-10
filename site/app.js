@@ -111,7 +111,7 @@ function shiftMonth(delta) {
 /* ---------- day view ---------- */
 async function loadDay(date) {
   if (state.cache.has(date)) return state.cache.get(date);
-  const res = await fetch(`data/days/${date}.json`);
+  const res = await fetch(`data/days/${date}.json?v=${encodeURIComponent(state.manifest.generated_at)}`);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data = (await res.json()).map((e) => e.parsed);
   data.sort((a, b) => (ORDER[a.completeness] ?? 3) - (ORDER[b.completeness] ?? 3));
@@ -261,7 +261,7 @@ async function selectDay(date) {
 async function init() {
   renderWeekdays();
   try {
-    const res = await fetch("data/manifest.json");
+    const res = await fetch("data/manifest.json", { cache: "no-cache" });   // always check for a newer build
     state.manifest = await res.json();
   } catch {
     $("day-title").textContent = "Could not load the data.";

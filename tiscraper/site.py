@@ -7,6 +7,7 @@ Output layout:
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 from datetime import datetime, timezone
@@ -41,5 +42,15 @@ def build_site(repo_dir: Path, out_dir: Path) -> dict:
         "days": days,
     }
     (out_dir / "data" / "manifest.json").write_text(json.dumps(manifest, separators=(",", ":")), encoding="utf-8")
+
+    # Cache busting: GitHub Pages lets browsers cache files for 10 minutes, so a new
+    # deploy could show old JS/CSS. Versioned URLs force the new files.
+    version = hashlib.sha1(json.dumps(manifest["days"], sort_keys=True).encode()
+                           + (src / "app.js").read_bytes() + (src / "style.css").read_bytes()).hexdigest()[:10]
+    index = out_dir / "index.html"
+    html = index.read_text(encoding="utf-8")
+    html = html.replace('href="style.css"', f'href="style.css?v={version}"').replace(
+        'src="app.js"', f'src="app.js?v={version}"')
+    index.write_text(html, encoding="utf-8")
     (out_dir / ".nojekyll").write_text("")
     return manifest

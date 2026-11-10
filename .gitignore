@@ -9,3 +9,16 @@ logs/
 .scraper/queue.json
 .scraper/*.tmp
 _site/
+
+# The scraper lives in a separate private repo. Never publish its code, state or secrets here.
+.env*
+.scraper/
+tests/
+deploy/
+docs/
+openspec/
+pyproject.toml
+.github/workflows/scrape.yml
+tiscraper/*
+!tiscraper/__init__.py
+!tiscraper/site.py
