@@ -1,0 +1,21 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-03",
+      "title": "knock-outd: an undetected port-knocking backdoor in the wild",
+      "summary": "knock-outd is a Linux x86-64 port-knocking launcher, found on VirusTotal with zero detections, that binds to a network interface in promiscuous mode and waits for a specific packet sequence. After a qualifying sequence, it runs /sbin/xfs_timesupdate with the triggering packet's source IP and a port selected from a table of common service ports, such as 443, 80, and 53. The sample requires root and disguises its process name, and it runs a watchdog that restarts its packet-monitoring worker every two hours. The second-stage payload could not be recovered, so its function remains unconfirmed, though the author suspects a reverse shell. Defenders can use the author's YARA rule and the knock-outd filter and helper strings to hunt for it, since the author notes that Linux often receives less scrutiny than Windows.",
+      "completeness": "Low",
+      "threats": [
+        "Knock-outd",
+        "Cd00r"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://www.virlabs.ai/blog/knock-outd/",
+        "https://github.com/aaaaaaaannn/cd00r.c/blob/master/cd00r.c"
+      ]
+    }
+  }
+]

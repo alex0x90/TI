@@ -1,0 +1,52 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-15",
+      "title": "Global Exploitation of CVE-2026–59310 by Suspected Chinese-Nexus APT & Related CVE-2026–59309 Activity",
+      "summary": "Researchers at QUIRSO tracked a global campaign exploiting CVE-2026-59310, a critical VMware vCenter Syslog Server directory-traversal flaw, with 361 victim IPs across 47 countries and none in mainland China. Exploitation began five days after Broadcom's advisory, with attackers gaining root code execution through malformed syslog entries that placed cron jobs. The actor used cron-driven downloaders, reverse_ssh for remote access, and webshells disguised as VMware services to create rogue SSO administrator accounts. The intrusion ended with Babuk-derived ransomware deployed against ESXi hosts, encrypting VMDK files. QUIRSO assesses with moderate confidence a Chinese-speaking operator in a UTC+8 environment but has not linked it to a named group. A separate CVE-2026-59309 authentication-bypass activity is tracked as possibly a different actor.",
+      "completeness": "High",
+      "threats": [
+        "Babuk"
+      ],
+      "geo": [
+        "Chinese",
+        "Iran",
+        "France",
+        "China",
+        "United states",
+        "Turkey",
+        "Germany"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "vSphere",
+        "curl",
+        "sudo",
+        "Linux",
+        "systemd",
+        "esxcli"
+      ],
+      "algorithms": [
+        "gzip",
+        "zip",
+        "base64",
+        "sha1"
+      ],
+      "functions": [
+        "GetMachineName",
+        "GetMachinePassword",
+        "GetDomainName"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://medium.com/@quirso_de/global-exploitation-of-cve-2026-59310-by-suspected-chinese-nexus-apt-related-cve-2026-59309-443a79e1466d",
+        "https://github.com/QUIRSO/QTR/tree/main/2026-08/Global%20Exploitation%20of%20CVE-2026-59310%20by%20Suspected%20Chinese-Nexus%20APT%20and%20Related%20CVE-2026-59309%20Activity",
+        "https://github.com/NHAS/reverse\\_ssh"
+      ]
+    }
+  }
+]

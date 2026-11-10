@@ -1,0 +1,61 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-20",
+      "title": "North Korea’s Hangro Revisited",
+      "summary": "North Korea's Hangro is a VPN and mail product whose 2024 certificate hierarchy is broken, with no signature in the chain verifying, including the self-signed root. A newer RSA hierarchy appeared in July 2026 on port 6006 in Pyongyang and Russia, and its certificate lists the deployment's addresses, including one internal address that should not be public. The author links Hangro's SoftEther lineage to a public driver database and ties the registry contact to six Chinese network blocks, all with a Silibank email address. The Russian KPOST networks date back to 2013 and are used by the same deployment. The report says the certificates appear on no hosts outside those the operators themselves listed. Defenders should note that the author treats the Chinese registry link as evidence of infrastructure, not of traffic or documents moving across it.",
+      "completeness": "Medium",
+      "threats": [
+        "Fog_ransomware",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Korea",
+        "North korea",
+        "Northkorea",
+        "North korean",
+        "Dprk",
+        "Korean",
+        "Chinese",
+        "North koreas",
+        "China",
+        "Japanese",
+        "Russian",
+        "Deutsche",
+        "North koreans"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "angro Re",
+        "Hangro",
+        "HangroVPN",
+        "SoftEthers",
+        "gro.net",
+        "Hangros",
+        "OpenSSH",
+        "MySQL",
+        "HAProxys",
+        "JBoss",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "ecdsa",
+        "base64",
+        "sha1",
+        "sha384",
+        "curve25519",
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/north-koreas-hangro-revisited/",
+        "https://github.com/SoftEtherVPN/SoftEtherVPN/blob/master/src/bin/hamcore/DriverPackages/Neo6\\_Win8/x86/Neo6\\_x86\\_VPN.inf",
+        "https://github.com/gost-engine/engine"
+      ]
+    }
+  }
+]

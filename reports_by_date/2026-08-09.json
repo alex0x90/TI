@@ -1,0 +1,38 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-09",
+      "title": "What Is gh0st RAT? How It Works, Spreads, and Steals Data",
+      "summary": "The report covers gh0st RAT, a covert remote access trojan used for data theft and surveillance. Its toolset includes a client, a persistent server DLL, a dropper, and a kernel driver that resets the SSDT. Attackers spread it through malicious attachments in spam and social media, fake YouTube bot videos, and Discord. Targets are mostly service providers, streamers, and financial advisers in North America and Europe. The impact section actually describes RedLine, which steals browser credentials and card data.",
+      "completeness": "Medium",
+      "threats": [
+        "Gh0st_rat",
+        "Redline_stealer",
+        "Supply_chain_technique",
+        "Fastflux_technique",
+        "Dll_sideloading_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "America"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 40,
+      "software": [
+        "Twitter",
+        "Instagram",
+        "Discord",
+        "Windows service"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/what-is-ghost-rat-how-it-works-spreads-and-steals-data/"
+      ]
+    }
+  }
+]

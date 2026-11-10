@@ -1,0 +1,388 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "What Is the BabaDeda Loader? Analysis of a New ClickFix Malware Campaign",
+      "summary": "The BabaDeda loader family, previously documented by Morphisec, has returned in a more capable form, with activity observed in April 2026 against education and financial organizations. The attack begins with ClickFix, a social engineering lure that tricks victims into running attacker-supplied PowerShell commands. The chain then uses hidden PowerShell, in-memory shellcode, DLL sideloading, and payloads hidden in external storage files to deliver information stealers and remote access trojans. One branch delivers a .NET backdoor and stealer, while another uses a disguised package containing about 30 files. Downstream families include DanaBot and SectopRAT. Morphisec's takeaway is that evasion through file-based and signature-based hiding defeats detection, so defenders should prioritize preventing execution.",
+      "completeness": "Medium",
+      "threats": [
+        "Babadeda",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Donut",
+        "Pe2shc",
+        "Danabot",
+        "Sectop_rat"
+      ],
+      "geo": [
+        "Russian",
+        "Belarusian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/what-is-the-babadeda-loader-analysis-of-a-new-clickfix-malware-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "Cato CTRL™ Threat Research: Operation Poisson – Analyzing a Cybercriminal’s Entire Operation",
+      "completeness": "High",
+      "threats": [
+        "Tailscale_tool",
+        "Havoc",
+        "Rustdesk_tool",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Berlin",
+        "French",
+        "France"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenSSH",
+        "Linux"
+      ],
+      "algorithms": [
+        "aes",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-operation-poisson-analyzing-a-cybercriminals-entire-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "Inside Amos Stealer: How This Threat Targets macOS Credentials and Keychains",
+      "summary": "Amos Stealer is an active info-stealer family built to target macOS users and steal credentials, browser data, cryptocurrency wallet configurations, and other sensitive files. Initial access is often gained through a silent curl command that downloads and runs a shell script or AppleScript payload from attacker infrastructure. The malware copies browser artifacts from Chrome and Edge, the macOS Keychain database, and developer files such as .ssh and .kube directories. It compresses the stolen data into an archive in /tmp, uploads it in 10 MB chunks to a command-and-control server, and then deletes its artifacts. Defenders should enforce Gatekeeper and XProtect, restrict unsigned binaries and least privilege, and hunt for suspicious curl-to-interpreter behavior.",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "OpenSSL",
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/inside-amos-stealer-how-this-threat-targets-macos-credentials-and-keychains/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "GlassWASM: WebAssembly Malware Found in Trojanized Open VSX Extensions",
+      "summary": "GlassWASM is a WebAssembly-based malware family hidden in trojanized Open VSX extensions, impersonating legitimate VS Code Marketplace extensions ExarGD.vsblack and noellee-doc.flint-debug under a single newly created account. The extensions run a TinyGo-compiled WebAssembly payload on activation, with all strings encrypted using ChaCha20 and decrypted only at runtime. The payload polls a Solana wallet for transaction memos, which supply a rotating host used to download and execute platform-specific second-stage scripts. Researchers attribute the campaign with medium confidence to the GlassWorm developer, citing shared dead-drop tradecraft and Open VSX delivery. Defenders should detect Node.js processes spawning shells or curl/PowerShell download-and-execute chains, flag npm packages shipping WebAssembly with JavaScript loaders, and remove the Open VSX copies of these extensions.",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Dead_drop_technique",
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Open VSX",
+        "Visual Studio Code",
+        "Node.js",
+        "pen VSX ex",
+        "url -f",
+        "inux",
+        "curl",
+        "linux",
+        "macOS",
+        "Unix",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit",
+        "md5",
+        "sha1",
+        "chacha20"
+      ],
+      "functions": [
+        "JS",
+        "getSignaturesForAddress",
+        "getTransaction",
+        "RPC"
+      ],
+      "languages": [
+        "typescript",
+        "javascript",
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/glasswasm-malware-open-vsx-extensions"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "Rokarolla : Android Banker with Complete Device Takeover Capabilities",
+      "summary": "Rokarolla is a newly discovered Android banking trojan, named after its C2 infrastructure, that is distributed through malicious websites where it masquerades as apps such as TikTok or Google Chrome. It uses a dropper that impersonates Google Play Protect to install a second-stage payload, then abuses Accessibility Services and requests SMS and notification permissions. The malware targets 217 banking and cryptocurrency applications by deploying fake HTML login overlays and uses 137 commands to harvest lock screen credentials, keystrokes, SMS, and contacts. It intercepts calls, overwrites clipboard data to substitute cryptocurrency wallet addresses, and disables Google Play Protect while muting audio and hiding its icon. Defenders should watch for Accessibility Service abuse and sideloaded secondary payloads, which Zimperium's detection engine flags.",
+      "completeness": "Medium",
+      "threats": [
+        "Rokarolla",
+        "Jsonpacker_tool"
+      ],
+      "geo": [
+        "Asia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 18,
+      "software": [
+        "Android",
+        "TikTok",
+        "Google Chrome",
+        "Google Play",
+        "Whatsapp"
+      ],
+      "links": [
+        "https://zimperium.com/blog/rokarolla-android-banker-with-complete-device-takeover-capabilities",
+        "https://github.com/Zimperium/IOC/tree/master/2026-06-Rokarolla/commands.md",
+        "https://github.com/Zimperium/IOC/tree/master/2026-06-Rokarolla/apks.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "Hidden in Teams: DragonForce Attackers Weaponize Microsoft Teams Relays to Stay Hidden",
+      "summary": "DragonForce ransomware attackers used Backdoor.Turn, a custom Go-based remote access backdoor, to hide command-and-control traffic inside Microsoft Teams TURN relay infrastructure. Symantec describes this as the first known malware to abuse Teams TURN relays this way, so defenders would have seen only outbound connections to legitimate Microsoft Teams servers. The attackers, who targeted a major U.S. services firm, were on the victim network for one to two months after gaining access, possibly through an SQL or MSSQL server exploit or a purchased access broker. They used bring-your-own-vulnerable-driver techniques, including a novel Huawei driver exploit called Havoc Process Terminator, to disable security processes. The report notes the Huawei driver's vulnerability was documented only after this attack, showing advanced expertise. Defenders should not rely on Teams traffic appearing benign and should monitor for abnormal Teams relay behavior.",
+      "completeness": "High",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Byovd_technique",
+        "Dll_hijacking_technique",
+        "Abyss_locker",
+        "Abyssworker",
+        "Av-killer",
+        "Netscan_tool"
+      ],
+      "geo": [
+        "Switzerland"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "MSSQL",
+        "VirtualBox"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/dragonforce-msteams-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "Dozens of malicious wallpapers found on Steam Workshop: gamers’ accounts at risk",
+      "summary": "Malicious Wallpaper Engine application wallpapers distributed through Steam Workshop have been spreading since late 2025, primarily targeting gamers in China and Russia to hijack their Steam accounts. The wallpapers are standalone programs that can run arbitrary code, and attackers hide malware inside them, sometimes behind password-protected archives. One sample dropped a DarkKomet backdoor and a modified AggregatorHost.dll that harvested Steam credentials and hijacked live sessions, which were then used to upload more malicious wallpapers. Researchers suspect multiple independent groups are involved, delivering a wide range of malware including infostealers, ransomware, and crypto miners. Each malicious wallpaper had been downloaded thousands to tens of thousands of times. Defenders should scan wallpapers with antivirus before applying them, since Steam may not catch everything.",
+      "completeness": "Medium",
+      "threats": [
+        "Darkcomet_rat",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Renengine"
+      ],
+      "geo": [
+        "Russia",
+        "Germany",
+        "Vietnam",
+        "Hong kong",
+        "Singapore",
+        "India",
+        "China",
+        "Canada"
+      ],
+      "software": [
+        "Steam",
+        "Android"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/dozens-of-malicious-wallpapers-found-on-steam-workshop/120186/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "Unveiling ErrTraffic: inside a growing ClickFix malware distribution framework",
+      "summary": "ErrTraffic is a JavaScript framework sold as a Malware-as-a-Service by the threat actor LenAI on the Exploit.IN forum and Telegram, injected into compromised WordPress sites to display ClickFix lures and deliver malware. It uses EtherHiding, storing its command and control domains on the Polygon blockchain, which lets operators rotate infrastructure without redeploying code. Sekoia identified two clusters: the \"Analytics\" cluster, which distributes Vidar, and the \"Beer\" cluster, which distributes several infostealers, RATs and loaders through separate smart contracts per affiliate. Campaigns include WordPress compromises using stolen administrator credentials and backdoors, and malvertising-driven fake AI platform sites impersonating Google Antigravity and ChatGPT that deliver DanaBot and HijackLoader. Defenders can detect infections by watching for blockchain queries followed by connections to rare TLDs such as .beer and an immediate PowerShell launch.",
+      "completeness": "High",
+      "threats": [
+        "Errtraffic",
+        "Clickfix_technique",
+        "Dead_drop_technique",
+        "Clearfake",
+        "Etherhiding_technique",
+        "Traffer_technique",
+        "Vidar_stealer",
+        "Stealc",
+        "Remus",
+        "Smokeloader",
+        "Danabot",
+        "Residential_proxy_technique",
+        "Wpscan_tool",
+        "Nikto_tool",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Blackdragon",
+        "Hijackloader",
+        "Iclickfix_tool"
+      ],
+      "geo": [
+        "United states",
+        "Canada",
+        "Australia",
+        "Indonesia",
+        "Asia",
+        "Russian",
+        "Indonesian",
+        "American"
+      ],
+      "software": [
+        "WordPress",
+        "LenAI",
+        "Telegram",
+        "Cloudflare Turnstile",
+        "macOS",
+        "Android",
+        "ChatGPT",
+        "Chrome",
+        "ordPress ho",
+        "Nessus",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor",
+        "rc4",
+        "hmac",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "hexa",
+        "mail"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.sekoia.io/unveiling-errtraffic-inside-a-growing-clickfix-malware-distribution-framework/",
+        "https://github.com/SEKOIA-IO/Community/tree/main/IOCs/errtraffic"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "Threat Intelligence Report: Russia, Router, DNS, and Messaging-Layer Collection Operations",
+      "summary": "Russia's GRU-linked actors, tracked as APT28/Fancy Bear (Unit 26165), are pursuing communications-layer collection rather than disruption. They compromise vulnerable SOHO routers, change DNS and DHCP settings, and route victims through Russian-controlled resolvers to enable adversary-in-the-middle attacks and credential theft without endpoint malware. Separately, they phish users of Signal, WhatsApp, Telegram, and Microsoft 365 using linked-device abuse, malicious QR codes, and OAuth prompts to read conversations and map contacts. Targets include government, defense, critical infrastructure, journalists, NGOs, and Ukraine-related organizations. The report's takeaway for defenders is to treat home routers, remote-worker networks, messaging linked devices, and OAuth consent flows as part of the enterprise threat model.",
+      "completeness": "Low",
+      "threats": [
+        "Dns_hijacking_technique",
+        "Aitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russia",
+        "Russian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 30,
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Outlook"
+      ],
+      "links": [
+        "https://dti.domaintools.com/research/threat-intelligence-report-russia-router-dns-and-messaging-layer-collection-operations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-16",
+      "title": "From a VHDX File to a Remcos RAT",
+      "summary": "A malicious ZIP archive reported to the ISC contained a VHDX disk image that auto-mounts on modern Windows and exposes a JavaScript file, which launches a multi-stage infection chain. The JavaScript runs PowerShell through WMI (Win32_Process.Create), which avoids the parent-child process relationships that many EDR and detection rules monitor. The PowerShell decoder rebuilds obfuscated strings and decrypts Base64 data with a fixed XOR key, then downloads a next-stage file with a payload appended to its end. A reflective .NET loader fetches and injects Remcos RAT into backgroundTaskHost.exe, which communicates with a C2 server, and persistence is set through a Run key. The report notes that most files in this chain were undetected by most antivirus products, and that the disk image container technique is less common today but still effective at bypassing first-line controls.",
+      "completeness": "Low",
+      "threats": [
+        "Remcos_rat"
+      ],
+      "geo": [
+        "German"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "ConnectServer"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://dshield.org/diary/From+a+VHDX+File+to+a+Remcos+RAT/33080/"
+      ]
+    }
+  }
+]

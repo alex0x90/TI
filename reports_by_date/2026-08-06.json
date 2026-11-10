@@ -1,0 +1,444 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "2026-07-30-Remus-Info-Stealer-Uses-Blockchain-Anchored-C2.txt",
+      "completeness": "Low",
+      "links": [
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-07-30-Remus-Info-Stealer-Uses-Blockchain-Anchored-C2.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "Token Jacking: Cybercriminals Could Be Stealing Your AI Resources",
+      "summary": "Token jacking is the theft of API keys, called tokens, that developers use to access popular AI platforms, and Unit 42 reports a growing number of these cases. Attackers sell stolen tokens through \"transfer stations,\" gray-market proxy services often built on open-source platforms like new-api or one-api that resell cheap AI access. Stolen tokens are obtained through infostealers, phishing, exposed file shares or code repositories, and self-propagating malicious npm packages such as Shai-Hulud and Miasma. Victims can face huge bills, with one case reaching nearly a million dollars in charges before containment. Defenders should set spending limits with anomaly alerts, move from long-term keys to short-term tokens, use an AI gateway with machine identity, and tightly control development pipelines.",
+      "completeness": "Low",
+      "threats": [
+        "Token_jacking_technique",
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Miasma"
+      ],
+      "geo": [
+        "Middle east",
+        "India",
+        "Asia",
+        "South korea",
+        "Australia",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "gzip"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/ai-token-jacking/",
+        "https://github.com/songquanpeng/one-api/blob/main/README.en.md",
+        "https://github.com/QuantumNous/new-api/blob/main/README.en.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "Fake Zoom installer uses .NET downloader to deliver Overlord RAT on macOS",
+      "summary": "Jamf Threat Labs identified a macOS campaign that uses a fake Zoom installer to deliver a configured build of Overlord, an open-source remote access framework. The initial downloader is a self-contained .NET 10 application, an uncommon choice for macOS malware, and its cross-platform nature means the same codebase can also target Windows. The downloader fetches a platform-specific Overlord payload while also downloading the real Zoom installer to keep the lure convincing. The Overlord agent connects to hardcoded command-and-control infrastructure over WebSockets with TLS certificate validation disabled, and it offers broad capabilities such as keylogging, screen and webcam capture, and remote command execution. Defenders should note that the report shows .NET joining Go and Rust as cross-platform languages used against macOS, and Jamf recommends blocking and reporting such threats through threat prevention and web protection controls.",
+      "completeness": "High",
+      "threats": [
+        "Overlord_tool",
+        "Garble_tool",
+        "Flexibleferret"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "macOS",
+        "NET framework",
+        "WebRTC"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "CreateNoWindow"
+      ],
+      "languages": [
+        "rust",
+        "perl",
+        "powershell",
+        "python",
+        "ruby"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/fake-zoom-installer-delivers-overlord-rat-macos/",
+        "https://github.com/vxaboveground/Overlord",
+        "https://github.com/mandiant/GoReSym",
+        "https://github.com/icsharpcode/ILSpy"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "UNC6671 Rebrands: Multi-Brand Vishing Extortion Targets Financial Services and Enterprise Cloud Environments",
+      "summary": "UNC6671 is a threat actor that continues data theft extortion under multiple brands, including BlackFile, Redact, Pink, Helix, and Falcon, despite the reported retirement of BlackFile in May 2026. The group uses IT helpdesk vishing, often targeting personal mobile devices, to lure victims to AiTM credential harvesting panels that capture passwords and MFA tokens. It then runs automated scripts to exfiltrate data from cloud environments such as Microsoft 365 and Okta. Targeting shifted from broad enterprise verticals in April and May 2026 to financial and legal sectors, including private equity firms, law firms, and rating agencies, by July 2026. GTIG assesses that a common group is likely behind the brands, while noting splintering or outsourced extortion as alternatives. Defenders should prioritize phishing-resistant MFA, session controls, and behavioral auditing of SaaS activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Credential_harvesting_technique",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "United states",
+        "Russia",
+        "United kingdom",
+        "Switzerland",
+        "Poland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Okta",
+        "Windows Hello",
+        "Microsoft Defender",
+        "Microsoft Entra",
+        "Outlook",
+        "Ubuntu",
+        "Linux",
+        "okta.android"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/unc6671-targets-financial-services-and-enterprise-cloud-environments/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "ChainDrop: Inside a Self-Propagating npm Worm",
+      "summary": "ChainDrop is a self-propagating npm worm, a Shai-Hulud-lineage variant, that infected over 400 packages, including keyv and cacheable-request. Once installed, it harvests cloud credentials, npm and GitHub tokens, SSH keys and other developer secrets, and it can scrape OIDC tokens from GitHub Actions runner memory. It republishes infected packages using stolen npm tokens while preserving their legitimate functionality, and it persists through VS Code and Claude Code configuration files. Its command-and-control domain is resolved through an Ethereum smart contract, which the operator changed on Aug. 4, 2026 to a new domain without any malware update. Defenders should identify affected package versions, rotate exposed credentials, remove persistence files, and block both domain and GitHub-based exfiltration channels.",
+      "completeness": "High",
+      "threats": [
+        "Chaindrop",
+        "Shai-hulud",
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Japan",
+        "South korea",
+        "Asia",
+        "America",
+        "Africa",
+        "India",
+        "Australia",
+        "Russian",
+        "Middle east"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 2,
+      "software": [
+        "Claude",
+        "Linux",
+        "Node.js",
+        "Docker",
+        "Helm",
+        "Jenkins",
+        "Kubernetes",
+        "macOS",
+        "Linux systemd",
+        "HashiCorp Vault",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "binance"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "aes-256-gcm",
+        "exhibit",
+        "base64",
+        "gzip",
+        "sha512",
+        "sha256"
+      ],
+      "functions": [
+        "setStrings"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/chaindrop-npm-worm-analysis/",
+        "https://github.com/PaloAltoNetworks/Unit42-Threat-Intelligence-Article-Information/blob/main/List-of-packages-affected-by-the-ChainDrop-worm.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "Unmasking Signed PUA Installers: Campaign Breakdown",
+      "summary": "A CyberProof MDR investigation examined a browser-downloaded installer disguised as a free utility, delivered through a landing page and signed with an EV code-signing certificate. The installer profiles the host and queries operator infrastructure to dynamically select a second-stage payload, without exploiting any software vulnerability. In this incident, EDR classified the file as a PUA and quarantined it within seconds of disk write, before execution. Had it run, the installer would likely have set up persistence, altered browser settings, and potentially enabled credential theft or malware propagation. The key takeaway is to enforce real-time download-stage prevention and to investigate low-severity PUA alerts rather than dismissing them.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 5,
+      "links": [
+        "https://www.cyberproof.com/blog/unmasking-signed-pua-installers-campaign-breakdown/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "Payroll Pirates: Strange New Tides in Business Email Compromise",
+      "summary": "Arctic Wolf is tracking a widespread Microsoft 365 phishing campaign that uses voicemail-themed emails and adversary-in-the-middle proxies to capture sessions, even when MFA is enabled. The campaign shares overlap with the \"Payroll Pirates\" cluster Microsoft tracks as Storm-2755 and targets organizations across healthcare, education, manufacturing, government, and other sectors in the United States, Canada, and Europe. Attackers use rotating residential proxies to maintain compromised sessions at roughly eight-hour intervals and enumerate payroll, HR, and finance users via Microsoft Graph. They collect mailbox content tied to financial workflows while avoiding typical BEC behaviors such as MFA changes or inbox rules in most cases. Defenders should correlate identity, session, and mailbox telemetry, look for the unique MailItemsAccessed app and API ID pairing, and adopt phishing-resistant MFA and Conditional Access.",
+      "completeness": "High",
+      "threats": [
+        "Aitm_technique",
+        "Residential_proxy_technique",
+        "Bec_technique",
+        "Sneaky_2fa_tool",
+        "Eviltokens_tool",
+        "Flowerstorm_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Canada",
+        "United states"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Ubuntu",
+        "OpenResty",
+        "Office 365",
+        "Chrome",
+        "Microsoft Outlook",
+        "Firefox",
+        "Outlook",
+        "Microsoft Defender",
+        "Graph API",
+        "Microsoft Entra",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/payroll-pirates-strange-new-tides-in-business-email-compromise/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/strange-new-tides-in-bec/strange-tides-graph-api-recon-query.txt",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/strange-new-tides-in-bec/strange-tides-domains.csv",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/strange-new-tides-in-bec"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "The Odyssey Piracy Downloads Already Deliver Lumma Stealer Malware",
+      "summary": "Fake pirated copies of The Odyssey (2026) are already distributing Lumma Stealer, an information stealer that Bitdefender observed days after the film's launch. Attackers disguise Windows executables as 1080p WEBRip or Blu-ray movie files and give them video-style names, with customized icons resembling VLC Media Player. Once run, Lumma harvests passwords, browser session cookies, payment data, cryptocurrency wallets and remote desktop credentials. The campaign reuses a delivery method seen in 2025 with Mission: Impossible – The Final Reckoning, targeting people searching for leaked movies on torrent sites. Defenders should treat any executable posing as a movie as malware, enable file extension visibility, and rely on behavioral detection for newly compiled samples.",
+      "completeness": "Low",
+      "threats": [
+        "Lumma_stealer"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/hotforsecurity/the-odyssey-piracy-lumma-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "Russian AI Slopsquatting Publishes 700+ Malicious NPM Packages",
+      "summary": "Russian-linked actor (tracked as WEL1DROPPER or Flooding Dropper) published over 700 malicious npm packages in 48 hours, using randomly generated typo-squatted names. The packages execute on require() rather than through install scripts, which lets them bypass lifecycle-script controls. The downloader targets Windows, Linux, and macOS, pulling payloads over HTTPS from Cloudflare Workers hosts and falling back to Base64 chunks in DNS TXT records under wel1.ru. The macOS payload adds anti-analysis checks, a LaunchAgent for persistence, and a further beacon download stage, while the Linux payload is UPX-packed and may be a Sliver implant. Defenders should hunt for TXT lookups to wel1.ru and Workers traffic, check for dropped files and LaunchAgents, and rotate credentials on affected systems.",
+      "completeness": "High",
+      "threats": [
+        "Slopsquatting_technique",
+        "Nul1dropper",
+        "Typosquatting_technique",
+        "Launchagents_tool",
+        "Sliver_c2_tool",
+        "Moika",
+        "Wel1dropper"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "Unix",
+        "sysctl"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "require",
+        "init",
+        "version",
+        "configure",
+        "run"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/russian-ai-slopsquatting-npm-campaign",
+        "https://github.com/OpenSourceMalware/wel1dropper/blob/main/wel1dropper-package-list.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "Remus Hides Its Command Server on Ethereum While Emptying Browser Vaults",
+      "completeness": "Medium",
+      "threats": [
+        "Remus",
+        "Seo_poisoning_technique",
+        "Etherhiding_technique",
+        "Process_injection_technique",
+        "Goflateloader",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Shark_stealer"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ecraft malw"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/remus-hides-its-command-server/",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-07-30-Remus-Info-Stealer-Uses-Blockchain-Anchored-C2.txt?utm\\_campaign=tti\\_remus-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-06",
+      "title": "AI-Killchain in current realities",
+      "summary": "AI-Killchain report says malware increasingly embeds AI models as core architecture, giving it autonomy across kill chain stages. Examples include PromptLock, a ransomware prototype that has a local LLM generate encryption scripts during an attack, and PromptSpy, an Android trojan that uses Gemini to control the infected device's interface. SesameOp uses the OpenAI API as a covert C2 channel, blending with legitimate SaaS traffic, while LAMEHUG uses HuggingFace to generate reconnaissance and data-theft commands. The report also covers Claude Mythos's autonomous exploit capabilities, malicious skill.md files that trick AI agents into leaking tokens, and the rise of AI-generated \"vibeware.\" Defenders are advised to shift toward behavioral analysis, inspect legitimate AI-service traffic, and audit AI-generated code and agent configuration files.",
+      "completeness": "High",
+      "threats": [
+        "Promptlock",
+        "Promptspy",
+        "Sesameop",
+        "Lamehug_tool",
+        "Polymorphism_technique",
+        "Xillenstealer",
+        "Spear-phishing_technique",
+        "Clickfix_technique",
+        "Waveshaper",
+        "Silencelift",
+        "Deepbreath",
+        "Vncspy",
+        "Darkllm_tool",
+        "Wormgpt_tool",
+        "Bec_technique",
+        "Fraudgpt_tool",
+        "Ghostgpt_tool",
+        "Chameleon",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "New york",
+        "North korean"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 4,
+      "software": [
+        "Telegram",
+        "Zoom",
+        "Claude",
+        "Android",
+        "OpenAI",
+        "HuggingFace",
+        "Anthropic",
+        "Roblox",
+        "WireGuard",
+        "were wr",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "base64",
+        "md5",
+        "sha1"
+      ],
+      "functions": [
+        "get_font",
+        "taskArrayPtr",
+        "taskIndex",
+        "taskTypeID",
+        "taskPayloadBuf",
+        "listModels",
+        "performClick",
+        "performLongClick",
+        "performSwipe",
+        "parseGeminiContent",
+        "have more..."
+      ],
+      "languages": [
+        "lua",
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6886/",
+        "https://github.com/vinsontang1/VulTriage",
+        "https://github.com/mattersec-labs/seclens"
+      ]
+    }
+  }
+]

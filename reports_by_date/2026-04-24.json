@@ -1,0 +1,573 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "Ransomware attack on a small company via a large contractor",
+      "summary": "Attackers destroyed the infrastructure of a small sports organization within two weeks by exploiting an old data leak from a large software integration contractor. They gained access through RDP on exposed RDS and 1C servers using the contractor's service account, which had a password that likely was never changed. The intruders then planted a .NET backdoor disguised as a 1C license service, which loaded a second-stage payload that retrieved an encrypted .NET component from a command-and-control server. Before encryption, they disabled endpoint protection and deployed Hardbit v4.2 ransomware across roughly ten virtual systems, including the domain controller and hypervisor. The researchers named the group NGC8211 and advised against paying ransoms, verifying backups for malware, requiring VPN with two-factor authentication, avoiding the DONT_EXPIRE_PASSWORD flag, and segmenting networks.",
+      "completeness": "Low",
+      "threats": [
+        "Hardbit"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "aes",
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6557/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "Operation TrustTrap: Anatomy of a Large-Scale Deceptive Domain Spoofing Campaign",
+      "summary": "Cyble Research and Intelligence Labs identified Operation TrustTrap, a campaign of over 16,800 malicious domains active since early 2026 that embed government labels as subdomains to fake trust. The domains impersonate citizen-facing government services, mainly DMV, toll, and vehicle registration portals across US states, with targeting also reported in India, Vietnam, and the UK. Victims are lured via SMS or email to phishing portals that harvest credentials and payment card data, and the operation rotates domains quickly after short active windows. Cyble also identified a cluster with TTPs consistent with APT36, a Pakistan-nexus actor that targets Indian government entities. For defenders, the key takeaway is to parse URLs by their registered root domain rather than string presence, and to warn users that official payment communications will not arrive by SMS with embedded links.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Spear-phishing_technique",
+        "Smishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "California",
+        "Emea",
+        "America",
+        "Vietnam",
+        "Pakistan",
+        "Singapore",
+        "Chinese",
+        "Georgia",
+        "Apac",
+        "Hong kong",
+        "India",
+        "Indian",
+        "China"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 6,
+      "software": [
+        "Alibaba Cloud"
+      ],
+      "links": [
+        "https://cyble.com/blog/operation-trusttrap-domain-spoofing-campaign/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/tree/main/Deceptive%20Domain%20Spoofing%20Campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "Xinference PyPI Supply Chain Poisoning Warning",
+      "summary": "Attackers stole PyPI release credentials from Xinference maintainers and published three malicious versions (2.6.0, 2.6.1, 2.6.2) on April 22, 2026, which have been downloaded over 680,000 times. The malicious code was hidden as multi-layer Base64 in the __init__.py file and executed on import, harvesting cloud credentials, SSH keys, API tokens, database passwords, and cryptocurrency wallet data to a remote server. The payload also attempted to access cloud metadata services to capture temporary AWS credentials. Users should verify their version, downgrade to 2.5.0 or earlier, and fully remove affected installations. Defenders should also rotate all exposed credentials and enable two-factor authentication on package and code platforms.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Usa",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Kubernetes",
+        "Docker",
+        "Slack",
+        "Discord",
+        "Helm",
+        "WireGuard"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://nsfocusglobal.com/xinference-pypi-supply-chain-poisoning-warning/",
+        "https://github.com/xorbitsai/inference/releases"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "Inside agenteV2: How Brazilian Attackers Use Fake Court Summons to Steal Banking Credentials in Real Time",
+      "summary": "A Brazilian phishing campaign disguises malicious emails as judicial summonses from a Brazilian federal court, using a case number format that mirrors authentic CNJ references. The lure leads victims to run a VBS loader that downloads payloads masquerading as Wi-Fi driver files and establishes persistence through scheduled tasks and a Registry Run key. The final payload, agenteV2, is a Nuitka-compiled Python banking trojan and infostealer that streams the victim's screen and provides a remote shell over a persistent WebSocket channel. Operators can watch sessions and act manually when a banking portal opens, targeting major Brazilian banks and crypto wallet extensions. The malware reads its C2 address from a Pastebin page, so defenders should prioritize behavioral detection and the stable JA3 TLS fingerprint over IP blocklists.",
+      "completeness": "High",
+      "threats": [
+        "Agentev2",
+        "Credential_harvesting_technique",
+        "Dead_drop_technique",
+        "Spear-phishing_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Portuguese",
+        "Germany",
+        "Brazilian",
+        "Latam",
+        "Brasil",
+        "Ita"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "Pastebin",
+        "Linux",
+        "Android",
+        "Nuitka",
+        "PyInstaller",
+        "OpenSSL",
+        "Chrome",
+        "Opera",
+        "astebin",
+        "nginx",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "base64",
+        "sha256",
+        "xor",
+        "vigenere"
+      ],
+      "functions": [
+        "VBScript",
+        "Execute"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "php",
+        "cpython"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/brazilian-banking-phishing-campaign/",
+        "https://pastebin.com/raw/0RmxqY57"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "APT36 / Transparent Tribe — DeskRAT via `.desktop` Files, T-72/T-90 Procurement Lures, and a WebSocket C2 That Greets Visitors as 'Stealth Server'",
+      "summary": "APT36 (Transparent Tribe) is running a Linux-targeted campaign against Indian defense organizations using DeskRAT, a Go-based RAT delivered through a malicious .desktop file with a triple-encoded bash loader. The lure poses as a Ministry of Defence procurement document for indigenous trawl assemblies for T-72 and T-90 tanks. The payload is fetched from an open directory on shared hosting as ASCII85-encoded, bzip2-compressed ELF, and it connects to a WebSocket C2 hosted on a Moldova-based VPS. The Go binary leaks Windows build paths that name the operator's project and local user account, aiding attribution. Defenders should watch for the two AlexHost IPs and nine operator domains, the triple-decode bash pattern, and the randomized /tmp drop path.",
+      "completeness": "High",
+      "threats": [
+        "Deskrat",
+        "Braodo",
+        "Crimson_rat",
+        "Sindoor",
+        "Ares_rat",
+        "Opendir_technique"
+      ],
+      "geo": [
+        "Pakistani",
+        "Pacific",
+        "Pakistan",
+        "Hungary",
+        "Moldova",
+        "France",
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "PyInstaller",
+        "inux EL",
+        "nstaller ELF",
+        "curl",
+        "inux",
+        "ux) Sam",
+        "ux vari",
+        "inux) S",
+        "inux va",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "zip",
+        "sha1",
+        "bzip",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/apt36-deskrat-stealth-server-bossmaya-t72-t90"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "TryNodeUpdate turns GitHub and BSC into a TCP control lane",
+      "summary": "TryNodeUpdate is a Windows malware chain that starts from a PowerShell bootstrap, which installs a scheduled task and fetches a Node.js controller from a public GitHub repository. The Node controller queries a BNB Smart Chain contract through public RPC endpoints to obtain a TUNNEL_URL, then opens a raw TCP control channel on port 8446 using newline-delimited JSON. On elevated hosts it downloads a native helper, rpc.exe, which repeats the contract lookup and runs its own control client, heartbeat, and file-upload handling. The uploaded payload, new_write.js, reuses the rotated string-table obfuscation of the GitHub controller and adds file-zip and file-unzip commands. Defenders should look for the combination of a TryNodeUpdate directory, Node runtime bootstrap, GitHub controller fetch, BSC eth_call traffic, and raw TCP on 8446, since each piece alone may appear benign.",
+      "completeness": "Medium",
+      "threats": [
+        "Trynodeupdate",
+        "Ocrfix_technique",
+        "Hellsuchecker",
+        "Etherhiding_technique"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "phpMyAdmin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/trynodeupdate-github-node-bsc-contract-c2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "Two Passwords, Two Compromise Stories — and the PhantomStealer v3.5.0 Config That Answers a Community Ask",
+      "summary": "Two compromised shared cPanel hosting accounts, one in Italy and one in Romania, are being abused as FTP drop points for two info-stealer families, AgentTesla and PhantomStealer v3.5.0. The PhantomStealer build ships as the final stage of a four-stage PowerShell dropper that hollows the legitimate Microsoft-signed aspnet_compiler.exe. The report recovers the PhantomStealer config by calling the binary's own decryptor, which shows FTP exfiltration is enabled while SMTP, Telegram, and Discord are disabled. Shared delivery artifacts and submission timing suggest both deployments come from a single operator, though the report does not attribute it. Defenders are advised to detect the delivery chain and the malware binaries rather than rely on blocking the two hosting IPs, since the operator can rotate to other compromised hosts.",
+      "completeness": "High",
+      "threats": [
+        "Phantom_stealer",
+        "Cloudeye",
+        "Agent_tesla",
+        "Lolbin_technique",
+        "Process_hollowing_technique",
+        "Stealerium_stealer"
+      ],
+      "geo": [
+        "Romanian",
+        "Italian",
+        "Italy",
+        "Romania"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "cPanel",
+        "Telegram",
+        "Discord",
+        "WordPress",
+        "OpenSSH",
+        "NET Framework",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "xor",
+        "base64",
+        "aes",
+        "aes-256-cbc",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Decrypt"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/two-passwords-agenttesla-phantomstealer-config"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+      "summary": "KYCShadow is an Android banking malware distributed via WhatsApp that masquerades as a bank KYC verification app, primarily targeting users in India. It operates as a two-stage dropper that uses a fake \"Update Required\" screen, VPN activation, and a silently installed hidden payload to gain control. The secondary payload enables SMS interception, call control, USSD execution, and WebView-based phishing that harvests mobile numbers, ATM PINs, Aadhaar details, and card data. Configuration values such as the C2 endpoint and encryption key are hidden in a native library, and commands are delivered via Firebase Cloud Messaging. The report assesses with moderate to high confidence that the campaign is linked to a prior RTO e-Challan fraud operation based on shared domain naming and frontend artifacts. Defenders should block the identified domains, watch for fake update prompts and silent APK installs, and restrict sensitive permissions and unknown-app installation.",
+      "completeness": "High",
+      "threats": [
+        "Kycshadow",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "India",
+        "Indian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 17,
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Google Play",
+        "AgentCore"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "deriveKey",
+        "nativeRunUssd",
+        "getEnvironment",
+        "getNativeUrl",
+        "getNativeKey",
+        "getNativeAgentId",
+        "getNativeSmsAction",
+        "requestBatteryExemption"
+      ],
+      "languages": [
+        "java",
+        "javascript",
+        "kotlin"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/kycshadow-an-android-banking-malware-exploiting-fake-kyc-workflows-for-credential-and-otp-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations",
+      "summary": "The Unit 42 report tracks a series of npm supply chain campaigns from September 2025 through July 2026, beginning with the self-replicating Shai-Hulud worm. Attackers, including the group attributed to TeamPCP, compromise maintainer accounts, CI/CD pipelines, and GitHub Actions caches to publish trojanized packages that steal developer, cloud, and CI/CD credentials. Notable incidents include the Mini Shai-Hulud waves against TanStack, @antv, and SAP packages, the June 2026 Red Hat compromise delivering the Miasma RAT, and the July 2026 AsyncAPI attack. The report notes that the July campaign obtained valid SLSA provenance, so provenance checks alone are insufficient. Defenders are advised to enforce package cooldown periods, disable install scripts with ignore-scripts, use npm ci with lockfiles, and rotate exposed credentials.",
+      "completeness": "High",
+      "threats": [
+        "Shai-hulud",
+        "Credential_harvesting_technique",
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Japan",
+        "Korea",
+        "Australia",
+        "Middle east",
+        "Russian",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Bitwarden",
+        "Docker",
+        "alpine",
+        "debian",
+        "Trivy",
+        "LiteLLM",
+        "Node.js",
+        "Linux",
+        "macOS",
+        "claude",
+        "have more..."
+      ],
+      "algorithms": [
+        "prng",
+        "gzip",
+        "base64",
+        "sha1",
+        "zip",
+        "rsa-4096",
+        "aes-256-gcm",
+        "sha256"
+      ],
+      "functions": [
+        "GetParameter",
+        "getSecretsFromVault"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+        "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "TGR-STA-1030: New Activity in Central and South America",
+      "summary": "TGR-STA-1030 is a threat actor that remains active, with widespread activity observed since February across multiple countries. Its most recent efforts appear to be concentrated on regions within Central and South America. The group is using the same tactics, techniques, and procedures it has employed previously. The report provides no further detail on specific malware, targets, or defensive recommendations.",
+      "completeness": "Low",
+      "geo": [
+        "America"
+      ],
+      "software": [
+        "PAN-OS"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/new-activity-central-south-america/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "Chaos is a ladder : Vidar's recent rise to the top",
+      "summary": "Vidar, an infostealer whose operator released version 2.0 in October 2025, has become the most used stealer on the Russian Market since November 2025, after takedowns of Lumma and Rhadamanthys. Intrinsec attributes the rise to the new version and to collaboration with Telegram \"Cloud\" channels that share or advertise Vidar logs. The report details a kill-chain that began with a fake software download (NeoHub) advertised via YouTube and hosted on MediaFire, which side-loaded a malicious msedge_elf.dll signed with fake certificates and packed with a Go-based packer. The malware uses Steam and Telegram dead-drop resolvers to recover its C2 and applies control flow flattening to slow analysis. Intrinsec advises enterprises to block the listed indicators, train employees against phishing, and monitor for C2 traffic, since the operator's high volume of indiscriminate campaigns is expected to continue.",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Dead_drop_technique",
+        "Paranoidchecker_tool",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Acreed",
+        "Chaos_ransomware",
+        "Clickfix_technique",
+        "Stealc",
+        "Redline_stealer",
+        "Riseprostealer",
+        "Spear-phishing_technique",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "Georgia",
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 35,
+      "software": [
+        "Telegram",
+        "Steam",
+        "Unix",
+        "Linux",
+        "WinZip",
+        "Microsoft Edge",
+        "Gmail",
+        "protonmail",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "binancechain",
+        "yoroi",
+        "math_wallet",
+        "coinbase",
+        "guarda_wallet",
+        "jaxx",
+        "iwallet",
+        "wombat",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "GetInstallDetailsPayload"
+      ],
+      "links": [
+        "https://www.intrinsec.com/wp-content/uploads/2026/04/TLP_CLEAR-20260424-New_Vidar.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-24",
+      "title": "Inside Vidar (2026): From Infection to Memory Execution via JPEG and TXT Payloads",
+      "summary": "Vidar is a multi-stage infostealer that has evolved since 2018 into a stealthy platform distributed as malware-as-a-service, using social media-based command-and-control via Telegram. Its initial access relies on social engineering, including fake GitHub repositories, ClickFix CAPTCHA pages, fake game cheat tools, and compromised WordPress sites. In the analyzed chain, a Go-compiled dropper launches a VBScript and PowerShell loader that retrieves JPEG and TXT files from an IP-based server and executes the payload in memory. The final Vidar payload uses RegAsm.exe as a proxy and exfiltrates data through a Cloudflare-fronted domain linked to Telegram. Vidar targets over 200 browser extensions, including cryptocurrency wallets and password managers, so defenders should focus on credential and browser data protection.",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Arkei_stealer",
+        "Clickfix_technique",
+        "Process_injection_technique",
+        "Lolbin_technique",
+        "Goloader",
+        "Process_hollowing_technique",
+        "Runpe_tool",
+        "Jump_cloud_tool",
+        "Nautilus",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Claude",
+        "WordPress",
+        "Discord",
+        "Process Explorer",
+        "Visual Studio",
+        "Chrome",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Bitwarden",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "enkrypt",
+        "math_wallet",
+        "braavos_wallet",
+        "tronlink",
+        "yoroi",
+        "coinbase",
+        "iwallet",
+        "ronin_wallet",
+        "neoline",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "solana",
+        "casper",
+        "bitcoin",
+        "ethereum",
+        "multiversx",
+        "aptos",
+        "uniswap",
+        "dogecoin",
+        "starcoin",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit",
+        "md5",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Debug"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/inside-vidar-2026-from-infection-to-memory-execution-via-jpeg-and-txt-payloads/"
+      ]
+    }
+  }
+]

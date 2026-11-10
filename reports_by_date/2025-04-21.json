@@ -1,0 +1,62 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-04-21",
+      "title": "MS-SQL server target attack case installing Ammyy Admin",
+      "summary": "Attackers targeted poorly managed, internet-exposed MS-SQL servers, likely through weak credentials, and installed remote-control tools after gaining access. They ran reconnaissance commands, then used WGet to download Ammyy Admin (an outdated v3.10 build), a configuration file that could enable password-based remote access, and PetitPotato for privilege escalation. The attackers used PetitPotato to create a new user, then enabled RDP. Defenders should enforce strong, regularly changed passwords, keep antivirus updated, and restrict external access to database servers with firewalls.",
+      "completeness": "Low",
+      "threats": [
+        "Ammyyadmin_tool",
+        "Anydesk_tool",
+        "Todesk_tool",
+        "Teamviewer_tool",
+        "Gotohttp_tool",
+        "Netstat_tool",
+        "Petitpotato_tool",
+        "Ammyyrat",
+        "Porttranc_tool"
+      ],
+      "software": [
+        "MS-SQL"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/87590/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-21",
+      "title": "FOG Ransomware Spread by Cybercriminals Claiming Ties to DOGE",
+      "summary": "FOG ransomware is being distributed by cybercriminals who abuse the name of the Department of Government Efficiency (DOGE) to troll users. Nine samples uploaded to VirusTotal between March 27 and April 2 carried FOG payloads, with ransom notes that reference DOGE and instruct victims to spread the payload to other computers. The initial access uses a malicious LNK file inside a ZIP named \"Pay Adjustment.zip,\" delivered via email and phishing, which downloads a PowerShell script that fetches further loaders and scripts. The payload collects system and network information and exfiltrates it, and includes a privilege escalation tool that exploits a vulnerable Intel driver. FOG operators reportedly claimed 100 victims since January, mainly in technology, education, manufacturing and transportation, and Trend detected 173 related ransomware activities among its customers since June 2024. Defenders should monitor FOG indicators, maintain tested backups, segment networks, patch systems, and train staff to recognize phishing.",
+      "completeness": "Low",
+      "threats": [
+        "Fog_ransomware",
+        "ransomware.additionally",
+        "Ransom.win32.fog.smypefg"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "Get-GatewayMACs"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/d/fog-ransomware-concealed-within-binary-loaders-linking-themselve.html"
+      ]
+    }
+  }
+]

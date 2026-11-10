@@ -1,0 +1,876 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "PlikanLocker: A Technical Teardown of File Locking with Telegram-Based Exfiltration",
+      "summary": "PlikanLocker is a .NET-based locker that combines file extortion with system lockdown and uses the Telegram Bot API for command-and-control and exfiltration. It is distributed through common initial access vectors such as phishing attachments, malicious links, trojanized software, and messaging or social media lures. The malware relaunches itself with administrator privileges via a UAC prompt and enforces single-instance execution with a hardcoded mutex. It encrypts user documents, images, and PDFs with AES-CBC, appending a .locked extension while leaving the originals intact. After locking, it sends victim metadata, locking statistics, and a desktop screenshot to the attacker's Telegram chat, then displays a fullscreen ransom note that directs victims to contact the attacker via Telegram. Defenders should focus on initial-stage file detection, since the report recommends UltraAV as a control aimed at those early stages.",
+      "completeness": "Medium",
+      "threats": [
+        "Plikanlocker"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 9,
+      "software": [
+        "Telegram",
+        "VirtualBox",
+        "vmwaretray"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "aes-cbc",
+        "sha512",
+        "zip"
+      ],
+      "functions": [
+        "ReadOnly",
+        "StartEncryption",
+        "EncryptAllFiles",
+        "HideDesktop",
+        "LoadBIOSFont"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/plikanlocker-a-technical-teardown-of-file-locking-with-telegram-based-exfiltration/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Armored Likho: New Keys to Old Doors. How the Group Adapts Its Tools While Preserving Its Signature",
+      "summary": "Armored Likho, a threat group, continues to develop its toolset, including a new Python-based remote access trojan called BusySnake RAT that exists in three versions: Telegram-controlled, GitLab-controlled, and a later Go rewrite. The group has also adopted the open-source Kharon RAT, which gave operators full remote access and file exfiltration on compromised systems. Its tooling is deployed through DLL sideloading, HTA and BAT droppers, and loaders that pull payloads from private GitHub and GitLab repositories instead of public ones. The Go variant adds anti-analysis features such as AMSI and ETW patching and sandbox checks, and it uses GitLab CI/CD variables for command exchange. Signs of generative AI use appear in the group's loader scripts. Defenders should watch for traffic to legitimate GitLab and GitHub services, since this complicates network analysis.",
+      "completeness": "High",
+      "threats": [
+        "Busysnake",
+        "Kharon_rat",
+        "Dll_sideloading_technique",
+        "Adaptixc2_tool",
+        "Loki_stealer",
+        "Backdoor.win64.armored.gen"
+      ],
+      "geo": [
+        "Ukrainian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Linux",
+        "macOS",
+        "task scheduler",
+        "elegram in",
+        "Chrome"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "chacha20"
+      ],
+      "functions": [
+        "setup_autostart",
+        "IsAdmin",
+        "cmd_start",
+        "execute_command",
+        "heartbeat_loop",
+        "command_loop",
+        "gl_get",
+        "gl_set",
+        "acquireMutex",
+        "patchETW",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://securelist.ru/tr/armored-likho-campaigns-with-busysnake-rat-and-kharon-rat/116658/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Manic: Blend between Banking Malware & Spyware",
+      "summary": "Manic is a newly identified Android malware family that blends banking malware with mobile spyware, combining financial-fraud features with surveillance and device-control capabilities. Its targeting is heavily focused on Ukraine, covering banks, government and eID services, and messaging apps, with additional coverage of banks, fintech and cryptocurrency services in Russia, Europe and the UK. Manic uses Accessibility-based keylogging, overlays, and WebRTC remote sessions to conceal activity and let operators interact with devices directly. Its pinPadOverlay and autoEnterPin capabilities steal PIN codes without fake login screens, and it can unlock locked phones. A distinctive feature is its offline Wi-Fi Direct and Bluetooth mesh, which relays data through nearby infected phones, so cutting a device's internet access does not necessarily stop exfiltration. The malware has evolved rapidly since February 2026 and remains under active development.",
+      "completeness": "Low",
+      "threats": [
+        "Manic"
+      ],
+      "geo": [
+        "Poland",
+        "Slovakia",
+        "Germany",
+        "Czech republic",
+        "France",
+        "Spain",
+        "Netherlands",
+        "Russia",
+        "United kingdom",
+        "Estonia",
+        "Ukrainian",
+        "Austria",
+        "Ukraine",
+        "Lithuania",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "WebRTC",
+        "Google Play"
+      ],
+      "algorithms": [
+        "aes-gcm"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/manic-blend-between-banking-malware-and-spyware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Malicious Rust Crate arrayref Runs a Build-Time Payload",
+      "summary": "The malicious arrayref 0.3.10 release on crates.io, published August 20, 2026, adds a dependency on a typosquatted crate named proc-macro1, which is a renamed copy of proc-macro2. Compromise appears to stem from the account of the genuine arrayref maintainer. The proc-macro1 build script downloads an architecture-specific binary over TLS that accepts any certificate, then runs it detached from the build on Linux, macOS, and Windows. Because the payload executes at build time, merely compiling a project that pulled the affected versions triggers it. The earlier arrayref releases were yanked, which steered developers toward the malicious 0.3.10 release. Defenders should review Rust dependency trees for proc-macro1 and remove affected versions of the listed crates.",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "arrayref",
+        "Unix",
+        "linux",
+        "macos"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "vbscript"
+      ],
+      "links": [
+        "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+        "https://github.com/rustsec/advisory-db/issues/3161"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Going with the Flow(s): Distinct Clusters Target Individuals of Interest to Russia",
+      "summary": "GTIG tracks three suspected Russian espionage clusters, UNC6293, UNC7005, and UNC5976, that abuse legitimate authentication flows such as app passwords, OAuth, and device linking. UNC6293 is assessed with moderate confidence as a sub cluster of ICE RELIC and repeatedly impersonates US State Department officials to phish prominent individuals critical of Russia. UNC7005, also linked with moderate confidence to ICE RELIC, runs device code phishing, WhatsApp device linking, infostealer delivery, and OAuth phishing against academia, diplomats, and defense personnel. UNC5976 uses OAuth phishing with fake file sharing pages and a malicious Excel plugin, mainly targeting military, aerospace, and NGOs in Ukraine and Armenia. Because targets are often personal accounts and first contact may come through messaging apps, defenders should treat unverified outreach with caution, verify URLs, and revoke unneeded app passwords.",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Vidar_stealer",
+        "Amos_stealer",
+        "Chocoshell",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russia",
+        "Ukraine",
+        "Armenia",
+        "Russian",
+        "Polish",
+        "United states"
+      ],
+      "software": [
+        "WhatsApp",
+        "Selenium",
+        "Chrome",
+        "PhantomJS",
+        "macOS",
+        "Outlook",
+        "Anthropic"
+      ],
+      "functions": [
+        "WhatsApp",
+        "startMediaRecording",
+        "uploadRecording"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/distinct-clusters-target-individuals-of-interest-to-russia/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "New Research: How Peer2Profit and Astroproxy Turn Your Bandwidth Into Someone Else's Product",
+      "summary": "PEER2PROFIT is a bandwidth-sharing program that recruits everyday users and pays them per gigabyte, and Silent Push confirmed it feeds the commercial proxy service ASTROPROXY, which resells that bandwidth at up to 27 times the user payout. Because the app installs through official channels with user consent, standard antivirus and threat intelligence feeds do not flag it, so any employee can enroll a corporate device without triggering alerts. Researchers enumerated 117,224 unique IPs across ASTROPROXY's residential, mobile, and datacenter pools over 72 hours, with the residential pool adding over 1,000 new IPs per hour. The researchers also found that ASTROPROXY's filter blocking internal IP ranges could be bypassed with a DNS record resolving to an internal address, allowing access to a residential router's admin interface, and the provider did not remediate after responsible disclosure. The takeaway for defenders is that proxy nodes rotate too quickly for reputation-based detection, so proactive enumeration of proxy networks is needed.",
+      "completeness": "Medium",
+      "threats": [
+        "Peer2profit_tool",
+        "Residential_proxy_technique",
+        "Privateloader"
+      ],
+      "geo": [
+        "Russian",
+        "France",
+        "United states",
+        "Russia",
+        "Indian",
+        "Ukraine",
+        "Spain",
+        "India",
+        "Kazakhstan",
+        "Vietnamese",
+        "Vietnam",
+        "Italy",
+        "Germany",
+        "Portuguese",
+        "Portugal",
+        "Brazil"
+      ],
+      "software": [
+        "Astroproxy",
+        "Telegram",
+        "Android",
+        "macOS",
+        "Linux",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/peer2profit-astroproxy/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "UAT-10147: Chinese-speaking adversary integrates agentic AI into post-compromise operations",
+      "summary": "Cisco Talos tracks UAT-10147, a Chinese-speaking, financially motivated group that gains initial access at scale by exploiting publicly disclosed vulnerabilities in Windows and Linux web servers. Victims include organizations in government, education, media, technology, and gaming sectors across several countries. The actor deploys implants such as BadIIS, QuasarRAT, SPECTRE, and NoodleRAT, and uses privilege escalation exploits to gain persistence and root or SYSTEM access. Talos assesses with moderate-to-high confidence that the group uses agentic AI to generate exploitation guides, automation scripts, and validation workflows, reducing the expertise needed for post-compromise operations. Defenders should prioritize patching known web server vulnerabilities and protecting MachineKey confidentiality, since exposed keys enable ViewState attacks.",
+      "completeness": "High",
+      "threats": [
+        "Metasploit_tool",
+        "Ysoserial_tool",
+        "Pentestgpt_tool",
+        "Deepaudit_tool",
+        "Badiis",
+        "Quasar_rat",
+        "Cringe",
+        "Specter_rootkit",
+        "Dirty_pipe_vuln",
+        "Nood_rat",
+        "Meterpreter_tool",
+        "Viewstate_deserialization_vuln"
+      ],
+      "geo": [
+        "Bolivia",
+        "Brazil",
+        "Canada",
+        "Chinese",
+        "Vietnam",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "EfsPotato",
+        "Windows Registry",
+        "Windows Defender",
+        "Google Chrome",
+        "Unix sudo",
+        "Zimbra Collaboration Suite",
+        "Nacos",
+        "curl",
+        "ASP.NET",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "3des",
+        "sha1",
+        "aes"
+      ],
+      "functions": [
+        "Get-Item"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-10147-chinese-speaking-adversary-integrates-agentic-ai-into-post-compromise-operations/",
+        "https://github.com/frohoff/ysoserial",
+        "https://github.com/quasar/Quasar",
+        "https://github.com/zcgonvh/EfsPotato"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Popular Rust Crates Compromised in Build-Time Supply Chain Attack",
+      "summary": "Three legitimate Rust crates, arrayref, internment, and append-only-vec, were compromised with a malicious dependency named proc-macro1, a typosquat of proc-macro2. The malicious build.rs in proc-macro1 runs automatically during Cargo builds, even though the application never calls it, and downloads a platform-specific backdoor. The backdoor runs on Linux, macOS, and Windows, collects host and browser data, establishes persistence, and supports remote commands. The Rust Security Response Team removed the affected releases and suspects the maintainer's credentials were compromised. Defenders should treat any system that built a malicious version as potentially compromised, pin the crates to clean versions, and rotate build-environment secrets.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Launchagents_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "systemd"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/popular-rust-crates-compromised",
+        "https://github.com/rustsec/advisory-db/issues/3161"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "BRIDGEHEAD : An npm typosquatting campaign that crosses from WSL into Windows to plant a crypto-wallet stealer",
+      "summary": "BRIDGEHEAD is an npm typosquatting campaign in which forty packages imitating chalk, axios, commander, lodash, react and typescript were published in August 2026, each with an install script. On Windows Subsystem for Linux hosts, the script decodes a hidden PowerShell command that downloads and runs a Rust executable from a GitHub release asset, which the npm packages never contained. The executable wraps an encrypted payload stored as a hexadecimal text string and runs it in memory without writing a second file to disk. The payload is a stealer that targets desktop cryptocurrency wallets, Chromium-family browser credential and cookie stores, and Telegram Desktop session data, then attempts to upload results to gofile.io. The GitHub payload outlived the npm packages by about 39 hours, so defenders should block the operator's C2 server and treat npm removal alone as insufficient remediation.",
+      "completeness": "Medium",
+      "threats": [
+        "Bridgehead_tool",
+        "Typosquatting_technique",
+        "Mitm_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Subsystem for Linux",
+        "Linux",
+        "Telegram",
+        "MacOS",
+        "Chromium",
+        "winhttp",
+        "BraveSoftware",
+        "Microsoft Edge",
+        "Unix"
+      ],
+      "wallets": [
+        "electron_cash",
+        "bitpay",
+        "onekey",
+        "safepal",
+        "bybit",
+        "jaxx",
+        "mainnet",
+        "wassabi",
+        "coinbase"
+      ],
+      "algorithms": [
+        "chacha20",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "collectEnvSnapshot",
+        "installNativeAddon"
+      ],
+      "languages": [
+        "typescript",
+        "powershell",
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/bridgehead-npm-typosquatting-wsl-windows-crypto-wallet-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Rust Supply Chain Attack on arrayref: Significant Overlap with DPRK Campaigns",
+      "summary": "Malicious versions of the Rust crates arrayref, internment, and append-only-vec were published to crates.io on August 20, 2026, adding a typosquatted dependency named proc-macro1. The proc-macro1 build script runs at compile time, downloads a platform-specific payload from a remote C2 server, and executes it, so simply building an affected project triggers the backdoor. The payload collects host details and enumerates saved browser logins, then establishes persistence via Registry Run keys, LaunchAgents, or systemd user services. Its C2 infrastructure overlaps with the DPRK-attributed Mastra campaign, linking this activity to North Korean actors. Defenders should search Cargo.lock files for the malicious versions, treat any affected developer workstation or CI runner as compromised, and rotate exposed credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk",
+        "North korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Mastra",
+        "Linux",
+        "macOS",
+        "Chrome",
+        "systemd",
+        "Unix"
+      ],
+      "algorithms": [
+        "aes-128-gcm",
+        "sha256",
+        "base64",
+        "rsa-2048",
+        "sha1"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
+        "https://github.com/rustsec/advisory-db/issues/3161#issuecomment-5356130756"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "UAT-10147 deploys SPECTRE: A cross-platform implant with Linux rootkit and BYOVD capabilities",
+      "summary": "UAT-10147 is a Chinese-speaking intrusion actor running a multi-platform post-exploitation ecosystem that targets IIS and Linux servers and pairs SEO fraud monetization with persistence and defense evasion. Its new SPECTRE implant is a cross-platform backdoor with process injection, credential theft, anti-analysis checks, and kernel-level EDR bypass. SPECTRE's Windows variant uses BYOVD drivers (RTCore64.sys or DBUtil_2_3.sys) to unlink EDR kernel callbacks. Its Linux variant loads the Specter kernel rootkit, disguised as acpi_pad.ko and persisting through a fake systemd unit. Talos assesses with medium confidence that AI-assisted development contributed to the rootkit's code.",
+      "completeness": "High",
+      "threats": [
+        "Specter_rootkit",
+        "Byovd_technique",
+        "Process_injection_technique",
+        "Badiis",
+        "Havoc",
+        "Timestomp_technique",
+        "Earlybird_injection_technique",
+        "Process_hollowing_technique",
+        "Edr-killer",
+        "Hideprocess_tool",
+        "Sharpchrome_tool",
+        "Godpotato_tool",
+        "Juicypotato_tool",
+        "Nood_rat",
+        "Cringe",
+        "Quasar_rat",
+        "Meterpreter_tool"
+      ],
+      "geo": [
+        "Vietnamese",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Chrome",
+        "Microsoft Defender",
+        "systemd",
+        "coc)",
+        "a",
+        "EfsPotato"
+      ],
+      "algorithms": [
+        "prng",
+        "exhibit",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "main",
+        "utimensat",
+        "kill"
+      ],
+      "languages": [
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-10147-deploys-spectre-a-cross-platform-implant-with-linux-rootkit-and-byovd-capabilities/",
+        "https://github.com/ohpe/juicy-potato",
+        "https://github.com/zcgonvh/EfsPotato",
+        "https://github.com/BeichenDream/GodPotato"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Rust Supply-Chain Attack: arrayref, internment, and append-only-vec Poisoned by the proc-macro1 Build-Time Dropper",
+      "summary": "A compromised maintainer account published malicious arrayref 0.3.10 to crates.io on August 20, 2026, adding a typosquat dependency, proc-macro1, whose build script downloads and runs a second-stage binary at compile time. The same account poisoned internment 0.8.7 and append-only-vec 0.1.9 within 23 minutes, and the attacker also used a fake persona impersonating David Tolnay and a decoy release staged hours earlier. Affected builds were any that resolved the poisoned versions between 07:11 and 09:25 UTC, since the dropper runs with the building user's privileges and cargo audit does not flag deleted versions. The malicious releases and related attacker crates have been removed and the accounts locked. Defenders should check lockfiles, local and CI caches, and egress logs for the listed endpoints, rotate credentials on exposed machines, and consider cooldown policies and locked builds.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "arrayref",
+        "Unix",
+        "Linux",
+        "systemd"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "blake3",
+        "sha256"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/arrayref-rust-crate-supply-chain-attack",
+        "https://github.com/rustsec/advisory-db/issues/3161"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "N4D Mesh Controller: New infrastructure, a UPX-packed agent labeled go-titan, and how to hunt for it",
+      "summary": "N4D Mesh Controller is an active Linux malware campaign that uses exposed Model Context Protocol servers and other internet-facing services as entry points for credential theft, lateral movement, persistence, and command and control. Its automated scanner lists MCP tools and invokes dangerous ones such as execute_command, so an unauthenticated server exposing that capability needs no CVE to be compromised. A newer loader retrieved a UPX-packed, obfuscated Go agent identifying itself as 33.8-go-titan, which installed several persistence mechanisms and scanned many services during a denied-egress run. In a replay lab, the agent called execute_command with id, showing end-to-end MCP abuse in the packed build. Defenders should monitor MCP tool calls, child processes, and the listed persistence files and download paths, and should require authentication on MCP servers and restrict command execution.",
+      "completeness": "High",
+      "threats": [
+        "Polymorphism_technique",
+        "Cloudflared_tool"
+      ],
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "Linux",
+        "curl",
+        "PostgreSQL",
+        "MySQL",
+        "Redis",
+        "Docker",
+        "Kubernetes",
+        "Nacos",
+        "Jenkins",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/n4d-mesh-controller-go-titan-new-infrastructure-hunting/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "BTR Reforged: Weaponizing Defender’s Remediation Driver as a Kernel Operation Primitive",
+      "summary": "Researchers reverse engineered the Microsoft Defender Boot-Time Removal driver (BTR.sys), a signed remediation component, and showed it can be driven to perform arbitrary kernel-mode file and registry operations. The driver reads an RC4-encrypted, CRC-protected transaction blob from an alternate data stream, and the researchers built a tool, BTR_CLI, to construct these transactions. Using the \"Boot Bus Extender\" load group, the driver runs before the Defender user-mode service starts, allowing deletion of Defender binaries and service keys and bypassing Tamper Protection at runtime. The researchers saw no real-world abuse, and Microsoft did not consider the issue serviceable because it requires SeLoadDriverPrivilege. Defenders should monitor ADS-based configuration writes, driver load lineage, and System-context file deletions rather than relying on signatures.",
+      "completeness": "Medium",
+      "threats": [
+        "Byovd_technique",
+        "Procmon_tool",
+        "Mimikatz_tool",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Windows Kernel",
+        "Microsoft Defender",
+        "Microsoft Windows Defender"
+      ],
+      "algorithms": [
+        "rc4",
+        "crc-32",
+        "xor",
+        "sha256"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/btr-reforged-weaponizing-defenders-remediation-driver-as-a-kernel-operation-primitive/",
+        "https://github.com/Dump-GUY/BTR\\_CLI",
+        "https://github.com/gentilkiwi/mimikatz"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Anatomy of an Agent Tesla BEC Attack: From Inbox to In-Memory Infostealer",
+      "summary": "A Business Email Compromise campaign spoofing Metropolitan Bank and Trust Company targets finance departments with a 6.94 MB JScript dropper disguised as a forwarded wire-transfer thread. The script is hidden with interleaved Unicode emoji characters and launches a chain of DonutLoader shellcode and reflective in-memory injection, so the final Agent Tesla v4 infostealer never touches disk. The ConfuserEx-obfuscated .NET payload masquerades as a Python 3.11.3 installer in its metadata, but its 32-bit .NET 4.0 architecture contradicts that claim. Before harvesting, it runs anti-analysis checks for debuggers, hosting IPs, timing anomalies, sandbox DLLs and virtual machines. It targets over 40 applications, including browsers, Outlook, Discord and Windows Credential Manager, and exfiltrates stolen data over FTP to a single attacker-controlled domain. Defenders should treat any host that contacted that domain as compromised and rotate all credentials accessible from it.",
+      "completeness": "High",
+      "threats": [
+        "Agent_tesla",
+        "Bec_technique",
+        "Donut",
+        "Credential_harvesting_technique",
+        "Pe_injection_technique",
+        "Confuserex_tool",
+        "Antidebugging_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Philippines"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "Chromium",
+        "Outlook",
+        "Foxmail",
+        "Discord",
+        "VirtualBox",
+        "Chrome",
+        "Opera",
+        "Vivaldi",
+        "Firefox",
+        "SeaMonkey",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "aes-gcm",
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "GetModuleHandle",
+        "CreateFileMapping",
+        "SetWindowsHookEx",
+        "GetWindowText",
+        "CreateObject"
+      ],
+      "languages": [
+        "jscript",
+        "swift",
+        "python"
+      ],
+      "links": [
+        "https://blog.knowbe4.com/anatomy-agent-tesla-bec-attack-in-memory-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "SynkLoader: when you throw in everything but the kitchen sink",
+      "summary": "SynkLoader is a new, modular malware family that bridges multiple programming languages, with some modules using up to three at once, to evade detection. It was delivered through a Microsoft Teams phishing lure in which the attacker posed as the company's IT Service Desk and convinced the user to install a fake \"PowerShell Cleaner\" MSI. The loader runs in memory, receives Python code from its C2 for execution, and deploys modules for system profiling, persistence via scheduled tasks, and a fake Windows lock screen to capture user passwords. Further modules provided a TrafficRedirector backconnect proxy, a reverse shell, and a VNC streaming module. The researchers assessed with low-medium confidence that the operators may be a ransomware group or initial access broker, based on the profiling of Active Directory host counts.",
+      "completeness": "High",
+      "threats": [
+        "Synkloader",
+        "Mimikatz_tool",
+        "Passthehash_technique",
+        "Hvnc_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft Visual C++",
+        "active directory",
+        "Task Scheduler",
+        "Windows lock screen",
+        "Windows Authentication"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "base64",
+        "sha256",
+        "zip",
+        "chacha20"
+      ],
+      "functions": [
+        "from",
+        "nm",
+        "start_socks"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell",
+        "cpython"
+      ],
+      "links": [
+        "https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "WeedHack Returns: How SEO Poisoning is Leading Minecraft Fans to Malware",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Weedhack",
+        "Cheatlib"
+      ],
+      "software": [
+        "Minecraft",
+        "inecraft cl",
+        "iscord li",
+        "Discord",
+        "Dropbox",
+        "inecraft se",
+        "inecraft wo"
+      ],
+      "links": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/weedhack-minecraft-malware-fake-gaming-websites-seo-poisoning/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "VEEAM UNDER FIRE: Understanding CVE-2026–44963 & Ransomware Group Exploit Claims",
+      "summary": "Veeam disclosed CVE-2026-44963, a critical (CVSS 9.4) remote code execution flaw in Veeam Backup & Replication 12.x caused by unsafe deserialization, which lets any low-privilege authenticated domain user gain control of domain-joined backup servers. Patched builds include 12.3.2.4854, and version 13.x is not affected. Lynx ransomware operators, in a negotiation, referenced this CVE and claimed a private variant that needs no credentials. An underground forum advertisement also claims an unauthenticated SYSTEM-level bypass, but as of mid-August 2026 these claims remain unverified. Defenders should prioritize patching, restrict backup server exposure, and monitor for unexpected local administrator accounts and credential dumping.",
+      "completeness": "High",
+      "threats": [
+        "Lynx",
+        "Akira_ransomware",
+        "Fog_ransomware",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Qilin_ransomware",
+        "Rclone_tool",
+        "Conti",
+        "Blackbasta",
+        "Kerberoasting_technique",
+        "Bitsadmin_tool",
+        "Pdq_deploy_tool",
+        "Cuba_ransomware",
+        "Cobalt_strike_tool",
+        "Bughatch",
+        "Burntcigar",
+        "Metasploit_tool",
+        "Defendercontrol_tool",
+        "Veeamhax",
+        "Anydesk_tool",
+        "Simplehelp_tool",
+        "Medusa_ransomware",
+        "Clop",
+        "Lemurloot",
+        "Rhysida",
+        "Secretsdump_tool",
+        "Putty_tool",
+        "Nltest_tool",
+        "Ransomhub",
+        "Lockbit",
+        "Dcsync_technique",
+        "Gentlekiller",
+        "Av-killer",
+        "Hexkiller",
+        "Throttleblood",
+        "Havockiller",
+        "Oxideharvest",
+        "Impacket_tool",
+        "Wmiexec_tool",
+        "Netexec_tool",
+        "Inc_ransomware",
+        "Anubis",
+        "Dire_wolf",
+        "Wevtutil_tool",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Everest_ransomware",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Latin american",
+        "Dprk"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "MSSQL",
+        "PostgreSQL",
+        "Hyper-V",
+        "curl",
+        "PDQ Deploy",
+        "Windows Defender",
+        "FortiGate",
+        "PsExec",
+        "MOVEit",
+        "GoAnywhere",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "chacha20"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/08/20/veeam-under-fire-understanding-cve-2026-44963-ransomware-group-exploit-claims/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-20",
+      "title": "Popular Rust crates arrayref, append-only-vec, and internment compromised in Supply Chain Attack",
+      "summary": "The Aikido report describes a supply chain attack on three popular Rust crates, append-only-vec, arrayref, and internment, which were compromised by adding a malicious dependency named proc-macro1, a typosquat of proc-macro2. Because proc-macro1's build script downloads and runs a platform-specific payload during compilation, simply building a project that uses these crates triggers the infection. The payload is an infostealer targeting credentials and cryptocurrency wallet data in Chromium-based browsers, and it can install a macOS LaunchAgent for persistence. The campaign is attributed to the same DPRK-linked actor behind the Axios and Mastra npm attacks, indicating the activity is moving into the Rust ecosystem. Defenders should check for the malicious dependency and rescan builds now.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Launchagents_tool"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "arrayref",
+        "Linux",
+        "macOS",
+        "Unix",
+        "Windows PowerShell",
+        "Chromium",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mastra"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/two-popular-rust-crates-arrayref-and-append-only-vec-compromised-in-supply-chain-attack",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  }
+]

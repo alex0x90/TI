@@ -1,0 +1,772 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "3AM Hits European Schools: A Hybrid AI Ransomware Attack, Part Human, Part Agentic Loop",
+      "summary": "A 3AM (ThreeAM) ransomware affiliate breached a UK school estate and used mostly built-in Windows tools, such as PowerShell, WMI and netsh, along with a few public tools like Impacket-style remote execution, Mimikatz and a Veeam script. Bitdefender assesses the intrusion as hybrid, with a person setting goals while behavior consistent with an agentic loop handled retries, though the report cannot confirm whether a model was involved. The attacker stole backup credentials, built two-way trusts across three separate domains, and removed EDR before encrypting about 37 machines. Retries came every 40 to 100 seconds and left numbered revisions and probe files, which the report says makes such attacks noisy and detectable. Bitdefender's main takeaway is that defenders should prevent rather than race, by controlling domain trusts, admin accounts, backups and remote execution.",
+      "completeness": "Medium",
+      "threats": [
+        "3am_ransomware",
+        "Lolbin_technique",
+        "Impacket_tool",
+        "Mimikatz_tool",
+        "Smbexec_tool",
+        "Winrm_tool",
+        "Wmiexec_tool",
+        "Nltest_tool",
+        "Credential_dumping_technique",
+        "Lsadump_tool",
+        "Minidump_tool",
+        "Robocopy_tool",
+        "Remcom_tool"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 21,
+      "software": [
+        "Active Directory",
+        "psexec",
+        "Chrome",
+        "Google Chrome",
+        "Windows Defender",
+        "Local Security Authority",
+        "Unix",
+        "Windows service"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Write-Output",
+        "Set-MpPreference",
+        "Get-ChildItem",
+        "Get-Date",
+        "Get-CimInstance",
+        "Get-ItemProperty",
+        "REST"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/3am-ransomware-hybrid-ai-attack",
+        "https://github.com/bitdefender/malware-ioc/blob/master/2026\\_11-3am-iocs.csv",
+        "https://github.com/sadshade/veeam-creds/blob/main/Veeam-Get-Creds.ps1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Athena’s Trojan Horse: Cross-Tenant Data Poisoning and Exfiltration via AWS Athena",
+      "summary": "The report describes a vulnerability in aws-sdk-pandas, AWS's official pandas extension for Athena, Glue, and Redshift, which creates a predictable default Athena results bucket and silently proceeds whether the bucket is owned by the user or by someone else. Because the library catches BucketAlreadyExists with only a debug-level log, an attacker who pre-creates the victim's account-specific bucket can silently receive all default query results. The same squatted bucket also enables CTAS manifest hijacking, where an attacker alters the Parquet files a victim later reads back, while the original data remains intact. The Athena service had been patched previously, but the SDK constructed the bucket name independently and was not fixed. The issue was fixed in aws-sdk-pandas v3.16.1 and assigned CVE-2026-118029. Defenders should set output locations explicitly, enforce workgroup configuration, verify bucket ownership, and upgrade the library.",
+      "completeness": "Low",
+      "threats": [
+        "Athena_botnet"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SageMaker"
+      ],
+      "functions": [
+        "_get_s3_output",
+        "create_athena_bucket"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.upwind.io/feed/athenas-trojan-horse-cross-tenant-data-poisoning-and-exfiltration-via-aws-athena",
+        "https://github.com/aws/aws-sdk-pandas"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Shutting the Door on the XCPE Botnet",
+      "summary": "Google and industry partners dismantled the XCPE backdoor, which enrolled more than 1.3 million set-top boxes into a botnet. Google assesses with high confidence that Videostrong Technology, an Android OEM and ODM, intentionally developed and operated the backdoor for financial gain. Videostrong sold access to criminal affiliates who loaded modules for ad fraud, residential proxy enrollment, and additional malware onto infected devices. The backdoor was preloaded in firmware, reinstalled itself after removal, and evaded review by loading malicious code after first boot. Google cut ties with Videostrong and banned it from making devices with preloaded Google apps. The report stresses that backdoor operators, ad-fraud rings, and proxy providers form an interconnected supply chain, so lasting disruption requires continued action.",
+      "completeness": "High",
+      "threats": [
+        "Xcpe_botnet",
+        "Residential_proxy_technique",
+        "Supply_chain_technique",
+        "Appsalt_tool",
+        "Netnut",
+        "Cboxtv_tool",
+        "Hiddenview_tool",
+        "Spirit_tool",
+        "Badbox",
+        "Timestomp_technique",
+        "Jaguar",
+        "Ipweb_tool",
+        "Popanet",
+        "Gaganode_tool",
+        "Traffmonetizer_tool",
+        "Clipboard_hijacking_technique",
+        "Fission",
+        "Abcnexus"
+      ],
+      "geo": [
+        "Iraq"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "GaGaNode",
+        "IPCola",
+        "FleetSDK",
+        "appstore"
+      ],
+      "algorithms": [
+        "chacha20",
+        "md5",
+        "aes"
+      ],
+      "functions": [
+        "disablePackageVerify",
+        "nativeAdbRoot",
+        "nativeAdbShell",
+        "getAppsaltKey",
+        "optIn",
+        "getTraffmonetizerKey",
+        "baseClientStart"
+      ],
+      "languages": [
+        "java",
+        "kotlin"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "The Internals of a Badbox Operation",
+      "summary": "Synthient's investigation, produced with the Motion Picture Association and several partners, attributes the MECOOL pre-infected set-top box line to Videostrong Technology Co., Ltd., a China-based manufacturer. The devices ship with a backdoor, x.cpe, that gives operators system-level control and pulls down payloads over an MQTT message broker, including ad fraud and residential proxy software. Researchers estimate at least 1.3 million backdoored devices worldwide, with about half a million online at a time, and strong presence in Malaysia, Mexico, and Brazil. Google has permanently banned Videostrong from building certified Android devices. Defenders should block the listed infrastructure and remove affected devices, while consumers should dispose of them.",
+      "completeness": "Medium",
+      "threats": [
+        "Badbox",
+        "Appsalt_tool",
+        "Apsolo_tool",
+        "Kimwolf",
+        "Ipweb_tool",
+        "Residential_proxy_technique",
+        "Jaguar",
+        "Traffmonetizer_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "China",
+        "Germany",
+        "United states",
+        "Mexico",
+        "Malaysia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Gaganode",
+        "IPCola"
+      ],
+      "functions": [
+        "LinkFog"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://synthient.com/blog/the-internals-of-a-badbox-operation",
+        "https://github.com/synthient/public-research/blob/main/2026/11/Videostrong/README.md",
+        "https://github.com/synthient/public-research/blob/main/2026/11/Videostrong/README.md#km9pro-device-specifications"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Inside a Microsoft Lookalike Domain Masquerading as Czech Company’s IT Department Infrastructure",
+      "summary": "A Czech-language ClickFix campaign used the lookalike domain microsoftofice[.]cz, a single-letter typosquat of Microsoft Office, to lure victims with a fake \"verify you are human\" page. Victims were tricked into pasting a command into the Windows Run dialog, which downloaded a password-protected archive and set up Startup-folder persistence. The payload was a two-loader remote access trojan that fingerprints hosts, reuses static user proxy settings, and polls attacker infrastructure for commands. The Czech-language IT department dialog suggests a targeted attack against a specific organization rather than an opportunistic spray. Defenders should monitor curl.exe, hunt for Run dialog history and Startup shortcuts, and train staff that no legitimate website asks them to paste commands into the Run dialog.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Upx_tool",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Czech"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 14,
+      "software": [
+        "Microsoft 365",
+        "Microsoft Office",
+        "WinZip",
+        "Debian",
+        "Windows registry",
+        "curl",
+        "outlook",
+        "url pi"
+      ],
+      "algorithms": [
+        "zip",
+        "crc-32",
+        "aes",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "visual_basic"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/microsoft-lookalike-domain-clickfix-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Cato CTRL Research on Suspected Iranian MuddyWater Activity Using Israel Tax Authority Lures and SimpleHelp",
+      "completeness": "Medium",
+      "threats": [
+        "Simplehelp_tool",
+        "Atera_tool"
+      ],
+      "geo": [
+        "Iranian",
+        "Israel",
+        "Israeli",
+        "Iran"
+      ],
+      "software": [
+        "nginx"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-research-suspected-iranian-muddywater-activity-using-israel-tax-authority-lures-simplehelp/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "CartSiphon, a Financially Motivated VShell Cluster",
+      "completeness": "High",
+      "threats": [
+        "Vshell",
+        "Xmrig_miner",
+        "Dirtyfrag_vuln",
+        "Alltool_tool",
+        "Toolshell_vuln",
+        "Upx_tool",
+        "Mytransfer_tool",
+        "Fragnesia_vuln",
+        "Nps_tool",
+        "Xray_tool",
+        "Nmap_tool",
+        "Winrm_tool",
+        "Chisel_tool",
+        "Mimic_ransomware",
+        "Psk_agent",
+        "Pwnkit_tool",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Asian",
+        "China",
+        "Canada",
+        "Japan",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenCart",
+        "Linux",
+        "Cloudflare",
+        "SharePoint",
+        "BitLocker",
+        "Alibaba Cloud",
+        "Locker",
+        "锁定 BitLo",
+        "ount/lock B",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "sha1",
+        "chacha20",
+        "sha256",
+        "aes-128-cbc",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "Create_Function"
+      ],
+      "languages": [
+        "python",
+        "php",
+        "golang"
+      ],
+      "links": [
+        "https://www.jumpsec.com/guides/cartsiphon-a-financially-motivated-vshell-cluster/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Tracking a collection of information-stealing scripts embedded in adult video sites",
+      "summary": "Adult video site rivo.vin was found injecting hidden iframes and scripts that load a set of information-stealing JavaScript files from a /rivo-stealer/ path. The collected code targets cookies, web storage, IndexedDB, form inputs, keystrokes, browser fingerprints, and cryptocurrency wallet data from providers such as MetaMask and Phantom. One script, stealer-auto.js, includes a fake MetaMask dialog and transfer or approval requests, but the implementation is flawed and no successful asset transfer was confirmed. Clipboard-hijacking code replaces copied strings with a fixed TRON address, whose format and checksum are valid but whose ownership and use remain unverified. Defenders should treat the observed POST to /rec/batch and the loading of these scripts as the high-confidence indicators, since data exfiltration and victim counts are not confirmed.",
+      "completeness": "Low",
+      "threats": [
+        "Rivo-stealer"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "IndexedDB",
+        "WalletConnect"
+      ],
+      "wallets": [
+        "metamask",
+        "nifty",
+        "coinbase",
+        "mainnet",
+        "tron"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana",
+        "binance",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "createElement",
+        "getItem",
+        "detectSeedPhrase",
+        "preventDefault",
+        "deepExtractSession",
+        "collectAll",
+        "detectIframes",
+        "fetch",
+        "sendToC2",
+        "beacon",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://disconinja.hatenablog.com/entry/2026/11/03/230647"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "antd-img-crop GitHub Repository Hijacked to Deliver OverLord Stealer",
+      "summary": "A forged commit in the antd-img-crop GitHub repository, an Ant Design image cropper with about 98,000 weekly npm downloads, adds a prebuild hook that runs when a developer executes npm run build. The npm package itself is not affected. The hook delivers OverLord, a credential stealer that targets browser passwords, cookies, keychains, cryptocurrency wallets, SSH keys and .env files on macOS, Linux and Windows. It then installs a remote-access agent disguised as Google software. The same payload is also reached through a fake Amber Group careers portal and a sideloaded editor extension. The techniques match the Contagious Interview campaign, though the report notes this match does not identify the operators.",
+      "completeness": "Medium",
+      "threats": [
+        "Overlord_tool",
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Clickfix_technique",
+        "Xagent",
+        "Launchagents_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "Node.js",
+        "Open VSX",
+        "Chromium",
+        "Firefox",
+        "Ledger Live",
+        "ubuntu",
+        "unix",
+        "Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "rabby",
+        "electrum",
+        "trezor"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "swift"
+      ],
+      "links": [
+        "https://safedep.io/blog/antd-img-crop-forged-commit-overlord-stealer",
+        "https://github.com/nanxiaobei/antd-img-crop/activity",
+        "https://github.com/nanxiaobei/antd-img-crop",
+        "https://github.com/nanxiaobei/hugo-paper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Freeze the Controller, Defrost the Food: Uncovering Vulnerabilities in Danfoss Refrigeration Controllers",
+      "summary": "Claroty Team82 researched the Danfoss AK-SM 800A system manager, a web-managed controller used in supermarkets, cold-storage facilities, and warehouses to oversee refrigeration equipment. Thousands of these management interfaces were found exposed directly to the public internet. The researchers reverse engineered the firmware and found a hidden \"code-of-the-day\" authentication path that could let an attacker bypass the password by reproducing a date-based algorithm. They also found a command-injection flaw in the SMTP email settings (CVE-2025-41451) that could enable remote code execution, and an issue allowing authenticated users to implant Nginx directives that could cause a denial of service. Danfoss fixed the issues in firmware R4.3.1, and the report advises upgrading and keeping management interfaces off the internet.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Nginx"
+      ],
+      "links": [
+        "https://claroty.com/team82/research/freeze-the-controller-defrost-the-food-uncovering-vulnerabilities-in-danfoss-refrigeration-controllers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Gorbag: Orcs at the border harvesting intelligence from Ukraine",
+      "summary": "Gorbag is a Russia-aligned threat actor, first active since at least February 2025, that targets Ukrainian organizations exclusively. Its targets include law enforcement and justice entities, local administrations near the front line, the defense sector, and a major transportation hub for foreign military aid. Gorbag delivers malware through spearphishing emails with macro-enabled spreadsheets, and from early 2026 through WinRAR archives exploiting CVE-2025-8088. Its main tool, BeautyStealer, harvests browser credentials, VPN configurations, and documents in a single pass before removing itself. ESET assesses that Gorbag may be acting as an initial access broker, sharing stolen credentials with other threat actors.",
+      "completeness": "High",
+      "threats": [
+        "Giftedcrook",
+        "Spear-phishing_technique",
+        "Beautystealer",
+        "Romcom_rat",
+        "Ps2exe_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Russia",
+        "Ukrainian",
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 21,
+      "software": [
+        "WinRAR",
+        "Chrome",
+        "Opera",
+        "Firefox",
+        "Microsoft Office",
+        "KeePass",
+        "Telegram",
+        "FastAPI"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/gorbag-orcs-border-harvesting-intelligence-ukraine/",
+        "https://github.com/eset/malware-ioc/tree/master/gorbag",
+        "https://github.com/MScholtes/PS2EXE",
+        "https://github.com/fastapi/fastapi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Hardening GitHub Actions Against Outside Threats",
+      "summary": "The report is a guide to hardening GitHub Actions against outside threats, such as malicious pull requests, mutable action tags, and dependency installs. It cites real incidents including tj-actions/changed-files (CVE-2025-30066), where retagged versions exfiltrated secrets into public build logs. It also highlights pull_request_target misuse and unsanitized expression injection as recurring causes of compromise, with the Nx and TanStack Router incidents as examples. Recommended controls include pinning actions to commit SHAs or adopting workflow lockfiles, defaulting GITHUB_TOKEN to read-only permissions, and isolating caches and self-hosted runners. Defenders should also apply release-age cooldowns, deterministic installs, and egress controls, since these limit damage when earlier defenses fail.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Credential_stealing_technique"
+      ],
+      "software": [
+        "TanStack",
+        "LiteLLM",
+        "curl",
+        "Trivy",
+        "Docker",
+        "Dependabot",
+        "Kubernetes",
+        "linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "hmac"
+      ],
+      "languages": [
+        "javascript",
+        "rust",
+        "cpython"
+      ],
+      "links": [
+        "https://socket.dev/blog/hardening-github-actions-against-outside-threats",
+        "http://github.com",
+        "https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching",
+        "https://docs.github.com/en/actions/reference/security/secure-use"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
+      "summary": "Microsoft Threat Intelligence describes an evolving fake-download campaign that lures users seeking cracked commercial software, free games, activators, and unofficial utilities. The campaign uses trojanized Inno Setup-style installers that deliver multiple monetized payloads, called \"offers,\" in a single installation session. Offer outcomes are tracked through a repeatable callback pattern that correlates activity within each installer session. Confirmed monetization branches include WorldProxyPool proxyware, CharityEngine and BOINC distributed computing, and adware-style utility software, often installed without informed user consent. Microsoft recommends avoiding untrusted software sources, enabling potentially unwanted application protection, and monitoring for unexpected installations and scheduled tasks.",
+      "completeness": "Medium",
+      "threats": [
+        "Worldproxypool_tool",
+        "Boinc_tool",
+        "Offerloader",
+        "Deathransom",
+        "Kepavll",
+        "Win32/suspinnooffer.a!mapsi",
+        "Offloader"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 3,
+      "software": [
+        "Microsoft Defender",
+        "Roblox",
+        "Navicat",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "VirtualBox",
+        "Microsoft Defender for Endpoint"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "The Evolution of Qilin (Agenda): A Comparative Reverse Engineering Analysis of Qilin (Agenda) Ransomware Across 2026",
+      "summary": "Qilin (Agenda) ransomware evolved through 2026 from a manually operated, monolithic Rust binary into a modular, automated payload, according to Seqrite's analysis of March and October 2026 samples. The later variant automates Active Directory reconnaissance, spreads to VMware ESXi hosts through vCenter, and uses PsExec for lateral movement across administrative shares. It forces reboots into Safe Mode to evade third-party EDR sensors and uses the Windows Restart Manager API to encrypt locked database and virtual machine files. Telemetry shows attacks against the health care, manufacturing, education, and technology sectors. Defenders should prioritize detection of bcdedit Safe Mode modifications and rstrtmgr.dll-driven process termination.",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "ESXi",
+        "Hyper-V",
+        "Linux",
+        "esxcli",
+        "PsExec",
+        "bcdedit",
+        "Windows Registry",
+        "Winlogon"
+      ],
+      "algorithms": [
+        "aes-256-ctr",
+        "rsa-4096",
+        "aes-256",
+        "aes",
+        "chacha20",
+        "sha256"
+      ],
+      "functions": [
+        "Get-ADComputer"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/the-evolution-of-qilin-agenda-a-comparative-reverse-engineering-analysis-of-qilin-agenda-ransomware-across-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "ClockTail: a ClickFix kit that never filled in its command",
+      "summary": "ClockTail is a ClickFix kit that disguises a fake Cloudflare check on a saved copy of Google's Merchant Center page, and it ran on 245 hosts from 28 July to 3 November 2026. On 243 of those hosts the command placeholder was never filled in, so clicking the lure copies 317 KB of Google's HTML to the clipboard instead of a command, and the lure does not work. The kit's command request returns the page itself because the server answers unknown paths with that page. One build on oneai[.]icu did have its command file named, but by 3 November it served only a default page. On 3 November, 103 hosts still served the broken lure. Defenders should note that the saved page carries a Google account address in its header, which was used to find the wider infrastructure.",
+      "completeness": "Medium",
+      "threats": [
+        "Clocktail",
+        "Clickfix_technique",
+        "Fortcheck"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare",
+        "Gmail",
+        "GoDaddy",
+        "Fortnite"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://ohey.ca/research/clocktail-clickfix-unfilled-command/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "Pre-Auth RCE in Zyxel GS1900 Exploited in the Wild as a Zero-Day",
+      "completeness": "Medium",
+      "threats": [
+        "Jitterly",
+        "Sixzut"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zyxel",
+        "Linux",
+        "OpenSSH",
+        "Nginx"
+      ],
+      "algorithms": [
+        "aes-ctr",
+        "aes-gcm",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "system",
+        "main"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.binarly.io/blog/zyxel-gs1900-rce-cve-2026-107441",
+        "https://github.com/dashingsoft/pyarmor",
+        "https://github.com/soybeanjs/soybean-admin"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "An Ivanti Zero-Day Operation Where the Dead Proxy Was Named in the Operator's Notes",
+      "summary": "A threat hunter's crawl of an open directory on 208.85.17[.]99 uncovered an Ivanti Connect Secure exploitation operation whose public indicator had already been retired. The host held an in-band root exploit framework, 168 exploit run logs, stolen data, and an operator memory file that named the retired IP and listed the operator's proxy rotation. The chain combines an authentication bypass with CVE-2026-118527 file upload and CVE-2026-111357 privilege escalation to reach root. Researchers link the host to the public report's indicator with high confidence but attribute it to UTA0576 only with moderate confidence. Defenders should patch to 25.1.1.3 or 22.8R2.6, assume Integrity Checker results can be evaded, and rotate credentials that an exposed appliance could reach.",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Supershell",
+        "Sliver_c2_tool",
+        "Mythic_c2_tool",
+        "Adaptixc2_tool",
+        "Nuclei_tool",
+        "Frpc_tool",
+        "Hashcat_tool",
+        "Vshell",
+        "Mimikatz_tool",
+        "Garble_tool",
+        "Opendir_technique"
+      ],
+      "geo": [
+        "Spain"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 11,
+      "software": [
+        "Ivanti",
+        "BitLocker",
+        "MinIO",
+        "SendGrid",
+        "Linux",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "perl",
+        "python"
+      ],
+      "links": [
+        "https://etugen.io/blog/ivanti-zero-day-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-03",
+      "title": "You Had Me at “Hello”: Inside The Greeter, A Chinese‑Language Framework Targeting AI Infrastructure",
+      "summary": "Greeter is a Chinese-language exploitation framework that targets Flowise, an open-source AI application development platform. It abuses CVE-2024-58351 in Flowise's overrideConfig mechanism to inject JavaScript into a chat prediction API on a per-request basis, leaving the saved chatflow benign. The framework runs rapid \"hello\" messages, 3.5 seconds apart, that carry commands for host reconnaissance, credential and cloud metadata discovery, persistence checks, and fileless payload staging. Researchers found 46 unauthenticated Flowise instances on Shodan with the same vulnerable conditions as their honeypots. The report warns that exposed AI workloads can lead to cloud identity compromise, and recommends authenticating APIs, reducing runtime privileges, and limiting cloud permissions.",
+      "completeness": "Low",
+      "threats": [
+        "Greeter_tool",
+        "Pkexec_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 22,
+      "software": [
+        "Docker",
+        "Linux",
+        "sudo",
+        "curl",
+        "Systemd",
+        "Unix"
+      ],
+      "functions": [
+        "memfd_create"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://era.security/blog/greeter-flowise-ai-infrastructure-attack"
+      ]
+    }
+  }
+]

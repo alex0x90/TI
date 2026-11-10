@@ -1,0 +1,1037 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Milk Dragon: Huge Discounts on Social Media? Think Twice Before You Buy",
+      "summary": "Milk Dragon, also known as NaiLong, is a phishing kit sold as a subscription service on Telegram since at least October 2025 to steal credit card information. Its operators spread malicious links through Facebook and TikTok marketplace listings that promise steep discounts on well-known brands, exploiting users' fear of missing out rather than urgency tactics. Victims are sent to fake WordPress/WooCommerce checkout pages, where a custom plugin streams their inputs in real time and relays one-time passwords to defeat 3D Secure checks. The kit has been observed targeting victims in 66 countries, impersonating 21 brands and 36 financial institutions. Defenders should treat steep social media discounts as a red flag and extend vigilance beyond email to social commerce and advertising channels.",
+      "completeness": "Low",
+      "threats": [
+        "Milk_dragon_tool",
+        "Aitm_technique",
+        "Bytepress",
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Malaysia"
+      ],
+      "software": [
+        "TikTok",
+        "Telegram",
+        "WordPress",
+        "Docker"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/milk-dragon-nailong-phishing-kit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Earth Sirrush: A Russia-Aligned Intrusion Set With 4 Years of Evolving Espionage Tooling",
+      "summary": "Earth Sirrush, a Russia-aligned intrusion set overlapping with CERT-UA's UAC-0099, has run spear-phishing campaigns since at least 2022 against Ukrainian government, defense, border guard, and logistics targets. The group has evolved from PowerShell and Go tools to compiled .NET malware, including a previously undocumented infostealer and RAT named ASHVEIN. Its later campaigns hide payloads inside PNG images and use a malicious Notepad++ plugin as an initial delivery vector. TrendAI assesses with high confidence that these operations belong to one intrusion set, based on code similarities, reused artifacts, and shared infrastructure. Defenders are advised to focus on development habits and delivery patterns, since malware families change frequently while these traces persist.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Ashvein",
+        "Lonepage",
+        "Seaglow",
+        "Overjam",
+        "Matchboil",
+        "Matchwok",
+        "Dragstare",
+        "Dead_drop_technique",
+        "Dll_sideloading_technique",
+        "Steganography_technique",
+        "Cinderblot",
+        "Badpaw",
+        "Lunchpoke_tool",
+        "Burnybear_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Cloudflare",
+        "WinRAR",
+        "Chrome",
+        "Firefox"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.trendaisecurity.com/en-us/resources-insights/trendai-security-blog/earth-sirrush-russia-aligned-intrusion-set-4-years-evolving-espionage-tooling"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "TerminalFix and Lorem Ipsum Loader enable covert tunneling",
+      "completeness": "Low",
+      "threats": [
+        "Lorem_ipsum_loader",
+        "Lorem_ipsum",
+        "Terminalfix_technique",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Seo_poisoning_technique",
+        "Dead_drop_technique",
+        "Steganography_technique",
+        "Rhysida"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Terminal",
+        "Microsoft Teams",
+        "Active Directory",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/terminalfix-and-lorem-ipsum-loader-enable-covert-tunneling",
+        "https://github.com/sophoslabs/IoCs/blob/master/STAC4924\\_IOCs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Mac Malware Trend Report",
+      "summary": "Q3 2026 macOS threat research shows attackers favoring social engineering over software exploitation, with ClickFix-style Terminal-paste attacks delivering infostealers such as Odyssey, AMOS, and MacSync. Trojans and infostealers made up the largest share of samples in Point Wild's processed set, and Odyssey led stealer detections in Moonlock's H1 data. A DPRK-linked group, Sapphire Sleet, used fake job interviews to lure finance and crypto users, and a related campaign used a blockchain smart contract for command-and-control. CVE-2026-65400, a critical Screen Sharing pre-authentication bypass, was confirmed exploited and added to CISA's KEV catalog, and disabling Screen Sharing or blocking port 5900 mitigates it if unpatched. Apple's macOS Tahoe 26.4 paste warning addresses only the Terminal-paste vector, leaving trojanized-installer and fake-app campaigns effective.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Clicklock",
+        "Odyssey_stealer",
+        "Amos_stealer",
+        "Macc_stealer",
+        "Etherhiding_technique",
+        "Realst",
+        "Xmrig_miner",
+        "Tanium_tool",
+        "Supply_chain_technique",
+        "Xcsset",
+        "Logmein_tool",
+        "Shubstealer",
+        "Reaper",
+        "Rustdoor",
+        "Adload_loader",
+        "Bundlore",
+        "Pirrit",
+        "Traffer_technique",
+        "Poseidon_stealer"
+      ],
+      "geo": [
+        "Russian",
+        "Dprk",
+        "Canada"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "1Password",
+        "Telegram",
+        "Discord",
+        "Linux",
+        "WordPress",
+        "TradingView",
+        "outlook"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "rust",
+        "applescript",
+        "golang"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/mac-malware-trend-report/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Behind the Connect Button: The Fake AI Ads Campaign",
+      "summary": "Island researchers uncovered a human-operated phishing platform that impersonated AI advertising products, including fake Muse Ads launched within eight days of Meta announcing Muse. Victims were lured by a Connect button that opened a fake Google sign-in window drawn inside the real browser, a technique called Browser-in-the-Browser. Behind the page, operators captured passwords and MFA responses in real time and chose which authentication prompt the victim saw next. The same backend stack also powered refund and fake job lures, which targeted advertising account owners and employees whose work logins could expose their employers' systems. Defenders should verify AI products through official vendor sites, check that the real browser origin matches the expected domain, and adopt phishing-resistant authentication such as passkeys.",
+      "completeness": "Low",
+      "threats": [
+        "Bitm_technique"
+      ],
+      "software": [
+        "Okta",
+        "Claude",
+        "ChatGPT",
+        "Chrome",
+        "macOS",
+        "Android",
+        "TikTok",
+        "OpenAI",
+        "Anthropic",
+        "Telegram",
+        "have more..."
+      ],
+      "links": [
+        "https://www.island.io/blog/behind-the-connect-button-the-fake-ai-ads-campaign",
+        "https://github.com/reudisace?tab=repositories"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "CopyEscape: Taking Over Docker Hosts with docker cp",
+      "summary": "Imperva Red Team disclosed CVE-2026-17106, an arbitrary file-write flaw in Docker's docker cp command that also affected sbx cp in Docker Sandboxes. A malicious container can exploit a race in the daemon's archive walk, which produces an inconsistent tar stream, combined with a CLI extraction flaw that follows a planted symlink outside the chosen destination. The write runs with the invoking user's permissions, enabling persistence or code execution on macOS, and root code execution on Linux when run via sudo by overwriting runc. The risk is greatest for CI systems, developer workstations, and incident-response workflows that routinely copy from containers. Mitigations include upgrading to Docker Engine/CLI 29.7.2 or Docker Desktop 4.86.0, stopping containers before copying, and avoiding root-run copy operations.",
+      "completeness": "Low",
+      "threats": [
+        "Toctou_vuln"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "docker",
+        "macOS",
+        "Linux",
+        "sudo"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/copyescape-taking-over-docker-hosts-with-docker-cp/",
+        "https://github.com/moby/go-archive/blob/v0.2.0/archive.go#L691-L802",
+        "https://github.com/masasron/CopyEscape-CVE-2026-17106",
+        "https://github.com/moby/moby/blob/docker-v29.6.1/daemon/archive\\_unix.go#L76-L82"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Inferno Drainer Is Burning Out",
+      "summary": "Inferno Drainer is a drainer-as-a-service platform, also marketed under names such as AngelFerno and SeedFerno, that tricks users into signing authorisations that drain their crypto wallets. Its affiliates use self-hosted phishing pages, Cloudflare Worker loaders, PHP relays and domain-layer takeovers, including the 2025 Curve front-end hijack and an April 2026 cow.fi hijack. The report describes three payload generations that share the same six core drain primitives, with only the command-and-control transport changing between builds. Researchers assess that the operation has suffered a sharp decline in technical competence following a talent exodus, citing a May 2026 admin key rotation that locked operators out for 23 days. For defenders, the report recommends auditing and revoking Permit2 and ERC-20 approvals, blocking the drainer's CDN dependencies, and sharing targeting patterns with wallet providers.",
+      "completeness": "Low",
+      "threats": [
+        "Inferno",
+        "Inferno_drainer",
+        "Angel_drainer",
+        "Dns_hijack_technique"
+      ],
+      "software": [
+        "Telegram",
+        "ryptoJS Sa",
+        "Cloudflare"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "tron",
+        "trezor"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum",
+        "bitcoin",
+        "litecoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/the-daas-formerly-known-as-inferno/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "PhantomSub: Malicious npm Campaign Secretly Adds Users to WhatsApp Spam Channels",
+      "summary": "A malicious npm campaign, dubbed PhantomSub by OX Research, uses 101 packages that abuse the open-source Baileys WhatsApp library to silently add victims to WhatsApp channels. The packages fall into three variants, which fetch channel lists remotely from GitHub, hardcode them in cleartext, or hardcode them in obfuscated form. The channels are mostly Indonesian bot-seller and account-selling channels, and their inflated follower counts serve as social proof for scams. The campaign affects developers who install these packages, about 490,000 downloads in total, with 116,000 in the last 30 days. Defenders should block the malicious packages, avoid packages that connect to private accounts such as WhatsApp, and add the channel and remote-list indicators to threat intelligence pipelines.",
+      "completeness": "Low",
+      "geo": [
+        "Indonesia",
+        "Indonesian"
+      ],
+      "software": [
+        "WhatsApp",
+        "TikTok",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.ox.security/blog/phantomsub-malicious-npm-campaign-secretly-adds-users-to-whatsapp-spam-channels/",
+        "https://raw.github.com/skyzopedia/NewsletterID/refs/heads/main/VIP\\_Push.json"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "From Guest Complaints to Malware: Blockchain Abuse Targets Hotels",
+      "summary": "Cofense Intelligence tracks email campaigns targeting the accommodation industry with fake guest complaints and reviews that deliver EtherRAT or TONResolver malware. The emails lure hotel staff into opening an archive containing an LNK shortcut disguised as a JPG image, which downloads a NodeJS runtime and installs the payload. Both malware families resolve their command and control addresses by reading data stored on the Ethereum or TON blockchains, letting operators rotate infrastructure cheaply. This makes conventional domain and IP takedowns largely ineffective. Cofense assesses with moderate confidence that these campaigns are linked to earlier Booking.com-spoofing ClickFix campaigns that delivered PureRAT. Defenders should train staff to scrutinize all emails, since static detections struggle with the varied lure wording.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Etherrat",
+        "Tonresolver",
+        "Purerat",
+        "Netsupportmanager_rat",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "pastebin",
+        "Telegram"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cofense.com/blog/from-guest-complaints-to-malware-blockchain-abuse-targets-hotels"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance",
+      "summary": "An unattributed threat actor, likely a financially motivated Chinese speaker, ran a campaign against South Korean financial organizations from late September to early October 2026, resulting in data exfiltration. The actor used ARTEX, an open-source agentic penetration testing tool developed in China, alongside large language models such as DeepSeek v4.1-flash. Analysis of open directories exposed Claude Code session histories, ARTEX configuration files, and memory files that revealed a two-server architecture and multiple proxy addresses. At one bank, the actor reportedly breached a loan inquiry service used by financial brokers, and at another, an employee mobile work-support system. The actor also sought help locating Korean data sales groups on Telegram, showing an intent to monetize stolen data. CrowdStrike assesses that adversaries will likely keep experimenting with AI tooling to increase operational tempo.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex"
+      ],
+      "geo": [
+        "Korean",
+        "Chinese",
+        "Hong kong",
+        "South korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 3,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "DeepSeek",
+        "Telegram"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "FortiBleed Is Still Active, Locking Organizations Out",
+      "summary": "FortiBleed is an ongoing initial access broker campaign targeting internet-facing Fortinet FortiGate firewalls and SSL VPN gateways, according to a joint FBI and U.S. Secret Service advisory. The actors scan for exposed portals, harvest credentials through credential stuffing and password spraying, and crack exfiltrated hashes on a distributed GPU cluster, exploiting legacy SHA-256 password storage in FortiOS. Compromised devices are being locked out of their own firewalls, as actors create new admin accounts and remove or change legitimate ones. Access is sold to downstream ransomware affiliates, currently including INC/Lynx and Payload. The advisory's main takeaway for defenders is to restrict external management access, enforce phishing-resistant MFA, audit REST API keys and SSH exposure, and confirm out-of-band recovery for edge devices.",
+      "completeness": "Medium",
+      "threats": [
+        "Payload_ransomware",
+        "Lynx",
+        "Supply_chain_technique",
+        "Password_spray_technique",
+        "Hashcat_tool",
+        "Hashtopolis_tool",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 11,
+      "software": [
+        "FortiGate",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256",
+        "pbkdf2"
+      ],
+      "links": [
+        "https://socradar.io/blog/fortibleed-still-active-locking-organizations-out/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "When Agents Go Rogue: The OpenClaw Supply Chain Crisis",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Clickfix_technique",
+        "Nova_stealer",
+        "Typosquatting_technique",
+        "Amos_stealer",
+        "Clipboard_hijacking_technique",
+        "Netcat_tool",
+        "Lolbin_technique",
+        "Polymorphism_technique",
+        "Vmprotect_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 7,
+      "software": [
+        "OpenClaw",
+        "ClawHub",
+        "Clawdbot",
+        "Moltbot",
+        "macOS",
+        "curl",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "Slack",
+        "Node.js",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "electrum"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "Set-Clipboard",
+        "Get-Clipboard"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trellix.com/en/blogs/research/when-agents-go-rogue-openclaw-supply-chain-crisis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "SideCopy Threat Intel: MSHTA-driven Execution and RAT Deployment",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Reverserat_rat",
+        "Heracles",
+        "Trojan.js.generic.mvx",
+        "Lolbas_technique"
+      ],
+      "geo": [
+        "Indian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "Windows Registry",
+        "Linux",
+        "Android"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "gzip",
+        "aes"
+      ],
+      "functions": [
+        "SetCurPos",
+        "GetHostsFile",
+        "GetCPText"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trellix.com/en/blogs/research/sidecopy-threat-intel-mshta-execution-rat-deployment/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Phishing Campaign Abuses Microsoft Power BI to Deploy Rogue RMMs",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Scautofix"
+      ],
+      "software": [
+        "Microsoft Power BI",
+        "Power BI",
+        "Outlook",
+        "Microsoft 365",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/screenconnect-power-bi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Signed, sealed, injected: The mechanics of DCRat in 2026",
+      "completeness": "High",
+      "threats": [
+        "Dcrat",
+        "Dll_sideloading_technique",
+        "Process_hollowing_technique",
+        "Process_injection_technique",
+        "Smuggling_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Colombian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 13,
+      "software": [
+        "Brotli",
+        "Windows Registry",
+        "Pastebin"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "aes",
+        "zip",
+        "7zip"
+      ],
+      "functions": [
+        "CreateProcessInternalW",
+        "InitializeSettings"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.trellix.com/en/blogs/research/signed-sealed-injected-dcrat-mechanics-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "NetScaler C2: A Massive CVE-2026-88771 Exploitation Operation",
+      "summary": "SOCRadar identified NetScaler C2, an autonomous framework that exploits CVE-2026-88771, a Citrix NetScaler ADC and Gateway log injection flaw allowing unauthenticated remote root command execution. The framework uses FOFA searches to find exposed devices, fingerprints their versions, and injects commands through unauthenticated HTTP endpoints that land in ns.log and are processed by the admautoregd daemon. Successful injections deploy a lightweight polling agent that receives operator commands over HTTP, with a DNS fallback when egress is restricted. Code comments in Simplified Chinese and AI-assisted development point to a Chinese-speaking operator. Defenders should patch to fixed builds, isolate vulnerable appliances, and hunt for the injection strings and the /tmp/.nsagent file, since upgrading does not remove existing compromise.",
+      "completeness": "Medium",
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "Citrix NetScaler ADC",
+        "curl",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Set-Cookie"
+      ],
+      "links": [
+        "https://socradar.io/blog/netscaler-c2-cve-2026-88771-exploitation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Connecting Cryptomus, Heleket and Mirocard",
+      "summary": "Researcher Robin Dost links the crypto payment processor Cryptomus to its successor brands Heleket and Mirocard, based on shared API examples, a common Cryptomus App Store ID, shared mail and hosting infrastructure, and SDK traces. Heleket's Russian-language content promotes payments that avoid sanctions-related banking barriers despite its published Russia ban. Mirocard, which took over Heleket's card business, advertises crypto-funded virtual cards without KYC and recommends misleading billing details for Russian customers. Leaked drafting notes in Mirocard's terms name Byte Commerce, a Kyrgyz company without a payment licence, which also acts as payment agent for several Russia-facing services. The report notes that Western hosting and payment providers supporting these services have grounds to review their relationships.",
+      "completeness": "Low",
+      "geo": [
+        "Georgia",
+        "Hong kong",
+        "Moscow",
+        "Kyrgyzstan",
+        "Russias",
+        "Canadian",
+        "Vancouver",
+        "German",
+        "Los angeles",
+        "French",
+        "Russia",
+        "Georgian",
+        "Ukraine",
+        "Africa",
+        "Austrian",
+        "South korea",
+        "Iran",
+        "Canada",
+        "Kazakhstan",
+        "Iranian",
+        "Turkish",
+        "Russian",
+        "Ukrainian",
+        "Northkorea",
+        "United states",
+        "Netherlands",
+        "North korea",
+        "India",
+        "Singapore",
+        "Usa",
+        "Indian",
+        "Austria",
+        "Estonia",
+        "Spanish"
+      ],
+      "software": [
+        "steam",
+        "zendesk",
+        "Cloudflare",
+        "TikTok",
+        "Telegram",
+        "Instagram",
+        "WhatsApp",
+        "Hangro"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "swift",
+        "php"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/connecting-cryptomus-heleket-and-mirocard/",
+        "https://github.com/parsecvpn/api-php-sdk",
+        "https://github.com/CryptomusCom/api-php-sdk"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "DarkSword/Coruna Open Directory Finding Report",
+      "summary": "The Censys report documents five exposed open directories that revealed the full DarkSword/Coruna iOS exploit-and-harvest platform, still in use at triage time. The kit is a Chinese-speaking commercial exploitation-as-a-service operation whose main purpose is cryptocurrency wallet theft, using eighteen injection modules and a SpringBoard coordinator to target wallet apps and harvest BIP39 recovery phrases. A separate China-linked operator runs the same kit in the wild against its own C2, including a 19th wallet target (BitKeep). The operator is developing a seventh CVE (CVE-2026-31001) for iOS 26, but this chain is unfinished and not deployed, so it is not a zero day. Defenders should track staging hosts and panel signatures rather than individual domains, and watch for iOS 26 chain development.",
+      "completeness": "High",
+      "threats": [
+        "Darksword_tool",
+        "Coruna_tool",
+        "Ds_fusion",
+        "Gooll",
+        "Watering_hole_technique",
+        "Plasma",
+        "Ghost",
+        "Ghostblade",
+        "Ghostknife",
+        "Ghostsaber",
+        "Polymorphism_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "China",
+        "Chinese",
+        "Hong kong",
+        "Cambodian",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "FastAPI",
+        "WhatsApp",
+        "Telegram",
+        "WeChat",
+        "contact tg",
+        "nginx",
+        "gement",
+        "m link",
+        "macOS",
+        "Cloudflare",
+        "have more..."
+      ],
+      "wallets": [
+        "bitkeep_wallet",
+        "tronlink",
+        "imtoken",
+        "coinbase",
+        "metamask"
+      ],
+      "crypto": [
+        "uniswap"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://censys.com/blog/darksword-coruna-open-directory-finding-report/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "FortiBleed Attack Campaign Exploiting Fortinet Firewalls and VPNs – FBI Warns",
+      "completeness": "Low",
+      "threats": [
+        "Password_spray_technique",
+        "Credential_dumping_technique",
+        "Payload_ransomware",
+        "Lynx"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "FortiGate",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256",
+        "pbkdf2"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/fortibleed-attack-campaign-exploiting/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Razor’s Edge: the RedWing stealer is designed to target customers of banks in Russia, Uzbekistan, and Kazakhstan",
+      "summary": "RedWing Stealer is an Android information-stealing trojan, distributed as malware-as-a-service via Telegram since at least early 2026, with F6 researchers identifying more than 800 samples spread in May to September 2026. It was disguised as apps such as drone-danger radars, gas station fuel-price maps, adult video viewers, VPNs, and game cheats and mods. The malware steals SMS messages, push notifications, location, contacts, call history, installed apps, and SIM details, and can send USSD requests and SMS, open URLs, and run a reverse proxy. Its targets include customers of banks and payment services in Russia, Uzbekistan, and Kazakhstan, as well as marketplaces and microfinance organizations. Its configuration and commands are concealed with encryption and a custom virtual machine, and it hides its icon and persists via a foreground service.",
+      "completeness": "High",
+      "threats": [
+        "Redwing",
+        "Radartrevog",
+        "Antivm_technique",
+        "Antidebugging_technique"
+      ],
+      "geo": [
+        "Uzbekistan",
+        "Russia",
+        "Kazakhstan",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ndroid ap",
+        "Android",
+        "Telegram",
+        "Minecraft",
+        "Roblox",
+        "Google Play",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5",
+        "chacha20",
+        "base64"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/redwing-stealer-research/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "New ICS Malware S7Flip, or What We Found on MalwareBazaar",
+      "summary": "Positive Technologies found on MalwareBazaar a Windows sample named S7Flip, uploaded by the account \"jeans\" with a description claiming it targets ICS and manipulates PLC data over S7Comm and Modbus TCP. The malware persists via an autostart entry named aphp.exe, scans private IP ranges for ports 102, 502 and 44818, and writes to data blocks or holding registers and coils. Its two destructive routines add random offsets to values and flip bits, with each change logged to logs.csv. The Allen-Bradley branch is non-functional, as it reuses the Siemens client on port 102. The same uploader also posted a fake Microsoft Edge wiper, which deletes Desktop contents and displays a $100 bitcoin ransom note without any decryption capability, and a v5 variant adds AES-256-GCM encryption. Researchers note shared GCC build tooling, a matching compile date and the common uploader account, but state that these do not prove common authorship.",
+      "completeness": "Low",
+      "threats": [
+        "S7flip"
+      ],
+      "software": [
+        "Microsoft Edge"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-gcm"
+      ],
+      "links": [
+        "https://habr.com/ru/articles/1090938/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "The campaign that never stopped: tracking GhostAction from 2025 to 2026",
+      "summary": "GhostAction is a GitHub Actions supply chain campaign that has repeatedly injected malicious workflows into public repositories, most recently in August to October 2026, using compromised developer credentials to push commits under victims' identities. The attacker's workflows read repository secrets and send them over plain HTTP to an attacker-controlled server, and a later payload scanned working trees and git history for cloud credentials and API keys. The October 2026 wave reached more than 30,000 repositories, with GitHub blocking the malicious workflow from running starting October 9. Some victims were hit again using unrotated secrets from earlier waves, and old injected workflows were repointed to new endpoints. A separate cryptominer was found in a popular open-source project, but researchers were not convinced it shares the GhostAction operator. Defenders should rotate exfiltrated secrets and also revoke the compromised GitHub credential that enabled the injection.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Interactsh_tool",
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "plesk",
+        "DockerHub",
+        "Telegram",
+        "Slack",
+        "Discord",
+        "Cloudflare",
+        "version",
+        "Docker"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "links": [
+        "https://blog.gitguardian.com/ghostaction-github-actions-supply-chain-attack-returns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Blacknet-00 Ransomware: Threat Actor Profile - Barricade Cyber Solutions",
+      "completeness": "High",
+      "threats": [
+        "Blacknet-00",
+        "Trk-25_tool",
+        "Shadow_ghost_tool",
+        "Blacknet-corporate-breach-hunter_tool"
+      ],
+      "geo": [
+        "Africa",
+        "Canada",
+        "United states",
+        "Asia",
+        "Middle east"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 6,
+      "software": [
+        "Apache Struts",
+        "Apache Struts2",
+        "Telegram",
+        "BIG-IP"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "md5",
+        "aes-256",
+        "xor",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://barricadecyber.com/blacknet-00-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "Android/RewaFake: Uncovering a Large-Scale Fake Apps Adware Campaign on Google Play",
+      "completeness": "Low",
+      "geo": [
+        "United states",
+        "India",
+        "Russia"
+      ],
+      "software": [
+        "Google Play",
+        "android",
+        "CapCut",
+        "Roblox",
+        "iMessage",
+        "Minecraft",
+        "Appstore",
+        "Chrome"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "links": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/malicious-apps-google-play-store-adware-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "How AI Agents Turned One Exposed Endpoint into a Server Takeover",
+      "summary": "ReliaQuest assesses with high confidence that LLM-driven AI agents carried out substantial portions of an incident in which an attacker took full administrative control of a server in under 24 hours. The attacker's infrastructure included a live dashboard for Cairn, an open-source platform for coordinating AI agents, on the same host that sent the attack's opening requests. The attacker entered through a job-submission feature on an Apache Tomcat application that required no login, then ran JavaScript through the Nashorn engine without new malware or a zero-day. Escalation relied on two public privilege-escalation tools, PrintSpoofer and GodPotato, staged in advance and used to reach SYSTEM. The report notes that the attacker's infrastructure consisted only of open-source or commercially available components, so detections built around this specific combination would be fragile. Defenders should restrict exposed endpoints, retain application job history, and automate containment because agent-driven operations can outpace human analysts.",
+      "completeness": "Low",
+      "threats": [
+        "Cairn",
+        "Acunetix_tool",
+        "Cyberstrikeai_tool",
+        "Godpotato_tool",
+        "Printspoofer_tool"
+      ],
+      "software": [
+        "uvicorn",
+        "SimpleHTTP",
+        "nginx a",
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "Apache Tomcat"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-how-ai-agents-turned-one-exposed-endpoint-into-a-server-takeover/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "From WhatsApp to SYSTEM: Inside the VulcanRAT207.A Intrusion Chain",
+      "summary": "VulcanRAT207.A is a multistage Windows intrusion that begins with a WhatsApp-delivered ZIP containing Statement.exe, an NRV2E-compressed wrapper that unpacks a loader entirely in memory. The loader screens the host for analysis environments, attempts elevation, and injects a downloader into the LocalSystem Task Scheduler process using PoolParty Variant 7, so later components inherit SYSTEM context. The chain uses a signed GoFly driver to terminate Baidu security processes and installs a DLL side-loading package via a SYSTEM scheduled task that runs a legitimate VulkanInfo binary. The final payload is a WebSocket remote access trojan that communicates with 61.18.208.27 on port 8888 and offers extensive surveillance, remote control, and injection capabilities. For defenders, correlating Task Scheduler injection, GoFly device use, SYSTEM task registration, and the Vulkan package is more useful than attributing every action to the final RAT.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Romulusloader",
+        "Poolparty_technique",
+        "Byovd_technique",
+        "Process_injection_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "NET Framework",
+        "Hyper-V",
+        "winlogon"
+      ],
+      "algorithms": [
+        "rc4",
+        "md5",
+        "xor",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "CreateRemoteThread-based",
+        "DLL-resolution",
+        "DLL"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/copy-of-how-to-stop-ransomware-before-execution/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-07",
+      "title": "From WhatsApp to SYSTEM: Inside the VulcanRAT207.A Intrusion Chain",
+      "summary": "A WhatsApp-delivered ZIP containing Statement.exe starts a multistage Windows intrusion that ends in a WebSocket remote access trojan called VulcanRAT207.A. The loader screens the host for analysis environments, attempts elevation, and injects a downloader into the LocalSystem Task Scheduler process using PoolParty Variant 7. That downloader retrieves a deployment bundle that uses a signed GoFly driver to terminate Baidu security processes and creates a SYSTEM scheduled task that side-loads a malicious vulkan-1.dll through a legitimate VulkanInfo executable. The RAT then provides broad surveillance, remote control, network blocking, and injection capabilities, including targeted stubs for Chinese security products. The report advises defenders to correlate Task Scheduler injection, GoFly device use, SYSTEM task registration, and the Vulkan file package rather than focusing only on the final RAT.",
+      "completeness": "High",
+      "threats": [
+        "Vulcanrat",
+        "Dll_sideloading_technique",
+        "Gofly_tool",
+        "Poolparty_technique",
+        "Process_injection_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "NET Framework",
+        "Hyper-V",
+        "winlogon"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "rc4",
+        "sha256"
+      ],
+      "functions": [
+        "CreateRemoteThread-based",
+        "DLL-resolution",
+        "DLL"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/vulcanrat207-a_intrusion-chain_explained/"
+      ]
+    }
+  }
+]

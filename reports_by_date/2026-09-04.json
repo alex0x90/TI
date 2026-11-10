@@ -1,0 +1,247 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-04",
+      "title": "Angry Birds: Toy Ghouls’ new toys",
+      "summary": "Toy Ghouls, a financially motivated group targeting Russian organizations since 2025, has been observed using its first custom backdoor, in two versions. One version uses the public HiveMQ MQTT broker as its command-and-control server, and the other uses an attacker-run Element messenger server over the Matrix protocol. Attackers deliver the backdoors and configuration files via Windows Remote Management, using open-source tools such as Evil-WinRM. The backdoors can install as Windows services, encrypt their configuration files to bind them to a specific machine, and execute attacker commands through PowerShell or the Windows command line. Defenders should note that the group's shift to custom tools and unconventional C2 channels is meant to evade detection for longer.",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit",
+        "Babuk",
+        "Winrm_tool",
+        "Evil-winrm_tool",
+        "Genielocker",
+        "Backdoor.win64.suptoml.gen",
+        "Zapchast",
+        "Backdoor.win64.agent.smgdvy",
+        "Trojan.win64.agent.smgsfo"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Windows service"
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "md5"
+      ],
+      "functions": [
+        "seal"
+      ],
+      "links": [
+        "https://securelist.com/toy-ghouls-new-hivemq-and-element-backdoors/121270/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-04",
+      "title": "DPRK APTs: Ted backdoor and curlRAT target South Korean media and automotive sectors",
+      "summary": "Rapid7 Labs identified a previously undocumented Linux toolkit targeting South Korean automotive and media organizations, built around a trojanized HAProxy instance called the \"ted backdoor\" and a curl-based RAT named curlRAT. The ted backdoor is compiled into a victim's HAProxy 2.8.12 build and uses its native filter API to intercept traffic, inject malicious scripts into web pages, and harvest credentials and session cookies. Trojanized crond, agetty, atd, and polkitd binaries deliver curlRAT, which supports remote command execution, reverse shells, and HAProxy health monitoring. Rapid7 attributes the activity with medium confidence to DPRK APTs, citing shared ciphers, watering-hole tactics, and C2 domains linked to APT37. Defenders should secure edge components handling user traffic with the same rigor as main application servers and rely on independent network and binary integrity checks.",
+      "completeness": "Medium",
+      "threats": [
+        "Curlrat",
+        "Credential_harvesting_technique",
+        "Watering_hole_technique",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "South korea",
+        "Dprk",
+        "South korean"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 20,
+      "software": [
+        "Linux",
+        "HAProxy",
+        "nginx",
+        "Ubuntu",
+        "Apache Tomcat",
+        "Jenkins",
+        "Unix"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "userauth_passwd",
+        "atd_get_info",
+        "ted_register_reload_signal_handler",
+        "ted_extra_log",
+        "trace_chn_start_analyze",
+        "ted_chn_analyze_for_htx_constprop_0",
+        "write",
+        "send",
+        "popen"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-dprk-apts-ted-backdoor-curlrat-target-south-korean-media-automotive-sectors",
+        "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt\\_37.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-04",
+      "title": "Case of an attack targeting domestic entities that installs Radmin and UltraVNC",
+      "summary": "Attackers targeting domestic users in South Korea installed remote control tools Radmin and UltraVNC on compromised systems, with initial access method not confirmed. Radmin was deployed via a downloaded archive and batch script, then used to hijack control of infected machines and to run further PowerShell scripts. The attackers then installed UltraVNC through a custom Python or Go installer that created services and scheduled tasks for persistence and set up VNC access. Compromised systems were also turned into proxy nodes using Netch-gateway and CCProxy, and more recently SoftEther VPN servers. The report says the attacker may be a Chinese speaker, based on Chinese comments in scripts and Chinese-language proxy pages. Defenders are advised to be cautious with executables from unknown sources and keep V3 updated.",
+      "completeness": "Medium",
+      "threats": [
+        "Radmin_tool",
+        "Ultra_vnc_tool",
+        "Ccproxy_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "SoftEther",
+        "Curl",
+        "PyInstaller",
+        "WinRAR"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95229/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-04",
+      "title": "Drama RAT — a malicious application that truly makes things sad after installation",
+      "summary": "Drama RAT is an Android banking trojan with remote control capabilities, distributed through phishing messages in messengers and disguised as VPN services, banking apps, or cracked utilities with paid features. The samples are droppers that display a fake outdated-version notice and, after the user grants installation from unknown sources, download the malicious payload from a C2 server. The payload can intercept SMS, log keystrokes, overlay phishing screens, record the screen, microphone and camera, and steal contacts, credentials and geolocation. It grants itself permissions through Accessibility, hides the grant dialogs, and resists removal by redirecting settings access and restarting its services. Defenders should avoid installing apps from unofficial sources, limit Accessibility permissions, and treat unexpected update prompts as suspicious.",
+      "completeness": "Low",
+      "threats": [
+        "Drama_rat",
+        "Edxposed_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "task scheduler",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1077814/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-04",
+      "title": "Neither Malware nor Harmless: Tracking the NPS Proxy Across the Internet",
+      "summary": "NPS is an open-source Go-based tunneling and proxy tool, popular in the Chinese-speaking security community, that lets operators create reverse tunnels through a central server into internal networks. Censys observes about 17,500 NPS server hosts worldwide, concentrated in China and Hong Kong and clustered on Chinese cloud providers. Its dual-use nature means most deployments are likely legitimate administrative ones, though it has been used by China-linked actors. In reported intrusions, NPS was deployed as a secondary post-exploitation tool alongside C2 tooling such as Cobalt Strike, since it has no native command-execution capability. Defenders are advised to hunt for NPS in context, prioritizing instances that appear alongside remote access tools or bridge to infrastructure the organization does not own.",
+      "completeness": "Low",
+      "threats": [
+        "Nps_tool",
+        "Cobalt_strike_tool",
+        "Meterpreter_tool",
+        "Acunetix_tool",
+        "Viper",
+        "Supershell",
+        "Disttrack",
+        "Wannacry"
+      ],
+      "geo": [
+        "Hong kong",
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "Linux",
+        "macOS"
+      ],
+      "links": [
+        "https://censys.com/blog/nps-proxy-server/",
+        "https://github.com/ehang-io/nps",
+        "http://github.com/djylb/nps"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-04",
+      "title": "Panzer Ransomware: Profile of an Emerging Double-Extortion Operator",
+      "summary": "Panzer is a newly emerged Ransomware-as-a-Service operation, first observed on its leak site on August 5, 2026, with 16 published victims across at least 11 countries. It runs a mature affiliate program with an 80/20 revenue split favoring affiliates and supports Windows, Linux, ESXi, and FreeBSD builds. The group follows a double-extortion model, stealing data before encryption and pressuring victims through its leak site. Targeting appears opportunistic, with technology and manufacturing as the most-hit sectors and no single dominant region. The report notes no verified initial-access vector and no confirmed IOCs. Defenders should treat Panzer as an emerging, credible threat and prioritize data-exfiltration controls and immutable backups.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "South korea",
+        "Indonesia",
+        "Spain",
+        "Italy",
+        "Switzerland",
+        "Serbia",
+        "Germany",
+        "Czech republic",
+        "Nigeria",
+        "Thailand"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Linux",
+        "ESXi"
+      ],
+      "links": [
+        "https://cyberxtron.com/resources/blogs/panzer-ransomware-profile-of-an-emerging-double-extortion-operator-8102"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-04",
+      "title": "Robobox: Self driven malware creation and execution - made in China",
+      "summary": "A Chinese-language C2 framework connected to the Coruna iOS exploit kit was found on an open web directory, with a React dashboard and Node.js back-end that appear to have been generated largely by AI. The framework is basic, contains logic errors, relies on outdated exploit versions, and uses mock data, so it seems to be a demo or proof-of-concept rather than a live tool. The same directory held an AI-coded Windows RAT that opens a reverse shell with self-built AES-256-GCM encryption, a Cobalt Strike team server, and a fake sogou_pinyin update used to target mainland Chinese users. A bash history file shows automated setup of these components, with erratic command patterns that the researchers believe indicate an LLM operated the box. Defenders should note that AI-assisted, semi-autonomous malware development and operations may be emerging among Chinese operators.",
+      "completeness": "Low",
+      "threats": [
+        "Coruna_tool",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Korea",
+        "Chinese",
+        "China"
+      ],
+      "software": [
+        "penSSL de",
+        "crontab",
+        "openssl",
+        "mysql",
+        "curl",
+        "url -s",
+        "l -skv"
+      ],
+      "algorithms": [
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://netaskari.substack.com/p/robobox-self-driven-malware-creation",
+        "https://github.com/matteyeux/coruna"
+      ]
+    }
+  }
+]

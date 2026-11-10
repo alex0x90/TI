@@ -1,0 +1,810 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "NetScaler intrusions chaining CVE-2026-88771 and CVE-2026-88779",
+      "summary": "Rapid7 investigated a compromised Citrix NetScaler ADC appliance running an affected 14.1 build, where attackers chained CVE-2026-88771 (pre-authentication log-poisoning/RCE) with CVE-2026-88779 (SAML-parsing crash) to gain root code execution. The attacker used the NetScaler call-home crash handler as a repeatable execution trampoline that re-ran payloads after reboots, which maintained access across days. Persistence was established through cron, rc scripts, watchdog loops, PHP web shells disguised as CSS aliases, and a setuid /bin/sh. The operator deployed reverse agents and an internal TCP pivot, and used a Go tool to map DNS, LDAP/Active Directory, management services and VMware vCenter systems. Configuration and key material were staged and exfiltrated, including credentials and SSL private keys. Defenders should patch affected builds, treat exposed appliances as potentially compromised, inspect both HA nodes, and rotate exposed credentials and keys.",
+      "completeness": "Medium",
+      "threats": [
+        "Whipshot",
+        "Slapshot",
+        "Metasploit_tool"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 25,
+      "software": [
+        "Citrix NetScaler ADC",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "perl",
+        "php"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/ra-netscaler-intrusions-chaining-cve-2026-88771-and-cve-2026-88779"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "PyPI Becomes a Distribution Channel for Crimeware: The Case of 'saeka,' a Carding Automation Tool",
+      "summary": "Researchers at ESRC found 'saeka,' a carding crimeware tool distributed as a package on PyPI with a blank description. The tool runs a three-step card check, moving cards that pass external validity lookups to automated payment attempts on roughly 200 hardcoded Shopify storefronts. Successful, declined, 3DS, and CAPTCHA outcomes are sorted into files, and proxy rotation is used to evade fraud detection. It requires Base64-encoded passwords to run, and it auto-updates from a linked GitHub repository, with version 15.0 published so far. Victims are cardholders, online merchants, and payment processors, not the installing user's system. The report highlights that PyPI can serve as a crimeware distribution channel, so repository operators, payment providers, and merchants should all watch for such abuse.",
+      "completeness": "Low",
+      "threats": [
+        "Saeka_tool",
+        "Smishing_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://alyacofficialblog.tistory.com/5784"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "2026-10-15: PREY-0059 Uses Victim-Branded S3 Lures to Deploy Java RAT C2 in Under Five Minutes",
+      "summary": "Arctic Wolf tracks PREY-0059, a social engineering cluster that uses Microsoft Teams messages from external tenants impersonating internal IT help-desk staff to deliver Java-based RAT payloads. Lure pages hosted in Amazon S3 pose as ServiceNow portals, serve archives disguised as Windows updates, and collect submitted credentials into the same bucket. Victims are instructed to paste a command into cmd.exe, which uses the built-in tar utility to extract a bundled, legitimately signed Eclipse Adoptium JDK and Java source files. Commercial EDR products often did not block execution, and C2 was reached in under five minutes, followed by LDAP queries to domain controllers and SMB/RPC scanning. Defenders should restrict external Teams access, block Java execution from user-writable paths, and watch for java.exe or javaw.exe running from %AppData% with a .java argument.",
+      "completeness": "Low",
+      "threats": [
+        "Java_rat"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "ServiceNow",
+        "Azure Blob"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://github.com/rtkwlf/wolf-tools/tree/main/pack_alerts/202610-teams-vishing-s3-lures-deliver-java-source-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Hunting APT28: How We Caught Covenant Grunt Hiding in Office Documents",
+      "summary": "APT28 (Fancy Bear) used malicious Office documents with business-themed filenames, including a Russian-language \"Price List\" lure, to deliver the Covenant Grunt backdoor. Traditional AV engines detected these samples poorly, with some detection ratios as low as 5 out of 62. The macros used simple string obfuscation, such as splitting \"userprofile\" into fragments, to evade static scanners and copy the document to the victim's OneDrive folder. System fingerprinting data was XOR-encoded and hidden in an invisible textbox within the document. The macro dropped a 64-bit Covenant Grunt loader DLL disguised as a log file in the temp directory, along with persistence artifacts and cloud-based C2 traffic via Dropbox. Defenders are advised to layer generic, technique-specific, and actor-specific YARA rules to catch this activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Covenant_c2_tool",
+        "Spear-phishing_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "Environ"
+      ],
+      "links": [
+        "https://github.com/NextronSystems/iocs/tree/master/reports/Hunting%20APT28:%20How%20We%20Caught%20Covenant%20Grunt%20Hiding%20in%20Office%20Documents"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Threat Intelligence \\| Analysis of the DarkSword Trojan Backend and iOS Attack Chain",
+      "summary": "The DarkSword iOS exploit chain, a six-CVE toolkit with three zero-days exploited in the wild, is delivered through malicious landing pages and runs when a victim opens a crafted page in Safari. Its operators, who built on public source code from the DarkSword-PROV2 GitHub repository, steal files, Keychain data, and cryptocurrency wallet data, and they are also developing instant messaging account takeover. The attackers' modified exploit chain works reliably only on iOS 18.6 through 18.7.2 and iOS 26.0 through 26.1, even though the payload library and delivery entry point claim much broader version coverage. Defenders should keep iOS updated and avoid opening untrusted links, and if a device visited a suspicious landing page, they should treat wallet credentials as compromised and move assets to a new wallet.",
+      "completeness": "High",
+      "threats": [
+        "Darksword_tool",
+        "Coruna_tool",
+        "Watering_hole_technique",
+        "Darksword_prov2_tool",
+        "Ueyes_tool",
+        "Darksward_tool",
+        "Ghostblade",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "China",
+        "South korea",
+        "Latvia",
+        "Malaysia",
+        "Hong kong",
+        "Australia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "SlowMist",
+        "WhatsApp",
+        "uvicorn",
+        "FastAPI",
+        "Cloudflare",
+        "Telegram",
+        "Nginx"
+      ],
+      "wallets": [
+        "imtoken",
+        "tokenpocket",
+        "tronlink",
+        "metamask",
+        "coinbase",
+        "bitkeep_wallet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "sha256",
+        "aes-ctr",
+        "zip"
+      ],
+      "functions": [
+        "CreateWithCString",
+        "TaskRop",
+        "route"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://slowmist.medium.com/threat-intelligence-analysis-of-the-darksword-trojan-backend-and-ios-attack-chain-397ecf499fa8?source=rss-4ceeedda40e8------2",
+        "https://github.com/slowmist/MistEye-DepScan?utm\\_source=chatgpt.com",
+        "https://github.com/slowmist/MistEye-DNS-Guard?utm\\_source=chatgpt.com",
+        "https://github.com/slowmist/misteye-skills?utm\\_source=chatgpt.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Supply-Chain Attack on ConnectWise Cloud Backup",
+      "summary": "A threat actor obtained an API secret belonging to ConnectWise Cloud Backup, formerly known as SkyKick, and used it to gain unauthorized access to customers' Microsoft 365 environments. At least 173 victims have been identified, though the true number may be higher. The initial access across affected organizations appears to have been automated. In one case, the actor granted itself the Global Administrator role and added credentials to two other applications for additional persistence. Because the platform is marketed to MSPs, customers of compromised MSPs may face further supply-chain attacks, and ConnectWise has reportedly taken the service offline. Organizations using the service should disable it until credentials are reset and ConnectWise confirms it is safe.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Password_spray_technique"
+      ],
+      "software": [
+        "Microsoft 365"
+      ],
+      "links": [
+        "https://www.truesec.com/hub/blog/supply-chain-attack-on-connectwise-cloud-backup"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "[AnyDesk TAG\\] AnyDesk and ScreenConnect in a campaign targeting banking customers",
+      "summary": "A phone-led fraud operation, tracked internally as AnyDesk TAG, has targeted banking customers since at least March 2026. Victims reach cloned bank support pages with options such as Verify Call, Live Chat and Fraud Report, where a verification code supplied by the caller unlocks a download. The downloads include genuine AnyDesk software and custom payloads that install ScreenConnect configured for unattended access, which persists beyond the original call. The payloads carry valid code-signing certificates issued to Botania Games entities, which have since been revoked. Lures impersonate many banks and fintech brands, and researchers linked at least 383 domains to the activity by October 2026. Defenders should note that the operation's infrastructure is still active, and a TLP:AMBER advisory is available to qualified recipients.",
+      "completeness": "Medium",
+      "threats": [
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Aitm_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "software": [
+        "Microsoft Defender"
+      ],
+      "links": [
+        "https://www.aitmfeed.com/blog/blog-1/anydesk-tag-anydesk-and-screenconnect-in-a-campaign-targeting-banking-customers-22"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "A China-Linked Operator Used AI Agents to Attack Governments Across Asia",
+      "summary": "A China-linked, Chinese-speaking, financially motivated operator used the open-source Cairn framework to run LLM agents from one server against 66 projects between 24 September and 14 October 2026. Targets included government systems in Vietnam, Taiwan, Indonesia and India, along with payments, retail, airline and SaaS companies, and 48 projects reached at least session-level access. The operator's platform was left exposed on port 9000 with no authentication from 29 September to 15 October, which exposed the operation. The operator's own records documented the activity in detail, and the operator suppressed Chinese language signals on victim systems. The report finds no evidence of state sponsorship and does not link the operation to the reported SOUL campaign beyond shared tooling.",
+      "completeness": "Medium",
+      "threats": [
+        "Cairn",
+        "Viewstate_deserialization_vuln",
+        "Shellshock_vuln",
+        "Stylesmuggler_vuln",
+        "Hermes"
+      ],
+      "geo": [
+        "India",
+        "China",
+        "Singapore",
+        "Asia",
+        "Kenya",
+        "Indonesia",
+        "Taiwanese",
+        "Chinese",
+        "Taiwan",
+        "Vietnam"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Ubuntu",
+        "Docker",
+        "Kubernetes",
+        "MSSQL",
+        "JBoss",
+        "ASP.NET",
+        "Cloudflare",
+        "vBulletin",
+        "Redis",
+        "DeepSeek",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256"
+      ],
+      "languages": [
+        "ruby",
+        "python",
+        "java",
+        "php"
+      ],
+      "links": [
+        "https://vulone.com/blog/a-china-linked-operator-used-ai-agents-to-attack-governments-across-asia",
+        "https://github.com/magento/magento2",
+        "https://github.com/Seldaek/monolog"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Slaiclind: analyzing a campaign combining ClickFix and EtherHiding",
+      "summary": "The Slaiclind campaign combines EtherHiding, which stores attacker C2 URLs in a Polygon Smart Contract, with the ClickFix technique, which tricks users into running commands themselves. Compromised websites, identified as unrelated to blockchain topics, load a script that reads the contract's payload and kill-switch flag. The script then injects a fake Cloudflare CAPTCHA shown only to Windows users, which copies a PowerShell command to the clipboard for the victim to paste. That command installs the Deno runtime and runs a loader that injects shellcode into explorer.exe. Defenders should note that the contract-based design lets analysts track attacker activity, and that ClickFix-style campaigns are expected to proliferate.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Process_ghosting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "or",
+        "owner",
+        "getPayload",
+        "setPayload",
+        "ld",
+        "setEnabled",
+        "init",
+        "GetConsoleWindow"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "solidity",
+        "typescript"
+      ],
+      "links": [
+        "https://www.stormshield.com/news/cti-payload-slaiclind-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Glassworm Hacks OVH Clouds CLI tool",
+      "summary": "The OVHcloud CLI (ovh/ovhcloud-cli) had five published releases, v0.11.0 through v0.15.0, tampered with on 19 October 2026 between roughly 12:47 and 13:12 UTC. The attacker replaced the mainstream binaries and checksums.txt through a hijacked contributor account, HassenBF, using the GitHub Releases API, without touching the source repository or running any CI workflow. The replaced binary was a dirty local build containing a secret-stealing payload, and OVHcloud deleted the files and published a clean, immutable v0.16.0 later that day. The account had reportedly been compromised since March 2026, with a preinstall.js loader that fetches a second stage via a Solana memo dead drop, linked to known GlassWorm indicators, though the link to the October attack is an inference. Anyone who installed v0.11.0 to v0.15.0 from GitHub release assets during the window should treat secrets on that machine as exposed, rotate them, and verify binaries against clean checksums. The report also recommends immutable releases, provenance attestations, and hash pinning as defensive measures.",
+      "completeness": "Low",
+      "threats": [
+        "Glassworm",
+        "Ovhcloud_cli",
+        "Supply_chain_technique",
+        "Dead_drop_technique",
+        "Credential_harvesting_technique",
+        "Bumblebee"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "Docker",
+        "curl",
+        "Kubernetes"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "sha256",
+        "base64",
+        "aes"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/glassworm-hacks-ovh-clouds-cli-tool",
+        "https://github.com/ovh/ovhcloud-cli/issues/300",
+        "https://github.com/ovh/ovhcloud-cli"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "From Win+X to EdgeUpdate - Unpacking a jsDelivr Hosted ClickFix Loader",
+      "summary": "The werd19327 ClickFix chain is a multi-stage loader delivered through 16 compromised WordPress sites, with the overlay fetched from BNB Smart Chain testnet contracts in the style of ClearFake. The lure asks victims to press Win+X then I and paste a command that fetches a PowerShell first stage via jsDelivr from a throwaway GitHub account. Later stages decode and XOR a payload, then inject shellcode into a suspended MicrosoftEdgeUpdate.exe (or rundll32.exe) using Early Bird APC injection. The final PE is disguised as a Realtek HD Audio Manager and is likely an infostealer, though this is unconfirmed. The same operator appears to rotate GitHub accounts and C2 domains every few weeks. The author notes that the chain avoids Run-dialog detections and leaves no persistence in the loader stages.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Device_code_phishing_technique",
+        "Etherhiding_technique",
+        "Clearfake",
+        "Apc_injection_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Windows Terminal",
+        "Cloudflare",
+        "curl",
+        "Node.js",
+        "Vercel"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "aes",
+        "sha1",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "load_",
+        "isGoalReached",
+        "Get-Variable",
+        "Get-PSBreakpoint",
+        "GetDelegateForFunctionPointer"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://newtonpaul.com/blog/werd19327-clickfix-edgeupdate-loader/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Ukraine’s State Data-Exchange System Targeted by Russian-Speaking Operator via Graylog Log4Shell",
+      "summary": "A single operator from a rented server scanned Ukrainian address space for port 5000 and filtered 7,576 live hosts down to two by the string \"UXP Verifier,\" the web interface for a data-exchange Security Server. The operator achieved code execution on at least two logging servers using a reused public CommonsBeanutils2 deserialization chain delivered through the Graylog sessions API. On the documented host, the Graylog Elasticsearch cluster held about 6.8 million documents from Ukraine's state data-exchange platform, and the operator queried aggregate counts without any recorded exfiltration. The campaign was exposed when the operator served the working directory over HTTP for 17 hours, leaking the access log that proves execution. Defenders should watch for POST requests to /api/system/sessions containing \"${jndi:\" with the X-Requested-By: cli header, and for child processes spawned from Java services.",
+      "completeness": "Medium",
+      "threats": [
+        "Log4shell_vuln",
+        "Masscan_tool",
+        "Ysoserial_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "FortiGate",
+        "WordPress"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/ukraine-state-data-exchange-graylog-log4shell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Midnight Mimosa Malware Campaign Exploits Android Firmware Supply Chain",
+      "summary": "Midnight Mimosa is an Android malware campaign that preinstalls malicious platform-signed system applications in firmware of low-cost, MediaTek-based devices. The enabler silently installs payloads, temporarily disables Google Play Store protections, and downloads remotely supplied plugins that run advertising fraud and residential-proxy functions. Bitdefender observed infections on thousands of devices across more than 150 countries, with the highest concentrations in Mexico, France, and Italy. The campaign also distributed 13 related ad-fraud applications through Google Play, and it shares code and infrastructure with Android.Joker, Android.Phantom, and Android.Click, though the operator remains unattributed. For defenders, the takeaway is that unmanaged or inexpensive Android devices may carry persistent compromise that removing apps does not fix.",
+      "completeness": "Medium",
+      "threats": [
+        "Midnight-mimosa",
+        "Supply_chain_technique",
+        "Residential_proxy_technique",
+        "Enloaderlib_tool"
+      ],
+      "geo": [
+        "Germany",
+        "Italy",
+        "France",
+        "Spain",
+        "Mexico",
+        "Brazil",
+        "United states"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/midnight-mimosa-malware-campaign-exploits-android-firmware-supply-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Same Vulkan Host, Different Payload: Inside VulcanRAT207.B",
+      "summary": "VulcanRAT207.B is a remote access trojan delivered by a RomulusLoader controller that shares a signed VulkanInfo host and related artifacts with the earlier VulcanRAT207.A chain, but follows a distinct execution path. The package uses DLL side-loading through an obfuscated vulkan-1.dll launcher that runs RomulusLoader shellcode, with the controller installing 444.exe and establishing a SYSTEM scheduled task named Microsoft Compatibility system. The loader retrieves the RAT over TCP port 1234, which provides interactive remote desktop, file transfer, keylogging, process concealment, and security product termination. The RAT also includes PoisonX-style and TrueSight kernel-driver interfaces for evasion. The original delivery vector for this second package remains unconfirmed, so defenders should not assume the WhatsApp lure or Statement.exe stage from the earlier investigation. Detection and incident scoping should keep these branch-specific artifacts separate from the GoFly-related indicators.",
+      "completeness": "High",
+      "threats": [
+        "Vulcanrat",
+        "Romulusloader",
+        "Shadow_copies_delete_technique",
+        "Poisonx",
+        "Gofly_tool",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "Telegram",
+        "winlogon"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "VulkanInfo"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/same-vulkan-host-different-payload-inside-vulcanrat207-b/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "CVE-2026-102764: Critical BeyondTrust Remote Support Authentication Bypass Exploited in the Wild",
+      "summary": "CVE-2026-102764 is a critical authentication bypass in BeyondTrust Remote Support that lets unauthenticated remote attackers perform file operations on affected appliances without user interaction. BeyondTrust confirmed in-the-wild exploitation of two compromises dating to August 29, 2026, one on a BeyondTrust-hosted instance and one on a self-hosted appliance. Mandiant attributes the activity to ARMORY CASTLE, a suspected PRC-nexus espionage actor, which deployed web shells and tunnelers, escalated to root, and attempted credential-vault extraction. CISA added the flaw to its KEV list, and a Metasploit module is publicly available. Defenders should apply the BT26-05-RS patch on an emergency basis, then hunt for compromise, since patching does not remove persistence.",
+      "completeness": "Low",
+      "threats": [
+        "Sawfly",
+        "Bareclaw"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/etr-cve-2026-102764-critical-beyondtrust-remote-support-authentication-bypass-exploited-in-the-wild"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Inside DarkVision RAT",
+      "summary": "DarkVision is a Remote Access Trojan sold as Malware-as-a-Service, first offered on underground forums around late 2019 to early 2020 for about $40 and now priced near $60. It is written in C++ and ASM, and it uses a plugin subsystem that lets operators add capabilities at runtime. Its operators reach victims mainly through phishing, malvertising, fake software and cracks, and malicious scripts such as VBS and JS, often as loaders that deliver the RAT. The malware establishes persistence through the registry Run key, injects into explorer.exe, svchost.exe or cmd.exe, and includes a stealer plugin that targets browser and email credentials. Defenders are advised to monitor script-driven downloads, suspicious process injection, and Run key writes using obfuscated PowerShell.",
+      "completeness": "High",
+      "threats": [
+        "Darkvisionrat",
+        "Credential_stealing_technique",
+        "Smokeloader",
+        "Purecrypter",
+        "Donut",
+        "Graftloader",
+        "Clickfix_technique",
+        "Asyncrat",
+        "Amadey",
+        "Vidar_stealer",
+        "Stealc",
+        "Raccoon_stealer",
+        "Confuserex_tool",
+        "Eazfuscator_tool",
+        "Steganography_technique",
+        "Uac_bypass_technique",
+        "Process_hollowing_technique",
+        "Lolbin_technique",
+        "Antidebugging_technique",
+        "Process_injection_technique",
+        "Spear-phishing_technique",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Opera",
+        "Vivaldi",
+        "Firefox",
+        "FoxMail",
+        "WinHTTP",
+        "Windows Defender",
+        "Telegram",
+        "Twitter",
+        "winlogon",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "aes-128",
+        "xor",
+        "zip",
+        "aes",
+        "base64",
+        "lzma"
+      ],
+      "functions": [
+        "Read-Only",
+        "Initialize",
+        "UnInitialize",
+        "UnInstall",
+        "SetWindowsHookEx",
+        "ReadOnly"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://rexorvc0.com/2026/10/19/Inside-DarkVision/",
+        "https://github.com/CHUMENII/COM-UACBypass-Privilege-Escalation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "A Visualizza into Recent IcedID Campaigns:",
+      "summary": "IcedID, also known as BokBot, is a banking trojan that evolved into a dropper capable of deploying Cobalt Strike and, in recent infections, Quantum ransomware. This Team Cymru report analyzes IcedID Stage 1 command-and-control infrastructure and campaign metrics from 13 to 21 September 2022. Campaigns were delivered mainly by email using lures such as password-protected ZIP files containing ISOs, CHM files, malicious Office macros, and PrivateLoader downloads. The most successful campaign by victim count used a password-protected ZIP, ISO, and LNK chain targeting English speakers, which reached around 115 potential victims. Campaigns using CHM files appeared less successful, and lures with obvious errors performed poorly. Defenders should maintain security awareness training that reflects realistic lures and monitor PrivateLoader as an emerging delivery route.",
+      "completeness": "Low",
+      "threats": [
+        "Icedid",
+        "Cobalt_strike_tool",
+        "Quantum_locker",
+        "Privateloader"
+      ],
+      "geo": [
+        "Italian"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.team-cymru.com/post/a-visualizza-into-recent-icedid-campaigns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Active Exploitation of CVE-2026-110936 in Siemens Software Center",
+      "summary": "Siemens confirmed active exploitation of CVE-2026-110936, a DLL side-loading flaw in Siemens Software Center, and fixed it in version 4.0.9.8 under advisory SSA-580366. Attackers placed their own DLL files beside a genuine, validly signed copy of the program, which loaded them without checking. The Siemens program itself was not modified, and Siemens reports no breach of its systems, products or update channels. The campaign is attributed to the Romulus multi-platform ClickFix campaign. Defenders should update to 4.0.9.8 or later, use only official Siemens download sources, and hunt for the program running from unusual AppData folders, since detection should rely on folder and behaviour rather than the file's signature.",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Romulusloader",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://productcert.siemens.com/news/2026/10/19/active-exploitation-of-cve-2026-110936-in-siemens-software-center/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Unmasking AVE_MARIA",
+      "summary": "AVE_MARIA is a malware family that Team Cymru links to the Remote Administration Tool marketed as WARZONE RAT on hacker forums. The RAT is sold by the persona \"Solmyr\" as a one- or three-month subscription, alongside a free dynamic DNS service, warzonedns[.]com. Team Cymru found over 4,500 malware samples querying hostnames under that domain, with over 75% containing a key AVE_MARIA indicator. The Yoroi and @dvk01uk samples share overlaps and are assessed with high confidence to belong to the same family. The report also notes a UAC bypass component and that HackForums listed 192 completed sales as of 2019-07-24.",
+      "completeness": "Medium",
+      "threats": [
+        "Avemaria_rat",
+        "Solmyr",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Moldova"
+      ],
+      "software": [
+        "Twitter",
+        "Winlogon",
+        "Google Chrome",
+        "Chrome",
+        "Discord",
+        "Jabber"
+      ],
+      "wallets": [
+        "yoroi"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "exhibit"
+      ],
+      "links": [
+        "https://www.team-cymru.com/post/unmasking-ave-maria",
+        "https://github.com/team-cymru/iocs/blob/master/ave\\_maria/appendix\\_a.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "Critical security problem in UpdraftCentral: an attacker holding the service’s keys planted a backdoor on our websites",
+      "summary": "The UpdraftCentral service, a remote management channel built into the free and premium UpdraftPlus WordPress plugin, was abused after an attacker obtained the dashboard's private signing keys from the vendor's infrastructure. The attacker used valid signed commands to push a backdoor plugin to connected sites, which created a hidden administrator-level login path. Several backdoor variants have been observed, some hiding from the plugin list, and the attacker has continued sending commands and reusing backdoor triggers. Defenders should delete UpdraftCentral keys on every site (keys created before 12:07 UTC on 18 October are revoked by UpdraftPlus 1.26.13 / 2.26.13, but later keys must be removed by hand), check for unknown plugins, accounts and access-log requests, and change passwords.",
+      "completeness": "Low",
+      "software": [
+        "Cloudflare",
+        "wordpress",
+        "nginx",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "__construct",
+        "handle_sync",
+        "is_ssl",
+        "define",
+        "array",
+        "get_users"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://nethemba.com/updraftcentral-backdoor-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "The Beast Returns: Analysis of a Beast Ransomware Server",
+      "summary": "Team Cymru analyzed an open directory on a server hosting the toolkit of a Beast ransomware operator, which was found on port 8000 in March 2026. Beast is a Ransomware-as-a-Service offering first promoted on the RAMP forum in June 2024 as the successor to Monster ransomware, and it reportedly avoids encrypting devices in CIS countries. The toolkit covered the full intrusion lifecycle, including network scanning tools, credential theft utilities such as Mimikatz and LaZagne, and RMM and remote execution tools like AnyDesk and PsExec. Operators used MEGASync and WinSCP to exfiltrate data before encryption, and scripts to delete shadow copies and wipe logs. Beast binaries for both Windows and Linux ESXi were found, indicating targeting of workstations and virtualized servers. Defenders should focus on detecting and blocking the legitimate tools listed in the Ransomware Tool Matrix.",
+      "completeness": "Medium",
+      "threats": [
+        "Beast_ransomware",
+        "Monster_ransomware",
+        "Advanced-port-scanner_tool",
+        "Mimikatz_tool",
+        "Lazagne_tool",
+        "Automim_tool",
+        "Kerberoasting_technique",
+        "Anydesk_tool",
+        "Qilin_ransomware",
+        "Akira_ransomware",
+        "Megasync_tool",
+        "Shadow_copies_delete_technique",
+        "Softperfect_netscan_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Belarus",
+        "Moldova"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "PsExec",
+        "SysInternals",
+        "OpenSSH",
+        "OpenSSH for Windows",
+        "WinSCP",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.team-cymru.com/post/beast-ransomware-server-toolkit-analysis",
+        "https://github.com/BushidoUK/Ransomware-Tool-Matrix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-19",
+      "title": "ovhcloud-cli security incident - October 19th, 2026",
+      "summary": "OVHcloud disclosed that a compromised developer GitHub account was used on 19 October 2026 to replace release binaries of its ovhcloud-cli project, versions v0.11.0 to v0.15.0, with malicious builds. The trojanized binaries were a recompiled CLI containing a stealer that harvested credentials and files, including cloud provider configurations, SSH keys, Docker and Kubernetes configs, and AI coding assistant databases. Stolen data was archived and exfiltrated, with Solana RPC calls used to help retrieve the exfiltration endpoint. Only users who downloaded the affected builds during the roughly 1h33 window are considered at risk, and those users should rotate secrets and move to v0.16.0. The root cause was a release-immutability misconfiguration, and the report links the activity to the Glassworm threat actor.",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Docker",
+        "Kubernetes"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "RPC"
+      ],
+      "links": [
+        "https://github.com/ovh/ovhcloud-cli/security/advisories/GHSA-862f-55f5-vmvw",
+        "https://github.com/alink-tothepast"
+      ]
+    }
+  }
+]

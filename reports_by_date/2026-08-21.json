@@ -1,0 +1,582 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "From YouTube Ad to Root: How a Fake TradingView Installer Delivers a macOS Stealer",
+      "summary": "A macOS implant delivered through a paid YouTube video ad impersonating TradingView, which led victims to a fake .pkg installer, is a remote-controlled task runner rather than a single-purpose stealer. A LaunchAgent masquerading as a Microsoft service re-fetches a shell stager every five minutes, and the stager executes whatever bash the command and control server returns. The main payload is an encrypted V8 code cache run by a bundled, legitimately signed Node.js binary, with six native modules providing keylogging, screen capture, keychain access, and privacy-dialog automation. A rogue root CA and local proxy enable TLS interception, and the user's sudo password is stored in plaintext. Defenders should note that malvertising and admin prompts were the entry points, and that killing the process or disabling the LaunchAgent re-arms persistence.",
+      "completeness": "High",
+      "threats": [
+        "Launchagents_tool",
+        "Mitm_technique",
+        "Weevilproxy",
+        "Jsceal"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "TradingView",
+        "macOS",
+        "Node.js",
+        "sudo",
+        "curl",
+        "Gatekeeper",
+        "OpenSSL",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "rsa-4096",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "runInThisContext",
+        "require"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://safedep.io/youtube-ad-fake-tradingview-macos-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "Trapping a Mustang Panda",
+      "summary": "ITG27, a China-aligned state-sponsored espionage group also tracked as Hive0154 and overlapping with Mustang Panda, targeted Indian government and energy organizations using hydropower-themed lure documents. The campaign delivered Claimloader via DLL sideloading, which led to the Toneshell v10 backdoor using WebSocket over TLS for command and control. In simulated environments, X-Force observed operators performing hands-on-keyboard reconnaissance and deploying Havencode, a previously unknown VNC-capable backdoor with hidden desktop capability. Operators in a government agency environment exfiltrated fake documents to an SFTP server, and all operator actions occurred during China Standard Time working hours. Defenders are advised to prioritize phishing controls, detect DLL sideloading and unusual persistence paths, and monitor for the reconnaissance command sequences and hidden desktop activity.",
+      "completeness": "High",
+      "threats": [
+        "Havencode",
+        "Claimloader",
+        "Toneshell",
+        "Credential_harvesting_technique",
+        "Pubload",
+        "Hvnc_tool",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "China",
+        "Indian",
+        "Asia",
+        "India",
+        "Nepal",
+        "Taiwan",
+        "Asian",
+        "Tibetan",
+        "Bangladesh",
+        "Tibet",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "WinHTTP",
+        "fsutil",
+        "curl",
+        "Windows Explorer",
+        "chrome",
+        "Google Chrome",
+        "Mozilla Firefox",
+        "Mozilla Thunderbird",
+        "KeePass",
+        "have more..."
+      ],
+      "algorithms": [
+        "prng",
+        "zip",
+        "sha256",
+        "xor",
+        "crc-32"
+      ],
+      "functions": [
+        "Get-WmiObject",
+        "rand"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.ibm.com/think/x-force/trapping-a-mustang-panda",
+        "https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/ibm-xti"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "ExfilSquad: New Data Extortion Group Leaks Microsoft D365 Data, Likely Linked to Misconfigured Power Pages",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Ponystealer",
+        "Siplog"
+      ],
+      "geo": [
+        "Switzerland",
+        "Columbia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Dataverse",
+        "Microsoft Dynamics 365",
+        "Nginx",
+        "Power BI"
+      ],
+      "links": [
+        "https://www.fortra.com/blog/exfilsquad-data-extortion-group-ransoming-microsoft-d365-data",
+        "https://github.com/mbrg/power-pwn/wiki/Modules:-Power-Pages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "Operation CameraSwarm: Over 14,000 Dahua cameras compromised across Ukraine and Russia",
+      "summary": "A single operator compromised over 14,530 Dahua IP cameras between 17 June and 22 July 2026, with the largest concentration in Ukraine and Russia. The operator used three parallel paths: credential brute-forcing on port 37777, an authentication-bypass chain (CVE-2021-33044 and CVE-2021-33045) that left a persistent p2pwn backdoor account on 1,923 cameras, and serial-number access through Dahua's cloud relay. The toolkit was assembled from upstream researchers' code, and the operator's own code records that 89.4 percent of live serials returned an open channel requiring no authentication. Offline recovery codes grant cloud-level administrative access by serial number, independent of device credentials, which the report assesses with moderate confidence was designed to hand access to a third party. A separate Windows binary, classified as SalatStealer, was staged on the same host with a five-method Defender bypass script. Defenders should audit cameras for the p2pwn account, disable P2P where unused, apply the Dahua patches, and update firmware to invalidate recovery codes.",
+      "completeness": "High",
+      "threats": [
+        "Masscan_tool",
+        "P2pwn_tool",
+        "Salatstealer",
+        "Credential_harvesting_technique",
+        "Xenorat",
+        "Meterpreter_tool",
+        "Sliver_c2_tool",
+        "Credential_dumping_technique",
+        "Fscan_tool",
+        "Vshell",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Russian",
+        "Ukraine",
+        "Germany",
+        "Vietnamese",
+        "Ukrainian",
+        "Iran",
+        "Russia",
+        "Spanish",
+        "Mexican"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 12,
+      "software": [
+        "Dahua",
+        "sudo",
+        "Linux",
+        "VKontakte",
+        "Telegram",
+        "Discord",
+        "Ubuntu",
+        "Debian",
+        "Confluence",
+        "Kubernetes",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "pbkdf2",
+        "sha256",
+        "hmac"
+      ],
+      "functions": [
+        "Internet-Wide",
+        "rmtree"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "golang",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/operation-cameraswarm-dahua-cameras-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "StopRansomware: Medusa Ransomware",
+      "summary": "Medusa is a ransomware-as-a-service variant first identified in June 2021, and its developers and affiliates run a double-extortion model that encrypts victim data and threatens public release of stolen data. As of April 2026, Medusa actors had impacted over 500 victims across critical infrastructure sectors, including healthcare, education, legal, insurance, technology, and manufacturing. They obtain initial access through phishing and by rapidly exploiting newly announced vulnerabilities, such as BeyondTrust CVE-2026-1731, often within 24 hours of disclosure. Post-compromise, they rely on living-off-the-land tools, legitimate remote access software, and credential dumping, then exfiltrate data with Rclone before deploying the gaze.exe encryptor. The advisory urges defenders to patch promptly, segment networks, and filter untrusted access to remote services.",
+      "completeness": "High",
+      "threats": [
+        "Medusa_ransomware",
+        "Interactsh_tool",
+        "Medusalocker",
+        "Screenconnect_tool",
+        "Beyondtrust_tool",
+        "Lolbin_technique",
+        "Minidump_tool",
+        "Rclone_tool",
+        "Ligolo-ng_tool",
+        "Cloudflared_tool",
+        "Nezha_tool",
+        "Meshagent_tool",
+        "Meshcentral_tool",
+        "Gsocket_tool",
+        "Gs-netcat",
+        "Anydesk_tool",
+        "Atera_tool",
+        "Ehorus_tool",
+        "N-able_tool",
+        "Simplehelp_tool",
+        "Splashtop_tool",
+        "Mimikatz_tool",
+        "Vssadmin_tool",
+        "Shadow_copies_delete_technique",
+        "Crackmapexec_tool",
+        "Netexec_tool",
+        "Ligolo_tool",
+        "Credential_dumping_technique",
+        "Nltest_tool"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 38,
+      "software": [
+        "GoAnywhere",
+        "SoftPerfect Network Scanner",
+        "MySQL",
+        "Local Security Authority",
+        "Windows Defender",
+        "PsExec",
+        "Active Directory",
+        "Bandizip",
+        "Sysinternals PsExec",
+        "BigFix",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "gzip",
+        "base64",
+        "aes-256"
+      ],
+      "functions": [
+        "set-ExecutionPolicy",
+        "Remove-Item"
+      ],
+      "languages": [
+        "python",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260818.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "Shadow HVNC and Shadow Loader: The Kit That Protects Its License Better Than Its Customers",
+      "completeness": "High",
+      "threats": [
+        "Hvnc_tool",
+        "Remotex_tool",
+        "Wevtutil_tool",
+        "Mimikatz_tool",
+        "Pypykatz_tool",
+        "Uac_bypass_technique",
+        "Chromelevator_tool",
+        "Royal_ts_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Mremoteng_tool",
+        "Putty_tool",
+        "Chromeelevator_tool",
+        "Fodhelper_uac_bypass_technique",
+        "Icmluautil_tool",
+        "Purerat",
+        "Native_loader"
+      ],
+      "geo": [
+        "Japan",
+        "Denmark",
+        "Italian",
+        "Latam",
+        "Italy",
+        "Canada",
+        "Africa",
+        "Spain",
+        "China",
+        "Hong kong",
+        "Middle east",
+        "Korea",
+        "South africa",
+        "Russia",
+        "Asia",
+        "Korean",
+        "Vietnamese",
+        "South korea",
+        "American",
+        "India"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Telegram",
+        "Steam",
+        "Discord",
+        "Windows DNS",
+        "Windows kernel",
+        "Windows service",
+        "Winlogon",
+        "Windows Defender",
+        "Microsoft Windows Defender",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20",
+        "ed25519",
+        "aes",
+        "aes-256-gcm",
+        "zip",
+        "aes-gcm",
+        "sha1",
+        "sha256",
+        "aes-256-cbc",
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "CreateService",
+        "setDPIAware",
+        "getCountryCode",
+        "Windows",
+        "GetModuleHandle",
+        "getAllWindowTitles",
+        "HTTPS",
+        "Get-MpThreatDetection",
+        "CreateDesktop"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://malbearlabs.com/shadow-hvnc-and-shadow-loader-the-kit-that-protects-its-license-better-than-its-customers-dd99520b6af3",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption",
+        "https://github.com/Goodies365/YandexDecrypt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "SilkParasite: Tracking a China-Nexus APT Across Central Asia",
+      "summary": "SilkParasite is a cyberespionage operation, assessed at medium confidence as China-nexus, that targeted government bodies across Central Asia. Bitdefender Labs identified seven RAT families, five previously undocumented, including DriveSilkRAT, which tasks infected hosts through a shared Google Drive folder. The operators use spear-phishing Office documents with regionally tailored lures and DLL sideloading through legitimate signed applications. The toolset is modular and professionally engineered, with traces of AI-assisted development, and it includes a lure deliberately made to look cheap. Defenders should hunt for unusual signed binaries loading adjacent DLLs and for unexpected Google Drive traffic.",
+      "completeness": "High",
+      "threats": [
+        "Deed_rat",
+        "Bloodalchemy",
+        "Shadowpad",
+        "Dll_sideloading_technique",
+        "Spicerat",
+        "Drivesilkrat",
+        "Spear-phishing_technique",
+        "Nomadrat",
+        "Cookietagrat",
+        "Goginrat",
+        "Confuserex_tool",
+        "Nodeedgerat",
+        "Halosgate_technique",
+        "Cliplogger_tool"
+      ],
+      "geo": [
+        "Kyrgyzstan",
+        "Asia",
+        "China",
+        "Georgian",
+        "Uzbekistan",
+        "Kazakhstan",
+        "Ukraine",
+        "Asian",
+        "Chinese",
+        "Azerbaijani",
+        "Tajikistan",
+        "Russia",
+        "Turkmenistan",
+        "Middle east"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Office",
+        "Windows Defender",
+        "Node.js",
+        "Slack",
+        "Discord",
+        "Microsoft Edge update"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "chacha20",
+        "sha256",
+        "rc4",
+        "aes",
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/silkparasite-tracking-china-nexus-apt-across-central-asia",
+        "https://github.com/bitdefender/malware-ioc/blob/master/silkparasite-2026\\_08/silkparasite-bitdefender-labs-research.pdf",
+        "https://github.com/bitdefender/malware-ioc/blob/master/2026\\_08-silkparasite-iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "The invisible passenger in your car",
+      "summary": "Kaspersky researchers discovered a new Android downloader, with no user interface, that spreads through the built-in updater of DoFun automotive head unit firmware, the first documented malware with an infection chain specific to such devices. The malware installs via the legitimate TWCore system app, which can be abused to push APKs that were not originally present. Its multi-stage chain ends in a clicker and reverse proxy module, so the goal is ad fraud and building a proxy botnet. Researchers attribute the activity with high confidence to MoYu Group, an actor linked to the BADBOX botnet. The report concludes that head units now require malware protection as well.",
+      "completeness": "High",
+      "threats": [
+        "Badbox",
+        "Trojan-proxy",
+        "Zhima",
+        "Vo1d",
+        "Twcore_tool",
+        "Jarservice",
+        "Residential_proxy_technique"
+      ],
+      "software": [
+        "Android",
+        "UNIX"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "xor",
+        "gzip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/android-head-unit-malware/121106/",
+        "https://github.com/deepfield/public-research/blob/main/ipmoyu/report.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "Phishing targeting the Ministry of Health exploits a fake “healthcare co-payment reimbursement”",
+      "summary": "A phishing campaign impersonates Italy's Ministry of Health using spoofed sender addresses and official graphics, with the subject line \"Hai diritto a un rimborso.\" The emails claim a 278.26 euro refund for a supposed double payment of a healthcare co-payment and direct recipients to a fake \"Confirm your data\" page. The fraudulent site walks victims through four steps, collecting tax code, date of birth, personal and contact details, and finally full payment card data including CVV. The stolen information enables unauthorized card transactions and further smishing, vishing, or banking phishing. CERT-AGID requested takedown of the fraudulent domain and shared IoCs with public administrations and accredited organizations.",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Italy"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/phishing-ai-danni-del-ministero-della-salute-sfrutta-un-falso-rimborso-ticket-sanitario/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-21",
+      "title": "The Sparrow has chirped its last: attacks by the FamousSparrow group using the updated SparrowDoor backdoor and the new SquawkDoor backdoor",
+      "completeness": "High",
+      "threats": [
+        "Sparrowdoor",
+        "Squawkdoor",
+        "Dll_sideloading_technique",
+        "Crowdoor",
+        "Terndoor",
+        "Hemigate",
+        "Lolbin_technique",
+        "Polymorphism_technique",
+        "Beagle",
+        "Whitefly",
+        "Plugx_rat",
+        "Clickfix_technique",
+        "Cshell",
+        "Trojan.win32.recon.c",
+        "Smuggling_technique",
+        "Timestomp_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Nepal",
+        "Chinese",
+        "Germany",
+        "Czech",
+        "German",
+        "Taiwan",
+        "Russia",
+        "Czech republic",
+        "Vietnamese",
+        "Philippine",
+        "Philippines",
+        "Indonesian",
+        "Asian",
+        "Hong kong",
+        "Russian federation",
+        "Egypt",
+        "Indonesia"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 51,
+      "software": [
+        "vmwaretray",
+        "vmmemctl",
+        "vmtools",
+        "Box 00-15-5D",
+        "0-1C-42 —",
+        "— QEM",
+        "VBoxGuest",
+        "VirtualBox",
+        "QEMU",
+        "VirtualBox QEMU",
+        "have more..."
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "xor",
+        "lznt1",
+        "sha256",
+        "aes",
+        "fnv-1a"
+      ],
+      "functions": [
+        "OnRecv",
+        "RtlAllocateAndInitializeSid",
+        "RtlLengthSid",
+        "RtlGetNtVersionNumbers",
+        "RtlGetVersion",
+        "SparrowDoor"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/famoussparrow-attacks-with-updated-sparrowdoor-backdoor-and-new-squawkdoor-backdoor/"
+      ]
+    }
+  }
+]

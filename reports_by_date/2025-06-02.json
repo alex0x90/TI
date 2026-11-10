@@ -39,5 +39,144 @@
         "https://socket.dev/blog/malicious-npm-packages-target-bsc-and-ethereum"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-02",
+      "title": "Glitch-hosted Phishing Uses Telegram & Fake CAPTCHAs to Target Navy Federal Credit Union Customers",
+      "summary": "Netskope Threat Labs observed a threefold rise in traffic to phishing pages hosted on the Glitch free web app platform from January to April 2025. The campaigns have affected over 830 organizations and 3,000 users, mainly Navy Federal Credit Union members, and also target email credentials, credit card details, and other banking information. Attackers duplicate Glitch projects with its Remix feature to quickly create multiple phishing pages, and some hide them behind a fake \"bot-check\" CAPTCHA that evades static scanners. Half of the campaigns send stolen credentials and one-time passwords to attackers via Telegram, bypassing multi-factor authentication. Defenders should never enter sensitive information on Glitch-hosted sites and should treat OTP requests arriving through such pages as high risk.",
+      "completeness": "Low",
+      "threats": [
+        "Fakecaptcha_technique",
+        "Glitch"
+      ],
+      "software": [
+        "Telegram",
+        "Node.js",
+        "AWS Amplify"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/glitch-hosted-phishing-uses-telegram-fake-captchas-to-target-navy-federal-credit-union-customers",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Phishing/Glitch"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-02",
+      "title": "VIPERSOFTX is attacked by cryptocurrency users",
+      "summary": "ViperSoftX is a malware family used by a threat actor that targets cryptocurrency users, with ASEC observing continued distribution against users in Korea. It is typically spread disguised as cracked or keygen versions of legitimate software, as well as through torrent-hosted eBooks. Once installed, it uses PowerShell downloaders and scheduled tasks to persist, then collects system and browser extension data and monitors the clipboard for BIP39 recovery phrases and wallet addresses. It also replaces copied cryptocurrency wallet addresses with attacker-controlled ones, and it delivers additional payloads such as Quasar RAT, PureCrypter, and PureHVNC. Defenders should avoid installing software from unofficial sites or file-sharing sources and keep systems and security products patched and up to date.",
+      "completeness": "Medium",
+      "threats": [
+        "Vipersoftx",
+        "Quasar_rat",
+        "Tesseract_stealer",
+        "Purecryptor",
+        "Purehvnc_tool",
+        "Clipbanker"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "task scheduler",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Firefox",
+        "Vivaldi",
+        "Chrome Canary"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "aes"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88265/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-02",
+      "title": "Victims risk AsyncRAT infection after being redirected to fake Booking.com sites",
+      "summary": "Cybercriminals are running a campaign that redirects users from gaming sites, social media, and sponsored ads to fake websites impersonating Booking.com. The fake sites display a fake CAPTCHA that copies a malicious PowerShell command to the clipboard and instructs visitors to paste it into the Windows Run dialog. If executed, the command downloads files that install Backdoor.AsyncRAT, a remote access trojan that lets attackers monitor and control the device and gather sensitive and financial information. The campaign's landing pages change every two to three days, and the first signs appeared in mid-May. Defenders should treat any CAPTCHA requesting Run-command input as malicious, and browser protections such as Malwarebytes Browser Guard can neutralize the copied command.",
+      "completeness": "Low",
+      "threats": [
+        "Asyncrat",
+        "Fakecaptcha_technique"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "functions": [
+        "JavaScript"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2025/06/victims-risk-asyncrat-infection-after-being-redirected-to-fake-booking-sites"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-06-02",
+      "title": "Attacker exploits misconfigured AI tool to run AI-generated payload",
+      "summary": "Sysdig Threat Research Team observed an attacker exploiting an Open WebUI instance that was accidentally exposed to the internet with administrative access and no authentication. The attacker uploaded a malicious Python script disguised as an Open WebUI Tool, obfuscated with PyObfuscator, which the Sysdig team assessed as likely AI-assisted. The payload downloaded T-Rex and XMRig cryptominers, created a systemd persistence service, and used a Discord webhook for notifications and C2. On Linux it hid processes and arguments using LD_PRELOAD libraries, while the Windows variant deployed a Java loader and infostealers targeting Chrome extensions and Discord tokens. Sysdig notes that its runtime detections flagged the activity, and the report stresses that misconfigured AI tools exposed to the internet remain a serious risk.",
+      "completeness": "Medium",
+      "threats": [
+        "Processhider",
+        "T-rex",
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Discord",
+        "ChatGPT",
+        "systemd",
+        "Chrome"
+      ],
+      "crypto": [
+        "monero",
+        "ravencoin"
+      ],
+      "algorithms": [
+        "base64",
+        "kawpow",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "kill_miners",
+        "boot",
+        "ProcessBuilder"
+      ],
+      "languages": [
+        "javascript",
+        "java",
+        "python",
+        "perl",
+        "powershell"
+      ],
+      "links": [
+        "https://sysdig.com/blog/attacker-exploits-misconfigured-ai-tool-to-run-ai-generated-payload/",
+        "https://github.com/open-webui/open-webui/blob/4ce1e88750c6da2f94b834697902ceb9f5524726/src/lib/components/workspace/Tools/ToolkitEditor.svelte#L50",
+        "https://github.com/htr-tech/PyObfuscate/tree/master"
+      ]
+    }
   }
 ]

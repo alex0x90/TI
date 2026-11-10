@@ -1,0 +1,629 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Ragnarök: F6 Investigated Attacks by the VantaCore Ransomware Group",
+      "summary": "VantaCore is a ransomware group that F6 researchers say is likely a rebrand of the pro-Ukrainian group Thor, with at least seven known victims and ransom demands in the millions of dollars. The group uses its own ransomware written in C++, which encrypts files with ChaCha20 and X25519 and is run from a command-line password embedded in its code. It spreads through VantaCoreLoader, a custom tool modeled on LockBit 3 Black's admin-share spreading method, and uses VantaCoreRAT, a Go-based backdoor, for persistent remote access. Before encryption, the group disables security products with the SnowKiller tool, which uses the BYOVD technique, and it destroys backups by overwriting RAID arrays with bootice. Defenders should note that the group clears Windows event logs, deletes its tools, and blends in with legitimate utilities, which helps it stay hidden for long periods.",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit",
+        "Babuk",
+        "Genielocker",
+        "Wevtutil_tool",
+        "Edr-killer",
+        "Byovd_technique",
+        "Tactical_rmm_tool",
+        "Vantacorerat",
+        "Psexec_tool",
+        "Snowkiller_tool",
+        "Garble_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Viber",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "chacha20",
+        "curve25519"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/vantacore/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Chinese-speaking threat actors targeting Mexican Android users with remote access Trojan",
+      "summary": "Intel 471 researchers describe PanDa, an Android remote access trojan distributed through Meta Ads to Spanish-speaking users in Mexico, with campaigns first observed in May 2026. The malware is delivered by the ShellA loader, which impersonates Netflix and later fictitious streaming brands, and it asks victims to enable installs from unknown sources. PanDa supports screen streaming, hidden VNC, remote control and keylogging, and its keylogging module targets 62 banks and financial institutions in Mexico and Nigeria. The operation is run through AppPanda, an unauthenticated phishing management panel and as-a-service toolset that Intel 471 attributes to Chinese-speaking actors. Defenders are advised to correlate live C2 traffic and newly registered phishing domains to detect compromised banking customers early.",
+      "completeness": "Low",
+      "threats": [
+        "Hvnc_tool",
+        "Shella_loader",
+        "Btmob_rat",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Mexico",
+        "Chinese",
+        "Nigeria",
+        "Mexican"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "links": [
+        "https://www.intel471.com/blog/chinese-speaking-threat-actors-targeting-mexican-android-users-with-remote-access-trojan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "The Crypto Wallet That Never Opened: Tampered Exodus Installer Hides a Modular RAT",
+      "completeness": "High",
+      "threats": [
+        "Hvnc_tool",
+        "Clickfix_technique",
+        "Bloat_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Installer",
+        "Electron",
+        "Node.js",
+        "macOS",
+        "Linux",
+        "WinHTTP",
+        "Task Scheduler",
+        "Chromium",
+        "Windows Explorer",
+        "Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64",
+        "bcrypt",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "setTimeout",
+        "show",
+        "focus",
+        "center",
+        "require",
+        "JavaScript",
+        "Set-ItemProperty",
+        "InternetSetOption"
+      ],
+      "languages": [
+        "lua",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/exodus-crypto-wallet-installer-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "TerminalFix looks like ClickFix, but delivers a very different payload",
+      "summary": "Microsoft has reported a Windows malware campaign called TerminalFix, which uses a ClickFix-style lure: a fake Cloudflare CAPTCHA secretly copies a malicious command to the victim's clipboard and then instructs them to run it. After infection, the malware retrieves disguised PNG images containing hidden executable and DLL data, which a PowerShell script reassembles on disk. Unlike most ClickFix campaigns, which typically deliver information-stealing malware, TerminalFix chains evasion techniques including DLL sideloading and encrypted WebSocket traffic. Its payload performs domain-aware reconnaissance and installs a multiplexed reverse TCP tunnel that lets attackers reach other systems on the victim's network. Defenders should note that legitimate CAPTCHAs never ask users to paste commands into Run, Terminal, or PowerShell.",
+      "completeness": "Low",
+      "threats": [
+        "Terminalfix_technique",
+        "Clickfix_technique",
+        "Steganography_technique",
+        "Dll_sideloading_technique"
+      ],
+      "software": [
+        "macOS"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/09/terminalfix-looks-like-clickfix-but-delivers-a-very-different-payload"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Hackers Abuse Legitimate ChatGPT Shared Links to Deploy NetSupport RAT",
+      "summary": "Threat actors are abusing legitimate ChatGPT shared-conversation links to lure victims into a ClickFix-style infection chain that delivers the NetSupport remote-access tool (RAT). The shared page displays a fake high-traffic notice that directs users to a backup domain unrelated to OpenAI. That site mimics OpenAI branding alongside a fake Cloudflare verification check. It silently copies a PowerShell command to the clipboard and instructs victims to paste it into the Windows Run dialog, so they execute it themselves. The loader performs evasion checks, profiles the victim to a Telegram bot, and retrieves a hidden payload that unpacks to NetSupport RAT. Defenders should block the identified domains, hunt for suspicious PowerShell execution, and train users that legitimate verification never requires running commands.",
+      "completeness": "Low",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "OpenAI",
+        "Telegram"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://gbhackers.com/chatgpt-links-abused/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Uncovering StreamRat: From Meta Ads to Full Device Takeover",
+      "summary": "StreamRat is a newly discovered Android banking trojan from ThreatFabric, promoted to Spanish-speaking users through Meta and TikTok ads impersonating a free TV-streaming service. The campaign reached about 570,000 potential victims, with most observed victims located in Spain. A dropper delivers the payload, which abuses Accessibility Services and MediaProjection to give operators near-complete control, including remote screen viewing, keylogging, overlays, and UI-tree collection. The dropper also creates a deliberately non-functional VPN to block internet access, likely to reduce cloud-based checks by Google Play Protect. The report links the actor to the same distributor of the Mirax trojan and notes that StreamRat appears to be sold as Malware-as-a-Service.",
+      "completeness": "Medium",
+      "threats": [
+        "Streamrat",
+        "Credential_stealing_technique",
+        "Mirax",
+        "Godfather",
+        "Hvnc_tool",
+        "Sturnus"
+      ],
+      "geo": [
+        "Spain"
+      ],
+      "software": [
+        "Android",
+        "TikTok",
+        "Instagram",
+        "Telegram",
+        "Chrome",
+        "Google Play"
+      ],
+      "functions": [
+        "createVirtualDisplay",
+        "takeScreenshot",
+        "performGlobalAction"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/from-meta-ads-to-full-device-takeover-uncovering-streamrat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Inside The Gentlemen: Undisclosed TukTuk C2 Framework and EDR Neutralization Research",
+      "summary": "The report analyzes a single server linked to The Gentlemen ransomware group, based on an eb.sys hash match to GentleKiller, Greenshot DLL sideloading, and TukTuk C2 dashboard identifiers. The server held the complete, previously undisclosed TukTuk C2 project, including Windows and Linux agents, a backend, and an Electron-based panel with credential spoofing and remote shell features. Training materials on EDR neutralization, BYOVD, vulnerable driver hunting, and an undisclosed 0-day driver vulnerability were also found. The server also contained 224 Jira tickets and eight attachments exfiltrated from a global technology company, including data tied to U.S. defense customers. Defenders should note that credentials and infrastructure data from a global healthcare company's IaC platform were also present, including administrator-level AWS keys.",
+      "completeness": "Medium",
+      "threats": [
+        "Tuktuk",
+        "Dll_sideloading_technique",
+        "Gentlekiller",
+        "Byovd_technique",
+        "Edr-killer",
+        "Warsawkiller",
+        "Gentlemen_ransomware",
+        "Etherrat",
+        "Unknownkiller"
+      ],
+      "geo": [
+        "Finland"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Slack",
+        "Azure AD",
+        "Twitter",
+        "Node.js",
+        "Electron",
+        "Windows Security",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "Poll",
+        "main"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://oasis-security.io/blog/The-Gentlemen-Ransomware-Hacker-Groups-TukTuk-Framework"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "BlueKit PhaaS in the Wild: BitM, Geofencing, and ScreenConnect Post-Exploitation",
+      "summary": "A financial-sector campaign targeted CEOs of financial-services entities inside a larger parent organization, using victim-branded PDF lures that led through trusted redirectors to a BlueKit browser-in-the-middle phishing flow. BlueKit, a Phishing-as-a-Service platform, streamed a live remote Microsoft Outlook session to victims while ZeroBot cloaking and regional safe-routing screened visitors. Microsoft Entra sign-ins showed region-matched, rapidly shifting egress IPs under one session. After login, victims were moved to a fake document-viewer page that delivered a legitimate ScreenConnect client configured for an attacker-used cloud instance. Defenders should correlate weak signals across email, redirects, identity, and endpoint layers rather than rely on IP or hash blocklists.",
+      "completeness": "High",
+      "threats": [
+        "Bluekit_tool",
+        "Bitm_technique",
+        "Screenconnect_tool",
+        "Cloaking_technique",
+        "Zerobot",
+        "Aitm_technique",
+        "Tycoon_2fa",
+        "Greatness_tool",
+        "Forg365_tool",
+        "Residential_proxy_technique",
+        "Device_code_phishing_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Israel",
+        "New_york",
+        "United states",
+        "Indian",
+        "Ukraine",
+        "America",
+        "India",
+        "Kazakhstan",
+        "Romania",
+        "Uzbekistan",
+        "Israeli"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Microsoft browser",
+        "WebRTC",
+        "Chromium",
+        "Outlook",
+        "Microsoft Entra",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "deflate",
+        "aes-gcm",
+        "sha256",
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://zerobec.com/blog/bluekit-phaas-browser-in-the-middle-screenconnect"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Gaming the system: how a Chinese-speaking actor turned Brazilian government sites into an SEO weapon",
+      "summary": "Check Point Research tracks Gambling Goblin, a Chinese-speaking cybercrime cluster linked to Earth Berberoka, which has run a campaign against Brazilian government and educational institutions since mid-2025. The group installs malicious Apache modules on compromised servers that silently proxy visitors to phishing pages impersonating Google Play, Microsoft Store, and Amazon, which promote online gambling and sports betting. These pages chain together hijacked, high-reputation .gov.br domains to inflate search rankings and hijack traffic. The toolkit includes the AlphaAgent backdoor, oRAT, a credential stealer, and an SSH brute-forcer, most of them heavily obfuscated. Parallel phishing networks in Vietnamese, Spanish, and English, plus daily domain generation, show the model is built to scale. Defenders should patch exposed services, audit Apache and SSH configurations, and hunt for rogue modules and masqueraded processes.",
+      "completeness": "High",
+      "threats": [
+        "Orat_rat",
+        "Downpro",
+        "3snake_tool",
+        "Naabu_tool",
+        "Nuclei_tool",
+        "Subfinder_tool",
+        "Cloaking_technique",
+        "Netcat_tool",
+        "Fscan_tool",
+        "Pwnkit_tool",
+        "Pkexec_tool",
+        "Yamux_tool",
+        "Ligolo-ng_tool",
+        "Hideprocess_tool"
+      ],
+      "geo": [
+        "Brazilian",
+        "Chinese",
+        "Portuguese",
+        "Spanish",
+        "Brazil",
+        "Hong kong",
+        "Asia",
+        "China",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Play",
+        "Microsoft Store",
+        "Linux",
+        "Twitter",
+        "curl",
+        "sudo",
+        "php-fpm",
+        "nginx",
+        "SELinux",
+        "systemd",
+        "have more..."
+      ],
+      "algorithms": [
+        "base32",
+        "md5",
+        "crc-32",
+        "base64",
+        "aes-gcm",
+        "zip",
+        "rc4"
+      ],
+      "languages": [
+        "javascript",
+        "golang",
+        "php"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/gaming-the-system-how-a-chinese-speaking-actor-turned-brazilian-government-sites-into-an-seo-weapon/",
+        "https://github.com/blendin/3snake"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Impersonating IT support: how threat actors turn a remote session into enterprise-wide access",
+      "summary": "Microsoft Threat Intelligence observed a human-operated campaign that abuses Microsoft Teams external collaboration to impersonate IT or helpdesk staff and trick users into granting interactive remote sessions. The threat actor then uses PowerShell to silently install a malicious MSI that stages a portable Node.js runtime and an obfuscated JavaScript implant providing persistent command execution and C2. After deployment, operators perform Active Directory reconnaissance, capture screenshots, run follow-on DLLs via rundll32, and pivot over WinRM to domain controllers and certificate authorities. The attack relies on legitimate tools, so defenders should treat unsolicited external support contacts as suspicious, restrict remote support tools and WinRM, and rotate credentials on affected hosts.",
+      "completeness": "Medium",
+      "threats": [
+        "Winrm_tool",
+        "Msi_loader",
+        "Microsoft_quick_assist_tool",
+        "Spear-phishing_technique",
+        "Powexec",
+        "Trojan:win32/fakeall!mtb",
+        "Synkloader"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 16,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Teams",
+        "Node.js",
+        "Active Directory",
+        "Windows Installer",
+        "Office 365",
+        "Microsoft Defender for Endpoint",
+        "Azure Blob"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "SuperProxy",
+      "summary": "Plume Security Labs' second SuperProxy report examines Netway, a hidden proxy SDK in the AppLinked sideloading app on SuperBox Android TV devices, which silently enrolls devices in a residential proxy network through a fake VPN service that gives it persistence and priority. The SDK uses 3proxy in reverse mode and a separate HTML job channel that could fetch pages with operator-supplied cookies, though only the proxy channel was observed. The researchers found a shared password across all proxy credentials, letting attackers reach the customer-facing proxies and over 60,000 residential IPs, and the network allowed access to local router and modem pages. A honeypot on the Popanet network recorded 1,352 ADB exploitation attempts, delivering CECbot, Mirai and Maskify payloads. The report also covers Proxice, which uses EtherHiding via Ethereum Name Service to hide its C2, and the report urges defenders to secure ADB ports and third-party app stores.",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Popanet",
+        "Traffmonetizer_tool",
+        "Cecbot",
+        "Kimwolf",
+        "Mirai",
+        "Netcat_tool",
+        "Nmap_tool",
+        "Maskify",
+        "Httpflood_technique",
+        "Etherhiding_technique",
+        "Fastflux_technique",
+        "Popa_tool",
+        "Netnut"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SuperProxy",
+        "SuperBox",
+        "Netway",
+        "android",
+        "3proxy",
+        "Netway netway",
+        "Squid",
+        "Chrome",
+        "OpenAI",
+        "ChatGPT",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "chacha20-poly1305",
+        "xor",
+        "sha256",
+        "ecdsa",
+        "base64",
+        "hmac"
+      ],
+      "functions": [
+        "onCreate",
+        "fireInstallPixel",
+        "f",
+        "isSiteLocalAddress",
+        "isLoopbackAddress",
+        "APK"
+      ],
+      "languages": [
+        "java",
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://cdn.plume.com/ed/a2/8feaaab74af59562a5d1a2308ef1/plume-research-paper-superproxy2-sept2026.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Attackers Actively Exploiting Critical Vulnerability in Elementor Pro Plugin",
+      "completeness": "Low",
+      "software": [
+        "WordPress"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/09/attackers-actively-exploiting-critical-vulnerability-in-elementor-pro-plugin/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Kimsuky again? This time disguised as a seafood ingredients purchase request form",
+      "summary": "Kimsuky-linked actors, according to AhnLab, distributed a malicious LNK file disguised as a seafood ingredient purchase review request targeting users in Korea. When opened, the LNK runs PowerShell to display a normal HWP decoy document while silently dropping a scripted payload and registering a scheduled task that runs a JavaScript file about every 14 minutes. The payload collects system details such as OS, public IP, username, computer name, and process list, then uploads them to Backblaze B2, which is abused as command-and-control infrastructure. It also downloads and runs additional commands before deleting its files to reduce traces. Defenders should check for the LNK, the MicrosoftOffice2016-named scheduled task, the staging paths, and cmd.exe or wscript.exe activity tied to cloud storage traffic, and should not trust a file just because a normal document opened.",
+      "completeness": "Low",
+      "geo": [
+        "South korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "task scheduler"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95216/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "REVSTEALER ramps up: analysis of up-and-coming infostealer",
+      "summary": "REVSTEALER is an emerging infostealer tracked by Elastic Security Labs under REF2859 that has grown in distribution volume in recent months. It harvests credentials, cryptocurrency wallet data, and browser cookies, and also targets gaming platforms such as Steam, Battle.net, Roblox, and Minecraft to enable account resale and takeover. Campaigns have spread through hijacked YouTube channels that post fake cheat videos, and samples impersonate software such as Slack and qBittorrent. The malware uses sandbox scoring, CIS locale exclusions, and Polygon smart-contract dead drops to resist analysis and keep infrastructure replaceable. Four follow-on modules delivered via C2 tasking add wallet theft, proxying, and XMRig deployment.",
+      "completeness": "High",
+      "threats": [
+        "Revstealer",
+        "Dead_drop_technique",
+        "Etherhiding_technique",
+        "Vmprotect_tool",
+        "Lumma_stealer",
+        "Aurastealer",
+        "Sandbox_evasion_technique",
+        "Credential_harvesting_technique",
+        "Elevationkatz_tool",
+        "Chromekatz_tool",
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "qBittorrent",
+        "Chromium",
+        "Steam",
+        "Roblox",
+        "Minecraft"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "fnv-1a"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/threat-command/revstealer-credential-harvesting-infostealer",
+        "https://github.com/elastic/detection-rules/blob/main/rules/windows/command\\_and\\_control\\_dns\\_susp\\_tld.toml",
+        "https://github.com/elastic/labs-releases/blob/main/tools/revstealer/ida\\_decrypt\\_strings.py",
+        "https://github.com/Meckazin/ChromeKatz"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-02",
+      "title": "Inside Knight Office, a New M365 AiTM Phishing Kit",
+      "completeness": "Medium",
+      "threats": [
+        "Knight_office_tool",
+        "Aitm_technique",
+        "Eviltokens_tool",
+        "Kali365_tool",
+        "Device_code_phishing_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 10,
+      "software": [
+        "Cloudflare Turnstile",
+        "Joomla",
+        "Microsoft Entra",
+        "Windows Hello",
+        "Flask",
+        "Microsoft Sharepoint"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/inside-knight-office-m365-aitm-attack"
+      ]
+    }
+  }
+]

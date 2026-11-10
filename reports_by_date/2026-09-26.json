@@ -1,0 +1,522 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "RatHat: AI-Powered Mobile Threat is Here for Your Credentials & Bank Accounts",
+      "summary": "RatHat is an Android malware strain that Zimperium's zLabs team links to threat actors appearing to operate in China. It is distributed mainly through targeted smishing and malvertising leading to deceptive third-party download sites. After infection, it abuses Accessibility services and self-pairs over local ADB to gain shell-level privileges outside the normal app sandbox. Its goals include stealing banking and payment credentials through fake overlays, intercepting OTP codes, and reconstructing PINs and patterns from raw touch input. The malware also reinstalls itself after uninstall attempts and maintains a reverse tunnel to the attacker, and it uses generative AI to navigate the device interface. Zimperium recommends on-device behavioral detection, phishing and C2 blocking, and overlay and tamper detection in banking apps.",
+      "completeness": "High",
+      "threats": [
+        "Rathat",
+        "Smishing_technique",
+        "Frpc_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "apktool",
+        "QEMU",
+        "Chrome",
+        "Google Play",
+        "opera",
+        "WeChat"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "links": [
+        "https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts",
+        "https://github.com/fatedier/frp",
+        "https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "BotHelper RAT: From Encrypted Payload to Live Screen Surveillance",
+      "summary": "BotHelper RAT is a previously undocumented .NET remote access tool delivered through a multi-stage Windows infection chain. A native x64 stager disables TLS certificate validation, downloads an encrypted payload.bin from easyllms.xyz, and decrypts it in memory using a self-contained XOR routine. The decrypted executable is written to the temp directory as msedge_proxy.exe, imitating a legitimate Microsoft Edge component, and launched with its window hidden. The RAT persists through a hidden copy and a scheduled task that runs every 30 minutes, and it streams live JPEG screen captures to its operator. Its command set also includes shell execution, download-and-run, clipboard monitoring, and runtime DLL plugin loading. Defenders should note that the delivery URL carries a clean reputation and serves opaque data, so detection must rely on endpoint behaviour.",
+      "completeness": "Medium",
+      "threats": [
+        "Bothelper"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "Capture",
+        "CommandCenter"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/bothelper-rat-from-encrypted-payload-to-live-screen-surveillance/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
+      "summary": "Storm-2570 is a ransomware affiliate tracked by Microsoft since April 2025 that has deployed Qilin, DragonForce, Anubis, and BERT ransomware across multiple ransomware-as-a-service ecosystems. It uses consistent post-compromise tooling, including RMM tools such as MeshAgent, Atera, and ScreenConnect, plus PsExec, Impacket, and s5cmd or Rclone for exfiltration. The actor harvests credentials with tools such as Mimikatz and ntdsutil, and disables Microsoft Defender protections before deploying ransomware. Targets span many sectors across the United States, Canada, United Kingdom, Spain, Netherlands, and Puerto Rico. For defenders, the takeaway is to track attacker behavior across the attack chain rather than by ransomware payload, and to enable tamper protection and monitor RMM and PsExec activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Bert_ransomware",
+        "Qilin_ransomware",
+        "Dragonforce",
+        "Anubis",
+        "Atera_tool",
+        "Meshagent_tool",
+        "Screenconnect_tool",
+        "Splashtop_tool",
+        "Ninjaone_tool",
+        "Netscan_tool",
+        "Nmap_tool",
+        "Impacket_tool",
+        "Netexec_tool",
+        "S5cmd_tool",
+        "Rclone_tool",
+        "Meshcentral_tool",
+        "Credential_dumping_technique",
+        "Ntdsutil_tool",
+        "Ngrok_tool",
+        "Mimikatz_tool",
+        "Lazagne_tool",
+        "Pypykatz_tool",
+        "Psexec_tool",
+        "Psexecremote_tool",
+        "Dragonforce_ransomware",
+        "Ransom:win32/qilinloader"
+      ],
+      "geo": [
+        "Puerto rico",
+        "United kingdom",
+        "Netherlands",
+        "Spain",
+        "Canada",
+        "United states"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "PsExec",
+        "Cloudflare",
+        "SoftPerfect Network Scanner",
+        "Active Directory"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "Tracing SIXZUT and JITTERLY in the wild",
+      "summary": "VirLabs analyzed public samples tied to Red Heron, an actor exploiting vulnerable Gitea servers, and the JITTERLY implant and SIXZUT rootkit documented by Acronis. The populated SIXZUT configuration hides and relaunches two agents, __hesti and __root, each with its own C2 endpoint. Both agent paths also appear in HestiaCP administrator reports of unauthorized web-terminal access, which VirLabs considers strongly linked tooling activity but not proven attribution to Red Heron. The implants use encrypted reverse TCP, MessagePack, and AES-GCM, and the rootkit conceals its files, processes, and network connections. Defenders should check for the listed paths, LD_PRELOAD entries, and C2 endpoints.",
+      "completeness": "Medium",
+      "threats": [
+        "Sixzut",
+        "Jitterly",
+        "Adaptixc2_tool"
+      ],
+      "software": [
+        "Linux",
+        "nginx"
+      ],
+      "algorithms": [
+        "aes-128-ctr",
+        "sha1",
+        "sha256",
+        "aes-128-gcm",
+        "crc-32",
+        "aes-gcm"
+      ],
+      "functions": [
+        "kill"
+      ],
+      "links": [
+        "https://www.virlabs.ai/blog/red-heron/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "The Psychedelic Stealer: When a CAPTCHA Becomes an Installer",
+      "summary": "Arctic Wolf Labs reports a campaign that injects iframes into compromised Ukrainian business websites, displaying a Ukrainian-language fake Cloudflare CAPTCHA. The lure copies a Windows Installer command to the clipboard and instructs visitors to paste it into the Windows Run dialog, bypassing encoded PowerShell detections. The command retrieves an MSI package that delivers a previously unidentified infostealer named Psychedelic Stealer, which targets browser passwords, account tokens, and cryptocurrency-wallet data. The implant also establishes scheduled-task persistence and polls its C2 server for additional tasks. Lure panel telemetry recorded views across 32 countries, mostly in Ukraine, but these events do not confirm execution or compromise.",
+      "completeness": "High",
+      "threats": [
+        "Psychedelic_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Germany",
+        "Poland",
+        "Canada",
+        "Asia-pacific",
+        "United states",
+        "Russian",
+        "Ukrainian",
+        "Americas"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare",
+        "Windows Installer",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "Chromium",
+        "indexeddb"
+      ],
+      "wallets": [
+        "metamask",
+        "safepal",
+        "atomicwallet",
+        "electrum",
+        "bitcoincore",
+        "litecoincore",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/psychedelic-stealer-fake-clickfix-captcha-targets-ukraine/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/pack\\_alerts/202609-ukrainian-clickfix-psychedelic-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "Sauron Loader: A New Loader Lurking in Underground Forums",
+      "completeness": "High",
+      "threats": [
+        "Sauron",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Lockbit",
+        "Qilin_ransomware",
+        "Clop",
+        "Medusa_ransomware",
+        "Email_bombing_technique",
+        "Blackbasta",
+        "Microsoft_quick_assist_tool",
+        "Anydesk_tool",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 24,
+      "software": [
+        "Windows Service"
+      ],
+      "algorithms": [
+        "md5",
+        "salsa20",
+        "zip",
+        "exhibit"
+      ],
+      "functions": [
+        "GetFile",
+        "TaskResult"
+      ],
+      "languages": [
+        "visual_basic",
+        "jscript",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://medium.com/@DCSO_CyTec/sauron-loader-a-new-loader-lurking-in-underground-forums-e91fa70db537",
+        "https://github.com/DCSO/Blog\\_CyTec/tree/main/2026\\_09\\_\\_sauron\\_loader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "The Rogue RMM Stack: One Phish, Multiple Persistence Paths",
+      "completeness": "Low",
+      "threats": [
+        "Itarian_tool",
+        "Screenconnect_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/rogue-rmm-abuse-phishing-persistent-access"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "Tracking the Early Activity of the Galago Ransomware Operation",
+      "summary": "Galago is a newly identified ransomware operation, first flagged on 9 September 2026, that claims an operational partnership with the more established Panzer group, a link supported by a shared leak-site naming prefix. Researchers found Galago's Dark Leak Site inactive with no victims published when they began monitoring it on 15 September 2026. An unconfirmed claim alleges Galago breached Inter ehf, an Iceland-based healthcare organization, with a possible leak window of 28–29 September 2026. Panzer published 32 victims between August and September 2026, showing sustained double-extortion activity. Defenders should prioritize phishing-resistant MFA, segmentation, data exfiltration monitoring, and watching for Galago's site reactivation.",
+      "completeness": "Low",
+      "threats": [
+        "Panzer_ransomware"
+      ],
+      "geo": [
+        "Iceland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://cyberxtron.com/resources/blogs/tracking-the-early-activity-of-the-galago-ransomware-operation-8165"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
+      "summary": "Microsoft tracks Storm-3168, the threat actor known as JADEPUFFER, which conducted Azure-focused destructive activity using two compromised service principals in a single tenant. The actor performed extensive discovery, then within about seven minutes attempted over 100 storage account deletions, deleting some resources, while also trying to delete Azure SQL databases, which failed due to an unsupported API version. The attackers also targeted backup and recovery locks and collected storage account access keys, behaviors consistent with ransomware or extortion preparation, though no ransom note or confirmed exfiltration was observed. The compromise likely relied on a client secret previously exposed in a public GitHub issue edit history, so defenders should treat any publicly exposed credential as compromised and rotate it. Key recommendations include enforcing least privilege for workload identities, protecting backup resources, and enabling Microsoft Defender for Cloud protections.",
+      "completeness": "Low",
+      "ttp_tactics": 6,
+      "ttp_techniques": 3,
+      "software": [
+        "Microsoft Defender",
+        "Azure App Service",
+        "OpenSearch",
+        "Azure Site Recovery",
+        "WordPress",
+        "LangFlow",
+        "Cosmos DB"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "Open-source AI repositoriesStealthy contamination attack incident",
+      "summary": "Antiy CERT observed 71 files submitted under a \"model update\" name to pull requests on the official Qwen and DeepSeek repositories on Hugging Face in September 2026. The files are byte-identical across both repositories and were uploaded by a since-deleted account, ChaosGPT, with an empty PR body. The payload contains no automatic execution entry, so it lies dormant until someone manually runs a script such as smart_chaos.py, which launches a self-looping autonomous agent driven by a local uncensored LLM. Once triggered, the agent can take over the machine, brute-force SSH, scan ports, harvest camera and microphone input, and generate new malicious payloads. The report rates the threat Critical and urges defenders to reject or revert the malicious submissions, monitor both repositories, and run unvetted model code only in isolated sandboxes.",
+      "completeness": "Medium",
+      "threats": [
+        "Chaosmaster",
+        "Ghost",
+        "Sqlmap_tool",
+        "Villain_tool",
+        "Xdotool_tool",
+        "Nmap_tool",
+        "Supply_chain_technique",
+        "Credential_dumping_technique",
+        "Mimikatz_tool"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 29,
+      "software": [
+        "ging Face",
+        "Hugging Face",
+        "eepSeek.”",
+        "wen re",
+        "eepSeek re",
+        "Qwen",
+        "DeepSeek",
+        "sudo",
+        "udo",
+        "Unix",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "singolo_operaio",
+        "TaskPlanner"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.antiy.cn/research/notice&report/research_report/Antiy_Stealthy_Poisoning_of_OpenSource_AI_Repo_viz.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "North Korea Suspected in $390M Bitget Cryptocurrency Heist",
+      "summary": "North Korea's TraderTraitor group is suspected of the $390 million Bitget hot wallet theft on September 24, 2026, though attribution remains an analytical hypothesis that neither TRM Labs nor Elliptic has confirmed. The attacker compromised a backend system in Bitget's wallet infrastructure and spoofed transaction data that the authorization process trusted, moving funds without extracting private keys. This approach mirrors the 2025 Bybit attack, and the entry path into the backend has not been disclosed. Stolen assets were relayed through round-amount wallets, moved off Arbitrum quickly to avoid freezes, and laundered via THORChain and other bridges into Bitcoin. Defenders should note that the trust layer feeding signing processes is a key attack surface that often receives less scrutiny than the keys themselves.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "SlowMist",
+        "Claude",
+        "Opus 5",
+        "OpenAI"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "ethereum",
+        "arbitrum",
+        "bitcoin",
+        "tether",
+        "thorchain"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/north-korea-suspected-in-390-m-bitget-cryptocurrency-heist"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "Russian and Allied Government Systems Compromised in Targeted Campaigns",
+      "summary": "Hunt.io's exposed operator workspaces revealed three separate campaigns against Russian, Kyrgyz and Syrian government-linked systems, each assessed independently. In Russia, a roleless \"Test Operator\" account accessed protected administrative data in the Atlas emergency-mapping platform used by EMERCOM and changed application state. The same workspace showed a forged SharePoint token and exploit chain reaching code execution at United Engine Corporation, plus broader targeting of Russian firms and a commercial travel company that yielded customer data and call audio theft. In Kyrgyzstan, an uploaded PHP file ran as www-data on a Foreign Affairs web host, followed by VShell-compatible agents and a web-based relay for command and control. A third workspace documented repeated exploit attempts against Kyrgyz national security webmail, using public Roundcube CVE-2025-49113 tooling with supplied credentials.",
+      "completeness": "High",
+      "threats": [
+        "Password_spray_technique",
+        "Proxyshell_vuln",
+        "Proxylogon_exploit",
+        "Proxynotshell_vuln",
+        "Chisel_tool",
+        "Fscan_tool",
+        "Vshell",
+        "Netcat_tool",
+        "Sqlmap_tool"
+      ],
+      "geo": [
+        "Syrian",
+        "Russian federation",
+        "Russia",
+        "Russian",
+        "Kyrgyzstan"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "SharePoint",
+        "wildfires",
+        "TrueConf",
+        "Bitrix",
+        "MySQL",
+        "WordPress",
+        "GeoServer",
+        "Zabbix",
+        "curl",
+        "Jenkins",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "lua",
+        "python",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/research/government-open-directories/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-26",
+      "title": "PolinRider is A/B Testing its Way Past Your Detections",
+      "summary": "PolinRider is a DPRK-linked campaign that infects developers through a VS Code tasks.json file that runs a fake font file (fa-solid-400.woff2) on folder open, with an obfuscated JavaScript payload hidden by whitespace. The operators are evolving the attack, changing filenames (400, 500, 900), moving the payload into nested project folders, and most recently renaming it to fa-solid-300.llf, which is not a font extension. The researchers examined the Binary-Mindz GitHub organization over eight months and found that multiple variants ran in parallel, which they describe as A/B testing against detections. Infected machines rewrite commits and force-push them to every repo a developer can access, so teammates become infected too and cleanup attempts were repeatedly undone. Defenders are advised to inspect file contents rather than names, scan every branch, review force-push activity, treat config files as executable code, enable branch protection, and clean infected machines rather than only repositories.",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider",
+        "Nullreceiver_technique",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "software": [
+        "vscode",
+        "curl",
+        "vercel",
+        "linux",
+        "macOS"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "ethereum",
+        "aptos",
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/polinrider-is-a-b-testing-its-way-past-your-detections",
+        "https://opensourcemalware.com/repository/https%3A%2F%2Fgithub.com%2FBinary-Mindz%2Fagimtula\\_server",
+        "https://docs.github.com/en/rest/repos/repos#list-repository-activities"
+      ]
+    }
+  }
+]

@@ -1,0 +1,617 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "Kimsuky incorporates AI into its attack framework, from creating lure documents to building a local LLM",
+      "summary": "Genians Security Center reports that the North Korea-linked Kimsuky group set up three local LLM tools, Ollama, GPT4All and Msty, on infrastructure it used for C2 and malware development. The group used generative AI to produce decoy documents, including PDFs with signs of AI-assisted creation, in spear-phishing campaigns. The campaign relies on ZIP archives containing malicious LNK files that launch obfuscated PowerShell loaders and use GitHub repositories for C2 and AsyncRAT delivery. Targets include foreign diplomatic missions and the military, security, and cryptocurrency sectors. The activity is assessed as the group accumulating AI capabilities rather than training its own models. Defenders should prioritize behavior-based EDR detection of LNK execution, PowerShell, scheduled tasks, and GitHub API abuse over judging lures by their polish.",
+      "completeness": "High",
+      "threats": [
+        "Asyncrat",
+        "Flowerpower",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "China",
+        "South korea",
+        "Korean",
+        "North korean",
+        "North korea",
+        "South korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Ollama",
+        "macOS",
+        "ChatGPT",
+        "Google Chrome",
+        "Gmail"
+      ],
+      "algorithms": [
+        "rc4",
+        "zip",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/kimsuky_ai_llm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure",
+      "summary": "DeadLock is a financially motivated double-extortion ransomware operation first observed in July 2025, with an affiliate of the Lynx and INC ecosystems among the groups deploying it. Its Rust-based encryptor uses resource-aware throttling to keep systems responsive and geofences out systems using languages tied to former Soviet, CIS, and some Middle Eastern countries. Before encrypting, it stops security, backup, and remote access processes and services and clears event logs to hinder detection and recovery. Its recovery chat relies on Polygon blockchain-stored configuration and the Session messaging network, making takedown harder. As of July 2026, more than 80 victims have been posted to its leak site, over half in Europe. Defenders should enable tamper protection, cloud-delivered protection, and EDR in block mode, and configure Controlled Folder Access.",
+      "completeness": "High",
+      "threats": [
+        "Deadlock",
+        "Inc_ransomware",
+        "Lynx",
+        "Shadow_copies_delete_technique",
+        "Anydesk_tool",
+        "Putty_tool",
+        "Mstsc_tool",
+        "Rustdesk_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Moldova",
+        "Ukrainian",
+        "Georgia",
+        "Turkmenistan",
+        "America",
+        "Belarus",
+        "Asia",
+        "Uzbekistan",
+        "Russia",
+        "Iran",
+        "Oman",
+        "Syria",
+        "Kazakhstan",
+        "Russian",
+        "Georgian",
+        "Belarusian",
+        "Yemen",
+        "Armenia",
+        "Africa",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Romanian",
+        "Azerbaijan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Windows Defender",
+        "Hyper-V",
+        "Active Directory",
+        "dropbox",
+        "Windows PowerShell",
+        "gatekeeper",
+        "Windows CryptoAPI"
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "ecdh",
+        "ed25519",
+        "xor",
+        "poly1305",
+        "sha256",
+        "xchacha20",
+        "curve25519"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/08/10/deadlock-ransomware-breaking-down-a-rust-based-encryptor-with-decentralized-recovery-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "#StopRansomware: Gunra Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Gunra",
+        "Conti",
+        "Qtox_tool",
+        "Impacket_tool",
+        "Credential_dumping_technique",
+        "Passthehash_technique",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "South korean",
+        "Africa",
+        "Americas",
+        "Republic of korea",
+        "Middle east",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 36,
+      "software": [
+        "Linux",
+        "psexec",
+        "OpenSSH",
+        "Active Directory",
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "chacha20",
+        "rsa-4096",
+        "prng"
+      ],
+      "functions": [
+        "rand"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-222a",
+        "https://github.com/cisagov/Decider/",
+        "https://github.com/cisagov/cset/releases/tag/v10.3.0.0"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "LightSpy Spyware Evolves into a Multi-platform Espionage Platform with Router Implants Across 13 Countries",
+      "summary": "LightSpy, a spyware implant first surfaced in 2018 and previously tied to Chinese operators, has been identified by Arctic Wolf researchers targeting victims in 13 countries across Europe and the United States. The platform now runs on smartphones, Apple devices, Linux servers, Windows PCs, and, for the first time, network routers, and it can remotely wipe or brick compromised devices. Researchers describe it as a commercially operated platform sold to governments, enterprises, and militaries, which sits in tension with earlier APT41 attributions. The router implants are the most significant development because they sit on shared network paths and can survive endpoint reimaging. Defenders should treat edge devices as in scope during incident response, correlate endpoint and router telemetry, and carry unresolved details such as the server count discrepancy and the affected country list until the full report is published.",
+      "completeness": "Low",
+      "threats": [
+        "Lightspy",
+        "Deepdata",
+        "Metasploit_tool"
+      ],
+      "geo": [
+        "United states",
+        "Chinese",
+        "China",
+        "Usa"
+      ],
+      "software": [
+        "Linux",
+        "Android",
+        "macOS",
+        "Telegram",
+        "WeChat",
+        "WhatsApp"
+      ],
+      "wallets": [
+        "coldcard_wallet"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/light-spy-spyware-evolves-into-a-multi-platform-espionage-platform-with-router-implants-across-13-countries"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "Smile, You’re on Camera. Part 2: Hiring Lazarus APT’s IT Workers in a Fake DeFi Startup",
+      "summary": "Researchers from BCA LTD, NorthScan and ANY.RUN created a fake DeFi startup, Ballena Azul LTD, and hired suspected Famous Chollima operatives, a Lazarus subgroup focused on placing North Korean IT workers at Western companies. The operatives used forged identity documents, including AI-altered images, and mule bank accounts, and they relied on tools such as ChatGPT, live translation software, and remote desktop access. Monitoring inside ANY.RUN virtual desktops recorded their scouting routines, their Google account synchronization, and their use of proxy servers and AstrillVPN exit nodes. The report concludes that once hired, such operatives gain legitimate access to code and internal systems, so defenders should perform periodic background checks with in-person verification, train recruiters to spot red flags, and block AstrillVPN.",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Gorilla"
+      ],
+      "geo": [
+        "California",
+        "Dprk",
+        "North korean",
+        "Italian",
+        "New york",
+        "South korean",
+        "Philippines",
+        "Italy",
+        "Switzerland"
+      ],
+      "software": [
+        "DirectX",
+        "ChatGPT",
+        "Visual Studio",
+        "Node.js",
+        "AstrillVPN",
+        "unicorn",
+        "Telegram",
+        "Visual Studio Code",
+        "Outlook",
+        "Gmail",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "bitget_wallet"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/lazarus-group-it-workers-investigation-part-two/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "[Op Report\\] From ClickFix SpaceX1337 to Hands-on-Keyboard AD Attack",
+      "summary": "A threat actor used a ClickFix lure on a spoofed financial-services page to deliver the SpaceX1337 RAT, then staged NetSupport RAT, AsyncRAT, and a Remus-class stealer from decimal-encoded loader hosts. After the automated phase, the operator deployed an AdaptixC2 beacon compiled on-host and conducted hands-on Active Directory reconnaissance, credential theft, and lateral movement to a domain controller. The intrusion was captured on a Deception.Pro honeynet over roughly 72 hours, with seeded credentials and a VPN note harvested and used by the operator. The actor also ran a credential-stuffing campaign against a seeded VPN portal. Defenders should treat ClickFix Win+R paste prompts as malware delivery, hunt for decimal-IP downloads and on-host csc.exe compilation, and avoid storing secrets in AD description or info attributes.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Spacex1337",
+        "Adaptixc2_tool",
+        "Overlord_tool",
+        "Netsupportmanager_rat",
+        "Asyncrat",
+        "Remus",
+        "Beaconhttp_tool",
+        "Nltest_tool",
+        "Kerberoasting_technique",
+        "Bitsadmin_tool",
+        "Lolbin_technique",
+        "Dll_sideloading_technique",
+        "Quasar_rat",
+        "Impacket_tool",
+        "Password_spray_technique",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 38,
+      "software": [
+        "Active Directory",
+        "trycloudflare",
+        "Chrome",
+        "curl",
+        "Windows Powershell"
+      ],
+      "wallets": [
+        "trezor"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "rc4"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/clickfix-spacex1337-hok-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "Abyssos: Technical Analysis of a New Modular RAT",
+      "summary": "Zscaler ThreatLabz identified Abyssos in late June 2026, a new modular remote administration tool (RAT) written in C++ that supports credential theft, file exfiltration, and VNC-based remote access. It communicates with its command-and-control server over a custom TCP protocol using AES-GCM encryption and supports a large set of network commands. Abyssos downloads additional modules from the C2 server, such as keyloggers and browser credential harvesters, to extend its capabilities. Samples use multiple obfuscation passes, likely from open-source LLVM-based obfuscators, along with hypervisor and analysis-tool checks in some versions. The tool remains in active development, and ThreatLabz expects it to keep evolving.",
+      "completeness": "Medium",
+      "threats": [
+        "Abyssos",
+        "Sandbox_evasion_technique",
+        "Bogus_control_technique",
+        "Uac_bypass_technique",
+        "Fodhelper_uac_bypass_technique",
+        "Icmluautil_tool",
+        "Rdpwrap_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Xen",
+        "VirtualBox",
+        "vmwaretray",
+        "Chrome",
+        "Windows Explorer",
+        "Vivaldi",
+        "Opera",
+        "Firefox",
+        "Microsoft Edge",
+        "Internet Explorer",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "crc-32",
+        "aes",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "GetDCFinderText",
+        "GetVulnScanJson",
+        "GetDataScanText",
+        "GetRdpWrapText"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat",
+        "https://github.com/stascorp/rdpwrap",
+        "https://github.com/bluesadi/Pluto"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "Inside a Russian-Speaking Operator's Toolkit for Compromising Ukrainian IP Cameras",
+      "summary": "A Russian-speaking operator left an open directory on a server hosted by Aeza Group, exposing tooling that began with SQL injection against a Ukrainian e-commerce site and was then reused as a proxy. The bash history shows Tor-routed intrusion attempts against Ukrainian government and military websites, though success cannot be confirmed from the files. A custom platform called camview, which wraps the open-source Ingram scanner, was used to find, exploit, and catalog 58 Ukrainian IP cameras, mostly Hikvision and Dahua models. A second open directory on a Latvian-hosted server contained router and camera scanning tools that built SOCKS5 proxy pools across 15 European countries, with camera targeting focused on Ukraine. Defenders should note that every technique observed relied on default credentials and years-old CVEs, and can be blocked with strong passwords, current firmware, and removing unneeded internet exposure.",
+      "completeness": "Medium",
+      "threats": [
+        "Password_spray_technique",
+        "Sqlmap_tool",
+        "Nmap_tool",
+        "Masscan_tool",
+        "Ingram_tool",
+        "Chisel_tool"
+      ],
+      "geo": [
+        "Russia",
+        "United kingdom",
+        "Romania",
+        "Netherlands",
+        "Moldova",
+        "Russian",
+        "Slovakia",
+        "France",
+        "Poland",
+        "Germany",
+        "Hungary",
+        "Czechia",
+        "Ukrainian",
+        "Austria",
+        "Ukraine",
+        "Latvia",
+        "Kherson",
+        "Spain",
+        "Kazakhstan",
+        "Bulgaria",
+        "Italy"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 9,
+      "software": [
+        "Docker",
+        "Dahua",
+        "OpenCart",
+        "WordPress",
+        "Chrome",
+        "Telegram",
+        "FastAPI",
+        "Uvicorn",
+        "Android"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://hunt.io/blog/russian-speaking-operator-ukrainian-camera-toolkit",
+        "https://github.com/jorhelp/Ingram"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "ErrTraffic Malware Campaign: ClickFix and EtherHiding",
+      "summary": "WatchGuard Threat Lab identified an active campaign using the ErrTraffic Malware-as-a-Service framework to distribute malware through compromised WordPress websites, ClickFix social engineering lures, and EtherHiding. The framework includes a traffic distribution system and uses Polygon blockchain smart contracts to conceal and dynamically resolve command-and-control infrastructure. Delivered payloads include Vidar, Okobot, LegionLoader, OnionDrop-related variants, and BabaDedaLoader, along with a NodeJS backdoor using gRPC over Tor. Visitors to compromised sites are targeted for browser credentials, cookies, and crypto wallet data. The report notes that defenders should understand the shared techniques and infrastructure across these campaigns, not just watch for a single malware family or indicator.",
+      "completeness": "High",
+      "threats": [
+        "Errtraffic",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Vidar_stealer",
+        "Okobot",
+        "Legionloader",
+        "Oniondrop",
+        "Babadeda",
+        "Telepuz",
+        "Dll_sideloading_technique",
+        "Mimikatz_tool",
+        "Clipbanker",
+        "Dll_hijacking_technique",
+        "Code_virtualizer_tool",
+        "Runpe_tool",
+        "Donut",
+        "Cgrabber",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Chinese",
+        "Brazilian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "LenAI",
+        "chrome",
+        "firefox",
+        "Telegram",
+        "Steam",
+        "Windows CryptoAPI",
+        "WhatsApp",
+        "Microsoft Windows Defender",
+        "curl",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "7zip"
+      ],
+      "functions": [
+        "Get-CimInstance",
+        "GetModuleHandle"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/errtraffic-malware-campaign-clickfix-and-etherhiding",
+        "https://github.com/SEKOIA-IO/Community/blob/main/IOCs/errtraffic/errtraffic\\_iocs\\_20260615.csv",
+        "https://github.com/irzyxa/Volume2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "Technical Analysis of Lucid Stealer : Execution, Capabilities, and C2 Infrastructure",
+      "summary": "Lucid Stealer is an information-stealing malware distributed disguised as the Node.js JavaScript Runtime and promoted through a Telegram channel. It packages its encrypted and obfuscated payload within the Node.js Single Executable Application framework, using a fake certificate-like data region to hinder static analysis. Once running, it elevates privileges via UAC, terminates browsers and Discord, and harvests browser credentials, cryptocurrency wallet data, Discord tokens, keystrokes, and screenshots. Analysts observed its C2 server also hosting AsyncRAT, suggesting shared infrastructure across malware families. In the analysis environment, C2 uploads returned HTTP 403, though the malware kept retrying its WebSocket connection.",
+      "completeness": "High",
+      "threats": [
+        "Lucid_tool",
+        "Asyncrat"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 12,
+      "software": [
+        "Telegram",
+        "Node.js",
+        "Discord",
+        "ode.js ap",
+        "Windows Explorer",
+        "DiscordCanary",
+        "DiscordPTB",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "atomicwallet",
+        "electrum",
+        "coinomi",
+        "guarda_wallet",
+        "jaxx"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64",
+        "exhibit",
+        "sha256"
+      ],
+      "functions": [
+        "GetConsoleWindow",
+        "Write-Output"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/technical-analysis-of-lucid-stealer-execution-capabilities-and-c2-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-10",
+      "title": "The Permanent Threat: Analyzing Aeternum’s Blockchain-Based C2 Operations and Communications",
+      "summary": "Aeternum is a C++ botnet loader that stores its command-and-control instructions in smart contracts on the public Polygon blockchain rather than on conventional servers or domains. Infected devices query public Polygon RPC endpoints to retrieve commands, using the getDomain() function selector 0xb68d1809 that all analyzed samples share. The loader downloads files from GitHub repositories and sends stolen system information through the Telegram API, while a second sample drops XWorm RAT and XMRig miner. Researchers also found a Python variant that targets cryptocurrency wallets and browser extensions and uses an Early Bird APC injection technique. The report concludes that the blockchain-based C2 design is resilient against takedowns, and that the same codebase is being iteratively refined and redeployed.",
+      "completeness": "High",
+      "threats": [
+        "Aeternum",
+        "Xmrig_miner",
+        "Xworm_rat",
+        "Putty_tool",
+        "Coinminer",
+        "Process_hacker_tool",
+        "Zingo_stealer",
+        "Dead_drop_technique",
+        "Apc_injection_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Japan",
+        "South korea",
+        "India",
+        "Middle east",
+        "Australia",
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Burp Suite",
+        "Pastebin",
+        "DBeaver",
+        "LenAI"
+      ],
+      "crypto": [
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "chacha20",
+        "base64",
+        "xor",
+        "zip",
+        "sha256",
+        "aes",
+        "aes-cbc",
+        "aes-128",
+        "aes-gcm",
+        "aes-ctr"
+      ],
+      "functions": [
+        "getDomain",
+        "DllMain",
+        "CollectAndSendSystemInfo",
+        "get_domain",
+        "updateDomain",
+        "admin"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/aeternum-blockchain-c2-analysis/",
+        "https://github.com/ctrlaltint3l/intelligence/blob/main/Aeternum%20Loader/aeternum\\_c2\\_command\\_decrypt.py",
+        "https://github.com/AbdouRoumi/Early\\_Bird\\_APC\\_Injection",
+        "https://github.com/CAPESandbox/CAPE-parsers/blob/main/cape\\_parsers/CAPE/community/XWorm.py"
+      ]
+    }
+  }
+]

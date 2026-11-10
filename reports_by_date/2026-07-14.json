@@ -1,0 +1,471 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "Compromised npm Packages in the AsyncAPI Namespace Deliver Miasma Botnet Loader",
+      "summary": "Socket researchers found four compromised npm packages in the @asyncapi namespace, including @asyncapi/generator-helpers@1.1.1 and @asyncapi/specs@6.11.2, that deliver a multi-stage Miasma botnet loader. The malicious code is hidden in first-party package source and runs when the module is loaded by Node.js, without any install-time lifecycle script. It launches a detached node process that downloads a payload from IPFS, which then decrypts and runs a large Miasma-family tasking framework with REST-based C2 and persistence via a systemd user service on Linux. The releases were published through GitHub Actions trusted publishing, but their provenance points to a source commit on refs/heads/next that already contained the implant. Defenders should treat any host that loaded an affected version as potentially compromised and hunt for detached node -e processes, IPFS requests, and the listed C2 address.",
+      "completeness": "Low",
+      "threats": [
+        "Miasma",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Node.js",
+        "macOS",
+        "Linux",
+        "claude",
+        "vscode"
+      ],
+      "functions": [
+        "require"
+      ],
+      "links": [
+        "https://socket.dev/blog/asyncapi-supply-chain-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "Operation ShadowRecruit: A Recruitment-Themed Malware Campaign Leveraging ControlR and Google Sheets to Target Indian Job Seekers",
+      "summary": "Operation ShadowRecruit is a multi-stage campaign targeting Indian government job seekers with a lure based on a Cabinet Secretariat Senior Field Officer recruitment notice. The attack is delivered through a ZIP archive containing a malicious LNK file, a hidden PowerShell script, and a .NET dropper. The chain abuses the legitimate ControlR remote management tool to enroll victims for persistent remote access. The final payload, SheetAgent RAT, uses hardcoded Google service account credentials and a Google Sheets document as a backup command-and-control channel. Researchers attribute the campaign with medium confidence to APT36, citing tradecraft that matches prior APT36 activity.",
+      "completeness": "High",
+      "threats": [
+        "Sheetagent",
+        "Privaterat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 16,
+      "software": [
+        "ControlR",
+        "Microsoft Edge",
+        "Windows File Explorer",
+        "Windows Scheduled Task",
+        "Windows service",
+        "VirtualBox",
+        "Gmail"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "IsRunningInVirtualMachine"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-shadowrecruit-a-recruitment-themed-malware-campaign-leveraging-controlr-and-google-sheets-to-target-indian-job-seekers/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "CloudAtlas. A New Wave of Cyberattacks Against Russia and Iraq Using Chains of Legitimate Web Resources",
+      "completeness": "High",
+      "threats": [
+        "Vbshower_tool",
+        "Powercloud_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Iraq",
+        "Brazil",
+        "Indonesia",
+        "Argentina",
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 17,
+      "software": [
+        "Microsoft Office",
+        "WordPress",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "visual_basic",
+        "javascript"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/cloudatlas-a-new-wave-of-cyberattacks-on-russia-and-iraq-using-chains-of-legitimate-web-resources/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "Welcomed with a README, sent off with malware: How to Spot a Fake Repository in 10 Seconds",
+      "summary": "Threat actors are distributing malicious utilities via fake GitHub repositories that impersonate tools for bypassing Telegram blocks, such as the local proxy tg-ws-proxy. Victims searching for these tools are reportedly directed to malware-hosting links at the top of search results, partly because Russian search engine results for the legitimate repositories were removed due to restrictions. Some fake repositories were GitHub mirror sites that could serve a tampered binary or script delivering stealers such as Salat Stealer or Santa Stealer. The fakes copy the genuine README, including donation details, and often tell users to disable antivirus as a false positive. Defenders should check for newly created accounts, single-commit histories, zero stars and forks, disabled Issues, and instructions to disable security tools, and obtain tools from official author channels.",
+      "completeness": "Low",
+      "threats": [
+        "Salatstealer"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "discord",
+        "Windows Defender"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6754/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "Kratos PhaaS Targets US and EU Companies: How to Reduce Microsoft 365 Account Takeover Risk",
+      "summary": "Kratos is a turnkey Phishing-as-a-Service kit that steals Microsoft 365 credentials and is sold through a subscription model with an admin panel for deploying phishing domains. Its victims span the US, Europe, and more than 20 countries, with a strong concentration in Spain and Southern Europe among the 148 suspected victim organizations identified. Attackers lure targets through SharePoint, OneDrive, DocuSign-style messages, and intermediary pages, then use Cloudflare Turnstile and a fake Microsoft login page to capture credentials. ANY.RUN tracked three page generations (V0, V1, V2) sharing the same operator infrastructure, and its fingerprint of barr.svg and lg.svg appearing together provides about 90% recall with near-zero false positives. Defenders are advised to use tiered blocking, scored SIEM rules, and separate playbooks, revoking sessions and refresh tokens when AiTM activity is suspected.",
+      "completeness": "High",
+      "threats": [
+        "Bec_technique",
+        "Aitm_technique",
+        "Flowerstorm_tool",
+        "Sneaky_2fa_tool",
+        "Evilproxy_tool",
+        "Vidar_stealer",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "German",
+        "Belgium",
+        "Norway",
+        "Austria",
+        "Spanish",
+        "Germany",
+        "Italy",
+        "France",
+        "Portuguese",
+        "United states",
+        "Sweden",
+        "Egypt",
+        "Spain",
+        "Slovenia",
+        "Portugal"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Microsoft SharePoint",
+        "Office 365",
+        "Node.js",
+        "Cloudflare Turnstile",
+        "WordPress",
+        "Linux",
+        "Android"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "submitData"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/kratos-phaas-account-takeover/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "11 Malicious NuGet Tools Pose as Game Cheats to Drop a Windows Host-Surveillance Payload",
+      "summary": "Eleven malicious NuGet DotnetTool packages posing as game cheats, bots, and panels act as first-stage downloaders for a Windows payload named pepesoft.exe. The downloaders resolve GitHub hosts over DNS-over-HTTPS and, in 10 of 11 packages, request elevation to resync the system clock before fetching the payload from GitHub Releases or Hugging Face. The second-stage Python payload retrieves remote configuration, syncs telemetry and licensing state to Google Sheets, binds activations to hardware, and enforces a remote ban-list. Three direct-bytecode variants also include Telegram bot handlers that send screenshots, which can expose any sensitive data visible on screen. Eight PyArmor-protected variants fall back to a hardcoded HTTP proxy when direct Google Sheets access is blocked, so blocking Google alone may not stop their writes.",
+      "completeness": "High",
+      "threats": [
+        "Pyarmor_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 12,
+      "software": [
+        "NuGet",
+        "Hugging Face",
+        "BitTorrent",
+        "Telegram",
+        "PyInstaller",
+        "Discord",
+        "Windows Installer",
+        "UnRaR"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "CreateNoWindow",
+        "Get-ChildItem",
+        "Remove-Item",
+        "ensure_device_uuid_fast"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "dotnet"
+      ],
+      "links": [
+        "https://socket.dev/blog/11-malicious-nuget-tools-pose-as-game-cheats"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "Phorpiex: Inside the Botnet Powering Global Sextortion Spam Operations",
+      "summary": "The Phorpiex botnet is used in a sextortion campaign that combines malware distribution with fear-based extortion emails demanding $1,200 in Bitcoin. The infection chain uses downloader components that contact command-and-control infrastructure, gather host information, and check the victim's geolocation, skipping payload delivery on systems in ten specified countries. The payload, a Twizt downloader, establishes persistence, hijacks cryptocurrency clipboard addresses, installs the XMRig miner, and can flood targets with TCP traffic. Infected hosts also act as spam nodes, sending sextortion emails through local mail servers that bypass Spamhaus checks. The extortion emails provide no evidence of an actual compromise, and the report recommends monitoring outbound SMTP traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Phorpiex",
+        "Twizt_botnet",
+        "Tcpflood_technique",
+        "Tcpsynflood_technique",
+        "Synflood_technique",
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Luxembourg",
+        "Netherlands",
+        "Canada",
+        "Sweden",
+        "United kingdom",
+        "Germany",
+        "Switzerland",
+        "New zealand",
+        "Liechtenstein",
+        "United states",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/phorpiex-inside-the-botnet-powering-global-sextortion-spam-operations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "Kali365 Ringer: Targeting Financial and Insurance Sectors",
+      "summary": "Kali365 is a device-code phishing platform used in a campaign targeting financial and insurance services organizations, including a financial customer that ZeroBEC prevented from being compromised. The lure is a missed-voicemail email that leads through a Google Sites page, a Google redirector, and an OCI API Gateway before reaching a Cloudflare-protected Kali365 page. Instead of a fake password form, the page asks victims to enter an attacker-generated code into the legitimate Microsoft device authorization flow, which lets attackers capture Microsoft 365 tokens and bypass MFA. The same Google Sites page, sender subdomain, subject line, and fake reference ID appeared across multiple targets on the same day. A recovered panel bundle exposed token management, mailbox access, B2B sending, and reseller workflows. Defenders should restrict device-code flow through Conditional Access and review sign-ins, sessions, and newly registered devices.",
+      "completeness": "Medium",
+      "threats": [
+        "Kali365_tool",
+        "Device_code_phishing_technique",
+        "Forg365_tool",
+        "Debull_tool",
+        "Bec_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "nginx"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://zerobec.com/blog/kali365-ringer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "CrashStealer: C++ macOS infostealer posing as crash reporter",
+      "summary": "CrashStealer is a native C++ macOS infostealer that impersonates Apple's crash-reporting framework to harvest browser credentials, cryptocurrency wallets, password manager data and keychain material. It is delivered through a signed and Apple-notarized dropper, disguised as \"Werkbit Setup,\" which fetches and launches the payload while its ad-hoc signature is applied by the dropper. The stealer validates the victim's password locally with dscl before unlocking the keychain and collecting data. Collected files are encrypted with AES-256-GCM and packaged into hidden ZIP archives that remain on disk after execution, then exfiltrated via libcurl. Defenders should hunt for hidden .zx_-prefixed ZIP files under ~/.cache/com.apple.crashreporter/ and the persistence LaunchAgent com.apple.crashreporter.helper.",
+      "completeness": "Medium",
+      "threats": [
+        "Crashstealer",
+        "Amos_stealer",
+        "Macc_stealer",
+        "Phexia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "curl",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "Chromium",
+        "Firefox",
+        "IndexedDB",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "rabby",
+        "keplr",
+        "solflare"
+      ],
+      "crypto": [
+        "solana",
+        "aptos"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "sha256",
+        "zip",
+        "aes-256-gcm",
+        "base64"
+      ],
+      "functions": [
+        "bar"
+      ],
+      "languages": [
+        "applescript",
+        "objective_c"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/crashstealer-macos-infostealer-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "AsyncAPI Packages Compromised with Miasma RAT",
+      "summary": "Compromised AsyncAPI npm packages on July 14, 2026 delivered the Miasma RAT, a credential stealer. An attacker pushed malicious commits to the asyncapi/generator and asyncapi/spec-json-schemas repositories, which triggered CI/CD pipelines to publish four affected packages. The injected code hides in whitespace-padded or obfuscated lines and spawns a detached Node.js process that downloads the RAT from IPFS and drops it as sync.js. The malware harvests browser passwords, SSH keys, npm, GitHub, and AWS credentials, and cryptocurrency wallets, and beacons to attacker-controlled C2 servers with several fallback channels. @asyncapi/specs alone has about 2.7 million weekly downloads, so defenders should pin to safe versions, check for the dropped file, and rotate credentials and CI/CD secrets on any affected system.",
+      "completeness": "High",
+      "threats": [
+        "Miasma",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique",
+        "Tanium_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "BitTorrent",
+        "Linux",
+        "macOS",
+        "Kubernetes",
+        "Docker",
+        "Chrome",
+        "Claude",
+        "Microsoft Defender"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-cbc",
+        "base64",
+        "rsa-4096",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "main"
+      ],
+      "languages": [
+        "typescript",
+        "javascript",
+        "ruby"
+      ],
+      "links": [
+        "https://safedep.io/asyncapi-generator-supply-chain-attack-miasma-rat",
+        "https://github.com/asyncapi/generator/commit/ff010ef38e1be1ffc4112c8903f43637ecbf4041",
+        "https://github.com/asyncapi/generator/commit/3eab3ec9304aa26081358330491d3cfeb55cc245"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-14",
+      "title": "SeasonalInvite: New Phishing Campaign Abuses eCards and RMM",
+      "completeness": "Medium",
+      "threats": [
+        "Seasonalinvite_tool",
+        "Screenconnect_tool",
+        "Logmein_tool",
+        "Syspectr_tool",
+        "Credential_harvesting_technique",
+        "Logokit_tool"
+      ],
+      "geo": [
+        "Canada",
+        "United states",
+        "Moldova",
+        "Australia",
+        "German",
+        "Romania",
+        "Bangladesh"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Telegram",
+        "elegram vi",
+        "curl",
+        "Gatekeeper",
+        "cPanel",
+        "elegram ch",
+        "PhantomJS",
+        "WinHttp"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "setTimeout",
+        "sendReport",
+        "detectOS"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "javascript",
+        "vbscript"
+      ],
+      "links": [
+        "https://www.forescout.com/blog/seasonalinvite-new-phishing-campaign-abuses-ecards-and-rmm/"
+      ]
+    }
+  }
+]

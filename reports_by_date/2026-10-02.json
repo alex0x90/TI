@@ -1,0 +1,348 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "RareWerewolf: Ukraine's Call to Counterattack",
+      "summary": "Rare Werewolf, also tracked as Librarian Ghouls and Rezet, has been active since at least 2019 and mainly targets industrial enterprises and engineering schools in Russia and the CIS, according to public reporting from Kaspersky and BI.ZONE. The group favors legitimate third-party software over custom malware, relying mainly on batch and PowerShell scripts. This report analyzes a sample packed with Smart Install Maker, which drops a batch script and decoy file, hides AnyDesk using 4t Tray Minimizer, and downloads a second-stage archive. The script installs AnyDesk silently with a preset remote-control password, emails archived AnyDesk data over SMTP, and sets scheduled tasks for persistence. Defenders should watch for unexpected silent installs of remote-access tools and tray-hiding utilities, plus outbound SMTP exfiltration.",
+      "completeness": "Low",
+      "threats": [
+        "Defendercontrol_tool",
+        "Anydesk_tool",
+        "Xmrig_miner",
+        "Smart_install_maker_tool"
+      ],
+      "geo": [
+        "Kazakhstan",
+        "Russia",
+        "Ukraine",
+        "Belarus"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WinRAR"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://pan1c.org/posts/rare-werewolf-the-call-to-counterattack-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "Stealers reach a new level: automated AI profiling",
+      "summary": "Researchers at BI.ZONE Threat Intelligence identified two underground stealers that add automated AI profiling of compromised systems: the Windows stealer Bee Stealer and the macOS agent AVENGER. The profiling works by passing collected data through a language model, which generates a short report on the victim, such as their likely profession, interests, and visited sites. Bee Stealer's panel processes much of the log with a neural network and saves the results as profile files, while AVENGER builds a victim profile from browser history, terminal content, messages, mail, and configuration files, including workplace and financial services used. For attackers, this speeds up triage of large log sets, helps prioritize victims with corporate access or significant crypto holdings before sessions expire, and makes logs easier to sell as targeted access. Defenders should respond to compromise by ending active sessions, revoking tokens, resetting credentials, and monitoring outbound traffic.",
+      "completeness": "Low",
+      "threats": [
+        "Bee_stealer",
+        "Avenger_malware"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "iscord",
+        "W",
+        "hatsApp",
+        "V",
+        "iber",
+        "a",
+        "utlook an",
+        "KeePass",
+        "Bitwarden",
+        "Chrome"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/stilery-vykhodyat-na-novyy-uroven-avtomaticheskoe-ii-profilirovanie/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "Backdoors in the Dungeon – TURN & MQTT Abused by DragonForce",
+      "completeness": "Medium",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Dll_sideloading_technique"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "rport"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://lab52.io/blog/backdoors-in-the-dungeon-turn-mqtt-abused-by-dragonforce/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "Malware Campaign Impersonates European Donors to Target Moldovan Media and Civil Society",
+      "summary": "Between September 9 and 25, 2026, an attacker sent fake invitations and grant offers impersonating European Business Summits, the European Endowment for Democracy, and East Europe Foundation Moldova to Moldovan media and civil society. Recipients who replied were sent a password-protected archive containing a virtual disk with a shortcut disguised as a document. The shortcut opened a decoy PDF while secretly starting a loader that obeyed commands from attacker servers and created recurring scheduled tasks. The techniques closely resemble Microsoft's RedFlick activity linked to Star Blizzard, but the evidence is insufficient for attribution. Defenders should treat unexpected virtual disks or password-protected archives with shortcuts as attacks, and block .vhdx and .lnk attachments.",
+      "completeness": "High",
+      "threats": [
+        "Redflick_technique",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Greece",
+        "Ukraine",
+        "Russian",
+        "Moldova"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 21,
+      "software": [
+        "Windows File Explorer",
+        "ChatGPT",
+        "LibreOffice",
+        "Microsoft Visual C++",
+        "Roundcube"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://resident.ngo/lab/writeups/malware-campaign-impersonates-european-donors-to-target-moldovan-media-and-civil-society/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "Warlock Ransomware Attackers Hit Water and Telecom Operators",
+      "summary": "The China-nexus group Longlegs (aka Storm-2603), which Symantec tracks and which developed the Warlock ransomware, continues to exploit Microsoft SharePoint vulnerabilities for initial access. In the past two months it attacked at least four organizations in Portuguese- and Spanish-speaking countries, including a water utility, a telecommunications provider, a regional government body, and a university. The group drops webshells into SharePoint servers, forges machine-key-signed payloads for remote code execution, and uses DLL sideloading and a vulnerable signed driver, K7RKScan, to disable security software. In one intrusion, Warlock was deployed to at least 33 hosts by staging it in the domain's SYSVOL share, where replication spread it. Defenders should prioritize patching SharePoint and monitoring for anomalous living-off-the-land tool use.",
+      "completeness": "High",
+      "threats": [
+        "Toolshell_vuln",
+        "K7rkscan_tool",
+        "Dll_sideloading_technique",
+        "Byovd_technique",
+        "Lolbin_technique",
+        "Nltest_tool",
+        "Netexec_tool",
+        "Crackmapexec_tool",
+        "Edr-killer"
+      ],
+      "geo": [
+        "Russia",
+        "Africa",
+        "China",
+        "Brazil",
+        "Taiwan",
+        "Japan",
+        "United states",
+        "Portuguese",
+        "India",
+        "Latin america"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SharePoint",
+        "Microsoft SharePoint",
+        "Visual Studio",
+        "Visual Studio Code",
+        "Microsoft SharePoint Server",
+        "SharePoint Server",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Symantec"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/warlock-ransomware-critical-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "SMTP is the key: BPFDoor and AVERAT hitting the network edge",
+      "summary": "BPFDoor and AVERAT are Linux implants that Rapid7 observed targeting telecom and network-edge appliances, using regionalized disguises such as spoofed SpamSniper and Sniper process names. BPFDoor variants wait passively behind raw sockets and BPF filters for a magic packet, with some builds delivering that trigger via HTTPS POST to edge proxies. A dropper writes a script to an appliance storage mount that stages payloads into /sbin and deletes them, leaving processes running without an on-disk image. AVERAT beacons over TCP port 25 using SMTP and STARTTLS and supports file transfer, shell sessions, and proxy commands. Its C2 relays are compromised consumer and SMB devices in Taiwan, including a NAS, an embedded appliance, and a DVR, and the report assesses they were operator-installed PPTP-enabled relays. Defenders should prioritize raw packet sockets, BPF filters, port-25 callbacks from non-mail processes, unlinked executables, and appliance staging paths.",
+      "completeness": "High",
+      "threats": [
+        "Bpfdoor",
+        "Averat",
+        "Rekoobe_rootkit",
+        "Tinyshell",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "China",
+        "Taiwanese",
+        "Korean",
+        "South korea"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 26,
+      "software": [
+        "Linux",
+        "MariaDB",
+        "Dahua",
+        "ORB network",
+        "SPACEHOP",
+        "FLORAHOX",
+        "Unix"
+      ],
+      "algorithms": [
+        "hmac-sha1",
+        "sha256",
+        "xor",
+        "aes-cbc",
+        "aes-128-ecb",
+        "sha1",
+        "rc4"
+      ],
+      "functions": [
+        "system",
+        "sync"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-smtp-is-the-key-bpfdoor-averat-hitting-the-network-edge"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "Pretty Themes, Hidden Loaders: GlassWorm-Linked Extensions Span VS Code Marketplace and Open VSX",
+      "summary": "Socket identified a cluster of VS Code theme extensions on the Visual Studio Marketplace and Open VSX that contain executable JavaScript despite being presented as color themes. The cluster is linked through shared Git identities, near-identical theme source, and recurring Russian-language comments to Aurora Nocturne Night Theme, a previously removed extension that downloaded and silently ran a batch file via cmd.exe. Cosmic Nebula Themes, a Marketplace extension later removed as malware, was assessed with high confidence as GlassWorm, using Solana transaction memos as a dead-drop and Russian-locale gating. Two live extensions, Coca-Cola Christmas and Aurora Borealis Studio Theme, had no active payload but retained unnecessary executable functionality and had over 8,000 Marketplace installs. Defenders should inventory theme extensions across both registries, review package contents and runtime behavior rather than public source, and treat any host where the batch payload ran as potentially compromised.",
+      "completeness": "High",
+      "threats": [
+        "Glassworm",
+        "Dead_drop_technique",
+        "Xworm_rat",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 8,
+      "software": [
+        "Open VSX",
+        "Visual Studio",
+        "Node.js",
+        "Outlook"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "aes",
+        "exhibit",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "eval",
+        "setTimeout",
+        "setInterval"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/glassworm-vscode-themes",
+        "https://github.com/lohsebhipolg2s",
+        "https://github.com/hakhangthu7558-sys",
+        "https://github.com/aubineherodvulbdl"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "Partisan Zmiy: Back on the Radar",
+      "summary": "Solar 4RAYS investigated a December 2025 attack by the Partisan Zmiy group on a medical organization, where the earliest traces date to early 2024 and the attackers stayed in the network for about two years without destructive actions. The group used a previously undescribed loader-scheduler disguised as VMware Tools and WSUS components, along with an updated version of the Vasilek backdoor (version 1.5.8). Persistence was achieved through Windows services and by hijacking vmtools.dll in a VMware Tools directory that had been installed but was unused by administrators. Vasilek received commands through the Telegram Bot API, while DNS tunnels and GOST and 3proxy chains provided redundant channels. The attackers likely preserved access for espionage and trusted-relationship attacks, given the victim's two-way trust with subsidiary medical organizations. Defenders should check for unsigned files in trusted software directories and hunt for DNS tunnels, proxy chains, and lateral movement tools whenever Vasilek is found.",
+      "completeness": "High",
+      "threats": [
+        "Vasilek",
+        "Dnscat2_tool",
+        "Impacket_tool",
+        "Wmiexec_tool",
+        "Dll_hijacking_technique",
+        "Ollvm_tool",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Russian federation"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 31,
+      "software": [
+        "vmtools",
+        "Telegram",
+        "3proxy",
+        "egram",
+        "CLOUDFLARE",
+        "Windows Service",
+        "OLLVM"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "xor",
+        "exhibit",
+        "md5"
+      ],
+      "functions": [
+        "getUpdates",
+        "getFile",
+        "getChat",
+        "deleteMessage"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/7027/",
+        "https://github.com/frkngksl/NimExec"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-02",
+      "title": "Convincing Free Mobile phishing emails appear after data breach",
+      "summary": "Phishing campaigns are targeting Free Mobile customers with convincing emails that copy the company's official logo and templates. The lures claim a €9.99 invoice must be paid to avoid service suspension, and they send victims through a redirection chain to a page that asks for credit card details. Compared with earlier Free Mobile scams, which were poorly written, this campaign uses authentic-looking domains hosted on Cloudflare. The campaign appeared after an October 2024 breach exposed customer bank details and login information, and the CNIL fined the provider €27 million. Defenders should advise customers to avoid links in unsolicited account messages and to verify the domain in the browser address bar.",
+      "completeness": "Low",
+      "geo": [
+        "France"
+      ],
+      "software": [
+        "Cloudflare"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/10/revolut-phishing-texts-appear-days-after-data-breach-clone"
+      ]
+    }
+  }
+]

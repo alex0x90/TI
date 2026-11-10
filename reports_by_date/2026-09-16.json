@@ -1,0 +1,319 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-16",
+      "title": "NightEagle targets Russian companies",
+      "summary": "NightEagle (also tracked as APT-Q-95), an APT group active since at least 2023 that originally targeted Asian organizations, has now been observed attacking businesses in Russia. The attackers mostly gained access with compromised valid credentials to corporate VPNs and deployed the GhostContainer backdoor on Microsoft Exchange servers. They tunneled RDP traffic using Microsoft dev tunnels combined with rdp2tcp, disguising tools as legitimate software hosted on GitHub. For privilege escalation and lateral movement, they exploited Active Directory weaknesses, used BlueKeep (CVE-2019-0708), and attempted DCSync to compromise domain controllers. The report notes that defenders can detect this activity through monitoring of anomalies, since the group relies on known legitimate tools and infrastructure vulnerabilities.",
+      "completeness": "High",
+      "threats": [
+        "Ghostcontainer",
+        "Neo-regeorg_tool",
+        "Ysoserial_tool",
+        "Dev_tunnels_tool",
+        "Rdp2tcp_tool",
+        "Atexec_tool",
+        "Impacket_tool",
+        "Bluekeep_vuln",
+        "Dcsync_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Exchange",
+        "trueconf",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/tr/nighteagle-apt-ghostcontainer-and-tunneling/121323/",
+        "https://github.com/V-E-O/rdp2tcp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-16",
+      "title": "Agentic Ransomware: From Human-Operated to AI-Operated Attacks",
+      "summary": "Agentic ransomware is a ransomware operation in which an autonomous AI agent, rather than a human, makes the operational decisions from initial access through extortion. The report documents JADEPUFFER, which Sysdig assessed as an LLM-driven extortion campaign that exploited an unpatched Langflow flaw (CVE-2025-3248), and later escalated to destroying AI model files with the ENCFORGE locker. Separately, the FortiBleed operation linked to INC and Lynx ransomware used a 14-agent framework called PENTEST LAB to build zero-days, playbooks, and credential checkers, while human operators ran the intrusions. The report's main takeaway for defenders is that the danger lies in speed and lower skill requirements rather than new techniques. It recommends treating AI orchestration tools as Tier-1 assets, removing default credentials, restricting exposed admin and code-execution endpoints, and covering AI and ML artifacts in offline backups.",
+      "completeness": "Medium",
+      "threats": [
+        "Wannacry",
+        "Conti",
+        "Ryuk",
+        "Blackcat",
+        "Credential_harvesting_technique",
+        "Lynx",
+        "Cobalt_strike_tool",
+        "Llmjacking_technique",
+        "Supply_chain_technique",
+        "Inc_ransomware",
+        "Nuclei_tool",
+        "Sqlmap_tool",
+        "Encforge"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 10,
+      "software": [
+        "PsExec",
+        "Langflow",
+        "FortiGate",
+        "Claude",
+        "DeepSeek",
+        "Active Directory",
+        "ESXi",
+        "MinIO",
+        "crontab",
+        "MySQL",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/agentic-ransomware-human-to-ai-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-16",
+      "title": "VectraRAT: An Undocumented Full-Stack MaaS Built From Scratch",
+      "summary": "VectraRAT is a rental-only Malware-as-a-Service platform built from scratch by a single developer, sold by the actor \"Vectra,\" formerly \"Nyxel,\" for $250 per month. It combines remote access and stealer capabilities, including hidden desktop control, keylogging, clipboard hijacking, browser credential theft, and a UAC bypass that elevates without a prompt. Buyers deliver it through Amadey, ClickFix lures, and tax-themed filenames, and the operator's infrastructure was found through an exposed open directory. Of the victim entries recovered, 48% were corporate Windows editions, including confirmed exfiltration from Windows Server 2025 hosts. The report's main takeaway for defenders is to hunt for the static mutex LocalVectra.Client.SingleInstance, the callback.json file in %TEMP%, and unexpected long-lived TCP 3308 traffic.",
+      "completeness": "High",
+      "threats": [
+        "Vectrarat",
+        "Clipboard_hijacking_technique",
+        "Uac_bypass_technique",
+        "Hvnc_tool",
+        "Amadey",
+        "Clickfix_technique",
+        "Uacme_tool",
+        "Vidar_stealer",
+        "Netsupportmanager_rat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Asian",
+        "Germany",
+        "Russian",
+        "India",
+        "Chinese",
+        "Switzerland",
+        "United states",
+        "Venezuela",
+        "Czech republic",
+        "Budapest"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 10,
+      "software": [
+        "Telegram",
+        "Linux",
+        "Chromium",
+        "Firefox",
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "lznt1",
+        "sha256"
+      ],
+      "functions": [
+        "ParseHeader"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/vectrarat-undocumented-stack-maas/",
+        "https://github.com/tc-hib/winres",
+        "https://github.com/hfiref0x/uacme"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-16",
+      "title": "Discernment Deleted: Inside the Operation Server of BlackHatSect0r && DXQRTXX",
+      "summary": "The French-speaking crew BlackHatSect0r && DXQRTXX, a 13-member group operating in alliance with APT-90, was found running a custom Go command-and-control platform called DXSCAN from an exposed server. The crew's automated pipeline scans for exposed secrets such as .env files, public cloud buckets and default signing secrets, and it has breached French public bodies, a US port authority, a crypto exchange and an elderly-targeted bank-impersonation vishing operation. The operator stripped refusals from an AI agent by deleting its memory line on discernment, then ran it continuously without oversight. The crew has no genuine zero-days, so every confirmed breach was preventable through standard exposure hygiene such as closing public storage, removing secrets from public reach and rotating default secrets.",
+      "completeness": "High",
+      "threats": [
+        "Hermes",
+        "Ghost",
+        "Credential_harvesting_technique",
+        "Smuggling_technique",
+        "Js-smuggler",
+        "Ngrok_tool"
+      ],
+      "geo": [
+        "New york",
+        "Russia",
+        "Israel",
+        "Spain",
+        "Moldova",
+        "Belgium",
+        "Germany",
+        "Russian",
+        "United states",
+        "Netherlands",
+        "United kingdom",
+        "Switzerland",
+        "France",
+        "Luxembourg",
+        "French",
+        "Italy"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 32,
+      "software": [
+        "Telegram",
+        "DeepSeek",
+        "Android",
+        "MySQL",
+        "PostgreSQL",
+        "OpenSSH",
+        "Redis",
+        "Drupal",
+        "Laravel",
+        "BIG-IP",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "ed25519",
+        "aes-cbc",
+        "pbkdf2",
+        "ecdsa",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "golang",
+        "swift",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/blackhatsect0r-dxqrtxx-operation-server/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-16",
+      "title": "Operation RapidRust: APT36 Deploys RUSTYSHADE, RUSTYMOVE, PSNATCH, and BASHNATCH",
+      "summary": "Zscaler ThreatLabz observed Operation RapidRust in August 2026, a campaign by the Pakistan-nexus actor APT36 targeting government and defense organizations in India and Afghanistan. The campaign introduces RUSTYSHADE, a Rust-based Windows backdoor that uses private GitHub repositories for command-and-control with AES-256-GCM encrypted messages. RUSTYMOVE, a USB propagation tool, copies pre-staged malicious files to removable media to spread toward air-gapped networks. PSNATCH and BASHNATCH are PowerShell and Bash file-stealing tools that exfiltrate documents and other files to attacker-controlled GitHub repositories. Activity occurred only on weekdays between 4:00 and 11:00 a.m. UTC, and the actor used typosquatted Indian news domains to stage payloads.",
+      "completeness": "High",
+      "threats": [
+        "Rustyshade",
+        "Rustymove_tool",
+        "Psnatch_tool",
+        "Bashnatch_tool",
+        "Typosquatting_technique",
+        "Gitshellpad",
+        "Gogitter"
+      ],
+      "geo": [
+        "Indian",
+        "Afghanistan",
+        "India",
+        "Pakistan"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Microsoft Office",
+        "curl",
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "zip",
+        "sha256",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "Get-Volume",
+        "Get-Partition",
+        "Get-Disk",
+        "Write-Output",
+        "Write-Host"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "golang"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/operation-rapidrust-apt36-deploys-rustyshade-rustymove-psnatch-and"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-16",
+      "title": "NightSpire Ransomware: Threat Actor Profile - Barricade Cyber Solutions",
+      "completeness": "High",
+      "threats": [
+        "Nightspire",
+        "Qtox_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "Turkey",
+        "Thailand",
+        "Japan",
+        "France",
+        "Spain",
+        "South africa",
+        "United states",
+        "Italy",
+        "Egypt",
+        "India",
+        "Brazil"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "ProtonMail",
+        "Telegram",
+        "Gmail",
+        "FortiGate",
+        "Chrome",
+        "WinSCP"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://barricadecyber.com/nightspire-ransomware/"
+      ]
+    }
+  }
+]

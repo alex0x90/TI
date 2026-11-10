@@ -1,0 +1,194 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-25",
+      "title": "CVE-2025-66376: Russian APT Exploits Zimbra Zero-Day",
+      "summary": "CVE-2025-66376 is a stored cross-site scripting flaw in the Classic UI of Zimbra Collaboration Suite, exploited as a zero-day before fixes shipped in November 2025. A joint government advisory primarily links the activity to the Russian state-supported actor LAUNDRY BEAR. Malicious HTML and CSS in an email executes JavaScript within the victim's authenticated webmail session when the message is viewed, with no link click or attachment needed. Reported targets included Western government and commercial organizations, with collection of recent email, the Global Address List, 2FA recovery codes, and newly created application passcodes. Defenders should patch to 10.0.18 or 10.1.13, treat potentially exposed accounts as compromised by resetting credentials and revoking passcodes, and review Zimbra logs for suspicious SOAP activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Flowerbed_tool"
+      ],
+      "geo": [
+        "Dutch",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Zimbra",
+        "Zimbra Collaboration Suite"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "CreateAppSpecificPasswordRequest",
+        "GetScratchCodesRequest"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2025-66376-russian-apt-zimbra-zero-day/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-25",
+      "title": "WP Botnet Master: How a Security Researcher’s Paid Course Built a 2.1-Million-Credential WordPress Botnet",
+      "summary": "A SOCRadar investigation recovered the toolkit of \"WP Botnet Master,\" a WordPress brute-force botnet that harvested 2,118,764 administrator credentials from 606,591 domains across 100 countries. The operation was run by a student of a paid, AI-assisted hacking course, the ISAL Framework, sold by a figure who presents as a credited WordPress security researcher. The botnet combines a master command-and-control server, worker nodes, a five-layer password engine, and the CVE-2025-15001 account-takeover exploit against the FS Registration Password plugin. Its STEALTH FM V65 web shell uses database-resident persistence that survives file deletion, so file-based scanners alone can report a compromised site as clean. Defenders should rotate administrator credentials, patch the affected plugin, and validate wp_options, active_plugins, and the user table before declaring remediation. The report also warns that the course community may produce more operators and that an English-language edition is in development.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Stealth_fm",
+        "Wpscan_tool",
+        "Kurosaki_tool",
+        "Nuclei_tool",
+        "Dynamic_linker_hijacking_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Indonesia",
+        "India",
+        "Iran",
+        "Vietnam",
+        "Turkish",
+        "Brazil"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 19,
+      "software": [
+        "ordPress Bo",
+        "Anthropic Claude",
+        "Telegram",
+        "cPanel",
+        "Ubuntu",
+        "WordPress",
+        "MySQL",
+        "instagram",
+        "BurpSuite",
+        "Node.js",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "bcrypt",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "eval",
+        "Pool"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/wordpress-wp-master-credential-botnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-25",
+      "title": "The Gentlemen RaaS: Origins, OPSEC & OSINT",
+      "summary": "The Gentlemen is a Ransomware-as-a-Service group that emerged in 2025 from the fallout of ArmCorp, a former Qilin affiliate, and by June 2026 had nearly 500 claimed victims, second only to Qilin. Its operators offered affiliates a 90% share of ransom payments and control over negotiations. The report traces the group's administrator, hastalamuerte/zeta88, through OPSEC failures including reused monikers, leaked Rocket.Chat communications, forum breach data, and personal online traces. Those traces link him to Izhevsk, Russia, and to travel abroad. For defenders, the takeaway is that ransomware groups are networks of people, aliases, and infrastructure, and their mistakes can reveal those connections.",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Qilin_ransomware",
+        "ransomware.live",
+        "Devman",
+        "Megacmd_tool",
+        "Havoc",
+        "Xenorat",
+        "Meshagent_tool",
+        "Cobalt_strike_tool",
+        "Asyncrat",
+        "G-bot"
+      ],
+      "geo": [
+        "Chinese",
+        "Thailand",
+        "Vietnamese",
+        "Moscow",
+        "China",
+        "Russian",
+        "Vietnam",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "http://ctrlaltintel.com/research/Gentlemen/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-25",
+      "title": "A Rising Star Among Botnets: Dysphoria—Evolution and In-Depth Technical Analysis",
+      "summary": "Dysphoria is a botnet family first tracked by XLAB in Q1 2026, with over 200,000 bots and rapid variant updates that evolved from jackskid and fbot code. Its command-and-control addresses are obtained through blockchain domain records on ENS and Solana SNS, and some infected devices now act as C2 relay nodes, which makes takedown harder for defenders. Some samples run as pure relay proxies, using UPnP to map ports on routers and Linux epoll to forward traffic bidirectionally. The botnet spreads mainly through Telnet and SSH weak-password brute forcing, supplemented by exploitation of known IoT device vulnerabilities. It is sold as a DDoS-for-hire service, claiming up to about 4 Tbps capacity, and conducts near-daily attacks against internet services and gaming targets worldwide.",
+      "completeness": "Medium",
+      "threats": [
+        "Dysphoria",
+        "Jackskid",
+        "Fbot"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "android",
+        "Linux"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/dysphoria/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-25",
+      "title": "Steam forum ClickFix attacks infect gamers with XMRig cryptominers",
+      "summary": "Threat actors are posting fake fixes on Steam discussion forums in a ClickFix campaign that deploys XMRig cryptominers. The attackers create random Steam accounts and reply to posts about game crashes, lost inventory items, and other technical issues. Victims are told to open PowerShell as administrator and run a command that downloads and launches the miner. The script poses as a Windows optimization utility, displaying fake progress messages while its real activity is hidden in an 'Advanced-Optimization' function. It adds a Microsoft Defender exclusion, creates a scheduled task so the miner runs at startup with SYSTEM privileges, and defenders should never run unvetted PowerShell commands from forums. Affected users should check for the C:\\Windows\\Background directory, the Defender exclusion, and an 'XMRig-' scheduled task, and consider reinstalling the operating system.",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Xmrig_miner"
+      ],
+      "software": [
+        "Steam",
+        "Windows image",
+        "Windows Firewall",
+        "Microsoft Defender"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/"
+      ]
+    }
+  }
+]

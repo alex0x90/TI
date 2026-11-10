@@ -1,0 +1,227 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-18",
+      "title": "From Registry-Stored PowerShell to In-Memory Cryptocurrency Mining: A Multi-Stage Infection Chain",
+      "summary": "A multi-stage infection chain was observed on a system that triggered frequent PowerShell detection alerts. The actor stored the initial PowerShell payload in the Registry and retrieved further data through DNS TXT records, a PNG image, and WAV files that concealed PowerShell scripts and .NET assemblies. Persistence was established through hidden Scheduled Tasks and a WMI permanent event subscription, while PowerShell and Microsoft Defender settings were tampered with to reduce detection. Reconstructed .NET assemblies were loaded directly into memory, reducing the need to write executables to disk. The final stage deployed an XMRig-based cryptocurrency miner, and the report notes that the earlier C2 channel could remain available for further malicious activity.",
+      "completeness": "Low",
+      "threats": [
+        "Xmrig_miner"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "randomx",
+        "zip"
+      ],
+      "functions": [
+        "Set-PSReadLineOption"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/from-registry-stored-powershell-to-in-memory-cryptocurrency-mining-a-multi-stage-infection-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-18",
+      "title": "The banana stand: brokering and managing infections across Asia using MQTT",
+      "summary": "BambooToken is an emerging malware family, tracked by Lumen's Black Lotus Labs as an unattributed threat cluster, that uses MQTT, a protocol normally used for IoT devices, for command and control of infected Windows and Linux systems. The Windows agent is sideloaded through Tendyron's OnKey program, a USB-token product popular in Chinese banking and government networks, without evidence that Tendyron's signing certificate was compromised. Activity dates to at least February 2023, with most samples uploaded from Chinese IP space and targeting concentrated in Asia and South America. Victims included mobile application back ends, a GitLab server, a software company, a hotel and a legal firm, and the implant's features include keylogging and clipboard access. Lumen rates the actor as highly dangerous and warns that its techniques may later be used against higher-value targets. Defenders should audit software supply chains, harden routers against SNMP exposure, and alert on abnormal MQTT traffic leaving the network.",
+      "completeness": "High",
+      "threats": [
+        "Bambootoken",
+        "Supply_chain_technique",
+        "Zuo_rat",
+        "Iocontrol",
+        "Plugx_rat",
+        "Wikiloader"
+      ],
+      "geo": [
+        "Lithuania",
+        "Singapore",
+        "Malaysian",
+        "Chile",
+        "Vietnam",
+        "Vietnamese",
+        "Argentina",
+        "Chinese",
+        "China",
+        "Cambodia",
+        "Hong kong",
+        "America",
+        "Malaysia",
+        "Japan",
+        "Latin america",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux s",
+        "Linux",
+        "Mosquitto",
+        "Visual Studio",
+        "Component Object Model",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.lumen.com/blog/en-us/the-banana-stand-brokering-and-managing-infections-across-asia-using-mqtt",
+        "https://github.com/eclipse-mosquitto/mosquitto/tree/master",
+        "https://github.com/blacklotuslabs/IOCs/blob/main/Banana\\_Stand\\_IOCs.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-18",
+      "title": "Ready, Settra, Go: New Settra Ransomware Variant Deploys MeshAgent RMM",
+      "completeness": "Low",
+      "threats": [
+        "Settra_ransomware",
+        "Meshagent_tool",
+        "Byovd_technique",
+        "Crux",
+        "Kawalocker",
+        "Cephalus"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/new-settra-ransomware-variant"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-18",
+      "title": "Private HTS program distributing ransomware",
+      "summary": "The ASEC report describes a fake Home Trading System (HTS) called \"UBP 에셋\" that was used to distribute ransomware, which ASEC has named KRSID. The HTS was previously used by an investment fraud group that impersonated the Swiss bank Union Bancaire Privee and lured victims through Telegram and band chat rooms. The HTS installs an updater that downloads a configuration file from its server and then runs the Rust-based KRSID ransomware, which encrypts files using AES-256 and RSA-2048. Unlike some ransomware, KRSID does not delete volume shadow copies, and its ransom note directs victims to contact the attacker on Telegram. The report notes that the fraud group has shifted from stealing investment deposits to infecting victim PCs and demanding payment, and it advises users to install HTS software only from official financial institution websites and to keep software patched and antivirus updated.",
+      "completeness": "Low",
+      "threats": [
+        "Quasar_rat",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Switzerland"
+      ],
+      "software": [
+        "KakaoTalk",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "rsa-2048",
+        "aes-256"
+      ],
+      "functions": [
+        "Main"
+      ],
+      "languages": [
+        "groovy",
+        "lua",
+        "scala",
+        "swift",
+        "php",
+        "rust",
+        "java"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95464/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-18",
+      "title": "Don’t Call Us, We’ll Call Your APIs \\| TraderTraitor Backdoors Resurface on Victim With No Crypto Ties",
+      "summary": "North Korean actor TraderTraitor, also tracked as UNC4899, has been linked to a new victim, an India-based IT services provider with no cryptocurrency ties, through the same macOS backdoors used in the LayerZero Labs attack. The intrusion began with fake job interview coding projects that contained a weaponized Terraform lock file pointing to attacker-controlled provider domains. Once a DevOps engineer ran the project, the FLATROOF and ROOFDECK backdoors used Cursor to launch and beacon to command-and-control servers. ROOFDECK resolves its C2 through Nostr profiles and offers extensive reconnaissance, lateral movement and exfiltration commands. Defenders are advised to monitor developers with cloud and source control access and to verify that Terraform providers come from known registries.",
+      "completeness": "High",
+      "threats": [
+        "Gaslight_backdoor",
+        "Roofdeck",
+        "Typosquatting_technique",
+        "Dead_drop_technique",
+        "Launchagents_tool",
+        "Lightlesscan",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "North korea",
+        "India"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Telegram",
+        "Gatekeeper",
+        "Chrome",
+        "Firefox",
+        "Linux"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "sha1",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/dont-call-us-well-call-your-apis-tradertraitor-backdoors-resurface-on-victim-with-no-crypto-ties/",
+        "https://github.com/derrix060/novacart\\_interview/blob/main/providers.tf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-18",
+      "title": "PlugX End-to-End Malware Analysis Report",
+      "completeness": "Medium",
+      "threats": [
+        "Plugx_rat",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "l.exe",
+        "Visual Studio",
+        "BitLocker"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.joesandbox.com/joereverser/analysis/cb4fa2ae-866b-4c14-ae49-1447ee511565/download?type=reports&report=html"
+      ]
+    }
+  }
+]

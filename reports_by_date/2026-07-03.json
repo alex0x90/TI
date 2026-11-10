@@ -1,0 +1,327 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "At WARP speed after your Roblox and corporate secrets: how Santa Stealer turned log theft into an assembly line",
+      "summary": "Santa Stealer is a commercial Malware-as-a-Service infostealer, apparently rebranded from BluelineStealer, that was observed in March 2026 hitting a Russian industrial company via a ClickFix attack. An employee was tricked by a fake Cloudflare CAPTCHA page into pasting a PowerShell command via Win+R, which downloaded a Go dropper that loads the payload in memory without writing it to disk. The stealer targets browser data and cryptocurrency wallets, game and messaging accounts, VPN, FTP and password manager clients, and cloud credentials, and it can clip crypto addresses from the clipboard. Its C2 address is retrieved through Dead Drop Resolver lookups on Telegram and Mastodon, and an optional Cloudflare WARP/WireGuard tunnel can hide the real C2 inside legitimate UDP traffic. The report links the developer to large resellers of accounts stolen with the stealer, which suggests that buyers may not be the only parties with access to the stolen data. Defenders are advised to block execution from user-writable directories, deploy behavioral EDR with real-time blocking, and revoke sessions and tokens after any suspected infection.",
+      "completeness": "High",
+      "threats": [
+        "Santastealer",
+        "Clickfix_technique",
+        "Dead_drop_technique",
+        "Bluelinestealer",
+        "Lumma_stealer",
+        "Redline_stealer",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russian federation"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 29,
+      "software": [
+        "Roblox",
+        "Telegram",
+        "Mastodon",
+        "Steam",
+        "Discord",
+        "WinSCP",
+        "KeePass",
+        "1Password",
+        "Bitwarden",
+        "NordPass",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "metamask",
+        "rabby",
+        "coinbase",
+        "tonkeeper",
+        "keplr",
+        "exodus_wallet",
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero",
+        "binance",
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "chacha20",
+        "sha1",
+        "base64",
+        "xor",
+        "aes",
+        "md5"
+      ],
+      "functions": [
+        "get_clipboard"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6739/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "Boss Scam: Don’t Trust Every “Urgent” Message from Your Boss!",
+      "summary": "A Boss Scam campaign impersonates executives, the Reserve Bank of India, or tax authorities via email or WhatsApp to lure victims into running a ZIP attachment. The ZIP holds a legitimate, digitally signed executable that sideloads a malicious DLL through Windows' DLL search order. The malware persists via Registry Run entries, copies itself to %AppData% or %ProgramData%, and waits for an active WhatsApp Web session in Chromium-based browsers. It then archives browser cookies, tokens, and encryption keys using the built-in tar.exe and exfiltrates them over TCP. Attackers can hijack the session and message colleagues from the victim's trusted account to spread further. Defenders should treat unexpected urgent requests and attachments with suspicion, enable MFA, and regularly review WhatsApp Web linked devices.",
+      "completeness": "Medium",
+      "threats": [
+        "Dllsearchorder_hijacking_technique",
+        "Dll_sideloading_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "India"
+      ],
+      "software": [
+        "WhatsApp",
+        "Microsoft Edge",
+        "IndexedDB"
+      ],
+      "algorithms": [
+        "zip",
+        "aes"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/boss-scam-dont-trust-every-urgent-message-from-your-boss/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "Armored Likho digging a snake pit: inside the covert BusySnake Stealer campaign",
+      "summary": "Armored Likho is a previously unknown APT group, also tracked as Eagle Werewolf, that targets government agencies and the electric power sector in Russia, Brazil, and Kazakhstan. The group uses spear-phishing with archives containing EXE droppers or LNK files disguised as psychological tests or humanitarian aid requests. Its main payload is BusySnake Stealer, a Python-based infostealer obfuscated with PyArmor that harvests clipboard data, browser passwords and cookies, Telegram sessions, and cryptocurrency wallet files. The stealer also includes a built-in reverse SSH tunnel and persists via scheduled tasks. Researchers note that AI-generated first-stage payloads and shared structure with AquilaRAT suggest ongoing evolution of the group's toolkit. The report gives medium-confidence attribution and advises monitoring for these phishing and LNK-based execution chains.",
+      "completeness": "High",
+      "threats": [
+        "Busysnake",
+        "Go2tunnel_tool",
+        "Polymorphism_technique",
+        "Spear-phishing_technique",
+        "Pyarmor_tool",
+        "Aquilarat"
+      ],
+      "geo": [
+        "Brazil",
+        "Kazakhstan",
+        "Russia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "telegram",
+        "Mozilla Firefox",
+        "OPENSSH"
+      ],
+      "algorithms": [
+        "deflate",
+        "gzip"
+      ],
+      "functions": [
+        "NSS_Init",
+        "PK11SDR_Decrypt",
+        "taskItemId"
+      ],
+      "languages": [
+        "rust",
+        "powershell",
+        "golang",
+        "vbscript",
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/tr/armored-likho-apt-with-busysnake-stealer/120292/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "TeamPCP Supply Chain Attacks: SafeBreach Coverage for FBI FLASH Alert FLASH-20260702-01",
+      "summary": "TeamPCP is a financially motivated cybercriminal group that, according to the FBI FLASH Alert FLASH-20260702-01, compromised software supply chains in 2026 by injecting malicious code into widely used developer and security tools such as Trivy, KICS, LiteLLM, and the Telnyx Python SDK. Trojanized updates installed credential-stealing malware and persistent backdoors in developer environments and CI/CD systems. The advisory names four malware families, including CanisterWorm and SANDCLOCK for credential theft and Mini Shai-Hulud and its Miasma variant, which self-propagate across npm and PyPI. Stolen GitHub tokens were used to create exfiltration repositories, and the group engaged in extortion by publishing victim names on a leak site. The FBI advises treating exfiltrated credentials as a persistent risk, with rotation, pinned workflows, and phishing-resistant MFA as key defenses.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Canisterworm",
+        "Sandclock",
+        "Miasma"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Trivy",
+        "LiteLLM"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.safebreach.com/blog/teampcp-supply-chain-attacks-fbi-flash-alert-20260702-01-safebreach-coverage/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "Verified X ad spreads Mac malware, while ConsentFix steals Microsoft accounts",
+      "summary": "Attackers ran a ClickFix-style campaign as a sponsored ad on X from a verified account, posing as a fake download for DynamicLake, a legitimate macOS utility. Victims were redirected to a lookalike domain and told to paste Terminal commands that silently installed Atomic Stealer infostealer variants. The ad was reported to X and appears to have been removed. Separately, ConsentFix tricks Windows users into dragging a localhost callback link into their browser, handing over session tokens that grant access to Microsoft 365 accounts without malware, passwords, or MFA. The method has reportedly been shared on a Russian cybercrime forum, lowering the skill needed to use it. Defenders should treat links from verified accounts and sponsored results as untrusted and verify browser addresses before entering credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Consentfix_technique",
+        "Clickfix_technique",
+        "Amos_stealer"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "macOS",
+        "Dropbox"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/07/verified-x-ad-spreads-mac-malware-while-consentfix-steals-microsoft-accounts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "Kali365 PhaaS Kit: OAuth Device-Code Phishing Enables MFA-Satisfied Token Theft",
+      "summary": "Kali365 (K365) is a subscription Phishing-as-a-Service platform sold via Telegram since April 2026 that targets Microsoft 365 accounts. Its operator client, kali365.exe, connects to a backend panel and lets operators open a victim's Outlook or Admin Center using stolen refresh tokens. The report assesses the core capture method as OAuth device-code phishing (RFC 8628), in which victims approve an attacker-initiated session on the genuine Microsoft device login page, so MFA is satisfied rather than bypassed. Two client builds, six days apart, show rapid iteration in token-abuse techniques. Victim counts from an earlier exposed panel were excluded as non-production, so no confirmed victim totals are asserted. Defenders should hunt for unexpected device-code approvals and suspicious refresh-token use rather than blocklisting Microsoft infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Kali365_tool",
+        "Octopus",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Russian",
+        "Berlin",
+        "American",
+        "Russia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "Telegram",
+        "Outlook",
+        "Microsoft Office",
+        "macOS",
+        "Electron",
+        "elegram",
+        "a",
+        "Linux",
+        "Linux Firefox",
+        "Microsoft Entra",
+        "Azure AD",
+        "have more..."
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "monero",
+        "litecoin",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "exchangeTokenInBrowser",
+        "generateCookieScript",
+        "URL"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/kali365-phaas-oauth-device-code-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "Kairos Ransomware: Data-Extortion Case Study Involving a U.S. Government Entity",
+      "summary": "Kairos is a data-extortion actor, not a confirmed ransomware group, that claimed about 2 TB and 1.6 million files from a U.S. government entity in May 2025. It used a $3 million opening demand, staged reductions, a fixed deadline, and threats to publish sensitive material to pressure the victim. The entity paid $1 million on 13 June 2025, and Kairos later claimed a brute-force credential attack was the access method. The deletion proof was not technically verifiable, and no encryptor or locker sample has been linked to the group. Defenders should enforce MFA, monitor brute-force activity and large outbound transfers, and pre-plan escalation and public-communications procedures.",
+      "completeness": "Medium",
+      "threats": [
+        "Kairos",
+        "Lockbit",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NGINX"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "bitcoin",
+        "binance"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/kairos-ransomware-data-extortion-case-study/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-03",
+      "title": "Fake site for the Pearcleaner app is pushing a Mac stealer",
+      "summary": "A fake website impersonating the free Mac app Pearcleaner is distributing stealer malware to macOS users. Users who checked the malware reported it behaves like AMOS, targeting browser data, keychain entries, crypto wallets, and files, though the researchers did not confirm the sample. Victims were directed via ClickFix, where a copied Terminal command, obfuscated in base64, pulled a payload from a second site. The campaign used SEO poisoning to rank the fake page at the top of Google results, mainly targeting U.S. users. The key takeaway for defenders is to avoid pasting Terminal commands from websites and to download software only from official sources.",
+      "completeness": "Low",
+      "threats": [
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Macc_stealer",
+        "Seo_poisoning_technique"
+      ],
+      "software": [
+        "MacOS",
+        "curl",
+        "openssl",
+        "Android",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://moonlock.com/fake-pearcleaner-site-pushing-malware",
+        "https://github.com/alienator88/Pearcleaner/"
+      ]
+    }
+  }
+]

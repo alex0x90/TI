@@ -1,0 +1,181 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-16",
+      "title": "Investigating Ephemeral Supply Chain Tampering",
+      "summary": "Google Threat Intelligence Group and Mandiant tracked UNC7017, which tampered with AOMEI Technology's update servers between April and July 2026 in brief windows lasting five to ten minutes. During these windows, the actor redirected AOMEI Backupper and AnyViewer clients to download a trojanized ZIP containing the CROSSROAD downloader, which deployed the SHINYROAD backdoor via scheduled tasks. The actor also abused notification settings to force immediate execution and injected an invisible popup to coerce WebDAV NTLM authentication. Targeted organizations spanned IT services, telecommunications, and higher education across multiple countries, though victimology was opportunistic. Server-side fixes do not clean endpoints that already downloaded malicious updates, so defenders should hunt retrospectively across April to July.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Crossroad",
+        "Shinyroad",
+        "Bloat_technique",
+        "Credential_harvesting_technique",
+        "Timestomp_technique",
+        "Radmin_tool",
+        "Adaptixc2_tool",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Brazil",
+        "South africa",
+        "United states",
+        "Portugal",
+        "Pakistan",
+        "Switzerland",
+        "Australia",
+        "India",
+        "Spain"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 25,
+      "software": [
+        "Alibaba Cloud",
+        "Windows COM",
+        "Outlook",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "md5",
+        "rc4",
+        "chacha20",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "GetTempZipFileNameA",
+        "CreateScheduledTask"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/investigating-ephemeral-supply-chain-tampering/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-16",
+      "title": "CVE-2026-88771: Inside the Exploitation of a Critical NetScaler RCE Vulnerability",
+      "summary": "CVE-2026-88771 is a critical remote code execution flaw in Citrix NetScaler ADC and NetScaler Gateway that allows unauthenticated attackers to run arbitrary commands without optional features enabled. Zscaler ThreatLabz observed a staged chain in which attackers stored a Base64-encoded payload in HTTP access logs via a crafted User-Agent value. They then poisoned the authentication log with a forged packet processing engine failure message containing shell commands. A legitimate NetScaler Perl maintenance script later processed that entry and executed the injected commands with its privileges. Attackers also attempted to deploy multiple PHP and Perl web shells and to download a FreeBSD x64 implant, using infrastructure that overlapped with StyleSmuggler (CVE-2026-75650) activity, though this does not establish attribution. Defenders should identify exposed appliances, preserve forensic evidence before patching, and hunt for the listed indicators and log artifacts.",
+      "completeness": "Low",
+      "threats": [
+        "Stylesmuggler_vuln"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Citrix NetScaler ADC"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "php",
+        "perl"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/cve-2026-88771-inside-exploitation-critical-netscaler-rce-vulnerability"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-16",
+      "title": "Investigation into the Attack Methods Used in a Series of Unauthorized Access Incidents",
+      "summary": "JPCERT/CC investigated a series of unauthorized access incidents in Japan that led to leaks of personal information from multiple organizations. The attackers reportedly used AI to scan for known vulnerabilities and carry out attacks via APIs. A key technique was analyzing Android APK files to identify APIs and then testing them for SSRF and similar flaws. Attack source servers also contained tools for reverse engineering Flutter applications, such as Blutter and jadx, and some targeted services outside Japan. Another server showed attempts at EDR bypass and web shells, suggesting efforts to move into internal networks. Defenders should avoid embedding long-lived secrets or API keys in apps, enforce server-side authentication and authorization, monitor for abnormal API requests, and restrict outbound URL fetches including redirects.",
+      "completeness": "Low",
+      "geo": [
+        "Japan"
+      ],
+      "software": [
+        "Android",
+        "Flutter",
+        "MySQL",
+        "Jenkins"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/ja/2026/10/web_api_attacks.html",
+        "https://github.com/worawit/blutter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-16",
+      "title": "ConnectWise (SkyKick) Vendor Credentials Abused in M365 Attacks",
+      "completeness": "Low",
+      "threats": [
+        "Password_spray_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "Microsoft 365",
+        "SharePoint",
+        "Microsoft Entra",
+        "Microsoft Teams",
+        "curl"
+      ],
+      "functions": [
+        "Graph"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/vendor-credential-enables-unauthorized-access"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-16",
+      "title": "GhostAction Copycats PolinRider by Hiding a Stealer in a Fake Font File",
+      "summary": "GhostAction is a credential-stealing campaign that abuses malicious GitHub Actions workflows, and a second stage now persists even after the workflow is removed. Stage 2 commits a hidden VS Code task that runs when a folder opens, plus a fake font file that is actually a plain JavaScript infostealer. The stealer harvests cloud, registry, SSH, and AI tool credentials, then installs a cron job that fetches and runs commands from the attacker's server every five minutes. Researchers identified 1,230 repos owned by 391 accounts carrying the fake font and hidden task, and called it a copycat of the North Korean PolinRider technique rather than an extension of it. Defenders should revoke access tokens before cleaning files, remove the workflows and font file from every branch, rotate credentials, and check crontab on affected machines.",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "ANTHROPIC",
+        "OPENAI",
+        "curl",
+        "crontab",
+        "Claude",
+        "Kubernetes",
+        "macOS",
+        "Linux"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "aptos"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/ghostaction-copycats-polinrider-by-hiding-a-stealer-in-a-fake-font-file",
+        "https://github.com/justboyke/afvalalert",
+        "https://github.com/adydetra/bangcv-flutter",
+        "https://github.com/vision-vivante/cashpost"
+      ]
+    }
+  }
+]

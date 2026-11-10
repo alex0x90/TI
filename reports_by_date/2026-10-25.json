@@ -1,0 +1,222 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-25",
+      "title": "Turn a Threat Report Into ATT&CK Mappings and Sigma Rules With an AI Agent",
+      "summary": "This playbook shows how an AI agent can turn a threat report into MITRE ATT&CK technique mappings and Sigma detection rules, with free tools checking each output. Using CISA advisory AA25-203a on the Interlock ransomware group as the test case, the agent found 19 to 22 of the 25 techniques listed by the report authors across three runs. The validation tools also caught an outdated tactic name and a Sigma rule with a condition that required a hidden window or bypass flag, so it would have missed the behaviour it targeted. The author's takeaway is that agent output should be treated as a draft, with ids checked against ATT&CK data, rules tested on sample events, and a detection engineer reviewing before use.",
+      "completeness": "Medium",
+      "threats": [
+        "Interlock",
+        "Systembc",
+        "Clickfix_technique",
+        "Azcopy_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 15,
+      "software": [
+        "Sigma CLI",
+        "sigma-cli",
+        "pySigma",
+        "Claude",
+        "Claude Code",
+        "curl",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Edge",
+        "Windows shell",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "set",
+        "Set-ItemProperty",
+        "Get-Date"
+      ],
+      "languages": [
+        "python, powershell",
+        "SIGMA: Found"
+      ],
+      "links": [
+        "https://brandefense.io/blog/threat-report-to-sigma-rules-ai-agent/",
+        "https://github.com/mitre-attack/attack-navigator/blob/master/layers/spec/v4.5/layerformat.md",
+        "https://github.com/mitre-attack/attack-stix-data"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-25",
+      "title": "Weekly Threat Infrastructure Investigation(Week43)",
+      "summary": "This weekly report uses Censys search to map C2 infrastructure exposed on the global internet from October 19 to 25, 2026, identifying 169 C2 servers. It monitors frameworks including Cobalt Strike, SuperShell, Mythic, Sliver, Havoc, Empire, and NimPlant. The most common types found were Cairn (48), Sliver (45), and a category labeled \"ARTEX in Japan\" (40). Many detections sit in hosting and cloud networks, and a subset is tied to Japan-associated labels. The report also lists four RAT and stealer control or login panels observed during the week.",
+      "completeness": "Low",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Supershell",
+        "Mythic_c2_tool",
+        "Sliver_c2_tool",
+        "Havoc",
+        "Empire_loader",
+        "Nimplant",
+        "Cairn",
+        "Artex_tool",
+        "Dumplings_rat",
+        "Arjun_rat",
+        "Natalism"
+      ],
+      "geo": [
+        "Hong kong",
+        "China",
+        "Mauritius",
+        "Japan",
+        "Asia",
+        "Guangdong",
+        "Saudi"
+      ],
+      "links": [
+        "https://disconinja.hatenablog.com/entry/2026/10/25/190013"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-25",
+      "title": "2026-10-24-confirmed-rce.md",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "PHP2Shell",
+        "curl",
+        "url"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Set-Cookie"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://github.com/0x4D31/honeypot-data/blob/main/reports/php2shell/2026-10-24-confirmed-rce.md",
+        "https://github.com/0x4D31/honeypot-data/blob/main/reports/php2shell/2026-10-22-to-24-initial-attempts.md",
+        "https://github.com/9bie/php2shell-bypass-aslr-exp/blob/d6f888ebd3f0e188bb662e16f23747afdf35e42f/exploit.py#L93-L117",
+        "https://github.com/9bie/php2shell-bypass-aslr-exp/blob/d6f888ebd3f0e188bb662e16f23747afdf35e42f/exploit.py#L252-L271"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-25",
+      "title": "language-pack-sol: The Solidity Pack That Ships Its Own Backdoor",
+      "summary": "The malicious VS Code extension luanblanco.language-pack-sol masquerades as the Solidity extension, with a bidi-spoofed publisher name and copied icon and README. Its main file waits 60–150 seconds and then installs a nested VSIX that impersonates juanblanco.solidity, but only on machines lacking the genuine extension. The nested package embeds a 54 MB MP4 carrying a four-platform Go implant, a ConnectWise ScreenConnect installer, and a UAC-bypass script. The implant reads its hub address from an Ethereum contract, so the operator can rotate infrastructure with a single transaction and no package update. The report links this build to the SleepyDuck delivery pipeline through byte-identical artifacts, though it does not establish that one operator controls the whole family. Defenders should treat any extension that calls installFromVSIX as a supply-chain boundary, check for listed persistence artifacts, and block specific endpoints rather than hosting providers.",
+      "completeness": "Medium",
+      "threats": [
+        "Language_pack_sol",
+        "Screenconnect_tool",
+        "Uac_bypass_technique",
+        "Sleepyduck",
+        "Evjawbreaker",
+        "Dead_drop_technique",
+        "Process_hacker_tool",
+        "Procmon_tool",
+        "Launchagents_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio",
+        "Visual Studio Code",
+        "vscode",
+        "Linux",
+        "macOS",
+        "sysctl",
+        "systemd",
+        "Microsoft Defender",
+        "Outlook",
+        "Roblox",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "createHash",
+        "attemptUpdate",
+        "scheduleSideInstall",
+        "getExtension",
+        "setTimeout",
+        "bootstrap",
+        "owner",
+        "activate",
+        "Task-Board"
+      ],
+      "languages": [
+        "powershell",
+        "solidity"
+      ],
+      "links": [
+        "https://yeethsecurity.com/blog/2026-10-25-Language-Pack-Sol-Nested-Dropper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-25",
+      "title": "Eight VS Code Extensions, One RAT Engine: Inside the Task-Board Backdoor",
+      "summary": "Eight VS Code Marketplace extensions published or updated on October 24-25, 2026, present as task boards, a project dashboard, and a Roblox MCP bridge, but each ships a hidden module that starts on activation and polls an external server every five seconds. The server can push actions that are auto-approved and executed inside the editor process, including JavaScript with require in scope and shell commands via child_process.exec. Several packages first shipped harmless placeholder versions, then added the execution engine in later updates under the same extension ID, with MarkersBoard and Parsley explicitly reversing previously declared no-execution claims. The packages share one protocol, registration payload, and route set, and point to two ngrok-backed domains registered through the same registrar. The listed payloads are not embedded in the packages, so the server controls what runs. Defenders should remove the extensions, treat affected machines as compromised, rotate exposed credentials, and monitor updates and egress rather than relying on first-publish review.",
+      "completeness": "Medium",
+      "threats": [
+        "Greenbean",
+        "Ngrok_tool",
+        "Language_pack_sol",
+        "Sleepyduck"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio",
+        "Roblox",
+        "vscode",
+        "Visual Studio Code",
+        "Outlook"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Task-Board",
+        "activate",
+        "README",
+        "validateAction",
+        "executeCustomCode",
+        "Get-Date"
+      ],
+      "languages": [
+        "solidity",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://yeethsecurity.com/blog/2026-10-25-Shared-RAT-Engine-VS-Code-Task-Boards"
+      ]
+    }
+  }
+]

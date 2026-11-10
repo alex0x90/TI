@@ -1,0 +1,163 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-06",
+      "title": "The Email Auth Was Green. The Image Still Carried Malware.",
+      "summary": "A phishing email from a claims-management onboarding lure passed SPF, DKIM, and DMARC under a reject policy, reaching the inbox through an authorized mail path. One of its three inline PNG images, named image007.png, carried a Windows executable hidden in its decompressed IDAT data at offset 696,056, where the bytes \"MZ\" appear. The payload was woven into legitimate image data rather than appended to the file, so header-only or render-only checks would miss it. Inline images often receive less inspection than attachments, creating a gap that the report calls a content-inspection failure rather than an authentication one. Defenders should decompress PNG image streams and scan for embedded PE signatures, while avoiding blanket domain blocks based on a single malicious message. The report also maps the technique to MITRE ATT&CK T1566.001 and T1027.",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://www.codeaintel.com/p/the-email-auth-was-green-the-image"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-06",
+      "title": "When checking the URL isn’t enough: a Device Code Phishing attack via a Microsoft website",
+      "summary": "Kaspersky reports a Device Code Phishing campaign that abuses the Device Authorization Grant of the Microsoft Identity Platform, so victims enter attacker-supplied one-time codes on the legitimate Microsoft login page. The lures, observed from April to May 2026, used law-firm-themed emails with password-protected PDFs and later Portuguese-language emails targeting users in Brazil. Open redirects on trusted domains, including Microsoft and Cacoo.com, led victims through CAPTCHA-gated pages to a code prompt. After victims completed MFA, the attacker harvested access, refresh, and ID tokens, gaining access to email, OneDrive files, and Teams. Defenders should not approve unsolicited device authorization requests, should disable the Device Code Flow via Conditional Access if it is not needed, and should monitor DeviceCodeSignIn events.",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Brazilian"
+      ],
+      "software": [
+        "Microsoft Entra",
+        "Azure AD"
+      ],
+      "links": [
+        "https://securelist.com/microsoft-device-code-phishing-attack/120350/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-06",
+      "title": "Fake Google and Cloudflare Verification Pages Are Now a Seven Malware Delivery Pipeline",
+      "summary": "A single ClickFix infrastructure is delivering StealC, Amatera, Remus, NetSupport, CastleLoader, a Rust-based stealer, and a newly identified loader called ResiLoader through fake Google and Cloudflare verification pages. The lures tell victims to paste a PowerShell or shell command to prove they are human, so the victim runs the malicious code and it evades controls aimed at drive-by downloads. Many decoys were traced to a shared operational skeleton, including the staging folder C:\\ProgramData\\Zooms and a recurring iex(irm ...) command shape. ResiLoader uses a legitimate signed driver to kill more than 140 AV and EDR processes, then injects StealC into a legitimate Windows service binary through process hollowing. Defenders are advised to alert on shell launches that follow browser clipboard writes, to monitor the staging path and command syntax, and to watch for driver-issued process terminations.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Stealc",
+        "Amatera_stealer",
+        "Remus",
+        "Netsupportmanager_rat",
+        "Castleloader",
+        "Resiloader",
+        "Hijackloader",
+        "Dll_hijacking_technique",
+        "Runpe_tool",
+        "Uac_bypass_technique",
+        "Icmluautil_tool",
+        "Process_hollowing_technique",
+        "Atlas_rat"
+      ],
+      "software": [
+        "Cloudflare R2",
+        "macOS",
+        "Windows PowerShell",
+        "Electron"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "xor",
+        "md5"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/fake-google-and-cloudflare-verification-pages-are-now-a-seven-malware-delivery-pipeline-1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-06",
+      "title": "Bundled to Steal: The Salat Stealer Campaign",
+      "summary": "Salat Stealer is a stealth-focused information stealer written in Go that performs system reconnaissance and steals browser credentials, session tokens, and cryptocurrency wallet data. It has been observed enabling live surveillance, including desktop streaming, microphone and webcam capture, and exfiltration of local files. One notable campaign distributed it bundled with Xeno Executor, a tool used to run custom scripts within the Roblox gaming platform. Its loaders use batch scripts, encoded PowerShell, and a Rust-based loader that disables Windows Defender features and adds firewall rules. Defenders can detect this activity with Splunk analytics covering Defender registry tampering, firewall rule changes, and FFmpeg device enumeration from temporary directories.",
+      "completeness": "Medium",
+      "threats": [
+        "Salatstealer",
+        "Vipkeylogger",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 15,
+      "software": [
+        "Windows Defender",
+        "Roblox",
+        "Chromium",
+        "Google Chrome",
+        "Google Chrome SxS",
+        "Microsoft Edge",
+        "Vivaldi",
+        "Yandex Browser",
+        "Opera",
+        "OperaGX",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "electrum",
+        "atomicwallet",
+        "guarda_wallet",
+        "coinomi",
+        "jaxx",
+        "mymonero",
+        "zcash"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/bundled-to-steal-salat-stealer-campaign.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-06",
+      "title": "SpectrePaste",
+      "summary": "SpectrePaste is a previously undocumented fileless delivery system that Walmart's threat intelligence team tracked while investigating the \"DeepLoad\" malware campaign. The report concludes that AI acted as the primary orchestrator and developer of the entire system, not merely a supporting tool. The early version was a centralized PowerShell payload delivery platform that automatically added AMSI bypass scripts and XOR encryption to payloads and used a queue and cache system to handle high volumes of bot beaconing. The v2 release uses spec-driven development and a runtime polymorphism engine that generates a unique payload for each infected host, which the authors say often evades scanning engines. Defenders should note that the system's modular, AI-generated design makes signature-based detection especially difficult.",
+      "completeness": "Low",
+      "threats": [
+        "Spectrepaste",
+        "Deepload",
+        "Amsi_bypass_technique",
+        "Polymorphism_technique",
+        "Junk_code_technique"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/spectrepaste-b20bc2f6ded8"
+      ]
+    }
+  }
+]

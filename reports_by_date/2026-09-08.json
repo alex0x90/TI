@@ -1,0 +1,633 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "MacSync: The Evasive macOS Stealer Exploiting ClickFix Lures",
+      "summary": "MacSync is a commercially sold macOS information stealer and remote-access stager operating under a malware-as-a-service model. It is delivered mainly through ClickFix social engineering and search malvertising, tricking victims into pasting commands into Terminal under lures such as fake audio fixes, AI desktop installers, or verification prompts. The Mach-O stager detaches from the terminal, decrypts XOR-obfuscated strings at runtime, and pipes server-supplied AppleScript directly into osascript so the stealer never touches disk. The stolen archive of keychains, browser data, SSH keys, and crypto wallet files is uploaded in 10 MB chunks with retries, then deleted locally. Targets include software developers, corporate remote workers, crypto traders, and finance staff, mainly in regions with heavy macOS enterprise use.",
+      "completeness": "Medium",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique",
+        "Credential_dumping_technique",
+        "Seo_poisoning_technique",
+        "Clearfake",
+        "Lumma_stealer",
+        "Stealc",
+        "Vidar_stealer",
+        "Supply_chain_technique",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Canada",
+        "Australia",
+        "Germany",
+        "France",
+        "Singapore",
+        "Japan",
+        "India",
+        "Netherlands",
+        "United kingdom",
+        "United states"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 18,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "Keitaro",
+        "Zoom",
+        "Claude",
+        "ChatGPT",
+        "Docker",
+        "TradingView",
+        "curl",
+        "Telegram",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tronlink"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "sha1",
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "fork",
+        "setsid",
+        "_Fork",
+        "_Setsid",
+        "_freopen",
+        "sub_100001e20",
+        "_system"
+      ],
+      "languages": [
+        "python",
+        "applescript"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/macsync-the-evasive-macos-stealer-exploiting-clickfix-lures/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "PEEP: A Browser RAT Posing as a Chrome Extension",
+      "summary": "PEEP is a Chromium-based post-exploitation toolkit disguised as the \"Smart Bookmarks\" extension and derived from the open-source RedExt framework. It requires prior administrative or code execution access, then forges Chromium Secure Preferences integrity values to install itself without Web Store checks or user prompts. A native-messaging host extends the browser agent to shell, filesystem, and process access on the host. The agent beacons every 30 seconds over plaintext HTTP to a single hardcoded IP, collecting cookies, browsing history, and tab data. Defenders should block the C2 infrastructure, inventory and remove the extension IDs and com.peep.lab host, and monitor for unauthorized Secure Preferences modifications.",
+      "completeness": "Medium",
+      "threats": [
+        "Peep_tool",
+        "Redext_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 26,
+      "software": [
+        "Chrome",
+        "Node.js",
+        "Flask",
+        "Werkzeug",
+        "GoDaddy",
+        "Chromium",
+        "Linux"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-256-gcm",
+        "hmac",
+        "aes",
+        "aes-gcm",
+        "exhibit",
+        "sha256"
+      ],
+      "functions": [
+        "getCookiesForDomain",
+        "getBrowsingHistory",
+        "getBookmarks",
+        "setTimeout"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/peep-browser-rat-chrome-extension/",
+        "https://github.com/Fir3n0x/GAP"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "Panzer ransomware: a new RaaS hits Italian manufacturers and telecom providers",
+      "summary": "Panzer is a new ransomware-as-a-service operation that appeared on August 5, 2026, and claimed 16 to 19 victims across 11 countries in its first month. Its affiliate platform is notably mature, with build management for Windows, Linux, ESXi, and FreeBSD, negotiation chat, and automated affiliate screening. Two Italian organizations, a kitchen manufacturer in Treviso and a telecommunications engineering firm in Catanzaro, were listed within days of each other, though neither has confirmed the incidents. Its ESXi support is a major concern because compromising a hypervisor can encrypt many virtual machines at once. No verified malware samples or network IOCs have been published, so defenders should focus on behavioral TTPs such as shadow copy deletion, RMM misuse, and pre-encryption exfiltration, along with phishing-resistant MFA and network segmentation.",
+      "completeness": "Medium",
+      "threats": [
+        "Vanhelsing",
+        "Qilin_ransomware",
+        "Credential_dumping_technique",
+        "Screenconnect_tool",
+        "Vssadmin_tool",
+        "Shadow_copies_delete_technique",
+        "Anydesk_tool",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "Germany",
+        "Czechia",
+        "Italian",
+        "Italy"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 10,
+      "software": [
+        "ESXi",
+        "Linux",
+        "Alpine",
+        "bcdedit",
+        "PsExec"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://andreafortuna.org/2026/09/07/panzer-ransomware-italian-victims/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "CVE-2025-25249 Exploitation Delivers PivotC2, a FortiGate Post-Exploitation RAT",
+      "summary": "CVE-2025-25249 is a critical heap-based buffer overflow in the FortiOS and FortiSwitchManager cw_acd daemon that allows unauthenticated remote code execution. Attackers exploit it to deliver PivotC2, a Node.js remote access trojan built for post-exploitation on FortiGate firewalls. PivotC2 provides shells, tunneling, network scanning, and FortiGate configuration harvesting with credential decryption, and its auto-mode runs these steps without operator input. Exploitation has been active since at least July 2026 and is ongoing, with 178 confirmed infections among more than 30,000 targeted IPs, mostly in the United States. Two US organizations suffered full intrusions with data exfiltration, and STRU assesses a Russian-speaking, financially motivated operator. Defenders should patch, restrict CAPWAP ports, hunt for PivotC2 artifacts, and rotate credentials stored on affected devices.",
+      "completeness": "High",
+      "threats": [
+        "Pivotc2",
+        "Portscan_tool",
+        "Credential_harvesting_technique",
+        "Proxychains_tool",
+        "Ldapdomaindump_tool",
+        "Obfs4proxy_tool",
+        "Passthehash_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "United states",
+        "Chile",
+        "Russian",
+        "Colombia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 26,
+      "software": [
+        "FortiGate",
+        "Node.js",
+        "busybox",
+        "Active Directory",
+        "SoftPerfect Network Scanner",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Edge",
+        "Microsoft Exchange",
+        "Linux",
+        "have more..."
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "aes-128-gcm",
+        "base64",
+        "cbc",
+        "xor",
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell",
+        "rust",
+        "cpython"
+      ],
+      "links": [
+        "https://socradar.io/blog/cve-2025-25249-pivotc2-fortigate-rat/",
+        "https://github.com/DhavalKapil/heap-exploitation/blob/master/attacks/house\\_of\\_einherjar.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "Redis Cryptomining Botnet Compromised 3,562 Servers, Exposed by the Operator's Own Files",
+      "summary": "A Redis-focused cryptomining botnet has been traced through an exposed open directory on a Hetzner-hosted server, which held the operator's full toolkit, including exploit source, campaign logs, and a portable Python runtime. The operator's rogue Redis replication technique, which abuses legitimate replication functionality to write a cron entry that installs XMRig, compromised 3,562 distinct servers across two runs against a shared 12,966-host list. Victims ranged from Redis 2.8.17 to 7.2.0 and from EOL RHEL/CentOS 6 to current Ubuntu, so the weakness is missing authentication rather than a version-specific bug. The SSH key-injection and MongoDB sandbox-escape techniques produced zero confirmed compromises, and the WordPress chain was not confirmed at scale. The same Monero wallet appears in a separate February 2026 open directory, suggesting the operator's activity predates this campaign by at least five months. Defenders should require authentication on Redis, disable SLAVEOF/REPLICAOF where unused, and audit cron, APT, and profile.d locations for XMRig-related entries.",
+      "completeness": "High",
+      "threats": [
+        "Meterpreter_tool",
+        "Xmrig_miner",
+        "Xminer",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "Apac",
+        "Saudi arabia",
+        "China",
+        "Moldova",
+        "Los angeles",
+        "Germany",
+        "France",
+        "Malaysia",
+        "India",
+        "Turkish",
+        "Palestinian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 1,
+      "software": [
+        "Redis",
+        "Windows registry",
+        "Linux",
+        "Ubuntu",
+        "WordPress",
+        "curl",
+        "Docker",
+        "systemd",
+        "Google Chrome",
+        "Chrome",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "phpinfo",
+        "load",
+        "require",
+        "recv",
+        "try_ssh",
+        "write_file",
+        "chr",
+        "exec"
+      ],
+      "languages": [
+        "lua",
+        "php",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://hunt.io/blog/redis-cryptomining-botnet-3562-servers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "HVNC Backdoor Targets LATAM Organizations with Fake Tax and DocuSign Lures",
+      "summary": "A custom HVNC backdoor is being delivered to organizations across Latin America through fake DocuSign pages and NFe tax-document lures, mainly targeting banking and financial services. The four-stage chain runs from a spoofed download page to a shortcut dropper, an NSIS installer, and a 64-bit payload masquerading as \"Windows Update Assistant\" that is unsigned. Once installed, the backdoor provides a hidden virtual desktop for remote operator control, keystroke monitoring, Firefox cookie and history theft, and checks for more than 20 AV/EDR processes. It persists through a Startup-folder shortcut and communicates over raw TCP, with a self-identifying \"HVNC-\" handshake that defenders can hunt for. The report's key takeaway is that payload hashes change between builds, so defenders should rely on durable behavioral and protocol indicators and full persistence removal during containment.",
+      "completeness": "High",
+      "threats": [
+        "Hvnc_tool",
+        "Clickfix_technique",
+        "Winos",
+        "Anydesk_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "Latam",
+        "Brasil",
+        "Latin america",
+        "Portuguese"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 18,
+      "software": [
+        "Firefox",
+        "Microsoft Visual C++",
+        "chrome",
+        "opera",
+        "Chromium"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "crc-32",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/hvnc-backdoor-targets-latam/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "Kali365 Evolves: From Device-Code Phishing to a Full AiTM Platform, Plus a New Zer0day Spin-off - Barricade Cyber Solutions",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Kali365_tool",
+        "Aitm_technique",
+        "Zer0day_stealer",
+        "Evilginx_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Electron",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://barricadecyber.com/kali365-evolves-from-device-code-phishing-to-a-full-aitm-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "ClickFix moves into the browser: Cryptocurrency theft with Google-hosted C2",
+      "summary": "Cisco Talos describes a cryptocurrency-stealing campaign that uses a ClickFix-style lure, tricking users into pasting JavaScript into the Chrome address bar or into the Tampermonkey extension. The lure is a fake \"API logic flaw\" report aimed at cryptocurrency traders and would-be cybercriminals seeking bigger trade payouts. The malware retrieves its second-stage payload through the Google Visualization API from a publicly published Google Sheets document, hiding the code in white-on-white cells. The injected script acts as a web skimmer, swapping deposit addresses in fetch responses and clipboard contents with attacker-controlled Bitcoin wallets. Talos notes that these techniques could be reused in supply-chain attacks against customer-facing web applications, and urges defenders to monitor browser-originated requests to docs.google.com and to vet third-party web dependencies.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Supply_chain_technique",
+        "Obfuscator_io_tool",
+        "Clipboard_hijacking_technique"
+      ],
+      "software": [
+        "Chrome",
+        "Tampermonkey",
+        "Telegram",
+        "Pastebin"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Visualization"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/clickfix-moves-into-the-browser/",
+        "https://github.com/Cisco-Talos/IOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "ClearFake WebDAV infection chain delivers Amatera stealer, ZigCryptoStealer, and NetSupport Manager",
+      "summary": "ClearFake, a WebDAV-based infection chain, delivers the Amatera stealer, which Cisco Talos tracked across two branches. The \"pf.ch\" branch starts with a Cloudflare Worker injecting JavaScript that retrieves code from BNB Smart Chain using EtherHiding and presents a fake Google CAPTCHA ClickFix prompt. The Amatera build in this branch deploys a NativeAOT loader running ZigCryptoStealer, which terminates EDR processes using a vulnerable driver, plus a Go reverse TCP proxy. The \"verification.google\" branch, which Talos attributed with moderate confidence to a Russian actor it tracks as UAT-10820, installs an unauthorized NetSupport Manager remote access client. Talos assesses the campaign as a cryptocurrency and credential-stealing operation that is likely not targeted at a specific organization. Defenders should note the ClamAV signatures and IOCs published with the report.",
+      "completeness": "High",
+      "threats": [
+        "Amatera_stealer",
+        "Clearfake",
+        "Zigcrypto",
+        "Netsupportmanager_rat",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Dll_sideloading_technique",
+        "Dead_drop_technique",
+        "Hijackloader",
+        "Acr_stealer",
+        "Anydesk_tool",
+        "Yamux_tool",
+        "Byovd_technique",
+        "Iclickfix_tool"
+      ],
+      "geo": [
+        "Indonesia",
+        "Ukrainian",
+        "Egypt",
+        "Brazil",
+        "Russian",
+        "Ukraine",
+        "Russia",
+        "United states",
+        "India"
+      ],
+      "software": [
+        "NativeAOT",
+        "RenPy",
+        "Microsoft App-V",
+        "Chrome",
+        "macOS",
+        "curl",
+        "Steam",
+        "Telegram",
+        "WhatsApp",
+        "KeePass",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "ecdh",
+        "lznt1",
+        "zip",
+        "chacha20-poly1305",
+        "base64"
+      ],
+      "functions": [
+        "GetEndpoints",
+        "setData"
+      ],
+      "languages": [
+        "rust",
+        "powershell",
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/clearfake-webdav-infection-chain/",
+        "https://github.com/hashicorp/yamux"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "Nightmare Season: Nightmare-Eclipse Turns Its Zero-Days on CrowdStrike, NVIDIA, Avast, and Kaspersky",
+      "summary": "Nightmare-Eclipse, a single researcher using multiple handles, published four zero-day proof-of-concept exploits between August 29 and September 3, 2026, targeting third-party security and driver software rather than native Windows components. FalconFlank escalates a standard user to SYSTEM on CrowdStrike Falcon Sensor by abusing a TOCTOU race via Transactional NTFS and a built-in scheduled task. GreenSection exploits an NVIDIA GPU driver shared memory section that grants Everyone full access, with an observed impact of crashing the GPU stack. PrettyPrague extracts the SAM hive through Avast's sandbox virtualization to escalate to SYSTEM, and the vendor says Gen Digital products beyond Avast may be affected. HardBreacher runs code inside Kaspersky's UI process, and Kaspersky reports it is resolved through a database update. Defenders should prioritize behavioral detections and hunting, since vendor fixes are incomplete or absent for three of the four.",
+      "completeness": "Medium",
+      "threats": [
+        "Nightmare_eclipse_tool",
+        "Bluehammer_tool",
+        "Shieldbreak_tool",
+        "Toctou_vuln",
+        "Pretty_prague",
+        "Hardbreacher",
+        "Passthehash_technique",
+        "Defendercontrol_tool",
+        "Dllsearchorder_hijacking_technique",
+        "Dll_hijacking_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "BitLocker",
+        "Windows scheduled task",
+        "Microsoft Office",
+        "Windows service",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "bcrypt",
+        "aes-128-cbc"
+      ],
+      "functions": [
+        "SandboxedMain",
+        "NtSetSecurityObject",
+        "CreateFileTransacted",
+        "PoC",
+        "OROpenHiveByHandle",
+        "LogonUserEx"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/nightmare-eclipse-zero-days-crowdstrike-nvidia-avast-kaspersky"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "StyleSmuggler (CVE-2026-75650): Magento, Adobe Commerce Affected by 0-day RCE",
+      "summary": "StyleSmuggler (CVE-2026-75650) is an unauthenticated remote code execution zero-day in Magento Open Source and Adobe Commerce, rated CVSS 10 and discovered by Sansec. It affects every version from 2.4.4 through 2.4.9. Attackers inject malicious PHP code into a file Magento writes, such as a log or failure report, then trigger the \"Payment Transaction Failed Reminder\" email so the poisoned code executes during template rendering. The attack succeeds even if email delivery fails. Exploitation has been observed in the wild since September 4, with attackers deploying Linux backdoors. Defenders should apply Adobe's VULN-39341 hotfix, but patching does not clean a compromised store, so credentials should be rotated at the source if compromise is confirmed.",
+      "completeness": "Medium",
+      "threats": [
+        "Stylesmuggler_vuln"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Redis"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "rust"
+      ],
+      "links": [
+        "https://kudelskisecurity.com/research/stylesmuggler-cve-2026-75650-magento-adobe-commerce-affected-by-0-day-rce"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "Peeling Back the Layers: Inside Vidar - From Virtualized Code to Stolen Credentials",
+      "completeness": "Medium",
+      "threats": [
+        "Vidar_stealer",
+        "Antidebugging_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 12,
+      "software": [
+        "Telegram",
+        "PccNTMon",
+        "Chrome",
+        "Chromium",
+        "hromium Ex",
+        "Windows Registry",
+        "Windows Security",
+        "Microsoft powershell",
+        "Slack"
+      ],
+      "functions": [
+        "ReadData"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/inside-vidar-from-virtualized-code-to-stolen-credentials.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-08",
+      "title": "Compromised Flutter package on pub.dev contains XCSSET malware",
+      "summary": "A variant of the XCSSET macOS worm was found hidden in universal_file_viewer version 0.1.5, a Flutter file preview package on pub.dev with about 500 downloads. The infection came from a maintainer's compromised machine, not a targeted attack, and the malicious files were placed in the package's example/ directory. XCSSET injects build hooks into Android Gradle projects, Xcode projects, and git repositories, so developers who build or commit to those projects can be infected. Once running, the malware maintains persistence through a fake Launchpad Dock tile and steals browser credentials, Telegram session data, notes, clipboard contents, and files. Defenders should check their projects for the injected build hooks and pre-commit scripts and review any recent clones of this package's example app.",
+      "completeness": "Medium",
+      "threats": [
+        "Xcsset",
+        "Polymorphism_technique",
+        "Dockutil_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Flutter",
+        "macOS",
+        "Android",
+        "curl",
+        "Chrome",
+        "Firefox",
+        "Telegram",
+        "sudo"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc"
+      ],
+      "languages": [
+        "groovy",
+        "kotlin",
+        "applescript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/compromised-flutter-package-on-pub-dev-contains-xcsset-malware",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-02",
+      "title": "'Copy Fail' Flaw: 5 YARA Rules for Detection",
+      "summary": "Copy Fail (CVE-2026-31431) is a local privilege escalation flaw in the Linux kernel's authencesn cryptographic template, disclosed by Theori on April 29 and affecting major distributions shipped since 2017. A 732-byte Python proof-of-concept exploit was released with the disclosure, letting any local user gain administrative control without a password by writing into the page cache of readable files such as /usr/bin/su. Because the on-disk file is unchanged, standard file integrity tools comparing on-disk checksums will not detect the modification. The highest-risk environments are multi-tenant servers, CI/CD pipelines running untrusted code, and container clusters. ReversingLabs released tiered YARA rules for detection, since hash-based detection fails against trivial copy variants. Patches existed but had not yet shipped for all major distributions at disclosure.",
+      "completeness": "Medium",
+      "threats": [
+        "Copyfail_vuln"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Twitter",
+        "Ubuntu",
+        "Kubernetes",
+        "curl",
+        "PyInstaller"
+      ],
+      "algorithms": [
+        "sha1",
+        "aes",
+        "sha256",
+        "cbc",
+        "hmac"
+      ],
+      "functions": [
+        "splice",
+        "sendmsg"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/copy-fail-5-yara-rules",
+        "https://github.com/Neo23x0/signature-base/blob/master/yara/expl\\_copy\\_fail\\_cve\\_2026\\_31431.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-02",
+      "title": "Defending Against CORDIAL SPIDER and SNARKY SPIDER with Falcon Shield",
+      "summary": "CORDIAL SPIDER and SNARKY SPIDER are two distinct adversaries conducting rapid, SaaS-centric data theft and extortion campaigns that largely avoid traditional endpoint visibility. They typically use voice phishing to impersonate IT support and direct targeted users to fraudulent SSO-themed adversary-in-the-middle login pages. These pages relay authentication in real time, capturing credentials and active session tokens while users see a normal login experience. Stolen access usually grants entry to the organization's identity provider, letting attackers move across connected SaaS applications without compromising each one individually. CrowdStrike notes that Falcon Shield detects these malicious sign-in attempts through anomaly detection that surfaces subtle deviations from legitimate activity.",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Residential_proxy_technique",
+        "Nsocks_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Linux",
+        "macOS",
+        "QEMU",
+        "HubSpot"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/defending-against-cordial-spider-and-snarky-spider-with-falcon-shield/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-02",
+      "title": "Threat Brief: CVE-2026-41940: Critical cPanel & WHM Authentication Bypass Actively Exploited in the Wild",
+      "completeness": "Low",
+      "threats": [
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Ireland"
+      ],
+      "software": [
+        "cPanel"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/threat-brief-cve-2026-41940-critical-cpanel-whm-authentication-bypass-actively-exploited-in-the-wild/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-02",
+      "title": "VECT ransomware: small files decrypt, large files lose their nonces",
+      "summary": "VECT is a ransomware family whose Windows 2.0 build uses ChaCha20-compatible encryption with a static file key embedded in the binary. Small files (up to 131,072 bytes) can be decrypted because the single 12-byte nonce is appended to the encrypted file. Large files are split into four chunks, each with its own nonce, but only the final nonce is saved, so most of a large file cannot be recovered from disk alone. The sample also disables Defender, deletes shadow copies, and clears event logs before encrypting. Responders should preserve affected files and rely on backups, since paid decryptors cannot rebuild the lost nonce material.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Shadow_copies_delete_technique",
+        "Wevtutil_tool",
+        "Qtox_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXi",
+        "Trivy",
+        "LiteLLM",
+        "Kubernetes",
+        "Windows PowerShell",
+        "Telegram"
+      ],
+      "algorithms": [
+        "poly1305",
+        "sha1",
+        "chacha20",
+        "md5",
+        "chacha20-poly1305",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/vect-ransomware-nonce-loss/",
+        "https://github.com/DarkWebInformer/vect-ransomware-decryptor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-02",
+      "title": "South-East Asian Military Entities Targeted via cPanel (CVE-2026-41940)",
+      "summary": "An unknown threat actor exploited the public CVE-2026-41940 authentication bypass in cPanel and WHM, using open-source proof-of-concept code, to interactively target government and military entities in the Philippines and Laos, plus some MSP and hosting providers. The actor also held a custom SQL injection to remote code execution chain against an Indonesian defence-sector training portal, using hardcoded credentials and bypassing its CAPTCHA. Command and control ran through AdaptixC2, and the actor built persistence with OpenVPN, Ligolo tunnelling, and a masqueraded systemd service. Using this access, the actor pivoted into a Chinese railway electrification network and stole about 110 files, including payment records with personal and banking data. Attribution is not made, and the researchers note the Vietnamese comments in tooling may be misleading.",
+      "completeness": "High",
+      "threats": [
+        "Adaptixc2_tool",
+        "Ligolo_tool",
+        "Ligolo-ng_tool"
+      ],
+      "geo": [
+        "South-east asia",
+        "Philippines",
+        "Canada",
+        "Asian",
+        "Chinese",
+        "China",
+        "Philippine",
+        "South africa",
+        "Indonesian",
+        "Vietnamese",
+        "Laos"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 15,
+      "software": [
+        "cPanel",
+        "PostgreSQL",
+        "sudo",
+        "Linux",
+        "systemd",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "pg_read_file",
+        "GetStream",
+        "GetString",
+        "GetBytes"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/research/SEA-CPanel/",
+        "https://github.com/debugactiveprocess/cPanel-WHM-AuthBypass-Session-Checker",
+        "https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py"
+      ]
+    }
+  }
+]

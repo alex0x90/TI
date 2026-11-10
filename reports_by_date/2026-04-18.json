@@ -1,0 +1,50 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-18",
+      "title": "Cross‑tenant helpdesk impersonation to data exfiltration: A human-operated intrusion playbook",
+      "summary": "Threat actors are abusing cross-tenant Microsoft Teams messages, impersonating IT or helpdesk staff, to persuade users to launch Quick Assist remote sessions and approve elevation prompts. Attackers then run trusted vendor-signed applications that sideload attacker-supplied modules and beacon over HTTPS. Using WinRM with harvested credentials, they pivot toward domain controllers and deploy commercial remote management software. Rclone is then used to copy business documents to external cloud storage. The report stresses that the attack relies on users overriding Teams warnings, so defenders should treat unsolicited external helpdesk contact as suspicious and restrict WinRM and remote support tools.",
+      "completeness": "Medium",
+      "threats": [
+        "Microsoft_quick_assist_tool",
+        "Winrm_tool",
+        "Rclone_tool",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Havoc",
+        "Dll_hijacking_technique",
+        "Tedy",
+        "Tinba",
+        "Nltest_tool"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 1,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Teams",
+        "icrosoft Teams in",
+        "Microsoft Defender for Endpoint",
+        "Windows Defender Application Control",
+        "Windows Installer",
+        "Office 365",
+        "rosoft Defender for",
+        "ice 365 - Mi",
+        "rosoft Teams chat",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/04/18/crosstenant-helpdesk-impersonation-data-exfiltration-human-operated-intrusion-playbook/"
+      ]
+    }
+  }
+]

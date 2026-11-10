@@ -1,0 +1,992 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "skynox7: Proxyjacking Edge Devices Into Residential Proxies",
+      "summary": "GreyNoise reports on proxyjacking, where a malicious cyber actor forces victim devices into residential proxy networks to monetize their bandwidth. The actor compromised at least 143 devices in 34 countries, targeting network edge devices such as Hikvision and Dahua DVR/NVR units, and installed Pawns.app software without the owners' consent. In some cases the adversary also set up SSH key authentication as a backup access method. The report began with an enterprise whose Entra ID sign-in logs showed logins from residential IPs, and a second login from the same residential IP by multiple users confirmed a serious intrusion. Defenders should scrutinize multiple enterprise users authenticating from the same residential proxy IP and monitor authentication anomalies beyond geolocation.",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Proxyjacking_technique",
+        "Supply_chain_technique",
+        "Iproyal_pawns_tool"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "software": [
+        "SAP NetWeaver",
+        "Dahua"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/proxyjacking-edge-devices-residential-proxies"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "New data has revealed the espionage profile of the Insolent Hyena cluster",
+      "summary": "Insolent Hyena, previously assessed as a hacktivist group, has been reclassified by BI.ZONE as Insolent Werewolf, a cyberespionage cluster, based on its activity profile. The group primarily targets government organizations, industrial firms, and research institutes linked to the defense industry, and no destructive malware or hacktivist-style claims were observed. Its toolkit includes custom RATs such as NightStrike, which the report links to the author of NightWire RAT, along with CapDoor and NightStrike's hVNC, keylogging, and browser credential theft capabilities. Initial access relies on targeted phishing, including ClickFix lures, and sometimes on infrastructure from other espionage clusters, with legitimate NetSupport Manager also deployed. Operators also use AdaptixC2, Havoc, and Cobalt Strike, delivered through Octowave Loader via DLL side-loading.",
+      "completeness": "High",
+      "threats": [
+        "Capdoor",
+        "Nightwire",
+        "Nightstrike",
+        "Cobalt_strike_tool",
+        "Adaptixc2_tool",
+        "Havoc",
+        "Clickfix_technique",
+        "Netsupportmanager_rat",
+        "Octowave_loader",
+        "Chromelevator_tool",
+        "Runpe_tool",
+        "Putty_tool",
+        "Dll_sideloading_technique",
+        "Ekko_tool",
+        "Pid_spoofing_technique",
+        "Hvnc_tool",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 0,
+      "software": [
+        "Firefox",
+        "Windows service",
+        "iscord to",
+        "d Signal m",
+        "Games",
+        "aming servi",
+        "il client",
+        "and RD",
+        "Chrome"
+      ],
+      "wallets": [
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "zcash",
+        "jaxx"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "zcash",
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "deflate",
+        "xor",
+        "zip",
+        "gzip",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/giena-obernulas-oborotnem-insolent-hyena-pereshla-k-kibershpionazhu/",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "BRONZE SANDCASTLE deploys modified Meterpreter shells",
+      "completeness": "Medium",
+      "threats": [
+        "Meterpreter_tool",
+        "Dll_sideloading_technique",
+        "Metasploit_tool",
+        "Coff_loader",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Republic of korea",
+        "Philippines",
+        "Taiwan",
+        "Africa",
+        "Afghanistan",
+        "China",
+        "Namibia"
+      ],
+      "software": [
+        "Chromium",
+        "Sysinternals",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "ror13",
+        "zip",
+        "sha256",
+        "md5",
+        "exhibit",
+        "sha1"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/bronze-sandcastle-deploys-modified-meterpreter-shells",
+        "https://github.com/trustedsec/COFFLoader",
+        "https://github.com/sophoslabs/IoCs/blob/master/BRONZESANDCASTLE\\_Meterpreter\\_IOCs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "Inside SiriusQT: A Seriously Skilled RAT",
+      "summary": "SiriusQT is a Windows remote access trojan sold on dark web forums since April 2026, with at least 30 paid licenses sold by a reseller known as GhostKernel, under a Malware-as-a-Service model. It bundles remote control, hidden VNC (HVNC), credential and cryptocurrency wallet theft, clipboard monitoring, keylogging, process injection, multiple persistence options, and custom encrypted command-and-control traffic. Cracked versions circulate free, and many leaked licenses were observed in use. Campaigns targeted the UK, Germany, France, Spain, Italy, and the Netherlands, with the malware often deployed as a final-stage payload after the UpCrypter loader. Defenders should watch for unusual outbound connections, suspicious browser activity, and hidden desktop behavior, and enforce MFA.",
+      "completeness": "High",
+      "threats": [
+        "Siriusqt",
+        "Process_injection_technique",
+        "Hvnc_tool",
+        "Upcry",
+        "Btmob_rat",
+        "Craxsrat",
+        "Remcos_rat",
+        "Xworm_rat",
+        "Asyncrat",
+        "Quasar_rat",
+        "Njrat",
+        "Redline_stealer",
+        "Netwire_rat",
+        "Process_hollowing_technique",
+        "Reflectiveloader",
+        "Pe_injection_technique"
+      ],
+      "geo": [
+        "Russia",
+        "United kingdom",
+        "Italy",
+        "Mexico",
+        "China",
+        "Taiwan",
+        "Usa",
+        "Netherlands",
+        "Spain",
+        "France",
+        "Germany"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 60,
+      "software": [
+        "Telegram",
+        "Android",
+        "Claude",
+        "Whatsapp",
+        "Windows Defender",
+        "MinHook",
+        "chromium",
+        "Discord",
+        "Microsoft Teams",
+        "Instagram",
+        "have more..."
+      ],
+      "algorithms": [
+        "murmur3",
+        "ror13",
+        "salsa20",
+        "fowlernollv",
+        "aes-gcm",
+        "fnv-1a",
+        "sha256",
+        "xor",
+        "chacha20"
+      ],
+      "functions": [
+        "FindResource",
+        "FindOverlayOffset"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/siriusqt-rat-hvnc-stealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "Threat Actor Abuses Agentic AI Pentesting Framework to Target South Korean Financial Institutions",
+      "summary": "Zscaler ThreatLabz reported a campaign in which a financially motivated, Chinese-speaking threat actor, assessed with moderate confidence, abused ARTEX, an open source agentic penetration testing framework developed in China that uses LLMs to automate reconnaissance and exploitation. The actor used ARTEX agents to probe peripheral internet-facing web applications outside core banking infrastructure, such as customer-facing inquiry portals and employee-facing mobile application backends. Agents exploited weaknesses including SQL injection and authentication bypass to gain unauthorized access and exfiltrate PII for about 67,000 individuals from multiple South Korean financial firms. ARTEX's default blocklist covered government and university domains but not financial institutions. Defenders are advised to reduce external application exposure, deploy deception controls, alert on sequential record enumeration, and treat open source pentesting harnesses as hostile code.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool"
+      ],
+      "geo": [
+        "South korean",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "DeepSeek",
+        "Claude",
+        "Claude Code",
+        "Telegram",
+        "anthropic"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/threat-actor-abuses-agentic-ai-pentesting-framework-target-south-korean"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "Inside an Attacker's Toolkit Targeting Vietnam's Government Networks",
+      "summary": "A single operator, using an exposed open directory on a Singapore-hosted server, kept a broad intrusion toolkit aimed mainly at Vietnamese government networks. The toolkit targets the Ministry of Foreign Affairs' Keycloak single sign-on server, where captured artifacts indicate administrative-level access. Scripts also probe Check Point VPN and management services under CVE-2026-50751 and CVE-2026-91843, and the Ministries of Public Security and Construction. A separate insurance management platform shows confirmed SMB authentication, JRMP callbacks, and MinIO artifact retrieval. The main lesson for defenders is to treat identity infrastructure and internal management services as critical security boundaries.",
+      "completeness": "High",
+      "threats": [
+        "Ysoserial_tool",
+        "Password_spray_technique",
+        "Smuggling_technique",
+        "Printspoofer_tool",
+        "Proxylogon_exploit",
+        "Owassrf_technique"
+      ],
+      "geo": [
+        "Malaysian",
+        "Singapore",
+        "Mexican",
+        "Brazil",
+        "Vietnamese",
+        "Brazilian",
+        "Vietnam"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "MinIO",
+        "sharepoint",
+        "DotNetNuke",
+        "Redis",
+        "cPanel",
+        "Docker",
+        "RabbitMQ",
+        "Kubernetes",
+        "kubelet",
+        "MSSQL",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "ProcessBuilder",
+        "Automation",
+        "Get-LocalUser"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.infrahunter.com/research/inside-attacker-toolkit-targeting-vietnam-government-networks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "DragonForce Ransomware Profile: From Affiliate Program to Cybercrime Cartel",
+      "summary": "DragonForce ransomware is a financially motivated group that first appeared in August 2023 and operates as a backend provider for affiliates, offering builders, leak-site hosting, and management panels in exchange for an 80% cut of ransom payouts. Its early versions reused leaked LockBit 3.0 code, and later builds were based on Conti v3 source code with features to neutralize security tools. The group gained notoriety during April 2025 attacks on UK retailers, which analysts linked to Scattered Spider affiliates. Its targets span multiple sectors, with most activity in the US and UK and additional activity in Australia, Canada, and Italy. In 2025 it went public with a strategic alliance with LockBit and Qilin, and in September 2025 it recruited developers and zero-day holders and launched a data analysis service to sharpen extortion pressure. The report notes that DragonForce ransomware is not confirmed to be the same entity as the hacktivist group DragonForce Malaysia.",
+      "completeness": "High",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Lockbit",
+        "Conti",
+        "Black_lock",
+        "Ransomhub",
+        "Simplehelp_tool",
+        "Systembc",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Byovd_technique",
+        "Cobalt_strike_tool",
+        "Shadow_copies_delete_technique",
+        "Adfind_tool",
+        "Log4shell_vuln"
+      ],
+      "geo": [
+        "Canada",
+        "United states",
+        "United kingdom",
+        "Australia",
+        "Italy"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 20,
+      "software": [
+        "Twitter",
+        "ESXi",
+        "SoftPerfect Network Scanner",
+        "Ivanti",
+        "Microsoft Defender",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/threat-actor-profile-dragonforce-ransomware-group"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "StealC Is Back, and This Time It's a RAT",
+      "summary": "Stadia is a remote access trojan from the seller behind StealC, which returned on October 16 after Operation Endgame took StealC down in June. The malware includes hidden remote desktop (HVNC), a command shell, a file explorer, a process manager, an in-memory loader, and a StealC-derived stealer module that collects browser, wallet, messenger and VPN data. Varonis found that its stealer code matches StealC 3.5 byte for byte, and the seller offered former StealC customers a free month on the top tier. The agent is an unsigned 32-bit Windows executable that skips Russian-language systems, persists under C:\\ProgramData\\ with a hidden task that runs every 15 minutes, and sends RC4-encrypted, Base64-encoded traffic with a JSON Content-Type header. Defenders should watch for that header mismatch, the browser-process injection, and the hidden 15-minute scheduled task, since infrastructure changes with each build.",
+      "completeness": "Medium",
+      "threats": [
+        "Stealc",
+        "Stadia_stealer",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Latin america",
+        "Africa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Pidgin",
+        "Steam",
+        "Roblox",
+        "Outlook",
+        "Chrome",
+        "Microsoft Visual C++",
+        "Chromium",
+        "Windows Defender",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "rabby"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1",
+        "base64",
+        "rc4"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/stealc-returns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "How APT41 revived the BlackLotus bootkit to attack diplomatic organizations in Central Asia",
+      "summary": "BlackX is a UEFI bootkit, similar to the BlackLotus bootkit, that was used in an APT campaign in early 2026 against diplomatic agencies in Tajikistan, Uzbekistan, and Turkmenistan. It exploits the Baton Drop vulnerability (CVE-2022-21894) to bypass Secure Boot and inject a malicious kernel driver that tampers with security solutions and hides its own files. Attackers pair it with user-mode payloads, including a RAT that uses cloud storage for command and control and a DLL loader named OxiDLLRunner. Researchers attribute the campaign to APT41 with medium confidence, citing shared identifiers, DLL sideloading, and OLLVM obfuscation. The infections happened despite fully patched systems, because the Baton Drop patch requires a manual step to revoke the affected certificate, a step administrators are unlikely to notice.",
+      "completeness": "Medium",
+      "threats": [
+        "Blacklotus",
+        "Baton_drop_vuln",
+        "Blackx",
+        "Dll_sideloading_technique",
+        "Toolshell_vuln"
+      ],
+      "geo": [
+        "Asian",
+        "Asia",
+        "Tajikistan",
+        "Uzbekistan",
+        "Turkmenistan"
+      ],
+      "software": [
+        "Windows kernel",
+        "OLLVM"
+      ],
+      "algorithms": [
+        "rc4",
+        "md5"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://securelist.com/uefi-bootkit-blackx/121539/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "How VBScript Malware Hides Behind Trusted Tools to Evade Detection",
+      "summary": "WatchGuard Red Cell researchers analyzed three VBScript-based malware campaigns that use phishing, obfuscated scripts, and legitimate Windows or third-party components to evade detection. The Overlord RAT campaign used fake protest-notary domains and phishing emails to deliver VBS scripts that install payloads and add Defender exclusions, mostly targeting victims in Brazil. Lampion, a Brazilian banking trojan with RAT capabilities, was delivered through ZIP-attached phishing emails and mainly targeted victims in Portugal. A third campaign used a fake \"Download Seguro - Factura\" page to distribute an ISO that side-loads a malicious newdev.dll, with victims observed in Portugal. The report's main takeaway for defenders is to look beyond malicious files and watch for suspicious script execution, security-setting changes, unusual persistence, DLL side-loading, and unexpected network connections.",
+      "completeness": "High",
+      "threats": [
+        "Overlord_tool",
+        "Lampion",
+        "Dll_sideloading_technique",
+        "Donut",
+        "Overlordrat",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "Brasil",
+        "Russian",
+        "Portugal",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "curl",
+        "Windows Error Reporting",
+        "VirtualBox",
+        "NET Framework",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "exhibit",
+        "chaskey",
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Chr"
+      ],
+      "languages": [
+        "pascal",
+        "powershell",
+        "vbscript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/how-vbscript-malware-hides-behind-trusted-tools-evade-detection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "Beyond the Sandbox: Leveraging Android Intrusion Logs to Expose Advanced Threats",
+      "summary": "RatHat is an Android threat that abandons the standard app sandbox by combining Accessibility abuse with autonomous local Wireless Debugging self-pairing to obtain an elevated shell (UID 2000). It stages Go daemons and a Fast Reverse Proxy client in /data/local/tmp, disables battery optimization, and persists even after the main app is uninstalled. The malware disguises its activity behind a streaming-service lure and encrypts harvested credentials before exfiltration. Android Intrusion Logs, including Security, DNS, and connection events, reconstruct this chain, and Intrusion Logging now lets users share such evidence on supported devices. The report's takeaway is that static analysis shows intent only, so defenders need real-time on-device detection combined with OS-level forensic telemetry.",
+      "completeness": "Medium",
+      "threats": [
+        "Rathat",
+        "Frpc_tool",
+        "Smishing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "chrome",
+        "Chromium"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://zimperium.com/blog/beyond-the-sandbox-leveraging-android-intrusion-logs-to-expose-advanced-threats"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "SEO Poisoning Campaign Delivers New Armorsteal Malware",
+      "summary": "Zscaler Threat Hunting identified an SEO poisoning campaign in September 2026 that used fake websites impersonating the Chocolatey package manager and the Microsoft Activation Scripts (MAS) tool to distribute Armorsteal, a Python-based malware family. Users searching for installation commands were lured to pages displaying malicious PowerShell commands that installed the malware, which was protected with Pyarmor. Armorsteal provides remote access, surveillance such as keylogging and clipboard hijacking of cryptocurrency wallet addresses, and information stealing covering browser data, Discord tokens, wallets, and SSH keys. Its C2 tasks are verified with RSA-2048 signatures before execution. Defenders should hunt for the SysCheck2 and SysCheckX scheduled tasks and files under C:\\Windows\\SystemHealth\\Update\\.",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Armorsteal",
+        "Pyarmor_tool",
+        "Typosquatting_technique",
+        "Clipboard_hijacking_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "United kingdom"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chocolatey",
+        "Discord",
+        "Steam",
+        "Chrome",
+        "KeePass",
+        "1Password",
+        "Bitwarden",
+        "Dashlane",
+        "Cloudflare",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "monero",
+        "ethereum",
+        "dogecoin",
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "rsa-2048",
+        "xor",
+        "gzip",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/seo-poisoning-campaign-delivers-new-armorsteal-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "Prince of Persia: Threat Group Hiding in Plain Sight",
+      "summary": "Prince of Persia is an Iranian nation-state APT active for nearly two decades, primarily targeting Iranian dissidents and organizations in the United States, Europe, and the Middle East. The group's toolset includes the Infy, Foudre, Tonnerre, and Tornado malware families, with Foudre and Tonnerre operating as a dual-protocol infostealer. Tornado uses one-day vulnerabilities for initial access, Telegram API and HTTPS for covert C2, domain generation algorithms, and RSA signature validation to block researchers. After going dark following a February 2026 publication, the group rebuilt its C2 infrastructure, moved hosting providers, and resumed exfiltration in May 2026. Notably, a Tornado second-stage C2 server was hosted in the United States, which the researchers called unusual for this actor. Defenders should update security controls, monitor for unusual Telegram traffic, and keep operating systems patched.",
+      "completeness": "Low",
+      "threats": [
+        "Foudre",
+        "Tonnerre",
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Middle east",
+        "United states",
+        "Israeli",
+        "Iran",
+        "Danish"
+      ],
+      "software": [
+        "Telegram",
+        "WinRAR",
+        "cPanel",
+        "Roblox",
+        "Cloudflare"
+      ],
+      "links": [
+        "https://www.semperis.com/blog/prince-of-persia-threat-group-hiding-in-plain-sight/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "KeyStealth: Device code phishing to rogue Entra devices and BEC",
+      "summary": "KeyStealth is an operator that used a fake construction quote reply and device code phishing to obtain a Microsoft Authentication Broker token from a US business's Microsoft 365 account on 25 August 2026. The attacker registered three rogue Entra ID devices named iAuthFlow-Device, which carry a default Windows version from the open source ROADtools library and tie the intrusion to a commercial phishing kit. Using primary refresh token sessions, the operator returned in short bursts over seven weeks and opened attachments on 25 sent messages. On 15 October 2026 it hijacked a customer email thread with an inbox rule and a reply offering payment, and containment disabled the account 12 minutes later. Defenders should search for the rogue device names, review device code sign-ins to the Broker app, and remove rogue devices and passkeys explicitly, since a password reset alone does not remove them.",
+      "completeness": "High",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Bec_technique",
+        "Thread-hijack_phishing_technique",
+        "Roadtools_tool",
+        "Residential_proxy_technique",
+        "Knight_office_tool",
+        "Typosquatting_technique",
+        "Cloaking_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "Microsoft 365",
+        "Outlook",
+        "Windows Hello",
+        "GoDaddy",
+        "Microsoft Defender",
+        "Office 365",
+        "Cloudflare",
+        "AzureAd",
+        "Microsoft Edge",
+        "Microsoft Search",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "register_device",
+        "Set-InboxRule"
+      ],
+      "links": [
+        "https://adamnet.works/blog/keystealth-device-code-phishing-to-rogue-entra-devices-and-bec/",
+        "https://github.com/dirkjanm/ROADtools/blob/master/roadlib/roadtools/roadlib/deviceauth.py",
+        "https://github.com/passkeydeveloper/passkey-authenticator-aaguids"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "GoodPerson campaign aimed at users bypassing China’s Great Firewall",
+      "summary": "The GoodPerson campaign is a family of MSI-based trojans that uses installers for Google Chrome, Telegram, LetsVPN, and NetEase Cloud Music as lures, targeting users in China who bypass the Great Firewall. The malicious MSI files bundle a legitimate installer with a loader and encrypted payload, so the user sees the expected software while malicious code runs in the background. Early samples deliver the PurpleFox rootkit, which can manipulate RDP settings and use a mimikatz-compatible tool for credential dumping. The later GoodPersonRAT framework replaces PurpleFox with a custom TerminalControlClient implementation that supports keylogging, browser data theft, proxy tunneling, and persistence. Samples from the same operators share a single IP address, but the operators remain unidentified, and the campaign is ongoing. Defenders can counter it with application allowlisting, ringfencing, egress firewall controls, and EDR detection.",
+      "completeness": "High",
+      "threats": [
+        "Goodpersonrat",
+        "Purplefox",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Mgh0st"
+      ],
+      "geo": [
+        "Taiwan",
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Chrome",
+        "Telegram",
+        "LetsVPN",
+        "QQBrowser",
+        "Sogou"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "GetMP"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/goodperson-campaign-aimed-at-users-bypassing-chinas-great-firewall"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "DarkCore: A Data-Theft RAT With a Session-Hijacking Browser",
+      "summary": "DarkCore is a remote access trojan sold on a cybercrime network with tools for credential theft, hidden desktop access and a reverse proxy. Its dedicated browser imports stolen session cookies so operators can reopen victims' accounts for services such as Gmail, WhatsApp and MediaFire while routing traffic through the victim's IP address. The advertised delivery method is a PDF-themed shortcut that silently downloads a decoy report and a second executable. Researchers recovered the configuration, which sets direct TCP communication with a command and control server and disables persistence in this build. For defenders, the key takeaways are to watch early curl activity from shortcuts, verify backgroundTaskHost.exe carefully, and revoke sessions as well as resetting credentials, since a familiar sign-in IP does not prove access was legitimate.",
+      "completeness": "High",
+      "threats": [
+        "Darkcore",
+        "Bec_technique",
+        "Hvnc_tool",
+        "Gentlemen_ransomware",
+        "Credential_stealing_technique",
+        "Bee_stealer",
+        "Medusahvnc_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "WhatsApp",
+        "Chrome",
+        "curl",
+        "Codex",
+        "Claude"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "links": [
+        "https://www.blackfog.com/darkcore-a-data-theft-rat-with-a-session-hijacking-browser/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "PHP2Shell: What defenders need to know about CVE-2026-109618 and CVE-2026-109619",
+      "completeness": "Medium",
+      "threats": [
+        "Mirai",
+        "P2pshell_vuln",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 2,
+      "software": [
+        "PHP2Shell",
+        "PHP-FPM",
+        "LiteSpeed",
+        "WordPress",
+        "Drupal",
+        "Joomla",
+        "phpMyAdmin",
+        "OpenAI",
+        "Cloudflare",
+        "curl",
+        "have more..."
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.trellix.com/en/blogs/research/php2shell-key-info-on-cve-2026-109618-and-cve-2026-109619/",
+        "https://github.com/trellix-enterprise/ExpertRules/blob/main/TRELLIX/ACCESS\\_PROTECTION/T1505.003\\_Web\\_Shell\\_Suspicious\\_Process\\_Execution\\_via\\_Web\\_Server.md",
+        "https://github.com/trellix-enterprise/ExpertRules/blob/main/TRELLIX/ACCESS\\_PROTECTION/T1505.003\\_Web\\_Shell\\_Creation\\_in\\_Web\\_Root\\_Directory.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "PHP2Shell: Critical PHP RCE",
+      "summary": "PHP2Shell is the name for CVE-2026-109618 and CVE-2026-109619, flaws in the PHP interpreter itself that expose every application on an affected build regardless of framework or plugins. A remote, unauthenticated attacker can achieve code execution as the web worker account or disclose live worker memory, including passwords, tokens and API keys. Amazon Threat Intelligence recorded exploitation attempts from October 17, four days before disclosure, and assesses broad in-the-wild exploitation, though no victim, threat actor or KEV listing has been published. Exploitation leaves almost no web telemetry, so defenders should hunt from October 17 onward using process-ancestry, web-root file creation and error-log data. Patching to 8.5.12, 8.4.27, 8.3.36 or 8.2.35 is the only complete fix, and rotating reachable credentials is advised where the memory-disclosure path cannot be ruled out.",
+      "completeness": "Low",
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "PHP2Shell",
+        "Cloudflare",
+        "PHP-FPM"
+      ],
+      "functions": [
+        "session_start",
+        "Set-Cookie",
+        "ini_set"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/php2shell-critical-php-rce"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "testmetest npm Packages Carry a Miasma-Family Worm",
+      "summary": "The testmetest npm worm is a Miasma-family worm that a single operator has been testing publicly since 19 October 2026, using accounts such as alexjoipamiba, iobandamwer and testsecuiitytestme. It steals credentials, including SSH keys, npm and Git tokens, cloud secrets and GitHub Actions secrets, and spreads through npm packages and repositories. Its triggers have changed over time, running during install, at application load, and when a developer opens an infected repository with an AI coding agent. On 9 November 2026, forged commits placed the worm in 12 victim GitHub repositories, with agent files telling assistants to run scripts/setup.js without reading it. A wiper deletes the home directory if the stolen GitHub token is revoked. Defenders should treat agent instruction files and native addon artifacts as key signals, and rotate credentials on any affected host.",
+      "completeness": "Medium",
+      "threats": [
+        "Phantom_gyp_technique",
+        "Miasma",
+        "Shai-hulud",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "docker",
+        "Claude",
+        "Codex",
+        "Kubernetes",
+        "Linux",
+        "macOS"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://safedep.io/testmetest-npm-worm-miasma-variant"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "RFRx003: previously unknown backdoor observed in attacks on IT companies",
+      "summary": "A previously unknown Linux backdoor named RFRx003 was used in a months-long intrusion at an IT-sector company, starting from a freshly exploited remote code execution flaw in an internet-facing service. The attackers gained SYSTEM-level execution, escalated privileges, and persisted via a systemd service disguised as a time synchronization daemon and a root cron job. RFRx003 communicates over HTTPS and WSS, offers 16 commands for reconnaissance, file operations, SOCKS5 tunneling, and PTY shells, and disguises traffic as curl and avatar requests. The attackers used it for lateral movement and ultimately stole employee mailbox data. Defenders should check for the described persistence and execution indicators, including unexpected SUID bash binaries and payloads running from /dev/shm.",
+      "completeness": "Low",
+      "ttp_tactics": 9,
+      "ttp_techniques": 20,
+      "software": [
+        "curl",
+        "Linux",
+        "ux infr",
+        "Systemd",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5",
+        "base64"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/7122/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Bec_technique",
+        "Password_spray_technique",
+        "Device_code_phishing_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Germany",
+        "German"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "Microsoft 365",
+        "Microsoft Entra",
+        "Microsoft Office",
+        "SharePoint",
+        "macOS",
+        "Outlook",
+        "Office 365"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/token-replay-spray"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "TRUST#GRAFT : JavaScript-Compromised Sites Target WordPress Admin Browsers to Deploy a Persistent PHP Backdoor",
+      "summary": "TRUST#GRAFT is a JavaScript-to-WordPress attack chain that uses a fake Cloudflare-style verification overlay to fingerprint visitors and gate content before running its logic. If the visiting browser is already logged in as a WordPress administrator with plugin installation rights, the script reuses that session and nonce to upload and activate a malicious plugin named Web Media Optimizer. The PHP backdoor copies itself into wp-content/mu-plugins for persistence, hides from plugin listings, injects remote JavaScript into public pages, and offers token-gated administrator cookie creation. Defenders should separate admin browsing from regular browsing, and during cleanup check mu-plugins and remove every copy of the backdoor. The initial delivery vector remains unconfirmed.",
+      "completeness": "Medium",
+      "threats": [
+        "Trust_graft",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "WordPress",
+        "Chrome",
+        "PhantomJS"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.securonix.com/blog/trust-graft-wordpress-admin-php-backdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "Operation IXIM: Preventing a botnet of millions of Popcorn Time users",
+      "summary": "Eye Research investigated the updater component of Time4Popcorn, a closed-source fork of Popcorn Time, after finding that its Updater.exe was contacting abandoned domains. The updater fetched JSON responses over unencrypted HTTP and executed supplied executables with SYSTEM privileges on Windows and root on macOS, with no code signing. Researchers observed roughly 3.8 million hardware IDs, though later analysis showed these were overcounted due to cloned Windows images and changing macOS hostnames. They registered 15 domains, pushed an update that disabled the updater service without other changes, and transferred the domains to The Shadowserver Foundation in March 2026. The application itself remains risky, with an outdated 2014 Chrome engine, disabled sandbox, and HTTP-loaded JavaScript, so the report advises uninstalling it.",
+      "completeness": "Low",
+      "threats": [
+        "Popcorn_time",
+        "Emotet"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Time4Popcorn",
+        "BitTorrent",
+        "ime4Popcorn fo",
+        "macOS",
+        "Android",
+        "Windows service",
+        "Chrome",
+        "PHP2Shell"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "LinkLiar"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://labs.eye.security/operation-ixim-preventing-a-botnet-of-millions-of-popcorn-time-users/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-22",
+      "title": "Attacks on PHP2Shell Continue, But No Known Compromises as a Result Yet",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "PHP2Shell",
+        "WordPress",
+        "Laravel",
+        "ThinkPHP",
+        "curl"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/10/attacks-on-php2shell-continue-but-no-known-compromises-as-a-result-yet/",
+        "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w",
+        "https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp"
+      ]
+    }
+  }
+]

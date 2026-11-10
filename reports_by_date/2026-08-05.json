@@ -1,0 +1,778 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "ChainDrop supply chain compromise: Anatomy of a self-propagating worm",
+      "summary": "The ChainDrop campaign is a self-propagating npm supply chain attack that Microsoft Threat Intelligence observed affecting more than 400 packages from unrelated publishers. The malicious releases carry a Mini Shai-Hulud variant, a credential-stealing worm delivered through a heavily obfuscated Bun-based JavaScript payload that typically runs via a preinstall lifecycle hook. The malware harvests npm, GitHub, cloud, Kubernetes, and HashiCorp Vault credentials from developer workstations and CI/CD environments, then exfiltrates encrypted data over HTTPS with GitHub as a fallback. Its main capability is automated propagation: a stolen npm publishing token lets it republish every package available to that publisher with a patch-version bump. Defenders should treat affected hosts as compromised, rotate credentials from a clean environment, and review release pipelines and GitHub Actions OIDC publishing.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "Claude",
+        "Visual Studio Code",
+        "vscode",
+        "Microsoft Defender for Endpoint",
+        "Node.js"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "base64",
+        "sha256",
+        "aes",
+        "gzip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "SakDriver: Reversing a Windows Kernel Driver Rootkit",
+      "summary": "SakDriver is a Windows kernel-mode rootkit that loads as a driver and operates from Ring 0, initially mistaken for a Cobalt Strike Beacon sample. It blinds ETW, hides processes through DKOM, conceals its C2 ports by hooking the NSI driver, and manipulates the Windows Filtering Platform to block security products. Its most notable technique is a covert control channel in which a user-mode agent writes commands into a benign registry value that the driver's registry callback reads. The driver exposes a command table of more than two dozen kernel primitives, including arbitrary physical memory access, process injection and hardware-input spoofing. Defenders should enforce driver-signing and blocklists, avoid relying solely on ETW, and watch registry-callback and minifilter registrations.",
+      "completeness": "Medium",
+      "threats": [
+        "Sakdriver",
+        "Cobalt_strike_tool",
+        "Process_injection_technique",
+        "Dll_injection_technique",
+        "Ghost",
+        "Teleport_tool"
+      ],
+      "software": [
+        "Windows Kernel",
+        "Windows registry",
+        "Event Tracing for Windows",
+        "Windows firewall"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "GetCpuClock"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://core-jmp.org/2026/07/sakdriver-reversing-kernel-driver-rootkit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "SmartScreen and MotW: The Forgotten Phishing Obstacle",
+      "completeness": "Low",
+      "threats": [
+        "Motw_bypass_technique",
+        "Sliver_c2_tool",
+        "Gophish_tool",
+        "Blob_url_obfuscation_technique",
+        "Smuggling_technique"
+      ],
+      "software": [
+        "Microsoft Defender for Endpoint",
+        "Event Tracing for Windows",
+        "Windows shell",
+        "Chromium",
+        "Chrome",
+        "Firefox",
+        "Microsoft Edge",
+        "Windows Explorer"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "Get-Item",
+        "Get-Content",
+        "fetch"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://attackd.com/blog/smartscreen-and-motw/",
+        "https://github.com/norvethil/CVE-2013-3900-PowerShell-PoC"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Charming Kitten",
+      "summary": "Charming Kitten (tracked here alongside TA455) is conducting a campaign against aerospace, aviation, and defense organizations in Israel and the UAE, with possible targets in Turkey, India, and Albania. The actors create fake LinkedIn recruiter profiles and a fake job website, offering a \"Dream Job\" lure that delivers a ZIP archive. The archive contains a legitimate SignedConnection.exe paired with a malicious secur32.dll, which is loaded through DLL side-loading to run the SnailResin malware. The malware uses legitimate services such as GitHub for encoded C2 configuration, Cloudflare to hide server addresses, and HTTPS for communication. This is an adversary simulation, and the report notes that its similarities to Lazarus techniques do not prove attribution to either group.",
+      "completeness": "Medium",
+      "threats": [
+        "Blackbeard",
+        "Stager_51_bot",
+        "Bear-c2",
+        "Spear-phishing_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Egypt",
+        "Hungary",
+        "Turkmenistan",
+        "America",
+        "Turkey",
+        "Saudi arabia",
+        "Israel",
+        "Middle east"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 13,
+      "software": [
+        "Telegram",
+        "WinHttp",
+        "Discord"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "love_me_____",
+        "main"
+      ],
+      "languages": [
+        "rust",
+        "visual_basic"
+      ],
+      "links": [
+        "https://github.com/S3N4T0R-0X0/APTs-Adversary-Simulation/tree/main/Iranian%20APT/Charming%20Kitten"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Introducing DOUBLECUP, a ClickFix Loader Delivering CountLoader and DeviceManager RATs",
+      "summary": "DOUBLECUP is a Russian Loader-as-a-Service for ClickFix campaigns, active since early June 2026, that sells licenses and a client agent to operators. Its lure pages, which impersonate CRM login pages such as NetSuite, Odoo, HubSpot, and Salesforce, stage a command on the victim's clipboard that extracts a steganographic PNG from the browser cache and runs a second stage. The second stage decrypts the final payload in memory using a key derived from the victim's public IP address, which causes decryption to fail in sandboxes or off-target networks. Delivered payloads include an updated CountLoader 4.5p for Windows and macOS, which masquerades system binaries via PE header patching and uses scheduled tasks for persistence. The report also documents DeviceManager, a new Python RAT that resolves its C2 through Ethereum or Polygon smart contracts (EtherHiding) and communicates over DNS tunneling or HTTP.",
+      "completeness": "High",
+      "threats": [
+        "Doublecup",
+        "Clickfix_technique",
+        "Countloader",
+        "Dns_tunneling_technique",
+        "Etherhiding_technique",
+        "Steganography_technique",
+        "Clipboard_hijacking_technique",
+        "Fakecaptcha_tool",
+        "Lolbin_technique",
+        "Getpass_tool",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 29,
+      "software": [
+        "macOS",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Telegram",
+        "HubSpot",
+        "Salesforce",
+        "Microsoft Edge",
+        "Windows Remote Access",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "guarda_wallet",
+        "metamask",
+        "mainnet"
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "chacha20",
+        "zip",
+        "sha256",
+        "md5",
+        "xor",
+        "sha1",
+        "base64"
+      ],
+      "functions": [
+        "StdRegProv",
+        "getUpdates",
+        "taskType",
+        "main",
+        "popen",
+        "system",
+        "Windows"
+      ],
+      "languages": [
+        "golang",
+        "powershell",
+        "objective_c",
+        "delphi",
+        "jscript",
+        "csharp",
+        "python",
+        "vbscript",
+        "solidity"
+      ],
+      "links": [
+        "https://socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "The Malware Arrived With Valid Provenance",
+      "summary": "A self-propagating npm compromise reached more than 440 package names in under four hours on August 4, starting with the Keyv and Cacheable package families. Researchers found that poisoned releases were published through npm's OIDC Trusted Publishing path with valid SLSA provenance, because a maintainer account was compromised and malicious commits were pushed into the maintainer's own repositories. The added preinstall hook ran a second-stage payload during installation, harvested developer and CI credentials, and could use stolen publishing access to trojanize more packages. The malware shares tradecraft with Shai-Hulud, but researchers have not confirmed who operated it. Defenders should isolate affected hosts, remove any local token monitor before rotating credentials, and add authorization controls beyond provenance.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "links": [
+        "https://www.codeaintel.com/p/the-malware-arrived-with-valid-provenance",
+        "https://github.com/wiz-sec-public/wiz-research-iocs/blob/main/reports/keyv-packages.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Access For Sale: Inside a Russian-Speaking Access Broker's Dual Operation",
+      "summary": "A Russian-speaking initial access broker, identified from an exposed server directory, exploited internet-facing appliances from Fortinet, SonicWall, Sophos, Citrix, SAP and F5 across more than a dozen countries and achieved full Active Directory compromise. Victims spanned education, healthcare, finance, telecommunications and government. The operator sold access upstream, and several organisations were later claimed by different ransomware groups within weeks. Separately, the operator ran Sliver C2 collection against Ukrainian defence and aerospace targets, including source code theft and camera imagery harvesting that aligns with a Dutch intelligence advisory on Russian state activity. The report cannot determine whether this strand reflects state tasking or criminal sales to a state buyer. Defenders should remove management interfaces from internet exposure, rotate credentials and krbtgt, and isolate IP cameras.",
+      "completeness": "High",
+      "threats": [
+        "Sliver_c2_tool",
+        "Nuclei_tool",
+        "Masscan_tool",
+        "Fscan_tool",
+        "Neo-regeorg_tool",
+        "Regeorg_tool",
+        "Suo5_tool",
+        "Rpivot_tool",
+        "Chisel_tool",
+        "Proxychains_tool",
+        "Gs-netcat",
+        "Impacket_tool",
+        "Crackmapexec_tool",
+        "Evil-winrm_tool",
+        "Donpapi_tool",
+        "Ghostkatz",
+        "Git-dumper_tool",
+        "Ransomhouse",
+        "Golden_ticket_technique",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Dutch",
+        "Moscow",
+        "Ukraine",
+        "Russian",
+        "Italian",
+        "Ukrainian",
+        "America",
+        "Korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Fortinet FortiOS",
+        "BIG-IP",
+        "Windows Explorer",
+        "SAP NetWeaver",
+        "vBulletin",
+        "WireGuard",
+        "remote desktop services",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/access-for-sale-inside-a-russian-speaking-access-brokers-dual-operation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Almost Half of Malware Samples Communicate Direct to IP",
+      "summary": "Unit 42 analyzed 4 million dynamic analysis reports and found that 45.32% of malware samples with C2 activity made at least one direct-to-IP connection with no preceding DNS query. Such traffic bypasses DNS-based defenses like sinkholing and DNS anomaly detection, since malware often hard-codes IP addresses. The report examines Phorpiex droppers, a \\GET exfiltration campaign hosted on public cloud infrastructure, SectopRAT proxies targeting educational institutions, and Mozi and Boatnet IoT botnets. To counter this gap, the authors propose ZT-IP, a firewall-level control that allows outbound connections only to IP addresses recently returned by a trusted DNS response.",
+      "completeness": "Medium",
+      "threats": [
+        "Mozi",
+        "Phorpiex",
+        "Sectop_rat",
+        "Supply_chain_technique",
+        "Mirai",
+        "Boatnet"
+      ],
+      "geo": [
+        "Brazil",
+        "Apac",
+        "America",
+        "Japan",
+        "Emea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "links": [
+        "https://unit42.paloaltonetworks.com/malware-bypass-dns-direct-to-ip/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "QuickFox Supply Chain Attack Used to Deploy FDMTP Implant",
+      "summary": "The QuickFox supply chain attack trojanized the Windows installer of QuickFox, a VPN proxy and game accelerator used mainly by Chinese users, to deliver an FDMTP implant. The malicious JavaScript loader checks for Steam and requires one of about 26 listed processes, many tied to Chinese translation tools, administrator tools, developer tools, and cryptocurrency apps, before proceeding. The campaign was active from at least August 2025, with the trojanized components removed from version 3.59.6 after Fortinet's disclosure. Fortinet found technical overlap with an FDMTP campaign previously reported by Darktrace, including shared C2 cluster IPs, but did not confidently attribute the activity to a specific actor. Defenders should note that Electron child processes complicate EDR process lineage analysis.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Fdmtp",
+        "Typosquatting_technique",
+        "Xshell_tool",
+        "Finalshell",
+        "Mobaxterm_tool",
+        "Costura_tool",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Malaysia",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "QuickFox",
+        "Electron",
+        "Windows installer",
+        "MacOS",
+        "uickFox do",
+        "GoDaddy",
+        "Alibaba Cloud",
+        "Android",
+        "Steam",
+        "Navicat",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "trezor"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "gzip",
+        "base64",
+        "aes-128-ecb"
+      ],
+      "functions": [
+        "IsRegistryPlugin"
+      ],
+      "languages": [
+        "javascript",
+        "java"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Interlock ransomware gang creates volatile situation",
+      "completeness": "Medium",
+      "threats": [
+        "Interlock",
+        "Interlockrat",
+        "Clickfix_technique",
+        "Nodesnake",
+        "Winpmem_tool",
+        "Process_injection_technique",
+        "Kerberoasting_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "United states",
+        "America",
+        "American"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "Velociraptor",
+        "ChatGPT",
+        "curl",
+        "zoom",
+        "Active Directory Domain Services",
+        "Active Directory",
+        "Azure AD"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/2608-volatility-interlock"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Shai-Hulud strikes again: CHAINDROP worm hits 400+ npm packages",
+      "summary": "Elastic Security Labs identified a new Shai-Hulud campaign in which attackers compromised the keyv maintainer and deployed CHAINDROP, a self-propagating npm worm. The worm uses stolen npm credentials to backdoor every other package the maintainer could publish, and over 400 unique packages had been compromised at the time of writing. Execution is triggered by a preinstall hook, and the malware runs cross-platform on Linux, macOS, and Windows, with extra hooks in Claude Code and VS Code configurations. Its credential harvester targets AI tooling, cloud provider, GitHub, Vault, SSH, Kubernetes, and npm credentials, and it resolves its C2 endpoint through an Ethereum smart contract. Defenders should add a soak period before adopting new package versions, rotate exposed credentials, check for unauthorized \"chore: update config\" commits, and upgrade to npm 12 or later, which blocks preinstall hooks by default.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Chaindrop",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "Linux",
+        "macOS",
+        "claude",
+        "Anthropic",
+        "OpenAI",
+        "Alibaba Cloud",
+        "HashiCorp Vault",
+        "Kubernetes",
+        "Node.js",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "gzip",
+        "aes",
+        "sha256",
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/shai-hulud-chaindrop-npm-supply-chain",
+        "https://github.com/elastic/supply-chain-monitor",
+        "https://github.com/elastic/detection-rules/blob/main/rules/cross-platform/execution\\_nodejs\\_pre\\_or\\_post\\_install\\_script\\_execution.toml",
+        "https://github.com/oven-sh/bun/releases#release-bun-v1.3.13/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Inside Greatness: Telegram-Distributed M365 AiTM PhaaS",
+      "summary": "Greatness is a Telegram-distributed phishing-as-a-service kit sold at $289/month, combining adversary-in-the-middle credential and token theft with device code phishing from a single operator panel. A live campaign used spoofed RingCentral voicemail lures that bypassed gateway controls because the target had whitelisted the vendor domain in its safe sender exclusions, even though all emails failed SPF, DKIM, and DMARC. Testing showed that all Greatness domains share a centralized backend, and captured tokens were replayed through commercial VPN services to access Microsoft 365 resources. Defenders should audit safe sender exclusions, revoke tokens in Entra ID after suspected AiTM compromise, and hunt for the platform under both Greatness and the URLQuery name honeystorm.",
+      "completeness": "High",
+      "threats": [
+        "Greatness_tool",
+        "Aitm_technique",
+        "Device_code_phishing_technique",
+        "Forg365_tool",
+        "Sneaky_2fa_tool",
+        "Debull_tool",
+        "Credential_harvesting_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Norway"
+      ],
+      "software": [
+        "Telegram",
+        "Graph API",
+        "Outlook",
+        "Cloudflare Turnstile",
+        "Laravel",
+        "PhantomJS",
+        "Selenium",
+        "curl",
+        "OpenResty",
+        "Microsoft Teams",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "poll"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://zerobec.com/blog/greatness-phaas-aitm-and-device-code-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "From open lures to cloaked gates: How a macOS ClickFix campaign learned to hide",
+      "summary": "Microsoft Threat Intelligence observed a macOS ClickFix campaign distributing infostealers such as MacSync and Atomic Stealer (AMOS) through more than 250 look-alike front-end domains, many following a \"file\" naming pattern. The campaign shifted from serving the malicious Terminal command openly in page HTML to placing a server-side browser-fingerprinting gate in front of the lure. The gate profiles hardware, display, and runtime attributes and shows the ClickFix lure primarily to visitors that appear to be genuine macOS browsers. Crawlers, sandboxes, and automated tools receive blank or decoy pages, which limits visibility for analysis. Defenders are advised to hunt the gate's behavior and domain pattern in combination, and to prioritize blocking shared back-end and staging infrastructure over individual disposable domains.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Cloaking_technique",
+        "Amos_stealer",
+        "Macc_stealer"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Microsoft Defender",
+        "curl",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Edge"
+      ],
+      "functions": [
+        "toString"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/08/05/macos-clickfix-campaign-learned-hide/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Worm compromises hundreds of popular npm packages",
+      "summary": "A threat actor on August 4, 2026 pushed malicious commits to the keyv npm package and similar commits to other projects, including cacheable and ecto, and used them to publish compromised npm packages. The injected preinstall loader downloads or uses Bun to run a second-stage payload that collects files, environment variables, and cloud and CI secrets. Exfiltration uses encrypted data sent to C2 domains discovered through an Ethereum smart contract, with GitHub as a fallback channel. The payload can also propagate using stolen npm and GitHub credentials, and its C2 responses can execute arbitrary JavaScript. Defenders should check whether affected packages were installed and rotate exposed credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "claude",
+        "Visual Studio Code",
+        "vscode",
+        "Node.js",
+        "Alpine",
+        "Linux",
+        "sudo",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "base64",
+        "gzip",
+        "aes-256-gcm",
+        "zip"
+      ],
+      "functions": [
+        "unref",
+        "GetParameters",
+        "generateKeyPairSync",
+        "publicEncrypt"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/",
+        "https://github.com/jaredwray/keyv/commit/174f6a55690b0812a69adef47260ba8714a9be48",
+        "https://api.github.com/repos/lizy168/keyv/commits/5da403c578fbc9e691a9fc02de098d2ce383f37d",
+        "https://api.github.com/repos/lizy168/keyv/commits/29c773c5b93da03db3c4a1f43e67afc9380ac5d0"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "ChainDrop npm Worm: Bun-loaded CI/CD credential harvester with Ethereum dead-drop C2",
+      "summary": "ChainDrop is a self-propagating npm worm that published 444 packages (2,212 versions) between 09:40 and 13:20 UTC on August 4, 2026, including keyv@6.0.0, flat-cache@6.1.24, and file-entry-cache@11.1.6. The malicious versions were published through the projects' own GitHub release workflows after an attacker compromised a maintainer's GitHub account, so they carried valid SLSA provenance. A preinstall hook runs a dropper that downloads the legitimate Bun runtime and executes a 727 KB stage 2 payload that harvests npm, GitHub, cloud, Kubernetes, Vault, and AI tool credentials. The worm uses stolen credentials to republish itself into other organizations' packages, and it persists through .claude and .vscode configuration files. Command and control is resolved from an Ethereum smart contract, so there is no static domain to block. Defenders should disable install scripts, enforce release cooldowns, restrict CI egress, and rotate exposed credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Chaindrop",
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Etherhiding_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Kubernetes",
+        "vscode",
+        "Linux",
+        "lpine",
+        "Alpine",
+        "macOS",
+        "sudo",
+        "Jenkins",
+        "Slack",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash",
+        "electrum",
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "dogecoin",
+        "litecoin"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "gzip",
+        "aes-256-gcm",
+        "zip",
+        "sha1",
+        "sha512",
+        "sha256"
+      ],
+      "functions": [
+        "readFileSync",
+        "GetCallerIdentity",
+        "GetSecretValue",
+        "GetParameters",
+        "createCommitOnBranch"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/chaindrop-npm-worm",
+        "https://github.com/backstage/backstage/issues/35100",
+        "https://github.com/backstage/backstage"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "ENDLESSDOORS Is Phoning Home. Pick Up.",
+      "summary": "Researchers found that Zbtlink routers, made by Shenzhen Zhibotong Electronics and sold under brands including Wiflyer, ship with a pre-installed implant named ENDLESSDOORS, a modified version of the rctl command-and-control tool. The implant runs as root and phones home to attacker-controlled servers without any authentication or encryption. Anyone controlling the network path or the resolution of these endpoints can send commands that execute as root and open an interactive root shell. Roughly twenty models are affected, and every firmware image examined includes the implant, with no patch available. Defenders should inventory devices by model number, check for suspicious kworker processes and files, block and alert on the C2 endpoints, and replace or tightly isolate affected devices.",
+      "completeness": "Low",
+      "threats": [
+        "Endlessdoors"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "BusyBox",
+        "Alibaba Cloud"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "popen"
+      ],
+      "links": [
+        "https://www.vulncheck.com/blog/zbt-endlessdoors",
+        "https://github.com/search?q=rctlbash&type=repositories",
+        "https://github.com/vulncheck-oss/go-exploit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Analysis of APT-C-24 (Rattlesnake) group’s phishing attack campaign using application files",
+      "summary": "APT-C-24 (Rattlesnake) is delivering malicious ClickOnce application files that, when clicked, install a legitimate-plus-malicious (DLL sideloading) component from a remote source. The samples establish persistence on the victim host and enable theft of sensitive information and remote control. The attacker's command set includes file management, screenshots, process execution, and SOCKS tunneling. The group also uses malicious macro documents to download a Rust-based backdoor, showing it maintains multiple delivery chains. Defenders should note that the group keeps evolving its initial access methods and quickly iterating its tooling.",
+      "completeness": "Low",
+      "threats": [
+        "Clickonce_tool"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/PALBLusD4umh_52gy2wVAg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-05",
+      "title": "Toolkit Installation via SQL Injection Shows the Classics Still Hit",
+      "completeness": "Low",
+      "threats": [
+        "Khunt_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/khunt-malware-sql-injection-oracle",
+        "https://github.com/0xdea/exploits/blob/master/oracle/raptor\\_oraexec.sql"
+      ]
+    }
+  }
+]

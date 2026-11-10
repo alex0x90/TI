@@ -1,0 +1,35 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-19",
+      "title": "Iranian APT Seedworm Targets Global Organizations via Microsoft Teams",
+      "summary": "Iranian APT Seedworm, also tracked as MuddyWater, used social engineering over Microsoft Teams to gain initial access in an intrusion investigated by CyberProof in early March 2026. The attacker posed as IT support using a deceptive Microsoft 365 tenant domain and convinced the user to run a malicious MSI installer disguised as a Windows update. That installer deployed the custom Dindoor backdoor, which abused the legitimate Deno JavaScript runtime to execute an obfuscated payload in memory. The malware exfiltrated basic host metadata, retrieved secondary payloads, and maintained persistence through a deceptive registry Run key. The report's takeaway is that collaboration platforms like Microsoft Teams require security monitoring beyond email-based threats.",
+      "completeness": "Medium",
+      "threats": [
+        "Dindoor"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian",
+        "Middle east",
+        "Israel"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "typescript",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/iranian-apt-seedworm-targets-global-organizations-via-microsoft-teams/"
+      ]
+    }
+  }
+]

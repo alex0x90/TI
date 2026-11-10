@@ -1,0 +1,779 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Deep-Live-Cam Supply Chain Attack: Technical Analysis",
+      "summary": "A malicious source dependency was added to Deep-Live-Cam, a Python face swapping application with 96,600 GitHub stars, on September 8, 2026, redirecting installation to a repository named pypls/requests that impersonates the legitimate Requests project. The setup.py file hides a multi-layer encoded loader behind hundreds of spaces and CJK variable names, and it runs before the Python version check. The loader downloads a second-stage script from a Telegraph page and targets Windows and macOS, exiting on other systems. The final payload replaces cryptocurrency wallet addresses in clipboard text and registers itself for startup persistence. The malicious commit was live on main for about 9 hours and 39 minutes before being reverted after the maintainer reported unusual account access. Reverting requirements.txt does not remove the installed files or startup entries, so defenders should check for those artifacts directly.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Clipboard_hijacking_technique",
+        "Launchagents_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "base58"
+      ],
+      "functions": [
+        "setup"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://safedep.io/deep-live-cam-supply-chain-attack/",
+        "https://api.github.com/repos/pypls/requests",
+        "https://github.com/hacksider/Deep-Live-Cam/commit/7895c547a6788ee53e5c7c34e93454f86f6d2b53",
+        "https://api.github.com/users/pypls"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Vwork: Weaponized Open-source Software as an Addon for Gigabud",
+      "summary": "Group-IB reports that Vwork, a weaponized fork of the open-source Android cloning app Shelter, works alongside the Gigabud banking trojan attributed to the GoldFactory group. Vwork uses the Android Work Profile feature to create an isolated environment where malicious apps can clone banking applications. Gigabud sends C2 commands that drive Vwork, which lets fraudsters run transactions from a new profile that evades malware detection in the victim's personal profile. Gigabud samples compatible with Vwork target countries including Indonesia, Brazil, Egypt, Mexico, and Thailand, with banking as the confirmed sector. Defenders should watch for unexpected work profiles on consumer phones, Accessibility access granted to unrecognized apps, and suspicious app cloning.",
+      "completeness": "Medium",
+      "threats": [
+        "Vwork",
+        "Gigabud_rat",
+        "Shelter"
+      ],
+      "geo": [
+        "Laos",
+        "Egypt",
+        "Indonesian",
+        "Colombia",
+        "Latin america",
+        "Chinese",
+        "Middle east",
+        "Africa",
+        "Indonesia",
+        "Philippines",
+        "Mexico",
+        "Brazil",
+        "Morocco",
+        "Thailand",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 24,
+      "software": [
+        "Android",
+        "Telegram"
+      ],
+      "algorithms": [
+        "aes-ecb"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/vwork-app-cloning-gigabud-goldfactory/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Untracked Nightmares: The Threats Hiding Behind Commodity Infrastructure",
+      "summary": "CL-CRI-1171 is a pay-per-install (PPI) operation that has used a custom loader, OfferLoader, to distribute multiple unrelated payloads for at least two years. Infections were driven through YouTube gaming-optimization channels, which targeted young gamers, and through SEO-poisoned lure pages aimed at professional users, including corporate and government endpoints. Victims were infected through trojanized installers, and the loader's gating checks forwarded only real targets to the payload while showing scanners a decoy page. Delivered payloads included Insomnia RAT, ARKTunnel, and Docro Hijacker, which hijacks Chrome search results. Defenders are reminded that commodity loader infections can hide serious payloads and should not be treated as routine.",
+      "completeness": "High",
+      "threats": [
+        "Arktunnel",
+        "Docro_hijacker",
+        "Seo_poisoning_technique",
+        "Insomnia_rat",
+        "Gcleaner",
+        "Socks5systemz",
+        "Offerloader",
+        "Steganography_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WildFire",
+        "Chrome",
+        "WinRAR",
+        "macOS",
+        "Node.js",
+        "Windows Defender",
+        "Linux",
+        "Windows service"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "sha256",
+        "hmac",
+        "xor"
+      ],
+      "languages": [
+        "pascal",
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/ppi-network-malware-campaign-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Emergence of New LNK Malware from the Kimsuky Group Operating Function-Specific C2 Servers",
+      "summary": "Kimsuky, a North Korea-linked group, is distributing a new malicious LNK file disguised as a Korean financial document, with a PDF icon and document properties. Upon execution, it runs staged batch scripts that collect system information from infected PCs and move through multiple stages. The main distinguishing feature is a C2 structure that splits command delivery, infection notification, and data exfiltration across three separate legitimate services, with each channel performing only its assigned function. The attack relies on GitHub, WordPress hosting, and Dropbox, and uses LOLBin techniques such as copied certutil.exe and NirCmd, so it avoids placing malicious executables on disk. Selected PCs can be redirected to a repository delivering a reverse tunnel for remote access. Defenders should disable hiding of known file extensions and treat LNK files with document icons as suspicious.",
+      "completeness": "High",
+      "threats": [
+        "Smishing_technique",
+        "Dead_drop_technique",
+        "Nircmd_tool",
+        "Lolbin_technique",
+        "Trojan.bat.agent"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "WordPress",
+        "Dropbox",
+        "OpenSSH",
+        "dows File Explorer and"
+      ],
+      "algorithms": [
+        "rc4",
+        "md5",
+        "aes-256",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://alyacofficialblog.tistory.com/5777"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Once in a BlueMoon: Multiple State-Aligned Threat Actors Rapidly Adopt Novel Exploit Chain Using Chrome and Windows Zero-Days",
+      "summary": "Proofpoint reports that at least four espionage-motivated threat actors, most with suspected China nexus, rapidly adopted BlueMoon, a new exploit kit chaining two Chrome V8 vulnerabilities (CVE-2026-85046 and CVE-2026-87491) with a Windows kernel LPE zero-day (CVE-2026-85880) that affects older Windows builds. The V8 flaws were \"patch-gap\" zero-days, fixed in public Chromium source but not yet in stable releases, which likely enabled rapid weaponization. Successful exploitation runs a curl command that downloads and executes an actor-provided payload, which varied by actor and included the GemStone browser-extension backdoor, ShadowPad, and other custom malware. Targets include US NGOs, mining and commodity firms, US aerospace companies, Vietnamese manufacturers, and organizations in Singapore and Indonesia. Defenders should watch for the chrome.exe to cmd.exe to curl.exe process chain and for scheduled tasks and sessionStorage keys listed in the report, and expect proliferation as patches roll out.",
+      "completeness": "High",
+      "threats": [
+        "Bluemoon_exploitkit",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Wuhan",
+        "Shadowpad",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "United states",
+        "Vietnamese",
+        "Indonesian",
+        "Asian",
+        "Singapore",
+        "Indonesia",
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "Windows kernel",
+        "Windows kernel Local",
+        "Microsoft Edge",
+        "curl",
+        "Google Chrome",
+        "Vivaldi",
+        "task scheduler",
+        "Firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "base64",
+        "sha256",
+        "chacha20",
+        "hmac",
+        "xor"
+      ],
+      "functions": [
+        "fill",
+        "WebAssembly"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/once-bluemoon-multiple-state-aligned-threat-actors-rapidly-adopt-novel-exploit",
+        "https://github.com/google/security-research/tree/master/v8ctf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "DENOmination Group: Deno in attack chains targeting Russian organizations",
+      "completeness": "High",
+      "threats": [
+        "Deno_tool",
+        "Dindoor",
+        "Denorat",
+        "Clickfix_technique",
+        "Nightshade",
+        "Deno_loader",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian federation",
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 31,
+      "software": [
+        "itwarden",
+        "1",
+        "Password",
+        "L",
+        "astPass",
+        "K",
+        "eePassXC",
+        "D",
+        "ashlane",
+        "N",
+        "ordPass",
+        "K",
+        "elegram De",
+        "iscord to",
+        "eePass da",
+        "oogle Chrome",
+        "M",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "electrum",
+        "atomicwallet",
+        "coinbase"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "Set-ItemProperty",
+        "GetManifestResourceStream"
+      ],
+      "languages": [
+        "jscript",
+        "typescript",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/denomination-group-deno-in-attack-chains-targeting-russian-organizations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Mantax Otax: Indonesian Mobile Ransomware with Spyware Integration",
+      "summary": "Mantax Otax is an Indonesian mobile malware strain that combines ransomware with spyware capabilities on Android devices. On older Android versions (9 or earlier), it encrypts user files with AES and replaces images with ransom notices, while newer Android 10+ devices are limited by Scoped Storage restrictions. The malware also steals lock screen PINs, messages, OTPs, WhatsApp and Telegram data, and captures screenshots, screen recordings and camera photos. Its C2 resolves through GitHub and uses Firebase, and the operators negotiate ransom through an on-screen chat, with the Firebase misconfiguration exposing those dialogues. The second version adds WebSocket communication and UI-hijacking, harassment and touch-blocking commands. Zimperium notes that its Mobile Threat Defense products detect all samples and that web content filtering can block C2 traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Mantax_otax",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Indonesian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Telegram"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64",
+        "aes"
+      ],
+      "links": [
+        "https://zimperium.com/blog/mantax-otax-indonesian-mobile-ransomware-with-spyware-integration",
+        "https://github.com/Zimperium/IOC/tree/master/2026-09-MantaxOtax/",
+        "https://github.com/Zimperium/IOC/tree/master/2026-09-MantaxOtax/V2-Commands.md",
+        "https://github.com/Zimperium/IOC/tree/master/2026-09-MantaxOtax/V1-Commands.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Mind the (Patch) Gap: Multiple Chinese Threat Actors Chain 0-day Exploits in Chrome & Windows",
+      "summary": "Two Chinese threat actors, UTA0560 and JungleBamboo, exploited the same Chrome zero-day chain starting September 1, 2026, using byte-for-byte identical exploit code. The chain abused CVE-2026-85046 and CVE-2026-87491 in Chrome and CVE-2026-85880 in the Windows kernel to inject code into the Chrome browser process. UTA0560 sent phishing emails to US-based NGOs and deployed the GRIMWEDGE JScript backdoor for host reconnaissance and command execution. JungleBamboo instead deployed SUPERSTOMP, which tampered with Chrome Secure Preferences to install LONGTALE, a credential-stealing extension masquerading as Google Gemini. The vulnerability was fixed in Chromium source but not yet in a Chrome release, creating an unusual patch-gap zero-day that Volexity says increases risk as exploit development accelerates.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Grimwedge",
+        "Superstomp_stealer",
+        "Longtale_stealer",
+        "Credential_stealing_technique",
+        "Process_injection_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Chromium",
+        "Windows kernel",
+        "Hyper-V",
+        "Xen",
+        "Windows Kernel Local",
+        "Windows Installer",
+        "Volexity Volcano"
+      ],
+      "algorithms": [
+        "base64",
+        "hmac"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "jscript",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.volexity.com/blog/2026/09/09/mind-the-patch-gap-multiple-chinese-threat-actors-chain-0-day-exploits-in-chrome-windows/",
+        "https://github.com/asaurusrex/Silent\\_Chrome/commit/814fa9c2b75f95b8140ea6d460877772a2d4d507",
+        "https://github.com/volexity/threat-intel/tree/main/2026/2026-09-09%20Chrome"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Agents Gone Wild: An AI-Orchestrated Global Campaign Against PaperCut NG/MF",
+      "summary": "A likely Russian-speaking malicious cyber actor used AI agents powered by OpenAI's Codex harness and a DeepSeek model to develop and exploit PaperCut NG/MF vulnerabilities (CVE-2026-81578 and CVE-2026-82078). The agents opportunistically compromised at least 440 PaperCut instances at 395 identified organizations in 48 countries, with a high concentration of U.S. education targets. Domain admin was achieved against only 12 victims, typically through credential harvesting, pass-the-hash, noPac, or adding accounts to Domain Admins, followed by DCSync to dump credentials. The campaign moved very fast, reaching domain admin in as little as five minutes after initial access in some cases. GreyNoise's takeaway is that AI accelerates intrusions but can behave unpredictably, and that basic hardening still reduces risk.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Passthehash_technique",
+        "Nopac_tool",
+        "Dcsync_technique",
+        "Ligolo_tool",
+        "Ligolo-ng_tool",
+        "Mimikatz_tool",
+        "Bloodhound_tool",
+        "Certipy_tool",
+        "Rubeus_tool",
+        "Impacket_tool",
+        "Netexec_tool",
+        "Seatbelt_tool",
+        "Sharpsploit",
+        "Empire_loader",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Argentina",
+        "Puerto rico",
+        "Singapore",
+        "Ireland",
+        "Cambodia",
+        "Hong kong",
+        "Mexico",
+        "China",
+        "Taiwan",
+        "France",
+        "Russia",
+        "Thailand",
+        "Armenia",
+        "Australia",
+        "Finland",
+        "Belgium",
+        "India",
+        "Turkmenistan",
+        "Azerbaijan",
+        "Canada",
+        "Denmark",
+        "Tanzania",
+        "United states",
+        "Tajikistan",
+        "United kingdom",
+        "Iran",
+        "South africa",
+        "Vietnam",
+        "Portugal",
+        "Indonesia",
+        "Netherlands",
+        "Sweden",
+        "Turkey",
+        "Kazakhstan",
+        "Namibia",
+        "Moldova",
+        "Ukraine",
+        "Poland",
+        "Nigeria",
+        "Chile",
+        "Venezuela",
+        "Italy",
+        "Bangladesh",
+        "Afghanistan",
+        "Lithuania",
+        "Zimbabwe",
+        "Austria",
+        "Saudi arabia",
+        "Sri lanka",
+        "Spain",
+        "Switzerland",
+        "Philippines",
+        "Japan",
+        "Romania",
+        "New zealand",
+        "Brazil",
+        "Germany",
+        "Greece",
+        "Belarus",
+        "Kyrgyzstan",
+        "Malaysia",
+        "Botswana",
+        "Bulgaria",
+        "Colombia",
+        "Ecuador",
+        "Uzbekistan",
+        "Estonia",
+        "Pakistan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "PaperCut",
+        "SonicWall",
+        "Active Directory",
+        "OpenAI",
+        "Codex",
+        "DeepSeek",
+        "Anthropic"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "java",
+        "rust"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf",
+        "https://github.com/gentilkiwi/mimikatz",
+        "https://github.com/GreyNoise-Intelligence/gn-research-supplemental-data",
+        "https://github.com/SpecterOps/SharpHound"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "ShieldCrash: Testing the Claimed Microsoft Defender Zero-Day",
+      "summary": "ShieldCrash is a publicly released proof of concept from the Nightmare-Eclipse researcher (MSNightmare) that claims to bypass the September 2026 fix for CVE-2026-69414 in the Microsoft Malware Protection Engine, the third consecutive patch bypass against that component. The claimed primitive is an arbitrary file read as SYSTEM, which the researcher later described as a full privilege escalation and invited the community to complete. Howler Cell's reproduction on a fully patched engine build found that the code fails at a timing-sensitive stage, where a Defender-held log file blocks a reparse point operation. Every run still produced an output file that was actually a copy of ntdll.dll placed by the exploit's own setup, so the output does not prove the read succeeded. Howler Cell assesses with high confidence that the released code does not perform an arbitrary file read, but with moderate confidence that the underlying pipeline remains a viable exploitation target. Defenders should verify the Malware Protection Engine version, monitor Cloud Filter registration and MpClient.dll loading outside the Defender process tree, and plan for a likely community-completed follow-up.",
+      "completeness": "Low",
+      "threats": [
+        "Shieldcrash_tool",
+        "Rogueplanet_tool",
+        "Shieldbreak_tool",
+        "Bluehammer_tool",
+        "Nightmare_eclipse_tool",
+        "Undefend_tool",
+        "Redsun_tool",
+        "Yellowkey_vuln",
+        "Greenplasma_vuln",
+        "Miniplasma_vuln",
+        "Greatxml_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Malware Protection Engine"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1"
+      ],
+      "functions": [
+        "Get-MpComputerStatus"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/shieldcrash-microsoft-zero-day"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "[Op Report\\] Hands-on-Keyboard Activity from the DPRK PolinRider Supply Chain Attack",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Polinrider",
+        "Ottercandy",
+        "Winos",
+        "Xfiles_stealer",
+        "Omnistealer",
+        "I2prat",
+        "Bitsadmin_tool"
+      ],
+      "geo": [
+        "Dprk",
+        "North korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "Active Directory",
+        "Node.js",
+        "curl",
+        "Windows Installer",
+        "Windows PowerShell",
+        "macOS",
+        "Linux"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "rust",
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/hok-dprk-polinrider-sep-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
+      "summary": "Cisco Talos reports active exploitation of two Secure Firewall Management Center vulnerabilities: CVE-2026-20079, a critical authentication bypass (CVSS 10.0) allowing unauthenticated root access, and CVE-2026-20316, which lets a remote attacker log in with a low-privileged or static-credential account. Three clusters were observed: UAT-12197 deployed web shells and a JAR command executor to steal credentials, and UAT-11823, linked to Sandworm, installed a Netcat reverse shell and Cyclops Blink malware. UAT-11988 was assessed as a Qilin ransomware operator that performed reconnaissance, tunneled into the network, and deployed ransomware. Talos strongly advises applying Cisco's released hotfixes immediately, ahead of the upcoming hardening release.",
+      "completeness": "Medium",
+      "threats": [
+        "Cyclops_blink",
+        "Netcat_tool",
+        "Lolbin_technique",
+        "Qilin_ransomware",
+        "Credential_harvesting_technique",
+        "Av-killer",
+        "Winrm_tool",
+        "Impacket_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "MySQL",
+        "ADFS"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/fmc-ongoing-exploitation/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2026/09"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Malicious Chrome and Firefox Extensions Steal Crypto Traders’ Session and Wallet Data",
+      "summary": "Malicious Chrome and Firefox extensions, including J7Tracker, VREO, Orbit Tracker, and repackaged GhostApe derivatives, target users of the Axiom Trade and Padre crypto trading platforms. The extensions run inside victims' already-authenticated sessions, collecting Firebase access tokens, cookies, user information, and wallet-related bundle data from localStorage and IndexedDB. Stolen data is Base64-encoded and sent to attacker-controlled Vercel and other hosts, using browser navigation to avoid conventional cross-origin requests. Chrome listings were removed in July 2026 after takedown, but Orbit Tracker remained live on Firefox at publication. Because the activity relies on extension behavior rather than fixed infrastructure, the report says takedowns alone are unlikely to stop it. Defenders are advised to block the extension IDs, revoke affected sessions, hunt for the listed domains, and monitor extensions used with financial services for changes in ownership or behavior.",
+      "completeness": "Medium",
+      "threats": [
+        "J7tracker_stealer",
+        "Orbit",
+        "Ghostape_stealer",
+        "Vamp"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Axiom",
+        "Vercel",
+        "IndexedDB",
+        "Telegram",
+        "Outlook"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/chrome-firefox-crypto-data-theft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Passkey-themed social engineering leads to identity and cloud compromise",
+      "summary": "Microsoft Security Research tracks cloud intrusions since May 2026 in which passkey-themed phone and SMS social engineering leads victims to AiTM phishing or device-code phishing pages that impersonate Microsoft sign-in. Attackers then add their own MFA methods for persistence, enumerate the tenant through Microsoft Graph, and collect files from SharePoint and OneDrive and email via REST APIs at a controlled pace. Microsoft links the activity to actors including Storm-3121 and Storm-3032, which relate to ShinyHunters, Falcon, and Helix extortion. Defenders should correlate unusual sign-ins, authentication method changes, Graph reconnaissance, and bulk downloads, and revoke sessions and remove unauthorized methods for confirmed compromises. Recommended controls include phishing-resistant MFA, blocking device code flow, and verifying helpdesk-initiated resets.",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Device_code_phishing_technique",
+        "Bec_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 1,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Teams",
+        "Graph API",
+        "Node.js",
+        "Chrome",
+        "Outlook",
+        "Microsoft SharePoint",
+        "Microsoft OneDrive",
+        "Microsoft Exchange",
+        "have more..."
+      ],
+      "algorithms": [
+        "hmac-sha1"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Phishing Attacks Serve Browser-in-the-Browser Pages, Rogue RMM Persistence",
+      "completeness": "High",
+      "threats": [
+        "Bitm_technique",
+        "Screenconnect_tool",
+        "Trojan:win32/commando.a"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "curl",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/phishing-bitb-rmm-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-09",
+      "title": "Grand Theft Auto VI Hype Leads to Malware",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Njrat",
+        "Ngrok_tool",
+        "Dcrat",
+        "Mercurial_grabber",
+        "Chaos_ransomware",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "GTA6",
+        "GTA 6",
+        "steam",
+        "Microsoft Edge",
+        "Windows Firewall",
+        "Roblox",
+        "Minecraft",
+        "Discord",
+        "Google Chrome",
+        "Chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "exhibit",
+        "md5"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/fake-gta6-download-malware-analysis"
+      ]
+    }
+  }
+]

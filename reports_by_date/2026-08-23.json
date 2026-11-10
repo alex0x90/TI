@@ -1,0 +1,21 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-23",
+      "title": "PoshC2 Explained: Capabilities, Indicators, and Detection",
+      "summary": "PoshC2 version 6.0 is an open-source command and control framework that is notable for managing compromised hosts. The framework communicates over HTTP(S), so defenders can look for anomalous or repeated URL patterns and unexpected static HTML responses in web traffic. Its self-signed SSL certificate for the HTTP server can serve as another indicator of compromise. The report notes that less sophisticated attackers often use PoshC2 with default settings, making those default certificate attributes and static responses useful detection signs. Without effective detection, the framework can enable prolonged unauthorized access for espionage, data exfiltration, or further malicious activity. The release included an IoC list and a GitHub repository to help teams detect it.",
+      "completeness": "Medium",
+      "threats": [
+        "Poshc2_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 7,
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/poshc2-explained-capabilities-indicators-and-detection/"
+      ]
+    }
+  }
+]

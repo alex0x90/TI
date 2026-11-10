@@ -1,0 +1,733 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "TASK#STOMP: PowerShell Backdoor for Document Theft and Remote Access",
+      "summary": "TASK#STOMP is a VBS-PowerShell backdoor that Securonix Threat Research analyzed, staged under a user-writable folder named to resemble a Windows Defender service. It installs four scheduled tasks with rotating service-like names, a Startup-folder VBS launcher, and fixed-date timestomping on five artifacts. Its two hidden PowerShell modules decode Base64 payloads in memory and compile a C# helper that disables TLS certificate validation. Decoded payloads show automated document theft from fixed drives, continuous file monitoring, Wi-Fi password and clipboard theft, screenshots, and arbitrary remote command execution over two failover C2 servers. Defenders should prioritize correlating the full behavioral chain over individual filenames or task names, and remediation must remove all persistence components together.",
+      "completeness": "Medium",
+      "threats": [
+        "Task_stomp_tool",
+        "Timestomp_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 20,
+      "software": [
+        "Chrome",
+        "Task Scheduler",
+        "Windows Defender",
+        "Windows shell",
+        "NET Framework",
+        "Google Chrome",
+        "Twitter"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "gzip"
+      ],
+      "functions": [
+        "Get-WmiObject",
+        "Add-Type",
+        "Get-Random",
+        "ReadAllText"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic",
+        "vbscript"
+      ],
+      "links": [
+        "https://www.securonix.com/blog/task-stomp-powershell-backdoor-document-theft-remote-access/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "2026 Proxyware Distribution Cases by the Larva-25012 Attacker (DigitalPulse, SOAX, Appsalt, IPRoyal)",
+      "summary": "Larva-25012 is actively distributing Proxyware in the second half of 2026, mainly by abusing DPLoader, a loader already present on infected systems. The DPLoader, mostly in JavaScript form, installs NodeJS, persists via Task Scheduler, and runs PowerShell commands from its C&C server that install Proxyware. Observed Proxyware families include DigitalPulse, SOAX, Appsalt, and IPRoyal, each installed through PowerShell scripts and loaders that pass the attacker's token to SDK DLLs. Earlier campaigns used YouTube download-site pop-ups, a fake Steam tool on GitHub, and cracked software pages. The report notes that Proxyware, like cryptominers, uses victims' resources for attacker profit, and that many Korean systems are being targeted. Defenders should avoid executables from unofficial download sites and remove infections with V3.",
+      "completeness": "Low",
+      "threats": [
+        "Digitalpulse",
+        "Appsalt_tool",
+        "Iproyal_pawns_tool",
+        "Proxyjacking_technique",
+        "Dploader",
+        "Trojan/win.loader.c5946067",
+        "Trojan/win.loader.c5946330",
+        "Trojan/win.loader.c5948027"
+      ],
+      "software": [
+        "Steam",
+        "Task Scheduler",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "liblivenet_init",
+        "appsalt_init",
+        "TaskRegistrationMaintenanceTask"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95515/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "The Closed Quorum: Inside the first reported autonomous AI C2 implant",
+      "summary": "CLOSEDQUORUM is a 64-bit Windows implant written in Go, identified by Cisco Talos through its CAIRN project, that delegates its next action to a panel of up to four commercial LLMs (DeepSeek, Qwen, Mistral, and Google Gemini) via plurality vote. It removes the need for a human operator or dedicated attacker C2 server, with the stated aim of harvesting user credentials and crypto wallets. Its decisions are constrained to a typed JSON schema that routes to capabilities such as LSASS dumping, browser and wallet theft, process injection, and persistence. Stolen data is exfiltrated through an operator-controlled Discord webhook, encrypted with AES-256-GCM. Talos did not observe end-to-end execution because the public build contains placeholder keys, and the report describes this as an early, limited example of autonomous attack-chain automation. Defenders are advised to focus on behavioral signals, such as one process contacting several LLM providers alongside LSASS access or injection.",
+      "completeness": "High",
+      "threats": [
+        "Closedquorum",
+        "Apc_injection_technique",
+        "Process_injection_technique",
+        "Lsass_dumper_tool"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 1,
+      "software": [
+        "DeepSeek",
+        "Qwen",
+        "Mistral",
+        "Discord",
+        "Chrome",
+        "Firefox"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "CLOSEDQUORUM",
+        "interModelDiscussion",
+        "lsassDump",
+        "dumpBrowserCredentials",
+        "extractCryptoWallets",
+        "generateShellcode",
+        "injectProcess",
+        "earlyBirdInject",
+        "establishPersistence",
+        "gatherSystemInfo",
+        "have more..."
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
+        "https://github.com/Cisco-Talos/Cognitive-Artifact-Intelligence-Research-Network"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Key Findings#",
+      "summary": "The Iranopasmigirim campaign, observed June 9 to 19, 2026, targeted Iranian dissidents abroad using a forged invitation to a Rise Iran event linked to Prince Reza Pahlavi. It delivered ParsaStealer, a Rust infostealer that evolved from an earlier Go version and was sideloaded through a legitimate, signed Microsoft RuntimeBroker.exe. The stealer harvested credentials, crypto wallets, SSH keys and other data, and exfiltrated it to Telegram. The operator's OpSec failures exposed development details, but the report does not attribute the activity to a named group. Defenders should monitor LNK files spawning cmd.exe or powershell.exe, sideloadable DLLs in user-writable directories, and connections to tmpfiles.org, curl-t.com and api.telegram.org.",
+      "completeness": "Low",
+      "threats": [
+        "Parsastealer"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://labs.infoguard.ch/posts/iranopasmigitim_part_one/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Peer2Profit Turns Employee Devices Into AstroProxy Nodes That Can Expose Internal Networks",
+      "summary": "PEER2PROFIT is a bandwidth-sharing application that turns employee or personal devices into residential proxy exit nodes monetized through ASTROPROXY. Controlled testing confirmed that a clean residential device enrolled in PEER2PROFIT appeared in ASTROPROXY's proxy pool about 10 minutes later. Because it is marketed as a passive-income service rather than malware, it can be installed on work endpoints, personal devices on office Wi-Fi, or home systems on corporate VPNs. Researchers also found that ASTROPROXY's block on direct internal IP requests could be bypassed using a domain resolving to a private address, allowing access to a router interface on a node. Defenders should restrict bandwidth-sharing software, monitor persistent outbound connections, review split-tunnel VPN policies, and use active proxy-node intelligence.",
+      "completeness": "Medium",
+      "threats": [
+        "Peer2profit_tool",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Ukraine",
+        "Portugal",
+        "Kazakhstan",
+        "Usa",
+        "France",
+        "Vietnam",
+        "Brazil"
+      ],
+      "software": [
+        "AstroProxy",
+        "Telegram"
+      ],
+      "links": [
+        "https://gbhackers.com/peer2profit-proxy-threat/#new_tab?utm_source=rss&utm_medium=rss&utm_campaign=peer2profit-turns-employee-devices-into-astroproxy-nodes-that-can-expose-internal-networks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "The Tale of Two INC Ransom Notes",
+      "completeness": "Low",
+      "threats": [
+        "Inc_ransomware",
+        "Byovd_technique",
+        "Anydesk_tool",
+        "Impacket_tool",
+        "Av-killer"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/two-inc-ransom-notes"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Exvicy: A copycat of the ErrTraffic malware distribution framework",
+      "summary": "Sekoia researchers identified Exvicy, a ClickFix malware distribution framework sold as Malware-as-a-Service on the Russian-speaking forum Exploit.IN by a actor using the handle @Exvicy. The framework delivers ClickFix lures impersonating Cloudflare Turnstile verification challenges, which instruct victims to paste and run a PowerShell command via the Windows Run dialog. Operators inject obfuscated JavaScript into compromised WordPress sites to serve these lures. The researchers assess with high confidence that Exvicy is a copycat of the competing ErrTraffic framework, because its client-side JavaScript reuses ErrTraffic code nearly verbatim. Exvicy's main advertised difference is the Win+R shortcut instead of Win+X. Defenders should note that telemetry showed the framework active across multiple Sekoia customer environments.",
+      "completeness": "Medium",
+      "threats": [
+        "Exvicy_tool",
+        "Errtraffic",
+        "Clickfix_technique",
+        "Putty_tool",
+        "Clearfake",
+        "Kongtuke",
+        "Iclickfix_tool",
+        "Dead_drop_technique",
+        "Etherhiding_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare Turnstile",
+        "WordPress",
+        "Telegram",
+        "Cloudflare R2",
+        "LenAI",
+        "ChatGPT"
+      ],
+      "algorithms": [
+        "base64",
+        "fnv-1a",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.sekoia.com/blog/exvicy-a-copycat-of-the-errtraffic-malware-distribution-framework",
+        "https://github.com/SEKOIA-IO/Community/blob/main/IOCs/exvicy/exvicy\\_iocs\\_20260921.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+      "summary": "EvilTokens is a phishing-as-a-service platform, tracked by Microsoft as Storm-2992, that emerged in February 2026 and abuses the OAuth device code flow to steal tokens and compromise Microsoft 365 accounts. The platform uses AI to tailor lures and to sift compromised mailboxes for high-value targets, supporting business email compromise campaigns that compromised more than 12,000 inboxes across over 10,000 organizations. Victims receive lures with 44 themes, delivered through multi-stage redirects on legitimate cloud platforms to evade email gateways. After a user enters a device code on the real Microsoft sign-in page, attackers gain tokens used for mail exfiltration, inbox rules, and device registration for persistence. Microsoft recommends blocking device code flow where possible, enforcing phishing-resistant MFA, and disabling compromised accounts rather than relying on session revocation alone. Microsoft also disrupted the service's infrastructure with partners.",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Eviltokens_tool",
+        "Aitm_technique",
+        "Bec_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "France",
+        "United kingdom",
+        "Australia",
+        "United states",
+        "India",
+        "Canada"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Node.js",
+        "Telegram",
+        "Office 365",
+        "vercel",
+        "Microsoft Office",
+        "Microsoft Entra",
+        "Graph API"
+      ],
+      "functions": [
+        "checkStatus"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Graphalgo campaign spreads to Terraform providers and Go Modules",
+      "summary": "The Graphalgo campaign, a Go port of malware first linked to NPM packages, has spread to two Terraform providers and two Go Modules. The Terraform providers, gocommunity-io/dockerd and kreuzwenker/docker, which is a typosquat of a popular Terraform provider, stay inert unless specific runtime conditions are met, then decrypt and run a second-stage payload via go run. The second-stage RAT uses Slack workspaces and an Ethereum smart contract on a testnet as dual command-and-control channels. The threat actor also created fake Go package ecosystem websites to lend legitimacy to its packages and backdated forged commits to make a module appear older. Defenders should treat any machine where these packages were installed as fully compromised, rotate credentials (prioritizing cloud and infrastructure credentials for Terraform installs), and reimage the host.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Slack",
+        "Telegram",
+        "Linux",
+        "macOS"
+      ],
+      "crypto": [
+        "ethereum",
+        "arbitrum"
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "_ddb43801486d",
+        "setCPubKey"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/graphalgo-terraform-go-modules"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Spraying in the Andes: TeamFiltration Returns to Exploit Forgotten Service Accounts",
+      "summary": "Proofpoint researchers observed the UNK_CondorFiltration campaign, which used the TeamFiltration offensive framework to password-spray over 5,700 accounts across 28 Microsoft 365 tenants, concentrated on Chilean organizations. The attacker compromised 7 accounts, all unmanaged functional or service accounts with no prior legitimate login history, likely protected by default passwords that were never rotated and lacked MFA. Personal employee accounts yielded no compromises. In one case study, the attacker moved from the spray infrastructure to a German VPN node and probed the corporate VPN, Azure Portal, and SharePoint. The main takeaway for defenders is to inventory and secure forgotten service accounts, which are a structurally unprotected attack surface.",
+      "completeness": "Low",
+      "threats": [
+        "Teamfiltration_tool",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "German",
+        "Latin america",
+        "Chilean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SharePoint",
+        "Graph API",
+        "Microsoft Teams",
+        "Microsoft Office",
+        "Outlook"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/Spraying-in-the-Andes-TeamFiltration-Returns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "From Payment Plan to Ransomware - Inside a Global Group Attack",
+      "summary": "Cofense's Phishing Defense Center investigated Global Group, a financially motivated Ransomware-as-a-Service operation that rebranded the legacy Black Lock and Mamona ransomware families. The group partners with Initial Access Brokers who sell pre-compromised corporate credentials, helping affiliates bypass perimeter defenses. The attack began with a phishing email posing as a suggested payment plan, carrying a PDF lure that led victims to download a malicious ISO containing an executable that loaded a legitimate WinMerge process. That process retrieved an encryptor that scanned drives, network shares, and databases, disabled security processes, and encrypted data. The group uses double extortion, threatening to publish stolen data, and frames ransom payments as legitimate business expenses. Targeted organizations are large enterprises across industries, and defenders should proactively hunt for entry points in their security infrastructure.",
+      "completeness": "Low",
+      "threats": [
+        "Black_lock",
+        "Mamona"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://cofense.com/blog/from-payment-plan-to-ransomware-inside-a-global-group-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Malicious npm campaign targets developers integrating Twilio",
+      "summary": "The npm package tw-pkgprobe-7731 posed as an authorized Twilio bug-bounty security probe while attempting to steal sensitive data from developers. In some versions, it checked for Twilio developer environments and exfiltrated environment variables, including Twilio ACCOUNT_SID and AUTH_TOKEN credentials, via webhook. Later versions alternated between basic probing, OSINT-style host probing, and an attempt to fetch AWS metadata. The package violated Twilio's bug bounty rules, including its naming conventions and account requirements, and was removed after ReversingLabs notified npm. The campaign showed little obfuscation or typosquatting, suggesting a less sophisticated actor. Developers should secure CI/CD pipelines and vet every package they use.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "litellm",
+        "sudo"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/malicious-npm-campaign-twilio"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "CSuite Targets US and EU Organizations with Device-Code Phishing and Remote Access",
+      "summary": "CSuite is a financially motivated phishing and remote-access operation run as an infrastructure supplier with affiliates, active from February to September 2026. It lures victims with fake Adobe, DocuSign, Zoom, Dropbox and Microsoft 365 pages, then either installs legitimate remote-management agents such as ScreenConnect and Action1 or steals credentials and Microsoft 365 sessions, including through device-code phishing. The report says 60% of identified victim organizations were US-based, with technology, manufacturing, government and consulting sectors most exposed. Its lure pages use anti-analysis checks, including bot and security-vendor filters and traps that stall sandboxes. Defenders should correlate identity activity, such as unexpected Microsoft 365 sessions and device-code logins, with new management-agent installations, since the two arms of the operation share infrastructure. The report recommends revoking sessions and tokens and removing unauthorized management agents when compromise is suspected.",
+      "completeness": "High",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Csuite",
+        "Pdq_connect_tool",
+        "Screenconnect_tool",
+        "Action1_tool",
+        "Atera_tool",
+        "Syncro_tool",
+        "Chameleon",
+        "Cloaking_technique",
+        "Barracuda_tool",
+        "Centrastage_tool",
+        "Fleetdeck_tool",
+        "Simplehelp_tool",
+        "Ultra_vnc_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Portuguese",
+        "North korea",
+        "Russia",
+        "Canada",
+        "Syria",
+        "Iran",
+        "Australian",
+        "Philippines",
+        "Australia",
+        "French",
+        "Italian",
+        "United kingdom",
+        "China",
+        "United states"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 27,
+      "software": [
+        "Microsoft 365",
+        "DocuSign",
+        "Zoom",
+        "SharePoint",
+        "Cloudflare",
+        "Dropbox",
+        "Telegram",
+        "PDF Viewer",
+        "Adobe Acrobat",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "functions": [
+        "getVisitorInfo",
+        "callsactivateTrap",
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/csuite-attack-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "PamStealer adapts again: a move to Swift with a server-side decryption chain",
+      "summary": "PamStealer's newest variant, a third known in the family, is a macOS infostealer distributed through a fake crypto wallet installer called Wavel, according to Jamf Threat Labs. Its second stage was rewritten from Rust to Swift, while keeping PAM-based credential validation used to verify entered passwords. The dropper uses a purpose-built utility, pkgunpack, that performs a live X25519 key exchange with the server, so the payload cannot be decrypted without server cooperation. The malware targets seventeen browsers, keychain items, wallets, and user files, and it also exfiltrates the user's profile photo. It establishes multiple redundant persistence mechanisms that make removal harder. Jamf recommends that defenders use threat prevention and web protection controls to block such threats.",
+      "completeness": "High",
+      "threats": [
+        "Pamstealer",
+        "Typosquatting_technique",
+        "Launchagents_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "Gatekeeper",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Edge",
+        "Chromium",
+        "Vivaldi",
+        "Opera",
+        "Firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "curve25519",
+        "base64",
+        "zip",
+        "aes-gcm",
+        "curve25519-donna",
+        "sha256",
+        "rc4",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "restore_app"
+      ],
+      "languages": [
+        "rust",
+        "applescript",
+        "objective_c",
+        "swift"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/pamstealer-wavel-macos-infostealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Inside a Malicious, Stealthy WordPress Must Use Plugin",
+      "completeness": "Low",
+      "threats": [
+        "Etherhiding_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "cURL",
+        "phpMyAdmin"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "add_action",
+        "get_option",
+        "dc9fwkk9hi2kpyfq",
+        "ppv3f3iem95sraou",
+        "r_fixeq0d4tjktrcok9",
+        "touch",
+        "a7rn6y18yhlfjea",
+        "htcmmso1q879ci0kyj",
+        "x5l7ohk3i20j63",
+        "i9c0lmgfm065jbipvz5a2",
+        "have more..."
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/09/inside-a-malicious-stealthy-wordpress-must-use-plugin/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "Novel Malware Built to Survive the Analyst",
+      "summary": "This report analyzes a multi-stage intrusion chain following SEO poisoning, centered on the PavokwiLoader, a C++ loader whose main function is heavily obfuscated with mixed boolean arithmetic and hashed API resolution. The loader checks for debuggers and virtual machines, then injects a payload into a suspended browser or Windows utility process, using ZwCreateUserProcess and thread context changes rather than process hollowing. The final stage provides hidden browser remote control (HVNC), a CDP-based browser profile clone that harvests browser data, and a WebSocket C2 with a DNS-over-HTTPS fallback. Separate samples in the chain include a Python-based installer that drops a multi-stage loader leading to a Cobalt Strike beacon, a PyInstaller-packaged remote agent, and a C++ RMM-style backdoor named rmm.exe. Defenders should hunt for the persistence artifacts, the PROCESS_CREATE_PROCESS access against explorer.exe, and the named-pipe naming patterns.",
+      "completeness": "High",
+      "threats": [
+        "Trurat",
+        "Pavokwiloader",
+        "Seo_poisoning_technique",
+        "Cobalt_strike_tool",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Hvnc_tool",
+        "Uac_bypass_technique",
+        "Reflectiveloader",
+        "Dagon_locker",
+        "Icedid",
+        "Qakbot",
+        "Nssm_tool",
+        "Shadow_hvnc",
+        "Shadow_loader"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "qemu",
+        "Google Chrome",
+        "chrome",
+        "Microsoft Edge",
+        "BraveSoftware",
+        "Brave-Browser",
+        "vivaldi",
+        "YandexBrowser",
+        "opera",
+        "Opera GX",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "fnv-1a",
+        "bcrypt",
+        "curve25519",
+        "hmac",
+        "sha256",
+        "zip",
+        "aes-gcm",
+        "xor",
+        "chacha20",
+        "3des"
+      ],
+      "functions": [
+        "GDI",
+        "DPAPI",
+        "chr",
+        "IsUserAnAdmin",
+        "REST",
+        "GetStdHandle",
+        "SetConsoleCtrlHandler",
+        "WriteConsoleW"
+      ],
+      "languages": [
+        "python",
+        "pascal",
+        "powershell",
+        "javascript",
+        "cpython"
+      ],
+      "links": [
+        "https://malbearlabs.com/posts/novel-malware-built-to-survive-the-analyst",
+        "https://github.com/pandare9x/Yara-Rules/blob/main/SEOPoison/PavokwiLoader.yar",
+        "https://github.com/pandare9x/Yara-Rules/blob/main/SEOPoison/rmmcrat.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "An Italian Phishing Campaign Delivering an iOS Exploit Chain",
+      "summary": "Italian phishing pages impersonating SEND, the pagoPA digital notification service, lured users into a site outside official infrastructure. Behind the page, a hidden iframe loaded a modular loader that selected a WebKit exploit chain for iOS versions from 13 through 17.2.1. The chain attempted to fingerprint the device, escape the Safari sandbox, and collect data such as SMS, contacts, Keychain and photos, though the kit's reliability is unverified. The loader's code matches a public research toolkit called Coruna Pro V2, but the report found insufficient evidence to attribute the campaign to a known group. Up-to-date iOS devices fall outside the kit's declared scope, so defenders should keep iOS updated, consider Lockdown Mode, and use only official notification channels.",
+      "completeness": "Medium",
+      "threats": [
+        "Coruna_tool"
+      ],
+      "geo": [
+        "Italian",
+        "Los angeles",
+        "Italy"
+      ],
+      "software": [
+        "WhatsApp",
+        "Nginx",
+        "tsApp acco",
+        "FastAPI",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "go"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.d3lab.net/an-italian-phishing-campaign-delivering-an-ios-exploit-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-22",
+      "title": "DarkMe Email Campaign Broadens Targeting For APT RAT",
+      "completeness": "High",
+      "threats": [
+        "Darkme",
+        "Runpe_tool",
+        "Process_hollowing_technique",
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Italian",
+        "Spain",
+        "Spanish"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "WinRAR",
+        "Windows Defender",
+        "Windows Defender SmartScreen",
+        "SonicWall",
+        "Windows Installer",
+        "Aegis",
+        "Windows Registry",
+        "ledger live",
+        "keepass",
+        "bitwarden",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "trezor"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "rc4",
+        "sha256"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/darkme-rat-abandons-exploits"
+      ]
+    }
+  }
+]

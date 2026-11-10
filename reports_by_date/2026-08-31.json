@@ -1,0 +1,536 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "ValleyRAT masquerading as adware",
+      "summary": "ValleyRAT, a backdoor associated with the Silver Fox group, was distributed disguised as adware, with a malicious installer that displayed decoy installs such as DingTalk or Google Chrome while deploying a modified QN Wallpaper tool. The attackers abused DLL sideloading through a malicious libcef.dll to run the backdoor under the guise of a signed adware process. The backdoor can log keystrokes, capture clipboard contents and screenshots, and download additional modules, and it disables Windows Defender and attempts to gain administrator privileges. Over 2026, more than 100,000 detections affected over 1,500 users, mainly in China and India. Defenders should be wary of adware from affiliate networks, enforce policies on third-party software, and avoid adding questionable software to security exclusion lists.",
+      "completeness": "Low",
+      "threats": [
+        "Valleyrat",
+        "Dll_sideloading_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "China",
+        "India",
+        "Chinese"
+      ],
+      "software": [
+        "DingTalk",
+        "Google Chrome",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "md5",
+        "aes"
+      ],
+      "links": [
+        "https://securelist.com/valleyrat-backdoor-adware/121175/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "Aurora ransomware targets ESXi, abuses Cursor Agent for exploitation",
+      "summary": "Aurora ransomware, active since about April 2026 and operating a data leak site, has been observed with a Linux variant capable of targeting ESXi environments. The encryptor, run with an ESXi mode, force-kills running virtual machines to release locks on disk files, then encrypts VM files while skipping system volumes so the hypervisor stays bootable. Gambit also observed an Aurora operator using Cursor Agent running Claude Sonnet to assist with hands-on exploitation across ten organisations between 8 April and 21 May 2026. The agent performed tasks such as network scanning, domain enumeration, NTLM relay attempts, and Certipy certificate attacks, often after multiple refinements. A second, medium-confidence cluster spanned eight victims in several countries and used different tradecraft, including DCSync and s5cmd exfiltration.",
+      "completeness": "Medium",
+      "threats": [
+        "Aurora_ransomware",
+        "Netexec_tool",
+        "Proxychains_tool",
+        "Nmap_tool",
+        "Bloodhound_tool",
+        "Petitpotam_vuln",
+        "Printerbug_tool",
+        "Impacket_tool",
+        "Ntlmrelayx_tool",
+        "Certipy_tool",
+        "Dcsync_technique",
+        "S5cmd_tool",
+        "Godpotato_tool"
+      ],
+      "geo": [
+        "Israel",
+        "United states",
+        "Argentina",
+        "Spain",
+        "Germany",
+        "Austria"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "Linux",
+        "Claude",
+        "Cloudflare R2",
+        "esxcli",
+        "tor browser"
+      ],
+      "algorithms": [
+        "chacha20",
+        "rsa-4096",
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "a fake resume invoked China’s defence-tech elite, then installed VShell",
+      "summary": "A fake Chinese-language graduate-school resume, disguised as a Beijing Institute of Technology student's application, was an executable that delivered a Go loader, a SNOWLIGHT stager and the VShell remote-access trojan. The loader checks for sandboxes and CPU count, opens a genuine DOCX decoy in Word, and runs shellcode in memory to avoid writing the payload to disk. VShell gives an operator interactive shell, file, screen and tunneling access, and the researcher observed successful registration and C2 health traffic but no operator commands. The lure appears aimed at a mainland Chinese academic recipient, such as a professor in power systems or applied AI, at moderate confidence. The actor remains unattributed, since SNOWLIGHT is a generic VShell panel stager used by many operators. Defenders should watch for resume-named executables launching Word, executable memory allocation after large raw TCP receives, and the SNOWLIGHT check-in pattern.",
+      "completeness": "High",
+      "threats": [
+        "Vshell",
+        "Snowlight",
+        "Goloader",
+        "Antiweibu_technique",
+        "Voidmaw_tool",
+        "React2shell_vuln"
+      ],
+      "geo": [
+        "China",
+        "Macau",
+        "Hong kong",
+        "Chinese",
+        "Singapore"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Internet Explorer",
+        "Windows Defender",
+        "Linux",
+        "nginx"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "aes-cbc",
+        "xor",
+        "md5",
+        "aes-256-gcm",
+        "aes-gcm",
+        "sha256"
+      ],
+      "functions": [
+        "Talos"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.himanshuanand.com/2026/08/a-fake-resume-invoked-chinas-defence-tech-elite-then-installed-vshell/",
+        "https://github.com/Esonhugh/How-AI-Kills-the-VShell/blob/Skyworship/Killing\\_that\\_VShell.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "Operation RepoGhost: Exposing a Russian-Linked Malware Campaign Hiding in GitHub’s Open-Source Ecosystem",
+      "summary": "Operation RepoGhost is a campaign that uses 52 malicious GitHub repositories disguised as legitimate AI, cybersecurity, cryptocurrency, and vulnerability research tools to distribute malware since November 2025. The campaign evolved from the CountLoader infostealer on Windows, to the Nova macOS infostealer, and finally to a custom Go-based infostealer that injects an obfuscated .NET assembly into memory. Victims are infected simply by running the script embedded in a fake tool or proof-of-concept exploit, with no extra download or prompt required. The infostealer targets browser sessions and credentials, Discord, Telegram and Steam sessions, and cryptocurrency wallets. It exits without acting on systems reporting the ru-RU locale, and the researchers assess with moderate to high confidence that Russian-linked actors operate it. Defenders should treat public repositories, including those with high star counts, as untrusted software sources.",
+      "completeness": "High",
+      "threats": [
+        "Nova_stealer",
+        "Countloader",
+        "Clickfix_technique",
+        "Lumma_stealer",
+        "Smartloader",
+        "Seo_poisoning_technique",
+        "React2shell_vuln"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Discord",
+        "Telegram",
+        "Steam",
+        "Zoom",
+        "Claude",
+        "Microsoft App-V",
+        "Pastebin",
+        "NET Reactor",
+        "OpenAI",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://infosecwriteups.com/operation-repoghost-exposing-a-russian-linked-malware-campaign-hiding-in-githubs-open-source-85a5dd6fa01e"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "Still Circling: Inside the Operator Behind Blind Eagle's GitHub Loader",
+      "summary": "Blind Eagle's GitHub loader was traced to an operator whose GitHub commit metadata exposed an email address that appeared in a stealer log collection. Independent intelligence showed that the address was tied to a workstation infected by an unrelated commodity infostealer. The recovered files revealed RAT build folders, Colombian government and traffic-violation phishing templates, SendBlaster bulk-mail testing, and purchased or researched crypters. The loader chain uses trusted platforms such as GitHub, Bitbucket, and AWS S3 as bare-file hosts, and it ends with InstallUtil.exe. Defenders should watch for password-protected archives in email and for abuse of living-off-the-land binaries.",
+      "completeness": "High",
+      "threats": [
+        "Remcos_rat",
+        "Fud-crypter",
+        "Cassandra_crypter_tool",
+        "Polycrypt",
+        "Asyncrat",
+        "Process_injection_technique",
+        "Lolbin_technique",
+        "Dcrat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Colombia",
+        "Colombian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 12,
+      "software": [
+        "Telegram",
+        "HubSpot",
+        "Discord",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell",
+        "visual_basic",
+        "autoit"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/still-circling-inside-the-operator-behind-blind-eagles-github-loader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "The Scan Factory: Inside China’s QTFY and the Business of Breaking In",
+      "summary": "QTFY, a China-linked actor attributed to Nanjing Xinjiuwei Network Technology (XJW), operates more like a scanning-and-exploitation vendor serving the Ministry of State Security enabler ecosystem than a traditional hacking crew. Its QScan platform processed over two million scanning and exploitation tasks in one day in 2024, using a database of more than 200 Python exploits. A companion network, QTRouter, hides attack traffic behind commercial residential proxies, cloud infrastructure, and compromised IoT devices, alongside botnet platforms that enlist devices for proxying and DDoS. The FBI, NSA, and Cyber National Mission Force attribute 14 CVEs to the group over eight years, targeting sectors including defense, energy, water, government, and higher education. Defenders should treat any internet-facing exposure as in scope, patch edge devices quickly, and add behavioral detection because IOC blocklists alone will miss QTRouter traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Qscan_tool",
+        "Residential_proxy_technique",
+        "Qtrouter",
+        "Supply_chain_technique",
+        "Log4shell_vuln",
+        "Proxylogon_exploit",
+        "Beyondtrust_tool",
+        "Qtbotnet"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Alibaba Cloud",
+        "Ivanti",
+        "RabbitMQ",
+        "Redis",
+        "OpenWrt"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.safebreach.com/blog/qtfy-scan-factory-china-hacking-group/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "13 Malicious Packagist Themes Deliver iOS Spyware That Steals Crypto Wallet Seeds",
+      "summary": "Thirteen malicious Composer theme packages on Packagist, spread across five vendor namespaces, inject JavaScript into Vietnamese movie and comic streaming sites that install them. For mobile visitors, the code runs a gambling-redirect and ad-fraud chain. On unpatched iPhones (iOS 18.6.x and earlier), it runs a WebKit-to-kernel exploit chain that installs spyware, using two WebKit CVEs and a kernel escape that Apple has already fixed in iOS 26.1. The payload collects device data and, after a redeployment in August 2026, cryptocurrency wallet seeds. Defenders should treat any package from the listed vendors as untrusted, remove affected themes, and prioritize updating iPhones.",
+      "completeness": "High",
+      "threats": [
+        "Ioncube_tool",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Hong kong",
+        "Pacific",
+        "Chinese",
+        "United states",
+        "Turkish",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 10,
+      "software": [
+        "ophimcms",
+        "macOS",
+        "KKPhim",
+        "Laravel",
+        "Android",
+        "CryptoJS",
+        "Polyfill"
+      ],
+      "wallets": [
+        "bitkeep_wallet",
+        "tonkeeper"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "sha256",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "jquery_beauty"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/packagist-themes-ios-spyware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "Breaking the Seal: Static Deobfuscation of JSCeal’s Compiled V8 Bytecode",
+      "summary": "Check Point Research describes JSCeal, a cryptocurrency-focused stealer delivered as compiled V8 bytecode (.jsc) and run by a bundled Node.js runtime, with campaigns tracked since early 2025. The payloads are protected with javascript-obfuscator, using RC4-protected strings, control-flow flattening, and proxy functions, which makes them hard to analyze with standard tools. The researchers released a static deobfuscation pipeline built on View8 that recovers readable pseudocode without executing the malware. Using it, they found capabilities including browser and credential theft, cryptocurrency platform targeting, Telegram session theft, keylogging, screenshots, and a local HTTPS interception proxy. Later samples added AES-256-CBC encryption whose key comes from earlier deployment stages, and macOS targeting.",
+      "completeness": "Low",
+      "threats": [
+        "Jsceal",
+        "Mitm_technique",
+        "Weevilproxy"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Node.js",
+        "Linux",
+        "Anthropic",
+        "OpenAI",
+        "Ollama",
+        "Claude",
+        "GPT-5",
+        "Windows certificate",
+        "zoom",
+        "have more..."
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin"
+      ],
+      "algorithms": [
+        "base64",
+        "rc4",
+        "zip",
+        "md5",
+        "aes",
+        "hmac",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "r1",
+        "r0",
+        "func_KV_0x18c3e8c9a1c1",
+        "func_J_0x16abcdb59891",
+        "global_n2",
+        "global_d7e",
+        "global_M7e",
+        "func_unknown_0x93e23cef9f9",
+        "thunk",
+        "func_unknown_0x217bb6195779",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/breaking-the-seal-static-deobfuscation-of-jsceals-compiled-v8-bytecode/",
+        "https://github.com/javascript-obfuscator/javascript-obfuscator",
+        "https://github.com/hasherezade/jsc\\_deobfuscator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams",
+      "summary": "Spring Ring is a coordinated voice phishing operation that, between January and April 2026, used external Microsoft Teams accounts to pose as IT help desk staff and approached more than 150 employees across at least 10 companies. After opening a chat, attackers called victims and coerced them into running remote monitoring and management tools or custom malware. Campaign A delivered an obfuscated PowerShell RAT via RMM software and was blocked by endpoint protections, while Campaign B used a cloud-hosted executable to attempt a PetitPotam NTLM relay against a domain controller, which was stopped by managed detection and response. The report stresses that no Microsoft product vulnerability was found, and that identity is now a primary attack surface. Defenders should watch for unsolicited 1:1 chats from external tenants followed quickly by audio calls, and for unexpected RMM tool use by users who do not need remote support.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Petitpotam_vuln",
+        "Microsoft_quick_assist_tool",
+        "Bloat_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 5,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Voice",
+        "Protocol"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/",
+        "https://github.com/topotam/PetitPotam"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "SLEEPWALKER: Passive Backdoor Awakens Only When Attackers Call",
+      "summary": "SLEEPWALKER is a novel passive Windows backdoor that is designed for DLL side-loading into the ESET Management Agent process ERAAgent.exe. It does not beacon or contain fixed C2 infrastructure, and instead stays dormant until it receives a specially crafted network trigger packet. Once triggered, it decrypts and runs attacker-supplied bytecode from a custom 23-instruction command language. That language supports scheduling, multiple communications channels including VMCI, staged payloads, lateral movement, and in-memory code execution. The researcher assesses it as a targeted, well-resourced operation, but no actor, campaign, or victim has been identified. Defenders should look for unsigned dpapi.dll files beside ERAAgent.exe and for anomalous anonymous SMB or named-pipe activity.",
+      "completeness": "Low",
+      "threats": [
+        "Sleepwalker",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows security"
+      ],
+      "algorithms": [
+        "aes",
+        "crc-32",
+        "base32",
+        "sha256",
+        "aes-256"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/sleepwalker-passive-backdoor-awakens-only-when-attackers-call"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-31",
+      "title": "RevStealer: Silence Is Its Greatest Weapon",
+      "summary": "RevStealer is a Windows infostealer delivered inside a trojanized Electron app, such as a fake \"Claude Opus 5 Free Desktop\" lure distributed through GitHub repositories and game-cheat sites. The Electron loader checks host resources, attempts to add the AppData folder to Microsoft Defender exclusions, and launches a decrypted native payload hidden. The native payload hides its APIs and strings, uses indirect system calls, and streams stolen data without building an archive on disk. It targets browser data, password managers, cryptocurrency wallets, VPN and remote-access credentials, and messaging apps. Its command-and-control fallback is read from a Polygon smart contract, so the operator can rotate infrastructure without rebuilding the malware.",
+      "completeness": "High",
+      "threats": [
+        "Revstealer",
+        "Nwhstealer",
+        "Sakura_dropper",
+        "Asyncrat",
+        "Remcos_rat",
+        "Lumma_stealer",
+        "Megadumper_tool",
+        "Process_hacker_tool",
+        "Procmon_tool",
+        "Sandbox_evasion_technique",
+        "Antidebugging_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russian",
+        "New york",
+        "Ukrainian",
+        "Belarusian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Electron",
+        "Claude Opus 5",
+        "Anthropic",
+        "Microsoft Defender",
+        "Claude",
+        "macOS",
+        "Linux",
+        "Claude Fable 5",
+        "Opus 5",
+        "Fable 5",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "coinomi",
+        "daedalus",
+        "exodus_wallet",
+        "guarda_wallet",
+        "mycrypto",
+        "mymonero",
+        "wassabi",
+        "zcash",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "dogecoin",
+        "litecoin",
+        "monero",
+        "namecoin",
+        "ravencoin"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64",
+        "aes-256-cbc",
+        "aes-128-cbc",
+        "aes-cbc",
+        "deflate",
+        "zip"
+      ],
+      "functions": [
+        "checkSystem",
+        "Get-CimInstance",
+        "Get-WmiObject",
+        "unref",
+        "Indirectly"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://engage.morphisec.com/hubfs/2026-PDFs/RevStealer_ThreatAnalysis_5.pdf"
+      ]
+    }
+  }
+]

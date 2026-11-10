@@ -1,0 +1,577 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "Glitch SPY: An Emerging Android RAT Distributed Through a Fake Polish Rental App",
+      "summary": "Glitch SPY is an emerging Android RAT and builder platform, identified through branding on an exposed C&C admin panel. It is distributed through a fake Polish apartment rental website that lures users into installing an APK outside official app stores, with the activity appearing Poland-focused. The downloaded dropper, identified as the Brokewell Android Loader, requests unknown-source installation before deploying the payload, which then abuses Accessibility Service to automate permission grants. The malware supports over 70 commands covering screen streaming, SMS, keylogging, file encryption, and a crypto-clipper that swaps copied wallet addresses. Its hidden remote-browser capability lets attackers conduct account takeover from the victim's own device and IP. Defenders should treat unknown-source installs and Accessibility requests from non-trusted apps as suspicious.",
+      "completeness": "Medium",
+      "threats": [
+        "Glitch_spy",
+        "Brokewell"
+      ],
+      "geo": [
+        "Poland",
+        "Polish"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 19,
+      "software": [
+        "Android",
+        "Telegram",
+        "Google Play"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "arbitrum"
+      ],
+      "algorithms": [
+        "zip",
+        "aes"
+      ],
+      "links": [
+        "https://cyble.com/blog/glitch-spy-rat-distributed-via-fake-polish-app/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "RustDuck: An In-Depth Analysis of a Two-Stage Botnet",
+      "summary": "RustDuck is a newly observed botnet family, first detected by XLAB in February 2026, that uses a two-stage Loader and Core architecture and is primarily used to run large-scale DDoS attacks. The family is transitioning from C to Rust and has produced multiple variants with rapidly iterating encryption and anti-analysis techniques. It spreads through weak Telnet and SSH passwords and through RCE and device vulnerabilities affecting IoT devices, web applications, and enterprise infrastructure. The Core includes a weighted anti-debugging and sandbox detection system that exits when the risk score is exceeded. Defenders should note its combined \"weak passwords plus IoT vulnerabilities plus Web RCE\" propagation approach and its use of encrypted, Noise-based C2 communications.",
+      "completeness": "Medium",
+      "threats": [
+        "Rustduck",
+        "Mitm_technique"
+      ],
+      "software": [
+        "Android",
+        "ThinkPHP",
+        "Jenkins",
+        "virtualbox"
+      ],
+      "algorithms": [
+        "exhibit",
+        "chacha20",
+        "aes-gcm",
+        "curve25519",
+        "xor",
+        "sha1",
+        "chacha20-poly1305",
+        "sha256",
+        "ecdh"
+      ],
+      "functions": [
+        "check_timing_safetly",
+        "check_network_blackhole"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/rustduck-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "A Djinn in the Machine: TaskWeaver’s Node.js Intrusion Chain",
+      "summary": "Blackpoint's Adversary Pursuit Group reported an intrusion beginning with exploitation of CVE-2026-48558, an authentication bypass in the OpenID Connect flow of SimpleHelp RMM software that gave the attacker a technician session without valid credentials. The actor used SimpleHelp's file transfer and command execution to deploy TaskWeaver, a heavily obfuscated Node.js loader disguised as jquery.js that runs a single \"deliver\" task with full Node.js access. TaskWeaver then delivered Djinn Stealer, a cross-platform credential stealer targeting cloud, source control, package registry, SSH, AI development tool, and cryptocurrency wallet data. Stolen AI assistant tokens can grant access to repositories, databases, and cloud accounts beyond the AI service itself. The report stresses that MSPs should patch and restrict SimpleHelp, rotate exposed secrets, treat RMM platforms as privileged infrastructure, and treat any credentials on affected systems as potentially exposed.",
+      "completeness": "High",
+      "threats": [
+        "Djinn",
+        "Taskweaver_tool",
+        "Simplehelp_tool",
+        "Supply_chain_technique",
+        "Dev_tunnels_tool",
+        "Deno_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "ode.js In",
+        "Node.js",
+        "macOS",
+        "Linux",
+        "trycloudflare",
+        "Electron",
+        "Okta",
+        "Supabase",
+        "HashiCorp Vault",
+        "Docker",
+        "have more..."
+      ],
+      "wallets": [
+        "zcash",
+        "atomicwallet",
+        "electrum"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "aes-256-gcm",
+        "aes",
+        "gzip"
+      ],
+      "functions": [
+        "TaskWeaver"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "scala",
+        "python"
+      ],
+      "links": [
+        "https://blackpointcyber.com/blog/a-djinn-in-the-machine-taskweavers-node-js-intrusion-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "SideWinder APT: The Spy That Turned to the Sea",
+      "completeness": "Medium",
+      "threats": [
+        "Stealerbot",
+        "Process_injection_technique",
+        "Uac_bypass_technique",
+        "Warhawk",
+        "Revenge_rat",
+        "Njrat",
+        "Spear-phishing_technique",
+        "Ghostnet",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "France",
+        "Jordan",
+        "Pakistan",
+        "Turkey",
+        "Egypt",
+        "Indian",
+        "Asia",
+        "China",
+        "Nepal",
+        "Sri lanka",
+        "Morocco",
+        "Maldives",
+        "Bangladesh",
+        "Asian",
+        "India",
+        "Afghanistan",
+        "Djibouti",
+        "Saudi arabia",
+        "Africa",
+        "Myanmar",
+        "Indonesia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "Microsoft Office",
+        "Chrome",
+        "credential dialog",
+        "Windows authentication"
+      ],
+      "algorithms": [
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "SetWindowsHookEx"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://barricadecyber.com/sidewinder-apt-the-spy-that-turned-to-the-sea/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "Clubfoot Wolf Is Massively Compromising Russian Companies",
+      "summary": "Clubfoot Wolf ran a large campaign in May and June 2026 targeting Russian organizations, with the main focus on companies wholesaling chemical products, and it also hit several organizations in Belarus. The group sent phishing emails posing as purchase requests or invoices, with ZIP archives containing a malicious LNK file and decoy documents. Running the LNK file launches a hidden PowerShell command that fetches a shortened link and executes the response in memory, then deploys legitimate NetSupport Manager remote administration software for persistence and control. The actor uses URL shortening to hide delivery infrastructure, and it varies its delivery chains and obfuscation methods.",
+      "completeness": "High",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Belarus",
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "aes-128-cbc",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "Write-Host"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/clubfoot-wolf-massovo-komprometiruet-rossiyskie-kompanii/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "ToddyCat: your hidden email assistant. Part 2",
+      "summary": "ToddyCat, an APT group, uses a new tool called Umbrij to steal OAuth tokens for victims' Gmail accounts while evading EPP and EDR detection. Umbrij is a .NET DLL launched through DLL sideloading via legitimate signed files such as BDSubWiz.exe, VSTestVideoRecorder.exe, and GoogleDesktop.exe. The tool copies a victim's Chromium browser profile, launches the browser headless with a remote debugging port, and uses Puppeteer Sharp to automate the Google OAuth consent flow. The resulting authorization code is logged and exfiltrated, then exchanged for an access token that grants API access to corporate email. Defenders should monitor DLL loads from these applications, alert on browsers started with remote debugging and headless flags, and audit third-party apps with Google account access.",
+      "completeness": "Medium",
+      "threats": [
+        "Umbrij_tool",
+        "Dll_sideloading_technique",
+        "Confuserex_tool",
+        "Tomberbil",
+        "Dll_hijacking_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 3,
+      "software": [
+        "Gmail",
+        "Visual Studio",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Microsoft Edge",
+        "IndexedDB",
+        "Selenium",
+        "Chrome",
+        "Chromium",
+        "Microsoft Exchange",
+        "have more..."
+      ],
+      "functions": [
+        "ChekPortAvailable",
+        "GetActiveTcpConnections"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/toddycat-apt-umbrij-tool-and-oauth/120251/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "The Polymarket Trap: A Fake Arbitrage Bot, Ten npm Accounts, and Four Ways to Deliver an Infostealer",
+      "summary": "Ten npm maintainer accounts published 30 packages with names mimicking Polymarket tooling and DeFi math libraries, delivering a roughly 2,800-line JavaScript infostealer. The packages were promoted through a fake GitHub Polymarket arbitrage bot repository that listed a malicious dependency never imported by its code, so each install ran the payload. Four delivery methods were used: a postinstall dropper, direct embedding, side-loading via transitive dependencies, and a self-upgrading package that overwrites its clean 1.0.0 version with a payload. The stealer collects crypto wallet vaults, browser credentials, SSH keys, AWS credentials, npm tokens, and password manager databases. Shared C2 servers, template-identical installers, and a leaked npm token link the accounts into one coordinated campaign. Defenders should treat any environment with a listed version as fully compromised and rotate all credentials there.",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Chrome",
+        "Firefox",
+        "Bitwarden",
+        "KeePass",
+        "1Password",
+        "macOS",
+        "Linux",
+        "OneNote"
+      ],
+      "wallets": [
+        "metamask",
+        "solflare",
+        "coinbase",
+        "tronlink"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "readPackageJson",
+        "syncSession",
+        "divide",
+        "mod",
+        "require",
+        "from_str"
+      ],
+      "languages": [
+        "javascript",
+        "typescript",
+        "powershell"
+      ],
+      "links": [
+        "https://safedep.io/defi-infostealer-fake-arbitrage-bot-npm",
+        "https://github.com/Trum3it/polymarket-arbitrage-bot/issues/2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "The Sea Lily APT group, believed to be based in Vietnam, appears to have shifted its focus to within Vietnam",
+      "summary": "Vietnam-based APT group OceanLotus (also called APT32 or Sea Lily) has shifted its espionage focus away from foreign targets toward domestic Vietnamese entities, according to research tracking activity from mid-2024 to March 2026. Its custom SPECTRALVIPER backdoor was used in two long-running campaigns, one against a major Vietnamese infrastructure and transport group and one against the software supply chain of FireAnt, a financial technology firm. The FireAnt campaign abused unprotected update mechanisms, lacking file integrity checks and SSL/TLS encryption, to push a malicious downloader through tampered updates to a small number of investors. The timing of these operations aligns with Vietnam's anti-corruption and financial market crackdowns, suggesting the group may be collecting intelligence for domestic economic investigations. Defenders should prioritize securing software update channels with integrity verification and encrypted transport.",
+      "completeness": "Low",
+      "threats": [
+        "Spectralviper",
+        "Supply_chain_technique",
+        "Watering_hole_technique",
+        "Dll_sideloading_technique",
+        "Soundbite",
+        "Phoreal",
+        "Cuegoe"
+      ],
+      "geo": [
+        "China",
+        "Vietnam",
+        "Asia",
+        "Vietnamese"
+      ],
+      "software": [
+        "icrosoft SQL Server to",
+        "Linux"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.secrss.com/articles/91634"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "Silent Swap: A Crypto Clipper Extension Campaign",
+      "completeness": "High",
+      "threats": [
+        "Etherhiding_technique",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chromium",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Chrome",
+        "Opera"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "ripple",
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "hmac",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/crypto-clipper-wallet-swapping-browser-extension-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "Lazarus Targets the Financial Sector with Memory-Only Malware Toolset",
+      "summary": "A subgroup of North Korea-linked Lazarus has been observed targeting financial institutions and cryptocurrency organizations with a memory-only malware toolset. The toolset consists of three components: DPAPILoader, RemotePELoader and RemotePE. The first-stage loader uses Windows DPAPI to decrypt and launch the next component, which retrieves the final payload from attacker-controlled infrastructure. That final payload is a remote access trojan that runs entirely in memory and enables command execution, file manipulation, process management and data access. The report notes that environmental keying through DPAPI makes each deployment's encrypted payload unique, reducing the effectiveness of hash-based detection. Defenders are advised to build behavioral detection for memory-resident threats and to monitor suspicious DPAPI use.",
+      "completeness": "Low",
+      "threats": [
+        "Dpapiloader",
+        "Remotepeloader",
+        "Remotepe"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "links": [
+        "https://www.cognyte.com/blog/lazarus-targets-the-financial-sector-with-memory-only-malware-toolset/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "TONResolver RAT Abuses TON Blockchain to Target Japan's Hotel Industry",
+      "summary": "TONResolver is a remote access trojan (tracked as TrojanSpy.JS.TONRESOLVER.A) observed in a May 2026 phishing wave targeting employees of Japanese Booking.com partner companies, mainly hotels. Phishing emails impersonate guest complaints or review requests and lure staff into opening a zip file containing a disguised shortcut file, which starts a PowerShell-driven infection that runs malicious JavaScript under Node.js. The malware retrieves its command-and-control domain from a TON blockchain smart contract, so attackers can switch servers at will. Infected endpoints stay in a Keepalive loop awaiting commands, and investigators observed follow-on credential theft targeting browser data. Defenders should consider restricting access to the TON platform and monitoring PowerShell and Node.js activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Tonresolver",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Japanese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Node.js",
+        "Telegram"
+      ],
+      "algorithms": [
+        "ecdh",
+        "zip",
+        "aes-256-cbc",
+        "base64",
+        "aes-cbc",
+        "crc-16",
+        "aes"
+      ],
+      "functions": [
+        "Get-Process",
+        "createCipheriv",
+        "createDecipheriv"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/f/tonresolver.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "CTI Report: Ninite Pro Remote Agent Leveraged for Persistence",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Atera_tool",
+        "Screenconnect_tool",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 5,
+      "software": [
+        "Ninite",
+        "Windows Installer",
+        "Windows service",
+        "Azure AD"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://barricadecyber.com/cti-report-ninite-pro-remote-agent-leveraged-for-persistence/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "From CitrixBleed 2 to Cloudflared: The Tools and Techniques Behind Anubis Ransomware Attacks",
+      "summary": "Arctic Wolf investigated Anubis ransomware intrusions in 2026 involving valid VPN credentials and exploitation of CitrixBleed 2 (CVE-2025-5777), a pre-authentication memory disclosure flaw in NetScaler appliances. Affiliates repeatedly deployed legitimate RMM tools such as ScreenConnect, Zoho Assist, MeshAgent, and Remotely to blend in with normal IT activity and maintain control. Targets included Remote Desktop Services servers, domain controllers, hypervisors, backup systems, and NAS devices. Some actors attempted alternate egress through cloudflared, authenticated proxies, and SSH SOCKS tunnels, and credential theft included Mimikatz and ntds.dit access. The key defensive takeaway is to detect the chain of suspicious remote access, RMM deployment, credential access, and security tampering before encryption, and to patch CVE-2025-5777 promptly.",
+      "completeness": "Medium",
+      "threats": [
+        "Citrix_bleed_vuln",
+        "Cloudflared_tool",
+        "Anubis",
+        "Zoho_assist_tool",
+        "Screenconnect_tool",
+        "Meshagent_tool",
+        "Ultra_vnc_tool",
+        "Sphinx",
+        "Mremoteng_tool",
+        "Mimikatz_tool",
+        "Rclone_tool",
+        "S5cmd_tool",
+        "Putty_tool",
+        "Pchunter_tool",
+        "Netscan_tool",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Remote Desktop Services",
+        "AnyConnect",
+        "PsExec",
+        "Hyper-V",
+        "S3 Browser",
+        "Linux",
+        "rsync",
+        "sudo",
+        "curl",
+        "Chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "ed25519"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/citrixbleed-2-to-cloudflared-the-tools-and-techniques-behind-anubis-ransomware-attacks/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/anubis-citrixbleed2-to-cloudflared"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-30",
+      "title": "Not very gentlemanly: Analyzing a zero-day exploit used by The Gentlemen ransomware to disable targets’ EDRs",
+      "summary": "The Gentlemen ransomware group, which first emerged in mid-2025, used a zero-day vulnerability in the third-party Kontron driver ktapi.sys to disable an EDR during an incident Expel investigated in April. The attackers used a bring-your-own-vulnerable-driver (BYOVD) approach, abusing the driver's physical memory mapping flaw to gain kernel-mode execution. They bypassed Kernel Patch Protection, SMAP, and SMEP, then terminated protected EDR processes from Windows Defender, ESET, Palo Alto Cortex XDR, and SentinelOne. Expel's main recommendation is Windows Defender Application Control, which can restrict which drivers may load and substantially reduce BYOVD exposure. Organizations without WDAC support should add ktapi.sys to detection rules.",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Byovd_technique",
+        "Edr-killer",
+        "Robinhood",
+        "Mimikatz_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Windows kernel",
+        "Windows Defender Application Control"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "CreateFile"
+      ],
+      "links": [
+        "https://expel.com/blog/not-very-gentlemanly-analyzing-a-zero-day-exploit-used-by-the-gentlemen-ransomware-to-disable-targets-edrs/",
+        "https://github.com/hcmzah/data-ptr-comm"
+      ]
+    }
+  }
+]

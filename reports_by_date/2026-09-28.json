@@ -1,0 +1,195 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-28",
+      "title": "NeedyMantis: Unpacking a post-compromise malware family used in targeted operations",
+      "summary": "NeedyMantis is a modular post-compromise malware family that Microsoft observed in a limited number of targeted operations against telecommunications, university, medical nonprofit, intergovernmental, and government contractor organizations. It is typically deployed after an attacker has already gained access, and it is packaged alongside legitimate software such as Poedit and TightVNC through DLL sideloading. Its loader, custom encrypted file archive, and custom executable format are designed to evade analysis, and it communicates with command-and-control over WebSockets after an HTTPS beacon. Microsoft tracks one operator, Storm-3069, linked to the DAEMON Tools supply chain compromise, and activity aligns with China-based actors though attribution is unconfirmed. Defenders should monitor for the listed sideloaded DLL paths and C2 traffic and enable EDR in block mode and network protection.",
+      "completeness": "High",
+      "threats": [
+        "Needymantis",
+        "Supply_chain_technique",
+        "Dll_sideloading_technique",
+        "Impacket_tool",
+        "Tightvnc_tool"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "curl",
+        "TightVNC",
+        "Microsoft Office",
+        "Sysinternals"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "sha1",
+        "xor",
+        "sha256",
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "Set-Cookie"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-28",
+      "title": "Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Deathransom",
+        "Asprotect_tool",
+        "Steganography_technique",
+        "Amsi_bypass_technique",
+        "Motw_bypass_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "chatgpt",
+        "CloudFlare",
+        "Microsoft Defender",
+        "VirtualBox",
+        "Hyper-V",
+        "QEMU",
+        "Xen",
+        "Chrome",
+        "NuGet",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "python",
+        "jscript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/chatgpt-custom-gpts-clickfix-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-28",
+      "title": "Patches Required – Citrix NetScaler vulns exploited in the wild: CVE-2026-88771 and CVE-2026-88772",
+      "summary": "Citrix NetScaler ADC and Gateway flaws CVE-2026-88771 and CVE-2026-88772, both rated CVSS 9.5, are being actively exploited, according to CISA, CERT-EU, and the NCSC. CVE-2026-88771 is an unauthenticated remote code execution flaw caused by improper input validation that affects all deployments, including default configurations. CVE-2026-88772 is a memory overflow that can lead to remote code execution or denial-of-service when DTLS is enabled, which is the default on NetScaler Gateway. Citrix released patches for eight vulnerabilities on September 27, 2026, with fixed builds listed for versions 14.1, 13.1, and the FIPS variants. Defenders are urged to apply the patches immediately and review the Citrix disclosure for indicators of compromise and additional details.",
+      "completeness": "Low",
+      "software": [
+        "Citrix NetScaler ADC"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.cybermaxx.com/resources/patches-required-citrix-netscaler-vulns-exploited-in-the-wild-cve-2026-88771-and-cve-2026-88772/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-28",
+      "title": "OpenSUpdater Hides in Recompiled 7zip SFX",
+      "summary": "OpenSUpdater is a malware family that hides a reflective loader inside recompiled open source installer components, such as the 7zip SFX stub or the NSIS plugin EmbedHtml. The samples are 7zip self-extracting archives containing a genuine foobar2000 installer, and they are validly signed by a company that appears to develop game apps. The loader contains a beacon handler, a downloader, and a payload loader that fetches DLLs and an encrypted blob from a C2 server. Analysts are advised to investigate suspicious signs such as an installer nested inside an installer or a bloated certificate, and to check uncommon locations like the SFX module.",
+      "completeness": "Low",
+      "threats": [
+        "Opensupdater",
+        "Bloat_technique"
+      ],
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "7zip"
+      ],
+      "functions": [
+        "ExtractArchive",
+        "GetUrl",
+        "PushPop"
+      ],
+      "links": [
+        "https://blog.gdatasoftware.com/2026/09/38490-opensupdater-evades-with-recompiled-7zip-sfx",
+        "https://github.com/ip7z/7zip/blob/main/CPP/7zip/Bundles/SFXSetup/ExtractEngine.cpp",
+        "https://github.com/OlegScherbakov/7zSFX"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-28",
+      "title": "Inside One Attacker's Server: iOS Exploits, Web Attacks, Network Intrusions and Gambling SEO",
+      "summary": "The operator's server held a Coruna iOS WebKit exploit kit deployment, and logs show one iPhone running iOS 15.8.3 completing the browser exploit chain in six seconds, though no later command-server contact or data theft was recorded. The same server contained 300 gambling doorway pages styled as Chinese news articles, built to rank in search and redirect mobile visitors to gambling sites. Confirmed web exploitation included 33 SPIP Saisies targets returning a PHP marker, while other Joomla, Ivanti EPMM, CMSTop, and Struts attempts remain unconfirmed or only responsive. The report also documents SQL injection against three targets with retained confirmation logs, and an EdTech SQL Server breach that exposed course-file URLs and OAuth client secrets. An attempted university intrusion showed credential theft and Pass-the-Hash attempts without confirmed success. Defenders should note that response counts, shell history, and file presence do not prove compromise.",
+      "completeness": "High",
+      "threats": [
+        "Coruna_tool",
+        "Plasmagrid",
+        "Cloaking_technique",
+        "Sqlmap_tool",
+        "Impacket_tool",
+        "Passthehash_technique",
+        "Pentestgpt_tool",
+        "Supershell",
+        "Finalshell",
+        "Proxychains_tool",
+        "Nuclei_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Asia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Alibaba Cloud",
+        "Joomla",
+        "Ivanti",
+        "nginx",
+        "Mac OS",
+        "IndexedDB",
+        "Ivanti EPMM",
+        "Apache Struts",
+        "Microsoft SQL",
+        "Microsoft SQL Server",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "uniswap"
+      ],
+      "languages": [
+        "python",
+        "golang",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://c2huntersresearch.com/blog/2026-09/inside-one-attackers-server"
+      ]
+    }
+  }
+]

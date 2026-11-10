@@ -1,0 +1,550 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "WeWorm",
+      "summary": "WeWorm is a demonstration zero-click worm that spreads through WeChat calls on both iOS and Android, requiring no answer or interaction from the victim. Calif's researchers used a memory corruption bug in WeChat's VoIP stack, found with AI assistance, to take over a ringing phone's WeChat account and then call the next friend. The exploit requires the attacker to be on the victim's friend list, which a compromised contact can provide. Calif reported the bug to Tencent in July, and Tencent has since mitigated the exploit for all users. Calif is withholding full technical details for now, and the report stresses that AI lowers the skill barrier for such attacks.",
+      "completeness": "Low",
+      "threats": [
+        "Weworm",
+        "Oempocalypse_technique",
+        "Wannacry"
+      ],
+      "geo": [
+        "Chinese",
+        "China",
+        "United states"
+      ],
+      "software": [
+        "Android",
+        "WeChat"
+      ],
+      "functions": [
+        "WeChat"
+      ],
+      "links": [
+        "https://calif.io/research/weworm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "ShadowPane: Inside a Frostedwrist-Linked BITB Campaign Targeting Real Estate and Escrow Firms",
+      "summary": "ShadowPane is a phishing campaign tracked by ZeroBEC that uses browser-in-the-browser deception to make remote monitoring and management (RMM) installers appear to come from Adobe. The fake browser pane displays a fabricated Adobe address while the real page starts an attacker-controlled RMM download. Operators rotate legitimate RMM products such as OpsBridge, ScreenConnect, MSP360, LogMeIn, and BlueTrait instead of relying on one malware family. Telegram bots collect visitor telemetry, and one campaign-linked bot ties the activity to the Frostedwrist mailing ecosystem. Targeting focuses on real-estate, escrow, and closing workflows, which suggests a possible wire-fraud objective, though ZeroBEC did not observe a completed fraudulent transfer. Defenders should watch for unexpected software-install requests from webpages, secondary RMM deployments, and tools that hide installed software.",
+      "completeness": "Medium",
+      "threats": [
+        "Frostedwrist",
+        "Bitm_technique",
+        "Screenconnect_tool",
+        "Msp360_tool",
+        "Logmein_tool",
+        "Bluetrait_tool",
+        "Bec_technique"
+      ],
+      "software": [
+        "Telegram",
+        "chrome",
+        "Firefox",
+        "Opera",
+        "curl",
+        "Cloudflare R2",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "jscript",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://zerobec.com/blog/shadowpane-frostedwrist-bitb-real-estate-escrow"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "Your Application Has Been Received: Inside Two Multi-Stage Attack Chains Hiding Behind Job Offers",
+      "summary": "Two multi-stage attack chains use fake recruiter lures to deliver remote access malware, and each requires only one double-click from the victim. Campaign 1 delivers a PureRAT implant through a ZIP archive, a renamed Microsoft Word binary, and DLL side-loading, and Howler Cell assesses with high confidence that it belongs to a Vietnam-nexus cluster tied to PXA Stealer. Campaign 2 delivers a custom, unattributed in-memory implant through a shortcut that launches mshta.exe. Both chains patch AMSI and ETW, keep payloads off disk, and register persistence through the Task Scheduler COM interface to avoid process-creation telemetry. Campaign 1 uses three persistence mechanisms and self-repairing staging directories, so partial remediation leaves a working implant. Defenders should prioritize behavioral hunting, such as RWX regions holding MZ images with no backing file, over hash-based detection.",
+      "completeness": "High",
+      "threats": [
+        "Pxa_stealer",
+        "Purerat",
+        "Donut",
+        "Dll_sideloading_technique",
+        "Com_hijacking_technique",
+        "Motw_bypass_technique",
+        "Purecrypter",
+        "Purelogs",
+        "Pureminer",
+        "Pure_clipper",
+        "Blueloader",
+        "Resolverrat",
+        "Purehvnc_tool",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Sweden",
+        "Netherlands",
+        "Bangladesh",
+        "India",
+        "Vietnam",
+        "United states"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 20,
+      "software": [
+        "Task Scheduler",
+        "Microsoft Word",
+        "NET Reactor",
+        "Chromium",
+        "Chrome",
+        "Bitcoin-Qt",
+        "Microsoft Edge",
+        "Microsoft Edge PDF",
+        "Windows Task Scheduler"
+      ],
+      "wallets": [
+        "tronlink",
+        "metamask",
+        "coinbase",
+        "ronin_wallet",
+        "keplr",
+        "atomicwallet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "xor",
+        "bzip",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "StartAddress",
+        "sandbox_detected",
+        "agent_id_init",
+        "identity_get_pubkey_hex",
+        "process_checkin_response",
+        "persist_install",
+        "persist_remove",
+        "persist_mutex_acquire",
+        "get_sysinfo_json",
+        "get_networkinfo_json",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "jscript",
+        "vbscript"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/job-offer-attack-chains-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "Melofee: a look back at a Linux implant and its new variants",
+      "summary": "Melofee, a Linux implant first documented in 2023 and linked to Chinese state-aligned actors close to APT41, has returned with new variants that split functionality into hot-loadable modules. These modules cover interactive shell, file management, and remote command execution, and the implant can also reconfigure its C2 infrastructure remotely. The newer samples add a kernel rootkit for stealth and support several communication modes, including TLS. Stormshield links the code with CrowDoor, Hemigate and RatelS, suggesting tool sharing among groups. Defenders can use the published YARA and Sigma rules, along with the listed C2 infrastructure and file artifacts, to hunt for this activity.",
+      "completeness": "High",
+      "threats": [
+        "Melofee",
+        "Crowdoor",
+        "Hemigate",
+        "Ratels",
+        "Reptile",
+        "Cobalt_strike_tool",
+        "Shadowpad",
+        "Plugx_rat",
+        "Stowaway_tool",
+        "Sparrowdoor",
+        "Terndoor",
+        "Cshell"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "crontab",
+        "systemd",
+        "inux Im"
+      ],
+      "algorithms": [
+        "sha1",
+        "rc4"
+      ],
+      "functions": [
+        "flock",
+        "uname",
+        "ioctl",
+        "connect",
+        "GetPlgInterface",
+        "GetPlugId",
+        "WritePlugin",
+        "SetBackCall"
+      ],
+      "links": [
+        "https://www.stormshield.com/news/cti-melofee-linux-implant-and-new-variants/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "Gray Rabbits and the Tale of a One-Click Backdoor",
+      "summary": "Gen Threat Labs disclosed CVE-2026-51990, a critical remote code execution flaw in Sogou Input Method, a popular Chinese-language input editor, which was fixed by Tencent. The exploit chains three weaknesses: unvalidated command-line arguments passed through the sgbiz: protocol handler, unrestricted URL navigation in a CEF webview, and an outdated Chromium 80 engine running without a sandbox. A single crafted link is enough to trigger the chain, with no user interaction beyond the click. The flaw was observed being exploited by the PRC-nexus group UNC3569 to deploy its GRAYRABBIT backdoor. Tencent's patch only validates URLs at the protocol handler, so the outdated, unsandboxed browser component remains and should be hardened, and users should update promptly.",
+      "completeness": "Medium",
+      "threats": [
+        "Grayrabbit"
+      ],
+      "geo": [
+        "Asia",
+        "Hong kong",
+        "China",
+        "Chinese",
+        "Singapore"
+      ],
+      "software": [
+        "Sogou",
+        "Chromium",
+        "Chrome",
+        "Alibaba Cloud"
+      ],
+      "algorithms": [
+        "sha256",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "GetBrowserManagerInstance",
+        "PopulateCefSettings",
+        "OnWebViewIsReady",
+        "makeMapOdd",
+        "CreateEncoder",
+        "CreateObject",
+        "GetHandlerProperty",
+        "GetModuleProp"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/one-click-backdoor-sogou"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "Finding and Notifying a ShinyHunters Claims Impersonation Campaign Before It Activated: 61 Domains, 48 Brands",
+      "summary": "ReliaQuest published an advisory on a ShinyHunters campaign that added legal team impersonation to its help desk and IT pretexts, and researchers then found 61 pre-attack domains impersonating 48 organizations, all registered through one registrar. None of the domains has served content, though 57 hold valid publicly trusted certificates and none has mail records. Targeting is concentrated in healthcare and financial services, especially insurers. Registration appears to have stopped on August 31, 2026, with six days of silence observed since, though a resumption cannot be ruled out. Defenders should check four naming constructions, assume multiple domains per target, and block the domains now while they are idle, since three unconfirmed reports of voice phishing calls naming cluster domains have not been verified.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://flare.io/learn/resources/blog/shinyhunters-claims-impersonation-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "AsyncRAT Delivered via AutoIT: Full Chain Analysis",
+      "summary": "AsyncRAT was delivered through a five-stage infection chain that starts with a socially engineered batch file named Right-click to open Invoice Details.bat. The batch file uses hidden PowerShell and layered obfuscation, including Base64 fragments, junk characters, and repeating-key XOR, to drop a signed AutoIT interpreter, an AutoIT loader script, and an encrypted payload. A Startup-folder batch file relaunches this pair at every logon, providing user-level persistence without a registry key or scheduled task. The AutoIT loader decrypts the payload in memory and injects it into the legitimate Microsoft-signed charmap.exe, so no decrypted file touches disk. The final AsyncRAT DLL includes screen capture and information-stealing functions and sends encoded screenshots to its command-and-control server. Defenders should focus on behavioral signals such as PowerShell writing to the Startup folder and Hidden-window launches of signed binaries, since names and keys change per build.",
+      "completeness": "Medium",
+      "threats": [
+        "Asyncrat",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Process Explorer"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "WriteProcessMemory",
+        "CreateRemoteThread",
+        "WriteAllBytes",
+        "juvblrzsrqclnupfstcrk",
+        "CaptureScreen"
+      ],
+      "languages": [
+        "powershell",
+        "autoit"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/asyncrat-delivered-via-autoit-full-chain-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "SloppyRAT: A New Tool For Ransomware Attacks",
+      "summary": "Zscaler ThreatLabz identified SloppyRAT in June 2026, a new malware family likely used by a ransomware-related threat actor to establish a foothold for lateral movement. It is delivered through a multi-stage ClickFix infection chain that ends with deployment of a SloppyRAT DLL. The malware uses encrypted code blocks, junk code, indirect system calls, and certificate pinning to hinder analysis and inspection. It supports EtherHiding as a backup C2 channel, though no smart contract address has been observed, and offers many built-in PowerShell-like commands for remote access and reverse SOCKS proxying. The codebase contains numerous bugs, including broken persistence attempts, suggesting it is still under development. Defenders should prepare to detect and prevent ClickFix-style attacks and their follow-on payloads.",
+      "completeness": "High",
+      "threats": [
+        "Sloppyrat",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Junk_code_technique",
+        "Mitm_technique",
+        "Castleloader",
+        "Nightshade",
+        "Com_hijacking_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "WinHTTP",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "rc4",
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "GetCurrentDirectoryW",
+        "Get-Location",
+        "Set-Location",
+        "SetCurrentDirectoryW",
+        "Get-ChildItem",
+        "Get-Content",
+        "Remove-Item",
+        "Get-Process",
+        "Get-Service",
+        "Get-ComputerInfo",
+        "have more..."
+      ],
+      "languages": [
+        "ironpython",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/sloppyrat-new-tool-ransomware-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "UK Council Attack Linked to SonicWall SMA 1000 Campaign",
+      "summary": "A threat actor is mass-exploiting CVE-2026-15409, an unauthenticated SSRF flaw in SonicWall SMA1000 WorkPlace, and Hunt.io assesses with moderate confidence that this is linked to a UK council attack in King's Lynn and West Norfolk. The operator adapted a public Rapid7 proof of concept to gain command execution, extract LDAP configurations, and decrypt stored passwords. Compromised appliances were used as pivots, with a standalone Linux build of Impacket's secretsdump deployed to them to steal credentials from internal Windows systems. Victims spanned multiple countries and sectors, pointing to opportunistic targeting. Full DCSync succeeded in five Active Directory domains. Defenders should note that visibility into firewall and VPN operating systems is often weaker than EDR coverage on managed hosts.",
+      "completeness": "High",
+      "threats": [
+        "Impacket_tool",
+        "Secretsdump_tool",
+        "Dcsync_technique",
+        "Passthehash_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Poland",
+        "Hungary",
+        "United states",
+        "United kingdom",
+        "Sweden",
+        "Germany",
+        "India",
+        "South korea",
+        "Hong kong",
+        "Italy",
+        "Canada",
+        "France"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 13,
+      "software": [
+        "SonicWall",
+        "Linux",
+        "Active Directory",
+        "curl",
+        "Unix"
+      ],
+      "algorithms": [
+        "aes",
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "exploit_read_file",
+        "parse_ldap_config",
+        "RPC"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/sonicwall-sma1000-uk-council-attack",
+        "https://github.com/remmons-r7/rapid7-CVE-2026-15409/blob/main/cve-2026-15409.py",
+        "https://github.com/remmons-r7/rapid7-CVE-2026-15409"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "Casbaneiro: A Banking Trojan with Distributed Data-Receiving Servers",
+      "summary": "Casbaneiro is a banking trojan campaign targeting users in Latin America, including Argentina, Peru, Colombia, and Mexico, that begins with phishing emails and PDFs themed around fake invoices and legal notices. The infection chain uses a geofenced download page that serves only victims with in-region IP addresses, followed by an HTA downloader and an AutoIt loader that injects the final payload into a Windows process. The malware checks the OS language and sandbox indicators, and it retrieves its components separately to evade static detection. It harvests email addresses and Outlook data, then sends stolen information to multiple separate servers, with one endpoint deliberately returning HTTP 403 responses. C2 communication activates only when victims visit targeted bank websites, which can make the infrastructure appear inactive to analysts. Defenders should watch for these distributed, conditionally triggered network behaviors and malformed HTTP requests.",
+      "completeness": "Medium",
+      "threats": [
+        "Metamorfo",
+        "Clipboard_injection_technique",
+        "Ousaban"
+      ],
+      "geo": [
+        "Peru",
+        "Mexico",
+        "Argentina",
+        "Latin america",
+        "Colombia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "Outlook",
+        "Microsoft Outlook"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "md5",
+        "exhibit"
+      ],
+      "languages": [
+        "javascript",
+        "autoit",
+        "jscript"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/casbaneiro-a-banking-trojan-with-distributed-data-receiving-servers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "FTP Banner Dead Drops: A Hunter’s Field Guide to E4del and PINHOLE",
+      "summary": "The E4del and PINHOLE campaign uses FTP server greeting banners as dead-drop resolvers, retrieving the next-stage instruction from an attacker-controlled FTP server at runtime. Delivery typically begins with phishing, often a ZIP archive containing a Windows shortcut that connects to the FTP server and pipes the banner into a command interpreter. Three variants were observed, using FTP piped to PowerShell, WebDAV over HTTP, or BITS, and all share an outbound TCP/21 connection followed immediately by interpreter execution. E4del is a trojanized, signed Discord Electron package, while PINHOLE gets its C2 configuration from Pinterest and SurveyMonkey and injects its payload into ApplicationFrameHost.exe. Defenders should focus detection on the FTP-to-interpreter chokepoint, since these chains rely on built-in Windows binaries and leave no custom file to signature.",
+      "completeness": "High",
+      "threats": [
+        "E4del",
+        "Pinhole",
+        "Dead_drop_technique",
+        "Apc_injection_technique",
+        "Lolbin_technique",
+        "Bitsadmin_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "London",
+        "Los angeles"
+      ],
+      "software": [
+        "Node.js",
+        "Electron",
+        "Discord",
+        "ConPTY",
+        "Windows Terminal",
+        "OpenSSH",
+        "curl",
+        "winscp",
+        "coreftp",
+        "cyberduck",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "count"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "cscript"
+      ],
+      "links": [
+        "https://www.rstcloud.com/ftp-banner-dead-drops-a-hunters-field-guide-to-e4del-and-pinhole/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-10",
+      "title": "From a Pension-Themed Spear-Phishing Email to a GitHub-Backed Implant: Investigating a SideWinder Connection",
+      "summary": "A pension-themed spear-phishing email delivered a password-protected Word document that carried an embedded executable, DellHeuristics.exe, reconstructed from decimal-encoded data in a macro. The document's scripts intended to place the implant in a user-writable directory and establish Startup-folder and five-minute scheduled-task persistence. In lab runs, the executable queried a public geolocation service, fetched bootstrap data from GitHub, and constructed authenticated GitHub API requests, with a country-code gate that exited unless the response indicated Myanmar. Its fallback IP address matches an indicator published by Bangladesh e-GOV CIRT about a month before the email. The report links the case to SideWinder reporting on South Asian government targeting, but it treats this as a credible hypothesis rather than attribution. Defenders should correlate Office-to-script-host activity, new user-path executables, and ordered GitHub API traffic from non-developer processes.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Sri lanka",
+        "Nepal",
+        "Bangladesh",
+        "Pakistan",
+        "Myanmar",
+        "Asian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "WinHTTP",
+        "Microsoft Office",
+        "inHTTP re",
+        "Task Scheduler",
+        "Windows Security"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "WinHTTP"
+      ],
+      "languages": [
+        "powershell",
+        "cscript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.malwareinfo.app/blog/posts/dellheuristics-winhttp-github-api-runtime-memory-analysis/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,747 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Crypto Clipper uses Tor and worm-like propagation for persistence and control",
+      "summary": "Microsoft Threat Intelligence identified a Windows cryptocurrency clipper, active since February 2026, that combines wallet theft with worm-like propagation. The initial infection uses malicious .lnk shortcut files, observed on USB storage devices, that spread by creating shortcuts to common document files. The clipper, built on Windows Script Host and ActiveXObject, launches a bundled Tor client and polls a hidden-service C2 server for instructions. It steals seed phrases and private keys from the clipboard, takes screenshots, replaces cryptocurrency addresses with attacker-controlled ones, and can execute attacker-supplied script code. Defenders should prioritize behavioral detections, such as script interpreters spawning curl or PowerShell and traffic to localhost:9050, and restrict removable media and .lnk execution.",
+      "completeness": "Medium",
+      "threats": [
+        "Cryptobandits",
+        "Pyarmor_tool",
+        "Contebrew"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 8,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Curl",
+        "PyInstaller",
+        "Task Scheduler"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "jscript",
+        "powershell",
+        "javascript",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Someone's Hands Are on Your Keyboard Then Your Whole Network. Courtesy of ClickFix, Potemkin, RMMProject and EtherRAT",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Potemkin",
+        "Rmmproject",
+        "Etherrat",
+        "Dll_injection_technique",
+        "Matanbuchus_maas",
+        "Astarionrat",
+        "Chisel_tool",
+        "Wmiexec_tool",
+        "Smbexec_tool",
+        "Lolbin_technique",
+        "Process_injection_technique",
+        "Etherhiding_technique",
+        "Cloudflared_tool",
+        "Impacket_tool",
+        "Winrm_tool",
+        "Costura_tool",
+        "Screenconnect_tool",
+        "Amsi_bypass_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "scripting engine",
+        "Chrome",
+        "Node.js",
+        "Windows Defender",
+        "curl",
+        "hyper-v",
+        "Windows registry",
+        "Chrome",
+        "Firefox",
+        "firefox",
+        "Chromium",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "3des",
+        "aes-gcm",
+        "base64",
+        "sha256",
+        "prng",
+        "pbkdf2",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "Potemkin",
+        "DLL",
+        "Windows",
+        "dc",
+        "Get-WmiObject",
+        "Set-MpPreference",
+        "GetChromiumKey"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python",
+        "lua"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/potemkin-loader-rmmproject-clickfix-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Threat Actors Abuse claude.ai Shared Chat for ClickFix Malvertising Campaign",
+      "summary": "Threat actors ran a Google Ads malvertising campaign that used ClickFix social engineering to lure users searching for AI developer tools such as Claude, ChatGPT Codex, Perplexity, Cursor, and JetBrains. Initially the operators hosted lures on over 90 GitLab Pages hostnames, rotating them rapidly to evade detection. Later, they abused claude.ai shared chat pages, which gave victims a trusted domain with a valid certificate. The fake support chats instructed users to paste a curl command into Terminal that delivered the MacSync infostealer, which harvests browser credentials, cookies, SSH keys, and cryptocurrency wallet files. Asia-Pacific accounted for about 67% of victims, with Taiwan alone representing 30.5% of traffic. Defenders should monitor for unexpected terminal or PowerShell execution after browsing, and Anthropic has since banned the responsible accounts and disabled the malicious shared conversations.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Credential_stealing_technique",
+        "Macsync"
+      ],
+      "geo": [
+        "Asia-pacific",
+        "Taiwan",
+        "Malaysia",
+        "Italy",
+        "Japan",
+        "France",
+        "India",
+        "Apac",
+        "Singapore",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "claude",
+        "nthropic in",
+        "ChatGPT",
+        "JetBrains",
+        "Anthropic",
+        "OpenAI",
+        "laude",
+        "laude do",
+        "curl",
+        "macOS",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/f/claudeai-shared-chat-abused-in-malvertising.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Analysis Report on Recent Phishing Attacks by the APT-C-48 (CNC) Group",
+      "summary": "APT-C-48 (CNC), a South Asia-linked group with suspected government backing, conducts targeted phishing against government, defense, education, research, healthcare, and media sectors. Its campaign delivers a RAR archive containing a disguised executable that uses a double extension to pose as a PDF résumé, then fetches a decoy document and a VBS script that downloads a final remote-access trojan. The trojan decrypts its C2 address, connects over TLS-encrypted OpenSSL traffic, and accepts commands to upload files or run shell commands. Analysts attributed the activity to the group based on its recurring use of recruitment and résumé lures, a downloader-based initial stage, and matching core payload code and encrypted communications. The report underscores that defenders should watch for résumé-themed phishing with double-extension executables.",
+      "completeness": "Medium",
+      "geo": [
+        "Asian"
+      ],
+      "software": [
+        "OpenSSL",
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "xor"
+      ],
+      "links": [
+        "https://www.ctfiot.com/311249.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "SmartApeSG Launches Okendo Reviews Supply Chain Attack",
+      "summary": "Zscaler ThreatLabz identified on May 14, 2026 that malicious JavaScript had been injected into the Okendo Reviews widget, a customer review platform used by more than 18,000 brands. The threat actor is SmartApeSG, which acts as a staged loader that uses localStorage markers and User-Agent checks to limit repeat execution and bias targeting toward desktop users. The script hides its next-stage delivery path using XOR-encoded fragments and dynamically inserted page elements. The infection chain then uses fake CAPTCHA prompts and ClickFix-style lures to get users to run commands, often leading to NetSupport, Remcos, or StealC. Affected sites reportedly drew from about 150,000 to several million monthly visits, and Okendo has restored the widget script to a clean state.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Clickfix_technique",
+        "Netsupportmanager_rat",
+        "Remcos_rat",
+        "Stealc",
+        "Sectop_rat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/smartapesg-launches-okendo-reviews-supply-chain-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Honeypot: Investigating Attacks by the Hive0117 Group on Accountants at Companies in Russia and CIS Countries",
+      "summary": "Hive0117 is a financially motivated group active since late 2021 that targets accounting and finance departments of organizations in Russia, Belarus, Kazakhstan, and Uzbekistan. In 2026 it sent accountant-themed phishing emails to more than 3,000 Russian companies, with password-protected RAR archives disguised as invoices and reconciliation statements. The attack chain uses the fileless DarkWatchman RAT and a keylogger that waits for a cryptographic token before proceeding, then deploys remote access tools such as hVNC-based RATs to hijack bank remote-banking sessions. Attackers then push payments through the banking system to mule accounts, disguised as salary transfers, to avoid antifraud controls. F6 recommends that banks strengthen session and transaction antifraud controls and that accountants avoid opening unverified files and leave tokens out of computers.",
+      "completeness": "High",
+      "threats": [
+        "Darkwatchman",
+        "Lite_manager_tool",
+        "Bitrat",
+        "Hvnc_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Kazakhstan",
+        "Uzbekistan",
+        "Russia",
+        "Russian",
+        "Belarus"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Viber",
+        "WhatsApp",
+        "Android",
+        "Windows registry",
+        "Chrome",
+        "Firefox"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "PowerShell",
+        "SetWindowsHookEx"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/honey-trap-hive0117/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "From package to postinstall payload: Inside the Mastra npm supply chain compromise",
+      "summary": "Microsoft attributes a large npm supply chain attack affecting 140+ packages in the mastra and @mastra scopes to North Korean state actor Sapphire Sleet, which primarily targets the financial sector. The attacker took over the ehindero maintainer account and published poisoned versions that added easy-day-js, a typosquat of the popular dayjs library, as a dependency. Because its postinstall hook ran during installation, any developer workstation or CI/CD pipeline that ran npm install after the compromised versions were published was potentially exposed, whether or not the package was imported. The hook fetched and ran a second-stage Node.js implant that established persistence on Windows, macOS, and Linux and harvested wallet, browser, and host data. On some systems, the actor escalated to a PowerShell backdoor and a SYSTEM-level service. Defenders should check for easy-day-js, pin known-good versions, run installs with --ignore-scripts, and rotate exposed credentials.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Process_injection_technique",
+        "Trojan:js/npmstealz.z",
+        "Psexec_tool",
+        "Trojan:js/npmsteal.db"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Mastra",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Node.js",
+        "ode.js pr",
+        "macOS",
+        "Linux",
+        "systemd",
+        "Chrome"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tronlink"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "unref"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Sayonara, SocGholish: Operation Endgame Disrupts Major Cybercrime Operation",
+      "summary": "Law enforcement agencies, supported by Europol and Proofpoint, disrupted TA569, the threat group behind the SocGholish web inject operation, as part of Operation Endgame. TA569 compromises legitimate websites and uses traffic distribution systems to redirect visitors to fake browser update pages that trick users into downloading GhoLoader malware, often leading to ransomware. The group has targeted websites with millions of visitors across nearly every industry. Authorities took down over 100 servers and domains and remediated 14,971 websites. Defenders should enforce defense in depth and harden WordPress sites with MFA, timely updates, and file-integrity monitoring.",
+      "completeness": "Medium",
+      "threats": [
+        "Socgholish_loader",
+        "Clearfake",
+        "Errtraffic",
+        "Password_spray_technique",
+        "Gholoader",
+        "Parrot_tds_tool",
+        "Wastedlocker",
+        "Lockbit",
+        "Ransomhub",
+        "Clickfix_technique",
+        "Frigidstealer",
+        "Blob_url_obfuscation_technique",
+        "Kongtuke"
+      ],
+      "geo": [
+        "Usa",
+        "Russian",
+        "United states",
+        "Netherlands",
+        "Germany",
+        "Canada"
+      ],
+      "software": [
+        "WordPress",
+        "Keitaro",
+        "ive Directory envi",
+        "ctive Directory en",
+        "MacOS"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "jscript",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/sayonara-socgholish-operation-endgame-disrupts-major-cybercrime-operation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Prinz Eugen ransomware: a deep dive into a new Go-based encryptor",
+      "summary": "Prinz Eugen is a new Go-based ransomware family, attributed to an actor known as ROOTBOY, that encrypts files and extorts victims out-of-band without leaving a ransom note on disk. The encryptor recursively walks target directories and prioritizes the most recently modified files, which are most likely in active use and least likely to be backed up. It uses ChaCha20-Poly1305 encryption, appends the .prinzeugen extension, and can delete originals after verifying the encrypted copies. Before exiting, it zeroes its key, runs garbage collection, and deletes itself to reduce forensic recovery. In the incident studied, RDP was likely the entry point, with RemotePC RMM abused for PowerShell stagers and a backdoor admin account created. Defenders should watch for unexpected RMM use and new local admin accounts, since the actor's behavior relies on legitimate tools and hands-on-keyboard activity.",
+      "completeness": "High",
+      "threats": [
+        "Prinz_eugen",
+        "Remotepc_tool",
+        "Typosquatting_technique",
+        "Clickfix_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Canada",
+        "France",
+        "German",
+        "Italian",
+        "Usa",
+        "African",
+        "South africa",
+        "Germany"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Telegram",
+        "Jabber",
+        "Confluence"
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "sha256"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://www.threatdown.com/blog/prinz-eugen-ransomware-a-deep-dive-into-a-new-go-based-encryptor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Operation FanTrap: Inside the FIFA 2026 Fraud Ecosystem",
+      "summary": "Operation FanTrap is a Cyble Research and Intelligence Labs investigation into a fraud ecosystem exploiting interest in the FIFA World Cup 2026. CRIL identified nearly 4,000 domains impersonating FIFA-related brands, ticketing platforms, and streaming services. Threat actors lure victims with fake tickets, VIP access schemes, and pirated streams, then move them to Telegram and WhatsApp for payment fraud and credential theft. The campaign shows a multilingual focus, particularly on Chinese-speaking fans, with some Korean and Latin American targeting. Pirated streaming sites and APK apps act as credential and malware funnels, and forum claims of leaked football-sector passport data remain unverified. Defenders should prioritize keyword-aware domain monitoring, takedowns, and monitoring of messaging channels used for transactions.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Apac",
+        "Korean",
+        "Mexico",
+        "Canada",
+        "China",
+        "Emea",
+        "Chinese",
+        "America",
+        "Latin american"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "Telegram",
+        "WhatsApp",
+        "Discord"
+      ],
+      "functions": [
+        "WhatsApp"
+      ],
+      "links": [
+        "https://cyble.com/blog/operation-fantrap-fifa-2026-fraud-ecosystem/",
+        "https://github.com/CRIL-ThreatIntelligence/IOCs/blob/main/Operation\\_FIFA\\_TRAP/Operation\\_FanTrap-Inside\\_the\\_FIFA\\_2026\\_Fraud\\_Ecosystem\\_ioc.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "It looks like a normal resume, but the infection begins the moment it is executed.",
+      "summary": "A malicious shortcut (LNK) file disguised as a resume is being distributed, with filenames combining a Korean company name and job title to appear legitimate. When executed, it displays a normal decoy document to lower the victim's suspicion while it runs hidden scripts in the background. The malware establishes persistence through a scheduled task named \"office365\" that runs a script every 10 minutes, plus startup shortcut placement. It then downloads additional files and uses DLL side-loading through a legitimate program to launch Xctdoor, a backdoor that communicates with a command-and-control server. Defenders should check for the suspicious scheduled task and related files, delete them, and verify file extensions and sources before opening attachments.",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Xctdoor"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94163/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Popa: From Sourcing to Distribution",
+      "summary": "Popa is an Android proxyware SDK that enrolls consumer devices from phones, tablets, and streaming boxes into a commercial residential proxy network, distributed inside third-party streaming, IPTV, and utility apps. Synthient observed the SDK relaying third-party traffic at host-app launch without an informed-consent prompt in the samples analyzed, though version 2.7.46 includes an optional consent-prompt capability that none of the publishers observed invoking. Eighteen Popa-family samples communicate directly with NetNut's SDK endpoints, and public records compiled by Qurium link NinjaTech's founder to NetNut leadership, a linkage Synthient has not independently verified. A controlled 2026 test showed traffic from a Popa-enrolled device egressing through NetNut's gateway, which Synthient assesses with high confidence as evidence that at least some Popa devices act as NetNut egress nodes. NetNut rejects these conclusions and states it maintains KYC and misuse monitoring. Defenders should block the associated infrastructure and monitor SOCKS5 traffic, and should not treat residential IP addresses as inherently safe.",
+      "completeness": "Medium",
+      "threats": [
+        "Popa_tool",
+        "Residential_proxy_technique",
+        "Moneytiser_tool",
+        "Vo1d",
+        "Ghostsocks"
+      ],
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "aes-ecb"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://synthient.com/blog/popa-from-sourcing-to-distribution",
+        "https://github.com/synthient/public-research/tree/main/2026/06/popa",
+        "https://github.com/deepfield/public-research/tree/main/popa/iocs",
+        "https://github.com/deepfield/public-research/blob/main/reports/2026-06-18-robovpn-neunative.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Lost in relocation: analysis of a new loader distributing CASTLESTEALER",
+      "summary": "OXLOADER is a previously undocumented Windows loader delivering the CASTLESTEALER infostealer via malicious Google Ads impersonating Node.js. Victims who click the sponsored result are redirected to a Storj-hosted batch script that downloads and launches the loader. The loader hides its code using control-flow flattening, mixed Boolean-Arithmetic obfuscation, and self-modifying decryption stubs, and it stages shellcode inside the .reloc section of a copied DirectUI DLL. It performs checks for sandboxes and VMs, and it aborts on CIS-region or Russian-language hosts, which Elastic cites as suggesting a Russian-speaking, financially motivated actor. Elastic notes low static detection rates and says Elastic Defend prevention stops the full attack chain.",
+      "completeness": "High",
+      "threats": [
+        "Castlestealer",
+        "Oxloader",
+        "Process_hacker_tool",
+        "Donut"
+      ],
+      "geo": [
+        "Russian",
+        "Russia",
+        "Ukraine"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "cinit",
+        "initterm",
+        "RunPE"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/oxloader-malware-loader-infostealer",
+        "https://github.com/OALabs/hashdb/blob/main/algorithms/dualacc\\_modfff1.py",
+        "https://github.com/TheWover/donut",
+        "https://gist.github.com/jiayuchann/fc37e3c047ebd987619e440c44b465ad"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "PureRAT variant observed in AI Video Player",
+      "summary": "The report analyzes a malware chain starting with DriveVideoSetup-x64-0.1.0.exe, distributed through a fake Google Drive-style video download lure. The installer establishes persistence via a Run key, and a staged chain then moves from Python bytecode through shellcode into multiple protected .NET assemblies. The .NET components use heavy obfuscation, encryption, and runtime patching, which explains why decompilers initially showed incomplete code. Dynamic analysis observed the agent generating client certificates, enrolling with SMVEO infrastructure, and establishing authenticated WebSocket communications for remote tasking. The author assesses the activity as DonutLoader leading to PureRAT, with strong overlap with publicly documented PureRAT activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Purerat",
+        "Baoloader",
+        "Solarmarker",
+        "Bondat",
+        "Emotet",
+        "Tamperedchef",
+        "Justaskjacky",
+        "Quasar_rat",
+        "Seo_poisoning_technique",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "electron",
+        "Jupyter"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "base64",
+        "rc4"
+      ],
+      "functions": [
+        "CreateThread"
+      ],
+      "languages": [
+        "javascript",
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://blog.lukeacha.com/2026/06/purerat-variant-observed-in-ai-video.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Inside Vidar’s ABE Bypass: From Memory Scanning to APC Injections",
+      "summary": "Vidar, a recently active infostealer, has introduced a new technique for bypassing Application-Bound Encryption (ABE) by extracting the v20_master_key directly from browser memory. It forks running browser processes using NtCreateProcessEx with a NULL section handle, creating static memory snapshots that can be scanned without touching the live browser. Vidar searches these snapshots for a 32-byte signature that the researchers assess with high confidence matches a node in Chromium's Encryptor::KeyRing. It then decrypts the candidate key by injecting APCs that call CryptUnprotectMemory inside the live browser, using either a classic or special APC method depending on whether ESET or Bitdefender is present. The researchers note that APC injection may evade some detection, though it is still monitored by AV and EDR products.",
+      "completeness": "Low",
+      "threats": [
+        "Vidar_stealer",
+        "Remus",
+        "Lumma_stealer",
+        "Voidstealer",
+        "Apc_injection_technique"
+      ],
+      "software": [
+        "Chromium"
+      ],
+      "algorithms": [
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "APC"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/inside-vidar-abe-bypass",
+        "https://github.com/chromium/chromium/blob/cf5d502bcaedb22927e3829a18be1ff6d8b6f598/components/os\\_crypt/async/common/encryptor.h#L93-L98",
+        "https://github.com/chromium/chromium/blob/cf5d502bcaedb22927e3829a18be1ff6d8b6f598/components/os\\_crypt/async/common/encryptor.h#L132"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "15 Malicious JetBrains Plugins Stole AI API Keys from 70,000 Developers",
+      "summary": "Fifteen malicious third-party plugins on the JetBrains Marketplace, published under seven vendor accounts, posed as AI-powered developer tools for code review, test generation, and commit messages. Each plugin secretly captured AI provider API keys entered into its settings and sent them in plaintext over HTTP to a hardcoded command-and-control server hosted in China. The campaign ran for about eight months and accumulated roughly 70,000 installations, with the two latest plugins accounting for over 53,000 of them. JetBrains removed the plugins, banned the publisher accounts, and triggered a remote kill-switch, though the C2 server was still responding on June 19, 2026. Defenders should treat any API key entered into these plugins as compromised, rotate it, and block the C2 address.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Trufflehog_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "JetBrains",
+        "DeepSeek",
+        "OpenAI",
+        "Alibaba Cloud",
+        "macOS",
+        "Linux"
+      ],
+      "functions": [
+        "FindBugs",
+        "save",
+        "Gson"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/jetbrains-malicious-plugins-ai-api-key-theft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Cybercrime Breaches Klue: Salesforce Data Impacted for Many Victims, including Huntress",
+      "completeness": "Low",
+      "threats": [
+        "Icarus",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Ukraine",
+        "France",
+        "Australian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "HubSpot",
+        "Zoom",
+        "Slack"
+      ],
+      "languages": [
+        "swift",
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/klue-breach-investigation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-18",
+      "title": "Hot Take: Operation Endgame VS SocGholish",
+      "summary": "Operation Endgame disrupted SocGholish, a long-running malware framework that uses compromised websites to show fake browser update prompts and deliver malicious JScript payloads. The framework is operated by TA569, an initial access broker whose access has been sold to or shared with other actors, including the EvilCorp group and several ransomware families. Law enforcement and partners took down 106 servers and domains and remediated 14,971 compromised WordPress websites. Infoblox telemetry showed that more than 54% of its cloud customer networks attempted to resolve SocGholish tier one domains from January to May 2026, though only a handful reached the later stage. The report notes that domain-joined corporate systems are especially valuable to attackers, and that a single successful execution can establish a foothold. Defenders are advised to watch the post-operation period for the ecosystem to re-form or shift to new infrastructure.",
+      "completeness": "Medium",
+      "threats": [
+        "Socgholish_loader",
+        "Icedid",
+        "Smokeloader",
+        "Pikabot",
+        "Bumblebee",
+        "Qakbot",
+        "Danabot",
+        "Trickbot",
+        "Rhadamanthys",
+        "Venomrat",
+        "Elysium_stealer",
+        "Doppelpaymer",
+        "Wastedlocker",
+        "Hades",
+        "Lockbit",
+        "Ransomhub",
+        "Parrot_tds_tool",
+        "Junkytds_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Keitaro",
+        "Firefox",
+        "Outlook"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "jscript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/hot-take-operation-endgame-vs-socgholish/"
+      ]
+    }
+  }
+]

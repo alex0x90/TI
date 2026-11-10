@@ -1,0 +1,192 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-28",
+      "title": "The GOFFEE APT group continues attacks against organizations in Russia, distributing two backdoors through targeted phishing",
+      "summary": "The GOFFEE APT group (also known as Paper Werewolf), active against Russian organizations since early 2022, is using targeted phishing emails with PDFs that impersonate an outdated Acrobat Reader update notice. The PDF lures victims to a dropper that installs WarpRAT and opens a Russian-language decoy document. A PowerShell backdoor called PowerTaskel v2, a modified Mythic agent, shares command-and-control infrastructure with WarpRAT, which links both tools to GOFFEE. Kaspersky counts over 100 victims, mainly Russian government bodies and manufacturing and industrial firms, with a few in the CIS and the EU. Defenders should note the group's rapid infrastructure rotation and its long-term presence within compromised networks.",
+      "completeness": "Medium",
+      "threats": [
+        "Mythic_c2_tool",
+        "Warprat",
+        "Powertaskel",
+        "Spear-phishing_technique",
+        "Echogather"
+      ],
+      "geo": [
+        "Russian",
+        "Russian federation",
+        "Russia"
+      ],
+      "software": [
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/tr/goffee-apt-attacks-with-mythic-agent-and-warprat/116796/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-28",
+      "title": "Gryxa: The AI-Built Toolkit That Watches How You Remove It",
+      "summary": "Gryxa is a toolkit used by a financially motivated threat actor across 324 listed hosts, and ReliaQuest assesses with high confidence that an AI coding agent helped build much of it. The toolkit turns legitimate RMM software into covert access and keeps that access alive through several independent restart mechanisms. It steals credentials saved in Chromium-based browsers, including cryptocurrency exchange logins, and sends them to the actor via Telegram. When the actor's connection is cut, Gryxa disables or uninstalls endpoint protection, so defenders should block the actor's infrastructure before removing all persistence in one pass. After the visible RMM implant is removed, a surviving component uploads local logs describing the removal to the actor, so defenders should assume the response is visible to the attacker.",
+      "completeness": "Low",
+      "threats": [
+        "Gryxa"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "WinRTCS",
+        "Windows error reporting",
+        "Microsoft Defender",
+        "Chromium",
+        "Telegram",
+        "Windows installer",
+        "debian"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-gryxa-ai-built-toolkit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-28",
+      "title": "@7nohe/openapi-react-query-codegen Compromised Through an Exposed npm Publishing Workflow",
+      "summary": "The npm package @7nohe/openapi-react-query-codegen was compromised on August 28, 2026, when an external GitHub user abused the repository's release workflow to publish ten malicious versions. The release workflow ran on any pull request comment reading \"npm publish\" without checking the commenter's role, then checked out the untrusted pull request code and published it with a GitHub Actions OIDC identity, so no maintainer npm credentials were needed. The malicious stable versions run attacker code during installation through a preinstall hook or a binding.gyp path, and version 3.0.4 attempted to retrieve GitHub credentials and probe cloud metadata. Defenders should not install the latest tag, which still pointed to 3.0.4, and should pin to clean versions 0.5.3, 1.6.2, 2.2.0, or 3.0.2. Any system that ran an affected version's install scripts should be isolated and its credentials rotated from a clean machine.",
+      "completeness": "Low",
+      "software": [
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/7nohe-openapi-react-query-codegen-compromised-npm-publishing-workflow",
+        "https://github.com/7nohe/openapi-react-query-codegen/pull/216",
+        "https://github.com/step-security/harden-runner",
+        "https://github.com/7nohe/openapi-react-query-codegen/pull/215"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-28",
+      "title": "OpenAPI React Query Codegen Compromised in Mini Shai-Hulud npm Supply Chain Attack",
+      "summary": "The Socket Threat Research Team found ten malicious versions of the npm package @7nohe/openapi-react-query-codegen published on August 28, 2026, as part of the ongoing Mini Shai-Hulud campaign. The attacker abused a comment-triggered GitHub Actions publishing workflow that did not check commenter authorization, so the malicious releases carried valid npm provenance attestations. The payload runs at install time, steals cloud, registry, GitHub Actions, and AI agent credentials, and spreads through package poisoning and SSH. Defenders should isolate affected hosts, rebuild from clean images, pin to a known-good version, and rotate exposed credentials. Maintainers should verify the commenter's author association or avoid publishing on comment triggers.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256",
+        "aes-128-gcm"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/openapi-react-query-codegen-npm-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-28",
+      "title": "The Video That Plays You: Fake MP4 File Carries Malicious Payload",
+      "summary": "A PowerShell loader delivers NetSupport Manager, a legitimate remote administration tool, through a fake MP4 file that passes basic file-type checks but cannot be played. The first-stage script exits if the computer name matches hard-coded \"clean\" markers, hides its console, and retrieves a carrier file hosted on the same server. The carrier's ISO-BMFF uuid box holds an XOR-encrypted, compressed PowerShell payload that drops and runs the NetSupport client with silent configuration and a SecurityHealth Run key for persistence. Censys tracked 18 builds across 40 live endpoints in multiple autonomous systems and countries. Defenders should flag files that identify as MP4 yet fail to decode or store nearly all their data in uuid boxes.",
+      "completeness": "High",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Los angeles",
+        "Switzerland"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://censys.com/blog/fake-mp4-file-carries-malicious-payload/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-28",
+      "title": "Popular code generator for TanStack Query hit by supply chain worm",
+      "summary": "A supply chain worm dubbed \"Trinitite\" compromised 10 versions of the npm package @7nohe/openapi-react-query-codegen, which has over 150,000 weekly downloads, with all versions published within about 20 minutes. The attacker exploited a vulnerability in the project's GitHub Actions workflow, so the malicious releases carried valid provenance attestations despite being compromised. The package's binding.gyp file executes a Python sandbox escape during install to run a hidden Node payload, even without a preinstall script. The payload harvests a broad range of credentials, including cloud, GitHub, npm, PyPI, Vault, Kubernetes, SSH keys, and developer tool and AI assistant configs, and exfiltrates them to attacker-created GitHub repositories. It also spreads by using stolen tokens to backdoor other npm, PyPI, and RubyGems packages and GitHub repositories, adding malicious editor and AI-tool hooks. Defenders should check for these versions and rotate exposed credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Trinitite",
+        "Miasma"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "TanStack",
+        "Node.js",
+        "Graph API",
+        "HashiCorp Vault",
+        "Kubernetes",
+        "Ledger Live",
+        "Telegram",
+        "Discord",
+        "Slack",
+        "CyberGhost",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "xor",
+        "aes-128-gcm",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/popular-code-generator-for-tanstack-query-hit-by-supply-chain-worm",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  }
+]

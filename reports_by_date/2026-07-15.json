@@ -1,0 +1,525 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "How an Infostealer Infection Led to a Sophisticated ClickFix Campaign at Artlist",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Israeli"
+      ],
+      "software": [
+        "WordPress",
+        "Windows Terminal",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "delphi",
+        "powershell"
+      ],
+      "links": [
+        "https://www.hudsonrock.com/blog/how-an-infostealer-infection-led-to-a-sophisticated-clickfix-campaign-at-artlist"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "LabubaRAT: A Rust Based Remote Access Tool Masquerading as NVIDIA Software",
+      "summary": "LabubaRAT is a previously undocumented Rust-based remote access tool that masquerades as NVIDIA software through an unsigned executable named nvidia-sysruntime.exe with NVIDIA-themed metadata. The implant is configured at launch, including via a Base64-encoded argument, so the same binary can be reused across different servers, organizations, and groups, which suggests a possible malware-as-a-service model. It registers infected hosts, profiles them, and fingerprints installed security products, then communicates over HTTPS polling, WebView2, or DNS tunneling. Operators can execute commands, PowerShell and JavaScript, capture screenshots, transfer and archive files, proxy traffic via SOCKS5, and maintain user-level autostart. Defenders should look for unsigned binaries claiming vendor identity, encoded command-line arguments, HKCU Run entries, and the nvctr_sys.db database.",
+      "completeness": "High",
+      "threats": [
+        "Labubarat",
+        "Dns_tunneling_technique",
+        "Labubapanel_tool"
+      ],
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Microsoft Edge",
+        "Microsoft Windows Defender",
+        "Microsoft Defender",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "macOS Chrome",
+        "icrosoft Edge We",
+        "Windows shell",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "md5",
+        "base32"
+      ],
+      "functions": [
+        "fetch"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "rust",
+        "jscript"
+      ],
+      "links": [
+        "https://blackpointcyber.com/blog/labubarat-a-rust-based-remote-access-tool-masquerading-as-nvidia-software/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "OkoBot: new sophisticated malware framework targets cryptocurrency users",
+      "summary": "OkoBot is a sophisticated malware framework, an evolution of the TookPS campaign, that targets cryptocurrency users and remained active at the time of publication. Initial infection arrives through ClickFix lures and trojanized software distributed via GitHub, such as a fake SSMS package bundling Audacity. An automated SSH bot then gains remote desktop access, deploys more than 20 payloads, and harvests wallet files, cookies, and credentials. Modules include a browser extension loader that installs the Rilide stealer, a plugin dispatcher, the SeedHunter tool that phishes Ledger and Trezor seed phrases, a keylogger, and OkoSpyware, which records wallet and password manager windows. Hundreds of victims have been identified in more than 25 countries, with the largest shares in Brazil, Vietnam, Canada, Mexico, and Türkiye. The campaign has not been attributed to a known actor, though Russian-speaking actor indicators were noted.",
+      "completeness": "High",
+      "threats": [
+        "Okobot",
+        "Tookps",
+        "Dll_hijacking_technique",
+        "Tevirat",
+        "Uac_bypass_technique",
+        "Hdutil_tool",
+        "Rilide",
+        "Clickfix_technique",
+        "Vmprotect_tool",
+        "Okospyware"
+      ],
+      "geo": [
+        "Russian",
+        "Vietnam",
+        "Russia",
+        "Canada",
+        "Mexico",
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "SQL Server Management Studio",
+        "Audacity",
+        "Windows Defender",
+        "Chromium",
+        "chrome",
+        "Ledger Live",
+        "Electron",
+        "PassXC or 1",
+        "ssword)",
+        "an"
+      ],
+      "wallets": [
+        "trezor",
+        "ledger_wallet",
+        "exodus_wallet",
+        "metamask",
+        "tonkeeper"
+      ],
+      "algorithms": [
+        "rc4",
+        "md5",
+        "aes",
+        "cbc",
+        "murmur3",
+        "base64"
+      ],
+      "functions": [
+        "TaskIndex",
+        "TaskID",
+        "PluginDispatch"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "Daxin Returns: Stealthy Malware Resurfaces in Taiwan Alongside a New Backdoor",
+      "summary": "Symantec reports that Backdoor.Daxin, a China-linked kernel-mode rootkit first exposed in 2022, was found active on a compromised host at a Taiwan-based subsidiary of a multinational high-tech manufacturer in May 2026. Daxin hijacks existing inbound TCP connections to carry its command-and-control traffic, making it hard to detect with conventional network monitoring. On the same host, researchers found a previously unknown backdoor, Backdoor.Stupig, which registers as a keyboard-layout provider to run commands as SYSTEM from the Windows logon screen. Both samples carry compile timestamps from early 2013, and the host had no telemetry before May 2026, suggesting the intrusion may have gone undetected for years. Symantec has not confirmed a code-level link between the tools, though their shared development practices and co-deployment suggest a connection. Defenders should note that logon-screen execution of this kind is rarely monitored.",
+      "completeness": "Low",
+      "threats": [
+        "Daxin",
+        "Stupig"
+      ],
+      "geo": [
+        "Taiwan",
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "winlogon",
+        "Windows kernel-mode driver"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/daxin-returns-stupig"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "TELEPUZ: a modular MaaS malware spreading via CLICKFIX-VIDAR chains",
+      "summary": "TELEPUZ is a modular, full-featured malware-as-a-service family first observed in late April 2026 and delivered through ClickFix social engineering chains that drop VIDAR. The chain runs through a PowerShell command, a VIDAR Go stager, a small stager (install.exe), and a main DLL (telepuz.dll) hosted on numerous rotating staging domains. The malware uses indirect syscalls, AMSI and ETW patching, NTDLL unhooking, and anti-VM and anti-debugging checks, including CIS-region locale checks. Its C2 is reached over WebSockets with fallback resolution via Telegram, Steam, DNS, and a Polygon smart contract. It supports 36 commands, including credential stealing, keylogging, and a WebInjector module that swaps financial form fields such as IBANs. Defenders should note that C2 infrastructure is limited to a few compromised legitimate websites, while staging domains change frequently.",
+      "completeness": "High",
+      "threats": [
+        "Telepuz",
+        "Clickfix_technique",
+        "Vidar_stealer",
+        "Uac_bypass_technique",
+        "Chromeelevator_tool",
+        "Chromelevator_tool",
+        "Process_hollowing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Georgia",
+        "Azerbaijani",
+        "Armenia",
+        "Azerbaijan",
+        "India",
+        "Moldova",
+        "Belarus",
+        "Uzbekistan",
+        "Ukrainian",
+        "Romanian",
+        "Ukraine",
+        "Tajikistan",
+        "Asia",
+        "Georgian",
+        "Kazakhstan",
+        "Turkmenistan",
+        "Brazil",
+        "Belarusian",
+        "Kyrgyzstan"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows shell",
+        "Windows registry",
+        "Telegram",
+        "Steam",
+        "Windows Security",
+        "chrome",
+        "Firefox",
+        "Chrome",
+        "Firefox",
+        "Opera"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "rc4",
+        "customrc4",
+        "xor",
+        "base64",
+        "fowlernollv",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "GetModuleHandle",
+        "JSON-RPC",
+        "CreateZip",
+        "GetCurrentTokenStatus",
+        "GetKeyLoggerStatus",
+        "GetPathsInfo",
+        "SetBeaconInterval",
+        "WriteToWebInjectModulePipe"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/telepuz-maas-malware-clickfix",
+        "https://github.com/elastic/labs-releases/tree/main/tools/telepuz/decrypt\\_stringv2.py",
+        "https://github.com/hfiref0x/UACME/blob/e79481f9c2fcb48fa65aaee451e50c79aae4b372/Source/Akagi/methods/tyranid.c#L435",
+        "https://github.com/hfiref0x/UACME/blob/e79481f9c2fcb48fa65aaee451e50c79aae4b372/Source/Akagi/methods/api0cradle.c#L30"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "ClaudeFix: Shared Claude Chats Meet ClickFix",
+      "summary": "Zscaler Threat Hunting describes a MacSync Stealer campaign that used malvertising to direct Mac users searching for Claude to shared Claude chats containing ClickFix paste-and-run commands. The chats were labeled \"Shared by Apple Support,\" which lent false legitimacy to the instructions. The commands fetched a multi-stage payload that ran in memory via osascript, harvested keychains, browser credentials, password manager and crypto wallet data, and files, then exfiltrated them in chunks. Persistence was added through ~/.zshrc when the malware lacked access, and a fake macOS password prompt was used to harvest passwords. The campaign ran briefly from June 12 to 19, 2026, and Anthropic was notified and the chats were removed. Defenders should treat pasted terminal commands from web content and shared AI chats as high-risk.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Macc_stealer"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "ClaudeFix",
+        "Claude",
+        "Anthropic",
+        "curl",
+        "macOS",
+        "Telegram",
+        "Chrome",
+        "Chromium",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "ronin_wallet",
+        "rabby",
+        "exodus_wallet",
+        "bybit",
+        "guarda_wallet",
+        "solflare_wallet",
+        "finnie",
+        "bitfinity_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "aptos",
+        "casper",
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "zip"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/claudefix-shared-claude-chats-meet-clickfix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "From Biography to Backdoor: Tracking a DoNot (APT-C-35) Intrusion Targeting Bangladesh Military Personnel",
+      "summary": "DoNot (APT-C-35) is running a cyber-espionage campaign against Bangladeshi military and defence personnel, using a spear-phished RTF disguised as a biography of a Bangladesh Air Force officer. The RTF fetches a VBA macro via remote template injection, and server-side geofencing delivers the payload only to victims in the target region. Chained XOR-encoded shellcode stages lead to a DLL implant that persists as a scheduled task disguised as OneDrive telemetry and beacons to a second C2 over AES-128-CBC encrypted HTTPS. Researchers retrieved a live second-stage DoNot module, showing the infrastructure was still distributing follow-on payloads. Attribution rests on matching C2 URI paths and AES key material with prior DoNot samples. Defenders should hunt for HTTPS POST traffic carrying the mopd= and malp= parameters and for OneDrive-spoofing scheduled tasks.",
+      "completeness": "High",
+      "threats": [
+        "Rtf_template_inject_technique",
+        "Spear-phishing_technique",
+        "Nop_sled_technique",
+        "Process_injection_technique",
+        "Medusalocker"
+      ],
+      "geo": [
+        "Bangladesh",
+        "Asian",
+        "Asia",
+        "Pakistan",
+        "India",
+        "Sri lanka"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 15,
+      "software": [
+        "Microsoft Office",
+        "Microsoft Word",
+        "Task Scheduler",
+        "WinINet API"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "aes-128-cbc",
+        "aes",
+        "zip",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "GetEIP"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/tracking-donot-apt-c-35-bangladesh-military-intrusion"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "Inside JIVS PhishKit: A Domain-Adaptive Credential Harvester",
+      "summary": "ZeroBEC prevented a coordinated credential-harvesting campaign that targeted multiple users in one Microsoft 365 organization with mailbox-policy-violation lures from an unrelated sender. The messages passed the secure email gateway and landed directly in the Inbox. The phishing page is a generic \"Session Expired\" form rather than a Microsoft or Google clone, so it can harvest passwords for many email providers. The kit, tracked as JIVS PhishKit, is a self-hosted PHP package that collects up to three password attempts with false \"Invalid Password\" messages and stores them by email and local file. Its stable artifacts, including the jivsbsdnoo parameter and script names, appear in public records from August 2025 through July 2026, with a concentration in APAC hosting. Defenders should hunt on combinations of these stable artifacts, since sender authentication and brand matching alone would not catch this campaign.",
+      "completeness": "High",
+      "threats": [
+        "Jivs_phishkit_tool",
+        "Credential_harvesting_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Germany",
+        "Apac",
+        "Bulgaria",
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "cPanel",
+        "Roundcube",
+        "Zimbra"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "ZeroBEC"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://zerobec.com/blog/jivs-phishkit-domain-adaptive-credential-harvester"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "Hospitals, local governments, and FPV operators are the focus of the UAC-0247 (UAC-0244) cyberthreat cluster",
+      "completeness": "High",
+      "threats": [
+        "Ravenshell",
+        "Agingfly",
+        "Silentloop",
+        "Chromelevator_tool",
+        "Zapixdesk",
+        "Rustscan_tool",
+        "Ligolo-ng_tool",
+        "Chisel_tool",
+        "Xmrig_miner",
+        "Dll_sideloading_technique",
+        "Havoc"
+      ],
+      "geo": [
+        "Ukrainian"
+      ],
+      "software": [
+        "Telegram",
+        "WhatsApp",
+        "IREGUARD pr",
+        "chrome",
+        "WIREGUARD",
+        "PYINSTALLER"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "xor",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6318437"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "Analysis of an Attack Campaign by the Suspected APT-C-26 (Lazarus) Group to Upgrade Its Monitoring Software",
+      "summary": "APT-C-26 (Lazarus), a highly active APT group, targets financial institutions, cryptocurrency exchanges, government agencies, aerospace, and defense sectors to steal funds and sensitive information. Researchers previously found a custom monitoring program with full remote desktop control, and this follow-up reports that its toolset now includes a keylogging component. The keylogger, disguised as a Windows kernel service named \"Kernel32 Service,\" installs for automatic startup and uses a watchdog to keep an agent process running in the user session. The agent captures keystrokes through three fallback methods (raw input, a low-level keyboard hook, and polling) and logs them with active window context. Logs are periodically sent to a command-and-control server and then truncated. The researchers conclude that the toolchain has evolved from remote control into a dual collection platform covering both operator actions and screen content.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "Windows kernel"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/6hjjsEuuOTk8_FJrXWe9Ew"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-15",
+      "title": "Introducing CylindricalCanine: The GoldenEyeDog subgroup responsible for the April DigiCert incident",
+      "summary": "CylindricalCanine is a subgroup of the Chinese cybercrime group GoldenEyeDog, using the Golden Gh0st Loader and Golden Gh0st RAT malware, the latter a modified version of the 2008 Gh0st RAT. The actors typically send disguised screenshot files through phishing emails and support ticket submissions, and their malware uses DLL sideloading and encrypted LOG files to load the RAT implant. In April 2026 they compromised a support user's device at DigiCert, a code-signing certificate provider, and stole initialization codes used to activate customers' signing hardware tokens. The group's malware targets finance organizations in the Asia Pacific region and steals browser credentials. Defenders can use the published Suricata rules and IOCs to detect this activity.",
+      "completeness": "High",
+      "threats": [
+        "Golden_gh0st_rat",
+        "Gh0st_rat",
+        "Golden_gh0st_loader",
+        "Zhong_stealer",
+        "Dll_sideloading_technique",
+        "Credential_stealing_technique",
+        "Watering_hole_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "United states",
+        "Belize",
+        "Asia pacific",
+        "Canada",
+        "Taiwan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Internet Explorer",
+        "Chrome",
+        "firefox",
+        "wser.exe fi",
+        "Windows service",
+        "QILING"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://expel.com/blog/introducing-cylindricalcanine/",
+        "https://github.com/expel-io/expel-intel/blob/main/2026/07/GoldenEyeDog-analysis-tools/extract\\_jan2025\\_tasloginbase\\_payload.py",
+        "https://github.com/expel-io/expel-intel/blob/main/2026/07/GoldenEyeDog-IOC/Golden\\_Gh0st\\_IOCs.csv"
+      ]
+    }
+  }
+]

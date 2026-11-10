@@ -1,0 +1,480 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "Russian State-Supported Zimbra Phishing: SafeBreach Coverage for CISA Advisory AA26-204A",
+      "summary": "Russian state-supported APT group LAUNDRY BEAR (also tracked as Void Blizzard and TA488) has run a phishing campaign since July 2025 targeting Zimbra Collaboration Suite webmail across US and allied government and commercial networks. The group uses a custom \"Ulej\" capability with a view-based exploit for CVE-2025-66376, which runs automatically when a victim opens a malicious email in an unpatched instance, requiring no link click or attachment. The exploit exfiltrates the organization's email directory, the last 90 days of the victim's mail, and other sensitive data over HTTPS and DNS. The actors' objective is espionage, and the campaign continues against unpatched Zimbra systems. Defenders should patch ZCS, enforce MFA, restrict and monitor outbound mail-server traffic, and hunt for bulk mailbox or directory exports.",
+      "completeness": "High",
+      "threats": [
+        "Ulej_tool",
+        "Evilginx_tool",
+        "Flowerbed_tool",
+        "Spear-phishing_technique",
+        "Smuggling_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russian",
+        "Netherlands"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 33,
+      "software": [
+        "Zimbra",
+        "Zimbra Collaboration Suite",
+        "Docker",
+        "ProtonMail",
+        "ginx re"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1",
+        "base32",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "GetScratchCodesRequest"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.safebreach.com/blog/cisa-aa26-204a-russian-zimbra-phishing-safebreach-coverage/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "SourTrade: Browser-Assembled Malware Delivered Through Malvertising",
+      "summary": "SourTrade is a persistent malvertising cluster, active since late 2024, that impersonates TradingView, Solana, and Luno to reach retail traders and crypto investors in 12 countries. Its landing pages use a cloaking kit to separate analysts and bots from likely victims, who receive a convincing replica of a trusted platform. Rather than distributing a finished executable, the page sends build instructions to the victim's browser, which fetches a clean Bun runtime from separate infrastructure and assembles the malware in memory. Because no complete malicious file exists on the network, file-fingerprinting detection is largely ineffective, and each victim can receive a different output. Defenders should examine the full execution chain, since the downloaded file appears clean in isolation.",
+      "completeness": "Medium",
+      "threats": [
+        "Sourtrade",
+        "Cloaking_technique",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Brazil",
+        "Thailand",
+        "Turkey",
+        "Nigeria",
+        "Apac",
+        "Bolivia",
+        "Great britain",
+        "Latam",
+        "Japan",
+        "Australia",
+        "South korea",
+        "Taiwan",
+        "South africa"
+      ],
+      "software": [
+        "Squid",
+        "TradingView"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "aes-ctr",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "setInterval",
+        "createObjectURL",
+        "U",
+        "I",
+        "createElement"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.confiant.com/p/sourtrade-browser-assembled-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "JADEPUFFER evolves: The agentic threat actor deploys ransomware built to destroy AI models",
+      "summary": "JADEPUFFER is an agentic threat actor that exploited the Langflow framework via CVE-2025-3248, a missing-authentication flaw in its code validation endpoint, to gain entry to target hosts. After its earlier campaign, the operator returned with ENCFORGE, a compiled Go ransomware built specifically to encrypt AI and machine learning assets such as model checkpoints, vector databases, and training datasets. Because trained models cannot be restored from backups once encrypted, the report notes that rebuilding one can cost $75,000 to $500,000. The operator built a Python-based escape toolkit to run the ransomware on the host through a privileged Docker container after an initial binary fetch failed. For defenders, the key takeaway is that AI infrastructure needs protection beyond conventional backups, starting with patching exposed AI frameworks.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Encforge",
+        "Onnx_store_tool",
+        "Lockbit",
+        "Shadow_copies_delete_technique",
+        "Homoglyph_technique"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Langflow",
+        "MySQL",
+        "Nacos",
+        "Docker",
+        "curl",
+        "HuggingFace",
+        "llama",
+        "macOS",
+        "bcdedit",
+        "outlook",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "aes-256",
+        "sha256",
+        "aes-256-ctr",
+        "base64"
+      ],
+      "functions": [
+        "AES_ENCRYPT",
+        "exec",
+        "RCE",
+        "exec_in_bigrun"
+      ],
+      "languages": [
+        "python",
+        "cpython"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/jadepuffer-evolves-the-agentic-threat-actor-deploys-ransomware-built-to-destroy-ai-models/",
+        "https://github.com/langflow-ai/langflow"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "A Royal update",
+      "summary": "The Royal ransomware group was highly active in late 2022, with almost 60 victims published on its leak site in November and December, and Invictus IR says the true count is higher because not all victims are posted. The group uses Qbot for initial access, having previously been associated with IcedID, and relies heavily on PowerShell throughout the attack. A UAC bypass using a default scheduled task, first observed by the responders, is easy to miss in PowerShell logs. Royal operators move quickly from initial access to full domain compromise, using PowerSploit, AdFind, Cobalt Strike, and Qbot for persistence and reconnaissance. Defenders should hunt for scheduled tasks, PowerShell activity, and service installations in Windows event logs.",
+      "completeness": "Low",
+      "threats": [
+        "Royal_ransomware",
+        "Spear-phishing_technique",
+        "Qakbot",
+        "Cobalt_strike_tool",
+        "Uac_bypass_technique",
+        "Smuggling_technique",
+        "Process_injection_technique",
+        "Powersploit_tool",
+        "Adfind_tool",
+        "Passthehash_technique",
+        "Icedid",
+        "Megasync_tool"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "Dropbox",
+        "Twitter"
+      ],
+      "functions": [
+        "FindLocalAdmin"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.invictus-ir.com/news/a-royal-update",
+        "https://github.com/PowerShellMafia/PowerSploit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "Fake Corepack Site Distributes Infostealer and Proxyware to Developers",
+      "summary": "A fake website at corepack.org impersonates Corepack, the Node.js tool for managing package managers, and targets developers searching for a download after Node.js stopped bundling it. Clicking the download button delivers a file presented as a free VPN client that installs an infostealer able to access browser profiles and stored SSH keys. The same installer also enrolls the machine in bandwidth sharing, turning it into a proxy exit node without the user's knowledge. A second click path delivers adware-style software, and the site appears to be AI-generated with no identified operator. Corepack is an npm package with no official installer at corepack.org, so developers should install it only from the npm registry.",
+      "completeness": "Low",
+      "threats": [
+        "Proxyjacking_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Windows installer"
+      ],
+      "links": [
+        "https://socket.dev/blog/fake-corepack-site-distributes-infostealer-and-proxyware",
+        "https://github.com/nodejs/corepack/issues/803",
+        "https://github.com/nodejs/corepack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "INC RANSOMWARE : THREAT INTELLIGENCE",
+      "summary": "INC Ransomware emerged in 2023 and has reportedly hit about 870 victims, mostly in the US, Canada, Germany, UK and Australia. The researcher located the group's negotiation panel server, which runs nginx with a Yii PHP backend and is hosted in Russia. The panel is a React-based chat portal with leak announcements, ransom tracking and file upload for test decryption. Analysis of 9 clear web domains and about 170 IPs found roughly 65% mapped to Russia, with some infrastructure reused under new domain names. The report also notes that the group reportedly offered its code base for sale in 2024, and that related groups such as LYNX may share it.",
+      "completeness": "High",
+      "threats": [
+        "Inc_ransomware",
+        "Lynx",
+        "Sinobi"
+      ],
+      "geo": [
+        "Russian",
+        "Netherlands",
+        "Australia",
+        "Canada",
+        "Russia",
+        "Germany",
+        "Finland"
+      ],
+      "software": [
+        "nginx",
+        "Tor Browser",
+        "Twitter"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/07/24/inc-ransomware-threat-intelligence/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "Inside a DPRK BlueNoroff ClickFix Kit",
+      "summary": "BlueNoroff, a financially motivated subgroup of North Korea's Lazarus Group, runs a victim acquisition platform that impersonates Zoom and Microsoft Teams meetings. Operators obtained source code after exposed JavaScript source maps revealed the kit's logic. Lures are sent from hijacked Telegram accounts of trusted contacts, and victims are then shown a fake SDK update prompt that delivers a ClickFix payload. The kit profiles victims' cryptocurrency wallets before malware delivery, enabling selective targeting of Web3 and crypto organisations. Windows and macOS chains deliver a VBScript implant classified as Trojan.NukeSped and a macOS stealer that takes Keychain master keys. The report advises verifying meeting invites out-of-band, even from known contacts, and checking domains that resolve to Cloudzy infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Get2_loader",
+        "Nukesped_rat",
+        "Vmprotect_tool",
+        "Typosquatting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Polish",
+        "Iranian",
+        "North korea",
+        "North korean",
+        "Dprk",
+        "Australian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 26,
+      "software": [
+        "Zoom",
+        "Microsoft Teams",
+        "macOS",
+        "Telegram",
+        "WebRTC",
+        "ChatGPT",
+        "Windows Defender",
+        "indexeddb",
+        "Chrome",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "aes-gcm",
+        "sha256"
+      ],
+      "functions": [
+        "getUName",
+        "getInfo",
+        "getProc",
+        "getexts",
+        "HasTelegramWebUsage",
+        "handlePostResponse",
+        "deleteSelfExecutableBestEffort"
+      ],
+      "languages": [
+        "visual_basic",
+        "vbscript",
+        "powershell",
+        "typescript",
+        "perl",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.jumpsec.com/guides/inside-a-dprk-bluenoroff-clickfix-kit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "mrmustard PyPI Package Trojanized to Steal Credentials",
+      "summary": "The mrmustard PyPI package version 0.7.4, published July 23, 2026, was trojanized to steal credentials from anyone who ran import mrmustard on a laptop or workstation. The payload read SSH private keys, AWS credentials, and Kubernetes config, and sent them to an attacker server, while also collecting SLURM, GPU, and other host data aimed at research and HPC environments. It installed three persistence mechanisms (cron, shell rc, and a site-packages .pth file) that survive package uninstallation. The release had no matching GitHub tag or commit, and it was published through the primary maintainer's compromised account after CI publishing tokens were stolen. Defenders should rotate exposed credentials and remove the persistence artifacts, and should block packages that lack matching source-repository provenance.",
+      "completeness": "High",
+      "threats": [
+        "Dead_drop_technique",
+        "Jscrambler_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "mrmustard",
+        "Kubernetes",
+        "TRAVIS",
+        "CIRCLECI",
+        "docker",
+        "crontab",
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "_check_tf_compatibility",
+        "version",
+        "about",
+        "_sk",
+        "_eip"
+      ],
+      "languages": [
+        "python",
+        "cpython"
+      ],
+      "links": [
+        "https://safedep.io/mrmustard-malicious-pypi-package",
+        "https://github.com/XanaduAI/MrMustard",
+        "https://github.com/XanaduAI/MrMustard/commit/2ebfe28ab549492e74b98ce323fa881725cbfcf2",
+        "https://github.com/XanaduAI/MrMustard/commit/80aba721b2a902bc6efb04e3c77c3bdd28d1e716"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "The Signs Were There: What the First Autonomous Ransomware Case Confirms",
+      "summary": "An AI agent carried out a full ransomware intrusion against a live production system with no human operator, an operation named JADEPUFFER by Sysdig and described by TrendAI Research as the first agentic ransomware. The agent entered through an unpatched Langflow flaw (CVE-2025-3248), harvested credentials, and used default MinIO credentials and a chained Nacos authentication bypass with an unrotated signing key to escalate privileges. It then encrypted about 1,342 configuration records, deleted the originals, and left a ransom note. The operation's extortion layer failed because the encryption key was never saved and the ransom address was a public documentation sample. For defenders, agent-run attacks leave few reusable indicators, so detection should focus on behaviors such as payload-decoding child processes, fixed-interval beaconing, and bulk encryption followed by table drops.",
+      "completeness": "Low",
+      "threats": [
+        "Lamehug_tool",
+        "Promptlock"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 8,
+      "software": [
+        "Anthropic",
+        "Claude",
+        "Langflow",
+        "MinIO",
+        "Nacos"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "functions": [
+        "AES_ENCRYPT"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/g/autonomous-ransomware.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-24",
+      "title": "Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite",
+      "completeness": "High",
+      "threats": [
+        "Password_spray_technique",
+        "Evilginx_tool",
+        "Aitm_technique",
+        "Ulej_tool",
+        "Flowerbed_tool",
+        "Spear-phishing_technique",
+        "Smuggling_technique"
+      ],
+      "geo": [
+        "Canada",
+        "French",
+        "Netherlands",
+        "New zealand",
+        "Sweden",
+        "United states",
+        "Canadian",
+        "Moldova",
+        "Russian",
+        "Russia",
+        "Czech republic",
+        "Polish",
+        "Estonia",
+        "Russian federation",
+        "Danish",
+        "Ukraine",
+        "Ukrainian",
+        "Italian",
+        "Poland",
+        "Dutch",
+        "Australian",
+        "Spain",
+        "United kingdom"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 36,
+      "software": [
+        "Zimbra Collaboration Suite",
+        "Zimbra",
+        "Microsoft Exchange",
+        "bra Collaboration Suite (ZCS",
+        "Docker",
+        "Nginx",
+        "ProtonMail"
+      ],
+      "algorithms": [
+        "base32",
+        "sha1",
+        "gzip",
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "GetIdentitiesRequest",
+        "CreateAppSpecificPasswordRequest",
+        "GetScratchCodesRequest",
+        "GetInfoRequest",
+        "GetDeviceStatusRequest",
+        "GetOAuthConsumersRequest"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/russian-state-supported-cyber-actors-conduct-phishing-campaign-targeting-users-of-zimbra-collaboration-suite"
+      ]
+    }
+  }
+]

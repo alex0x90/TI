@@ -1,0 +1,664 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Botnet Rising Star: The Evolution and In-Depth Technical Analysis of Dysphoria",
+      "summary": "Dysphoria is an emerging botnet family first tracked by XLab from Q1 2026, with a bot population exceeding 200,000. It has evolved rapidly through jackskid and fbot variants and now uses blockchain ENS and SNS domains for covert C2 resolution. Recent versions also turn compromised hosts into relay/proxy nodes, using UPnP to map ports and epoll-based relaying to forward traffic. Propagation relies mainly on Telnet/SSH brute-force attacks and exploitation of IoT vulnerabilities, targeting routers, gateways, and IP cameras. The report notes its DDoS activity is near-daily and globally distributed, and that its blockchain domains and relay nodes make takedown considerably harder for defenders.",
+      "completeness": "Medium",
+      "threats": [
+        "Dysphoria",
+        "Jackskid",
+        "Fbot"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "android",
+        "Linux"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/botnet-rising-star-the-evolution-and-in-depth-technical-analysis-of-dysphoria/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Analysis of a BlueShell variant used by an APT group",
+      "summary": "BlueShell is an open-source Go-based RAT, and this report describes a Linux variant used by APT groups such as BlackTech in post-compromise activity. The variant is deployed by a dropper that XOR-decodes and decompresses an embedded payload, writes it to /tmp/kthread, disguises its process as a kernel worker, and deletes the file after execution. Its configuration is Base64 and XOR encoded, and it can route C2 traffic through a victim's proxy server, a capability absent from variants seen before 2024. The malware checks the C2 certificate's Common Name for trusted-looking vendor names, sends host details to the C2, and supports remote shell, file transfer, and SOCKS5 proxy commands under obfuscated names. The report notes prior use against South Korean and Thai targets and BlackTech-linked activity against Japanese organizations, so defenders should remain alert to continued use.",
+      "completeness": "Low",
+      "threats": [
+        "Blueshell",
+        "Icecache"
+      ],
+      "geo": [
+        "South korea",
+        "Thailand",
+        "China",
+        "Singapore",
+        "Japan",
+        "Indonesia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ubuntu",
+        "Squid",
+        "Twitter"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/07/blueshell-variant-deployed-by-apt-group/",
+        "https://github.com/ariya/FastLZ"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "[Op Report\\] From Award Scam to Domain Recon & Exfiltration",
+      "summary": "The report describes a financially motivated intrusion that began with an award-scam phishing lure delivering a password-protected ZIP hosted on GitHub. An embedded LNK abused the signed scp.exe binary as a ProxyCommand to launch a PowerShell loader, which deployed Cobalt Strike, then ScreenConnect, then a Havoc Demon implant. The payload chain varied based on whether the victim was domain-joined, with the full chain deployed only on the Active Directory host. Over roughly 24 hours, the operator harvested Chrome and Edge browser credential databases, performed domain reconnaissance, and exfiltrated data to temp.sh. Defenders should alert on GitHub release-asset downloads, ProxyCommand abuse in scp.exe or ssh.exe, and unexpected ScreenConnect installs via msiexec.",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Screenconnect_tool",
+        "Havoc",
+        "Wevtutil_tool",
+        "Lolbin_technique",
+        "Clickfix_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 14,
+      "software": [
+        "Active Directory",
+        "Chrome",
+        "OpenSSH",
+        "macOS Chrome",
+        "url of",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Set-Clipboard",
+        "Get-Content"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/awardreceipt-hok-july-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Cookie Crumbles: How Exploitation of CVE-2026-0257 Leads to Qilin Ransomware",
+      "summary": "Arctic Wolf Labs investigated several June 2026 intrusions in which attackers exploited CVE-2026-0257, an authentication bypass in Palo Alto Networks GlobalProtect, to gain VPN access and then deploy Qilin ransomware. After entry, the attackers dumped LSASS memory and extracted the NTDS database, then moved laterally with PsExec over administrative shares. Tradecraft varied between intrusions, from rapid encryption-only attacks to double extortion with data theft to MEGA. Defenders should patch affected PAN-OS and Prisma Access versions, terminate active GlobalProtect sessions, and treat credential theft as full domain compromise if exploitation is suspected.",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Psexec_tool",
+        "Credential_harvesting_technique",
+        "Anydesk_tool",
+        "Ngrok_tool",
+        "Logmein_tool",
+        "Meshagent_tool",
+        "Minidump_tool",
+        "Netscan_tool",
+        "Netexec_tool",
+        "Crackmapexec_tool",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique",
+        "Dcsync_technique"
+      ],
+      "geo": [
+        "Vancouver"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "PsExec",
+        "PAN-OS",
+        "Linux",
+        "Local Security Authority",
+        "Windows service",
+        "Active Directory",
+        "Windows registry",
+        "SoftPerfect Network Scanner",
+        "Task Scheduler",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "functions": [
+        "Get-WinEvent"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog-uk/cookie-crumbles-how-exploitation-of-cve-2026-0257-leads-to-qilin-ransomware/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/cookie-crumbles-qilin"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Inside Astaroth's New Spambot Component",
+      "summary": "Astaroth (also called Guildma), a Brazil-focused banking trojan and information stealer active since at least 2015, began distributing a new WhatsApp Web spambot component in Q4 2025. The spambot automatically messages every contact in a victim's WhatsApp list, turning infected users into distributors of the malware through a trusted messaging platform rather than traditional email. It runs a browser in headless mode and strips automation indicators, so the victim never sees a browser window. Its code shares function names, variables, and configuration conventions with a spambot called Vareg, which indicates a strong developmental relationship between the two. Brazil-specific phone number filtering and Portuguese-language templates confirm the operators are targeting Brazil-based victims.",
+      "completeness": "Medium",
+      "threats": [
+        "Astaroth",
+        "Vareg",
+        "Eternidade"
+      ],
+      "geo": [
+        "Latin american",
+        "Latam",
+        "Portuguese",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Chromium",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-cbc",
+        "zip",
+        "base64",
+        "aes",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "delphi",
+        "python",
+        "jscript",
+        "javascript",
+        "autoit"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/inside-astaroths-new-spambot-component/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "The Evolution of Remote Access Tool Abuse: From Single Payloads to Multi-Stage Campaigns",
+      "summary": "Threat actors are abusing legitimate remote access tools (RATs) in multi-stage attack chains that establish persistence and enable initial access brokering. A phishing email or malicious document typically delivers an initial RAT, which then contacts a command-and-control server and is directed to download a second RAT, such as ConnectWise RAT, GoTo RAT, Datto RMM, or SimpleHelp RAT. Attackers use these chains to gain control of victim machines and sell access to other threat actors, who often operate the later stages. Multiple RATs and C2 servers make the activity harder to find and block, and some tools help attackers reduce PowerShell logging. Cofense recommends layered defenses, including employee phishing training, behavioral-based EDR, and a curated list of approved remote access tools.",
+      "completeness": "Low",
+      "threats": [
+        "Centrastage_tool",
+        "Goto_rat",
+        "Screenconnect_tool",
+        "N-able_tool",
+        "Simplehelp_tool",
+        "Remcos_rat",
+        "Xworm_rat",
+        "Asyncrat"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cofense.com/blog/the-evolution-of-remote-access-tool-abuse"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Cleaning Out Inboxes: TA488 Comes for Outlook with Another Half-Click Exploit",
+      "summary": "TA488, a Russia-aligned threat actor, began a campaign on 22 July 2026 exploiting CVE-2026-42897, a cross-site scripting flaw in Outlook Web Access, using half-click emails that compromise targets when opened. The generic, no-link, no-attachment lures targeted government, telecommunications, finance, hospitality, and aerospace entities in the US and Europe. The emails deliver OWAReaper, a previously unknown browser-based JavaScript implant that steals saved OWA credentials and OAuth tokens. OWAReaper grants the \"Default\" user owner-level access to mailbox folders, so persistence survives credential rotation and device re-imaging. Defenders should revoke and audit EWS tokens, remove Default folder permissions, clear OWA's offline database and localStorage key, and monitor the listed C2 detections.",
+      "completeness": "Medium",
+      "threats": [
+        "Owareaper",
+        "Supply_chain_technique",
+        "Zimreaper"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Zimbra",
+        "Microsoft Exchange",
+        "IndexedDB",
+        "WordPress"
+      ],
+      "algorithms": [
+        "aes-ctr",
+        "base32",
+        "aes",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Proofpoint",
+        "ReadWriteMailbox",
+        "GetClientAccessToken",
+        "eval",
+        "send",
+        "_buildPackets"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/cleaning-out-inboxes-ta488-comes-outlook-another-half-click-exploit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "New GOFFEE campaigns: geographic expansion, undocumented TTPs, and containers",
+      "summary": "GOFFEE, an APT group tracked since 2023, is running new phishing campaigns that mainly target technology organizations in Russia and now Belarus. The group uses remote template injection without exploiting a vulnerability, delivering Base64-encoded, nested payloads that run through cscript, WMI, PowerShell and in-memory .NET loading. Post-exploitation relies heavily on legitimate tools such as tasklist, certutil, curl and mshta, and the group copies and renames interpreters to hide them. Attackers stole configuration data from AnyDesk, OpenVPN, Kerio Control, Telegram and pgAdmin, and exfiltrated command output through the HTTP User-Agent header. A Mythic agent was observed inside a Linux container, launched through a RabbitMQ setup script, marking the group's first documented move into container infrastructure. Defenders should monitor Office-spawned processes, mshta and certutil misuse, and unusual User-Agent traffic.",
+      "completeness": "High",
+      "threats": [
+        "Anydesk_tool",
+        "Mythic_c2_tool",
+        "Powertaskel"
+      ],
+      "geo": [
+        "Russia",
+        "Russian federation",
+        "Belarus",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "PostgreSQL",
+        "elegram",
+        "p",
+        "curl",
+        "inux co",
+        "Unix",
+        "RabbitMQ",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Get-PSDrive"
+      ],
+      "languages": [
+        "jscript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/tr/goffee-new-ttps-and-container-attacks/116431/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Joyfill npm Packages Compromised with Blockchain C2 Loader",
+      "summary": "Two beta versions of packages in the @joyfill npm scope, published on July 28, 2026, carried a blockchain-based C2 loader, and they were unpublished within hours. The attacker used the existing scope and a beta dist-tag, and the malicious @joyfill/components version pulls in a malicious @joyfill/layouts version whose payload executes at require() time rather than at install time. The loader resolves its C2 instructions through Tron and BSC dead drops, then fetches a second stage that delivers a RAT client using the same infrastructure as the earlier astro.config.mjs campaign. Defenders should note that early network traffic goes only to legitimate public blockchain APIs, which makes detection harder. If a lockfile pins either malicious version, rotate secrets present in the affected environment.",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique",
+        "Typosquatting_technique",
+        "Polinrider",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "trongrid"
+      ],
+      "wallets": [
+        "tron",
+        "mainnet"
+      ],
+      "crypto": [
+        "binance",
+        "aptos"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "require",
+        "Function",
+        "eval",
+        "getTime"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://safedep.io/joyfill-npm-blockchain-c2-supply-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Amazon identifies North Korean hacker group behind open-source supply chain attacks",
+      "summary": "Amazon Threat Intelligence linked compromises of the axios, debug, chalk, and typo-crypto NPM libraries to a single DPRK-linked threat actor, tracked under several names including SAPPHIRE SLEET and BlueNoroff, with medium confidence. In each case with debug, chalk, and axios, the actor socially engineered a trusted maintainer and published a malicious update that automatically pulled into downstream environments. The typo-crypto campaign in March 2025 was small and likely served as a testing ground for the later attacks. The report describes attackers splitting malicious workflows across harmless-looking packages and using cryptography, sandbox evasion, and long-term maintainer trust-building. It also warns that generative AI enables slopsquatting and prompt injection aimed at AI code reviewers.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Slopsquatting_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk",
+        "Republic of korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "XZ Utils",
+        "macOS",
+        "Linux",
+        "GuardDuty"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/amazon-identifies-north-korean-hacker-group-behind-open-source-supply-chain-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "We found 120 fake Walmart stores trying to steal your credit card",
+      "summary": "Fake Walmart-branded websites, part of a network of more than 120 near-identical domains, lure shoppers on mobile devices with liquor discounts of 40% to 70% off. The sites have no connection to Walmart and are built on a shared WordPress/WooCommerce template with the same product catalogue, prices, and images. Each domain uses fabricated US business addresses and phone numbers. Victims are led to a checkout page requesting full credit card number, expiry date, and CVV. Defenders should treat any card details entered on these sites as compromised, contact the card issuer, and watch for small test charges.",
+      "completeness": "Low",
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/07/we-found-120-fake-walmart-stores-trying-to-steal-your-credit-card"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "WP2Shell WordPress Exploit Technical Analysis and Real Attack Data",
+      "completeness": "Low",
+      "threats": [
+        "Wp2shell_vuln"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/07/wp2shell-wordpress-exploit-technical-analysis-and-real-attack-data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Core Werewolf changes its fangs: CoreRAT trojan in attacks on Russian organizations",
+      "summary": "Core Werewolf, a threat cluster, used a previously unknown remote access trojan called CoreRAT in attacks observed between June and July 2026, with retrospective analysis showing use since March 2026. The campaigns, which relied on 7zSFX and Rust-based droppers delivered via phishing emails sent through Telegram, targeted Russian government and defense-industrial organizations. CoreRAT replaced the legitimate UltraVNC remote access tool and is the group's first known full-featured RAT of its own development, helping the attackers stay undetected longer. The phishing lures used carefully prepared PDFs imitating official military and government documents. CoreRAT checks for virtual machine and sandbox environments before contacting C2 servers over HTTPS and supports commands for process listing, network discovery, file download, and self-deletion. The report also notes a possible but unconfirmed link to the Vortex Werewolf cluster, based on a shared decoy document.",
+      "completeness": "High",
+      "threats": [
+        "Corerat",
+        "Ultra_vnc_tool",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Russian federation",
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "7zSFX",
+        "Telegram",
+        "VirtualBox",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "base58",
+        "cbc",
+        "sha256",
+        "aes",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/core-werewolf-menyaet-klyki-troyan-corerat-v-atakakh-na-rossiyskie-organizatsii/",
+        "https://github.com/ericroy/winhttp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Fake Claude Install Guide Leads to MacSync Stealer and RAT: What We Pulled From the Attacker’s Servers",
+      "completeness": "High",
+      "threats": [
+        "Macc_stealer",
+        "Seo_poisoning_technique",
+        "Polymorphism_technique",
+        "Amos_stealer",
+        "Screencap"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 28,
+      "software": [
+        "Claude",
+        "curl",
+        "Telegram",
+        "macOS",
+        "anthropic",
+        "OpenAI",
+        "Chromium",
+        "Chrome",
+        "Vivaldi",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "bitcoincore",
+        "ledger_wallet",
+        "trezor"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64",
+        "zip",
+        "aes-256-cbc",
+        "gzip",
+        "aes"
+      ],
+      "functions": [
+        "entry",
+        "CGRequestScreenCaptureAccess",
+        "system",
+        "main",
+        "fetch"
+      ],
+      "languages": [
+        "php",
+        "applescript",
+        "objective_c",
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/macsync-stealer-rat-reverse-engineering"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "ClickFix, EtherHiding & a DPRK Wallet Trail",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Homoglyph_technique"
+      ],
+      "geo": [
+        "North-korean",
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Node.js",
+        "ode.js RA",
+        "ome exte",
+        "Chrome",
+        "ode.js ba",
+        "e extens",
+        "curl",
+        "Ledger Live",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "coinomi",
+        "bitcoincore"
+      ],
+      "crypto": [
+        "ethereum",
+        "kucoin",
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "eval",
+        "RPC"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.allsecure.io/blog/clickfix-etherhiding-dprk-wallet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-29",
+      "title": "Download Meccha Chameleon Cheats, Get Malware",
+      "summary": "Fake cheat repositories on GitHub and fake cheat advertisements on YouTube, promoting the popular game Meccha Chameleon, deliver the Remus infostealer instead of a working cheat. The infection chain runs from a GitHub Pages download to an NSIS installer, a JavaScript dropper that adds Windows Defender exclusions, and a Go-based loader that manually maps the stealer into memory. Remus collects browser data from Chromium and Firefox browsers, Roblox and Steam credentials, clipboard contents, screenshots, and host profiles, then exfiltrates them to C2 servers. It also supports remote execution of additional payloads, enabling deployment of other commodity malware. The campaign targets gamers searching for cheats, and one researcher's leaked Telegram chat showed data from over 280 hosts in a single day.",
+      "completeness": "Medium",
+      "threats": [
+        "Chameleon",
+        "Remus",
+        "Lumma_stealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NSIS installer",
+        "Electron",
+        "Windows Defender",
+        "Telegram",
+        "winhttp",
+        "Outlook",
+        "Opera",
+        "Opera GX",
+        "Chromium",
+        "indexeddb",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "chacha20",
+        "crc-32",
+        "base64",
+        "prng"
+      ],
+      "functions": [
+        "spawn"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://t0asts.com/meccha-chameleon",
+        "https://github.com/javascript-obfuscator/javascript-obfuscator"
+      ]
+    }
+  }
+]

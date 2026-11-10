@@ -1,0 +1,291 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-17",
+      "title": "DragonDoll: What’s Behind the Google Chrome Update",
+      "completeness": "High",
+      "threats": [
+        "Dragondoll",
+        "Hvnc_tool",
+        "Steganography_technique",
+        "Badpack"
+      ],
+      "geo": [
+        "Mena",
+        "China",
+        "Russian",
+        "Russia",
+        "Japanese",
+        "Chinese",
+        "Korean",
+        "Spain",
+        "Korea",
+        "Ukrainian",
+        "Saudi arabia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 28,
+      "software": [
+        "oogle Chrome Up",
+        "Google Chrome",
+        "Android",
+        "Chrome",
+        "roid spy",
+        "eChat ap",
+        "Telegram",
+        "WhatsApp",
+        "Viber",
+        "ndroid.pr",
+        "have more..."
+      ],
+      "algorithms": [
+        "cbc",
+        "xor",
+        "aes-256-cbc",
+        "zip",
+        "aes-256-gcm",
+        "aes"
+      ],
+      "functions": [
+        "findAccessibilityNodeInfosByViewId"
+      ],
+      "languages": [
+        "java",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/dragondoll-what-s-behind-the-google-chrome-update/",
+        "https://github.com/bk138/droidVNC-NG/tree/4f2bf2bf0023a0446d231a739092c79b7108c2e4"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-17",
+      "title": "Asked to install a VPN while applying for a job? You may already be targeted by an APT group.",
+      "summary": "Sandworm (APT44, also tracked as UAC-0002 under UAC-0145) is running a fake job-interview campaign against IT workers, according to CERT-UA's August 8 warning. Attackers posed as a recruiter on a Ukrainian job board, then used a fabricated Sopra Steria interview process to get victims to install a trojanized VPN client based on open-source WireGuard code. The malicious version hides a PowerShell payload in a non-standard configuration field, decrypts it with the private key, and runs it through WireGuard's native script mechanism at elevated privileges. Windows victims get a scheduled-task persistence mechanism, while Linux victims get a downloaded executable disguised as a time-sync component. CERT-UA reports the activity has been ongoing since at least May 2026, with the aim of compromising personal devices to reach employers' networks.",
+      "completeness": "Medium",
+      "geo": [
+        "Bulgaria",
+        "Ukraine"
+      ],
+      "software": [
+        "Linux",
+        "nt @Sales_",
+        "Zoom",
+        "WireGuard",
+        "curl"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "crc-32",
+        "base64"
+      ],
+      "functions": [
+        "PermutateBase64"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.secrss.com/articles/93070"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-17",
+      "title": "C2Looper: A New Backdoor Likely Tied To Ransomware With GitHub C2",
+      "summary": "C2Looper is a new Rust-based backdoor that Zscaler ThreatLabz identified in July 2026 and assesses is likely used by a ransomware-related threat actor. ThreatLabz assesses with low to medium confidence that it is delivered through a multi-stage ClickFix infection chain. The malware supports remote shell execution, reconnaissance, and deployment of second-stage payloads, and it resolves Windows APIs dynamically while encrypting its strings. A newer version, internally tagged as version 2, uses GitHub for all command-and-control communications and adds commands such as recon and inject. The report suggests an initial access broker may use it to establish footholds, steal data, and deploy ransomware, and it notes that active development is ongoing.",
+      "completeness": "Medium",
+      "threats": [
+        "C2looper",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Oyster",
+        "Nltest_tool"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/c2looper-new-backdoor-likely-tied-ransomware-github-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-17",
+      "title": "Operation QUICSILVER: China-Nexus Actor Targets Myanmar Diplomats via VHD-Delivered Go Backdoor",
+      "summary": "Operation QUICSILVER is a campaign assessed with moderate confidence to be China-nexus, targeting Myanmar government personnel through a Virtual Hard Disk disguised as a JPEG image. The VHD contains a malicious LNK file, shown as a PDF, that abuses the legitimate Windows ftp.exe to run a local script. That script reconstructs a payload by combining two disguised document files using copy /b. The final payload is QUICAgent, a custom Go-based backdoor that retrieves its C2 address through Cloudflare Workers and communicates over QUIC with RC4-encrypted traffic. Defenders should note the campaign's use of Cloudflare Workers for dynamic C2 resolution and ftp.exe as a LOLBAS.",
+      "completeness": "High",
+      "threats": [
+        "Quicagent",
+        "Xagent",
+        "Lolbas_technique",
+        "Spear-phishing_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Myanmar",
+        "Burmese",
+        "Malaysian",
+        "China"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "OpenSSL"
+      ],
+      "algorithms": [
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "GetComputerNameEx"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-quicsilver-china-nexus-actor-targets-myanmar-diplomats-via-vhd-delivered-go-backdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-17",
+      "title": "StubMaker RubyGems Campaign Delivers a Windows Infostealer",
+      "summary": "StubMaker is a supply-chain campaign using typosquatted RubyGems packages that install a multi-stage Windows infostealer. The malicious extconf.rb hook sends a platform beacon and, on Windows, downloads a Rust loader from a GitHub release that decrypts and runs an embedded Go stealer in memory. The stealer targets Chromium browser credentials, cookies, payment cards, cryptocurrency wallets, seed phrases, and Telegram data, and it can recover Chromium's application-bound encryption key via an embedded DLL. Stolen data is zipped, uploaded to Gofile, and the link is sent to an attacker webhook. Defenders should treat any Ruby install process making outbound connections during extconf.rb execution as a high-priority signal, since no second-stage download follows the first request.",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Installcore",
+        "Go-stealer"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Node.js",
+        "Chromium",
+        "Unix",
+        "MacOS",
+        "Linux",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "solflare",
+        "electrum",
+        "trezor"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "ReadCookies",
+        "ReadPasswords",
+        "CreateEncryptedZipFromMap"
+      ],
+      "languages": [
+        "ruby",
+        "rust"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/stubmaker-rubygems-windows-infostealer",
+        "https://github.com/rubygems/rubygems.org/discussions/2787",
+        "https://github.com/rubygems/rubygems.org/issues/1226"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-17",
+      "title": "Operation ASTERIX: Anatomy of a Crypto Fraud Pipeline",
+      "summary": "Operation ASTERIX is a crypto fraud campaign whose operator left an exposed web directory containing phone-number datasets, account-validation tools, phishing panels, dialer scripts, and fake wallet builds. The operator validated phone numbers against Crypto.com accounts, enriched matching records, and then combined phishing emails with follow-up vishing calls. Victims were directed to install counterfeit Trezor Suite, Ledger Live, and Exodus applications designed to steal BIP39 recovery phrases and send them to a Telegram bot. The operator relied on AI coding assistants throughout development and, when one model refused obfuscation work, switched to Kimi and attempted a jailbreak. For defenders, the campaign offers several points of detection before seed phrases are stolen, and the report's IOCs are published on Rapid7's GitHub.",
+      "completeness": "High",
+      "threats": [
+        "Residential_proxy_technique",
+        "Launchagents_tool",
+        "Process_injection_technique",
+        "Clipboard_hijacking_technique",
+        "Spear-phishing_technique",
+        "Man-in-the-browser_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "German",
+        "Singapore",
+        "Poland",
+        "Canadian",
+        "Polish",
+        "Bulgaria",
+        "Hong kong"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 30,
+      "software": [
+        "Telegram",
+        "Electron",
+        "Flask",
+        "Ledger Live",
+        "macOS",
+        "elegram.or",
+        "Claude",
+        "Anthropic",
+        "Gatekeeper",
+        "Unix",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor",
+        "exodus_wallet",
+        "ledgerlive"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "checkPhone",
+        "downloadFile",
+        "initialize",
+        "setInterval"
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "applescript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-operation-asterix-crypto-fraud-vishing-phishing",
+        "https://github.com/rapid7/Rapid7-Labs/tree/main/IOCs/Operation%20Asterix"
+      ]
+    }
+  }
+]

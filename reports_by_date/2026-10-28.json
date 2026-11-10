@@ -1,0 +1,461 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "Inside Qilin ransomware: ESXi attacks, affiliate networks and double extortion",
+      "summary": "Qilin, also known as Agenda, is a Russian-speaking ransomware-as-a-service operation that first appeared in 2022 and claimed more than 1,000 victims in 2025, making it the most active ransomware group by victim count that year. Affiliates gain access through phishing, stolen VPN or RDP credentials, vulnerable internet-facing applications and remote-management tools. The group uses double extortion, encrypting local files, network shares and virtual machines while threatening to publish stolen data through the WikiLeaksV2 site. Qilin appears to exclude CIS countries and mainly targets organizations in the United States, Canada and Europe, with health care accounting for about 13.3% of identified victims. Defenders should use EDR, phishing-resistant MFA on remote access, prompt patching, and tested offline backups.",
+      "completeness": "High",
+      "threats": [
+        "Qilin_ransomware",
+        "Teamviewer_tool",
+        "Sandbox_evasion_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "London",
+        "Canada",
+        "United states"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "twitter",
+        "DeepSeek",
+        "tor browser",
+        "firefox",
+        "onenote",
+        "outlook",
+        "steam",
+        "thebat",
+        "wordpad",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-ctr",
+        "aes",
+        "sha256",
+        "chacha20",
+        "rsa-4096"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/inside-qilin-ransomware-esxi-attacks-affiliate-networks-and-double-extortion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "False Protection, Emptied Accounts: The Seven Android Trojan Families Targeting Indian Banking Apps",
+      "summary": "Group-IB's Threat Intelligence team identified CyberDakait, a financially motivated cluster running an Android malware campaign against India's financial services sector since July 2025. Victims receive smishing and vishing calls impersonating bank representatives about a fake \"Credit Card Protection Plan\" and are sent to phishing sites that silently download malicious APKs, often hosted on GitHub. The APKs act as droppers that install a separate payload alongside an XMRig cryptomining module, and the payloads steal banking credentials, card details, and SMS messages including OTPs. The researchers track seven malware families, which use different Telegram, Firebase, or remote server channels for command and control. Defenders should be wary of Android apps requesting Accessibility or SMS permissions and should advise users to verify bank calls through official numbers.",
+      "completeness": "High",
+      "threats": [
+        "Smishing_technique",
+        "Ghostbat",
+        "Cyb3rx",
+        "Ghostgrab",
+        "Btmob_rat",
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Telegram",
+        "WhatsApp",
+        "Google Play",
+        "Apktool",
+        "13  • UUI",
+        "Status: a",
+        "Linux"
+      ],
+      "algorithms": [
+        "cbc",
+        "sha256",
+        "exhibit",
+        "aes"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/cyberdakait-seven-android-trojans-indian-banking/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "Inside MR ROBOT - Anatomy of a Malware-as-a-Service Operation Targeting Indian Bank Customers",
+      "summary": "MR ROBOT is a rented Android Malware-as-a-Service platform that targets customers of Indian banks, with affiliates building personalized banking trojans on demand through a Telegram bot and web control panel. The kit impersonates banks, utility providers, and government services, using roughly 36 lure apps delivered via fake Play-Store-style pages and messaging-app links. Once installed, the trojan intercepts SMS and OTPs, enables *21# call forwarding to defeat phone-based 2FA, and overlays phishing screens to harvest card, PIN, UPI, and identity data. Each affiliate's whole catalog sends stolen data to a single Firebase project, so disabling that project would disrupt the affiliate's entire product line. Defenders should treat SMS-OTP as compromised for customers reporting missed calls or unexpected KYC update app installs, and advise them to dial ##21# to cancel forwarding.",
+      "completeness": "High",
+      "threats": [
+        "Redwing",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 13,
+      "software": [
+        "Android",
+        "Telegram",
+        "Cloudflare",
+        "WhatsApp",
+        "Google Play"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-128-cbc",
+        "gzip",
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/inside-mr-robot-malware-as-a-service-targeting-indian-bank-customers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "68 GB Stolen From a Philippine Government Agency’s Overseas-Employment Databases, Exposed by the Operator’s Own Open Directory",
+      "summary": "A threat actor copied 68.837 GiB of 27 SQL Server backups, apparently matching Philippine overseas-employment and migrant-worker systems, and left the transfer log on an open directory at a UpCloud-hosted staging server. The directory also exposed a rebranded GodPotato payload (Wrqsnx), a PowerShell stager that loads it in memory, and a full Impacket toolkit. The payload abuses DCOM and RPC to escalate to SYSTEM without a Windows vulnerability, leaving a writable memory page as its clearest host trace. The logs show the payload was pulled from the staging host by two addresses that Hunt.io linked to the agency's own portal hosts, though whether they were operators, victims, or other requesters is unresolved. The report does not establish how the operator got in, whether any payload executed, or where the data was sent. The main takeaway for defenders is that the technique needs only a service account holding SeImpersonate, so that privilege is worth auditing.",
+      "completeness": "High",
+      "threats": [
+        "Godpotato_tool",
+        "Impacket_tool",
+        "Secretsdump_tool",
+        "Rclone_tool",
+        "Process_injection_technique",
+        "Winrm_tool",
+        "Sharptoken_tool",
+        "Credential_dumping_technique",
+        "Ldapdomaindump_tool"
+      ],
+      "geo": [
+        "Philippines",
+        "Singapore",
+        "Philippine"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 16,
+      "software": [
+        "Wrqsnx",
+        "MSSQL",
+        "Linux",
+        "WordPress",
+        "Active Directory",
+        "Debian",
+        "Visual Studio"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "GetADUsers",
+        "GetADComputers"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/philippine-government-employment-agency-records-stolen",
+        "https://github.com/BeichenDream/GodPotato"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "Who Watches the Watchers?",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/camera-management-software-compromise-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "The Doorway Botnet: Inside a Large-Scale IoT and Network Device Compromise Campaign",
+      "summary": "The Doorway botnet is a mature IoT exploitation and proxy-building operation, identified by CloudSEK from two exposed open directory workspaces containing its Rust-based scanning and delivery engine, 59 exploit modules, and a credential database. The operation targets cameras, routers, optical network units, and Java-based services such as Jenkins, Openfire, and ActiveMQ. It runs automated reconnaissance, exploitation, and multi-stage payload delivery, with redundant delivery chains and beacon-based execution confirmation. Recovered records show thousands of compromised devices, including 7,369 successful MikroTik authentications and 1,060 PPPoE subscriber records. Defenders should block the listed infrastructure, hunt for ICMP and TCP/4444 beacons, and secure exposed management interfaces and default credentials.",
+      "completeness": "High",
+      "threats": [
+        "Darklantern",
+        "Credential_harvesting_technique",
+        "Netcat_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 3,
+      "software": [
+        "Doorway",
+        "Jenkins",
+        "Openfire",
+        "curl",
+        "activemq",
+        "Linux",
+        "penfire st",
+        "busybox",
+        "Windows PowerShell",
+        "Confluence",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "hmac"
+      ],
+      "functions": [
+        "probe",
+        "Read-Only-First",
+        "run",
+        "initializePlugin"
+      ],
+      "languages": [
+        "java",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/doorway-botnet-global-iot-router-camera-enterprise-server-attacks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "Managed for Malice: How Attackers Turn MDM into Remote Access",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool"
+      ],
+      "software": [
+        "Hexnode",
+        "Rippling",
+        "Microsoft Edge",
+        "DocuSign",
+        "PostgreSQL",
+        "Microsoft Teams",
+        "Microsoft 365"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/attackers-turn-mdm-into-remote-access"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "From Hijacked PBX to Stolen Trunk: INJ3CTOR3’s Campaign Evolves",
+      "summary": "INJ3CTOR3's FreePBX implant has changed from toll fraud through a victim's PBX into credential theft, as September 2026 artifacts show the installer uploading 17 configuration files to two staging hosts on every run. Because the stolen SIP trunk, AMI, database, and mail-relay secrets let the operator place calls from anywhere, disinfecting or rebuilding a host does not end exposure. Operators using FreePBX, Issabel, or Elastix should rotate those secrets only after the host is clean. The webshell's watermarks and gate hash were rotated, so detections based on those identifiers miss current infections. Defenders should focus on provenance, behavior, and carrier-side fraud indicators instead.",
+      "completeness": "Medium",
+      "threats": [
+        "Jomangy_webshell",
+        "Encystphp",
+        "Zenharr",
+        "Timestomp_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 19,
+      "software": [
+        "FreePBX",
+        "Elastix",
+        "curl",
+        "Telegram",
+        "MySQL",
+        "crontab",
+        "Unix",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://cyble.com/blog/hijacked-pbx-to-stolen-trunk-inj3ctor3s-campaign/",
+        "https://github.com/0x1da5/malware-campaigns/blob/main/inj3ctor3-freepbx-toll-fraud/beagle.sh"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "ADVERSARY UNMASKED APT PROFILE – STAR BLIZZARD",
+      "summary": "Star Blizzard, also known as SEABORGIUM and COLDRIVER, is a persistent threat actor attributed to Russia's FSB Centre 18 that repeatedly targets the same organisations over extended periods. It gains access by impersonating trusted contacts, building relationships, and phishing, moving from credential theft toward backdoors installed on victims' devices since 2025. Its espionage targets include government and diplomatic staff, defence, think tanks, NGOs, media, academia and, in 2026, financial organisations, with the UK and US most targeted. In 2026 it ran bulk phishing campaigns using the RedFlick delivery chain and the CosmicPulse backdoor, and used a leaked DarkSword iOS exploit kit against iPhones. Defenders should enforce phishing-resistant MFA, protect staff's personal accounts, and block VHDX mounting, LNK files from archives and suspicious scheduled tasks, since blocking known indicators alone is insufficient.",
+      "completeness": "High",
+      "threats": [
+        "Spica",
+        "Evilginx_tool",
+        "Aitm_technique",
+        "Coldcopy",
+        "Clickfix_technique",
+        "Lostkeys",
+        "Norobot",
+        "Baitswitch",
+        "Yesrobot",
+        "Cosmicpulse",
+        "Mayberobot",
+        "Simplefix",
+        "Redflick_technique",
+        "Darksword_tool",
+        "Ghostblade",
+        "Spear-phishing_technique",
+        "Romcom_rat",
+        "Credential_harvesting_technique",
+        "Bitsadmin_tool",
+        "Motw_bypass_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Switzerland",
+        "Lithuania",
+        "Estonia",
+        "Canada",
+        "Italy",
+        "Ukrainian",
+        "Norway",
+        "Russian",
+        "France",
+        "Ukraine",
+        "United kingdom",
+        "United states",
+        "Russian federation",
+        "Germany",
+        "Greece",
+        "Latvia",
+        "Russia",
+        "Sweden",
+        "Poland"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 41,
+      "software": [
+        "Microsoft 365",
+        "Gmail",
+        "Outlook",
+        "WhatsApp",
+        "cPanel",
+        "WordPress",
+        "ProtonDrive",
+        "Telegram",
+        "ProtonMail",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "TaskName",
+        "count",
+        "Set-InboxRule"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/adversary-unmasked-apt-profile-star-blizzard/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN",
+      "summary": "Cisco Talos attributes activity to UAT-11473, an APT actor that exploited CVE-2026-20127, an authentication bypass in Cisco SD-WAN Catalyst Controller instances, to gain unauthorized access. The actor deployed KeyDrift, a custom malware framework whose components run inside SD-WAN control-plane processes such as vdaemon and intercept decrypted control traffic. Its core module, PolyFlame, acts as a backdoor and intermediate C2 without a conventional fixed beacon, while LittleFilch hooks SSL_read to extract keying material and stage it in encrypted form. Observed targeting spans space and satellite services, defense and aerospace technology, and policy research. Talos reports high-confidence overlap between the actor's infrastructure and Volt Typhoon's Silent Train network. Defenders should apply Cisco's patches for CVE-2026-20127, follow the hardening guidance, and hunt for post-compromise activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Keydrift",
+        "Polyflame",
+        "Littlefilch",
+        "Tinyshell",
+        "Timestomp_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 11,
+      "software": [
+        "OpenSSL",
+        "Unix"
+      ],
+      "algorithms": [
+        "aes",
+        "rc4",
+        "aes-256",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-11473-keydrift/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-28",
+      "title": "New data reveals espionage focus of Insolent Hyena",
+      "completeness": "High",
+      "threats": [
+        "Havoc",
+        "Nightstrike",
+        "Capdoor",
+        "Nightwire",
+        "Cobalt_strike_tool",
+        "Adaptixc2_tool",
+        "Spear-phishing_technique",
+        "Clickfix_technique",
+        "Netsupportmanager_rat",
+        "Octowave_loader",
+        "Ekko_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "deflate",
+        "fnv-1a",
+        "gzip"
+      ],
+      "links": [
+        "https://bi-zone.medium.com/new-data-reveals-espionage-focus-of-insolent-hyena-a8fa207e0ae6"
+      ]
+    }
+  }
+]

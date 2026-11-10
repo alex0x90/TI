@@ -1,0 +1,76 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-26",
+      "title": "A Shortcut to Coercion: Incomplete Patch of APT28's Zero-Day Leads to CVE-2026-32202",
+      "completeness": "Low",
+      "threats": [
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "Windows shell",
+        "Windows Explorer",
+        "Component Object Model"
+      ],
+      "functions": [
+        "LinkTargetIDList",
+        "Verify",
+        "GetModuleMapped",
+        "PathFileExistsW"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2026/apr/incomplete-patch-apt28s-zero-day-cve-2026-32202"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-26",
+      "title": "Kyber ransomware is not just post-quantum name-dropping",
+      "summary": "Kyber is a Rust-based ransomware family whose ransom note advertises AES-256-CTR with X25519 and Kyber1024 key generation, and analysis of a Windows sample confirms that the code and file format implement a real hybrid crypto scheme. Encrypted files receive the .#~~~ extension and a fixed 0x744-byte trailer that starts with a magic marker and includes a 0x620-byte Kyber1024-sized field. The sample also runs recovery-inhibition commands such as deleting shadow copies, changing boot recovery settings, and clearing event logs. Its binary has no decryptor mode, and local recovery attempts using the sample and encrypted files did not yield a practical path to recover files. Reporting cited one listed victim on the leak portal, a large American defense contractor and IT services provider. Defenders should hunt for the extension, trailer signature, Rust crypto strings, and recovery-inhibition activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Kyber_ransomware",
+        "Kyber",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Wevtutil_tool"
+      ],
+      "geo": [
+        "American"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "bcdedit",
+        "Tor Browser",
+        "hyperv"
+      ],
+      "algorithms": [
+        "aes",
+        "sha1",
+        "aes-256-ctr",
+        "md5",
+        "rsa-4096",
+        "sha256",
+        "hmac",
+        "kyber1024",
+        "xor",
+        "curve25519",
+        "aes-ctr"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/kyber-ransomware-hybrid-crypto/"
+      ]
+    }
+  }
+]

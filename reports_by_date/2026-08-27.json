@@ -1,0 +1,711 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "AmnesiaStealer Introduces Interactive Browser Session Hijacking to macOS",
+      "summary": "AmnesiaStealer is a multi-stage, Rust-based macOS infostealer distributed through ClickFix social engineering, which lures victims to a counterfeit GitHub download page that instructs them to run a Terminal command. The malware harvests browser data, credentials, Apple Notes, Telegram session data, documents, and keychain contents, then establishes persistence via a LaunchDaemon disguised as an Apple crash reporting component. Its distinguishing feature is a Stage 2 module that clones a victim's Chromium-based browser profile and runs it headlessly, letting operators control authenticated sessions over the Chrome DevTools Protocol. The report notes that the malware shares objectives and lures with Atomic Stealer (AMOS), MacSync, and CrashStealer. For defenders, the takeaway is that builder-generated variants make static indicators short-lived, so behaviors such as ClickFix-driven Terminal execution, abnormal keychain access, and hidden Chromium execution are more durable detection opportunities.",
+      "completeness": "Low",
+      "threats": [
+        "Amnesia_stealer",
+        "Clickfix_technique",
+        "Amos_stealer",
+        "Macc_stealer",
+        "Crashstealer",
+        "Credential_stealing_technique"
+      ],
+      "software": [
+        "macOS",
+        "Telegram",
+        "Chrome",
+        "Chromium"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/amnesiastealer-introduces-interactive-browser-session-hijacking-to-macos"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "UAC-0099 conducts attack campaigns using a new multi-stage malware chain.",
+      "summary": "UAC-0099 is a threat group that has long targeted Ukraine and in 2026 introduced new malware including LUNCHPOKE, BURNYBEAR and MATCHBOIL.V2 in a multi-stage chain. The group typically handles initial access via phishing, then hands high-value targets to APT-C-13 (Sandworm) for deeper attacks. Phishing emails deliver a archive containing a double-extension WSF script disguised as a Word document, which launches Notepad++ and sideloads a malicious DLL. The chain uses DLL sideloading, code virtualization and anti-analysis checks, with MATCHBOIL.V2 communicating with C2 over TLS with certificate validation disabled. Targets are mainly government agencies and critical infrastructure organizations in Ukraine. Defenders should strengthen phishing detection, monitor endpoint behavior, and restrict access to high-value data.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Lunchpoke_tool",
+        "Burnybear_tool",
+        "Matchboil"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russia",
+        "Ukraine"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WinRAR"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/WjjZYriiZl7-waw6Cjy1DQ"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "Projextor: Abusing Electron in Trojanized Productivity Applications",
+      "summary": "Projextor is a malware campaign that hides malicious code inside trojanized Electron-based productivity apps, such as PDF converters and meal planners, which are promoted through lookalike websites and high-ranking search results. The first-stage installer, packaged as NSIS, Squirrel, or Inno Setup, downloads a second-stage application that works as advertised. The apps use insecure Electron settings, including contextIsolation set to false, which lets remote content reach Node.js functions via the preload script. The malware can dynamically load and run arbitrary JavaScript and capture desktop screens, which could expose sensitive documents and authentication workflows. Defenders should treat productivity tools from unverified sources with suspicion, since functional behavior does not rule out compromise.",
+      "completeness": "Medium",
+      "threats": [
+        "Projextor",
+        "Tamperedchef"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 6,
+      "software": [
+        "Electron",
+        "Chromium",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.gdatasoftware.com/2026/08/38468-projextor-abusing-electron"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "The ChainDrop npm Worm (August 2026): How 444 Packages Were Compromised Without a Single npm Install",
+      "summary": "The ChainDrop worm, tracked by Microsoft as ChainDrop and by other researchers as Mini Shai-Hulud, compromised a GitHub account behind keyv, an npm caching library, on August 4 and spread to 444 packages across more than 1,300 malicious versions. Using stolen npm publishing tokens, it propagated to sibling packages representing over two billion combined monthly installs. Its novel element was committing .claude/settings.json and .vscode/tasks.json into victim repositories, which execute when a developer opens the project in VS Code or starts a Claude Code session, with no npm install required. Dependency scanners and provenance attestations did not catch it, since those files sit outside the dependency tree and the malicious releases carried valid provenance. The main takeaway for defenders is to treat repository-supplied configuration as executable content and to check branches beyond main for these files.",
+      "completeness": "Low",
+      "threats": [
+        "Chaindrop",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Claude"
+      ],
+      "functions": [
+        "Microsoft"
+      ],
+      "links": [
+        "https://medium.com/governed-at-the-source/the-chaindrop-npm-worm-august-2026-how-444-packages-were-compromised-without-a-single-npm-b0c9e5a4c387",
+        "https://github.com/jaredwray/keyv/issues/2051#issuecomment-5186350604",
+        "https://github.com/jaredwray/keyv/issues/2051#issuecomment-5198193018"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "AI Across the Intrusion Lifecycle",
+      "summary": "Gambit Security reviews three unrelated threat actors that used AI throughout real intrusions, including writing scripts, developing exploitation tools, prioritizing high-value business data, and driving hands-on-keyboard exploitation. The first case is a suspected The Gentlemen ransomware affiliate that used Claude Code against six organizations, including VPN admin access, LDAP pass-back credential theft, and backup and database exfiltration, and that caused a firewall outage. The second case is Zerofot, which built an AI-assisted scanner that harvested thousands of keys and credentials from exposed files across the internet, then used them for cloud lateral movement. The third case is RAGE, an AI-generated Python framework that exploits exposed services like Redis, Docker, and Tomcat to deploy cryptominers and performs AWS privilege escalation. The report notes that operational security failures by attackers exposed their infrastructure and AI conversations, and that cover stories for authorized testing were used to bypass model refusals.",
+      "completeness": "High",
+      "threats": [
+        "Crackmapexec_tool",
+        "Impacket_tool",
+        "Winrm_tool",
+        "Credential_harvesting_technique",
+        "Masscan_tool",
+        "Sliver_c2_tool",
+        "Hvnc_tool",
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Thailand",
+        "South africa",
+        "Russian",
+        "Chinese",
+        "Australia",
+        "Malaysia",
+        "Mauritius",
+        "United states"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "curl",
+        "FortiGate",
+        "mssql",
+        "boto3",
+        "anthropic.claude",
+        "Laravel",
+        "Anthropic",
+        "AWS Bedrock",
+        "HuggingFace",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "AssumeRole",
+        "dlopen"
+      ],
+      "languages": [
+        "groovy",
+        "python"
+      ],
+      "links": [
+        "https://cdn.prod.website-files.com/69944dd945f20ca4a27a7c47/6a7eca2b40324665e06da6ad_AI%20Across%20the%20Intrusion%20Lifecycle%20(2).pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "MessiahGPT: The Unrestricted AI Model Fueling a New Wave of Automated Ransomware and Phishing Attacks + Video",
+      "summary": "MessiahGPT is an uncensored AI service advertised on BreachForums as a model that writes ransomware, phishing kits, stealers, crypters, and rootkits on demand, according to Trellix Advanced Research Center findings. It is operated by the Dabial Leaks group and marketed through a live website and a Telegram community. Its low-cost subscriptions, starting around $8 per month and payable only in cryptocurrency without KYC checks, lower the barrier for low-skilled actors. The service also promotes social engineering, carding, data breach exploitation, and physical attack planning. Defenders are advised that signature-based and template-based detection may be less effective against machine-generated variations, and that egress filtering and DNS monitoring are useful controls.",
+      "completeness": "Medium",
+      "threats": [
+        "Messiahgpt_tool",
+        "Jinnatgpt_tool",
+        "Paraohagpt_tool",
+        "Darkgpt_tool"
+      ],
+      "software": [
+        "Telegram",
+        "Linux",
+        "sudo",
+        "atsapp \\| 💬",
+        "ram",
+        "itter 🐦"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "base64"
+      ],
+      "links": [
+        "https://undercodetesting.com/messiahgpt-the-unrestricted-ai-model-fueling-a-new-wave-of-automated-ransomware-and-phishing-attacks-video/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "Anatomy of a macOS ClickFix Crimekit that Weaponises EtherHiding",
+      "summary": "This report analyses a macOS ClickFix campaign that uses a fake \"TrustKey\" CAPTCHA page to trick victims into pasting a command into Terminal, which then runs AppleScript-based code through the built-in osascript utility. The loader hides its command-and-control (C2) hostname in a Polygon smart contract and reads it at runtime through read-only eth_call requests, so no domain is embedded in the sample. Researchers recovered the operator's rotation history of about twenty C2 domains from on-chain setter transactions, and traced the funding of the operator wallet. The payloads include a backdoor agent, a full and light version of the AMOS stealer targeting crypto wallets, browser data and keychains, and an XMRig Monero miner. For defenders, the operator's wallet and contract are more durable indicators than the rotating C2 domains, so monitoring for new setServerURL transactions can reveal new infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Amos_stealer",
+        "Xmrig_miner",
+        "Mitm_technique",
+        "Dead_drop_technique",
+        "Xmr_miner"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "curl",
+        "Chrome",
+        "IndexedDB",
+        "Firefox",
+        "Chrome",
+        "Chrome",
+        "Chrome Canary",
+        "Vivaldi",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "bitcoincore",
+        "litecoincore",
+        "electron_cash",
+        "trezor"
+      ],
+      "crypto": [
+        "ethereum",
+        "dogecoin",
+        "monero"
+      ],
+      "algorithms": [
+        "randomx",
+        "zip",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "setServerURL"
+      ],
+      "languages": [
+        "powershell",
+        "cscript",
+        "jscript",
+        "applescript",
+        "javascript",
+        "vbscript"
+      ],
+      "links": [
+        "https://notes.netbytesec.com/2026/08/anatomy-of-macos-clickfix-crimekit-that.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "CRPx0 ClickFix Ransomware Analysis",
+      "summary": "CRPx0 is a ransomware-as-a-service operation that delivers its payload through ClickFix lures impersonating Windows Update or Google reCAPTCHA, which silently copy an OS-specific command to the victim's clipboard for them to paste and run. On Windows the command starts a multi-stage DLL chain, while macOS victims download a Python payload directly. The final cross-platform Python ransomware exfiltrates documents and credential files before encrypting with Fernet, wraps the key with RSA-4096, moves laterally, and destroys shadow copies and backups. The leak site lists 47 claimed victims, mostly US healthcare and small firms, with a notable cluster of Turkish financial entities. The main takeaway for defenders is timing: exfiltration completes before encryption, so detections should target pre-execution signals such as RunMRU entries, the X-Captcha-Track: 1 lure telemetry header, and removing the Run dialog for standard users.",
+      "completeness": "High",
+      "threats": [
+        "Crpx0",
+        "Clickfix_technique",
+        "Vssadmin_tool",
+        "Shadow_copies_delete_technique",
+        "Fodhelper_uac_bypass_technique",
+        "Clipboard_hijacking_technique",
+        "Process_injection_technique",
+        "Dll_sideloading_technique",
+        "Api_hammering_technique",
+        "Process_hacker_tool",
+        "Uac_bypass_technique",
+        "Burntcigar",
+        "Antidebugging_technique",
+        "Launchagents_tool",
+        "Edr-killer",
+        "Av-killer",
+        "Nltest_tool",
+        "Qtox_tool",
+        "Smuggling_technique",
+        "Bitsadmin_tool",
+        "Api_unhooking_technique",
+        "Inc_ransomware"
+      ],
+      "geo": [
+        "Turkish",
+        "South korean",
+        "Russian",
+        "Turkey",
+        "South korea"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 37,
+      "software": [
+        "macOS",
+        "curl",
+        "Linux",
+        "Telegram",
+        "Mac OS",
+        "acOS",
+        "l \\ ba",
+        "acOS co",
+        "acOS →",
+        "l  dow",
+        "have more..."
+      ],
+      "wallets": [
+        "bybit",
+        "coinbase",
+        "tron",
+        "metamask"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero",
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "aes-128-cbc",
+        "zip",
+        "aes-256",
+        "rsa-2048",
+        "rsa-4096",
+        "xor",
+        "aes-128",
+        "aes",
+        "md5",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "__dp",
+        "detectOS",
+        "getHelloWorldMessage",
+        "reportClick",
+        "silentCopy",
+        "detectLanguage",
+        "getDocumentName",
+        "enterFullscreen",
+        "showAttention",
+        "handleKioskClick",
+        "have more..."
+      ],
+      "languages": [
+        "cpython",
+        "php",
+        "java",
+        "cscript",
+        "javascript",
+        "applescript",
+        "python",
+        "vbscript",
+        "powershell"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/crpx0-clickfix-ransomware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "Inside the AsyncAPI Supply Chain Compromise",
+      "summary": "The AsyncAPI NPM organization suffered a supply chain compromise in July 2026, in which attackers published malicious versions of legitimate AsyncAPI packages. Installing or running these packages through npx triggered an obfuscated dropper that fetched a second-stage script, sync.js, from an IPFS gateway. That script was saved to the local Node.js application data directory, run as a detached background process, and used to establish persistence and outbound C2 connections. Developers and CI/CD pipelines running routine AsyncAPI build workflows were the targets. Defenders should isolate affected hosts, remove shell profile persistence, block the C2 address and IPFS resources, rotate exposed credentials, and eliminate unpinned dynamic npx retrieval in automated pipelines.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/inside-the-asyncapi-supply-chain-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "[Op Report\\] PackClient: Hands-on-Keyboard with a new C2 Framework",
+      "summary": "PackClient, a modular C2 framework that Proofpoint attributes to Chinese-speaking actor TA4922, was detonated on a Deception.Pro honeynet workstation posing as an ICS analyst's machine. The sample arrived as Tax_Notice_10029.exe inside an income-tax-themed disk image, consistent with TA4922's India-focused tax lures. After a logon-triggered scheduled task and a hollowed svchost.exe beaconing to TCP/6666, the operator returned about four and a half hours later to suppress UAC and silently install a genuine, Zoho-signed ManageEngine Endpoint Central agent pointed at an attacker-controlled server. The attacker then used the platform for host inventory, Active Directory enumeration, patch scanning, remote control, and pushed kernel filter, BitLocker, and EDR-style components, with no further malware. Defenders should alert on msiexec installs of management agents from user-writable paths, validate Endpoint Central server targets, and hunt for renamed curl.exe binaries.",
+      "completeness": "High",
+      "threats": [
+        "Packclient",
+        "Donut",
+        "Packclientlauncher",
+        "Packclientcore",
+        "Process_hollowing_technique",
+        "Wevtutil_tool",
+        "Shadow_copies_delete_technique",
+        "Motw_bypass_technique",
+        "Lolbin_technique",
+        "Bitsadmin_tool",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Indian",
+        "India",
+        "Germany"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 23,
+      "software": [
+        "Active Directory",
+        "curl",
+        "BitLocker",
+        "Telegram",
+        "Windows Installer"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "java",
+        "vbscript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/new-packclient-hok-aug2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "EtherHiding in the Browser: ClickFix Chain Ends in Amatera",
+      "summary": "A WordPress mass-compromise campaign uses a rogue must-use plugin to register a malicious Service Worker in visitors' browsers, which strips the site's Content-Security-Policy header and injects a script. That script reads its payload from a smart contract on the Base blockchain (EtherHiding), which serves a fake reCAPTCHA that tricks the visitor into pasting a mshta command into the Windows Run dialog (ClickFix). The chain runs through a polyglot MP3/HTA file, a fileless PowerShell stage with AMSI bypassed, and a steganographic image on a legitimate CDN, ending with the Amatera password stealer. Logged-in WordPress users and administrators are deliberately excluded from seeing the lure. Because the Service Worker survives server-side cleanup, defenders should explicitly unregister it and delete its caches, block the beacon and stage-2 host, and monitor the Base contract for payload rotation.",
+      "completeness": "High",
+      "threats": [
+        "Etherhiding_technique",
+        "Clickfix_technique",
+        "Amatera_stealer",
+        "Polyglot_technique",
+        "Emmenhtal",
+        "Errtraffic",
+        "Dead_drop_technique",
+        "Lolbin_technique",
+        "Acr_stealer",
+        "Acridrain"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "macOS",
+        "Chrome"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "ecdh",
+        "rc4",
+        "base64",
+        "aes-gcm",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "skipWaiting",
+        "getActiveScripts",
+        "getDemoPage",
+        "getScript"
+      ],
+      "languages": [
+        "vbscript",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/etherhiding-in-the-browser-clickfix-chain-ends-in-amatera",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "Open Directory Exposes Moobot Source Code and Ongoing Activity Post 2024 Court-Authorized Disruption",
+      "summary": "Censys reports that an exposed open directory on a single host revealed the source code of the Moobot botnet, a Mirai variant, along with DDoS tools and a fraudulent identity verification service. The host also ran \"StresD Pro+\", a paid multi-user DDoS panel with 16 registered accounts and 32 recorded attacks, which launches floods directly from the staging server using a Minecraft Bedrock RakNet flooder rather than the Moobot fleet. A separate Chinese-language \"public security identity verification\" service resold a third-party PII lookup API while collecting users' identity documents. The recovered Moobot source contains dormant download-and-execute functionality, which Censys considers the most plausible way APT28 could have repurposed the botnet, though how that access was obtained remains unresolved. Censys assesses the observed activity as financially motivated with no assessed state nexus.",
+      "completeness": "Medium",
+      "threats": [
+        "Moobot",
+        "Flooder",
+        "Mirai",
+        "Disttrack",
+        "Wannacry"
+      ],
+      "geo": [
+        "Chinese",
+        "Russian",
+        "Asia",
+        "China"
+      ],
+      "software": [
+        "Minecraft",
+        "Linux",
+        "Android"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://censys.com/blog/open-directory-exposes-moobot-source-code-and-activity/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "19 Chrome and Edge Extensions Deliver a Wallet Drainer and Credential-Stealing Payloads",
+      "summary": "The Socket Threat Research team found 19 malicious Chrome and Edge extensions, 14 created by the threat actor and 5 bought from legitimate authors, delivering an extendable malware framework. The extensions first publish a clean version to build trust, then push updates that add malicious behavior through a WebSocket C2 channel. The framework strips Content Security Policy headers and injects malicious JavaScript modules into visited pages. The main goal is wallet secret theft and crypto draining, with additional modules harvesting exchange and social media sessions, credentials, and browser history. Defenders should watch for extension ownership changes and review installed extensions regularly, since auto-updates can silently introduce malicious code.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_stealing_technique",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Ledger Live",
+        "Outlook",
+        "Microsoft Edge"
+      ],
+      "wallets": [
+        "tron",
+        "trezor",
+        "coinbase",
+        "bybit",
+        "metamask"
+      ],
+      "crypto": [
+        "solana",
+        "kucoin",
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-gcm"
+      ],
+      "functions": [
+        "setInterval",
+        "k",
+        "removeRuleIds"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/chrome-edge-extension-wallet-drainer",
+        "https://github.com/DomainTools/SecuritySnacks/blob/main/2025/DualFunction-Malware-Chrome-Extensions"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "Carry-On Compromise: TA4922 Packs PackClient",
+      "summary": "Proofpoint identified PackClient, a modular remote access trojan and C2 framework advertised on Telegram and used by Chinese-speaking threat actor TA4922. The May 2026 campaign targeted organizations with operations in mainland China using tax-inspection lures that impersonated the Shandong Provincial Tax Bureau. Later July 2026 campaigns targeted Indian organizations with emails impersonating the Income Tax Department, delivering ZIP archives containing disk images that used DLL sideloading. The malware runs in stages, persists via registry RunOnce entries, and supports over 60 commands for surveillance, data theft, and plugin deployment. Proofpoint notes that its Telegram availability makes broader adoption by other actors likely, so defenders should hunt for its distinctive rundll32 and svchost process tree and registry artifacts.",
+      "completeness": "Medium",
+      "threats": [
+        "Packclient",
+        "Dll_sideloading_technique",
+        "Donut",
+        "Packclientcore",
+        "Packclientlauncher",
+        "Mitm_technique",
+        "Valleyrat",
+        "Chinaz",
+        "Billgates"
+      ],
+      "geo": [
+        "China",
+        "Asia",
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "WeChat"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/carry-compromise-ta4922-packs-packclient"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "Caught in 4K: The Aurora Files",
+      "summary": "Aurora is a Russian-speaking ransomware affiliate that compromised more than twenty organisations across nine countries between April and July 2026, according to an exposed open directory containing its toolkit and shell history. The operator, assessed as acting directly rather than as an access broker, used a repeatable Active Directory compromise playbook including noPac, ADCS abuse, and NTLM relay, and routed attacks through rented SOCKS pivots. Its Aurora encryptor, written in Zig, stops VMs before encrypting on ESXi and writes its ransom note into the host's SSH banner. Blockchain tracing with TRM Labs linked payments to multiple victims through a shared laundering network, with affiliate splits varying per victim. Defenders should harden AD certificate services, watch for backup system compromise, and treat browser-stored credentials as high-value targets.",
+      "completeness": "High",
+      "threats": [
+        "Bloodhound_tool",
+        "Nopac_tool",
+        "Petitpotam_vuln",
+        "Printerbug_tool",
+        "Eternalblue_vuln",
+        "Kerberoasting_technique",
+        "As-rep_roasting_technique",
+        "Netexec_tool",
+        "Shadow_copies_delete_technique",
+        "Supply_chain_technique",
+        "Certipy_tool",
+        "Ntlmrelayx_tool",
+        "Dcsync_technique",
+        "Kerbrute_tool",
+        "Hashcat_tool",
+        "Evil-winrm_tool",
+        "Chisel_tool",
+        "Proxychains_tool",
+        "Metasploit_tool",
+        "Windows_locker"
+      ],
+      "geo": [
+        "Russian",
+        "United states"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Cloudflare R2",
+        "ESXi",
+        "Active Directory",
+        "Hyper-V",
+        "Azure AD"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/aurora-ransomware-affiliate-ai-attack-planning-crypto-payments"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-27",
+      "title": "Unmasking TeamPCP, King of Software Supply Chain Attacks",
+      "summary": "TeamPCP is an actor that began in late 2025 with opportunistic cloud exploitation of exposed Docker, Kubernetes, Ray, and Redis services, then in early 2026 shifted to poisoning software supply chains. In February it exploited a misconfigured GitHub Actions workflow in Aqua Security's Trivy and stole a service-account token that was not fully revoked. The stolen access was used to ship a malicious Trivy release and then to harvest the publishing token of the LiteLLM package, which was backdoored twice in about five days. Flare's investigation traced a single alias, DeadCatx3, through linked accounts and reused credentials to a named individual, which they assessed with high confidence and confirmed with law enforcement. The key defender lessons are to pin GitHub Actions to commit SHAs, inventory credentials fully before rotating, scope publishing tokens narrowly, and alert on unexpected outbound connections from security tools.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Xmrig_miner",
+        "React2shell_vuln"
+      ],
+      "geo": [
+        "Australia"
+      ],
+      "software": [
+        "Telegram",
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "Trivy",
+        "LiteLLM",
+        "Hugging Face",
+        "Twitter",
+        "gmail",
+        "TikTok",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/teampcp-software-supply-chain-attacks"
+      ]
+    }
+  }
+]

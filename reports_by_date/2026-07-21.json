@@ -1,0 +1,573 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "The Perfect Heist: NuGet Typosquat Targets Betting Platform to Rig Results",
+      "summary": "Newtonsoftt.Json.Net is a typosquatted NuGet package that impersonates the popular Newtonsoft.Json library while shipping a trojanized fork. The malware targets Digitain's FG-Crash betting game by patching the GenerateGameResult method via HarmonyLib, which rigs round outcomes after a delayed activation. Across seven versions, the author evolved the payload, with later generations sending rigged results to an external server disguised as Seq logging traffic. Developers who installed the package by typo otherwise receive a working JSON library and see no effect. Defenders should remove the package, purge caches, block the C2 endpoint, and pin known-good Newtonsoft.Json versions.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Confuserex_tool",
+        "Dotfuscator_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "NuGet"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "GetString",
+        "WriteLine",
+        "MakeGenericMethod",
+        "HTTP"
+      ],
+      "links": [
+        "https://jfrog.com/blog/nuget-typosquat-targets-betting-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "Kali365 Targets US Organizations with Data Theft via Device Code Phishing",
+      "summary": "Kali365 is a phishing kit targeting US organizations with device code phishing that abuses legitimate Microsoft authentication. Victims are sent to the real Microsoft Device Login page, where they enter an attacker-provided code, so no fake login form is needed. Attackers who complete this flow obtain OAuth access and refresh tokens, which can provide continued access to Microsoft 365 email, documents, and cloud resources without stealing passwords. The kit includes 34 lure templates impersonating many brands and supports both Microsoft and Google device flows, with Microsoft used most often. Defenders should revoke sessions and refresh tokens, restrict unneeded device-code authentication, and monitor for unusual OAuth activity and token issuance.",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Kali365_tool"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Outlook",
+        "OneNote",
+        "Dropbox"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/kali365-phishing-targeting-us/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "Click to Sync: From Google Ads Maintenance Notice to Credential Theft",
+      "summary": "Cofense's Phishing Defense Center observed a campaign that spoofed Google Ads MMC Sync system-upgrade notices urging recipients to synchronize their accounts immediately or face service interruption. The emails used Google branding and a \"Complete Sync Account\" button, with a sender domain unrelated to Google. Victims were routed through a Blogspot redirect page and then a newly created lookalike domain, where a fake Google sign-in form captured their credentials. The report notes that attackers can rotate senders, domains, subjects, and pages, so defenders should cluster related variants rather than rely only on exact indicator matching. Cofense recommends campaign-level remediation that pulls confirmed malicious messages from other inboxes, alongside user reporting.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "links": [
+        "https://cofense.com/blog/click-to-sync-from-google-ads-maintenance-notice-to-credential-theft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "New Project CAV3RN module abuses Outlook calendar events for C2 and DNS AAAA records for configuration recovery",
+      "summary": "Project CAV3RN, a cyberespionage framework used against targets in Israel, has a new .NET Native AOT communication module, AzureCommunication.dll, that appears designed to replace its previous HTTP/WebSocket component. The module exchanges commands and results through Outlook calendar events accessed via Microsoft Graph, using a compromised Microsoft 365 mailbox as a dead-drop channel. Events are scheduled in 2050 so they are unlikely to appear in ordinary calendar views, and attachments carry encrypted commands and results. If Graph authentication or validation fails, the module recovers replacement configuration values through DNS AAAA responses from actor-controlled nameservers. Researchers assess with low confidence that CAV3RN is associated with OilRig (APT34), citing shared use of Microsoft-hosted services and attachment-based command exchange. Defenders should note that development remains active.",
+      "completeness": "Medium",
+      "threats": [
+        "Cav3rn",
+        "Dead_drop_technique",
+        "Rdat",
+        "Samplecheck5000",
+        "Oilcheck",
+        "Oilbooster",
+        "Whisper_backdoor",
+        "Veaty"
+      ],
+      "geo": [
+        "Israeli",
+        "Israel"
+      ],
+      "software": [
+        "Outlook",
+        "Microsoft Entra",
+        "Office 365",
+        "Microsoft OneDrive",
+        "Microsoft Outlook"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-gcm",
+        "aes",
+        "aes-gcm"
+      ],
+      "links": [
+        "https://securelist.com/project-cav3rn-cyberespionage-framework-using-outlook-and-dns/120757/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "The Procurement Trap: Inside an AiTM Campaign Targeting Global Institutions",
+      "summary": "A single actor is running an adversary-in-the-middle (AiTM) phishing campaign against universities, enterprises, and multinational bodies including EU and UN agencies. The operation starts with lures sent from compromised organizational Outlook accounts, themed around RFIs, bid invitations, and project documents. Victims pass through fake download portals and CAPTCHA gates impersonating services such as OpenGov and ConstructConnect before reaching cloned Microsoft login pages. The actor rotates among AiTM kits, including EvilProxy, FlowerStorm, Evilginx, and Kali365, to relay real-time logins and steal session tokens and cookies after MFA succeeds. Fake download sites are hosted on dormant, aged domains that appear compromised and injected with an index.php file. For defenders, MFA alone is insufficient, and DNS-based intelligence can detect this infrastructure upstream of authentication.",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Evilginx_tool",
+        "Flowerstorm_tool",
+        "Kali365_tool",
+        "Credential_harvesting_technique",
+        "Evilproxy_tool",
+        "Rockstar_2fa_tool"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "software": [
+        "Microsoft Outlook",
+        "Cloudflare Turnstile"
+      ],
+      "algorithms": [
+        "rdga"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/the-procurement-trap-inside-an-aitm-campaign-targeting-global-institutions/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "NULLZEREPTOOL: Inside a Telegram-Controlled DDoS and Multi-Function Attack Framework",
+      "summary": "NULLZEREPTOOL is a Python attack framework controlled through Telegram, discovered via a Pastebin post flagged by Flare in April 2026. Its fully implemented core is a DDoS engine with 20 attack methods, auto-scaling, a watchdog, and proxy rotation. A later variant adds WiFi and Bluetooth attack routines, WiFi password extraction, a hierarchical botnet tasking model, and \"quantum\"-branded modules, but these exist only in server-side code. The client component is absent, so end-to-end functionality cannot be confirmed, and no use of these features was observed. The \"quantum\" modules use standard cryptography and packet-building primitives, so defenders should focus detection on underlying network and subprocess behaviors. The report characterizes the tool as primarily a Telegram-managed DDoS panel still in a feature-testing phase.",
+      "completeness": "High",
+      "threats": [
+        "Nullzereptool_tool",
+        "Mirai",
+        "Dead_drop_technique",
+        "Telebots",
+        "Credential_harvesting_technique",
+        "Hashcat_tool",
+        "Httpflood_technique",
+        "Udpflood_technique",
+        "Tcpflood_technique",
+        "Dns_amplification_technique"
+      ],
+      "geo": [
+        "Vietnamese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "Pastebin",
+        "Telegram",
+        "Flask",
+        "Linux"
+      ],
+      "functions": [
+        "Fetch_free_proxies",
+        "update_proxy_list",
+        "get_random_proxy",
+        "is_admin",
+        "is_logged_in",
+        "load_keys",
+        "save_keys",
+        "generate_key",
+        "create_key",
+        "delete_key",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/nullzereptool-telegram-controlled-ddos-multi-function-attack-framework"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "SonicWall SMA Flaws Lead to KNUCKLEBALL Malware",
+      "summary": "SonicWall SMA 1000 appliances were compromised in a zero-day campaign that used two flaws, CVE-2026-15409 and CVE-2026-15410, with exploitation beginning June 22, 2026. Researchers tied the activity to the threat actor UTA0533 and found the attacker chained the vulnerabilities to gain root access on the appliances. The attacker deployed KNUCKLEBALL, a Python script that installed SMA-specific Java implants including the ORANGETAIL webshell and a modified Suo5 proxy, plus the ROOTRUN root-privilege utility. Activity included credential gathering, traffic capture, and attempts to pivot into internal systems. Both CVEs were added to CISA's KEV catalog, and defenders should apply the listed hotfixes, treat compromised appliances as full breaches requiring reimaging, and reset passwords and TOTP tokens.",
+      "completeness": "Low",
+      "threats": [
+        "Knuckleball",
+        "Orangetail",
+        "Suo5_tool",
+        "Rootrun_tool",
+        "Xzfind_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "NGINX"
+      ],
+      "functions": [
+        "Internet-Facing"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://socradar.io/blog/sonicwall-sma-knuckleball-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "Suspected Chinese Operators Use Claude Code and DeepSeek to Target Government and Financial Systems Across Four Countries",
+      "summary": "Suspected China-linked operators used an open directory tied to TencShell C2 infrastructure to run an active intrusion campaign against government and financial targets. The operators used Claude Code for execution and session persistence while DeepSeek-v4-pro handled reasoning, attack logic, and script generation. Government systems in Afghanistan, Thailand, and Taiwan were actively exploited, and cloned login pages impersonating U.S. government entities were staged. A parallel effort targeted financial services firms across Europe, Australia, and Asia. The researchers stopped short of naming a specific group and noted that a second C2 framework, Gshell, was assessed with moderate confidence.",
+      "completeness": "High",
+      "threats": [
+        "Tencshell",
+        "Rshell",
+        "Arl_tool",
+        "Vshell",
+        "Garble_tool",
+        "Reacon",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Sqlmap_tool",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "China",
+        "Afghan",
+        "Taiwan",
+        "United states",
+        "Afghanistan",
+        "Australia",
+        "Chinese",
+        "Asia",
+        "Hong kong",
+        "Taiwanese",
+        "Thailand"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "DeepSeek",
+        "Anthropic",
+        "Linux",
+        "SimpleHTTP",
+        "Supabase",
+        "Laravel",
+        "WordPress"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://hunt.io/blog/chinese-operators-claude-deepseek-government-intrusion",
+        "https://github.com/CCb0unce/ARL",
+        "https://github.com/lintsinghua/DeepAudit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "DinDoor, DenoRAT, and NightshadeC2: Analyzing TAG-150's Evolving Tradecraft",
+      "summary": "eSentire's Threat Response Unit disrupted a ClickFix-style command in a Finance customer's environment, revealing a TAG-150 infection chain that uses Deno-based malware. The chain runs from a malicious Run prompt command and MSI installer to a likely AI-generated PowerShell stage that installs the Deno runtime, then loads DinDoor, DenoRAT, and finally NightshadeC2. DenoRAT acts as a RAT, stealer, and loader, and it can inject a C2-supplied DLL into Chromium browsers for App-Bound Encryption bypass, though this was not observed here. Defenders are advised to disable the Run prompt via Group Policy, run phishing awareness training, and deploy NGAV or EDR at minimum.",
+      "completeness": "High",
+      "threats": [
+        "Dindoor",
+        "Nightshade",
+        "Clickfix_technique",
+        "Deno_tool",
+        "Dll_injection_technique",
+        "Process_injection_technique",
+        "Chromelevator_tool",
+        "Pe_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "chromium",
+        "Telegram",
+        "Discord",
+        "chrome",
+        "opera",
+        "opera_gx",
+        "vivaldi",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Bitwarden",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "binancechain",
+        "coin98",
+        "iwallet",
+        "wombat",
+        "mew_cx",
+        "neoline",
+        "terra_station",
+        "keplr",
+        "have more..."
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "aes-256-cbc",
+        "base64",
+        "aes-256"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/dindoor-denorat-and-nightshadec2-analyzing-tag-150s-evolving-tradecraft",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "Who Needs a Job? DPRK ClickFake Interview Campaign Drops PylangGhost and GolangGhost RATs",
+      "summary": "North Korean actor Famous Chollima runs the ClickFake Interview campaign, posing as recruiters to lure crypto and Web3 professionals into fake skill assessments. Targets, often non-technical roles such as advisors and analysts, are asked to record a video, then receive a fake camera error that prompts them to paste a ClickFix command. The command delivers the PylangGhost RAT on Windows and the GolangGhost RAT plus a credential-harvesting SwiftUI app on macOS. Both RATs steal browser credentials and crypto wallet data and communicate with C2 over RC4-encrypted HTTP. The campaign also shows a shift from plaintext scripts to compiled binaries such as Nuitka-built modules, so defenders should prioritize binary-aware detection alongside security awareness training on unsolicited recruiter requests.",
+      "completeness": "High",
+      "threats": [
+        "Pylangghost",
+        "Flexibleferret",
+        "Clickfix_technique",
+        "Pylangghost_rat",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Solidbit",
+        "Clipboard_hijacking_technique",
+        "Invisibleferret",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 27,
+      "software": [
+        "macOS",
+        "Nuitka",
+        "Discord",
+        "Telegram",
+        "gatekeeper",
+        "WebRTC",
+        "curl",
+        "url -k",
+        "chrome",
+        "Google Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "coinbase",
+        "core_wallet",
+        "rabby",
+        "bybit",
+        "exodus_wallet",
+        "solflare_wallet",
+        "keplr",
+        "ronin_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "sha256",
+        "zip",
+        "rc4",
+        "aes-cbc",
+        "base64",
+        "md5",
+        "gzip"
+      ],
+      "functions": [
+        "setInterval"
+      ],
+      "languages": [
+        "python",
+        "cpython",
+        "visual_basic",
+        "golang",
+        "cython",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/dprk-clickfake-pylangghost-golangghost-rats/",
+        "https://github.com/kavehtehrani/job\\_interview\\_scam"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "UAC-0099: LUNCHPOKE, BURNYBEAR, updated MATCHBOIL.V2, and use of Notepad++ 8.8.3",
+      "completeness": "Medium",
+      "threats": [
+        "Lunchpoke_tool",
+        "Burnybear_tool",
+        "Matchboil"
+      ],
+      "software": [
+        "winrar",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6318634"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "Operation BlueDash: Multi-RMM Workplace Phishing",
+      "summary": "Operation BlueDash is a Microsoft Teams-themed phishing campaign that lures victims with a \"secure document\" email and a fake Microsoft Store update page. The fake update downloads supportdev.exe, an Inno Setup loader that runs hidden PowerShell to silently enroll the endpoint in attacker-controlled Level RMM and attempt a parallel ScreenConnect install. After enrollment, operators queried reboot state, BitLocker, firewall configuration, and local Administrators membership, showing hands-on assessment. Repository analysis linked the campaign to a related Zoom-themed branch that deployed Tactical RMM via JScript. ZeroBEC assesses with moderate-to-high confidence that a specific Nigeria-based developer group operates the campaigns. Defenders should allowlist approved RMM products and hunt for unauthorized RMM enrollment and discovery commands.",
+      "completeness": "High",
+      "threats": [
+        "Screenconnect_tool",
+        "Tactical_rmm_tool",
+        "Meshagent_tool",
+        "Supportdev",
+        "Spear-phishing_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Turkish",
+        "Nigeria"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "Microsoft Store",
+        "Microsoft Teams",
+        "BitLocker",
+        "Windows Firewall",
+        "Zoom",
+        "Microsoft Defender",
+        "Dropbox",
+        "Windows Defender Application Control",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "installApp",
+        "Get-BitLockerVolume",
+        "Get-NetFirewallProfile",
+        "Get-LocalGroupMember"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "jscript"
+      ],
+      "links": [
+        "https://zerobec.com/blog/operation-bluedash-multi-rmm-workplace-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "Hidden in plain sight: How SVGs carry malicious scripts",
+      "summary": "Malicious SVG files are rising in 2026, exploiting embedded JavaScript in a format that security tools often treat as harmless images. ReversingLabs describes three attack types: redirectors, self-contained phishing pages, and DOM injection or script abuse. One sample set showed a webpage-style SVG that called a domain tied to a 2024 WordPress brute-force campaign. A 2026 wave of spear phishing used SVGs disguised as fake voicemail attachments, targeting healthcare, construction, and banking. Defenders are advised to filter emails with SVG attachments and enforce anti-phishing measures such as OTPs and FIDO keys.",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "Russian"
+      ],
+      "software": [
+        "Wordpress"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/how-svgs-carry-dangerous-scripts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-21",
+      "title": "Lampion's Portugal-focused phishing campaign delivers multistage malware",
+      "summary": "Acronis Threat Research Unit observed a 2026 Lampion campaign that sends phishing emails posing as financial or administrative communications to Portuguese users. Lampion is a Brazilian banking malware family, first publicly documented in December 2019, that has consistently targeted Portuguese-speaking users rather than Brazilian victims. The emails carry ZIP archives containing heavily padded HTML files that display a fake SAPO Transfer page and fetch further JavaScript from attacker infrastructure. The infection chain then moves through multiple obfuscated VBS stages that use scheduled tasks and chunked downloads to deploy a very large DLL, executed via rundll32 with the export \"jangadeiro,\" which acts as a remote access trojan. Telemetry shows 94.6% of detections in Portugal, with the remainder in Spain and the United Kingdom. Defenders should hunt for rundll32 loading DLLs from timestamp-named folders under %APPDATA% and for VBScript using ADODB.Stream to reassemble Range-based downloads.",
+      "completeness": "Medium",
+      "threats": [
+        "Lampion",
+        "Junk_code_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Spain",
+        "Brazilian",
+        "United kingdom",
+        "Portugal",
+        "Portuguese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 11,
+      "software": [
+        "twitter"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "vbscript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/lampions-portugal-focused-phishing-campaign-delivers-multistage-malware/"
+      ]
+    }
+  }
+]

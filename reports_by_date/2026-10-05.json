@@ -1,0 +1,199 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-05",
+      "title": "42 Malicious RubyGems Open a Reverse Shell at Install Time",
+      "summary": "A RubyGems account named reqthrottle_3474 published 42 malicious gems in about one hour on October 5, 2026, mostly targeting cryptocurrency developers with names like eth-keystore-utils and btc-wallet-tools. The gems run their code through a native extension step during gem or bundle install, and they stay inactive in CI systems and sandboxes. They first check the environment, then on a real workstation they wait 20 to 40 minutes before acting. Eleven gems open a reverse shell to a remote server, while thirty-one download and run a second-stage script. The report advises treating any workstation that installed a reverse-shell gem as compromised, including its credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "TRAVIS",
+        "curl"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "ruby"
+      ],
+      "links": [
+        "https://safedep.io/rubygems-crypto-gems-install-time-reverse-shell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-05",
+      "title": "Malicious Crypto Shell Packages Target RubyGems",
+      "summary": "A threat actor using the name \"Ghost Dev\" published 42 malicious RubyGems packages that use typosquatting, brandjacking, and generic names to target crypto and web3 developers. The packages come in two variants: a V1 reverse shell that waits 20 to 40 minutes after sandbox and developer-workstation checks, and a V2 loader that downloads a cryptocurrency theft kit. The kit disguises itself as a wallet-protection utility and combines a local TLS interception proxy, a browser content script, a clipboard hijacker, and a wallet-material grabber. It redirects cryptocurrency withdrawals to attacker wallets while spoofing the page, and it harvests browser wallet data, seed phrases, and private keys. Targets include major exchanges such as Binance, Coinbase, and Kraken. Defenders should check endpoints for the bundled root CA, modified proxy settings, autostart entries, and a listener on 127.0.0.1:8899, and treat any secrets on affected hosts as compromised.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Clipboard_hijacking_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Chrome"
+      ],
+      "wallets": [
+        "tron",
+        "tronlink",
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "electrum",
+        "bybit"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "binance",
+        "kucoin"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "ruby",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/malicious-crypto-shell",
+        "https://github.com/makevoid/ethereum.rb"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-05",
+      "title": "Caught in 4K: The Gentlemen Files",
+      "summary": "Azazel, a Russian-speaking affiliate of the Gentlemen ransomware group, was exposed by an open directory and misconfigured storage server holding about 6TB of stolen data from more than two dozen organisations across six countries. He ran his own leak site, LEAKNED, and kept extortion proceeds instead of sharing them with the RaaS operator. Most victims were breached through stolen CI/CD secrets, with one GitLab instance enabling footholds at two unrelated organisations. A separate deep compromise of an AI platform used SSRF, Jasypt decryption, and a JWT token recovered from git history. The operator also used Model Context Protocol (MCP) tooling as a command-and-control channel, which CloudSEK says is a first documented live instance. Defenders should secure CI/CD secrets, restrict MCP servers to loopback, and monitor bulk object storage syncs.",
+      "completeness": "Medium",
+      "threats": [
+        "Aurora_ransomware",
+        "Gentlemen_ransomware",
+        "Penelope_tool",
+        "Supply_chain_technique",
+        "Hermes",
+        "Rclone_tool",
+        "Restic_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "MinIO",
+        "Jenkins",
+        "PostgreSQL",
+        "Redis",
+        "Kubernetes",
+        "linux"
+      ],
+      "functions": [
+        "ENC"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/caught-in-4k-the-gentlemen-files"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-05",
+      "title": "Targeting the Systems Behind the Mission: OT Threats to US Critical Infrastructure and Military Operations",
+      "summary": "Volt Typhoon, a PRC state-sponsored actor, is pre-positioning within US critical infrastructure IT networks to enable OT disruption during a potential crisis, according to CISA, NSA, and FBI. Its compromises span communications, energy, transportation, and water systems, and it relies on living-off-the-land techniques and valid credentials rather than distinctive malware. In a separate 2026 water-sector campaign, unattributed attackers targeted internet-facing Rockwell Allen-Bradley MicroLogix PLCs across at least seven states, causing loss of water pressure and flooding. Iranian-affiliated actors have exploited exposed PLCs, following CyberAv3ngers' earlier attacks on Unitronics devices, while pro-Russian groups such as CARR, Z-Pentest, and Sector16 have targeted OT through weakly secured VNC-connected HMIs. The report stresses that default credentials, exposed remote access, and weak IT/OT separation provide the common access paths, and that military mission risk extends to civilian infrastructure beyond installation perimeters.",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Iran",
+        "United states",
+        "Iranian",
+        "Russian",
+        "Russia",
+        "China"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/targeting-the-systems-behind-the-mission-ot-threats-to-us-critical-infrastructure-and-military-operations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-05",
+      "title": "MALFEX npm Malware Campaign: Three Payloads And An Adversary That Signs Their Work",
+      "summary": "MALFEX is an npm supply-chain campaign run by a single adversary publishing since August 2023, with eight malicious packages out of twelve tied to the operator. The attack targets Windows systems through three paths: an Overlord Remote Access Trojan loader, a stealer chain that installs movinlike to harvest Discord tokens, browser data, Telegram sessions, and cryptocurrency wallet data, and a long-running function-flag downloader. As of 29 September 2026, function-flag, function-color, and cdn-img-fetch remained installable, and function-flag and function-color have no advisory. The cdn-img-fetch advisory covers only versions 1.0.0 and 1.0.1. Defenders should block all malicious packages, not just one, and should not rely on advisory feeds or --ignore-scripts alone.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Movinlike",
+        "Overlord_tool",
+        "Cdn-img-fetch",
+        "Tlxbnhd",
+        "Tldriver",
+        "Mxdriver",
+        "Img-to-native",
+        "Native-runner",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Brazilian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Discord",
+        "Telegram",
+        "macOS",
+        "Linux",
+        "ode.js st",
+        "Discord Canary",
+        "Discord PTB",
+        "Lightcord",
+        "Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "zip",
+        "lznt1",
+        "rc4",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "autoit"
+      ],
+      "links": [
+        "https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work/"
+      ]
+    }
+  }
+]

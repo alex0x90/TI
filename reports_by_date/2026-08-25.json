@@ -1,0 +1,456 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "NPM Isn't Prepared For North Korean PolinRider Attack",
+      "summary": "The report describes PolinRider, a DPRK supply-chain campaign that hides obfuscated JavaScript in compromised developers' .vscode/tasks.json files, fake .woff2 fonts, and config files. Researchers counted 4,367 confirmed repositories across 2,152 owners and suspect the true number is far higher. Compromised GitHub maintainers are then used to push malware into npm, as in the case of the fetch-page-assets package, where the author's account was infected. npm's advisory model, which names and removes single versions, failed to stop later releases that kept shipping the payload. Defenders should pin fetch-page-assets to 1.2.8 or earlier, check .vscode/tasks.json files for runOn: folderOpen, and treat traffic to the listed Ethereum RPC hosts as suspicious.",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider",
+        "Night_king",
+        "Supply_chain_technique",
+        "Nullreceiver_technique",
+        "Babel_tool"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "software": [
+        "Node.js",
+        "Dependabot"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/polinrider-npm-case-study-dprk-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "SLEEPWALKER: A Passive Backdoor With Its Own Command Language",
+      "summary": "SLEEPWALKER is a passive Windows backdoor disguised as Microsoft's dpapi.dll, designed to be side-loaded into ESET's ERAAgent.exe and active only under that host process name. It makes no outbound connections on its own and waits for a single crafted network packet, which carries an encrypted, attacker-supplied program written in a custom 23-instruction bytecode language. That language supports scheduling, several network transports including a VMware VMCI channel, staged file delivery and in-memory shellcode execution, and the sample also weakens host settings to allow unauthenticated named-pipe access. Defenders should note that network monitoring for outbound beaconing will not reveal it, and the report found no attribution to a known actor.",
+      "completeness": "Medium",
+      "threats": [
+        "Sleepwalker",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "GPT-5",
+        "Anthropic"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "sha1",
+        "base32",
+        "crc-32",
+        "aes-256",
+        "aes",
+        "sha256"
+      ],
+      "functions": [
+        "Find-SideLoadedDpapiDll",
+        "Write-Verbose",
+        "Get-ChildItem",
+        "Write-Warning",
+        "Get-FileHash",
+        "Get-AuthenticodeSignature",
+        "Get-Item",
+        "Find-SampleByHash",
+        "Get-ItemProperty",
+        "Get-Date",
+        "have more..."
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://r136a1.dev/2026/08/24/sleepwalker-a-passive-backdoor-with-its-own-command-language/",
+        "https://github.com/Mbed-TLS"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "A Single Canadian Tax Lure Spread into a 46-Country, US-First RMM Campaign",
+      "summary": "A remote-access phishing campaign that began with fake Canada Revenue Agency T4 tax lures has been found to span 46 countries, with 45% of observed activity tied to the United States. Attackers use a reusable fake-document kit, often hosted on disposable Vercel apps, to deliver password-protected ZIP files that lead to signed, legitimate RMM installers such as GoTo Resolve, LogMeIn Rescue, ScreenConnect, and ConnectWise. Because the payload is signed commercial software, signature-based antivirus is unlikely to flag it. Lures impersonate the Social Security Administration, Adobe PDF, invoices, VAT notices, and shipping services. Defenders should focus on how RMM software reaches the environment and on stable kit patterns rather than domains or product names.",
+      "completeness": "High",
+      "threats": [
+        "Lolbin_technique",
+        "Gotoresolve_tool",
+        "Logmein_tool",
+        "Itarian_tool",
+        "Screenconnect_tool",
+        "Fingerprintjs_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "United states",
+        "America",
+        "Canada",
+        "Canadian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "WordPress",
+        "Cloudflare R2",
+        "Dropbox",
+        "Telegram",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/us-campaign-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "[Op Report\\] From PDF Phish to XLoader: A ScreenConnect Hands-on-Keyboard Intrusion",
+      "summary": "A Deception.Pro operation captured a roughly 54-hour intrusion in August 2026 that began with a PDF-themed phish delivering a batch downloader. The downloader silently installed ConnectWise ScreenConnect from attacker infrastructure, and the operator used two relay instances for hands-on-keyboard access. The operator then ran purpose-built tools for defense evasion, credential access, and webcam and SMS access, with heavy LSASS access recorded. XLoader (FormBook) was subsequently injected into signed Windows binaries, driving form-grabbing C2 across 63 domains, including decoys, and exfiltrating data to Sendspace. The report calls the combined ScreenConnect and FormBook activity a first-observed pattern, and suggests defenders treat that pairing as its own detection signature.",
+      "completeness": "High",
+      "threats": [
+        "Formbook",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "America",
+        "United states"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Active Directory",
+        "chrome",
+        "curl",
+        "Android",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/pdf-screenconnect-xloader-aug2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "Exposing AnonyMousKIT: AI-Powered PhaaS Supply Chain",
+      "summary": "AnonyMousKIT is an AI-powered Phishing-as-a-Service platform built to defeat Apple's Activation Lock on stolen devices, sold on a credit-metered model across email, SMS, WhatsApp, and voice channels. Its AI voice agent posed as \"Alice from Apple Support\" and was used mainly in Brazil, costing about $19.24 for 200 calls. Lures were sent to owners of stolen devices, with the email channel relying on free Gmail accounts disguised as Apple no-reply senders. Researchers traced a shared codebase across 506 domains and 168 storefront brands, with 30 backend installations sharing a single developer and exposing logs through a path flaw. The platform remained operational through the end of the analysis period, and defenders are advised to rely on domain-age filtering, MDM controls, and hardware security keys.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Anonymouskit",
+        "Checkm8_tool",
+        "Credential_harvesting_technique",
+        "Painel_rescue_unlocker",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "South africa",
+        "Nigeria",
+        "Indonesia",
+        "Chile",
+        "Brazil",
+        "Italy",
+        "Kenya",
+        "India",
+        "Zimbabwe",
+        "Ethiopia",
+        "German",
+        "Mozambique",
+        "African",
+        "Spain",
+        "Malta",
+        "Argentina",
+        "Indonesian",
+        "French",
+        "Algeria",
+        "Canada",
+        "Brazilian",
+        "Portugal",
+        "Spanish",
+        "United kingdom",
+        "France",
+        "Irish",
+        "Portuguese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 13,
+      "software": [
+        "WhatsApp",
+        "Gmail",
+        "Telegram",
+        "gpt-4o",
+        "gpt-4",
+        "macOS"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "AI",
+        "send_email",
+        "send_sms",
+        "start_send_whatsapp",
+        "start_call",
+        "start_ai_call",
+        "FindMy",
+        "get_sms_server_api",
+        "check_phone_number",
+        "This",
+        "have more..."
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/anonymouskit-ai-phaas-supply-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "What the ERMAC Source Leak Says About HookBot",
+      "summary": "ERMAC and HookBot are two branches of one Android banking trojan sold as a service, forked from a shared Cerberus code base. A copy of the ERMAC 3.0 panel, builder, and backend source leaked in August 2025, and the leaked panel's name constant is what decides whether the panel shows \"ERMAC\" or \"Hook\". The HookBot tree adds an IP-whitelist security gate that hides the panel, API, and implant socket from passive scans, but it leaves the builder port reachable. Overlays shipped with the leaked code target 484 apps across more than 40 countries, including banks, wallets, and crypto services. For defenders, the report recommends hunting the builder's obfuscator strings and favicon hashes rather than panel titles, since titles are trivial to change.",
+      "completeness": "Medium",
+      "threats": [
+        "Ermac",
+        "Hookbot",
+        "Cerberus",
+        "Obfuscapk_tool",
+        "Loki_bot",
+        "Xerxes_tool",
+        "Blackrock"
+      ],
+      "geo": [
+        "Turkish",
+        "Spain",
+        "Poland",
+        "Chinese",
+        "Portugal",
+        "Moscow",
+        "Turkey",
+        "Ukraine",
+        "Japanese",
+        "Brazilian",
+        "Russian"
+      ],
+      "software": [
+        "Android",
+        "Laravel",
+        "Telegram",
+        "Chrome",
+        "WhatsApp",
+        "Chrome",
+        "WhatsApp",
+        "Instagram",
+        "TikTok",
+        "Gmail",
+        "Google Play",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "safepal"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "blowfish",
+        "md5",
+        "aes-128-cbc",
+        "base64"
+      ],
+      "functions": [
+        "getBots",
+        "deleteBots",
+        "getBotsList",
+        "deleteBot",
+        "getStats"
+      ],
+      "languages": [
+        "golang",
+        "typescript",
+        "php"
+      ],
+      "links": [
+        "https://censys.com/blog/ermac-source-leak-hookbot/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "How Play Achieves Encryption",
+      "completeness": "High",
+      "threats": [
+        "Playcrypt",
+        "Win32/genransom.sa!rsm",
+        "Systembc",
+        "Conti",
+        "Blackcat",
+        "Mimikatz_tool",
+        "Credential_dumping_technique",
+        "Edr-killer",
+        "Byovd_technique",
+        "Akira_ransomware",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "America",
+        "North korea",
+        "Dprk"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 13,
+      "software": [
+        "Windows Defender",
+        "WinSCP",
+        "Hyper-V",
+        "PsExec",
+        "WinRAR",
+        "Windows Security"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "ReadMe"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/how-play-achieves-encryption/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "Email Bombing and Quick Assist: A New Ransomware Playbook",
+      "summary": "Attackers flooded at least 10 users in a roughly 500-employee organization with up to about 3,000 legitimate automated emails per day, after submitting their addresses to unrelated public services. About a day and a half later, they contacted selected users on Microsoft Teams from an external identity that combined a known IT person's name, the victim's domain string, and a helpdesk-themed domain. The victim granted Quick Assist access while the compromised user held local administrator rights, and the attacker then deployed two redundant Xray/VLESS reverse-tunnel paths. A locally launched fake security-update prompt captured domain credentials, and the actor then moved to Active Directory reconnaissance, Kerberoasting, and AD CS relay attempts. The report's takeaway for defenders is to treat a sudden surge of legitimate transactional email as a security event that can precede a help-desk impersonation intrusion.",
+      "completeness": "High",
+      "threats": [
+        "Email_bombing_technique",
+        "Microsoft_quick_assist_tool",
+        "Xray_tool",
+        "Dll_sideloading_technique",
+        "Kerberoasting_technique",
+        "Blackbasta",
+        "Ngrok_tool",
+        "Chisel_tool",
+        "Cobalt_strike_tool",
+        "Winrm_tool",
+        "Credential_harvesting_technique",
+        "Anydesk_tool",
+        "Edgecution",
+        "Bec_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Windows security",
+        "Active Directory",
+        "credential dialog",
+        "PaperCut",
+        "curl",
+        "Windows SMB",
+        "chrome",
+        "Dropbox",
+        "Azure App Service",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "IT-support",
+        "Teams"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://zerobec.com/blog/email-bombing-quick-assist-ransomware",
+        "https://github.com/XTLS/Xray-core"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "New phishing campaign targeting INPS: fake refund for “recalculation of tax contributions”",
+      "summary": "A phishing campaign impersonating Italy's INPS social security institute was identified by CERT-AGID and uses INPS name, logo and layout in emails. The lure is a fake 730,00 euro refund tied to an \"automated recalculation\" of the recipient's contribution and tax position, sent with a subject referencing an approved refund request. Victims are directed to a fraudulent site that collects personal data and payment card details, including card number, expiry date and CVV. The final step asks victims to approve a supposed 3D Secure authorization via a push notification in their bank app, which would let attackers complete an unauthorized transaction. CERT-AGID has moved to take down the malicious domain and shared indicators of compromise with public administrations and accredited organizations.",
+      "completeness": "Low",
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/phishing-ai-danni-di-inps-falso-rimborso-per-ricalcolo-contributi-fiscali/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-25",
+      "title": "360AI security experts independently discovered a new type of botnet.",
+      "summary": "360 AI security analysts independently discovered a new botnet, dubbed \"Endpoint botnet,\" while routinely inspecting command-and-control servers of the Silver Fox trojan. The botnet has been active since July of this year and has launched credential-spraying attacks across 13 network protocols against at least 1,311 servers worldwide, with infected devices spanning more than 20 countries and regions. It disguises itself as a curl tool or EDR client and encrypts its internal data with AES, and it supports multiple operating systems with automated propagation. Analysis identified it as a cross-platform, AI-written credential-spraying network that uses a three-tier architecture, with the primary target being the wsman protocol used by Microsoft WinRM. The report notes that the botnet appears to be in an early build-out stage, and that its AI analysis agent submitted findings to human experts for review rather than taking response actions itself.",
+      "completeness": "Medium",
+      "threats": [
+        "Password_spray_technique",
+        "Endpoint_botnet",
+        "Winrm_tool"
+      ],
+      "software": [
+        "WeChat",
+        "curl",
+        "Linux",
+        "Alibaba Cloud"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "aes"
+      ],
+      "links": [
+        "https://news.safe.360.cn/n/13046.html"
+      ]
+    }
+  }
+]

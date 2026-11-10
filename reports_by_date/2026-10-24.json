@@ -1,0 +1,82 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-24",
+      "title": "OVHcloud CLI Compromised via GitHub Release Swap: Detonating the Real GlassWorm Loader and What We Found",
+      "summary": "Attackers replaced binaries on five OVHcloud CLI GitHub releases (v0.11.0 through v0.15.0) on October 19, 2026, using the HassenBF account, which was live for 94 minutes and downloaded about 250 times. The swapped binaries were built locally from an unreleased main-branch commit with a credential stealer embedded, and the attacker replaced checksums.txt so the published hashes matched. The payload harvested AI-agent credential stores, cloud and container configs, SSH keys, and other secrets, staging them in never-deleted /tmp directories before exfiltrating them. The root cause was that GitHub release immutability was not enabled, and a customer caught the swap through a pinned SHA-256 in CI. Defenders should treat any host that ran a swapped binary as fully compromised, rotate secrets from a clean machine, and reinstall the clean v0.16.0 release, since Homebrew, go install, source builds, and Docker were not exposed.",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Dead_drop_technique",
+        "Hermes"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Claude",
+        "Docker",
+        "Kubernetes",
+        "curl",
+        "macOS"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "sha256",
+        "aes-256-cbc",
+        "md5"
+      ],
+      "functions": [
+        "getSignaturesForAddress"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/ovhcloud-cli-github-release-swap-glassworm",
+        "https://github.com/ovh/ovhcloud-cli/issues/300",
+        "https://github.com/ovh/ovhcloud-cli/releases/tag/v0.16.0",
+        "https://github.com/ovh/ovhcloud-cli"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-24",
+      "title": "PHP2Shell: observed exploitation attempts, 22–24 October 2026",
+      "summary": "The report documents a 26-hour capture across six PHP-backed web personas in which 30 pre-script out-of-memory errors and 11 worker crashes were recorded, tied to PHP2Shell-style exploitation attempts. The most significant pattern is a 33 MB multipart leak-stage body (B1) that preceded ten segmentation faults from several sources, including 178.249.214.6, 89.167.27.27, and 103.151.173.212. Other activity included distributed fixed-length probes from 14.102.84.0/24, a serializer-oriented wave, and large chunked uploads, which are treated as separate clusters rather than attributed actors. No remote code execution or usable memory disclosure was confirmed, and no webshell execution or successful write was established. For triage, the report says the useful signal is the correlated OOM, B1 request, and worker-exit sequence rather than any single status code, POST, or cookie.",
+      "completeness": "Low",
+      "threats": [
+        "P2pshell_vuln",
+        "Androxgh0st"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "PHP2Shell",
+        "WordPress",
+        "Drupal",
+        "Joomla",
+        "Roundcube",
+        "Ubuntu",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://gist.github.com/0x4D31/6b1e7b5fb7a10219af187be91335c96f",
+        "https://github.com/9bie/php2shell-bypass-aslr-exp/blob/main/pure/mk\\_leak\\_b.py",
+        "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC/blob/main/poc\\_109618.py",
+        "https://github.com/9bie/php2shell-bypass-aslr-exp"
+      ]
+    }
+  }
+]

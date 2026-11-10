@@ -1,0 +1,96 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-06",
+      "title": "Kimsuky Creates a Lure with AI Agent 'opencode': Evolution of GitHub PAT-Based LNK Attacks",
+      "summary": "Kimsuky, linked to the Operation GitPower campaign, is distributing ZIP archives containing malicious LNK files disguised as Korean finance and corporate documents such as fund disbursement, insurance premium, and certificate renewal notices. Each LNK file hides a custom-encoded PowerShell loader within a long, space-padded argument string and fetches decoy documents and follow-on scripts from GitHub Raw using a hardcoded personal access token. Some variants add anti-analysis checks for analysis tools and sandbox usernames, delete command history, and use Pastebin as a backup payload channel. Decoy documents show signs of AI generation, including an AI coding agent named opencode recorded in PDF metadata and unreplaced \"(임시값)\" placeholders left in the text. Defenders should prioritize behavior-based correlation across LNK execution, PowerShell with unusually long arguments, scheduled task persistence, and GitHub or Pastebin access rather than relying on decoy content.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Process_hacker_tool",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "Pastebin",
+        "Chrome",
+        "Google Chrome",
+        "BitLocker",
+        "NET Framework",
+        "Windows PowerShell",
+        "Microsoft Excel",
+        "Adobe Illustrator",
+        "hrome co",
+        "Task Scheduler",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "exhibit",
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "LinkInfo",
+        "Remove-Item",
+        "Get-Process",
+        "FromBase64String"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/ai-agent-opencode"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-06",
+      "title": "Myth Stealer - Reversing a Counterfeit Minecraft Mod That Drops a Commodity Java RAT",
+      "summary": "Myth Stealer 3.2-FIX is a licensed commodity Java stealer and remote access tool, delivered through a counterfeit Lithium optimisation mod for Minecraft that drops a Node.js container with a private Java runtime. The fake mod runs as a dropper that geolocates the host, writes the second stage to a Microsoft-named path under AppData, and prompts the victim through a fake administrator dialog. The payload steals browser credentials, cards, cookies, history and chat data, and includes a large harassment command set. Its obfuscation was defeated by recovering constants and renaming a reserved package path. Defenders should watch for javaw.exe running outside a Java installation, a node.exe-sized binary writing a Java runtime under AppData, and a PowerShell WinForms elevation prompt.",
+      "completeness": "High",
+      "threats": [
+        "Mythstealer",
+        "Typosquatting_technique",
+        "Amsi_bypass_technique",
+        "Uac_bypass_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 24,
+      "software": [
+        "Minecraft",
+        "Node.js",
+        "Discord",
+        "Dropbox",
+        "Firefox",
+        "Chromium",
+        "DirectX"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "aes",
+        "sha256",
+        "gzip"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "php",
+        "java"
+      ],
+      "links": [
+        "https://medium.com/@devmihaylov/myth-stealer-reversing-a-counterfeit-minecraft-mod-that-drops-a-commodity-java-rat-61dca36f07fd"
+      ]
+    }
+  }
+]

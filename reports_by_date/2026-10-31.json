@@ -1,0 +1,85 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-31",
+      "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+      "summary": "A tampered version of the Claude Code extension (anthropic.claude-code, versions 2.1.312 and 2.1.313) was served on the Cursor extension marketplace for a few hours, according to Cursor. The injected loader runs when the extension loads, collects host details, and attempts to add an attacker-controlled SSH key, enable SSH, and set up a reverse SSH tunnel. It also attempts persistence through platform-specific mechanisms such as macOS LaunchAgents, Linux crontab entries, and Windows scheduled tasks or startup files, and reports host details to a remote server. Successful access depends on host privileges and server configuration, but key and persistence artifacts may still be written even when the tunnel fails. Microsoft confirmed that the Visual Studio Marketplace and npm packages were not affected and that Anthropic's systems were not compromised. Defenders should check for the svc-telemetry key and the listed artifacts, remove confirmed malicious components, and rotate credentials if exposure is indicated.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Launchagents_tool",
+        "Trojan:js/credtheft.ms"
+      ],
+      "geo": [
+        "Pacific"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 3,
+      "software": [
+        "Claude",
+        "Microsoft Defender",
+        "Claude Code",
+        "anthropic",
+        "claude-code",
+        "Microsoft Visual Studio",
+        "Visual Studio",
+        "Node.js",
+        "macOS",
+        "Linux",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "ed25519"
+      ],
+      "functions": [
+        "JavaScript"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-31",
+      "title": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
+      "summary": "VOLTA-AUTODOXER is a self-deleting Windows infostealer with an optional AI layer that sends a structured victim evidence bundle to an LLM, which ranks the victim's monetizable assets and assesses their security posture. Beyond standard collection of browser credentials, cookies, cryptocurrency wallets, and session tokens, the malware uses stolen sessions to enrich the bundle, such as searching Gmail for receipts to confirm a home address. The model is accessed through OpenRouter with a fallback chain (Claude, then Kimi, then Gemini) that activates when a model refuses the task, indicating the operator expects guardrail refusals. The builder-style deployment suggests customers can purchase access and receive ranked victim assessments. Defenders are advised to restrict Chrome launches with --headless, preserve the volta_debug.txt harvest log, and rotate exposed credentials and wallets.",
+      "completeness": "Low",
+      "threats": [
+        "Voltastealer",
+        "Cairn_tool",
+        "Closedquorum"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Telegram",
+        "Steam",
+        "Roblox",
+        "Slack",
+        "Gmail",
+        "Firefox",
+        "Outlook",
+        "Chrome",
+        "Claude",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "AI",
+        "LLM"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
+      ]
+    }
+  }
+]

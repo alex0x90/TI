@@ -1,0 +1,553 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "Made in China, Deployed in the US: Inside a Fake Microsoft Support Scam Seen at 80 Organizations",
+      "summary": "A large-scale fake Microsoft support scam, hosted on Microsoft's Azure Static Websites and shielded by Cloudflare, was seen at 80 organizations between March and October 2026. Victims reach the pages through ads bought on programmatic exchanges, and the pages display fake system error pop-ups and a fake Microsoft Support chat, all tied to one toll-free phone number. The phone number is fetched from a central back end, which lets operators swap numbers and attribute each call to a specific ad buyer. Several clues, including Simplified Chinese code comments and a Hubei-linked registration, point to Mandarin-speaking developers, though the report notes registration data is self-reported. The report describes an organized operation with developers, multiple ad buyers, and numbers largely from one provider, with the aim of harvesting phone calls rather than only credentials. Defenders should block the listed infrastructure, restrict remote-access tools like Quick Assist to approved workflows, and train staff that Microsoft never displays phone numbers in pop-ups.",
+      "completeness": "Low",
+      "threats": [
+        "Microsoft_quick_assist_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "Cloudflare",
+        "Windows Firewall",
+        "creen",
+        "p"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://pixmsecurity.com/blog/blog/made-in-china-deployed-in-us-fake-microsoft-support-scam/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "Poisoned Source: APT29 watering holes target mobile devices with n-day exploits",
+      "summary": "Sekoia assesses with moderate to high confidence that APT29 ran a watering hole campaign against websites in the US, Ukraine, Czech Republic, and Bulgaria, delivering n-day exploit chains to mobile devices. The operation used three vectors: JavaScript injection into compromised sites, adversary-in-the-middle style reverse proxies impersonating high-profile sites, and a one-week compromise of the Ukrainian Plerdy analytics tracker. A fingerprinting script profiled visitors and served platform-specific exploits, including the DarkSword iOS exploit kit. Targets included Ukrainian and US organizations, and the Plerdy compromise reached thousands of mostly Ukrainian sites, including some tied to the defense sector. The exploits target only unpatched devices, so keeping iOS, Android, and Chrome updated mitigates them.",
+      "completeness": "High",
+      "threats": [
+        "Watering_hole_technique",
+        "Supply_chain_technique",
+        "Aitm_technique",
+        "Darksword_tool",
+        "Spear-phishing_technique",
+        "Androsnitch",
+        "Androsnatch",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Russian",
+        "American",
+        "Czech republic",
+        "Russian federation",
+        "Ukraine",
+        "United kingdom",
+        "Czech",
+        "United states",
+        "Bulgaria",
+        "Ukrainian",
+        "London",
+        "Australian",
+        "Bulgarian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Android",
+        "Cloudflare",
+        "webrtc",
+        "iMessage",
+        "WhatsApp",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "ASDhdhashdasads",
+        "AHSDhdashashs",
+        "print",
+        "genUUID",
+        "fetch"
+      ],
+      "languages": [
+        "c_language",
+        "javascript"
+      ],
+      "links": [
+        "https://www.sekoia.com/blog/poisoned-source-apt29-watering-holes-targets-mobile-devices-with-n-day-exploits",
+        "https://github.com/AntonioCiolino/DarkSword-Analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "BOSSAI: Inside the AI attack mesh that targeted Taiwan’s emergency services",
+      "summary": "A single operator in Taiwan used BOSSAI, a mesh of 12 AI agents, to run persistent offensive campaigns against hundreds of organizations in eleven countries, including emergency services, banks, universities, and military systems. Attack agents ran abliterated open-source models, while commercial models built the infrastructure but refused every offensive request. The operator relayed output between agents manually, and the mesh used open-source pentesting tools such as HalberdStrike and CyberStrike. Confirmed breaches included exfiltration of medical data and PII from emergency services and universities, though many agent findings were hallucinated or false positives. The report notes that the speed and reach of AI-driven scanning make obscurity a weak defense, while the attacker's OPSEC failures ultimately enabled attribution.",
+      "completeness": "Medium",
+      "threats": [
+        "Bossai",
+        "Hermes",
+        "Nmap_tool",
+        "Sqlmap_tool",
+        "Metasploit_tool",
+        "Hexstrike",
+        "Cyberstrikeai_tool",
+        "Halberdstrike_tool",
+        "Acunetix_tool",
+        "Nikto_tool",
+        "Dirsearch_tool",
+        "Pentestgpt_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Korean",
+        "Mexico",
+        "Australia",
+        "Honduras",
+        "Canada",
+        "Hong kong",
+        "Mexican",
+        "Japanese",
+        "Singapore",
+        "Thailand",
+        "United kingdom",
+        "Chinese",
+        "Indonesia",
+        "Taiwan",
+        "Vietnam",
+        "China",
+        "Sri lanka",
+        "United states",
+        "Taiwanese"
+      ],
+      "software": [
+        "twitter",
+        "OpenClaw",
+        "WeChat",
+        "Playwright",
+        "Linux",
+        "llama",
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "DeepSeek",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/bossai-inside-the-ai-attack-mesh-that-targeted-taiwans-emergency-services/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "LAST HEIST: New APT-C-36 infection wave in LATAM",
+      "summary": "The APT-C-36 campaign, dubbed LAST HEIST, is a phishing wave in Latin America using Portuguese and Spanish lures that imitate judicial and administrative notices, such as Colombian court documents. Victims receive an SVG-disguised XHTML attachment that generates a password-protected ZIP in the browser, bypassing email gateway inspection, and that leads through JavaScript and VBS stages to a fileless PowerShell loader. The final payload is an AsyncRAT fork of DCRat that provides surveillance, keylogging, screen capture, token impersonation and encrypted C2 exfiltration. The campaign targets justice, public-administration and education contexts. Researchers note that all testing occurred in controlled virtual machines, with no confirmed real-world compromise. Defenders should hunt for judicial-themed XHTML files, browser-generated ZIP downloads and anomalous PowerShell decoding activity.",
+      "completeness": "High",
+      "threats": [
+        "Asyncrat",
+        "Dcrat",
+        "Smuggling_technique",
+        "Motw_bypass_technique",
+        "Winrm_tool",
+        "Mutexcontrol",
+        "Client77",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Latam",
+        "Brazilian",
+        "Latin america",
+        "Colombian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 23,
+      "software": [
+        "Windows Registry",
+        "Cloudflare",
+        "Linux"
+      ],
+      "algorithms": [
+        "aes-256",
+        "gzip",
+        "base64",
+        "zip",
+        "aes-256-ecb",
+        "aes"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://zenox.ai/en/last-heist-new-apt-c-36-infection-wave-in-latam/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "KeyHunter Operation: Harvard Alumni Data, Stanford Applications and LLM Key Theft",
+      "summary": "The KeyHunter Operation is a campaign attributed by SOCRadar to leepsmarts, a Chinese-speaking actor, with activity confirmed as late as October 13, 2026. It combines theft of LLM API keys from misconfigured cloud platforms with an academic fraud campaign targeting 20 institutions, 19 of them in the US. The actor uses AI agent frameworks, including Hermes Agent and OpenClaw, to automate scanning, validation and fraud. Parallel financial fraud includes a cryptocurrency seed-phrase drainer and card validation using stolen Stripe keys. Defenders should keep secrets out of web-accessible files, rotate exposed keys, and patch CVE-2026-41940 in cPanel and WHM.",
+      "completeness": "High",
+      "threats": [
+        "Keyhunter_tool",
+        "Pentagi_tool",
+        "Patchright_tool",
+        "Harmony0bot",
+        "Bec_technique",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Turkiye",
+        "United states",
+        "Pakistan",
+        "California",
+        "Taiwan",
+        "Netherlands",
+        "Malaysian",
+        "Argentina",
+        "New york",
+        "Uzbekistan",
+        "South africa",
+        "Korea",
+        "Germany",
+        "China",
+        "Chinese",
+        "United arab emirates",
+        "South korea",
+        "Arab emirates",
+        "Singapore",
+        "Saudi arabia",
+        "Hong kong",
+        "France",
+        "Russia",
+        "Malaysia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 13,
+      "software": [
+        "OpenClaw",
+        "Anthropic",
+        "OpenAI",
+        "DeepSeek",
+        "Telegram",
+        "m market a",
+        "systemd",
+        "Outlook",
+        "cPanel",
+        "HuggingFace",
+        "have more..."
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "base64",
+        "ed25519"
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/keyhunter-operation-harvard-alumni-stanford-llm-key-data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "ARTEX learns to spot honeypots: dissecting an AI pentest agent's decoy detector",
+      "summary": "ARTEX-ymh is a fork of the open-source ARTEX AI penetration testing system, and its design documents describe a four-layer method for detecting honeypots, from static fingerprints to in-session checks such as an egress callback test. The authors base the design on public research and note that attackers already avoid honeypots, with commercial deception products largely undetectable by static signatures. The shipped L1 detector has a gap: web and other services are checked only on port, banner and title, so body- and certificate-based signatures can never fire. When a single signal is found, the agent downgrades to read-only actions without delivering payloads, and two signals confirm a honeypot and stop activity in that direction. The fork also defends against traps aimed at AI agents, using prompt red lines, untrusted-data tags, a hashed secret egress filter, a tarpit breaker, and a fixed user agent per task. For defenders, the takeaway is that default decoy fingerprints are easily signatured, and decoys should be judged by what attackers deliver rather than by how often they are touched.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Mirai",
+        "Anubis",
+        "Fscan_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "software": [
+        "Alibaba Cloud",
+        "Chrome",
+        "PostgreSQL",
+        "MySQL",
+        "Ubuntu",
+        "OpenSSH",
+        "curl",
+        "Claude",
+        "Cloudflare",
+        "Kubernetes",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://huntback.io/blog/artex-fork-learns-to-spot-honeypots",
+        "https://github.com/Autumn-27/ARTEX"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "Recorteiro: a Rust banking trojan that cuts holes in your screen and hides behind fake electricity bills in Portugal",
+      "completeness": "High",
+      "threats": [
+        "Recorteiro",
+        "Loaderweb",
+        "Cryptopro-x_tool",
+        "Cybercontrole_tool",
+        "Polymorphism_technique",
+        "Grandoreiro",
+        "Metamorfo",
+        "Bitm_technique",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Brasil",
+        "Portuguese",
+        "Brazilian",
+        "Portugal"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 17,
+      "software": [
+        "WebRTC",
+        "Android",
+        "curl",
+        "Windows Registry",
+        "Windows service",
+        "Unix",
+        "Microsoft Defender",
+        "Chrome",
+        "supabase",
+        "codex",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "bybit",
+        "exodus_wallet",
+        "trezor",
+        "solflare",
+        "rabby",
+        "tronlink",
+        "atomicwallet",
+        "bitcoincore",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "uniswap",
+        "pancakeswap",
+        "bitcoin",
+        "ethereum",
+        "monero",
+        "aptos"
+      ],
+      "algorithms": [
+        "sha256",
+        "hmac",
+        "aes-cbc",
+        "md5",
+        "base64",
+        "chacha20-poly1305",
+        "aes-256-ctr",
+        "chacha20",
+        "cbc",
+        "ed25519",
+        "aes",
+        "zip",
+        "curve25519"
+      ],
+      "languages": [
+        "javascript",
+        "delphi",
+        "rust",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://seguranca-informatica.pt/recorteiro-a-rust-banking-trojan-that-cuts-holes-in-your-screen-and-hides-behind-fake-electricity-bills-in-portugal/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
+      "summary": "PolinRider is a malware family linked to a campaign that hijacked legitimate npm packages and injected malicious code into them. The injected loader queries public Ethereum RPC endpoints to retrieve a command-and-control IP address encoded in a blockchain transaction, then downloads and runs an XOR-obfuscated JavaScript payload. Because the blockchain reference can be changed, attackers can redirect affected installations to new infrastructure without altering the published package code. The malware uses Base64 and character-permutation obfuscation and executes payloads in memory through an interactive Node.js process, which can complicate detection. Affected packages total about 1,400 weekly downloads, though this reflects download activity rather than confirmed execution. Defenders should check for affected versions, treat accessible cryptocurrency wallets as potentially compromised if malicious code ran, and pin dependencies to verified clean versions.",
+      "completeness": "Low",
+      "threats": [
+        "Polinrider",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js"
+      ],
+      "crypto": [
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "ARTEX Exposed: Mapping the Infrastructure Behind the South Korean Bank Breaches",
+      "summary": "ARTEX, an open-source AI-driven autonomous penetration testing framework developed in China, was reportedly used by a financially motivated, likely single Chinese-speaking operator in intrusions against seven South Korean financial institutions in late 2026. Hunt.io's investigation of an exposed Hong Kong jump host at 23.248.226.250 recovered credential files, SSH tunnel scripts, and Claude Code configurations that route requests through reseller endpoints to multiple LLM backends, including DeepSeek, GLM, and Grok. The exposed directories also held 19 custom agent skills covering reconnaissance, web and WAF testing, payment logic analysis, and mobile cloud-phone operations. Additional artifacts included a FOFA client, a proxy pool with 79 exit IPs from 100 identities, a JNDI/LDAP RCE staging rig, and Linux and iOS exploit code, though their link to the Korean breaches remains unconfirmed. Hunt.io's certificate, malware-tag, and HTTP title pivots surfaced over 1,300 candidate hosts, and defenders are advised to restrict exposed admin services, rotate exposed secrets, and monitor for LDAP/JNDI and anomalous DNS activity.",
+      "completeness": "High",
+      "threats": [
+        "Artex_tool",
+        "Impacket_tool",
+        "Godzilla_webshell",
+        "Passthehash_technique",
+        "Chisel_tool",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "United states",
+        "Hong kong",
+        "Los angeles",
+        "Korean",
+        "California",
+        "Chinese",
+        "China",
+        "South korean"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 23,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "DeepSeek",
+        "Linux",
+        "Docker",
+        "while por",
+        "Tinyproxy",
+        "Unix",
+        "OpenAI",
+        "sshpass",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "JavaScript"
+      ],
+      "languages": [
+        "php",
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/artex-south-korea-bank-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "NIKKE Launcher Breach 2026: How CDN Script Tampering Turned 45 Million Players Into Malware Targets",
+      "summary": "Threat actors compromised four JavaScript files on Level Infinite's official CDN that powered the NIKKE PC launcher, injecting loader code that pulled malicious content from attacker-controlled domains. The tampering began on September 27, 2026, and went undetected for about five weeks until Level Infinite acknowledged it on November 4, 2026. The payload was a LuaJIT backdoor called K2F, which enabled remote command execution, file exfiltration, screenshot capture, and theft of NIKKE credentials and browser-stored data. A secondary DLL targeted cryptocurrency wallet extensions such as MetaMask, Phantom, and Coinbase Wallet. The incident potentially affected any of the roughly 45 million players who used the PC launcher during that window. Defenders should prioritize egress filtering, behavioral baselining of CDN-delivered content, and segmentation that keeps game processes away from browser and wallet credential stores.",
+      "completeness": "Low",
+      "threats": [
+        "K2f",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique",
+        "Credential_stealing_technique"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase"
+      ],
+      "languages": [
+        "javascript",
+        "lua"
+      ],
+      "links": [
+        "https://aviatrix.ai/threat-research-center/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
+        "https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-04",
+      "title": "MA-1495.112026: MyCERT Advisory - Fake BNM Mobile Security Android App Relays Bank Cards via NFC in a Banking Trojan",
+      "completeness": "High",
+      "threats": [
+        "Ghost_tap_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Malaysian",
+        "Malaysia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "Android",
+        "Google Play",
+        "Twitter"
+      ],
+      "algorithms": [
+        "aes-gcm"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://mycert.org.my/portal/advisory?id=MA-1495.112026"
+      ]
+    }
+  }
+]

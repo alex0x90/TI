@@ -1,0 +1,79 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-30",
+      "title": "Fire Ant Evolves: From Hypervisors to Trusted Infrastructure",
+      "summary": "Fire Ant, first reported in 2025, remained active into 2026 and expanded from hypervisor compromise into trusted infrastructure such as routers, TACACS authentication servers, and Linux management hosts. The actor modified Cisco IOS XR routers to suppress logging, manipulate command output, and maintain covert connectivity, and used them to collect network traffic. On TACACS servers, it injected a library into the tac_plus process to intercept accepted sessions and harvest credentials, a technique Sygnia says has not been publicly described before. It built durable access on Linux hosts through Medusa-rootkit components, custom SSH backdoors, and packet-triggered backdoors, and used the GRE tunnel to probe connected high-value environments. Defenders should treat routers, authentication servers, and management hosts as high-value forensic assets and validate logs against independent evidence.",
+      "completeness": "High",
+      "threats": [
+        "Medusa_ransomware",
+        "Bridgeagent",
+        "Tactap",
+        "Acppid",
+        "Medusa_rootkit",
+        "Cupsdd",
+        "Smartdd",
+        "Reptile",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Telnet client",
+        "systemd",
+        "UNIX",
+        "SELinux",
+        "elinux di",
+        "osts wi"
+      ],
+      "algorithms": [
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "shell_send_cmd"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.sygnia.co/blog/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-30",
+      "title": "Reverse Engineering the Auto-Color Linux Backdoor",
+      "completeness": "Low",
+      "threats": [
+        "Auto-color"
+      ],
+      "geo": [
+        "America",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "SELinux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "geteuid",
+        "setsid",
+        "start"
+      ],
+      "links": [
+        "https://medium.com/@0xzyadelzyat/reverse-engineering-the-auto-color-linux-backdoor-db2aecbd2887?source=rss-b460882b1cf8------2"
+      ]
+    }
+  }
+]

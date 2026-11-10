@@ -1,0 +1,150 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-13",
+      "title": "Operation Capsule Vault: RokRAT Attack Chain Analysis Using EMBED_PAYLOAD_v2",
+      "summary": "Operation Capsule Vault is a targeted spear-phishing campaign against researchers, policy staff, and academics, using lures based on a real academic event held in June 2026. The emails link to a Dropbox-hosted ISO image containing a PIF executable disguised as a PDF, which exploits hidden file extensions on Windows. The PIF acts as a multi-stage loader: it displays a decoy PDF while extracting an embedded shellcode payload, decrypts it, and injects it into explorer.exe. The final payload is an x64 RokRAT variant that uses pCloud, Dropbox, and Yandex Cloud for C2. The report attributes the activity to APT37 with moderate confidence based on code similarity and shared infrastructure. Defenders should correlate ISO execution, PIF launches, cloud C2 traffic, and injection behavior rather than rely only on IOCs.",
+      "completeness": "Medium",
+      "threats": [
+        "Rokrat",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "North korea",
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Astrill VPN"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "wcsicmp"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/rokrat_capsule_vault"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-13",
+      "title": "Update on Attacks by Threat Group APT-C-60 in 2026",
+      "summary": "APT-C-60, a threat group that has targeted organizations in Japan, continued its activity in 2026 using changed initial access methods and infrastructure. Spear-phishing emails linked to Proton Drive or attached files delivered RAR archives containing LNK files, which run embedded JavaScript through mshta.exe. The malware chain abuses a legitimate git.exe to run scripts and ultimately deploys the SpyGlace malware, with downloads drawn from GitHub, GitLab, jsDelivr, and Codeberg. Because these developer services and CDNs are commonly allowed in corporate networks, defenders are advised to be cautious about cloud storage links and LNK files inside archives.",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Spyglace"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/en/2026/07/apt-c-60_2026.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-13",
+      "title": "Pakistan Law Enforcement Agencies Targeted in Alleged Multi Group Cyber Espionage Operations",
+      "summary": "Suspected China-nexus and India-nexus actors independently compromised Balochistan Police and three other Pakistani law enforcement bodies between February 2024 and April 2026, according to SentinelLABS. The China-nexus activity used PlugX, ShadowPad, and Cobalt Strike, while the India-nexus activity used Remcos and is linked to the actor tracked as TAG-179. Compromised assets included web applications such as the FIR system, criminal records, biometric matching, and a citizen complaint portal. Attackers planted a fake \"Update Complete\" implant in the complaint portal's client-scripts directory, disguised as a Qihoo 360 component and loading AsyncRAT. Defenders should audit write permissions on public web directories and treat legacy appliances still reachable on the network as active attack surface.",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Plugx_rat",
+        "Shadowpad",
+        "Remcos_rat",
+        "Asyncrat"
+      ],
+      "geo": [
+        "India",
+        "China",
+        "America",
+        "Tibetan",
+        "Taiwan",
+        "Chinese",
+        "Kashmir",
+        "Afghan",
+        "Asia",
+        "Kurdistan",
+        "Pakistani",
+        "Middle east",
+        "Pakistan",
+        "Kurdish"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "functions": [
+        "Kaspersky"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/pakistan-law-enforcement-agencies-targeted-in-alleged-multi-group-cyber-espionage-operations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-13",
+      "title": "Dark Web Profile: Krybit Ransomware",
+      "summary": "Krybit is a financially motivated Ransomware-as-a-Service group first observed in late March 2026, using double extortion with a Tor-based leak site and affiliate-supplied access. Its affiliate panel was leaked by rival 0APT in April 2026, exposing internal structure, plaintext credentials, and Bitcoin wallets that had not yet received any payments. Krybit retaliated by breaching 0APT and publishing its operational data, and its victims span many sectors and 43 countries, led by Professional Services, Technology, and Manufacturing. Its payload appears to be a Babuk derivative that deletes volume shadow copies, appends .KRYBIT, and drops RECOVER-README.txt. Defenders should enforce MFA on remote access, protect backups, monitor non-Windows assets such as ESXi and NAS, and alert on vssadmin shadow-copy deletion.",
+      "completeness": "Medium",
+      "threats": [
+        "0apt_syndicate",
+        "Babuk",
+        "Filecoder",
+        "Process_injection_technique",
+        "Credential_harvesting_technique",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique",
+        "Lolbin_technique",
+        "Fsociety",
+        "Flocker"
+      ],
+      "geo": [
+        "Germany",
+        "Italy",
+        "Dominican republic",
+        "Spain",
+        "Vietnam",
+        "Malaysia",
+        "Colombia",
+        "Peru",
+        "Mexico",
+        "Brazil",
+        "Taiwan"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 12,
+      "software": [
+        "Linux",
+        "ESXi",
+        "nginx",
+        "WinSCP"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-krybit-ransomware/"
+      ]
+    }
+  }
+]

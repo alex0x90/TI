@@ -1,0 +1,554 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Head Mare APT is exploiting vulnerabilities in an unpatched TrueConf server to deliver PhantomCore and PhantomGraph to video conference participants",
+      "summary": "Head Mare, which Kaspersky now classifies as an APT group rather than hacktivists, exploited a chain of two new TrueConf server vulnerabilities to gain SYSTEM privileges. The attackers connected to the TrueConf server via port 4307/TCP and ran malicious code that escaped an isolated environment. They then replaced a legitimate file with a web shell and swapped the TrueConf client installer for a trojanized version that deploys PhantomCore, along with the PhantomGraph backdoor that uses OneDrive as its command-and-control channel. Targets include Russian organizations across several industries, reached through phishing, public web server exploitation, or subcontractors. Defenders should update TrueConf Server to versions 5.3.9, 5.4.9, or 5.5.5 and verify that client installers carry a valid TrueConf digital signature.",
+      "completeness": "High",
+      "threats": [
+        "Phantomcore",
+        "Phantomgraph"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "TrueConf",
+        "Microsoft OneDrive",
+        "rueConf ev",
+        "Windows service"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "WriteData"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://securelist.com/tr/head-mare-targets-trueconf-server-with-phantomcore/120988/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Project CAV3RN continues: Google Apps Script as C2 relay and DNS-based C2 channel selection",
+      "summary": "Project CAV3RN is a modular espionage framework used against targets in Israel, and this report documents newly found components. Its main C2 module, GoogleService.dll, uses DNS A-record responses to choose per transaction between direct HTTPS and a Google Apps Script relay. The same DNS infrastructure can validate and replace the relay deployment ID, allowing the operator to rotate the Google channel. A local broker, rnp.dll, discovers and loads DLL components, routes messages between them, and supports runtime upgrades without restarting the host. The Apps Script relay forwards traffic to an actor-controlled backend, so the C2 blends with normal network activity. Kaspersky assesses that CAV3RN will likely continue to expand, making monitoring for abuse of legitimate cloud services important for defenders.",
+      "completeness": "Medium",
+      "threats": [
+        "Cav3rn"
+      ],
+      "geo": [
+        "Israel",
+        "Israeli"
+      ],
+      "software": [
+        "ginx",
+        "Microsoft Visual C++",
+        "Outlook"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "md5"
+      ],
+      "functions": [
+        "FindMode"
+      ],
+      "links": [
+        "https://securelist.com/project-cav3rn-continues/120991/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Fake CCleaner installs GhostDesk Chrome spyware",
+      "summary": "A fake version of the CCleaner Windows utility is distributing GhostDesk, a malicious Chrome extension that acts as spyware inside the browser. The attack begins on a website that imitates the official CCleaner download page, where both download buttons deliver the same malicious executable. The fake application uses CScript to run a multi-stage infection that patches Chrome's Security Extension and establishes a command-and-control channel. The injected extension can steal credentials and cookies, log keystrokes, capture screenshots, and execute arbitrary JavaScript. The researchers note that the same CScript loader is used in fake 7-Zip and Adobe Acrobat apps, and defenders are advised to verify download sources carefully and use real-time web protection.",
+      "completeness": "Medium",
+      "threats": [
+        "Ghostdesk_spyware",
+        "Credential_harvesting_technique",
+        "Mitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Microsoft Store",
+        "Google Play"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "cscript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/08/fake-ccleaner-installs-ghostdesk-chrome-spyware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "AI Sidebar Extension Monetizes Its Own Updates",
+      "summary": "A Chrome extension named \"AI Sidebar with DeepSeek AI,\" previously removed from the Chrome Web Store in January 2026 for stealing AI conversation content, was relisted and continued shipping updates through Google's CRX delivery infrastructure. Version 1.7.2.0 served as a clean release to build update history, and version 1.7.3.0 then inserted a 21-line monetization payload that opens an affiliate link on every update and uninstall. The affiliate link is tied to an AI video service paying a 30% commission, and the operator hijacks the uninstall URL so removal still generates a referral. The extension reportedly has around 200,000 users, and Netskope has blocked it. Defenders should treat a marketplace removal as the start of remediation, not proof of resolution, and enforce default-deny extension policies.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Chrome",
+        "DeepSeek",
+        "ChatGPT"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/ai-sidebar-extension-monetizes-its-own-updates"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Bird Watching: Characterizing the Infrastructure and Behavior of Falcon-branded Extortion Operations",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Okta",
+        "Salesforce",
+        "Caddy",
+        "Node.js",
+        "Ubuntu",
+        "OpenSSH",
+        "Debian",
+        "Microsoft Entra"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/characterizing-infrastructure-behavior-falcon-branded-extortion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Shattering the Dream – When a Job Offer Becomes a Zero-Day Attack",
+      "summary": "Check Point Research reports that Operation Dream Job, a long-running campaign affiliated with DPRK-linked Lazarus, has targeted the defense sector worldwide, with a 2026 wave focused on aerospace and aviation firms in Europe and India. Attackers used fake recruiter job offers and trojanized PDF viewers, such as SecurityPDF, to deliver the Troy backdoor and the MISTPEN downloader, which retrieves modules through the Microsoft Graph API and OneDrive. The campaign exploited zero-day CVE-2026-68820 in the Windows AFD.sys driver to deploy a new FudModule rootkit, gaining SYSTEM privileges and disabling EDR visibility. Command-and-control relied on compromised Roundcube and WordPress servers running the RelayShell PHP webshell, which relays traffic between victims and operators. Microsoft patched the zero-day on August 11, 2026.",
+      "completeness": "High",
+      "threats": [
+        "Troy_trojan",
+        "Fudmodule_rootkit",
+        "Relayshell_tool",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Mistpen",
+        "Foresttiger",
+        "Kyber",
+        "Reflective_dll_injection_technique",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "France",
+        "America",
+        "Dprk",
+        "India",
+        "Germany"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Roundcube",
+        "WordPress",
+        "Graph API",
+        "sumatrapdf",
+        "Windows kernel",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "GetInfoPlugin",
+        "GetGodMode",
+        "GetSystemHandle",
+        "CreateRemoteProcess"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/shattering-the-dream-when-a-job-offer-becomes-a-zero-day-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Tracking Shai-Hulud: Inside the ChainDrop NPM Worm",
+      "summary": "ChainDrop is a self-propagating npm worm, linked to TeamPCP and a variant of Mini Shai-Hulud, that entered the ecosystem on August 4, 2026 through a compromised keyv maintainer GitHub account. The attacker pushed malicious code into source repositories, so the legitimate release pipeline published poisoned packages with valid SLSA provenance attestations. The worm spread to more than 400 packages by stealing developer tokens and republishing infected versions of every package those tokens could reach. It harvests broad cloud, CI, and developer credentials, and uses an Ethereum smart contract to retrieve rotatable C2 domains. Defenders should not treat provenance as proof of safety, should treat IDE and AI-agent configuration files as executable, and should enforce phishing-resistant MFA, lockfiles, and release cooldown periods.",
+      "completeness": "High",
+      "threats": [
+        "Shai-hulud",
+        "Chaindrop",
+        "Supply_chain_technique",
+        "Trufflehog_tool",
+        "Miasma",
+        "Blight_botnet",
+        "Phantom_gyp_technique",
+        "Hades",
+        "Credential_harvesting_technique",
+        "Dead_drop_technique",
+        "Etherhiding_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio",
+        "Claude",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "Linux",
+        "macOS",
+        "Node.js",
+        "Slack"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "md5",
+        "rsa-4096",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "require"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/tracking-shai-hulud-inside-chaindrop-npm-worm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Gunra Ransomware: SafeBreach Coverage for CISA Alert AA26-222A",
+      "summary": "Gunra is a Conti-derived double-extortion ransomware-as-a-service operation, also branded Golden Community, documented in CISA Alert AA26-222A. Its affiliates gain entry mainly by exploiting known VPN and firewall appliance weaknesses, and recruited access brokers may supply other intrusion methods. Attackers then move laterally with Impacket tools, dump NTDS credentials from domain controllers, and bypass MFA by tampering with a VDI authentication server. Before encrypting, they delete volume shadow copies, often between 10:00 p.m. and 06:00 a.m., and exfiltrate data to Mega or FTP. Targets span government, healthcare, finance, critical infrastructure, and many other sectors worldwide. Defenders should patch internet-facing gateways, hunt for the forticloud-sync account, and alert on shadow copy deletion, since the locker generates no observable network traffic.",
+      "completeness": "High",
+      "threats": [
+        "Gunra",
+        "Credential_dumping_technique",
+        "Shadow_copies_delete_technique",
+        "Passthehash_technique",
+        "Conti",
+        "Blackbasta",
+        "Rhysida",
+        "Impacket_tool",
+        "Rclone_tool",
+        "Qtox_tool",
+        "Sliver_c2_tool",
+        "Mobaxterm_tool",
+        "Anydesk_tool",
+        "Mimikatz_tool",
+        "Secretsdump_tool"
+      ],
+      "geo": [
+        "Middle east",
+        "Americas",
+        "Africa",
+        "Republic of korea",
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 36,
+      "software": [
+        "Linux",
+        "psexec",
+        "Active Directory",
+        "OpenSSH",
+        "WinRAR",
+        "Microsoft OneDrive",
+        "DBeaver",
+        "Slack",
+        "Microsoft Visual Studio Code",
+        "ProtonMail",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256",
+        "rsa-4096"
+      ],
+      "functions": [
+        "Graph"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.safebreach.com/blog/gunra-ransomware-cert-alert-aa26-222a/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Fake popular sites offer a free app, instead take over PCs",
+      "summary": "Fake lookalike websites impersonating CNN, Avast, Stremio, and a crypto-mining browser game distribute installers that deliver O&O Syspectr, a genuine, digitally signed remote administration tool from O&O Software GmbH. Victims who expect a news app, antivirus, or media player instead install Syspectr, which the attackers control through accounts that were used to generate the installers. Because the tool is legitimate and signed, antivirus may not flag it. Defenders can check the installer's File description and Product name fields, which reveal O&O Syspectr regardless of the filename. O&O responded by restricting remote features for free accounts and suspending the abusive accounts.",
+      "completeness": "Low",
+      "threats": [
+        "Syspectr_tool"
+      ],
+      "geo": [
+        "German"
+      ],
+      "software": [
+        "Microsoft Defender"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/08/fake-popular-sites-offer-a-free-app-instead-take-over-pcs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "CaptiveCrunch: Midnight Blizzard Weaponizes Hotel Wi-Fi Captive Portals to Steal Microsoft 365 Credentials",
+      "summary": "Storm-2945, a sub-cluster of Russia-linked Midnight Blizzard (APT29), runs the CaptiveCrunch campaign, which compromises shared captive portal services at hotels and conference venues to redirect travelers' traffic. The actor uses DNS and HTTP manipulation to lead victims to Microsoft 365 credential phishing, device code phishing that abuses the Entra ID authentication flow, and ClickFix-style fake update pages. Victims who run the ClickFix commands receive the CornFlake Go-based RAT, which provides persistent access, and the ChocoShell PowerShell stealer, which harvests browser cookies, passwords, and Microsoft 365 tokens. Microsoft assesses that AI tools supported much of the malware development, and the campaign has expanded to Android via malicious APK files. Defenders are advised to enforce full-tunnel routing, restrict outbound DNS to trusted resolvers, enable SSL inspection and file-type controls, and adopt phishing-resistant authentication.",
+      "completeness": "High",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Credential_harvesting_technique",
+        "Cornflake",
+        "Chocoshell",
+        "Aitm_technique",
+        "Clickfix_technique",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Fruitstone"
+      ],
+      "geo": [
+        "Saudi arabia",
+        "Russia",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Anthropic",
+        "OpenAI",
+        "Android",
+        "Microsoft Entra",
+        "DirectX",
+        "Chrome",
+        "Firefox",
+        "polyfill"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "ecdh"
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/captivecrunch-midnight-blizzard-weaponizes-hotel-wi-fi-captive-portals"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "How Malicious Plugins Transform AI Agents Into Insider Threats",
+      "summary": "A SOC investigation found a legitimate, vendor-signed AI coding agent abused as the execution mechanism for a credential-theft attack, with no vulnerability in the agent itself. A malicious skill package, disguised as a routine approval workflow, sat in the agent's local skills directory and ran in auto-approve mode without user prompts. Its scripts enumerated running browsers, invoked OS decryption APIs against saved password stores, read credential database files, and relaunched a second browser with remote debugging enabled. Because every executable in the chain was trusted, binary reputation and allow-listing controls did not alert, and EDR caught the activity through behavioral analysis. The report recommends disabling auto-approval, treating agent skills as third-party binaries, and using process-lineage detections.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "Microsoft Edge",
+        "Google Chrome",
+        "Mozilla Firefox",
+        "Microsoft Defender for Endpoint",
+        "Claude",
+        "claude-code",
+        "Firefox"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/how-malicious-plugins-transform-ai-agents-into-insider-threats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "Kimwolf v7: An Evolution of the Kimwolf Botnet",
+      "summary": "Kimwolf v7 is a new version of the Kimwolf Android and IoT botnet, primarily affecting Android TV boxes and set-top boxes that have Android Debug Bridge exposed on port 5555. The malware spreads by abusing residential proxy services to reach unauthenticated ADB instances on local networks. This version adds an HTTP/2 DDoS flood that spoofs complete browser fingerprints, making attack traffic harder to separate from legitimate browsing. Its command-and-control resolves addresses through Ethereum Name Service lookups via public RPC endpoints, with a Tor hidden service and a local proxy as fallbacks. Defenders should monitor for unusual Ethereum RPC traffic and Tor activity from IoT or Android devices, segment Android TV boxes from enterprise networks, and disable ADB.",
+      "completeness": "High",
+      "threats": [
+        "Kimwolf",
+        "Aisuru",
+        "Udpflood_technique",
+        "Tcpsynflood_technique",
+        "Synflood_technique",
+        "Tcpackflood_technique",
+        "Ackflood_technique",
+        "Icmpflood_technique",
+        "Dirty_cow_vuln"
+      ],
+      "geo": [
+        "Middle east",
+        "Australia",
+        "India",
+        "Asia",
+        "Russia",
+        "Japan",
+        "South korea",
+        "Kosovo"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Linux",
+        "Unix",
+        "Chrome"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "sha1",
+        "prng"
+      ],
+      "languages": [
+        "c_language",
+        "java"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/kimwolf-v7-botnet-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "The phishing link that died on purpose",
+      "summary": "Mailer-Go Mission Control is a bulk phishing platform that handles email delivery, recipient tracking, SMTP and proxy routing for a campaign that ultimately led victims to an EvilTokens page. The tracking links used single-use tokens that returned an expired response after the first click, hiding the live destination from scanners and analysts. Live tokens routed victims to a Cloudflare Workers page that displayed a Microsoft device code, abusing the OAuth device-code flow rather than presenting a fake password form. The operator used a backup domain with a fake technology blog as failover after the first domain was burned, and expired tokens redirected to legitimate Visa sites as cover. The lures targeted generic B2B audiences with emails that used character interleaving to evade static detection. Defenders should track the delivery-layer patterns such as *.link subdomains, /t/v3 paths and Mailer-Go admin fingerprints, and treat device-code phishing as requiring revocation of sessions and refresh tokens, not just a password reset.",
+      "completeness": "Medium",
+      "threats": [
+        "Eviltokens_tool",
+        "Device_code_phishing_technique"
+      ],
+      "software": [
+        "Microsoft OneDrive"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/the-phishing-link-that-died-on-purpose"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "INPS-themed smishing: document verification implemented via artificial intelligence",
+      "summary": "Italian CERT-AGID observed a rise in phishing campaigns impersonating INPS, Italy's social security institute, using smishing messages that lure victims to a cloned site. The fake portal runs a five-step flow that collects identity documents, payslips, CUD forms and selfies. The new element is an AI model that checks uploaded files, rejecting irrelevant images but accepting an obviously invalid ID marked \"FACSIMILE\". Testing showed the system reads text embedded in images, so instructions hidden in a file can influence its output, with the model self-identifying as Gemini 1.5 Pro. CERT-AGID took down the malicious domains and shared the IoCs through its feed.",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/smishing-a-tema-inps-implementata-verifica-documentale-tramite-intelligenza-artificiale/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-11",
+      "title": "TXTBOOK A Supply Chain Heist, Rehearsed in Public",
+      "summary": "TXTBOOK is a campaign of 993 malicious npm packages, first seen on PyPI in 2026, that reproduce the private internal package namespace of Tinkoff, now T-Bank, making it a targeted dependency confusion operation rather than indiscriminate registry flooding. The loader contains a hardcoded hostname table in which three entries are victim infrastructure, and it contacts its own command and control only after the target's internal artifact repository responds, indicating it has run inside the bank's network. Malicious code is delivered by reassembling a native executable from DNS TXT records, and the final payload is a Sliver implant with an effectively complete command set. The squat list appears to reflect an internal service inventory, and public open source repositories may have helped the operator infer private names. Defenders should enforce registry scoping so private package names cannot resolve publicly, and hunt for sequential TXT lookups and the Sliver server signing keys.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Sliver_c2_tool",
+        "Cobalt_strike_tool",
+        "Dll_sideloading_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "WireGuard",
+        "android"
+      ],
+      "algorithms": [
+        "base64",
+        "chacha20-poly1305",
+        "xor",
+        "gzip",
+        "ed25519",
+        "curve25519"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/txtbook-a-supply-chain-heist-rehearsed-in-public"
+      ]
+    }
+  }
+]

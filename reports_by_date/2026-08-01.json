@@ -1,0 +1,54 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-01",
+      "title": "From WSProxy to Root: INC ransomware and SonicWall SMA Exploit Chain",
+      "summary": "The report covers two chained SonicWall SMA 1000 zero-days, CVE-2026-15409 (a pre-authentication /wsproxy bypass) and CVE-2026-15410 (a path traversal in remove_hotfix), which together let an unauthenticated attacker gain root on a VPN appliance. Exploitation by UTA0533 began on June 22, 2026, before SonicWall's July 14 advisory, and INC Ransomware has since become the dominant actor using the chain. Attackers deployed ROOTRUN, KNUCKLEBALL, Suo5, and ORANGETAIL, and used tcpdump to capture unencrypted LDAP credentials. Affected firmware includes 12.4.3 and 12.5.0 builds on SMA 6210, 7210, and 8200v and CMS, with no workarounds available. Defenders should patch to 12.4.3-03453 or 12.5.0-02835 or later, assume compromise for exposed unpatched appliances, hunt for persistence, and rotate credentials.",
+      "completeness": "High",
+      "threats": [
+        "Inc_ransomware",
+        "Rootrun_tool",
+        "Knuckleball",
+        "Suo5_tool",
+        "Orangetail",
+        "Behinder",
+        "Xzfind_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Colombia",
+        "Australia",
+        "Switzerland",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "NGINX",
+        "Linux",
+        "Unix",
+        "Chrome"
+      ],
+      "algorithms": [
+        "aes",
+        "md5",
+        "sha1",
+        "aes-128-ecb",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "setuid",
+        "getMethod"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/from-wsproxy-to-root-inc-ransomware-and-sonicwall-sma-exploit-chain"
+      ]
+    }
+  }
+]

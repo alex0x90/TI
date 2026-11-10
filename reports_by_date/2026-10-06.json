@@ -1,0 +1,405 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "CrocoRat Adds a New Twist to ClickFix with DNS Payload Delivery",
+      "summary": "CrocoRat is a previously undocumented remote access trojan and cryptocurrency stealer delivered through a ClickFix lure on a typo-squatted domain that tricks victims into pasting a command into the Windows Run dialog. The command queries a DNS TXT record, which returns the next-stage PowerShell that downloads a portable Python bundle to C:\\ProgramData\\App and sets up a scheduled task for persistence. The launcher compares USERDOMAIN and COMPUTERNAME to decide the path: domain-looking machines receive only the RAT, while standalone systems also receive a browser-focused stealer and a wallet and seed phrase collector. Researchers could not decrypt the final RAT payload because the attacker's C2 key was withheld, and the operator changed filenames, keys, and infrastructure between builds. Attribution points only loosely to a Russian-speaking developer. Defenders should focus on the behavioral chain, including ClickFix-driven PowerShell, DNS-based staging, and host-aware branching, rather than on specific indicators.",
+      "completeness": "Medium",
+      "threats": [
+        "Crocorat",
+        "Clickfix_technique",
+        "Clipboard_injection_technique",
+        "Typosquatting_technique",
+        "Dll_injection_technique",
+        "Chromelevator_tool",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 20,
+      "software": [
+        "Cloudflare",
+        "Flask",
+        "Chrome",
+        "AzureAD",
+        "Windows Scheduled Task",
+        "Task Scheduler"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "metamask",
+        "trezor",
+        "wassabi",
+        "bitpay",
+        "guarda_wallet",
+        "coinomi",
+        "jaxx",
+        "daedalus",
+        "electrum",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "aes",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "main_loop"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/crocorat-clickfix-dns-payload-delivery"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "Blinder Tunnel Campaign Targets Iraqi Infrastructure",
+      "summary": "Iranian state-aligned actor CL-STA-1178 ran the Blinder Tunnel campaign, which targeted Iraqi critical infrastructure in March 2026 after infrastructure staging dating to November 2025. The attackers impersonated Dubai Airports IT recruiters and sent a trojanized Visual Studio coding challenge whose malicious .csproj file executed on project load. The infection chain combined AppDomainManager hijacking, which disabled ETW monitoring, with DLL sideloading to deploy the ShelbyLoader V2 loader, the ShelbyC2 V2 RAT, and the Blackwood Chisel-based tunneling tool. The actors used GitHub's API for command-and-control, including encrypted fallback data hidden in issue comments, to blend traffic with legitimate enterprise activity. Defenders should secure developer environments, monitor anomalous cloud platform traffic, and guard against industry-specific social engineering lures.",
+      "completeness": "High",
+      "threats": [
+        "Blinder_tunnel",
+        "Dll_sideloading_technique",
+        "Shelbyloader",
+        "Credential_harvesting_technique",
+        "Shelby",
+        "Chisel_tool",
+        "Dllsearchorder_hijacking_technique",
+        "Dll_hijacking_technique",
+        "Shelbyc2",
+        "Blackwood_loader",
+        "Dead_drop_technique",
+        "Typosquatting_technique",
+        "Spear-phishing_technique",
+        "Drokbk"
+      ],
+      "geo": [
+        "Iranian",
+        "Iraq",
+        "Middle east",
+        "Iran",
+        "Arab emirates",
+        "Israeli",
+        "Germany",
+        "United arab emirates",
+        "Israel"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WildFire",
+        "Microsoft Visual Studio",
+        "Visual Studio",
+        "Event Tracing for Windows",
+        "Chrome"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "md5",
+        "sha256",
+        "aes-256-cbc",
+        "rc4",
+        "aes",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "GetFrameworkPaths"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+        "https://api.github.com/search/issues",
+        "https://github.com/jpillora/chisel",
+        "https://github.com/obfuscar/obfuscar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "Up a Creek Without a Command Line: Mapping an Akira Ransomware Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Akira_ransomware",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique",
+        "Ngrok_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "Windows Registry",
+        "Windows Explorer",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Get-WmiObject",
+        "Remove-WmiObject"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/mapping-akira-ransomware-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "CyberXero: An AI-Augmented Initial Access Broker Targeting Ukrainian Critical Infrastructure",
+      "summary": "CyberXero is a Russian-speaking, financially motivated Initial Access Broker that wraps its commodity offensive tooling in an AI orchestration layer. It runs a global, automated campaign against WordPress and e-commerce platforms alongside a curated, manual campaign against Ukrainian energy and critical infrastructure. More than 628,000 Ukrainian individuals have confirmed data in the actor's possession, including residents of Kharkiv, a city on an active war front. The operation was exposed by a single configuration error: an open directory serving the actor's live working directory, including AI session logs and victim data. The actor used context engineering and session resets to work around model refusals, so defenders should treat AI agent session logs as sensitive material.",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Pentagi_tool",
+        "Redeemer",
+        "Wp2shell_vuln",
+        "Wso_webshell",
+        "Eternalblue_vuln",
+        "Masscan_tool",
+        "Nuclei_tool",
+        "Wpscan_tool",
+        "Password_spray_technique",
+        "Passthehash_technique",
+        "Xray_tool"
+      ],
+      "geo": [
+        "Pakistan",
+        "Ukrainian",
+        "Ukraine",
+        "Poland",
+        "Polish",
+        "China",
+        "Chinese",
+        "Moscow",
+        "Russian",
+        "Pakistani"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 21,
+      "software": [
+        "WordPress",
+        "Claude",
+        "Claude Code",
+        "Linux",
+        "Redis",
+        "Telegram",
+        "Windows SMB",
+        "MySQL"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/cyberxero-ai-iab-ukraine-critical-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "More Shells Than a Seafood Buffet: Tracking Citrix NetScaler Exploitation Activities (CVE-2026-88771)",
+      "summary": "Threat actor clusters exploited zero-day vulnerability CVE-2026-88771 in Citrix NetScaler, which Citrix disclosed on September 27, 2026, according to eSentire's Threat Response Unit. Attackers deployed PHP web shells, modified Apache configuration files, and set the SUID bit on /bin/sh to gain root-level access. One pre-disclosure cluster used a lightweight web shell, while a post-disclosure cluster used the Platypus fleet management tool and another created a backdoor NetScaler superuser account. Exploitation occurred within roughly 24 hours of disclosure, and some clusters used watchTowr's public proof-of-concept. Defenders should prioritize patching and monitor for Apache config changes, web shells, /bin/sh permission changes, and NetScaler configuration alterations.",
+      "completeness": "Medium",
+      "threats": [
+        "Platypus",
+        "Upx_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "crontab",
+        "Linux",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "perl",
+        "golang"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/more-shells-than-a-seafood-buffet-tracking-citrix-netscaler-exploitation-activities-cve-2026-88771",
+        "https://github.com/watchtowrlabs/watchTowr-vs-Citrix-Netscaler-CVE-2026-88771/tree/main",
+        "https://github.com/WangYihang/Platypus",
+        "https://github.com/WangYihang/Platypus/blob/36450317de47c4f0475e5349432691d8551d1ee8/internal/core/distributor.go#L365"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "IronChain Ransomware Threatens Businesses with Permanent Data Loss and Costly Downtime",
+      "summary": "IronChain is a PyInstaller-packaged Windows ransomware build, first seen in September 2026, that behaves more like a wiper than a recoverable ransomware. Its RSA private key is discarded, and its encryption mutation state is not preserved, so encrypted files cannot be reliably restored even after payment. A bug in exception handling keeps the main payload reachable, while a separate variable error narrows file traversal. The sample bundles four kernel drivers, but only the Baidu driver forms a coherent process-termination path, and the others are rejected or never called. Defenders should focus on combined indicators such as the SYSTEM scheduled task and driver-service patterns, and maintain tested, isolated backups.",
+      "completeness": "Medium",
+      "threats": [
+        "Ironchain",
+        "Deadlock",
+        "Byovd_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "PyInstaller",
+        "ThrottleStop"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "rsa-4096",
+        "aes",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Python"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/ironchain-analysis/",
+        "https://github.com/RainbowDynamix/GoodBaiii"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "CITRIX 0-DAY EXPLOITS: CVE-2026–88771 & CVE-2026–88772 IN THE WILD",
+      "summary": "Attackers are exploiting two Citrix NetScaler ADC and Gateway zero-days, CVE-2026-88771 and CVE-2026-88772, which are chained to gain root on appliances. CVE-2026-88771 is reached through crafted authentication requests whose strings reach a maintenance script that executes them as root, while CVE-2026-88772 is a UDP/DTLS memory overflow. Post-exploitation tooling creates a rogue superuser, sets SUID on /bin/sh, exfiltrates the nsconfig directory, and deploys password-protected PHP web shells such as WHIPSHOT. The SLAPSHOT Python and Perl tunneler then turns the appliance into an internal pivot point. Defenders should patch to fixed builds immediately and hunt for the described file paths, configuration changes, and rogue accounts.",
+      "completeness": "Unknown",
+      "threats": [
+        "Slapshot",
+        "Whipshot",
+        "Platypus",
+        "Pitboss",
+        "Smuggling_technique",
+        "Chisel_tool",
+        "Sliver_c2_tool",
+        "Tunneler"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "crontab",
+        "curl",
+        "Zoom",
+        "Citrix NetScaler ADC"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "md5",
+        "pbkdf2",
+        "sha1"
+      ],
+      "functions": [
+        "SetHandler"
+      ],
+      "languages": [
+        "php",
+        "perl",
+        "python"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/10/06/citrix-0-day-exploits-cve-2026-88771-cve-2026-88772-in-the-wild/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-06",
+      "title": "Chinese Government-linked Cyber Threat Actors Combine Automated and Hands-on Hacking Tools to Steal Sensitive Data",
+      "completeness": "High",
+      "threats": [
+        "Password_spray_technique",
+        "Lolbin_technique",
+        "Bbscn_tool",
+        "Dirsearch_tool",
+        "Fscan_tool",
+        "Ksubdomain_tool",
+        "Masscan_tool",
+        "Nmap_tool",
+        "Oneforall_tool",
+        "Shuize_tool",
+        "Wpscan_tool",
+        "Microscan_tool",
+        "Credential_harvesting_technique",
+        "Dcsync_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "America",
+        "China",
+        "Chinese",
+        "Asia",
+        "Africa"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 15,
+      "software": [
+        "Microsoft Exchange",
+        "OpenSSL",
+        "WebLogic",
+        "WordPress",
+        "Jenkins",
+        "Apache Struts",
+        "Office365",
+        "Outlook",
+        "curl",
+        "SoftEther",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "rc4",
+        "zip",
+        "aes-128-cbc",
+        "sha256"
+      ],
+      "functions": [
+        "ReadMe"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a",
+        "https://github.com/cisagov/Decider/"
+      ]
+    }
+  }
+]

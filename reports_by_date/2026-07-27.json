@@ -1,0 +1,363 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "Cl0p Exploitation of PTC Windchill & FlexPLM (CVE-2026-12569)",
+      "summary": "Cl0p ransomware affiliates are exploiting CVE-2026-12569, a critical RCE in PTC Windchill PDMLink and FlexPLM, chained with a FlexPLM WSDL information-disclosure flaw to gain unauthenticated access. Attackers deploy hex-named JSP webshells under /Windchill/login/, enumerate the filesystem, stage engineering and design data, and conduct double extortion. Confirmed victims span Manufacturing, Automotive, Aerospace, and Retail/Apparel. Extortion emails sent to employees in victim organizations claim a Windchill-related data breach. Defenders should patch to fixed builds, hunt for webshells and IOCs from PTC's advisory back to early June 2026, and block the listed C2 addresses.",
+      "completeness": "Low",
+      "threats": [
+        "Clop"
+      ],
+      "software": [
+        "Outlook"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/clop-windchill-flexplm-exploitation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "Analysis of Kimsuky's Attack on a South Korean Groupware Vendor Using a New Gomir Family Variant",
+      "summary": "Kimsuky, a North Korea-linked group, ran a 2025 to early 2026 campaign against South Korean groupware vendors. The attackers gained access through a remote code execution flaw in an internet-facing mail server or through spear-phishing of employees. They deployed Gomir variants, including BirdTroy, which can use HTTP/3 over QUIC to evade inspection, and DriveTroy, which uses Google Drive as its command-and-control channel. After compromise, they stole vendor infrastructure credentials, breached customer groupware servers, and tampered with login pages to harvest employee credentials. Defenders should prioritize external attack surface testing, add secondary authentication such as TOTP, and protect customer access data.",
+      "completeness": "High",
+      "threats": [
+        "Gomir",
+        "Spear-phishing_technique",
+        "Http_troy",
+        "Birdtroy",
+        "Drivetroy",
+        "Troll_stealer",
+        "Gobear",
+        "Endoor",
+        "Smalltiger",
+        "Dwagent_tool",
+        "Dw_service_tool",
+        "Yamux_tool",
+        "Httpspy",
+        "Jsonping_technique",
+        "Etherrat"
+      ],
+      "geo": [
+        "Berlin",
+        "Korean",
+        "South korean",
+        "North korea",
+        "Asia"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 42,
+      "software": [
+        "Linux",
+        "systemd",
+        "crontab",
+        "Unix",
+        "VSCode"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "base64",
+        "md5",
+        "exhibit"
+      ],
+      "functions": [
+        "GetBasicInfo"
+      ],
+      "languages": [
+        "golang",
+        "php"
+      ],
+      "links": [
+        "https://www.enki.co.kr/en/media-center/blog/analysis-of-kimsuky-s-attack-on-a-south-korean-groupware-vendor-using-a-new-gomir-family-variant",
+        "http://github.com/quic-go/quic-go"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "Pixels to Payload: Dissecting a Four-Stage Bitmap-Steganography Dropper Delivering AsyncRAT",
+      "summary": "The report describes a four-stage .NET delivery chain that ends by deploying AsyncRAT 0.5.8. Each stage hides the next in the RGB or ARGB channels of bitmap resources, using a decoy application as cover. The third-stage loader, wrapped in Eazfuscator and built around a legitimate HIV simulator, handles persistence, Microsoft Defender tampering, and process hollowing into signed .NET utilities. The final RAT client has its install and anti-analysis features disabled, since the loader already provides them. The analysts also released pixelchain, a keyless extractor that recovers all stages and the RAT configuration from the dropper alone. The report assesses the family with high confidence but makes no actor attribution, describing the operator as likely commodity.",
+      "completeness": "High",
+      "threats": [
+        "Asyncrat",
+        "Process_hollowing_technique",
+        "Eazfuscator_tool",
+        "Uac_bypass_technique",
+        "Steganography_technique",
+        "Confuserex_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 13,
+      "software": [
+        "Microsoft Defender",
+        "NET framework",
+        "Microsoft Windows Defender",
+        "Pastebin"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "sha1",
+        "sha256",
+        "xor",
+        "deflate",
+        "aes-256-cbc",
+        "md5",
+        "aes"
+      ],
+      "functions": [
+        "GetExportedTypes",
+        "CreateInstance"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.threatuniverse.co.uk/posts/asyncrat-bitmap-steganography-dropper/",
+        "https://github.com/Sarks0/pixelchain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "Cato CTRL™ Threat Research: SilverFox Evolves: Abuse of New Drivers and Trusted Software Hijacking Enable Remote Access with ValleyRAT in Japan",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Byovd_technique",
+        "Winos",
+        "Zeon"
+      ],
+      "geo": [
+        "Japan",
+        "Chinese",
+        "Japanese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 11,
+      "software": [
+        "Google Chrome",
+        "Chrome",
+        "Windows Service",
+        "Windows Scheduled Task",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4"
+      ],
+      "functions": [
+        "FUN_10013E60",
+        "FUN_10014900",
+        "FUN_100149C0",
+        "CreateFile",
+        "ZwTerminateProcess",
+        "FUN_10009DF0",
+        "FUN_1000A500",
+        "FUN_1000A1A0",
+        "FUN_10009B50",
+        "FUN_1000A350",
+        "have more..."
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-silverfox-evolves/",
+        "https://github.com/redteamfortress/PhantomKiller"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "Helpdesk Hijackers: Teams Vishing, Quick Assist, and GoGRPC Backdoor",
+      "summary": "Zscaler ThreatLabz tracked a cluster of attacks since January 2026 by a threat actor likely acting as an initial access broker for ransomware. The actor uses vishing over Microsoft Teams, posing as IT or helpdesk staff, to persuade victims to open a Quick Assist remote session. After access, PowerShell scripts gather host information and deploy the Go-based GoGRPC backdoor, which exists in four variants named Lep, Giver, Pet, and Kind. GoGRPC communicates with C2 servers over gRPC, which is unusual for backdoors, and it has evolved toward targeting corporate environments. The actor also deploys additional tools, including BlindDoor, S3Siphon for data exfiltration, and the RevSocket, PyGRPC, and RSOX SOCKS proxies. Defenders should note that the campaign has grown more selective and sophisticated through June 2026.",
+      "completeness": "Medium",
+      "threats": [
+        "Microsoft_quick_assist_tool",
+        "Gogrpc_backdoor",
+        "Blinddoor",
+        "Revsocket_tool",
+        "Pygrpc_tool",
+        "S3siphon_tool",
+        "Nltest_tool",
+        "Mythic_c2_tool",
+        "Sliver_c2_tool",
+        "Chinachopper",
+        "Yamux_tool",
+        "Mitm_technique",
+        "Pyarmor_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "rust",
+        "golang",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/helpdesk-hijackers-teams-vishing-quick-assist-and-gogrpc-backdoor",
+        "https://github.com/TesterCC/grat",
+        "https://github.com/Chopper-C2-Framework/c2-chopper",
+        "https://github.com/hashicorp/yamux"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "Expanding the Castle: New Campaigns, New Tooling, and the NeedleStealer Connection",
+      "summary": "Arctic Wolf Labs tracked a cluster of campaigns built on CastleLoader, a multi-stage shellcode loader that has underpinned several related intrusion sets. The Noidret campaign introduces two NeedleStealer payloads, a Rust-based cryptocurrency wallet spoofer and a Golang-based malicious browser extension installer, marking the first observed use of Rust and Golang in this cluster. The actor's payloads target hardware wallet users and browser sessions, with the fake extension posing as an ad blocker to enable session token theft. Other campaigns deliver NetSupport RAT, CastleStealer, and a Lobshot-variant VNC viewer through PowerShell stagers and embedded IronPython runtimes. Defenders should enforce application allowlisting for ProgramData and user-writable paths, enable PowerShell script block logging, and alert on unexpected node.exe or ipyw32.exe execution.",
+      "completeness": "High",
+      "threats": [
+        "Needle_craas_tool",
+        "Castleloader",
+        "Castlestealer",
+        "Pythonrat_rat",
+        "Netsupportmanager_rat",
+        "Clickfix_technique",
+        "Lobshot",
+        "Nsis_dropper",
+        "Motw_bypass_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge update",
+        "Cloudflare R2",
+        "Node.js"
+      ],
+      "wallets": [
+        "trezor",
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "rc4",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "golang",
+        "ironpython",
+        "powershell"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/castleloader-new-campaigns-new-tooling-and-the-needlestealer-connection/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/expanding-the-castle"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "A comprehensive review of open-source malware",
+      "summary": "Between May 2025 and June 2026, researchers analyzed hundreds of thousands of npm and PyPI packages, with tens of thousands found to be malicious. The most common pattern is code execution at install time, implemented through npm lifecycle scripts or Python setup.py custom install commands. Attackers use these hooks to collect environment data, secrets, and system information, then exfiltrate it to external endpoints or Discord and Telegram webhooks. Some malicious packages are typosquats, others are transitive dependencies, and the most dangerous are legitimate packages republished after maintainer or CI/CD token compromise, such as a trojanized PostHog CLI tied to the Shai-Hulud campaign. The report recommends using an internal vetted registry or proxy, pinning and hash-verifying reviewed versions, and analyzing updates before adoption.",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Trufflehog_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "s service ac",
+        "curl",
+        "discord",
+        "Telegram",
+        "macOS",
+        "systemd",
+        "crontab",
+        "Chrome",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "aes-gcm",
+        "base64",
+        "base32",
+        "xor"
+      ],
+      "functions": [
+        "list_processes",
+        "getAgent",
+        "start",
+        "findBunExecutable",
+        "main",
+        "findGitHubTokenEnvVars"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python",
+        "typescript"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/6859/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-27",
+      "title": "Tengu: A Modernized Mirai That Doesn’t Want to Leave",
+      "summary": "Tengu is a modern Mirai-derived IoT botnet that was surfaced by Nozomi Networks' machine-learning malware detection system. It combines an encrypted C2 protocol using AEAD encryption, proxy functionality, payload updates, system and network discovery, and 25 DoS attack methods, some targeting game protocols. The malware targets exposed embedded Linux devices, with a dropper that spreads via Telnet brute force. It uses persistence through systemd, init.d and cron, and self-defense features such as a watchdog that forces reboots, competitor-killing, and fileless execution. For defenders, the takeaway is that poorly maintained IoT and embedded Linux devices are attractive footholds, so timely patching, removing default credentials, segmentation, and monitoring for unusual behavior are essential.",
+      "completeness": "High",
+      "threats": [
+        "Mirai",
+        "Udpflood_technique",
+        "Antidebugging_technique",
+        "Tengu_botnet"
+      ],
+      "geo": [
+        "Iranian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 20,
+      "software": [
+        "Linux",
+        "systemd",
+        "Minecraft",
+        "Android",
+        "Unix",
+        "Anthropic"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "xor",
+        "poly1305"
+      ],
+      "links": [
+        "https://www.nozominetworks.com/blog/tengu-a-modernized-mirai-that-doesnt-want-to-leave"
+      ]
+    }
+  }
+]

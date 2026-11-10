@@ -1,0 +1,280 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-03",
+      "title": "SonicWall SMA1000 Zero Days Fuel INC Ransomware's Root Level VPN Compromise Chain",
+      "summary": "SonicWall SMA1000 appliances are being exploited through two zero-day flaws, CVE-2026-15409 (a pre-authentication WebSocket proxy bypass, CVSS 10.0) and CVE-2026-15410 (a path-traversal privilege-escalation flaw, CVSS 7.2), chained to gain root access. Exploitation began at least as early as June 22, 2026, more than three weeks before public disclosure, by a cluster tracked as UTA0533. The INC Ransomware group has become the most active actor using this chain for extortion, with victims across the US, Australia, UAE, Colombia, and Switzerland. Attackers deployed persistent implants, including the setuid ROOTRUN backdoor, and harvested credentials and MFA seeds before pivoting into Active Directory. Defenders should patch to a fixed firmware version, treat exposed devices that ran vulnerable firmware as compromised, hunt for listed indicators, and rotate all credentials the appliance handled.",
+      "completeness": "High",
+      "threats": [
+        "Inc_ransomware",
+        "Rootrun_tool",
+        "Xzfind_tool",
+        "Knuckleball",
+        "Suo5_tool",
+        "Orangetail",
+        "Behinder",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Colombia",
+        "Switzerland",
+        "Australia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Active Directory",
+        "Chrome",
+        "Linux"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-128-ecb"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/sonic-wall-sma-1000-zero-days-fuel-inc-ransomware-s-root-level-vpn-compromise-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-03",
+      "title": "Octagon: Technical Analysis of a Fake Bahrain Civil Defense Application",
+      "summary": "Octagon is an Android malware family that impersonates the official BH Alert emergency app, targeting users in Bahrain through a phishing link. Its multi-stage design dynamically loads encrypted DEX and JAR payloads at runtime, which keeps its static footprint small. The malware abuses VPN and Accessibility services, routing device traffic through a malicious tunnel while excluding selected apps, and it uses Accessibility to capture lock screen PINs, passwords, and patterns. It also intercepts SMS messages and stores stolen data in a local database that syncs to a C2 server once connectivity returns. Persistence is achieved through a fake sync account that wakes the malware every 30 minutes. Defenders should install apps only from reputable stores and keep mobile security products updated.",
+      "completeness": "Medium",
+      "threats": [
+        "Octagon_rat"
+      ],
+      "geo": [
+        "Bahrain"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "kitty"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/octagon-technical-analysis-of-a-fake-bahrain-civil-defense-application/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-03",
+      "title": "CRPX0 — SCAMMER TURNED RANSOMWARE OPERATOR",
+      "summary": "CRPX0 is a ransomware group that emerged in early July 2026 and listed about 30 or more victims in its first month, mainly in the US, with Turkey second. The group, which previously ran a Flash Token money-laundering scam and a Telegram-promoted service, operates a ransomware-as-a-service platform and affiliate program targeting Windows, with ClickFix-based delivery and a tool offering clipper, seed-phrase capture, file harvesting and a manual-only encryption module. Its backend was found behind Cloudflare and hosted on an ASN the report links to abuse by Cobalt Strike and similar tools. The sample observed used EDR unhooking, security software disabling and scheduled-task persistence. Defenders should note the report's emphasis on user education about PowerShell-based ClickFix lures.",
+      "completeness": "High",
+      "threats": [
+        "Crpx0",
+        "Inc_ransomware",
+        "Clickfix_technique",
+        "Cobalt_strike_tool",
+        "Supershell",
+        "Carbine_loader",
+        "Badbazaar",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "China",
+        "Singapore",
+        "Canada",
+        "Russia",
+        "Turkey"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TELEGRAM"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/08/03/crpx0-scammer-turned-ransomware-operator/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-03",
+      "title": "Targeted Attack on Government Entities in the Middle East \\| Part 2",
+      "summary": "BINDCLOAK is a previously undocumented 64-bit modular Windows backdoor written in C++, deployed during post-compromise activity against government entities in the Middle East. ThreatLabz assesses with high confidence that it is a variant of OctLurk, based on code similarities and shared C2 infrastructure tied to the same East Asia-linked threat actor. The backdoor is reflectively loaded by the MIXEDKEY loader and uses a complex message routing mechanism with two layers of XOR encryption over TLS-wrapped TCP. It supports 11 commands for collecting user and process tokens, starting modules with elevated privileges, and loading plugin DLLs. The report notes the actor's expansion from Central Asia into the Middle East, with a focus on the energy sector. Defenders should note that the actor took steps to ensure the final payload runs only on intended targets.",
+      "completeness": "Medium",
+      "threats": [
+        "Teleshim",
+        "Mixedkey",
+        "Bindcloak",
+        "Octlurk"
+      ],
+      "geo": [
+        "Asia",
+        "Middle east"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 6,
+      "algorithms": [
+        "prng",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "GetVolumeInformation"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/targeted-attack-government-entities-middle-east-part-2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-03",
+      "title": "Developers in the Crosshairs: Fake AI Tools Deliver Infostealer",
+      "summary": "Netskope Threat Labs describes a campaign that delivers a Malware-as-a-Service infostealer to developers and AI users through trojanized clones of popular GitHub repositories, including Claude, ComfyUI, and AI coding assistant resources. The attackers use SmartLoader, deployed in two stages, with each stage using different Lua obfuscators. Both loaders resolve their C2 address at runtime from a Polygon blockchain smart contract via EtherHiding, so operators can redirect implants without changing the malware. Targets are mainly in North America, Asia, and Southern Europe, with financial services, banking, and technology sectors leading. The report stresses that developer accounts often hold source code, cloud credentials, and CI/CD access, making them high-value targets for supply chain attacks.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Smartloader",
+        "Etherhiding_technique",
+        "Vmify_tool",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "America",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "ComfyUI"
+      ],
+      "algorithms": [
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "c",
+        "l"
+      ],
+      "languages": [
+        "rust",
+        "lua",
+        "python"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/developers-in-the-crosshairs-fake-ai-tools-deliver-infostealer",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/ns-jmichaell-patch-18/Malware/SmartLoader/IOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-03",
+      "title": "Fake Xeno Roblox Cheats Deliver Powerful Java Stealer Through Discord and Forums",
+      "summary": "A fake \"undetected\" version of the Xeno Roblox script executor, promoted through gaming forums and Discord communities, delivers a multi-stage Java infection chain. The malware imitates Xeno files and uses Windows-style names and trusted-looking directories to appear legitimate. Its final stage is a stealer and remote access trojan that targets browser data, Discord, Roblox and Minecraft accounts, cryptocurrency wallets and payment information. It also supports keylogging, screenshots, webcam capture, desktop streaming, file manipulation, PowerShell execution and interactive shell access. Researchers previously tracked it as Powercat and found new command-and-control infrastructure, suggesting active development since early this year.",
+      "completeness": "Medium",
+      "threats": [
+        "Allatori_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Roblox",
+        "Discord",
+        "Minecraft",
+        "Visual Studio",
+        "JetBrains",
+        "Steam",
+        "Telegram",
+        "WhatsApp",
+        "Chrome",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "safepal"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "java",
+        "powershell",
+        "lua",
+        "python"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/fake-xeno-roblox-discord-executor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-03",
+      "title": "An analysis of incidents at Brazilian educational institutions",
+      "summary": "Kaspersky's GERT analyzed incident response cases at Brazilian educational institutions from January 2025 to June 2026, with most attacks in São Paulo state. High-severity incidents, 40% of cases, were mainly ransomware, with DragonForce and LockBit 3 the most common families, and private institutions were the most targeted. Attackers commonly used valid accounts, public-facing application exploits, and insiders for initial access, and relied on Potato privilege escalation tools, AnyDesk, PsExec, and AV-killer malware. The report stresses that most incidents exploited basic weaknesses such as poor patch management and outdated systems, including continued use of Windows 10 after end of support. Recommended defenses include MFA on public-facing services, least privilege, restricted remote access tools, isolated backups, and centralized logging.",
+      "completeness": "High",
+      "threats": [
+        "Sim_swapping_technique",
+        "Lockbit",
+        "Godpotato_tool",
+        "Sweetpotato_tool",
+        "Badpotato_tool",
+        "Anydesk_tool",
+        "Av-killer"
+      ],
+      "geo": [
+        "Portuguese",
+        "Brazilian",
+        "Brazil"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 9,
+      "software": [
+        "PsExec",
+        "vscode"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/incidents-at-brazilian-educational-institutions/120803/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1094 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Namastex.ai npm Packages Hit with TeamPCP-Style CanisterWorm Malware",
+      "summary": "The Namastex.ai npm packages @automagik/genie (versions 4.260421.33 through 4.260421.39) and pgserve (versions 1.1.11 through 1.1.13) were compromised with malware that mirrors the TeamPCP-style CanisterWorm campaign. The payload runs at install time and harvests secrets, including npm, cloud, SSH, Git, and Kubernetes credentials, along with browser and crypto-wallet data. It exfiltrates stolen data through both a conventional webhook and an Internet Computer canister, encrypting it when a bundled public key is present. The malware also attempts self-propagation by republishing victim packages through stolen npm tokens and spreading to PyPI. Defenders should treat the listed versions as malicious, rotate exposed credentials, and hunt for the published indicators, noting the investigation into the upstream cause is still ongoing.",
+      "completeness": "Medium",
+      "threats": [
+        "Canisterworm",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Docker",
+        "Chrome"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet",
+        "atomicwallet"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/namastex-npm-packages-compromised-canisterworm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "No Place to Hide: Following a Serial Ransomware Affiliate from LockBit, Black Basta, and Qilin to The Gentlemen",
+      "summary": "Silent Push attributes a ransomware intrusion involving The Gentlemen RaaS to a single affiliate previously linked to LockBit, Black Basta, and Qilin attacks. The attribution rests on Cobalt Strike watermarks that serve as a fingerprint for the individual operator rather than the ransomware brand. The link was made after Silent Push compared its earlier CountLoader findings with a Check Point DFIR report describing a SystemBC and Cobalt Strike intrusion that led to Gentlemen ransomware deployment. Silent Push had flagged the associated Cobalt Strike command-and-control infrastructure in February 2026, before public reporting. The report urges organizations to block Cobalt Strike infrastructure by feeding Silent Push's IOFA feed into firewalls, SIEMs, or EDR tools.",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit",
+        "Blackbasta",
+        "Qilin_ransomware",
+        "Cobalt_strike_tool",
+        "Countloader",
+        "Systembc",
+        "Gentlemen_ransomware"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/gentlemen-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Auraboros C2: A Previously Undocumented Brazilian RAT Framework With Zero Authentication, Live Audio Streaming, and a Cookie Impersonation Engine",
+      "summary": "Auraboros C2 is a previously undocumented Brazilian remote access trojan command-and-control framework whose management panel on port 5000 requires no authentication, exposing victim lists, keylogger output, and stolen browser credentials to anyone who connects. The framework supports surveillance such as screenshots, webcam capture, and live audio streaming, plus credential theft from Chrome and Brave, Wi-Fi password extraction, cookie-based session impersonation, and reverse SOCKS5 proxying. The implant is reported to run inside a sideloaded DLL hosted by a process named DiskIntegrityScanner.exe. The only registered beacon appears to be the developer's own test machine in Goiania, Brazil, which has been offline for five days, suggesting active development rather than deployment. Defenders should block the server IP, hunt for the masquerading process and unusual port 9000 and 1080 traffic, and report the hosting to DigitalOcean.",
+      "completeness": "High",
+      "threats": [
+        "Auraboros_c2",
+        "Nmap_tool",
+        "Dll_sideloading_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Portuguese",
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "JetBrains",
+        "Chrome",
+        "Ubuntu",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/auraboros-c2-unauthenticated-panel-live-audio-keylogger-cookie-hijacking-brazilian-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Silent Lures: The Rise of Empty Subject Email Attacks",
+      "summary": "Silent Subject campaigns are phishing attacks sent without a subject line or with a vague one, designed to provoke curiosity and get users to open the message. CyberProof's Threat Hunting and MDR teams detected a widespread campaign of this type targeting VIP users across multiple organizations, using spoofed or compromised sender domains. The emails carry malicious links, QR codes that lead mobile users to credential harvesting pages, and abuse of the legitimate Datto RMM tool for persistent remote access. Empty subjects help attackers evade keyword-based and signature filters because the malicious content still sits in the body. CyberProof reported a rising trend in these campaigns through Q1 2026. Defenders are advised to warn users about empty-subject emails, enforce MFA, and filter on body content and attachment behavior rather than subject lines alone.",
+      "completeness": "Low",
+      "threats": [
+        "Qshing_technique",
+        "Credential_harvesting_technique",
+        "Centrastage_tool",
+        "Flowerstorm_tool"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/silent-lures-the-rise-of-empty-subject-email-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "APT Profile – Red Menshen",
+      "summary": "Red Menshen, also known as Earth Bluecrow, is a China-linked threat actor active since at least 2021 that conducts cyber espionage using custom tools. Its main malware is BPFDoor, a Linux-based kernel-level backdoor that stays dormant and activates only when it receives specially crafted packets, avoiding open ports and persistent beaconing. The group primarily targets telecommunications providers to collect communications and metadata tied to governments and enterprises. It often gains initial access by exploiting internet-facing devices such as VPN appliances and firewalls, then uses multi-stage toolchains for lateral movement. The report stresses long dwell times and stealthy pre-positioning, so defenders should monitor core network infrastructure closely.",
+      "completeness": "Low",
+      "threats": [
+        "Bpfdoor",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "China",
+        "Middle east",
+        "Vietnam",
+        "Cambodia",
+        "Turkey",
+        "India",
+        "Egypt",
+        "Korea",
+        "Thailand",
+        "Myanmar"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 25,
+      "software": [
+        "Linux",
+        "Windows Service"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-red-menshen/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Industrialized Ransomware Deployment: Vect, BreachForums, and TeamPCP Converge in Unprecedented Affiliate Mobilization",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Lockbit",
+        "Conti",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "Indian"
+      ],
+      "software": [
+        "Linux",
+        "ESXi",
+        "Trivy",
+        "LiteLLM"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "chacha20-poly1305"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.dataminr.com/resources/intel-brief/vect-breachforums-teampcp-converge-in-unprecedented-affiliate-mobilizatio/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Massive World Cup Consumer Fraud Infrastructure Targets Fans Before Kickoff",
+      "summary": "A coordinated phishing and consumer fraud operation is targeting fans ahead of the 2026 FIFA World Cup. Threat actors used 14 IP addresses to host 79 typosquatting and lookalike domains that impersonate the official FIFA website. The sites copy FIFA's URL structure and HTML, and pull images and icons directly from the real site, making them highly convincing. Most of the domains, 45 of 79, were registered through a single registrar, suggesting a centrally managed campaign. The fake store sells tickets and merchandise that are never delivered, accepts only payment apps and crypto, and accepts any login credentials, so defenders should advise fans to verify domains and avoid unsolicited payment methods.",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Bosnia and herzegovina",
+        "Canada",
+        "Mexico",
+        "Uruguay",
+        "Indonesia",
+        "Spain"
+      ],
+      "software": [
+        "Alibaba Cloud"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/massive-world-cup-consumer-fraud-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "TKFleet · AndroidRPA v8.1-wake2: A Chinese-Language Bot Farm Control Panel Running on Alibaba Cloud US",
+      "summary": "A Chinese-language bot farm control panel named TKFleet · AndroidRPA v8.1-wake2 is publicly reachable on an Alibaba Cloud US host and manages Android handsets to inflate engagement on Spotify, YouTube, TikTok, Instagram, Facebook, and X. The panel offers HID injection, Accessibility, and Shizuku execution backends, and it uses Claude Haiku as a fallback visual-navigation agent for screen decisions. Its device-side package, com.yyds.auto, masquerades under a Tencent namespace. The API includes a shell.command endpoint that would give arbitrary shell access to every enrolled handset once authenticated. Defenders are advised to detect the package and namespace masquerade, fingerprint HID-injected input, and treat LLM-driven UI automation as a modeled abuse scenario.",
+      "completeness": "Medium",
+      "threats": [
+        "Androidrpa_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 8,
+      "software": [
+        "TKFleet",
+        "Alibaba Cloud U",
+        "Cloud Co",
+        "Android",
+        "nstagram",
+        "Facebook",
+        "Anthropic",
+        "Claude",
+        "SimpleHTTP",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "getSources",
+        "Haiku"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/tkfleet-androidrpa-v81-wake2-chinese-bot-farm-control-panel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Same packet, different magic: Mustang Panda hits India's banking sector and Korea geopolitics",
+      "summary": "Acronis TRU identified a new variant of the LOTUSLITE backdoor, attributed with moderate confidence to Mustang Panda, with a lure themed around India's banking sector, specifically HDFC Bank. The malware is delivered through a malicious CHM file that uses a JavaScript loader to extract and run a legitimate Microsoft-signed executable, which sideloads the backdoor DLL. Version 1.1 adds modular code, obfuscated Windows API calls, a changed packet magic value, and a rotated execution flag to evade existing detections. Analysts linked the variant to the original codebase through a residual KugouMain export, shared command structures, and reuse of Dynu-managed dynamic DNS infrastructure. A related sample targeting South Korean policy and diplomatic circles was also identified, using a spoofed Gmail account impersonating a prominent U.S.-Korea policy figure. The report highlights recurring developer carelessness, such as leftover exports, as a useful attribution signal for defenders.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Lotuslite",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Indian",
+        "North korea",
+        "Indo-pacific",
+        "Asian",
+        "India",
+        "Korea",
+        "Korean"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "ASP.NET",
+        "winhttp",
+        "Gmail"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "getCwd",
+        "calniown"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/same-packet-different-magic-mustang-panda-hits-indias-banking-sector-and-korea-geopolitics/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Stealer-creeper: data-stealing app being distributed under the guise of mods and cheats for Minecraft",
+      "summary": "WeedHack (formerly Majanito) is a multi-stage infostealer sold as Malware-as-a-Service and distributed to Minecraft players as fake Fabric mods, often promoted through TikTok videos advertising \"dupe\" mods and other cheats. The malware steals browser credentials, Minecraft session tokens, Discord tokens, cryptocurrency wallet data and Telegram files, and its premium tier adds remote access trojan features such as keylogging, webcam capture and remote shell access. A dropper JAR loads additional modules from command-and-control servers, and buyers receive personalized builds for tracking victims through a web panel. Researchers at F6 had 14 .ru domains used in the campaign blocked and reported related domains, file-sharing services and TikTok content for removal. Defenders should treat mods from unofficial sources and links shared on social media with caution, and check them in public sandboxes before installation.",
+      "completeness": "Low",
+      "threats": [
+        "Weedhack",
+        "Purelogs",
+        "Purehvnc_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Cyprus"
+      ],
+      "software": [
+        "TikTok",
+        "Discord",
+        "Telegram"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "electrum"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/F6/news/1025464/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Analysis of suspected APT-C-13 (Sandworm) group's attack activity using SSH+TOR tunnels for covert persistence",
+      "summary": "APT-C-13 (Sandworm, also known as FROZENBARENTS) is a state-linked group that uses spear-phishing ZIP archives containing a malicious LNK file to deploy a payload. The LNK unpacks nested archives, runs a control script that creates two logon-triggered scheduled tasks disguised as Opera GX and Dropbox repair tasks, and launches an OpenSSH server and a Tor service. The Tor configuration maps local SSH, SMB and RDP ports to an onion address, so the attacker can reach the host without inbound firewall exposure. Obfs4 bridges are used to disguise Tor traffic and evade network inspection. The researchers assess with moderate confidence that this activity is linked to Sandworm, describing it as an evolution of the group's earlier tooling. Defenders should be wary of unknown archives, email attachments and links.",
+      "completeness": "Medium",
+      "threats": [
+        "Obfs4proxy_tool",
+        "Double_kill_vuln",
+        "Double_star_vuln",
+        "Nightmare_formula_vuln"
+      ],
+      "software": [
+        "outlook",
+        "operagx",
+        "dropbox",
+        "Opera GX",
+        "OpenSSH",
+        "curl",
+        "Task Scheduler",
+        "Windows SMB",
+        "opera"
+      ],
+      "algorithms": [
+        "zip",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/nJpqvXCYV3ZdvNgYGrG4ow"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "The VICTOR Connection: One .NET Injector Developer, Two Stealer Families, and a Romanian Beef Breeders Association",
+      "summary": "The Phemedrone Stealer delivery chain runs from a compromised WordPress site belonging to the Romanian Association of Beef Cattle Breeders and targets Hungarian-speaking victims. A Hungarian-language JavaScript dropper fetches AES-256-CBC encrypted PowerShell, which decrypts to a .NET loader named ALTERNATE.dll that process-hollows aspnet_compiler.exe to run Phemedrone disguised as svchost.exe. The loader's PDB path, which contains the developer username VICTOR, is identical to one used in a separate Formbook campaign targeting Italy, linking one developer to two stealer families. The report suggests this developer may be a loader-as-a-service provider or a single operator running multi-regional campaigns. Defenders should hunt for that PDB path in .NET binary telemetry and monitor unexpected aspnet_compiler.exe execution, while the site owner should remove the payload and harden the WordPress installation.",
+      "completeness": "High",
+      "threats": [
+        "Phemedrone",
+        "Formbook",
+        "Process_hollowing_technique",
+        "Costura_tool",
+        "Cryptoobfuscator_tool",
+        "Lolbin_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Italian",
+        "Italy",
+        "Romania",
+        "Hungary",
+        "Hungarian",
+        "Romanian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 11,
+      "software": [
+        "WordPress",
+        "NET Framework",
+        "Discord",
+        "Telegram",
+        "Steam"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "aes-256-cbc",
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/victor-phemedrone-formbook-alternate-dll-romanian-beef-breeders"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Lotus Wiper: a new threat targeting the energy and utilities sector",
+      "summary": "Lotus Wiper is a previously unknown destructive wiper targeting the energy and utilities sector in Venezuela, discovered by Kaspersky on a publicly available resource in mid-December 2025. The attack begins with batch scripts that check a domain NETLOGON share as a network trigger, disable network interfaces, and log off sessions before starting destruction. The wiper deletes restore points, overwrites physical drives with zeros, clears USN journals, and deletes files across volumes, leaving systems unrecoverable. Kaspersky assesses the tool as financially unmotivated and highly targeted, and notes that its compilation in late September 2025 suggests months of preparation. The report's main takeaway for defenders is to monitor NETLOGON for unauthorized changes, watch for abuse of built-in tools such as diskpart, robocopy and fsutil, and maintain tested backups.",
+      "completeness": "High",
+      "threats": [
+        "Lotus_wiper",
+        "Robocopy_tool",
+        "Credential_dumping_technique",
+        "Credential_harvesting_technique",
+        "Eternal_petya",
+        "Hermeticwiper",
+        "Trojan.bat.agent.gen"
+      ],
+      "geo": [
+        "Venezuela"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Winlogon",
+        "fsutil"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "links": [
+        "https://securelist.com/tr/lotus-wiper/119472/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "From One Signed Binary to a 5-Server Russian RAT Farm: Mapping the PALLASNET SimpleHelp Cluster, a Stolen Google Analytics Certificate, and an Exposed Cockpit Dashboard",
+      "summary": "A Russian-operated remote access campaign, tracked as PALLASNET, uses legitimately code-signed SimpleHelp agents and ScreenConnect agents to gain persistent access to victims. Researchers pivoted from one SimpleHelp sample with 10/76 VirusTotal detections to a five-server command-and-control cluster on a single subnet allocated in August 2025. The actor runs a Russian-language management portal and an exposed Cockpit interface that leaked an internal hostname and operating system details. Four of the five SimpleHelp panels still serve customer download pages, and the campaign has run for at least 10 months. Most endpoint products trusted the valid signature, so defenders should block the subnet and domains and hunt for the associated service and install paths.",
+      "completeness": "High",
+      "threats": [
+        "Simplehelp_tool",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "Netherlands",
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "Linux",
+        "Ubuntu",
+        "debian",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "sha256",
+        "rsa-4096"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/pallasnet-simplehelp-5-server-cluster-dangerstock-cockpit-google-analytics-cert"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Malicious trading website drops malware that hands your browser to attackers",
+      "summary": "Needle Stealer is a modular Golang infostealer delivered in a campaign that uses a fake website promoting \"TradingClaw,\" a supposed AI assistant for TradingView. The site selectively shows malicious content to intended visitors and redirects others, such as search engines, to a benign-looking page. Victims who download the ZIP file trigger a DLL hijacking chain that injects the stealer into RegAsm.exe via process hollowing. The malware steals browser data, sessions, files, and cryptocurrency wallet information, and can install malicious browser extensions that redirect traffic, intercept downloads, and inject scripts. Defenders should download software only from official sources, check publishers, review browser extensions, and watch for C2 communications.",
+      "completeness": "Medium",
+      "threats": [
+        "Needle_craas_tool",
+        "Browser_wallet_spoofer_tool",
+        "Amadey",
+        "Gcleaner",
+        "Dll_hijacking_technique",
+        "Process_hollowing_technique"
+      ],
+      "software": [
+        "TradingView",
+        "Telegram",
+        "Discord",
+        "Steam"
+      ],
+      "wallets": [
+        "trezor",
+        "exodus_wallet",
+        "metamask",
+        "coinbase"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/04/malicious-trading-website-drop-malware-that-hands-over-your-browser-to-attackers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "ValleyRAT: A Chinese APT's Rust Loader, a Cardiff University GovRoam Relay, and a Hong Kong C2 With a Gmail Abuse Contact",
+      "summary": "ValleyRAT, a malware family also tracked as Farfli, Winos, and PoisonMouse, targets Chinese-speaking users through trojanized software in a campaign analyzed from two MalwareBazaar samples. The first sample is a KCP-based C2 module whose command server is hosted on a Hong Kong IP with a personal Gmail abuse contact and open WinRM. The second is a Rust loader disguised as a Microsoft OneDrive component that performs sandbox checks, then decrypts an embedded ValleyRAT core DLL. That loader's C2 is a hostname on Cardiff University's GovRoam network, likely a compromised device, and its ports are now closed. Defenders are advised to block the live Hong Kong C2, monitor KCP traffic and the listed ports, and deploy the provided YARA rule.",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Winrm_tool",
+        "Winos",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Chinese",
+        "Hong kong"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 11,
+      "software": [
+        "Gmail",
+        "Microsoft OneDrive",
+        "VirtualBox",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/valleyrat-cardiff-university-govroam-rust-loader-hong-kong-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "How AI Changed Vishing: Case of PlugValley",
+      "summary": "AI-powered vishing has lowered the skill barrier for voice phishing, according to this SOCRadar analysis of PlugValley, a Vishing-as-a-Service platform. PlugValley bundles text-to-speech voices, caller ID spoofing, scripted call modes, voicemail detection, and real-time credential capture into a subscription product. Its core OTP Bot lets an operator with little social engineering skill direct calls that request one-time codes, card details, PINs, and dates of birth from a dashboard. The platform also offers a marketplace for bank logs and leads, an escrow system, and a free guide covering post-compromise steps. The report's main takeaway for individuals is that no legitimate service will ask for a one-time code, CVV, or PIN by phone. For organizations, it argues that defenses must also use autonomous, at-scale tooling to keep pace.",
+      "completeness": "Low",
+      "threats": [
+        "Plugvalley_tool",
+        "Otp_bot",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Spanish"
+      ],
+      "software": [
+        "Android"
+      ],
+      "functions": [
+        "AI-powered"
+      ],
+      "links": [
+        "https://socradar.io/blog/ai-changed-vishing-plugvalley/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "SHub Stealer v2.0: A Live C2 Serving 103 Wallet Extensions, 23 Desktop Wallets, and a Full AppleScript Source We Downloaded",
+      "summary": "SHub Stealer v2.0 is a macOS infostealer delivered through a two-stage chain, where a shell loader pipes an AppleScript payload to osascript for fileless execution. The loader exits if a Russian keyboard layout is detected, a geofencing technique common among Russian-speaking operators. The payload targets 14 Chromium browsers and Firefox, 103 browser wallet extensions, and 23 desktop wallet applications, and it replaces app.asar in Exodus, Atomic Wallet, Ledger Live, and Trezor Suite with trojanized versions. It also harvests macOS Keychain, iCloud, Safari, Apple Notes, Telegram, and shell history data, using a fake System Preferences password dialog to capture a validated password. Defenders should monitor for curl or wget piped to osascript, repeated dscl authentication calls, and unexpected changes to Electron wallet app.asar files.",
+      "completeness": "Medium",
+      "threats": [
+        "Shubstealer",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Ledger Live",
+        "Firefox",
+        "Telegram",
+        "omium + Fi",
+        "efox",
+        "egram / sh",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "trezor",
+        "metamask",
+        "coinbase",
+        "rabby",
+        "keplr",
+        "tronlink",
+        "solflare",
+        "sui_wallet",
+        "xdefi",
+        "have more..."
+      ],
+      "crypto": [
+        "tezos",
+        "monero",
+        "dogecoin",
+        "binance",
+        "cardano",
+        "litecoin"
+      ],
+      "algorithms": [
+        "gzip",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Repeated"
+      ],
+      "languages": [
+        "applescript",
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/shub-stealer-v2-terafolt-live-c2-103-wallets-applescript-source"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "CTI Report: ShadowByt3$ Ransomware Group",
+      "completeness": "High",
+      "threats": [
+        "Lockbit",
+        "Blackcat",
+        "Qilin_ransomware",
+        "Polymorphism_technique",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Prince_ransomware"
+      ],
+      "geo": [
+        "Argentina",
+        "Georgia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Telegram",
+        "ChatGPT",
+        "Linux",
+        "ProtonMail",
+        "Unix"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "monero"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "chacha20",
+        "rsa-2048",
+        "aes",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "SystemParametersInfo"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://barricadecyber.com/cti-report-shadowbyt3-ransomware-group/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "CLICKSMOKE Update - A Second Tenant, an MSI Delivery Variant, and a Russian 'Test Build' on the Still-Live Dakatawebstick Platform",
+      "summary": "CLICKSMOKE is a multi-tenant malware-as-a-service platform whose dakatawebstick[.]com panel remained live nineteen days after the original report, while its two known build IDs now return \"Build not found.\" A second tenant, operating under the alias \"aero,\" was identified through a JWT that names a Windows MSI dropper build with a Russian-language build note. The MSI installs Scoop and Deno, which fetch a stage-2 loader and then a browser-credential infostealer targeting 20+ browsers. The JWT schema is identical across tenants, indicating a shared backend that sells build slots to customers. The report's takeaway for defenders is that operators rotate builds cheaply while keeping infrastructure, so hunting should focus on Deno execution outside developer use, Scoop bootstraps launched from msiexec, and MSI files built with msitools.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Russian"
+      ],
+      "software": [
+        "Linux",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Set-ExecutionPolicy"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/clicksmoke-update-dakatawebstick-aero-msi-tenant-build-rotation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "CTI Report: Krybit Ransomware — Panel Breach by 0APT",
+      "completeness": "Low",
+      "threats": [
+        "0apt_syndicate",
+        "Fsociety",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Turkey",
+        "Botswana",
+        "Mexico",
+        "Romania",
+        "France",
+        "New zealand",
+        "Austria",
+        "Thailand",
+        "Japan",
+        "Hong kong",
+        "Brazil",
+        "Portugal",
+        "Spain",
+        "Canada"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "nginx",
+        "MariaDB",
+        "phpMyAdmin",
+        "ESXi",
+        "Active Directory",
+        "Linux",
+        "Android",
+        "roid inte",
+        "systemd",
+        "php-fpm",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "swift",
+        "php"
+      ],
+      "links": [
+        "https://barricadecyber.com/threat-intelligence-report-krybit-ransomware-panel-breach-by-0apt/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Three lessons from DarkSword: inside a government-grade iPhone exploit kit",
+      "summary": "DarkSword is a government-grade iOS exploit kit, first disclosed by Google Threat Intelligence in March 2026, whose full source code was later leaked and analyzed by Jamf Threat Labs. The kit can achieve one-click remote code execution with a sandbox escape on iOS 18.4 through 18.6.2, putting users who have not updated since September 15, 2025 at risk. Its source code is a development version with no obfuscation or encryption and contains leftover debug messages, showing that operators lacked basic operational security. The data collection configuration targets cryptocurrency applications, including a Telegram client popular among Russian-speaking users, which Jamf says contradicts law enforcement-only use. Supporting 156 firmware versions across 28 models requires substantial, ongoing engineering, and the code shows signs of rushed development and attempts to improve reliability. Defenders should keep devices updated regardless of user role, since the threat is no longer limited to high-profile targets.",
+      "completeness": "Low",
+      "threats": [
+        "Darksword_exploitkit"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russian"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "wallets": [
+        "coinbase",
+        "trezor",
+        "metamask",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "functions": [
+        "start",
+        "mpd_kernel_base"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/darksword-ios-exploit-kit-three-lessons-mobile-security/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Harvester: APT Group Expands Toolset With New GoGra Linux Backdoor",
+      "summary": "The Harvester APT group has developed a Linux version of its GoGra backdoor, linked by Symantec and Carbon Black researchers to a previously known Windows variant based on shared code and matching typos. The malware uses Microsoft Graph API and Outlook mailboxes as a covert command-and-control channel, which helps it evade traditional perimeter defenses. Operators disguise malicious ELF files as PDF documents using localized decoy lures, such as a file referencing an Indian food delivery service. Commands arrive in emails with the subject \"Input,\" and results return via \"Output\" emails, with the original tasking message deleted afterward. No victims were observed, but submissions suggest India and Afghanistan were primary targets, consistent with Harvester's historical focus on South Asia.",
+      "completeness": "Low",
+      "threats": [
+        "Gogra",
+        "Graphon"
+      ],
+      "geo": [
+        "Indian",
+        "India",
+        "Afghanistan",
+        "Asia"
+      ],
+      "software": [
+        "Linux",
+        "Graph API",
+        "Outlook",
+        "systemd",
+        "Azure AD"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "aes",
+        "exhibit",
+        "zip"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/harvester-new-linux-backdoor-gogra"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "GPT-Proxy Backdoor in npm and PyPI turns Servers into Chinese LLM Relays",
+      "summary": "Two malicious packages, kube-health-tools on npm and kube-node-health on PyPI, posed as Kubernetes tooling but silently installed a remote access trojan with an embedded OpenAI-compatible LLM proxy. The droppers, native binaries, fetched a Go-based stage 2 payload and launched it with an encrypted configuration that set up a C2 server and reverse tunnels to the proxy, SSH, and Vault. The implant offered a SOCKS5 proxy, reverse shell, SFTP access, and an LLM gateway that routed requests to Chinese aggregator routers, reflecting a gray-market pattern of relaying cheap LLM access. The droppers deleted their own package directories and temp files, and the implant renamed its process to node-health-check and scrubbed its environment variables. Defenders should treat any developer whose AI tools route through a compromised host as exposed to credential and context theft.",
+      "completeness": "Medium",
+      "threats": [
+        "Ngrok_tool",
+        "Chisel_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Kubernetes",
+        "Node.js",
+        "HashiCorp Vault",
+        "openai",
+        "anthropic",
+        "TinyProxy",
+        "HuggingFace",
+        "ChatGPT",
+        "Claude",
+        "curl",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "require"
+      ],
+      "languages": [
+        "python",
+        "cython"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/gpt-proxy-backdoor-npm-pypi-chinese-llm-relay",
+        "https://github.com/jpillora/chisel",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Mustang Panda Strikes India and South Korea with Updated LOTUSLITE Backdoor in Espionage Campaign",
+      "summary": "China-linked Mustang Panda is running an espionage campaign against India's banking sector and South Korean policy circles, according to Acronis Threat Research Unit. The group deploys an updated LOTUSLITE backdoor (v1.1) that abuses legitimate Microsoft-signed executables through DLL sideloading to gain persistent access. In India, victims received a malicious CHM file themed around HDFC Bank that displayed fake banking pop-ups while the backdoor installed silently. In South Korea, the group impersonated a former U.S. National Security Council official using a fake Gmail account and sent Google Drive links containing fake invitation letters. Attribution to Mustang Panda is assessed with moderate confidence, based on shared code lineage, overlapping dynamic DNS infrastructure and OPSEC mistakes. Defenders should be wary of unexpected emails and files, even when they appear official.",
+      "completeness": "Low",
+      "threats": [
+        "Lotuslite",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Venezuela",
+        "India",
+        "Korean",
+        "Asian",
+        "China",
+        "Korea"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/mustang-panda-strikes-india-and-south-korea-with-updated-lotuslite-backdoor-in-espionage-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Cloned, Loaded, and Stolen: How 109 Fake GitHub Repositories Delivered SmartLoader and StealC",
+      "completeness": "Medium",
+      "threats": [
+        "Smartloader",
+        "Stealc",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "United kingdom"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "GetConsoleWindow"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://hexastrike.com/resources/blog/threat-intelligence/cloned-loaded-and-stolen-how-109-fake-github-repositories-delivered-smartloader-and-stealc/",
+        "https://github.com/grimlockx/GitHubSmartLoader/blob/main/README.md#cloned-loaded-and-stolen-how-109-fake-github-repositories-delivered-smartloader-and-stealc",
+        "https://github.com/grimlockx/GitHubSmartLoader/blob/main/README.md#executive-summary"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Tropic Trooper Pivots to AdaptixC2 and Custom Beacon Listener",
+      "summary": "Zscaler ThreatLabz attributes a campaign with high confidence to Tropic Trooper, a China-linked APT, based on its use of the TOSHIS loader and similar TTPs. The attack uses military-themed document lures and a trojanized SumatraPDF binary that deploys an AdaptixC2 Beacon agent in the background. The actor built a custom AdaptixC2 listener that uses GitHub as its command-and-control channel. The threat actor then deployed VS Code tunnels for remote access to machines deemed interesting. The campaign targeted Chinese-speaking individuals in Taiwan, South Korea, and Japan.",
+      "completeness": "High",
+      "threats": [
+        "Adaptixc2_tool",
+        "Toshis",
+        "Cobalt_strike_tool",
+        "Entryshell",
+        "Mythic_c2_tool",
+        "Merlin_tool",
+        "Antidebugging_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "Australia",
+        "Japan",
+        "American",
+        "Korea",
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 27,
+      "software": [
+        "SumatraPDF",
+        "Visual Studio",
+        "curl",
+        "VSCode",
+        "738c8ea0b4 b,"
+      ],
+      "algorithms": [
+        "aes-128",
+        "base64",
+        "md5",
+        "aes",
+        "zip",
+        "cbc",
+        "rc4"
+      ],
+      "functions": [
+        "InjectedCode"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/tropic-trooper-pivots-adaptixc2-and-custom-beacon-listener",
+        "https://docs.github.com/en/rest/repos/contents?apiVersion=2026-03-10"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "CVE-2026-33626: How attackers exploited LMDeploy LLM Inference Engines in 12 hours",
+      "summary": "CVE-2026-33626 is a server-side request forgery (SSRF) vulnerability in LMDeploy, an inference toolkit for vision-language and text LLMs, published on GitHub on April 21, 2026. Sysdig observed the first exploitation attempt against its honeypot 12 hours and 31 minutes after publication, with no public proof-of-concept available at the time. The attacker used the vision-language image loader as a generic HTTP primitive during an eight-minute session to probe AWS instance metadata, Redis, MySQL, an administrative interface, and an out-of-band DNS endpoint. The vulnerable code lacked hostname resolution checks and private-network blocking, and the advisory text alone was sufficient to build a working exploit. Sysdig stresses that AI-serving nodes often hold broad cloud IAM roles, making this SSRF especially valuable to attackers. Defenders should upgrade to v0.12.3 or later, enforce IMDSv2, restrict egress, and enable runtime detection for metadata access.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Redis",
+        "MySQL",
+        "OpenAI",
+        "Ollama",
+        "Docker"
+      ],
+      "functions": [
+        "_is_safe_url"
+      ],
+      "links": [
+        "https://webflow.sysdig.com/blog/cve-2026-33626-how-attackers-exploited-lmdeploy-llm-inference-engines-in-12-hours",
+        "https://github.com/InternLM/lmdeploy",
+        "https://github.com/advisories/GHSA-6w67-hwm5-92mq"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-22",
+      "title": "Malicious Checkmarx Artifacts Found in Official KICS Docker Repository and Code Extensions",
+      "summary": "Threat actor TeamPCP compromised official Checkmarx distribution channels, including malicious KICS Docker Hub image tags (alpine, latest, v2.1.20, v2.1.21) that were modified to collect and exfiltrate scan reports containing potentially sensitive infrastructure-as-code data. Related Checkmarx VS Code and Open VSX extensions (versions 1.17.0 and 1.19.0) downloaded and ran a hidden payload, mcpAddon.js, via Bun from a backdated commit in the official GitHub repository. That payload stole GitHub, AWS, Azure, Google Cloud, npm, SSH, and environment credentials and exfiltrated them to an external endpoint and to public GitHub staging repositories. It also used stolen GitHub tokens to inject workflows that dump CI/CD secrets and used stolen npm credentials to republish packages. Defenders should rotate exposed credentials, review GitHub and npm for unauthorized activity, and remove affected artifacts.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Open VSX",
+        "alpine",
+        "Kubernetes",
+        "debian",
+        "OpenVSX",
+        "Trivy",
+        "LiteLLM",
+        "VSCode",
+        "Claude",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "zip",
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "Get-AzAccessToken",
+        "Write-Output"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "golang",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/checkmarx-supply-chain-compromise",
+        "https://github.com/Checkmarx/ast-vscode-extension/commit/68ed490b575a57ef51a419f43b2b087e8ce16a46"
+      ]
+    }
+  }
+]

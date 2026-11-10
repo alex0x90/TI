@@ -1,0 +1,422 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "ClickFix on macOS: how Apple users are being scammed",
+      "summary": "ClickFix is a social engineering technique that tricks users into pasting and running a malicious command, usually under the guise of a fake CAPTCHA or verification check. Historically aimed at Windows users, it has recently been used in a campaign targeting macOS users. The victim is told to open Terminal and paste the command, which downloads a disk image, mounts it hidden, and launches it. The payload is the AMOS (Atomic macOS Stealer) infostealer, which uses a fake system password prompt to gain extra privileges. It steals browser data, crypto wallet files and apps, messaging app data, and Apple Keychain passwords, and it can replace Ledger Wallet and Trezor Suite apps with malicious fakes. Defenders should never run commands because a website requests it, avoid entering administrator passwords without understanding the request, and rely on OS and security warnings, since macOS did not flag the malicious code in testing.",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Filefix_technique",
+        "Consentfix_technique",
+        "Amos_stealer"
+      ],
+      "software": [
+        "macOS",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Vivaldi",
+        "CocCoc",
+        "SeaMonkey",
+        "Tor Browser",
+        "Waterfox",
+        "Telegram",
+        "Discord",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "atomicwallet",
+        "wassabi",
+        "bitcoincore",
+        "litecoincore",
+        "dashcore",
+        "guarda_wallet",
+        "tonkeeper",
+        "ledger_wallet",
+        "trezor",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.kaspersky.com/blog/macos-clickfix-attack/56187/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "BrainDrain: SecondBrain's Prompt Optimizer Collects Your AI Chats without ever using the extension",
+      "summary": "SecondBrain's Prompt Optimizer, a Chrome extension with about 100,000 users, silently copies prompts and AI replies from nine AI services and uploads them to the vendor's servers. Capture begins on installation and requires no interaction beyond normal use of the AI sites. The extension forces its consent and collection settings on every background worker start, and it overrides storage reads so users cannot turn collection off. Uploads are gzipped and encrypted, but the encryption key is issued by SecondBrain's server, so SecondBrain can read all of the data. The Chrome Web Store listing and privacy policy both state that no data is collected, contradicting this behaviour. Defenders should block the extension ID through browser policy and watch for uploads to the SecondBrain ingest host, with particular attention to enterprise Microsoft 365 Copilot users.",
+      "completeness": "Low",
+      "software": [
+        "SecondBrain",
+        "Chrome",
+        "ChatGPT",
+        "Claude",
+        "DeepSeek",
+        "SignalR"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-gcm"
+      ],
+      "functions": [
+        "deactivateLDP"
+      ],
+      "links": [
+        "https://malext.io/reports/BrainDrain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "OctLurk and SilkLurk: newly identified tailored backdoors in cyber-espionage campaign in Central Asia",
+      "summary": "OctLurk and SilkLurk are two new backdoors observed since January 2025 in attacks against government organizations, mainly in Central Asia, including healthcare, foreign affairs, and law-enforcement sectors. Both loaders are customized per victim, using machine-specific data to decrypt their payloads, and the backdoors are heavily obfuscated. The backdoors load plugins for command shells, file management, keystroke and mouse control, and other tasks. Researchers assess with medium confidence that one Chinese-speaking actor operates both, though no known group has been attributed. The attackers also deployed LurkProxy, a traffic-proxy implant, along with credential theft tools, Fscan, and PlugX. Defenders should note the actor's reliance on in-memory operation and well-known remote access tools for redundant persistence.",
+      "completeness": "High",
+      "threats": [
+        "Octlurk",
+        "Silklurk",
+        "Credential_dumping_technique",
+        "Lurkproxy",
+        "Credential_harvesting_technique",
+        "Impacket_tool",
+        "Anydesk_tool",
+        "Pandora",
+        "Fscan_tool",
+        "Plugx_rat",
+        "Mystrodx",
+        "Secretsdump_tool",
+        "Ehorus_tool"
+      ],
+      "geo": [
+        "Kazakhstan",
+        "Chinese",
+        "Kyrgyzstan",
+        "Asia",
+        "Uzbekistan",
+        "Tajikistan",
+        "Afghanistan",
+        "Syrian arab republic"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WinRAR",
+        "Windows Registry",
+        "Microsoft Defender",
+        "Windows Defender",
+        "Windows PowerShell",
+        "Active Directory",
+        "Chrome",
+        "Firefox",
+        "Google Chrome",
+        "Mozilla Firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "deflate",
+        "crc-32",
+        "zip",
+        "double-xor",
+        "xor",
+        "7zip"
+      ],
+      "functions": [
+        "RegisterService",
+        "CreateProcessAsUserW",
+        "Get-NetTCPConnection",
+        "TaskName"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/octlurk-silklurk-backdoors-central-asia/120840/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "Operation Talked: A Russia-Linked Cyber Espionage Campaign Targeting Ukraine’s Defense Industry",
+      "summary": "OPERATION TALKED is an ongoing Russia-nexus espionage campaign, attributed by SOCRadar with 85% confidence, that was exposed after the actor left its C2 server as an unauthenticated open directory. The campaign combines mass exploitation of over 1.1 million internet-facing targets, led by Sophos XG CVE-2022-1040, with a focused effort against Ukrainian defense and aerospace contractors. Nine such organizations were breached, with Git repositories stolen in each case. At publication, the actor still held an interactive shell on a Ukrainian railway logistics operator. Defenders are advised to prioritize patching the listed CVEs and to rotate FortiGate and domain credentials.",
+      "completeness": "High",
+      "threats": [
+        "Sliver_c2_tool",
+        "Xray_tool",
+        "Empire_loader",
+        "Godzilla_webshell",
+        "Suo5_tool",
+        "Regeorg_tool",
+        "Neo-regeorg_tool",
+        "Tunneler",
+        "Masscan_tool",
+        "Fscan_tool",
+        "Nuclei_tool",
+        "Mimikatz_tool",
+        "Donpapi_tool",
+        "Passthehash_technique",
+        "Netexec_tool",
+        "Winrm_tool",
+        "Evil-winrm_tool",
+        "Git-dumper_tool",
+        "Chisel_tool",
+        "Wp2shell_vuln"
+      ],
+      "geo": [
+        "Russia",
+        "Ireland",
+        "Slovenia",
+        "Belarus",
+        "Russian",
+        "Romania",
+        "Ukrainian",
+        "Poland",
+        "Ukraine",
+        "Latvia",
+        "Moldova",
+        "Switzerland",
+        "Moscow",
+        "South korea"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 14,
+      "software": [
+        "SimpleHTTP",
+        "WireGuard",
+        "RabbitMQ",
+        "OpenSSH",
+        "Telegram",
+        "Linux",
+        "Ubuntu",
+        "FortiGate",
+        "Debian",
+        "Laravel",
+        "have more..."
+      ],
+      "algorithms": [
+        "ecc",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/operation-talked-russia-ukraine-defense-industry/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "Threat Actor Profile: SideWinder APT - Barricade Cyber Solutions",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Stealerbot",
+        "Revenge_rat",
+        "Warhawk",
+        "Njrat",
+        "Dll_sideloading_technique",
+        "Uac_bypass_technique",
+        "Process_injection_technique",
+        "Ghostnet",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "India",
+        "Nepal",
+        "China",
+        "Chinese",
+        "Pakistani",
+        "United arab emirates",
+        "Middle east",
+        "Asia",
+        "Afghanistan",
+        "Morocco",
+        "Djibouti",
+        "Saudi arabia",
+        "Asian",
+        "Pakistan",
+        "Sri lanka",
+        "Arab emirates",
+        "Bangladesh",
+        "Africa",
+        "Maldives",
+        "Egypt",
+        "Myanmar",
+        "Indian",
+        "France",
+        "Jordan",
+        "Indonesia",
+        "Turkey"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Office",
+        "Chrome",
+        "Windows authentication",
+        "WordPad",
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "SetWindowsHookEx"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://barricadecyber.com/threat-actor-profile-sidewinder-apt/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "Vishing Call to a Shared Com Ecosystem: Full Methodology and Findings",
+      "summary": "A vishing call to an employee at a Bridewell customer used a fabricated IT ticket pretext to direct the target to a fraudulent Okta-branded login page, which security controls blocked before any credentials were entered. Bridewell's pivoting from the incident domain uncovered a shared phishing kit and over 100 operational domains across four naming conventions, which the kit's anti-sandbox logic and multi-identity-provider design make possible. The report assesses with moderate confidence that ShinyHunters is the most likely attributable actor, based on infrastructure and tradecraft rather than a single-actor claim. Three victims tied to these domains, Abbott, Ralph Lauren and RingCentral, appeared on ShinyHunters extortion sites, and Abbott stated it was compromised through vishing and an Entra SSO account. Victims were listed four to twenty-eight days after domain registration activity. Defenders should require a second verification channel before MFA resets, treat missing tickets as escalation triggers, and monitor for lookalike helpdesk-style domains.",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Aitm_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Pacific"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "Okta",
+        "1Password",
+        "ServiceNow",
+        "Microsoft Entra",
+        "Salesforce"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.bridewell.com/insights/blogs/detail/vishing-call-to-a-shared-com-ecosystem",
+        "https://github.com/Bridewell-CTI/IOCs/blob/main/2026/07/From%20a%20Fake%20IT%20Ticket%20to%20Scattered%20Spider%3A%20Inside%20a%20Com-Affiliated%20Vishing%20Campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "New Tool Toy Ghouls: GenieLocker ransomware",
+      "summary": "GenieLocker is a new ransomware family, active since March 2026, attributed to the Toy Ghouls group and seen mainly in attacks on Russian industrial organizations. The group, which is financially motivated, previously relied on third-party ransomware such as RedAlert, LockBit and Babuk, and GenieLocker appears to be its own in-house tool. In one March 2026 incident, attackers entered via OpenVPN using valid stolen credentials from a partner network, then used Mimikatz, RDP, SSH and PsExec to spread. The Windows variant encrypts files and includes anti-debugging checks and a \"secret argument\" meant to block sandbox execution, while the Linux and ESXi variant stops virtual machines and encrypts their disks. The group did not exfiltrate data or use double extortion, and the ransom notes are added manually during attacks to evade detection.",
+      "completeness": "High",
+      "threats": [
+        "Genielocker",
+        "Redalert",
+        "Lockbit",
+        "Babuk",
+        "Mimikatz_tool",
+        "Credential_dumping_technique",
+        "Paexec_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXi",
+        "OpenSSH",
+        "SoftPerfect Network Scanner",
+        "KeePassXC",
+        "KeePass",
+        "PsExec",
+        "tor browser",
+        "firefox",
+        "onenote",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "crc-32",
+        "blake2b-256",
+        "md5"
+      ],
+      "functions": [
+        "fork"
+      ],
+      "links": [
+        "https://securelist.ru/genielocker-ransomware-for-windows-linux-and-esxi/116468/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "A Chill in the Air: Cl0p Targets Windchill, Another Enterprise Software Product",
+      "summary": "Cl0p is linked to exploitation of CVE-2026-12569, a critical remote code execution flaw in PTC's Windchill PLM software and its FlexPLM add-on, disclosed June 17, 2026 and reportedly exploited as a zero-day in early June. Organizations began receiving extortion emails in July claiming confidential information had been stolen, and the flaw was added to CISA's Known Exploited Vulnerabilities catalog on June 25. Unlike Cl0p's usual financial or HR data theft, the stolen data is likely engineering and manufacturing material such as product designs, bills of materials, and supplier data, affecting defense, energy, electronics, and medical technology firms. Censys observed fewer than 100 exposed Windchill instances, mostly in the U.S., showing that a small internet footprint still makes a valuable target. Defenders should patch immediately, follow PTC's advisory, and consider removing Windchill instances from the public internet.",
+      "completeness": "Low",
+      "threats": [
+        "Clop",
+        "Platypus"
+      ],
+      "geo": [
+        "Australia",
+        "Russia",
+        "Hong kong",
+        "Bulgaria",
+        "Canada"
+      ],
+      "software": [
+        "Windchill",
+        "FlexPLM",
+        "Roundcube",
+        "MOVEit",
+        "GoAnywhere",
+        "MySQL"
+      ],
+      "links": [
+        "https://censys.com/blog/cl0p-targets-windchill/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-30",
+      "title": "Adform compromised to serve crypto stealer via supply chain attack",
+      "summary": "Adform, an advertising company used by about 14,000 companies and holding roughly 30% of the demand-side category, was compromised so that its JavaScript embed served a cryptocurrency stealer. Websites that embed the script would pass the malware to their visitors' devices, creating a supply chain attack. The malicious code monitors the clipboard every three seconds and replaces copied Bitcoin, Ethereum, and TRX wallet addresses with attacker-controlled ones, even when users notice and recopy the address. The script also reports each visitor's IP address, referring website, and URL path to an attacker server. The file had a clean reputation on VirusTotal, and the malicious code appeared to be disappearing shortly after discovery, so defenders should check whether they load Adform scripts.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://doublepulsar.com/adform-compromised-to-serve-crypto-stealer-via-supply-chain-attack-2f1ec024f33e?gi=3a9a43d442ae",
+        "https://pastebin.com/mc7psaNF"
+      ]
+    }
+  }
+]

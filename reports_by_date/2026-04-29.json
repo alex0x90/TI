@@ -143,5 +143,700 @@
         "https://www.esentire.com/security-advisories/increase-in-email-bombing-and-it-impersonation-campaigns"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "GachiLoader adopts AI skill lure",
+      "summary": "GachiLoader, a loader that delivers the Rhadamanthys infostealer, is using fake OpenClaw AI agent skills as a social engineering lure, with the skill itself containing no malicious code. The skill's README, a copy of a blog post about a Polymarket weather betting bot, tricks victims into downloading and running a Windows binary from a throwaway GitHub account. The campaign uses two delivery tracks, Node.js Single Executable Applications and an Electron dropper, that both lead to the same GachiLoader and Rhadamanthys payload. The loader retrieves its C2 address from a Polygon blockchain smart contract, making the infrastructure harder to take down. The Electron dropper performs anti-VM and sandbox checks, requests administrator rights, and adds a Windows Defender exclusion before running the payload. Defenders are advised that AI skills are a new initial access vector that existing security tools are not yet built to scrutinize.",
+      "completeness": "Medium",
+      "threats": [
+        "Gachiloader",
+        "Rhadamanthys",
+        "Nsis_dropper",
+        "Themida_tool"
+      ],
+      "software": [
+        "OpenClaw",
+        "Node.js",
+        "Electron",
+        "Telegram",
+        "Outlook",
+        "Windows Defender",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-cbc",
+        "zip"
+      ],
+      "functions": [
+        "spawn"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.threatdown.com/blog/gachiloader-adopts-ai-skill-lure-from-fake-openclaw-readme-to-rhadamanthys-infostealer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Handala Hack Targets U.S. Troops with Doxxing Threats in Bahrain",
+      "summary": "Iran-linked group Handala, also tracked as Void Manticore and attributed to Iran's Ministry of Intelligence (MOIS), sent WhatsApp threats to U.S. service members in Bahrain claiming their identities were known and that they were under missile and drone threat. The group then claimed to have doxxed personal details of 2,379 U.S. Marines in the Persian Gulf. This follows a 2026 escalation that included a claimed wipe of more than 200,000 Stryker systems through abuse of Microsoft Intune admin access. Handala also breached FBI Director Kash Patel's personal Gmail, which the FBI said contained only historical, non-government data. The group's toolkit mixes custom wiper malware with social engineering, and it uses Telegram for command and control. Defenders should treat the personal-data claims as credible and protect cloud admin credentials and personal devices of personnel.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Process_hollowing_technique",
+        "Bibi-wiper",
+        "Hatef",
+        "Hamsa",
+        "Coolwipe",
+        "Chillwipe",
+        "Handala_wiper"
+      ],
+      "geo": [
+        "Iranian",
+        "Iran",
+        "Palestinian",
+        "Bahraini",
+        "Israel",
+        "Bahrain",
+        "Israeli"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "audacity",
+        "Gmail",
+        "AutoHotKey",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://socradar.io/blog/handala-hack-us-doxxing-troop-bahrain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Operation Road Trap: Fake toll and parking texts are spreading worldwide",
+      "summary": "Bitdefender Labs tracked a global smishing campaign from December 2025 to April 2026, with over 79,000 fraudulent texts across 40 campaigns in 12 countries. The messages impersonate DMVs, toll operators, parking authorities, and government agencies, claiming unpaid fines and threatening penalties within short deadlines. Victims are sent to fake payment portals that collect card and banking details, and in some regions such as India, they are prompted to install Android trojans. The malware persists through a foreground service, intercepts SMS messages for financial keywords, and is controlled via Telegram and Firebase. Bitdefender has not attributed the campaigns to a specific threat actor, and defenders should treat unexpected toll or fine texts with suspicion.",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "New zealand",
+        "Colombia",
+        "California",
+        "French",
+        "Brazilian",
+        "Spain",
+        "Ireland",
+        "Australia",
+        "India",
+        "Canada",
+        "Portuguese",
+        "Columbia",
+        "Ontario",
+        "France",
+        "Luxembourg",
+        "United kingdom",
+        "Spanish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "Download"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/operation-road-trap"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Darktrace Malware Analysis: Jenkins Honeypot Reveals Emerging Botnet Targeting Online Games",
+      "summary": "A threat actor used Darktrace's Jenkins honeypot, which had a deliberately weak password, to gain remote code execution via the scriptText endpoint and deploy a DDoS botnet on March 18, 2026. The malicious Groovy script downloaded payloads for both Windows and Linux, added a firewall rule for C2 traffic, and used the same IP for delivery and command and control. The Linux bot disguised itself as a kernel process, ignored termination signals, and hid its output to resist detection. Its commands support UDP, TCP, HTTP, and game-specific floods, including a Valve Source Engine query attack, and Darktrace found the botnet was intended to target video game servers. Defenders should secure internet-facing Jenkins instances and ensure game servers have appropriate DDoS mitigations.",
+      "completeness": "Medium",
+      "geo": [
+        "Vietnamese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Jenkins",
+        "Linux"
+      ],
+      "functions": [
+        "such",
+        "connect",
+        "send"
+      ],
+      "languages": [
+        "java",
+        "groovy"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/darktrace-malware-analysis-jenkins-honeypot-reveals-emerging-botnet-targeting-online-games"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "0APT vs. KryBit Ransomware Actors List Opposing Operators as Victims",
+      "summary": "0APT, a recently emerged Ransomware-as-a-Service group, leaked operational and infrastructure data from fellow operators KryBit, Everest and RansomHouse in April 2026. KryBit retaliated by breaching 0APT's infrastructure, defacing its leak site and taking over its operations. The leaks showed that 0APT's January 2026 claim of 190+ victims was fabricated, leaving it a nominal threat. KryBit, a newer RaaS with about 20 potential victims, has functional capabilities but no confirmed ransom payments. Halcyon advises defenders to ignore unverified leak site claims, but to treat KryBit and Everest as real threats, with emphasis on data exfiltration detection and resilient, isolated backups.",
+      "completeness": "Low",
+      "threats": [
+        "0apt_syndicate",
+        "Everest_ransomware",
+        "Ransomhouse"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "ESXI",
+        "Android"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.halcyon.ai/ransomware-research-reports/0apt-vs-krybit-ransomware-actors-list-opposing-operators-as-victims#indicators-of-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Mini Shai-Hulud Targets SAP npm Packages With a Bun-Based Secret Stealer",
+      "summary": "A new npm supply-chain compromise, dubbed Mini Shai-Hulud, targets SAP developer packages including @cap-js/sqlite v2.2.2, @cap-js/postgres v2.2.2, @cap-js/db-service v2.10.1, and mbt@1.2.48. The malicious packages add a preinstall hook that runs setup.mjs, which downloads the Bun runtime to execute a large obfuscated credential stealer named execution.js. The payload harvests GitHub, npm, cloud (AWS, Azure, GCP, Kubernetes), and GitHub Actions secrets, and it uses GitHub commits as a token dead-drop and public repositories for exfiltration. It also attempts propagation by modifying release tarballs and pushing files into repositories. Researchers suspect an npm token exposed to CircleCI pull request builds as the initial entry point. Defenders should search for the affected versions and artifacts and rotate all secrets if any affected package was installed.",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Claude"
+      ],
+      "wallets": [
+        "electrum"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256-gcm",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/mini-shai-hulud-has-appeared",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Atlas Lion: Tactics, History & Defenses",
+      "summary": "Atlas Lion, also tracked as Storm-0539 and THIRSTY CAMELS, is a financially motivated threat actor active since at least 2024. It obtains credentials through smishing and phishing campaign that impersonate internal IT or helpdesk teams, capturing valid MFA codes or session cookies to authenticate in real time. Once inside Azure and M365 environments, the group registers its own devices as trusted assets and reviews internal documentation and SharePoint to understand gift card issuance and fraud controls. It then issues gift cards just below approval limits and sells the codes at a discount, reportedly reaching up to $100,000 a day in fraudulent cards. The targets are retail and hospitality organizations in North America. The report emphasizes phishing-resistant MFA, Conditional Access policies that require managed devices, and auditing of fraud transactions as key defenses.",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Smishing_technique",
+        "Typosquatting_technique",
+        "Gophish_tool"
+      ],
+      "geo": [
+        "Morocco",
+        "America"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 16,
+      "software": [
+        "ServiceNow",
+        "cPanel",
+        "WordPress",
+        "Salesforce",
+        "Telegram",
+        "Microsoft Entra"
+      ],
+      "links": [
+        "https://www.invictus-ir.com/news/atlas-lion-tactics-history-defenses",
+        "https://github.com/invictus-ir/IOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "From Pirated Software to Full Access to FIFA: Tracing the 2026 World Cup Infostealer Pipeline",
+      "summary": "Flare identified nearly 130,000 infostealer logs containing FIFA-related credentials over one year, including over 2,500 exposed email/password pairs on fifa.com and fifa.org. The report assesses this exposure as collateral damage from broad, opportunistic infostealer infections rather than a campaign targeting FIFA. One traced infection began with a piracy search for free PDF software and passed through disposable .cfd redirect domains to a fake Google Drive-style download page. The downloaded ZIP used DLL side-loading of a legitimate Steam binary to load a HijackLoader (Rugmi) infection, with the final payload most likely Lumma Stealer. Flare warns that compromised staff, partner, or vendor credentials could enable access to internal systems and ticketing backends ahead of the World Cup.",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Lumma_stealer",
+        "Stealc",
+        "Redline_stealer",
+        "Dll_sideloading_technique",
+        "Hijackloader",
+        "Rugmi",
+        "Dllsearchorder_hijacking_technique",
+        "Clickfix_technique",
+        "Supply_chain_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Canada",
+        "Mexico"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "Steam",
+        "Telegram",
+        "WhatsApp",
+        "Discord",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "GetProcAddress-by-hash"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/2026-world-cup-infostealer-pipeline"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Phoenix Rising: Exposing the PhaaS Kit Behind Global Mass Phishing Campaigns",
+      "summary": "The Phoenix System is a phishing-as-a-service (PhaaS) admin panel, identified by Group-IB as the successor to the defunct Mouse System, that powers smishing campaigns impersonating banks, telecom providers, and logistics firms. Its Reward Points and Failed Parcel Delivery campaigns share infrastructure and tactics, and more than 70 organizations have been targeted since January 2025. The kit offers geofencing, IP filtering, and real-time victim monitoring, and it allows operators to intervene live when victims reach OTP pages to bypass MFA. Attackers increasingly use possible BTS-based SMS injection to deliver messages that appear under trusted brand names. The kit is sold on a subscription basis, around $2,000 per year, through Telegram channels. Defenders should monitor for SMS-linked brand abuse, track new domains, and warn users never to enter payment details via SMS links.",
+      "completeness": "Medium",
+      "threats": [
+        "Phoenix_system_tool",
+        "Smishing_technique",
+        "Mouse_system_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Africa",
+        "Asia",
+        "Latam",
+        "Apac",
+        "Chinese"
+      ],
+      "software": [
+        "Telegram",
+        "Android"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/phoenix-phaas-kit-smishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Exposing VENOM: C-Suite Credential Theft Campaign Weaponizes Live Microsoft Authentication to Establish Persistent Access",
+      "summary": "The VENOM campaign, observed from November 2025 through March 2026, targets named C-suite executives and senior officers, with 60% of titled recipients holding a C-level, President, or Chairman title. Lures impersonate SharePoint document-sharing notifications and deliver a QR code built from Unicode block characters, moving the attack to personal mobile devices outside corporate protections. A verification gate filters out security tools before the target reaches a credential harvester that operates in either adversary-in-the-middle mode, relaying live Microsoft sign-ins including MFA, or Device Code mode, where Microsoft issues OAuth tokens to the attacker. Both modes can enroll an attacker-controlled authenticator or capture refresh tokens that survive a password reset. The operators used a previously undocumented phishing-as-a-service platform, VENOM, which appears closed-access and may be available to other threat actors. Defenders should revoke sessions and tokens, audit unexpected MFA registrations, and restrict Device Code flow where it is not needed.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Nmap_tool",
+        "Nikto_tool",
+        "Sqlmap_tool",
+        "Metasploit_tool",
+        "Nuclei_tool",
+        "Dirbuster_tool",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "Romania",
+        "London"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Microsoft Outlook",
+        "Android",
+        "Microsoft Office",
+        "Outlook",
+        "macOS",
+        "Microsoft Defender",
+        "cPanel",
+        "WordPress",
+        "selenium",
+        "have more..."
+      ],
+      "algorithms": [
+        "hmac",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "toLowerCase",
+        "detectAutomation",
+        "antiDebug",
+        "consoleDetection",
+        "blockRightClick",
+        "blockKeyboardShortcuts",
+        "honeypotCheck",
+        "setupMouseTracking",
+        "setupKeyboardTracking",
+        "setupTouchTracking",
+        "have more..."
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://files.abnormalsecurity.com/production/files/Exposing-VENOM.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "From a coffee-in-bed Google search to a StealC-linked campaign — the story behind nailproxy.space",
+      "summary": "Nineteen fake GitHub repositories across 17 accounts impersonated popular Python open-source projects, including the UNICORN Binance Suite, to lure developers. Each repository contained a Python dropper that contacted api.nailproxy.space, retrieved an encrypted blob, and launched a native Windows loader. The loader staged a DLL that used rundll32 and a Chrome launch to abuse Chrome App-Bound Encryption, with behavior the author assesses as consistent with StealC v2 at high confidence but not confirmed by code signature. Exfiltration went to separate infrastructure, while the fake repositories appear to be only one delivery channel. Defenders should treat any machine that ran these repositories as compromised, rotate credentials and wallets, and revoke tokens and sessions.",
+      "completeness": "Low",
+      "threats": [
+        "Stealc",
+        "Rhadamanthys"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "UNICORN",
+        "Chrome",
+        "e.exe --",
+        "Telegram",
+        "Discord"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "aes-gcm",
+        "salsa20",
+        "hmac",
+        "chacha20"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://blog.technopathy.club/from-a-coffee-in-bed-google-search-to-a-stealc-linked-campaign-the-story-behind-nailproxy-space",
+        "https://github.com/oliver-zehentleitner"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "A Mini Shai-Hulud has Appeared: Obfuscated Bun Runtime Payloads Hit SAP-Related npm Packages",
+      "summary": "A third wave of the Shai-Hulud npm worm compromised four SAP-related packages: mbt@1.2.48, @cap-js/sqlite@2.2.2, @cap-js/postgres@v2.2.2, and @cap-js/db-service@v2.10.1. Each package carries an identical preinstall hook that downloads the Bun runtime and runs an obfuscated credential stealer, which harvests npm, cloud, GitHub, and SSH secrets. The stealer exfiltrates encrypted data to public repositories created on victims' GitHub accounts and uses stolen npm tokens to publish infected versions of other packages. It also persists by committing files to repositories that abuse VSCode and Claude Code auto-run hooks. Developers and CI pipelines installing these SAP toolchain packages should rotate all exposed credentials and remove the malicious files.",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique",
+        "Plain-crypto-js_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "VSCode",
+        "Node.js",
+        "Linux",
+        "Alpine",
+        "TRAVIS",
+        "CIRCLECI",
+        "Dependabot",
+        "Kubernetes",
+        "helm",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "rsa-4096",
+        "aes-256-gcm",
+        "pbkdf2",
+        "aes-256",
+        "base64",
+        "gzip",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "isAlpineOrMusl",
+        "__decodeScrambled",
+        "220__decodeScrambled",
+        "require",
+        "eval",
+        "TextDecoder",
+        "F30",
+        "N30",
+        "jA0",
+        "UZh",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/a-mini-shai-hulud-has-appeared",
+        "https://github.com/cap-js/cds-dbs/issues/1588",
+        "https://github.com/SAP/cloud-mta-build-tool/issues/1224"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Snow Malware Suite Turns Microsoft Teams Into a Help Desk Trap",
+      "completeness": "Medium",
+      "threats": [
+        "Tunneler",
+        "Snowbelt",
+        "Snowglaze",
+        "Snowbasin",
+        "Email_bombing_technique",
+        "Credential_dumping_technique",
+        "Blackbasta",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "Microsoft Teams",
+        "Chromium",
+        "FTK Imager",
+        "Active Directory",
+        "LimeWire",
+        "AutoHotkey",
+        "Microsoft Edge",
+        "Google Chrome"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecsentinel.com/snow-malware-suite-turns-microsoft-teams-into-a-help-desk-trap/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Geo Likho Group continues to attack targets in Russia, focusing on the aviation and water transportation industries",
+      "summary": "Geo Likho is an APT group active since July 2024 that targets organizations in Russia and Belarus, with the aviation and shipping industries as its main focus. It relies on spear-phishing emails containing links to malicious VBE scripts, and it assigns a unique malware sample to each victim with the victim ID hardcoded. The infection chain runs through three stages: a VBE loader, a Delphi implant that steals files and system information, and a C++ component that adds broader file exfiltration and remote commands. The group's main goal is cyberespionage, and it maintains long-term access to compromised systems. Kaspersky estimates around 260 victims in Russia and about 20 in Belarus, with a few likely incidental infections elsewhere.",
+      "completeness": "Medium",
+      "threats": [
+        "Batavia",
+        "Uac_bypass_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian federation",
+        "Russia",
+        "Belarus",
+        "Hong kong",
+        "Russian",
+        "Germany",
+        "Serbia"
+      ],
+      "software": [
+        "LiteSpeed"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "zip",
+        "fnv-1a",
+        "base64"
+      ],
+      "functions": [
+        "Navigate"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://securelist.ru/tr/geo-likho-hits-russian-aviation/115306/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "Malicious npm Package Brand-Squats TanStack to Exfiltrate Environment Variables",
+      "summary": "A malicious npm package named tanstack (unscoped), brand-squatting the legitimate @tanstack/* organization, was published by maintainer sh20raj with versions 2.0.4 through 2.0.7 that run a postinstall script. The script collects .env, .env.local, and .env.production files (and .env.* variants in 2.0.6) from the install root, along with README.md or AGENTS.md in some versions, and POSTs them to an attacker-controlled endpoint hosted on Svix's ingest service. The versions were published within a 27-minute window and share the same exfiltration infrastructure, indicating a deliberate attack. TanStack's creator confirmed the maintainer is unaffiliated and that a trademark dispute was underway. Defenders should uninstall these versions, rotate any secrets in affected project directories, remove or deny-list the unscoped package, and monitor for outbound traffic to api.svix.com from developer and CI/CD systems.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "functions": [
+        "sendReadme"
+      ],
+      "links": [
+        "https://socket.dev/blog/tanstack-brandsquat-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "AccountDumpling Hunting Down the Google-Sent Phishing Wave Compromising 30,000+ Facebook Accounts",
+      "summary": "AccountDumpling is a Vietnamese-linked operation that abuses Google AppSheet's notification system to send authenticated phishing emails impersonating Meta, Facebook, and recruiters, so the messages pass SPF, DKIM, and DMARC checks. The campaign used Netlify, Vercel, and Google Drive-hosted pages to harvest credentials, 2FA codes, and government ID photos, with some kits enabling live operator control over victims. Stolen data was exfiltrated to Telegram bots, and researchers estimated about 30,000 victim records, with 68.6% of one bot's victims in the United States. Attribution to a named individual rests on Canva PDF metadata and shared code artifacts, while one cluster lacked sufficient evidence for direct linkage. The takeaway for defenders is that a fully authenticated email proves only that the sending platform is legitimate, not that the message is trustworthy.",
+      "completeness": "Medium",
+      "threats": [
+        "Httrack_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Italy",
+        "Philippines",
+        "Brazil",
+        "Mexico",
+        "Vietnam",
+        "India",
+        "Canada",
+        "Vietnamese",
+        "Spain",
+        "Australia",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://guard.io/labs/accountdumpling---hunting-down-the-google-sent-phishing-wave-compromising-30-000-facebook-accounts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-29",
+      "title": "TeamPCP-Linked Supply Chain Attack Hits SAP CAP and Cloud MTA npm Packages",
+      "summary": "A suspected supply chain attack, linked with medium confidence to the TeamPCP threat actors, compromised several SAP CAP npm packages, including mbt and the @cap-js/sqlite, @cap-js/db-service, and @cap-js/postgres packages. The malicious versions added a preinstall script that downloads and runs a Bun binary, which then executes an obfuscated payload on developer machines and CI/CD runners. The payload harvests cloud, developer, and CI secrets, exfiltrates them via GitHub repositories, and spreads by republishing other packages the victim maintains. It also installs persistence hooks in Claude Code and VS Code. Defenders should review lockfiles and installs for the affected versions, rotate exposed credentials, and check CI logs for unexpected binary execution.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "PostgreSQL",
+        "Bitwarden",
+        "CIRCLECI",
+        "TRAVIS",
+        "Kubernetes",
+        "claude",
+        "Slack",
+        "Telegram",
+        "Discord",
+        "VSCode",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "md5",
+        "xor",
+        "aes-256-gcm",
+        "pbkdf2"
+      ],
+      "functions": [
+        "__decodeScrambled"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/sap-cap-npm-packages-supply-chain-attack"
+      ]
+    }
   }
 ]

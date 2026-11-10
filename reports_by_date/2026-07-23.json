@@ -1,0 +1,546 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "Iranian-Affiliated PLC Exploitation: SafeBreach Coverage for CISA Advisory AA26-097A",
+      "summary": "Iranian-affiliated actors operating as CyberAv3ngers, linked to the IRGC Cyber Electronic Command, are exploiting Internet-exposed PLCs from Rockwell Automation, Schneider Electric, and Siemens across US water, energy, and government infrastructure. The actors connect using legitimate engineering software, deploy Dropbear SSH on victim modems for persistent access, and exfiltrate project files. They modify or delete PLC logic, including Add-On Instructions, and manipulate HMI and SCADA displays to mask changes, in some cases disabling shutdown and alarm logic. The underlying weakness is architectural: PLCs exposed to the Internet without adequate segmentation or authentication. Defenders should remove direct Internet exposure, restrict PLC access, enforce MFA, and monitor OT ports and project files for unauthorized changes.",
+      "completeness": "Low",
+      "threats": [
+        "Dropbear_tool"
+      ],
+      "geo": [
+        "Iranian",
+        "Iran"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 5,
+      "links": [
+        "https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "Russian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite",
+      "completeness": "High",
+      "threats": [
+        "Password_spray_technique",
+        "Evilginx_tool",
+        "Aitm_technique",
+        "Ulej_tool",
+        "Flowerbed_tool",
+        "Spear-phishing_technique",
+        "Smuggling_technique"
+      ],
+      "geo": [
+        "Danish",
+        "Russia",
+        "Dutch",
+        "Canadian",
+        "New zealand",
+        "United kingdom",
+        "Poland",
+        "Italian",
+        "Australian",
+        "Ukraine",
+        "Polish",
+        "Moldova",
+        "Russian federation",
+        "Spain",
+        "Canada",
+        "Ukrainian",
+        "Russian",
+        "Sweden",
+        "Czech republic",
+        "Netherlands",
+        "United states",
+        "French",
+        "Estonia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 36,
+      "software": [
+        "Zimbra Collaboration Suite",
+        "Microsoft Exchange",
+        "bra Collaboration Suite (ZCS",
+        "Zimbra",
+        "Docker",
+        "Nginx",
+        "ProtonMail"
+      ],
+      "algorithms": [
+        "gzip",
+        "xor",
+        "sha1",
+        "des",
+        "base32",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "GetIdentitiesRequest",
+        "CreateAppSpecificPasswordRequest",
+        "GetScratchCodesRequest",
+        "GetInfoRequest",
+        "GetDeviceStatusRequest",
+        "GetOAuthConsumersRequest"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "Chaos ransomware's msaRAT: Living off the browser to build a covert C2 channel",
+      "summary": "Cisco Talos attributes a new Rust-based remote access trojan, msaRAT, to the Chaos ransomware group, which is known for double extortion and for targeting large organizations. After initial access, the attacker downloads an MSI installer that loads msaRAT into memory without writing it to disk as a standalone program. The RAT drives a headless Chrome or Edge browser through the Chrome DevTools Protocol and uses it to set up a WebRTC DataChannel, with Cloudflare Workers for signaling and Twilio TURN as the relay. Because all C2 traffic appears as ordinary browser activity, defenders should not rely on blocking Cloudflare Workers domains or on port-based firewall rules.",
+      "completeness": "Medium",
+      "threats": [
+        "Chaos_ransomware",
+        "Msarat",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "WebRTC",
+        "curl"
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "ecdh",
+        "base64"
+      ],
+      "functions": [
+        "setRemoteDescription"
+      ],
+      "languages": [
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/07/chaos-msarat.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "Operation RoundPress Rolls on with More Half-Click Webmail Zero-Days from TA458",
+      "summary": "TA458, a Russia-aligned espionage actor likely tied to the GRU, uses half-click exploits that require no clicks, only opening a malicious email in webmail, to steal sensitive email data. Proofpoint observed it exploiting zero-day and n-day flaws in Zimbra, mDaemon, Roundcube, Kerio, and SOGo, including SOGo CVE-2026-8496, patched in version 5.12.8. The group deploys the SpyPress JavaScript malware, which steals credentials, contacts, and emails, and it has shifted to long-term access on Roundcube servers with multiple backdoors. Its targets include Ukrainian government entities and Eastern European military and government bodies in Albania, Greece, Moldova, and Türkiye. Proofpoint expects large language models to speed vulnerability discovery in the short term, while webmail vendors' bug fixes will likely shrink this attack surface over time.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Spypress",
+        "Obfuscator_io_tool"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Moldova",
+        "France",
+        "Greece",
+        "French",
+        "Albania",
+        "Russian",
+        "Ukraine",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zimbra",
+        "mDaemon",
+        "Roundcube",
+        "curl",
+        "Outlook"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "fsockopen"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/ta458-roundpress-exploits",
+        "https://github.com/Alinto/sogo/releases/tag/SOGo-5.12.8"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "INC Ransomware affiliate targets ESXi & NAS Devices in AD environment",
+      "summary": "An INC Ransom affiliate used an exposed open directory, discovered by Ctrl-Alt-Intel, that revealed an active intrusion against a Chinese technology organisation. The affiliate compromised Microsoft 365 identities and used LLM-generated Python scripts to search mail and cloud storage for network diagrams and credentials. It then moved via a WinRM-controlled Windows pivot into Active Directory, extracted the domain database and registry hives, and attempted to take control of vCenter and ESXi management planes. The intrusion ended with an INC Windows encryptor launched against five mapped NAS shares. Defenders should focus on detecting abnormal cloud authentication, WinRM use, management-plane changes, and internal proxies before the encryptor runs.",
+      "completeness": "High",
+      "threats": [
+        "Inc_ransomware",
+        "Winrm_tool",
+        "Netexec_tool",
+        "Impacket_tool",
+        "Dsinternals_tool",
+        "Portproxy_tool",
+        "Socat_tool",
+        "Shadow_copies_delete_technique",
+        "Plink_tool",
+        "Mimikatz_tool",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Dcsync_technique",
+        "Passthehash_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "ESXi",
+        "Active Directory",
+        "FortiGate",
+        "Linux",
+        "Windows Firewall"
+      ],
+      "functions": [
+        "Get-ADForest",
+        "Get-ADTrust",
+        "Get-ADDomainController",
+        "Get-ADGroupMember",
+        "Get-ADUser",
+        "Get-ADComputer",
+        "SetEntityPermissions",
+        "Write-Output",
+        "Set-Content"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "rust"
+      ],
+      "links": [
+        "http://ctrlaltintel.com/research/INC-Ransom/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "CVE-2026-16232: Critical Check Point SmartConsole Authentication Bypass Exploited in the Wild",
+      "summary": "Check Point's SmartConsole authentication bypass CVE-2026-16232 (CWE-287, CVSS 9.1 per CISA, 9.3 per vendor) lets an unauthenticated remote attacker obtain an application login token and gain full administrative access to Security Management and Multi-Domain Management servers. The flaw is confirmed as exploited in the wild against a small number of customers and was added to CISA's KEV list with a remediation deadline of July 25, 2026. Exploitation requires network access to the Management Server in environments that do not restrict Trusted Clients. Because these servers control security policies, VPN settings, and logging, compromise is especially serious. Check Point's Jumbo Hotfixes, released July 22, 2026, should be applied on an emergency basis, with mitigations such as restricting Trusted Clients and management access as interim steps. Rapid7 advises hunting for signs of compromise even after patching.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://www.rapid7.com/blog/post/etr-cve-2026-16232-critical-check-point-smartconsole-authentication-bypass-exploited-in-the-wild"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "TA488 Targets Zimbra Mailservers with Half-Click Exploits",
+      "summary": "Proofpoint reports that TA488 (Void Blizzard, Laundry Bear), a Russia-aligned actor, exploited a previously unknown Zimbra webmail vulnerability, CVE-2025-66376, for at least five months in 2025 until it was patched. The attackers used half-click exploits, where simply opening or previewing an email triggered cross-site scripting that ran JavaScript in the victim's webmail session. Targets included Ukrainian government entities and government, science, and defense industrial base organizations in the United States. The malware, tracked as ZimReaper, stole session tokens and passwords, created app-specific passwords for persistent access, and exfiltrated mailboxes via DNS queries. Defenders should review Zimbra audit logs for CreateAppSpecificPassword calls and remove any unexpected ZimbraWeb entries.",
+      "completeness": "Medium",
+      "threats": [
+        "Zimreaper",
+        "Spear-phishing_technique",
+        "Dns_tunneling_technique",
+        "Zebrocy"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Belarussian",
+        "Russia",
+        "Russian",
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zimbra",
+        "Zimbra Collaboration Suite",
+        "nginx"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "base32",
+        "sha256"
+      ],
+      "functions": [
+        "atob",
+        "CreateAppSpecificPasswordRequest",
+        "CreateAppSpecificPassword"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/ta488-targets-zimbra-mailservers-half-click-exploits"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "Federal Agencies Warn of Ongoing PLC Exploitation Against Critical U.S. Infrastructure",
+      "summary": "Six U.S. federal agencies, cosigned in joint advisory AA26-097A, warn that nation-state and APT actors are actively exploiting internet-exposed programmable logic controllers across U.S. government services, water systems, and energy infrastructure. Attackers scan for exposed PLCs and connect using legitimate engineering software such as Rockwell's Studio 5000 Logix Designer, with working credentials, so the activity looks like authorized technician work. They alter controller logic and project files and can change operator displays so personnel cannot spot anomalies. The July 2026 update expands the affected manufacturers to include Schneider Electric and Siemens and adds detection guidance for malicious changes in shared reusable code modules. Unlike the largely disruption-free 2023 CyberAv3ngers campaign, this activity has caused confirmed operational disruption and financial loss. The main takeaway for defenders is to remove PLCs from direct internet exposure, gate remote access with MFA, and continuously validate segmentation and configuration baselines.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Iocontrol",
+        "Trojan.win64.malpdb.a"
+      ],
+      "geo": [
+        "Iranian"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/g/plc-exploitation.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "JadeProx: Tracing a China-nexus Operation Through an OPSEC Mistake",
+      "summary": "Group-IB tracks a China-nexus cluster it calls JadeProx, whose operator's exposed Alibaba Cloud staging server revealed active intrusions in Vietnam, Malaysia, and Hong Kong. The cluster centres on TriBack Loader, which uses DLL sideloading via signed vendor binaries and Win32 callback APIs to decrypt and run shellcode, delivering AdaptixC2 or the Beagle backdoor. Targets included a Vietnamese hospital's imaging system, the Malaysian Ministry of Foreign Affairs, Hong Kong education institutions, and a Honduran government body. Lures included fake Claude software pages and a phishing portal impersonating a Venezuelan municipal tax system. Group-IB could not tie the activity to a single existing group, so it tracks the cluster separately, with defenders advised to hunt for the loader's file patterns and block listed infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "Triback_loader",
+        "Dll_sideloading_technique",
+        "Adaptixc2_tool",
+        "Beagle",
+        "Credential_harvesting_technique",
+        "Xmrig_miner",
+        "Iox_tool",
+        "Suo5_tool",
+        "Neo-regeorg_tool",
+        "Nuclei_tool",
+        "Fscan_tool",
+        "Netcat_tool",
+        "Chromelevator_tool",
+        "Opendir_technique",
+        "Plugx_rat",
+        "Donut",
+        "Claimloader",
+        "Toshis",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Honduras",
+        "Vietnamese",
+        "Chinese",
+        "Malaysia",
+        "Singapore",
+        "China",
+        "Venezuela",
+        "Malaysian",
+        "Vietnam",
+        "Australia",
+        "Japan",
+        "South-east asia",
+        "Latin america",
+        "Taiwan",
+        "Asia",
+        "Latam",
+        "Algeria"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 16,
+      "software": [
+        "Alibaba Cloud",
+        "Anthropic Claude",
+        "MySQL",
+        "WordPress",
+        "Tenda",
+        "Chromium",
+        "Chrome",
+        "Claude",
+        "Linux"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "exhibit"
+      ],
+      "functions": [
+        "start_socks5",
+        "start_proxy"
+      ],
+      "languages": [
+        "visual_basic",
+        "php",
+        "python",
+        "java",
+        "golang",
+        "vbscript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/jadeprox-china-nexus-triback-loader/",
+        "https://github.com/xmrig/xmrig-proxy",
+        "https://github.com/serjs/socks5-server",
+        "https://github.com/leitbogioro/Fuck\\_Aliyun/blob/master/Fuck\\_Aliyun.sh"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "Examples of Attacks by the Kimsuky Group Impersonating Diplomats (PebbleDash, PrxClient)",
+      "summary": "Kimsuky group, a suspected North Korean actor, is running spear-phishing campaigns that impersonate diplomatic personnel, using decoy documents with diplomatic content. The attacks use malicious LNK files that launch PowerShell or mshta scripts, which drop downloaders and register scheduled tasks to fetch further payloads. Payloads include the PebbleDash backdoor, which is injected into LSASS in one variant, plus RDP Wrapper with backdoor accounts, the PrxClient proxy tool for RDP tunneling, UAC bypass tools, and keyloggers. Defenders should treat unsolicited attachments and unknown executables with caution and keep antivirus software updated.",
+      "completeness": "High",
+      "threats": [
+        "Pebbledash",
+        "Prxclient_tool",
+        "Spear-phishing_technique",
+        "Uacme_tool",
+        "Uac_bypass_technique",
+        "Sspiuacbypass_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94553/",
+        "https://github.com/antonioCoco/SspiUacBypass"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "Thailand's Ministry of Finance Targeted With Hermes AI Agent Running Unattended, Hades Implant Staged",
+      "summary": "Hunt.io, with Bob Diachenko, found an exposed staging server at 43.246.208[.]207 that showed an AI agent, Hermes running in unattended YOLO mode, enumerating Thailand's Ministry of Finance network. The operator also used a cross-platform Go implant called Hades, which was hosted on the server and linked to other infrastructure by TLS certificate pivoting. The attacker staged tooling for Hadoop HiveServer2 exploitation, GlassFish console abuse, web shells, mailbox credential testing, and known privilege escalation exploits. Initial access to the ministry network remains unknown. Defenders are advised to review HiveServer2 authentication, patch sudo and polkit, disable WebDAV on IIS 6.0, and change default GlassFish credentials.",
+      "completeness": "High",
+      "threats": [
+        "Hermes",
+        "Hades",
+        "Suo5_tool",
+        "Linpeas_tool",
+        "Pwnkit_tool",
+        "Shadowpad",
+        "Vshell",
+        "Process_hollowing_technique",
+        "Pkexec_tool",
+        "Metasploit_tool",
+        "Copyfail_vuln",
+        "Password_spray_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Thailand",
+        "Hong kong",
+        "Malaysia",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 16,
+      "software": [
+        "Hadoop",
+        "Linux",
+        "sudo",
+        "Laravel",
+        "GlassFish",
+        "Node.js",
+        "Chrome",
+        "systemd"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "sha256"
+      ],
+      "languages": [
+        "java",
+        "perl",
+        "golang",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/thailand-ministry-finance-targeted-with-hermes-ai-agent",
+        "https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS",
+        "https://github.com/nousresearch/hermes-agent"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "DNS Poisoning Tactics Expand to Hospitality Wi-Fi",
+      "summary": "Attackers have been compromising hotel, conference center, and other captive Wi-Fi gateways to redirect traffic and steal Microsoft 365 credentials from traveling employees, with activity ongoing since at least June 2026. ReliaQuest assesses the tradecraft is similar to APT28, a Russian military intelligence group, though the infrastructure differs from prior APT28 activity. The campaign uses gateway-level DNS poisoning to send users to Microsoft-impersonating pages, and it also attempts WPAD proxy abuse and device-code flow abuse for account compromise. Victims span many industries, indicating the campaign targets travelers wherever they connect rather than a specific sector. Defenders should enforce always-on full-tunnel VPN, use strict encrypted DNS, disable WPAD where unneeded, and block the device-code flow via Conditional Access.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Saudi arabia",
+        "India",
+        "Russian"
+      ],
+      "software": [
+        "Chrome",
+        "Microsoft Entra"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-23",
+      "title": "MedusaHVNC: A Hidden Desktop That Steals Live Windows Sessions",
+      "summary": "MedusaHVNC is a remote access trojan sold as malware-as-a-service that uses a hidden virtual network computing module to run a browser on a separate Windows desktop unseen by the victim. Because that browser runs on the victim's device, it can load existing profiles, cookies and session state, giving the operator access to live, logged-in sessions. The infection chain starts with obfuscated JScript and proceeds through an AutoIt decryptor, a loader injected into the trusted charmap.exe, and layered XOR and ChaCha20 unpacking before the final 64-bit payload runs. That payload communicates with a hard-coded command-and-control server and includes capture, input and clipboard functions for controlling the hidden desktop. Defenders are advised that blocking and alerting on unexpected outbound connections to C2 infrastructure can interrupt the attack regardless of how the session was hidden.",
+      "completeness": "Medium",
+      "threats": [
+        "Medusahvnc_tool",
+        "Hvnc_tool"
+      ],
+      "software": [
+        "Telegram",
+        "Chrome",
+        "Firefox",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "chacha20",
+        "xor"
+      ],
+      "languages": [
+        "autoit",
+        "python",
+        "jscript"
+      ],
+      "links": [
+        "https://www.blackfog.com/medusahvnc-a-hidden-desktop/"
+      ]
+    }
+  }
+]

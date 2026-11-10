@@ -1,0 +1,263 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "GhostAction Attack Escalates By Targeting GitHub Users",
+      "summary": "GhostAction is a continuing supply-chain campaign that compromises GitHub accounts and injects malicious Actions workflows into every repository those accounts can modify. The workflows run on push or manual trigger, collecting CI/CD secrets such as publishing, cloud, and AI-service credentials and sending them over plain HTTP to attacker infrastructure at 193.32.204.199. The newest variant, security-audit.yml, also scans the checked-out tree and full git history, including deleted credentials, and captures context around AWS keys. An October 8 wave used automated enumeration of writable repositories across two compromised accounts, affecting 346 repositories. OpenSourceMalware flagged the newly registered my-github.com domain, which resolves to the same collector IP, as a high-priority indicator, while my-gitlab.com is a lower-confidence watchlist domain. Defenders should rotate exposed secrets, remove malicious workflows, require approval for workflow changes, and apply runner egress allowlists.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Devopsgpt_tool",
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Hong kong",
+        "Turkey"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "nginx",
+        "Cloudflare",
+        "Ubuntu",
+        "OpenSSH",
+        "curl",
+        "Anthropic",
+        "OpenAI",
+        "Slack",
+        "SendGrid",
+        "plesk",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "InternetDB"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/ghostaction-attack-escalates"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "WinLol: A Multi-Stage Rust Dropper Delivering a WebRTC Remote Desktop RAT",
+      "summary": "WinLol is a previously unreported four-stage malware chain that starts with a Rust dropper and ends with a Go remote desktop agent, which streams the victim's screen to the operator over WebRTC. The dropper runs sandbox and timing checks and consults a server-side kill switch before downloading the next stage. Its final payload is launched through DLL sideloading of a copied, Microsoft-signed OneDrive.exe, so the RAT appears as a child of OneDrive rather than the dropper. The lures impersonate the Riot Games client, suggesting a gamer target, and no known actor has been linked to the campaign. Defenders can use the plain-HTTP enrollment and websocket traffic, including the X-Agent-Key header, as network indicators.",
+      "completeness": "Medium",
+      "threats": [
+        "Winlol",
+        "Motw_bypass_technique",
+        "Webrtc_technique",
+        "Uac_bypass_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "WebRTC"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://hatching.io/blog/triage-insights-ep5-short/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "New GhostAction Wave Hits Hundreds of Repos, Expanding Beyond CI/CD Secrets to Cloud Credentials",
+      "summary": "The GhostAction campaign has expanded from stealing GitHub Actions secrets to also harvesting cloud and AI credentials from repository working trees and git history. On October 8, 2026, two compromised maintainer accounts, henrywoo and kitao, committed a workflow named security-audit.yml to 346 repositories, including the Uber-owned uber/athenadriver and the 18,420-star kitao/pyxel. The workflow has no security function; it collects secrets and sends them in one HTTP POST to a hardcoded IP address. The added sweep scans for AWS, Anthropic, OpenAI, OpenRouter, GitHub, GitLab, Google, Slack, and SendGrid credentials across full git history. Defenders should check for the workflow file, rotate any exposed secrets, review the affected accounts, and block the C2 address.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Anthropic",
+        "OpenAI",
+        "Slack",
+        "SendGrid"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/ghostaction-cloud-credentials",
+        "https://github.com/henrywoo",
+        "https://github.com/kitao"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "MATCHBOIL: New tricks, same old evil intentions",
+      "summary": "MATCHBOIL is a custom C# downloader used by the Russia-aligned group UAC-0099, which ESET assesses with medium confidence as aligned with Russian interests and which can act as an initial access broker for Sandworm. The malware is distributed through spearphishing emails that lead victims to run a VBScript, which downloads and executes it. MATCHBOIL downloads a payload, typically the MATCHWOK backdoor, from its C&C server, installs it, and establishes persistence via scheduled tasks or registry Run keys. Observed victims were all in Ukraine, spanning transportation, manufacturing, and energy companies. Between April 2024 and April 2026, UAC-0099 steadily improved the downloader, moving to Eziriz .NET Reactor obfuscation, adding sandbox and debugger checks, and adding a decoy GUI. ESET's takeaway is that the group is continually refining MATCHBOIL for future attacks.",
+      "completeness": "High",
+      "threats": [
+        "Matchboil",
+        "Eziriz_tool",
+        "Lonepage",
+        "Spear-phishing_technique",
+        "Matchwok",
+        "Dotnet_reactor_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Ukraine",
+        "Russia"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 17,
+      "software": [
+        "NET Reactor",
+        "Windows registry",
+        "NET Reactor ob",
+        "loudflare to",
+        "Cloudflare",
+        "NET Reactor to"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/matchboil-new-tricks-same-old-evil-intentions/",
+        "https://github.com/eset/malware-ioc/tree/master/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "GhostAction Returns: Malicious “Security Audit” Workflows Now Mine Credentials from Entire Git Histories",
+      "summary": "GhostAction, a GitHub Actions credential-theft campaign, compromised two high-profile maintainer accounts on October 8, 2026, and pushed malicious workflows to 345 repositories in two automated windows. The injected \"Security Audit\" workflow was committed directly to default branches under the victims' own identities, bypassing pull requests and reviews. Beyond named Actions secrets, the new variant harvests cloud, AI-provider, and SaaS credentials from the working tree and the entire git history, then sends them to a hardcoded IP address over plain HTTP. Execution logs confirm exfiltration succeeded in at least one repository. Defenders should treat any secret ever committed to affected repositories as compromised, not only current Actions secrets. Requiring approval for workflow runs stopped exfiltration in one observed case.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "plesk",
+        "Anthropic",
+        "OpenAI",
+        "Slack",
+        "SendGrid"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/ghostaction-returns",
+        "https://github.com/uber/athenadriver",
+        "https://github.com/henrywoo",
+        "https://github.com/kitao/pyxel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "Hunting a Global Formbook Campaign with Machine Learning",
+      "completeness": "Medium",
+      "threats": [
+        "Formbook"
+      ],
+      "geo": [
+        "Spain",
+        "Italy",
+        "Turkiye",
+        "Bahrain",
+        "Vietnam",
+        "Netherlands"
+      ],
+      "software": [
+        "Cloudflare",
+        "Sysinternals"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://www.vmray.com/hunting-a-global-formbook-campaign-with-machine-learning/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "When a Wallet Drainer Asks DNS Where to Go",
+      "summary": "The Noir wallet-drainer kit, apparently developed with AI assistance, uses DNS TXT records as a dynamic control plane to locate its backend pool, which runs on Cloudflare Pages. The loader races three public DNS-over-HTTPS services to read the record and uses the first valid answer. Victims are drained without surrendering a seed phrase or private key, as the kit obtains spending approvals that look less alarming than a direct transfer and executes the theft from attacker infrastructure. The kit's comments reveal design decisions and bug fixes, and the reuse of one engine across many lure themes suggests a shared service rather than a single actor. Defenders may consider blocking DoH and monitoring DNS fully in risk-averse networks.",
+      "completeness": "Low",
+      "threats": [
+        "Noir",
+        "Detour_dog",
+        "Decoy_dog"
+      ],
+      "software": [
+        "Cloudflare",
+        "WalletConnect"
+      ],
+      "crypto": [
+        "uniswap"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/when-a-wallet-drainer-asks-dns-where-to-go/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-09",
+      "title": "It Always Comes Back to DNS: Iranian VPN-over-DNS Activity in the 2026 Conflict",
+      "summary": "DomainTools observed a sudden flood of DNS TXT records tied to the domain supaghost[.]cc on March 1, 2026, reaching about 500,000 observations per second and accounting for roughly a 50% increase in its intake. The DNS data was consistent with VPN-over-DNS activity, in which data is encoded in TXT records and delegated through nameservers to tunnel traffic past inspection. Within days the activity spread to more than one hundred related domains, heavily weighted toward the Iranian .ir top-level domain, plus several existing DNS tunneling services in Eurasia and South Asia. Technical indicators pointed to an origin in Iran, though the report stresses that the purpose of the traffic remains speculative. The takeaway for defenders is to monitor DNS as closely as perimeter traffic and to share observations with others who may see similar activity.",
+      "completeness": "Low",
+      "threats": [
+        "Dns_tunneling_technique",
+        "Smuggling_technique",
+        "Trickbot",
+        "Sunburst"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian",
+        "Israel",
+        "Asia"
+      ],
+      "software": [
+        "Linux",
+        "Windows Powershell",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://dti.domaintools.com/securitysnacks/it-always-comes-back-to-dns-iranian-vpn-over-dns-activity-in-the-2026-conflict"
+      ]
+    }
+  }
+]

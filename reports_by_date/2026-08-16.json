@@ -1,0 +1,35 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-16",
+      "title": "Malware Analysis - Remcos RAT - Part 1",
+      "summary": "The report analyzes a Remcos RAT infection chain that begins with a spearphishing email containing links to a malicious RAR archive, which holds an obfuscated JavaScript file. The JavaScript carries a Base64 PowerShell payload that writes a script to the %TEMP% folder and establishes persistence through a startup shortcut and HKCU and HKLM Run registry keys. That script decrypts further layers using XOR and Base64 and ultimately launches binaries through aspnet_compiler.exe. The author notes the analysis will continue in a later part, which will examine the uncovered executables.",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 4,
+      "software": [
+        "Windows ActiveX"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "run",
+        "getWorkingDirectory"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://mandarnaik016.in/blog/2026-08-16-malware-analysis-remcos-rat-part1/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-13",
+      "title": "Behind the CAPTCHA: ClickFix, WallStealer and a Hidden Miner",
+      "summary": "The report examines an open directory identified during a July 2026 investigation that hosted a fake Cloudflare verification script and several protected executables. The lure is a ClickFix-style page that tricks users into pasting an obfuscated PowerShell command into Windows Run to download and launch an executable. The executables are Rust droppers that deliver WallStealer, a credential and data stealer targeting browsers, Telegram, Discord, Steam, FileZilla and wallet data. The stealers use Steam profile pages as a dead-drop resolver to find command-and-control destinations, which is the key signal for defenders. A separate loader delivers an XMRig-based Monero miner, and defenders should watch for pasted PowerShell, temporary executable creation, unusual Steam-profile requests and files in C:\\ProgramData\\NVDisplay.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Wallstealer",
+        "Xmrig_miner",
+        "Dead_drop_technique",
+        "Vidar_stealer",
+        "Voidstealer"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 3,
+      "software": [
+        "Steam",
+        "Telegram",
+        "Discord"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/bulletins/clickfix-stealers-and-mining/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-13",
+      "title": "RUSTGate: A Drone-Swarm Lure Points to Potential Defence-Sector Targeting",
+      "summary": "RUSTGate is an unsigned Rust-based remote-access trojan, identifying itself as RUSTGate Client v2.0, delivered through a PDF-themed shortcut that launches a batch downloader from a staging server. The lure uses a drone-swarm research decoy, suggesting potential targeting of defence-sector or unmanned-systems personnel, though the researchers did not confirm a victim or attribution. The implant executes arbitrary shell commands, transfers files in both directions, and automatically collects documents, archives, images and configuration files from all logical drives. It persists through a scheduled task named NetworkDiagnostics and communicates with its controller over plain HTTP using AES-256-GCM with a hardcoded key. A bounded probe found the controller live and accepting registrations but returning no commands. Defenders should hunt for the full delivery chain, including rundll32 launching a minimised shell and batch files written to C:\\Windows\\Temp, and preserve upload_state.json on suspected hosts.",
+      "completeness": "Medium",
+      "threats": [
+        "Rustgate"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 13,
+      "software": [
+        "Microsoft Edge",
+        "Linux",
+        "Flask",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-256-gcm",
+        "md5"
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/bulletins/rustgate-v2/"
+      ]
+    }
+  }
+]

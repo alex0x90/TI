@@ -1,0 +1,188 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-12",
+      "title": "Platypwned: When a Citrix 0-Day Lays an Egg",
+      "summary": "Citrix NetScaler ADC and Gateway appliances were exploited through two pre-authentication zero-days, CVE-2026-88771 (command injection via logged input) and CVE-2026-88772 (a DTLS memory overflow). Attackers exploited the flaws to run commands as root and dropped a modified build of the open-source Platypus remote administration tool. The fork adds privilege-escalation and covert persistence modules absent from the public project, with persistence disguised as a health monitor. Infrastructure included domains that were re-registered after lapsing, along with a single server that hosted Platypus and earlier Havoc C2. Defenders should patch, triage both HA nodes, and review shell and httpd logs, which are not forwarded to the SIEM by default.",
+      "completeness": "High",
+      "threats": [
+        "Platypus",
+        "Termite",
+        "Timestomp_technique",
+        "Crystalray",
+        "Kv-botnet",
+        "Jdy_botnet",
+        "Upx_tool",
+        "Havoc",
+        "Cobalt_strike_tool",
+        "Sliver_c2_tool",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "China",
+        "Russian",
+        "Moscow"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Linux",
+        "curl",
+        "sudo",
+        "Microsoft Defender",
+        "Citrix NetScaler ADC",
+        "Microsoft Defender for Endpoint",
+        "Crontab",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "lzma",
+        "ed25519",
+        "base64"
+      ],
+      "functions": [
+        "CreateService"
+      ],
+      "languages": [
+        "python",
+        "php",
+        "perl"
+      ],
+      "links": [
+        "https://binarydefense.com/resources/blog/platypwned-when-a-citrix-0-day-lays-an-egg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-12",
+      "title": "From Endpoint to Funhouse: Evolution of the Ransomware Family and Kimsuky-Related Distribution Cases",
+      "summary": "The Kimsuky group distributed Funhouse ransomware using malicious Hangul (HWP) documents disguised as résumés, a shift from its usual LNK files. The infection chain runs through multi-stage Batch, VBS, and PowerShell scripts, then a Python-based backdoor, then Quasar RAT, which launches the ransomware. Funhouse is a variant of the previously published Endpoint ransomware, sharing its extensions, ransom note name, mutex, and encryption methods, though the attacker contact differs. The Quasar RAT configuration and infrastructure were updated between campaigns, while the mutex value was reused. Defenders should verify hyperlinks in résumé-style documents, since the attack relies on user clicks, and keep Hangul, operating systems, and antivirus up to date.",
+      "completeness": "Low",
+      "threats": [
+        "Funhouse",
+        "Endpoint_ransomware",
+        "Quasar_rat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5",
+        "sha512",
+        "chacha20",
+        "sha256",
+        "hc-128",
+        "curve25519"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95774/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-12",
+      "title": "Auditing the auditor: Unmasking Apex Accelerator",
+      "summary": "Apex Accelerator is a fake Web3 venture accelerator that targets cryptocurrency start-ups and founders with offers of free AI credits, coding tools, and security audits. Its malicious npm packages, @apexacc/cli and @apexacc/audit, download platform-specific executables and fetch commands from attacker-controlled verification servers on macOS and Windows. The @apexacc/cli package repackages the legitimate Oh My Pi coding agent, redirecting OpenRouter model traffic and registering an attacker-controlled MCP server. The @apexacc/audit package's 18 tools return fabricated security findings instead of running real scans. The campaigns deliver CloudSyncD malware on macOS and a Windows information stealer that exfiltrates data through Telegram. Defenders should treat polished Web3 offers and AI tooling from unverified npm packages as high-risk.",
+      "completeness": "High",
+      "threats": [
+        "Apexacc_tool",
+        "Cloudsyncd",
+        "Supply_chain_technique",
+        "Apex_audit_tool",
+        "Cloudsync",
+        "Uac_bypass_technique",
+        "Uacme_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Claude",
+        "Telegram",
+        "Slack",
+        "Twitter",
+        "└─ Embe",
+        "tempts",
+        "OS │ └─",
+        "curl",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256",
+        "gzip",
+        "chacha20",
+        "chacha20-poly1305",
+        "fnv-1a",
+        "xor",
+        "aes-gcm",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "getifaddrs",
+        "main"
+      ],
+      "languages": [
+        "javascript",
+        "golang",
+        "python",
+        "rust",
+        "vbscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages",
+        "https://github.com/can1357/oh-my-pi/blob/95acb042e7d70725a372b1034458145349c1d86f/docs/approval-mode.md?plain=1#L24",
+        "https://github.com/elastic/supply-chain-monitor",
+        "https://github.com/can1357/oh-my-pi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-12",
+      "title": "AhsayCBS Backup Console Under Active Exploitation: CVE-2026-105133/105134 Chain Leads From Auth Bypass to RCE, and 10.3.4.0 Does Not Close It",
+      "summary": "AhsayCBS backup consoles are under active exploitation through a chain of two flaws: CVE-2026-105133, an authentication bypass, and CVE-2026-105134, an OS command injection, which together yield unauthenticated remote code execution as SYSTEM. Huntress first observed exploitation on 2026-10-07 and had seen five organizations targeted by 2026-10-08. Observed activity included JSP webshells, an XMRig miner disguised as edge.exe, and persistence through a MicrosoftEdgeUpdateSvc service. Ahsay said its earlier patches, v10.3.4.0 and v9.15.2.59, did not fully address the flaws, so defenders should apply hotfix v10.3.4.45 for v10 or v9.15.2.70 for v7 to v9, then reboot. CISA added both CVEs to KEV on 14 October 2026, and MSPs and backup vendors should be asked about exposure and checked for compromise.",
+      "completeness": "High",
+      "threats": [
+        "Xmrig_miner",
+        "Nssm_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "Vietnam",
+        "France",
+        "Taiwan",
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 16,
+      "software": [
+        "Windows service",
+        "Alibaba Cloud"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.rescana.com/post/ahsaycbs-cve-2026-105133-105134-exploited-backup-console-rce"
+      ]
+    }
+  }
+]

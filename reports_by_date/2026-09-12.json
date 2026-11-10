@@ -1,0 +1,28 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-12",
+      "title": "Fake Tax-Themed Phishing Campaign Delivers Malware",
+      "summary": "A fake Indian Income Tax Department campaign uses ten disposable .shop domains to distribute malware through a fabricated Section 143(3) Notice of Assessment. Victims are lured into downloading a VHDX disk image disguised as an offline ITR-1 to ITR-4 utility, which when mounted reveals a loader executable and a DLL payload. The loader injects code into RuntimeBroker.exe and attempts a TCP/443 connection to a suspected C2 endpoint, though no C2 communication was established. The malware is assessed to have RAT-like capabilities, including persistence, system discovery, and remote command execution. The campaign is unattributed, and defenders should restrict mounting of VHDX files and monitor execution chains from mounted disk images.",
+      "completeness": "Medium",
+      "threats": [
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "India",
+        "Indian",
+        "China"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 6,
+      "algorithms": [
+        "exhibit",
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/fake-tax-themed-phishing-campaign-delivers-malware/"
+      ]
+    }
+  }
+]

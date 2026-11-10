@@ -1,0 +1,435 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "A nasty combo: ZloyRAT Android Trojan distributed disguised as an app for spotting traffic police radar and checking gas availability",
+      "summary": "Russian security firm F6 reports that attackers distribute a dropper for the ZloyRAT Android trojan disguised as \"ДПС радар. Топливо онлайн,\" an app claiming to show traffic police locations, speed cameras, and gas availability at stations. The same dropper is also spread as a \"Radar BPLA\" drone-attack tracker and a free \"GosuVPN\" app. The lures are promoted through driver chats, channels, and communities, including those for trucking, taxi, delivery, and car sharing. ZloyRAT can read contacts and SMS, send SMS and USSD commands, and make calls without the user's knowledge, and it targets over 60 Russian bank and financial apps, marketplaces, government services, and Telegram. F6 advises installing apps only from official stores, denying sensitive permissions, and changing passwords if suspicious APKs were installed.",
+      "completeness": "Low",
+      "threats": [
+        "Zloyrat",
+        "Redwing",
+        "Radartrevog"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "RuStore"
+      ],
+      "links": [
+        "https://www.f6.ru/media-center/press-releases/zloyrat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "The Return of IDFKA: How APT Group NGC5081 Learned from Its Mistakes",
+      "summary": "The report, from SOLAR 4RAYS, describes a new campaign by the unattributed APT group NGC5081 that breached a large organization using an updated version of its Rust implant IDFKA. The attackers reportedly got in through publicly exposed web services in early 2024, then used backdoors and a FreePBX/Asterisk vulnerability (CVE-2026-54675, a file upload flaw) to move laterally and hide their trail. The new IDFKA build expands its command set from 24 to 40 operations and adds new network backends, memfd-based updates, a rootkit-style kernel module, and a DNS fallback channel. Analysts also found trojanized legitimate utilities (logrotate, newsyslog, updatedb) used as droppers that reconnect the group to the implant. For defenders, the main takeaways are to run continuous SOC monitoring, move internal-only services behind a VPN, retire vulnerable systems, expand EDR coverage, and patch promptly.",
+      "completeness": "Medium",
+      "threats": [
+        "Idfka",
+        "Tinyshell",
+        "Goblinrat",
+        "Reversessh_tool",
+        "Diamorphine_rootkit",
+        "Connectback",
+        "Hideprocess_tool"
+      ],
+      "geo": [
+        "French",
+        "Spanish",
+        "Portuguese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Unix",
+        "FreePBX",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "kill"
+      ],
+      "languages": [
+        "php",
+        "rust"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/7144/",
+        "https://github.com/FreePBX/security-reporting/security/advisories/GHSA-95gm-cmxf-cv8v"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "Fake court ADR phishing campaign distributes LodaRAT",
+      "summary": "A phishing campaign impersonating the U.S. District Court for the Southern District of Florida sends personalized emails containing unique ADR IDs to companies, with more than 100,000 targeted according to the researchers. Victims are directed to a fake court ADR portal that serves a password-protected ZIP archive containing an ISO with three disguised files. Each file launches a LodaRAT payload, a commodity AutoIt-based remote access trojan, via PowerShell, rundll32, or conhost. The RAT provides credential theft, keylogging, webcam and microphone capture, RDP tunneling, and LAN propagation. Defenders should note that the lure relies on a compromised legitimate domain and that endpoint protection can block the RAT samples and the campaign's network communications.",
+      "completeness": "High",
+      "threats": [
+        "Lodarat",
+        "Passview_tool",
+        "Ngrok_tool",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "United states"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge",
+        "Internet Explorer",
+        "Windows Defender",
+        "Chromium",
+        "Firefox",
+        "Cloudflare",
+        "GoDaddy",
+        "AutoIt"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "autoit",
+        "powershell",
+        "php"
+      ],
+      "links": [
+        "https://www.threatdown.com/blog/fake-court-adr-phishing-lodarat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "Hackers Sell ICMacOS Remote Access Trojan for $699 a Week to Target Mac Users",
+      "completeness": "High",
+      "threats": [
+        "Icmacos",
+        "Icarus",
+        "Amos_stealer",
+        "Banshee",
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "Telegram",
+        "WhatsApp",
+        "Discord",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/icmacos-remote-access-trojan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "Malicious Firefox Extensions Impersonate Phantom, Jupiter, and Bitget to Steal Wallet Secrets",
+      "summary": "Malicious Firefox extensions impersonating the Phantom, Jupiter, and Bitget crypto wallets use Unicode homoglyphs and copied branding to appear legitimate. Each signed package contains an always-on stealer that captures recovery phrases and private keys and sends them to subdomains of the bonto[.]io apex. The Phantom variant also fetches and runs a second-stage stealer from its server at runtime, letting the operator change the payload after Mozilla's review. Infrastructure also points to likely Coinbase Wallet and Exodus targeting, though no matching listings were found. The listings were removed after publication, and defenders should treat any seed phrase entered into such an extension as compromised and move funds to a new wallet.",
+      "completeness": "Medium",
+      "threats": [
+        "Homoglyph_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 8,
+      "software": [
+        "Firefox",
+        "ate",
+        "Chrome",
+        "Node.js",
+        "Telegram",
+        "Cloudflare",
+        "CLAUDE"
+      ],
+      "wallets": [
+        "bitget_wallet",
+        "trezor",
+        "coinbase",
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana",
+        "arbitrum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "links": [
+        "https://socket.dev/blog/firefox-wallet-impersonators"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "PHP2Shell: Exploitation Attempts and Remediation Trends",
+      "summary": "Wiz has seen no successful PHP2Shell exploitation, only limited attempts from an open source kit that failed. Some attempts hit request-size limits, while others exhausted memory but could not obtain the addresses needed later. Other PHP2Shell-branded tools did not exploit the flaws, relying instead on session poisoning and a separate local file inclusion bug. Exposed vulnerable machines fell about 67% after disclosure, consistent with remediation. Wiz still considers PHP2Shell a risk, so applying PHP updates remains essential.",
+      "completeness": "Low",
+      "software": [
+        "PHP2Shell",
+        "Roundcube"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/php2shell-exploitation-so-far",
+        "https://github.com/9bie/php2shell-bypass-aslr-exp/blob/main/exploit.py",
+        "https://github.com/9bie/php2shell-bypass-aslr-exp",
+        "https://github.com/WoYinDao/CVE-2026-109618-CVSS-9.2-Critical"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "SkyW4lker Exposed: A Growing Microsoft 365 Phishing Threat to American Enterprises",
+      "summary": "SkyW4lker is an active device-code phishing kit targeting Microsoft 365 users, mainly in the United States, and it abuses Microsoft's legitimate OAuth device-code flow to obtain access without stealing passwords or bypassing MFA. Attackers deliver password-protected attachments via email, then route victims through CAPTCHA and decoy lure pages to a page asking for a Microsoft device code. The kit uses a PHP backend and obfuscated JavaScript to geolocate visitors and poll for authentication completion. Analyses rose from 20 in June to 200 in September, and the report assesses with high confidence that SkyW4lker and the credential phishing kit Gabagool share a developer. Defenders should restrict unnecessary device-code authentication through Conditional Access and monitor Entra ID logs for unexpected device-code sign-ins following suspicious emails.",
+      "completeness": "High",
+      "threats": [
+        "Skyw4lker_tool",
+        "Device_code_phishing_technique",
+        "Gabagool_tool",
+        "Typosquatting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "American",
+        "India",
+        "United states",
+        "United kingdom",
+        "Canada"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft 365",
+        "Zoom",
+        "Telegram",
+        "Microsoft Entra",
+        "outlooks",
+        "Cloudflare",
+        "Cloudflare Turnstile",
+        "outlook",
+        "office365",
+        "microsoft365",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/skyw4lker-phishing-kit-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "Locked and Loaded: Phishing through Fake Bids and Protected Documents",
+      "summary": "Cofense reports on a credential phishing campaign that uses fake invitations to bid, with subjects such as \"Project Bid Invitation\" and a password-protected PDF attachment. The password protection prevents most email security tools from inspecting the payload, and the sender address may belong to a previously compromised legitimate account. The PDF contains a button styled like a OneDrive preview that leads to a fake shared document drive. Victims are asked for an email address and then directed to a fake Microsoft login page that captures their credentials. The main takeaway for defenders is to verify whether the bid was expected, check sender domains and login URLs, and contact IT or security before entering credentials.",
+      "completeness": "Low",
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://cofense.com/blog/locked-and-loaded-phishing-through-fake-bids-and-protected-documents"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "Tricks from the Past deployed via signed ChatGPT and Claude binaries",
+      "summary": "Check Point Research tracks a campaign it calls Yoba, which uses fake GitHub projects impersonating AI desktop apps such as GPT-5.6 Sol, GPT-6 Astra, and Claude Opus. The malware is placed beside legitimate signed OpenAI and Anthropic executables and loaded through DLL sideloading to bypass security controls. The operators avoid dedicated command-and-control infrastructure, instead relying on Telegram, Tor, Catbox, and DNS over HTTPS. The final payload observed was an XMRig cryptominer, though the loader is generic and could deliver other malware. Defenders should restrict software installed from unverified repositories and enforce policies on running unknown executables.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Seo_poisoning_technique",
+        "Yobadropper",
+        "Yobaloader",
+        "Bazarbackdoor",
+        "Xmrig_miner",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "Claude",
+        "GPT-5",
+        "OpenAI",
+        "Anthropic",
+        "Telegram",
+        "Windows Media",
+        "Windows Media Player"
+      ],
+      "algorithms": [
+        "ed25519",
+        "aes",
+        "xor",
+        "exhibit",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "swift",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "AdFection: Candiru delivers zero-click spyware via targeted ads against Al Jazeera",
+      "summary": "Citizen Lab, co-published with Confiant, describes AdFection, a zero-click spyware delivery technique that uses targeted ads to infect devices. Israeli ad company Discover-Tech, which presents itself as a legitimate advertising player, operates the Controlium platform that Candiru used to push its spyware. The ads passed through real-time bidding and a Discover-Tech server returned malicious JavaScript only to eligible targets, with infection requiring nothing more than the ad being displayed. At least 45 Al Jazeera devices were infected in 2024-2025, and detected impressions reached sensitive networks including NATO, the UN, and European government bodies. The report notes that mobile apps and websites across many countries were affected, so defenders should treat ad-based delivery as a live vector.",
+      "completeness": "Medium",
+      "threats": [
+        "Adfection_technique",
+        "Com_hijacking_technique",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Yemen",
+        "Colombia",
+        "Armenia",
+        "Brazil",
+        "Australia",
+        "Norway",
+        "Denmark",
+        "Cyprus",
+        "Pakistan",
+        "Mexico",
+        "Czechia",
+        "Belarus",
+        "Montenegro",
+        "Sweden",
+        "Israel",
+        "China",
+        "Greece",
+        "Italy"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 5,
+      "software": [
+        "Controlium",
+        "ntrolium Inf",
+        "Viber",
+        "Truecaller",
+        "Opera"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyberveille.ch/posts/2026-10-28-adfection-candiru-livre-un-spyware-zero-click-via-des-publicites-ciblees-contre-al-jazeera/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-27",
+      "title": "The APT-C-36 group uses a new RAT to conduct attack operations.",
+      "summary": "APT-C-36 (Blind Eagle), a suspected South American APT group, has launched a new campaign in August 2026 targeting government, financial, and insurance organizations mainly in Colombia and neighboring countries. The attackers used SVG decoy files impersonating Colombia's Attorney General's office, which led victims through staged downloads of obfuscated JavaScript, VBScript, and PowerShell loaders. The chain ends with Evolution RAT, a previously unpublicized remote access trojan that provides hidden virtual desktop control and process hollowing via direct syscalls to evade user-mode hooks. The RAT also clones and steals browser profile data, including saved logins and cookies. Researchers note the group's loader complexity is increasing, so users in affected regions should strengthen their defenses.",
+      "completeness": "High",
+      "threats": [
+        "Evolutionrat",
+        "Process_hollowing_technique",
+        "Hvnc_tool",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "Colombia",
+        "Spanish",
+        "Colombian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "hrome.ex",
+        "irefox.ex",
+        "MinHook",
+        "Edge",
+        "F",
+        "Edge",
+        "Fi",
+        "Brave",
+        "OperaGX",
+        "and Viv,"
+      ],
+      "algorithms": [
+        "aes-256-ecb",
+        "zip",
+        "base64",
+        "aes-gcm",
+        "xor",
+        "bcrypt"
+      ],
+      "functions": [
+        "GetDelegateForFunctionPointer",
+        "WriteProcessMemory",
+        "CreateRemoteThread"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "javascript"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247509069&idx=1&sn=c25306b5d9c104dbd59ed121786e888e&chksm=f9c19744ceb61e521a5d2a2b8f078bae995076dbf0319e7851b30de3fbfadb4e31bda9aefd4c&scene=178&cur_album_id=1955835290309230595&search_click_id="
+      ]
+    }
+  }
+]

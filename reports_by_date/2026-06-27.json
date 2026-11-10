@@ -1,0 +1,108 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-27",
+      "title": "UAC-0184 Tooling Evolution: OneDrive Sideload to Remcos",
+      "summary": "UAC-0184 delivers Remcos Agent 7.1.0 Pro through a Ukrainian-language ZIP containing four shortcuts disguised as three JPG images and one Excel workbook. The shortcuts launch a VBScript and PowerShell downloader that fetches a second archive and runs a Microsoft OneDrive-themed host, ClusterHub.exe, that sideloads a malicious DLL. The loader decodes local containers disguised as symbol and map files, unpacks a 35-module HijackLoader bundle, and decrypts Remcos. The decoy spreadsheet appears to be an internal Ukrainian military roster, suggesting targeting of Ukrainian military administration. Defenders should watch for archives with image-named LNK files, OneDrive binaries run from unusual directories, and connections to 144.31.236.240, including TCP port 27018.",
+      "completeness": "High",
+      "threats": [
+        "Remcos_rat",
+        "Hijackloader",
+        "Rshell",
+        "Dll_sideloading_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Ukrainian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 7,
+      "software": [
+        "Microsoft OneDrive",
+        "Sysinternals"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "zip",
+        "rc4",
+        "lznt1"
+      ],
+      "functions": [
+        "Get-Command"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "cscript"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/uac-0184-tooling-evolution-onedrive-sideload-to-remcos/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-27",
+      "title": "Inside Eastern Europe's C2 Sprawl: 3,900+ Servers and 302 Providers Mapped (Updated)",
+      "summary": "Hunt.io mapped more than 3,900 threat activity enabling servers across 302 providers in 10 Eastern European countries over March 12 to June 12, 2026. The report links these servers to campaigns including Cloud Atlas, ShinyHunters exploitation of an Oracle PeopleSoft flaw (CVE-2026-35273), Black Basta, and Pink extortion activity. Keitaro, a commercial traffic distribution system, leads the malware-family counts with 1,277 IPs, followed by Tactical RMM and Acunetix. Russia accounts for the most unique IPs by country, and a small number of providers concentrate a disproportionate share of detections. The report's updated notes stress that the presence of such software on a network does not by itself show C2 activity, and the authors revised their wording to \"threat activity enabling.\" Defenders are advised to focus on high-risk ASNs and recurring hosting patterns rather than short-lived IP indicators.",
+      "completeness": "Medium",
+      "threats": [
+        "Tactical_rmm_tool",
+        "Acunetix_tool",
+        "Jomangy_webshell",
+        "Zenharr",
+        "Nemesys_ransomware",
+        "Automim_tool",
+        "Credential_harvesting_technique",
+        "Mimikatz_tool",
+        "Lazagne_tool",
+        "Wanttocry",
+        "Blackbasta",
+        "Devilnfc",
+        "Gophish_tool",
+        "Hajime",
+        "Mozi",
+        "Mirai",
+        "Cobalt_strike_tool",
+        "Sliver_c2_tool"
+      ],
+      "geo": [
+        "Czech republic",
+        "Chinese",
+        "Moldova",
+        "Bulgaria",
+        "Romania",
+        "Poland",
+        "Belarus",
+        "Russia",
+        "Ukraine",
+        "Slovakia",
+        "Moscow",
+        "Middle east",
+        "Bulgarian",
+        "Russian",
+        "Hungary"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Keitaro",
+        "FreePBX",
+        "Ollama",
+        "Graph APIs",
+        "Android"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://hunt.io/blog/eastern-europe-malicious-infrastructure-report"
+      ]
+    }
+  }
+]

@@ -1,0 +1,585 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "Low Detection Linux Implant with Hands-On Intrusion Capabilities",
+      "summary": "A low-detection, statically linked x86-64 Linux ELF backdoor written in C++ was shared in July 2026 and was delivered from an AWS S3 URL disguised as a PNG file. The implant daemonizes itself, self-deletes unless run with a specific argument, and stores an AES-128-GCM encrypted MessagePack configuration in its .data section. It profiles the host, registers with its C2 using an AES-encrypted beacon, and then awaits commands. The command set includes file upload, download and manipulation, process listing and killing, PTY shells, and reverse port forwarding and pivot tunnels. The author notes that the capabilities suggest possible use in targeted, hands-on intrusions, and an update links its infrastructure and protocol to Adaptix Agent.",
+      "completeness": "Medium",
+      "threats": [
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "nginx"
+      ],
+      "algorithms": [
+        "aes-128",
+        "zip",
+        "aes-gcm",
+        "sha1"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/Unattributed_Linux_Implant/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "Cookie Crumbles: How Exploitation of CVE-2026-0257 Leads to Qilin Ransomware",
+      "summary": "Arctic Wolf Labs investigated several June 2026 intrusions in which attackers exploited CVE-2026-0257, an authentication bypass in Palo Alto Networks PAN-OS GlobalProtect, to gain VPN access and then deploy Qilin ransomware. Post-exploitation tradecraft varied, from fast encryption-only attacks to full double extortion, which the report suggests may reflect multiple affiliates in Qilin's RaaS model. Attackers harvested credentials via LSASS dumping and NTDS extraction, then moved laterally using PsExec over administrative shares. Common hallmarks included staging the payload at C:\\PerfLogs\\, clearing event logs, and using remote access tools and MEGA for exfiltration. The main defender takeaway is to patch the vulnerability and detect activity at initial access or early credential theft.",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Psexec_tool",
+        "Credential_harvesting_technique",
+        "Anydesk_tool",
+        "Ngrok_tool",
+        "Logmein_tool",
+        "Meshagent_tool",
+        "Minidump_tool",
+        "Netscan_tool",
+        "Netexec_tool",
+        "Crackmapexec_tool",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique",
+        "Dcsync_technique"
+      ],
+      "geo": [
+        "Vancouver"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "PsExec",
+        "PAN-OS",
+        "Linux",
+        "Local Security Authority",
+        "Windows service",
+        "Active Directory",
+        "Windows registry",
+        "SoftPerfect Network Scanner",
+        "Task Scheduler",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "functions": [
+        "Get-WinEvent"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/exploitation-of-cve-2026-0257-leads-to-qilin-ransomware/",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/cookie-crumbles-qilin"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "Fake games spread stealers with RenPy Loader, MSBuild and EtherHiding",
+      "summary": "Malwarebytes reports campaigns using fake games, mods, cracks, and software to spread RenPy Loader, which abuses the legitimate Ren'Py engine to hide malicious code. The loader runs a multi-stage chain that uses a trojanized Nancy .NET library, MSBuild project files, and the EtherHiding technique to find its command-and-control server on a public blockchain. The chain ultimately delivers Amatera Stealer, which targets browser passwords, cryptocurrency wallets, messaging apps, and local files. Victims see what looks like a normal installer while the malware runs silently. Defenders should download software only from official or trusted sources and inspect archive contents before running executables such as Setup.exe.",
+      "completeness": "Medium",
+      "threats": [
+        "Etherhiding_technique",
+        "Amatera_stealer",
+        "Renengine",
+        "Deno_tool",
+        "Lumma_stealer",
+        "Hijackloader",
+        "Gollopdevest",
+        "Clickfix_technique",
+        "Junk_code_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "RenPy"
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "GetDelegateForFunctionPointer"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/07/fake-games-spread-stealers-with-renpy-loader-msbuild-and-etherhiding"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "Targeted Attack on Government Entities in the Middle East \\| Part 1",
+      "summary": "Zscaler ThreatLabz observed a threat actor linked to East Asia targeting Middle Eastern government entities in July 2026. The campaign used a multi-stage attack chain that deployed previously undocumented malware, including the TELESHIM backdoor, the MIXEDKEY loader, and the BINDCLOAK C2 implant. TELESHIM abused the Telegram API for command-and-control to blend in with legitimate internet traffic and used obfuscation and anti-analysis checks to hinder reverse engineering. MIXEDKEY decrypted its final payload using a key derived from the victim's volume serial number, so it ran only on intended targets. ThreatLabz assessed the actor as operating from East Asia with moderate-to-high confidence but did not attribute the activity to a known APT group.",
+      "completeness": "Medium",
+      "threats": [
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Middle east"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Mac OS"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "DllMain"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/targeted-attack-government-entities-middle-east-part-1",
+        "https://github.com/nlohmann/json"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "FIFA World Cup 2026 Fraud Campaigns",
+      "summary": "Between April and July 2026, STRU tracked World Cup-themed fraud spanning counterfeit merchandise stores, FIFA portal impersonation, and ticketing and betting infrastructure. Activity peaked before the tournament opened, with 79% of peak-day domains registered within the previous 30 days, indicating infrastructure pre-positioned in May and activated at kickoff. The merchandise storefronts steal payment card data for goods never delivered and burn domains within about five days. The FIFA portal clone, linked to the GHOST STADIUM lineage and tracked across more than 850 domains, mirrors fifa.com, requires account registration, and harvests credentials through its own backend. The betting network rotates daily on expired domains bought on the open market, earning affiliate commissions by impersonating China's state sports lottery. For defenders, the key takeaway is that the critical monitoring window falls before the event begins, and the most reliable indicators are artifacts operators did not intentionally choose to change.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Httrack_tool",
+        "Typosquatting_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "United states",
+        "Portuguese",
+        "French",
+        "Netherlands",
+        "Asian",
+        "China",
+        "Germany",
+        "American",
+        "Italian",
+        "Russian",
+        "Argentina",
+        "Latin america",
+        "Indonesian",
+        "Japanese",
+        "South africa",
+        "Mexico",
+        "Nigeria",
+        "Singapore",
+        "Chinese",
+        "German",
+        "Qatar"
+      ],
+      "software": [
+        "Telegram",
+        "WordPress",
+        "TikTok"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "functions": [
+        "isLoggedIn"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/fifa-world-cup-2026-fraud-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "JADEPUFFER evolves: The agentic threat actor deploys ransomware built to destroy AI models",
+      "summary": "JADEPUFFER, an agentic threat actor, exploited the Langflow framework via CVE-2025-3248 and returned to the same instance with ENCFORGE, a compiled Go ransomware built for AI and ML infrastructure. The ransomware targets about 180 file extensions, including model checkpoints, vector databases, training datasets, and embedding indices. The actor built a host-escape toolkit through Langflow's remote code execution channel, using Docker socket access to run a privileged container and launch the encryption pass on the host. Sysdig TRT notes that encrypted model artifacts cannot be restored from backups, and retraining a model can cost $75,000 to $500,000. The key takeaway for defenders is to treat AI model assets as critical data requiring protection and recovery planning, and to secure Langflow deployments and Docker sockets.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Encforge",
+        "Onnx_store_tool",
+        "Lockbit",
+        "Shadow_copies_delete_technique",
+        "Homoglyph_technique"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Langflow",
+        "MySQL",
+        "Nacos",
+        "Docker",
+        "curl",
+        "HuggingFace",
+        "llama",
+        "macOS",
+        "bcdedit",
+        "outlook",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-ctr",
+        "aes-256",
+        "rsa-2048",
+        "base64"
+      ],
+      "functions": [
+        "AES_ENCRYPT",
+        "exec",
+        "RCE",
+        "exec_in_bigrun",
+        "get_host_pid",
+        "Engine"
+      ],
+      "languages": [
+        "cpython",
+        "python"
+      ],
+      "links": [
+        "https://webflow.sysdig.com/blog/jadepuffer-evolves-the-agentic-threat-actor-deploys-ransomware-built-to-destroy-ai-models",
+        "https://github.com/langflow-ai/langflow"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "Unpacking “Cruciferra”: An Analysis of a Sophisticated Crypter Service",
+      "summary": "Cruciferra is a crypter-as-a-service sold on the Exploit forum in tiers priced from $450 to $2,000 per month and used by multiple unrelated threat clusters to deliver commodity malware such as AsyncRAT, XWorm, zgRAT, and Remcos. It is executed via DLL side-loading from archives and uses BYOVD-based EDR tampering, indirect syscalls, IAT and API unhooking, and a tweaked Process Ghosting technique to load payloads while minimizing forensic artifacts. Its payload encryption relies on over 90 custom algorithms assembled from components of established ciphers and hashes, which creates sample-to-sample variation that complicates static analysis and signature-based detection. Campaigns are opportunistic and often use tax and government-themed lures, with financial services, healthcare, and government entities seen most frequently. Proofpoint notes that frequent new builds appearing in VirusTotal indicate the service is under active development.",
+      "completeness": "High",
+      "threats": [
+        "Cruciferra",
+        "Process_ghosting_technique",
+        "Byovd_technique",
+        "Phantom_stealer",
+        "Quasar_rat",
+        "Agent_tesla",
+        "Asyncrat",
+        "Formbook",
+        "Xworm_rat",
+        "Remcos_rat",
+        "Adaptixc2_tool",
+        "Dll_sideloading_technique",
+        "Junk_code_technique",
+        "Process_manipulation_technique",
+        "Iat_hooking_technique",
+        "Dcrat",
+        "Darkcloud",
+        "Snake_keylogger",
+        "Valleyrat",
+        "Winos"
+      ],
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "prng"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/unpacking-cruciferra-analysis-sophisticated-crypter-service"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "From a Single Alert to 1,000 Files: Inside an Exposed WebDAV Malware Delivery Lab",
+      "summary": "Rapid7 analyzed an exposed WebDAV server that functioned as a malware delivery lab, containing over 1,000 files used to test lures, execution paths, and payload delivery. The operator used LLM-assisted workflows to generate lure variants, documentation, and test kits, operating much like a software product team. Testing covered CVE-2025-33053 (working-directory hijacking), RTLO filename spoofing, ClickFix pages, and search-ms and LNK containers. The main observed campaign used a fake CURP lookup site targeting Mexican users, delivering an RTLO-disguised executable that led to a PureRAT information stealer. A second chain, DlrtyGames, used DLL sideloading and process hollowing to deploy a modular RAT. The exposed admin panel and its credentials also showed significant operational security failures.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Right-to-left_override_technique",
+        "Iediagcmd_tool",
+        "Motw_bypass_technique",
+        "Putty_tool",
+        "Lolbin_technique",
+        "Bitsadmin_tool",
+        "Dlrtygames",
+        "Typosquatting_technique",
+        "Simba_tool",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Dll_sideloading_technique",
+        "Purerat",
+        "Clickonce_tool",
+        "Lolbas_technique",
+        "Uac_bypass_technique",
+        "Homoglyph_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "United kingdom",
+        "Germany",
+        "Finland",
+        "United states",
+        "Brazil",
+        "Republic of korea",
+        "France",
+        "Mexican",
+        "Russian",
+        "Mexico"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 27,
+      "software": [
+        "Windows Explorer",
+        "Windows NTLM",
+        "Internet Explorer",
+        "Microsoft Edge",
+        "Chrome",
+        "cPanel",
+        "Telegram",
+        "Foxmail",
+        "NET FRAMEWORK"
+      ],
+      "wallets": [
+        "coinbase",
+        "exodus_wallet",
+        "electrum"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "aes"
+      ],
+      "functions": [
+        "Get-HotFix",
+        "OR"
+      ],
+      "languages": [
+        "delphi",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-exposed-webdav-malware-delivery-lab-analysis",
+        "https://github.com/Akash-nath29/Coderrr",
+        "https://github.com/rapid7/Rapid7-Labs/tree/main/IOCs/Simba%20Panel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "Open Directory Stages NGINX Rift and Ghost CMS Exploits Against Government and Finance Across Eleven Countries",
+      "summary": "An open directory on a Singapore-hosted server was found staging exploits for NGINX Rift (CVE-2026-42945) and a Ghost CMS blind SQL injection (CVE-2026-26980), alongside tools for PaperCut, WebLogic, Samba, Splunk, and D-Link NAS. The operator used out-of-band DNS callbacks to verify blind execution and hosted AdaptixC2 and SuperShell install files. Target lists covered eleven countries and skewed toward government, academic, healthcare, and financial services organizations. The report found no confirmed compromise, since the operator's success logs were absent. The Ghost SQL injection was used to extract user credential data against a hand-picked host list. Defenders should note that the D-Link NAS flaw affects end-of-life devices that will not be patched.",
+      "completeness": "High",
+      "threats": [
+        "Adaptixc2_tool",
+        "Supershell",
+        "Nginx_rift_vuln",
+        "Clickfix_technique",
+        "Impacket_tool",
+        "Goby_tool"
+      ],
+      "geo": [
+        "Indonesia",
+        "United states",
+        "France",
+        "Vietnam",
+        "Chinese",
+        "Singapore",
+        "Italy",
+        "Australia",
+        "New zealand",
+        "United kingdom",
+        "Brazil",
+        "South korea",
+        "Ireland"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "NGINX",
+        "PaperCut",
+        "WebLogic",
+        "mysql",
+        "GoDaddy"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "system"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://hunt.io/blog/open-directory-nginx-rift-ghost-cms-multi-cve",
+        "https://github.com/advisories/GHSA-w52v-v783-gw97",
+        "https://github.com/gobysec/Goby"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "The New CloudAtlas from Cloud Atlas: Analyzing a Backdoor Written in Go",
+      "summary": "The Cloud Atlas APT group began using CloudAtlasGo, a new backdoor written in Go, in early May 2026, departing from its usual PowerShell and VBS tooling. The backdoor is based on an open-source GitHub project for disguising network traffic, repurposed to add file transfer, remote command execution, and cloud-based signaling. It uses WebRTC for its main command channel and relies on services such as Trello, or WebDAV and SFTP, to exchange SDP Offer and Answer messages. Before running, it checks for virtual machines, sandboxes, and debuggers, then decrypts an embedded YAML configuration. The report notes that the group still delivers it through the familiar VBShower and PowerShower infection chain, suggesting it is refining its tooling while keeping core techniques unchanged.",
+      "completeness": "Low",
+      "threats": [
+        "Cloudatlasgo",
+        "Vbshower_tool",
+        "Powershower_tool",
+        "Credential_harvesting_technique",
+        "Vbcloud_tool",
+        "Powercloud_tool",
+        "Netscan_tool"
+      ],
+      "software": [
+        "WebRTC",
+        "Brotli"
+      ],
+      "algorithms": [
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/cloudatlasgo-backdoor/116367/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "HOLLOWGRAPH: Turning Microsoft 365 Calendars into Covert Command-and-Control Channels",
+      "summary": "HOLLOWGRAPH is a .NET NativeAOT malware component that Group-IB attributes with high confidence to the Cavern backdoor framework. It uses the Microsoft Graph API to turn a compromised Microsoft 365 calendar into a two-way dead drop, hiding tasking and stolen files in far-future events dated 2050-05-13. A separate DNS tunneling channel using AAAA queries refreshes the Entra ID credentials the malware needs. Group-IB identified at least 12 infected systems, with about three actively communicating with the attacker, and the activity appears focused on Israeli entities. The actor remains unknown, though Group-IB notes low-confidence tradecraft similarities to Lyceum. Defenders should monitor Graph calendar operations, far-future events, and anomalous AAAA query patterns.",
+      "completeness": "Low",
+      "threats": [
+        "Hollowgraph",
+        "Dns_tunneling_technique",
+        "Cav3rn",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Israel",
+        "Israeli"
+      ],
+      "software": [
+        "Graph API",
+        "Microsoft Entra",
+        "Azure AD"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "aes",
+        "aes-256-gcm",
+        "aes-256"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/hollowgraph-microsoft-365/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "Exploitation in the Wild of wp2shell",
+      "summary": "A critical pre-authentication remote code execution chain, dubbed \"wp2shell\" (CVE-2026-63030 and CVE-2026-60137), affects WordPress Core and was published on July 17, 2026. The vulnerability abuses the REST API batch processing endpoints, allowing unauthenticated attackers to gain code execution on default installations of WordPress versions released since December 2025. Wiz observed multiple actors exploiting it against self-hosted WordPress instances in the cloud, then uploading malicious plugins, enumerating users, attempting local file inclusion to read wp-config, and accessing admin panels. Deployed payloads included a minimal one-liner webshell, a large disguised \"CMSmap\" webshell, and a plugin-based REST webshell. Defenders should patch promptly or block the batch API endpoint at a WAF, and detections can focus on HTTP 207/200 responses to batch requests and user agents containing wp2shell.",
+      "completeness": "Low",
+      "software": [
+        "WordPress",
+        "OpenAI",
+        "MySQL"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/wp2shell-cve-2026-63030-cve-2026-60137",
+        "https://github.com/dionach/CMSmap",
+        "https://github.com/alpha1e0/pentestdb/blob/master/webshell/php/%E5%85%8D%E6%9D%80php%E5%A4%A7%E9%A9%AC.php#L3"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-20",
+      "title": "The Fox Tempest Question",
+      "summary": "A malware cluster with two binaries from one build lineage, a loader and a stealer, was signed through two unrelated trust chains: a revoked Certum certificate issued to a shell company, Huizhou Ningda Times Supply Chain Co., Ltd., and a Microsoft Trusted Signing individual-tier certificate. The loader runs a hidden browser-based fingerprinting check and then a Telegram bot polling loop that executes operator commands as a remote access trojan. It persists through a scheduled task that runs every minute and is used to drop further payloads such as the stealer. The stealer's signature was timestamped 11 days before Microsoft disclosed Fox Tempest, a malware-signing-as-a-service broker, which the report links to this activity. Researchers assess with medium confidence that the operator is linked to the Dragon Breath/APT-Q-27 ecosystem. Defenders are advised to block the hashes and domain, hunt for the signing certificates, and monitor for suspicious one-minute scheduled tasks.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Guangdong",
+        "Chinese",
+        "Canadian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 5,
+      "software": [
+        "GoDaddy",
+        "Telegram",
+        "Windows Scheduled Task"
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/the-fox-tempest-question/"
+      ]
+    }
+  }
+]

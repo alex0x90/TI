@@ -1,0 +1,31 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-27",
+      "title": "The VPN for X Proxy Farm",
+      "summary": "A cluster of 31 Russian-language \"VPN for X\" Chrome extensions, published from three linked Google accounts, shares one codebase and carries about 356,000 installs. Each extension is sold as a VPN for a single blocked service, such as YouTube, Telegram, ChatGPT, or Netflix. The extensions request proxy permissions and host access to all URLs, and they configure the browser proxy with a PAC script whose target list is fetched remotely after install. This lets the operator change what traffic is proxied and where it goes without pushing an update. For defenders, the report advises removing these extensions and blocking the listed extension IDs and build hashes.",
+      "completeness": "Low",
+      "software": [
+        "Chrome",
+        "m",
+        "Instagr",
+        "am",
+        "ChatGPT",
+        "Claude",
+        "Netflix",
+        "Telegram",
+        "atGPT  Vi",
+        "atGPT v5",
+        "Discord",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "links": [
+        "https://riskyplugins.com/threat-library/russian-vpn-proxy-farm"
+      ]
+    }
+  }
+]

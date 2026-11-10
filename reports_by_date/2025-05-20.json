@@ -59,5 +59,718 @@
         "https://www.tinextacyber.com/wp-content/uploads/2025/05/Sarcoma-Ransomware.pdf"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Analysis of Hannibal Stealer (newer version of Sharp Stealer)",
+      "summary": "Hannibal Stealer is a newer version of Sharp Stealer, a modular .NET info-stealer and credential harvester. It uses stealth and obfuscation techniques, including disguising its payloads with names and versions resembling legitimate CefSharp modules, to evade detection. The malware performs DLL injection and LOLBAS activity, and it enumerates the network. It steals data from browsers, crypto wallets, and applications such as Steam, Discord, FileZilla, and VPN clients. It also hijacks copied cryptocurrency addresses through clipboard monitoring and exfiltrates stolen data via Telegram and attacker-controlled servers. The malware exits if the system is located in certain former Soviet Union countries.",
+      "completeness": "Low",
+      "threats": [
+        "Hannibal_stealer",
+        "Sharp_stealer",
+        "Process_injection_technique",
+        "Dll_injection_technique",
+        "Lolbas_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "Belarus",
+        "Russia"
+      ],
+      "software": [
+        "Telegram",
+        "Steam",
+        "Discord",
+        "Windows Registry",
+        "Firefox",
+        "CyberGhost",
+        "Google Chrome",
+        "chrome",
+        "Microsoft Edge",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "atomicwallet",
+        "bitcoincore",
+        "electrum"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "aes"
+      ],
+      "functions": [
+        "armorystr",
+        "atomicstr",
+        "bcncoinstr",
+        "elestr",
+        "ecoinstr",
+        "ChromiumBrowsers",
+        "GeckoBrowsers",
+        "Start",
+        "GetBSSID"
+      ],
+      "links": [
+        "https://medium.com/@shubhandrew/analysis-of-hannibal-stealer-newer-version-of-sharp-stealer-155f0d6b093e"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Breaking Down Termite Ransomware: Infection Methods and Detections",
+      "completeness": "Medium",
+      "threats": [
+        "Termite",
+        "Shadow_copies_delete_technique",
+        "Supply_chain_technique",
+        "Vssadmin_tool"
+      ],
+      "geo": [
+        "Australian",
+        "America"
+      ],
+      "software": [
+        "firefox",
+        "onenote",
+        "outlook",
+        "steam",
+        "thebat",
+        "wordpad",
+        "LexiCom",
+        "VLTransfer",
+        "VLTrader",
+        "DefWatch",
+        "have more..."
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "functions": [
+        "WNetOpenEnum",
+        "WNetEnumResourcesW",
+        "SetVolumeMountPoint"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/termite-ransomware-analysis.html",
+        "https://github.com/splunk/security\\_content",
+        "https://github.com/splunk/attack\\_data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Pure harm: Purerat attacks Russian organizations",
+      "summary": "PureRAT, a malware-as-a-service backdoor first seen in mid-2022, has been used in a campaign against Russian organizations that began in March 2023 and saw attacks quadruple in early 2025 compared with the same period in 2024. Attackers spread it through spam emails carrying RAR archives or links, using accounting-themed file names and double extensions such as .pdf.rar. The infection chain uses PureCrypter to load PureRAT, which communicates with its command server over SSL and can load plugins for shutdown control, window-title monitoring to flag banking and financial services, and clipboard cryptocurrency-address swapping. The campaign also deploys the PureLogs stealer, which harvests browser credentials, email, messaging, VPN and cryptocurrency wallet data. Defenders should prioritize user awareness of email-borne threats and deploy anti-spam and anti-phishing controls.",
+      "completeness": "Medium",
+      "threats": [
+        "Purerat",
+        "Keilger",
+        "Purelogs",
+        "Purecryptor",
+        "Ngrok_tool",
+        "Sparrow"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "WhatsApp",
+        "Chromium",
+        "Foxmail",
+        "Mailbird",
+        "Outlook",
+        "winscp",
+        "Steam",
+        "Discord",
+        "Pidgin",
+        "Telegram",
+        "have more..."
+      ],
+      "wallets": [
+        "safepal",
+        "aptos_wallet",
+        "sui_wallet",
+        "defi-wallet",
+        "subwallet",
+        "polkadot",
+        "morphis_wallet",
+        "bitpay",
+        "venom_wallet",
+        "tronlink",
+        "have more..."
+      ],
+      "crypto": [
+        "hedera",
+        "multiversx",
+        "binance",
+        "solana",
+        "litecoin",
+        "bitcoin",
+        "dogecoin",
+        "ethereum",
+        "mincoin",
+        "yacoin",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "3des"
+      ],
+      "functions": [
+        "CreateObject"
+      ],
+      "links": [
+        "https://securelist.ru/purerat-attacks-russian-organizations/112619/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Dark Web Profile: Aquatic Panda",
+      "summary": "Aquatic Panda is a suspected China-based state-sponsored cyberespionage group, also tracked as Earth Lusca, TAG-22, and Charcoal Typhoon, and linked to the contractor i-Soon. It is related to the Winnti ecosystem through shared tools such as ShadowPad, though the report describes it as a separate entity. The group typically gains initial access through exploiting public-facing applications, unpatched servers, and watering hole attacks using injected scripts. Its ShadowPad backdoor is stealthy, decoding only in memory and using DGA and DNS-based command-and-control. Targets include governments, NGOs, universities, religious and think tank organizations, and dissidents across Asia, Europe, and North America. Defenders should prioritize patching exposed services, behavioral and memory-based detection, and monitoring outbound DNS and HTTP traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Scylla",
+        "Supply_chain_technique",
+        "Shadowpad",
+        "Watering_hole_technique",
+        "Log4shell_vuln",
+        "Wevtutil_tool",
+        "Dllsearchorder_hijacking_technique",
+        "Dynamic_linker_hijacking_technique",
+        "Passthehash_technique",
+        "Njrat",
+        "Cobalt_strike",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "America",
+        "Hong kong",
+        "Taiwan",
+        "Hungary",
+        "Chinese",
+        "France",
+        "Turkiye",
+        "China",
+        "Asia",
+        "Thailand"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 35,
+      "software": [
+        "CHROMIUM",
+        "Linux",
+        "Unix",
+        "Windows Service",
+        "Windows security"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/dark-web-profile-aquatic-panda/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "How Adversary Telegram Bots Help to Reveal Threats: Case Study",
+      "summary": "A phishing campaign targeting Italian users and organizations, and some US users, harvests Microsoft 365 and Italian PEC credentials through fake login pages hosted on free platforms such as Notion, Glitch, Google Docs and RenderForest. The pages collect victims' credentials and IP addresses and send them to attackers through Telegram bots, using off-the-shelf infrastructure. Researchers intercepted the bot messages and found stolen credentials from victims, including organizations in logistics, energy and environmental services. The campaign's low sophistication suggests the operators may focus on access brokering rather than advanced execution. The report recommends detecting suspicious Notion-to-Glitch-to-Telegram API domain chains and identifying Telegram bot traffic on corporate networks.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Glitch",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Italy",
+        "Aruba",
+        "Italian",
+        "German"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Microsoft OneNote",
+        "Office365",
+        "Outlook",
+        "OneNote"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/adversary-telegram-bot-abuse/",
+        "https://github.com/anyrun/blog-scripts/tree/main/Scripts/TelegramAPI"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "PupkinStealer .NET Infostealer Using Telegram for Data Theft",
+      "summary": "PupkinStealer is a .NET infostealer first observed around April 2025 that steals browser passwords, Telegram and Discord session data, Desktop files, and a screenshot. It runs its collection tasks in parallel, finishing in seconds, and does not establish persistence. Its data is packaged into a ZIP archive and sent to the attacker through the Telegram Bot API over HTTPS, which also serves as its command-and-control channel. The malware appears to be opportunistic, targeting any Windows user rather than a specific industry or region, and is likely distributed via phishing or cracked software. Defenders should monitor for unexpected Telegram API traffic from workstations and reset credentials and session tokens after any suspected infection.",
+      "completeness": "Medium",
+      "threats": [
+        "Pupkinstealer",
+        "Stormkitty_stealer",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Australian",
+        "Russian",
+        "Australians"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 14,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Chrome",
+        "Opera",
+        "Google Chrome",
+        "Microsoft Edge",
+        "OperaGX",
+        "Vivaldi",
+        "Chromium",
+        "Windows Security"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "exhibit",
+        "md5"
+      ],
+      "functions": [
+        "Main",
+        "ZipCompression"
+      ],
+      "languages": [
+        "swift",
+        "powershell"
+      ],
+      "links": [
+        "https://www.picussecurity.com/resource/blog/pupkinstealer-net-infostealer-using-telegram-for-data-theft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "A ticket that is not: experts F.A.C.T. discovered a new threat - faketicticeter",
+      "summary": "FakeTicketer is a threat actor first observed by F.A.C.C.T. in June 2024, which the researchers assess is likely motivated by espionage. Its lures initially posed as Russian Premier League match tickets and later as canoeing and kayaking event tickets, then shifted to official documents such as a school diploma and Simferopol administration regulations. Delivery was via emails with archive attachments, where an executable inside the archive started a dropper that deployed a stealer or remote access trojan, plus a decoy file. The custom .NET malware, collectively named Zagrebator, steals documents and browser credentials and can exfiltrate files over HTTPS with PUT requests. Researchers believe the attacks target government-related entities, and defenders should watch for unusual archive-based lures and startup-folder persistence.",
+      "completeness": "Low",
+      "threats": [
+        "Zagrebator"
+      ],
+      "geo": [
+        "Crimea",
+        "Russian"
+      ],
+      "software": [
+        "Opera",
+        "Microsoft Edge",
+        "Chrome"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/F6/news/874046/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "North Korea's TA406 Targets Ukraine for IntelNorth Korea's TA406 Targets Ukraine for Intel",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Lolbin_technique",
+        "Sanny",
+        "Babyshark",
+        "Amadey"
+      ],
+      "geo": [
+        "Korea",
+        "Ukraine",
+        "North korean",
+        "Russia",
+        "Ukrainian",
+        "North korea",
+        "Russian",
+        "Moscow"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/newsroom/news/north-koreas-ta406-targets-ukraine-intel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Earth Ammit Disrupts Drone Supply Chains Through Coordinated Multi-Wave Attacks in Taiwan",
+      "summary": "Earth Ammit is a threat actor linked to Chinese-speaking groups that ran two supply chain campaigns, VENOM and TIDRONE, from 2023 to 2024. VENOM targeted upstream software service providers and technology companies in Taiwan and heavy industry entities in South Korea, relying mainly on open-source tools such as proxy and remote access tools. TIDRONE shifted to custom backdoors, CXCLNT and CLNTEND, and targeted Taiwan's military, satellite, and payment service sectors. The group used fiber-based API techniques and anti-analysis checks to evade detection, and it moved from upstream vendors to downstream targets. Defenders should manage third-party risk, enforce code signing, monitor fiber-related API usage, and adopt Zero Trust Architecture.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Cxclnt",
+        "Clntend",
+        "Venfrpc_tool",
+        "Screencap",
+        "Frpc_tool",
+        "Process_injection_technique",
+        "Edrsilence_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Korea",
+        "Canada",
+        "Taiwan",
+        "China",
+        "Usa"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "crypto": [
+        "ripple"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "GetModuleHandle",
+        "DeleteInstance",
+        "GetInstance"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/e/earth-ammit.html",
+        "https://github.com/72mb7VvL/test"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Malware Analysis Report",
+      "completeness": "Medium",
+      "threats": [
+        "Authentic_antics",
+        "Credential_stealing_technique",
+        "Com_hijacking_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "Outlook",
+        "Microsoft Office",
+        "Azure Active Directory Authentication Library",
+        "office365",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "aes-256",
+        "xor",
+        "gzip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/authentic-antics/ncsc-mar-authentic_antics.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Beware of backdoor malware being distributed by abusing normal certificates!",
+      "summary": "Malware carrying a valid, legitimately signed certificate from a well-known domestic company is being distributed to evade detection. The file is an SCR executable with a manipulated icon that makes it look like a PDF. When run, it drops a decoy PDF into the %TEMP% folder and extracts a malicious DLL named config.dat into the Public folder, which is then loaded via rundll32.exe. The backdoor establishes persistence through a service if run with admin rights or a registry key otherwise, then receives and executes commands from its C2 server, including file transfer, screen capture, and process execution. Defenders should enable file extension visibility and avoid running executable-type extensions such as EXE, LNK, or SCR from untrusted sources.",
+      "completeness": "Low",
+      "threats": [
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://alyacofficialblog.tistory.com/5564"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "PyBitmessage backdoor malware installed with coin miner",
+      "summary": "The ASEC report describes a backdoor distributed alongside a Monero coin miner that uses the PyBitmessage library for command and control over a peer-to-peer network instead of traditional HTTP or direct IP connections. Because the traffic is end-to-end encrypted and hidden within Bitmessage messages, the backdoor aims to evade antivirus and network security detection. The PowerShell-based backdoor installs PyBitmessage to handle incoming POST requests on a local port and saves and runs PowerShell scripts received from the attacker's messages. The malware's distribution method is unconfirmed, but it reportedly can disguise itself as legitimate or cracked software. Defenders should monitor for anomalous peer-to-peer activity and avoid untrusted files, torrents, and cracked software.",
+      "completeness": "Medium",
+      "threats": [
+        "Mitm_technique",
+        "Coinminer"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "PyBitmessage",
+        "PyInstaller"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "BackDoor"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/88104/",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/Bitmessage/PyBitmessage"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Scattered Spider: Social Engineering Meets Cloud Ransomware Tactics",
+      "summary": "Scattered Spider is an English-speaking, predominantly young and Western cybercriminal group that uses social engineering as its main initial access method. Its tactics include helpdesk impersonation, SIM swapping, MFA fatigue, and vishing, often supported by personal data gathered in advance. After gaining access, the group abuses legitimate remote access tools and cloud permissions while working to disable security controls. It has stolen data for extortion and worked with ransomware operations such as ALPHV/BlackCat and DragonForce, including in attacks on MGM Resorts and Marks & Spencer. The report's main takeaway is that defenders should harden help desk verification, phishing-resistant MFA, and privileged access controls.",
+      "completeness": "High",
+      "threats": [
+        "Sim_swapping_technique",
+        "Blackcat",
+        "Qilin_ransomware",
+        "Mfa_bombing_technique",
+        "Dragonforce_ransomware",
+        "Supply_chain_technique",
+        "Ransomhub",
+        "Teamviewer_tool",
+        "Screenconnect_tool",
+        "Lolbin_technique",
+        "Smishing_technique",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Secretsdump_tool",
+        "Ad_explorer_tool",
+        "Process_injection_technique",
+        "Raccoon_stealer",
+        "Aitm_technique",
+        "Splashtop_tool",
+        "Poortry",
+        "Stonestop",
+        "Byovd_technique",
+        "Ngrok_tool",
+        "Spectre_rat",
+        "Fleetdeck_tool"
+      ],
+      "geo": [
+        "Spanish",
+        "United kingdom",
+        "Italy",
+        "Asia",
+        "Russia",
+        "Russian",
+        "Spain"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Linux",
+        "Active Directory",
+        "Azure AD",
+        "ESXi",
+        "Dropbox",
+        "esxcli",
+        "outlook"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "Attackers"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-research/scattered-spider-social-engineering-meets-cloud-ransomware-tactics"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Cloudy with a Chance of Hijacking Forgotten DNS Records Enable Scam Actor",
+      "summary": "Hazy Hawk is a threat actor that hijacks abandoned cloud resources of high-profile organizations by exploiting dangling DNS CNAME records. The actor gained control of subdomains of the U.S. CDC in February 2025 and has also hijacked domains of government agencies, universities, healthcare organizations, and large corporations since at least December 2023. The hijacked domains host large numbers of URLs that redirect visitors through blogs, link shorteners, and traffic distribution systems to scams, fake applications, and malware. The actor uses obfuscation, cloned legitimate content, and browser push notifications to disguise activity and persistently target victims. Defenders should maintain well-managed DNS and remove CNAME records when cloud resources are shut down, and protective DNS can help block traffic distribution systems.",
+      "completeness": "Medium",
+      "threats": [
+        "Dns_hijacking_technique",
+        "Sitting_ducks_technique",
+        "Cloaking_technique",
+        "Viper"
+      ],
+      "geo": [
+        "Russian",
+        "Chinese",
+        "French",
+        "New york"
+      ],
+      "software": [
+        "Android",
+        "WordPress",
+        "Twitter",
+        "zoom",
+        "RollerAds",
+        "MoneyBadgers"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blogs.infoblox.com/threat-intelligence/cloudy-with-a-chance-of-hijacking-forgotten-dns-records-enable-scam-actor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "The Sting of Fake Kling: Facebook Malvertising Lures Victims to Fake AI Generation Website",
+      "summary": "Check Point Research tracked a malvertising campaign from early 2025 that impersonates Kling AI, a legitimate AI image and video generation platform. Threat actors promoted roughly 70 posts from fake Facebook pages and paid ads that directed users to a spoofed Kling AI website. After users submitted a prompt or image, the site delivered a zip archive containing an executable disguised as a media file using Hangul Filler characters in the filename. Executing it ran a .NET loader, sometimes built with Native AOT to evade analysis, which staged a PureHVNC remote access trojan and infostealer capabilities targeting browser credentials, crypto wallets and banking sites. The campaign reached victims globally, most notably in Asia, and included Vietnamese-language artifacts. Defenders should note that filename masquerading and deceptive AI-themed lures can disguise executables as media files.",
+      "completeness": "High",
+      "threats": [
+        "Purehvnc_tool",
+        "Procmon_tool",
+        "Dotnet_reactor_tool",
+        "Screenconnect_tool",
+        "Process_hollowing_technique",
+        "Runpe_tool",
+        "Trojan.win.mitreclassifier"
+      ],
+      "geo": [
+        "Vietnamese",
+        "America",
+        "Ita",
+        "Asia",
+        "Brasil",
+        "Vietnam"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Kling",
+        "Windows Explorer",
+        "NET Reactor",
+        "Authy",
+        "Chromium",
+        "Chrome",
+        "QQBrowser",
+        "ChromePlus",
+        "7Star",
+        "CentBrowser",
+        "have more..."
+      ],
+      "wallets": [
+        "tronlink",
+        "metamask",
+        "yoroi",
+        "jaxx",
+        "bitapp",
+        "iwallet",
+        "terra_station",
+        "bitclip",
+        "equal_wallet",
+        "wombat",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "solana",
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "gzip",
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2025/impersonated-kling-ai-site-installs-malware/",
+        "https://github.com/Washi1337/ghidra-nativeaot"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-05-20",
+      "title": "Sophisticated NPM Attack Leveraging Unicode Steganography and Google Calendar C2",
+      "summary": "The npm package os-info-checker-es6 began as a benign-looking OS information utility in March 2025 before evolving into a multi-stage malware campaign. Later versions hid their initial loader code using invisible Unicode variation selectors, which encode a Base64 payload that is executed via eval. A version published on May 7, 2025 added a dropper that fetches a Google Calendar short link, follows redirects, and scrapes a Base64-encoded attribute to reach a C2 server for a further payload. The package had about 655 weekly downloads and was a dependency of four other npm packages, which the researchers believe are linked to the same campaign. Defenders should scrutinize npm dependencies, especially those with install scripts or native modules, and watch for hidden Unicode characters in source code.",
+      "completeness": "Low",
+      "threats": [
+        "Googlecalendarc2",
+        "Steganography_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Asian"
+      ],
+      "software": [
+        "Node.js"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "getOSInfo",
+        "atob",
+        "setTimeout",
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.veracode.com/resources/sophisticated-npm-attack-leveraging-unicode-steganography-and-google-calendar-c2",
+        "https://github.com/MrSaighnal/GCR-Google-Calendar-RAT"
+      ]
+    }
   }
 ]

@@ -1,0 +1,795 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Void Dokkaebi Uses Fake Job Interview Lure to Spread Malware via Code Repositories",
+      "summary": "Void Dokkaebi, also tracked as Famous Chollima, is a North Korea-aligned group that poses as recruiters in fake job interviews to lure developers into running code repositories. The campaign turns infected developer repositories into a self-propagating chain, using malicious VS Code tasks that run when a project is opened and obfuscated JavaScript appended to configuration files. Attackers also used a batch script to rewrite git commits, bypass pre-commit hooks, and force-push changes while preserving original metadata. Researchers found over 750 infected public repositories in March 2026, and compromised repositories belonging to DataStax and Neutralinojs. The payload is a DEV#POPPER RAT variant that is retrieved through blockchain transactions, and it avoids CI/CD environments. Defenders should isolate interview code, add .vscode/ to .gitignore, enforce signed commits and branch protection, and monitor developer workstations.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Invisibleferret",
+        "Ottercookie",
+        "Omnistealer",
+        "Beavertail"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Neutralinojs",
+        "Visual Studio Code",
+        "VSCode",
+        "Node.js",
+        "Discord"
+      ],
+      "wallets": [
+        "tron",
+        "mainnet",
+        "aptos_wallet"
+      ],
+      "crypto": [
+        "aptos",
+        "binance"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/d/void-dokkaebi-uses-fake-job-interview-lure-to-spread-malware-via-code-repositories.html",
+        "https://github.com/neutralinojs/neutralinojs",
+        "https://github.com/datastax/metric-collector-for-apache-cassandra"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Bad Apples: Weaponizing native macOS primitives for movement and execution",
+      "summary": "Cisco Talos details how adversaries can abuse native macOS features for remote execution, lateral movement, and tool transfer as living-off-the-land techniques. Remote Application Scripting (eppc protocol) can be used to run commands through Terminal.app, bypassing the restrictions that block System Events, and macOS Finder comment metadata can stage payloads that evade static file analysis. Attackers can also use socat for an SSH-independent remote shell, along with SMB, Netcat, Git, TFTP, and SNMP trap channels to move tools. These techniques operate largely outside SSH-based telemetry and standard process-tree monitoring. Defenders should focus on process lineage, IPC and metadata anomalies, TCC and MDM controls, and disabling unneeded services like tftpd and snmpd.",
+      "completeness": "Medium",
+      "threats": [
+        "Lolbin_technique",
+        "Netcat_tool",
+        "Socat_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 3,
+      "software": [
+        "macOS",
+        "Linux",
+        "Unix",
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/bad-apples-weaponizing-native-macos-primitives-for-movement-and-execution/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Z2FA_LTS: A Sidewinder APT Phishing Kit Developer Burns Their Linux Username in an Express.js Stack Trace",
+      "summary": "A Sidewinder-linked phishing kit, Z2FA_LTS, was found hosted on Cloudflare Workers and impersonating a Zimbra webmail login to target Bangladesh Navy personnel. Researchers identified the kit developer's Linux username and project name after an unhandled POST error exposed a full Express.js stack trace. The campaign uses a blurred PDF viewer lure, a loading screen that pulls real CSS from the target, and a credential harvester that re-renders the login page with the username pre-filled so victims re-enter their password. The lure is a stolen Pakistani diplomatic document, showing prior access to Pakistani government communications. Infrastructure linked to an earlier Cloudflare account suggests the operator migrated after the first account was burned. Defenders should report the live Worker, rotate credentials for Bangladesh Navy webmail users, and block the Workers domains and query parameter fingerprint.",
+      "completeness": "High",
+      "threats": [
+        "Z2fa_lts_tool",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Pakistan",
+        "Turkey",
+        "Bangladesh",
+        "Pakistani",
+        "Asian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "Linux",
+        "Zimbra",
+        "Chrome",
+        "zoom"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/sidewinder-z2fa-lts-moincox-bangladesh-navy-pakistan-mofa-opsec-burn"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "APT37’s Pretexting-Based Targeted Intrusion: Analysis of Facebook Reconnaissance and Software Tampering Attacks",
+      "summary": "APT37 used two Facebook accounts claiming locations in Pyongyang and Pyongsong, North Korea, to build trust with targets before moving conversations to Messenger and Telegram. The actor used a pretext that an encrypted PDF on military weapons required a dedicated viewer, and delivered a tampered Wondershare PDFelement installer. When executed, embedded shellcode injected a payload into a legitimate dism.exe process while the normal installation appeared to proceed. The payload used a legitimate cloud service, Zoho WorkDrive, for command and control and data exfiltration, with a C2 URL disguised as a JPG file. Defenders are advised to adopt an EDR-centered, behavior-based approach to detect tampered legitimate software and abuse of trusted infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Code_cave_technique",
+        "Process_injection_technique",
+        "Cryptopp_tool",
+        "Rokrat",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Japanese",
+        "North korea",
+        "Korean",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Sysinternals",
+        "Dropbox",
+        "Astrill VPN"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "zip",
+        "aes-cbc",
+        "aes",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "get-EIP",
+        "InternetOpenUrlA",
+        "InternetReadFile"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/pretexting"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Tracking an OtterCookie Infostealer Campaign Across npm",
+      "summary": "The OtterCookie infostealer campaign, attributed with high confidence to North Korean DPRK / FAMOUS CHOLLIMA actors, was found in obfuscated npm packages published between April 6 and April 9, 2026. Attackers used benign wrapper packages impersonating the big.js library that pull in a malicious dependency, which runs a postinstall loader and steals files and credentials. The malware uses custom base91 encoding with per-function alphabets to resist static analysis. Stolen data is sent to Vercel-hosted C2 servers, and on Linux the malware installs an SSH public key backdoor and opens port 22 via ufw. The campaign overlaps with Contagious Trader activity dating back to February 2026, so defenders should audit dependency trees for these packages and monitor Node.js processes making .vercel.app connections.",
+      "completeness": "Medium",
+      "threats": [
+        "Ottercookie",
+        "Phoreal",
+        "Beavertail",
+        "Invisibleferret",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 12,
+      "software": [
+        "Linux",
+        "Gmail",
+        "Node.js",
+        "Unix",
+        "sudo"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "languages": [
+        "javascript",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://panther.com/blog/tracking-an-ottercookie-infostealer-campaign-across-npm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "REDSUN:The “Portal” Trick to God-Mode",
+      "summary": "REDSUN is a zero-day local privilege escalation exploit for Windows, released in early April 2026 by a lone researcher using the alias Chaotic Eclipse, as part of the Nightmare-Eclipse suite. It abuses a time-of-check to time-of-use race condition in the Windows Cloud Files API (cldflt.sys) and NTFS, combining opportunistic locks, junctions, and cloud placeholders. An attacker swaps a temporary folder for a junction pointing to System32, tricking a high-privileged driver into overwriting TieringEngineService.exe and gaining SYSTEM access. Defenders can hunt for unusual cldapi.dll loads, shells spawned by TieringEngineService.exe, junction creation in user temp folders, and the \\pipe\\REDSUN named pipe.",
+      "completeness": "Low",
+      "threats": [
+        "Redsun_tool",
+        "Nightmare_eclipse_tool",
+        "Bluehammer_tool",
+        "Shadow_copies_delete_technique",
+        "Undefend_tool",
+        "Toctou_vuln"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows security",
+        "Microsoft Defender",
+        "Windows Kernel",
+        "Windows Defender",
+        "Windows file system",
+        "Dropbox",
+        "Windows Storage"
+      ],
+      "links": [
+        "https://medium.com/@Mr.AnyThink/redsun-the-portal-trick-to-god-mode-2af1ae219b7f?source=rss-b61b59bd2c7c------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "New Lazarus APT Campaign: “Mach-O Man” macOS Malware Kit Hits Businesses",
+      "summary": "Lazarus Group is running a ClickFix campaign that lures business users, especially in fintech and crypto, via Telegram meeting invitations sent from compromised contacts. Victims are directed to a fake Zoom, Teams, or Meet site and tricked into pasting a terminal command that installs the \"Mach-O Man\" kit, a set of Go-based macOS Mach-O binaries. The kit impersonates platform prompts to harvest passwords, sets up persistence through a LaunchAgent, and profiles the host along with its browser extensions. Its final stealer collects browser credentials, cookies, and macOS Keychain entries and exfiltrates them via a Telegram bot. The report notes that the kit is poorly written, with infinite loops that can expose it, and that its operators exposed their Telegram bot token. Defenders should treat user-executed commands and Telegram-based meeting lures as high-risk.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Pylangghost_rat"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "OS Malw",
+        "macOS",
+        "Linux",
+        "Android",
+        "Telegram",
+        "Zoom",
+        "Microsoft Teams",
+        "sysctl",
+        "Vivaldi",
+        "Opera",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "exhibit",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/lazarus-macos-malware-mach-o-man/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Multi-Stage Cyber Campaign Targeting Middle Eastern Critical Sectors with Tradecraft Consistent with MuddyWater",
+      "summary": "A Middle East-focused campaign with tradecraft consistent with MuddyWater scanned more than 12,000 internet-exposed systems, weaponizing at least five newly disclosed CVEs affecting Laravel Livewire, SmarterMail, n8n, RMM systems, and Langflow. After reconnaissance, the actor shifted to selective intrusion, using OWA brute-force attacks and username enumeration against organizations in Egypt, Israel, and the United Arab Emirates. Targeted sectors include aviation, energy, and government, and the report confirms exfiltration of passport, payroll, and financial records from an Egyptian aviation organization. The actor also used newly identified modular C2 controllers with multi-protocol communication, including TCP, HTTP, and UDP, and AES-encrypted HTTP exchanges. The report notes the activity's timing relative to rising Middle East tensions but does not confirm attribution beyond consistency with MuddyWater. Defenders should prioritize patching exposed systems and monitoring for OWA credential attacks.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Arenac2",
+        "Patator_tool"
+      ],
+      "geo": [
+        "United arab emirates",
+        "Egyptian",
+        "Portugal",
+        "Middle east",
+        "India",
+        "Israeli",
+        "Israel",
+        "Arab emirates",
+        "Egypt",
+        "Netherlands"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "Laravel Livewire",
+        "SmarterMail",
+        "Langflow"
+      ],
+      "algorithms": [
+        "aes",
+        "exhibit"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://oasis-security.io/blog/260414-Iran"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Kyber Ransomware Double Trouble: Windows and ESXi Attacks Explained",
+      "summary": "Kyber is a cross-platform ransomware family with separate Linux/ESXi and Windows variants that share a campaign ID and Tor-based ransom infrastructure, which Rapid7 recovered together during a March 2026 incident response engagement. The ESXi variant encrypts /vmfs/volumes datastores over SSH, can terminate virtual machines using esxcli, and defaces ESXi management interfaces. The Windows variant, written in Rust, runs 11 anti-recovery commands when elevated, deleting shadow copies, clearing event logs, and stopping services, and includes an experimental Hyper-V shutdown option. Despite its ransom note claims, Rapid7 found the ESXi variant uses ChaCha8 rather than the advertised post-quantum scheme, while the Windows variant implements the hybrid Kyber1024 and AES-256-CTR design. Defenders should restrict SSH and ESXi shell access, enforce MFA, monitor esxcli and VSS-related activity, and keep backups immutable and segregated.",
+      "completeness": "High",
+      "threats": [
+        "Kyber_ransomware",
+        "Kyber",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Wevtutil_tool",
+        "Chrysalis",
+        "Empire_loader"
+      ],
+      "geo": [
+        "Russian",
+        "African"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 6,
+      "software": [
+        "ESXi",
+        "Hyper-V",
+        "esxcli",
+        "OpenSSL",
+        "msexchange",
+        "bcdedit",
+        "Linux"
+      ],
+      "algorithms": [
+        "aes-256-ctr",
+        "kyber1024",
+        "curve25519",
+        "aes-ctr",
+        "aes-256",
+        "rsa-4096",
+        "sha256",
+        "aes",
+        "chacha20"
+      ],
+      "functions": [
+        "Get-VM",
+        "setsid",
+        "dup2",
+        "system",
+        "fork",
+        "execlp",
+        "encryptFilePartly",
+        "main",
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-kyber-ransomware-double-trouble-windows-esxi-attacks-explained"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Needle: Inside a Previously Undocumented Crimeware Platform Hidden Behind a Phorpiex Worm — With Wallet Drainers for 8 Blockchains, a Private Monero Mining Pool, and 960 Million Credential Servings",
+      "summary": "Breakglass Intelligence describes Needle, a previously undocumented Russian-speaking crimeware-as-a-service panel operated under the handle TWIZT and delivered through an 11KB Phorpiex worm dropper first seen on April 20, 2026. The dropper downloaded seven payloads, including an XMRig miner that mined to a private, unauthenticated Monero pool, a file harvester, and spam modules for sextortion campaigns. The Needle panel bundles browser and desktop wallet spoofers that drain funds across eight blockchains, plus a stealer, form grabber, clipper, and builder system. A companion spam server served over 120,000 batches of plaintext email:password pairs from victims in more than 10 countries, with web.de and videotron.ca accounting for much of the sampled data. Defenders should block the listed infrastructure, hunt for the miner filenames and persistence key, and notify affected national CERTs.",
+      "completeness": "High",
+      "threats": [
+        "Phorpiex",
+        "Twizt_botnet",
+        "Needle_craas_tool",
+        "Xmrig_miner",
+        "Lumma_stealer",
+        "Vidar_stealer",
+        "Raccoon_stealer",
+        "Browser_wallet_spoofer_tool",
+        "Cryptowallet-draining_technique",
+        "Spear-phishing_technique",
+        "Motw_bypass_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "France",
+        "Poland",
+        "Seychelles",
+        "Canadian",
+        "Canada",
+        "Germany",
+        "Korea",
+        "Usa",
+        "German",
+        "China",
+        "Italy",
+        "Japan",
+        "Russian",
+        "Australia"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 16,
+      "software": [
+        "Telegram",
+        "MySQL",
+        "Visual Studio",
+        "ProFTPD",
+        "OpenSSH",
+        "Ubuntu",
+        "nginx",
+        "etherscan",
+        "Telegram Telegram",
+        "Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "rabby",
+        "keplr",
+        "brave_wallet",
+        "tron",
+        "trezor",
+        "exodus_wallet",
+        "tonkeeper",
+        "coinomi",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "ethereum",
+        "solana",
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "arbitrum",
+        "binance",
+        "kucoin"
+      ],
+      "algorithms": [
+        "randomx",
+        "sha256"
+      ],
+      "functions": [
+        "createBuild"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/needle-crimeware-platform-twizt-phorpiex-wallet-drainer-960m-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "New NGate variant hides in a trojanized NFC payment app",
+      "summary": "A new NGate malware variant abuses the legitimate Android NFC relay app HandyPay by patching it with malicious code, which ESET researchers believe was likely produced with generative AI based on emoji in the logs. The threat actors distribute the trojanized app outside Google Play through a fake Brazilian lottery site impersonating Rio de Prêmios and a fake Google Play page for a \"card protection\" app. Victims are tricked into installing it, entering their card PIN, and tapping their card to the phone, after which NFC data is relayed to an attacker device for contactless ATM cash-outs and unauthorized payments. The malware also sends captured PINs separately to a dedicated C&C server over HTTP. The campaign has been active since November 2025 and targets Android users in Brazil. The operators chose HandyPay because it is far cheaper than commercial NFC relay kits and requires no extra permissions.",
+      "completeness": "High",
+      "threats": [
+        "Ngate",
+        "Nfcgate_tool",
+        "Phantomcard"
+      ],
+      "geo": [
+        "Ukraine",
+        "Brazilian",
+        "Brazil"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 3,
+      "software": [
+        "HandyPay",
+        "Android",
+        "Android HandyPay",
+        "Google Play",
+        "Google Play p",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/new-ngate-variant-hides-in-a-trojanized-nfc-payment-app/",
+        "https://github.com/eset/malware-ioc/tree/master/ngate",
+        "https://github.com/nfcgate/nfcgate"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "The Phishy GitHub Issue Case",
+      "summary": "The author demonstrates a phishing technique that abuses GitHub issue mentions to lure developers into authorizing a malicious OAuth app. Mentioning a user triggers a GitHub notification email sent from the legitimate noreply address, which lands in the target's inbox. The attack uses a fake \"security alert\" issue with masked links and a fake GitHub Security pretext to get the developer to grant broad permissions such as repo and workflow access. The author also reports a TOCTOU race condition in GitHub's notification system, where the email can show a later edited version of the issue. The report notes that the approach bypasses 2FA because it runs on the genuine github.com domain, and that developers should scrutinize OAuth authorizations and the emails they receive.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Toctou_vuln"
+      ],
+      "software": [
+        "LiteLLM",
+        "outlook",
+        "curl",
+        "Twitter"
+      ],
+      "links": [
+        "https://blog.atsika.ninja/posts/the-phishy-github-issue-case/",
+        "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
+        "https://github.com/signup"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Someone Is Stealing From the Stealers: A Backdoored Odyssey macOS Panel Leaks Operator Credentials to scan-tron.link",
+      "summary": "A threat actor has backdoored one of two Odyssey macOS stealer panels hosted on the same Kazakhstan subnet, injecting a 960-byte credential harvester into its JavaScript bundle. The injected code exfiltrates cookies on each page load and operator usernames and passwords on each login through a fetch() hook, sending the data via image beacons to a separate receiver domain, scan-tron.link. The second panel on the subnet, running a newer build, was found clean. The report notes the backdoor's author is unknown and separate from the Odyssey operator, with possible explanations including a rival operator or a compromised server. Defenders are advised to watch for the scan-tron.link domain and for Odyssey API paths in network traffic.",
+      "completeness": "High",
+      "threats": [
+        "Odyssey_stealer",
+        "Poseidon_stealer",
+        "Amos_stealer",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Latvia",
+        "Luxembourg",
+        "Russian",
+        "Iranian",
+        "Kazakhstan"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 10,
+      "software": [
+        "macOS",
+        "OpenSSH",
+        "Debian",
+        "Debian OpenSSH",
+        "Ubuntu",
+        "penSSH 9",
+        "buntu Re",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "fetch",
+        "Image"
+      ],
+      "languages": [
+        "applescript",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/odyssey-macos-stealer-backdoored-panel-scan-tron-credential-harvester"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Hiding in plain sight: How PhantomCore disguises its activity with legitimate tools",
+      "summary": "PhantomCore is a hacking group focused on cyber espionage and data theft from Russian organizations, with incidents rising since autumn 2025. The group gains initial access by exploiting a chain of TrueConf video conferencing server vulnerabilities, and it also uses phishing with malicious LNK files. After compromise, it deploys web shells, dumps credentials from LSASS and Veeam, and moves laterally via WinRM and RDP. Persistence comes from fake services, scheduled tasks, and reverse SSH tunnels built with tools such as MacTunnelRAT, PhantomSscp, and PhantomProxyLite. Some intrusions ended in LockBit encryption within hours, suggesting a shift toward financial damage. Defenders should verify installer signatures, watch TrueConf web logs for the \"--Serial\" argument error, and check for unexpected SSH known_hosts entries.",
+      "completeness": "Medium",
+      "threats": [
+        "Phantomcore",
+        "Lockbit",
+        "Rsocx_tool",
+        "Tsocks_tool",
+        "Wstunnel_tool",
+        "Microsocks_tool",
+        "Localtonet_tool",
+        "Phantomsscp_tool",
+        "Mactunnelrat",
+        "Phantomproxylite_tool",
+        "Phantompxpigeon",
+        "Adrecon_tool",
+        "Impacket_tool",
+        "Dumpit_tool",
+        "Memprocfs_tool",
+        "Minidump_tool",
+        "Winrm_tool",
+        "Evil-winrm_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "TrueConf",
+        "Rsocx",
+        "Linux",
+        "Windows PowerShell",
+        "cURL",
+        "OpenGL",
+        "Windows registry",
+        "Velociraptor",
+        "Windows Defender",
+        "Windows Security",
+        "have more..."
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "xor",
+        "base64",
+        "md5",
+        "cbc",
+        "aes-128",
+        "aes-128-cbc"
+      ],
+      "functions": [
+        "taskId",
+        "taskType",
+        "Get-OrCreatePortFromRegistry"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "rust",
+        "php"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1025674/",
+        "https://github.com/nlohmann/json",
+        "https://github.com/sadshade/veeam-creds/blob/main/Veeam-Get-Creds.ps1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "QEMU abused to evade detection and enable ransomware delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "3am_ransomware",
+        "Qdoor",
+        "Adaptixc2_tool",
+        "Wg-obfuscator_tool",
+        "Chisel_tool",
+        "Rclone_tool",
+        "Shadow_copies_delete_technique",
+        "Microsoft_quick_assist_tool",
+        "Havoc",
+        "Screenconnect_tool",
+        "Impacket_tool",
+        "Krbrelayx_tool",
+        "Netexec_tool",
+        "Kerbrute_tool",
+        "Metasploit_tool",
+        "Bloodhound_tool",
+        "Netbird_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "QEMU",
+        "Hyper-V",
+        "VirtualBox",
+        "Linux",
+        "OpenSSH",
+        "Alpine",
+        "WireGuard",
+        "BusyBox",
+        "Active Directory",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "ruby",
+        "rust"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/qemu-abused-to-evade-detection-and-enable-ransomware-delivery",
+        "https://github.com/Adaptix-Framework/AdaptixC2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "Analysis of suspected APT-C-13 (Sandworm) group's attack activity using SSH+TOR tunnels for covert persistence",
+      "summary": "APT-C-13 (Sandworm, also known as FROZENBARENTS) is a state-backed group whose recent samples use nested SSH and Tor tunnels for covert access to victim systems. The attack begins with spear-phishing emails carrying a ZIP archive that contains a disguised LNK file, which unpacks decoy files and runs a PowerShell-launched controller script. That script checks for virtual machines or sandboxes, displays a decoy PDF, and registers two scheduled tasks named to resemble Opera GX and Dropbox repair tasks for persistence. The tunnels expose local SSH, SMB and RDP ports through a Tor onion service, with traffic obfuscated via obfs4 bridges to evade firewalls and inspection. The report attributes the activity to Sandworm with moderate confidence, citing tactics, a Eastern European origin and military-themed lures. Defenders should treat unknown archives, email attachments and links with caution.",
+      "completeness": "Low",
+      "threats": [
+        "Obfs4proxy_tool"
+      ],
+      "software": [
+        "operagx",
+        "dropbox",
+        "Opera GX",
+        "OpenSSH",
+        "curl",
+        "Task Scheduler",
+        "Windows SMB",
+        "opera",
+        "Outlook",
+        "WeChat",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/306024.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-21",
+      "title": "DinDoor's Caddy Problem: How One HTTP Header Exposed 20 Active C2 Servers",
+      "summary": "DinDoor is a Deno-based backdoor, tracked as a variant of the Tsundere Botnet, that is delivered mainly through MSI files and runs obfuscated JavaScript via the Deno runtime. It fingerprints victims, polls its C2 infrastructure, and fetches follow-on payloads, with one sample routing through the serialmenot[.]com domain, which is shared across multiple threat actors. The report found that the two analyzed samples differ in execution behavior, with one loading code in memory and the other writing it to disk. A HuntSQL query built on Caddy-related HTTP response headers identified 20 active servers across 15 autonomous systems. Defenders should alert on deno.exe activity, restrict msiexec.exe execution, and monitor for local TCP binds on ports 10044 or 10091.",
+      "completeness": "Medium",
+      "threats": [
+        "Dindoor",
+        "Tsundere",
+        "Castleloader",
+        "Chainshell",
+        "Nightshade"
+      ],
+      "geo": [
+        "Russian",
+        "Iranian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Caddy",
+        "Node.js"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/dindoor-deno-runtime-backdoor-msi-analysis",
+        "https://github.com/javascript-obfuscator/javascript-obfuscator"
+      ]
+    }
+  }
+]

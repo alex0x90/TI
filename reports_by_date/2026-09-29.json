@@ -1,0 +1,326 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "Phishing Abuses RMM Tools for Persistent Access",
+      "summary": "Microsoft Defender Experts observed phishing campaigns in July 2026 that distributed a legitimate, digitally signed MSP360 RMM installer under deceptive filenames through meeting invitations, PDF lures, and software update prompts. After the installer gained elevated privileges, it established persistent MSP360 services and used the agent to silently install ConnectWise ScreenConnect as a second remote-access channel. The threat actor then used ScreenConnect's RunFile functionality to transfer and execute tooling for credential access and information collection. Microsoft did not observe exploitation of the software itself, and the activity is unattributed to a named actor. Defenders should restrict unapproved RMM tools, enforce MFA on approved ones, and hunt for unexpected RMM installations.",
+      "completeness": "Medium",
+      "threats": [
+        "Msp360_tool",
+        "Screenconnect_tool",
+        "Win32/roguemsp.mu!mtb",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 8,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Zoom",
+        "Cloudflare",
+        "Cloudflare R2",
+        "Dropbox",
+        "Supabase",
+        "Adobe Acrobat",
+        "Windows Firewall",
+        "Windows service",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "powershell",
+        "dotnet"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "Tracking an npm supply chain attack that evolved into a multistage C2 operation with AI",
+      "summary": "Attackers published nine malicious npm packages, mimicking legitimate utility names, under the account biz44 on September 12 and 14, 2026, as reported by ESRC. The packages run a three-stage execution chain that starts automatically when a package is imported, with no further user action needed. Each package fetches its real payload remotely from a public paste-style service, and the payload gathers system information, Chrome extension data, clipboard contents, and keystrokes. Analysis of the command-and-control server revealed 16 compromised systems, many of them development or cloud environments. Defenders should note that the attacker appears to have used an AI coding assistant to develop and debug the C2 server and its process-hiding techniques.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Smishing_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Chrome"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "functions": [
+        "Function",
+        "SetWindowsHookEx",
+        "spawn"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://alyacofficialblog.tistory.com/5782"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "Inside The Com: Understanding the Ecosystem Behind Scattered Spider, LAPSUS$, ShinyHunters, and FALCON",
+      "summary": "The Com is a decentralized, predominantly English-speaking cybercriminal ecosystem with no fixed leadership, best understood as a shared substrate producing rebranding groups that run similar social-engineering playbooks. The report focuses on LAPSUS$, Scattered Spider, and ShinyHunters, which use vishing, help-desk impersonation, SIM swapping, and MFA bombing to abuse identities and access SaaS platforms. Scattered Spider has targeted telecom, casinos, insurance, retail, and aviation organizations, and has also run ransomware-as-a-service operations. In 2025, these groups merged into Scattered LAPSUS$ Hunters, which compromised several companies in 2026 and exploited CVE-2025-61882 in Oracle E-Business. The main takeaway for defenders is to harden identities with phishing-resistant MFA, callback verification, least-privileged OAuth scopes, and monitoring for mass data exports.",
+      "completeness": "Low",
+      "threats": [
+        "Sim_swapping_technique",
+        "Mfa_bombing_technique",
+        "Lolbin_technique",
+        "Blackcat",
+        "Dragonforce_ransomware",
+        "Qilin_ransomware"
+      ],
+      "geo": [
+        "London",
+        "Spain",
+        "French"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Okta",
+        "Telegram",
+        "Azure AD",
+        "Salesforce",
+        "Salesloft Drift",
+        "Cloudflare"
+      ],
+      "links": [
+        "https://blog.pulsedive.com/inside-the-com-understanding-the-ecosystem-behind-scattered-spider-lapsus-shinyhunters-and-falcon/",
+        "https://github.com/PaloAltoNetworks/Unit42-Threat-Intelligence-Article-Information/blob/main/2026-06-03-Pink-Extortion-Brand-Activity.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "From KMS Auto to Scareware: Tracking a Multi-Stage Intrusion Linked to APT36?",
+      "summary": "A multi-stage intrusion beginning with a cracked KMS Auto activation tool was analysed by K7Labs, with the activity later linked to a scareware payload branded as APT36. The chain progressed from the activator to XMRig cryptocurrency mining, then to ScreenConnect and MeshAgent remote access tools installed hours apart. The final stage was a ransomware-themed payload that did not encrypt files but used a persistent overlay and a double-extension renaming to create panic. Researchers found the APT36 attribution inconclusive, judging the activity closer to a hoax than a targeted espionage attack. The key lesson is that individually dual-use tools may look low-severity, but their sequence reveals deliberate host compromise. K7 has reclassified KMS Auto as a HackTool.",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Screenconnect_tool",
+        "Meshagent_tool"
+      ],
+      "geo": [
+        "Pakistani",
+        "Pakistan"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 8,
+      "software": [
+        "KMSAuto",
+        "Windows Defender"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/from-kms-auto-to-scareware-tracking-a-multi-stage-intrusion-linked-to-apt36/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "Beware of phishing emails disguised as project material purchase request forms",
+      "summary": "Phishing emails impersonating employees of a specific Korean company deliver a malicious XLS file disguised as a project material purchase request form. The document displays a legitimate-looking decoy while exploiting CVE-2017-0199, an OLE2Link remote code execution flaw in Microsoft Office, to fetch and run a malicious HTA file from a remote server. The HTA launches obfuscated PowerShell via WMI, which downloads a steganographic PNG and extracts a Base64-encoded .NET loader that runs in memory. The loader ultimately deploys Remcos RAT, which enables keylogging, screen capture, and file manipulation to collect system and user information and send it to a C2 server. Defenders should verify sender domains, check linked URLs before clicking, scrutinize suspicious attachment extensions, and confirm official URLs and HTTPS before entering credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Steganography_technique",
+        "Remcos_rat"
+      ],
+      "software": [
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95596/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "DirtyBlanket: Fake Express Packages on npm Spread a Linux Worm",
+      "summary": "A campaign published nine npm packages, eight impersonating Express and one impersonating React, that install a self-spreading Linux worm through a preinstall hook. The hook downloads a loader through the Internet Archive Wayback Machine, which can slip past allowlists that trust web.archive.org, and that loader fetches a Bash worm from Codeberg. The worm installs the open-source CHAOS remote access tool, disguised as a systemd font service, which gives the operator a shell and file access over Tor. It spreads by logging in to hosts using SSH private keys found on the machine, by adding itself to AUR packages those keys can push to, and by publishing infected versions of npm packages using local npm tokens. Defenders should treat any Linux machine that installed these packages as fully compromised, including all keys and tokens on it.",
+      "completeness": "Medium",
+      "threats": [
+        "Chaos_rat",
+        "Chaos_ransomware",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "Linux",
+        "node.js",
+        "systemd",
+        "curl",
+        "macOS",
+        "openssh",
+        "debian",
+        "Windows Subsystem for Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://safedep.io/dirtyblanket-express-impersonation-npm/",
+        "https://github.com/tiagorlampert/CHAOS"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "Beware of phishing emails disguised as quotation requests",
+      "summary": "Phishing emails posing as project quotation requests are distributed to lure recipients into downloading a compressed attachment. The archive contains a VBScript that uses obfuscation, including token-based string substitution, to rebuild a PowerShell command. The PowerShell payload bypasses UAC through a ShellWindows COM object, then loads a loader that decrypts a further payload in memory. The final stage is Remcos RAT, which is injected into the legitimate MicrosoftEdgeUpdate.exe process and collects keystrokes, screenshots, and file data. Defenders should verify sender domains, check URLs before clicking, and scrutinize attachments with script or executable extensions such as .vbs and .exe.",
+      "completeness": "Low",
+      "threats": [
+        "Uac_bypass_technique",
+        "Remcos_rat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "ShellExecute"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95597/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "Fake iPhone Duo preorder scam triggers DarkSword attack",
+      "summary": "A fake Apple preorder page for the \"iPhone Duo\" uses the leaked DarkSword exploit chain to attack vulnerable iPhones when visited, without any button press or form submission. The page imitates Apple's branding and offers a $500 voucher, but the preorder form does not actually place an order and Apple has not opened Duo preorders yet. If the exploit succeeds, a payload attempts to steal device information, app lists, Apple Notes, keychain credentials, and cryptocurrency wallet data, and it can run server-issued commands. Analysts did not test the code on a real iPhone, and Apple says updated devices are protected against the reported DarkSword attacks. Defenders should keep iPhones updated, avoid opening unfamiliar preorder links, and change exposed passwords and move crypto funds from a trusted device if compromise is suspected.",
+      "completeness": "Low",
+      "threats": [
+        "Darksword_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "tonkeeper"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/09/fake-iphone-duo-preorder-scam-triggers-darksword-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "August 2026 APT Attack Trends Report (South Korea)",
+      "summary": "The AhnLab August 2026 report describes APT attacks against South Korean targets, mostly delivered through spear phishing with malicious LNK files, which was the most common vector that month. Attackers disguised LNK files as resumes, documents, or decoy files, then used PowerShell, curl.exe, scheduled tasks, and DLL side-loading to deliver backdoors, infostealers, keyloggers, and XenoRAT-type malware. Some variants used PubNub channels for command and control or Python-based backdoors, and Hangul (HWP) documents with OLE objects were also used to load malicious DLLs. Defenders are advised to avoid opening files from unknown sources, verify senders, patch systems and browsers, and keep V3 updated.",
+      "completeness": "Low",
+      "threats": [
+        "Spear-phishing_technique",
+        "Xenorat",
+        "Dll_sideloading_technique",
+        "Dropper/lnk.generic"
+      ],
+      "geo": [
+        "South korea"
+      ],
+      "software": [
+        "Task Scheduler",
+        "PubNub",
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "autoit",
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95648"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-29",
+      "title": "From BlackCat to Panda Workshop: Inside the Evolving C2 Panel Behind RATHat",
+      "summary": "RATHat, an Android banking trojan, kept its malware largely static from late 2025 to September 2026 while its C2 panel went through three generations, rebranded from BlackCat to Panda Workshop. The panel acts as a malware factory, building, signing, and publishing samples on a schedule to evade hash-based detection. After the malicious app gets Accessibility access, it enables wireless debugging, obtains an ADB shell, and deploys a native Go service that persists until reboot and runs outside the app's permission model. Nearly 100 deployments across Europe, LATAM, and South-Eastern Asia point to a Malware-as-a-Service model. AI is used on both sides, with Gemini helping the malware locate UI controls and the panel estimating victims' bank balances from SMS.",
+      "completeness": "Medium",
+      "threats": [
+        "Rathat",
+        "Smishing_technique",
+        "Credential_harvesting_technique",
+        "Screencap"
+      ],
+      "geo": [
+        "Latam",
+        "Singapore",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Anthropic",
+        "DeepSeek",
+        "OpenAI",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "bridge",
+        "HTTP"
+      ],
+      "links": [
+        "https://www.cleafy.com/cleafy-labs/from-blackcat-to-panda-workshop-inside-the-evolving-c2-panel-behind-rathat"
+      ]
+    }
+  }
+]

@@ -1,0 +1,407 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "CYFIRMA Threat Advisory: Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+      "summary": "CYFIRMA assesses with high confidence that DPRK state-nexus operators linked to the Lazarus Group ecosystem are exploiting two unauthenticated remote-code-execution flaws in PHP core, CVE-2026-109618 and CVE-2026-109619, both rated CVSS v4.0 9.2. The operators reportedly moved from reconnaissance into active exploitation and claim to have expanded their target set from 216 to 581 hosts, though this figure is an adversary claim that CYFIRMA has not verified. Targets span government, banking, telecommunications, infrastructure, and other sectors across 10 countries, with Asia-Pacific accounting for most of the captured list. Attackers use crafted multipart requests and follow-up requests on the same PHP worker, with the highest success reported on Apache mod_php in prefork mode. Defenders should patch and restart all PHP workers to fixed releases and hunt logs back to 17 October 2026.",
+      "completeness": "High",
+      "threats": [
+        "Mirai",
+        "Watering_hole_technique",
+        "Wannacry",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Australia",
+        "South korean",
+        "India",
+        "United states",
+        "Korean",
+        "Dprk",
+        "Bangladesh",
+        "Usa",
+        "Indonesia",
+        "Japan",
+        "North korea",
+        "North korean",
+        "Taiwan",
+        "Singapore",
+        "Saudi arabia",
+        "Thailand",
+        "Korea"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "PHP2Shell",
+        "WordPress",
+        "Drupal",
+        "Laravel",
+        "Cloudflare",
+        "OpenAI",
+        "PHP-FPM",
+        "LiteSpeed",
+        "cPanel",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "Set-Cookie"
+      ],
+      "languages": [
+        "swift",
+        "python",
+        "php",
+        "perl"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "MythicRatatoskr: An Yggdrasil-enabled backdoor deployed in a UAC-0099-Sandworm collaboration",
+      "summary": "UAC-0099, a Russia-aligned cyberespionage group targeting Ukrainian government, financial and media organizations, gained initial access to a Ukrainian grain logistics company in July 2025 via spearphishing. The attackers then deployed MythicRatatoskr, a previously undocumented Go-based backdoor whose C&C server is hosted inside the Yggdrasil mesh network and reached over HTTPS on port 443. The backdoor supports command execution, file transfer, screenshots and proxying, and it was likely used to deploy a SOCKS5 server. In September 2025, Sandworm carried out a data-wiping attack using SDelete deployed via Active Directory Group Policy, suggesting UAC-0099 handed off access to Sandworm. Defenders can mitigate the threat by blocking the public Yggdrasil peer addresses, since the C&C server is otherwise difficult to detect or locate.",
+      "completeness": "High",
+      "threats": [
+        "Mythicratatoskr",
+        "Spear-phishing_technique",
+        "Matchwok",
+        "Invisimole",
+        "Matchboil",
+        "Sdelete_tool",
+        "Lonepage",
+        "Eternal_petya",
+        "Supply_chain_technique",
+        "Olympic_destroyer",
+        "Industoyer2",
+        "Revsocks_tool",
+        "Go-socks5_tool",
+        "Trojan-proxy",
+        "Quasar_rat"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian",
+        "Russia",
+        "Russian federation",
+        "Ukraine"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 15,
+      "software": [
+        "Linux",
+        "OpenSSH",
+        "WinRAR",
+        "Active Directory",
+        "Windows service",
+        "macOS"
+      ],
+      "algorithms": [
+        "ed25519",
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/",
+        "https://github.com/yggdrasil-network/yggdrasil-go",
+        "https://github.com/yggdrasil-network/yggstack",
+        "https://github.com/yggdrasil-network/yggdrasil-go/blob/306c4c624b51490b5a68a7118474f3cdf1e493a1/src/address/address.go#L51"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "ARTEX in the Wild: Storm-0940 Expands Targeting of IT and Software Vendors",
+      "summary": "Wiz Research tracked an actor using tooling associated with ARTEX, an open-source autonomous AI penetration-testing framework, overlapping with Storm-0940 and targeting IT and software vendors throughout October 2026. The activity focused on identity providers such as Okta, Entra, and AWS Cognito, along with abuse of Microsoft 365 integrations, aiming to find authentication bypasses and access customer data. The agent first mapped target applications by downloading JavaScript source maps, configurations, and API documentation, then probed sign-in flows, OAuth callbacks, and unsigned JWTs. It also ran large, AI-driven password spray campaigns against hundreds of users, mostly software engineers, and rotated IPs and user agents when blocked. Wiz concludes that no individual technique is novel, but the chained, adaptive behavior shows a clearly agentic attack that persists until it finds one weak point.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool",
+        "Supply_chain_technique",
+        "Nmap_tool",
+        "Impacket_tool",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Okta",
+        "Microsoft 365",
+        "curl",
+        "Chrome",
+        "Linux",
+        "Boto3"
+      ],
+      "languages": [
+        "cpython",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "ConnectWise Breach Storm-0940 Probed 2,250 M365 Tenants With ARTEX AI",
+      "summary": "Storm-0940, which Microsoft assesses as China state-aligned, abused a ConnectWise Cloud Backup vendor credential to authenticate as the multi-tenant application and reach Microsoft 365 tenants that had consented to it. Microsoft says the actor attempted sign-ins against more than 2,250 tenants, but Huntress confirmed unauthorised sign-ins in 162 to 173 tenants, and the true victim count remains unsettled. In affected tenants, the actor added secrets to other applications and in one case made an application Global Administrator, creating persistence that can survive remediation. Microsoft links the activity to ARTEX, an open-source AI multi-agent penetration tool, though the attribution rests on Microsoft's assessment alone. The main takeaway for defenders is that app-only sign-ins involve no user, device or MFA prompt, so workload identity credentials need stronger controls and logging.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Supply_chain_technique",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Japanese",
+        "China",
+        "South korea",
+        "Korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 10,
+      "software": [
+        "Microsoft 365",
+        "SharePoint",
+        "Office 365",
+        "LastPass",
+        "PHP2Shell"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/connect-wise-breach-storm-0940-probed-2-250-m365-tenants-with-artex-ai"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "Threat Intelligence \\| Beware: Web3 Interview Questions Conceal a Data-Stealing Backdoor",
+      "summary": "SlowMist found a GitHub repository named sol-live, presented as a Solidity interview practice project, that hides a remote code execution chain in its VS Code workspace settings. The malicious terminal configuration in .vscode/settings.json downloads and runs a remote script when a user launches the project's custom zsh or bash terminal on macOS or Linux. The payload runs three background processes that can steal browser login databases, wallet extension storage, macOS Keychain files, and clipboard contents, and upload local files. Developers evaluating Web3 interview questions are the target. Defenders should review .vscode/settings.json before opening unfamiliar projects and treat any host that launched the terminal as potentially compromised.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "SlowMist",
+        "vscode",
+        "macOS",
+        "Linux",
+        "Node.js",
+        "curl",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "rabby"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-gcm",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "unref",
+        "decryptPassword"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "solidity",
+        "python"
+      ],
+      "links": [
+        "https://slowmist.medium.com/threat-intelligence-beware-web3-interview-questions-conceal-a-data-stealing-backdoor-615cebdcb21c?source=rss-4ceeedda40e8------2",
+        "https://github.com/evilcos/vscode\\_tasks\\_command\\_execute\\_poc",
+        "https://github.com/slowmist/MistEye-DepScan?utm\\_source=chatgpt.com",
+        "https://github.com/slowmist/misteye-skills?utm\\_source=chatgpt.com"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "Infostealer riding the AI Train",
+      "summary": "Check Point Research reports Aokigahara, a newly observed infostealer that may previously have been known as Kamidere or Stygian. It combines traditional data theft against browsers, VPN clients, cryptocurrency wallets, FTP clients, and password managers with dedicated collection of AI application and developer tool credentials. Targeted AI tools include Claude, ChatGPT Desktop, Codex, Cursor, Windsurf, GitHub Copilot, and Gemini CLI, alongside AWS, Azure, and Google Cloud credentials, Git credentials, and SSH keys. The report notes that stolen tokens could enable unauthorized use of paid AI services, resale of accounts, or data extortion, though monetization is not confirmed. Defenders should treat AI application sessions and developer secrets as sensitive assets alongside browser sessions and cloud credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Aokigaharastealer",
+        "Kamidere",
+        "Stygian"
+      ],
+      "software": [
+        "Claude",
+        "ChatGPT",
+        "Codex",
+        "Mozilla Firefox",
+        "Firefox",
+        "Discord",
+        "Telegram",
+        "Steam",
+        "Roblox",
+        "Minecraft",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "electrum",
+        "zcash",
+        "jaxx",
+        "coinomi",
+        "wassabi",
+        "dashcore",
+        "daedalus",
+        "tokenpocket",
+        "metamask",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "dogecoin",
+        "litecoin",
+        "bitcoin",
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "sha1",
+        "aes-256-cbc",
+        "aes",
+        "zip",
+        "sha256",
+        "aes-256-gcm",
+        "aes-gcm",
+        "curve25519"
+      ],
+      "functions": [
+        "bytearray"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "New Evidence Shows LiteLLM Secret-Stealing Workflows Ran 11 Days Before Supply Chain Attack",
+      "summary": "Socket's Threat Research team reports that a malicious secret-exfiltration workflow ran successfully in the BerriAI/litellm repository on October 10, 2026. That activity came eleven days before the release-pipeline attack that published malicious litellm==1.107.0 artifacts. The finding places observed malicious activity in the repository more than a week before the compromise became public. The provided excerpt does not describe the specific targets, the full attack mechanics, or any remediation guidance.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "Docker",
+        "curl",
+        "AWS Bedrock",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://socket.dev/blog/litellm-attack-timeline"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "CrowdStrike’s work with the Democratic National Committee: Setting the record straight",
+      "summary": "CrowdStrike's incident response team was engaged by the Democratic National Committee on April 30, 2016, and identified two Russian state-linked adversaries, COZY BEAR and FANCY BEAR, on the network. COZY BEAR had been present since summer 2015, while FANCY BEAR separately breached the network in April 2016, and the two groups showed no evidence of collaboration. The adversaries used spearphishing with malicious droppers, configurable RATs, and anti-analysis checks, and they constantly changed implants and command-and-control channels to avoid detection. CrowdStrike's remediation ran from June 10 to June 13, 2016. The company said circumstantial evidence indicated data exfiltration, a conclusion it says was later supported by U.S. intelligence and congressional reports.",
+      "completeness": "Low",
+      "threats": [
+        "Seadaddy",
+        "Xagent",
+        "Xtunnel"
+      ],
+      "geo": [
+        "United states",
+        "Russian",
+        "Russia",
+        "American",
+        "Russians"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-23",
+      "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+      "summary": "The compromised LiteLLM 1.107.0 release, published to PyPI on October 21, 2026 and distributed through official container images, used Python startup files that run during interpreter initialization, so starting Python in an affected environment could be enough to trigger the payload even if LiteLLM was never imported. One path runs a credential collector that targets developer tool, AI application, cloud, browser, SSH, and environment-variable secrets, plus selected LiteLLM proxy database records, then encrypts the results and uploads them to an attacker-controlled endpoint. A second, Unix-oriented loader can fetch and execute additional Python code via a GitHub-hosted pointer file, though no second-stage retrieval was confirmed. Defenders should not run Python or pip inside a suspect environment to investigate, should rebuild from verified artifacts, and should rotate and revoke every credential the affected identity could reach, since removing the package alone is insufficient.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Privcollect",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 1,
+      "software": [
+        "LiteLLM",
+        "Microsoft Defender",
+        "macOS",
+        "Kubernetes",
+        "Docker",
+        "Firefox",
+        "Linux",
+        "OpenSSL",
+        "Microsoft Defender for Endpoint",
+        "Azure App Service",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "sha1",
+        "aes-256-cbc",
+        "aes",
+        "gzip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/"
+      ]
+    }
+  }
+]

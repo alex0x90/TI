@@ -1,0 +1,367 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "Cache key injection: Smuggling poison through the door",
+      "summary": "Cache key injection is a web cache poisoning technique that targets keyed request fragments rather than unkeyed ones, using ambiguous concatenation in cache keys. Researcher Alex Brumen demonstrated it against Nginx caching proxies, with a test where Cloudflare sat in front of Nginx. Attackers craft requests whose fragments, split between the URI and headers such as Accept, produce the same final key as a legitimate request. The technique can bypass access-control rules to reach cached admin pages, cause cache-poisoned denial of service, and turn HTTP scheme confusion into stored XSS. The report also shows an attacker bypassing Cloudflare to poison an Nginx origin cache. Defenders should add explicit separators or structural encoding to cache keys so that the boundary of each component is preserved.",
+      "completeness": "Low",
+      "threats": [
+        "Cache_key_injection_technique",
+        "Smuggling_technique",
+        "Cpdos_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Nginx",
+        "Discord"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.yeswehack.com/lab/research-cache-key-injection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "GHAPPIER - One loader, sixty-five repositories, twenty-two accounts: an unreported loader family beside DPRK's PolinRider campaign",
+      "summary": "A threat actor used the maintainer account of the legitimate npm package @dforge-core/dforge-mcp for 105 minutes on 9 September 2026 to push a malicious release, version 0.2.21, which was the registry's latest version for about 35 minutes before the maintainer reverted it. The compromised release carried valid npm provenance because it was built through trusted publishing, so the attestation accurately recorded a malicious source commit. The payload is a multi-stage chain whose final implant deletes itself from disk at startup, so file searches on affected machines may find nothing. A second payload in another victim's repository linked the activity to PolinRider, a DPRK-linked campaign that retrieves its command-and-control address from an Ethereum blockchain transaction. Defenders should block the listed endpoints, hunt for the chain's leftover artefacts, and pin the package to 0.2.22, since no advisory was published to warn users of 0.2.21.",
+      "completeness": "Low",
+      "threats": [
+        "Ghappier",
+        "Polinrider",
+        "Nullreceiver_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "North korea"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/ghappier-malware-loader-npm-supply-chain-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "Remus: A New Infostealer Hunting Wallets, Passwords, and AI Credentials",
+      "summary": "Remus is a Windows infostealer that surfaced on underground marketplaces around March 2026, and SpyCloud researchers reverse engineered it over several weeks. It targets browser data, cryptocurrency wallets, files on disk, and, in recent builds, AI credential folders used by Anthropic, OpenAI, and others, exposing API tokens and LLM usage history. Remus steals a notably large set of Mozilla extensions, including several 2FA tools, which could enable account compromise. It operates quietly by using syscalls and COM objects, and it removes syscall hooks before running to blind EDR tools. Its C2 is resolved through an Ethereum smart contract, a technique known as etherhiding first used by DPRK operators in 2025. The report also notes ClickFix social engineering as a common lure and shared obfuscation and Chromium theft methods with LummaC2.",
+      "completeness": "High",
+      "threats": [
+        "Remus",
+        "Etherhiding_technique",
+        "Lumma_stealer",
+        "Clickfix_technique",
+        "Dead_drop_technique",
+        "Anydesk_tool",
+        "Ultra_vnc_tool",
+        "Jump_cloud_tool",
+        "Realvnc_tool",
+        "Tigervnc_tool"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Anthropic",
+        "OpenAI",
+        "Chromium",
+        "OLLVM",
+        "Outlook",
+        "chrome",
+        "Steam",
+        "Pastebin",
+        "etherscan",
+        "1Password",
+        "have more..."
+      ],
+      "wallets": [
+        "bitcoincore",
+        "coinomi",
+        "daedalus",
+        "dashcore",
+        "electron_cash",
+        "electrum",
+        "exodus_wallet",
+        "jaxx",
+        "wassabi",
+        "trezor",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "binance",
+        "ripple",
+        "casper",
+        "multiversx",
+        "uniswap"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "chacha20"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://spycloud.com/blog/remus-a-new-infostealer/",
+        "https://github.com/obfuscator-llvm/obfuscator/wiki"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "Unpacking a laZzzy Donut",
+      "summary": "The report describes a multi-stage malware loader that layers obfuscation and shellcode injection, starting from obfuscated CPython bytecode and ending in an embedded .NET DLL with encrypted resources. Each stage wraps the next: an RC4-encrypted base64 string yields shellcode, which is a Donut layer, then a laZzzy-generated PE using AES-CBC plus XOR, then a second Donut layer. The researchers recovered the chain by reusing public tools such as a Kramer deobfuscator, Volexity's donut_decryptor, and dnSpy or ILSpy, with modifications where needed. No public tool existed for static laZzzy extraction, so the team built laZzzy_dump, which locates the decryption routine by byte pattern and decrypts offline. The main takeaway is that layered formats defeat signature scanners that look for only one format, and that static unwinding is feasible when the loader's code structure is understood.",
+      "completeness": "Low",
+      "threats": [
+        "Lazzzy",
+        "Donut"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "DOT NET"
+      ],
+      "algorithms": [
+        "aes",
+        "rc4",
+        "xor",
+        "aes-cbc",
+        "base64"
+      ],
+      "functions": [
+        "to"
+      ],
+      "languages": [
+        "cpython",
+        "python"
+      ],
+      "links": [
+        "https://trustedsec.com/blog/unpacking-a-lazzzy-donut",
+        "https://github.com/billythegoat356/Kramer/tree/main",
+        "https://github.com/volexity/donut-decryptor",
+        "https://github.com/thewover/donut"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "Click2Shell: WordPress Flaw Enables RCE Chain",
+      "summary": "Click2Shell is a WordPress Core flaw that can trick a logged-in administrator's browser into installing and previewing a theme via a crafted link, without explicit consent. On its own it cannot execute arbitrary code, but researchers showed that it can be chained with a vulnerable theme, such as Mobile Repair Zone 2.5.4, to run attacker-specified PHP. Exploitation requires no attacker account but does require an administrator to click a malicious link. WordPress fixed the flaw in 7.1.1 and older branch releases issued on September 17, and defenders should update and review installed themes, including inactive ones. There is currently no confirmed in-the-wild exploitation, though a public PoC was released on September 18.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/click2shell-wordpress-rce-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "npm ‘btree’ Malware Campaign Affects Millions of Downloads, No Need for Install Script",
+      "summary": "The npm campaign involving the malicious indexed-btree package mimics the legitimate sorted-btree utility and affects multiple packages, with the attackers reportedly earning 109 ETH. Unlike typical supply chain attacks, it does not use preinstall or postinstall scripts; instead, the loader is hidden in the library's BTree.prototype.set method, which runs during normal application use. The malware fingerprints host information and exfiltrates it to Slack and Telegram, and it uses a smart contract on the Sepolia testnet as a resilient command and control channel. The second-stage payload is unlocked through an on-chain X25519 key exchange and AES decryption, and the malware can delete its own files and trigger code. The campaign reached nearly 2 million weekly downloads, showing that npm's removal of lifecycle scripts does not stop this kind of attack. Defenders should prioritize runtime behavior analysis rather than relying only on checks for install-time scripts.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Slack",
+        "Telegram"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes",
+        "ecdh",
+        "curve25519"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://checkmarx.com/zero-post/npm-btree-malware-campaign-affects-millions-of-downloads-no-need-for-install-script/",
+        "https://github.com/INDEXED-BTREE/indexed-btree/commits/main/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "Group Policy hijacked: PAYLOAD ransomware weaponizes Active Directory GPO",
+      "summary": "PAYLOAD ransomware operators, observed by Kaspersky GERT in April 2026 at a Middle Eastern manufacturer, abused Active Directory by authoring a malicious Group Policy Object linked at the domain root. The GPO delivered ransom notes, replaced wallpaper and lock screen, displayed a logon banner, and disabled the local administrator account on domain-joined Windows workstations without dropping a ransomware binary or encrypting files. A second GPO disabled Windows Firewall across the domain, and data was exfiltrated from file servers and other systems before being published. The malicious policy stayed dormant for a day until machines rebooted, and the attacker's access route to domain admin-level control was not confirmed. Defenders should audit GPO creation and domain-root link changes, monitor SYSVOL, and restrict GPO rights, since file- and process-based detection would miss this attack.",
+      "completeness": "High",
+      "threats": [
+        "Payload_ransomware",
+        "Lolbin_technique",
+        "Ryuk",
+        "Lockbit",
+        "Blackcat",
+        "Password_spray_technique",
+        "Credential_harvesting_technique",
+        "Dcsync_technique",
+        "Kerberoasting_technique",
+        "Passthehash_technique",
+        "Process_hollowing_technique",
+        "Powerview_tool",
+        "Sharpgpoabuse_tool",
+        "Shadow_copies_delete_technique",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Middle east"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 17,
+      "software": [
+        "Active Directory",
+        "ESXi",
+        "Linux",
+        "PsExec",
+        "FortiGate",
+        "Windows Firewall",
+        "Windows Security",
+        "Event Tracing for Windows",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/tr/payload-ransomware-via-group-policy/121335/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "Vidar Adds Virtual Machine and Custom Stream Ciphers For String Obfuscation",
+      "summary": "Vidar is an information stealer first observed in 2018 that has steadily changed how it obfuscates its strings to hinder detection and analysis. Zscaler ThreatLabz tracked its evolution from single-byte XOR to ChaCha20 and then to a custom virtual machine combined with a custom stream cipher. The virtual machine uses a bytecode interpreter with per-build opcodes, constants, and substitution tables, and it can directly deobfuscate strings or decrypt keys for the cipher. Vidar's stream cipher is either a modified ChaCha-based design or an add-rotate-XOR design, with constants that vary across builds. ThreatLabz notes these per-build techniques are designed to defeat static and automated analysis, so defenders need network and endpoint detection that can keep pace with such changes.",
+      "completeness": "Low",
+      "threats": [
+        "Vidar_stealer"
+      ],
+      "algorithms": [
+        "xor",
+        "fnv-1a",
+        "chacha20"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/vidar-adds-virtual-machine-and-custom-stream-ciphers-string-obfuscation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "Mind the (Patch) Gap, Part 2: Fake Websites Used to Deploy Chrome & Windows 0-Day Exploits",
+      "summary": "Volexity observed a third Chinese APT actor, tracked as UTA0565, chaining unpatched zero-day exploits in Google Chrome and Microsoft Windows in September 2026. The actor used phishing emails with links to spoofed websites impersonating entities such as the Center for American Progress, China Digital Times, and The Conversation. The spoofed sites reused legitimate content as decoys and loaded an exploit component through a hidden iframe. The final payload was a previously undocumented malware family, CLEANGULP, which is heavily obfuscated and supports shell, file transfer, and process listing commands over HTTP. Volexity assesses the exploit kit was likely shared and customized across multiple Chinese groups, so defenders should treat the activity as possibly broader than reported.",
+      "completeness": "High",
+      "threats": [
+        "Uta0565",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "China",
+        "Asian",
+        "Chinese",
+        "American"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Google Chrome",
+        "Windows shell",
+        "Volexity Volcano"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "sha1",
+        "sha256",
+        "aes",
+        "aes-256-gcm"
+      ],
+      "links": [
+        "https://www.volexity.com/blog/2026/09/21/mind-the-patch-gap-part-2-fake-websites-used-to-deploy-chrome-windows-0-day-exploits/",
+        "https://github.com/volexity/threat-intel/tree/main/2026/2026-09-21%20Chrome-part-2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-21",
+      "title": "PAYLOAD Campaign: Extortion via an Active Directory Group Policy Object",
+      "summary": "The PAYLOAD campaign, investigated by Kaspersky GERT in April 2026 at a Middle Eastern manufacturer, abused Active Directory to gain domain administrator-level control. The attacker created and linked a malicious Group Policy Object named PAYLOAD to the domain root, which displayed ransom messages, replaced desktop and lock screen wallpapers, enabled a logon banner, and disabled the local administrator account on domain workstations. No ransomware executable ran on Windows systems and no data was encrypted, though data was exfiltrated and later leaked on the dark web. Defenders relying on file and process detection would only notice the attack after reboots activated the policy. Recommended measures include auditing directory service changes (events 5136, 5137, 5141), monitoring SYSVOL integrity, and tightly controlling GPO creation and linking rights.",
+      "completeness": "High",
+      "threats": [
+        "Ryuk",
+        "Lockbit",
+        "Blackcat",
+        "Payload_ransomware",
+        "Password_spray_technique",
+        "Credential_harvesting_technique",
+        "Dcsync_technique",
+        "Kerberoasting_technique",
+        "Passthehash_technique",
+        "Process_hollowing_technique",
+        "Powerview_tool",
+        "Sharpgpoabuse_tool",
+        "Shadow_copies_delete_technique",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Middle east"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "Active Directory",
+        "ctive Directory en",
+        "ESXi",
+        "inux se",
+        "PsExec",
+        "FortiGate",
+        "Windows Firewall",
+        "ortiGate SS",
+        "ctive Directory po",
+        "Windows Security",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/tr/payload-ransomware-via-group-policy/117100/"
+      ]
+    }
+  }
+]

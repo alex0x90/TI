@@ -193,5 +193,181 @@
         "https://github.com/safedep/pmg"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-14",
+      "title": "New Data Extortion Group “Pink” Goes Big Game Hunting With Evasive Phishing Kits",
+      "summary": "Pink, also tracked as CL-CRI-1147, is a newly established data extortion group that uses voice phishing to impersonate internal IT support and steal employee credentials and MFA details. Its tailored Okta and Microsoft Entra ID phishing kits use backend-controlled access gates and anti-analysis checks to evade sandboxes and researchers, and they can proxy MFA codes and passkey registrations in real time. After gaining access, the group collects data from SharePoint and OneDrive and sends extortion demands through compromised email and internal Teams messages. Pink is assessed as Com-affiliated and likely a rebrand of BlackFile/Redact, and it targets high-value US organizations in healthcare, technology, and financial services. Defenders are advised to focus on vishing awareness and to move from push-based MFA to hardware-backed FIDO2/WebAuthn.",
+      "completeness": "Medium",
+      "threats": [
+        "Qtox_tool",
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "America",
+        "United states",
+        "American",
+        "Japan",
+        "Ireland",
+        "Asia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 11,
+      "software": [
+        "Okta",
+        "Microsoft Entra",
+        "Discord",
+        "Telegram",
+        "virtualbox",
+        "Chrome",
+        "HubSpot"
+      ],
+      "functions": [
+        "WebAuthn",
+        "hostKey",
+        "hb",
+        "cr",
+        "poll",
+        "hide",
+        "show"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/pink-data-extortion-group-phishing-kits/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-14",
+      "title": "The Rise of Pony Malware and What it Means for Organizations",
+      "summary": "Pony, also known as Fareit or Siplog, is an information stealer and loader that first appeared in 2011 and mainly targets users in Europe and North America. Unlike typical botnets, it does not depend on a central command and control server, as attackers can deploy their own control server or reuse one set up by another actor. Its builder creates customized bots, and its source code for several versions has leaked on darknet forums. Pony is delivered through spam emails with malicious Word or JavaScript attachments, exploit kits, DNS poisoning, and trojanized free software. It can steal credentials for over 110 applications, including browsers, VPNs, FTP clients, and email services, and it turns infected PCs into botnet nodes.",
+      "completeness": "Medium",
+      "threats": [
+        "Siplog",
+        "Ponystealer",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "America"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "Microsoft Word"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/the-rise-of-pony-malware-and-what-it-means-for-organizations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-14",
+      "title": "Dark Web Profile: Rock",
+      "summary": "Rock is a single developer who builds and sells a phishing and remote access toolkit, known as The Quarry, to roughly 200 affiliates who run their own campaigns. The service is a MaaS and PhaaS offering active since at least April 2025, using tax-themed lures impersonating U.S. agencies and brands such as the IRS, SSA, Adobe, and DocuSign. Affiliates deploy legitimate RMM software, mainly ScreenConnect, as the final payload, with Adspect cloaking to hide from researchers and Telegram used for command-and-control and victim logging. More than 90% of recorded victims are in the U.S., spanning sectors such as SaaS, healthcare, media, and finance. The operation remains active, so defenders should treat tax-themed RMM installation lures as a current threat and watch for unexpected ScreenConnect, Datto, or Tiflux agents on endpoints.",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Adspect_tool",
+        "Tiflux_tool",
+        "Centrastage_tool",
+        "Fleetdeck_tool",
+        "Uac_bypass_technique",
+        "Cloaking_technique",
+        "Credential_harvesting_technique",
+        "Evilginx_tool",
+        "Violet_rat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Egypt",
+        "Germany",
+        "Canada",
+        "Japan",
+        "Brazil"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 17,
+      "software": [
+        "Telegram",
+        "Dropbox",
+        "Gmail",
+        "Chrome"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-rock/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-14",
+      "title": "Supply chain ransomware: TeamPCP weaponizes worms to fuel partnerships and $95K data sales",
+      "summary": "TeamPCP has run at least three waves of automated supply-chain poisoning since September 2025, using stolen developer credentials to breach GitHub, Checkmarx, and the European Commission. The group monetizes that access through a ransomware partnership with Vect and a data sale to LAPSUS$, which bought roughly 3,800 stolen GitHub repositories for $95,000. Its open-sourcing of the Shai-Hulud worm code has enabled copycat attacks, including the poisoning of 639 package versions on May 19. The campaigns exploit GitHub Actions misconfigurations such as pull_request_target and stolen npm or PyPI tokens. Defenders should audit those workflows, migrate publishing to tightly scoped OIDC, and enforce extension allowlists.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Pcpjack_tool",
+        "Hackerbot-claw_tool",
+        "Miasma",
+        "Trufflehog_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 7,
+      "software": [
+        "Trivy",
+        "LiteLLM",
+        "Mastodon",
+        "LimeWire",
+        "Claude",
+        "Outlook",
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "OpenVSX",
+        "have more..."
+      ],
+      "functions": [
+        "CreateEvent",
+        "DeleteEvent"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/supply-chain-ransomware-teampcp-weaponizes-worms-to-fuel-partnerships-and-95k-da"
+      ]
+    }
   }
 ]

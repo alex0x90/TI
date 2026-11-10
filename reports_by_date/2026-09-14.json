@@ -1,0 +1,457 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "Chinese Darcula Phishing Kit Harvesting Taiwanese Credit Card Data",
+      "summary": "The Darcula phishing kit was used in a campaign from January to May 2026 targeting Taiwanese credit card data, which TeamT5 assesses with high confidence was conducted by a Chinese-speaking actor. Phishing emails sent from a compromised Korea University account impersonated the Taiwanese e-commerce platform MOMO and urged victims to verify their e-invoices. The malicious links led to a fake e-invoice platform that mirrored the legitimate site but displayed a CTBC logo, and it accepted any phone number at sign-in. Victims were prompted for credit card details and then two-factor authentication codes, which the report suggests were likely synchronized to the kit's backend in near real time. The lure was effective because Taiwanese residents keep e-invoices for a government lottery. Attribution rests on a shared Rabbit encryption mechanism previously documented in Darcula.",
+      "completeness": "Low",
+      "threats": [
+        "Darcula_tool"
+      ],
+      "geo": [
+        "Taiwanese",
+        "Chinese",
+        "Taiwan"
+      ],
+      "links": [
+        "https://teamt5.org/en/posts/chinese-darcula-phishing-kit-harvesting-taiwanese-credit-card-data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "Beyond Lazarus: Organization of DPRK Cyber Capabilities",
+      "summary": "Kudelski Security and Sekoia examine how North Korea organizes its offensive cyber capabilities, treating them as a deniable tool for regime survival, sanctions evasion, and revenue. The Reconnaissance General Bureau (now GRIB) and National Intelligence Agency (formerly MSS) lead cyber operations, but frequent reorganization keeps agencies competing and complicates attribution. The former Lazarus umbrella is now split into six sub-clusters, nearly all of which pursue financially motivated operations, alongside thousands of IT workers who remit salaries and use insider access for theft. Academic partnerships in China and Russia, front companies, and Southeast Asian laundering hubs such as Huione support these operations. Defenders should track both APT intrusion sets and the IT worker programme, since the two often overlap in infrastructure and objectives.",
+      "completeness": "Low",
+      "threats": [
+        "Wannacry",
+        "Killdisk",
+        "H0lygh0st",
+        "Fakepenny",
+        "Qilin_ransomware",
+        "Stylesmuggler_vuln"
+      ],
+      "geo": [
+        "Thailand",
+        "Laos",
+        "Bangladesh",
+        "Russian",
+        "United states",
+        "South korean",
+        "China",
+        "Republic of korea",
+        "Russian federation",
+        "Dprk",
+        "Ukraine",
+        "Russia",
+        "Nigeria",
+        "Myanmar",
+        "North korea",
+        "Tanzania",
+        "South korea",
+        "North korean",
+        "African",
+        "Iraq",
+        "Moscow",
+        "American",
+        "Korea",
+        "Japanese",
+        "Korean",
+        "North koreans",
+        "Africa",
+        "Japan",
+        "Cambodia",
+        "Chinese",
+        "Guinea",
+        "Asia"
+      ],
+      "software": [
+        "Slack"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "links": [
+        "https://kudelskisecurity.com/research/beyond-lazarus-organization-of-dprk-cyber-capabilities"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "PuzzleMask: Abusing Plain Prose as a Covert AI Attack Vector",
+      "summary": "Check Point researchers describe PuzzleMask, a prompt-crafting technique that hides a policy-violating payload inside plain English prose to evade quick LLM-based policy checks. The wrapper prompts fooled every gatekeeper tested (gpt-4o-mini, gpt-oss-safeguard:20b, claude-3-haiku, and llama-guard3 under its built-in policy), which classified all crafted inputs as safe. The payload was then recovered by gpt-5-thinking-high with a code interpreter in about 17 of 18 trials, where it was acted on. The attack is not a jailbreak, and it failed against Anthropic's Opus-class models, which had a classifier that ends conversations on obfuscated prompts. Mitigations include paraphrasing untrusted input, adding a specific gatekeeper policy clause, and monitoring model outputs and actions.",
+      "completeness": "Low",
+      "threats": [
+        "Puzzlemask_technique",
+        "Injecagent_tool",
+        "Redagent_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "gatekeeper",
+        "gatekeepers",
+        "gpt-5",
+        "OpenAI",
+        "Anthropic",
+        "Fable 5",
+        "atekeeper",
+        "ekeeper"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "BEAR-C2 Did Not Invent Switching. It Just Made the Rebuild Tax Visible. AI Is About to Delete It.",
+      "completeness": "Low",
+      "threats": [
+        "Bear-c2",
+        "Dead_drop_technique",
+        "Cobalt_strike_tool",
+        "Reaper",
+        "Sesameop",
+        "Lamehug_tool",
+        "Promptflux",
+        "Honestcue",
+        "Sliver_c2_tool",
+        "Mythic_c2_tool",
+        "Havoc",
+        "Hexstrike",
+        "Villager_tool",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Iranian",
+        "Russian",
+        "Chinese",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Discord",
+        "Dropbox",
+        "Anthropic",
+        "Slack",
+        "openai",
+        "Hugging Face"
+      ],
+      "algorithms": [
+        "des",
+        "aes",
+        "rc4",
+        "chacha20",
+        "xor"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://albert-corzo.medium.com/bear-c2-did-not-invent-switching-it-just-made-the-rebuild-tax-visible-ai-is-about-to-delete-it-4fa246c64b68",
+        "https://github.com/S3N4T0R-0X0/BEAR-C2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "Smish. Click. Drained: Inside the Smishing Triad's Phishing Cockpit",
+      "summary": "Group-IB describes a smishing campaign in which fraudulent SMS messages impersonating official entities lead victims through a phishing kit called JWR, which is part of the broader Smishing Triad phishing-as-a-service marketplace. The kit is a Vue-based single-page application with a Web Worker that encrypts traffic using AES-256-CTR, with the key transmitted in clear and prepended to each message. A human operator monitors victims in near-realtime through a WebSocket channel and can redirect them to various credential, card, OTP, and PayPal capture pages. The kit can also be embedded in WordPress or Shopify plugins. Its consistent fingerprints, including storage keys, API paths, and a hardcoded WebSocket access-token suffix, allow defenders to identify the family across campaigns. Group-IB attributes the campaign to a sub-cluster it calls Outsider.",
+      "completeness": "High",
+      "threats": [
+        "Jwr_tool",
+        "Smishing_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Hong kong",
+        "Chinese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "WordPress",
+        "Telegram"
+      ],
+      "algorithms": [
+        "aes-256-ctr",
+        "aes",
+        "aes-ctr",
+        "aes-256"
+      ],
+      "functions": [
+        "getSyncSettings",
+        "created",
+        "mounted",
+        "getIPInfo",
+        "setInterval",
+        "synchronousDataInputHandle",
+        "closePopupWindowz",
+        "closePopupAndRedirect",
+        "initCvvForm",
+        "getDeviceInfo",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/smishing-triad-outsider-jwr/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "HBO Max ads on a compromised Reddit account exposed a massive PasteSwitch ClickFix operation",
+      "summary": "A compromised verified HBO Max Reddit account (u/hbomax) pushed 108 \"ClickFix\" ads over 48 hours, luring users to a fake native macOS HBO Max app that does not exist. The campaign is part of a cross-platform operation researchers named PasteSwitch, in which victims paste an attacker-supplied command and the delivery system routes them to macOS or Windows payloads. On macOS, payloads included MacSync, AMOS helper, and fake Ledger, Trezor, and Exodus wallets aimed at stealing recovery phrases. On Windows, the operation used InstallFix with in-memory loading of the Amatera Stealer, which spoofed facebook.com in TLS SNI to evade filtering. Clipper malware fetched changing C2 domains from blockchain smart contracts, and Reddit paused the ads after community reports.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Blitz_tool",
+        "Macc_stealer",
+        "Amos_stealer",
+        "Installfix_technique",
+        "Amatera_stealer",
+        "Animateclipper",
+        "Zigclipper",
+        "Clipboard_injection_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "Telegram",
+        "Twitter"
+      ],
+      "wallets": [
+        "trezor",
+        "exodus_wallet",
+        "mainnet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "getData"
+      ],
+      "languages": [
+        "swift",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/hbo-max-ads-on-a-compromised-reddit-account-exposed-a-massive-pasteswitch-clickfix-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "Silver Fox’s cloud-based “Book of Life and Death”: From “unconditional return” to a “blacklist” mechanism",
+      "summary": "Silver Fox, a Chinese-speaking threat actor, distributes trojanized installers through fake download sites that imitate popular software such as SteelSeries GG and Bilibili's clipping tool, using SEO to rank them highly in search results. Its delivery backend, api.php, evolved from returning malicious payloads to any requester, to a whitelist keyed on the Referer domain, and then to a cloud blacklist by September 12, 2026. Under the blacklist, domains on the list receive a legitimate WeChat installer while all others receive the real payload, so the earlier method of identifying Silver Fox domains by payload delivery no longer works. Researchers note that a domain returning the WeChat package now signals a domain that has been exposed or taken down. The delivery chain is a three-layer design with a client that accepts any returned link without checking it, which lets the operator change behavior server-side. Defenders should monitor the delivery infrastructure and its lifecycle rather than focusing only on samples and domains.",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "WeChat",
+        "curl",
+        "macOS",
+        "nginx",
+        "hat pack",
+        "Chrome",
+        "eChat pa",
+        "ginx se",
+        "CapCut"
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "startDownload",
+        "onClick",
+        "bind",
+        "getCachedPool",
+        "fetchLink",
+        "discover"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.netlab.360.com/yin-hu-yun-duan-sheng-si-bo-cong-wu-tiao-jian-fan-hui-dao-hei-ming-dan-ji-zhi/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "Red Heron exploits Gitea n-day flaw in multinational campaign, exposing new Linux rootkit",
+      "summary": "Red Heron is a Chinese-speaking threat actor, assessed with moderate confidence to operate in a PRC-linked context, that weaponized the critical Gitea remote code execution flaw CVE-2026-60004 within days of its public proof-of-concept appearing. The actor used an automated framework to register accounts, exploit internet-facing Gitea instances, and steal repositories and credentials. Targets included organizations in defense, elections, energy, government, and research sectors, with confirmed compromises in Canada, Argentina, Taiwan, the United States, and Sri Lanka. In one Taiwanese environment, the actor reached root access on a three-node Proxmox cluster. The campaign also involved the JITTERLY Linux implant and the SIXZUT LD_PRELOAD rootkit, which hides files, processes, and connections and relaunches the implant if stopped. Defenders should upgrade to Gitea 1.27.1, disable open registration, and rebuild hosts rather than clean them if compromise is confirmed.",
+      "completeness": "High",
+      "threats": [
+        "Jitterly",
+        "Sixzut",
+        "Hashcat_tool",
+        "Netcat_tool",
+        "Adaptixc2_tool"
+      ],
+      "geo": [
+        "China",
+        "Argentina",
+        "Canada",
+        "Taiwanese",
+        "United states",
+        "Taiwan",
+        "Chinese",
+        "India",
+        "Qatar",
+        "Sri lanka",
+        "Canadian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "twitter",
+        "Joomla",
+        "nginx",
+        "curl",
+        "WordPress",
+        "Docker",
+        "UNIX",
+        "OpenGL"
+      ],
+      "algorithms": [
+        "aes",
+        "bcrypt",
+        "aes-128-ctr",
+        "aes-128",
+        "aes-128-gcm",
+        "crc-32",
+        "sha1",
+        "xor",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "setsid",
+        "dup2",
+        "chdir",
+        "sys_geteuid_wrapper",
+        "get_self_path",
+        "file_contains_string",
+        "read",
+        "fopen",
+        "kill"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/red-heron-exploits-gitea-n-day-flaw-in-multinational-campaign-exposing-new-linux-rootkit/",
+        "https://github.com/HORKimhab/CVE-2026-60004"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "SETTRA RANSOMWARE",
+      "summary": "Settra is a ransomware group that first appeared in June 2026, targeting victims in the US, Germany, UK, Canada and other countries across sectors such as tech, manufacturing and retail, while avoiding healthcare. The group runs a data leak site with extensive victim profiling, including financial details, and lists about 64 victims so far, with the US leading. Researchers observed exfiltration of data ranging from 1 GB to 3 TB, and they suspect the use of the Rclone tool, though this is unconfirmed. Negotiations occur through a chat portal, where the demand reportedly fell from $900,000 to $500,000 in one case. The report suggests the initial access may often involve infostealer-harvested credentials, though this is not confirmed.",
+      "completeness": "Low",
+      "threats": [
+        "Settra_ransomware",
+        "Akira_ransomware",
+        "Qilin_ransomware",
+        "Anubis",
+        "Medusa_ransomware",
+        "Tengu_botnet"
+      ],
+      "geo": [
+        "Germany",
+        "South korea",
+        "Canada"
+      ],
+      "software": [
+        "NGINX",
+        "Tor Browser"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "ed25519"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/09/14/settra-ransomware/",
+        "https://github.com/TheRavenFile/Daily-Hunt/blob/main/Settra%20Ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-14",
+      "title": "RDP-based Beast (GodDamn) ransomware attack targeting domestic medical institutions",
+      "summary": "Attackers targeted domestic medical institutions by abusing RDP drive redirection (\\\\tsclient) to copy tools such as PCHunter onto victim systems, then used them to disable security products before running Beast (GodDamn) ransomware. The ransomware exits without encrypting when the system uses CIS-region locales or UI languages, a common self-protection technique among Russian-speaking ransomware. Its configuration is embedded in encrypted form, and its flags enable self-copying, registry persistence, process and service termination, and Volume Shadow Copy deletion. Encrypted files receive a victim-specific extension, and the ransom note threatens data leakage within 12 hours. Defenders should restrict RDP drive redirection, monitor for \\\\tsclient file transfers and security-tool tampering, and isolate infected systems quickly before encryption begins.",
+      "completeness": "High",
+      "threats": [
+        "Goddamn_ransomware",
+        "Smishing_technique",
+        "Process_hacker_tool",
+        "Pchunter_tool",
+        "Beast_ransomware",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "chrome",
+        "MySQL",
+        "Outlook",
+        "onenote",
+        "wordpad",
+        "thebat",
+        "firefox",
+        "kingdee",
+        "steam",
+        "MSSQL",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "chacha20"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://alyacofficialblog.tistory.com/5779"
+      ]
+    }
+  }
+]

@@ -1,0 +1,766 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "State Hackers Weaponize ClickFix Trick in Global Espionage Surge",
+      "summary": "State-backed groups from North Korea, Iran, and Russia have adopted ClickFix, a social engineering tactic that uses fake error or verification dialogs to get victims to paste and run PowerShell commands. Kimsuky targeted think tanks focused on North Korea policy between January and February 2025, delivering QuasarRAT through fake device registration. MuddyWater targeted at least 39 organizations, mostly in the Middle East, using fake Microsoft security alerts and the Level RMM tool. UNK_RemoteRogue, a suspected Russian actor, targeted defense organizations tied to the Ukraine conflict using Empire C2, and APT28 used fake reCAPTCHA pages to deploy Metasploit. The report recommends user training, PowerShell restrictions, email filtering, least privilege, and EDR monitoring of suspicious PowerShell activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Clearfake",
+        "Lumma_stealer",
+        "Asyncrat",
+        "Danabot",
+        "Darkgate",
+        "Netsupportmanager_rat",
+        "Quasar_rat",
+        "Pdq_connect_tool",
+        "Atera_tool",
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Empire_loader",
+        "Metasploit_tool"
+      ],
+      "geo": [
+        "Japanese",
+        "Saudi arabia",
+        "Ukraine",
+        "Iranian",
+        "Russia",
+        "Canada",
+        "North korean",
+        "Germany",
+        "Middle east",
+        "Russian",
+        "Switzerland",
+        "North korea",
+        "Asia",
+        "Iran",
+        "Korean"
+      ],
+      "software": [
+        "Zimbra",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.secureblink.com/cyber-security-news/state-hackers-weaponize-click-fix-trick-in-global-espionage-surge"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "New Rust Botnet \"RustoBot\" is Routed via Routers",
+      "summary": "RustoBot is a newly discovered Rust-based botnet that spreads through TOTOLINK routers and exploits command injection flaws in TOTOLINK's cstecgi.cgi script, along with a DrayTek Vigor vulnerability (CVE-2024-12987). Observed activity in January and February 2025 occurred in Japan, Taiwan, Vietnam, and Mexico, with all incidents targeting technology-industry organizations. The malware is delivered through downloader scripts using wget and tftp, and it decodes its XOR-encrypted configuration to resolve C2 domains and receive DDoS attack commands. It can launch UDP, TCP, and Raw IP floods. Fortinet advises strengthening endpoint monitoring and authentication on IoT and network devices, which are often poorly defended, and recommends patching the listed vulnerabilities.",
+      "completeness": "Medium",
+      "threats": [
+        "Rustobot",
+        "Udpflood_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Mexico",
+        "Taiwan",
+        "Vietnam"
+      ],
+      "algorithms": [
+        "xor",
+        "exhibit"
+      ],
+      "functions": [
+        "setUpgradeFW"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/new-rust-botnet-rustobot-is-routed-via-routers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Cookie-Bite: How Your Digital Crumbs Let Threat Actors Bypass MFA and Maintain Access to Cloud Environments",
+      "summary": "Varonis Threat Labs describes a technique where attackers steal browser authentication cookies, often via infostealer malware or purchases on dark markets, to hijack active sessions and bypass MFA without credentials. The research centers on Azure Entra ID cookies ESTSAUTH and ESTSAUTHPERSISTENT, which can grant access to Microsoft 365 applications such as Outlook and Teams. In a proof-of-concept, the researchers built a Chrome extension and PowerShell script that repeatedly capture these cookies at each login and exfiltrate them. Attackers can then inject the cookies into their own browser, mimicking the victim's OS, browser, and network to evade Conditional Access Policies. The report recommends monitoring for abnormal user behavior, using Microsoft risk detection, enforcing compliant-device CAP with Token Protection, and allowlisting approved browser extensions.",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Evilginx_tool",
+        "Modlishka_tool",
+        "Muraena_tool",
+        "Process_injection_technique",
+        "Roadtools_tool",
+        "Aadinternals_tool",
+        "Tokensmith_tool"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Twitter",
+        "Outlook",
+        "Linux",
+        "MacOS",
+        "Google Chrome",
+        "Instagram",
+        "Azure AD",
+        "Office 365",
+        "Gmail",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "getAll"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/cookie-bite",
+        "https://github.com/JumpsecLabs/TokenSmith",
+        "https://github.com/Gerenios/AADInternals",
+        "https://github.com/dirkjanm/ROADtools"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Executive Summary",
+      "summary": "Akira is a double-extortion ransomware operation active since March 2023, targeting education, finance, manufacturing, and healthcare organizations mainly in North America, Europe, and Australia. Attackers often gain initial access through VPN accounts lacking multifactor authentication, frequently via known Cisco vulnerabilities, then move laterally using legitimate and open-source tools. Before encryption, they exfiltrate sensitive data using tools such as Rclone, WinSCP, and WinRAR and threaten to publish it on a leak site. The group has evolved from a C++ Windows encryptor to Rust-based variants, including Megazord and Akira_v2, and reportedly impacted over 250 organizations and about $42 million in proceeds. Defenders should prioritize MFA on VPNs, secure remote access, and maintain regular backups.",
+      "completeness": "High",
+      "threats": [
+        "Akira_ransomware",
+        "Conti",
+        "Megazord",
+        "Nltest_tool",
+        "Anydesk_tool",
+        "Putty_tool",
+        "Rclone_tool",
+        "Ngrok_tool",
+        "Spear-phishing_technique",
+        "Kerberoasting_technique",
+        "Mimikatz_tool",
+        "Lazagne_tool",
+        "Powertool_tool",
+        "Zemana_tool",
+        "Mobaxterm_tool",
+        "Rustdesk_tool",
+        "Shadow_copies_delete_technique",
+        "Credential_dumping_technique",
+        "Pchunter64_tool",
+        "Amass_tool",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Australia",
+        "Germany",
+        "America",
+        "Denmark",
+        "Uruguay",
+        "Czech",
+        "Nigeria",
+        "United kingdom",
+        "Sweden",
+        "Canada"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 25,
+      "software": [
+        "Linux",
+        "ESXi",
+        "AnyConnect",
+        "SoftPerfect Network Scanner",
+        "Winscp",
+        "OpenSSH",
+        "Local Security Authority",
+        "Linux ESXi",
+        "CloudZilla"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://darkatlas.io/blog/akira-ransomware-road-to-glory"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "A Deep Dive Into a Multi-Stage Malware Campaign Potentially Linked to DPRKs Konni Group",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Korea",
+        "Dprks",
+        "Dprk",
+        "Korean",
+        "German"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "KakaoTalk",
+        "WhatsApp",
+        "Telegram",
+        "Internet Explorer",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "rc4",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "Get-Location"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "visual_basic"
+      ],
+      "links": [
+        "https://muff-in.github.io/blog/Malware-Campaign-Potentially-Linked-to-DPRK-Konni-Group/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Introducing ToyMaker, an Initial Access Broker working in cahoots with double extortion gangs",
+      "summary": "Cisco Talos describes ToyMaker, a financially motivated initial access broker (assessed with medium confidence) that compromised a critical infrastructure enterprise by exploiting unpatched internet-facing servers. ToyMaker deployed its custom LAGTOY backdoor, which runs as a service, beacons to a hardcoded C2 server over port 443 using a raw socket rather than TLS, and dumped memory with Magnet RAM Capture to harvest credentials. About a month after initial access, ToyMaker handed off access to Cactus, a ransomware and double extortion affiliate. Cactus used its own tooling, including remote administration software, Metasploit-injected binaries, new unauthorized accounts, and Safe Mode reboots to evade defenses. Defenders should model initial access brokers and their secondary actors as linked threats.",
+      "completeness": "High",
+      "threats": [
+        "Toymaker",
+        "Lagtoy",
+        "Cactus_ransomware",
+        "Ehorus_tool",
+        "Anydesk_tool",
+        "Shadow_copies_delete_technique",
+        "Nltest_tool",
+        "Putty_tool",
+        "Holerun",
+        "Pandora",
+        "Impacket_tool",
+        "Metasploit_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 15,
+      "software": [
+        "OpenSSH",
+        "curl",
+        "WinSCP",
+        "bcdedit",
+        "ApacheBench"
+      ],
+      "algorithms": [
+        "7zip"
+      ],
+      "functions": [
+        "Talos"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/introducing-toymaker-an-initial-access-broker/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Toll of Deception: Where Evasion Drives Phishing Forward",
+      "summary": "Group-IB uncovered a phishing campaign impersonating a toll road service provider, with the campaign believed to have begun in late 2023 and still active when reported. Victims receive SMS messages in French, tailored to a targeted region of Canada, claiming unpaid toll fees must be settled to avoid penalties. The links lead to fake sites that harvest personal details and then payment card data. The scammers use FingerprintJS browser fingerprinting to restrict access and block VPNs, datacenter IPs, and scanners such as VirusTotal and urlscan.io, and they use Cleave.js to validate input. Redirects through Google AMP are used to mask phishing URLs. Defenders should verify URLs before entering payment data and scrutinize SMS links.",
+      "completeness": "Low",
+      "threats": [
+        "Cloaking_technique",
+        "Fingerprintjs_tool",
+        "Sms_pumping_technique"
+      ],
+      "geo": [
+        "American",
+        "Canada",
+        "French"
+      ],
+      "algorithms": [
+        "des"
+      ],
+      "functions": [
+        "sendHeartbeatData",
+        "setInterval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/toll-of-deception"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Buhtrap Watch Wolf",
+      "summary": "Watch Wolf is a cluster of activity that evolved from the Buhtrap group and steals money from Russian companies, mainly small and medium businesses with little or no cybersecurity. Its attacks are templated rather than targeted, relying on phishing emails with malicious archives and on SEO poisoning that lures accountants and crypto-provider staff to fake document or software download sites. The cluster uses Buhtrap RAT modules, DarkVNC for remote control, and DarkWatchman as a JavaScript backdoor, and it has learned to bypass two-factor authentication by tricking victims into installing an Android app that intercepts SMS. After draining accounts, it wipes traces with FakeUpdate and KillDisk. Defenders should combine user training, process ownership of security, mail and DNS filtering, and EDR, since multi-factor authentication alone is no longer sufficient.",
+      "completeness": "High",
+      "threats": [
+        "Buhtrap",
+        "Darkwatchman",
+        "Darkvnc_tool",
+        "Seo_poisoning_technique",
+        "Supply_chain_technique",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Keilger",
+        "Shadow_copies_delete_technique",
+        "Socgholish_loader",
+        "Killdisk",
+        "Pony",
+        "Hvnc_tool",
+        "Saturn",
+        "Hermes",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian federation",
+        "Moscow",
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 46,
+      "software": [
+        "Firefox",
+        "Google Chrome",
+        "android",
+        "vipnet"
+      ],
+      "wallets": [
+        "yoroi",
+        "xdefi",
+        "wombat",
+        "tronlink",
+        "crystal_wallet",
+        "onekey",
+        "nifty",
+        "mew_cx",
+        "metamask",
+        "maiardefi",
+        "have more..."
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "eval",
+        "functioneval"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://bi.zone/upload/for_download/BI.ZONE-From%20Buhtrap-to-Watch-Wolf-RUS.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "SEAL Releases Advisory on ELUSIVE COMET",
+      "summary": "SEAL is tracking an ongoing campaign by the threat actor ELUSIVE COMET, which targets crypto users through social engineering to install malware and steal their cryptocurrency. The actor operates a fake venture capital firm, Aureon Capital, along with related entities Aureon Press and The OnChain Podcast, and is linked to millions of dollars in stolen funds. ELUSIVE COMET builds legitimacy through polished websites, active social media, and impersonated profiles of real people with notable credentials. Victims are typically invited to be podcast guests, then pressured into a Zoom call where they are tricked into granting remote control of their computer. The resulting malware is either an infostealer that exfiltrates secrets immediately or a RAT that allows later theft. SEAL advises verifying unknown contacts, using trusted video platforms, and disabling Zoom remote control.",
+      "completeness": "Low",
+      "software": [
+        "Twitter",
+        "Zoom",
+        "Microsoft Teams"
+      ],
+      "links": [
+        "https://www.securityalliance.org/news/2025-03-elusive-comet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Malicious LNK steals information by disguising itself as a notice",
+      "summary": "A malicious LNK campaign disguised as tax and public notices is distributing an information stealer targeting users in South Korea, according to AhnLab ASEC. When a victim runs the LNK file, it downloads an HTA file that contains a ZIP archive and a decoy PDF. The ZIP holds Base64-encoded PowerShell scripts that collect cryptocurrency wallet extension data, browser data, GPKI and NPKI digital certificates, and files with sensitive extensions. The scripts also log keystrokes and clipboard data, establish persistence through a Run registry key, and accept further commands from the attacker's server. The distribution URL impersonated a domestic Korean portal, which the report cites as evidence that the attack targets Korean users.",
+      "completeness": "Low",
+      "geo": [
+        "Korean"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "GetExWFile",
+        "GetBrowserData",
+        "CreateFileList",
+        "Get-ShortcutTargetPath"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/87616/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "SuperCard X: exposing a Chinese-speaker MaaS for NFC Relay fraud operation",
+      "summary": "SuperCard X is a newly identified Android malware sold as a Malware-as-a-Service and used in an active NFC relay fraud campaign targeting Italy. Threat actors use smishing and phone calls, often impersonating bank security alerts, to persuade victims to lower card limits, reveal PINs, and install a malicious app. The app, which has a minimal permission set and low antivirus detection, captures card data via NFC and relays it through mutual TLS-protected C2 servers to an attacker device that emulates the card at POS terminals and ATMs. The malware shares significant code overlap with NGate and the open-source NFCGate project. The campaign targets card holders regardless of issuing bank, and defenders should watch for these emerging NFC-based attacks.",
+      "completeness": "Medium",
+      "threats": [
+        "Supercard-x",
+        "Anatsa",
+        "Nfcgate_tool",
+        "Ngate",
+        "Smishing_technique",
+        "Toad_technique",
+        "Copybara",
+        "Droidbot"
+      ],
+      "geo": [
+        "Czech",
+        "Italian",
+        "Italy",
+        "Chinese",
+        "Germany"
+      ],
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Telegram"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.cleafy.com/cleafy-labs/supercardx-exposing-chinese-speaker-maas-for-nfc-relay-fraud-operation",
+        "https://github.com/nfcgate/nfcgate"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Report Title:",
+      "summary": "The S2W Threat Intelligence Center analyzed the Willo Campaign, which it links to North Korea-backed TraderTraitor and which distributes the GopherGrabber malware. GopherGrabber is a Go-based backdoor and stealer that communicates with its C2 server over HTTP/S using MD5 hashing and RC4-encrypted packets. The campaign began with malicious NPM packages in June 2024 and a fake \"Versus X\" installer in July 2024, then shifted to LinkedIn job-offer lures since December 2024. Victims are employees in the cryptocurrency industry, including IT developers and sales managers, who are led to a phishing page impersonating the Willo video interview platform. Defenders should note that a cryptocurrency theft linked to the campaign has been reported, with estimated losses of about $64,020.",
+      "completeness": "Low",
+      "threats": [
+        "Gophergrabber",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Warpwire",
+        "Beavertail",
+        "Invisibleferret"
+      ],
+      "geo": [
+        "North korean",
+        "Chinese",
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS"
+      ],
+      "algorithms": [
+        "md5",
+        "rc4"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://s2w.inc/en/resource/detail/806"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Android spyware targets Russian military personnel using Alpine Quest mapping software",
+      "summary": "Android.Spy.1292.origin is an Android spyware trojan, identified by Doctor Web, that primarily targets Russian military personnel. It is hidden inside a modified older version of the Alpine Quest mapping app, which is popular among soldiers in the special military operation zone, and is distributed as a free \"Pro\" version via a fake Telegram channel and a Russian app catalog. Once installed, the trojan behaves like the genuine app while sending the attackers the user's accounts, phone number, contacts, geolocation, and file information, with location updates also sent to a Telegram bot. The attackers can then load additional modules to steal files, with particular interest in confidential documents shared via Telegram and WhatsApp and the app's location log file. Defenders should install apps only from official catalogs and verify the publisher, since attackers imitate genuine developers, and Doctor Web notes its antivirus detects and removes the trojan.",
+      "completeness": "Low",
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Android",
+        "Alpine",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15006&lng=ru&c=5",
+        "https://translate.google.com/website?sl=auto&tl=en&hl=ru&client=webapp&u=https://github.com/DoctorWebLtd/malware-iocs/blob/master/Android.Spy.1292.origin/README.adoc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Satori Threat Intelligence Alert: Scallywag Extensions Monetize Piracy",
+      "summary": "Scallywag is a collection of four WordPress extensions (Soralink, Yu Idea, WPSafeLink, and Droplink) that threat actors use to monetize digital piracy and URL-shortening sites. The extensions redirect users through intermediary cashout blogs loaded with ads and slowing tactics such as timers, CAPTCHAs, and forced scrolling before delivering the content. These cashout sites show benign content to ad platforms when visited directly but display heavy ad loads when reached via piracy or shortener domains, a cloaking tactic that hides illicit traffic. At its peak, Scallywag produced 1.4 billion fraudulent bid requests a day across 407 cashout domains, and HUMAN reports that traffic has since declined 95%. Threat actors respond to defenses with domain rotation, and some have shifted to content discovery networks. HUMAN states that its ad fraud protection customers have been protected.",
+      "completeness": "Low",
+      "threats": [
+        "Scallywag",
+        "Cloaking_technique"
+      ],
+      "software": [
+        "WordPress",
+        "Twitter"
+      ],
+      "links": [
+        "https://www.humansecurity.com/learn/blog/satori-disruption-scallywag/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Emerging Phishing Techniques: New Threats and Attack Vectors",
+      "summary": "Intezer reports four 2025 phishing techniques that bypassed email protections and reached victims. Attackers embed Base64-encoded, obfuscated JavaScript inside SVG attachments that redirects users to a credential-harvesting page. Phishing URLs are hidden in PDF annotation objects, outside the visible text layer that most scanners parse. Attackers also share read-only OneDrive links whose malicious URL is inserted dynamically by JavaScript at runtime, evading static analysis. Finally, MHT files nested inside .docx documents carry a QR code leading to a Microsoft Office365-impersonating quishing page, and in several samples VirusTotal showed zero detections at analysis time. Defenders are advised to perform format-aware inspection of SVG, PDF, DOCX, and MHT files and combine static with dynamic analysis.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Qshing_technique"
+      ],
+      "software": [
+        "Office365",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://intezer.com/blog/emerging-phishing-techniques-new-threats-and-attack-vectors/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Charity Hacked: Web Skimmer Infected Caritas Spain Websites for Over a Year",
+      "completeness": "Low",
+      "geo": [
+        "Spain",
+        "Seychelles"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://jscrambler.com/blog/charity-hacked-web-skimmer-infected-caritas-spain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "UTG-Q-017: high-level secret stealing secrets group under the \"short, flat and fast\" system",
+      "summary": "UTG-Q-017 is an offshore advanced secret-stealing group first active in August 2024, named by Qi'anxin's Red Raindrop team for its \"short, flat and fast\" operations. It uses malicious ad JavaScript, delivered through offshore ad push services, to trigger a Chrome n-day exploit that injects fileless shellcode into system memory and loads the Lumma Stealer. The group uses disposable C2 infrastructure, with each campaign relying on new domains, and the full attack from exploit to completed data theft takes only 3-5 minutes. Victims were found mainly on Chrome 109 running Windows 7, and the report says Chinese government and enterprise endpoints were the hardest hit. Defenders are advised to enable cloud-based checking and to use memory-level detection for shellcode.",
+      "completeness": "Low",
+      "threats": [
+        "Raindrop_tool",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "links": [
+        "https://ti.qianxin.com/blog/articles/utg-1-017-high-level-secret-stealing-group-under-the-short-flat-and-fast-system-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Phishing for Codes: Russian Threat Actors Target Microsoft 365 OAuth Workflows",
+      "summary": "Russian threat actors tracked as UTA0352 and UTA0355 are conducting targeted social engineering campaigns against Microsoft 365 accounts since early March 2025. Contacting victims via Signal and WhatsApp, the attackers pose as European officials or Ukrainian-themed meeting organizers and persuade targets to click login links. Victims are then asked to send back the Microsoft-generated OAuth authorization code, which the attackers exchange for access tokens. The campaigns target NGOs, human rights organizations, and people with ties to Ukraine. Defenders should train users to distrust unsolicited contact asking them to share codes or URLs, and consider alerting on the specific OAuth URL formats and blocking the associated hostnames.",
+      "completeness": "Low",
+      "threats": [
+        "Roadtools_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Bulgaria",
+        "Russia",
+        "Romania",
+        "Romanian",
+        "Ukraine",
+        "Poland",
+        "Ukrainian"
+      ],
+      "software": [
+        "WhatsApp",
+        "Azure AD",
+        "visual studio code",
+        "Graph API",
+        "AzureAD",
+        "Azure Active Directory",
+        "Microsoft Teams",
+        "budget cuts"
+      ],
+      "functions": [
+        "Zoom"
+      ],
+      "links": [
+        "https://www.volexity.com/blog/2025/04/22/phishing-for-codes-russian-threat-actors-target-microsoft-365-oauth-workflows/",
+        "https://github.com/dirkjanm/ROADtools"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "Infostealer Malware FormBook Spread via Phishing Campaign Part I",
+      "summary": "FormBook is an information-stealing malware targeting Windows users, and this report covers a phishing campaign that delivered a new variant of it. The campaign used a fake sales order email with a Word document that exploited CVE-2017-11882 in Microsoft Equation Editor to run a downloader DLL via rundll32.exe. The DLL established persistence through a Run registry key and downloaded a disguised PNG file that was decrypted in memory into FormBook. The fileless payload was injected via process hollowing into a suspended ImagingDevices.exe process. Defenders should note that Fortinet's products detect the exploit and related files, and that patching CVE-2017-11882 and blocking the exploit remain key protections.",
+      "completeness": "Low",
+      "threats": [
+        "Formbook",
+        "Process_hollowing_technique",
+        "Process_injection_technique",
+        "Heavens_gate_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Word"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "CreateProcessInternalW",
+        "NtWriteFile",
+        "NtCreateSection",
+        "Wow64GetThreadContext",
+        "Wow64SetThreadContext",
+        "RtlUserThreadStart",
+        "NtResumeThread"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/infostealer-malware-formbook-spread-via-phishing-campaign-part-i"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-23",
+      "title": "In the arsenals of Shedding Zmiy: we analyze the code of the Bulldog Backdoor web panel",
+      "completeness": "Medium",
+      "threats": [
+        "Bulldog_backdoor",
+        "Kingofhearts",
+        "Mamont",
+        "Darkwatchman",
+        "Dameware_tool",
+        "Crossc2_tool",
+        "Snake_keylogger",
+        "Goblinrat",
+        "Dead_drop_technique",
+        "Reign",
+        "Obsidium_tool",
+        "Dfkrat",
+        "Sliver_c2_tool",
+        "Hardbit",
+        "Glupteba",
+        "Plugx_rat",
+        "Gs-netcat",
+        "Teardrop_tool",
+        "Revshell_tool",
+        "Cobalt_strike",
+        "Gsocket_tool",
+        "Netstat_tool"
+      ],
+      "geo": [
+        "Russian federation",
+        "Iranian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Linux",
+        "Steam",
+        "telegram"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://1.rt-solar.ru/solar-4rays/blog/5478/?_x_tr_enc=1"
+      ]
+    }
+  }
+]

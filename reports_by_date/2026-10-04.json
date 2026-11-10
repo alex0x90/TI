@@ -1,0 +1,149 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-04",
+      "title": "FortiMail Zero-Day Under Active Exploitation",
+      "summary": "Fortinet confirmed that CVE-2026-104286, a critical unauthenticated path traversal flaw in FortiMail, is being exploited in zero-day attacks. The flaw lets a remote attacker write arbitrary files to the appliance through crafted HTTP or HTTPS requests, scoring 9.8 on CVSS v3.1. It affects the management interface across the 7.2, 7.4, 7.6, and 8.0 branches, and no fixed builds were available for most branches as of October 2, 2026. CISA added it to the KEV catalog on October 1 with an October 4 deadline for federal agencies. Fortinet recommends disabling IBE or restricting management interface exposure, then checking for compromise, since attribution and the scope of attacks remain unconfirmed.",
+      "completeness": "Low",
+      "software": [
+        "FortiMail"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "md5"
+      ],
+      "links": [
+        "https://socradar.io/blog/fortimail-zero-day-under-active-exploitation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-04",
+      "title": "Pre-installed C2 Infrastructure and RAT Payload on Android Projectors",
+      "summary": "Pre-installed malware on cheap Android projectors using the Allwinner H713 chipset forms a four-stage infection chain: StoreOS drops SilentSDK, which installs the PluginManager com.me.cash5, which then deploys up to five plugins. The plugins enroll the device in residential proxy, Vo1d-linked botnet, UDP proxy, and ad-fraud operations. Geo-fencing blocks delivery to China, while the ad-fraud plugin targets Indonesia, Russia, Mexico, and Brazil. The device also ships with root backdoors, including an unauthenticated ADB port and a hidden su binary. The researcher attributes the infection to the platform rather than one brand, noting that Magcubic's claim of an isolated issue is contradicted by the findings. Defenders should block the listed C2 domains and dispatcher IPs and disable the malicious packages via ADB.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Badbox",
+        "Storeos",
+        "Silentsdk",
+        "Cash5",
+        "Residential_proxy_technique",
+        "Jaguar",
+        "Vo1d",
+        "Expandsdk",
+        "Blob_url_obfuscation_technique",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Russian federation",
+        "German",
+        "Russia",
+        "Mexico",
+        "Indonesia",
+        "Singapore",
+        "Brazil",
+        "New york"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 31,
+      "software": [
+        "Android",
+        "SELinux",
+        "Chrome",
+        "curl",
+        "id CxfjSh",
+        "OpenSSL",
+        "Google Play",
+        "Claude",
+        "Claude Code"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-128-cbc",
+        "aes-cbc",
+        "sha256",
+        "aes",
+        "md5",
+        "xor",
+        "gzip"
+      ],
+      "functions": [
+        "readCount",
+        "getDeviceFingerprint",
+        "m1762a",
+        "xfj_client_start_android",
+        "fork"
+      ],
+      "languages": [
+        "java",
+        "c_language"
+      ],
+      "links": [
+        "https://github.com/Kavan00/Android-Projector-C2-Malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-04",
+      "title": "NetScaler checker for CTX697096, CTX697174 and CTX697191",
+      "summary": "This report describes a free, read-only shell script that checks Citrix NetScaler ADC and Gateway appliances against security bulletins CTX697096, CTX697174, CTX697191 and CTX697263. It tests whether the build is fixed and which CVE preconditions apply, including CVE-2026-88771 and CVE-2026-88772 (both exploited in the wild), the SAML flaws CVE-2026-88779 and CVE-2026-107406, and the PHP flaws behind php2shell. It also runs an indicator-of-compromise sweep on the appliance, covering published webshells, persistence and attacker IPs. The checker recommends upgrading to build 14.1-73.49 or an equivalent fixed build. Defenders should run the official Citrix IoC scan alongside it, since a clean result only covers published indicators.",
+      "completeness": "High",
+      "threats": [
+        "Sliver_c2_tool",
+        "Slapshot",
+        "Notrobin",
+        "Platypus",
+        "Gsocket_tool",
+        "Password_spray_technique",
+        "Whipshot",
+        "Chisel_tool",
+        "Netcat_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Citrix NetScaler ADC",
+        "Linux",
+        "macOS",
+        "crontab",
+        "openssl",
+        "curl",
+        "Cloudflare",
+        "WinSCP",
+        "sysctl",
+        "Slack",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "rc4",
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "SetHandler",
+        "eval",
+        "GetUserName"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "python",
+        "perl"
+      ],
+      "links": [
+        "https://github.com/ThomasPoppelgaard/netscaler-ctx697096-checker",
+        "https://github.com/elastic/detection-rules/blob/main/rules/network/initial\\_access\\_netscaler\\_log\\_poisoning\\_command\\_injection.toml",
+        "https://github.com/Deyda/Security/blob/main/deyda-netscaler-ioc-check.sh",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/pack\\_alerts/202609-citrix-netscaler-active-exploitation-cve-2026-88771"
+      ]
+    }
+  }
+]

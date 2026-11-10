@@ -1,0 +1,1025 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "CloudSyncD: a two-stage macOS backdoor that hides a phished password in zero-width Unicode",
+      "summary": "CloudSyncD is a macOS backdoor, tracked by Jamf Threat Labs, disguised as a fake Zoom installer distributed in a disk image that asks victims to bypass Gatekeeper manually. The dropper shows a fake authorization prompt, validates the entered password with dscl, and conceals it base64-encoded in a decoy configuration file using zero-width Unicode characters as an index. It then attempts fileless execution of an embedded second stage, falling back to a temporary file and running it via sudo with the harvested password. The implant beacons to command-and-control servers and can execute tasked Mach-O binaries or archives, though researchers observed no persistence being established. Jamf noted the malware moved from development builds to live infrastructure within two days, and advised defenders to use Jamf for Mac threat controls to block similar threats.",
+      "completeness": "Medium",
+      "threats": [
+        "Cloudsyncd"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Zoom",
+        "Gatekeeper",
+        "sudo",
+        "sysctl",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "objective_c",
+        "javascript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/cloudsyncd-macos-backdoor-fake-zoom-installer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "XCTDH Adopts Hash Hiding",
+      "summary": "The XCTDH campaign, attributed to a DPRK operator, now uses a fourth blockchain, Ethereum, for a technique called HashHiding. A malware module named _Z scans Ethereum mainnet for transactions from an operator wallet and decodes a 6-byte IPv4 address and port from each transaction's recipient address. This gives the malware a C2 recovery channel that runs in parallel with the hardcoded C2 IP and the existing TRON, Aptos, and BSC resolution chain. The operator rotated the encoded C2 address four times over about 90 days, sending roughly 29 beacon transactions per day. Defenders should note that the blockchain channel is hard to block, so detection should focus on wallet-linked transactions, unusual Ethereum RPC calls from Node.js processes, and the listed IOCs.",
+      "completeness": "Medium",
+      "threats": [
+        "Txdatahiding_technique",
+        "Omnistealer",
+        "Etherhiding_technique",
+        "Nullreceiver_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "macOS",
+        "Linux",
+        "Telegram",
+        "OpenClaw"
+      ],
+      "wallets": [
+        "tron",
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum",
+        "aptos",
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/xctdh-adopts-hash-hiding/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "No Privileges, No Lockout, No Trace: Kerberoasting with SPN Misconfigurations",
+      "completeness": "Low",
+      "threats": [
+        "Kerberoasting_technique",
+        "Credential_stealing_technique",
+        "Mimikatz_tool"
+      ],
+      "software": [
+        "Active Directory"
+      ],
+      "algorithms": [
+        "des",
+        "rc4"
+      ],
+      "functions": [
+        "Set-ADUser"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/no-privileges-no-lockout-no-trace-kerberoasting-spn/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "SilverFox in the Desktop",
+      "completeness": "Medium",
+      "threats": [
+        "Valleyrat"
+      ],
+      "geo": [
+        "India",
+        "Malaysian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 1,
+      "software": [
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "SetDesktopMonitorHook",
+        "ClearDesktopMonitorHook",
+        "FUN_180001ae4"
+      ],
+      "links": [
+        "https://research.pelagos-intel.com/silverfox-in-the-desktop"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "SilverFox: Tracking the Distribution of Domestic Variants of Malicious Installer Files Impersonating KakaoTalk",
+      "summary": "SilverFox actors distributed malicious installers disguised as KakaoTalk, using SEO poisoning to lure victims to fake sites. The installers repeatedly changed their packaging, rotating among NSIS, Advanced Installer, and Inno Setup, and bundled a legitimate installer alongside the malicious file. Early variants patched digitally signed legitimate files to run shellcode, while recent variants switched to DLL side-loading through javacpl.exe and a malicious deploy.dll that downloaded ValleyRAT. Shellcode loading was repeatedly modified, and the latest variant hid encrypted shellcode inside PNG files via steganography. The final payload in a recent variant was identified as Ghost, whose C2 infrastructure matched previously reported Ghost-delivered MODBEACON activity, though the report notes that shared infrastructure alone cannot confirm the same actor. Defenders should download KakaoTalk only from the official site and check for malicious files in the listed AppData and C:\\msys64 paths.",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Dll_sideloading_technique",
+        "Valleyrat",
+        "Donut",
+        "Steganography_technique",
+        "Ghost",
+        "Modbeacon"
+      ],
+      "software": [
+        "KakaoTalk"
+      ],
+      "algorithms": [
+        "xor",
+        "md5"
+      ],
+      "functions": [
+        "CreateFile"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95641/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "EtherHiding: How Ransomware Groups Use the Blockchain to Resist Takedowns - BlackFog",
+      "summary": "EtherHiding stores malware server addresses or configuration data in smart contracts on public blockchains, so operators can redirect infected systems without reinstalling malware. In an intrusion involving The Gentlemen ransomware, attackers used EtherRAT to query Ethereum for its command-and-control address, which was later updated to point to a tunnel. The DeadLock group uses a Polygon smart contract to supply a proxy address for its victim communication application and leak blog content, while Cry0 claims to host negotiation sites on Internet Computer Protocol, though this is unverified. Blocking a single C2 destination is insufficient because malware can retrieve a replacement address. Defenders should look for unexpected remote management tools, privileged account changes, and outbound transfers to cloud storage, and should block data exfiltration before encryption.",
+      "completeness": "Low",
+      "threats": [
+        "Etherhiding_technique",
+        "Gentlemen_ransomware",
+        "Deadlock",
+        "Etherrat",
+        "Rclone_tool",
+        "Bee_stealer",
+        "Medusahvnc_tool",
+        "Onyxc2"
+      ],
+      "software": [
+        "Sysinternals",
+        "TryCloudflare",
+        "Codex",
+        "Claude"
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "links": [
+        "https://www.blackfog.com/etherhiding-how-ransomware-groups-use-blockchain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "2026-09-28 AgtaBackup RAT Campaign",
+      "summary": "The AgtaBackup RAT campaign delivers a custom .NET remote access trojan through a fake videoconferencing landing page that mimics a Microsoft Store listing. The page serves a legitimately signed RMM installer, and once the user accepts the UAC prompt, the attacker enrolls the host into an attacker-controlled RMM tenant. The operator then uses a remote terminal to silently install the RAT as a hidden SYSTEM service. The malware provides browser credential and cookie theft across nine browser families, keylogging, screenshots, a hidden desktop shell, and a UAC secure-desktop bypass. Defenders should watch for PowerShell downloads of MSI files followed by silent msiexec installs, especially when launched by RMM binaries.",
+      "completeness": "Low",
+      "threats": [
+        "Agtabackup"
+      ],
+      "links": [
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-09-28-AgtaBackup-RAT-Campaign.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "PaperCut MF Zero-Day Intrusion: Java Loader, Web Shell, and AdaptixC2 via CVE-2026-82078 and CVE-2026-81578",
+      "summary": "Threat actors exploited zero-day vulnerabilities in an internet-facing PaperCut MF print server at an Education-sector customer, loading an in-memory Java loader that deployed a web shell. The web shell was used to drop a trojanized Microsoft Copilot binary carrying an AdaptixC2 implant, which was obfuscated with control flow flattening and API hashing to evade EDR. The attackers stole a domain-privileged service account token, moved laterally to a domain controller, and enabled Restricted Admin mode for pass-the-hash RDP access. They then dumped the Active Directory NTDS.dit database, achieving full domain compromise in under two days. Defenders should patch PaperCut MF, restrict application server access to trusted IPs, and scope service account privileges to the minimum required.",
+      "completeness": "High",
+      "threats": [
+        "Adaptixc2_tool",
+        "Credential_harvesting_technique",
+        "Passthehash_technique",
+        "Credential_dumping_technique",
+        "Nanodump_tool",
+        "Lsadump_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "PaperCut",
+        "Active Directory",
+        "office365",
+        "OLLVM",
+        "Google Chrome",
+        "Chrome"
+      ],
+      "algorithms": [
+        "xor",
+        "rc4",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "CreateProcessAsUser",
+        "GetCurrentDirectoryA",
+        "GetCurrentDirectoryW",
+        "SetCurrentDirectoryA",
+        "SetCurrentDirectoryW"
+      ],
+      "languages": [
+        "javascript",
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/papercut-mf-zero-day-intrusion-java-loader-web-shell-and-adaptixc2-via-cve-2026-82078-and-cve-2026-81578",
+        "https://github.com/YungBinary/DispatchThis",
+        "https://github.com/Adaptix-Framework/AdaptixC2/blob/main/AdaptixServer/extenders/beacon\\_agent/src\\_beacon/beacon"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "x47.c botnet comes with 18 attack methods, including AI API draining",
+      "completeness": "Low",
+      "threats": [
+        "X47-c_botnet",
+        "Fastflux_technique",
+        "Httpflood_technique",
+        "Udpflood_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 12,
+      "software": [
+        "OpenAI",
+        "c panel",
+        "Windows Defender",
+        "Discord"
+      ],
+      "functions": [
+        "WraithTools"
+      ],
+      "links": [
+        "https://qrator.net/blog/details/x47.c-botnet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Malware Analysis Report — Telnet/SSH Honeypot Capture",
+      "summary": "The capture contains three botnet binaries, two dropper scripts, and one non-malware artifact, all part of the Mirai/CatDDoS ecosystem. Two ARM Mirai-derived samples share TCP port 18129, which the report treats as a durable detection pivot across IP rotation, and one droppers' filename (kla.sh) links them to a third, glibc x86-64 L7 bot that carries Cloudflare bypass, IRC control, and SOCKS5 proxy chaining. The ARM samples target IoT devices through a default-credential wordlist, ASUS and Realtek exploits, and game-server floods. The report assesses the operator as a mid-tier, commercially oriented DDoS-for-hire actor with no nation-state indicators. Defenders should alert on port 18129, the listed C2 addresses, and deleted-on-exec ELF activity, and should not rely on the \"stop\" table key, which is stale in these builds.",
+      "completeness": "High",
+      "threats": [
+        "Mirai",
+        "Catddos",
+        "Boatnet",
+        "Hajime",
+        "Pandora",
+        "Miori",
+        "Masuta",
+        "Yakuza",
+        "Mozi",
+        "Supply_chain_technique",
+        "Jackskid",
+        "Domain_fronting_technique",
+        "Residential_proxy_technique",
+        "Process_injection_technique",
+        "Timestomp_technique",
+        "Mitm_technique",
+        "Impacket_tool"
+      ],
+      "geo": [
+        "Middle east",
+        "Chinese",
+        "Asia",
+        "America",
+        "Africa"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 24,
+      "software": [
+        "Cloudflare",
+        "Linux",
+        "Debian",
+        "twitter",
+        "Dahua",
+        "Minecraft",
+        "fivem",
+        "mysql",
+        "redis",
+        "gmail",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "connect",
+        "xor_cipher",
+        "bind",
+        "listen",
+        "accept",
+        "socket",
+        "main",
+        "send",
+        "util_local_addr",
+        "attack_kill_all",
+        "have more..."
+      ],
+      "languages": [
+        "cpython",
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://github.com/jeeberrr/honeypot-stuff/blob/main/malware-analysis-reports/analysis_09-28-2026.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Zecurit RMM Abuse Demands Attention: DocuSign Phishing Delivers a Signed Agent",
+      "summary": "A phishing campaign impersonated a DocuSign document-review workflow and delivered a legitimate Zecurit RMM Windows agent signed with a valid vendor certificate, without using custom malware. The email was sent through Amazon SES, which passed SPF and DKIM, and the lure led through two browser verification pages to a forced download. The gate's protections were largely cosmetic, with a dormant proof-of-work routine and a fail-open cookie path. The campaign is linked to a September Zoom-themed Zecurit delivery at the tool and signer level, but no common operator has been established. Defenders should hunt for unauthorized Zecurit installation and enrollment and treat valid signatures and passing mail authentication as insufficient evidence of legitimacy.",
+      "completeness": "High",
+      "threats": [
+        "Cloaking_technique",
+        "Spear-phishing_technique",
+        "Screenconnect_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 4,
+      "software": [
+        "DocuSign",
+        "Cloudflare",
+        "Gmail",
+        "Zoom",
+        "Windows service",
+        "Windows installer"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "sha1"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://zerobec.com/blog/zecurit-rmm-abuse-docusign-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "The Infostealer Incursion: How Stolen Credentials Breach Cloud, Code, and AI Environments",
+      "summary": "Infostealer malware such as Lumma C2, RedLine, and Vidar accounts for 85.7% of detected incidents in Wiz's analysis of NordStellar data, and it is a leading initial access vector against cloud, code, and AI environments. Attackers infect developer endpoints through social engineering or supply chain attacks, then steal API keys, credentials, and session tokens to bypass MFA. AWS and GCP credentials make up 46% and 13% of compromised secrets, with GitHub tokens around 10% and AI platform keys, led by OpenAI, around 5%. The report details the specific files targeted for AWS, Azure, GCP, GitHub, GitLab, OpenAI, and Claude Code. Defenders should treat developer workstations as a key entry point for cloud compromise.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Lumma_stealer",
+        "Redline_stealer",
+        "Vidar_stealer",
+        "Miasma",
+        "Stealc",
+        "Amadey",
+        "Linpeas_tool",
+        "Winpeas_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "Roblox",
+        "Valorant",
+        "Active Directory",
+        "Azure Active Directory",
+        "Azure AD",
+        "Outlook",
+        "SharePoint",
+        "Linux",
+        "macOS",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "The third-party[.\\]com domain is serving a ClickFix lure to Windows users",
+      "summary": "third-party[.]com, a documentation placeholder that is not IANA-reserved, is now serving a ClickFix lure to Windows browsers while showing a harmless decoy to other systems. The domain appears in over 1,500 files across 1,700+ repositories, including AI agent skills, MCP-server docs, and projects from Chromium, Sanity, and Vercel. On Windows, the page mimics a Cloudflare check and copies a PowerShell command to the clipboard, which the user runs through the Run dialog. Because the payload depends on the claimed operating system, static scans and reputation checks made from non-Windows systems can return clean results. The report advises defenders to find squattable placeholder domains in their own code and docs, avoid allowlisting them, and use reserved names such as example.com.",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chromium",
+        "Vercel",
+        "Cloudflare",
+        "Active Directory",
+        "macOS",
+        "Linux",
+        "ClawHub",
+        "curl",
+        "Polyfill"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.manifold.security/blog/third-party-com-placeholder-clickfix",
+        "https://github.com/search?q=third-party.com&type=repositories",
+        "https://github.com/search?q=third-party.com&type=code",
+        "https://github.com/chromium/chromium/blob/95b234e2a6275bc05c72b65b2ef6c9d0154d225d/docs/telemetry\\_extension/README.md?plain=1#L161"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
+      "summary": "Microsoft reports that Russian state actor Star Blizzard has shifted in 2026 toward large-scale phishing campaigns, often sent from accounts on compromised websites, and a malware delivery technique it tracks as RedFlick. RedFlick uses scheduled tasks to deploy the CosmicPulse backdoor and requires only a single user interaction, compared with the multiple actions needed in earlier ClickFix-based chains. The actor targets Ukrainian individuals and institutions as well as NGOs, think tanks, and governments with a nexus to supporting Ukraine, with over 100 organizations affected mainly in the US and UK. Defenders should watch for initial-contact emails followed by password-protected archives and for scheduled tasks masquerading as legitimate network components.",
+      "completeness": "High",
+      "threats": [
+        "Redflick_technique",
+        "Cosmicpulse",
+        "Clickfix_technique",
+        "Coldcopy",
+        "Spear-phishing_technique",
+        "Darksword_tool",
+        "Steganography_technique",
+        "Norobot",
+        "Baitswitch",
+        "Yesrobot"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian",
+        "United states",
+        "London",
+        "United kingdom",
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Protonmail",
+        "CPanel",
+        "WordPress",
+        "curl"
+      ],
+      "algorithms": [
+        "aes-ecb",
+        "base64",
+        "aes",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzardhttps://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "The Gentlemen Ransomware: Threat Actor Profile - Barricade Cyber Solutions",
+      "completeness": "High",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Byovd_technique",
+        "Edr-killer",
+        "Mamba",
+        "Hyflock",
+        "Garble_tool",
+        "Nmap_tool",
+        "Anydesk_tool",
+        "Impacket_tool",
+        "Shadow_copies_delete_technique",
+        "Rclone_tool",
+        "Winrm_tool",
+        "Putty_tool",
+        "Netexec_tool",
+        "Mstsc_tool",
+        "Cobalt_strike_tool",
+        "Chisel_tool",
+        "Systembc",
+        "Meshcentral_tool",
+        "Credential_harvesting_technique",
+        "Wevtutil_tool",
+        "Vssadmin_tool"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 29,
+      "software": [
+        "ESXi",
+        "FortiGate",
+        "ZoomEye",
+        "SoftPerfect Network Scanner",
+        "Windows Defender",
+        "Windows service",
+        "Active Directory",
+        "PostgreSQL",
+        "Microsoft Defender",
+        "Windows Firewall",
+        "have more..."
+      ],
+      "algorithms": [
+        "curve25519",
+        "sha1",
+        "xchacha20",
+        "rc4",
+        "ecdh",
+        "md5",
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://barricadecyber.com/the-gentlemen-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Opsec Fail Leaks a Rare Look Inside a Media-Buy-Powered Scam Operation",
+      "summary": "A South African investment scam on the domain boroxior[.]pro was found with a leaked backend backup, exposing how these operations are staged. The kit uses eight near-identical fake offer pages impersonating News24, SABC News, Bloomberg, and the South African Government, featuring real public figures such as Elon Musk and Cyril Ramaphosa. A Keitaro traffic distribution system cloaks the site, showing a harmless decoy to bots, reviewers, and non-target geographies while serving the scam to South African visitors arriving from paid ads. Captured leads are sent to a backend CRM and a Telegram bot, and the leaked hardcoded bot token could let outsiders hijack the operator's lead feed. The researchers assess the kit as a toolkit shared across many brands and affiliates rather than the work of a single operator, with related clusters targeting Europe.",
+      "completeness": "Medium",
+      "geo": [
+        "South africa",
+        "African"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Keitaro",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "removeAttribute",
+        "getMe",
+        "getChat",
+        "getUpdates"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.confiant.com/p/opsec-fail-leaks-a-rare-look-inside"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Determined Attacker Uploads Malicious Webshells to Parks and Rec Management Platform Servers",
+      "completeness": "Medium",
+      "threats": [
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WebRTC",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Get-Website",
+        "Get-WebBinding",
+        "Get-ChildItem",
+        "eval"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/parks-recreation-platform-webshell-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "PolinRider Switches to Ethereum C2 in 30+ Repositories",
+      "summary": "PolinRider, a loader family, now finds its command and control servers by reading small Ethereum transactions, where each recipient address encodes a C2 IP address and port. SafeDep identified two operator wallets using this method, with C2 servers rotated by sending new transactions and no code changes. The loader was first found in a pull request against the oxc-project/oxc repository, which the maintainers did not merge, and SafeDep confirmed 35 infected GitHub repositories that still carried the loader on 2026-09-30. The loader runs when developers build or start a project and installs a Node.js and Python infostealer that collects environment secrets, browser passwords, cookies, and wallet data. Defenders should treat any computer that ran an infected project as compromised, rotate secrets, and scan for the loader markers and unusually long lines in JavaScript files.",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider",
+        "Dead_drop_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Node.js",
+        "linux",
+        "Windows Subsystem for Linux",
+        "Chromium",
+        "Firefox",
+        "1Password",
+        "Bitwarden",
+        "Telegram",
+        "macOS"
+      ],
+      "wallets": [
+        "mainnet",
+        "tron",
+        "metamask",
+        "coinbase"
+      ],
+      "crypto": [
+        "ethereum",
+        "aptos"
+      ],
+      "algorithms": [
+        "rc4",
+        "sha256",
+        "xor",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "createRequire"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://safedep.io/polinrider-ethereum-c2-github-repositories",
+        "https://github.com/tailwindadmin/admin/blob/e818e8e74aad30a5dedf9f54ab69428011bf67be/postcss.config.js",
+        "https://github.com/oxc-project/oxc",
+        "https://github.com/oxc-project/oxc/commit/41ab07a849c68472779da562d1530cf19f116ccf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
+      "summary": "Microsoft Threat Intelligence tracked exploitation of CVE-2026-73570, an unauthenticated OS command injection flaw in the Zimbra Collaboration Suite SNMP notification path. Exploitation requires an internet-facing server with the optional zimbra-snmp package installed and SNMP notifications enabled, triggered by a specially crafted email. Successful attacks gave command execution as the zimbra service account, which attackers used to deploy JSP webshells, reverse shells, privilege escalation, and persistent remote-access agents. Observed activity also included credential collection from Zimbra configuration and LDAP, mailbox archiving, and an attempted transfer to cloud storage. Affected organizations spanned multiple regions and industries. Defenders should upgrade to Zimbra 10.1.20 or later, or uninstall zimbra-snmp and disable SNMP notifications, and treat reverse-shell alerts on mail servers as priority incidents.",
+      "completeness": "High",
+      "threats": [
+        "Credential_dumping_technique",
+        "Zimclient2",
+        "Azcopy_tool",
+        "Process_injection_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 14,
+      "software": [
+        "Zimbra",
+        "Zimbra Collaboration Suite",
+        "curl",
+        "systemd",
+        "sudo",
+        "nginx",
+        "rsync",
+        "MySQL",
+        "Linux",
+        "openssl",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "algorithms": [
+        "gzip",
+        "zip",
+        "sha1",
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "java",
+        "perl",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "China-nexus UAT-11587 targets government and policy organizations across Asia with Antino backdoor",
+      "summary": "China-nexus actor UAT-11587 targets government, policy, and national-security-adjacent organizations across Asia, including Taiwan, India, the Philippines, and Cambodia, using a previously undocumented Rust backdoor called Antino. Talos first observed the activity in September 2025 and identified at least 16 affected or targeted environments across eight Asian countries by July 2026. Spear-phishing emails spoof trusted senders and mimic Gmail attachment widgets, leading victims into a five-stage infection chain hosted largely on Cloudflare and Amazon CloudFront. Antino uses Microsoft Graph to communicate through Outlook and OneDrive, blending its command-and-control traffic with legitimate Microsoft 365 activity. Talos assesses the campaign as intelligence gathering, and it recommends that defenders monitor for Microsoft 365 abuse and cloud-hosted staging.",
+      "completeness": "High",
+      "threats": [
+        "Antino",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Philippines",
+        "Philippine",
+        "Tehran",
+        "Cambodia",
+        "Singapore",
+        "Syria",
+        "Indo-pacific",
+        "Thailand",
+        "Venezuela",
+        "Ukraine",
+        "Chinese",
+        "India",
+        "Asian",
+        "Myanmar",
+        "Pakistan",
+        "China",
+        "Indian",
+        "Moscow",
+        "Hong kong",
+        "Russia",
+        "Taiwan",
+        "Taiwanese",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft 365",
+        "Outlook",
+        "Cloudflare",
+        "Gmail",
+        "TikTok",
+        "Cloudflare R2",
+        "Microsoft JScript",
+        "Graph API"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "jscript",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/china-nexus-uat-11587-targets-government-and-policy-organizations-across-asia-with-antino-backdoor/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/09/uat-11587-targets-gov.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "2CLoader: A New Malware Loader Delivering Vidar and Remus",
+      "summary": "Zscaler ThreatLabz identified a new malware loader in August 2026, which it tracks as 2CLoader. The loader has been used mainly to deliver the information stealers Vidar and Remus, and also XWorm RAT. It evades detection using indirect system calls, inline trampoline hooks on Windows APIs, and anti-VM, anti-debug, and user activity checks. Its configuration controls payload execution methods and persistence options. Because Vidar and Remus steal credentials that enable follow-on attacks, organizations should ensure security tooling can detect and prevent this activity.",
+      "completeness": "High",
+      "threats": [
+        "2cloader",
+        "Vidar_stealer",
+        "Remus",
+        "Xworm_rat",
+        "Hellsgate_technique",
+        "Runpe_tool",
+        "Sandbox_evasion_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "VirtualBox",
+        "Xen",
+        "QEMU",
+        "Hyper-V"
+      ],
+      "algorithms": [
+        "aes",
+        "aes-256",
+        "xor",
+        "sha256",
+        "aes-gcm"
+      ],
+      "functions": [
+        "DeletePending"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/2cloader-new-malware-loader-delivering-vidar-and-remus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Part 2: Renting the Attack Surface",
+      "summary": "VHX Harvester is a purpose-built offensive panel, linked to the @prime0 npm typosquat campaign, that targets GPU compute renters on the vast.ai marketplace. Its operator left the panel's intake endpoints unauthenticated, exposing the complete C2 agent source code and hardcoded default credentials. The kill chain runs from marketplace host enumeration and port scanning through service fingerprinting, credential harvesting, Caddy-proxy XSS, and bridge agents rented on co-located hosts to scan the Docker bridge network. As of 25 September 2026, the operator had achieved one root shell on a Jupyter notebook but had planted no cryptocurrency miners, and the operation remained active. Defenders should block the associated infrastructure, audit Caddy auth proxy configurations, and monitor for containers scanning 172.17.0.0/16.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Hysteria_tool",
+        "Xmrig_miner",
+        "Lolminer",
+        "Sliver_c2_tool",
+        "Qubitstrike",
+        "Diamorphine_rootkit",
+        "Screenconnect_tool",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "United states",
+        "Russian",
+        "Chinese",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Jupyter",
+        "Jupyter notebook",
+        "Caddy",
+        "Docker",
+        "Jupyter notebooks",
+        "ComfyUI",
+        "FastAPI",
+        "astAPI",
+        "Docker Swarm"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://cdn.cloudsek.com/cloudsek-blog-pdfs/tophit-part-yisx.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "Baba Yaga on the Hook: New Mimbrob Activity Targets Russia’s Military-Industrial Complex, IT Companies, and Military Personnel",
+      "summary": "Mimbrob is a previously unattributed threat group, named by F6, that began activity in April 2026 and targeted Russian aerospace, defense, IT, and military personnel. Its phishing emails carried archives containing a legitimate Yandex Browser executable that sideloaded a malicious DLL, FBULoader, which established persistence and contacted command-and-control infrastructure for a further payload that researchers could not recover. The group also distributed a Go-based remote access trojan, RAT-Go, in April 2026 using similar sideloading techniques. In May 2026, it spread FBULoader through a fake drone-tracking application named Dronner, apparently aimed at Russian soldiers. F6 assesses the likely goal as espionage, though the final payload was not obtained and motivation remains unconfirmed.",
+      "completeness": "Medium",
+      "threats": [
+        "Mimbrob",
+        "Dll_sideloading_technique",
+        "Fbuloader",
+        "Gorat"
+      ],
+      "geo": [
+        "Russian",
+        "Russia",
+        "Ukrainian"
+      ],
+      "software": [
+        "Dronner",
+        "Yandex Browser",
+        "ronner ap",
+        "YandexBrowser",
+        "Microsoft Edge",
+        "Task Scheduler",
+        "CocCoc",
+        "gamma"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "zip",
+        "aes-gcm",
+        "rc4"
+      ],
+      "functions": [
+        "SignalChromeElf"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/mimbrob/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-30",
+      "title": "TOPHIT. Part 1: A one-operator npm typosquat flood, co-hosted with a GPU-cryptojacking C2",
+      "summary": "A single npm account, prime0, published 85 scoped typosquat packages (@prime0/...) on 15 September 2026, each a one or two character misspelling of one of 29 popular libraries such as chalk, semver and debug. The names were produced by a generator that skipped any misspelling already owned by an unscoped package, so a mistyped \"npm install\" fails, but a search for the typo ranks the scoped package first. Each package runs a postinstall hook that sends host details to a bare IP, 69.48.229.140 on port 8080, and loading the package starts an agent that polls that server every 30 seconds for shell commands with no authentication or encryption. The same host runs a separate GPU-cryptojacking control panel targeting the vast.ai marketplace, which is covered in Part 2. CloudSEK assesses with medium confidence that one individual in Pakistan operates the campaign, and defenders should block the address, alert on install scripts contacting bare IPs, and review new scoped dependencies.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Pakistan",
+        "United states"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Linux",
+        "OpenSSH",
+        "Ubuntu",
+        "uvicorn",
+        "FastAPI",
+        "Jupyter",
+        "Jupyter notebook",
+        "Caddy",
+        "Docker",
+        "have more..."
+      ],
+      "algorithms": [
+        "ecdsa",
+        "exhibit",
+        "sha256"
+      ],
+      "functions": [
+        "require",
+        "fp",
+        "setInterval"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://cdn.cloudsek.com/cloudsek-blog-pdfs/tophit-part-8ysx.pdf"
+      ]
+    }
+  }
+]

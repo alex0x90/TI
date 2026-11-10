@@ -16,5 +16,532 @@
         "https://www.forcepoint.com/blog/x-labs/fake-dhl-phishing-campaign-credential-theft"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "✅ Report Title: Threat Group Profile: Silver Fox",
+      "summary": "Silver Fox is a China-based threat group active since at least 2022, initially pursuing financial gain and, since 2024, running both profit-driven opportunistic campaigns and espionage operations. It began by targeting China and later expanded to Taiwan and Japan, where it impersonated the National Tax Bureau with phishing timed to local tax audit periods. In 2025, centered on ValleyRAT, the group widened its activity across Southeast Asia and moved beyond individual users to medical, financial, and corporate targets. Its phishing lures use tax audit or financial software update themes and deliver LNK files, macro-laced Office documents, or RMM tools, while impersonation through typosquatted domains and SEO poisoning spreads AtlasCross RAT. The group also uses BYOVD with vulnerable drivers to disable AV and EDR, so defenders should control email and spoofed-domain entry points, block vulnerable drivers, and apply application allowlisting.",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Valleyrat",
+        "Winos",
+        "Nidhogg",
+        "Holdinghands",
+        "Cleversoar",
+        "Cringe",
+        "Pngplug",
+        "Catena",
+        "Gh0st_rat",
+        "Byovd_technique",
+        "Spear-phishing_technique",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Asia",
+        "Philippines",
+        "Taiwan",
+        "China",
+        "Japan",
+        "Malaysia",
+        "Indonesia",
+        "Thailand"
+      ],
+      "software": [
+        "Telegram",
+        "Zoom",
+        "Microsoft Teams",
+        "WeChat"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://s2w.inc/en/resource/detail/1050"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "Kimsuky Malware Targets Specialty Pharmaceutical Companies-White Life Sciences ERP Specification Sheet",
+      "summary": "Kimsuky, a North Korean threat actor, distributed a malicious Windows shortcut (.lnk) disguised as an Excel ERP specification document and aimed at specialty pharmaceutical companies. The LNK file carries a decoy .xlsx that opens to the user, while embedded data is XOR-decoded (0xC7) into PowerShell and JavaScript payloads. The chain drops files into C:\\sysconfigs and creates a scheduled task, named to mimic an Avast browser update, to persist execution through wscript.exe. The PowerShell script uses Dropbox API as its command-and-control channel, uploading RC4-encrypted public IP and process list data along with username, domain, and OS version. It then downloads batch command files from Dropbox and runs them hidden. Defenders should note that hidden file extensions make .lnk files easy to miss, so showing file extensions is recommended.",
+      "completeness": "Low",
+      "geo": [
+        "North korean",
+        "Korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "xor",
+        "md5",
+        "base64",
+        "rc4"
+      ],
+      "functions": [
+        "Seek",
+        "Get-Process"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://wezard4u.tistory.com/429764"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "Hiding in plain sight: How PhantomCore disguises its activity with legitimate tools",
+      "completeness": "High",
+      "threats": [
+        "Phantomcore",
+        "Rsocx_tool",
+        "Tsocks_tool",
+        "Wstunnel_tool",
+        "Microsocks_tool",
+        "Localtonet_tool",
+        "Phantomsscp_tool",
+        "Mactunnelrat",
+        "Phantomproxylite_tool",
+        "Phantompxpigeon",
+        "Dumpit_tool",
+        "Memprocfs_tool",
+        "Adrecon_tool",
+        "Lolbin_technique",
+        "Trojan.win32.recon.c",
+        "Spear-phishing_technique",
+        "Impacket_tool",
+        "Credential_dumping_technique",
+        "Smbexec_tool",
+        "Winrm_tool",
+        "Lockbit",
+        "Phantomheart",
+        "Evil-winrm_tool",
+        "Socks5proxy_tool",
+        "Phantomrshell"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 43,
+      "software": [
+        "Rsocx",
+        "TrueConf",
+        "OpenGL",
+        "Velociraptor",
+        "OpenSSH",
+        "Linux",
+        "Windows Service",
+        "Active Directory",
+        "Windows Defender",
+        "Windows PowerShell",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "sha256",
+        "aes-128-cbc",
+        "sha1",
+        "aes-128",
+        "base64",
+        "cbc",
+        "fnv-1a"
+      ],
+      "functions": [
+        "MiniDump",
+        "Set-MpPreference",
+        "taskId",
+        "taskType",
+        "Get-OrCreatePortFromRegistry"
+      ],
+      "languages": [
+        "rust",
+        "php",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/hiding-in-plain-sight-how-phantomcore-masks-its-activity-with-legitimate-tools/",
+        "https://github.com/dokan-dev/dokany",
+        "https://github.com/ufrisk/MemProcFS?tab=readme-ov-file",
+        "https://github.com/b23r0/rsocx/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "M3rx ransomware: inside a new leak-site actor and Go encryptor",
+      "summary": "M3rx is a new ransomware name with a leak site, first seen with posts in late April 2026, and its operators' claims span the US, Canada, Australia, the UK, and Switzerland. The analyzed PE32+ Windows x64 Go encryptor appends the .8hmlsewu extension, drops RECOVERY_NOTES.TXT, clears the Recycle Bin, unlocks held files via Restart Manager, and self-deletes. Its config is a gzip and gob blob that can be decoded, and the report describes a per-run X25519 key exchange with AES-CTR file encryption and AES-GCM key wrapping. Encrypted files carry a 0x400-byte footer whose magic value shows whether encryption completed or was interrupted, and an interrupted footer may still expose a plaintext file key. The leak site lists 33 claimed victims, mostly small organisations, with no data published yet, and the researchers found no tie to a known crew.",
+      "completeness": "Low",
+      "threats": [
+        "M3rx"
+      ],
+      "geo": [
+        "Switzerland",
+        "Australia",
+        "Canada"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "aes",
+        "md5",
+        "aes-256",
+        "sha256",
+        "sha1",
+        "ecdh",
+        "aes-ctr",
+        "curve25519",
+        "gzip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/m3rx-ransomware-go-encryptor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "TeamPCP Injects Two-Stage Credential Stealer into xinference PyPI Package",
+      "summary": "TeamPCP published three malicious versions of the xinference PyPI package (2.6.0, 2.6.1, and 2.6.2) on April 22, 2026, each carrying a two-stage credential stealer injected into xinference/__init__.py. The payload runs automatically whenever the package is imported and harvests SSH keys, cloud and Kubernetes credentials, environment variables, developer tokens, and crypto wallet files. Stolen data is archived and sent via curl POST to an attacker-controlled domain, with no encryption applied. The attacker refined the injection across versions, moving it from module scope into a helper function and restoring asynchronous execution. Affected systems should be checked for these versions, downgraded, and all accessible credentials rotated, and the exfiltration domain should be blocked.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_stealing_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "litellm",
+        "Kubernetes",
+        "Docker",
+        "travis",
+        "slack",
+        "discord"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "cardano",
+        "solana"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes-256-cbc",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "_install",
+        "exec",
+        "Popen",
+        "start",
+        "run",
+        "IMDS"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/teampcp-injects-two-stage-credential-stealer-into-xinference-pypi-package"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "“Chaos is a ladder”: Vidar’s recent rise to the top",
+      "summary": "Vidar has risen to the top of the stealer ecosystem in early 2026, benefiting from the chaos created by police takedowns of Lumma and Rhadamanthys. Intrinsec attributes this rise to the release of Vidar version 2.0 and to its collaboration with \"Cloud\" Telegram channels. The researchers analysed a full kill chain that began with a fake software download advertised on YouTube, led to unpacking of the Vidar stealer, and ended with credentials being sold on a Russian market, affecting corporate employees. The malware analysis covered a dead drop resolver mechanism for C2 recovery and control flow flattening used to slow analysis. An unpacked sample possibly uploaded to VirusTotal by a Russian actor showed classic stealing capabilities. The report also links Vidar's infrastructure to prior Acreed research and notes that some domains were used to generate built payloads for Vidar clients.",
+      "completeness": "Low",
+      "threats": [
+        "Chaos_ransomware",
+        "Vidar_stealer",
+        "Lumma_stealer",
+        "Rhadamanthys",
+        "Dead_drop_technique",
+        "Aurastealer",
+        "Redsun_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "des"
+      ],
+      "links": [
+        "https://www.intrinsec.com/chaos-is-a-ladder-vidar-rise-to-the-top/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "BlueNoroff Uses ClickFix, Fileless PowerShell, and AI-Generated Fake Zoom Meetings to Target Web3 Sector",
+      "summary": "BlueNoroff, a financially motivated subgroup of North Korea's Lazarus Group, ran a fake Zoom meeting campaign against a North American Web3 company, starting from a spear-phishing Calendly invite with a typo-squatted Zoom link. The victim's webcam was covertly streamed to attacker servers, and a ClickFix-style prompt tricked them into pasting a PowerShell command that delivered a fileless C2 implant. The attacker then stole Telegram sessions and Chromium browser credentials, including cryptocurrency wallet extension data, and maintained access for 66 days. Activity across 100 identified targets spanned 20+ countries, with 80% in crypto or adjacent finance and 76% in senior leadership roles. Defenders should train staff to verify meeting links and never run terminal commands to fix video calls.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Process_injection_technique",
+        "Credential_harvesting_technique",
+        "Antidebugging_technique",
+        "Uac_bypass_technique",
+        "Typosquatting_technique",
+        "Spear-phishing_technique",
+        "Clipboard_injection_technique",
+        "Meteor_wiper",
+        "Donut_loader",
+        "Donut",
+        "Downtroy"
+      ],
+      "geo": [
+        "Switzerland",
+        "France",
+        "American",
+        "Sweden",
+        "Korea",
+        "Norway",
+        "Asia-pacific",
+        "Oceania",
+        "Portugal",
+        "Emirates",
+        "America",
+        "Netherlands",
+        "United kingdom",
+        "Canada",
+        "Germany",
+        "Korean",
+        "China",
+        "Dprk",
+        "Italy",
+        "Spain",
+        "Israel",
+        "Japan",
+        "Middle east",
+        "Asia",
+        "Australia",
+        "Singapore",
+        "Taiwan",
+        "North korea",
+        "Arab emirates",
+        "Hong kong"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "Telegram",
+        "curl",
+        "Google Chrome",
+        "Microsoft Edge",
+        "BraveSoftware Brave-Browser",
+        "Opera",
+        "Mozilla Firefox",
+        "Clipchamp",
+        "OpenAI",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc",
+        "aes",
+        "chacha20",
+        "aes-256-gcm",
+        "zip",
+        "bcrypt",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Get-Content",
+        "Remove-Item",
+        "getUserMedia",
+        "Zoom",
+        "Teams",
+        "Get-CimInstance",
+        "Get-Process",
+        "WriteProcessMemory",
+        "CreateRemoteThread",
+        "Send-ScreenshotToTelegram",
+        "have more..."
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog-uk/bluenoroff-uses-clickfix-fileless-powershell-ai-generated-fake-zoom-meetings-to-target-web3-sector/",
+        "https://github.com/rtkwlf",
+        "https://github.com/rtkwlf/wolf-tools/tree/main/threat-intelligence/bluenoroff-fake-zoom-clickfix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "Tall Tales",
+      "summary": "Citizen Lab, working with ICIJ, attributes two China-aligned phishing clusters, GLITTER CARP and SEQUIN CARP, to the Chinese government, likely via private contractors. GLITTER CARP runs broad phishing and impersonation campaigns that harvest Google credentials from Uyghur, Tibetan, Taiwanese, and Hong Kong diaspora activists and journalists. SEQUIN CARP targets journalists covering China, notably ICIJ's Scilla Alecci, using a fabricated whistleblower persona and malicious OAuth consent flows. The OAuth attacks can grant persistent Gmail access that survives password changes and bypasses MFA. Defenders should use phishing-resistant MFA, disable remote content, audit third-party OAuth permissions, and avoid authorizing apps from emailed links.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Healthkick",
+        "Govershell"
+      ],
+      "geo": [
+        "Chinese",
+        "China",
+        "Taiwanese",
+        "Switzerland",
+        "Taiwan",
+        "Japan",
+        "New york",
+        "United kingdom",
+        "Asia-pacific",
+        "America",
+        "Tibet",
+        "Japanese",
+        "Spanish",
+        "Hong kong",
+        "Vietnamese",
+        "Vietnam",
+        "Asia",
+        "Tibetan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Gmail",
+        "Twitter"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "createElement",
+        "setInterval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://citizenlab.ca/research/how-chinese-actors-use-impersonation-and-stolen-narratives-to-perpetuate-digital-transnational-repression/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "VECT: Ransomware by design, Wiper by accident",
+      "summary": "VECT 2.0 is a Ransomware-as-a-Service program, first seen in December 2025, that Check Point Research found permanently destroys files larger than 128 KB rather than encrypting them recoverably. The flaw sits in a shared encryption engine across Windows, Linux and ESXi variants, where three of four per-chunk nonces are overwritten and never stored, so decryption is impossible even for the operator. The group, linked to the TeamPCP supply-chain campaign, opened affiliation to all BreachForums users and targets enterprise assets such as VM disks, databases and backups. CPR also found the cipher is unauthenticated ChaCha20 rather than the AEAD construction reported elsewhere, along with unimplemented speed modes and other coding errors. Defenders should treat VECT as a destructive wiper, and the report recommends monitoring the planned Cloud Lockers.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Lockbit",
+        "Windows_locker",
+        "Shadow_copies_delete_technique",
+        "Wevtutil_tool",
+        "Rclone_tool",
+        "Restic_tool"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "ESXi",
+        "Linux",
+        "Trivy",
+        "LiteLLM",
+        "Linux ESXi",
+        "outlook",
+        "firefox",
+        "Windows Service",
+        "bcdedit",
+        "Windows registry",
+        "have more..."
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "poly1305",
+        "chacha20",
+        "chacha20-poly1305"
+      ],
+      "functions": [
+        "randombytes",
+        "getrandom",
+        "safe_read",
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/vect-ransomware-by-design-wiper-by-accident/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-28",
+      "title": "C2 in the Ether",
+      "summary": "The author investigated the Remus infostealer, a Lumma fork that uses dead drop resolvers, including EtherHiding, to fetch its command-and-control (C2) address from an Ethereum smart contract. By calling the contract through a public RPC endpoint and reviewing its past transactions, the researcher recovered a new live C2 domain and several earlier rotations. The operator's wallet showed activity over about 61 days, with the latest update indicating the campaign was still active. Pivots into funding wallets, a linked ENS name, and bytecode-matching contracts mostly led to dead ends. The author notes that the contract's DomainUpdated event is logged each time the C2 is rotated, so monitoring for it could detect future updates.",
+      "completeness": "Low",
+      "threats": [
+        "Remus",
+        "Etherhiding_technique",
+        "Lumma_stealer",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Steam",
+        "etherscan"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "functions": [
+        "write"
+      ],
+      "links": [
+        "https://intelinsights.substack.com/p/c2-in-the-ether",
+        "https://github.com/gendigitalinc/ioc/tree/master/Remus"
+      ]
+    }
   }
 ]

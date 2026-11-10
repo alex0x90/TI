@@ -1,0 +1,581 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Mirage2FA Hijacks Companies’ Microsoft 365 Sessions, with Over 4K Victims in the US",
+      "summary": "Mirage2FA is a phishing-as-a-service toolkit that steals Microsoft 365 credentials and session cookies through Adversary-in-the-Middle attacks, bypassing two-factor authentication. It delivers browser-executed .htm, .xhtml, and .svg stagers, QR-code lures, and Amazon SES emails rather than binary malware. The report links 3,518 organization email domains to the campaign, with about 48% of targeted addresses potentially compromised and session-cookie theft the most common outcome. The United States accounts for 63.7% of identified victims, and Technology, Manufacturing, and Education are the most affected industries. Defenders should block risky attachments, adopt phishing-resistant MFA, and revoke all sessions and tokens after a suspected compromise, since a password reset alone may not remove attacker access.",
+      "completeness": "Medium",
+      "threats": [
+        "Mirage2fa_tool",
+        "Aitm_technique",
+        "Smuggling_technique",
+        "Opendir_technique"
+      ],
+      "geo": [
+        "India",
+        "Canada",
+        "Saudi arabia",
+        "United states",
+        "South africa",
+        "Singapore",
+        "United kingdom"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 10,
+      "software": [
+        "Microsoft Entra"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/mirage2fa-phishing-targets-us-companies/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Blockchain Dead Drop Resolvers Explained",
+      "summary": "Malware families across three blockchains (EVM, Solana, and TON) are using dead drop resolvers, which fetch C2 addresses at runtime from public smart contracts or transaction memos rather than hardcoding them. The EVM variant uses eth_call to public RPC nodes, and actors such as TroyDen, DeadLock, CLEARSHORT, and JADESNOW use it. The August 2026 ChainDrop campaign compromised more than 440 npm packages and reads its C2 from an Ethereum contract, with fallback RPC providers for resilience. Solana-based GlassWorm reads Base64-encoded C2 URLs from transaction memos, while TON-based SalatStealer and TONResolver query get_domain on TON contracts. Because operators can rotate C2 by updating one contract value and the traffic blends with legitimate crypto SaaS requests, defenders should inspect process context and decoded results rather than relying on host-based signatures.",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique",
+        "Chaindrop",
+        "Supply_chain_technique",
+        "Deadlock",
+        "Clearshort",
+        "Jadesnow",
+        "Glassworm",
+        "Salatstealer",
+        "Tonresolver"
+      ],
+      "software": [
+        "Telegram",
+        "curl"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum",
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "gzip",
+        "base64"
+      ],
+      "functions": [
+        "getSignaturesForAddress",
+        "getTransaction",
+        "RPC"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/blockchain-dead-drop-resolvers-explained",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Signed Overwolf Binary Sideloads ValleyRAT Malware in India Tax Scam",
+      "summary": "A ValleyRAT campaign targets organizations in India by impersonating the Indian Income Tax Department with a bilingual lure email threatening prosecution. The email links to a spoofed notice page that downloads a ZIP archive containing a legitimately signed Overwolf executable, which side-loads a malicious DLL that decrypts a hidden encrypted .bin file. The DLL reflectively loads the ValleyRAT core entirely in memory, using a modified RC4 cipher and a configuration key embedded in the payload. The malware copies its components to a system folder, persists via a logon scheduled task disguised as OneDrive, and hollows svchost.exe to contact its C2 server. Defenders should note the signed-binary side-loading technique and the use of fake tax notices as lures.",
+      "completeness": "High",
+      "threats": [
+        "Valleyrat",
+        "Astral-pe_tool",
+        "Process_hollowing_technique",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "outlook",
+        "Unicorn",
+        "Microsoft OneDrive",
+        "Windows service"
+      ],
+      "algorithms": [
+        "xor",
+        "rc4",
+        "zip"
+      ],
+      "links": [
+        "https://www.forcepoint.com/blog/x-labs/valleyrat-overwolf-sideload-tax-scam"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Beware of phishing emails disguised as transaction receipts",
+      "summary": "Phishing emails disguised as transaction receipts impersonated an employee of a specific U.S. company and urged recipients to open an attached PDF and confirm whether a deposit had been made. The PDF displayed a fake Adobe Flash Player update prompt and, once the user allowed an external link, led to an attacker-controlled website. Visiting the site downloaded a VBS script that relaunched itself with administrator privileges and opened a decoy receipt while silently installing a malicious MSI package via msiexec. The MSI installed ConnectWise ScreenConnect, a legitimate remote management tool, which the attacker abused to gain persistent remote access, transfer files, execute commands, and deploy additional payloads. Defenders should be cautious of legitimate remote administration tools being misused in living-off-the-land attacks.",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Lolbin_technique"
+      ],
+      "software": [
+        "Flash Player",
+        "curl"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94998/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Hunting MacSync Stealer infrastructure through behavioral pivots",
+      "summary": "MacSync Stealer is a macOS information stealer that changes its infrastructure to deliver payloads, communicate with compromised devices, and exfiltrate data. Microsoft Defender Experts correlated recurring URI paths, User-Agent strings, API-key headers, and curl options to link more than 30 rotating domains. Execution typically begins with ClickFix-style lures that trick users into running commands in Terminal, followed by curl-based payload retrieval and osascript-assisted shell activity. The malware harvests Keychain material, browser data, cloud and SSH credentials, and sensitive user files, then stages and compresses them before chunked HTTP PUT uploads. Defenders should hunt on request shape and behavior rather than domains alone, since those traits persist as domains rotate.",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 16,
+      "software": [
+        "Microsoft Defender",
+        "curl",
+        "macOS",
+        "Unix",
+        "IndexedDB",
+        "Kubernetes",
+        "Microsoft Defender for Endpoint",
+        "curl Microsoft Defender",
+        "rosoft Defender Thre",
+        "ft Defender portal t",
+        "have more..."
+      ],
+      "wallets": [
+        "trezor"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/08/18/hunting-macsync-stealer-infrastructure-through-behavioral-pivots/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Thousands of Hacked WordPress Sites, One Operation: Unmasking StopAndProtect",
+      "summary": "StopAndProtect is a newly identified operation combining file encryption with data theft, using thousands of hacked WordPress sites as infrastructure to host malware, relay commands, and store stolen data and logs. Victims are lured by fake CAPTCHA ClickFix prompts that trick them into running a hidden PowerShell command, which leads to multiple .NET loader stages and a toolkit including a ransomware encryptor, an SMB/USB worm, a lockscreen, a credential stealer, a VBS spreader, and a chat utility. Not all victims are ransomware targets, as the operators often silently exfiltrate files. Researchers found exposed directories and logs from developer OPSEC failures, revealing more than 6,000 unique victim IP addresses, mostly in the US, Russia, and India. The operators also used a hidden must-use WordPress plugin with hardcoded credentials to upload files, including PHP, to compromised sites. Defenders should keep WordPress core and plugins updated, since the compromised site examined ran a 2021 version with nearly 40 known vulnerabilities.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "India",
+        "Russia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "WhatsApp"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-cbc",
+        "zip"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/thousands-of-hacked-wordpress-sites-one-operation-unmasking-stopandprotect/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Beware of phishing emails disguised as requests to review a quotation (PhantomStealer)",
+      "summary": "Phishing emails impersonating a sales team employee of a foreign company use fake quotation-review requests to lure recipients into opening a malicious compressed attachment. The attachment contains an injector that abuses UAC bypass techniques and a vulnerable kernel driver (BYOVD) to terminate many security products, then injects the PhantomStealer payload into the legitimate AddInProcess32.exe process via process hollowing. PhantomStealer collects keystrokes, screenshots, saved browser and application credentials, session cookies, system information, and cryptocurrency wallet data, and it also replaces copied wallet addresses in the clipboard. Defenders should treat the attachment as malicious, check for the DCRCVDrv.sys file, the NvStreamKmd_dcrcv service, and process hollowing of AddInProcess32.exe, and review possible data exposure.",
+      "completeness": "Medium",
+      "threats": [
+        "Phantom_stealer",
+        "Uac_bypass_technique",
+        "Icmluautil_tool",
+        "Byovd_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "PccNTMon",
+        "FoxMail",
+        "WinSCP",
+        "Outlook"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94999/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "SoftEther VPN Installation Attacks Targeting Domestic Web Servers",
+      "summary": "Threat actor Larva-26010 has been installing SoftEther VPN on compromised domestic (South Korean) web servers and MS-SQL servers, with activity observed from April to August 2026 and a related 2024 ERP server campaign. The attacker disguises the SoftEther executable as \"vmtoolsd.exe,\" stores files under ProgramData paths, and uses PowerShell, certutil, and curl to download batch scripts, CAB files, and configuration files. In the newer cases, the initial intrusion is through web servers, which execute Discovery commands and the SoftEther installation, and then MS-SQL servers are targeted to install a CLR SqlShell. The configuration sets the host to connect to another VPN server in a cascade arrangement, likely to hide the real C&C infrastructure. Post-compromise actions include enabling WDigest plaintext credential storage, adding a backdoor account, and installing web shells, with the infected systems likely reused as C&C servers. Defenders are advised to patch IIS and OS systems, validate input, restrict execution in upload folders, and keep V3 updated.",
+      "completeness": "Medium",
+      "threats": [
+        "Bitsadmin_tool",
+        "Sqlshell_tool",
+        "Badpotato_tool"
+      ],
+      "geo": [
+        "South korea"
+      ],
+      "software": [
+        "SoftEther",
+        "MS-SQL",
+        "curl",
+        "vmtools",
+        "EfsPotato"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94994/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Clop Returns with Custom Implant in Mass-Extortion Campaign",
+      "summary": "Clop is exploiting CVE-2026-12569, a CVSS 9.3 remote code execution flaw in PTC Windchill, a product lifecycle management platform used by manufacturers to store engineering data and product designs. The group deploys a custom web shell that maps the vault for sensitive files, decrypts stored credentials including the LDAP manager password, and exfiltrates data without additional tooling. A custom Java class loader lets attackers run further code in memory, enabling lateral movement, ransomware, or persistence. The shell blends into normal application and database activity and uses custom headers and GZIP responses, which evade standard monitoring. Defenders should patch immediately, hunt for suspicious JSP files in Windchill codebase directories, and rotate keystore credentials on any suspected server.",
+      "completeness": "Medium",
+      "threats": [
+        "Clop",
+        "Credential_harvesting_technique",
+        "Chinachopper",
+        "Dewmode",
+        "Lemurloot"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "Windchill",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "zip",
+        "gzip",
+        "base64"
+      ],
+      "functions": [
+        "gdb",
+        "Internet-Facing"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/clop-returns-with-custom-implant-in-mass-extortion-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "How a Windows Batch Script Quietly Delivered AZALEA RAT",
+      "summary": "AZALEA RAT is a remote access trojan actively promoted in underground cybercriminal communities as a full remote administration platform, supported by an AzaleaControl operator panel. PointWild found a batch file that scored 0/61 on VirusTotal but used a multi-stage loader that copies a legitimate .NET executable, abuses AppDomain Manager configuration, and decrypts an AES-encrypted payload. The loader relies on the trusted Windows utility certutil.exe to decode embedded components and deletes its own files to reduce forensic traces. The final RAT offers credential theft, keylogging, and persistent remote access, with anti-analysis checks and an AMSI bypass. Defenders should analyze the full execution chain, since a clean antivirus verdict does not guarantee a file is safe.",
+      "completeness": "Medium",
+      "threats": [
+        "Azalea",
+        "Hvnc_tool",
+        "Amsi_bypass_technique",
+        "Process_injection_technique",
+        "Antidebugging_technique",
+        "Antivm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "zip",
+        "base64",
+        "cbc",
+        "gzip",
+        "aes-256",
+        "aes"
+      ],
+      "functions": [
+        "CreateNoWindow",
+        "GetManifestResourceStream",
+        "ToArray",
+        "Kb27"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.pointwild.com/threat-intelligence/how-a-windows-batch-script-quietly-delivered-azalea-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Who Invited Aisuru to the LAN Party?",
+      "summary": "Bitsight TRACE tracked the Aisuru DDoS botnet from February to June 2026 and observed 66,596 attack commands against 10,234 victim IPs. A March 2026 law enforcement takedown cut daily attack volume by about 66% and forced the operators into a smaller, consolidated infrastructure. The botnet's traffic was mostly volumetric, with UDP floods around 55% and TCP floods around 44%, and most targets were in the technology sector. More recently, Aisuru operators pivoted to exploiting exposed Android Debug Bridge (ADB) ports on IoT devices, using them to scan local networks and deploy proxyware with ENS-based C2 resolution. Defenders should note that a single infected device can serve as a gateway for lateral movement inside enterprise networks.",
+      "completeness": "Medium",
+      "threats": [
+        "Aisuru",
+        "Kimwolf",
+        "Dead_drop_technique",
+        "Udpflood_technique",
+        "Tcpflood_technique",
+        "Netcat_tool",
+        "Aisuru-kimwolf"
+      ],
+      "geo": [
+        "Germany",
+        "France",
+        "China",
+        "Brazil",
+        "United states",
+        "Hong kong",
+        "Russian",
+        "Turkey"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "Android",
+        "minecraft",
+        "busybox"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "chacha20",
+        "crc-32"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/who-invited-aisuru-lan-party",
+        "https://github.com/huuck/ADBHoney",
+        "https://github.com/bitsight-research/threat\\_research/tree/main/aisuru"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "#StopRansomware: Medusa Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Medusa_ransomware",
+        "Medusalocker",
+        "Screenconnect_tool",
+        "Beyondtrust_tool",
+        "Interactsh_tool",
+        "Lolbin_technique",
+        "Minidump_tool",
+        "Rclone_tool",
+        "Ligolo-ng_tool",
+        "Cloudflared_tool",
+        "Nezha_tool",
+        "Meshagent_tool",
+        "Meshcentral_tool",
+        "Gsocket_tool",
+        "Gs-netcat",
+        "Anydesk_tool",
+        "Atera_tool",
+        "Ehorus_tool",
+        "N-able_tool",
+        "Simplehelp_tool",
+        "Splashtop_tool",
+        "Mimikatz_tool",
+        "Vssadmin_tool",
+        "Shadow_copies_delete_technique",
+        "Crackmapexec_tool",
+        "Netexec_tool",
+        "Robocopy_tool",
+        "Ligolo_tool",
+        "Bomgar_tool"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 29,
+      "software": [
+        "GoAnywhere",
+        "SoftPerfect Network Scanner",
+        "MySQL",
+        "Local Security Authority",
+        "Windows Defender",
+        "Linux",
+        "PsExec",
+        "Active Directory",
+        "Bandizip",
+        "Sysinternals PsExec",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "aes-256"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-071a?date=20260818",
+        "https://github.com/cisagov/Decider/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "The heyheyhey campaign: 6 fake Roblox VS Code extensions that fetch and run a remote script from GitHub",
+      "summary": "Six fake Roblox developer tools, including RoFlow, RoPilot, and ManageBlox, were published to the Microsoft VS Code Marketplace between June 3 and 5, 2026, from separate throwaway publisher accounts. Each extension presents a Kanban-style webview as cover, but on activation it fetches the same script from a GitHub raw URL, saves it to the OS temporary directory, and runs it with the Windows Script Host. The GitHub repository has since been removed, yet the extensions still attempt the download on every IDE start and would run any payload the actor restores. Because the actor can change the script at any time, a GitHub raw URL serves as a free, HTTPS-based command-and-control channel that network policies focused on IPs and known-bad domains may miss. Defenders should uninstall the listed extensions, delete the nice.js file from the temporary directory, and run a full malware scan. Extension publishers should avoid fetching and executing remote scripts on activation.",
+      "completeness": "Low",
+      "threats": [
+        "Eviltwin_technique"
+      ],
+      "software": [
+        "Roblox",
+        "Linux",
+        "macOS",
+        "DeepSeek",
+        "Open VSX"
+      ],
+      "functions": [
+        "createWriteStream"
+      ],
+      "languages": [
+        "jscript",
+        "javascript",
+        "cscript"
+      ],
+      "links": [
+        "https://yeethsecurity.com/blog/2026-08-18-Heyheyhey-Roblox-Dropper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-18",
+      "title": "Living Off the Cloud: A Python Implant Hiding Its Entire C2 Inside Microsoft 365 & Azure",
+      "summary": "TWINLOOT is an undocumented, PyArmor-hardened Python implant framework that routes its command-and-control through trusted Microsoft services, including SharePoint Online via Microsoft Graph, Teams TURN relays, and the victim's own headless Edge browser. Initial access came from a Teams call in which an external actor impersonated IT support and convinced a user to run a PowerShell command. The implant harvests passwords through a fake Windows lock screen that never validates credentials, then uses a built-in reverse SOCKS5 tunnel to pivot into the internal network. One sample used NTUSER.MAN mandatory-profile hive forging, the first observed in-the-wild use of that persistence technique, which requires no admin rights. Defenders should monitor for endpoints connecting to SharePoint sites outside their own tenant, restrict Edge headless mode and remote debugging, and deploy phishing-resistant authentication.",
+      "completeness": "High",
+      "threats": [
+        "Twinloot",
+        "Pyarmor_tool",
+        "Dead_drop_technique",
+        "Turnt",
+        "Zipslip_technique",
+        "Winrm_tool",
+        "Msarat",
+        "Credential_harvesting_technique",
+        "Etherhiding_technique",
+        "Dll_sideloading_technique",
+        "Byovd_technique",
+        "Chaos_ransomware"
+      ],
+      "geo": [
+        "Usa",
+        "Canada",
+        "America"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Graph API",
+        "WebRTC",
+        "Microsoft Teams",
+        "Azure Blob",
+        "Azure AD",
+        "MSSQL",
+        "Microsoft Edge",
+        "Chrome",
+        "Windows lock screen",
+        "Windows authentication",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "fetch",
+        "Graph",
+        "TaskCache",
+        "NetAPI",
+        "Teams"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.ontinue.com/resource/python-implant-hiding-its-entire-c2-inside-microsoft-365-azure/",
+        "https://github.com/ontinue-research/threat-intel-iocs/blob/main/Public/2026-07-27-TWINLOOT-IOCs.md",
+        "https://github.com/Lil-House/Pyarmor-Static-Unpack-1shot"
+      ]
+    }
+  }
+]

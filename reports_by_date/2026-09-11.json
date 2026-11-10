@@ -1,0 +1,205 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-11",
+      "title": "Artifactory Under Attack: In-the-Wild Exploitation of CVE-2026-42016, CVE-2026-42018 & CVE-2026-82329",
+      "summary": "Wiz Research observed in-the-wild exploitation of three JFrog Artifactory vulnerabilities, CVE-2026-42016, CVE-2026-42018, and CVE-2026-82329, which attackers chain to bypass authentication and gain administrative control. The chained flaws allow an unauthenticated request to yield an admin-scoped token, after which attackers create persistent admin accounts and deploy malicious Groovy plugins for code execution. Observed post-exploitation tooling includes Rust-based backdoors, credential and Access signing-key theft, and an in-memory implant that hides its activity. Upgrading does not remove plugins or stolen keys, so instances that were exposed while vulnerable should be treated as compromised and hunted for artifacts. Defenders should upgrade, reset token certificates where keys may be stolen, restrict network access, and review logs for the described request patterns.",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "rust",
+        "groovy"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-11",
+      "title": "GuardBreaker: Derailing AI-assisted malware analysis with a code comment",
+      "summary": "Russia-aligned group UAC-0099 used a VBScript in an attack against a target in Ukraine that contained a decoy request for nuclear weapon building instructions in its comment. The decoy aimed to trip the safety guardrails of an LLM-powered code scanner so it would stop analyzing the file before reaching the malicious code. The script was designed to download and install MATCHBOIL, a loader used exclusively by this group. ESET named this technique GuardBreaker and described it as a simple form of prompt injection that exploits LLMs' inability to reliably separate untrusted content from trusted instructions. Similar attempts have appeared in supply-chain attacks, such as fabricated instructions in malicious PyPI packages. Defenders should avoid relying on a single LLM's verdict and should treat a model's refusal or lack of output as a reason for further checks.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/business-security/guardbreaker-derailing-ai-assisted-malware-analysis-code-comment/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-11",
+      "title": "KATARU: IoT Malware Adopts Public LPE Exploits",
+      "summary": "KATARU is an IoT malware sample that Nozomi Networks observed after Telnet credential brute forcing against a honeypot, with the attacker using BusyBox to fetch and run an ARM payload. Beyond familiar Mirai-style botnet functions, it carries multiple Linux local privilege escalation exploits, though some of the copied public code contains x86 shellcode in an ARM build. The malware uses broad persistence across Linux, embedded, router, and Android environments, along with an encrypted C2 channel built on X25519 and ChaCha20-Poly1305. Its feature set includes DDoS attacks, SSH brute forcing, anti-analysis checks, and a decoy traffic layer designed to mislead automated analysis. Nozomi assesses that the sample was likely assembled with AI assistance and not validated as a mature family. Defenders should disable exposed Telnet, monitor startup persistence locations, and investigate unusual outbound traffic from embedded devices.",
+      "completeness": "High",
+      "threats": [
+        "Kataru",
+        "Fragnesia_vuln",
+        "Dirtyfrag_vuln",
+        "Copyfail_vuln",
+        "Dnsflood_technique",
+        "Mirai",
+        "Icmpflood_technique",
+        "Httpflood_technique",
+        "Tengu_botnet"
+      ],
+      "geo": [
+        "Vietnam"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 16,
+      "software": [
+        "BusyBox",
+        "Linux",
+        "systemd",
+        "OpenWrt",
+        "Android",
+        "Minecraft",
+        "FiveM",
+        "WireGuard",
+        "Unix",
+        "crontab",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "chacha20",
+        "curve25519"
+      ],
+      "languages": [
+        "c_language"
+      ],
+      "links": [
+        "https://www.nozominetworks.com/blog/kataru-iot-malware-adopts-public-lpe-exploits"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-11",
+      "title": "I only trusted a security verification window… Beware of LegionLoader malware being distributed via the ClickFix method",
+      "summary": "LegionLoader malware is being distributed through the ClickFix method, in which victims are tricked into manually running a malicious PowerShell command from a fake Cloudflare CAPTCHA page. Observed campaigns use two vectors: a fake official link planted on a Korean \"Shinhon Hope Town\" Namu Wiki page, and spear-phishing emails posing as internal account provisioning notices sent to a specific company. After several redirects, victims reach the fake CAPTCHA page, which instructs them to open the Windows Run dialog or PowerShell instead of completing a normal verification. The final backdoor checks the display device and ASN type to detect virtual or hosted environments, then receives C2 commands to run additional payloads, steal Chrome master and app-bound keys, and establish persistence. Defenders should treat any web prompt asking users to run copied commands for CAPTCHA or error fixes as malicious, and keep V3 updated.",
+      "completeness": "Medium",
+      "threats": [
+        "Legionloader",
+        "Clickfix_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95373/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-11",
+      "title": "Malicious Twitch Browser Extension Exposes 30,000 Users’ OAuth Tokens to Russian Bot Service",
+      "summary": "A Twitch browser extension named \"Twitch Enhanced Viewer | JeetBot\" on Chrome and Firefox forwards users' live Twitch OAuth session tokens to proxy servers run by the JeetBot bot service, which is tied to a Russian operator. The extension advertises ad blocking, 1080p forcing and region unlocking, but it appends the full account-scoped token as a query parameter on every stream redirect except for ten hardcoded channels. Earlier v4.x builds POSTed tokens to a dedicated collection endpoint, and the affected user base is about 31,000 across both stores. An OAuth token is a bearer credential that can be used to read and send whispers, post in chat, and spend channel points without a password. Both store listings and the linked privacy policy did not disclose this forwarding. Fixed versions (Firefox 85.8.7, Chrome 85.8.9) are now available, and defenders should flag older builds and have affected users re-authenticate their Twitch sessions.",
+      "completeness": "High",
+      "threats": [
+        "Jeetbot",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "software": [
+        "Chrome",
+        "Firefox"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "getProxyModeParam",
+        "getProxySetTokenUrl"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-twitch-browser-extension"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-11",
+      "title": "Untangling the Knot: Breaking Down the Hacking Cat Group's Toolset",
+      "summary": "Kaspersky reports on Hacking Cat, a hacktivist group targeting Russian organizations, which has shifted from defacements and data leaks to encryption and destruction campaigns. The group uses Exchange server vulnerabilities for initial access and deploys its custom Gorilla RAT, which supports TCP tunneling for reaching internal services. Monkey Ransomware, written in Rust, .NET, C++, and Go, appeared in multiple rapidly evolving variants, suggesting possible use of generative AI in development. The report also describes a shared attack chain with Ukrainian Cyber Alliance that deploys the newly identified Nemo Wiper, a data wiper, after a fake Windows update screen locks the user out. Defenders are advised to monitor for PowerShell download-and-execute activity, Windows Defender exclusions, and event log clearing.",
+      "completeness": "High",
+      "threats": [
+        "Monkey_ransomware",
+        "Gorilla",
+        "Process_hacker_tool",
+        "Upx_tool",
+        "Shadow_copies_delete_technique",
+        "Hydra_ransomware",
+        "Clearwater",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "Russian federation",
+        "Ukrainian",
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "qemu",
+        "Linux",
+        "ESXI",
+        "Outlook",
+        "Task Scheduler",
+        "Winlogon",
+        "Windows Defender",
+        "crontab",
+        "Windows PowerShell",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "base64",
+        "aes-256-cbc",
+        "xor",
+        "chacha20"
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "rust"
+      ],
+      "links": [
+        "https://securelist.ru/tr/hacking-cat/117062/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,554 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "MacSync under the microscope: new delivery methods and a new payload",
+      "summary": "MacSync is a young, rapidly evolving infostealer sold as malware-as-a-service, first advertised in 2025 as Mac.c and later renamed. This version replaces script-based droppers with binary ones and uses Objective-C and Swift modules for its main payload. In one campaign built around a fake crypto wallet app, the infection chain used a DMG image, a loader, a calendar file hosted on iCloud, and a series of encrypted droppers with anti-debugging checks. The stealer harvests browser data, crypto wallet data, Telegram data, keychain files, and developer configuration files, and it uses the PAM API to verify passwords. The backdoor disguises itself as Finder, maintains persistence through several mechanisms, and runs commands received from the C2 server. Kaspersky assesses that the targets are developers, crypto users, and IT-related users, so compromised developer devices pose particular risk to corporate systems.",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer",
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Pamstealer",
+        "Mitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "sysctl",
+        "macOS",
+        "Kubernetes",
+        "Chrome",
+        "appstore"
+      ],
+      "wallets": [
+        "ledger_wallet"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "curve25519-donna",
+        "ecdh",
+        "zip",
+        "cbc",
+        "xor",
+        "base64",
+        "curve25519"
+      ],
+      "languages": [
+        "applescript",
+        "objective_c",
+        "swift"
+      ],
+      "links": [
+        "https://securelist.com/macsync-new-version/121383/",
+        "https://github.com/agl/curve25519-donna"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "Red Threat: The RedWing Android Trojan Targets Russian Bank Customers Through Fake Apps and Videos",
+      "summary": "RedWing is an Android remote access trojan distributed through Telegram under a malware-as-a-service model, with F6 estimating more than 10,000 compromised devices in Russia over two months. Attackers disguise it as an air-raid alert app called RadarTrevog or as video files, and one sample mimics a Google Play update screen to prompt installation. Once granted Accessibility rights, it can grant itself other permissions, log keystrokes, capture PIN and password entries, overlay fake banking screens, and stream the screen, camera, and microphone. It also intercepts SMS and call forwarding, operates as a proxy, and launches DDoS attacks. It resists removal by blocking uninstall attempts and antivirus apps. F6 advises against granting Accessibility access to untrusted apps and recommends that security teams detect apps using Accessibility services.",
+      "completeness": "Medium",
+      "threats": [
+        "Redwing",
+        "Radartrevog",
+        "Httpflood_technique",
+        "Slowloris_technique",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Telegram",
+        "Google Play",
+        "oogle Play In",
+        "RuStore"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/redwing-rat-research/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "LxBase RAT Observed for the First Time in Attacks on Russian Companies",
+      "summary": "LxBase RAT, a remote access trojan sold as malware-as-a-service under the name LX RAT with the LX Crypter, was observed by BI.ZONE in mass phishing campaigns from July to September 2026 targeting Russian companies across finance, industry, energy, retail, logistics, construction and IT. The emails impersonate employees of Kazakh companies and carry RAR archives disguised as order documents or quote requests, containing obfuscated JavaScript loaders. The loaders run a chain of VBS, batch and PowerShell scripts, persist via a scheduled task, and inject the RAT into MSBuild.exe after a 45-second delay. The RAT can steal browser credentials, cookies, cryptocurrency wallet data and messenger data, log keystrokes, capture the screen, clipboard and webcam, and provide hidden remote desktop access. The subscription costs $119 per month, lowering the barrier to entry for attackers.",
+      "completeness": "High",
+      "threats": [
+        "Lxbaserat",
+        "Lx-rat",
+        "Hvnc_tool",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chrome Canary",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "Yandex Browser",
+        "ch",
+        "Com",
+        "odo Dragon",
+        "SRW",
+        "are Iron",
+        "Epi",
+        "c Privacy Browser",
+        "Cen",
+        "have more..."
+      ],
+      "wallets": [
+        "atomicwallet",
+        "jaxx",
+        "coinomi",
+        "guarda_wallet",
+        "electrum",
+        "zcash",
+        "wassabi",
+        "metamask",
+        "tronlink",
+        "coin98",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "ethereum",
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "deflate",
+        "aes",
+        "xor",
+        "cbc"
+      ],
+      "functions": [
+        "GetProcessesRequest",
+        "GetStartupItems",
+        "GetSystemInfoRequest",
+        "Remove-Item"
+      ],
+      "languages": [
+        "javascript",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/lxbase-rat-vpervye-zamechen-v-atakakh-na-rossiyskie-kompanii/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "RemControl: AI Built the Overlays. Victims Lose their PINs",
+      "summary": "RemControl is a previously undocumented Android banking trojan sold as Malware-as-a-Service, attributed to the operator tracked as UNKK. It abuses Android's Accessibility Service to inject phishing overlays over banking apps, stream the screen, log keystrokes, and capture lock screen patterns. Victims are targeted via fake Google Play pages impersonating the TVTap IPTV app, with malvertising as one delivery channel. The dropper blocks Google Play Protect with a local VPN and signs each installation with a unique certificate to evade detection. Over 30 financial institutions in Italy, France, Spain, Poland, Portugal, Canada, and GCC states have been confirmed as targets. Exposed panel documentation and a verbatim AI assistant response in a live phishing page suggest AI-assisted development, with banking overlays disguised as quizzes.",
+      "completeness": "High",
+      "threats": [
+        "Remcontrol",
+        "Dead_drop_technique",
+        "Medusa_ransomware",
+        "Medusa_trojan"
+      ],
+      "geo": [
+        "France",
+        "Italian",
+        "Middle east",
+        "Canadian",
+        "Russian",
+        "Spain",
+        "Poland",
+        "Canada",
+        "Italy",
+        "Portugal"
+      ],
+      "software": [
+        "Android",
+        "Google Play",
+        "Telegram",
+        "Cloudflare",
+        "FastAPI",
+        "Photoshop"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-128-cbc",
+        "xor",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "connect",
+        "JavaScript"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/remcontrol-android-banking-trojan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "TWEAKOS Uncovered: A Telegram-Driven Stealer and C2 Ecosystem for Discord and Telegram Tokens",
+      "summary": "TWEAKOS is a Telegram-driven credential theft operation made of a Windows stealer and a single-process Telegram bot that manages victims, shop inventory, and sales. The stealer harvests Discord tokens from LevelDB stores, validates them against the Discord API, and uses Telethon to create new Telegram sessions from victim-supplied credentials. Stolen data and session files are sent to operator admin chats through a shared bot token. The backend sells compromised accounts with a time-decay price cut of 5% per day, capped at 70%, and settles purchases in Telegram Stars. Researchers also found a VBScript locker for coercive per-victim lockout and a referenced WindowsSecurityChecker.exe whose behavior remains unconfirmed. Defenders should treat the activity as one connected workflow and assume validated Discord tokens and Telegram sessions are compromised.",
+      "completeness": "Low",
+      "threats": [
+        "Tweakos"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord",
+        "Telegram",
+        "Discord PTB",
+        "Chrome",
+        "elegram St",
+        "Pastebin",
+        "elegram ch",
+        "m от {uid}",
+        "ISCORD",
+        "t",
+        "cord mess",
+        "have more..."
+      ],
+      "functions": [
+        "handle_virus_data",
+        "send_to_admin",
+        "get_me",
+        "GetPasswordRequest",
+        "main",
+        "save_victim_data",
+        "get_all_victims",
+        "get_victim_by_id",
+        "get_current_price",
+        "get_available_products",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "vbscript"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/tweakos-stealer-telegram-c2-ecosystem-2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "Sauron Loader: A New Loader Lurking in Underground Forums",
+      "summary": "Sauron Loader is a previously undocumented loader malware sold as Malware-as-a-Service in Russian underground forums, exclusively to Russian-speaking cybercriminals. DCSO observed it as the final stage of multiple real-world attacks against organizations in Germany, delivered through ClickFix-style lures and voice phishing with email bombing. The MSI-delivered sample uses DLL side-loading and an encrypted loader to retrieve and execute payloads in many formats, and it communicates with C2 servers over HTTPS using Salsa20 and RSA. It establishes persistence with a scheduled task and sends screenshots and system data to its operators. The report notes that the targeting restrictions do not alone prove Russian nexus, and that defenders should watch for email flooding followed by impersonated IT support.",
+      "completeness": "High",
+      "threats": [
+        "Sauron",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Lockbit",
+        "Qilin_ransomware",
+        "Clop",
+        "Medusa_ransomware",
+        "Email_bombing_technique",
+        "Blackbasta",
+        "Microsoft_quick_assist_tool",
+        "Anydesk_tool",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 24,
+      "software": [
+        "Windows Service"
+      ],
+      "algorithms": [
+        "salsa20",
+        "md5",
+        "exhibit",
+        "zip"
+      ],
+      "functions": [
+        "GetFile",
+        "TaskResult"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "jscript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://medium.com/@DCSO_CyTec/sauron-loader-a-new-loader-lurking-in-underground-forums-e91fa70db537?source=rss-7c32125308fc------2",
+        "https://github.com/DCSO/Blog\\_CyTec/tree/main/2026\\_09\\_\\_sauron\\_loader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "A Fake Security Locker, Delivered by Google Ads",
+      "summary": "A cloud-hosted tech-support-scam kit, promoted through paid Google Ads, hijacks victims' browsers with a fake security alert that pressures them to call a bogus support line. The kit waits for a single mouse movement before decrypting its C2 address and locker payload, a bot filter that helps it evade scanners and crawlers. The payload is built in browser memory so no inspectable file crosses the network, and it is tailored to Windows (impersonating Defender) or macOS (a fake Apple storefront). The locker traps victims by forcing full screen, hiding the cursor, blocking the Escape key, and degrading performance, though it does not actually lock the computer. Over two weeks in August and September 2026 it reached at least 619 organizations, mostly in the United States, Japan, and Australia. Defenders should note that legitimate systems never demand a phone call over a locked screen, and victims should force-close the browser through the operating system rather than call the number.",
+      "completeness": "Low",
+      "threats": [
+        "Tech-support-scam_kit_tool"
+      ],
+      "geo": [
+        "Japan",
+        "United states",
+        "Australia"
+      ],
+      "software": [
+        "macOS",
+        "Windows Defender",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "loadSecret",
+        "requestFullscreen"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/a-fake-security-locker-delivered-by-google-ads",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Phishing/TechSupportScam"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "Blockchain and Malware: A Decentralized Mirror World",
+      "summary": "Security researchers describe Blockchain Dead Drop techniques, in which malware finds its command-and-control server by querying blockchain services instead of hardcoded infrastructure. The report traces this from Cerber (2016) and Glupteba (2019), which read Bitcoin transactions, through Namecoin domains and EtherHiding, which stores second-stage payloads in smart contracts. It also covers TON-based abuse, including the TonResolver and TrickMo trojan, and the Webrat stealer, which uses TON DNS domains to resolve its C2 address. A Polygon smart-contract clipper linked to the Aeternum botnet is also examined. The authors note that these decentralized networks make takedowns difficult, so unusual frequent use of blockchain services or APIs in corporate traffic should be investigated.",
+      "completeness": "High",
+      "threats": [
+        "Dead_drop_technique",
+        "Salatstealer",
+        "C3rb3r",
+        "Glupteba",
+        "Rtm_locker",
+        "Etherhiding_technique",
+        "Clearfake",
+        "Tonresolver",
+        "Trickmo",
+        "Aeternum"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "WordPress"
+      ],
+      "wallets": [
+        "electrum"
+      ],
+      "crypto": [
+        "bitcoin",
+        "namecoin",
+        "binance"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "getDomain"
+      ],
+      "languages": [
+        "javascript",
+        "solidity"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/7010/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "Fake National Health Service website distributes StreamRat on Android and XWorm on Windows",
+      "summary": "A fake National Health Service (Servizio Sanitario Nazionale) website uses the health-service theme and visual identity to lure victims into running malware on both Android and Windows. The site serves different files based on the visitor's browser User-Agent: an APK named SSN.apk on Android, and a batch file named SSN Windows.bat on Windows. On Android, the APK decodes a second APK that presents itself as an SSN app and installs StreamRat, a remote-control malware that asks the user to enable Accessibility services. StreamRat receives its target applications dynamically from the server, so the SSN name serves only as bait and does not prove that the activity targets health services. On Windows, the batch file runs a hidden PowerShell chain that loads a .NET payload from a disguised text file and ultimately executes XWorm, a Remote Access Trojan.",
+      "completeness": "Medium",
+      "threats": [
+        "Streamrat",
+        "Xworm_rat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/falso-sito-del-servizio-sanitario-nazionale-distribuisce-streamrat-su-android-e-xworm-su-windows/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "Re-Enabled GitHub Actions Expose Thousands of Repositories to Mini Shai-Hulud",
+      "summary": "Two GitHub Actions from the actions-cool publisher, issues-helper and maintain-one-comment, were compromised during the May 2026 Mini Shai-Hulud campaign and then disabled. Both became reachable again on September 16, 2026. Their release tags still point to malicious code. Any workflow that references either action by tag rather than by commit SHA runs the payload again. Defenders should pin actions to commit SHAs and check workflows that use these actions.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/mini-shai-hulud-actions",
+        "https://github.com/search?q=%22uses%3A+actions-cool%2Fissues-helper%40v%22+path%3A.github%2Fworkflows%2F&type=Code",
+        "http://github.com/actions-cool/issues-helper/tags",
+        "https://github.com/actions-cool/issues-helper/network/dependents?package\\_id=UGFja2FnZS0yOTQyNTYwMTkx"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "Mini Shai-Hulud Is Still Infecting GitHub Repositories",
+      "summary": "The Mini Shai-Hulud worm, first seen in May 2026, is still infecting new GitHub repositories in September, using a payload identical to the May build. Attackers hijacked the tags of the actions-cool/issues-helper GitHub Action, so any workflow calling it by tag runs the malicious payload. The payload steals CI secrets and commits Claude Code and VS Code hook files into the repository, which execute malware when a developer pulls the change and opens the project. Six repositories were newly infected between 20 and 24 September, and five of the triggers were issue bots that repeat the infection daily. Defenders should note that the malicious commits are signed as github-actions[bot], making them easy to miss in review.",
+      "completeness": "Medium",
+      "threats": [
+        "Kitty_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "sudo",
+        "curl"
+      ],
+      "links": [
+        "https://safedep.io/mini-shai-hulud-reinfection-github-repositories/",
+        "https://github.com/jd-opensource/micro-app/commit/c610739cc5d2493704509ae7f755d4f79229c68b",
+        "https://github.com/MaaXYZ/MaaFramework",
+        "https://github.com/jd-opensource/micro-app"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "MintsLoader via certified email: fake payment reminders to spread malware",
+      "summary": "The Italian CERT-AGID reported a MintsLoader campaign that abuses compromised certified email (PEC) mailboxes to send fake unpaid-invoice payment reminders to other PEC addresses. The messages come from real mailboxes and contain a ZIP archive that unpacks to an HTML file, which then downloads JavaScript that launches PowerShell and ultimately deploys MintsLoader and a final RAT or stealer. The attackers' infrastructure uses frequently changing addresses and domain generation algorithms, and domains were activated during working hours after the emails were sent. The report's key takeaway is that a PEC confirms delivery but not sender integrity or attachment safety, so unexpected invoice or payment emails with ZIP files should be treated with caution even when the sender appears legitimate.",
+      "completeness": "Low",
+      "threats": [
+        "Mintsloader"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/mintsloader-via-pec-falsi-solleciti-di-pagamento-per-diffondere-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-24",
+      "title": "Uncovering a SectopRAT Variant Embedded in Legitimate Software",
+      "summary": "SectopRAT, also known as ArechClient2, is a .NET-based remote access trojan hidden inside a legitimate digital audio workstation program from an Italian company. Attackers tampered with the software's FrameworkBase.dll to load a malicious DLL, and a scheduled task launches the component automatically, with no evidence of a vendor supply chain compromise. The loader uses API hashing, indirect calls, and in-memory execution to decrypt and run the heavily obfuscated payload. The malware connects to a hardcoded command-and-control server and supports 29 commands for screen capture, file and process management, remote shell access, and reboot. It also steals browser credentials and cookies, email and gaming credentials, and cryptocurrency wallet data. Defenders should monitor for unexpected DLL imports and scheduled tasks in legitimate software folders.",
+      "completeness": "High",
+      "threats": [
+        "Sectop_rat",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Italian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 10,
+      "software": [
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "Chromium",
+        "Google Chrome",
+        "Chrome",
+        "ChromePlus",
+        "Iridium Browser",
+        "7Star",
+        "Chedot",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "coinbase",
+        "atomicwallet",
+        "electrum",
+        "mainnet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "IconUserUserDx",
+        "SDL_IOFromFile",
+        "license",
+        "2BEF5CF",
+        "GetBrowserKeys",
+        "SetApp",
+        "SetColorDep"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/uncovering-a-sectoprat-variant-embedded-in-legitimate-software"
+      ]
+    }
+  }
+]

@@ -1,0 +1,572 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "A Loader With No Command Line",
+      "summary": "A signed Python 3.12 interpreter renamed to look like a benefit document ran from a user's Downloads folder with no command-line arguments, because a python312._pth file beside it configured the script to load. The lure was a Yahoo Mail shared-message link impersonating the US Social Security Administration, which passed mail filtering since it pointed to a trusted domain. The batch file carried an XOR- and base64-obfuscated MSI that was extracted to deliver a ConnectWise ScreenConnect client, and a UAC bypass via fodhelper.exe was attempted. Defenders should alert on signed interpreters run with no arguments from user-writable paths and on ._pth files written outside legitimate applications, and should not block the legitimate Python hashes. The intrusion failed because the user was not a local administrator and a privilege management policy blocked fodhelper.exe, leaving the remote access tool extracted but inert.",
+      "completeness": "Medium",
+      "threats": [
+        "Uac_bypass_technique",
+        "Motw_bypass_technique",
+        "Screenconnect_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "Windows Installer",
+        "curl",
+        "Active Directory",
+        "Microsoft 365",
+        "Windows service",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "Remove-Item",
+        "Get-Content"
+      ],
+      "languages": [
+        "cpython",
+        "python",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://activesoc.blackhillsinfosec.com/blog/a-loader-with-no-command-line/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Fake AI Tools Put US Companies at Risk: Inside Counterfeit Claude, ChatGPT, and Copilot",
+      "summary": "Fake AI tool campaigns impersonate brands such as Claude, ChatGPT, GitHub Copilot, and Gemini to deliver infostealers, hijack browser sessions, and phish business accounts. Between April 15 and October 5, 2026, ANY.RUN linked 1,258 public sandbox analyses to these campaigns, with the USA ranking second after India as a submitter source. The attacks depend on the employee performing a decisive step, such as pasting an install command into PowerShell or Terminal, running a trojanized installer, or entering credentials into a fake Google sign-in window. Lures are hosted on trusted platforms like GitHub, GitLab Pages, Cloudflare Pages, and claude.ai, which makes domain blocking less effective. Defenders are advised to limit standard-user paste-and-run execution, steer staff to an approved AI tool catalog, and hunt on stable behavioral indicators such as command patterns and backend API paths rather than rotating domains.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Bitm_technique",
+        "Installfix_technique",
+        "Seo_poisoning_technique",
+        "Typosquatting_technique",
+        "Hijackloader",
+        "Macc_stealer",
+        "Aurastealer",
+        "Asyncrat",
+        "Quasar_rat"
+      ],
+      "geo": [
+        "American",
+        "India",
+        "Usa"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Claude",
+        "ChatGPT",
+        "OpenAI",
+        "Codex",
+        "Cloudflare",
+        "Ollama",
+        "OpenClaw",
+        "curl",
+        "Claude Code",
+        "DeepSeek",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/fake-ai-tools-us-companies/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "From ClickFix to C2: Comparative Analysis of Two Malware Loaders",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Lorem_ipsum_loader",
+        "Axolotl",
+        "Terminalfix_technique",
+        "Dll_sideloading_technique",
+        "Babadeda",
+        "Potemkin",
+        "Rhysida",
+        "Seo_poisoning_technique",
+        "Dead_drop_technique",
+        "Blackcat",
+        "Steganography_technique",
+        "Process_injection_technique",
+        "Com_hijacking_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 14,
+      "software": [
+        "Node.js",
+        "Microsoft Teams",
+        "Bitwarden",
+        "Windows Terminal",
+        "Active Directory",
+        "WinHTTP",
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "zip",
+        "gzip",
+        "xor"
+      ],
+      "functions": [
+        "Explicit"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.forescout.com/blog/from-clickfix-to-c2-comparative-analysis-of-two-malware-loaders/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Hirudo: From Fake Updates to Patched Banking Apps",
+      "summary": "Hirudo is a new Android banking remote access trojan tracked by ThreatFabric that combines on-device credential theft with live remote control of the victim's phone. It is delivered through shopping, adult-video and short-drama lure apps that drop the RAT as a separate package behind a fake in-app \"update.\" Its distinguishing technique is replacing eight Indonesian banking apps, covering seven banks, with patched copies that use a hooking engine to disable signature, Accessibility, screen-capture and Play Integrity checks. Lures are served from Amazon CloudFront and linked to campaigns through commodity attribution tools, and the configured targets extend beyond Indonesia. Defenders should treat locally produced app signals as attacker-influenced and verify Play Integrity and attestation server-side.",
+      "completeness": "Medium",
+      "threats": [
+        "Hirudo"
+      ],
+      "geo": [
+        "Mexico",
+        "Malaysian",
+        "India",
+        "Thailand",
+        "Indonesian",
+        "Indonesia",
+        "Morocco",
+        "China"
+      ],
+      "software": [
+        "Android",
+        "WebRTC"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.threatfabric.com/blogs/hirudo-from-fake-updates-to-patched-banking-apps"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "KGB RAT: A Fully Undetectable Windows Trojan Built to Spy, Steal, and Terrorize",
+      "summary": "KGB RAT is a Windows Remote Access Trojan sold as Malware-as-a-Service on underground forums, marketed deceptively as a legitimate remote administration tool. It bundles credential theft, keylogging, hidden VNC, crypto clipper, and ransomware in a single builder, plus harassment features like screamers and forced blue screens. The tool uses Telegram Bot API notifications and ip-api geolocation, and ships with a crypter its developers update daily to evade antivirus. Group-IB notes it is built on the NjRAT foundation and is sold at low prices, lowering the barrier for less skilled operators. Defenders should prioritize application whitelisting, behavioral EDR, and monitoring of ONLOGON scheduled tasks and Telegram or ip-api egress.",
+      "completeness": "High",
+      "threats": [
+        "Kgb_rat",
+        "Credential_harvesting_technique",
+        "Cryptoclipper",
+        "Fud-crypter",
+        "Hvnc_tool",
+        "Uac_bypass_technique",
+        "Njrat",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Process_hacker_tool",
+        "Fodhelper_uac_bypass_technique"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 41,
+      "software": [
+        "Windows Remote Access",
+        "Windows Defender",
+        "Telegram",
+        "VirtualBox",
+        "Pastebin",
+        "Google Chrome",
+        "Chrome",
+        "Windows Explorer",
+        "Windows Registry",
+        "Process Explorer",
+        "have more..."
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "prng",
+        "gzip",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Refresh",
+        "SetWindowsHookEx",
+        "WebClient",
+        "ElevateMe",
+        "CreateKey"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/kgb-rat-windows-fud-trojan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Break the silence: Kazakhstan-nexus UAT-6275 targets CIS government organizations",
+      "summary": "Cisco Talos, working with Recorded Future, tracks UAT-6275 (TAG-193), a group overlapping with Silent Lynx and loosely linked to YoroTrooper, that targets government organizations across the Commonwealth of Independent States. The group uses four infection chains involving macro-enabled documents, PS2EXE downloaders, GitHub-hosted PowerShell, and a WinRAR exploit for CVE-2025-8088, delivering custom reverse shells such as Chvost, Laplas, and PickleShell. Exposed staging directories and GitHub history gave researchers visibility into its tooling and infrastructure changes. Victims span nine countries, with lures touching diplomacy, water, environmental, and energy topics. Talos assesses with medium confidence that the group has a Kazakhstan nexus. Defenders should monitor unexpected PowerShell activity, GitHub-sourced downloads, scheduled tasks, Startup-folder changes, and keep archive utilities patched.",
+      "completeness": "Medium",
+      "threats": [
+        "Ps2exe_tool",
+        "Credential_harvesting_technique",
+        "Chvost",
+        "Laplasclipper",
+        "Pickleshell"
+      ],
+      "geo": [
+        "Belarus",
+        "Belarusian",
+        "Turkmenistan",
+        "Kyrgyzstan",
+        "Asia",
+        "Uzbekistan",
+        "Azerbaijan",
+        "Armenia",
+        "Russian",
+        "Kazakhstan",
+        "Russia",
+        "Tajikistan"
+      ],
+      "software": [
+        "WinRAR",
+        "Linux"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2026/10"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
+      "summary": "Microsoft identified a Chinese-language cybercriminal ecosystem centered on YAM Store, an underground marketplace tracked as Storm-3119 that acts as an initial access broker. YAM Store resells hijacked Microsoft 365 and Azure for Education environments, licenses, and storage, along with phishing kits tracked as Storm-2990, including CoGUI, Haozi, and Iron Man System. The threat actors using these tools have targeted healthcare, financial services, wholesale distribution, and IT organizations in Japan, the United States, Australia, and India. Iron Man System offers real-time, interactive phishing with evasion features such as geofencing and fake CAPTCHA gates, and it impersonates government and transportation brands. Microsoft's Digital Crimes Unit, working with law enforcement, disrupted the ecosystem's primary developers and infrastructure. Defenders are advised to enforce phishing-resistant MFA, apply least privilege to Global Administrator roles, and verify urgent requests through separate channels.",
+      "completeness": "High",
+      "threats": [
+        "Iron_man_tool",
+        "Cogui",
+        "Haozi_tool",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique",
+        "Device_code_phishing_technique",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "China",
+        "Australia",
+        "Japan",
+        "United states",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Telegram",
+        "Microsoft 365",
+        "Flask",
+        "Cloudflare",
+        "SharePoint",
+        "WeChat",
+        "Microsoft Entra",
+        "Office 365",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "php"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Fake Calendly “Meta Careers” pages steal Facebook and Google logins",
+      "summary": "Fake Calendly-style booking pages, presented as Meta recruiting interviews, are luring job seekers into handing over their Facebook credentials and two-factor authentication codes. After a fake CAPTCHA and calendar slot selection, the pages show a convincing Facebook login window, then ask for a Google sign-in as well. The pages keep checking with the attackers' server, so they can relay stolen passwords and one-time codes to the real services in real time. Researchers note the campaign's reusable phishing kit and its 11 generic recruiting-themed domains. Defenders should prefer passkeys or security keys, avoid entering codes or approving prompts on unexpected pages, and secure accounts promptly if credentials were entered.",
+      "completeness": "Low",
+      "geo": [
+        "Vietnamese",
+        "Singapore"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Gmail"
+      ],
+      "functions": [
+        "Phone"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-calendly-meta-careers-pages-steal-facebook-and-google-logins"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Disruption Targets Major Chinese-Language Phishing Kits with Japanese Focus",
+      "summary": "Proofpoint and partners, including Microsoft, disrupted infrastructure used by Chinese-language phishing kits CoGUI, CoAceV, and CoFish_Ws, which target primarily Japanese organizations. The kits impersonate mostly consumer and finance brands, such as Amazon, PayPay, and Rakuten, and are linked to enablers YAM Store and Iron Man. Proofpoint assesses with high confidence that the three kits share common roots and overlapping affiliates. CoGUI alone was generating over 100 million messages per month, and the kits rotate domains frequently to evade detection. Financial Services and Healthcare are the most frequently impacted sectors, and the disruption is expected to hurt the operations of these threat groups.",
+      "completeness": "Low",
+      "threats": [
+        "Cogui",
+        "Coacev_tool",
+        "Cofish_tool",
+        "Iron_man_tool"
+      ],
+      "geo": [
+        "America",
+        "Australia",
+        "Japanese",
+        "Japan",
+        "Italy",
+        "Chinese",
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/disruption-targets-major-chinese-language-phishing-kits-japanese-focus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Beware of phishing emails disguised as purchase orders",
+      "summary": "Phishing emails disguised as purchase order confirmation requests were observed distributing a malicious DOCX attachment named PURCHASED ORDER.docx. The DOCX embeds an RTF file that loads a malicious VBS script and exploits an Equation Editor vulnerability to execute it. The script runs a hidden PowerShell chain that decodes a payload, extracts a Python environment, and launches Protected.py, which decrypts and runs a shellcode loader. The final payload is the SnakeKeylogger infostealer, which persists via a Registry Run key and steals keystrokes, clipboard data, credentials, and Discord tokens. Defenders should verify sender domains, inspect suspicious attachment extensions such as .vbs, and confirm URLs before entering sensitive information.",
+      "completeness": "Low",
+      "threats": [
+        "Snake_keylogger"
+      ],
+      "software": [
+        "Discord"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "chacha20",
+        "xor",
+        "base64",
+        "salsa20",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95838/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Iron Man & YamStore: Powering a Global Phishing-as-a-Service Ecosystem",
+      "summary": "Resecurity mapped \"Iron Man System,\" a commercially sold phishing-kit-as-a-service that deploys self-hosted lure pages impersonating postal and courier services, tax agencies, banks, telecoms and loyalty programmes. The kit's catalog holds 2,360 phishing templates across 130 countries and areas, with entries updated as recently as 1 October 2026. The kit cannot run without regular contact with the vendor's licensing backend, so disrupting that host would degrade every active deployment. Operators also run a self-hosted build registry with 911 image versions and an object-storage backend that stores captured victim content. Defenders should note that the group's activity is ongoing, with accounts added through June 2026 and a recent build publication.",
+      "completeness": "Medium",
+      "threats": [
+        "Iron_man_tool",
+        "Yamstore_tool",
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Japanese",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "chrome",
+        "Gmail",
+        "ProtonMail",
+        "MariaDB",
+        "docker"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/iron-man-yamstore-powering-a-global-phishing-as-a-service-ecosystem"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
+      "summary": "Unit 42 tracks cluster CL-STA-0954 (aka UNC5820), which compromised a telecommunications managed service provider in September 2024 by exploiting CVE-2024-47575 on a central FortiManager appliance. From that appliance, the attackers exfiltrated configurations, credentials and cryptographic material for more than 500 managed FortiGate firewalls, including those protecting client networks. They then used CVE-2025-61624 for root privilege escalation and deployed PEERSTITCH, a memory-resident ARM64 injector that patches the miglogd and iked daemons and leaves no persistent disk artifacts. The actors also abused Apache mod_md ACME for reverse-shell command and control and impersonated FortiManager to pull configurations from managed firewalls. Unit 42 concludes that management platforms are high-value targets, and that exposed trust material remains valid until rotated, so it should be treated as compromised.",
+      "completeness": "High",
+      "threats": [
+        "Peerstitch",
+        "Fortijump_vuln",
+        "Hook_injection_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "FortiGate",
+        "WildFire",
+        "Linux",
+        "Active Directory",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "strstr",
+        "open",
+        "lseek",
+        "write"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "Silent Ransom Group Impersonating IT Personnel through Social Engineering",
+      "summary": "The Silent Ransom Group (SRG), also known as Luna Moth, Chatty Spider, and UNC3753, uses social engineering to impersonate IT support and steal data without encryption. Its actors call or phish employees, direct them to grant remote desktop access, and sometimes send an in-person individual to insert a storage device. SRG exfiltrates data with WinSCP or a renamed Rclone, then extorts victims by threatening to sell or publish it. The group has consistently targeted US-based law firms since Spring 2023, though it has also hit insurance, finance, and healthcare organizations. Defenders should verify visitors, set policies for how IT support authenticates itself, train staff on phishing, and restrict remote access tools and external drives.",
+      "completeness": "Low",
+      "threats": [
+        "Rclone_tool",
+        "Microsoft_quick_assist_tool",
+        "Anydesk_tool",
+        "Rustdesk_tool",
+        "Atera_tool"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 7,
+      "software": [
+        "WinSCP",
+        "Microsoft OneDrive",
+        "Microsoft 365"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260526.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-14",
+      "title": "DragonForce Ransomware: Threat Actor Profile - Barricade Cyber Solutions",
+      "completeness": "High",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Lockbit",
+        "Conti",
+        "Log4shell_vuln",
+        "Black_lock",
+        "Ransomhub",
+        "Qilin_ransomware",
+        "Systembc",
+        "Abyssworker",
+        "Medusa_ransomware",
+        "Shadow_copies_delete_technique",
+        "Process_injection_technique",
+        "Credential_dumping_technique",
+        "Av-killer",
+        "Havoc"
+      ],
+      "geo": [
+        "Malaysia",
+        "Palau",
+        "Australia",
+        "United kingdom",
+        "Italy",
+        "Singapore",
+        "United states",
+        "Russia",
+        "Germany"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "Microsoft Teams",
+        "Linux",
+        "ESXi",
+        "Ivanti",
+        "Active Directory",
+        "MSSQL",
+        "VirtualBox",
+        "WordPress"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "Teams"
+      ],
+      "languages": [
+        "golang",
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://barricadecyber.com/dragonforce-ransomware/"
+      ]
+    }
+  }
+]

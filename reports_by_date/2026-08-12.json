@@ -1,0 +1,211 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-12",
+      "title": "737 Chrome VPN Extensions Linked to Brand Impersonation and Browser Traffic Redirection",
+      "summary": "The Chrome Web Store campaign comprises 737 free VPN and proxy extensions from at least 40 developer accounts, with about 75,486 installs, and 274 of them impersonate 66 established VPN and privacy brands. Targeting Russian-speaking users seeking access to blocked services, 520 of the 522 retrievable packages route all browser traffic through a single SOCKS5 provider, with a loopback-only bypass list. Some extensions resolve proxy hostnames via DNS-over-HTTPS and hand Chrome a raw IP, avoiding plaintext DNS lookups for the operator's domains. The paid tier advertises premium servers in five countries, none of which resolve, and the premium license check can be satisfied by any non-empty string. Attribution links the estate to a single Russian VPN business, \"Muha VPN,\" through shared analytics, build artifacts, and infrastructure. Google removed 221 extensions, but 516 remain live, so defenders should inventory the proxy permission and block the listed indicators.",
+      "completeness": "High",
+      "threats": [
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Japan",
+        "Turkey",
+        "Canada",
+        "Australia",
+        "Russia",
+        "Singapore"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Chrome",
+        "Instagram",
+        "ChatGPT",
+        "AdGuard",
+        "CyberGhost",
+        "AmneziaVPN",
+        "WebRTC",
+        "- только",
+        "Telegram",
+        "ome Web",
+        "have more..."
+      ],
+      "algorithms": [
+        "hmac",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "resolveAssetsOrigin",
+        "fetchLandingLinks",
+        "setTimeout"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://socket.dev/blog/chrome-vpn-extension-impersonation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-12",
+      "title": "The Telegram Bank Phishers",
+      "summary": "The Telegram Bank Phishers describes a hybrid campaign combining domain impersonation of bank login pages with phone calls posing as fraud teams. Victims were directed to fake login sites that sent entered usernames and passcodes to a Telegram bot, and a bundled live chat download was AnyDesk, a legitimate remote desktop tool that could enable device takeover. The attacker's Telegram chat also functioned as a command and control channel for managing phishing domains, and the researcher found that its bot token and chat ID were exposed in the page code. Multiple banks across several regions were targeted, and the researcher notified affected institutions and monitored the chat while weighing takedown options. The report notes that the attackers appeared to rotate bots quickly after disruption, so defenders should expect replacement infrastructure.",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Antibot"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "sha384",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "setTimeout",
+        "getUpdates"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://anuw.me/blog/telegram-bank-phish"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-12",
+      "title": "Analysis of Recent Attack Activities Launched by APT-C-06 (Darkhotel) Using North Korea-Related Lures",
+      "completeness": "Low",
+      "geo": [
+        "Korean",
+        "North korea"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247508780&idx=1&sn=718830be7fd88519947419b3ed1a5ce6"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-12",
+      "title": "Deadbugz: Currently Active MCP Supply-Chain Campaign",
+      "summary": "Deadbugz is an active supply-chain campaign, identified by Pillar Security, that distributes a malicious MCP server called productivity-suite through public GitHub pull requests. The server initially offers harmless text formatting and summarization tools, but after a client makes three tool calls it returns metadata directing the AI agent to seek SSH keys, AWS credentials, and Kubernetes configuration while concealing this from the user. The delivery operation is attributed to the public GitHub account zellkernel, which authored 23 pull requests in a 74-minute window targeting unrelated AI, MCP, and developer-tool projects. Defenders should block the associated endpoint, reject configuration changes that introduce it, and avoid running the referenced local script. MCP clients should treat changes to an approved server's tool definitions as security events requiring renewed approval.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Kubernetes",
+        "WhatsApp"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.pillar.security/blog/deadbugz-currently-active-mcp-supply-chain-campaign",
+        "https://github.com/zellkernel/productivity-suite-mcp",
+        "https://github.com/zellkernel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-12",
+      "title": "From Ethereum to DNS C2: Reverse Engineering the ClickFix Payload",
+      "summary": "The ClickFix campaign delivers IntelSoftwareUpdaterV8.exe, an Inno Setup installer that bundles a Python 3.11 runtime and an obfuscated Python remote-access trojan (version 1.3) supporting cmd, PowerShell and Python task execution. The RAT persists via a hidden scheduled task, profiles victims' host details, and resolves its C2 through a separate Ethereum mainnet contract using EtherHiding. It then communicates over DNS by sending hand-built packets directly to an attacker-controlled server over UDP/53, with query names ending in microsoft.com used as camouflage. Researchers traced the on-chain configuration transactions, deployer and funding wallets, and sibling contracts, showing how blockchain resilience also leaves a permanent, traceable record. A key defender takeaway is to detect endpoints sending UDP/53 directly to arbitrary Internet hosts rather than approved resolvers.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Clearfake"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Cloudflare R2"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "rc4",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.aitmfeed.com/blog/blog-1/from-ethereum-to-dns-c2-reverse-engineering-the-clickfix-payload-17"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-12",
+      "title": "ShieldBreak: The Windows Zero-Day That Breaks Microsoft's Own RoguePlanet Fix",
+      "summary": "ShieldBreak is a Windows local privilege escalation exploit from the researcher behind the NightmareEclipse cluster, published on GitHub under the MSNightmare handle on August 11, 2026. It is a full bypass of CVE-2026-50656 (RoguePlanet), which Microsoft patched in its July 2026 Defender engine update, and the proof-of-concept reports 100% success on Windows 11 25H2 and Windows Server 2025. The exploit takes a standard user to NT AUTHORITY\\SYSTEM without kernel bugs or admin rights by routing Defender's own remediation through Cloud Filter hydration, Object Manager namespace redirects, and a fabricated WER crash report. No CVE or patch exists, and the PoC was released without coordinated disclosure. Defenders should alert on phoneinfo.dll appearing in System32 and on combinations of sync root registration, Object Manager symbolic link activity, MpClient.dll loads, and WER ReportQueue writes, since static signatures tied to the compiled sample do not survive recompilation.",
+      "completeness": "Low",
+      "threats": [
+        "Shieldbreak_tool",
+        "Rogueplanet_tool",
+        "Bearfoos",
+        "Nightmare_eclipse_tool",
+        "Bluehammer_tool",
+        "Redsun_tool",
+        "Greatxml_tool"
+      ],
+      "geo": [
+        "Berlin"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "BitLocker",
+        "Task Scheduler",
+        "Dropbox",
+        "Windows Error Reporting"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "md5",
+        "sha1"
+      ],
+      "functions": [
+        "RPC"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/shieldbreak-windows-zero-day"
+      ]
+    }
+  }
+]

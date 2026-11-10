@@ -1,0 +1,363 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "Beyond the Inbox: How Threat Actors Abuse Microsoft Teams External Chat for Initial Access",
+      "summary": "Arctic Wolf Labs analyzed more than 400 incidents in which threat actors abused the default-on external access feature in Microsoft Teams to send chats impersonating IT support. Attackers often used throwaway tenants, IT-themed display names with \"(Internal)\" labels, and sometimes mail bombing to create urgency before the Teams contact. Victims were typically steered into installing remote access tools such as Quick Assist, AnyDesk, or ScreenConnect, with some cases reaching payload execution in under 15 minutes. The activity exploits trust rather than a software vulnerability. Arctic Wolf recommends restricting external Teams access to an allow-list, blocking unsanctioned RMM tools, and requiring out-of-band verification for remote-access requests.",
+      "completeness": "Medium",
+      "threats": [
+        "Microsoft_quick_assist_tool",
+        "Zoho_assist_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Teamviewer_tool",
+        "Atera_tool",
+        "Netsupportmanager_rat",
+        "Logmein_tool",
+        "Kerberoasting_technique",
+        "Goldenpac_tool",
+        "Blackbasta",
+        "Email_bombing_technique",
+        "Cobalt_strike_tool",
+        "Qakbot",
+        "Darkgate",
+        "Cactus_ransomware",
+        "3am_ransomware",
+        "Gogrpc_backdoor",
+        "Clickfix_technique",
+        "Splashtop_tool",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 13,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft 365",
+        "ChatGPT",
+        "Azure Blob",
+        "Active Directory",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "Set-CsTenantFederationConfiguration"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/threat-actors-abuse-microsoft-teams-external-chat-for-initial-access/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "The audacity knows no bounds. A Trojan targeting information security professionals has been discovered on GitHub",
+      "summary": "Dr.Web researchers found a trojan hidden in malicious GitHub repositories containing Visual Studio projects, Python and Go source files. The first infected repositories appeared two years ago and targeted cryptocurrency users with game bots and cheats, but the operators have since shifted to information security professionals, hiding the malware in tools for scan automation, security testing, and log analysis. The final payload, Microsoft.exe, is an Electron application that disables Windows Defender and UAC, removes McAfee, ESET and Malwarebytes, and installs a backdoor, a clipboard hijacker and a stealer. Over 2,000 PCs had been infected at the time of the research. Dr.Web says the trojan poses a serious threat even to experienced users and recommends keeping antivirus databases updated and checking all files downloaded from the internet.",
+      "completeness": "Medium",
+      "threats": [
+        "Fscan_tool",
+        "Asyncrat",
+        "Mobaxterm_tool"
+      ],
+      "software": [
+        "audacity",
+        "Visual Studio",
+        "Telegram",
+        "ual Studio and",
+        "elegram",
+        "G",
+        "astebin",
+        "Pastebin",
+        "Electron",
+        "Windows Defender",
+        "Windows registry",
+        "have more..."
+      ],
+      "functions": [
+        "AmsiScanBuffer"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15311&lng=ru&c=5"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "Beyond testmetest: Native Addon Camouflage and 42 Armed GitHub Repositories Reveal a Hidden npm Publisher",
+      "summary": "JFrog researchers identified 42 armed GitHub repositories across 11 legitimate owners tied to the testmetest npm campaign, which hides large polymorphic wrappers that decode to the same CI-publisher payload. The operator also shifted to a native Node addon that contains no payload itself and instead decrypts a hidden .napi_cache file at runtime, skipping execution in CI runners, containers and debuggers. The campaign's npm worm stole GitHub and npm credentials that enabled hijacking of third-party repositories, and the armed repositories run execution hooks for AI coding assistants and IDEs. Shellpanel scanning workflows targeting cPanel systems via CVE-2026-41940 appear in the same hijacked owner cluster, though downstream compromises are not confirmed. Defenders should audit repositories for the listed hooks, rotate exposed credentials, and treat installation of full-worm versions as host compromise.",
+      "completeness": "High",
+      "threats": [
+        "Polymorphism_technique",
+        "Shellpanel_tool",
+        "Shai-hulud",
+        "Miasma",
+        "Credential_stealing_technique",
+        "Procmon_tool",
+        "Antidebugging_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "cPanel",
+        "CIRCLECI",
+        "VERCEL",
+        "docker",
+        "Linux",
+        "TRAVIS",
+        "Process Explorer",
+        "Claude",
+        "Laravel",
+        "curl",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-128-gcm",
+        "sha256",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "init"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://research.jfrog.com/post/beyond-testmetest-42-hijacked-github-repos/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "Borrowed Reputation: Domain Shadowing and Gambling SEO",
+      "summary": "Two separate domain shadowing operations placed illegal gambling content beneath legitimate school and government domains, using unauthorized DNS record changes that owners may not have noticed. The actor tracked as Hidden Hawk added individual CNAME records mapping institutional hostnames to gambling pages mostly hosted on Cloudflare Pages, and offers its SEO services via Telegram. A separate campaign against Indian government domains delegated entire subzones to a third-party DNS provider and used a wildcard, letting many hostnames be managed outside the victim's environment. The access method is unknown, and the risk is unauthorized use of victims' namespaces. Defenders should monitor authoritative zone changes, including new subdomains, NS delegations, wildcards, and CNAMEs to unexpected hosts, and secure all accounts able to change DNS. Victim domains should not be blocked at the second-level domain.",
+      "completeness": "Low",
+      "threats": [
+        "Domain_shadowing_technique",
+        "Vigorish_viper",
+        "Dns_hijacking_technique"
+      ],
+      "geo": [
+        "Bulgarian",
+        "Indonesian",
+        "Mexico",
+        "Indian",
+        "India",
+        "Bangladesh"
+      ],
+      "software": [
+        "Cloudflare",
+        "Telegram"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/borrowed-reputation-domain-shadowing-and-gambling-seo/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "Silent Ransom Group - Leak Analysis",
+      "summary": "Silent Ransom Group (aka SRG or Luna Moth) is a Russian-speaking extortion group whose leaked Rocket.Chat logs, published on 2026-10-03, reveal operations beyond data theft. The group relies on callback phishing (vishing) and AnyDesk remote sessions to copy data by hand, using no malware, and targets mainly US law firms. The report's Confirmed finding is that the group's own accounting records at least $43.95M received, while the $206.95M total is only Probable. Planned kidnapping, armed enforcement, naval HUMINT and defense contractor placement are rated Possible or unconfirmed. Defenders should prioritize detecting unsanctioned remote-access tools after unsolicited IT calls and bulk uploads to consumer cloud storage.",
+      "completeness": "High",
+      "threats": [
+        "Anydesk_tool",
+        "Akira_ransomware",
+        "Lockbit",
+        "Smuggling_technique",
+        "Cobalt_strike_tool",
+        "Sliver_c2_tool",
+        "Metasploit_tool",
+        "Mimikatz_tool",
+        "Zoho_assist_tool",
+        "Teamviewer_tool",
+        "Screenconnect_tool",
+        "Residential_proxy_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "United states",
+        "New york",
+        "Russian",
+        "Koreans",
+        "Panama",
+        "Mexico",
+        "Brazil",
+        "Minsk",
+        "Armenia",
+        "North korea",
+        "Ukrainian",
+        "Ukraine",
+        "Usa",
+        "Colombia",
+        "Russia",
+        "Los angeles",
+        "Africa",
+        "Americans",
+        "Mexican",
+        "Moscow",
+        "American",
+        "Colombian",
+        "Hong kong"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "Twitter",
+        "Ubuntu",
+        "Claude",
+        "Telegram",
+        "Zoom",
+        "Gmail",
+        "chatgpt",
+        "ProtonMail",
+        "outlook",
+        "Microsoft Teams",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet",
+        "bybit",
+        "wassabi"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "gzip"
+      ],
+      "functions": [
+        "Teams"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/silent-ransom-group-leak-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "AI, Scripts, Operator - Inside the ConnectWise Attack",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Password_spray_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "Microsoft 365",
+        "Debian"
+      ],
+      "functions": [
+        "Graph"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/connectwise-attack-ai"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "Automated Subversion and Attempted Takeover of AI Pentesting Harnesses",
+      "summary": "Unknown actors are systematically scanning for and compromising exposed Cairn AI pentesting harnesses, injecting malicious agent tasks that subvert the agents and turn them against the harness itself. The activity is highly automated and may be agentic, with campaigns synchronized in waves across multiple panels starting around October 20, 2026. Two suspected clusters, AIA0009 and AIA0010, are assessed as separate groups, though this is not confirmed. The attackers profile installations, steal secrets including AI model API keys, install unauthorized SSH keys, and AIA0009 has deployed a Poseidon RAT. Victims include criminals, red teams, bug bounty researchers, and CTF challenges. The takeaway for defenders is to secure any Cairn panel immediately.",
+      "completeness": "Medium",
+      "threats": [
+        "Cairn",
+        "Mythic_c2_tool",
+        "Poseidon_rat"
+      ],
+      "software": [
+        "sudo",
+        "Linux",
+        "Docker",
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://norforge.com/blog/automated-subversion-attempted-takeover"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "Notorious Brazilian Magecart group hijacks Convertr checkouts via Plausible analytics",
+      "summary": "A Brazilian Magecart group, active since 2024, planted a card skimmer in the analytics script that Convertr, an ecommerce platform for dozens of Brazilian fashion brands, serves to all its checkouts. The skimmer activates on checkout pages and sends card details and CPF numbers to the attacker's domain 1x0.is. Convertr runs an outdated, self-hosted Plausible Community Edition, and the report says CVE-2026-8467 is a possible entry point but could not be confirmed. Defenders should ask banks to replace cards used on affected checkouts, watch for CPF-related fraud, and upgrade Plausible to 3.2.1 or later while checking access logs for /storybook requests.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenCart",
+        "Discord",
+        "Shopware"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://sansec.io/research/convertr-plausible-supply-chain-attack",
+        "https://github.com/plausible/analytics/security/advisories/GHSA-mhcv-h7gf-57cf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-26",
+      "title": "202610-colombia-judicial-phishing-delivers-xworm-reused-net-loader",
+      "summary": "Arctic Wolf Labs observed a campaign of judicial-themed phishing emails targeting Colombian organizations that delivers XWorm through a multistage chain. The emails use Spanish-language text urging prompt attention, and their VBS and JS filenames resemble legitimate Colombian administrative or judicial correspondence. The initial scripts are heavily obfuscated with custom decoders and encryption layers that recover a PowerShell stage, which loads a reflective .NET loader (RSG_UnityApp) that injects XWorm into RegAsm.exe. The same loader is binary-identical to one in a separate September 2026 UK-linked XWorm case, indicating reuse. Three C2 endpoints communicate over a consistent AES-128-ECB protocol supporting full remote access, and they also appear in other public XWorm sandbox records. Defenders should hunt for wscript or cscript spawning PowerShell and for unexpected RegAsm.exe network activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Xworm_rat",
+        "Dcrat"
+      ],
+      "geo": [
+        "Colombian"
+      ],
+      "algorithms": [
+        "aes-128-ecb",
+        "aes-256-ecb",
+        "aes-256-cbc",
+        "base64",
+        "md5",
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://github.com/rtkwlf/wolf-tools/tree/main/pack_alerts/202610-colombia-judicial-phishing-delivers-xworm-reused-net-loader"
+      ]
+    }
+  }
+]

@@ -1,0 +1,375 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "XMRig Covert Ops: The Cryptomining Campaign That Abuses Trusted Access and Deploys Forensic Smokescreens",
+      "summary": "A May 2026 Monero cryptomining campaign targeted Linux environments, entering through a trusted third-party relationship and then escalating to root. The attackers abused the pam_rootok policy with su to impersonate multiple low-privileged users, planting redundant cron persistence across unmonitored accounts so that remediating only the root compromise would not remove the implant. A heavily modified XMRig 6.25.0 botnet implant suppressed logging, deleted its own binary to run purely in memory, and used a /tmp/.lock mutex to ensure a single instance. The operators evaded detection further with process masquerading (such as spoofing \"ssh\") and by disguising network traffic with a \"Java/Agent\" User-Agent. Defenders should monitor logging services and PAM user-switching events, hunt for /tmp/.lock and memory artifacts, and scrutinize trusted vendor connections.",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Linux"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "md5",
+        "cryptonight",
+        "sha256",
+        "randomx",
+        "sha1",
+        "xor"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/xmrig-covert-linux-pam-abuse/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "PolinRider Caused Dozens of npm, Go, PHP Compromises",
+      "summary": "PolinRider, a DPRK-linked campaign, compromised 20 npm and Go packages, including two Joyfill beta releases, without targeting those specific maintainers. The automation spreads through infected developer machines, using stolen credentials to push malicious commits to repositories and publish poisoned npm packages. Go modules were compromised by backdated, force-pushed or appended commits that proxy.golang.org caches permanently. The payloads include a fake font-file loader that reads blockchain-stored keys and delivers InvisibleFerret and OmniStealer. Defenders should scan their projects, rotate tokens after suspected infection, and disable automatic VS Code task execution.",
+      "completeness": "High",
+      "threats": [
+        "Polinrider",
+        "Typosquatting_technique",
+        "Shai-hulud",
+        "Miasma",
+        "Dev_popper",
+        "Omnistealer",
+        "Invisibleferret",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "trongrid",
+        "Telegram",
+        "Discord"
+      ],
+      "wallets": [
+        "tron",
+        "mainnet"
+      ],
+      "crypto": [
+        "aptos",
+        "binance"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "eval",
+        "require"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/polinrider-caused-dozens-of-npm-and-go-compromises",
+        "https://opensourcemalware.com/go/github.com%2FSetsu548%2FLogistic",
+        "https://opensourcemalware.com/go/github.com%2Famantsehay%2Fa2sv-go-course",
+        "https://opensourcemalware.com/go/github.com%2FBarsu5489%2Fcommerce"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "[Joint Cybersecurity Advisory\\] Operation Double Barrel (Relationship between state-sponsored hacking group and the Gunra Ransomware group)",
+      "summary": "Operation Double Barrel is a campaign attributed to a state-sponsored hacking group that, from 2025 through the first half of 2026, distributed backdoor malware by exploiting vulnerabilities in domestic South Korean financial security software. The attackers used watering hole and spear phishing attacks to lure victims to malicious URLs, then exploited flaws to install backdoors such as Struggle (SIGNBT 3.0) and Brandoor (COPPERHEDGE). Many legitimate websites across media, education, healthcare, and manufacturing sectors were abused for watering hole attacks, and several were linked to the same website development and management vendor, suggesting a possible supply chain attack. A parallel intrusion exploited the same financial software flaw but ultimately deployed Gunra ransomware, sharing vulnerabilities, malware, SSH key fingerprints, and network infrastructure with the state-sponsored activity. The researchers could not confirm the relationship between the two groups, but they assess that the actors may have shared tools, infrastructure, or limited cooperation.",
+      "completeness": "Low",
+      "threats": [
+        "Gunra",
+        "Watering_hole_technique",
+        "Spear-phishing_technique",
+        "Signbt",
+        "Copperhedge",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Republic of korea",
+        "Korea",
+        "Korean",
+        "Kor"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94695/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "DarkSword's Panel Sprawl: How One Body Hash Unravels a Six-Panel, Two-Codebase Operator Cluster",
+      "summary": "DarkSword is a leaked commercial iOS exploit chain covering six vulnerabilities across iOS 18.4 through 18.7, now used by at least seven, and probably eight, unrelated operators, including a Chinese-speaking actor running over a hundred web properties. Censys tracked the cluster by pivoting on exact body hashes of operator login panels and the exploit-chain staging page, which stayed stable even as hosts turned over within days. File-level hashing of 100 web properties showed payload modules were identical across deployments while version-dispatch loaders varied by iOS version, consistent with one shared codebase. One Singapore host ran Coruna and DarkSword panels side by side with an unauthenticated MinIO console, and has since gone dark. Defenders are advised to hunt the panel body hashes and specific port sets rather than domains or IPs, and to rerun the DarkSword threat label query at least weekly.",
+      "completeness": "High",
+      "threats": [
+        "Darksword_tool",
+        "Credential_harvesting_technique",
+        "Ghostblade",
+        "Credential_dumping_technique",
+        "Coruna_tool",
+        "Thorn_c2_tool"
+      ],
+      "geo": [
+        "United states",
+        "Singapore",
+        "Chinese",
+        "Holland",
+        "Asia-pacific",
+        "Ukrainian",
+        "France",
+        "Japan",
+        "Hong kong",
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "MinIO",
+        "MySQL",
+        "m contact",
+        "SimpleHTTP",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://censys.com/blog/darkswords-panel-sprawl/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
+      "summary": "Storm-2945, a sub-cluster of Midnight Blizzard (the Russian SVR-attributed actor), runs the CaptiveCrunch campaign against travelers using hotel, conference, and other captive-portal Wi-Fi networks. The actor manipulates DNS and HTTP traffic to redirect users to malicious infrastructure, delivering fake update malware via ClickFix prompts and conducting device code phishing against Microsoft Entra ID accounts. Payloads include the CornFlake Go-based RAT, which offers keylogging, surveillance, and file theft, and the ChocoShell PowerShell infostealer, which harvests browser cookies, passwords, and Microsoft 365 SSO tokens. The campaign's stated goal is access to corporate travelers' accounts. Microsoft recommends treating guest networks as untrustworthy, blocking device code flow where possible, and enforcing phishing-resistant MFA and sign-in risk policies.",
+      "completeness": "High",
+      "threats": [
+        "Aitm_technique",
+        "Clickfix_technique",
+        "Cornflake",
+        "Chocoshell",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Fruitstone",
+        "Chromekatz_tool",
+        "Garble_tool",
+        "Device_code_phishing_technique",
+        "Com_hijacking_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Russian",
+        "Russian federation"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Entra",
+        "Anthropic",
+        "OpenAI",
+        "Windows remote access",
+        "Android",
+        "Windows Security",
+        "DirectX",
+        "Microsoft Visual C++",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256",
+        "base64",
+        "ecdh",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "golang"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "The Xcode Assassin Returns: A Deep Dive Into the Latest XCSSET Version",
+      "summary": "XCSSET v40 is a modular macOS malware family that spreads through infected Xcode projects and vulnerable Git repositories, with the infection triggered when a developer builds the project locally. Its loader and core modules run mostly in memory, using polymorphic and multi-layered encryption that makes the malware hard to detect and analyze. The new version adds a Chrome hijacking backdoor that uses the Chrome DevTools Protocol to manipulate browser sessions and a Telegram trojanizer that replaces the app binary. It also adds fileless persistence through the macOS defaults system and attempts to disable Apple security updates, XProtect and TCC protections. Attacks have targeted developers across South Asia, using about 40 domains. Defenders should monitor for abnormal AppleScript activity, unauthorized defaults changes, and ad hoc signed applications.",
+      "completeness": "High",
+      "threats": [
+        "Xcsset",
+        "Polymorphism_technique",
+        "Supply_chain_technique",
+        "Netwire_rat"
+      ],
+      "geo": [
+        "Russia",
+        "India",
+        "Japan",
+        "Australia",
+        "South korea",
+        "Asia",
+        "Middle east"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Chrome",
+        "Telegram",
+        "Chromium",
+        "Google Chrome",
+        "Gatekeeper",
+        "curl",
+        "Firefox"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "base64",
+        "zip",
+        "aes",
+        "sha1"
+      ],
+      "languages": [
+        "perl",
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/xcsset-v40-malware-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "Tracing SNOWLIGHT: A China-Nexus Campaign Against Government Infrastructure",
+      "summary": "The SNOWLIGHT campaign is a China-nexus operation linked to access brokers UNC5174 and UNC6586, identified from an exposed staging server holding reconnaissance lists, nine weaponized CVEs, a cracked Chinese GoCobaltStrike C2, and Metasploit. Operators used automated spray-and-check scanning rather than bespoke targeting, with roughly one in 90 scanned targets yielding an RCE, credential theft, or shell validation. Over 85% of mapped listings were government domains across many countries, with Taiwan as the primary focus. Compromises included 16 root-level cPanel/WHM takeovers and one Domain Admin compromise via ProxyShell. The SNOWLIGHT loaders use memfd_create and fexecve for fileless execution, a kill-switch file, and XOR-0x99 payload obfuscation. Defenders should patch the exploited CVEs, enforce MFA on administrative portals, and monitor for curl or wget fetches to untrusted hosts.",
+      "completeness": "High",
+      "threats": [
+        "Snowlight",
+        "Cobalt_strike_tool",
+        "Proxyshell_vuln",
+        "Neo-regeorg_tool",
+        "Metasploit_tool",
+        "Meterpreter_tool",
+        "Xrdp_tool",
+        "Ysoserial_tool",
+        "Proxylogon_exploit",
+        "Nuclei_tool",
+        "Credential_harvesting_technique",
+        "Lolbin_technique",
+        "Burntcigar"
+      ],
+      "geo": [
+        "Chinese",
+        "Taiwanese",
+        "Brazil",
+        "China",
+        "Philippines",
+        "Taiwan",
+        "Colombia",
+        "Nigeria",
+        "Indonesia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "Docker",
+        "Outlook",
+        "Linux",
+        "Apache Tomcat",
+        "cPanel",
+        "Laravel",
+        "Microsoft Exchange",
+        "Apache Struts2",
+        "Confluence",
+        "BIG-IP",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "send",
+        "inet_addr",
+        "memfd_create",
+        "fexecve"
+      ],
+      "languages": [
+        "python",
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/snowlight-government-chinese-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-31",
+      "title": "Dark Web Profile: Section9 Ransomware",
+      "summary": "Section9 is a new ransomware-as-a-service brand that launched on July 26, 2026, with an active Tor-hosted leak site and no confirmed prior history or aliases. It follows the standard double-extortion model, claiming data theft before encryption and threatening publication for non-payment, but no affiliate program or encryptor has been verified. The group listed victims across about a dozen countries and nearly twenty industries within roughly 48 hours, with Brazil accounting for close to half of claims, which may reflect purchased access or an existing foothold there. Its claims are mixed: some corroborated by multiple trackers, while others may be unverified or fabricated. Defenders should validate leak-site claims against internal telemetry, enforce MFA on remote access, watch for shadow-copy deletion, and maintain offline, tested backups.",
+      "completeness": "Low",
+      "threats": [
+        "Section9",
+        "Ghost",
+        "Qilin_ransomware",
+        "Akira_ransomware",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "Japanese",
+        "Brazil"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-section9-ransomware/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,467 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "Hold the Phone! International Revenue Share Fraud Driven by Fake CAPTCHAs",
+      "summary": "Infoblox researchers document an international revenue share fraud (IRSF) operation that uses fake CAPTCHA pages to trick victims into sending SMS messages to premium international numbers. The fake CAPTCHAs require users to text several times to proceed, and each step prepopulates messages to over a dozen destinations, so one attempt generated 60 messages in the researchers' testing. The operation has existed since at least June 2020 and was reached through a traffic distribution system (TDS) affiliate network. Victims are charged on their phone bills weeks later, while the operators receive a share of the termination fees. Infoblox's key takeaway is that users should never send a text to confirm they are human.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Switzerland",
+        "France",
+        "Kazakhstan",
+        "Belgium",
+        "Italy",
+        "Ukraine",
+        "Azerbaijan",
+        "Poland",
+        "Myanmar",
+        "Netherlands",
+        "Turkey",
+        "Spain",
+        "Malawi",
+        "Germany",
+        "Egypt",
+        "Austria",
+        "Sweden",
+        "Spanish"
+      ],
+      "software": [
+        "Android",
+        "curl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "makeTrackerDownload",
+        "pushState"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/hold-the-phone-international-revenue-share-fraud-driven-by-fake-captchas/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "UAT-4356's Targeting of Cisco Firepower Devices",
+      "summary": "UAT-4356 is continuing to target Cisco Firepower devices running FXOS, exploiting the n-day vulnerabilities CVE-2025-20333 and CVE-2025-20362 to gain unauthorized access. The actor deploys FIRESTARTER, a custom backdoor that enables remote control and arbitrary code execution within the LINA process, and that overlaps considerably with RayInitiator's Stage 3 shellcode. FIRESTARTER maintains persistence by manipulating the CSP mount list so it runs during graceful reboots, so a hard power-cycle removes the implant. Talos previously linked UAT-4356 to the ArcaneDoor espionage campaign targeting network perimeter devices. Defenders should follow Cisco's advisory for mitigation and detection, check for the lina_cs process and the svc_samcore.log file, and consider reimaging affected devices.",
+      "completeness": "Low",
+      "threats": [
+        "Firestarter",
+        "Rayinitiator"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Unix"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-4356-firestarter/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "Snow Flurries: How UNC6692 Employed Social Engineering to Deploy a Custom Malware Suite",
+      "summary": "UNC6692 is a newly tracked threat group that ran a multistage intrusion using social engineering, a custom modular malware suite, and a malicious browser extension. The attackers impersonated IT helpdesk staff via Microsoft Teams, luring victims to a fake \"Mailbox Repair Utility\" that harvested credentials and staged malware. The SNOW ecosystem consists of SNOWBELT, a Chromium extension backdoor, SNOWGLAZE, a Python WebSocket tunneler, and SNOWBASIN, a Python bindshell. After gaining access, the group moved laterally, dumped LSASS memory, used Pass-The-Hash to reach domain controllers, and exfiltrated Active Directory files. GTIG highlights the abuse of legitimate cloud services for delivery and C2 as a reason defenders need visibility into browser activity and cloud traffic.",
+      "completeness": "High",
+      "threats": [
+        "Snowbelt",
+        "Snowglaze",
+        "Snowbasin",
+        "Passthehash_technique",
+        "Credential_harvesting_technique",
+        "Tunneler",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Password_spray_technique"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 65,
+      "software": [
+        "Microsoft Teams",
+        "AutoHotkey",
+        "Chromium",
+        "Chrome",
+        "Microsoft Edge",
+        "Sysinternals PsExec",
+        "Windows Local Security Authority",
+        "LimeWire",
+        "FTK Imager",
+        "Active Directory",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "aes-gcm",
+        "sha256"
+      ],
+      "functions": [
+        "taskService",
+        "init"
+      ],
+      "languages": [
+        "autoit",
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/unc6692-social-engineering-custom-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "Global Campaign Discovered with Modbus PLCs Targeted and China-Geolocated Infrastructure Observed",
+      "completeness": "Low",
+      "geo": [
+        "Japan",
+        "Americas",
+        "China",
+        "Asia",
+        "France"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/global-campaign-discovered-with-modbus-plcs-targeted/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "It pays to be a forever student",
+      "summary": "Cisco Talos IR's Q1 2026 trends report finds phishing has returned as the top initial access vector. Adversaries used Softr, an AI-powered web development tool, to rapidly generate credential-harvesting pages. Swift mitigation meant no ransomware deployments occurred that quarter, though pre-ransomware activity hit 18% of engagements. Threat actors also abuse developer tools like TruffleHog and cloud APIs to quietly hunt for exposed secrets. Defenders should enforce properly configured MFA restricting self-service enrollment, prioritize patching, and centralize logging in a SIEM.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Trufflehog_tool",
+        "Blackcat",
+        "Lolbin_technique",
+        "Firestarter",
+        "Coinminer"
+      ],
+      "geo": [
+        "Spain",
+        "American",
+        "Berlin",
+        "Germany"
+      ],
+      "software": [
+        "QEMU",
+        "Mastodon",
+        "Windows Defender",
+        "Microsoft Defender",
+        "macOS"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/it-pays-to-be-a-forever-student/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "Inside a Telegram Session Stealer: How a Pastebin-Hosted PowerShell Script Targets Desktop and Web Sessions",
+      "summary": "A Pastebin-hosted PowerShell script disguised as \"Windows Telemetry Update\" steals Telegram Desktop tdata session data, archives it, and uploads it through the Telegram Bot API. Its hardcoded bot token exposed the operator's bot message history, which revealed a separate browser-based Telegram Web session stealer that shares the same bot. The desktop script was revised from a broken v1 upload routine to a working v2 using sendDocument. Analysts assess the tooling as still in validation rather than operational use, based on uniform test-like captures, a LAN-local collector, and no persistence or obfuscation. Defenders should watch for PowerShell command lines that reference Telegram tdata, Compress-Archive, and api.telegram.org sendDocument calls, and should treat any signs of obfuscation, bot token rotation, or a public collector as escalation.",
+      "completeness": "Low",
+      "threats": [
+        "No-telegram",
+        "Raven_stealer"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 12,
+      "software": [
+        "Telegram",
+        "astebin",
+        "Pastebin",
+        "Matkap",
+        "Linux",
+        "Android",
+        "curl"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "getUpdates",
+        "Remove-Item"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/telegram-session-stealerpastebin-hosted-powershell-script-targets-desktop-web-sessions"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "fast16 \\| Mystery ShadowBrokers Reference Reveals High-Precision Software Sabotage 5 Years Before Stuxnet",
+      "summary": "fast16 is a previously undocumented cyber sabotage framework with core components dating to 2005, predating Stuxnet by at least five years. Its carrier binary, svcmgmt.exe, uses an embedded Lua virtual machine and a wormable design that spreads via Windows service-control and file-sharing APIs, while checking for security products before installing. A boot-start kernel driver, fast16.sys, patches executable code in memory, targeting files built with Intel compilers. Its floating-point patch appears designed to corrupt precision calculations, with likely targets including LS-DYNA, PKPM, and MOHID, though the actual intended targets remain unconfirmed. The framework's name appears in the 2017 Shadow Brokers leak, where it is marked as a deconfliction signature. Defenders should note that the report reflects mid-2000s tooling and that many target binaries remain unidentified.",
+      "completeness": "Medium",
+      "threats": [
+        "Fast16",
+        "Shadow_brokers_tool",
+        "Stuxnet",
+        "Flame",
+        "Sauron"
+      ],
+      "geo": [
+        "China",
+        "Iran",
+        "Chinese",
+        "Portuguese",
+        "Portugal"
+      ],
+      "software": [
+        "Windows service",
+        "Unix",
+        "Windows kernel",
+        "x envi"
+      ],
+      "algorithms": [
+        "sha1",
+        "xor",
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "ok_to_install",
+        "ok_to_propagate"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "Is Shai-Hulud Back? Compromised Bitwarden CLI Contains a Self-Propagating npm Worm",
+      "summary": "Malicious version 2026.4.0 of the @bitwarden/cli npm package, which has about 78,000 weekly downloads, was published under the legitimate Bitwarden name after attackers reportedly infected Bitwarden's CI/CD pipeline. The package runs a preinstall hook that fires automatically on npm install and launches a multi-stage credential-stealing worm calling itself \"Shai-Hulud: The Third Coming.\" The malware harvests SSH keys, cloud and npm credentials, Git credentials, AI coding assistant configuration files, and cloud secrets from AWS, Azure, and GCP secret stores. Stolen data is exfiltrated to a public GitHub repository created under the victim's account, and tokens from victims without organization membership are published in a public commit dead-drop that other infected machines can reuse. Defenders should treat any installation of this version as a critical compromise, rotate exposed secrets, and block the malicious C2 domain.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Bitwarden",
+        "Docker",
+        "Claude"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/shai-hulud-npm-bitwarden-cli-compromise",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "GopherWhisper: A burrow full of malware",
+      "summary": "ESET researchers identified GopherWhisper, a previously undocumented China-aligned APT group that mostly uses Go-based tools, injectors, and loaders to deploy its backdoors. The group primarily targeted a government entity in Mongolia, with ESET telemetry showing about 12 affected systems at that institution. GopherWhisper uses legitimate services such as Slack, Discord, Microsoft 365 Outlook, and file.io for command-and-control and data exfiltration. Analysis of attacker Slack and Discord traffic revealed operator activity and post-compromise actions. Defenders should note the group's abuse of trusted cloud messaging services for C&C traffic.",
+      "completeness": "High",
+      "threats": [
+        "Jabgopher",
+        "Laxgopher",
+        "Compactgopher",
+        "Ratgopher",
+        "Sslordoor",
+        "Frienddelivery",
+        "Boxoffriends",
+        "Passview_tool",
+        "Process_hollowing_technique",
+        "Filecoder",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "China",
+        "Canada",
+        "Pacific",
+        "Mongolian",
+        "Mongolia"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 37,
+      "software": [
+        "Slack",
+        "Discord",
+        "Outlook",
+        "OpenSSL",
+        "Windows Defender",
+        "Hyper-V",
+        "Graph API",
+        "Internet Explorer",
+        "Windows service",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes",
+        "rc4",
+        "base64",
+        "sha1",
+        "md5",
+        "zip",
+        "xor",
+        "aes-128-cbc",
+        "cbc",
+        "crc-32",
+        "aes-128",
+        "base58"
+      ],
+      "functions": [
+        "GetComputerNameEx",
+        "CreateEvent",
+        "GetModuleFileName"
+      ],
+      "links": [
+        "https://web-assets.esetstatic.com/wls/en/papers/white-papers/gopherwhisper-burrow-full-malware.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "Trigona Affiliates Deploy Custom Exfiltration Tool to Streamline Data Theft",
+      "summary": "Trigona ransomware affiliates, operated as a RaaS by the group Symantec calls Rhantus, used a custom command-line exfiltration tool called uploader_client.exe in attacks during March 2026. Unlike many ransomware groups that rely on off-the-shelf utilities such as Rclone or MegaSync, the tool offers granular control, including five parallel connections per file, connection rotation after 2,048 MB, and an exclude flag that skips bulky media files. Before exfiltration, attackers disabled security software by installing HRSword as a kernel driver service and deploying additional tools that used vulnerable kernel drivers. The actors also used AnyDesk for remote access and Mimikatz and Nirsoft utilities to harvest credentials. In one observed case, the uploader targeted invoices and high-value PDFs on networked drives. The report notes that custom tooling offers stealth that generic tools cannot match, though the motivation for this shift is unknown.",
+      "completeness": "Low",
+      "threats": [
+        "Trigona",
+        "Rclone_tool",
+        "Megasync_tool",
+        "Hrsword_tool",
+        "Pchunter_tool",
+        "Gmer_tool",
+        "Ydark_tool",
+        "Dumpguard_tool",
+        "Powerrun_tool",
+        "Anydesk_tool",
+        "Mimikatz_tool",
+        "Byovd_technique",
+        "Passview_tool",
+        "Vncpassview_tool",
+        "Netscan_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Huorong"
+      ],
+      "functions": [
+        "Symantec"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/trigona-exfiltration-custom"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "CTI Report: ShadowByt3$ Retaliation Package Targeting Researcher",
+      "completeness": "Medium",
+      "threats": [
+        "Prince_ransomware",
+        "Redline_stealer",
+        "Raccoon_stealer",
+        "Lumma_stealer",
+        "Screenconnect_tool",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "America",
+        "Argentina",
+        "Canadian",
+        "Georgia",
+        "Russian",
+        "Pacific",
+        "Los angeles"
+      ],
+      "software": [
+        "ChatGPT",
+        "Chrome",
+        "Linux",
+        "Telegram",
+        "Discord",
+        "Unix",
+        "macOS",
+        "Windows Subsystem for Linux",
+        "Photoshop"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://barricadecyber.com/cti-report-shadowbyt3-retaliation-package-targeting-researcher/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-23",
+      "title": "Fake Document, Real Access: Foxit Impersonation Enables Stealth VNC Control",
+      "summary": "Attackers are impersonating Foxit PDF Reader, a trusted application with over 650 million users, to trick victims into running a fake installer that deploys a hidden remote-access tool. The lure uses document-style filenames such as Datei.exe and Document09.10.2025.exe, which do not match Foxit's official installer naming. After execution, a decoy passport image opens while an MSI package installs UltraVNC disguised as GPU and driver files in a folder named C:\\intel-GPU. The malware establishes persistence through a Run registry entry and connects outbound to attacker infrastructure, giving full control of the desktop, keyboard, mouse, and files. Samples were submitted from Germany, the United States, the United Kingdom, and Ukraine, suggesting a broadly distributed campaign. The key takeaway is that this attack relies on user trust and familiarity rather than software vulnerabilities, so defenders should scrutinize unexpected installers and document-like executables.",
+      "completeness": "Medium",
+      "threats": [
+        "Ultra_vnc_tool",
+        "Notfoxit",
+        "Evilvnc"
+      ],
+      "geo": [
+        "United kingdom",
+        "Danish",
+        "Ukraine",
+        "Germany"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 8,
+      "software": [
+        "Foxit",
+        "Windows Installer"
+      ],
+      "links": [
+        "https://blog.gdatasoftware.com/2026/04/38409-fake-foxit-vnc"
+      ]
+    }
+  }
+]

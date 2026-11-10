@@ -1,0 +1,32 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-28",
+      "title": "What Is BlackSuit Ransomware & How Could It Impact Your Organization?",
+      "summary": "BlackSuit is a private ransomware and extortion group that surfaced in April or May 2023 and operates with no public affiliates. It encrypts and exfiltrates victim data, hosting public leak sites for victims who refuse to pay, and its payloads share technical similarities with Royal ransomware. Attacks are delivered through phishing emails, malicious torrents, malvertising, and Trojans, with frameworks like Empire, Metasploit, and Cobalt Strike also used, and it supports both Windows and Linux. On Windows, it deletes Volume Shadow Copies to hinder recovery. BlackSuit targets large enterprises and SMBs across healthcare, education, IT, government, retail, and manufacturing, excluding entities in the Commonwealth of Independent States.",
+      "completeness": "Medium",
+      "threats": [
+        "Blacksuit_ransomware",
+        "Royal_ransomware",
+        "Cobalt_strike_tool",
+        "Empire_loader",
+        "Metasploit_tool",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 2,
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/what-is-blacksuit-ransomware-and-how-could-it-impact-your-organization/"
+      ]
+    }
+  }
+]

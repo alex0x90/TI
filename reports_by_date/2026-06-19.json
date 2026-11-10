@@ -1,0 +1,369 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-19",
+      "title": "AutoJack: How a single page can RCE the host running your AI agent",
+      "summary": "AutoJack is an exploit chain in AutoGen Studio, Microsoft's open-source agent prototyping UI, that lets untrusted web content rendered by a local browsing agent reach a Model Context Protocol WebSocket on localhost and spawn arbitrary processes on the host. The chain combines a localhost-only origin check that an agent's own headless browser satisfies, an authentication middleware that skips MCP paths, and an endpoint that executes attacker-supplied command and arguments without an allowlist. Developers running AutoGen Studio alongside browsing or code-execution agents on the same machine are the exposed population. Microsoft reported the issue to MSRC, and the maintainers fixed it on the main branch at commit b047730 before any PyPI release, so pip-installed autogenstudio 0.4.2.2 does not contain the vulnerable surface. The takeaway for defenders is that localhost is not a trust boundary when agents can browse untrusted content, so control planes need authentication and allowlisting.",
+      "completeness": "Low",
+      "threats": [
+        "Autojack_technique",
+        "Cross_prompt_injection_technique"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "AutoGen",
+        "FastAPI",
+        "Flask",
+        "Chromium",
+        "utoGen St",
+        "Microsoft Entra",
+        "PyRIT",
+        "Microsoft Defender for Endpoint",
+        "Dependabot",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "WebSocket"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
+        "https://github.com/microsoft/autogen/commit/b0477309d2a0baf489aa256646e41e513ab3bfe8",
+        "https://github.com/microsoft/PyRIT"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-19",
+      "title": "From emerging threat to top-tier ransomware-as-a-service: The evolution of INC ransomware",
+      "summary": "INC ransomware is a ransomware-as-a-service operation that emerged in mid-2023 and has claimed more than 800 victims, with the United States accounting for about 65% of them. Its growth was fueled by the disruption of LockBit and the shutdown of BlackCat, which pushed affiliates toward INC. Both its Windows and Linux/ESXi encryptors have been rewritten in Rust, and recent intrusions show a modified Veeam credential dumper that supports newer salted DPAPI encryption. Affiliates typically gain access through unpatched edge devices, stolen credentials and phishing, then use LOLBins, RDP, PsExec, and remote access tools such as Cobalt Strike and AnyDesk. Targets include legal services, manufacturing, technology, health care and construction. Defenders should prioritize securing external exposure and perimeter access points, maintain immutable tested backups, and enforce MFA.",
+      "completeness": "High",
+      "threats": [
+        "Inc_ransomware",
+        "Lockbit",
+        "Blackcat",
+        "Lynx",
+        "Sinobi",
+        "Rhysida",
+        "Zeppelin",
+        "Nokoyawa",
+        "Jsworm",
+        "Karma",
+        "Nemty",
+        "Lolbin_technique",
+        "Spear-phishing_technique",
+        "Simplehelp_tool",
+        "Citrix_bleed_vuln",
+        "Angry_ip_scanner_tool",
+        "Netscan_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Teamviewer_tool",
+        "Rclone_tool",
+        "Vmprotect_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "United states",
+        "Germany",
+        "Australia",
+        "Taiwan",
+        "Canada"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "Kitty",
+        "PsExec",
+        "Sysinternals",
+        "Windows kernel",
+        "Linux",
+        "ESXi"
+      ],
+      "algorithms": [
+        "base64",
+        "salsa20",
+        "aes-ctr",
+        "sha256",
+        "xor",
+        "aes",
+        "aes-128",
+        "ecc",
+        "exhibit",
+        "curve25519",
+        "ecdh"
+      ],
+      "functions": [
+        "Write-Host",
+        "Write-Output"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/from-emerging-threat-to-top-tier-ransomware-as-a-service-the-evolution-of-inc-ransomware/",
+        "https://github.com/sadshade/veeam-creds/blob/main/Veeam-Get-Creds.ps1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-19",
+      "title": "Killing me gently: Inside Gentlemen’s EDR killer framework",
+      "summary": "Gentlemen is a ransomware-as-a-service gang that, unlike most top-tier groups, provides affiliates with a maintained suite of EDR killers rather than leaving them to source their own. ESET's analysis centers on GentleKiller, an in-house framework with at least eight variants that each abuse a different vulnerable or malicious driver. The suite also includes third-party tools HexKiller, ThrottleBlood, and HavocKiller, which were sourced externally and adapted to a shared evasion layer that impersonates security vendors. The gang quickly operationalizes newly disclosed BYOVD proofs-of-concept, sometimes within days of public release. Its victims are spread across Southeast Asia, South America, and Western Europe rather than concentrated in the United States. For defenders, the report stresses that incident-level context is needed to attribute these commoditized EDR killers correctly.",
+      "completeness": "High",
+      "threats": [
+        "Edr-killer",
+        "Gentlekiller",
+        "Hexkiller",
+        "Throttleblood",
+        "Havockiller",
+        "Byovd_technique",
+        "Oxideharvest",
+        "Qilin_ransomware",
+        "Embargo_ransomware",
+        "Lockbit",
+        "Medusa_ransomware",
+        "Eldorado_ransomware",
+        "Ransomhub",
+        "Edrkillshifter_tool",
+        "Akira_ransomware",
+        "Demokiller_tool",
+        "Themida_tool",
+        "Unknownkiller",
+        "Poisonkiller",
+        "Tanium_tool",
+        "Zemana_tool",
+        "Iobit_tool",
+        "Poisonx",
+        "Medusalocker",
+        "Gentlemen_ransomware",
+        "Burntcigar"
+      ],
+      "geo": [
+        "Brazil",
+        "America",
+        "Polish",
+        "United states",
+        "France",
+        "Thailand",
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 7,
+      "software": [
+        "Linux",
+        "ESXi",
+        "Bromium",
+        "Microsoft Defender",
+        "PccNTMon",
+        "Sysinternals",
+        "Valorant",
+        "Google Chrome",
+        "Chromium",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/killing-me-gently-inside-gentlemens-edr-killer-framework/",
+        "https://github.com/BlackSnufkin/BYOVD/tree/main/NSec-Killer",
+        "https://github.com/BlackSnufkin/BYOVD/tree/main/GameDriverX64-Killer",
+        "https://github.com/BlackSnufkin/BYOVD/tree/main/UnknownKiller"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-19",
+      "title": "Threat Actors Weaponizing RAR Archives to Target Thailand’s Healthcare Sector",
+      "summary": "A campaign targeting Thailand's healthcare sector, including Ministry of Health personnel and affiliated organizations, uses healthcare-themed spear-phishing lures delivered in malicious RAR archives. The archives contain obfuscated batch loaders that decode embedded data with PowerShell, then download further payloads from GitHub and set up Startup-folder persistence. The chain ends with a Python-based information stealer, sim.py, which harvests browser credentials, session cookies, and other data, then compresses it into archives. Stolen data was to be sent to attacker-controlled Telegram bots, though observed attempts failed due to connectivity timeouts. Defenders should watch for document-themed phishing, unauthorized Startup-folder changes, and execution of untrusted scripts.",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Supply_chain_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Thailand",
+        "China"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "filtration",
+        "curl",
+        "Google Chrome",
+        "Microsoft Edge",
+        "telegram"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/threat-actors-weaponizing-rar-archives-to-target-thailands-healthcare-sector/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-19",
+      "title": "Microsoft Teams-Themed Remote Access Phishing Campaign",
+      "summary": "A phishing campaign uses Microsoft Teams-themed lures, such as fake meeting transcript or recording notifications, to trick victims into downloading a signed installer for a legitimate remote access tool configured for unauthorized access. Victims land on fraudulent pages styled like Teams, and the campaign uses both compromised small-business websites and attacker-controlled Cloudflare Workers and Pages hosting. After execution, the installer establishes persistence through a Windows service, SafeBoot entry, credential provider, LSA authentication package, and COM registration, enabling credential interception. Defenders should prioritize behavioral monitoring, application control, phishing-resistant authentication, and detection of unauthorized remote access tool deployments rather than relying only on domain reputation.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Syria",
+        "Turkey",
+        "India",
+        "Brazil",
+        "Malaysia",
+        "Russia",
+        "Mexico",
+        "Tanzania"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "Microsoft Teams",
+        "Windows Installer",
+        "Windows Service",
+        "Windows authentication",
+        "Windows security",
+        "Component Object Model",
+        "indows Installer"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/microsoft-teams-themed-remote-access-phishing-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-19",
+      "title": "Inside the FortiBleed Open Directory: A Technical Analysis of What the Attacker Left Behind",
+      "summary": "FortiBleed is a large-scale credential-compromise campaign against internet-facing Fortinet FortiGate firewalls and SSL VPN gateways, not a software vulnerability or zero-day. The threat group assembled a dataset of working device credentials through credential reuse, brute force, and offline hash cracking, and the campaign came to light when their back-end server was left exposed with an open directory. The exposed files included scanners, cracking tooling run on rented GPU workers, post-exploitation Active Directory tools, and a revenue-sorted catalogue of access for sale. The report finds the headline figure of about 21,000 affected domains is largely a count of FortiGuard registration entries and internal AD realm names, with only about 918 organisations showing captured Kerberos traffic and roughly 148 confirmed compromises. Defenders should treat appearance in the dataset as a reason to investigate rather than proof of breach, and should remove exposed management interfaces, rotate credentials, and enforce MFA.",
+      "completeness": "Medium",
+      "threats": [
+        "Impacket_tool",
+        "Password_spray_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "United states",
+        "India",
+        "Mexico",
+        "Taiwan",
+        "Colombia",
+        "Turkey",
+        "Asia"
+      ],
+      "software": [
+        "Telegram",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "sha256"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/inside-the-fortibleed-open-directory-a-technical-analysis-of-what-the-attacker-left-behind"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-19",
+      "title": "Mastra Attack Targets Crypto, Password Managers, Authenticators, and Zapier",
+      "summary": "A threat actor took over a dormant maintainer account for the @mastra npm scope and republished more than 140 packages, injecting a typosquatted dependency named easy-day-js whose armed version 1.11.22 runs a postinstall dropper. The dropper downloads a cross-platform backdoor that persists under names mimicking Node tooling, beacons to command-and-control, and can execute arbitrary remote code. The implant steals browser history and data from 166 crypto-wallet and security extensions, including password managers, an authenticator, and Zapier. Its tradecraft closely matches the axios compromise that Microsoft attributed to Lazarus Group, though the Mastra wave itself is not independently attributed. Defenders should enforce npm provenance and audit signatures, since the malicious publishes lacked attestation.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Mastra",
+        "LastPass",
+        "Bitwarden",
+        "1Password",
+        "Dashlane",
+        "KeePass",
+        "NordPass",
+        "macOS",
+        "Linux",
+        "systemd",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "keplr",
+        "rabby",
+        "coin98",
+        "math_wallet",
+        "core_wallet",
+        "exodus_wallet",
+        "solflare_wallet",
+        "auro_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "casper",
+        "multiversx",
+        "aptos",
+        "bitcoin",
+        "dogecoin",
+        "solana",
+        "polkadot"
+      ],
+      "algorithms": [
+        "base64",
+        "prng",
+        "sha256"
+      ],
+      "functions": [
+        "Get-StartApps",
+        "Get-AppxPackage",
+        "Get-Process",
+        "Get-ItemProperty"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/mastra-npm-malware"
+      ]
+    }
+  }
+]

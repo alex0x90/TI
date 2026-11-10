@@ -1,0 +1,375 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "New JanaWare ransomware targets Turkey via Adwind RAT",
+      "summary": "JanaWare is a ransomware module delivered through a customized Adwind Java RAT variant, identified by Acronis TRU and likely targeting users in Turkey. The malware checks the system locale, language and external IP geolocation, and runs only on systems that appear to be in Turkey. Initial access is assessed to occur through phishing emails that lead victims to download and run a malicious JAR file via javaw.exe. Before encrypting files, the malware disables Microsoft Defender, removes Volume Shadow Copy, and turns off Windows Update. Victims appear to be mainly home users and small to medium-sized businesses, with ransom demands of $200–$400, and defenders should note that Acronis EDR/XDR detects and blocks the threat.",
+      "completeness": "Medium",
+      "threats": [
+        "Janaware",
+        "Adwind_rat",
+        "Polymorphism_technique",
+        "Qtox_tool",
+        "Allatori_technique",
+        "Shadow_copies_delete_technique",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Turkish",
+        "Turkey"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "Tor Browser",
+        "Outlook",
+        "Chrome",
+        "Microsoft Office",
+        "Google Chrome",
+        "Microsoft Defender",
+        "Windows Explorer"
+      ],
+      "algorithms": [
+        "md5",
+        "aes"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/new-janaware-ransomware-targets-turkey-via-adwind-rat/",
+        "https://github.com/java-deobfuscator/deobfuscator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "From fake Proton VPN sites to gaming mods, this Windows infostealer is everywhere",
+      "summary": "NWHStealer is a Windows infostealer distributed through multiple campaigns that use fake VPN installers, hardware utilities, mining software, and game mods as lures. Attackers host the malware on platforms such as GitHub, GitLab, MediaFire, SourceForge, and YouTube links, as well as on a free web hosting site and fake Proton VPN websites. Infection chains use DLL hijacking, MSI or Node.js wrappers, and process hollowing into RegAsm to deploy the stealer. Once installed, NWHStealer collects browser data, saved passwords, and cryptocurrency wallet information, and it can deliver further payloads and set up persistence. Defenders should download software only from official sources, verify file signatures and publisher details, and be cautious with links in YouTube descriptions.",
+      "completeness": "Medium",
+      "threats": [
+        "Nwhstealer",
+        "Dll_hijacking_technique",
+        "Junk_code_technique",
+        "Process_hollowing_technique",
+        "Dead_drop_technique",
+        "Uac_bypass_technique"
+      ],
+      "software": [
+        "Node.js",
+        "OpenSSL",
+        "Chrome",
+        "Opera",
+        "Chromium",
+        "Chromodo",
+        "firefox",
+        "chrome",
+        "Microsoft Edge",
+        "Windows Defender",
+        "Telegram",
+        "have more..."
+      ],
+      "algorithms": [
+        "bcrypt",
+        "zip",
+        "aes",
+        "aes-cbc"
+      ],
+      "functions": [
+        "GetGet",
+        "getPayload"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/04/from-fake-proton-vpn-sites-to-gaming-mods-this-windows-infostealer-is-everywhere"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "Chasing an Angry Spark",
+      "summary": "AngrySpark is a three-stage backdoor first flagged in spring 2022 on a single machine in the United Kingdom, where it injected a virtual machine shellcode into svchost.exe. The VM assembles its final beacon payload at runtime from a 25KB bytecode blob, so the operator can change behavior by updating the blob without modifying the loader. The beacon uses two separate C2 channels, with HTTPS requests disguised as PNG image requests and per-update rotation of URL paths and encoding alphabets. The implant includes anti-analysis checks, direct syscalls to bypass usermode hooks, and a self-destruct mechanism that removes it when C2 contact is lost or the server sends a kill response. Its infrastructure expired in 2023, and no other victims or public samples were observed, so defenders should note the unusually high engineering effort combined with a very limited visible footprint.",
+      "completeness": "High",
+      "threats": [
+        "Angryspark",
+        "Steganography_technique",
+        "Terminator_tool",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Canada"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "aes-256-cbc",
+        "xxtea",
+        "md5",
+        "rsa-4096",
+        "xor"
+      ],
+      "functions": [
+        "GetModuleHandle",
+        "Build",
+        "YY"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/chasing-an-angry-spark"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "MiningDropper – A Global Modular Android Malware Campaign Operating at Scale",
+      "summary": "MiningDropper is a modular Android malware delivery framework that combines cryptocurrency mining with the deployment of infostealers, RATs, and banking malware. It is built on a trojanized version of the open-source LumoLight application and uses XOR-obfuscated native code, AES-encrypted asset staging, dynamic DEX loading, and anti-emulation checks to evade detection. Victims are lured through smishing, social media, and fraudulent websites, with an infostealer campaign targeting users in India through impersonated RTO, banking, and telecom services. A separate campaign distributes the BTMOB RAT to users in Europe, Latin America, and Asia. Over 1,500 samples were observed, with more than 50% showing low antivirus detection. Defenders should install apps only from trusted sources and avoid granting permissions to unverified APKs.",
+      "completeness": "Medium",
+      "threats": [
+        "Miningdropper",
+        "Btmob_rat",
+        "Smishing_technique",
+        "Beatbanker",
+        "Credential_harvesting_technique",
+        "Spysolr",
+        "Dexloader"
+      ],
+      "geo": [
+        "Asia",
+        "India",
+        "Latin america",
+        "Indian",
+        "Latam"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 5,
+      "software": [
+        "ndroid Ma",
+        "Android",
+        "Lumolight",
+        "Google Play"
+      ],
+      "algorithms": [
+        "zip",
+        "sha1",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "loadDex"
+      ],
+      "links": [
+        "https://cyble.com/blog/miningdropper-global-modular-android-malware/",
+        "https://github.com/BitMavrick/Lumolight"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "The vice in tech advice: ClickFix-style commands disguised as tech tips across social media platforms and beyond",
+      "summary": "WithSecure Labs published an article titled \"The 'vice' in tech advice\" about ClickFix-style commands. The report describes these commands as disguised as tech tips and says they appear across social media platforms and beyond. The text supplied with this report contains only the title and site navigation, so the operational details, targeted groups, and any defensive recommendations cannot be confirmed from it. Readers should consult the full article at the source URL for technical specifics.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Vidar_stealer",
+        "Seo_poisoning_technique",
+        "Stealc",
+        "Aurastealer",
+        "Ps2exe_tool",
+        "Motw_bypass_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Instagram",
+        "TikTok",
+        "Capcut",
+        "Microsoft Office",
+        "Discord",
+        "Photoshop",
+        "ChatGPT",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "exhibit",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.withsecure.com/publications/clickfix-social-media.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "New 0-day revealed by Ivanti in Connect/Policy Secure and Neurons for ZTA",
+      "completeness": "Low",
+      "threats": [
+        "Phasejam",
+        "Spawnnant",
+        "Spawnmole",
+        "Spawnsnail",
+        "Tunneler",
+        "Stowaway_tool",
+        "Nmap_tool",
+        "Dryhook"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Ivanti",
+        "SELinux",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.orangecyberdefense.com/global/blog/cert-news/default-title-1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "Fake YouTube copyright notices can steal your Google login",
+      "summary": "Attackers are running a phishing-as-a-service campaign against YouTube creators using fake copyright strike notices hosted on dmca-notification[.]info. The pages pull real channel data such as avatar, subscriber count, and latest video to make the scare notice look personal and legitimate. Victims are pressured to sign in with Google within three days, and a Browser-in-the-Browser overlay then captures their credentials. Channels with more than three million subscribers are skipped, likely to avoid attention from larger security teams. Defenders should remember that copyright strikes appear only in YouTube Studio, and should go directly to studio.youtube.com rather than signing in through any link.",
+      "completeness": "Low",
+      "threats": [
+        "Bitm_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Nigerian",
+        "Russian"
+      ],
+      "software": [
+        "Gmail",
+        "Telegram",
+        "Chrome",
+        "Google Chrome"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/04/fake-youtube-copyright-notices-can-steal-your-google-login"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "APT35 Preset Scouting with Cyber-Kinetic Linkage for 'Epic Rage' Actions",
+      "summary": "APT35 (Charming Kitten), an Iranian state-linked group, had its internal archives released in four batches on GitHub in 2025 by an anonymous persona called KittenBusters, and analysts widely judged the leak among the most thorough public exposures of Iranian state hackers. The leaked Bitcoin ledger reportedly links the Moses-Staff and Al-Qassam Cyber Fighters personas to the same APT35 budget, a finding the report describes as previously unrecorded. In February 2026, US and Israeli strikes on Iran were followed by Iranian missile and drone retaliation against seven countries. The report assesses, with medium-to-high confidence, that APT35 reconnaissance served as battlefield intelligence preparation, though an alternative explanation of parallel priorities remains possible. The release of BellaCiao source code gives defenders a rare window for detection, and the report notes reduced CISA staffing during this period. Activity of the APT35 webshell was not independently confirmed at publication.",
+      "completeness": "Medium",
+      "threats": [
+        "Bellaciao",
+        "Supply_chain_technique",
+        "Disttrack",
+        "Plink_tool",
+        "Putty_tool",
+        "Saghebrat",
+        "Rat-2ac2",
+        "Nmap_tool"
+      ],
+      "geo": [
+        "Jordan",
+        "Tehran",
+        "Israel",
+        "Kuwait",
+        "Qatar",
+        "Italian",
+        "Saudi arabia",
+        "Middle east",
+        "Cyprus",
+        "Saudi",
+        "Riyadh",
+        "Bahrain",
+        "Turkish",
+        "Israeli",
+        "Syrian",
+        "Iran",
+        "Iranian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Service",
+        "WeChat"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.ctfiot.com/305323.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-15",
+      "title": "The n8n n8mare: How threat actors are misusing AI workflow automation",
+      "summary": "Cisco Talos observed threat actors abusing n8n, a legitimate AI workflow automation platform, in phishing emails from October 2025 through March 2026. Attackers embed n8n-hosted webhook URLs in emails, which makes malicious content appear to come from a trusted domain and helps bypass traditional security filters. In one campaign, a fake shared OneDrive folder led to a CAPTCHA-protected page that delivered an executable installing a modified Datto RMM tool. A second campaign delivered a modified MSI file with the ITarian Endpoint RMM tool as a backdoor. Attackers also use tracking pixels pointing to n8n webhooks to fingerprint devices and confirm email opens. Talos advises behavioral detection and alerts on unauthorized endpoint communication with AI automation platforms rather than blocking entire domains.",
+      "completeness": "Low",
+      "threats": [
+        "Centrastage_tool",
+        "Armadillo_tool",
+        "Itarian_tool"
+      ],
+      "geo": [
+        "Spanish"
+      ],
+      "software": [
+        "Slack",
+        "Gmail",
+        "OpenAI",
+        "GPT-4",
+        "Anthropic",
+        "Claude",
+        "Microsoft OneDrive",
+        "Windows Installer",
+        "Outlook"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/the-n8n-n8mare/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2026/04"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1044 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "The Linux version of Noodle RAT executed by a FUD loader",
+      "summary": "The Linux version of Noodle RAT, a backdoor used by several Chinese-speaking threat actor groups for espionage and financially motivated attacks, was observed by IIJ after samples were uploaded to VirusTotal. The loader reads its encrypted payload from its own file, decrypts it with ChaCha20, and runs it from an anonymous memfd or, as a fallback, from a temporary file. The loader and the RAT can both disguise their process names. The RAT's configuration is RC4-encrypted, but the developer changed the key and left the old key in the decryption routine, so that process-name decryption fails. The uploaded samples use loopback and example C2 addresses, which suggests they were used to test detection evasion rather than in real attacks. Even so, the report says development continues and defenders should keep watching for this loader and RAT.",
+      "completeness": "Low",
+      "threats": [
+        "Nood_rat",
+        "Fud-loader"
+      ],
+      "geo": [
+        "Japanese"
+      ],
+      "software": [
+        "Linux",
+        "Twitter"
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256",
+        "rc4"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/10/linux-noodlerat-executed-by-fud-loader/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Amazon-Themed ClickFix Campaign Serves Up Finger-Licking Malware",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Lolbin_technique",
+        "Lumma_stealer",
+        "Netsupportmanager_rat",
+        "Metasploit_tool",
+        "Meterpreter_tool",
+        "Cmder",
+        "Process_hollowing_technique",
+        "Macc_stealer",
+        "Nodestealer"
+      ],
+      "software": [
+        "ChatGPT",
+        "macOS",
+        "Unix",
+        "curl",
+        "Node.js",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "LastPass",
+        "Dashlane",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "atomicwallet"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "base64",
+        "xor",
+        "sha256",
+        "zip",
+        "rc4"
+      ],
+      "languages": [
+        "python",
+        "ironpython",
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/amazon-clickfix-finger",
+        "https://github.com/Veil-Framework/Veil",
+        "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-10/20261021\\_IoC\\_finger-lickin-bad.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Stray Cat, Open Doors: How k0t Wanders Through the Network Edge",
+      "summary": "Group-IB and NyxLab investigated a campaign by the threat actor k0t that exploits network edge devices such as FortiGate, FortiWeb and Palo Alto GlobalProtect to gain initial access. The operators enumerate exposed appliances using attack-surface search engines, then exploit CVE-2025-64446 on FortiWeb, brute-force FortiGate logins, or abuse CVE-2026-0257 on GlobalProtect. After access, they decrypt downloaded configuration files, use tools such as NetExec, Impacket and Mimikatz for domain escalation, and maintain persistence through MeshCentral, AdaptixC2 and RMM software. Victims were global and wide-ranging, and several were later listed by the Qilin and The Gentlemen ransomware groups, though the relationship between k0t and these groups remains unconfirmed. Defenders should patch and restrict edge devices, enable private-data-encryption on FortiGate, and rotate credentials stored on affected appliances.",
+      "completeness": "High",
+      "threats": [
+        "Qilin_ransomware",
+        "Openconnect_tool",
+        "Adaptixc2_tool",
+        "Credential_harvesting_technique",
+        "Meshagent_tool",
+        "Meshcentral_tool",
+        "Atera_tool",
+        "Netexec_tool",
+        "Impacket_tool",
+        "Secretsdump_tool",
+        "Nopac_tool",
+        "Kerbrute_tool",
+        "Password_spray_technique",
+        "Petitpotam_tool",
+        "Mimikatz_tool",
+        "Teramind_tool",
+        "Anydesk_tool",
+        "Ngrok_tool",
+        "Rclone_tool",
+        "Credential_dumping_technique",
+        "Atexec_tool",
+        "Smbexec_tool",
+        "Nezha_tool"
+      ],
+      "geo": [
+        "Asia pacific",
+        "Canada",
+        "America",
+        "Asia-pacific",
+        "Latin america",
+        "Apac",
+        "United states"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 32,
+      "software": [
+        "FortiGate",
+        "GlobalProtect",
+        "ZoomEye",
+        "SonicWall",
+        "PAN-OS",
+        "-OS Glob",
+        "balProtect Scan",
+        "NIX ti",
+        "sudo",
+        "OpenSSL",
+        "have more..."
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "GetUserSPNs"
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "php"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/stray-cat-network-edge/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "“Next Exploit Opportunities”: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities",
+      "summary": "A threat actor operating under the handle BUGSTER used the Hermes Agent framework with DeepSeek V4 and the Cursor IDE, with safety controls disabled, to plan and carry out multiple cybercrime activities. Targets were primarily in India, including universities, where the actor ran an AI-generated WordPress brute-force campaign and exfiltrated a database of more than 5,200 records containing student and faculty PII. The actor also developed VoIP fraud planning through AI advisor bot profiles, along with Wi-Fi password cracking that requires physical proximity to targets, and cryptocurrency whale reconnaissance. Unit 42 assesses that the actor's limited skills were offset by AI assistance, and that multiple unrelated actors are adopting the same Hermes and DeepSeek combination. The report attributes the trend to low safety friction, since DeepSeek models are inexpensive, easy to access, and readily jailbroken.",
+      "completeness": "Medium",
+      "threats": [
+        "Hermes",
+        "Ncat_tool"
+      ],
+      "geo": [
+        "Indian",
+        "India"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "DeepSeek",
+        "WordPress",
+        "Cloudflare",
+        "Windows shell",
+        "Linux",
+        "Discord",
+        "Claude",
+        "GPT-5",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64",
+        "exhibit"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "golang",
+        "vbscript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Behind the Panels: Validating ShinyHunters Cluster A Infrastructure Through Network Telemetry",
+      "summary": "Team Cymru validated active infrastructure consistent with Push Security's Cluster A phishing panel reporting, which is linked to ShinyHunters and BlackFile activity. The Cluster A panels are hosted on Mevspace AS201814 and combine voice phishing with adversary-in-the-middle credential capture against identity providers and cryptocurrency platforms. Passive DNS filtering on two Mevspace IPs surfaced more than 40 victim-themed domains targeting sectors including higher education, financial services, retail, and cryptocurrency. The report also found a Doko-branded hosting artifact, dokopanel.com, colocated with Cluster A infrastructure, though it does not prove control by a specific individual. Cymru stresses that this validates infrastructure patterns but does not independently attribute the activity to ShinyHunters, and defenders should monitor AS201814 and the associated registrar and nameserver patterns for new deployments.",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Apac",
+        "Indonesian",
+        "Australian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "SharePoint",
+        "Slack",
+        "DocuSign",
+        "Cloudflare",
+        "Telegram",
+        "Okta",
+        "Microsoft Entra",
+        "Dropbox",
+        "Cloudflare Turnstile",
+        "have more..."
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.team-cymru.com/post/validating-shinyhunters-cyber-threat-actors-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+      "summary": "Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks against hundreds of organizations across many industries. Several attacks gave the actor privileged access to cloud infrastructure, in some cases within 3 hours of initial targeting. Microsoft assesses that Storm-0940 was responsible for the ConnectWise supply chain compromise of a multi-tenant application, which the actor used to authenticate to customer Microsoft 365 environments without interactive sign-in. Follow-on activity through Microsoft Graph included reconnaissance, application credential changes, and privilege modifications. Defenders should review service principal sign-ins, audit application credential and privilege changes, keep affected ConnectWise connections disabled, and preserve evidence before removing access.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Artex_tool",
+        "Screenconnect_tool",
+        "Password_spray_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 2,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Entra",
+        "Microsoft 365",
+        "Graph API",
+        "SharePoint",
+        "raph API ac"
+      ],
+      "functions": [
+        "Graph"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Operation FlashHole: Lazarus breaks security, defies control",
+      "summary": "Lazarus Group ran Operation FlashHole, a South Korean campaign that abused the mandatory security software CrossWeb EX as an entry point, with earliest evidence dating to July 2025. Targets received spear-phishing emails linking to fabricated résumé and portfolio pages, likely AI-generated, that used a watering-hole style approach. The infection chain used a multi-stage modular framework of TechHub, Cubridge, TouchShift, ClientHub and LPEClient, much of which lived only in memory. GitHub repositories served as C2 infrastructure, and the group added post-quantum ML-KEM key exchange to conceal payloads. At least three victims in software, construction and wired communication equipment were identified, and the software sector was also targeted in SyncHole. Researchers assess the actor as the same group behind SyncHole, with an espionage focus.",
+      "completeness": "High",
+      "threats": [
+        "Watering_hole_technique",
+        "Spear-phishing_technique",
+        "Racket_loader",
+        "Dll_sideloading_technique",
+        "Touchhub",
+        "Touchshift",
+        "Lpeclient",
+        "Cubridge",
+        "Cloudburst",
+        "Nickelloader",
+        "Sideshow",
+        "Lightlesscan",
+        "Dll_injection_technique",
+        "Reflective_dll_injection_technique",
+        "Fudmodule_rootkit",
+        "Cookieplus",
+        "Mistpen",
+        "Signbt",
+        "Threatneedle",
+        "Copperhedge",
+        "Gunra",
+        "Foresttiger",
+        "Dll_hijacking_technique",
+        "Trojan.win64.shellcode.gen"
+      ],
+      "geo": [
+        "South korea",
+        "South korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ws service",
+        "Chromium",
+        "Active Directory",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Edge",
+        "Dropbox",
+        "indows security mi",
+        "liblzma"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "cbc",
+        "des",
+        "aes"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/lazarus-operation-flashhole/121541/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "LiteLLM 1.107.0 PyPI Wheel Contains a Credential Stealer and Persistent Python Backdoor",
+      "summary": "The LiteLLM 1.107.0 macOS x86-64 wheel on PyPI was found to contain a credential stealer and persistent Python backdoor, with files that execute automatically whenever the Python interpreter starts. The payload collects a wide range of secrets, including browser passwords, SSH and cloud credentials, CI/CD tokens, and LiteLLM's own upstream provider keys, then encrypts and uploads them over plain HTTP to www.litellm.dev. A separate loader polls a GitHub-hosted domain file hourly and executes remotely served Python, though that second stage was not retrieved. Defenders should treat any system where Python ran after installing this wheel as potentially compromised, remove the injected files from site-packages, and rotate all readable secrets from a clean system.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Rclone_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "macOS",
+        "Trivy",
+        "Chrome",
+        "Chromium",
+        "Opera",
+        "Firefox",
+        "Linux",
+        "Kubernetes",
+        "Docker",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "aes-256-cbc",
+        "aes",
+        "gzip"
+      ],
+      "functions": [
+        "exec",
+        "setsid"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/litellm-1-107-0-pypi-wheel-contains-a-credential-stealer-and-persistent-python-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "summary": "LiteLLM release 1.107.0 on PyPI was compromised and installed a credential stealer and a remote code execution backdoor through three files in site-packages. The malicious code ran in every Python process on an infected host, even those that never imported litellm, and the upstream GitHub source did not contain it. The stealer, cook.py, harvested SSH keys, cloud and CI/CD credentials, browser passwords, AI tool tokens, and LLM provider keys from a LiteLLM proxy database, then encrypted and uploaded them to www.litellm[.]dev. The attacker used stolen GitHub CLI credentials of three developers, bypassed branch protection, and had the official pipeline build and publish the artifacts. PyPI removed the release by 13:23 UTC on 2026-10-21, and the affected Docker images were also replaced with clean ones.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "Linux",
+        "macOS",
+        "Chromium",
+        "Firefox",
+        "Kubernetes",
+        "Jenkins",
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "rsa-4096",
+        "zip",
+        "aes-256-cbc",
+        "sha256"
+      ],
+      "functions": [
+        "fork",
+        "setsid",
+        "exec"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor",
+        "https://github.com/BerriAI/litellm/commit/a8113b0dd721804c752a6f1952367fb642205224",
+        "https://github.com/BerriAI/litellm",
+        "https://github.com/BerriAI/litellm/commit/66c8f5b1a9cefaa7c55b758f86f4ab552f2e859e"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Inside CARLIY0S: How CyberCartel Used Multiple AI Models to Attack 400+ Latin American Banks and Financial Institutions",
+      "summary": "CyberCartel, operating as Tr4nsHack Team under the front company Hexagon Security Labs Mexico, used CARLIY0S, a multi-agent system built on the PentAGI framework, to coordinate attacks on Latin American banks and payment providers. The group assigned roles to commercial AI models, with Claude-based agents debating each target before a single arbiter returned a decision. Its stolen-credential database held 4,493 records, including payment-system, API, and database secrets, plus backdoors. The system used jailbreak-style contextual framing to bypass model safety guardrails and fell back to local hardcoded code when models refused. Defenders should invest in identity controls, API security, AI agent testing, and runtime detection and containment.",
+      "completeness": "Medium",
+      "threats": [
+        "Carliy0s_tool",
+        "Pentagi_tool",
+        "Residential_proxy_technique",
+        "Ghost",
+        "Nuclei_tool",
+        "Sqlmap_tool",
+        "Hashcat_tool",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "Latin american",
+        "Latin america",
+        "Mexico",
+        "Mexican"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Ubuntu",
+        "rsync",
+        "Anthropic",
+        "Fable 5",
+        "Chromium",
+        "Burp Suite",
+        "Opus 5",
+        "ChatGPT",
+        "Claude Code",
+        "have more..."
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "groovy",
+        "powershell"
+      ],
+      "links": [
+        "https://www.straiker.ai/blog/inside-carliy0s-how-cybercartel-used-multiple-ai-models-to-attack-latin-american-banks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Recent AI-Assisted Cyber Attacks in Japan: Investigating Attack Infrastructure and Techniques",
+      "summary": "JPCERT/CC reported a series of unauthorized access incidents in Japan involving leaked personal information, in which attackers used AI to scan for known vulnerabilities and attack APIs. Investigators found attackers reverse engineering Android APK files to identify APIs and then testing them for flaws such as server-side request forgery. Tools such as Blutter and jadx were found on attack servers, used to analyze Flutter and Android applications. Other servers held web shells and evasion tools for EDR, suggesting attempts to reach internal networks. Targets included Japanese organizations and web services aimed at users abroad. Defenders should avoid embedding secrets in apps, enforce server-side authorization, rate-limit APIs, and restrict SSRF.",
+      "completeness": "Low",
+      "threats": [
+        "Blutter_tool"
+      ],
+      "geo": [
+        "Japan",
+        "Japanese"
+      ],
+      "software": [
+        "Android",
+        "Flutter",
+        "MySQL",
+        "Jenkins"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/en/2026/10/web_api_attacks.html",
+        "https://github.com/worawit/blutter"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Athena StealthRoute: A Phishing Marketplace with Cloaking and AI Tools",
+      "summary": "Athena StealthRoute is a modular phishing-as-a-service platform that prepares, delivers, and conceals phishing attacks but relies on separate downstream services for credential and token harvesting. Abnormal AI observed roughly 89,700 attack-flagged messages matching its link pattern across about 2,280 organizations in the US and EU over six months ending October 9, 2026. Its marketplace sells domains, phishing landing pages, and lure emails, while its cloaking gate diverts scanners to 404 pages or unrelated legitimate sites. The October 2026 operator console revealed AI Studio, which generates phishing lures, attachments, and benign decoy content. Its disabled VLA machine learning bot-detection feature suggests use of AI for defensive purposes too. Defenders should note that link inspection and individual lure wording are unreliable signals, so shared backend infrastructure and link structures are better pivots.",
+      "completeness": "Low",
+      "threats": [
+        "Cloaking_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SendGrid",
+        "Telegram"
+      ],
+      "links": [
+        "https://abnormal.ai/blog/athena-stealthroute-phishing-marketplace-cloaking-ai"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "LiteLLM compromised again: infostealer and RAT found in version 1.107.0",
+      "summary": "The LiteLLM 1.107.0 release on PyPI and its Docker and GHCR images were compromised with malicious code injected through a pyproject.toml build directive that bundled files absent from the source repository. The package carried an infostealer that harvests credentials and secrets on first run, including browser passwords, SSH keys, cloud and CI/CD credentials, and the LiteLLM database's stored provider API keys. It also installed a remote access trojan that polls attacker infrastructure hourly and executes any Python code served to it. Developers and organizations that installed or pulled the affected version during the October 21, 2026 window should treat their credentials as compromised and rotate them. The malicious version has since been removed from PyPI and Docker registries.",
+      "completeness": "Low",
+      "threats": [
+        "Dead_drop_technique"
+      ],
+      "software": [
+        "LiteLLM",
+        "Docker",
+        "Chrome",
+        "Vivaldi",
+        "Opera",
+        "Firefox",
+        "Docker Swarm",
+        "Kubernetes",
+        "Jenkins",
+        "HashiCorp Vault",
+        "have more..."
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/litellm-compromised-infostealer-rat",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "The Science of Exploitability: Decoding BlueHammer",
+      "summary": "BlueHammer (CVE-2026-33825) is an eight-stage local privilege-escalation chain targeting Windows Defender Antimalware Platform versions earlier than 4.18.26030.3011. It does not provide initial access, so an attacker needs standard-user code execution first. The chain combines legitimate Windows mechanisms, including CloudFilter callbacks, batch oplocks, object-manager symlinks, Defender's update RPC interface, and SAMR, rather than relying on memory corruption. In the researchers' lab, it produced a SYSTEM shell, recovered domain-admin credentials from LSASS, and used pass-the-hash to reach a domain controller. Affected versions are not necessarily exploitable, because runtime conditions such as a pending signature update and filter driver state determine whether the path works on a given host. Defenders should update Defender, restrict privileged domain logons, and correlate behavioral signals such as CloudFilter registrations, RPC connections, and password changes.",
+      "completeness": "Medium",
+      "threats": [
+        "Bluehammer_tool",
+        "Passthehash_technique",
+        "Shadow_copies_delete_technique",
+        "Mimikatz_tool",
+        "Credential_dumping_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 8,
+      "software": [
+        "Windows Defender",
+        "Microsoft Windows Defender",
+        "Windows CryptoAPI",
+        "PsExec",
+        "Windows Service",
+        "Windows Update service",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256",
+        "des",
+        "aes-cbc",
+        "aes"
+      ],
+      "functions": [
+        "GetCabFileFromBuff",
+        "CreateFileTransacted",
+        "GetLSASecretKey",
+        "ChangeUserPassword",
+        "SamiChangePasswordUser",
+        "SetPrivilege",
+        "CreateProcessAsUser"
+      ],
+      "links": [
+        "https://blog.qualys.com/product-tech/2026/10/21/bluehammer-cve-2026-33825-windows-defender-privilege-escalation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Inside a Global AI-Assisted Hacking Campaign",
+      "summary": "Zscaler ThreatLabz analyzed an AI-assisted hacking campaign that combined a customized ARTEX penetration testing framework with AI coding assistants and custom synchronization scripts. The operator divided investigation work among models such as DeepSeek, GLM, and Grok, with GLM reviewing DeepSeek's findings, and preserved project context across sessions using saved project files and hook scripts. Targets spanned many sectors, including dating services, SMS providers, retail, cryptocurrency platforms, and legal claims systems, across dozens of countries. Prompt histories emphasized harvesting personal data, phone numbers, and transaction records, and asking where to sell stolen data, indicating a likely financial motive. The report attributes the operator to a Chinese-speaking actor, though the underlying models behind some sessions could not be verified. Defenders are advised to adopt Zero Trust architecture that minimizes internet exposure and enforces least-privilege access.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool",
+        "Nmap_tool",
+        "Sqlmap_tool",
+        "Nuclei_tool"
+      ],
+      "geo": [
+        "United arab emirates",
+        "South africa",
+        "Vietnam",
+        "Nigeria",
+        "Taiwan",
+        "South korea",
+        "United states",
+        "United kingdom",
+        "Japan",
+        "Kenya",
+        "Chinese",
+        "Thailand",
+        "India",
+        "Malaysia",
+        "Kazakhstan",
+        "Korean",
+        "Hong kong",
+        "Arab emirates",
+        "Canada",
+        "Indonesia",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "DeepSeek",
+        "rsync",
+        "Android",
+        "apktool",
+        "Docker",
+        "PostgreSQL",
+        "openai",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/inside-global-ai-assisted-hacking-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "The Gentlemen: A closer look at a not-so-gentle ransomware-as-a- service operation",
+      "summary": "The Gentlemen is a Russian-speaking ransomware-as-a-service group that emerged in mid-2025 after operating as an affiliate of LockBit and Qilin, offering affiliates up to 90% of ransom revenue. Its Go-based ransomware targets Windows, Linux, NAS and BSD systems and uses double extortion, encrypting files and stealing data. The group has claimed more than 800 victims, mostly in the United States and Europe, across sectors such as manufacturing, technology and health care, while avoiding the CIS region. Before encrypting, the malware disables Windows Defender, clears event logs and shadow copies, and terminates backup, database and EDR processes. A newer EDR killer abuses vulnerable Safetica and Lenovo drivers to kill security tools. Defenders should prioritize EDR coverage, driver and patch management, restricted PowerShell and remote tool use, and isolated backups.",
+      "completeness": "High",
+      "threats": [
+        "Lockbit",
+        "Qilin_ransomware",
+        "Gentlemen_ransomware",
+        "Wevtutil_tool",
+        "Centrastage_tool",
+        "Teamviewer_tool",
+        "Shadow_copies_delete_technique",
+        "Edr-killer"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "Linux",
+        "Windows Defender",
+        "Microsoft Windows Defender",
+        "Windows PowerShell",
+        "DBeaver",
+        "firefox",
+        "onenote",
+        "outlook",
+        "steam",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20",
+        "ecdh",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Get-NetFirewallRule",
+        "Windows"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/the-gentlemen-a-closer-look-at-a-not-so-gentle-ransomware-as-a-service-operation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "LiteLLM PyPI Package and Docker Images Compromised to Steal Cloud and AI Credentials",
+      "summary": "LiteLLM version 1.107.0 on PyPI and its Docker images were compromised with a credential stealer that installs through Python startup hooks (cook.pth and sitecustomize.py), so it runs whenever Python starts in an affected environment, even without importing LiteLLM. The malware collects cloud, developer, AI tool, browser, and database credentials, encrypts them, and uploads them to an exfiltration endpoint. Container provenance recorded a lookalike source repository, Berri-AI/litellm, differing by one hyphen from the legitimate BerriAI/litellm. Defenders should block 1.107.0, pin to a reviewed release such as 1.106.2, isolate affected hosts, and rotate exposed credentials, since removing the package does not undo exposure.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 9,
+      "software": [
+        "LiteLLM",
+        "Docker",
+        "Linux",
+        "macOS",
+        "Kubernetes",
+        "Codex",
+        "Claude",
+        "Hugging Face",
+        "Chromium",
+        "Firefox",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64",
+        "aes-256-cbc",
+        "rsa-4096",
+        "gzip"
+      ],
+      "functions": [
+        "GetCallerIdentity"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/litellm-compromise",
+        "https://github.com/BerriAI/litellm/commit/783c43bc455d2e05d3cfaf194c2f325cfeab1433",
+        "https://github.com/BerriAI/litellm/issues/47826#issuecomment-6316601885",
+        "https://github.com/BerriAI/litellm/commit/20535d8fa11f786a6c24df7488a0e449ed5f09ad"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot",
+      "summary": "Amazon Threat Intelligence observed PHP2Shell exploitation attempts against its MadPot honeypot starting October 17, 2026, four days before public disclosure of CVE-2026-109618 and CVE-2026-109619. The early attempt came from an IP address tied to a commercial anonymization network, suggesting a threat actor, though how it obtained exploit information before disclosure remains unclear. After the embargo lifted on October 21, 2026, multiple proof-of-concept exploits appeared within hours, and additional attempts from varied anonymized infrastructure suggested multiple actors. Defenders should treat the earliest known exploitation, not the disclosure date, as the starting point for investigations and measure patch timelines in hours for critical internet-facing systems. Upgrading PHP is the only complete remediation, and organizations should look for POST requests containing PHP_SESSION_UPLOAD_PROGRESS.",
+      "completeness": "Low",
+      "software": [
+        "PHP2Shell"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "litellm 1.107.0 Compromised on PyPI: Backdoored Wheels Drop a Credential Stealer and an Hourly Remote Code Loader",
+      "summary": "The litellm 1.107.0 release on PyPI, and the official LiteLLM Docker images for the same version, shipped with two injected Python startup files (cook.pth and sitecustomize.py) that run on every interpreter start without any import of litellm. The first payload, a credential stealer called privcollect, collects browser passwords, SSH and cloud keys, CI secrets, AI coding tool configs, and the LiteLLM proxy database's provider API keys, then encrypts and posts them to the lookalike domain litellm.dev. The second payload is a daemon that polls a GitHub dead drop hourly and executes any code served from it. The malicious build came from a lookalike repository after attackers used a leaked, never-revoked master key to obtain a GitHub organization owner's token. Defenders should treat any host that installed the wheel or pulled the image between 11:46 and 14:20 UTC on October 21, 2026 as fully compromised, and rotate all reachable credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique",
+        "Rclone_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "OpenAI",
+        "Anthropic",
+        "macOS",
+        "Linux",
+        "Jupyter",
+        "Debian",
+        "Ubuntu",
+        "Chrome",
+        "Chromium",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "rsa-4096",
+        "base64",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "main",
+        "GetCallerIdentity",
+        "setsid",
+        "exec"
+      ],
+      "languages": [
+        "cpython",
+        "python",
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/litellm-1-107-0-compromised-pypi-backdoored-wheels-credential-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Autonomous LLMjacking: ‘Skynet’ Agent Hijacks Exposed AI Models to Run Attacks",
+      "summary": "Symantec describes an autonomous offensive agent, dubbed \"Skynet,\" that hijacks exposed or unprotected LLM endpoints to plan and run attacks without human approval for up to 100,000 steps. The operators wrapped their requests in a jailbreak that told the model to ignore its safety controls and treat credential theft as routine development work. The agent's toolkit covers internet-wide scanning, exploitation of common web frameworks, database and credential theft, and cloud metadata access. Its final payload silently installs XMRig Monero miners, hides them under a camouflaged name, and erases logs, targeting go2rtc camera gateway servers. The model owner pays for the compute, while compromised servers are used for mining. Defenders should treat any unauthenticated AI endpoint as a target and secure AI keys, outbound traffic, and agent permissions.",
+      "completeness": "Medium",
+      "threats": [
+        "Llmjacking_technique",
+        "Xmrig_miner"
+      ],
+      "software": [
+        "Werkzeug",
+        "GPT-4o",
+        "Django",
+        "Jupyter",
+        "Laravel",
+        "Supabase",
+        "Nginx",
+        "WebRTC",
+        "Linux"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/ai-llmjacking-skynet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "ThreatLocker MDR team intercepts Chimera C2 ClickFix attack",
+      "summary": "ThreatLocker MDR intercepted a ClickFix attack on September 28, 2026 that tricked a victim into pasting malicious PowerShell, which downloaded and ran the ChimeraC2 command-and-control framework. The payloads were hosted in GitHub repositories, with backup download locations used if the primary failed. ChimeraC2 supports hands-on-keyboard control, including a TCP relay that lets operators reach internal services through the victim's network identity, plus file transfer, command execution, and .NET plugin loading. Its panel also includes crypto wallet discovery, credential and cookie theft tools, scheduled task and WMI persistence, and a destructive system-wipe feature. ThreatLocker assessed that Russian-speaking actors are behind the panel, and it could not link the campaign to the previously documented Chimera group. The report's takeaway is that AI-assisted tooling is lowering barriers for capable C2 frameworks, so defenders should not dismiss this threat.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Chimerac2",
+        "Cookie_stealer",
+        "Winrm_tool",
+        "Clipboard_hijacking_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "bcdedit",
+        "Google Chrome",
+        "Chrome",
+        "Microsoft Edge",
+        "BraveSoftware",
+        "Brave-Browser",
+        "opera",
+        "chromium",
+        "vivaldi",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "RunLoop",
+        "Main",
+        "Connect",
+        "WsClient",
+        "Register",
+        "Remove-Item",
+        "Write-Output",
+        "Get-ChildItem"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/threatlocker-mdr-team-intercepts-chimera-c2-clickfix-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "Proof-of-concept exploit released for PHP vulnerabilities (CVE-2026-109618, CVE-2026-109619)",
+      "completeness": "Medium",
+      "threats": [
+        "Mirai",
+        "Potassium",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "PHP2Shell",
+        "Linux"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/proof-of-concept-exploit-released-for-php-vulnerabilities-109618-109619"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "LiteLLM 1.107.0 Compromised: Python Startup Hooks Steal Cloud, AI, and Proxy Credentials",
+      "summary": "The LiteLLM 1.107.0 release on PyPI, published October 21, 2026, contained a credential stealer and a remote code loader added through a one-line packaging change in pyproject.toml, while the application code was unmodified. The three injected files in the Python site-packages directory run on every interpreter startup, even if the application never uses LiteLLM. The collector gathers cloud, AI, and proxy credentials, including provider API keys from LiteLLM's proxy database tables, and exfiltrates them encrypted to a lookalike domain. A separate loader fetches and executes remote code hourly without signature verification. Defenders should avoid launching Python in affected environments, isolate hosts, rotate exposed credentials, and pin to version 1.106.2 or verified digests. The attack also shows that reviewing a source tag can miss changes if the build ran from a different revision.",
+      "completeness": "Low",
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "macOS",
+        "docker",
+        "Chromium",
+        "Firefox",
+        "Kubernetes",
+        "Linux",
+        "Claude",
+        "Codex"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "aes-256-cbc",
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://www.endorlabs.com/learn/litellm-1-107-0-compromised-python-startup-hooks-steal-cloud-ai-and-proxy-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-21",
+      "title": "uCreator: virtualization-based Android spyware platform targeting WeChat, Telegram and other messaging apps",
+      "summary": "uCreator is a commercial, rentable Android surveillance platform that uses VirtualApp, LSPatch and Pine to instrument legitimate messaging and wallet apps from inside their processes. It targets users of applications such as Telegram, WeChat, WeCom, WhatsApp and GCash, with capabilities including OTP interception, data extraction via live app databases, and Telegram two-step-verification password capture. Each hooked app exposes a local HTTP command server, and hook modules are fetched after installation from Alibaba OSS and MinIO, which complicates static analysis of the installer. A leaked GitLab instance exposed the backend, revealing a multi-tenant cloud console for resellers and a fleet-scale account-cultivation scheduler. The report says victim counts remain unknown and attribution to three Changsha and Hunan companies is unproven, and it treats the operation as likely financially motivated crimeware.",
+      "completeness": "Medium",
+      "threats": [
+        "Ucreator_tool",
+        "Lspatch_tool",
+        "Onion_box",
+        "Godfather"
+      ],
+      "geo": [
+        "Asian",
+        "Philippines",
+        "Chinese",
+        "Thailand",
+        "China",
+        "Asia",
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "WeChat",
+        "Telegram",
+        "Redis",
+        "WhatsApp",
+        "KakaoTalk",
+        "Viber",
+        "MinIO",
+        "elegram.*",
+        "RocketMQ",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "getDesc",
+        "getParam",
+        "SetTheme",
+        "SetAppIcon",
+        "isParamLegal",
+        "Telegram"
+      ],
+      "links": [
+        "https://www.0x0v1.com/ucreator-virtualization-based-android-spyware-platform-targeting-wechat-telegram-and-other-messaging-apps/"
+      ]
+    }
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "The Stealer Factory: Unpacking a Python-Based MaaS Infostealer Builder",
+      "completeness": "Medium",
+      "threats": [
+        "Tokengrabber",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Nuitka",
+        "PyInstaller",
+        "Windows Registry",
+        "VirtualBox",
+        "Xen",
+        "QEMU",
+        "Chrome",
+        "Mozilla Firefox",
+        "Firefox",
+        "Discord",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "aes-256-gcm",
+        "xor",
+        "aes-gcm",
+        "aes"
+      ],
+      "functions": [
+        "_x",
+        "_debug_check"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/the-stealer-factory-unpacking-a-python-based-maas-infostealer-builder/",
+        "https://github.com/extremecoders-re/pyinstxtractor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
+      "summary": "Mandiant and GTIG report renewed mass exploitation of Oracle PeopleSoft vulnerability CVE-2026-35273 by UNC6240 (ShinyHunters), following its earlier zero-day campaign against mainly academic institutions. The actor modified its exploit to bypass WAF rules by URL-encoding a character in the /PSEMHUB/ path, which many filters fail to match before decoding. Exploitation abuses Java deserialization to deploy JSP web shells or run commands without writing files. Targets now span higher education, technology, healthcare, government, and other sectors across the globe. Defenders should patch, disable EMHub, and block the normalized path rather than relying on WAF string matching alone.",
+      "completeness": "Medium",
+      "threats": [
+        "Meshcentral_tool",
+        "Sideeye",
+        "Vmprotect_tool",
+        "Neo-regeorg_tool",
+        "Meshagent_tool"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 11,
+      "software": [
+        "WebLogic",
+        "Linux",
+        "microsoft-entra",
+        "curl",
+        "rsync",
+        "sshpass",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "Kothamine malware uses Tailscale’s tailcat to evade network detection",
+      "summary": "Kothamine Agent is an undocumented Windows remote-access Trojan that supports more than 30 commands, letting attackers run commands, manage files, load additional DLLs, and in some builds steal browser data and record via camera and microphone. It has been linked to malicious npm packages, putting users and developers who install them at risk. Recent versions use tailcat, an open-source Tailscale tool, to receive commands over an encrypted channel, which makes traffic harder to inspect and leaves defenders no conventional C2 domain to block. Earlier builds used the Tailscale VPN instead, and some versions bypass UAC and add Windows Defender exclusions. Researchers advise checking an npm package's name, publisher, reviews, and popularity before installing it.",
+      "completeness": "High",
+      "threats": [
+        "Kothamine_agent",
+        "Tailscale_tool",
+        "Tailcat",
+        "Uac_bypass_technique",
+        "Kothamine_injector"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "WireGuard",
+        "Steam",
+        "Minecraft"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "base64",
+        "xor",
+        "aes-gcm"
+      ],
+      "functions": [
+        "_popen",
+        "GetTempPath",
+        "GetFeatureApi"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/09/kothamine-malware-uses-tailscales-tailcat-to-evade-network-detection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "Operation Master: Deconstructing a Multi-Tiered Intrusion and Monetization Pipeline",
+      "summary": "Operation Master is an end-to-end cybercrime operation in which a threat actor breached enterprise networks, stole customer and billing databases, sold them on underground forums, and then reused those assets to run a multi-tenant automated invoice fraud platform. The actor exploited the CVE-2026-0257 GlobalProtect authentication bypass to gain VPN access to seven gateways in four countries, while also running SQL injection attacks, deploying the AdaptixC2 framework, and using an AI-assisted development workflow. Victims were tracked across Brazil and other countries, with data stolen from over 600 companies, mostly in energy and utilities. The fraud platform sent millions of fake utility invoice emails, SMS messages, and WhatsApp messages, using lookalike domains and personalized links that contained victims' real data. Operational security mistakes exposed the infrastructure in mid-September 2026, though the report does not confirm whether the operation ceased. Defenders should prioritize rapid patching of remote-access devices, restrict database command execution, and review OAuth device-code grants.",
+      "completeness": "High",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Adaptixc2_tool",
+        "Rclone_tool",
+        "Masscan_tool",
+        "Wpscan_tool",
+        "Qilin_ransomware",
+        "Sqlmap_tool",
+        "Smuggling_technique",
+        "Password_spray_technique",
+        "Godpotato_tool",
+        "Kerberoasting_technique",
+        "Impacket_tool",
+        "Evil-winrm_tool",
+        "Pwnkit_tool",
+        "Ghostcat",
+        "Ligolo_tool",
+        "Supply_chain_technique",
+        "Dns_tunneling_technique",
+        "Fud-loader",
+        "Process_injection_technique",
+        "Gs-netcat",
+        "Credential_harvesting_technique",
+        "Nuclei_tool",
+        "Hashcat_tool",
+        "Gsocket_tool",
+        "Qtox_tool",
+        "Metasploit_tool",
+        "Spear-phishing_technique",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Mexico",
+        "El salvador",
+        "Netherlands",
+        "United states",
+        "Argentina",
+        "Brazilian",
+        "Brazil",
+        "Guatemala",
+        "Spain",
+        "France",
+        "United kingdom",
+        "Italian",
+        "Norway",
+        "Canada",
+        "Belgium",
+        "Qatar",
+        "Japanese",
+        "Costa rica"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 30,
+      "software": [
+        "GlobalProtect",
+        "Active Directory",
+        "PAN-OS",
+        "SonicWall",
+        "Linux",
+        "Microsoft 365",
+        "WordPress",
+        "curl",
+        "Redis",
+        "PostgreSQL",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-128-cbc",
+        "base64",
+        "aes",
+        "sha256",
+        "xor",
+        "hmac"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "ruby",
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/operation-master-intrusion-monetization-pipeline/",
+        "https://github.com/Adaptix-Framework/AdaptixC2",
+        "https://github.com/rclone/rclone",
+        "https://github.com/robertdavidgraham/masscan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "Threat Actor Profile: Blue Locker Ransomware",
+      "summary": "Blue Locker ransomware was first seen in late 2021 and drew wide attention in August 2025 after attacking Pakistan Petroleum Limited, which encrypted servers, wiped backups, and halted financial operations for two days. It uses double extortion, stealing data before encryption, and it deletes Volume Shadow Copies and stops services to maximize damage. Attribution remains unresolved, with analysts linking it either to the Proton family, which has probable Iranian origins, or to the open-source MemeCryptor project, while Chinese-language strings appear to be false flags. Pakistan's National CERT issued an advisory to 39 government ministries and institutions, and PPL is the only publicly named victim. Negotiation occurs over ProtonMail, Jabber, and Tox rather than a Tor leak site. Defenders should be aware that the .blue extension is shared by several unrelated malware families.",
+      "completeness": "High",
+      "threats": [
+        "Blue_locker",
+        "Proton_ransomware",
+        "Limba",
+        "Zola",
+        "Shinra_ransomware",
+        "Loki_locker",
+        "Blackbit",
+        "Fonix",
+        "Memecryptor",
+        "Conti",
+        "Steganography_technique",
+        "Phobos",
+        "Uac_bypass_technique",
+        "Timestomp_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "China",
+        "Iranian",
+        "Pakistani",
+        "Pakistan",
+        "Asia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 18,
+      "software": [
+        "Chrome",
+        "ProtonMail",
+        "Jabber",
+        "Windows Registry"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "xor",
+        "chacha20",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-blue-locker-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "Threat Actors Use Google Ads To Target Ledger Users",
+      "summary": "Zscaler ThreatLabz observed a phishing campaign in August 2026 that used fraudulent Google ads, run under a verified advertiser profile, to target Ledger hardware wallet users in the United States, Europe, and parts of Asia. The ads redirected victims through Google Cloud Storage and Vercel to a Google Sites page that displayed a phishing page impersonating Ledger in an iframe. A fake device-verification process asked users to enter their secret recovery phrases, which attackers can use to restore wallets and move funds without the physical device. The Vercel redirect domain changed roughly every 15-20 minutes, making reputation-based detection harder. Defenders should note that the attackers kept reusing the same Google Cloud Storage page while updating other parts of the delivery chain.",
+      "completeness": "Low",
+      "geo": [
+        "United states",
+        "Asia",
+        "Indian",
+        "Germany"
+      ],
+      "software": [
+        "Vercel",
+        "macOS",
+        "Linux",
+        "Cloudflare"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/threat-actors-use-google-ads-target-ledger-users"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "Criminals turn placeholder domain into ClickFix trap",
+      "summary": "A placeholder domain, third-party[.]com, which is commonly used in documentation and code examples, is now serving a ClickFix attack against Windows users. Researchers at Manifold Security found the domain displaying a fake Cloudflare-style verification page that asks visitors to paste a copied command into the Windows Run box. The command is designed to download and execute a PowerShell script, though the hosting domain was not resolving at the time of writing. Unlike example.com, which is reserved for documentation, third-party[.]com is an ordinary registrable domain, so anyone could claim it. Defenders should note that software documentation and test material hardcoding this domain may now lead users to attacker infrastructure, and should treat unexpected copied commands as a warning sign.",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Terminalfix_technique"
+      ],
+      "software": [
+        "Cloudflare",
+        "Windows Terminal"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/09/criminals-turn-placeholder-domain-into-clickfix-trap"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-25",
+      "title": "Rise of the Jev-Clones",
+      "summary": "Lookalike websites began selling access to TypeSafe AI's Jev model three days after its 15 September launch, at 3 to 11.5 times the official price while routing traffic through the operators' own servers. The sites run on the same code, and the same operator appears to have launched at least six reskinned storefronts for different trending models within 18 days. Certificate transparency logs show roughly 670 new \"jev\"-named domains in the eight days after launch, about twice the normal background rate. The sites use the brand name and misleading claims, with only small footer disclaimers. Defenders should reach Jev only through typesafe.ai, OpenRouter, Vercel AI Gateway or Cloudflare AI Gateway, not through search results.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Popcorn_time"
+      ],
+      "software": [
+        "Vercel",
+        "Cloudflare",
+        "Kling",
+        "Claude"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://research.eye.security/rise-of-the-jev-clones/"
+      ]
+    }
+  }
+]

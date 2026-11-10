@@ -1,0 +1,398 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "When Three Threats Meet One Inbox Against Japan",
+      "summary": "Three separate threat clusters are active against Japan at the same time: CoGUI, a phishing-as-a-service framework using high-volume email campaigns, Smishing Triad, a Chinese-speaking criminal franchise using SMS and iMessage lures built on the Lighthouse/Darcula kit, and MirrorFace (Earth Kasha), a state-affiliated espionage actor using spearphishing. CoGUI targets brands such as Amazon Japan, Rakuten, and PayPay to steal credentials and payment card data, and it profiles visitors before serving phishing pages. Smishing Triad targets Japan Post, TEPCO, SMBC Card, and E-NEXCO, and its kit reportedly checks domain reputation to rotate infrastructure quickly. MirrorFace uses Japanese-language spearphishing aimed at ministries, defense contractors, and research institutions, and it continued adapting after public attribution. The report concludes that victims may face these campaigns together, even though no coordination is required for this convergence. Defenders should prioritize behavior-based detection and controls that reduce the value of stolen credentials, since domain and IP indicators rotate quickly.",
+      "completeness": "High",
+      "threats": [
+        "Cogui",
+        "Darcula_tool",
+        "Spear-phishing_technique",
+        "Noopdoor",
+        "Supply_chain_technique",
+        "Anel",
+        "Lodeinfo",
+        "Dll_sideloading_technique",
+        "Aitm_technique",
+        "Lighthouse_tool",
+        "Smishing_technique",
+        "Roamingmouse",
+        "Asyncrat"
+      ],
+      "geo": [
+        "China",
+        "Singapore",
+        "Japan",
+        "Tokyo",
+        "Chinese",
+        "Japanese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 3,
+      "software": [
+        "Telegram",
+        "iMessage",
+        "Chrome"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "getState"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/three-threats-one-inbox-japan"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Operation DragonReturn: China-Nexus Cyber Espionage Campaign Targeting Govt. of India/MoF Tax Infrastructure via Multi-Stage DcRAT Deployment",
+      "summary": "Operation DragonReturn is a China-nexus cyber espionage campaign, observed from May 18, 2026, that impersonates India's Income Tax Department to target taxpayers, tax professionals, and corporate finance teams. Attackers use spear phishing emails with a lure link and a ZIP file named to mimic the official ITR offline utility. The chain uses steganographic concealment in background.jpg, a masqueraded Windows service (MixedSvc), process injection into svchost.exe, and fileless .NET execution after an AMSI bypass. Payloads are deployed to C2 infrastructure, and the actor rotates variants every 7-10 days, with the latest reaching a 0/66 VirusTotal detection rate. Attribution to a China-aligned cluster is assessed with medium-to-high confidence.",
+      "completeness": "High",
+      "threats": [
+        "Dcrat",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "India",
+        "Burma",
+        "Asian",
+        "Indian",
+        "China"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 27,
+      "software": [
+        "Windows Service",
+        "Windows Media Player",
+        "Windows Defender",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "injection_initialize",
+        "injection_terminate",
+        "fgetc_nolock",
+        "sub_1800015A0",
+        "sub_180001000",
+        "sub_1400011E0",
+        "CLRCreateInstance"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/operation-dragonreturn-china-nexus-cyber-espionage-campaign-targeting-govt-of-india-mof-tax-infrastructure-via-multi-stage-dcrat-deployment/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Anatomy of a WHQL-Signed Windows Filtering Platform (WFP) Kernel-Resident Network Backdoor",
+      "summary": "wskmon.sys is a 64-bit Windows kernel-mode driver that functions as a full remote access backdoor, with a Shenzhen-based Authenticode signature allowing it to load on systems trusting Microsoft's driver-signing ecosystem. It registers a WFP stream callout that inspects inbound TCP traffic, triggering on a magic value in raw TCP streams or in HTTP POST bodies. Commands are authenticated with HMAC-SHA256 using a hardcoded key and decrypted with a rotating XOR cipher. Supported operations include remote shell execution as SYSTEM through a Session 0 svchost.exe, arbitrary file writes that overwrite protected paths, and shellcode execution. Defenders should watch for unexpected WFP callout registration, svchost.exe spawning unusual children, RWX allocations in SYSTEM processes, and the NTF magic bytes in network traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Process_hacker_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows kernel-mode driver",
+        "Linux"
+      ],
+      "algorithms": [
+        "hmac",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "WorkerRoutine"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.nextron-systems.com/2026/06/26/anatomy-of-a-whql-signed-windows-filtering-platform-wfp-kernel-resident-network-backdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Malware steals Chrome session cookies to take over your accounts",
+      "summary": "A Windows backdoor delivered through a phishing email disguises an obfuscated JavaScript file, named with a .pfd.js extension, as a PDF attachment. The file drops additional components and launches a chain that uses PowerShell to install a Chrome extension by altering Chrome policy settings so it appears to be an administrator-controlled deployment. The extension and its native companion collect browser cookies, open tabs, URLs, language settings, and fingerprinting data. Because stolen authenticated session cookies let attackers hijack logged-in sessions, they can access accounts without passing multi-factor authentication. The attackers abuse Chrome Native Messaging to relay commands from the extension to the host system, enabling PowerShell execution and enumeration of the C: drive. Defenders should verify attachment file extensions, review installed Chrome extensions, and sign out of sensitive accounts and check login histories.",
+      "completeness": "Low",
+      "software": [
+        "Chrome"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/06/malware-steals-chrome-session-cookies-to-take-over-your-accounts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Miasma Mini Shai-Hulud Hits ImmobiliareLabs npm Packages",
+      "summary": "The Miasma Mini Shai-Hulud campaign has expanded to legitimate @immobiliarelabs npm packages, including Backstage GitLab and LDAP authentication plugins, which were maliciously republished on June 26, 2026. The malware uses a hidden root-level index.js loader, triggered through a binding.gyp trick, to steal developer and CI/CD secrets and stage Bun-based payloads without relying on typical install hooks. A possible upstream route is the compromised codfish/semantic-release-action, which was hijacked through repointed tags, though this is not confirmed. A deployment-triggered GitHub Actions workflow named \"Dependabot Updates\" is also linked to the activity. Defenders should treat any environment that installed affected versions as compromised, rotate exposed credentials from a clean machine, pin Actions to commit SHAs, and restrict deployment triggers.",
+      "completeness": "Low",
+      "threats": [
+        "Miasma",
+        "Supply_chain_technique",
+        "Phantom_gyp_technique",
+        "Dead_drop_technique",
+        "Hades"
+      ],
+      "geo": [
+        "Italian",
+        "Italy"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Docker",
+        "Dependabot",
+        "Slack",
+        "claude",
+        "vscode"
+      ],
+      "algorithms": [
+        "aes-128-gcm",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/miasma-mini-shai-hulud-hits-immobiliarelabs-npm-packages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Multiple @immobiliarelabs Backstage Plugins Compromised on npm",
+      "summary": "Malicious versions of four Immobiliare Labs Backstage plugins on npm were published within a 30-second window on June 26, 2026, as new patch releases across every supported major series. The packages include the GitLab and LDAP auth plugins and their backend variants. The payload executes at install time through a binding.gyp node-gyp hook, which evades tools that only monitor package.json postinstall scripts. It is heavily obfuscated and uses Bun rather than Node.js to avoid common security monitoring hooks. It harvests credentials including GitHub and Actions secrets, cloud provider keys, Kubernetes and Vault tokens, and registry tokens, and it attempts persistence in AI coding assistant configuration files. Defenders should note that the report's analysis is ongoing and that the attack resembles the earlier Miasma worm campaign.",
+      "completeness": "Low",
+      "threats": [
+        "Miasma",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Italian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Node.js",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "Bitwarden",
+        "1Password",
+        "Claude",
+        "OpenAI",
+        "curl"
+      ],
+      "algorithms": [
+        "aes-128-gcm",
+        "sha512",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/immobiliarelabs-npm-packages-compromised",
+        "https://github.com/immobiliare/backstage-plugin-gitlab/issues/1052"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "From CI/CD to Cloud Data: How Shai Hulud Persistence Leads to Redshift Breach",
+      "summary": "The Shai Hulud supply chain worm, attributed to TeamPCP, has targeted npm and PyPI packages since late 2025 by injecting malicious packages that harvest build credentials during installs or CI jobs. In this incident, a Jenkins runner showed signs of Shai Hulud-style credential harvesting, and its instance role was then used from external IP addresses. The operator created an IAM user with administrator rights, altered Aurora and Redshift security controls, enumerated and retrieved secrets, and ran high-volume Redshift Data API queries. The activity also included S3 exfiltration policies, exfil-named role sessions, and Amazon SES identity verification staging. The report notes the link between the worm and the cloud compromise is suspected rather than proven. Its main takeaway for defenders is to treat CI/CD runners as tier-0 identities and to alert on external use of instance credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 12,
+      "software": [
+        "Jenkins",
+        "Kubernetes",
+        "curl",
+        "Ubuntu",
+        "PostgreSQL",
+        "Boto3"
+      ],
+      "functions": [
+        "GetClusterCredentials",
+        "GetCallerIdentity",
+        "CreateUser",
+        "CreateAccessKey",
+        "GetSecretValue",
+        "ListSecrets",
+        "GetSendQuota",
+        "GetIdentityVerificationAttributes",
+        "SES"
+      ],
+      "languages": [
+        "python",
+        "cpython"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/from-ci-cd-to-cloud-data-how-shai-hulud-persistence-leads-to-redshift-breach"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Coinbase Cartel: behind the noise of a prolific leak operation",
+      "summary": "Coinbase Cartel is an extortion intrusion set first observed in September 2025 that has claimed close to 143 victims, mainly in the United States and France. The group runs a dark web leak site and uses staged disclosures, releasing limited samples before full publication to pressure victims. It does not encrypt systems, focusing instead on data theft and extortion, and it likely buys valid accesses from initial access brokers. Intrinsec assesses with high confidence that it is a rebrand of the short-lived DataVault operation, and it links the actor \"g77\" to both groups. Defenders should prioritize MFA, credential monitoring, and account hygiene, since the group relies on valid accounts.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Xrdp_tool",
+        "Rdp_recognizer_tool",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Russia",
+        "United arab emirates",
+        "Arab emirates",
+        "United states",
+        "Southkorea",
+        "Peru",
+        "Usa",
+        "France",
+        "Canada"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 13,
+      "software": [
+        "орке бу"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "links": [
+        "https://www.intrinsec.com/wp-content/uploads/2026/06/TLP-CLEAR-20260626-Coinbase-Cartel.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "AsyncRAT Family Threat Overview",
+      "summary": "AsyncRAT is an open-source Windows remote access trojan first published on GitHub in January 2019, and it has been forked into roughly 40 named variants, the most prolific being DCRAT. Censys confirmed live command-and-control infrastructure for more than a dozen variants as of 16 June 2026. Forks tend to inherit DCRAT's certificate structure, which the report describes as the family's central weakness for defenders. Defenders can use the combination of L=SH, C=CN and an O=<Name> By <author> field on non-standard ports as a lineage-wide signal. Deployment is uneven, with a few variants running dozens of hosts and many forks running none that could be confirmed. Name-based hunting works for distinctive variant names but produces false positives for generic ones.",
+      "completeness": "Low",
+      "threats": [
+        "Asyncrat",
+        "Dcrat",
+        "Venomrat",
+        "Quasar_rat",
+        "Trurat",
+        "Lmteamrat",
+        "Dumpling_rat",
+        "Echorat",
+        "Gh0st_rat",
+        "Bitrat",
+        "Cyberspike",
+        "Darkrat_rat",
+        "Shashenrat",
+        "Elegyrat",
+        "Jasonrat",
+        "Cyb3r_rat",
+        "Noneuclid_rat",
+        "Archosaurrat",
+        "Santarat",
+        "Phoenixrat",
+        "Pegasusrat",
+        "Magnumrat"
+      ],
+      "geo": [
+        "Chinese",
+        "Holland"
+      ],
+      "software": [
+        "Windows remote access",
+        "Outlook"
+      ],
+      "links": [
+        "https://censys.com/blog/asyncrat-family-threat-overview/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Understanding Langflow CVE-2026-55255, and why higher CVSS vulnerabilities aren't always the most exploited",
+      "summary": "Sysdig Threat Research Team observed the first known active exploitation of CVE-2026-55255, a CVSS 9.9 cross-tenant IDOR in Langflow, an open-source framework for building AI agents and RAG pipelines. A single operator used it alongside CVE-2026-33017, a CVSS 9.3 unauthenticated RCE that is in CISA KEV and has been exploited thousands of times. The operator enumerated flow IDs through the /api/v1/flows/ endpoint and replayed them against the IDOR to attempt credential extraction with a \"leak api keys\" prompt. The main RCE activity loaded a second-stage downloader on the host, and the operator appears financially motivated and scripted rather than LLM-driven. The report's takeaway is that CVSS score does not equal exploitation likelihood, so the unauthenticated RCE should be prioritized for patching, while the IDOR matters most in managed or multi-tenant Langflow deployments.",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Langflow",
+        "curl"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://webflow.sysdig.com/blog/understanding-langflow-cve-2026-55255-and-why-higher-cvss-vulnerabilities-arent-always-the-most-exploited",
+        "https://github.com/langflow-ai/langflow"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-26",
+      "title": "Beyond Banking Trojans: Rokarolla Expands the Android Fraud Playbook",
+      "summary": "Rokarolla is a newly discovered Android banking trojan distributed through malicious websites that impersonate trusted applications such as TikTok, Google Chrome, and Google Play Protect. It targets at least 217 banking and cryptocurrency applications, using Accessibility Services, phishing overlays, and device unlock credential harvesting to steal login data. The malware intercepts SMS messages and calls, logs keystrokes, takes screenshots, and can manipulate the clipboard to replace cryptocurrency wallet addresses. It uses multiple fallback C2 domains, remote configuration, and at least 137 operator commands to maintain control. Defenders should prioritize detecting unauthorized Accessibility Service usage, suspicious overlays, and SMS or call handler changes.",
+      "completeness": "Low",
+      "threats": [
+        "Rokarolla",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "TikTok",
+        "Google Chrome",
+        "Google Play"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/beyond-banking-trojans-rokarolla-expands-the-android-fraud-playbook"
+      ]
+    }
+  }
+]

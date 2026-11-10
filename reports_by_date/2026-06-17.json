@@ -1,0 +1,1030 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "140+ Mastra npm Packages Compromised in Coordinated Supply Chain Attack",
+      "summary": "More than 140 @mastra/* npm packages were compromised on 2026-06-17 by a single account that published malicious versions in a short window. The packages themselves contain unmodified code; the attack injects a typosquatted dependency, easy-day-js, whose postinstall hook runs automatically during npm install. The loader disables TLS certificate validation, downloads a second-stage implant, runs it detached, and deletes itself. The implant is a cross-platform Node.js tool that inventories over 160 cryptocurrency wallet extensions, collects browser history and host details, and installs login persistence on Windows, macOS, and Linux. Defenders should treat any host or CI runner that installed affected versions as compromised, search for easy-day-js, and use --ignore-scripts for installs.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Mastra",
+        "macOS",
+        "Linux",
+        "Node.js",
+        "systemd",
+        "Chrome",
+        "Linux systemd"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tronlink"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/mastra-npm-packages-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Steals Accounts and Wallets in Seconds! Electron Program Disguised as a Backdoor to Steal Encrypted Data",
+      "summary": "The SeanPalia sample is an infostealer disguised as a normal Electron desktop application, which loads a bytenode-compiled payload at runtime. It terminates analysis and debugging tools and closes browser processes to release database file locks. It then harvests browser login data, cookies, autofill and card data, Discord tokens (enriched via the Discord API), and cryptocurrency wallet files from desktop and browser extensions. A second-stage payload handles Chromium App-Bound encrypted data, and collected results are archived, encrypted and uploaded to temporary file hosts with the download link and password sent to an attacker-controlled endpoint. Defenders should be cautious with unofficial or cracked Electron software and treat unexpected browser crashes or terminated processes as signs of compromise.",
+      "completeness": "Low",
+      "software": [
+        "Electron"
+      ],
+      "links": [
+        "https://www.huorong.cn/document/tech/vir_report/1969"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "The Invisible Stinger: Over 4,000 Outdated Routers Compromised by AryStinger, Turned into Launchpads for Hackers’ Global Attacks",
+      "summary": "AryStinger is a botnet-style malware family that compromises outdated routers and NAS devices and turns them into reconnaissance and attack launchpads. The RTL819X variant, written in C, spreads via CVE-2013-3307 and CVE-2016-5681 against old Linksys and D-Link routers, while a Go-based Standard variant targets NAS devices through CVE-2025-11837. Infected nodes, called Executors, communicate with C2 servers over HTTP or HTTPS using Protobuf encoding and XOR encryption, and they can split large scanning jobs across many bots. Researchers estimate at least 4,300 infected routers, mostly D-Link models, concentrated in South Korea, China, and Sweden, and the malware has low detection rates in major security engines. Defenders should replace or retire unpatched legacy routers and check for the /tmp/bin directory and the syswapd0h or syswapd0w processes, along with traffic to the listed C2 domains.",
+      "completeness": "High",
+      "threats": [
+        "Arystinger",
+        "Dropbear_tool",
+        "Gs-netcat",
+        "Fscan_tool",
+        "Dropbearkey_tool",
+        "Masscan_tool"
+      ],
+      "geo": [
+        "Sweden",
+        "Singapore",
+        "South korea",
+        "Malaysia",
+        "China"
+      ],
+      "software": [
+        "hat offi",
+        "eChat of",
+        "curl"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "gzip"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/arystinger-botnet-hijacks-legacy-routers-for-global-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "GitBait: Phishing the Mexican Financial Sector",
+      "summary": "Group-IB identified GitBait, a phishing campaign targeting at least 12 financial institutions in Mexico and active for roughly three years. The operation uses a modular phishing kit hosted across numerous GitHub Pages repositories, with duplicated content under varied paths to evade takedowns. Victims are lured to fake banking pages that harvest passwords, customer IDs, and card details. Stolen credentials are exfiltrated through the SheetBest API into attacker-controlled Google Sheets, avoiding any dedicated backend server, and one institution's data went to a Telegram bot. Defenders should monitor for brand-impersonating GitHub Pages repositories, flag unexpected POST requests to spreadsheet-backend services, and rely on behavioral detection and layered controls such as MFA rather than domain blocklists alone.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Latin america",
+        "Mexico",
+        "Mexican"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SheetBest",
+        "Telegram",
+        "WhatsApp",
+        "iMessage"
+      ],
+      "functions": [
+        "fetch"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/gitbait-phishing-mexico-banking-finance/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "FishMonger’s arsenal upgraded: SprySOCKS for Windows",
+      "summary": "FishMonger, a cyberespionage group linked to Chinese contractor I-SOON and the Winnti Group umbrella, has been using two previously undocumented Windows variants of its SprySOCKS backdoor, previously known only for Linux. ESET telemetry shows activity from 2023 to 2024 against mostly government organizations in Honduras, Taiwan, Thailand, and Pakistan. The WIN_DRV variant uses kernel drivers to hide network connections, processes, files, and registry keys, and redirects TCP traffic to a hidden backdoor port. Both variants support TCP, UDP, and WebSocket communication and over 30 C&C commands for system, process, service, and file management. The attackers may have gained initial access through misconfigured or unpatched public-facing applications, though this is unconfirmed.",
+      "completeness": "High",
+      "threats": [
+        "Sprysock",
+        "Watering_hole_technique",
+        "Cobalt_strike_tool",
+        "Biopass_rat",
+        "Shadowpad",
+        "Funnyswitch_backdoor",
+        "Dll_sideloading_technique",
+        "Trochilus_rat",
+        "Redleaves",
+        "Driverloader_tool",
+        "Hideprocess_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Taiwan",
+        "Thailand",
+        "Hong kong",
+        "Pakistan",
+        "Honduras"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 38,
+      "software": [
+        "Linux",
+        "Windows remote access",
+        "Windows kernel",
+        "indows kernel dr"
+      ],
+      "algorithms": [
+        "xor",
+        "aes-ecb",
+        "base64",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "DeviceIoControl",
+        "GetErrorMessageModule",
+        "SetErrorMessageModule",
+        "CreateProcessAsUser"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/fishmongers-arsenal-upgraded-sprysocks-windows/",
+        "https://github.com/RamadhanAmizudin/malware/tree/master/Trochilus",
+        "https://github.com/ldcsaa/HP-Socket",
+        "https://github.com/killeven/DllToShellCode"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "I Accidentally Logged as Admin Into a Threat Actor Website",
+      "summary": "A researcher investigating a suspicious fake software download domain shared on X found an exposed installation page, /install/install.php, that still accepted new setup on a live PHP and MySQL application. By connecting the app to a database they controlled, they created an administrator account and gained access to the dashboard, which was originally in Russian. The platform used intermediate redirectors, including Google Colab pages, and dynamically generated download pages that delivered a compressed archive containing malware. The main takeaway for defenders is that unlocked installers and leftover session state can expose administrative access, and the actor later patched the initialization flaw.",
+      "completeness": "Low",
+      "threats": [
+        "Ngrok_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "MySQL",
+        "Docker",
+        "Firefox"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://potato.id/en/posts/i-accidentally-logged-into-threat-actor-website/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Ababil of Minab Exposed: LA Metro SCADA Backups and Israeli Victim Data Left Open on an Iranian Staging Server",
+      "summary": "Ababil of Minab is a pro-Iranian threat actor that emerged in March 2026, claiming destructive attacks on targets in the United States, Israel, Saudi Arabia, and Turkey, including a confirmed breach of LA Metro. Gambit Security attributed the campaign to Black Shadow, an Iranian group linked to MOIS, though Hunt.io has not independently verified that attribution. Hunt.io's AttackCapture found the operator's staging server exposed as an open directory containing about 5 GB of exfiltrated data from multiple victims. The exposed files included a custom Flask upload receiver, shell history, and plaintext credentials and network configurations. Defenders should treat the indicators as active, since the server remained online for weeks after public disclosure.",
+      "completeness": "High",
+      "threats": [
+        "Proxychains_tool"
+      ],
+      "geo": [
+        "Saudi",
+        "Los angeles",
+        "Israel",
+        "Israeli",
+        "Saudi arabia",
+        "Iranian",
+        "Middle east",
+        "San francisco",
+        "Turkish",
+        "Netherlands",
+        "Canadian",
+        "California",
+        "Turkey",
+        "United states"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 12,
+      "software": [
+        "Flask",
+        "SimpleHTTP",
+        "Microsoft SQL Server",
+        "Outlook",
+        "Chrome",
+        "Telegram",
+        "OpenSSH",
+        "Linux",
+        "openssl",
+        "WordPress",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "sha256",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/ababil-of-minab-iranian-hackers-exposed-la-metro-breach-open-directory"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Mastra Supply Chain Compromise: easy-day-js Dropper Pulls a Cross-Platform RAT Into @mastra Installs",
+      "summary": "A malicious npm package named easy-day-js was published in two stages on June 16 and June 17, 2026, and then injected as a dependency into more than a dozen @mastra/* packages. Installing any affected @mastra/* package pulls in the armed easy-day-js release, whose postinstall dropper fetches a cross-platform remote access trojan that establishes persistence on macOS, Linux, and Windows. The RAT collects installed applications, running processes, browser history, and crypto wallet extension data, and it waits for operator commands before deploying any further payload. Defenders should pin affected @mastra/* packages to their last clean versions, block easy-day-js, treat workstations and CI runners that performed fresh installs since June 17, 2026 as potentially compromised, and rotate any credentials reachable from the shell environment.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "macOS",
+        "Linux",
+        "Chrome",
+        "Caddy"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "keplr",
+        "tronlink"
+      ],
+      "algorithms": [
+        "ecc",
+        "base64"
+      ],
+      "links": [
+        "https://www.upwind.io/feed/mastra-supply-chain-compromise-easy-day-js-dropper-pulls-a-cross-platform-rat-into-mastra-installs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Anatomy of a Deno-Based Proxy & RAT - InfoGuard Labs",
+      "summary": "A campaign used mailbombing followed by fake Microsoft Teams calls from an attacker impersonating IT support to persuade an employee to run a malicious archive from a fake self-service portal. The payload was a modular Remote Access Trojan and proxy built on the Deno JavaScript runtime, split across four obfuscated JavaScript files with separate permission sets. Its components handle a WebSocket command channel, local command execution through cmd.exe, and TCP pivoting into internal networks via loopback services. The implant persists through a Run registry key and launches via a headless console process to avoid visible windows. Endpoint protection did not block the C2 channel initially, and detection came only later during follow-on reconnaissance. Defenders should correlate Teams impersonation alerts with email activity and monitor Deno launches from user-writable paths, risky permission flags, and loopback listeners.",
+      "completeness": "Medium",
+      "threats": [
+        "Deno_tool",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 14,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Teams",
+        "Node.js",
+        "ServiceNow"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Teams",
+        "TextDecoder"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://labs.infoguard.ch/posts/anatomy_deno_rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Malware à la Mode: Tracking Dropping Elephant Tradecraft Through a China-Themed Loader Chain",
+      "summary": "Rapid7 attributes a campaign to the Dropping Elephant threat actor, which uses a China energy-sector contract lure to deliver a reworked in-memory remote access trojan. The attack starts with a malicious shortcut that runs a PowerShell downloader, which stages files in C:\\Users\\Public\\ and creates a scheduled task that side-loads a malicious DLL through the legitimate Microsoft binary Fondue.exe. A Donut shellcode loader then maps the final RAT into memory and patches AMSI, WLDP, and ETW in the current process. The RAT uses control-flow flattening and encrypted, HTTPS-based C2 communications, and it supports commands for file listing, file transfer, screenshots, and shell execution. Rapid7 links the RAT to Dropping Elephant through code-level similarities with a reference sample, and it recommends hunting for the behaviors in the delivery chain because hashes and infrastructure change easily.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Donut",
+        "Sandbox_evasion_technique",
+        "Diaphora",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 15,
+      "software": [
+        "BinDiff"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes",
+        "chaskey",
+        "base64",
+        "aes-256-cbc",
+        "salsa20"
+      ],
+      "functions": [
+        "FreeConsole",
+        "sub_415750"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-malware-tracking-dropping-elephant-tradecraft-china-themed-loader-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Analysis of APT37 NarwhalRAT Leveraging MS-Themed Phishing and Dead-drop C2",
+      "summary": "NarwhalRAT is a Python-based remote access trojan that Genians Security Center assesses as primarily targeting Korean users, with similarities to prior APT37 activity. Initial access comes from spear phishing emails impersonating a Microsoft account team, delivering a ZIP archive containing a malicious LNK file. The LNK file uses obfuscated PowerShell, curl.exe, and batch scripts to install a Python embedded runtime and a scheduled-task persistence mechanism. The payload runs in memory and uses a dual C2 structure, combining Korean relay servers with the pCloud API as a dead-drop resolver. Defenders should strengthen EDR detection of chained LNK, cmd, and PowerShell activity, along with RWX memory allocation and abnormal pCloud communication.",
+      "completeness": "High",
+      "threats": [
+        "Narwhalrat",
+        "Dead_drop_technique",
+        "Spear-phishing_technique",
+        "Rokrat",
+        "Sandbox_evasion_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Korean",
+        "Korea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Windows security",
+        "Windows scheduled task",
+        "VirtualBox",
+        "hyperv",
+        "macOS",
+        "Internet Explorer",
+        "Windows CryptoAPI",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "aes-128",
+        "xor",
+        "md5",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "chr",
+        "inside",
+        "RtlMoveMemory",
+        "SHGetFolderPathA"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/narwhalrat",
+        "https://github.com/LOLBAS-Project/LOLBAS"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Analysis of Recent Phishing Website Attacks by APT-C-08 (Manlinghua)",
+      "summary": "APT-C-08 (Manlinghua), a suspected state-backed group with South Asian government ties, has been conducting ongoing attacks against neighboring countries, targeting government, defense, universities, and overseas institutions. Its recent phishing websites, built on LiteSpeed Web, impersonate a 163 mail login page to harvest email credentials and host a fake download page that delivers a password-protected zip containing a malicious VBS script. The script establishes persistence through registry run keys, scheduled tasks, and Start menu entries, then creates PowerShell modules for data theft and remote command execution via C2 polling. It opens a decoy document to distract the user and deletes itself afterward. Researchers attributed the campaign to the group based on infrastructure reuse, similar site code, and identical icon files compared with its 2025 activity. Defenders should reinforce user awareness against unknown files and suspicious links.",
+      "completeness": "Low",
+      "geo": [
+        "Asian"
+      ],
+      "software": [
+        "LiteSpeed"
+      ],
+      "algorithms": [
+        "md5",
+        "zip"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247508668&idx=1&sn=1ec03eafb27735e2f5e3b7ea02e77d42&chksm=f9c191b5ceb618a3a101b03fdfd83de445d8e33839d01840374c7e7035d9e245ecba854efb4d&scene=178&cur_album_id=1955835290309230595&search_click_id=#rd"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Phishing Campaign Targets Banks with Fileless Phantom Stealer Malware",
+      "completeness": "High",
+      "threats": [
+        "Phantom_stealer",
+        "Credential_harvesting_technique",
+        "Donut",
+        "Process_injection_technique",
+        "Marte",
+        "Foxveil"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 16,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Discord",
+        "Telegram",
+        "Steam",
+        "Windows shell",
+        "WinRAR",
+        "firefox",
+        "chrome",
+        "Chromium"
+      ],
+      "algorithms": [
+        "aes-256",
+        "xor",
+        "sha256",
+        "sha1",
+        "base64",
+        "aes-256-cbc",
+        "aes",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortra.com/blog/phishing-campaign-targets-banks-fileless-phantom-stealer-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "From Stars to Upvotes: Fake Reputation Fueling a Crypto Clipboard Hijacker",
+      "summary": "A threat actor, using the handle @JoseCmanXD, distributes Rust-based clipboard hijackers for Windows and macOS disguised as crypto trading tools such as sniper bots, Aviator Predictor, and crash-game predictors. The campaign is promoted through a WordPress phishing site, GitHub and SourceForge projects, and a YouTube channel, all inflated by fake \"Ghost Network\" accounts. The actor also abused VirusTotal by casting benign votes and posting \"safe\" comments on samples with low detection rates, and placed paid-style ads on news sites and crypto forums. The malware monitors the clipboard for wallet addresses and swaps them with attacker-controlled wallets from large embedded lists, and it maintains persistence on both platforms. Targets are crypto owners and online gamblers seeking shortcuts. Defenders should not treat reputation signals or stars, votes, and views as proof of safety.",
+      "completeness": "Medium",
+      "threats": [
+        "Cryptoripper"
+      ],
+      "geo": [
+        "India",
+        "Pakistan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Telegram",
+        "macOS",
+        "Android",
+        "Gatekeeper"
+      ],
+      "wallets": [
+        "tron",
+        "zcash"
+      ],
+      "crypto": [
+        "solana",
+        "bitcoin",
+        "litecoin",
+        "cardano",
+        "ethereum",
+        "monero",
+        "dogecoin",
+        "ripple",
+        "binance"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "show_dialog"
+      ],
+      "languages": [
+        "rust",
+        "applescript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/from-stars-to-upvotes-fake-reputation-fueling-a-crypto-clipboard-hijacker/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "macOS ClickFix Lures Deploy AppleScript Stealer & Persistent RAT",
+      "summary": "Netskope Threat Labs observed a new, upgraded macOS ClickFix campaign on May 31, 2026, attributed to a Russian-speaking attacker, that delivers a fileless AppleScript payload self-labeled \"Meow (DEBUG)\" along with a full remote access trojan. Victims are tricked into pasting a curl command copied from lure pages, and the infection chain runs entirely in memory until persistence is established. The malware exits silently on hosts using a Russian keyboard layout, indicating deliberate avoidance of Russian-speaking victims. Beyond stealing credentials, browser data, wallets, and messaging sessions, it replaces app.asar files in five desktop crypto wallets and re-signs them ad hoc. Persistence uses a LaunchDaemon or LaunchAgent labeled com.apple.accountsd that polls C2 every 60 seconds and runs server-supplied code. Defenders should block lure domains and page-loader.js and hunt for the com.apple.accountsd persistence and /tmp/shub_ staging paths.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Berlin",
+        "Oceania",
+        "Russian",
+        "Asia",
+        "America"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "Electron",
+        "Gatekeeper",
+        "Chrome",
+        "Opera",
+        "OperaGX",
+        "Vivaldi",
+        "Chrome Canary",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "atomicwallet",
+        "ledger_wallet",
+        "trezor"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "gzip"
+      ],
+      "functions": [
+        "send_debug_event",
+        "daemon_function"
+      ],
+      "languages": [
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/macos-clickfix-lures-deploy-applescript-stealer-persistent-rat",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/blob/main/Malware/Meow-macOS/IOCs/README.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "AdaptixC2: Fingerprinting an Open-Source C2 Framework at Scale",
+      "summary": "AdaptixC2 is an open-source post-exploitation C2 framework whose default configuration returns Server: AdaptixC2 and Adaptix-Version: v1.2 headers on every unauthenticated request, making deployed servers easy to find through passive scanning. Censys tracks 390 web properties across 217 hosts running it with default or near-default settings as of 11 June 2026. Three beacon listener clusters on Hivelocity, M247, and PSB Hosting share sequential IPs, randomized high ports, and identical default TLS certificates, suggesting single operators running redundant callback infrastructure. One host, 2.26.229[.]254, served payloads from an open directory, including a Linux persistence installer with Russian-language comments. Operators who alter the Server header often leave the default 404 page body intact, so defenders should query both signals. Censys tags these detections as THREAT-0210.",
+      "completeness": "High",
+      "threats": [
+        "Adaptixc2_tool",
+        "Cobalt_strike_tool",
+        "Havoc",
+        "Sliver_c2_tool",
+        "Beaconhttp_tool",
+        "Beacondns_tool",
+        "Gophertcp_tool",
+        "Dns_hijacking_technique",
+        "Beaconsmb_tool",
+        "Beacontcp_tool",
+        "Kharonhttp_tool"
+      ],
+      "geo": [
+        "Hong kong",
+        "Holland",
+        "Asia",
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "OpenSSL",
+        "systemd",
+        "crontab"
+      ],
+      "algorithms": [
+        "xor",
+        "rc4",
+        "lokycrypt",
+        "base64"
+      ],
+      "functions": [
+        "Start"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://censys.com/blog/adaptixc2-open-source-c2-framework/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Operation Escaneo: Infrastructure Exposure, TTP Analysis, and Attribution Assessment of an Advanced Intrusion Campaign Against Mexican Federal Agencies and Financial Institutions",
+      "summary": "Operation Escaneo is a multi-stage intrusion campaign by a threat actor attributed with medium confidence to Mexican Mafia (aka PanchoVilla), targeting Mexican federal agencies, government bodies, and financial institutions across Latin America. The actor uses a custom distributed reconnaissance framework called Kimera and an armory of exploits against perimeter devices such as Fortinet, Ivanti, and Cisco. Its command-and-control relies on Neo-reGeorg webshells, Chisel reverse tunnels, and GRE tunnels on compromised Cisco routers. Once inside, the actor abuses SAP and Oracle to run commands, moves laterally with tools like EternalBlue and Impacket, and exfiltrates PII, credentials, and Active Directory data. Defenders should prioritise patching perimeter devices, disabling SMBv1, and monitoring for webshells, Chisel activity, and unexpected GRE tunnels.",
+      "completeness": "Medium",
+      "threats": [
+        "Kimera_tool",
+        "Neo-regeorg",
+        "Chisel_tool",
+        "Proxychains_tool",
+        "Credential_harvesting_technique",
+        "Subfinder_tool",
+        "Naabu_tool",
+        "Nuclei_tool",
+        "Zipslip_technique",
+        "Zerologon_vuln",
+        "Eternalblue_vuln",
+        "Smbghost_tool",
+        "Ghostcat",
+        "Spear-phishing_technique",
+        "Metasploit_tool",
+        "Ysoserial_tool",
+        "Anydesk_tool",
+        "N-able_tool",
+        "Pwnkit_tool",
+        "Passthehash_technique",
+        "Impacket_tool",
+        "Credential_dumping_technique",
+        "Kerberoasting_technique",
+        "Password_spray_technique",
+        "Sambacry_vuln",
+        "Netcat_tool",
+        "Log4shell_vuln",
+        "Bloodhound_tool",
+        "Smbleed",
+        "Gowitness_tool",
+        "Wmiexec_tool",
+        "Smbexec_tool",
+        "Secretsdump_tool",
+        "Hashcat_tool",
+        "Ntlmrelayx_tool",
+        "Pkexec_tool",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "Latin america",
+        "Ecuador",
+        "Mexican",
+        "Portugal",
+        "Latam",
+        "Mexico"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 69,
+      "software": [
+        "Ivanti",
+        "Linux",
+        "Active Directory",
+        "GeoServer",
+        "Fortinet FortiOS",
+        "Apache Tomcat",
+        "Unix",
+        "psexec",
+        "sudo",
+        "WebLogic",
+        "have more..."
+      ],
+      "algorithms": [
+        "3des",
+        "aes",
+        "gzip",
+        "sha256",
+        "aes-cbc",
+        "zip",
+        "base64",
+        "exhibit"
+      ],
+      "functions": [
+        "LinkFinder",
+        "GetUserSPNs",
+        "RFC"
+      ],
+      "languages": [
+        "java",
+        "python",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/operation-escaneo-mexican-government-financial-institutions-cyberattack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "MetaStealer traffic, new DGAs and analyzing the “tracker” backdoor DGA with AI",
+      "summary": "MetaStealer, which appears related to the \"tracker\" backdoor, has added a new wordlist-based DGA while its older DGA remains active. The threat actor's gate servers pass traffic along regardless of the domain used, so the IP address, port, URI, and HTTP headers matter more than the domain itself. A RuntimeSync installer delivered to several machines identifies itself as a \"tracker\" and offers video capture, keylogging, self-updating, screenshot capture, and remote command execution. Researchers used Claude Sonnet 4.6 to reverse engineer that backdoor's DGA and produce working Python code that reproduced the malware's domains, though an experienced analyst had to guide and verify the work. The authors present this as evidence that AI is rapidly improving at malware analysis.",
+      "completeness": "Low",
+      "threats": [
+        "Meta_stealer"
+      ],
+      "software": [
+        "Claude"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://medium.com/walmartglobaltech/metastealer-traffic-new-dgas-and-analyzing-the-tracker-backdoor-dga-with-ai-96ea63dc7c01?source=rss-36e34fe15919------2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Vibe Hacking: Two AI-Augmented Campaigns Target Government and Financial Sectors in Latin America",
+      "summary": "Two AI-augmented campaigns, SHADOW-AETHER-040 and SHADOW-AETHER-064, used agentic AI to run intrusions against government and financial organizations in Latin America. SHADOW-AETHER-040, Spanish-speaking, compromised six Mexican government entities between December 2025 and January 2026, using an AI agent through the full kill chain from initial access to exfiltration. SHADOW-AETHER-064, Portuguese-speaking, targeted Brazilian financial organizations starting in April 2026, compromising JBoss servers and creating unauthorized accounts. Both campaigns tunneled into internal networks via SOCKS5, ProxyChains, and SSH, and generated their own scripts instead of relying on known hacking tools, which can evade signature-based detection. Defenders should prioritize patching, zero-trust access controls, and comprehensive monitoring, since the report found that strong security configurations stopped some attacks despite AI assistance.",
+      "completeness": "High",
+      "threats": [
+        "Proxychains_tool",
+        "Chisel_tool",
+        "Neo-regeorg",
+        "Crackmapexec_tool",
+        "Impacket_tool",
+        "Dirty_cow_vuln",
+        "Pwnkit_tool",
+        "Petitpotam_vuln",
+        "Password_spray_technique",
+        "Passthehash_technique",
+        "Socktz_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "Mexico",
+        "Portuguese",
+        "Brazil",
+        "Latin america"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 33,
+      "software": [
+        "Anthropic",
+        "Claude",
+        "PyInstaller",
+        "JBoss",
+        "Active Directory",
+        "WordPress"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/ru_ru/research/26/e/vibe-hacking-two-ai-augmented-campaigns-target-government-and-financial-sectors-in-latin-america.html",
+        "https://github.com/haad/proxychains",
+        "https://github.com/jpillora/chisel",
+        "https://github.com/L-codes/Neo-reGeorg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "ClickFix Campaign Generated Via AI Delivers SmartRAT",
+      "summary": "Zscaler ThreatLabz observed a March 2026 ClickFix campaign using an AI-generated webpage that impersonated a Brazilian bank and displayed a fake CAPTCHA followed by a fullscreen fake BSOD prompt. The lure tricked victims into pasting a PowerShell command that downloads a multi-stage loader and ultimately a PowerShell-based banking RAT named SmartRAT. SmartRAT provides remote control, keylogging, fake bank-branded overlays, QR code interception, and persistence via scheduled tasks and a Windows service. It monitors window titles for banking, payment, and cryptocurrency platforms to alert operators when victims are in financial applications. Researchers also found that the C2 panel's authentication relied only on client-side localStorage values, allowing it to be bypassed.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Smartrat",
+        "Typosquatting_technique",
+        "Banana_rat",
+        "Bloat_technique"
+      ],
+      "geo": [
+        "Brasil",
+        "Brazilian",
+        "Brazil"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 9,
+      "software": [
+        "Windows service",
+        "winlogon.e",
+        "Windows Security",
+        "PsExec"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-cbc",
+        "base64",
+        "xor",
+        "aes",
+        "hmac"
+      ],
+      "functions": [
+        "preventDefault",
+        "stopPropagation",
+        "Windows",
+        "CreateProcessAsUser"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/clickfix-campaign-generated-ai-delivers-smartrat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Chinese-speaking Operators Clone FIFA's World Cup 2026 Ticketing Site To Steal Fan Logins and Card Data",
+      "summary": "Chinese-speaking operators are running a phishing campaign that clones FIFA's World Cup 2026 ticketing site to steal fan logins and payment-card data. The kit re-hosts FIFA's front-end build under a /fifa/ path, adds the Chinese Layui framework, and serves a sign-in form from the attacker's own domain while keeping FIFA's redirect_uri. Hunt.io identified a fleet of lookalike domains sharing one favicon and build, with suspected origin servers on AS25820 under 16clouds.com. Key evidence includes Simplified Chinese code comments, Chinese-locale handling, and Chinese registrars. Defenders should hunt on the kit's structural artifacts and pivot on shared favicon and hosting, not on rotating domains.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "German"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "nginx",
+        "Alibaba Cloud",
+        "HiChina",
+        "GoDaddy"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://hunt.io/blog/fifa-world-cup-2026-ticket-phishing-kit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Bluekit Phishing as a Service (PhaaS)",
+      "summary": "BlueKit is a commercial Phishing-as-a-Service platform identified by CloudSek TRIAD through dark web monitoring, offering complete phishing infrastructure for credential harvesting, session hijacking, and account takeover. It targets financial institutions, cloud providers, cryptocurrency platforms, and e-commerce services, with templates for brands including Microsoft, Google, Amazon, Apple, GitHub, and major crypto exchanges. The platform uses subscription tiers, an affiliate and reseller model, and accepts cryptocurrency only, lowering the skill barrier for low-skilled attackers. Its recent move to peer-to-peer page rendering hides backend infrastructure from standard analysis and IOC-based detection. Post-compromise workflows can reset passwords, enroll passkeys, and import stolen session cookies into an anti-detect browser to bypass MFA. Defenders are advised to move away from SMS-based MFA toward phishing-resistant methods, enforce conditional access and strict session management, and train users on phishing and smishing.",
+      "completeness": "Medium",
+      "threats": [
+        "Bluekit_tool",
+        "Credential_harvesting_technique",
+        "Smishing_technique",
+        "Capsolver_tool",
+        "Exobot",
+        "Mamont_spy",
+        "Cloaking_technique",
+        "Aitm_technique",
+        "Snagx_tool"
+      ],
+      "geo": [
+        "United states",
+        "India",
+        "France",
+        "Asia",
+        "America",
+        "Canada",
+        "Dominican republic",
+        "Japan"
+      ],
+      "software": [
+        "Telegram",
+        "Jabber",
+        "gmail",
+        "outlook",
+        "Twitter",
+        "instagram",
+        "whatsapp",
+        "TikTok",
+        "Discord",
+        "LastPass",
+        "have more..."
+      ],
+      "wallets": [
+        "coinbase",
+        "bybit",
+        "trezor"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "monero"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/bluekit-phishing-as-a-service-phaas"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Five npm Packages That Hide a Windows Binary Dropper",
+      "summary": "Five npm packages published by one operator within 12 minutes on June 16, 2026, form a split Windows binary dropper. Two packages are weaponized: procwire, whose preinstall hook decodes a C2 URL from helper packages and runs a hidden payload, and routecraft, an Express clone that pulls in procwire on Windows only. The other three packages, bytecraft, endpointmap, and staticlayer, hold the XOR helper, the encoded endpoint, and the server side of the dropper. The malware downloads payloads through three methods and executes them through three methods, while stripping Mark-of-the-Web to avoid SmartScreen warnings. Defenders should treat any Windows host that installed these packages as compromised and check temp directories for updater-named executables and outbound connections to catbox.moe.",
+      "completeness": "Medium",
+      "threats": [
+        "Bitsadmin_tool",
+        "Motw_bypass_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "curl"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "createServer"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://safedep.io/procwire-npm-windows-dropper-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-17",
+      "title": "Mastra npm Supply Chain Attack: 140+ Packages Backdoored via easy-day-js Typosquat",
+      "summary": "A threat actor compromised the @mastra npm organization on June 17, 2026, and added the typosquat easy-day-js as a dependency across 140+ packages in the Mastra AI framework ecosystem. The malicious easy-day-js 1.11.22 imitates the dayjs date library and runs an obfuscated postinstall dropper that fetches and launches a second-stage payload from attacker servers. The dropper disables TLS certificate verification, runs the payload as a detached background process, and deletes its own script to hide evidence. The affected packages had a combined weekly download count above 1.1 million, and the attack was still ongoing when the report was published. Defenders should treat any environment that installed an @mastra package on that date as compromised, and StepSecurity Harden Runner in block mode stopped the initial outbound call in its controlled test.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Miasma"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Mastra",
+        "OpenAI",
+        "Anthropic",
+        "Node.js"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/mastra-npm-packages-compromised-using-easy-day-js",
+        "https://github.com/mastra-ai/mastra/issues/18045"
+      ]
+    }
+  }
+]

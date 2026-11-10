@@ -1,0 +1,62 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-26",
+      "title": "SparkKitty Malware: An Emerging Threat to Mobile Users",
+      "summary": "SparkKitty is a cross-platform information stealer, discovered by Kaspersky in early 2024 and detailed publicly in June 2025, that appears to evolve from the earlier SparkCat stealer. Unlike malware focused on keylogging or clipboard hijacking, it uses optical character recognition to extract text from images stored on infected Android and iOS devices, targeting seed phrases, passwords, and QR codes. On iOS, it was hidden in a cryptocurrency app published on the App Store, while on Android it was distributed through the SOEX app on Google Play, which had over 10,000 downloads, as well as third-party stores and sideloaded APKs. Once granted photo gallery access, the malware scans screenshots and silently uploads extracted text and device metadata to the attacker's infrastructure. Defenders should be cautious about granting gallery permissions to apps, even those from official stores.",
+      "completeness": "Medium",
+      "threats": [
+        "Sparkkitty",
+        "Sparkcat",
+        "Clipboard_hijacking_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "Android",
+        "Google Play",
+        "TikTok"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/sparkkitty-malware-an-emerging-threat-to-mobile-users/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-26",
+      "title": "Threat Intelligence \\| From “Compliant Emails” to Remote Control: An Investigation into a Web3 Wallet Phishing Attack",
+      "summary": "SlowMist observed a months-long phishing campaign that impersonated Web3 wallet brands such as Keystone and OneKey using compliance and account-verification lures. Emails with urgent deadlines led victims to fake DocuSign pages that asked them to download a supposed desktop signing program. The downloads, delivered as VBS, BAT, or EXE files, silently installed a ScreenConnect remote management client configured for unattended access. The attackers also distributed the same payloads through multiple wallet-branded GitHub repositories. Defenders should verify links before clicking, check endpoints for unexpected ScreenConnect services and persistence entries, and treat wallet-used hosts as potentially fully compromised.",
+      "completeness": "High",
+      "threats": [
+        "Screenconnect_tool",
+        "Adwind_rat",
+        "Msp360_tool",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "SlowMist",
+        "Windows service"
+      ],
+      "wallets": [
+        "onekey",
+        "coinbase"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://slowmist.medium.com/threat-intelligence-from-compliant-emails-to-remote-control-an-investigation-into-a-web3-bca1f8df9084"
+      ]
+    }
+  }
+]

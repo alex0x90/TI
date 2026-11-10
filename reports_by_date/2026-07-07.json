@@ -1,0 +1,522 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "UAT-7810 continues building ORB networks using new malware",
+      "summary": "UAT-7810 is a China-nexus APT actor that builds and maintains Operational Relay Box (ORB) networks, which other secondary threat actors, including UAT-5918, can use against high-value targets. The group primarily exploits n-day vulnerabilities in unpatched Ruckus wireless routers, a tactic used since 2025, and has also targeted ASUS AiCloud routers. Talos found new malware, including LONGLEASH, a more capable successor to the SHORTLEASH backdoor, plus the DOGLEASH and JARLEASH backdoors. DOGLEASH is a passive Linux backdoor that listens on a hardcoded port, and JARLEASH is a Java-based administration tool with file management, FTP/SFTP, and netcat functions. Talos also reported LEASHTEST, a MIPS test binary whose presence likely indicates a compromise.",
+      "completeness": "Medium",
+      "threats": [
+        "Lapdogs",
+        "Shortleash",
+        "Dogleash",
+        "Jarleash",
+        "Leashtest",
+        "Netcat_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Hong kong",
+        "China"
+      ],
+      "software": [
+        "ORB networks",
+        "Linux",
+        "Ruckus",
+        "ORB network",
+        "Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "base58"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-7810/",
+        "https://github.com/Mbed-TLS/mbedtls"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "One Email Closer to the Edge: UNK_MassTraction & the Physics of Exploitation",
+      "summary": "Proofpoint tracks UNK_MassTraction, a suspected China-aligned cluster that since May 2026 has exploited Roundcube webmail servers at physics and engineering departments of US and Canadian universities. The attack uses CVE-2024-42009, an XSS flaw triggered simply by opening a crafted email, to run a stealer called IceCube that harvests credentials, two-factor material and session data. IceCube then exploits CVE-2025-49113 to plant a webshell, SquareShell, or falls back to deploying the VShell backdoor in memory. The actor appears to use compromised Roundcube servers as a pivot point into target networks. Defenders should secure mailservers with the same rigor as VPN concentrators and other remote access systems.",
+      "completeness": "Medium",
+      "threats": [
+        "Vshell",
+        "Icecube",
+        "Squareshell",
+        "Snowlight"
+      ],
+      "geo": [
+        "China",
+        "Canadian",
+        "Chinese"
+      ],
+      "software": [
+        "Roundcube",
+        "Linux",
+        "macOS"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "__destruct",
+        "PHP"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/one-email-closer-edge-unkmasstraction-physics-exploitation",
+        "https://github.com/fearsoff-org/CVE-2025-49113/blob/main/CVE-2025-49113.php"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Banana RAT Evolves: Comparing Two Recent Branches Through ANY.RUN",
+      "summary": "Banana RAT is a banking-oriented remote access payload, and this analysis compares two of its branches linked through an exposed server at a single staging host. The older branch, detonated May 25, 2026, used fixed ETW-themed installation paths, a pseudo-Microsoft C2 hostname, and a single payload file. The newer branch, detonated June 09, 2026, switched to randomized install identifiers, a VBS launcher, and a scheduled task running as SYSTEM, with a fallback Run key. Its C2 moved to WebSockets on a subdomain derived from the victim's MachineGuid, routed through Cloudflare. The exposed server also held payload generator and obfuscator scripts, suggesting an automated, on-demand variant platform. The report's key takeaway for defenders is that a fallback IP, 149.56.12.51, links both branches, and blocking the dedicated malicious apex domain at the domain, SNI, or DNS level avoids collateral disruption.",
+      "completeness": "High",
+      "threats": [
+        "Banana_rat",
+        "Polymorphism_technique"
+      ],
+      "geo": [
+        "Brazilian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 12,
+      "software": [
+        "Windows Event Tracing",
+        "FastAPI"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "ord",
+        "TaskName"
+      ],
+      "languages": [
+        "php",
+        "vbscript",
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/banana-rat-evolution-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Don’t eat the ChocoPoCs! How vulnerability researchers were repeatedly targeted by trojanised exploits",
+      "summary": "ChocoPoC is a fully functional Python remote access trojan delivered through trojanised CVE proof-of-concept repositories on GitHub, discovered by YesWeHack and Sekoia. The attacker hides the malware in transitive PyPI dependencies (\"frint\" and \"skytext\"), so the visible PoC code appears benign. A compiled native extension executes when the PoC runs, but only in the expected PoC environment, which helps it evade sandboxes. The RAT steals browser credentials, files and shell history, runs arbitrary commands, and abuses Mapbox datasets as a dead-drop C2 channel. At least seven malicious PoCs, linked to a single actor using rotated and compromised accounts, targeted researchers and pentesters since late 2025. Defenders should avoid running these PoCs or installing the associated packages, and should treat PoC dependencies as untrusted.",
+      "completeness": "Medium",
+      "threats": [
+        "Chocopoc",
+        "Supply_chain_technique",
+        "Dead_drop_technique",
+        "Timestomp_technique",
+        "React2shell_vuln",
+        "Nuclei_tool",
+        "Copyfail_vuln"
+      ],
+      "geo": [
+        "Chinese",
+        "Turkish",
+        "Indonesian",
+        "French",
+        "Spanish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Ivanti Sentry",
+        "Joomla",
+        "Linux",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "PAN-OS",
+        "Langflow"
+      ],
+      "algorithms": [
+        "base36",
+        "xor",
+        "hmac",
+        "base64",
+        "exhibit"
+      ],
+      "functions": [
+        "exec"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.yeswehack.com/news/chocopocs-vulnerability-researchers-trojanised-exploits",
+        "https://github.com/bolubey/CVE-2026-0257",
+        "https://github.com/projectdiscovery/nuclei-templates",
+        "https://github.com/bolubey/CVE-2026-50751"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "The Tax Trap: From Fake Indian ITR Notice to Dual RAT Deployment in Six Stages",
+      "summary": "A Howler Cell report describes a campaign targeting Indian users with fake Income Tax Department websites that deliver a ZIP archive containing a signed executable and a malicious DLL loaded through DLL search-order hijacking. The infection chain runs through six stages, using a polyglot JPEG to hide payloads, establishing persistence as a Windows service named \"Windows Mixed Reality Service,\" and ending with injection into svchost.exe across all active user sessions. The final implants are a Gh0st RAT derivative and a Quasar/AsyncRAT-family .NET payload, both running in memory with separate C2 channels for redundancy. For defenders, the report stresses that in-memory execution and signed-binary abuse can evade endpoint alerts, so threat hunting on the service name, host artifacts, and named global events is recommended.",
+      "completeness": "High",
+      "threats": [
+        "Gh0st_rat",
+        "Quasar_rat",
+        "Asyncrat",
+        "Dllsearchorder_hijacking_technique",
+        "Polyglot_technique",
+        "Polyglot_ransomware",
+        "Dll_sideloading_technique",
+        "Amsi_bypass_technique",
+        "Process_injection_technique",
+        "Spear-phishing_technique",
+        "Medusalocker"
+      ],
+      "geo": [
+        "India",
+        "Indian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 19,
+      "software": [
+        "Microsoft Edge",
+        "Windows Media Player",
+        "Windows service",
+        "Pastebin",
+        "NET Reactor"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "base64",
+        "aes-256-cbc",
+        "pbkdf2",
+        "zip",
+        "bcrypt",
+        "aes-128"
+      ],
+      "functions": [
+        "Start",
+        "GetRuntime",
+        "GetInterface"
+      ],
+      "links": [
+        "https://www.cyderes.com/howler-cell/fake-indian-itr-notice-dual-rat-deployment"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Fake Installers, Fake Reviews, Fake Services - Real Proxies, Real Victims",
+      "summary": "Lurking Lizard is a threat actor running an end-to-end residential proxy business, linked to a fake 7-Zip installer campaign that dates back to at least August 2022. Trojanized software, including fake 7-Zip, VPN, and proxy-service lookalike domains, recruits victim devices as proxy nodes that are rented to proxy customers. The actor's current WireVPN-branded apps show code and infrastructure overlap with the earlier campaign and behave more like exit nodes than traditional VPN clients. Fake review sites and lookalike storefronts drive traffic to the actor's proxy services, and the operation spans more than 230 domains. Defenders should note that the consumer devices infected in this model can be used to route third-party traffic without the owner's consent.",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Smartproxy_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "China"
+      ],
+      "software": [
+        "911Proxy",
+        "IPLogger",
+        "TikTok",
+        "WhatsApp",
+        "WireVPN",
+        "macOS",
+        "Google Play",
+        "Android",
+        "Kookeey"
+      ],
+      "algorithms": [
+        "exhibit",
+        "rdga"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/fake-installers-fake-reviews-fake-services-real-proxies-real-victims/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "From Invoice to AnyDesk: Uncovering a Phishing Campaign Targeting Russian Aerospace Organizations",
+      "summary": "A Seqrite report describes a spear-phishing campaign that impersonates a Russian aerospace research institute, VNIIR, using a freshly registered lookalike domain and a mass-mailed invoice lure. The email carries a password-protected RAR archive, with the password placed in the message body to evade scanners. The payload is a Delphi-built installer that downloads further components and silently configures portable AnyDesk for unattended access. A scheduled task provides persistence, and the AnyDesk configuration files are exfiltrated by email using the Blat SMTP utility before temporary artifacts are deleted. Seqrite suspects a link to Rare Werewolf (Librarian Ghouls) based on tradecraft overlap, though attribution is not definitive. Defenders should note the campaign's living-off-the-land approach, which relies on trusted utilities rather than custom malware.",
+      "completeness": "High",
+      "threats": [
+        "Anydesk_tool",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Xmrig_miner",
+        "Smart_install_maker_tool"
+      ],
+      "geo": [
+        "Russia",
+        "Belarus",
+        "Kazakhstan",
+        "Russian"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 15,
+      "software": [
+        "WinRAR",
+        "curl"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "powershell",
+        "delphi",
+        "pascal"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/from-invoice-to-anydesk-uncovering-a-phishing-campaign-targeting-russian-aerospace-organizations/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Cavern Manticore: Exposing Iran-Linked Modular C2 Framework",
+      "summary": "Cavern Manticore is an Iran-nexus threat actor linked to the MOIS and the OilRig subgroup Lyceum, primarily targeting Israeli government and IT sector organizations. Its modular .NET C2 framework is compiled in three formats (.NET Framework, Mixed-Mode C++/CLI, and NativeAOT) to hinder analysis. The agent, uxtheme.dll, is delivered through DLL sideloading abusing a SysAid software-update feature, after the attacker already had access to the environment. Many observed intrusions began with abuse of RMM software, and the actor moved from a compromised IT provider to a second-hop target. Defenders should monitor RMM activity, watch for unusual DLL placement under C:\\ProgramData, and enforce strict access controls on third-party management tools.",
+      "completeness": "High",
+      "threats": [
+        "Cav3rn",
+        "Dll_sideloading_technique",
+        "Sysaid_tool",
+        "Steganography_technique",
+        "Supply_chain_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Israeli",
+        "Israel",
+        "Iran",
+        "Iranian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "NET Framework",
+        "Microsoft Edge",
+        "ASP.NET",
+        "Active Directory"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "gzip",
+        "base32",
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "GetMembers"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/cavern-manticore-exposing-iran-linked-modular-c2-framework/",
+        "https://github.com/dnSpyEx/dnSpy",
+        "https://github.com/icsharpcode/ilspy",
+        "https://github.com/washi1337/ghidra-nativeaot"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Don’t Eat The ChocoPoCs! How Vulnerability Researchers Were Repeatedly Targeted By Trojanised Exploits",
+      "summary": "Researchers from YesWeHack and Sekoia TDR uncovered ChocoPoC, a Python remote access trojan delivered through trojanised CVE proof-of-concept repositories on GitHub. The malicious code hides in transitive PyPI dependencies, such as \"frint\" and \"skytext\", which execute a native extension that drops the RAT only when run within a PoC environment. The RAT uses Mapbox datasets as a dead-drop C2 channel, reached via DNS-over-HTTPS and domain-fronting-style techniques. It steals browser credentials and files, and executes commands on demand. The campaign spans 2025 and 2026, and the authors assess that a single actor rotated compromised accounts. Researchers should avoid running these PoCs or installing the associated packages.",
+      "completeness": "High",
+      "threats": [
+        "Chocopoc",
+        "React2shell_vuln",
+        "Nuclei_tool",
+        "Timestomp_technique",
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Copyfail_vuln"
+      ],
+      "geo": [
+        "Indonesian",
+        "Chinese",
+        "Spanish",
+        "Turkish"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Ivanti Sentry",
+        "Joomla",
+        "Linux",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Mozilla Firefox",
+        "PAN-OS",
+        "Langflow"
+      ],
+      "algorithms": [
+        "base36",
+        "base64",
+        "xor",
+        "exhibit",
+        "hmac"
+      ],
+      "functions": [
+        "exec"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.sekoia.com/blog/dont-eat-the-chocopocs-how-vulnerability-researchers-were-repeatedly-targeted-by-trojanised-exploits",
+        "https://github.com/ogenich/CVE-2026-48908",
+        "https://github.com/projectdiscovery/nuclei-templates",
+        "https://github.com/bolubey/CVE-2026-0257"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Connecting Scattered Spider: Defining A Cybercrime Collective Through Shared TTPs",
+      "summary": "Group-IB assesses Scattered Spider not as a single hierarchical group but as a decentralized cybercrime collective made up of independent subclusters linked by shared TTPs, tools, and forums. Subclusters have targeted mobile carrier employees and retailers for SIM swapping, marketing and communication service providers to abuse SMS and email tools, and crypto users as their primary objective. The collective relies heavily on vishing and smishing, Okta-impersonating phishing pages that are live only briefly, and remote access tools delivered during fake IT help desk calls. Some subclusters have also conducted extortion and ransomware attacks on enterprises. Group-IB's key takeaway is that arresting individual subclusters will not stop the threat, so defenders should prioritize phishing-resistant MFA such as FIDO2 keys, verify URLs, and audit third-party trust relationships.",
+      "completeness": "Low",
+      "threats": [
+        "Sim_swapping_technique",
+        "Anydesk_tool",
+        "Dragonforce_ransomware",
+        "Blackcat",
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Usa",
+        "Canada"
+      ],
+      "software": [
+        "Sendgrid",
+        "Okta",
+        "Telegram"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/connecting-scattered-spider/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "ClickFix to Cash-Out: Anatomy of a Mexican Banking-Fraud Toolkit",
+      "summary": "REF6045 is an operator-assisted Mexican banking fraud operation that infects victims through fake CAPTCHA ClickFix pages, which trick users into pasting a command that installs the SCMBANKER PowerShell toolkit. The toolkit lets the operator monitor banking sessions, lock screens with fake bank warnings to prompt vishing calls, redirect browsers to phishing pages, and swap copied CLABE and card numbers. For full takeover, it silently installs and auto-connects a commercial Remote Utilities host. Targets include Mexican retail banks, fintechs, payment processors, crypto exchanges, and telecom services. The scripts show signs of LLM generation, and exposed directories and an unauthenticated editor revealed the tooling. Defenders should watch for ClickFix-style lures and unexpected Remote Utilities installations.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Scmbanker",
+        "Bitsadmin_tool",
+        "Socgholish_loader",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "Mexico",
+        "Mexican"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge",
+        "Unix",
+        "Telegram"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "Get-NetIPAddress"
+      ],
+      "languages": [
+        "php",
+        "vbscript",
+        "powershell",
+        "autoit",
+        "javascript"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/mexican-banking-fraud-scmbanker-ref6045",
+        "https://github.com/elastic/protections-artifacts/blob/main/behavior/rules/windows/execution\\_suspicious\\_powershell\\_execution\\_via\\_windows\\_scripts.toml",
+        "https://gist.github.com/jiayuchann/cfbeb1b194b2e186fc599eb51d4719cc",
+        "https://gist.github.com/jiayuchann/5851f64467bac4c456dab67e2fb55622"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Coordinated npm and PyPI Campaign Typosquats Popular Secure Payment Apps",
+      "summary": "Socket identified a coordinated cluster of 17 malicious npm and PyPI packages, published nearly simultaneously on July 7, 2026, that typosquat Paysafe, Skrill, and Neteller payment SDKs. The packages target SDK developers and users, and they steal credentials and tokens by harvesting environment variables matching key-related patterns and sending them to attacker-controlled infrastructure. The npm packages return fake successful responses and only exfiltrate when an API key is set, while the PyPI packages activate on import without requiring a key. The malware includes sandbox evasion checks for low CPU counts and analysis-related hostnames or usernames, and it hides its command-and-control domain behind layered encoding. Defenders should rotate secrets on affected machines, block the package names at registry proxies, and hunt for outbound traffic to ngrok-free.dev from build and CI hosts.",
+      "completeness": "Low",
+      "threats": [
+        "Ngrok_tool",
+        "Njrat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "functions": [
+        "setTimeout",
+        "_request"
+      ],
+      "links": [
+        "https://socket.dev/blog/npm-pypi-campaign-typosquats-popular-secure-payment-apps"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-07",
+      "title": "Meta Phishers Abuse Business Account Manager Service",
+      "completeness": "Low",
+      "threats": [
+        "Koobface"
+      ],
+      "geo": [
+        "Vietnam",
+        "Vietnamese"
+      ],
+      "software": [
+        "Telegram",
+        "Instagram"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/meta-business-manager-phishing",
+        "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-07/20260707\\_fbphish-IOCs.csv"
+      ]
+    }
+  }
+]

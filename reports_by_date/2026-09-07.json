@@ -1,0 +1,549 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Kimsuky Uses the AI Agent 'opencode' to Create Decoys as Its GitHub PAT-Based LNK Attacks Evolve",
+      "summary": "Kimsuky, the North Korean group behind Operation GitPower, is using malicious LNK files in ZIP archives to target Korean financial and corporate personnel. The LNK files disguise themselves as Chrome executables and launch obfuscated PowerShell loaders, which use a custom decoder and hardcoded GitHub PATs to fetch decoy documents and payloads. Persistence is established through hidden scheduled tasks with names mimicking BitLocker, MATLAB, and .NET. Some variants add analysis evasion checks, and Pastebin serves as an alternative C2 channel. Decoy documents were mass-produced with AI tools, including the opencode coding agent, and many reuse the same content with unreplaced placeholders. Defenders should prioritize behavior-based EDR correlation across LNK execution, PowerShell, GitHub, and Pastebin activity.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Process_hacker_tool",
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Korean"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 8,
+      "software": [
+        "Pastebin",
+        "Chrome",
+        "Google Chrome",
+        "BitLocker",
+        "NET Framework",
+        "Windows PowerShell",
+        "Microsoft Excel",
+        "Adobe Illustrator",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "LinkInfo",
+        "Remove-Item",
+        "Get-Process",
+        "FromBase64String"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/ai-agent-opencode"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Following the Trail of Feral Wolf: New Attack Tools and Techniques",
+      "summary": "Feral Wolf is a threat cluster that, from May to August 2026, attacked Russian companies in retail, construction, manufacturing and IT. It gained initial access by exploiting CVE-2023-22515 in an internet-facing Confluence instance, through contractor infrastructure, or via insecure 1C cluster manager configurations that allowed uploading 1C-shells. The actor used newly identified tools, including the MQTTDoor and MatrixDoor backdoors, which use MQTT and Matrix protocols for command and control, and the RDPSocksProxy tunneling tool. Defenders should note that legitimate protocols and utilities such as DumpIt, MemProcFS and fscan were used to dump LSASS memory and scan networks, making traditional controls less effective. The report also highlights the need to monitor for anomalous network activity and to harden exposed 1C services.",
+      "completeness": "High",
+      "threats": [
+        "1c-shell_tool",
+        "Mqttdoor",
+        "Matrixdoor",
+        "Rdpsocksproxy_tool",
+        "Genielocker",
+        "Dumpit_tool",
+        "Memprocfs_tool",
+        "Mimikatz_tool",
+        "Gsocket_tool",
+        "Pwnkit_tool",
+        "Copyfail_vuln",
+        "Fscan_tool",
+        "Revsocks_tool",
+        "Printspoofer_tool",
+        "Minidump_tool",
+        "Shadow_copies_delete_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 0,
+      "software": [
+        "fluence serv",
+        "onfluence in",
+        "ocker co",
+        "Confluence",
+        "Docker",
+        "inux ke",
+        "onfluence co",
+        "ux kern",
+        "PostgreSQL",
+        "rontab en",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20",
+        "base64",
+        "ecdh",
+        "prng"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/idem-po-sledam-feral-wolf-novye-instrumenty-i-tekhniki-atak/",
+        "https://github.com/ly4k/PwnKit",
+        "https://github.com/kost/revsocks",
+        "https://github.com/hackerschoice/gsocket"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Analysis of Recent Attack Activities by APT-C-56 (Transparent Tribe)",
+      "summary": "APT-C-56 (Transparent Tribe), a South Asia-linked group also known as APT36, is conducting campaigns that deliver CrimsonRAT and a custom Golang remote-control trojan. The attacks use lure files such as ISO images and ZIP archives containing LNK files that run hidden batch scripts to load the payloads. The Golang trojan establishes persistence through Run registry keys and Startup folder copies, then polls its C2 server for commands such as file execution and download-and-execute. Attribution rests on payload reuse, shared C2 infrastructure, targeting of South Asia, and a matching machine identifier in the LNK files. The report notes that the group reuses infrastructure and adapts payloads to evade detection.",
+      "completeness": "Low",
+      "threats": [
+        "Crimson_rat"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip",
+        "sha256",
+        "exhibit",
+        "md5"
+      ],
+      "functions": [
+        "getFitnessProfile"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247508875&idx=1&sn=39ad939372621e4f7bc675dda5b0d7b3&chksm=f9c19082ceb61994ecb7e110b9ca94f1df5ff3a182547b84ffe4729acfee31d7514c8a20a27e&scene=178&cur_album_id=1955835290309230595&search_click_id=#rd"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "AnyDesk scams: How fraudsters turn legitimate software into a scam",
+      "summary": "AnyDesk is legitimate remote-access software, but fraudsters misuse it in social engineering scams that trick victims into granting device access. Scammers impersonate tech support, banks, Amazon, and PayPal, and also pose as employers or investment advisors to persuade targets to install AnyDesk. Once access is granted, attackers can steal data, install malware, or demand payment. The report notes that scams also target Android users via the Google Play Store and cites Reserve Bank of India and State Bank of India warnings. Key defender advice is to treat unsolicited support contact as a red flag, never grant full device access to unverified parties, contact support only through official channels, and fully uninstall AnyDesk and scan for malware after a compromise.",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Avoslocker",
+        "Tech-support-scam_kit_tool",
+        "Teamviewer_tool"
+      ],
+      "software": [
+        "Android",
+        "Google Play",
+        "Chrome"
+      ],
+      "algorithms": [
+        "aes-256"
+      ],
+      "links": [
+        "https://moonlock.com/anydesk-scams"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Bee Stealer Targets Codex And Claude, Uses AI To Profile Victims",
+      "summary": "Bee Stealer is a Windows infostealer sold as malware-as-a-service on cybercrime networks, and it targets authentication data and chat histories from Codex and Claude. Version 2.1 adds an \"AI PC profile\" feature in which a neural network parses stolen logs and writes victim profiles in English and Russian. Researchers confirmed the profile output in a controlled test, though the limited browser data on that machine kept the profile from being meaningful. Static analysis of a builder-generated sample found dedicated Codex and Claude collection paths, but the developer's full claim remains unverified. The operator panel supports filtering, search, bulk downloads, and a tool for processing stolen Google access tokens. Defenders should revoke tokens and reset credentials after suspected infection, and monitor for unauthorized outbound transfers that would send stolen data to attacker infrastructure.",
+      "completeness": "Low",
+      "threats": [
+        "Bee_stealer"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Codex",
+        "Claude",
+        "Chromium"
+      ],
+      "links": [
+        "https://www.blackfog.com/bee-stealer-uses-ai-to-profile-victims/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Tengu: Reverse Engineering a Mirai-Style Linux/IoT Botnet",
+      "completeness": "Medium",
+      "threats": [
+        "Tengu_botnet",
+        "Mirai",
+        "Tsunami_botnet",
+        "Bashlite",
+        "Hajime"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "systemd",
+        "OpenWrt",
+        "crontab"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://app.reverser.space/p/duckie/tengu-reverse-engineering-a-mirai-style-linux-iot"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "New AI phishing kit is helping thieves unlock stolen iPhones and Macs",
+      "summary": "AnonyMousKIT is a phishing kit sold on the dark web that helps thieves unlock stolen iPhones, iPads, Macs, and other Apple devices by harvesting lock screen passcodes. It extracts victim data from a stolen device and then automates lures via SMS, WhatsApp, email, and AI agent voice calls that impersonate \"Alice from Apple Support.\" Victims are sent to fake Apple Find My and Support sites that capture passcodes, Apple IDs, and 2FA codes. SOC Radar reported hundreds of operators, 6,092 iPhones targeted, and 506 reseller domains under a decentralized malware-as-a-service model. Defenders should warn users never to give passcodes to anyone and follow Apple's official lost-device guidance.",
+      "completeness": "Low",
+      "threats": [
+        "Anonymouskit",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Africa",
+        "Indonesia",
+        "America"
+      ],
+      "software": [
+        "WhatsApp",
+        "Telegram"
+      ],
+      "functions": [
+        "AI"
+      ],
+      "links": [
+        "https://moonlock.com/ai-phishing-anonymouskit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Dissecting a PHP web server rootkit",
+      "completeness": "Low",
+      "threats": [
+        "Chinachopper"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "BIG-IP",
+        "SELinux",
+        "NIX do",
+        "NIX so",
+        "UNIX",
+        "inux",
+        "s"
+      ],
+      "algorithms": [
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "main",
+        "mmap",
+        "wrapper",
+        "fork"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/dissecting-a-php-web-server-rootkit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Shai-Hulud Rises From the Dead after 111 days",
+      "summary": "Shai-Hulud, a self-replicating npm worm, reappeared on September 7, 2026, after 111 days with no detections of its payload hash, which was first seen during the May 19 @AntV attack. Four packages published within the same hour by one npm account carried the identical payload, which the report's authors say was not modified to evade detection. The payload had been fingerprinted by the npm community and multiple vendors months earlier. The authors note that npm introduced publish-time malware scanning in July, and that an exact hash match to a known sample should have been caught by that scanner. For defenders, the takeaway is that known-hash blocking remains a basic requirement that registry-level scanning claimed to meet, and this sample should be included in supply chain scanning test sets.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/shai-hulud-npm-resurfaces"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Chinese Implants in the Supply Chain",
+      "summary": "VulnCheck found three implants, SPEAKINGSTONE, DARKLANTERN, and ENDLESSDOORS, in ZBT routers and white-labeled variants sold globally, including through a US supplier. DARKLANTERN is an unauthenticated UDP listener that executes commands as root, with a hard-coded checksum key and a MAC filter that accepts all-zero addresses. SPEAKINGSTONE is a phone-home implant that beacons to ZBT's cloud C2 and supports DNS hijacking, PPPoE credential theft, and reverse SSH tunnels. After VulnCheck registered an abandoned backup C2 domain, 392 devices reported in, 390 of them in China. Defenders should note that these implants use unencrypted or unauthenticated protocols, so any party on the network path can hijack them, and ZBT-derived hardware may appear under many brand names.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Endlessdoors",
+        "Mitm_technique",
+        "Speakingstone",
+        "Darklantern",
+        "Dns_hijack_technique"
+      ],
+      "geo": [
+        "Ukraine"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Alibaba Cloud",
+        "OpenWrt",
+        "ZoomEye"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "setBackup",
+        "setBackServer"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.vulncheck.com/blog/zbt-darklantern-speakingstone"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Beyond Lazarus: Organization of DPRK cyber capabilities",
+      "summary": "This report examines how North Korea organizes offensive cyber operations to fund weapons and evade sanctions. The GRIB hosts most offensive units; the NIA plays a smaller role. Lazarus-linked intrusion sets pursue espionage and financially motivated attacks like crypto theft and ransomware. Thousands of IT workers using false identities generate revenue and gain access to victim organizations. Foreign universities, front companies and laundering hubs support these activities. Defenders should track clusters by tradecraft and motivation, as aliases and structures shift often.",
+      "completeness": "Low",
+      "threats": [
+        "Wannacry",
+        "Reaper",
+        "Killdisk",
+        "H0lygh0st",
+        "Fakepenny",
+        "Qilin_ransomware",
+        "Smuggling_technique"
+      ],
+      "geo": [
+        "South korean",
+        "Korean",
+        "North korean",
+        "Japanese",
+        "North koreans",
+        "Myanmar",
+        "Thailand",
+        "Cambodia",
+        "Iraq",
+        "Chinese",
+        "North korea",
+        "Moscow",
+        "Russia",
+        "United states",
+        "Africa",
+        "American",
+        "Bangladesh",
+        "Nigeria",
+        "Japan",
+        "Russian",
+        "South korea",
+        "Korea",
+        "China",
+        "Dprk",
+        "Tanzania",
+        "Republic of korea",
+        "Asia",
+        "Russian federation",
+        "Guinea",
+        "Laos",
+        "African",
+        "Ukraine"
+      ],
+      "software": [
+        "Slack"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "links": [
+        "https://www.sekoia.com/blog/beyond-lazarus-organization-of-dprk-cyber-capabilities"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Detection and Remediation of the Syslogk Rootkit in Linux Environments",
+      "summary": "Syslogk is a Linux kernel rootkit that hides malware and its traces by tampering with kernel functions. It uses inline hooking on proc_root_readdir and tcp4_seq_show to hide processes such as those named \"was_sys_relay\" and their parent or grandparent processes, as well as TCP sockets on specific ports. It also hooks the VFS readdir function to hide files and directories whose names contain \"was-patch\", and removes itself from the kernel module list and sysfs. Some security products reportedly missed this threat, while AhnLab V3 Net for Linux Server (version 3.6.25.4) added detection and can uncover hidden kernel modules, reveal concealed files, and remediate infections. The takeaway for defenders is that standard checks such as ls, lsmod, or netstat may not reveal kernel-level concealment, so kernel-level inspection is needed.",
+      "completeness": "Low",
+      "threats": [
+        "Syslogk_rootkit",
+        "Inline_hooking_technique"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95253/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Adobe Commerce Zero-Day StyleSmuggler Backdoors Magento Stores",
+      "summary": "An unauthenticated, unpatched Adobe Commerce zero-day dubbed StyleSmuggler is being actively exploited to plant a stealth Rust backdoor on Magento Open Source and Adobe Commerce stores, with no CVE or official fix available. The flaw abuses three methods in Magento's dependency-injection code scanner that were never restricted to command-line use, letting HTTP requests trigger file inclusion. Attackers first plant PHP code in files Magento writes automatically, then trigger execution when the \"Payment Transaction Failed Reminder\" email renders via GraphQL. The implant masquerades as a Linux kernel worker, persists through a self-rebuilding cron entry, and reads Redis session storage to hijack sessions. Defenders should hunt for the listed process, file, cron, log, and email indicators, disable GraphQL where possible, and apply community guard patches as hardening until Adobe releases an official fix.",
+      "completeness": "Medium",
+      "threats": [
+        "Stylesmuggler",
+        "Residential_proxy_technique",
+        "Vidar_stealer",
+        "Lumma_stealer",
+        "Stealc",
+        "Redline_stealer",
+        "Acreed",
+        "Amos_stealer"
+      ],
+      "software": [
+        "Linux",
+        "Redis",
+        "nginx",
+        "Claude",
+        "Anthropic",
+        "Okta",
+        "Salesforce"
+      ],
+      "languages": [
+        "php",
+        "rust"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/adobe-commerce-zero-day-style-smuggler-backdoors-magento-stores"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Tracking BigBear 2.0 Evilginx2 Phishing Campaign",
+      "summary": "BigBear 2.0 is a rebranded Evilginx2-based phishing-as-a-service platform, operated under the alias \"General Boss\" and leased to at least five affiliate operators. It uses an adversary-in-the-middle proxy with the \"offy\" phishlet to target Microsoft 365 accounts and capture session cookies, which allows attackers to bypass MFA. Its 42 VPS nodes, geo-matched residential proxies, and custom JavaScript injections disable FIDO2/WebAuthn and suppress Microsoft anti-phishing telemetry. The panel recorded 5,137 credential records across 40+ countries, with IT Services/MSP organizations as the dominant sector target. For defenders, the key takeaway is that only phishing-resistant MFA such as FIDO2/WebAuthn structurally defeats this technique, so session revocation and Conditional Access enforcement are also needed.",
+      "completeness": "High",
+      "threats": [
+        "Bigbear_tool",
+        "Evilginx_tool",
+        "Residential_proxy_technique",
+        "Mitm_technique",
+        "Aitm_technique",
+        "Lolbin_technique",
+        "Bec_technique",
+        "Supply_chain_technique",
+        "Spear-phishing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Saudi arabia",
+        "California",
+        "France",
+        "India",
+        "Germany",
+        "New zealand",
+        "Indian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 12,
+      "software": [
+        "Telegram",
+        "Azure AD",
+        "elegram no",
+        "Outlook",
+        "Windows Hello",
+        "Salesforce",
+        "Microsoft Teams"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "functions": [
+        "Set-Cookie"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/tracking-bigbear-2-0-evilginx2-phishing-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "Financial Services Breach Response: How Barricade Investigates Bank and Credit Union Incidents - Barricade Cyber Solutions",
+      "completeness": "Medium",
+      "threats": [
+        "Atm_jackpotting_technique",
+        "Blackcat",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "New york",
+        "California"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://barricadecyber.com/financial-services-breach-response/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-07",
+      "title": "DoppelCart: 119,000 domains in what is likely the largest documented fake shop network",
+      "summary": "DoppelCart is a fake shop network, described by its publisher as roughly 119,000 domains linked by shared infrastructure and recurring shop software traits, which the authors believe is the largest publicly documented fake shop cluster by number of attributed domains. The fake shops copy real product catalogues, descriptions, and original images from genuine brands, and some pages load files directly from the brand's own image server. Victims' complaints are often directed to the real companies, because the fake shops display the genuine companies' support addresses. The report's authors state that takedowns they performed for clients stayed offline, but most of the cluster remains online, and they publish a searchable database so brands can check whether they are affected.",
+      "completeness": "Low",
+      "threats": [
+        "Doppelcart"
+      ],
+      "links": [
+        "https://nebty-id.com/de/doppelcart-fakeshop-netzwerk/"
+      ]
+    }
+  }
+]

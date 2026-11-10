@@ -1,0 +1,677 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "ADINT: Weaponized Ad Tech for Zero-Click Spyware and Mass Identity Vacuuming",
+      "summary": "Confiant reports that ad tech entity Discover-Tech (DTech) uses sophisticated cloaking and hands off to infrastructure that Citizen Lab attributes to the commercial spyware vendor Candiru. The operator's /getAd script loads an obfuscated SDK that fingerprints devices, runs behavioral bot checks, and polls a command-and-control channel encrypted with ECDH, AES, and RSA, with the ability to push code executed in the ad frame. Confiant also found a separate payload that harvests publishers' first-party cookies and sends them to the operator, including session IDs of logged-in users, even where GDPR consent was absent. Discover-Tech serves roughly 10 million ad impressions daily, and its ads reached hundreds of sensitive networks, including government, defense, and security services. Confiant states that the operator stands out from typical financially motivated malvertising because it is quiet, precise, and engineered with unusual rigor. Defenders should treat ad-delivered JavaScript that fingerprints devices and builds encrypted C2 channels as a serious surveillance signal.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "Armenia",
+        "Spain",
+        "Netherlands",
+        "Belgium",
+        "Malaysia",
+        "Lebanon",
+        "Gibraltar",
+        "Germany",
+        "Norway",
+        "Palestine",
+        "Singapore",
+        "Saudi arabia",
+        "Portugal",
+        "Sweden",
+        "Mexico",
+        "Bahrain",
+        "Montenegro",
+        "Thailand",
+        "United states",
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "webRTC",
+        "IndexedDB",
+        "Cloudflare",
+        "Android"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-cbc",
+        "aes",
+        "sha1",
+        "exhibit",
+        "ecdh"
+      ],
+      "functions": [
+        "createElement",
+        "setAttribute",
+        "initSDK",
+        "setTimeout",
+        "getUserMedia",
+        "getRandomValues",
+        "getAdScript",
+        "clicker",
+        "getCookies",
+        "getUA",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.confiant.com/p/adint-weaponized-ad-tech-for-zero-click-spyware-and-mass-identity-vacuuming"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "Inside Help TDS: Hotejka, Cloudflare Pages, and Predictive Detection",
+      "summary": "Infoblox attributes the Help Traffic Distribution System (TDS) to Hotejka, a small Russian-language affiliate program that appears to be a rebrand of ROI777, active since at least 2017. Help TDS redirects victims through fingerprinting and location checks to fake Microsoft warnings and tech support call centers, where victims are persuaded to install the UltraViewer remote desktop tool. Since April 2026, the operators have hosted the TDS on free Cloudflare Pages sites, which Infoblox detects about seven days before use. Users are exposed through compromised websites, malvertising, social media, and spam, with up to 4% of Infoblox cloud customers exposed on a single day. Infoblox says its detections reduced exposure to around 0.5% of cloud customers by September 2026.",
+      "completeness": "Medium",
+      "threats": [
+        "Help_tds_tool",
+        "Tech-support-scam_kit_tool",
+        "Lolbin_technique",
+        "Ultraviewer_tool",
+        "Disposable_tds_tool",
+        "Balada_injector",
+        "Detour_dog",
+        "Dollyway"
+      ],
+      "geo": [
+        "Australia",
+        "Usa",
+        "Japan",
+        "Sweden",
+        "Belgium",
+        "London",
+        "France",
+        "Canada"
+      ],
+      "software": [
+        "Cloudflare",
+        "WordPress",
+        "GoDaddy",
+        "Telegram",
+        "Keitaro",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/inside-help-tds-hotejka-cloudflare-pages-and-predictive-detection/",
+        "https://pastebin.com/96N1bg72",
+        "https://pastebin.com/hkhRi8GB"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "YuanKong RAT: the Android remote-control service that stamps its operators' names into every build",
+      "summary": "YuanKong is an Android remote-control RAT delivered through a Nova packer that stores its decryption key and IV in cleartext in assets/vault-config.json, so the payload can be unpacked statically. The child app is signed by one shared certificate across all 57 distinct payloads in the collection, making the signer the most reliable family anchor. Each build embeds operator account identifiers as string constants that the beacon reports to C2, and the analysis recovered 42 operator accounts from 110 droppers. The malware communicates over a persistent Socket.IO/WebSocket channel with TLS as its only protection, and it captures screen content, accessibility text, payment PINs and lockscreen taps. It escalates to an ADB shell on the device by self-pairing with the local adbd. Defenders should hunt on the signing certificate and the shared C2 host set rather than package names.",
+      "completeness": "Medium",
+      "threats": [
+        "Yuankong_rat",
+        "Redhook",
+        "Rathat"
+      ],
+      "geo": [
+        "Singapore",
+        "Chinese"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "aes-128-gcm",
+        "base64",
+        "md5",
+        "xor"
+      ],
+      "functions": [
+        "f",
+        "p",
+        "read",
+        "e",
+        "d",
+        "getText",
+        "findAccessibilityNodeInfosByText",
+        "getRawY",
+        "createAlice",
+        "createBob",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://starlabs.sg/blog/2026/10-yuankong-rat-the-android-remote-control-service-that-stamps-its-operators-names-into-every-build/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "How RL mapped a Midnight Blizzard-linked campaign from two hashes",
+      "summary": "ReversingLabs traced a Midnight Blizzard-linked campaign (GTG-20006) by expanding two malware hashes published by Anthropic into a wider map of staging infrastructure, lures, and rebuilt stagers. Its telemetry held these files and the staging server three to four weeks before Microsoft's CaptiveCrunch report, and five rebuilt stagers had different hashes but one identical behavior profile. The campaign targeted government, diplomatic, think-tank and defense-industrial organizations, stealing Microsoft 365 access via device-code phishing. Relationship-based pivots, such as content extraction, a YARA rule on operator-chosen beacon labels, and file provenance, succeeded where a plain string search failed. Reputation scores were the weakest signal, and the staging server was still serving the stager on October 5, 2026. Defenders should retro-hunt vendor indicators against historical telemetry, block infrastructure directly, and restrict device-code authentication where feasible.",
+      "completeness": "High",
+      "threats": [
+        "Cornflake",
+        "Chocoshell",
+        "Device_code_phishing_technique",
+        "Powersploit_tool",
+        "Empire_loader",
+        "Shadow_copies_delete_technique",
+        "Allaple",
+        "Aitm_technique",
+        "Clickfix_technique",
+        "Boxter",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "London",
+        "Ukrainian",
+        "Russian",
+        "New york",
+        "Ukraine"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 16,
+      "software": [
+        "Anthropic",
+        "Claude",
+        "Microsoft 365",
+        "Chrome",
+        "Firefox",
+        "Microsoft Teams",
+        "Windows service",
+        "polyfill",
+        "Outlook",
+        "WhatsApp",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256",
+        "sha1",
+        "md5"
+      ],
+      "functions": [
+        "Anthropic"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/how-rl-mapped-a-midnight-blizzard-linked-campaign-from-two-hashes"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "The GhostX Ecosystem: Forged in Transit, Licensed to Deceive",
+      "summary": "Cyble tracks GhostBat RAT, an Android remote-access and banking Trojan targeting users in India, and the broader operator-controlled GhostX ecosystem behind it. The malware is mainly distributed through smishing messages impersonating mParivahan and eChallan government services, with fake APKs also hosted on GitHub. The latest variant abuses Android Accessibility Service to run Ghost Overlay, which intercepts and replays PIN keypad touches in Google Pay and MobiKwik. It also captures PIN and key input across 60 banking, UPI, wallet, and payment apps. Firebase Remote Config lets operators change C&C infrastructure and toggle features without redistributing the APK, and its loaders use layered packing that defeats simple detection.",
+      "completeness": "High",
+      "threats": [
+        "Ghostx_tool",
+        "Ghostbat",
+        "Ghost_overlay_technique",
+        "Smishing_technique",
+        "Miningdropper"
+      ],
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 14,
+      "software": [
+        "Android",
+        "Google Play",
+        "Twitter",
+        "Telegram"
+      ],
+      "algorithms": [
+        "rc4",
+        "exhibit",
+        "aes-256-gcm",
+        "aes-cbc",
+        "sha256",
+        "xor",
+        "zip",
+        "aes"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://cyble.com/blog/ghostx-forged-in-transit-licensed-to-deceive/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "Aoki: Infostealer Targets AI Coding Assistant Credentials",
+      "summary": "The Aoki (aka Aokigahara) infostealer has recently gained the ability to steal credentials and session files for AI coding assistants, including Claude, OpenAI's Codex, Cursor, Codeium and Gemini. Earlier versions of the malware did not target these files, indicating the capability was added recently. Stolen API keys and tokens can let attackers act under a legitimate user's identity and quota, and can expose linked repositories, cloud services and CI/CD pipelines. Beyond AI tools, the malware steals data from many browsers, cryptocurrency wallets, password managers, messaging and gaming apps, and VPN and FTP clients. Symantec notes that AI credentials may be as valuable to attackers as card data and cryptocurrency wallets, since they can be resold or used to run up usage. Symantec detects the family as Infostealer.Aoki.",
+      "completeness": "Medium",
+      "threats": [
+        "Aokigaharastealer",
+        "Llmjacking_technique"
+      ],
+      "software": [
+        "Claude",
+        "Codex",
+        "OpenAI",
+        "ChatGPT",
+        "JetBrains",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "CentBrowser",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "tronlink",
+        "coinbase",
+        "exodus_wallet",
+        "solflare",
+        "rabby",
+        "terra_station",
+        "keplr",
+        "sollet",
+        "kardiachain",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "ethereum",
+        "dogecoin",
+        "litecoin",
+        "monero"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/aoki-infostealer-ai-targeting"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "HypeAgent: Malware from the era when a single Trojan had to be able to do everything",
+      "summary": "HypeAgent is a Windows remote access trojan designed to give an operator full control of an infected computer, with roughly 195 top-level commands. It is mainly delivered through phishing emails with JavaScript attachments disguised as business documents such as purchase orders and payment notices. The loader chain runs largely in memory, and a later stage is hidden inside the metadata of a disguised PNG image and injected into svchost.exe. Its capabilities go beyond typical RAT features, including hidden browser sessions (HVNC), a Hidden RDP implementation that patches system DLLs in memory, a local HTTPS proxy with its own certificate authority, and cookie validation across dozens of services. It also targets Electron cryptocurrency wallets such as Exodus and includes a configurable built-in miner.",
+      "completeness": "Medium",
+      "threats": [
+        "Hypeagent",
+        "Dll_injection_technique",
+        "Cryptoclipper",
+        "Hvnc_tool"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Task Scheduler",
+        "Discord",
+        "Steam",
+        "Instagram",
+        "ChatGPT",
+        "Claude",
+        "Electron",
+        "Windows Firewall",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "getSeedFile",
+        "createFromMnemonicRecoveryPhrase"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/7135/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "Silver Fox’s “Cloud Book of Life and Death” Sequel: From Continuous Production to a Referer Time-Window Variant",
+      "summary": "Researchers at 360 Netlab describe a fifth phase in the Silver Fox \"Cloud Book of Life and Death\" campaign, in which the Referer whitelist check gains a time window. Between 00:00 and 08:00, a whitelist hit returns https://www.360.com/ instead of a sample download address, so this response cannot be used to fetch samples but still identifies Silver Fox domains. The team produced data from September 14 to October 13, 2026, first by passing candidate domains in the Referer header and later in the h query parameter, yielding 2,043 daily detections (1,930 unique domains). Half-hour experiments with original and character-deleted domains showed that the 360 response appeared only for original Silver Fox domains and mainly at night, with a shared gap in results from September 29 to October 2. The report notes that the timing of the rule change is unknown and that the purpose of the time-window behavior remains unexplained.",
+      "completeness": "Low",
+      "software": [
+        "curl"
+      ],
+      "links": [
+        "https://blog.netlab.360.com/yin-hu-yun-duan-sheng-si-bo-xu-pian-cong-chi-xu-sheng-chan-dao-referer-shi-jian-chuang-bian-chong/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "Analysis of APT-C-55 (Kimsuky) Group’s Multi-Path Delivery Attack Campaign.",
+      "summary": "Kimsuky (APT-C-55), a long-running group known for espionage against South Korean think tanks, government diplomatic bodies, media, and academia, is behind a multi-path campaign targeting South Korea and possibly other countries in insurance, finance, and R&D. The group used three initial delivery routes: phishing emails with malicious LNK files, PowerShell-based downloaders disguised as Korean insurance PDFs, and a trojanized clone of the open-source pybroker library that backdoored developers when they ran its tests. All routes used scheduled tasks every nine minutes, misuse of certutil and curl copies, and public-directory staging to maintain long-term access and steal system and account data. Defenders should watch for these recurring TTPs, including abuse of renamed system utilities and suspicious test-triggered execution in developer environments.",
+      "completeness": "High",
+      "threats": [
+        "Nircmd_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "South korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "WinRAR"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/LkX7gqz6uxyYFPHP9qJgBA"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "ROMULUS: Analysis of a New Multi-Payload ClickFix Delivery Platform",
+      "completeness": "High",
+      "threats": [
+        "Romulus",
+        "Clickfix_technique",
+        "Legionloader",
+        "Romulusloader",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 10,
+      "software": [
+        "ChatGPT",
+        "Windows CryptoAPI",
+        "Chrome",
+        "WinHTTP"
+      ],
+      "algorithms": [
+        "base64",
+        "aes",
+        "aes-256-cbc",
+        "aes-cbc",
+        "crc-32",
+        "rc4",
+        "xor"
+      ],
+      "functions": [
+        "GetConsoleWindow"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.forescout.com/blog/romulus-analysis-of-a-new-multi-payload-clickfix-delivery-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "ARMORY CASTLE Exploits BeyondTrust",
+      "summary": "ARMORY CASTLE, a suspected PRC-nexus espionage actor, exploited the zero-day CVE-2026-102764 in BeyondTrust Remote Support appliances in late August 2026, allowing arbitrary file uploads. The actor deployed the SAWFLY PHP webshell, escalated to root by setting SUID permissions on a copied shell, and harvested credentials from the appliance's secrets vault. It established persistence by adding passwordless sudo rights through configuration templates and deleted logs to evade detection. The actor also abused admin sessions, elevated Jump Item permissions, and used the BARECLAW SOCKS5 tunneler exposed through modified HAProxy routing. Defenders should patch promptly (BT26-05), treat exposed vulnerable appliances as potentially compromised, and expect possible widespread exploitation.",
+      "completeness": "Medium",
+      "threats": [
+        "Sawfly",
+        "Bareclaw",
+        "Credential_harvesting_technique",
+        "Bomgar_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "sudo",
+        "OpenSSL",
+        "Haproxy",
+        "Outlook",
+        "Curl"
+      ],
+      "algorithms": [
+        "base32",
+        "rc4",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-beyondtrust/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "Behind the Help Desk Call: Insights from the Leaked Chats of an IT-Impersonation Extortion Crew",
+      "completeness": "Medium",
+      "threats": [
+        "Rclone_tool",
+        "Zoho_assist_tool",
+        "Microsoft_quick_assist_tool",
+        "Anydesk_tool",
+        "Syncro_tool",
+        "Atera_tool",
+        "Splashtop_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "New york",
+        "North korea",
+        "Netherlands"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "Telegram",
+        "Gmail",
+        "ChatGPT",
+        "outlook",
+        "WinSCP"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/silent-ransom-group-leaked-chats/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "AI-Powered Espionage Campaign Targets Government Linux Infrastructure",
+      "summary": "Unit 42 tracks CL-UNK-1211, a campaign from October 2025 to April 2026 targeting government entities and state-affiliated infrastructure on Linux and database environments. The attackers used payloads with AI-generated comments and reasoning notes, suggesting LLM-generated code or an automated AI agent. They deployed web shells, hijacked .bashrc files and PHP login pages to harvest credentials, and used a custom Go remote access Trojan called SysGoRAT. The operators enumerated government mailboxes to reach linked social media accounts, dumped database contents, and attempted exfiltration. They also tried to disable endpoint protection and erase logs, and Cortex XDR detected and blocked the process termination attempts.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Sysgorat",
+        "Netcat_tool",
+        "Timestomp_technique",
+        "React2shell_vuln",
+        "Gsocket_tool",
+        "Pwnkit_tool",
+        "Linpeas_tool",
+        "Revsocks_tool",
+        "Pysoxy_tool",
+        "Gs-netcat"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "WildFire",
+        "php-fpm",
+        "Plesk",
+        "sudo",
+        "systemd",
+        "crontab",
+        "MSSQL",
+        "sshpass",
+        "curl",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/",
+        "https://github.com/kost/revsocks",
+        "https://github.com/ly4k/PwnKit",
+        "https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "Technical Advisory: AhsayCBS Exploitation Chain (CVE-2026-105133, CVE-2026-105134)",
+      "summary": "AhsayCBS, the server component of the Ahsay Cloud Backup Suite, is being actively exploited through a chain of two vulnerabilities: CVE-2026-105133, an authentication flaw, and CVE-2026-105134, an OS command injection flaw rated CVSS 10.0 by VulDB. Servers running builds below v10.3.4.45 (v10) or v9.15.2.70 (v7 to v9) are exposed when their management web service is reachable, and the earlier v10.3.4.0 and v9.15.2.59 patches were later found incomplete. Bitdefender MDR investigated three incidents where attackers used webshells, PowerShell payloads, and attempted persistence, and in one case installed OpenSSH and elevated an account to SYSTEM. Both CVEs are listed in CISA KEV, and the vendor has released hotfixes. Defenders should verify the installed build, apply the hotfix, reboot, and hunt for webshells and persistence, since patching does not remove access already gained.",
+      "completeness": "Low",
+      "software": [
+        "OpenSSH"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/technical-advisory-ahsaycbs-exploitation-chain-cve-2026-105133-cve-2026-105134"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-15",
+      "title": "Inside a PaperCut Attacker’s AI Toolkit: Agent Instructions, Exploit Code, a Second RCE, and Victims Across 45+ Countries",
+      "summary": "The threat is a campaign exploiting PaperCut NG/MF print management software through two vulnerabilities, CVE-2026-81578 and CVE-2026-82078, disclosed on 27 August 2026. Exposed open directories on a single host, 45.142.193[.]132, revealed the operator's AI-agent-assisted exploitation workbench, exploit code, and post-exploitation tooling. The operator used a Tapestry bypass to rewrite user-lookup settings and achieve code execution, and also tested a second RCE path through XML-RPC when API controls were weak. Post-exploitation included Windows LSA credential collection, service-credential harvesting, chisel-based reverse SOCKS5 persistence on Linux, and Metasploit automation against Active Directory environments. Logs and victim data indicate a reconnaissance pool of 1,005 hosts across at least 45 countries and 46 distinct AD domains. Defenders should patch, check for user-lookup configuration changes, hunt for behavioral indicators such as chisel and cron persistence, and audit XML-RPC exposure rather than relying on IP blocking alone.",
+      "completeness": "High",
+      "threats": [
+        "Metasploit_tool",
+        "Chisel_tool",
+        "Pentagi_tool",
+        "Meterpreter_tool",
+        "Nmap_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Portugal",
+        "Switzerland",
+        "Chile",
+        "Netherlands",
+        "African",
+        "Sweden",
+        "Belgium",
+        "United kingdom",
+        "Africa",
+        "Italy",
+        "France",
+        "Malaysia",
+        "Australia",
+        "Canada",
+        "United states",
+        "Germany",
+        "Brazil",
+        "Puerto rico",
+        "Latin america",
+        "Holland",
+        "Spain",
+        "Saudi arabia",
+        "Asia-pacific",
+        "Singapore",
+        "South africa",
+        "Ireland",
+        "Taiwan"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 16,
+      "software": [
+        "PaperCut",
+        "Linux",
+        "Active Directory",
+        "OpenAI",
+        "Codex",
+        "DeepSeek",
+        "scripting engine",
+        "Docker",
+        "Windows SECURITY",
+        "Unix",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "getInstance",
+        "getServerHome"
+      ],
+      "languages": [
+        "groovy",
+        "golang",
+        "rust",
+        "java"
+      ],
+      "links": [
+        "https://hunt.io/blog/papercut-attacker-ai-toolkit-exploit-code-second-rce"
+      ]
+    }
+  }
+]

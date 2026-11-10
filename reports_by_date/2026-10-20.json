@@ -1,0 +1,192 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-20",
+      "title": "Forged Commits Push a preinstall Dropper into hugo-paper and mevn-cli",
+      "summary": "Attackers pushed forged commits into the hugo-paper GitHub theme and the mevn-cli project, adding a preinstall hook in scripts/preinstall.js that downloads a second-stage script from buildwithknexus.xyz. Because the payload lives in the repositories rather than an npm package, registry scanners do not detect it. The forged commits copied the author, date, and message of legitimate commits, so the history appears unchanged, though the missing signature and altered parent count reveal the forgery. The attacker likely used stolen push credentials to force-push directly to default branches without review. Defenders should treat any machine that ran an install in affected checkouts or forks as compromised, rotate secrets, and block the domain.",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "curl",
+        "linux",
+        "macOS",
+        "Travis"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://safedep.io/hugo-paper-mevn-cli-forged-commit-preinstall-dropper",
+        "https://github.com/nanxiaobei/hugo-paper",
+        "https://github.com/nanxiaobei/hugo-paper/blob/a68d2c9b2ad9d857b09dcb30a578ac1de6487061/scripts/preinstall.js",
+        "https://github.com/madlabsinc/mevn-cli"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-20",
+      "title": "From Phishing to LLMjacking: Threat Actors Targeting Cloud Billing Accounts for LLM Usage",
+      "summary": "Threat actors compromised privileged Google Cloud Platform user credentials through a phishing campaign that used purchased Google Search ads targeting terms like \"google cloud\" and \"gcp\". After gaining access, they disabled the organization policy restricting IAM membership to company domains, added external Gmail accounts to the victim's billing account, and granted billing admin roles. They then linked attacker-controlled GCP projects to the victim's billing account, so large-volume Gemini API usage was charged to the victim while prompts and outputs stayed invisible to internal logs. Victims saw unauthorized charges of tens to hundreds of thousands of dollars within 24 to 48 hours, and the attackers demoted legitimate billing administrators to read-only viewers to block their response. Defenders should monitor Google Workspace and GCP audit logs for policy changes, external IAM members, and unexpected Gemini API enablement, and should consider enforcing spend cap budgets.",
+      "completeness": "Low",
+      "threats": [
+        "Llmjacking_technique"
+      ],
+      "software": [
+        "Gmail"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-20",
+      "title": "#StopRansomware: SafePay Ransomware",
+      "completeness": "High",
+      "threats": [
+        "Safepay",
+        "Sharefinder_tool",
+        "Lolbin_technique",
+        "Winrm_tool",
+        "Uac_bypass_technique",
+        "Rclone_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Australia",
+        "America"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 24,
+      "software": [
+        "PsExec",
+        "Active Directory",
+        "component object model",
+        "WinRAR",
+        "WinSCP"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "functions": [
+        "PowerShell"
+      ],
+      "links": [
+        "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
+        "https://github.com/cisagov/Decider/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-20",
+      "title": "Swallowtail: Russian Espionage Group Targets Defense Firms in Two NATO Countries",
+      "summary": "Swallowtail, a Russian espionage group also known as APT28, targeted a law enforcement agency, a naval shipbuilder and a military aircraft engine manufacturer in two NATO member states. In the shipbuilder intrusion, the group used the Hookedge backdoor, delivered through a macro-enabled Word document, which relayed tasks and output through webhook.site and later a dedicated IP address. The intrusion lasted at least two months and included credential theft via an SSH private key and a fake NTLM capture script. The attackers then opened a persistent SSH tunnel into the internal network and deployed a previously undocumented reflective loader, ld.exe. Defenders should treat Hookedge infections as potentially ongoing and hunt for credential theft and tunneling activity, not just the backdoor.",
+      "completeness": "Medium",
+      "threats": [
+        "Hookedge",
+        "Ntlmrelayx_tool"
+      ],
+      "geo": [
+        "Russian",
+        "America"
+      ],
+      "software": [
+        "Microsoft Edge",
+        "Outlook",
+        "curl",
+        "Dropbox",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/swallowtail-russia-nato-targets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-20",
+      "title": "Rank Math PRO 3.0.123 Supply Chain Compromise: Backdoor Can Regenerate on Page Visits",
+      "summary": "Malware was injected into a subset of Rank Math PRO 3.0.123 packages distributed between October 15 and 16, 2026, UTC. The tampered plugin installs execution mechanisms in WordPress and can regenerate hidden backdoors on page visits, so sites may appear to function normally. Sites that activated the affected version obtained during the window are treated as compromised by the vendor, while packages downloaded but never activated are not confirmed compromises. Defenders should check for unauthorized administrator accounts, disguised core and cache files, suspicious cron entries, and outbound traffic to rank1cdn.com. The vendor recommends restoring from a clean pre-incident backup, deploying version 3.0.124, rotating all exposed secrets, and extending investigation beyond the WordPress directory.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 4,
+      "software": [
+        "WordPress",
+        "PHP-FPM",
+        "crontab"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://dev.to/anoymask/rank-math-pro-30123-supply-chain-compromise-backdoor-can-regenerate-on-page-visits-cm8"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-20",
+      "title": "Supply chain compromise of OVHcloud CLI by the GlassWorm group",
+      "summary": "The GlassWorm group compromised the official OVHcloud CLI (ovh/ovhcloud-cli) by replacing release binaries for versions v0.11.0 through v0.15.0 on GitHub during a roughly 25-minute window on October 19, 2026. The replacement was carried out through the GitHub account of a legitimate OVH contributor, whose account had been compromised by at least March 5, 2026, roughly 228 days before the attack. That earlier compromise was used to force-push a JavaScript loader into four personal repositories, hiding an AES-256-CBC encrypted payload with invisible Unicode characters. The loader checks for a Russian locale and timezone, retrieves the next payload URL from a Solana wallet memo field, and runs it via eval. OVHcloud removed the affected files and published a clean v0.16.0 release with an immutability attestation.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Ovhcloud_cli",
+        "Glassworm",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 10,
+      "software": [
+        "macOS",
+        "Linux"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256-cbc"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cyberveille.ch/posts/2026-10-21-compromission-de-la-chaine-d-approvisionnement-ovhcloud-cli-par-le-groupe-glassworm/"
+      ]
+    }
+  }
+]

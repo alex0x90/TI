@@ -1,0 +1,331 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "A Series of Unauthenticated Events: Chained Exploitation of Ivanti Connect Secure Zero-Days",
+      "summary": "Volexity identified UTA0576, a previously unknown threat actor, exploiting a zero-day chain in fully patched Ivanti Connect Secure VPN appliances to achieve unauthenticated root-level remote code execution. The chain combines an authentication bypass in welcome.cgi, a file write race condition in wu.cgi, and a privilege escalation flaw in dsinvoked, with the first two tracked as CVE-2026-104935. The attacker ran commands by passing them through the exploit's HTTPS requests, deploying no backdoor or web shell. Post-exploitation activity focused on harvesting AD credentials, LAPS passwords, and BitLocker keys, sniffing LDAP traffic, and password spraying. The actor also used anti-forensic measures, including log tampering and in-memory patching, that evade Ivanti's Integrity Checker. Defenders should apply patches and perform memory and network forensics, since the integrity tool may miss compromise.",
+      "completeness": "Medium",
+      "threats": [
+        "Kerberoasting_technique",
+        "Password_spray_technique",
+        "Bpfdoor"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Ivanti",
+        "Volexity Volcano",
+        "Active Directory",
+        "BitLocker",
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "exec"
+      ],
+      "languages": [
+        "perl",
+        "python"
+      ],
+      "links": [
+        "https://www.volexity.com/blog/2026/10/13/a-series-of-unauthenticated-events-chained-exploitation-of-ivanti-connect-secure-zero-days/",
+        "https://github.com/volexity/threat-intel/tree/main/2026/2026-10-13%20Ivanti"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "AI Security Incident Case: Fake Claude Installation Page Delivered Malware via ClickFix",
+      "summary": "Attackers ran a malvertising campaign against Claude users, disclosed by Push Security on October 9, 2026, that set a Google search ad's landing domain to bing.com. The chain used Bing's click redirects and a compromised WordPress site to reach a counterfeit Claude download page, with two cloaking layers filtering out ad reviewers and scanners. Only users arriving via Google or Bing referrers saw the malicious page, which showed a fake macOS download button and terminal command. The clipboard copy contained a different script that was piped from a lookalike domain into zsh, while the displayed command appeared to be Anthropic's real one. Because every hop used a legitimate domain, domain reputation blocking is ineffective, so defenders need session-level telemetry and clipboard-write monitoring. The final payload remains unconfirmed.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Cloaking_technique",
+        "Installfix_technique"
+      ],
+      "geo": [
+        "American"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "WordPress",
+        "DocuSign",
+        "SharePoint",
+        "macOS",
+        "Anthropic",
+        "curl",
+        "openssl"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://nsfocusglobal.com/ai-security-incident-case-fake-claude-installation-page-delivered-malware-via-clickfix/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "New macOS Malware Uses Fake System Prompts to Steal Passwords and Deploy RAT",
+      "summary": "ICMacOS is a macOS malware-as-a-service platform, marketed by the Russian-speaking actor GlowComa as part of the broader ICARUS criminal suite alongside a ClickFix panel and a cryptocurrency clipper. Victims are lured via ClickFix pages into pasting a command into Terminal, after which a spoofed System Preferences prompt collects their password, validated against the local Keychain. The payload, written in Go, steals browser data, wallets, messaging sessions, and developer credentials such as cloud profiles, SSH keys, and tokens, and can decrypt Keychain databases. Version 2 converts the stealer into a persistent RAT with a masquerading LaunchAgent and a WebSocket command-and-control channel for real-time shell access. Defenders should watch for unexpected Terminal or osascript activity, fake authentication prompts, and new LaunchAgents, and should restrict admin rights and rotate exposed credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Icmacos",
+        "Icarus",
+        "Clickfix_technique",
+        "Credential_stealing_technique"
+      ],
+      "software": [
+        "macOS",
+        "Telegram",
+        "Discord",
+        "WhatsApp",
+        "iMessage",
+        "Kubernetes",
+        "Docker"
+      ],
+      "links": [
+        "https://gbhackers.com/macos-credential-stealing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "Kimsuky Uses Quasar RAT to Deploy Funhouse Ransomware Through Multi-Stage Scripts",
+      "summary": "Kimsuky, a North Korea-linked group, is running a campaign that delivers Funhouse ransomware through a malicious Hangul document disguised as a resume. The lure drops executable components into the temporary directory, and a click on a hyperlink in the document then launches a VBScript editor that runs a malicious manifest script. Successive Batch, VBS, and PowerShell scripts lead to a Python backdoor and Quasar RAT, which the attackers use to run the ransomware. The report links this activity to earlier Endpoint ransomware deployments and finds continuity rather than a new operation, since the attackers kept the same Quasar mutex and implementation details while changing infrastructure and contact addresses. Defenders are advised to correlate the reused mutex and configuration artifacts rather than relying on filenames, contact addresses, or network indicators alone.",
+      "completeness": "Low",
+      "threats": [
+        "Quasar_rat",
+        "Funhouse"
+      ],
+      "algorithms": [
+        "curve25519",
+        "sha512",
+        "md5",
+        "chacha20",
+        "hc-128"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "vbscript"
+      ],
+      "links": [
+        "https://gbhackers.com/funhouse-ransomware-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "RSVP to Disaster: How One Click Installs a RAT",
+      "summary": "A phishing campaign disguised as an online event invitation lures users into downloading a remote access trojan, as observed by the Cofense Phishing Defense Center. The email uses vague, generic wording and a \"Click Here to Download the Invite\" button to exploit curiosity and trust, especially as the holiday season begins. Victims pass through a CAPTCHA page on a generic, unbranded domain that is less than a month old, then a second fake invitation page. The download is a zipped folder containing a legitimate ConnectWise ScreenConnect installer that attackers abuse to gain full remote control of the device while staying hidden. Defenders should prioritize training employees to recognize and report such lures, since the attack relies on user behavior rather than sophisticated techniques.",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://cofense.com/blog/rsvp-to-disaster-how-one-click-installs-a-rat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "MALFEX Moves Its npm Loader into a Native Windows DLL",
+      "summary": "The npm package imgdecode (versions 1.0.0 to 1.0.3, publisher malfexteste8) hides a malicious loader in a prebuilt native Windows DLL, part of the MALFEX npm campaign. The addon runs when require('imgdecode') is called from an interactive Windows console, and it skips execution when output is redirected, as in CI jobs and sandboxes. It downloads AES-256-CBC encrypted shellcode from GitHub, decrypts it, and injects it into a suspended dllhost.exe process, with no install script required. SafeDep linked the payload chain to a MALFEX stealer and RAT that targets browser data, crypto wallets, Discord tokens, and files, and that can tamper with event logs. Defenders should treat any Windows workstation that loaded imgdecode, imgbundle, runhelper, or another MALFEX package as potentially compromised, isolate it, collect memory, and rotate credentials.",
+      "completeness": "High",
+      "threats": [
+        "Native_loader",
+        "Malfex",
+        "Overlord_tool",
+        "Process_injection_technique",
+        "Movinlike",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Portuguese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Microsoft Visual C++",
+        "Chromium",
+        "Chrome",
+        "Component Object Model",
+        "Discord",
+        "Steam",
+        "Minecraft",
+        "Telegram",
+        "WinHTTP",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-256-cbc",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "exec",
+        "decode",
+        "getAsset",
+        "readFileSync",
+        "require",
+        "GetConsoleMode",
+        "WriteProcessMemo",
+        "CreateRemoteThre"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://safedep.io/malfex-imgdecode-npm-native-addon-loader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "Clean Install, Stolen Creds: Fake WatchGuard VPN Site Serves Genuine Signed Client",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "SonicWall",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/fake-watchguard-vpn-credential-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "CVE-2026-85097: Bricksforge WordPress Plugin Flaw Exploited for Unauthenticated RCE",
+      "summary": "Threat actors are actively exploiting CVE-2026-85097, a CVSS 10.0 unauthenticated arbitrary file upload flaw in the Bricksforge WordPress plugin that leads to remote code execution. The flaw lies in Pro Forms upload handling, which does not validate the url field inside the temporaryFileUploads parameter at form submission. Attackers obtain a nonce, upload a GIF/PHP polyglot, and submit a form that redirects the image to a PHP destination, letting the server execute embedded code. Patchstack first observed exploitation on October 7, 2026, from 63 source IPs, assessed as automated activity over distributed infrastructure without attribution to a single actor. Defenders should update to Bricksforge 3.1.8.10 or later (current release 4.0.1), then hunt for PHP files already planted, since patching does not remove them.",
+      "completeness": "Low",
+      "geo": [
+        "Brazilian"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://socradar.io/blog/bricksforge-cve-2026-85097-exploited-rce/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-13",
+      "title": "Inside ICMacOS: From an Infostealer to a Persistent RAT",
+      "summary": "ICMacOS, also called Icarus macOS, is a macOS infostealer sold under a MaaS subscription model since early September 2026 by a Russian-speaking actor known as GlowComa. Its initial dropper uses ClickFix-style copy-and-paste commands and a spoofed System Preferences dialog to capture the victim's login password, validating it against the Keychain. The payload steals browser credentials, cryptocurrency wallets, Keychain contents, messaging app data, and developer secrets such as SSH keys, cloud credentials, and .env files. Version 2 adds LaunchAgent persistence and a WebSocket-based C2 channel for interactive shell access, turning it into a RAT. The malware exits when it detects CIS indicators. Defenders should note that a single infected Mac can expose developer credentials, creating supply chain risk.",
+      "completeness": "High",
+      "threats": [
+        "Icmacos",
+        "Icarus",
+        "Clickfix_technique",
+        "Credential_harvesting_technique",
+        "Launchagents_tool",
+        "Unlock_it_tool",
+        "Termius_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 27,
+      "software": [
+        "macOS",
+        "Telegram",
+        "Kubernetes",
+        "MySQL",
+        "curl",
+        "Chrome",
+        "Chromium",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "rabby",
+        "keplr",
+        "ronin_wallet",
+        "tronlink",
+        "yoroi",
+        "enkrypt",
+        "coin98",
+        "electrum",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "ravencoin"
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "sha256",
+        "aes-128"
+      ],
+      "functions": [
+        "Write-Ahead"
+      ],
+      "languages": [
+        "applescript",
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/icmacos-infostealer-rat/",
+        "https://github.com/moond4rk/keychainbreaker",
+        "https://github.com/gorilla/websocket/releases/tag/v1.5.3"
+      ]
+    }
+  }
+]

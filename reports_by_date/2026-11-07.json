@@ -1,0 +1,92 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-07",
+      "title": "S5PIVOT – A Python Backconnect Proxy Hidden Inside a Qilin Ransomware Intrusion",
+      "completeness": "Medium",
+      "threats": [
+        "S5pivot",
+        "Qilin_ransomware",
+        "Vipertunel",
+        "Winrm_tool",
+        "Azcopy_tool",
+        "Metasploit_tool",
+        "Password_spray_technique",
+        "Shadow_copies_delete_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "SonicWall",
+        "Windows Error Reporting",
+        "Azure blob",
+        "slack",
+        "Windows PowerShell",
+        "Microsoft Defender",
+        "fsutil",
+        "MySQL",
+        "SMB server",
+        "PsExec",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "xor",
+        "aes-ctr",
+        "chacha20",
+        "sha256"
+      ],
+      "functions": [
+        "Get-Random"
+      ],
+      "languages": [
+        "cpython",
+        "rust",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://hexastrike.com/resources/blog/threat-intelligence/s5pivot-a-python-backconnect-proxy-hidden-inside-a-qilin-ransomware-intrusion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-07",
+      "title": "Tracking Lazarus Group TraderTraitor Infrastructure Through Certificates and Historical Records",
+      "summary": "The report traces TraderTraitor (DPRK-linked) infrastructure starting from two ROOFDECK C2 servers published by SentinelOne. Researchers pivoted on a shared mkcert issuer and Authority Key Identifier across 13 endpoints, finding matching HTTP responses, JARM and JA4 fingerprints, and identical SSH and reverse-DNS characteristics. Certificate Subject OU labels (halid, yuli, ub) and MSI Raider laptop and QEMU hostname strings suggest a developer-environment OPSEC failure. Public reports from LayerZero, Zscaler and SentinelOne link several further endpoints to ROOFDECK and FLATROOF C2 activity. Defenders are advised to hunt on the IPs and domains, search for the shared issuer and AKI, and avoid blocking shared Cloudflare or dynamic DNS domains broadly.",
+      "completeness": "Low",
+      "threats": [
+        "Roofdeck",
+        "Gaslight_backdoor"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "nginx",
+        "Cloudflare",
+        "QEMU",
+        "Pastebin",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha1",
+        "gzip",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://michalkoczwara.substack.com/p/tracking-lazarus-group-tradertraitor"
+      ]
+    }
+  }
+]

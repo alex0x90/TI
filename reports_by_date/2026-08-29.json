@@ -1,0 +1,153 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-29",
+      "title": "Shai-Hulud – Trinitite: Sponsored by Preview 2 Effects",
+      "summary": "A new Shai-Hulud malware variant, marked with the string \"Trinitite: Sponsored by Preview 2 Effects,\" compromised the npm package @7nohe/openapi-react-query-codegen, which has about 128,000 weekly downloads. The variant appeared less than 24 hours after the arrest of TeamPCP's creators in Australia and reuses code and signatures from the open-sourced Shai-Hulud malware, similar to a June Red Hat compromise. It adds new public encryption keys, making attribution to a specific group or earlier variant harder. Anyone who installed the listed affected versions during August 28-29, 2026 should rotate keys, enable 2FA, downgrade the package, and treat the machine as fully compromised. The malware exfiltrates stolen credentials to new GitHub repositories, with the infection found in nine repositories from one user.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Trinitite"
+      ],
+      "geo": [
+        "Australia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "TanStack",
+        "ClaudeCode",
+        "anthropic"
+      ],
+      "algorithms": [
+        "xor",
+        "aes"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "links": [
+        "https://www.ox.security/blog/shai-hulud-trinitite-sponsored-by-preview-2-effects/",
+        "https://github.com/search?q=%22Trinitite%3A+Sponsored+by+Preview+2+Effects%22&type=repositories"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-29",
+      "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+      "summary": "HexMage is a Magecart card-skimming cluster that uses EtherHiding, storing a delivery hostname in Sepolia testnet smart-contract storage that the injected loader reads via a public RPC endpoint. Attackers compromise legitimate WooCommerce, PrestaShop, Magento and WordPress storefronts server-side, hiding the loader in a fake Google Tag Manager block, and have affected 40+ sites in at least fifteen countries since about April 2026. The skimmer overlays the checkout's payment form only when a shopper selects the card option, captures card details tailored to each store's payment gateway, and restores the page so the purchase completes. All twenty mapped contracts share one owner wallet that has deployed 144 contracts, enabling enumeration of the wider infrastructure. Defenders should key detection on the missing GTM script fetch, since some loader variants never call a contract.",
+      "completeness": "High",
+      "threats": [
+        "Etherhiding_technique",
+        "Clearfake",
+        "Clickfix_technique",
+        "Dead_drop_technique",
+        "Vextrio_tds_tool",
+        "Clearshort",
+        "Cloaking_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Chile",
+        "Denmark",
+        "Croatia",
+        "Danish",
+        "Israel",
+        "Greece",
+        "India",
+        "Spain",
+        "Italy",
+        "Romania",
+        "Mena",
+        "Russian",
+        "Bangladesh",
+        "France"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Keitaro",
+        "Chrome",
+        "macOS"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-gcm",
+        "pbkdf2",
+        "xor",
+        "sha256",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "JSON-RPC",
+        "getText",
+        "owner",
+        "createObjectURL",
+        "setText",
+        "atob",
+        "RPC",
+        "Image"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-29",
+      "title": "TerminalFix campaign deploys a reverse tunnel through multistage intrusion",
+      "summary": "The TerminalFix campaign is a variant of ClickFix that uses compromised websites displaying a fake Cloudflare CAPTCHA overlay to trick users into pasting a malicious PowerShell command into Windows Terminal or PowerShell. The attack chain uses DLL sideloading through the legitimate LockScreenContentServer.exe, which loads a malicious dui70.dll, and downloads further payloads hidden in PNG images via steganography. The intrusion establishes persistence through Registry Run keys and scheduled tasks, then performs Active Directory reconnaissance such as domain trust and domain admin enumeration. The final stage deploys a Python-based reverse-tunnel implant that proxies arbitrary TCP traffic through an encrypted WebSocket to attacker infrastructure. Defenders should treat affected hosts as potential network pivot points, rotate exposed credentials, and hunt for LockScreenContentServer.exe running from non-standard paths.",
+      "completeness": "High",
+      "threats": [
+        "Terminalfix_technique",
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Steganography_technique",
+        "Dll_hijacking_technique",
+        "Trojan:win32/posilod",
+        "Nltest_tool",
+        "Clipboard_hijacking_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "German"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 18,
+      "software": [
+        "Microsoft Defender",
+        "Windows Terminal",
+        "Active Directory",
+        "Cloudflare Turnstile",
+        "Windows Lock Screen",
+        "Chrome",
+        "Firefox",
+        "Microsoft Defender for Endpoint"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/08/28/terminalfix-campaign-deploys-reverse-tunnel-through-multistage-intrusion/"
+      ]
+    }
+  }
+]

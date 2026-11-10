@@ -273,5 +273,69 @@
         "https://github.com/ThreatLabz/iocs/blob/main/blindeagle/blindeagle\\_domains.txt"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-25",
+      "title": "Triada strikes back",
+      "summary": "The Triada Trojan has evolved to embed a multi-stage loader in device firmware, so it infects the Zygote process and every application launched on the device. Its modular design lets attackers tailor payloads to specific apps, including cryptocurrency wallets, messaging and social media clients, browsers, and SMS apps. Observed capabilities include swapping crypto wallet addresses, replacing browser links, stealing account tokens and cookies, intercepting and deleting messages, and turning devices into reverse proxies. The infections were found on counterfeit devices sold through online marketplaces, which suggests a compromised supply chain. Defenders should note that firmware-level infections persist beyond normal removal, so a clean firmware reinstall is the recommended remedy.",
+      "completeness": "High",
+      "threats": [
+        "Triada_trojan",
+        "Dwphon",
+        "Xhook_tool",
+        "Vo1d",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Netherlands",
+        "Chinese",
+        "Brazil",
+        "Russia",
+        "Germany"
+      ],
+      "software": [
+        "Android",
+        "telegram",
+        "instagram",
+        "Google Play",
+        "android.chrome",
+        "firefox",
+        "opera",
+        "chrome",
+        "whatsapp",
+        "Microsoft Teams",
+        "have more..."
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "aes-128",
+        "zip",
+        "aes",
+        "base64",
+        "exhibit",
+        "cbc"
+      ],
+      "functions": [
+        "getPremiumSmsPermission"
+      ],
+      "languages": [
+        "javascript",
+        "java"
+      ],
+      "links": [
+        "https://securelist.com/triada-trojan-modules-analysis/116380/",
+        "https://github.com/jiusetian/EasySocket"
+      ]
+    }
   }
 ]

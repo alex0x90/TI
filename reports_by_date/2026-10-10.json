@@ -1,0 +1,33 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-10",
+      "title": "Sleep, Beacon, Steal, Repeat - The Story of P7 DarkSword Variant",
+      "summary": "P7 DarkSword is a previously unseen variant of the DarkSword iOS spyware, identified by iVerify in August 2026 after a customer device alert. The threat actor used a p7_ variable prefix in modifying the original code, and its authors appear to have made deliberate, competent changes rather than relying on AI-assisted edits. Compared with earlier variants, P7 reduces its on-device footprint by removing debug logging and reducing process injections, and uses browser localStorage to prevent re-exploitation. It extracts keychain data into JSON on the device and adds crypto-wallet theft, including support for the imToken wallet app. The implant supports two-way C2 communication via periodic beacons, with a wide range of commands for file theft, photos, Notes, and app data. Defenders should review the report's listed on-device artifacts, network endpoints, and hashes, as the variant's stealth makes heuristic detections and incident response essential.",
+      "completeness": "Medium",
+      "threats": [
+        "Darksword_tool",
+        "Coruna_tool",
+        "Weworm"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Mac OS"
+      ],
+      "wallets": [
+        "imtoken"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.iverify.com/blog/darksword-variant-threat-research"
+      ]
+    }
+  }
+]

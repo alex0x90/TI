@@ -178,5 +178,893 @@
         "https://github.com/checkymander/Sharp-SMBExec/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Silver Fox uses the new ABCDoor backdoor to target organizations in Russia and India",
+      "summary": "Silver Fox, a threat group, ran phishing campaigns in December 2025 and January 2026 that impersonated Indian and Russian tax authorities, with over 1600 emails recorded between early January and early February. The emails delivered a modified Rust-based RustSL loader that ran ValleyRAT, and the attackers also deployed a previously undocumented Python-based backdoor the researchers named ABCDoor. The loader restricts execution by geolocation, targeting Russia, India, Indonesia, South Africa, Cambodia, and later Japan. ABCDoor, which has been in use since at least late 2024, supports screen capture and remote mouse and keyboard control while running under a legitimate pythonw.exe process. Defenders should verify emails claiming to come from tax authorities and watch for registry and scheduled task persistence, Node.js downloads, and files installed under a ProgramData path named after a legitimate VPN utility.",
+      "completeness": "High",
+      "threats": [
+        "Abcdoor",
+        "Valleyrat",
+        "Rustsl",
+        "Steganography_technique",
+        "Winos",
+        "Tailscale_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "China",
+        "Indian",
+        "Russia",
+        "Indonesia",
+        "Russian",
+        "Chinese",
+        "South africa",
+        "Cambodia",
+        "Japan",
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "SendGrid",
+        "curl",
+        "WireGuard",
+        "Linux",
+        "macOS",
+        "Windows registry",
+        "Task scheduler"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "sha256",
+        "base64",
+        "base32",
+        "xor"
+      ],
+      "functions": [
+        "ShellExecute"
+      ],
+      "languages": [
+        "cython",
+        "powershell",
+        "javascript",
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://securelist.com/silver-fox-tax-notification-campaign/119575/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "A Closer Look at the Novel and Stealthy KarstoRAT Malware",
+      "summary": "KarstoRAT is a novel remote access trojan first observed in the wild in early 2026, capable of reconnaissance, audio and webcam monitoring, screenshot capture, keylogging, and token theft. It lures victims with a fake virtual marketplace for the Roblox game Blox Fruits, which installs the malware on their machines. The malware communicates with its command-and-control server over HTTP using the user agent \"SecurityNotifier\" and exfiltrates stolen data via POST requests. It maintains persistence by launching automatically at user login and can download and run additional payloads. Its capabilities also include text-to-speech, desktop background changes, display inversion, swapped mouse buttons, and self-destruction to reduce forensic traces.",
+      "completeness": "Low",
+      "threats": [
+        "Karsto",
+        "Arstorat"
+      ],
+      "software": [
+        "Roblox"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/a-closer-look-at-the-novel-and-stealthy-karstorat-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "xlabs_v1 DDoS-for-Hire IoT Botnet Exposed: One Operator Error. An Entire Operation Revealed",
+      "summary": "The xlabs_v1 botnet is a Mirai-derived DDoS-for-hire operation run by an actor using the handle Tadashi, targeting game servers and Minecraft hosts. Its 21 flood variants include RakNet and OpenVPN-shaped UDP floods, and it spreads via Android Debug Bridge on TCP/5555 to Android TV boxes, set-top boxes, smart TVs, routers, and other IoT devices with ADB enabled. The bot profiles each device's upstream bandwidth to price-tier it for customers and kills competing processes, including a rival bot on TCP/24936. An open directory exposed the operator's toolkit, and string-table analysis recovered the C2 domain and an authentication token, with the operation consolidated in a single Netherlands /24. Defenders should watch for ADB exposure, the bot's C2 and fallback ports, and the authentication token in TCP streams.",
+      "completeness": "High",
+      "threats": [
+        "Mirai",
+        "Netcat_tool",
+        "Vltrig_tool",
+        "Decodo_socks5_tool"
+      ],
+      "geo": [
+        "Japanese",
+        "Netherlands",
+        "Asian",
+        "Germany"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 38,
+      "software": [
+        "Android",
+        "systemd",
+        "busybox",
+        "Telegram",
+        "Unix",
+        "Linux"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "exhibit"
+      ],
+      "functions": [
+        "system"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/xlabs-v1-ddos-for-hire-operation-exposed#Indicators_of_Compromise",
+        "http://github.com/HashVault/vltrig"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "These new Mac threats are designed to evade antivirus detection",
+      "summary": "Mosyle Security Research reported two unconnected new macOS threats, Phoenix Worm and ShadeStager. Phoenix Worm is a stager that breaches Macs, establishes persistence, evades detection, and sets up an encrypted command-and-control channel, and it is likely part of a broader kit. ShadeStager is a credential stealer that targets developer environments and cloud infrastructure, including SSH keys, AWS, Azure, and GCP credentials, Kubernetes configs, and browser profiles. It performs host reconnaissance and exfiltrates data over HTTPS. Both threats have very low detection rates on security engines. Defenders should keep macOS and apps patched, enable multi-factor authentication, and use security tools that monitor for new threats.",
+      "completeness": "Low",
+      "threats": [
+        "Shadestager",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Iranian"
+      ],
+      "software": [
+        "macOS",
+        "Kubernetes",
+        "Docker"
+      ],
+      "links": [
+        "https://moonlock.com/new-macos-malware-evade-antivirus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Shai-Hulud resurfaces: intercom-client@7.0.4 harvesting Github credentials",
+      "summary": "The Intercom TypeScript Library version intercom-client@7.0.4, published on 2026-04-30, was compromised and carries an infostealer that harvests GitHub credentials. During installation, a preinstall hook runs a setup script that downloads the Bun runtime from GitHub and then executes a payload that runs \"gh auth token\" to steal credentials. The malware uses GitHub's public commit search API as a dead-drop resolver, retrieving command-and-control instructions embedded in public commit messages, which abuses a legitimate service to evade network-level detection. The Bun binary is deleted after execution to reduce forensic traces, and stolen credentials are used to spread to additional packages in the manner of past Shai-Hulud worm attacks. Because the library sees about 361,510 weekly downloads, the researchers warn that another wave of infected packages may follow. Users who installed version 7.0.4 should check for suspicious activity and rotate their GitHub credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Dead_drop_technique"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/shai-hulud-intercom-client-7-0-4"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "lightning PyPI Package Compromised in Supply Chain Attack",
+      "summary": "This text is a signed announcement from TeamPCP, not an analysis of the lightning PyPI compromise. The group says it runs its own locker, CipherForce, and denies using Vect encryption tools. It claims dozens of victims have recovered files using CipherForce. It threatens to cut off Vect unless that group fixes recent vulnerabilities. TeamPCP calls LAPSUS$, which has been leaking Checkmarx data, an allied partner. Anyone claiming to speak for the team should be distrusted without cryptographic verification.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/lightning-pypi-package-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Rock, paper, scissors: a new toolkit in Paper Werewolf cluster attacks",
+      "summary": "Paper Werewolf, a threat cluster, ran a new wave of attacks in March–April 2026 against Russian industrial, financial and transport organizations. The attackers used phishing PDFs leading to Inno Setup installers that deploy the EchoGather RAT alongside a decoy document. They also developed the PaperGrabber stealer, which collects files from local, network and removable drives, steals Telegram session data and browser credentials, and exfiltrates them over HTTPS. The cluster employs multiple custom loaders written in C++, C#, Python and JavaScript, plus a custom Mythic post-exploitation implant delivered as shellcode. The report stresses that these custom tools make detection harder for standard defenses, and it points to BI.ZONE Threat Intelligence for ongoing tracking.",
+      "completeness": "High",
+      "threats": [
+        "Mythic_c2_tool",
+        "Papergrabber",
+        "Echogather",
+        "Vain1",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Costura_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Yandex Browser",
+        "Chrome",
+        "Opera",
+        "Chromium",
+        "Node.js",
+        "Visual Studio"
+      ],
+      "algorithms": [
+        "zip",
+        "rsa-4096",
+        "aes",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "javascript",
+        "visual_basic",
+        "python"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/kamen-nozhnitsy-bumaga-novyy-instrumentariy-v-atakakh-klastera-paper-werewolf/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Popular PyTorch Lightning Package Compromised by Mini Shai-Hulud",
+      "summary": "The Mini Shai-Hulud supply chain campaign has spread from npm to PyPI, with malicious versions 2.6.2 and 2.6.3 of the popular lightning package, used for training PyTorch models. The malicious code is injected into __init__.py and spawns a background thread on import that launches start.py, which downloads the Bun JavaScript runtime and runs an 11 MB payload. The payload steals SSH keys, shell histories, cloud and Kubernetes credentials, npm tokens, cryptocurrency wallets, VPN credentials, and Discord and Slack session data. Stolen data is RSA-2048 encrypted and exfiltrated to public GitHub repositories. Defenders using these versions should treat their machines as compromised.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Bitwarden",
+        "MySQL",
+        "Kubernetes",
+        "Helm",
+        "Docker",
+        "CyberGhost",
+        "Discord",
+        "Slack"
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "bitcoin",
+        "litecoin",
+        "monero",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/pytorch-lightning-pypi-compromise-mini-shai-hulud",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Crypto Drainers as a Converging Threat: Insights into Emerging Hybrid Attack Ecosystems",
+      "summary": "Crypto drainers are converging with traditional cybercrime, with infrastructure once used for credential theft now repurposed for wallet-phishing content. The report examines StepDrainer, a multichain Malware-as-a-Service platform claiming support for more than 20 networks, which uses polished AI-themed lures impersonating the OpenClaw assistant to trick users into connecting wallets. It also examines EtherRAT, a hybrid Windows implant delivered through a trojanized Tftpd64 installer that establishes persistence and communicates with Ethereum RPC endpoints. Both cases show how drainer tooling and classic malware tradecraft now combine into unified attack chains. The main takeaway for defenders is that drainers are no longer a niche Web3 problem, so enterprises should account for drainer behaviors in their threat models and apply controls similar to those used against credential-stealing malware.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_stealing_technique",
+        "Clickfix_technique",
+        "Nova_stealer",
+        "Miolab",
+        "Credential_harvesting_technique",
+        "Stepdrainer",
+        "Etherrat"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenClaw",
+        "penClaw re",
+        "Telegram",
+        "ode.js im",
+        "inux en",
+        "Node.js",
+        "ode.js ru",
+        "indows Security Center",
+        "A",
+        "ctive Directory do",
+        "curl",
+        "have more..."
+      ],
+      "wallets": [
+        "ledger_wallet",
+        "coinbase",
+        "solflare",
+        "bybit",
+        "math_wallet",
+        "tokenpocket",
+        "exodus_wallet",
+        "metamask",
+        "daffione",
+        "newwallet",
+        "have more..."
+      ],
+      "crypto": [
+        "arbitrum",
+        "solana",
+        "ethereum",
+        "coingecko"
+      ],
+      "algorithms": [
+        "cbc",
+        "aes",
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "getAccountInfo",
+        "connect",
+        "analyzeWallet",
+        "routeStealling",
+        "stealETH",
+        "stealCollection",
+        "permitSteal",
+        "tokenSteal",
+        "approve",
+        "transferFrom",
+        "have more..."
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/crypto-drainers-as-a-converging-threat-insights-into-emerging-hybrid-attack-ecosystems"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Mapping Remus Infostealer",
+      "summary": "Researchers mapped the infrastructure of the Remus infostealer, building on earlier work and indicators from a GenDigital report. The infrastructure spans over 15 ASNs, with concentration at Hostinger International and Team Internet AG, where one IP appears to be a central collection or exfiltration point. Most domains use the .biz TLD, and historical DNS data showed many were registered around the same time on Dynadot, pointing to an automated campaign similar to Lumma. Blockchain pivoting uncovered four additional Ethereum contracts, named DataStore, that store live C2 URLs and show iterative development across versions. A Russian-language code comment in one version was noted as a weak fingerprint, though the author explicitly declined to attribute the activity to a Russian operator. The researcher notes the blockchain trail may go cold without new samples, and suggests Dune event monitors for detection.",
+      "completeness": "Low",
+      "threats": [
+        "Remus",
+        "Etherhiding_technique",
+        "Lumma_stealer"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "crypto": [
+        "ethereum"
+      ],
+      "functions": [
+        "write",
+        "read",
+        "setData",
+        "getData",
+        "transferOwnership"
+      ],
+      "links": [
+        "https://intelinsights.substack.com/p/mapping-remus-infostealer",
+        "https://github.com/gendigitalinc/ioc/tree/master/Remus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Claude adds malware to crypto agent",
+      "summary": "The PromptMink campaign, attributed by ReversingLabs to North Korean group Famous Chollima, uses npm packages that silently pull in malicious dependencies. A commit co-authored by Claude Opus added the malicious @solana-launchpad/sdk package to an autonomous crypto trading agent, exposing wallet access and funds. The campaign uses a two-layer design: benign-looking \"bait\" packages list malicious \"payload\" packages as dependencies, so the payload can be swapped out after detection. The payloads steal .env, .json and crypto-related files, and have evolved to install SSH keys and exfiltrate project source code on Linux and Windows. Its documentation is tailored to appeal to AI coding agents, which ReversingLabs calls LLM Optimization abuse. Defenders should run static analysis on all dependencies, including AI-suggested ones.",
+      "completeness": "Medium",
+      "threats": [
+        "Promptmink",
+        "Ottercookie",
+        "Beavertail",
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Invisibleferret"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "software": [
+        "Claude",
+        "Twitter",
+        "Anthropic",
+        "Node.js",
+        "linux"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1"
+      ],
+      "functions": [
+        "ReversingLabs"
+      ],
+      "languages": [
+        "rust",
+        "python",
+        "typescript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/claude-promptmink-malware-crypto",
+        "https://github.com/reversinglabs/rl-protect-skills",
+        "https://github.com/ExpertVagabond/openpaw-graveyard/commit/cd3c6ccbfe02a0fcf249fdcf67fd3ec351a7ed7c"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Geo-information data at risk. How HeartlessSoul is attacking the aviation industry",
+      "summary": "HeartlessSoul is a threat group active since at least September 2025 that deploys a JavaScript RAT, with targets including Russian government bodies, industrial and aviation companies, and individual users. Its main infection vectors are phishing emails with archives containing XLL, MSI, or LNK files, and malvertising sites impersonating aviation software that distribute trojanized installers, plus a fake GearUP installer hosted on SourceForge. The initial stage runs PowerShell to install Node.js and fetch a JavaScript loader, which establishes persistence and retrieves the main RAT in memory. The RAT provides screenshot, keylogging, clipboard capture, UAC bypass, and file exfiltration, with a focus on GIS formats such as KML, SHP, and GeoJSON as well as browser and Telegram data. The report links the group's infrastructure to the APT group GOFFEE, and it warns that defenders should monitor LNK-initiated script execution, hidden PowerShell parameters, and suspicious startup folder files.",
+      "completeness": "High",
+      "threats": [
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "GearUP",
+        "Telegram",
+        "Outlook",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Yandex Browser",
+        "Opera"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "Main",
+        "createHash",
+        "GetCookiesKey"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.ru/tr/heartlesssoul-campaign-javascript-rat/115376/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "LofyStealer: Malware targeting Minecraft players.",
+      "summary": "LofyStealer, also tracked as GrabBot/1.0 and built with the \"Slinky Cracked\" builder, is an infostealer distributed as a fake Minecraft hack called \"Slinky\" that exploits the trust of young gamers. It uses a two-stage design: a 53.5 MB Node.js loader packaged with pkg to dilute signatures and hinder sandbox uploads, and a 1.4 MB native C++ payload decrypted and injected into browser processes using direct ntdll syscalls. The payload targets 8 browsers and steals cookies, passwords, tokens, cards and IBANs, then compresses and sends the data over HTTP POST to a C2 panel. Analysts attribute the campaign to the Brazilian LofyGang group with high confidence, based on branding, Minecraft targeting and Brazilian hosting. Defenders should note the evasion techniques, which are designed to bypass EDR hooks and static analysis.",
+      "completeness": "High",
+      "threats": [
+        "Lofystealer",
+        "Grabbot",
+        "Slinky",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Starjacking_technique",
+        "Chromelevator_tool",
+        "Antidebugging_technique"
+      ],
+      "geo": [
+        "Portuguese",
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 16,
+      "software": [
+        "Node.js",
+        "OpenSSL",
+        "Chrome",
+        "Opera GX",
+        "Firefox",
+        "Windows kernel",
+        "Windows Certificate",
+        "WinHTTP",
+        "Metadados",
+        "1 funcs",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256",
+        "sha256",
+        "bcrypt",
+        "md5",
+        "base64",
+        "sha1",
+        "xor",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://zenox.ai/en/lofystealer-malware-mirando-jogadores-de-minecraft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Komari: The “Monitoring” Tool That Didn't Need Weaponising",
+      "completeness": "High",
+      "threats": [
+        "Komari_tool",
+        "Nssm_tool",
+        "Impacket_tool",
+        "Simplehelp_tool",
+        "Screenconnect_tool",
+        "Anydesk_tool",
+        "Nezha_tool",
+        "Atera_tool",
+        "Smbexec_tool",
+        "Mirai"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 1,
+      "software": [
+        "Windows service",
+        "Windows Update Service",
+        "Microsoft Defender",
+        "Velociraptor",
+        "Active Directory",
+        "Windows Defender",
+        "Linux",
+        "Zoom",
+        "systemd"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "randomString"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/komari-c2-agent-abuse"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Mini Shai-Hulud Spreads to Packagist: Malicious Intercom PHP Package Follows npm Compromise",
+      "summary": "Socket's scanner flagged intercom/intercom-php version 5.0.2 on Packagist as known malware, part of the Mini Shai-Hulud campaign that followed an earlier npm compromise. The payload, identified as router_runtime.js, is a credential theft and supply chain propagation tool. It harvests CI/CD and cloud secrets and uses GitHub repositories for staged exfiltration. It runs as a daemonized process to evade normal process visibility. The report's source material available here does not detail further targeting or remediation guidance.",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Linux",
+        "macOS",
+        "Kubernetes",
+        "Docker",
+        "HashiCorp Vault",
+        "claude",
+        "Laravel"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "aes-256-gcm",
+        "aes"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/mini-shai-hulud-packagist-malicious-intercom-php-package-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Intercom’s npm Package Compromised in Ongoing Mini Shai-Hulud Worm Attack",
+      "summary": "The malicious intercom-client@7.0.4 npm package, the official Node.js SDK for Intercom's API, was compromised as part of the ongoing Mini Shai-Hulud worm campaign. The release added a preinstall hook that downloads and runs an unverified Bun binary from GitHub, then executes an 11.7 MB obfuscated payload that harvests Kubernetes and Vault credentials and exfiltrates them via the GitHub API. The malicious behavior runs during installation, so systems may be exposed even if the package is never imported. The attack closely resembles recent TeamPCP-linked campaigns affecting SAP CAP packages and a PyPI package. Defenders should remove version 7.0.4, downgrade to a known-good release, and rotate exposed credentials, prioritizing environments with Kubernetes, Vault, cloud, or GitHub tokens.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Node.js",
+        "Kubernetes",
+        "Bitwarden",
+        "LiteLLM",
+        "Trivy",
+        "Dependabot",
+        "claude"
+      ],
+      "algorithms": [
+        "zip",
+        "sha1",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/intercom-s-npm-package-compromised-in-supply-chain-attack",
+        "https://github.com/intercom/intercom-node"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Poisoning the well: AI supply chain attacks on Hugging Face and OpenClaw",
+      "summary": "Acronis TRU reports active abuse of AI distribution platforms, including Hugging Face and ClawHub, to deliver malware disguised as models, datasets, and agent extensions. In the OpenClaw ecosystem, researchers identified 575 malicious skills from 13 developer accounts targeting Windows and macOS, with payloads including trojans, cryptominers, and the AMOS stealer. The skills instruct users to run encoded commands or install hidden dependencies from password-protected archives, and they use indirect prompt injection to make AI agents act as intermediaries. On Hugging Face, attackers host payloads and staging files in repositories, with malware found targeting Windows, Linux, and Android. Campaigns combine social engineering with obfuscation, in-memory injection, persistence, and covert C2 communication. Defenders should treat models, datasets, and agent extensions as untrusted inputs and download them only from verified sources.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Amos_stealer",
+        "Process_injection_technique",
+        "Vmprotect_tool",
+        "Dead_drop_technique",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Vietnam",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Hugging Face",
+        "OpenClaw",
+        "ClawHub",
+        "macOS",
+        "twitter",
+        "Moltbot",
+        "Clawdbot",
+        "curl",
+        "Telegram",
+        "Windows Defender",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "cbc",
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/poisoning-the-well-ai-supply-chain-attacks-on-hugging-face-and-openclaw/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "Copy Fail: 732 Bytes to Root on Every Major Linux Distribution.",
+      "summary": "Copy Fail (CVE-2026-31431) is a logic flaw in the Linux kernel's authencesn cryptographic template that lets an unprivileged local user make a controlled 4-byte write into the page cache of any readable file. A 732-byte Python script uses this to corrupt the cached copy of the setuid binary /usr/bin/su and gain root on major distributions, including Ubuntu, Amazon Linux, RHEL, and SUSE. The on-disk file stays unchanged, so ordinary on-disk checksum comparisons miss the modification. Because the page cache is shared across the host, the primitive also crosses container boundaries, which a follow-up report covers. The root cause is an in-place AF_ALG AEAD optimization that placed page cache pages in a writable scatterlist, and the patch reverts to out-of-place operation.",
+      "completeness": "Low",
+      "threats": [
+        "Copyfail_vuln",
+        "Dirty_cow_vuln",
+        "Dirty_pipe_vuln"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Ubuntu",
+        "Kubernetes",
+        "Android"
+      ],
+      "algorithms": [
+        "sha256",
+        "cbc",
+        "aes",
+        "hmac"
+      ],
+      "functions": [
+        "splice",
+        "read",
+        "mmap",
+        "execve",
+        "recvmsg",
+        "sg_chain",
+        "crypto_authenc_esn_decrypt",
+        "crypto_authenc_esn_decrypt_tail",
+        "sendmsg",
+        "recv",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://xint.io/blog/copy-fail-linux-distributions",
+        "https://github.com/torvalds/linux/commit/104880a6b470",
+        "https://github.com/torvalds/linux/commit/a5079d084f8b"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "ClickFix Removes Your Background but Leaves the Malware",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Backgroundfix",
+        "Castleloader",
+        "Castlestealer",
+        "Process_hollowing_technique",
+        "Netsupportmanager_rat",
+        "Sandbox_evasion_technique",
+        "Apc_injection_technique",
+        "Antidebugging_technique",
+        "Lumma_stealer",
+        "Stealc"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Linux",
+        "curl",
+        "winhttp",
+        "Windows Defender",
+        "VirtualBox",
+        "indexeddb",
+        "Firefox",
+        "Discord",
+        "chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "chacha20",
+        "base64",
+        "zip",
+        "aes-cbc",
+        "rc4",
+        "aes-128",
+        "aes-256",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "exec",
+        "Windows"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/clickfix-castleloader-backgroundfix",
+        "https://gist.github.com/RussianPanda95/beefe07b6ead220de05fa63e2e5f556b#file-gistfile1-txt",
+        "https://github.com",
+        "https://gist.github.com/RussianPanda95/beefe07b6ead220de05fa63e2e5f556b/raw/9481136956fda26cad4a3b0fb56bf6321eac3976/gistfile1.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "That AI Extension Helping You Write Emails? It’s Reading Them First",
+      "summary": "Unit 42 identified 18 high-risk Chrome extensions marketed as AI productivity tools that deliver remote access trojans, adware, spyware and infostealers. Their behaviors include API interception, passive DOM observation, traffic proxying and HTTPS response decryption, with some targeting AI prompts, email content and API keys. One case study, an AI email assistant, collected and sent full Gmail content in plaintext to an external server. Several samples contained AI-generated code, indicating threat actors used LLMs to speed malware production. Defenders should source extensions only from trusted providers, apply least privilege, and scrutinize requested permissions.",
+      "completeness": "High",
+      "threats": [
+        "Mitm_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "ChatGPT",
+        "Gmail",
+        "Outlook",
+        "OpenAI",
+        "Claude"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "functions": [
+        "JavaScript",
+        "Function"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/high-risk-gen-ai-browser-extensions/",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-08-18-IOCs-for-Chrome-extensions-leading-to-thank-you-pages-for-unwanted-content.txt",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-08-19-IOCs-for-Chrome-extensions-leading-to-adware-or-PUP.txt",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-09-24-IOCs-for-AI-prompt-hijacker-extensions.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-30",
+      "title": "The New Hacking Tool That Lets Anyone Launch Their Own Spyware Company",
+      "summary": "KidsProtect is an Android Remote Access Trojan sold as stalkerware, advertised openly on a clear-web hacking forum with subscriptions from $60. Once installed, it runs covertly and lets an operator record calls, stream microphone audio, track GPS, read SMS and messaging notifications, log keystrokes, and access contacts and photos. It is disguised with child-safety branding and a generic name such as \"WiFi Service,\" and it blocks removal by registering as a Device Administrator. The developer also offers a white-label reseller program so others can rebrand and sell it. Defenders should note that the tool's reseller model may limit the effect of enforcement against individual vendors.",
+      "completeness": "Low",
+      "geo": [
+        "New york"
+      ],
+      "software": [
+        "Android",
+        "WhatsApp",
+        "Viber",
+        "Telegram",
+        "Google Play"
+      ],
+      "links": [
+        "https://www.certosoftware.com/insights/the-new-hacking-tool-that-lets-anyone-launch-their-own-spyware-company/"
+      ]
+    }
   }
 ]

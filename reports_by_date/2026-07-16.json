@@ -1,0 +1,766 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "Operation Fake KickOff: Attackers Abuse Recruiters and SaaS to Harvest Work Credentials",
+      "summary": "Intel 471 describes Operation Fake KickOff, an ongoing phishing campaign active since April 2025 that abuses SaaS and cloud platforms to steal corporate Google Workspace credentials. Victims are lured through fake Calendly-style interview scheduling pages that impersonate real recruiters at well-known brands, with human resources consulting the most targeted industry. The operators use an adversary-in-the-middle toolkit with a browser-in-the-browser technique to mimic Google sign-in and capture MFA codes, filtering out personal email providers so only corporate accounts are targeted. Stolen data is sent to Render-hosted servers and then to Telegram. The report notes overlaps with Okta's cluster O-UNC-038, and advises defenders to deploy phishing-resistant MFA, monitor onrender.com traffic, and train staff to spot BitB replica windows.",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Bitm_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Salesforce",
+        "SendGrid",
+        "Telegram",
+        "Outlook",
+        "ProtonMail",
+        "Gmail",
+        "Okta"
+      ],
+      "functions": [
+        "setInterval"
+      ],
+      "links": [
+        "https://www.intel471.com/blog/operation-fake-kickoff-attackers-abuse-recruiters-and-saas-to-harvest-work-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "ClickLock Stealer: Paste Once, Lose Everything",
+      "summary": "ClickLock Stealer is a new modular macOS stealer identified by Group-IB, distributed likely through ClickFix pages that trick users into pasting a command into Terminal. The malware fakes a Cloudflare verification animation while downloading components from compromised WordPress domains, and it requires no elevated privileges or exploits. It forces password entry by repeatedly killing system processes, then harvests browser credentials, Keychain data, crypto wallets, password manager extensions and shell history, sending everything to Telegram bots. A GSocket reverse shell backdoor remains installed after the other components self-delete. At least 100 victims in 33 countries have been reported since May 2026, with over 50% in Europe. Defenders should watch for osascript password dialogs, rapid process termination, Keychain queries from shell processes, and browser data access followed by connections to api.telegram.org.",
+      "completeness": "High",
+      "threats": [
+        "Clicklock",
+        "Amos_stealer",
+        "Banshee_stealer",
+        "Cthulhu_stealer",
+        "Macstealer",
+        "Clickfix_technique",
+        "Gsocket_tool",
+        "Seo_poisoning_technique",
+        "Goyim",
+        "Gs-netcat",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Africa",
+        "Middle east",
+        "America"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 59,
+      "software": [
+        "macOS",
+        "Gatekeeper",
+        "WordPress",
+        "Telegram",
+        "Chrome",
+        "zoom",
+        "Linux",
+        "Opera",
+        "Vivaldi",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "rabby",
+        "exodus_wallet",
+        "keplr",
+        "solflare",
+        "yoroi",
+        "tonkeeper",
+        "unisat",
+        "tronlink",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin",
+        "solana"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip",
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/clicklock-stealer-macos-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "MuddyWater: ClickFix to Telegram & PatchAgent Backdoor",
+      "summary": "PatchAgent is a three-stage loader chain, assessed with high confidence as MuddyWater-linked, that ends in a working HTTP command-and-control backdoor. The chain starts with cloud.dll, a COM DLL executed through regsvr32, which drops wuaupdt.exe and an encrypted PTCH v2 container to %TEMP%. The loader verifies the payload with HMAC-SHA256 before decrypting it with AES-256-CBC, then runs the shellcode implant. The implant beacons to a hardcoded C2 IP over plain HTTP, runs hidden PowerShell, hollows notepad.exe, and persists through Run keys. The report notes that ClickFix-style fake Cloudflare lures are the likely delivery route for related activity, and defenders are advised to hunt the listed hashes, suspicious regsvr32 DLL execution, PatchAgent Run key persistence, and C2 API traffic.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Patchagent",
+        "Process_hollowing_technique",
+        "Com_hijacking_technique",
+        "Putty_tool",
+        "Process_injection_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "India",
+        "Russian",
+        "Iran",
+        "Africa",
+        "Russia",
+        "Netherlands",
+        "Asia",
+        "Iranian",
+        "Egyptian",
+        "America",
+        "Middle east",
+        "Latin america"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 23,
+      "software": [
+        "Telegram",
+        "chrome"
+      ],
+      "algorithms": [
+        "bcrypt",
+        "aes-cbc",
+        "aes-256",
+        "sha1",
+        "sha256",
+        "xor",
+        "cbc",
+        "base64",
+        "md5",
+        "aes",
+        "hmac",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "createScript",
+        "getUserLocation",
+        "getMe"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/muddywater-clickfix-patchagent",
+        "https://github.com/Ransom-ISAC-Org/LOCKSTAR/blob/main/MuddyWater%20PatchAgent/readme.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "Detailed Analysis of BirdCall Malware: Masquerading as Zangi Messenger",
+      "summary": "BirdCall is an Android spyware family attributed to the North Korea-backed ScarCruft group, which was previously disclosed by ESET, and S2W's TALON team found additional samples masquerading as the Zangi messenger app. The attacker repackaged the legitimate app to alter its entry point and uses two Zoho WorkDrive accounts, one for receiving commands and one for data exfiltration, as C2 channels. The malware steals device information, contacts, call logs, SMS messages, and files with specific extensions, encrypting the data with AES-256-CBC and zlib before upload. It polls for commands every 2 minutes and supports eight command opcodes, including file exfiltration and self-deletion. Keylogging and recording code is present but was confirmed not to execute, and the presence of notification strings such as TELEBIT, WICKR, and ZHUAGOU suggests other variants may exist.",
+      "completeness": "Low",
+      "threats": [
+        "Birdcall",
+        "Telebit",
+        "Wickr",
+        "Zhuagou"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 14,
+      "software": [
+        "Zangi",
+        "WeChat",
+        "Telegram",
+        "KakaoTalk",
+        "Android"
+      ],
+      "algorithms": [
+        "cbc",
+        "aes-256-cbc",
+        "aes-256",
+        "md5",
+        "aes",
+        "rsa-2048",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "onCreate",
+        "doLoginWork",
+        "uploadBasicInfo",
+        "doDataWork",
+        "doCmdWork",
+        "contains"
+      ],
+      "links": [
+        "https://s2w.medium.com/detailed-analysis-of-birdcall-malware-marsqurading-as-zangi-messenger-b80db8f5c320",
+        "https://github.com/S2W-TALON/Threat-Intelligence-Report/blob/main/260713\\_Detailed%20Analysis%20of%20BirdCall%20Malware%3A%20Marsqurading%20as%20Zangi%20Messenger/BirdCall.yara",
+        "https://github.com/S2W-TALON/Threat-Intelligence-Report/blob/main/260713\\_Detailed%20Analysis%20of%20BirdCall%20Malware%3A%20Marsqurading%20as%20Zangi%20Messenger/IoC.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "Hidden Infrastructure Exposed: ANY.RUN Reveals Hijacked Gov Websites Delivering Malware",
+      "summary": "PhantomEnigma is a Brazil-focused crimeware operation that abuses compromised .gov.br municipal and police portals, along with compromised mailboxes that pass SPF, DKIM, and DMARC checks, to deliver malware to banking and public-sector organizations. Its Delphi/Inno Setup installers unpack a patched Boostnote Electron application containing a modular Node.js backdoor that executes JavaScript or drops additional executables. ANY.RUN identified a second beacon generation using POST requests to /nbw/, confirmed live on July 12, 2026. Because domains and hosts rotate frequently, the stable build-chain fingerprint (delphi, inno, installer, and nodejs tags) identified 231 sandbox analyses. The report advises defenders to prioritize behavioral and build-chain detection over domain blocklists, and to re-examine clean verdicts for trusted-infrastructure delivery.",
+      "completeness": "High",
+      "threats": [
+        "Qshing_technique",
+        "Clickfix_technique",
+        "Typosquatting_technique",
+        "Cloaking_technique",
+        "Cobalt_strike_tool",
+        "Shellter_tool",
+        "Hijackloader",
+        "Emmenhtal",
+        "Stealc",
+        "Spear-phishing_technique",
+        "Kalebautorun",
+        "Agentev2"
+      ],
+      "geo": [
+        "Seychelles",
+        "Latin america",
+        "Brazil",
+        "Brazilian",
+        "Brasil"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "Node.js",
+        "Electron",
+        "laravel",
+        "InnoSetup"
+      ],
+      "algorithms": [
+        "base64",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "taskExecute",
+        "eval",
+        "setLoginItemSettings"
+      ],
+      "languages": [
+        "javascript",
+        "delphi",
+        "php",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/phantomenigma-research/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "GoSerpent: a persistent threat evolves with sophisticated data collection and exfiltration",
+      "summary": "GoSerpent is a persistent Go-based remote access Trojan, active since at least 2021, used against government and diplomatic entities in Southeast Asia. The campaign deploys ThumbcacheService to silently collect and archive documents, while Mimikatz and QuarksDumpLocalHash harvest system credentials. In a later stage, the actor used the Stowaway proxy tool to deliver TmcLoader and TmcPayload, which exfiltrate the collected archive through network shares using those credentials. The operators hosted command-and-control infrastructure on legitimate providers such as Alibaba Cloud and UCLOUD HK, and the report suggests a possible but unconfirmed link to TetrisPhantom.",
+      "completeness": "Medium",
+      "threats": [
+        "Goserpent",
+        "Credential_dumping_technique",
+        "Stowaway_tool",
+        "Mimikatz_tool",
+        "Tmcloader",
+        "Tmcpayload"
+      ],
+      "geo": [
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "Alibaba Cloud"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "base64",
+        "exhibit",
+        "aes-256-gcm",
+        "sha256",
+        "chacha20",
+        "xor"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://securelist.com/goserpent-backdoor-in-southeast-asia/120687/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "Bounty Hunt: Examining the Evolution of Attacks by the xplogs22 Cybercriminal Group",
+      "summary": "The xplogs22 group, active since at least November 2023, runs mass phishing campaigns that mostly target Russia and other CIS countries, though attacks have reached dozens of countries. Since July 2025 it has used the XWorm remote access trojan, previously using SnakeKeylogger and FormBook, and has sent more than 2,900 phishing emails. Lures typically use contract or payment themes, written in Russian, Arabic, English, and occasionally Kazakh or Turkish. Attack chains deliver .exe, .hta, or .vbs payloads that hide XWorm through steganography or loader components. The group is conservative, reusing themes, file names, and a single malware family for long periods, so defenders can hunt for recurring contract and payment lures.",
+      "completeness": "High",
+      "threats": [
+        "Xworm_rat",
+        "Snake_keylogger",
+        "Formbook",
+        "Steganography_technique",
+        "Vmdetector",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Armenia",
+        "Japan",
+        "Turkish",
+        "Hong kong",
+        "Hungary",
+        "Cyprus",
+        "Norway",
+        "Spain",
+        "Lebanon",
+        "Azerbaijan",
+        "Russian",
+        "Turkey",
+        "Uzbekistan",
+        "Canada",
+        "Germany",
+        "Switzerland",
+        "Bulgaria",
+        "Belarus",
+        "Middle east",
+        "Brazil",
+        "Italy",
+        "Estonia",
+        "Czech republic",
+        "United states",
+        "Kazakhstan",
+        "Latvia",
+        "Sweden",
+        "South korea",
+        "Asia",
+        "Netherlands",
+        "Russia",
+        "Russian federation",
+        "Pakistan",
+        "India",
+        "United kingdom",
+        "Belarusian",
+        "Poland"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Viber",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha1",
+        "base64"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/xplogs22/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "The HelloNet Campaign — New Malicious Modules That Are Launched Through the ViPNet Update System",
+      "summary": "Kaspersky reports an APT campaign active since May 2026 that abuses the ViPNet Update System. Attackers sideload a malicious wtsapi32.dll into the itcsrvup64.exe update process for persistence. The HelloInjector loader then injects into svchost.exe to run the HelloProxy proxy. Other tools include HelloExecutor, a log cleaner, and the Rust-based HelloBackdoor. Targets include large Russian organizations in government, energy, transport, and industry. Kaspersky tentatively links the activity to a Chinese-speaking group and advises monitoring ViPNet processes and renamed PuTTY tunnels.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Helloinjector",
+        "Helloproxy_tool",
+        "Helloexecutor",
+        "Hellocleaner_tool",
+        "Putty_tool",
+        "Hellobackdoor",
+        "Trojan.win32.agentb.ttoe",
+        "Trojan.win64.convagent.gen",
+        "Trojan.win64.agent.smgpqx",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Russian",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "iPNet Up",
+        "ViPNet",
+        "Net itcs",
+        "Chrome"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://securelist.ru/tr/hellonet-vipnet/116327/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "UAT-11795 deploys novel Starland RAT and bespoke WLDR C2 implant in financially motivated campaign",
+      "summary": "Cisco Talos disclosed UAT-11795, a Russian-speaking, financially motivated actor running a campaign against users in the U.S. and Europe since at least June 2025. The campaign uses trojanized installers of software such as MobaXterm, WebEx, Zoom, DBeaver, and FACEIT, likely delivered via a ClickFix technique that launches a malicious HTA file. The attackers deploy a Python RAT called Starland RAT, which steals credentials and cryptocurrency wallet data and can fall back to a Polygon smart contract to find its C2 domain. Starland RAT then delivers further payloads, including CastleStealer, Remcos RAT, or a PowerShell-based WLDR C2 agent that runs in memory. Defenders should monitor for the listed ClamAV and Snort signatures, since the report provides them for detection and blocking.",
+      "completeness": "High",
+      "threats": [
+        "Starland_rat",
+        "Remcos_rat",
+        "Castlestealer",
+        "Clickfix_technique",
+        "Process_injection_technique",
+        "Amsi_bypass_technique",
+        "Pe_injection_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Venezuela",
+        "Germany",
+        "Romania",
+        "United states",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "DBeaver",
+        "Telegram",
+        "Windows shell",
+        "Active Directory",
+        "Windows Defender",
+        "Chrome",
+        "curl",
+        "Event Tracing for Windows",
+        "Chromium",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64",
+        "zip",
+        "aes-256-cbc",
+        "xor"
+      ],
+      "functions": [
+        "JSON-RPC",
+        "Win32",
+        "Get-CimInstance",
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "python"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/07/new-starland-rat-and-WLDR-implant-campaign.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "ACR Stealer: Two observed intrusion chains amid increased threat activity",
+      "summary": "ACR Stealer, an information-stealing malware family offered as malware-as-a-service and linked to the rebranding of Amatera Stealer, was observed by Microsoft Defender Experts in customer environments from late April to mid-June 2026. Two campaigns, both starting with ClickFix lures, steal browser credentials, authentication tokens, and sensitive documents to enable account compromise and follow-on intrusions. Campaign 1 uses WebDAV-hosted DLLs, obfuscated PowerShell, Python loaders, scheduled-task persistence, and in some cases blockchain-based dead-drop C2 resolution. Campaign 2 is more fileless, relying on MSHTA, VBScript, obfuscated PowerShell, and steganography hidden in a JPEG image for in-memory execution. Defenders are advised to monitor for ClickFix prompts, suspicious WebDAV and MSHTA activity, obfuscated PowerShell, and access to browser credential stores.",
+      "completeness": "Medium",
+      "threats": [
+        "Acr_stealer",
+        "Clickfix_technique",
+        "Amatera_stealer",
+        "Dead_drop_technique",
+        "Lolbin_technique",
+        "Etherhiding_technique",
+        "Steganography_technique",
+        "Credential_harvesting_technique",
+        "Process_hollowing_technique",
+        "Timestomp_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "vbscript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "Spirals: New Stealthy Ransomware Deployed Against Asian IT Company",
+      "summary": "Spirals is a previously unseen Rust-based ransomware family used in a double extortion attack against an IT services company in South Asia in June 2026, and the actor behind it remains unknown. The attackers gained initial access by compromising an internet-facing IIS web server with an ASP.NET web shell. Within about three hours they established persistence, disabled security tools, dumped credentials, and deployed multiple tunneling utilities for covert command-and-control. Less than 24 hours after the breach, they pushed the ransomware across the network via PsExec, targeting domain controllers, file servers, and virtual machines. Defenders should note that the operators disabled Windows Defender and stopped backup and database services before encryption. Because the group's skill suggests wider campaigns may follow, the report warns that more attacks could occur.",
+      "completeness": "Medium",
+      "threats": [
+        "Spirals",
+        "Uac_bypass_technique",
+        "Revsocks_tool",
+        "Chisel_tool",
+        "Psexec_tool",
+        "Bitsadmin_tool",
+        "Cloudflared_tool"
+      ],
+      "geo": [
+        "Asian",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ASP.NET",
+        "PsExec",
+        "chrome",
+        "Google Chrome",
+        "Windows Defender",
+        "Hyper-V",
+        "MySQL",
+        "PostgreSQL",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256",
+        "ecdh",
+        "base64",
+        "aes-128"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/ransomware-spirals-extortion"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "The TTF Trap: A Global Campaign of a Low-Detection Lua Loader",
+      "summary": "The FortiGuard report describes a global campaign since late March 2026 that uses disguised .ttf files and low-detection Lua and AutoIt loaders to deliver RATs and infostealers. Phishing emails impersonating well-known companies, using business cooperation or payment lures, deliver obfuscated JScript droppers that launch the loader. The loader's multi-layered obfuscation, shellcode encryption, and fileless Donut-based execution are used to evade detection. Deployed payloads include Agent Tesla, Remcos, XWorm, Snake Keylogger variants, and Best Private LOGGER, which Fortinet assesses as a Snake Keylogger variant. The report notes the loader is regularly updated to avoid detection.",
+      "completeness": "Medium",
+      "threats": [
+        "Best_private_logger",
+        "Agent_tesla",
+        "Remcos_rat",
+        "Xworm_rat",
+        "Junk_code_technique",
+        "Donut",
+        "Api_unhooking_technique",
+        "Process_injection_technique",
+        "Snake_keylogger",
+        "Vipkeylogger"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "jscript",
+        "javascript",
+        "autoit",
+        "lua"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/the-ttf-trap-a-global-campaign-of-a-low-detection-lua-loader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "Inside Russia’s Camera-Hacking Espionage Campaign",
+      "summary": "Russian state actors are reportedly hacking Internet-connected cameras in the Netherlands, other EU and NATO countries, and Ukraine to conduct digital espionage, according to a joint report from Dutch intelligence services AIVD and MIVD. The campaign aims to gather insight into military transport routes, weapon deliveries to Ukraine, and the locations of Ukrainian military personnel. Captured imagery is analyzed with image recognition software, and AI can correlate data from multiple cameras, so even a single public camera can contribute. Censys data counts over 45,000 publicly accessible cameras in the Netherlands and more than 87,000 potentially exploitable cameras across the listed European countries and Ukraine. Defenders should identify exposed cameras, keep firmware current, enforce strong access control, and limit direct Internet access.",
+      "completeness": "Low",
+      "threats": [
+        "Dropbear_tool"
+      ],
+      "geo": [
+        "Montenegro",
+        "Malta",
+        "Norway",
+        "Spain",
+        "Portugal",
+        "Slovakia",
+        "Russian",
+        "North macedonia",
+        "United kingdom",
+        "Luxembourg",
+        "France",
+        "Croatia",
+        "Netherlands",
+        "Austria",
+        "Cyprus",
+        "Albania",
+        "Ukraine",
+        "Bulgaria",
+        "Czechia",
+        "Poland",
+        "Lithuania",
+        "Ireland",
+        "Latvia",
+        "Estonia",
+        "Belgium",
+        "Turkey",
+        "Iceland",
+        "Italy",
+        "Sweden",
+        "Hungary",
+        "Denmark",
+        "Germany",
+        "Romania",
+        "Greece",
+        "Russia",
+        "Slovenia",
+        "Finland"
+      ],
+      "functions": [
+        "Internet-Connected"
+      ],
+      "links": [
+        "https://censys.com/blog/russia-camera-hacking-espionage-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "Hiding in Plain Ledger: Four Months of a ClickFix Operator's Blockchain C2",
+      "summary": "ErrTraffic, a ClickFix Malware-as-a-Service, injects a loader into compromised WordPress sites that reads its delivery host from a Polygon smart contract, so the operator can rotate infrastructure by updating one on-chain value. The author tracked this contract over four months, finding 147 update transactions resolving to about 127 delivery hosts, with the contract still live at the time of writing. Victims see a fake Cloudflare \"Verify you are human\" page that copies a PowerShell command to the clipboard, and running it downloads and launches a Go infostealer. The stealer pulls its targeting configuration from its C2 at runtime and targets browsers, crypto wallets, password managers, and Discord, Telegram and Steam tokens. The author notes that the on-chain contract is the durable signal to hunt, since delivery domains change roughly daily. Defenders should treat users who ran the clipboard command as fully compromised.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Errtraffic",
+        "Go-stealer",
+        "Etherhiding_technique",
+        "Vidar_stealer",
+        "Dead_drop_technique",
+        "Motw_bypass_technique",
+        "Stealc",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Romanian"
+      ],
+      "software": [
+        "WordPress",
+        "LenAI",
+        "WordPress chrome",
+        "Telegram",
+        "steam",
+        "Discord",
+        "Chrome",
+        "Chromium",
+        "Vivaldi",
+        "CocCoc",
+        "QQBrowser",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "exodus_wallet",
+        "trezor",
+        "tonkeeper"
+      ],
+      "crypto": [
+        "bitcoin",
+        "binance",
+        "monero"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "xor",
+        "base64",
+        "sha1"
+      ],
+      "functions": [
+        "Sekoia",
+        "getURL",
+        "atob"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://meltedinhex.com/posts/clickfix-errtraffic-blockchain-c2/",
+        "https://github.com/meltedinhex/detections/blob/master/errtraffic-analytics-cluster/compromised-sites.md",
+        "https://github.com/meltedinhex/detections/tree/master/errtraffic-analytics-cluster"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-16",
+      "title": "From a Fake IT Ticket to Scattered Spider: Inside a Com-Affiliated Vishing Campaign",
+      "summary": "A vishing campaign used a fake \"IT ticket\" pretext to lure an employee toward a phishing page impersonating Okta, but security controls blocked the page before any credentials were entered. Pivoting on the page's favicon, redirect behaviour, and DOM fingerprint revealed over 100 related domains built on a shared, multi-tenant phishing kit that can also impersonate Microsoft Entra ID. The domains fall into four naming conventions, with one matching domains previously attributed to Pink (CL-CRI-1147), indicating the kit is used by multiple Com-affiliated groups. The researchers assess with moderate confidence that the activity is most likely Scattered Spider (UNC3944) or an affiliate using Scattered Spider-consistent infrastructure and targeting, with finance, technology, and retail as the main sectors. Defenders should verify sign-in logs and MFA events for the targeted account, hunt for the kit fingerprint in email and proxy logs, and treat a missing ticket as a reason to end the call and verify through a known number.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Teamviewer_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Pacific"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Okta",
+        "Cloudflare Turnstile",
+        "Microsoft Entra",
+        "ServiceNow",
+        "1Password"
+      ],
+      "links": [
+        "https://www.bridewell.com/insights/blogs/detail/from-a-fake-it-ticket-to-scattered-spider-inside-a-com-affiliated-vishing-campaign"
+      ]
+    }
+  }
+]

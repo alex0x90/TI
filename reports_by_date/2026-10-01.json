@@ -1,0 +1,266 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-01",
+      "title": "Fake xStocks, Pendle, and other sites bait crypto users with rewards votes",
+      "summary": "Fake websites impersonating crypto projects, including xStocks, Pendle, Zama, Kinetiq, Firelight, and others, invite visitors to vote for an upcoming rewards distribution. The pages closely copy the real sites and promise a 1.25x boost to active voters. Clicking Vote opens a generic wallet connection prompt, which is the first step toward requests that could let attackers move tokens out of the wallet. The targets are projects with recent token launches, airdrops, or points programs, whose communities expect rewards news. The sites share a template and use random .xyz domains, so defenders should verify addresses, check official channels, and carefully review any wallet signature or approval requests.",
+      "completeness": "Low",
+      "software": [
+        "WalletConnect"
+      ],
+      "wallets": [
+        "metamask",
+        "bitget_wallet",
+        "rabby"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-xstocks-pendle-and-other-sites-bait-crypto-users-with-rewards-votes"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-01",
+      "title": "$100k in Crypto Drained by the Underground Operation",
+      "summary": "A crypto-stealing operation, dubbed \"Underground\" by Netskope, uses an Aotera/Tedy loader to inject a Vidar-class stealer into a Windows process, which then hijacks victims' signed-in Chrome or Edge sessions. The stealer polls rotating Cloudflare-fronted gates on an /api/machine/* protocol to retrieve a configuration with browser-injection scripts for more than 15 exchange targets. The injected scripts display a fake Binance two-factor prompt, withdraw funds to Bitcoin, and rewrite withdrawal confirmation emails in webmail so they appear routine. A clipboard clipper also swaps copied wallet addresses for operator addresses. Netskope estimates about $100,000 in on-chain proceeds from at least 350 paying victims, though the true count is likely higher. Defenders should remediate endpoints that contact a gate, because blocking the domain alone does not remove the implant.",
+      "completeness": "Medium",
+      "threats": [
+        "Aotera",
+        "Tedy",
+        "Process_hacker_tool",
+        "Vidar_stealer",
+        "Dead_drop_technique",
+        "Rhadamanthys",
+        "Lumma_stealer"
+      ],
+      "software": [
+        "Chrome",
+        "Burp Suite",
+        "Process Explorer",
+        "VirtualBox",
+        "QEMU",
+        "burpsuite",
+        "Chromium",
+        "Discord",
+        "Telegram",
+        "Cloudflare",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes",
+        "zip"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/100k-in-crypto-drained-by-the-underground-operation",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Malware/Underground"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-01",
+      "title": "Inside DragonForce: How a Ransomware Cartel’s Payload Actually Runs",
+      "summary": "DragonForce is a Ransomware-as-a-Service operation that emerged in mid-to-late 2023 and later restructured in March 2025 into a cartel model offering white-label infrastructure to affiliates. Its Windows sample first interferes with security and other processes from a 38-name priority list and deletes local Volume Shadow Copies using WMIC. It discovers local drives and SMB shares, using the ARP cache rather than active subnet scanning, and encrypts files in parallel through sixteen workers. Each file is encrypted with ChaCha20, and the per-file key material is protected with an embedded RSA public key, with metadata appended and files renamed to a .df_win extension. Defenders can use the runtime log, when key material is available, as an execution artifact, and the ransom note's data-theft claim was not demonstrated in the trace.",
+      "completeness": "Low",
+      "threats": [
+        "Dragonforce_ransomware",
+        "Lockbit",
+        "Conti",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Firefox"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "functions": [
+        "DragonForce_Main"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/inside-dragonforce-how-a-ransomware-cartels-payload-actually-runs/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-01",
+      "title": "Gotta breach 'em all! The journey of ShinyHunters",
+      "summary": "ShinyHunters is best understood as a financially motivated data theft and extortion brand rather than a fixed gang, persisting since 2020 across changing membership and multiple arrests. The group's access methods have evolved from phishing and exposed credentials to infostealer-harvested logins against MFA-less cloud accounts, then to SaaS supply-chain compromises and OAuth token theft. Its targeting is opportunistic, following whichever shared platform is exploitable at scale, such as Snowflake, Salesforce, or Oracle PeopleSoft. Defenders should note that the Snowflake campaign, the 2025 Salesforce wave, and the 2026 PeopleSoft and Canvas incidents show trust relationships between platforms are the recurring weakness. The report also warns the group is experimenting with ransomware and physical coercion.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Rapeflake_tool",
+        "Lockbit",
+        "Meshcentral_tool",
+        "Passthehash_technique",
+        "Chisel_tool",
+        "Meshagent_tool",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "Sweden",
+        "Australian",
+        "Chile",
+        "Portuguese",
+        "Indian",
+        "Uruguay",
+        "Morocco",
+        "Apac",
+        "Portugal",
+        "London",
+        "India",
+        "Romania",
+        "Vietnam",
+        "Los angeles",
+        "Jordan",
+        "Indonesia",
+        "Ontario",
+        "Australia",
+        "Spain",
+        "New york",
+        "France",
+        "Dutch",
+        "Turkey",
+        "French",
+        "United states",
+        "Germany"
+      ],
+      "software": [
+        "Slack",
+        "Telegram",
+        "Salesforce",
+        "Salesloft Drift",
+        "MyBB",
+        "Cloudflare",
+        "Okta",
+        "SharePoint",
+        "Gmail",
+        "Microsoft Entra",
+        "have more..."
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "casper",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "swift",
+        "powershell"
+      ],
+      "links": [
+        "https://www.sekoia.com/blog/gotta-breach-em-all-the-journey-of-shinyhunters",
+        "https://gist.github.com/hashp4/948ae5c01cf66ab7d3fcdc80f3b965ff#file-meshagent\\_task-cmd",
+        "https://gist.github.com/hashp4/948ae5c01cf66ab7d3fcdc80f3b965ff#file-egress\\_test-cmd",
+        "https://gist.github.com/hashp4/948ae5c01cf66ab7d3fcdc80f3b965ff#file-cs\\_disable-cmd"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-01",
+      "title": "Hallucinating Credibility: China-Aligned TA419 Impersonates its Way into US AI Policy Circles",
+      "summary": "China-aligned, espionage-motivated actor TA419 ran credential phishing campaigns in July 2026 impersonating economists and AI policymakers, including a former White House Office of Science and Technology Policy official, to target AI policy experts at US think tanks, universities, and law firms. The group first sent benign outreach, such as invitations to join a fictitious \"AI Policy Advisory Committee,\" to build rapport before sending a redirect chain. That chain led to an adversary-in-the-middle phishing page built on a customized Frameless BitB kit that relays genuine Microsoft 365 sign-in, letting attackers capture session cookies even after MFA. TA419 also impersonated an Anthropic employee in February 2026 to target a US think tank analyst. Defenders should consider phishing-resistant, origin-bound authentication such as passkeys and verify unsolicited expert outreach through an independent channel.",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Bitm_technique",
+        "Supply_chain_technique",
+        "Evilginx_tool",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "China",
+        "Japan"
+      ],
+      "software": [
+        "Anthropic",
+        "Claude",
+        "Cloudflare",
+        "Cloudflare Turnstile",
+        "Microsoft 365",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
+        "https://github.com/waelmas/frameless-bitb/tree/893e6fa02bd4602b00ee16941fffce3cacd508d8",
+        "https://github.com/waelmas/frameless-bitb"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-01",
+      "title": "ScreenConnect Client (Ab)used by Attackers",
+      "summary": "A phishing email impersonating a payment receipt, with an \"EFT Wire Transfer\" subject, linked to a ScreenConnect client executable that was hosted on a compromised website. The executable is a legitimate, ConnectWise-signed ScreenConnect client preconfigured to connect to an attacker-operated test account, so no complex malware was needed. The analyst notes the attack passed basic email controls and that the file was unknown on VirusTotal at the time. The report warns that remote monitoring and management (RMM) tools such as AnyDesk, TeamViewer, and others are easy to deploy and widely trusted, making them attractive to attackers. It points defenders to the LOLRMM project as a reference list of such tools.",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool",
+        "Anydesk_tool",
+        "Teamviewer_tool",
+        "Logmein_tool",
+        "Bomgar_tool",
+        "Beyondtrust_tool",
+        "Zoho_assist_tool",
+        "Netsupportmanager_rat",
+        "Simplehelp_tool",
+        "Lolbas_technique"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "sha256"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/rss/33388"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-01",
+      "title": "A STUNning Disguise: Cling Malware Masquerades as Google",
+      "summary": "Cling is a botnet that exploits CVE-2021-35394, a remote code execution flaw in the Realtek Jungle SDK found in many IoT and networking devices that often remain unpatched. It also embeds exploit logic for several other command-injection vulnerabilities and persists by modifying init scripts and replacing the wget binary. Its command-and-control abuses STUN traffic, with bots registering through public STUN servers and receiving operator commands encoded in the transaction ID field. Commands are hidden in packets that appear to come from a Google STUN server, likely through source address spoofing. Defenders are advised to patch or restrict exposed devices and hunt for STUN Binding Requests with all-zero transaction IDs.",
+      "completeness": "High",
+      "threats": [
+        "Cling",
+        "Mirai",
+        "Udpflood_technique",
+        "Kataru"
+      ],
+      "geo": [
+        "South korea"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 10,
+      "software": [
+        "BusyBox",
+        "LB-LINK",
+        "Microsoft Teams",
+        "Zoom",
+        "Minecraft"
+      ],
+      "links": [
+        "https://www.nozominetworks.com/blog/a-stunning-disguise-cling-malware-masquerades-as-google-"
+      ]
+    }
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-12",
+      "title": "Seven Steps to Ransomware: CitrixBleed 2 Weaponized by Initial Access Brokers",
+      "completeness": "Medium",
+      "threats": [
+        "Citrix_bleed_vuln",
+        "Zoho_assist_tool",
+        "Screenconnect_tool",
+        "Dragonforce_ransomware",
+        "Password_spray_technique",
+        "Citrix_bleed2_vuln",
+        "Netbird_tool",
+        "Atera_tool",
+        "Impacket_tool",
+        "Remcom_tool",
+        "Mimikatz_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "QEMU",
+        "Windows registry",
+        "Windows service",
+        "Windows Installer",
+        "Outlook",
+        "PsExec",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/citrixbleed-2-dragonforce-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-12",
+      "title": "Sign here… and install an unwanted RMM",
+      "summary": "A phishing campaign impersonating DocuSign lures victims through fake webpages, sent by email or delivered via compromised legitimate websites. Malicious JavaScript automatically forces the download of an MSI installer disguised as a DocuSign update, while notifying attackers of each click. The final stage has victims install a legitimate remote monitoring and management tool, which attackers can repurpose for persistent remote access. Campaign infrastructure tracks victims in real time via Telegram, and targets include both Windows and macOS users. Defenders should note that the attack abuses trusted tools and brand familiarity, so legitimate-looking signed software alone does not indicate safety.",
+      "completeness": "High",
+      "threats": [
+        "Atera_tool",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 4,
+      "software": [
+        "Telegram",
+        "zoom"
+      ],
+      "functions": [
+        "triggerDownload",
+        "function"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stormshield.com/news/cti-phishing-campaign-rmm-installation/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-12",
+      "title": "LimeRat Malware: Delivery Techniques and Organizational Impact",
+      "summary": "LimeRAT is an openly available, .NET-based remote access trojan with a easy-to-use control panel that makes it attractive to operators across the skill spectrum. It offers capabilities including data theft, keylogging, screen capture, file transfer, arbitrary command execution, and use of infected hosts for cryptocurrency mining or DDoS attacks. The malware is mainly distributed through email attachments, malicious online ads, social engineering, and cracked software downloads. One documented 2020 campaign hid it in a password-protected Excel file delivered in a social engineering email. The report's main defensive advice is to train end users to recognize suspicious emails and attachments.",
+      "completeness": "Low",
+      "threats": [
+        "Limerat"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 16,
+      "software": [
+        "NET framework",
+        "Microsoft Office"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/limerat-malware-delivery-techniques-and-organizational-impact/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-12",
+      "title": "The Calendar Invite Was the Phishing Kit",
+      "summary": "A credential-harvesting campaign, reported by IRONSCALES, targeted a freight and logistics company using emails with almost no body text and a calendar (.ics) attachment carrying the phishing content. The 87 KB invite embedded a two-page internal compliance lure as base64 images, disguised as a \"Code of Conduct Assessment\" workforce task. It offered two routes to the same credential page: a personalized link and a QR code that could move victims outside managed browser controls. The destination domain was aged and quiet, with no mail records, and the message came from a compromised legitimate mailbox with broken SPF, DKIM, and DMARC alignment. Defenders should confirm that calendar content is parsed for embedded HTML, images, and QR codes, and that authentication failures are correlated with attachment behavior.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique",
+        "Barracuda_tool"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.codeaintel.com/p/the-calendar-invite-was-the-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-12",
+      "title": "CTI Report: BRG-26182 Chains a Fake Human-Check to Microsoft 365 AiTM Session Theft - Barricade Cyber Solutions",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Clickfix_technique",
+        "Antibot",
+        "Bec_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "Cloudflare-Turnstile",
+        "Cloudflare Turnstile"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "getHashParameter",
+        "Set-InboxRule"
+      ],
+      "links": [
+        "https://barricadecyber.com/brg-26182-microsoft-365-aitm-session-theft/"
+      ]
+    }
+  }
+]

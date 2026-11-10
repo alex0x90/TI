@@ -1,0 +1,277 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "“Your shipment has arrived” email hides remote access software",
+      "summary": "A phishing email impersonating DHL, claiming a shipment had arrived, targeted a German industrial spare parts supplier at its general info address. The email's attachment, a fake PDF, displayed a blurred image and a button to \"Continue\" to a secure file. Clicking it downloaded a .scr file that was a modified installer for the SimpleHelp remote access tool, which can give attackers remote control, reconnaissance, and a path to further malware, including ransomware. Once installed, the tool connects outbound to the attacker's server, so one execution by the victim can grant ongoing access. Defenders should scrutinize file extensions and unsolicited attachments, since legitimate-looking tools can still be malicious.",
+      "completeness": "Low",
+      "threats": [
+        "Simplehelp_tool"
+      ],
+      "geo": [
+        "Vietnamese",
+        "German"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/04/your-shipment-has-arrived-email-hides-remote-access-software"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "Expect guests : PhantomCore's new tools and tactics in attacks on Russian companies",
+      "summary": "PhantomCore, a threat group that F6 first detected in 2024 and linked to attacks back to 2022, is targeting Russian and Belarusian companies with its own tools. In an April 2026 campaign against a Russian industrial company, phishing emails posed as a North Korean delegation visit and delivered an HTA and LNK chain that set up persistence and launched a new remote access trojan called KermitRAT. KermitRAT supports command execution, screenshots, keylogging, file theft, and detailed system reconnaissance. The attackers also deployed MeshAgent for remote management and showed signs of using CyberStrikeAI, an AI-driven penetration testing platform, possibly for reconnaissance. The report's takeaway is that the group combines proven tools with new technologies and automation, so detection needs a more comprehensive approach.",
+      "completeness": "Medium",
+      "threats": [
+        "Meshagent_tool",
+        "Meshcentral_tool",
+        "Cyberstrikeai_tool",
+        "Sliver_c2_tool",
+        "Kermitrat"
+      ],
+      "geo": [
+        "Belarusian",
+        "Russian",
+        "Ukrainian",
+        "Dprk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "bitlocker",
+        "curl"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/phantomcore-newtools/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "RedSun: Windows 0day when Defender becomes the attacker",
+      "summary": "RedSun is an unpatched Windows local privilege escalation exploit, publicly released by a researcher using the alias Chaotic Eclipse, that abuses a logic flaw in Windows Defender's file remediation path. A standard unprivileged user can trick Defender into writing an attacker-controlled binary into C:\\Windows\\System32 by racing a batch OPLOCK and swapping the target directory with a junction point. The planted binary is then launched through the Storage Tiers Management COM server, yielding a SYSTEM shell. The root cause is missing reparse point validation in MpSvc.dll, and the exploit was confirmed on fully patched Windows 11 with real-time protection enabled. No patch or CVE existed at the time of writing, so defenders should rely on behavioral detection such as monitoring junction creation in %TEMP% and unexpected writes to System32 from MsMpEng.exe.",
+      "completeness": "Low",
+      "threats": [
+        "Redsun_tool",
+        "Uac_bypass_technique",
+        "Shadow_copies_delete_technique",
+        "Bluehammer_tool"
+      ],
+      "software": [
+        "Windows Defender",
+        "Windows service",
+        "Dropbox"
+      ],
+      "functions": [
+        "IsRunningAsLocalSystem",
+        "GetFinalPathNameByHandle"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/redsun-windows-0day-when-defender-becomes-the-attacker"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "From Code to Coverage (Part 5A): When All Your Detections Fail: The ADWS Blind Spot",
+      "completeness": "Low",
+      "threats": [
+        "Impacket_tool",
+        "Bloodhound_tool",
+        "Soaphound_tool",
+        "Powerview_tool"
+      ],
+      "software": [
+        "Active Directory"
+      ],
+      "functions": [
+        "Get-ADComputer",
+        "Get-ADUser",
+        "Get-ADGroup"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/ldap-active-directory-detection-part-5a"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "Operation PhantomCLR : Stealth Execution via AppDomain Hijacking and In-Memory .NET Abuse",
+      "summary": "Operation PhantomCLR is a post-exploitation framework targeting Middle East and EMEA financial sector organizations, using a legitimate Intel-signed utility, IAStorHelp.exe, as a trusted execution container. The attack begins with a spear-phishing ZIP archive containing a disguised .pdf.lnk file and a malicious configuration file that hijacks the .NET AppDomainManager, forcing attacker code to run before the host application starts. The framework evades sandboxes with a 60-second prime-sieve delay and a constrained AES key derivation loop, and it executes shellcode through JIT trampolining without common allocation APIs. Command-and-control traffic is routed over HTTPS through Amazon CloudFront domain fronting. Defenders should treat any affected system as fully compromised, enforce AppDomainManager restrictions, and inspect encrypted CDN-bound traffic.",
+      "completeness": "High",
+      "threats": [
+        "Dll_injection_technique",
+        "Cobalt_strike_tool",
+        "Brc4_tool",
+        "Nighthawk_tool",
+        "Domain_fronting_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Emea",
+        "Saudi",
+        "Middle east"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 22,
+      "software": [
+        "Windows Authenticode",
+        "NET Framework",
+        "Visual Studio",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit",
+        "base64",
+        "gzip",
+        "cbc",
+        "aes-128-cbc",
+        "xor",
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "Main",
+        "InitializeNewDomain",
+        "GetFunctionPointer",
+        "Windows",
+        "Emongary",
+        "Embowled",
+        "Fostotarya",
+        "Mysion",
+        "Shric",
+        "Miculary",
+        "have more..."
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/operation-phantomclr-stealth-execution-via-appdomain-hijacking-and-in-memory-net-abuse/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "Tracking Mirai Variant Nexcorium: A Vulnerability-Driven IoT Botnet Campaign",
+      "summary": "Nexcorium is a multi-architecture Mirai variant delivered by a threat actor the report tentatively calls \"Nexus Team,\" which exploits CVE-2024-3721, an OS command injection flaw in TBK DVR devices. The malware follows Mirai's design, with XOR-encoded configuration, a watchdog module, a scanner, and a DDoS attacker. It also carries the CVE-2017-17215 exploit for Huawei HG532 devices and a hard-coded list of default credentials for Telnet brute-force attacks. After infection, it achieves persistence through inittab, rc.local, a systemd service, and crontab, then deletes its original binary. Defenders should note the botnet's combined use of exploitation, brute-forcing, and multiple persistence methods to sustain access to IoT devices.",
+      "completeness": "Medium",
+      "threats": [
+        "Mirai",
+        "Nexcorium",
+        "Tcpackflood_technique",
+        "Tcpsynflood_technique",
+        "Udpflood_technique",
+        "Ackflood_technique",
+        "Synflood_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 1,
+      "software": [
+        "Systemd",
+        "crontab",
+        "Linux",
+        "ubuntu"
+      ],
+      "algorithms": [
+        "xor",
+        "fnv-1a"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/tracking-mirai-variant-nexcorium-a-vulnerability-driven-iot-botnet-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "The Shadow of GGBond : Suspected Supply Chain Attack on Official Installer of a Virtual Mobile Service Provider",
+      "summary": "The QiAnXin RedDrip Team reports a suspected supply chain attack in which the official website installer of a domestic cloud phone and virtual mobile service provider was replaced between February and late March 2026, since restored to normal. The tampered installer is a self-extracting archive whose hidden dropper runs a multi-layer loader chain that ends in a Trojan the researchers named GGBond RAT. The Trojan connects to a C2 server, receives RC4-encrypted commands, and supports remote control functions such as file operations, process termination, and network connections. Researchers say the victims span education, IT, government, construction, finance, and energy sectors, with a large number of government and enterprise endpoints affected. They speculate the compromised cloud phones were used for traffic fraud, account nurturing, coupon abuse, or as jump hosts. QiAnXin products can detect and remove the malware.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Ggbond"
+      ],
+      "algorithms": [
+        "rc4",
+        "md5",
+        "base64"
+      ],
+      "links": [
+        "https://ti.qianxin.com/blog/articles/supply-chain-attack-on-official-installer-of-a-virtual-mobile-service-provider-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "Not Just Annoying Ads: Adware Bundles Delivering Gh0st RAT",
+      "completeness": "Medium",
+      "threats": [
+        "Gh0st_rat",
+        "Dead_drop_technique",
+        "Cloverplus",
+        "Lamehug_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 9,
+      "software": [
+        "Windows Service",
+        "Instagram",
+        "Windows Remote Access",
+        "Slack"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Main"
+      ],
+      "languages": [
+        "cscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.splunk.com/en_us/blog/security/detecting-ghost-rat-cloverplus-adware-loader-analysis.html",
+        "https://github.com/splunk/attack\\_data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-17",
+      "title": "This old-school scam is still working",
+      "summary": "A Malwarebytes researcher received an advance-fee scam email claiming the United Nations would pay 150 scam victims $5,000,000 each, impersonating a real former UN official and directing recipients to a Nigerian contact via WhatsApp. The scammers use a real person's name and a bank-linked contact to add credibility, and the email name has been reused across many similar 419-style scams. A researcher posing as a victim, Tess, played along and was asked to pay a courier fee for an ATM card, with costs likely to escalate. The report notes that people who were previously scammed are clearly targeted and that sunk costs make victims keep paying. Key red flags include unexpected huge payouts, free webmail or WhatsApp as contact channels, pressure to act fast, upfront fees, vague titles, and requests for secrecy.",
+      "completeness": "Low",
+      "geo": [
+        "Nigeria",
+        "Africa",
+        "Swedish",
+        "Nigerian"
+      ],
+      "software": [
+        "Whatsapp"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/04/this-old-school-scam-is-still-working"
+      ]
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-20",
+      "title": "Fortibleed: Anatomy of the FortiBleed campaign based on the server that the attackers themselves left exposed.",
+      "summary": "FortiBleed is a credential-theft campaign against Fortinet FortiGate firewalls, and this report reconstructs its operation from an attacker server left exposed on the internet. The operation chains mass traffic capture, credential extraction from captured traffic, offline hash cracking on rented GPUs, and lateral movement into Active Directory. Attackers planted backdoor administrator accounts with names imitating Fortinet services, which persist even after the original admin password is changed. The report also documents an autonomous AI pentest agent, CyberStrike, installed in the attacker's virtual machines, and cracking jobs targeting organizations beyond Fortinet. Its main takeaway for defenders is to assume compromise on exposed FortiGate devices, rotate credentials, and hunt for the disguised accounts.",
+      "completeness": "High",
+      "threats": [
+        "Hashcat_tool",
+        "Password_spray_technique",
+        "Impacket_tool",
+        "Credential_harvesting_technique",
+        "Kerberoasting_technique",
+        "As-rep_roasting_technique",
+        "Cyberstrikeai_tool",
+        "Hackbrowserdata_tool"
+      ],
+      "geo": [
+        "Japan",
+        "Vietnam",
+        "Taiwan"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Telegram",
+        "Microsoft SQL Server",
+        "MSSQL",
+        "MySQL",
+        "curl",
+        "Chromium",
+        "Anthropic",
+        "OpenAI",
+        "Ollama",
+        "have more..."
+      ],
+      "algorithms": [
+        "rc4",
+        "md5",
+        "ed25519",
+        "aes-256",
+        "pbkdf2",
+        "sha256",
+        "aes"
+      ],
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "links": [
+        "https://zenox.ai/en/fortibleed-anatomy-of-the-fortibleed-campaign-based-on-the-server-that-the-attackers-themselves-left-exposed/"
+      ]
+    }
+  }
+]

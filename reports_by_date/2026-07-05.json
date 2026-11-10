@@ -1,0 +1,34 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-05",
+      "title": "BlackMatter Ransomware Explained: Delivery Methods, Tactics, and Targets",
+      "summary": "BlackMatter is a ransomware-as-a-service platform that emerged in July 2021 and is potentially a reimagining of the DarkSide RaaS. Its affiliates have targeted numerous organizations in the United States, demanding ransoms from $80,000 to $15,000,000 paid in cryptocurrencies such as Bitcoin and Monero. Rather than relying mainly on phishing, the group appears to gain initial access primarily by exploiting vulnerable edge devices and corporate credentials obtained from other sources. Its ransom notes threaten both data encryption and data theft, directing victims to a dark web negotiation site. The ransomware targets sectors including healthcare, education, government, finance, and other essential infrastructure, affecting hospitals, universities, large corporations, and small businesses.",
+      "completeness": "Medium",
+      "threats": [
+        "Blackmatter",
+        "Darkside",
+        "Cobalt_strike_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 4,
+      "software": [
+        "TOR browser"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/blackmatter-ransomware-explained-delivery-methods-tactics-and-targets/"
+      ]
+    }
+  }
+]

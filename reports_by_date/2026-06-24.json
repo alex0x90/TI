@@ -1,0 +1,373 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "Inside FortiBleed: Reverse Engineering the CyberStrike Harvester Behind a Global FortiGate Credential Factory",
+      "summary": "FortiBleed is a large-scale credential compromise campaign targeting internet-facing Fortinet FortiGate firewalls and SSL VPN gateways, and it does not rely on a malware payload. Operators use credential stuffing, password spraying, configuration harvesting, offline cracking, and post-authentication capture processing. Researchers reverse-engineered the CyberStrike Harvester v1.5 binary, which parses captured traffic and FortiGate text into NetNTLM, Kerberos, and session material. Cracked credentials are validated over SSL VPN, Kerberos, and SMB, and then used for AD enumeration and file-share exfiltration, including a recorded 121.43 GB collection run. The campaign is unattributed, and the operation is assessed as likely initial-access brokerage with credential monetization. Defenders should rotate credentials, invalidate sessions, audit configuration exports, and hunt for abnormal VPN, LDAP, and SMB activity.",
+      "completeness": "High",
+      "threats": [
+        "Fortibleed_vuln",
+        "Cyberstrikeai_tool",
+        "Password_spray_technique",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique",
+        "Impacket_tool",
+        "Hashcat_tool",
+        "Hashtopolis_tool",
+        "Kerberoasting_technique",
+        "As-rep_roasting_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "America",
+        "Russian",
+        "Asia-pacific",
+        "Turkey"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 15,
+      "software": [
+        "FortiGate",
+        "Telegram",
+        "Linux",
+        "Active Directory",
+        "MSSQL",
+        "MySQL",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "pbkdf2",
+        "rc4"
+      ],
+      "languages": [
+        "golang",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/inside-fortibleed-reverse-engineering-the-cyberstrike-harvester-behind-a-global-fortigate-credential-factory/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "The Growing Threat of ShadowPad Malware and Its Business Impact",
+      "summary": "ShadowPad is a modular backdoor in shellcode format, first seen in 2015 as the successor to PlugX, and it was initially attributed to APT41. Unlike PlugX, it is shared exclusively among a restricted group of users rather than sold publicly. Operators can remotely deploy additional plugins from the C&C server to extend its functionality. The malware has been delivered through software supply chain attacks, exploitation of unpatched vulnerabilities, spear-phishing, living-off-the-land techniques, and watering hole attacks. Targets include government institutions, critical infrastructure, and high-value corporate assets, with impacts ranging from data theft to operational disruption. Defenders should prioritize patching, vetting software updates, and monitoring for abuse of legitimate administrative tools.",
+      "completeness": "Medium",
+      "threats": [
+        "Shadowpad",
+        "Plugx_rat",
+        "Supply_chain_technique",
+        "Shadowhammer",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Watering_hole_technique",
+        "Dll_sideloading_technique",
+        "Passthehash_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 20,
+      "software": [
+        "NetSarang"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/the-growing-threat-of-shadowpad-malware-and-its-business-impact/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "A Hidden Threat: Why DarkLoadLibrary Is Dangerous and How to Detect Its Use in Attacks",
+      "summary": "DarkLoadLibrary is a Windows DLL loader that abuses low-level loader mechanisms to load DLLs into memory without triggering LoadImageNotifyRoutine callbacks, so security products relying on those callbacks receive no telemetry and cannot install hooks. Unlike reflective DLL loading, it can load DLLs from disk, including system DLLs other than ntdll.dll and kernel32.dll, while letting Windows complete the remaining loading steps. The report cites the NightHawk (v0.2.1) C2 framework as an example that uses this technique, intercepting NtOpenSection, NtCreateSection and NtMapViewOfSection with Detours. Detection is possible by finding modules in heap memory that remain in system lists, or by spotting unbacked-memory call traces when MiniDumpWriteDump is invoked, as in LSASS dumping. The report provides hunting queries built on these call-trace patterns.",
+      "completeness": "Low",
+      "threats": [
+        "Darkloadlibrary_tool",
+        "Nighthawk_tool"
+      ],
+      "functions": [
+        "LdrpFindLoadedDllByName",
+        "GetModuleHandle"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/skrytaya-ugroza-chem-opasen-darkloadlibrary-i-kak-vyyavit-ego-ispolzovanie-pri-atakakh/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "Backdoor.Mistic: New Backdoor May be Linked to Ransomware Access Broker",
+      "summary": "Backdoor.Mistic is a stealthy backdoor used in cybercrime intrusions since April 2026, and it may be linked to Woodgnat (aka KongTuke), an initial access broker. In one intrusion, Mistic was deployed alongside Woodgnat's ModeloRAT, a Python-based remote access trojan that has been used to deliver Qilin ransomware. Mistic is sideloaded via the legitimate MpExtMs.exe through a DLL named EndpointDlp.dll, which helps it blend in with trusted software. It runs payloads in memory, avoids writing files to disk, and includes a kill switch, features suggesting long-term, low-visibility access. Targeting appears opportunistic across insurance, education, IT and professional services, with Woodgnat reportedly selling access to ransomware affiliates.",
+      "completeness": "Medium",
+      "threats": [
+        "Mltbackdoor",
+        "Kongtuke",
+        "Modelorat",
+        "Qilin_ransomware",
+        "Blackbasta",
+        "Interlock",
+        "Rhysida",
+        "Akira_ransomware",
+        "8base",
+        "Clickfix_technique",
+        "Filefix_technique",
+        "Crashfix",
+        "Winpython_tool",
+        "Lolbin_technique",
+        "Nexshield",
+        "Mintsloader",
+        "Kerberoasting_technique",
+        "Anydesk_tool",
+        "Splashtop_tool"
+      ],
+      "software": [
+        "Node.js",
+        "Curl",
+        "WordPress",
+        "Windows File Explorer",
+        "Microsoft Teams",
+        "Chrome",
+        "GateKeeper",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "vbscript",
+        "python"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/new-mistic-backdoor-modelorat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "StrikeShark: investigating a new campaign delivering Cobalt Strike through SharkLoader",
+      "summary": "SharkLoader is a previously undocumented loader that Kaspersky tracks as the StrikeShark campaign, used to deploy Cobalt Strike Beacon. The threat actor gains initial access by exploiting internet-facing applications such as Microsoft Exchange, SharePoint, Openfire, and GeoServer, often using publicly available proof-of-concept exploits, and also through malicious droppers disguised as legitimate software. Victims span government entities, including a Taiwanese ministry and an Indonesian diplomatic organization, and software development companies across many countries. The loader uses DLL sideloading, reflective loading, and API hooking to evade detection, and the actor establishes persistence through Run keys and scheduled tasks. Kaspersky assesses with low confidence that the actor is Chinese-speaking, and the campaign's ultimate objectives remain under investigation.",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Sharkloader",
+        "Proxylogon_exploit",
+        "Dll_sideloading_technique",
+        "Dll_hijacking_technique",
+        "Fscan_tool",
+        "Searchall_tool",
+        "Pillager_tool",
+        "Sharpgpoabuse_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "North macedonia",
+        "Macedonia",
+        "Nepal",
+        "Lebanon",
+        "Syria",
+        "Chinese",
+        "Taiwan",
+        "Colombian",
+        "Indonesia",
+        "Colombia",
+        "Serbia",
+        "Hong kong",
+        "Indonesian"
+      ],
+      "links": [
+        "https://securelist.com/strikeshark-campaign/120326/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "StealC and Amadey: Breaking down infostealers and the cybercrime services that deliver them",
+      "summary": "Microsoft's Digital Crimes Unit, working with Europol and industry partners, disrupted StealC and Amadey infrastructure on June 24, 2026, taking down over 200 malicious command-and-control domains and IP addresses. StealC is a malware-as-a-service infostealer that harvests browser credentials, cookies, cryptocurrency wallet data, messaging and email client data, and Steam session data. Amadey is a modular loader sold as a service that delivers StealC and other malware, including ransomware in some cases. Stolen logs are sold through underground markets and access brokers, who resell enterprise access to ransomware and other threat actors. Infections often occur on unmanaged personal devices, so defenders may only notice the breach after valid credentials or session cookies are abused, even bypassing MFA. Microsoft recommends credential hygiene, identity protection, cloud-delivered antivirus protection, tamper protection, and attack surface reduction rules.",
+      "completeness": "High",
+      "threats": [
+        "Stealc",
+        "Amadey",
+        "Lumma_stealer",
+        "Redline_stealer",
+        "Raccoon_stealer",
+        "Vidar_stealer",
+        "Seo_poisoning_technique",
+        "Clickfix_technique",
+        "Credential_stealing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian",
+        "Belarusian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Telegram",
+        "Steam",
+        "Outlook",
+        "Foxmail",
+        "WinSCP",
+        "Chromium",
+        "Chrome",
+        "Opera",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "rc4",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/06/24/stealc-and-amadey-breaking-down-infostealers-and-the-cybercrime-services-that-deliver-them/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "Zero-Day Exploitation of Vulnerability (CVE-2026-20245) in Cisco Catalyst SD-WAN Manager",
+      "summary": "A threat actor targeted SD-WAN infrastructure at a service provider, using rogue peering connections and SSH access via default accounts to gain initial access in early 2026. The actor changed the default admin password to evade detection and exfiltrated SD-WAN fabric configurations through the management web interface. In April 2026, the actor exploited zero-day CVE-2026-20245, a flaw in the Cisco Catalyst SD-WAN Manager CLI, using a malicious CSV upload to gain root access. The actor then created a root-level account and afterward deleted its files and restored modified configurations to remove traces. Defenders should hunt for the described TTPs, review logs, and upgrade SD-WAN Manager to fixed releases.",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/zero-day-exploitation-cisco-catalyst-sd-wan-manager/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "LoaderClient Malware Analysis: How WeedHack Uses Ethereum Smart Contracts for Resilient C2 Infrastructure",
+      "summary": "LoaderClient is a stage-1 credential stealer from the WeedHack Malware-as-a-Service campaign, distributed as a malicious Minecraft Fabric mod that harvests session data including live Microsoft OAuth access tokens. It resolves its command-and-control URL through an Ethereum smart contract using a technique called EtherHiding, which makes takedowns harder. The malware downloads a JNIC-compiled stage-2 payload and runs it entirely in memory, with stage-2 independently re-resolving C2, bypassing SSL validation, and using DNS-over-HTTPS. The campaign targets Minecraft players through YouTube and SEO poisoning and has compromised over 116,000 endpoints since January 2026. For defenders, the report's key takeaway is that blocking Ethereum RPC traffic from non-blockchain applications and monitoring the contract address are the most durable detection points.",
+      "completeness": "High",
+      "threats": [
+        "Loaderclient",
+        "Weedhack",
+        "Etherhiding_technique",
+        "Uac_bypass_technique",
+        "Seo_poisoning_technique",
+        "Zipbomb_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Minecraft",
+        "Discord",
+        "Telegram",
+        "Steam",
+        "Windows Defender",
+        "Etherscan"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "lzma",
+        "xor",
+        "chacha20",
+        "md5",
+        "sha1",
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Win32",
+        "method_1676",
+        "method_44717",
+        "method_1674",
+        "getDeclaredConstructor",
+        "Gson",
+        "method_1551",
+        "method_1548",
+        "getText",
+        "RPC",
+        "have more..."
+      ],
+      "languages": [
+        "kotlin",
+        "java"
+      ],
+      "links": [
+        "https://darkatlas.io/blog/loaderclient-malware-analysis-how-weedhack-uses-ethereum-smart-contracts-for-resilient-c2-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-24",
+      "title": "LokiBot After a Decade: An Analysis of a Recent LokiBot Campaign",
+      "summary": "LokiBot is a long-running infostealer, first advertised in 2015, that remains a notable tool in the threat landscape despite reduced activity in recent years. This campaign delivered it through malspam with a obfuscated JScript attachment that launches a PowerShell loader, which in turn runs a ConfuserEx-protected .NET injector. The injector spawns aspnet_compiler.exe and uses process injection APIs to load the final 32-bit LokiBot payload. LokiBot resolves its APIs at runtime through custom hashing, creates a mutex, and steals credentials from over a hundred software products, including browsers, wallets, and email clients. Its persistence mechanism is broken in newer builder-generated samples, and the malware then exfiltrates stolen data and polls its C2 server for commands.",
+      "completeness": "High",
+      "threats": [
+        "Confuserex_tool",
+        "Process_injection_technique",
+        "Loki_bot",
+        "Credential_harvesting_technique",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "ASP.NET"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor",
+        "3des",
+        "md5"
+      ],
+      "functions": [
+        "LAUNCH"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "jscript"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/lokibot-after-a-decade-an-analysis-of-a-recent-lokibot-campaign",
+        "https://github.com/d00rt/hijacked\\_lokibot\\_version",
+        "https://github.com/OALabs/hashdb/blob/main/algorithms/lokibot.py",
+        "https://github.com/HumanSecurity/obfuscation-detector"
+      ]
+    }
+  }
+]

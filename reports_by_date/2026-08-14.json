@@ -1,0 +1,348 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "APT group HoneyMyte upgrades CoolClient: the backdoor gets a kernel-level Windows rootkit",
+      "summary": "HoneyMyte, also known as Mustang Panda, has upgraded its CoolClient backdoor with a signed kernel-mode driver, msagent.sys, that runs as a Windows service. The driver hides the CoolClient process, files, and registry entries, and it can filter C2 addresses from network data returned to user mode. Observed intrusions in Myanmar, Mongolia, Pakistan, and Russia, including government entities, used PlugX as the initial implant before deploying CoolClient. The driver also communicates with the user-mode backdoor through IOCTL requests, and it shields its process from handle-based termination or injection. Defenders should note that the group continues to expand rootkit capabilities for stealth and defense evasion.",
+      "completeness": "High",
+      "threats": [
+        "Coolclient",
+        "Credential_harvesting_technique",
+        "Toneshell",
+        "Plugx_rat",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Uac_bypass_technique",
+        "Hideprocess_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Myanmar",
+        "Pakistan",
+        "Mongolia",
+        "Russia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows service",
+        "Microsoft Defender",
+        "Windows Defender",
+        "Microsoft Windows Defender",
+        "windows media player"
+      ],
+      "algorithms": [
+        "xor",
+        "lzma"
+      ],
+      "functions": [
+        "MSFT_MpPreference"
+      ],
+      "links": [
+        "https://securelist.com/honeymyte-coolclient-driver-rootkit/121028/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "Gone with the WindRelay: A New Malware Combo Behind a Growing Fraud Scheme",
+      "summary": "Group-IB reports WindRelay, a previously unseen NFC relay malware family, deployed alongside the SpyNote RAT in a live phone-call social-engineering scheme. In one 13-minute call, a fraudster posing as a bank employee had the victim install a SpyNote app labeled with the victim's own name, then used remote access to sideload WindRelay without further victim action. The fraudster also took out a loan in the victim's name, and had the victim tap their card to the phone and enter their PIN so the NFC app could relay card data in real time to a fake merchant terminal. Group-IB attributes the campaigns to a threat actor targeting Czechia, Slovakia, and Slovenia, and its findings suggest per-victim app customization. Defenders should flag app installs from non-official sources during active calls and apps requesting NFC and accessibility permissions.",
+      "completeness": "Medium",
+      "threats": [
+        "Windrelay",
+        "Ngate",
+        "Spynote_rat",
+        "Ghost_tap_technique",
+        "Nfcgate_tool"
+      ],
+      "geo": [
+        "Czechia",
+        "Slovakia",
+        "Czech",
+        "Slovenia",
+        "Poland",
+        "Czech republic"
+      ],
+      "software": [
+        "Android",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/windrelay-nfc-spynote-rat-combo-fraud/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "Insurance Claim: Examining the Tools and Infrastructure of the New Malinsure Threat",
+      "summary": "The F6 Threat Intelligence team identified a new cluster, named Malinsure, that uses a custom multi-phase backdoor called SafeMostSSH against Russian organizations. The campaign begins with phishing emails carrying lures themed around voluntary medical insurance (DMS), and archives deliver a renamed legitimate Microsoft Word or PowerPoint executable that sideloads malicious DLLs. The malware uses LOLbin techniques through msiexec and establishes a persistent reverse SSH tunnel to attacker-controlled servers. It fetches new command-and-control addresses from a vc.ru post and from CNAME lookups, and it runs only on domain-joined systems. Lure content targets the insurance, financial, and oil and energy sectors. Defenders should monitor for unusual Office binaries loading DLLs from non-standard paths and for msiexec invocations with the -z switch.",
+      "completeness": "High",
+      "threats": [
+        "Malinsure",
+        "Dll_sideloading_technique",
+        "Lolbin_technique",
+        "Lolbas_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russian federation"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Viber",
+        "WhatsApp",
+        "owerpnt.ex",
+        "icrosoft Office ro",
+        "icrosoft Office Of",
+        "erpnt.exe",
+        "Internet Explorer",
+        "icrosoft Office Ca",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "md5",
+        "zip",
+        "sha1",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "makeInitialSettings",
+        "IsWindowsService",
+        "DllMain"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/malinsure/",
+        "https://github.com/durck/reverse\\_ssh/blob/0eb974292661ecc286551e4d6264a081873dbc5a/cmd/client/detach\\_windows.go",
+        "https://github.com/durck/reverse\\_ssh/blob/0eb974292661ecc286551e4d6264a081873dbc5a/internal/client/client.go",
+        "https://github.com/durck/reverse\\_ssh/blob/0eb974292661ecc286551e4d6264a081873dbc5a/cmd/client/main.go"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "ThreatLocker MDR intercepts ACR stealer delivered by ClickFix",
+      "summary": "ThreatLocker MDR intercepted a ClickFix attack in a client environment, in which a fake captcha on a compromised legitimate website tricked users into running a command through the Run dialog. The multi-stage chain used an MP3-disguised file, steganography hidden in a JPG image, and heavy obfuscation to deliver an updated ACR stealer. The stealer collects browser and Steam credentials, crypto wallet data, files, and screenshots, and it contacts its C2 over HTTPS on port 443 rather than port 53 to evade DNS detection. A secondary payload, GhostPipe, performs an AiTM proxy attack to steal Google logins, including relayed MFA. The report concludes that education alone is insufficient, and that application allowlisting and default-deny policies can block such attacks.",
+      "completeness": "High",
+      "threats": [
+        "Acr_stealer",
+        "Clickfix_technique",
+        "Steganography_technique",
+        "Ghostpipe_tool",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chromium",
+        "Firefox",
+        "Steam",
+        "chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "gzip",
+        "base64"
+      ],
+      "functions": [
+        "GetModuleHandle",
+        "PowerShell",
+        "taskCurrentVersion"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/threatlocker-mdr-intercepts-acr-stealer-delivered-by-clickfix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "An Undocumented OtterCookie-Lineage Build and Its Invisible C2 Fleet",
+      "summary": "The RST Cloud report analyzes a stage-3 payload from a DPRK-nexus Contagious Interview delivery chain, identified as a Node.js RAT and infostealer of the OtterCookie/OtterCandy lineage. The payload carries capabilities not documented for any published version, including a Chrome App-Bound Encryption bypass, SSH key harvesting with lateral movement, cloud-credential theft, and a separately delivered keylogger. Its command-and-control runs as a three-tier Express deployment whose application-specific CORS headers serve as durable fingerprints that survive IP rotation. Exfiltration servers are hosted on different providers than the panel infrastructure, which could hinder takedowns targeting one provider. Live Generation 2 hosts show zero VirusTotal detections, so the authors recommend fingerprint-based hunting over indicator matching.",
+      "completeness": "High",
+      "threats": [
+        "Ottercookie",
+        "Ottercandy",
+        "Launchagents_tool",
+        "Typosquatting_technique",
+        "Obfuscator_io_tool",
+        "I2prat",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Dprk",
+        "Los angeles"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Chrome",
+        "ode.js ru",
+        "curl",
+        "Opera",
+        "macOS",
+        "Linux",
+        "VScode",
+        "Electron",
+        "ZoomEye",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-gcm",
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "cython",
+        "python"
+      ],
+      "links": [
+        "https://www.rstcloud.com/an-undocumented-ottercookie-lineage-build-and-its-invisible-c2-fleet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "npm Bin Entry Harvesting: A Dependency Confusion Blind Spot",
+      "summary": "A researcher published 21 npm packages on August 12, 2026, that squatted CLI binary names exposed through bin entries in Google-affiliated scoped packages. Standard dependency confusion defenses such as scoped publishing, registry allowlists, and lockfile pinning do not cover this gap, because bin names cannot include a scope. Each package ran a postinstall hook that sent a minimal system fingerprint, including hostname, platform, architecture, and Node version, to a per-package subdomain. The packages were removed from the registry within hours. Defenders should audit the bin entries their scoped packages expose and register unclaimed unscoped names as placeholders.",
+      "completeness": "Low",
+      "threats": [
+        "Bin_entry_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "curl"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "links": [
+        "https://safedep.io/google-dep-confusion-bin-harvesting/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "MAJINAHANASHI RANSOMWARE: Yet Another Japanese Locker",
+      "summary": "MAJINAHANASHI is a new ransomware group that emerged in June 2026 and has listed 15 victims, mostly in non-English-speaking countries such as Switzerland, Italy, and Germany, with E-Commerce and Manufacturing hit hardest. Its samples are C/C++ binaries that encrypt files with AES-256, wrap per-file keys with an embedded RSA key, and append the .MAJIN extension. Before encryption, they delete shadow copies, clear event logs, and attempt to terminate many EDR and backup tools. The binary also uses Windows Filtering Platform rules and WMI QoS policies that the report says may interfere with EDR communication. The report calls it a mid-tier family with no especially advanced cryptography, and notes that the group's claims about infection methods appear unreliable.",
+      "completeness": "High",
+      "threats": [
+        "Majinahanashi",
+        "Yurei",
+        "Sinobi",
+        "Tengu_ransomware",
+        "Djinn",
+        "Clop",
+        "Lockbit",
+        "Rhysida",
+        "Shadow_copies_delete_technique",
+        "Qtox_tool",
+        "Mimikatz_tool"
+      ],
+      "geo": [
+        "Bulgaria",
+        "Switzerland",
+        "Lithuania",
+        "Chile",
+        "Chinese",
+        "China",
+        "Thailand",
+        "Japanese",
+        "Columbia",
+        "France",
+        "Italy",
+        "Portugal",
+        "Germany",
+        "India",
+        "Bulgarian"
+      ],
+      "software": [
+        "ws service name r",
+        "sutil us",
+        "cdedit",
+        "Microsoft Defender for Endpoint",
+        "bcdedit",
+        "fsutil",
+        "ginx",
+        "nginx",
+        "yper-V en"
+      ],
+      "algorithms": [
+        "md5",
+        "aes-256",
+        "exhibit",
+        "xor",
+        "aes",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "CreateProcessA"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/08/14/majinahanashi-ransomware-another-japanese-locker/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-14",
+      "title": "A 12 KB Backdoor Hid Its C2 Domain in desktop.ini Whitespace",
+      "summary": "A custom Windows backdoor disguised as Realtek software, RtkNGUI64.exe, was found on a single corporate workstation through a WMI persistence subscription set to trigger at 19:50. Its command-and-control address was hidden in the number of spaces on each line of a Windows desktop.ini file, which appears nearly empty to users and many automated scanners. The malware polled a typosquatted domain that impersonated the DiagTrack Windows service, and it supported only three commands: running shell commands, writing files, and changing the polling interval. The researchers found no link to a known threat actor and treat the implant as likely deliberately targeted, though the initial infection vector remains unknown. By the time of detection, the C2 domain had expired eleven months earlier, yet the backdoor kept running after reboots. Defenders are advised to hunt for suspicious WMI event subscriptions and for desktop.ini files containing only UTF-16 whitespace after the standard header.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "Windows service",
+        "Connected User Experiences and Telemetry",
+        "Windows shell",
+        "Chrome",
+        "Jenkins"
+      ],
+      "algorithms": [
+        "crc-32",
+        "base64"
+      ],
+      "functions": [
+        "crc32"
+      ],
+      "languages": [
+        "python",
+        "php"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/kb-backdoor"
+      ]
+    }
+  }
+]

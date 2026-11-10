@@ -1,0 +1,721 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "In Trouble Again: The Hive0117 Group Has Returned with New Malware for Attacks on Accountants",
+      "summary": "Hive0117, a financially motivated group active since late 2021, has returned with a new banking remote access trojan called FMVT RAT, which F6 researchers first observed in August 2026. The group sent phishing emails with archive attachments disguised as invoices and reconciliation statements to accountants at over 100 Russian companies across retail, construction, logistics, energy, and other sectors. F6 attributes the campaign to Hive0117 based on shared email lures, DGA domain lengths, and C2 hosting overlaps with the group's earlier DarkWatchman malware. The trojan uses COM hijacking for persistence, clipboard logging, and Chrome DevTools Protocol for web injects, and it checks for smart card readers, a precursor to attacks on online banking. F6 reports about 100 successful attacks between 13 August and 12 September 2026, with average losses of 10-12 million rubles. Defenders should block risky executable attachments, verify unsolicited invoices, and keep tokens out of computers used for banking.",
+      "completeness": "High",
+      "threats": [
+        "Darkwatchman",
+        "Com_hijacking_technique",
+        "Shadow_copies_delete_technique",
+        "Lobshot",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Belarus",
+        "Russia",
+        "Kazakhstan",
+        "Uzbekistan"
+      ],
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Viber",
+        "WhatsApp",
+        "Chrome",
+        "Windows registry",
+        "Windows Defender",
+        "Google Chrome",
+        "Yandex Browser",
+        "Chromium",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "sha1",
+        "fnv-1a"
+      ],
+      "functions": [
+        "ReflectiveEntryPoint32"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/fmvt-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Search results are sending people to fake Bitrefill checkouts",
+      "summary": "Fake websites imitating Bitrefill, the legitimate gift card and crypto payment company, are luring people who search for Bitrefill or its products into paying scammers. Victims are sent to lookalike domains that copy Bitrefill's checkout and ask them to send cryptocurrency to an address controlled by the attackers instead of Bitrefill. Because crypto payments generally cannot be reversed, victims receive nothing and recovery is extremely unlikely. The campaign appears to spread through search engine results rather than email, and the operators use commercial analytics to track and optimize conversions. Defenders should navigate directly to bitrefill.com or saved bookmarks, verify the exact domain before any payment, and treat search results for checkout pages with suspicion.",
+      "completeness": "Low",
+      "software": [
+        "Android"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "litecoin"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/09/search-results-are-sending-people-to-fake-bitrefill-checkouts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Muddy Water APT Adversary Simulation",
+      "completeness": "Low",
+      "threats": [
+        "Blackbeard",
+        "Bear-c2",
+        "Stager_51_bot"
+      ],
+      "geo": [
+        "Turkmenistan",
+        "America",
+        "Egypt",
+        "Middle east",
+        "Turkey",
+        "Hungary",
+        "Israel",
+        "Saudi arabia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "WinHttp",
+        "Discord"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "love_me_____",
+        "main"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://medium.com/@S3N4T0R/charming-kitten-apt-adversary-simulation-fa6257b42811",
+        "https://github.com/S3N4T0R-0X0/BEAR"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "How Money Laundering, Scams, and Espionage Hide in a Web Full of Casino Garbage",
+      "summary": "Infoblox reports that malicious casino websites disguise three crime types: illegal Chinese-language gambling and money laundering, \"scambling\" scam gambling sites, and China-aligned APT malware command-and-control (C2) hidden inside casino and adult websites. The PeckBirdy framework, used by China-aligned APT actors since 2023, embeds C2 domains in low-quality casino and adult sites to target corporate and government organizations across Asia. These sites look nearly identical in a browser, so defenders often dismiss casino domain alerts as benign browsing. Infoblox found just over 3% of its enterprise customers resolved at least one PeckBirdy C2 domain, with education a top targeted industry. Defenders should investigate casino domains rather than closing them, and should treat repeated resolution of multiple distinct C2 domains from one network as a potential compromise.",
+      "completeness": "Medium",
+      "threats": [
+        "Peckbirdy_tool",
+        "Smuggling_technique",
+        "Blackseo_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "China",
+        "Hong kong",
+        "Chinese",
+        "America",
+        "France",
+        "Macau",
+        "Singapore",
+        "Australia",
+        "Philippines",
+        "Japanese",
+        "Asia-pacific",
+        "Apac",
+        "New zealand",
+        "North korea",
+        "Asia",
+        "Asian",
+        "London"
+      ],
+      "software": [
+        "Discord"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/how-money-laundering-scams-and-espionage-hide-in-a-web-full-of-casino-garbage/",
+        "https://github.com/infobloxopen/threat-intelligence/blob/main/indicators/csv/casino\\_peckbirdy\\_20260915.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "An emerging Silver Fox-like cluster: PAPERMILL",
+      "summary": "JUMPSEC's DART team investigated a phishing email with a tax-themed lure that bypassed email authentication, carrying an ISO disk image disguised as .img, and named the resulting cluster PAPERMILL as a temporary designation. The ISO bypasses Mark-of-the-Web, and it contains a signed Notepad++ binary that sideloads a malicious libcurl.dll. The loader uses misleading section names, environment checks, and a custom cipher to decrypt a Donut shellcode layer, which delivers a VenomRAT payload. The campaign targets Indian entities and shares a tax-lure playbook with Silver Fox, though attribution remains only partial. Defenders should note that per-download container uniqueness means hash-based detection fails, so behavioral detection and certificate-thumbprint pivoting are more durable.",
+      "completeness": "High",
+      "threats": [
+        "Motw_bypass_technique",
+        "Donut",
+        "Asyncrat",
+        "Quasar_rat",
+        "Venomrat",
+        "Hvnc_tool",
+        "Xworm_rat",
+        "Dcrat",
+        "Dll_sideloading_technique",
+        "Valleyrat",
+        "Winos"
+      ],
+      "geo": [
+        "Indian",
+        "India",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "NSIS installer",
+        "Windows Runtime"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "hmac",
+        "sha256",
+        "aes",
+        "sha1",
+        "aes-256",
+        "pbkdf2",
+        "prng"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.jumpsec.com/guides/an-emerging-silver-fox-like-cluster-papermill/",
+        "https://github.com/volexity/donut-decryptor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "PIVOTPIPE: A New Unofficial .NET-Based Beacon Payload",
+      "completeness": "Medium",
+      "threats": [
+        "Pivotpipe",
+        "Cobalt_strike_tool",
+        "Amsi_bypass_technique",
+        "Smb_beacon_tool"
+      ],
+      "software": [
+        "Twitter"
+      ],
+      "algorithms": [
+        "gzip",
+        "xor"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/09/pivotpipe/",
+        "https://github.com/mopisec/research/blob/main/unpack\\_pivotpipe\\_datablob.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Analysis of the APT-C-55 (Kimsuky) group’s attack chain for using disguised installation packages to deploy remote-access trojans",
+      "summary": "APT-C-55 (Kimsuky), also known as BabyShark, is a long-running advanced persistent threat group focused on stealing intelligence from South Korean think tanks, diplomatic bodies, media, and education institutions. Its latest campaign, uncovered by 360 Advanced Threat Research Institute, delivers malicious LNK files through disguised installer packages. The LNK file decrypts a PowerShell script that checks for analysis tools and virtual machines, then uploads system information to the attacker's server. The script fetches a second-stage payload that is hidden through file type masquerading and loaded in memory as a .NET assembly. Persistence is maintained through a scheduled task disguised as a \"Google Chrome update,\" and the final payload is a modular C# backdoor that receives plugins from its operator. Researchers attribute the activity to Kimsuky based on overlaps with the group's known payloads and tactics, and they urge users to be wary of unfamiliar links and files.",
+      "completeness": "Medium",
+      "threats": [
+        "Process_hacker_tool"
+      ],
+      "software": [
+        "Google Chrome",
+        "Chrome",
+        "InfinityFree"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "aes",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "cscript"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/9ilhH-WUqeNCStDfbrBsrw"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "One Host, Six Operations: How Two Open Directories Exposed a Multi-Target Campaign",
+      "summary": "Two open directories on a Singapore-hosted IP address exposed a single operator running six parallel operations against targets in Pakistan, Vietnam, Mexico, and elsewhere. The activity included a forged Stripe webhook fraud against roughly 2,500 self-hosted New API LLM gateways, with two confirmed successful frauds. Against Pakistan, the operator ran a Moodle password spray and large-scale subdomain enumeration of military and government domains, while Vietnamese government and defence assets were mapped using an LLM. In Mexico, the report describes a completed SQL injection and web-shell compromise of a software vendor's server with extracted credentials. The shared proxy pools, chisel reverse tunnel, SSH key, and \"Miku\" alias tie the operations together, and defenders should monitor for chisel-style tunnels and generically named Scheduled Tasks.",
+      "completeness": "High",
+      "threats": [
+        "Password_spray_technique",
+        "Sqlmap_tool",
+        "Nuclei_tool",
+        "Fscan_tool",
+        "Chisel_tool",
+        "Supply_chain_technique",
+        "Nmap_tool",
+        "Screenconnect_tool",
+        "Clickonce_tool",
+        "Havoc"
+      ],
+      "geo": [
+        "Singapore",
+        "Liberia",
+        "Chinese",
+        "Peruvian",
+        "Pakistani",
+        "Mexican",
+        "China",
+        "Malaysia",
+        "Vietnam",
+        "Pakistan",
+        "Vietnamese",
+        "South korea",
+        "Mexico"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 11,
+      "software": [
+        "gpt-5",
+        "WordPress",
+        "BuddyBoss",
+        "Laravel",
+        "Windows Defender",
+        "Nginx",
+        "phpMyAdmin",
+        "MinIO",
+        "Drupal",
+        "MySQL",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256",
+        "hmac"
+      ],
+      "functions": [
+        "inject"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.infrahunter.com/research/two-open-directories-on-a-singapore-vps"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Mythic C2 Activity at Internet Scale",
+      "summary": "Mythic is an open-source, plugin-based collaborative C2 framework that red teams use for authorized engagements, and threat actors have also been observed using it in unauthorized intrusions. Censys tracked 131 unique public hosts exposing Mythic as of September 11, 2026, and 115 of them carry the default O=Mythic or O=Mythic C2 certificate subject. The framework offers remote command execution, multi-operator support, switchable transport profiles, credential access modules, and lateral movement via SMB pipes and SOCKS proxies. Some clusters also host Sliver, Adaptix C2, Havoc, or FRP, and one cluster showed signs of active custom implant development. Defenders are advised to alert on the default certificate subjects, the CN=operators and CN=multiplayer PKI defaults, and port 7443 traffic from unexplained VPS hosts.",
+      "completeness": "Medium",
+      "threats": [
+        "Mythic_c2_tool",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "England",
+        "Iceland",
+        "Singapore",
+        "China",
+        "United states",
+        "Mauritius",
+        "Hong kong",
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Nginx",
+        "GoDaddy",
+        "Discord",
+        "Linux",
+        "Docker",
+        "systemd"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://censys.com/blog/mythic-c2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Machine speed, hold the AI: Hand-rolled marimo CVE-2026-39987 exploit",
+      "summary": "A skilled human threat actor exploited CVE-2026-39987, a pre-authentication RCE flaw in marimo's /terminal/ws WebSocket endpoint, and moved from an open WebSocket to an SSH session on a bastion host in eight seconds. The operator hand-wrote and debugged a Python toolkit over several hours, with no sign of LLM-generated code or public offensive tooling. They harvested AWS credentials from two surfaces on the host, used them against Secrets Manager, and pivoted to the bastion using the retrieved key. The operator ignored a planted prompt-injection probe that LLM-driven operators had followed, though they made an enumeration error that led to a placeholder EC2 call. Defenders should patch to marimo 0.23.0, restrict the terminal endpoint, scope cloud credentials on notebook hosts, and restrict egress.",
+      "completeness": "Low",
+      "threats": [
+        "Nkabuse",
+        "Revshell_tool"
+      ],
+      "software": [
+        "Redis",
+        "boto3",
+        "GuardDuty"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Manager",
+        "GetCallerIdentity",
+        "AWS",
+        "validate_auth",
+        "SendSSHPublicKey"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit",
+        "https://github.com/marimo-team/marimo/pull/9098"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Silent Push Tracks a Mass Phishing Operation Through Fast Flux",
+      "summary": "Silent Push researchers purchased a fast-flux service, a subscription offering that rotates a domain's IP addresses across many networks to evade blocking, and used it to study the infrastructure. From a single platform query, they identified thousands of live phishing domains, including a Canada-focused banking campaign hidden behind commercial traffic-distribution cloaking that serves a 404 page to scanners and foreign visitors. One cluster impersonates Canadian organizations, and its operator-driven phishing kit captures keystrokes and tests stolen credentials against real banks in parallel. A second cluster runs callback phishing with fake fraud hotlines, delivering a password-protected Windows executable only after a live agent provides a one-time code. Defenders are advised to detect fast-flux delegation at the DNS level and block confirmed bulletproof ASNs.",
+      "completeness": "Low",
+      "threats": [
+        "Fastflux_technique",
+        "Cloaking_technique",
+        "Shadowrelay"
+      ],
+      "geo": [
+        "Australian",
+        "Canada",
+        "Australia",
+        "Canadian"
+      ],
+      "software": [
+        "Keitaro"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/fast-flux-phishing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "ClickFix + EtherHiding Targets Anglophone Countries with NightshadeC2/CastleRAT",
+      "summary": "ClickFix and EtherHiding campaign, tracked by WatchGuard, delivers NightshadeC2/CastleRAT, a Remote Access Trojan linked to the Russian threat group TAG-150, to Windows users in the United States, Canada, United Kingdom, Ireland, Australia, and New Zealand. Compromised WordPress websites inject JavaScript that shows fake verification prompts, tricking visitors into running malicious PowerShell commands. The attackers store delivery logic on Ethereum Sepolia smart contracts and fetch payloads through Cloudflare R2, making the infection chain harder to detect. Once installed, the RAT maintains persistence through a scheduled task, profiles the host, and supports keylogging, clipboard theft, screen capture, browser session hijacking, and credential theft. The report's main lesson for defenders is that trusted services can carry malicious activity, so they should watch for browser-launched PowerShell and suspicious scheduled tasks.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Nightshade",
+        "Motw_bypass_technique",
+        "Dead_drop_technique",
+        "Dll_injection_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Ireland",
+        "Australia",
+        "New zealand",
+        "United kingdom",
+        "United states",
+        "Canada"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 12,
+      "software": [
+        "WordPress",
+        "Cloudflare R2",
+        "Chrome",
+        "Steam",
+        "Chromium",
+        "Telegram",
+        "Discord"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "aes-256",
+        "aes-256-cbc",
+        "rc4",
+        "aes-gcm",
+        "chacha20"
+      ],
+      "functions": [
+        "atob",
+        "JavaScript",
+        "eval",
+        "cmd_run",
+        "Powershell",
+        "SetWindowsHookEx",
+        "MFEnumDeviceSources",
+        "It",
+        "NtDuplicateObject"
+      ],
+      "languages": [
+        "java",
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/clickfix-etherhiding-targets-anglophone-countries-0"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "ParaShells: Parallels Desktop Turns Appliance Install Into a Root Shell",
+      "summary": "ParaShells is a local privilege escalation flaw in Parallels Desktop 26.4.0 (build 57513) on Apple silicon Macs, found by JFrog researchers. The root daemon prl_disp_service exposes a world-writable Unix socket and authenticates local clients only by peer credentials, not a Team ID. An unprivileged local user can send an appliance install request with a crafted parent path that breaks quoting and injects a tar --use-compress-program argument, causing a script to run as root. The flaw affects any local account on a Mac with Parallels Desktop installed, including developer laptops and shared lab machines, and was fixed in version 27.0.0 under CVE-2026-90894. Defenders should inventory Parallels installations, restrict local accounts, and upgrade to a fixed version.",
+      "completeness": "Low",
+      "threats": [
+        "Parashells"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Unix",
+        "macOS",
+        "sudo"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "InstallAppliance"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://jfrog.com/blog/parallels-desktop-turns-appliance-install-into-root-shell/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Attackers Actively Exploiting Critical Vulnerability in WooCommerce Wholesale Lead Capture Plugin",
+      "completeness": "Low",
+      "software": [
+        "WordPress"
+      ],
+      "functions": [
+        "wwlc_file_upload_handler",
+        "get_allowed_mime_types",
+        "time"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/09/attackers-actively-exploiting-critical-vulnerability-in-woocommerce-wholesale-lead-capture-plugin/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Possible Pakistan-nexus Backdoor Targeting Afghanistan",
+      "summary": "A ZIP archive uploaded to VirusTotal from Afghanistan contained a renamed legitimate Windows executable, ApplicationFrameHost.exe, that side-loads a malicious DLL, suggesting targeting of an Afghan government agency. The DLL persists by copying itself into the AppData folder and adding a Registry Run key. Its main logic runs anti-debugging and anti-analysis checks and drops a decoy Pashto PDF listing government officials. The backdoor uses an XOR-encrypted configuration to reach a hosting-provider C2 and supports 13 commands for file, process, and shell control. The report labels the activity a possible Pakistan-nexus campaign.",
+      "completeness": "Low",
+      "geo": [
+        "Pakistan",
+        "Afghanistan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/Backdoor_Targeting_Afghanistan/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Update on Government of Iran Cyber Actors' Deployment of Telegram C2 to Push Malware to Identified Targets",
+      "summary": "The FBI assesses that Iranian MOIS cyber actors are using HEAVYGRAM malware to target Iranian dissidents, journalists opposed to Iran, and other opposition groups worldwide. The actors used social engineering on Telegram, WhatsApp, and Instagram, offering IT services to lure victims into downloading AnyDesk or a masquerading installer. Malware was disguised as applications such as an AI video generator and a Telegram authenticator. Infections led to persistent Python-based implants that used Telegram as command-and-control and collected data, disabled antivirus scanning, and exfiltrated credentials and emails. The FBI urges defenders to hunt for the published indicators and detection signatures, and to exercise caution with unsolicited messages.",
+      "completeness": "High",
+      "threats": [
+        "Heavygram",
+        "Anydesk_tool",
+        "Typosquatting_technique",
+        "Winpwnage_tool",
+        "Minidump_tool"
+      ],
+      "geo": [
+        "Iran",
+        "Iranian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "WhatsApp",
+        "Instagram",
+        "Embarcadero",
+        "Google Chrome",
+        "Chrome",
+        "Mozilla Firefox",
+        "Firefox",
+        "Microsoft Edge",
+        "boto3",
+        "have more..."
+      ],
+      "wallets": [
+        "mycrypto"
+      ],
+      "algorithms": [
+        "sha1",
+        "zip",
+        "hmac",
+        "md5",
+        "base64",
+        "aes-gcm",
+        "sha256",
+        "aes"
+      ],
+      "functions": [
+        "GetChromePass",
+        "ProgramGet",
+        "proc_List",
+        "sysinf",
+        "send_msg",
+        "ListOFDrive",
+        "GetFilePhone",
+        "NetTrue",
+        "create_bucket",
+        "sleep",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "delphi"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260915.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "Iranian Cyber Targeting of Dissidents, Activists and Journalists",
+      "summary": "CHOSEN BRICK is a malware family used by Iranian state cyber actors since at least 2025 to target dissidents, activists and journalists in the UK, US and Netherlands. Attackers build rapport via messaging apps such as WhatsApp and Telegram, posing as trusted contacts or platform support, then persuade targets to open disguised files, such as fake applications or MRI results. The malware persists via a registry Run key, adds Microsoft Defender exclusions, and uses Telegram bots for command and control. Operators can capture screens, audio, messages and emails, and wipe systems, with some stolen personal details published to harass victims. Defenders should check the Run key, review unexpected connections to listed services, and warn staff to check personal devices too.",
+      "completeness": "Low",
+      "threats": [
+        "Chosen_brick",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "United states",
+        "United kingdom",
+        "Iranian",
+        "Iran",
+        "Netherlands"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 15,
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Norton Antivirus",
+        "Flash Player",
+        "KeePass",
+        "Microsoft Defender",
+        "Windows Defender"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260915-2.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-15",
+      "title": "New packages identified in GemStuffer 'OpenAI Swarm' malicious RubyGems campaign",
+      "summary": "JFrog identified 3,022 RubyGems packages linked to the GemStuffer campaign, spanning 3,315 name/version pairs. Some packages abuse RubyDoc documentation workers via YARD load directives to fetch websites and return results through RubyGems, and some attempt to harvest other users' registry API keys. Others embed XSS and template-injection payloads in package metadata to test how RubyGems pages and parsers render content. One payload targeted a legacy API-key caching flaw that RubyGems later fixed after a July 6 report. Defenders should isolate documentation builds without publishing credentials, stop honoring package-supplied load options, escape metadata in views, and review account history and webhooks.",
+      "completeness": "Low",
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "Claude",
+        "unix"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip"
+      ],
+      "functions": [
+        "GetMeetings",
+        "Image"
+      ],
+      "languages": [
+        "ruby",
+        "javascript"
+      ],
+      "links": [
+        "https://research.jfrog.com//post/gemstuffer-openai-rubygems/"
+      ]
+    }
+  }
+]

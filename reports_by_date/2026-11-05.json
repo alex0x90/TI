@@ -1,0 +1,1052 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Binance heist: a fake interview, a trojanized pyenv, and what RL sees",
+      "summary": "The Binance theft, attributed by the FBI to North Korea's TraderTraitor, began with a trojanized Homebrew install in June 2026 and a fake job interview in September that replaced pyenv on an engineer's Mac. The attacker then used an internal AI tool and a stolen container-deployment token to reach a container that accessed the wallet signing service on October 29. About 50 signings set EIP-7702 delegations, letting attacker code control hot wallets and drain roughly $6.34 billion in under four hours. Binance has not published the pyenv implant's hashes, domains or IP addresses, and ReversingLabs holds no sample of it. ReversingLabs separately documents a 2026 TraderTraitor Terraform provider toolset (FLATROOF and ROOFDECK) that uses a similar interview lure but is not linked to Binance by any source. Defenders should hunt for behavior, such as unexpected pyenv staging files, malicious lock-file registries and EIP-7702 delegation batches.",
+      "completeness": "High",
+      "threats": [
+        "Gaslight_backdoor",
+        "Roofdeck",
+        "Macc_stealer",
+        "Multiverze",
+        "Getshell",
+        "Rusty_stealer",
+        "Nukesped_rat",
+        "Dead_drop_technique",
+        "Spear-phishing_technique",
+        "Supply_chain_technique",
+        "Credential_dumping_technique",
+        "Launchagents_tool"
+      ],
+      "geo": [
+        "Dprk",
+        "Indian",
+        "North korean",
+        "North korea"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 51,
+      "software": [
+        "MacOS",
+        "Docker",
+        "Vercel",
+        "OpenSSL",
+        "Chromium",
+        "Pastebin",
+        "Trojan",
+        "<font>",
+        "l",
+        "acOS.Tr",
+        "have more..."
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "binance",
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "md5",
+        "aes-256-cbc",
+        "sha1",
+        "sha256",
+        "base64",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "Cointegrity",
+        "GetShell"
+      ],
+      "languages": [
+        "rust",
+        "python"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/binance-heist-what-we-know-and-what-rl-sees-in-tradertraitors-toolkit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Malware for Hire: The Story of Marsalek, a Malware-as-a-Service Operation",
+      "completeness": "High",
+      "threats": [
+        "Marsalek",
+        "Weedhack",
+        "Purelogs",
+        "Clickfix_technique",
+        "Dll_injection_technique",
+        "Lolbas_technique",
+        "Credential_harvesting_technique",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "United states",
+        "Brazil",
+        "Netherlands",
+        "Germany",
+        "Poland",
+        "Italy",
+        "Canada",
+        "India",
+        "United kingdom"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Minecraft",
+        "Roblox",
+        "Fortnite",
+        "telegram",
+        "discord",
+        "Chrome",
+        "windows defender",
+        "Chromium",
+        "7Star",
+        "CentBrowser",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "atomicwallet",
+        "bitapp",
+        "boltx",
+        "coin98",
+        "coinbase",
+        "crocobit",
+        "exodusweb3",
+        "finnie",
+        "guarda_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "starcoin",
+        "ethereum",
+        "monero",
+        "solana"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64",
+        "aes",
+        "3des",
+        "md5",
+        "gzip",
+        "zip",
+        "des"
+      ],
+      "languages": [
+        "java",
+        "swift",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/marsalek-malware-fake-game-cheats-password-theft/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Supply chain attack: BO Team in a software developer’s infrastructure",
+      "summary": "Kaspersky ICS-CERT describes an intrusion attributed with high confidence to the BO Team (Black Owl) APT group against a Russia-based software developer whose products are used by industrial enterprises, mainly in Eastern Europe. The attackers entered through internet-exposed SSH, exploited Log4Shell (CVE-2021-44228) on a VMware vCenter server, and then compromised the domain, Linux infrastructure, mail server, backups, and SIEM. They used living-off-the-land techniques, LSASS dumping, and timestomped backdoors, and they stole the mail server's DKIM key to send phishing emails that passed authentication. Investigators believe the attackers targeted the source code repository and code-signing server to inject malicious code into products shipped to customers. Defenders should patch internet-facing services, restrict SSH and root login, protect credentials and keys, and reset the krbtgt password twice.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Winrm_tool",
+        "Metasploit_tool",
+        "Log4shell_vuln",
+        "Timestomp_technique",
+        "Reversessh_tool",
+        "Nanodump_tool",
+        "Lolbin_technique",
+        "Mimikatz_tool",
+        "Golden_ticket_technique",
+        "Nmap_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Latvia",
+        "Russian federation",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Linux",
+        "Burp Suite",
+        "Apache Tomcat",
+        "Twitter",
+        "PostgreSQL",
+        "curl",
+        "OpenSSH",
+        "Active Directory",
+        "Task Scheduler",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "from"
+      ],
+      "links": [
+        "https://ics-cert.kaspersky.com/publications/reports/2026/11/05/supply-chain-attack-bo-team-in-a-software-developers-infrastructure/",
+        "https://github.com/NHAS/reverse\\_ssh"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "ChatGPT Lockdown Mode Bypass: Phishing, Malware Delivery, and Silent Data Exfiltration",
+      "summary": "Check Point Research found a vulnerability that let attackers bypass OpenAI's Lockdown Mode, an optional security setting meant to stop prompt-injection data exfiltration in ChatGPT. The flaw stemmed from the HTML page preview feature, where the sandbox iframe retained the allow-popups token, enabling a nested iframe to open popups that escaped the sandbox. Attackers could use this to silently exfiltrate chat history and uploaded files, display phishing popups, distribute disguised malware, or force sign-outs for credential theft. In the ChatGPT Classic Electron app, window.open worked without any user gesture, so simply having a conversation could trigger the attack. Attacks could be delivered through a malicious prompt, a malicious GPT, or a shared chat, and victims in browsers did not need an account. OpenAI fixed the issue by removing the popup permissions from the outer sandbox, and retesting confirmed the technique no longer works.",
+      "completeness": "Low",
+      "threats": [
+        "Lockdown_mode_bypass_technique",
+        "Dns_tunneling_technique"
+      ],
+      "software": [
+        "ChatGPT",
+        "OpenAI"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "HYFLOCK",
+      "summary": "HYFLOCK is a ransomware operation that was promoted in underground forums from March 2026 as a Rust-based Ransomware-as-a-Service platform, and it published its first eight victim claims on October 13. Its ransomware core is a Rust/Nishi encryptor that remained largely consistent from April through July, while October builds changed orchestration and background execution. The October 17 build encrypted only the first 4,096 bytes of larger files, letting researchers recover 73 CRC-valid members from seven Office files without a key. No general keyless decryptor is available. Defenders should treat operator claims about RDP resilience, BYOVD killing and domain-wide propagation as unverified.",
+      "completeness": "High",
+      "threats": [
+        "Hyflock",
+        "Nishi",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Winrm_tool",
+        "Byovd_technique",
+        "Windows_locker",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Philippines",
+        "Usa",
+        "Israel",
+        "China",
+        "Ireland",
+        "Chinese",
+        "North korea",
+        "Belarus",
+        "Russia",
+        "Russian",
+        "Armenia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 15,
+      "software": [
+        "ESXi",
+        "TOR BROWSER",
+        "Linux",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "aes-128-ctr",
+        "aes-ctr",
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://checkpoint.cyberint.com/hubfs/HYFLOCK%20-%20From%20Underground%20Recruitment%20to%20Public%20Extortion.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "SlippyNunchucks hijacks Sogou Input Method’s brand promotion mechanism to distribute malware",
+      "summary": "SlippyNunchucks is a China-aligned threat actor, tracked by ESET since 2025, that deploys the DarkVigil .NET toolset (also known as FDMTP) and reaches Chinese-speaking users across Asia and Europe. In this campaign, the actor hijacked an insecure HTTP request made by Sogou Input Method's brand promotion mechanism, using DNS manipulation of its back-end host to serve a malicious configuration. That configuration placed a disguised Adobe binary and the DarkVigil implant where Sogou's existing component workflows would execute them, providing persistence without a separate mechanism. Victims were reported in Hong Kong, Thailand, Japan, Vietnam, Sri Lanka, and Oman, and the DNS hijacking vector remains unresolved. Tencent fixed the issue in version 16.10 by moving the requests to HTTPS with certificate pinning, and CVE-2026-120422 was assigned. Defenders should note the risk of insecure HTTP in widely used applications.",
+      "completeness": "High",
+      "threats": [
+        "Dns_hijacking_technique",
+        "Darkvigil",
+        "Fdmtp",
+        "Supply_chain_technique",
+        "Pillager_tool",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Oman",
+        "Germany",
+        "Austria",
+        "Sri lanka",
+        "Thailand",
+        "China",
+        "Denmark",
+        "Hong kong",
+        "Vietnam",
+        "Philippines",
+        "Asia",
+        "Russia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 9,
+      "software": [
+        "Sogou",
+        "QuickFox",
+        "TouchSocket",
+        "Chromium",
+        "ALIBABA CLOUD"
+      ],
+      "algorithms": [
+        "aes",
+        "cbc",
+        "md5"
+      ],
+      "functions": [
+        "getBrandScd",
+        "ClientInfo"
+      ],
+      "languages": [
+        "php",
+        "dotnet",
+        "swift"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/slippynunchucks-hijacks-sogou-input-methods-brand-promotion-mechanism-to-distribute-malware/",
+        "https://github.com/RRQM/TouchSocket",
+        "https://github.com/chromiumembedded/cef",
+        "https://github.com/eset/malware-ioc/tree/master/slippynunchucks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "New Lindnor Backdoor and Glut of Security Killers Used in Ransomware Attack on U.S. Org",
+      "summary": "Attackers using the Anubis ransomware, developed by a group Symantec tracks as Hawkmoth, targeted a U.S. organization in October 2026 with a previously undocumented custom backdoor called Backdoor.Lindnor. The backdoor was disguised as a Chrome component and a VMware file and was found on two Microsoft SQL Server machines, with no initial access method identified. Within about an hour, the attackers dropped at least 13 executables and five publicly known vulnerable drivers to terminate security software using the BYOVD technique. They also installed AnyDesk and configured it to run in Safe Mode, a window when security software generally does not fully operate. The Anubis encryption payload was blocked, so no evidence of file encryption was found. Defenders should note that the group has claimed around 96 victims in the past 12 months, 52% of them in the U.S.",
+      "completeness": "Low",
+      "threats": [
+        "Lindnor",
+        "Anubis",
+        "Byovd_technique",
+        "Anydesk_tool",
+        "Sphinx",
+        "Megasync_tool",
+        "Lolbin_technique"
+      ],
+      "software": [
+        "Chrome",
+        "Microsoft SQL",
+        "Microsoft SQL Server",
+        "WinSCP",
+        "S3browser"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/lindnor-new-backdoor-anubis-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "The SOC Files 5: Ghost in the pipeline, or a fileless SharePoint breach by Storm-2603",
+      "summary": "Storm-2603 exploited the ToolShell vulnerabilities CVE-2025-53770 and CVE-2025-53771 in on-premises Microsoft SharePoint to achieve remote code execution. After a three-day gap following an initial fingerprinting probe, the actor executed the full exploit chain on December 24 via the IIS worker process (w3wp.exe). The attackers deployed a memory-resident webshell that avoided writing files to disk, then used Velociraptor and multiple tunneling tools to maintain access. They also used a vulnerable driver to attempt EDR termination and tried to launch Warlock ransomware, which Kaspersky blocked. Defenders should hunt for runtime anomalies in w3wp.exe, deserialization artifacts, and virtual path provider inconsistencies rather than relying only on file-based detection.",
+      "completeness": "High",
+      "threats": [
+        "Toolshell_vuln",
+        "Suo5_tool",
+        "Warlock",
+        "Av-killer",
+        "Lockbit",
+        "Edr-killer",
+        "Dll_hijacking_technique",
+        "Cloudflared_tool",
+        "Zoho_assist_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 1,
+      "software": [
+        "SharePoint",
+        "Microsoft SharePoint",
+        "SharePoint server",
+        "EfsPotato",
+        "Supabase",
+        "Velociraptor",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "GetCacheKey",
+        "CreateProcessAsUser",
+        "EfsRpcEncryptFileSrv"
+      ],
+      "links": [
+        "https://securelist.com/storm-2603-fileless-toolshell-attack/121467/",
+        "https://github.com/gam4er/WebApplication",
+        "https://github.com/gam4er/CLRDeserializationExploitFinder",
+        "https://github.com/klsecservices/Publications/blob/0ac86967391fd231e1a07efcbe6f0b8021e2ecd8/purpleshift/25082025-ToolShell-detection.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Email threat landscape: Q3 2026 trends and insights",
+      "summary": "Microsoft's Q3 2026 email threat report describes roughly 7.3 billion phishing threats from July to September, with a sharp September rise, while QR code phishing stayed far below its early-year peak. CAPTCHA-gated phishing recovered, driven largely by renewed SVG attachments. About 129 million malicious messages spoofed tracked business-service domains, and many were delivered because tenant or user exceptions overrode authentication failures. Two campaigns were highlighted: a legal-sector salary review lure using QR codes for device code phishing, and a Spanish-language purchase order and payroll campaign delivering Agent Tesla. The main takeaway for defenders is to review exception policies alongside detection coverage.",
+      "completeness": "Medium",
+      "threats": [
+        "Qshing_technique",
+        "Device_code_phishing_technique",
+        "Agent_tesla",
+        "Tycoon_2fa",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Chile",
+        "Mexico",
+        "Spain",
+        "United states",
+        "Colombia"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Teams",
+        "DocuSign",
+        "Microsoft OneDrive",
+        "Microsoft 365",
+        "Office 365"
+      ],
+      "algorithms": [
+        "zip",
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "Teams"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Inside Phexia: A macOS malware delivered through ClickFix",
+      "summary": "Phexia is a modular macOS backdoor and infostealer sold to multiple threat actors and deployed mainly through ClickFix-style campaigns since late 2025. Infections begin with a user pasting a Terminal command that downloads a shell script, which launches an AppleScript dropper and a LaunchAgent that persists the loader. The loader resolves its C2 hostname from a Polygon smart contract, allowing operators to change infrastructure without updating deployed malware. Phexia steals browser data, keychain material, password-manager data and login passwords, and it deployed the XMRig cryptominer through tasking. Reinfections can leave multiple builds running concurrently, so defenders should hunt for historical persistence and infrastructure as well as current indicators.",
+      "completeness": "High",
+      "threats": [
+        "Phexia",
+        "Clickfix_technique",
+        "Amos_stealer",
+        "Macc_stealer",
+        "Dead_drop_technique",
+        "Etherhiding_technique",
+        "Launchagents_tool",
+        "Xmrig_miner",
+        "Typosquatting_technique",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 34,
+      "software": [
+        "macOS",
+        "Telegram",
+        "Steam",
+        "curl",
+        "hrome",
+        "M",
+        "hrome",
+        "Mi",
+        "icrosoft Edge",
+        "B",
+        "pera an",
+        "ivaldi",
+        "LastPass",
+        "have more..."
+      ],
+      "wallets": [
+        "ledger_wallet"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "getServerURL"
+      ],
+      "languages": [
+        "applescript",
+        "php"
+      ],
+      "links": [
+        "https://www.withsecure.com/en/resources-hub/w-labs/phexia-macos-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "From Streaming to Stealing: Mirax and the Rise of Server-side Android Device Takeover in META",
+      "summary": "Mirax is an Android Device Take-Over malware family that Group-IB observed infecting thousands of retail banking customers' phones in the META region between March and September 2026. Victims are reached through malicious ads inside low-reputation free streaming apps on Google Play, which lead to a dropper that installs the payload, disguised as \"Google Play Services.\" The malware coerces users into granting Accessibility Service access, letting operators read credentials, intercept OTPs, capture lock-screen PINs, and drive banking apps to send unauthorized transfers to mule accounts abroad. Its configuration, phishing overlay templates, and target-app lists are pushed from the C2 server at runtime, so static analysis of the installed sample reveals only part of its capability. Group-IB links the samples to a region-specific campaign tagged \"aquafina,\" with estimated losses in the millions of US dollars. Defenders should monitor Accessibility Service abuse and screen-sharing activity alongside transactions, and users should decline Accessibility requests from non-accessibility apps.",
+      "completeness": "Medium",
+      "threats": [
+        "Mirax",
+        "Homoglyph_technique",
+        "Hvnc_tool",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "Tiktok"
+      ],
+      "functions": [
+        "getAvailableCameras",
+        "getBlockedApps",
+        "getCameraStatus",
+        "getClipboard",
+        "getDeviceState",
+        "getExternalTemplatesList",
+        "getExternalTemplatesPath",
+        "getHtmlInjectionStatus",
+        "getHtmlTemplates",
+        "getInstalledApps",
+        "have more..."
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/mirax-android-device-takeover-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Beware of cwpdoor: A zero-detection passive backdoor embedded in Control Web Panel",
+      "summary": "cwpdoor is a passive backdoor embedded in the cwpsrv web server of Control Web Panel (CWP), a free open-source Linux server management panel. Attackers replaced the legitimate cwpsrv binary with a recompiled version containing the backdoor, which stays dormant until a request carries specially crafted, RSA-signed and AES-encrypted X-Ngx-Integrity headers. When triggered, it executes attacker commands through a helper process and suppresses logging for that request, and it is undetected by antivirus vendors at the time of reporting. Researchers note over 340,000 internet-exposed CWP instances as potential targets. Defenders should check for the integrity Unix socket and the helper process, restore the backup binary, upgrade CWP, and rotate all panel credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Cwpdoor",
+        "Ebury"
+      ],
+      "geo": [
+        "Brazil"
+      ],
+      "software": [
+        "Linux",
+        "Nginx",
+        "Unix"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "exhibit",
+        "sha256",
+        "md5",
+        "aes-256-cbc",
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/beware-of-cwpdoor-the-zero-detection-pas-backdoor-hiding-in-centos-websive-panel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "SectopRat's GPULoader and VMLoader",
+      "summary": "SectopRat's loader chain, comprising the VMLoader and GPULoader components, uses a proprietary stack-based virtual machine and GPU-based D3D11 shader decryption to hide its payload from analysis. The loaders are delivered through malvertising-driven ZIP archives posing as installers for software such as Claude Desktop, Google Chrome, Exodus, and Docker Desktop, with a targeting focus on IT and cryptocurrency users. The chain retrieves its command-and-control addresses from smart contracts on the Binance Smart Chain (EtherHiding), and the final payload is a SectopRat stealer. Researchers also describe FakeGuard, a companion tool performing adversary-in-the-middle attacks against banking sites. Attribution is assessed as a single threat actor, likely linked to GPUGate, with a possible operational-security lapse traced through a funding wallet. The report notes that several tools appear to be AI-generated, including a leaked test C2 address in code comments.",
+      "completeness": "High",
+      "threats": [
+        "Sectop_rat",
+        "Gpuloader",
+        "Vmloader",
+        "Etherhiding_technique",
+        "Gpugate_technique",
+        "Fakeguard",
+        "Aitm_technique",
+        "Steamloader",
+        "Mitm_technique",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "QEMU",
+        "Microsoft Defender",
+        "Windows Defender",
+        "Steam",
+        "PyInstaller",
+        "AnyConnect",
+        "Task Scheduler",
+        "Discord",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "bybit",
+        "coinbase",
+        "metamask",
+        "tronlink"
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "aes-256-ctr",
+        "zip",
+        "bcrypt",
+        "xor",
+        "des",
+        "fnv-1a"
+      ],
+      "functions": [
+        "TaskHostSchedulerGate",
+        "TaskSchedulerHelperSvc",
+        "CreateProcessAsUser",
+        "CreateBuffer",
+        "CreateShaderResourceView",
+        "CreateUnorderedAccessView",
+        "CreateComputeShader",
+        "GetBrowserKeys"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "java",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://exatrack.com/publications/sectoprat-gpuloader.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Dark Web Profile: Nova Ransomware",
+      "summary": "Nova is a financially motivated ransomware group that runs a Ransomware-as-a-Service model, supplying affiliates with a Rust-based encryptor and extorting victims through encryption and data theft. The group first appeared as RALord in March 2025 and rebranded as Nova in April 2025, and its leak site has claimed 177 victims across 45 countries and 10 sectors. Technology and manufacturing make up about 45% of claimed victims, with government and defense also targeted. Analyzed builds disable Microsoft Defender, stop security services, clear event logs, and delete Volume Shadow Copies before encryption. The report stresses that Nova's link to RA World is unverified and should not be assumed. Defenders should enforce MFA on VPN and RDP, keep offline or immutable backups, and monitor for defense evasion activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Nova_ransomware",
+        "Ralord",
+        "Babuk",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool",
+        "Qtox_tool",
+        "Putty_tool",
+        "Anydesk_tool",
+        "Logmein_tool",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 20,
+      "software": [
+        "SonicWall",
+        "Microsoft Defender",
+        "Linux",
+        "ESXi",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "xchacha20-poly1305"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-nova-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
+      "summary": "ARTEX is an open-source, AI-powered penetration testing platform that was observed being repurposed by cybercriminals to run largely autonomous attack campaigns. Check Point Research found 2,557 systems hosting ARTEX panels, with 1,608 publicly reachable, and 10 misconfigured instances exposed their full databases. Operators mostly set goals and checked progress, with Chinese models such as DeepSeek Flash the most prevalent. The campaigns were opportunistic and financially motivated, targeting iOS code-signing certificates from signing shops, cryptocurrency payment systems, and gaming account credentials. Agents used vulnerabilities such as RCE, hardcoded passwords, and IDOR, and in one case leaked cloud credentials enabled a supply chain attack. Defenders should expect high volumes of agent-driven attacks and harden and test exposed systems accordingly.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool",
+        "Supply_chain_technique",
+        "Cyberstrikeai_tool",
+        "Cairn_tool",
+        "Pentagi_tool",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Thailand",
+        "Hong kong",
+        "Usa",
+        "American",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Deepseek",
+        "Anthropic",
+        "Opus 5",
+        "Linux",
+        "docker"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+        "https://github.com/oritera/Cairn",
+        "https://github.com/vxcontrol/pentagi",
+        "https://github.com/CyberStrikeus/cyberstrike"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "TraderTraitor vs Contagious Interview - A Look at Binance's Initial Incident Report",
+      "summary": "Binance was reportedly hacked for about $6.4 billion on October 29, 2026, and multiple vendors and the FBI attributed the attack to North Korea's TraderTraitor group. The report says the suspected root cause was a developer device compromise via malware delivered through a job interview lure, which many have confused with the separate Contagious Interview subgroup. TraderTraitor is described as more selective and patient than other DPRK groups, running long campaigns with fake recruiters, front companies, and malicious code tasks, and sometimes exploiting zero-days. The main takeaway for defenders is to detect intrusions during the dwell window by monitoring lateral movement and credential abuse, and to treat developer sessions as privileged credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Gaslight_backdoor",
+        "Roofdeck"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "SlowMist"
+      ],
+      "wallets": [
+        "bybit"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "links": [
+        "https://radar.securityalliance.org/tradertraitor-vs-contagious-interview-a-look-at-binances-initial-incident-report/",
+        "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/incident-response/SlowMist%20Investigation%20Progress%20Report%20-%20Bitget\\_en-us.pdf?ref=radar.securityalliance.org"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "ARTEX: Agentic Asbestos",
+      "summary": "ARTEX is an open-source, LLM-driven autonomous penetration testing framework released on GitHub in July 2026, and it has been linked to malicious operations. CrowdStrike attributed its use to an unattributed actor targeting a South Korean finance company, while Microsoft linked it to Storm-0940's ConnectWise supply-chain compromise. Its agents plan attack intents, run tools such as nmap, and repeat an explore-decide-execute loop until a goal is met. Censys observed 1,465 exposed ARTEX consoles as of November 3, 2026, with the default port being 8787. Many hosts also run other AI attack frameworks and C2 tools such as Vshell and Cobalt Strike. Defenders should note that operators frequently leave open directories exposing exploit and implant files.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Screenconnect_tool",
+        "Cobalt_strike_tool",
+        "Adaptixc2_tool",
+        "Vshell",
+        "Nmap_tool",
+        "Godpotato_tool",
+        "Smbexec_tool",
+        "Wmiexec_tool",
+        "Passthehash_technique",
+        "Cyberstrikeai_tool",
+        "Mitm_technique",
+        "Fscan_tool",
+        "Supply_chain_technique",
+        "Password_spray_technique",
+        "Hexstrike_tool",
+        "Pentagi_tool",
+        "Nps_tool",
+        "Gophish_tool",
+        "Arl_tool",
+        "Disttrack",
+        "Wannacry"
+      ],
+      "geo": [
+        "China",
+        "United states",
+        "Hong kong",
+        "Chinese",
+        "South korean",
+        "Korea"
+      ],
+      "software": [
+        "claude",
+        "PostgreSQL",
+        "Docker",
+        "Anthropic",
+        "OpenAI",
+        "DeepSeek",
+        "Claude Code",
+        "MSSQL",
+        "sudo",
+        "SimpleHTTP",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://censys.com/blog/artex-agentic-asbestos/",
+        "https://github.com/AUTUMN-27"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "MotherSphere/nikke-pc-launcher-compromise.md",
+      "summary": "The NIKKE PC launcher loads two official JavaScript files from Level Infinite's CDN that were modified on 2026-09-27 and were still modified on 2026-11-03. The injected code loads a payload that installs a remote-control agent, letting an attacker run commands, read files, take screenshots and steal passwords, cookies, tokens, SSH keys and crypto wallet data while the launcher is open. The agent also persists on Windows through a DLL hijack inside Chrome, and on Linux or Steam Deck through Proton it can read anything the user account can access. Commands leave no trace in the launcher logs, so defenders should assume compromise and avoid opening the launcher until Level Infinite confirms a fix. The main takeaway is to check the debug log for the k2f_chan string, then rotate credentials and reinstall Windows if the agent ran.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_hijacking_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Steam",
+        "Chrome",
+        "Google Chrome",
+        "Discord",
+        "OpenAI",
+        "Anthropic",
+        "Vivaldi",
+        "Opera",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "bybit",
+        "rabby",
+        "keplr",
+        "solflare",
+        "tonkeeper",
+        "tronlink",
+        "unisat"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "bcrypt",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "TextDecoder"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "lua"
+      ],
+      "links": [
+        "https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5/12a7b3a029c21c65afe75d3b0f78492bce7b335a"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "DarkSword router's iOS 26 route, C10, is switched off",
+      "summary": "The report describes an iPhone exploit server at 154.222.16[.]220 that routes visitors by iOS version, sending iOS 13 to 17 to Coruna, iOS 18 to DarkSword, and newer versions to a third route called C10. On the day of capture, the C10 route was switched off in a config file and had no files behind it, although C10 had been staged on two Cloudflare Pages sites in August and September 2026. The only iOS 26 exploit plugin on the server is filed under a Google Chrome CVE, CVE-2026-10001. Visitors first meet a fake Cloudflare check branded for OKX, and the same kit is sold on Chinese source-code markets as \"Caishen iOS C2 V2\". The same router ran on 72 sites from October to November 2026, and defenders should watch for these routing and lure patterns.",
+      "completeness": "High",
+      "threats": [
+        "Darksword_tool",
+        "Coruna_tool",
+        "Clickfix_technique",
+        "C10_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Chrome",
+        "Cloudflare",
+        "Telegram",
+        "WhatsApp",
+        "macOS",
+        "FastAPI"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://ohey.ca/research/darksword-router-ios-26-c10/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "NIKKE PC Launcher Compromise: The Hijacked insightjs.com Domain and K2F RAT",
+      "summary": "The NIKKE PC launcher was compromised after four official CDN JavaScript files were modified on September 27, causing the launcher to fetch a remote access trojan called K2F. The attacker had re-registered the expired insightjs.com domain hours earlier, but researchers found no evidence of how the threat actor gained CDN write access. K2F executes commands from a C2 server and can dump browser passwords, steal developer and AI tool credentials, and run arbitrary commands, with administrator rights inherited where the launcher had them. Players who ran the Windows PC client after September 27 are affected, while mobile players are not. Defenders should check debug.log for k2f_chan, preserve artifacts before cleanup, block the malicious domains, and rotate passwords, API keys, and sessions.",
+      "completeness": "Medium",
+      "threats": [
+        "K2f",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Iceland"
+      ],
+      "software": [
+        "nginx",
+        "Google Play",
+        "Chrome",
+        "Vivaldi",
+        "Opera",
+        "Firefox",
+        "Chromium",
+        "Linux",
+        "Steam",
+        "claude",
+        "have more..."
+      ],
+      "languages": [
+        "lua",
+        "javascript"
+      ],
+      "links": [
+        "https://lilting.ch/en/articles/nikke-pc-launcher-insightjs-domain",
+        "https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "Even gem list can run someone else's code",
+      "summary": "RubyGems can run gem code at install time without any install script, through native extension build files (extconf.rb, mkrf_conf.rb) and RubyGems plugins (rubygems_plugin.rb), which also run on every later gem command, including gem list. Npm 12 made install scripts opt-in, but stable RubyGems and Bundler 4.0.x offer no way to disable these behaviors, and the 4.1.0.beta3 opt-out settings are off by default. Aikido found four gems on RubyGems (xmastree, ancient-city-ruby, hacky, and et_phone_home) that send the installer's username, a macOS screenshot, or a beacon to a remote server, and they remained installable as of November 4, 2026. Defenders should check lockfiles and installed gems for these names, uninstall them if present, review plugins, and consider disabling extension builds and plugin installs in install-only CI steps using 4.1.0.beta3.",
+      "completeness": "Low",
+      "threats": [
+        "Miasma"
+      ],
+      "software": [
+        "macOS"
+      ],
+      "algorithms": [
+        "bcrypt"
+      ],
+      "languages": [
+        "ruby"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/gem-list-runs-someone-elses-code"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "PhantomDOM: Inside a Browser-in-the-Middle Phishing Operation Using Custom DOM Mirroring",
+      "summary": "PhantomDOM is a custom Browser-in-the-Middle phishing operation that hijacks Microsoft 365 sessions, starting from a SharePoint-themed PDF lure sent from an apparently abused sender. Victims pass through redirects and browser checks, then see a Microsoft sign-in presented inside an attacker-controlled remote browser that relays their keystrokes, clipboard input and MFA codes live. Its client rebuilds the remote DOM through custom snapshot and patch messages, survives reconnects, and lets an operator monitor or take over the session. In a controlled test, an attacker-associated session accessed two Outlook messages, reached Microsoft 365 Search, and provisioned a OneDrive folder for Copilot Chat. Defenders should hunt for the listed session paths, JavaScript hashes and mirror-specific code strings, and treat PDF-only lures impersonating SharePoint sharing notices as high risk.",
+      "completeness": "High",
+      "threats": [
+        "Phantomdom",
+        "Bitm_technique",
+        "Bluekit_tool",
+        "Homoglyph_technique",
+        "Patchright_tool",
+        "Screenconnect_tool",
+        "Bec_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft 365",
+        "Outlook",
+        "Cloudflare",
+        "Cloudflare Turnstile",
+        "DocuSign",
+        "SharePoint",
+        "Microsoft SharePoint",
+        "Chromium",
+        "Playwright",
+        "Office 365",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "readOnly",
+        "dt",
+        "Ne",
+        "_e"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://zerobec.com/blog/phantomdom-browser-in-the-middle-microsoft-365"
+      ]
+    }
+  }
+]

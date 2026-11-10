@@ -1,0 +1,239 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-06",
+      "title": "Analysis of XCPE Malware and Its Observed Activity in Japan",
+      "summary": "XCPE is malware preinstalled on some Android set-top boxes and other consumer devices such as streaming devices, sound bars, and projectors, and it can be used for remote command execution, information collection, and as a residential proxy exit node. Its C2 communication uses MQTT, with more than 40 remote actions defined, and it sends device and user data, including Google account email, Wi-Fi SSID, and LAN IP addresses, without TLS encryption. NICTs analysis found XCPE signed by Shenzhen Skyworth Digital Technology-linked certificates in addition to Videostrong, and implementations evolved toward proxy modules loaded externally, which may help evade detection. Observations counted about 1,900 infected devices in Japan out of roughly 800,000 worldwide, with the SviCloud 9P being the most common model. Google's takedown disabled the C2 infrastructure but did not remove the malware from devices, so defenders should check for an XCPE app, stop using affected devices, and isolate them from home networks.",
+      "completeness": "Low",
+      "threats": [
+        "Xcpe",
+        "Residential_proxy_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "China",
+        "Japan"
+      ],
+      "software": [
+        "Android",
+        "roid Sett"
+      ],
+      "links": [
+        "https://blog.nicter.jp/2026/11/xcpe_campaign/",
+        "https://web.archive.org/web/20261007065842/https://github.com/Aviciiii/ott/releases"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-06",
+      "title": "MotherSphere/nikke-pc-launcher-compromise.md",
+      "summary": "Attackers modified four official JavaScript files on Level Infinite's CDN, which the NIKKE PC launcher loads, to pull in a loader from the domain insightjs.com. The loader fetched a LuaJIT payload that gave the operator a remote-control agent able to run commands, read files, take screenshots and steal saved passwords, cookies, tokens, SSH keys and crypto wallet data. Opening the launcher from October 23 onward could activate the agent on some launches, and the Google Play Games build was also affected. The modified files were replaced by Level Infinite on November 3 and 4, and the insightjs.com domain was suspended on November 5. Defenders should save launcher logs and the tbs_cache folder, check debug.log for k2f_chan, remove the persistence DLL and its registry key, and rotate credentials from a clean device.",
+      "completeness": "Medium",
+      "threats": [
+        "K2f",
+        "Putty_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Play",
+        "Linux",
+        "macOS",
+        "Chromium",
+        "Opera",
+        "Opera GX",
+        "Chrome",
+        "Steam",
+        "Discord",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "bybit",
+        "rabby",
+        "keplr",
+        "solflare",
+        "tonkeeper",
+        "tronlink",
+        "unisat"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "base64",
+        "bcrypt",
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "TextDecoder"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "lua"
+      ],
+      "links": [
+        "https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5",
+        "https://gist.github.com/MotherSphere/07fa9e3bff59b8bcf04c81659bb420d6",
+        "https://gist.github.com/MotherSphere/81b3e830a07f4d25852d201b9f1c78d4",
+        "https://gist.github.com/MotherSphere/047beaf9e82d1ae52a1daec6e988379f"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-06",
+      "title": "Armorsteal Unpacked: Breaking Down a Python Malware Kit That Steals Data and Mines Crypto",
+      "summary": "Seqrite Labs analysed Armorsteal, a Python malware kit that ships with a portable Python 3.11 runtime and steals data while mining cryptocurrency on infected Windows machines. The kit's scripts were protected with the trial version of PyArmor, but its decryption key sits in the bundled runtime, so the researchers could unpack all of them. The controller, SysMon.py, picks a working server from 11 failover domains and runs only code carrying a valid RSA-2048 signature from the attacker. Its stealer modules target browser credentials, Discord tokens, crypto wallets, seed phrases, password manager vaults, and keystrokes, and it swaps copied crypto addresses. Defenders should note that the kit adds Windows Defender exclusions and hides its miner from monitoring tools, and that file hashes alone are a weak detection method, so behaviour such as Python running from C:\\Windows under scheduled tasks is more reliable.",
+      "completeness": "Medium",
+      "threats": [
+        "Armorsteal",
+        "Pyarmor_tool",
+        "Xmrig_miner",
+        "Process_hacker_tool",
+        "Chromelevator_tool"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 33,
+      "software": [
+        "Chocolatey",
+        "Process Explorer",
+        "Windows Defender",
+        "Discord",
+        "Discord Canary",
+        "Discord PTB",
+        "Lightcord",
+        "Chrome",
+        "Opera",
+        "Opera GX",
+        "have more..."
+      ],
+      "wallets": [
+        "tron",
+        "metamask",
+        "exodus_wallet",
+        "rabby",
+        "tronlink",
+        "electrum",
+        "coinomi",
+        "coin98",
+        "kardiachain",
+        "terra_station",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin",
+        "litecoin",
+        "ethereum",
+        "dogecoin",
+        "solana"
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "sha256",
+        "rsa-2048"
+      ],
+      "functions": [
+        "exec",
+        "get_discord_tokens",
+        "collect_wallets",
+        "load_bip39_wordlist",
+        "send_updated_zip",
+        "scan_for_password_managers"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/armorsteal-unpacked-breaking-down-a-python-malware-kit-that-steals-data-and-mines-crypto/",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-06",
+      "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+      "summary": "Microsoft observed threat actors using ARTEX, an agentic AI offensive framework, to scan public GitHub repositories for exposed credentials, application secrets, and AI inference API keys. The agents analyze scan results and carry out follow-on attacks, reducing the need for hands-on operator involvement. In one case, an AI agent moved from searching GitHub for secrets to exfiltrating data from Azure Key Vault in five minutes. Activity beginning October 28, 2026 used compromised service principal credentials to access Entra ID tenants, Azure resources, and Microsoft 365 data across multiple organizations. Microsoft advises rotating exposed secrets immediately, since removing them from code does not revoke them, and migrating OAuth apps to managed identities.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Password_spray_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Entra",
+        "Microsoft 365",
+        "Kubernetes",
+        "SharePoint",
+        "Graph API",
+        "Azure AD"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+        "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-06",
+      "title": "Shai-Hulud Descendant Surfaces in Malicious Ruby Gem That Steals Credentials and Poisons AI Tools",
+      "summary": "The malicious Ruby gem strutil-core version 1.0.1 runs a credential-stealing worm, a new build of the testmetest worm from the Miasma family, when installed. The worm executes through a native extension script that downloads the Bun JavaScript runtime and runs a bundled payload during gem install. It harvests cloud, CI, package registry, SSH, AI coding tool and wallet credentials, exfiltrates them, and spreads through republishing routines for RubyGems, npm and PyPI. It also plants a Python backdoor controlled through signed GitHub commits and writes MCP servers and hooks into AI coding tool configurations. A monitor deletes the user's home directory if a stolen GitHub token is revoked, and RubyGems removed the package about five hours after release.",
+      "completeness": "High",
+      "threats": [
+        "Shai-hulud",
+        "Credential_stealing_technique",
+        "Miasma",
+        "Launchagents_tool",
+        "Supply_chain_technique",
+        "Credential_dumping_technique",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 19,
+      "software": [
+        "Linux",
+        "macOS",
+        "curl",
+        "Node.js",
+        "Docker",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "sudo",
+        "Alpine",
+        "systemd",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "aes-256-gcm",
+        "gzip",
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "ruby",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/shai-hulud-descendant-malicious-ruby-gem",
+        "https://github.com/geliuz/miasma-azure-durabletask",
+        "https://github.com/ossf/malicious-packages/pull/1701"
+      ]
+    }
+  }
+]

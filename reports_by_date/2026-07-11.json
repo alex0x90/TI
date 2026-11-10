@@ -1,0 +1,112 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-11",
+      "title": "jscrambler npm package publishes malicious preinstall binary",
+      "summary": "The malicious jscrambler npm releases (8.14.0, 8.16.0, 8.17.0, 8.18.0, 8.20.0) were found to carry a platform-specific native payload hidden inside a file named dist/intro.js. In the earlier versions, a preinstall hook extracts and launches the binary for the host OS, while 8.18.0 and 8.20.0 instead inline the loader into dist/index.js so it runs whenever the package is required. The payload appears to be a cross-platform credential and crypto-wallet stealer, with capabilities including reading browser credential stores, browser extension wallet storage, and kernel-level eBPF instrumentation on Linux. Teams that installed any affected version should treat the host as compromised, pin to the clean 8.22.0 release, and rotate browser-stored credentials and CI/CD secrets. The report notes that analysis of the payload and its command-and-control infrastructure is still ongoing.",
+      "completeness": "Medium",
+      "threats": [
+        "Jscrambler_tool",
+        "Supply_chain_technique",
+        "Miasma"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "Chrome",
+        "Firefox",
+        "Chromium",
+        "IndexedDB",
+        "sysctl"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "gzip",
+        "sha256"
+      ],
+      "functions": [
+        "require",
+        "rather"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/jscrambler-npm-package-publishes-malicious-preinstall-binary"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-11",
+      "title": "Official jscrambler npm Package Compromised Across Multiple Releases",
+      "summary": "The official jscrambler npm package was trojanized on July 11, 2026, when an attacker published five malicious releases through the compromised jscrambler_ maintainer account, interleaved with clean remediation releases. Each malicious version carries the same dropper, which unpacks a platform-matched, Rust-compiled infostealer from a bundled binary container and runs it detached. The stealer targets Chromium-based browser profiles, the Bitwarden browser extension, and Steam session cookies, and it installs persistence via Windows Task Scheduler or macOS LaunchAgents. From version 8.18.0 onward, the dropper runs when the module is required rather than at install time, so install-script audits miss it. Versions 8.18.0 and 8.20.0 remained published and not deprecated, so defenders should treat any machine that installed a malicious version as compromised, rotate credentials, and pin only to versions verified by reading their code.",
+      "completeness": "Medium",
+      "threats": [
+        "Jscrambler_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "Bitwarden",
+        "Steam",
+        "Windows Task Scheduler",
+        "macOS",
+        "Chrome",
+        "Chromium",
+        "Linux",
+        "Unix",
+        "Electron",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "pbkdf2",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "readFileSync",
+        "writeFileSync",
+        "GetSecretValue",
+        "GetParameters"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://safedep.io/jscrambler-npm-supply-chain-compromise/",
+        "https://github.com/jscrambler/jscrambler/commit/4083196b",
+        "https://github.com/jscrambler/jscrambler",
+        "https://github.com/jscrambler/jscrambler/commit/7fe19863"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-11",
+      "title": "We put the exploit in a picture. The AI code reviewer never opened it.",
+      "summary": "The report shows a prompt-injection attack, dubbed GhostCommit, that hides malicious agent instructions inside a PNG image referenced by a benign AGENTS.md coding-convention file in a pull request. Text-based AI code reviewers such as Cursor Bugbot and CodeRabbit missed it, with CodeRabbit's default configuration excluding image files from review. When a coding agent later reads the image and follows its instructions, it writes the repository's .env secrets into source code as an integer tuple that secret scanners do not decode. In controlled tests, Cursor and Antigravity with several models leaked the full .env, while Claude Code refused across models, indicating the coding harness rather than the model decides the outcome. The authors also built an open-source multimodal PR defender that caught 49 of 50 attacks in a live test. Defenders should review image content and decode suspicious numeric output, since most deployed tools do neither.",
+      "completeness": "Low",
+      "software": [
+        "Claude",
+        "Anthropic",
+        "GPT-5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://asset-group.github.io/disclosures/ghostcommit/",
+        "https://github.com/asset-group/ghostcommit"
+      ]
+    }
+  }
+]

@@ -1,0 +1,728 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Tracking UAC-0226 Tooling Evolution: From WinRAR ADS to Reflective GIFTEDCROOK Loading",
+      "summary": "UAC-0226, linked to the GIFTEDCROOK stealer, delivers a weaponized WinRAR archive disguised as a Ukrainian reconnaissance-themed PDF. The archive uses an NTFS Alternate Data Stream path traversal, consistent with CVE-2025-8088, to plant a shortcut in the user's Startup folder and drop two stages into C:\\ProgramData. The shortcut runs a PowerShell loader that decodes a headerless PE image using a simple byte subtraction and maps it reflectively in memory. The payload is a browser and file stealer targeting Chromium, Firefox, documents, VPN configurations and KeePass databases. Defenders should watch for Startup-folder shortcuts created during archive extraction and for reflective PE loading via native NT APIs.",
+      "completeness": "High",
+      "threats": [
+        "Giftedcrook",
+        "Antidebugging_technique",
+        "Junk_code_technique"
+      ],
+      "geo": [
+        "Ukrainian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "WinRAR",
+        "Chromium",
+        "Firefox",
+        "KeePass",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Opera",
+        "Chrome"
+      ],
+      "algorithms": [
+        "rc4",
+        "gzip",
+        "xor",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "Write-Host"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/from-winrar-ads-to-reflective-loading-reversing-a-new-uac-0226-giftedcrook-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Analysis of Recent APT-C-36 Activities in Colombia",
+      "summary": "APT-C-36 (Blind Eagle), a suspected South American APT group, conducted a new campaign in April 2026 against targets in Colombia and neighboring countries such as Ecuador, Chile, and Panama. The attackers emailed SVG files disguised as bank advertising, with an embedded JavaScript dropper that decrypts and releases a downloader without contacting the internet. The chain then uses PowerShell, WMI, and the Hijackloader to inject the final payload into a legitimate program. That payload is the Remcos RAT (version 6.1.2 Pro), which provides full remote control, including screen capture, microphone recording, and credential theft. The report notes AI-generated code traces, and it warns that AI assistance may increase the group's attack frequency and sophistication.",
+      "completeness": "Medium",
+      "threats": [
+        "Junk_code_technique",
+        "Hijackloader",
+        "Remcos_rat"
+      ],
+      "geo": [
+        "Colombia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "WeChat"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64",
+        "rc4"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.ctfiot.com/311957.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "NetMedved and the Summer Campaign Against Russian Organizations",
+      "summary": "Positive Technologies observed a new phishing campaign by the NetMedved group targeting Russian organizations, using business-themed lures and the legitimate NetSupport Manager remote administration tool deployed on victim systems. The campaign uses two delivery chains: LNK files that run a PowerShell loader via a redirector service to fetch an AES-encrypted stage and a NetSupport client ZIP, and a ZIP/JScript dropper with the payload embedded directly in the script. Obfuscation includes dynamically resolved Invoke-Expression calls and COM-based downloads, and persistence uses Run registry keys and, in the JScript variant, a hidden scheduled task. Targets are procurement, supply, and document-handling staff, and the JScript variant was already used in 2024. The report notes that embedding the payload in the script makes that variant invisible to network detection during initial infection, so defenders should monitor for NetSupport RAT artifacts and suspicious Run keys regardless of delivery method.",
+      "completeness": "Medium",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 18,
+      "software": [
+        "Windows COM",
+        "Windows Task Scheduler"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "base64",
+        "aes-128-cbc",
+        "zip",
+        "aes"
+      ],
+      "functions": [
+        "Get-Command"
+      ],
+      "languages": [
+        "powershell",
+        "jscript",
+        "javascript"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1050722/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Breaking Out of Chrome’s Sandbox: A Native Messaging Backdoor Observed in Italy",
+      "summary": "A malware campaign distributed through Italian-language phishing emails posed as an invoice, delivering an obfuscated Windows JavaScript file disguised as a PDF. The script dropped a signed Epic Games executable that side-loaded a malicious DLL, which then launched hidden PowerShell to install a malicious Chrome extension and alter Chrome policy settings. The extension registered a Native Messaging Host, allowing code inside Chrome to execute PowerShell commands outside the browser sandbox. The extension sent cookies, open tabs, and fingerprinting data to a command-and-control server over HTTPS and received commands, which the researchers confirmed by observing a directory listing of C:\\. Defenders should review unexpected Chrome policy and Native Messaging registry entries and remove the registration and host, not just the extension.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Italy",
+        "Italian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.d3lab.net/breaking-out-of-chromes-sandbox-a-native-messaging-backdoor-observed-in-italy/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "ShinyHunters’ 0-day attacks: After patching, find out if you were breached",
+      "summary": "ShinyHunters has been exploiting CVE-2026-35273, a critical unauthenticated remote code execution zero-day in Oracle PeopleSoft Enterprise PeopleTools, since late May 2026, continuing after Oracle released patches on June 10, 2026. The group used living-off-the-land tactics and MeshCentral remote administration agents disguised as Microsoft Azure services for command and control, which likely evaded IOC-based alerts. Targets reportedly include 110 U.S. education organizations, plus government and commercial victims such as the European Council. The report argues that patching does not reveal whether a breach occurred before the fix, so teams should search historical logs for reported indicators. Intel 471's Retroactive Threat Detection generates tool-native queries for this purpose. It also recommends behavioral hunt packages, since attacker tradecraft persists after indicators change.",
+      "completeness": "Medium",
+      "threats": [
+        "Lolbin_technique",
+        "Meshcentral_tool",
+        "Devman",
+        "Meshagent_tool"
+      ],
+      "software": [
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.intel471.com/blog/shinyhunters-0-day-attacks-after-patching-find-out-if-you-were-breached"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "ESET takes part in Operation Endgame to disrupt Amadey and Stealc",
+      "summary": "Operation Endgame, coordinated by Microsoft DCU with ESET and other partners, disrupted the Amadey botnet and Stealc infostealer, both sold as malware-as-a-service. The operation affected around 50 domains and nearly 200 active IP-based C&C servers used by affiliates of the two families. Amadey is a modular loader used mainly to distribute additional malware, while Stealc targets credentials, cookies, and cryptocurrency wallets. Because affiliates deploy and run their own infrastructure, the ecosystems are fragmented, so ESET used automated tracking and clustering to identify high-impact targets. ESET identified 53 Amadey clusters and 73 Stealc clusters, and ESET will keep monitoring both families for attempts to rebuild infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "Amadey",
+        "Stealc",
+        "Lumma_stealer",
+        "Danabot",
+        "Hvnc_tool",
+        "Supply_chain_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "United states",
+        "Italy",
+        "Poland",
+        "Turkey",
+        "America",
+        "Mexico",
+        "Spain",
+        "India",
+        "Egypt"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 43,
+      "software": [
+        "Telegram",
+        "Outlook",
+        "WinSCP"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "zip"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/eset-takes-part-operation-endgame-disrupt-amadey-stealc/",
+        "https://github.com/eset/malware-ioc/tree/master/amadey\\_stealc"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "KimJongRAT Continues to Evolve by Leveraging LOTS",
+      "summary": "KimJongRAT, an infostealer and remote access trojan attributed to the North Korea-linked Kimsuky (Earth Kumiho) group, was distributed in May 2026 via malicious GitHub Releases ZIP files. The infection chain starts with a shortened URL in phishing emails and uses a malicious LNK file that runs mshta to fetch an HTA file, which then retrieves further payloads from Google Drive. The campaign checks whether Windows Defender is running and uses different branches depending on the result, ultimately deploying a DLL or PowerShell version of KimJongRAT. Newer samples fetch encrypted C2 addresses from Google Drive instead of hardcoding them, and they can install MeshAgent, a remote monitoring tool. After the original GitHub repository was taken down, the attacker created a new one within about four days, so defenders should expect repeated use of this living-off-trusted-sites technique.",
+      "completeness": "Medium",
+      "threats": [
+        "Kimjongrat",
+        "Meshagent_tool",
+        "Meshcentral_tool"
+      ],
+      "geo": [
+        "North korea",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "curl",
+        "Twitter"
+      ],
+      "algorithms": [
+        "aes",
+        "rc4",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "javascript"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/06/continuous-evolution-of-kimjongrat-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Miasma Worm Infects Multiple LeoPlatform npm Packages",
+      "summary": "The Miasma worm compromised 20 LeoPlatform npm packages on June 24, 2026, after an attacker stole one maintainer's npm and GitHub tokens and published infected versions in a 3-second burst. Each infected package adds a binding.gyp file that runs the payload during npm install, bypassing checks that only inspect lifecycle scripts. The payload is a Bun-based credential stealer and self-propagating worm that harvests npm, PyPI, GitHub, AWS, Kubernetes, Vault, and AI coding tool credentials. The same account pushed a weaponized \"Dependabot Updates\" GitHub Actions workflow to three LeoPlatform repositories. A later update identified four @immobiliarelabs Backstage plugins with 16 infected versions using the same technique, and defenders should check for binding.gyp files containing command expansion.",
+      "completeness": "Low",
+      "threats": [
+        "Miasma"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Dependabot",
+        "Kubernetes",
+        "HashiCorp Vault",
+        "curl",
+        "1Password",
+        "OPENSSH"
+      ],
+      "algorithms": [
+        "ed25519",
+        "sha256",
+        "aes-128-gcm",
+        "sha1"
+      ],
+      "functions": [
+        "getBunPath",
+        "CreateEvent"
+      ],
+      "links": [
+        "https://safedep.io/miasma-worm-hits-leoplatform-20-npm-packages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "AI Security Incident Case: Jetbrains Plugin Supply Chain Attack Stealing AI Key",
+      "summary": "Aikido researchers found 15 malicious JetBrains IDE plugins, with nearly 70,000 cumulative installations, that posed as AI coding tools using DeepSeek and OpenAI. The plugins silently forwarded the user's AI provider API key to an attacker-controlled server the moment it was saved in the configuration panel, with no prompt or authorization step. All plugins shared one code base repackaged under different names across seven vendor accounts, and the earliest version dates to October 2025. The attacker resold stolen keys to paying users as access to AI computing power, creating an underground economy built on harvested credentials. The report notes that IDE plugins run with broad, unsandboxed access and that developers' AI keys have direct monetary value, making them attractive supply chain targets. Defenders should treat AI provider keys as high-value secrets and scrutinize plugins that handle them.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Glassworm"
+      ],
+      "software": [
+        "Jetbrains",
+        "DeepSeek",
+        "OpenAI"
+      ],
+      "functions": [
+        "save",
+        "FindBugs"
+      ],
+      "links": [
+        "https://nsfocusglobal.com/ai-security-incident-case-jetbrains-plugin-supply-chain-attack-stealing-ai-key/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "STOCKSTAY Another Day: The Latest Addition to Turla’s Intelligence Gathering Apparatus",
+      "summary": "Google Threat Intelligence Group analyzed STOCKSTAY, a .NET backdoor continually developed and deployed by Russia-linked Turla since at least December 2022. Turla has used STOCKSTAY against government and military organizations in Ukraine and entities interested in Italian foreign policy. The backdoor shares significant code and functional overlaps with KAZUAR, including the K1MORPHER string obfuscation. STOCKSTAY is delivered largely through phishing with malicious RDP files and is configured with environmental keying or hard-coded passwords depending on the operation stage. In November 2025, Turla phishing targeted Ukrainian military personnel and exploited CVE-2025-8088 in WinRAR to install STOCKSTAY components. GTIG attributes the activity to Turla with high confidence, based on code overlaps and shared infrastructure with KAZUAR.",
+      "completeness": "High",
+      "threats": [
+        "Stockstay",
+        "Kazuar",
+        "Stockbroker",
+        "Tunneler",
+        "Stockmarket",
+        "Marketmaker",
+        "K1morpher",
+        "Junk_code_technique",
+        "Wildday",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Russian",
+        "Italy",
+        "Poland",
+        "Jordan",
+        "Russia",
+        "Netherlands",
+        "Italian",
+        "Ukraine",
+        "Germany",
+        "Asia",
+        "United states"
+      ],
+      "software": [
+        "Windows registry",
+        "WordPress",
+        "WinRAR"
+      ],
+      "wallets": [
+        "coinbase",
+        "bybit"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "xor",
+        "fnv1-a"
+      ],
+      "functions": [
+        "renameAndRunFile",
+        "function",
+        "GetSystemProxy",
+        "GetDataTrade",
+        "GetDataNews",
+        "GetFiles"
+      ],
+      "languages": [
+        "jscript",
+        "python",
+        "dotnet",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/stockstay-turla-intelligence-gathering/",
+        "https://github.com/sta/websocket-sharp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Millenium: A RAT Rewritten, A Threat Multiplied",
+      "summary": "Millenium RAT version 4.* is a full-featured remote access trojan for Windows, written in C++ rather than .NET and using the Telegram Bot API for command and control. It is sold as Malware-as-a-Service by a developer known as \"shinyenigma,\" with prices starting at $50 for the first month. Group-IB attributes active campaigns to the Y2K Operators cluster, which uses disguised executables and archives with lures such as cracks, hacking tools, and gaming cheats. Group-IB telemetry shows over 62,000 compromised devices across 160+ countries, with about 39,000 infections in Q1 2026 alone. Defenders should treat unexpected UAC prompts as suspicious, avoid running untrusted files, use standard accounts, and enable MFA.",
+      "completeness": "High",
+      "threats": [
+        "Milleniumrat",
+        "Redeemer",
+        "Procmon_tool",
+        "Phantomkyc_tool",
+        "Xworm_rat",
+        "Njrat"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 29,
+      "software": [
+        "Telegram",
+        "NET framework",
+        "discord",
+        "Chromium",
+        "Steam",
+        "INSTAGRAM",
+        "Roblox",
+        "Microsoft Defender",
+        "Windows defender"
+      ],
+      "algorithms": [
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "Windows",
+        "getUpdates"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/millenium-rat-maas/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Photo ZIP campaign targeting hospitality industry delivers Node.js implant for persistent access",
+      "summary": "Microsoft Threat Intelligence observed an ongoing multi-stage campaign targeting hospitality and hotel organizations in Europe and Asia since April 2026, and has not attributed it to a known threat actor. Phishing emails relayed through Calendly's notification infrastructure and Google redirects lure staff into downloading photo-themed ZIP archives containing disguised shortcut files. The shortcuts launch obfuscated PowerShell that downloads further scripts, then deploys a Node.js implant with dual registry persistence and command-and-control over non-standard ports. Defenders should prioritize behavior-based detections across the full attack sequence, because the actor repeatedly alters obfuscation and file names. Reviewing Run and RunOnce keys during remediation is essential, since removing only one may leave the implant active.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Deathransom",
+        "Tonrat",
+        "Purerat"
+      ],
+      "geo": [
+        "Dutch",
+        "French",
+        "Spanish",
+        "Asia",
+        "Polish",
+        "Czech",
+        "Danish",
+        "Japanese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 15,
+      "software": [
+        "Node.js",
+        "Microsoft Defender",
+        "SendGrid",
+        "Cloudflare Turnstile",
+        "ode.js",
+        "js",
+        "Microsoft Defender for Endpoint",
+        "icrosoft Defender An"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/06/25/photo-zip-campaign-targeting-hospitality-industry-delivers-node-js-implant-persistent-access/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Miasma Mini Shai-Hulud Hits LeoPlatform npm Packages and GitHub Actions, Expands to the Go Ecosystem",
+      "summary": "The Miasma/Mini Shai-Hulud/Hades worm family is compromising npm packages, GitHub Actions workflows, and a Go module, Verana Blockchain, tied to LeoPlatform and RStreams packages published on June 24, 2026. Malicious packages use a binding.gyp file to trigger code execution during installation, and a loader decrypts AES-GCM payloads and runs the main payload under Bun. The payload steals credentials from developer and CI/CD environments, including cloud, registry, GitHub, and AI-agent configuration secrets, and checks for security tools. The Go finding is triggered through a VS Code folder-open task when a developer opens the repository, not through normal Go module resolution. Defenders should treat affected installs as compromised, rotate secrets from a clean machine, audit repositories for injected hooks and workflows, and pin GitHub Actions to commit SHAs.",
+      "completeness": "High",
+      "threats": [
+        "Miasma",
+        "Supply_chain_technique",
+        "Hades",
+        "Dead_drop_technique",
+        "Phantom_gyp_technique",
+        "Tanium_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Slack",
+        "Docker",
+        "Kubernetes",
+        "Microsoft Defender",
+        "Dependabot"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-gcm"
+      ],
+      "functions": [
+        "eval"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/miasma-mini-shai-hulud-hits-leoplatform-npm-packages-go-ecosystem",
+        "https://socket.dev/go/package/github.com/verana-labs/verana-blockchain?version=v0.10.1-dev.20",
+        "https://socket.dev/go/package/github.com/verana-labs/verana-blockchain?section=files&version=v0.10.1-dev.20&path=.claude%2Findex.js"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Gamaredon in 2025: Leveraging tunnels, workers, dead drops, and new alliances",
+      "summary": "Gamaredon, a Russia-aligned APT group attributed by Ukraine's SSU to Russia's FSB, remained highly active in 2025 and targeted only Ukrainian governmental and military institutions. The group ran 35 spearphishing campaigns, mostly in the second half of the year, and introduced six new PowerShell tools alongside a revived VBScript weaponizer. Gamaredon increasingly hid its command and control servers behind tunnels, serverless workers, dynamic DNS, and platform-as-a-service offerings, and used legitimate services as dead drops. Stolen data was increasingly exfiltrated to S3-compatible cloud storage, which became the primary channel by December. ESET expects the group to remain a significant threat to Ukrainian institutions while the war continues.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Pterosetup",
+        "Pterovdoor",
+        "Pteropsdoor",
+        "Invisimole",
+        "Smuggling_technique",
+        "Pterosand",
+        "Pterodee",
+        "Pterocache",
+        "Pterodum",
+        "Pteroodd",
+        "Pteroeffigy",
+        "Pteropaste",
+        "Pterolnk",
+        "Pteropsload",
+        "Pterobox",
+        "Dead_drop_technique",
+        "Rclone_tool",
+        "Litterdrifter",
+        "Pterogram",
+        "Pteroscout",
+        "Pterosteal",
+        "Pterox",
+        "Pterodespair",
+        "Pterotickle",
+        "Pterographin",
+        "Pterostew",
+        "Pterosig",
+        "Pterovload",
+        "Pterobleed",
+        "Pterocdrop",
+        "Pteroclone",
+        "Cookie_stealer",
+        "Pterocookie",
+        "Pterodash",
+        "Pterodig",
+        "Pterodoc",
+        "Pteropshell",
+        "Pteropowder",
+        "Pterorisk",
+        "Pteroscreen",
+        "Burntcigar",
+        "Pterosocks",
+        "Pterotemplate",
+        "Revbshell"
+      ],
+      "geo": [
+        "Crimea",
+        "Russian",
+        "Ukraine",
+        "Russia",
+        "Ukrainian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WinRAR",
+        "Dropbox",
+        "trycloudflare",
+        "supabase",
+        "Telegram",
+        "mastodon",
+        "IndexedDB",
+        "Outlook"
+      ],
+      "wallets": [
+        "wassabi"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "vbscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/gamaredon-2025-leveraging-tunnels-workers-dead-drops-new-alliances/",
+        "https://github.com/eset/malware-ioc/tree/master/gamaredon"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "Threat Intelligence Report: Nation-State Targeting of Water Systems 2024–2026",
+      "summary": "Nation-state actors increasingly target water and wastewater systems as low-cost pressure points, exploiting exposed PLCs and HMIs, weak credentials, and poor IT/OT segmentation. Iran-linked CyberAv3ngers has defaced HMIs and compromised Unitronics PLCs, with the 2026 joint advisory warning of similar activity against internet-facing PLCs. Russia-linked actors caused a tank overflow in Muleshoe, Texas, and seized a dam floodgate in Bremanger, Norway, with Mandiant linking the Texas activity to Sandworm. China's Volt Typhoon pursues durable access and pre-positioning for use during a future crisis. The main takeaway for defenders is that basic hygiene gaps, not custom ICS malware, give actors access, so utilities should harden exposed OT and improve monitoring.",
+      "completeness": "Medium",
+      "threats": [
+        "Blackbasta",
+        "Dropbear_tool",
+        "Lolbin_technique",
+        "Ntdsutil_tool",
+        "Portproxy_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Polish",
+        "America",
+        "Moscow",
+        "American",
+        "United kingdom",
+        "Norway",
+        "Belarusian",
+        "Poland",
+        "Ukraine",
+        "Russian",
+        "Israeli",
+        "Russia",
+        "Israel",
+        "Taiwan",
+        "Iranian",
+        "China"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 20,
+      "software": [
+        "Telegram",
+        "Active Directory"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://dti.domaintools.com/research/threat-intelligence-report-nation-state-targeting-of-water-systems-2024-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "“Alright Lets See If This Works”: Shai-Hulud / Miasma / Hades Variant Spreads on npm",
+      "summary": "A compromised npm developer account, \"czirker,\" was used to publish a new variant of the Shai-Hulud / Miasma / Hades malware, affecting 23 packages with about 52,640 monthly downloads. The malware uses a preconfigured binding.gyp file that executes automatically when a new package is installed, and it steals GitHub, npm, AWS, GCP, and Azure credentials along with local environment information. Stolen data is uploaded to GitHub under the string \"Alright Lets See If This Works,\" and 338 such repositories had been found at the time of writing. The variant reuses a spreading technique that searches GitHub for the commit \"firedalazer\" and uses different public encryption keys, which suggests a new actor. Defenders are advised to rotate keys, enable 2FA, and downgrade affected packages to safe versions.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Miasma",
+        "Hades"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://www.ox.security/blog/alright-lets-see-if-this-works-shai-hulud-miasma-hades-variant-spreads-on-npm",
+        "https://github.com/miaxxxxxx",
+        "https://github.com/search?q=%22Alright+Lets+See+If+This+Works%22&type=repositories&s=updated&o=desc",
+        "https://github.com/l3v1cs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-25",
+      "title": "CL-STA-1062 Targets Southeast Asian Governments and Critical Infrastructure",
+      "summary": "The Chinese-speaking threat cluster CL-STA-1062, also tracked as UAT-7237, has been active since at least March 2022 and in 2025 targeted government entities and state-owned energy infrastructure in Southeast Asia. The attackers typically exploit web applications to deploy ASPX web shells, then use open-source tools such as SoftEther VPN, Mimikatz and VNT, often disguised as VMware executables, for tunneling and exfiltration. Researchers also described TinyRCT, a previously undocumented C#-based .NET backdoor that runs commands, exfiltrates files, captures screenshots and self-destructs. TinyRCT is delivered through a malicious archive that abuses AppDomainManager Injection to load a malicious DLL. Defenders should monitor for these techniques and enforce strict behavioral controls on untrusted binaries in energy and government networks.",
+      "completeness": "High",
+      "threats": [
+        "Mimikatz_tool",
+        "Tinyrct",
+        "Yuze_tool",
+        "Juicypotato_tool"
+      ],
+      "geo": [
+        "Taiwan",
+        "Chinese",
+        "Asian",
+        "Asia-pacific",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "SoftEther",
+        "MSSQL",
+        "curl",
+        "vmtools",
+        "Microsoft Visual Studio"
+      ],
+      "algorithms": [
+        "gzip",
+        "cbc",
+        "aes",
+        "sha256",
+        "zip",
+        "aes-128"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/cl-sta-1062-tinyrct-backdoor/",
+        "https://github.com/P001water/yuze",
+        "https://github.com/vnt-dev/vnt"
+      ]
+    }
+  }
+]

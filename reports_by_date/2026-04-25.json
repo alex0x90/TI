@@ -1,0 +1,146 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-25",
+      "title": "73 Open VSX Sleeper Extensions Linked to GlassWorm Show New Malware Activations",
+      "summary": "GlassWorm, a campaign targeting the Open VSX marketplace, has continued to escalate with a new cluster of 73 impersonation extensions that were initially published as benign-looking \"sleepers.\" At least six have already been activated to deliver malware through the normal extension update path. Attackers cloned popular extensions, such as a Turkish language pack, to attract installs before introducing payloads. A later activation wave on April 29, 2026 used extensionPack entries to transitively deliver a separate malicious component, which was disguised as a utility. Activated extensions act as thin loaders that retrieve payloads from GitHub-hosted VSIX files or bundled native binaries, and they install them into VS Code, Cursor, and Windsurf. Defenders should monitor extension updates and extension-pack dependencies, not just initial source code.",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Open VSX",
+        "Visual Studio Code"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "install"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/73-open-vsx-sleeper-extensions-glassworm"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-25",
+      "title": "Three Paste-Hosts, One HMAC Key, and 257 Azure Subdomains — Inside the 'edit_phone_number' Tech-Support-Scam Kit Targeting Japan",
+      "summary": "A Japanese-language tech-support-scam kit impersonating Microsoft Defender is deployed across at least 257 Azure Storage static website subdomains, lured by emails spoofing a Microsoft sender with a Japanese \"Windows Security System Upgrade\" subject. The encrypted kit page is decrypted in-browser using the URL hash fragment as the AES key and verified with an HMAC key the operator hardcoded across every instance observed. The victim-facing phone number is fetched every 6 to 12 seconds from one of three paste-host backends, letting the operator rotate numbers without redeploying pages. The report identifies the hardcoded HMAC key and decoy-paragraph phrases as high-confidence fingerprints for hunting sibling kits. Defenders are advised to block the paste-host domains and report abusive Azure storage accounts to Microsoft in bulk.",
+      "completeness": "Medium",
+      "threats": [
+        "Tech-support-scam_kit_tool",
+        "Homoglyph_technique"
+      ],
+      "geo": [
+        "Tokyo",
+        "Japanese",
+        "Japan"
+      ],
+      "software": [
+        "Microsoft Defender",
+        "CryptoJS",
+        "ryption re"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "aes-256-cbc",
+        "cbc",
+        "hmac",
+        "aes",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "setInterval"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/edit-phone-number-tss-jp-three-paste-host-rotation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-25",
+      "title": "Urelas is old, weird, and still watching Korean card games",
+      "summary": "Urelas is a long-running trojan that targets Korean card-game clients such as poker, badugi, and high-low, first documented by Microsoft in 2012. A fresh sample from April 2026 reads a bit-flipped MSMP config file, watches game processes, and crops game-window captures into JPEG records sent to command-and-control servers. The family appears in over 3,100 sample rows from March 13 to April 22, 2026, concentrated in South Korean ISP address space. Its traffic runs to a small set of endpoints, and detection relies on combining several signals rather than one indicator. The takeaway for defenders is that this is a narrow, screen-focused surveillance tool, not a broad stealer.",
+      "completeness": "Medium",
+      "threats": [
+        "Urelas",
+        "Pecompact2_tool"
+      ],
+      "geo": [
+        "Korean",
+        "Korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "SetParentId",
+        "SetCommand",
+        "SetGameId",
+        "GetDllDataLen",
+        "GetDllData"
+      ],
+      "links": [
+        "https://www.derp.ca/research/urelas-korean-card-game-capture/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-25",
+      "title": "Rebex-based Telegram RAT Targeting Vietnam",
+      "summary": "A Telegram-based remote access trojan targeting Vietnam was delivered via a zip archive containing a malicious Microsoft Compiled HTML (CHM) file disguised as a corrupt Word document. Running the CHM triggers a chain that uses hh.exe and a renamed Python interpreter to load a DLL, which decrypts an embedded payload using layered XOR encryption. The chain establishes persistence through a Winlogon Shell hijack in HKCU, a scheduled task, and msbuild.exe execution of a malicious XML file. The final stage is a weaponized version of Rebex.Common.dll that uses a Telegram bot for command and control. It supports alive checks, bot token swapping, file downloads, and cmd.exe command execution. The report notes the activity appears targeted at Vietnam, though no specific threat actor was attributed, and the sample had zero VirusTotal detections at time of writing.",
+      "completeness": "Low",
+      "threats": [
+        "Telegramrat"
+      ],
+      "geo": [
+        "Vietnam"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Winlogon",
+        "NuGet"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/TelegramRat/",
+        "https://github.com/dmpdump"
+      ]
+    }
+  }
+]

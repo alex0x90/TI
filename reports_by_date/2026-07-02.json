@@ -1,0 +1,672 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "SOCRadar Links FortiBleed Campaign to INC and Lynx Ransomware Operations",
+      "summary": "SOCRadar's Threat Research Unit links the FortiBleed credential-harvesting campaign to the INC Ransom and Lynx ransomware-as-a-service operations. The campaign's operator uses a custom Golang tool, FortigateSniffer, to passively intercept authentication traffic on FortiGate firewalls by abusing FortiOS's diagnose sniffer command. Researchers report more than 430,000 FortiGate firewalls targeted worldwide, with admin access confirmed on 409 targets and full domain compromise on 354. An operator tied to FortiBleed infrastructure was found logged into both INC and Lynx negotiation panels, and victim data overlaps with INC-tracked victims. At least 12 ransomware deployments have been confirmed from this access, and organizations running FortiGate should treat FortiBleed exposure as a potential ransomware precursor.",
+      "completeness": "Low",
+      "threats": [
+        "Fortibleed_vuln",
+        "Lynx",
+        "Credential_harvesting_technique",
+        "Fortigatesniffer_tool",
+        "Inc_ransomware"
+      ],
+      "software": [
+        "FortiGate"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://socradar.io/blog/fortibleed-inc-lynx-ransomware-link/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "An Analysis of ValleyRAT Infection Campaigns from Fake Installers, Japanese Malicious Emails",
+      "summary": "ValleyRAT, a remote access trojan that has been observed since 2023, is delivered through two vectors: fake installers, mainly targeting Chinese-speaking users, and malicious emails, which this LevelBlue report analyzes in detail. In the email campaign, a link leads to a ZIP archive holding a renamed legitimate VLC executable and a malicious libvlc.dll that is sideloaded to persist and fetch an RC4-encrypted, Donut-generated payload. The payload is injected into a suspended rundll32.exe process, so it runs fileless. The DLL also checks for sandboxes using memory size, sleep timing, and processor count. Evidence suggests the Chinese and Japanese campaigns may share one actor, though the report says this cannot be confirmed. Defenders should use email security, phishing training, and EDR that detects DLL sideloading and Donut shellcode.",
+      "completeness": "Medium",
+      "threats": [
+        "Valleyrat",
+        "Byovd_technique",
+        "Supply_chain_technique",
+        "Process_injection_technique",
+        "Dll_sideloading_technique",
+        "Junk_code_technique",
+        "Donut"
+      ],
+      "geo": [
+        "Japan",
+        "Hong kong",
+        "Japanese",
+        "Taiwan",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Visual Studio"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "sha1",
+        "zip"
+      ],
+      "functions": [
+        "Sleep"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/an-analysis-of-valleyrat-infection-campaigns-from-fake-installers-japanese-malicious-emails",
+        "https://github.com/Logkiss/Rat-winos4.0-gh0st/tree/master/%E9%93%B6%E7%8B%90Winos",
+        "https://github.com/volexity/donut-decryptor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Analysis of Ongoing Ousaban Attacks Targeting the Iberian Peninsula",
+      "summary": "Ousaban is a banking Trojan, previously active in Brazil, that FortiGuard Labs observed in May 2026 targeting users in Spain and Portugal. The campaign begins with a phishing PDF disguised as a corrupted file that directs victims to a malicious webpage, which uses geofencing and environment checks to limit delivery to the target countries. Victims who pass the checks receive a VBS script that drops a steganographic image and a payload, and Ousaban then establishes persistence and monitors banking sessions. Its command-and-control address is resolved through daily-changing DDNS hostnames rather than the Pastebin configuration, which serves as a decoy. Defenders should note that Fortinet products detect and block these components, and the report emphasizes monitoring for this evolving delivery method.",
+      "completeness": "Medium",
+      "threats": [
+        "Ousaban",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Metamorfo",
+        "Clipboard_injection_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Portugal",
+        "Brazil",
+        "Spanish",
+        "Latin american",
+        "Spain"
+      ],
+      "software": [
+        "Pastebin"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "zip"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/analysis-of-ongoing-ousaban-attacks-targeting-the-iberian-peninsula"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "MacSync Stealer: How a Google Ad Turned Install Claude Code into Full Mac Compromise",
+      "summary": "MacSync Stealer (build tag claude1) was delivered through a sponsored Google Ad impersonating Claude Code, pointing macOS developers to a fake Google Sites install page that instructed them to paste a base64-obfuscated terminal command. The three-stage zsh dropper launched an osascript payload that captured the Mac login password through a fake System Preferences dialog and then harvested browser data, keychains, wallet extensions, SSH, AWS and kubectl credentials. The stealer also replaced the app.asar of installed Ledger Live and Ledger Wallet with a trojan that redirects the app window to a fake seed phrase recovery flow five seconds after launch. A Russian \"INSERT HERE\" marker in the trojan suggests a reusable kit sold to operators. The exfiltration ran over cleartext HTTP and only succeeded if every chunk reached the server, and the wallet trojans persist until a clean reinstall. Defenders should treat unexpected admin password prompts and terminal commands from web pages as red flags, and rotate credentials if the command was run.",
+      "completeness": "High",
+      "threats": [
+        "Macc_stealer",
+        "Clickfix_technique",
+        "Installfix_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "macOS",
+        "ger Live and",
+        "Electron",
+        "Chrome",
+        "Anthropic",
+        "Ledger Live",
+        "Chromium",
+        "OS Keyc",
+        "Claude macOS",
+        "have more..."
+      ],
+      "wallets": [
+        "ledger_wallet",
+        "trezor",
+        "metamask",
+        "coinbase",
+        "rabby",
+        "bybit",
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "bitcoincore",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "monero",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256",
+        "gzip"
+      ],
+      "functions": [
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://beelzebub.ai/blog/macsync-stealer-fake-claude-code-google-ads/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "PamStealer: a Rust-based macOS infostealer that validates credentials through PAM",
+      "summary": "PamStealer is a macOS infostealer disguised as the legitimate Maccy clipboard manager, distributed as a compiled AppleScript file inside a disk image. The first stage is a JavaScript for Automation dropper that downloads a second stage using native APIs rather than shell utilities, and it silently exits on hosts with regional or non-Apple-silicon fingerprints. The second stage is a Rust-based Mach-O that masquerades as Finder, steals credentials and clipboard contents, and exfiltrates encrypted data. It validates the victim's typed login password locally through PAM before harvesting it, and it uses social engineering prompts such as a counterfeit Full Disk Access alert. Defenders should watch for Script Editor spawning codesign against bundles in Application Support and a Finder-named process repeatedly spawning pbpaste.",
+      "completeness": "High",
+      "threats": [
+        "Pamstealer",
+        "Homoglyph_technique"
+      ],
+      "geo": [
+        "Belarusian",
+        "Russian",
+        "Moscow",
+        "Minsk",
+        "Asia"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "curl",
+        "Gatekeeper"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20-poly1305"
+      ],
+      "functions": [
+        "chmod"
+      ],
+      "languages": [
+        "objective_c",
+        "rust",
+        "swift",
+        "javascript",
+        "applescript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/pamstealer-macos-infostealer-applescript-rust/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Lazarus-Linked npm Malware Masquerades as Rollup Polyfills",
+      "summary": "Lazarus-linked npm malware masquerades as Rollup polyfill tooling, using lookalike packages such as rollup-packages-polyfill-core and rollup-runtime-polyfill-core that copy the README, repository link, and structure of the legitimate rollup-plugin-polyfill-node project. The packages install hidden second-stage packages at import time, which fetch an eval-executed payload from JSONKeeper that checks for cloud and sandbox environments before downloading further stages. The final stages provide remote access with terminal, SSH, and input control, plus browser and crypto-wallet data theft, broad file collection targeting secrets, and clipboard monitoring. The campaign targets developer workstations and CI environments, where build tooling has access to npm tokens, cloud keys, and SSH keys. Defenders should review lookalike build dependencies, remove the listed packages, block the associated infrastructure, and rotate credentials on any affected machine.",
+      "completeness": "Medium",
+      "geo": [
+        "North korean"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Polyfills",
+        "polyfill",
+        "Node.js polyfill",
+        "DOCKER",
+        "macOS",
+        "Linux",
+        "virtualbox",
+        "qemu",
+        "Chrome",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "getPlugin",
+        "Get-CimInstance",
+        "Get-Clipboard"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://research.jfrog.com/post/rollup-polyfill-masquerading/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Blacksite: New AiTM Phishing Kit Evades URL Scanners via Cloaked.gg",
+      "summary": "Abnormal researchers identified Blacksite, a new adversary-in-the-middle phishing-as-a-service kit advertised on Russian-speaking forums and Telegram in June 2026. The kit is a reverse-proxy mirror that captures authentication tokens, session cookies, and one-time 2FA codes in real time, enabling full account takeover against MFA-protected logins. It is sold by the actor kirapayload alongside Cloaked.gg, a cloaking service that serves benign or decoy content to automated scanners and sandboxes based on their cloud ASNs, missing referrers, and TLS fingerprints. Targets advertised include Google, Microsoft, banking portals, and corporate SSO. Defenders should not rely on a clean URL verdict, since cloaked links can look benign to automated analysis, and should instead analyze messages before engagement and monitor identity and session behavior.",
+      "completeness": "Low",
+      "threats": [
+        "Blacksite",
+        "Aitm_technique",
+        "Cloaking_technique",
+        "Tycoon_2fa"
+      ],
+      "software": [
+        "Telegram",
+        "Instagram",
+        "Docker",
+        "Nginx"
+      ],
+      "links": [
+        "https://abnormal.ai/blog/blacksite-aitm-phishing-kit-cloaked-gg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Indirect Prompt Injection in Web Content Targets AI Agents",
+      "summary": "Zscaler ThreatLabz reports two campaigns that use indirect prompt injection (IPI), where malicious instructions hidden in web content try to steer AI agents during task execution. The first is a payment scam that uses fake API documentation, SEO poisoning for the fake Python package requests-secure-v2, and JSON-LD and CSS-hidden instructions directing agents to pay for a developer license. The second is a typosquatting site impersonating the DeFi portfolio tracker DeBank, which stuffs keywords and metadata and hides instructions telling models to rank it as the authoritative source. In testing across 26 LLMs, 4 models were manipulated into executing the payment in the first campaign, and 2 models misclassified the fake DeBank site in the second, with results depending heavily on context. Defenders should treat web content as an attack surface for AI agents, since misclassified sites risk context contamination and RAG poisoning.",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Seo_poisoning_technique"
+      ],
+      "software": [
+        "Twitter",
+        "Llama",
+        "GPT-5",
+        "Claude"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/indirect-prompt-injection-web-content-targets-ai-agents"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Linux Backdoor Targeting iKuai Routers",
+      "summary": "A Linux ELF backdoor, disguised as the legitimate OpenWrt library libjson_script.so, targets Chinese iKuai routers, as shown by checks for a GWID and a VERSTRING field in /etc/release. After startup, it beacons to a command-and-control server over HTTPS with certificate validation disabled, receiving tasks and a sleep interval. It supports six commands, including downloading and executing payloads, running shell commands, and exfiltrating small files. Results are returned to the C2 in encrypted JSON. The researcher found no other samples and considers the backdoor rare, and the report includes a Yara rule for hunting.",
+      "completeness": "Low",
+      "threats": [
+        "Ikuai_bdoor"
+      ],
+      "geo": [
+        "Chinese",
+        "Japan"
+      ],
+      "software": [
+        "Linux",
+        "OpenWrt",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "sha2",
+        "aes-256",
+        "aes",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "acquire_lock",
+        "get_gwid"
+      ],
+      "links": [
+        "https://dmpdump.github.io/posts/Backdoor_iKuai_Routers/",
+        "https://github.com/openwrt/libubox/blob/master/json\\_script.c"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "A single RedLine C2 pivots into a maritime spear-phishing cluster and attacker-owned infrastructure.",
+      "summary": "A single RedLine Stealer command-and-control server, first flagged by VMRay UniqueSignal, led researchers to a targeted Business Email Compromise campaign against South Korean maritime infrastructure. Pivoting from the initial IP through FOFA and VirusTotal fingerprinting revealed additional C2 infrastructure and communicating files. The analysis linked spear-phishing emails aimed at Kangrim Heavy Industries, a South Korean marine boiler manufacturer. The emails delivered Formbook malware through impersonated maritime supply chain companies. Further analysis identified seven fraudulent domains hosted on TheHost LLC infrastructure that shared naming patterns and TLS certificates. Defenders should note the campaign's use of social engineering that mimics legitimate shipping correspondence.",
+      "completeness": "Low",
+      "threats": [
+        "Redline_stealer",
+        "Spear-phishing_technique",
+        "Bec_technique",
+        "Supply_chain_technique",
+        "Formbook",
+        "Artoken"
+      ],
+      "geo": [
+        "South korean",
+        "South korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "functions": [
+        "actionMoveFolder"
+      ],
+      "links": [
+        "https://radar.offseq.com/threat/a-single-redline-c2-pivots-into-a-maritime-spear-p-96d1a4f1c693cdaf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Roblox, Minecraft, and the Insidious Internet for Children",
+      "summary": "Censys researchers mapped child-targeted fraud around Roblox and Minecraft using internet-wide scan data. They found 437 Roblox \"offerwall\" reward-site properties in a June 2026 snapshot, a fragmented industry that mostly runs on cheap, disposable hosting with known vulnerabilities and collects children's login data. Separately, a single bulletproof-hosted box served a Roblox phishing cluster of roughly 350 or more hostnames that spoof Roblox, Bloxlink, and RoVer. Minecraft phishing instead targets Microsoft accounts through cloned sign-in flows and Discord verification lures. Threat feeds largely miss this infrastructure, so the report recommends content fingerprinting and infrastructure analysis over passive IOC consumption.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Credential_harvesting_technique",
+        "Homoglyph_technique"
+      ],
+      "geo": [
+        "Panama",
+        "Ethiopia",
+        "Germany",
+        "Finland",
+        "Switzerland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Roblox",
+        "Minecraft",
+        "Laravel",
+        "GoDaddy",
+        "LiteSpeed",
+        "Steam",
+        "Discord",
+        "Roblox Discord",
+        "oblox pr",
+        "oblox.co",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "java"
+      ],
+      "links": [
+        "https://censys.com/blog/roblox-minecraft-and-the-insidious-internet-for-children/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Vibe Coded Extortion: Avalon’s Path from Legal Lure to CrownX Ransom Capabilities",
+      "summary": "Blackpoint's Adversary Pursuit Group identified Avalon, a previously undocumented malware framework delivered through a phishing chain that used a spoofed legal document email linking to a password-protected archive on Proton Drive. The archive contained an ISO image with a shortcut that launched cmd.exe and used MSBuild to run inline C# and load a managed stage entirely in memory. Avalon combines credential theft, C2 communications, lateral movement, defense evasion, and anti-forensic cleanup, with CrownX as its ransomware component. CrownX encrypts AES-GCM-protected files across business, engineering, development, and virtual machine formats, and it targets VSS and WinRE recovery options. Blackpoint assesses the framework shows signs of AI-assisted development, lowering the barrier to building such tooling. Defenders should focus on disrupting the delivery chain early, monitoring MSBuild and in-memory PE loading, and maintaining tested offline backups.",
+      "completeness": "High",
+      "threats": [
+        "Avalon",
+        "Crownx",
+        "Credential_harvesting_technique",
+        "Shadow_copies_delete_technique",
+        "Tartarusgate_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge",
+        "NET Framework",
+        "Event Tracing for Windows",
+        "Microsoft Defender",
+        "Chromium",
+        "Firefox",
+        "Ledger Live",
+        "Discord",
+        "Discord Canary",
+        "Slack",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "electrum",
+        "atomicwallet",
+        "bitcoincore"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "aes-gcm",
+        "xor",
+        "aes"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blackpointcyber.com/blog/avalons-path-from-legal-lure-to-crownx-ransom-capabilities/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "SharkLoader Emerges as Stealthy Cobalt Strike Delivery Framework",
+      "summary": "SharkLoader is a previously undocumented multi-stage malware loader used by the StrikeShark intrusion cluster to deploy Cobalt Strike Beacon in memory. StrikeShark gains initial access by exploiting vulnerable internet-facing applications and by distributing custom droppers disguised as software such as Cisco AnyConnect and Google Update. The loader uses DLL side-loading, often via SystemSettings.exe, along with layered encryption, reflective loading, API hooking, and memory evasion to avoid detection. Confirmed victims include government-related, diplomatic, and software development organizations across multiple countries, though researchers reported low confidence in an intelligence collection motive. Defenders should prioritize patching internet-facing systems, monitor for DLL side-loading, and hunt for in-memory malware behavior.",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Sharkloader",
+        "Dll_sideloading_technique",
+        "Dll_hijacking_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Latin america",
+        "Middle east"
+      ],
+      "software": [
+        "Microsoft Exchange",
+        "Openfire",
+        "GeoServer",
+        "Apache Shiro",
+        "BIG-IP",
+        "Zimbra",
+        "AnyConnect",
+        "Event Tracing for Windows",
+        "Active Directory"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/sharkloader-emerges-as-stealthy-cobalt-strike-delivery-framework"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "TimbreStealer Malware Targets Mexico Companies with Advanced Evasion Techniques",
+      "summary": "TimbreStealer is an information-stealing trojan that targets companies in Mexico through phishing emails carrying ZIP files hosted on DigitalOcean, with filenames referencing CFDI, Mexico's electronic invoicing system. The ZIP files contain legitimate EdgeUpdate or GoogleUpdater executables that side-load malicious DLLs, which are unusually large at 45 to 50 MB. The malware uses layered RC4 encryption, direct syscalls, and its own API resolver to hinder analysis. It checks the system UI language and time zone, executing its payload only when the environment matches Mexico and is not Russian-language. Once active, it harvests data from Chrome, Edge, Firefox, Thunderbird, Postbox, and cloud and user directories. Defenders should closely monitor suspicious ZIP downloads, unusual DLL sizes, unexpected updater behavior, and browser database access.",
+      "completeness": "High",
+      "threats": [
+        "Timbrestealer",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Mexican",
+        "Mexico"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Mozilla Firefox",
+        "Postbox",
+        "Firefox",
+        "Dropbox",
+        "Google Chrome",
+        "Google Chrome SxS",
+        "Microsoft Edge",
+        "PostboxApp",
+        "Mozilla Thunderbird"
+      ],
+      "algorithms": [
+        "rc4",
+        "zip"
+      ],
+      "functions": [
+        "GetModuleHandle"
+      ],
+      "links": [
+        "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/timbrestealer-malware-targets-mexico-companies-advanced-evasion"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Cyber Criminal Group TeamPCP",
+      "summary": "TeamPCP is a cyber criminal group that has conducted large-scale software supply chain compromises in 2026. The group injected malicious code into legitimate packages and developer tools such as Trivy, KICS, LiteLLM, and the Telnyx Python SDK, pushing trojanized updates into CI/CD pipelines, cloud infrastructure, and security workflows. Its malware, including CanisterWorm, SANDCLOCK, Mini Shai-Hulud, and Miasma, steals cloud access tokens, SSH keys, Kubernetes secrets, and other credentials. TeamPCP also conducts extortion, publishing victim names on a leak site and collaborating with other threat actors. Defenders should treat stolen data and credentials as a persistent risk, pin GitHub Actions to commit hashes, rotate secrets, and enforce phishing-resistant MFA.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Canisterworm",
+        "Sandclock",
+        "Miasma"
+      ],
+      "software": [
+        "Kubernetes",
+        "Trivy",
+        "LiteLLM"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260702.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Operation Turb00 — Part 3: Unmasking the SnappyClient RAT",
+      "summary": "SnappyClient is a commercial-grade remote access trojan delivered through a HijackLoader chain in the Operation Turb00 campaign, running alongside the Vidar stealer from the same orchestrator. It is loaded via DLL sideloading into signed legitimate binaries, with the payload unpacked from a resource bundle and injected into a signed Opera-related process via process hollowing. Its capabilities include VNC and hidden-desktop remote control, an FTP server, a SOCKS5 proxy, a remote shell, and theft of browser credentials, cookies, and cryptocurrency wallet data. Its C2 uses a custom ChaCha20-Poly1305 protocol over raw TCP ports 3333 and 3334 instead of HTTPS, avoiding web-inspection controls. The analysis shows the implant operating within minutes of execution with no human interaction. For defenders, an infostealer detection should not be treated as self-contained, since the same loader may have delivered a persistent RAT.",
+      "completeness": "High",
+      "threats": [
+        "Snappyclient",
+        "Hijackloader",
+        "Vidar_stealer",
+        "Radmin_tool",
+        "Hvnc_tool",
+        "Dllsearchorder_hijacking_technique",
+        "Procmon_tool",
+        "Process_hollowing_technique",
+        "Dead_drop_technique",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Opera",
+        "exe",
+        "Chromium",
+        "ideload",
+        "exe ← Sp",
+        "hrome IE",
+        "Chrome",
+        "Task Scheduler",
+        "ask Scheduler 1",
+        "Windows COM",
+        "have more..."
+      ],
+      "wallets": [
+        "coinomi",
+        "electrum",
+        "exodus_wallet",
+        "wassabi",
+        "brave_wallet",
+        "coinbase",
+        "metamask",
+        "tronlink"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "sha256",
+        "lzma",
+        "ripemd-160",
+        "poly1305",
+        "base58",
+        "sha1"
+      ],
+      "functions": [
+        "FUN_004112af",
+        "COM",
+        "CreateFile"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://mrtiepolo.medium.com/operation-turb00-part-3-unmasking-the-snappyclient-rat-f9336de9400a",
+        "https://github.com/tiepologian/signature-base/tree/main/rules/vidar\\_multi\\_stage"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-02",
+      "title": "Branded Gambling Campaigns: How Scammers Are Exploiting Trusted Brand Names to Drive Casino Traffic",
+      "summary": "Netcraft reports scam ad campaigns that impersonate well-known brands such as Tesco, Monzo, Amazon, and Barclays to promote \"[Brand] Slots\" online casino offers. Victims see paid social media ads on Facebook, Instagram, Threads, and TikTok, then land on fake app store pages. Instead of downloading a real app, they are prompted to install a Progressive Web App that loads an unrelated online casino through affiliate tracking links. The ads escalate from simple brand name use to forged official launch announcements and AI-generated promotional videos. Netcraft notes the affiliate payouts it could not verify and that the casino sites do not directly impersonate any brand, so takedowns rely on the brand-impersonating ads and landing pages.",
+      "completeness": "Low",
+      "geo": [
+        "Spanish",
+        "Australia",
+        "Canadian",
+        "Irish",
+        "German"
+      ],
+      "software": [
+        "Google Play",
+        "Instagram",
+        "TikTok"
+      ],
+      "links": [
+        "https://www.netcraft.com/blog/branded-gambling-campaigns-how-scammers-are-exploiting-trusted-brands",
+        "https://github.com/netcraft"
+      ]
+    }
+  }
+]

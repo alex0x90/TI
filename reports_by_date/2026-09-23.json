@@ -1,0 +1,624 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "MemTensor npm and PyPI Packages Compromised in Credential-Stealing Supply Chain Attack",
+      "summary": "The MemTensor MemOS project, an open source memory framework for LLMs and AI agents with about 11,500 GitHub stars, was compromised in a supply chain attack. Four malicious releases were published: three versions of the npm package @memtensor/memos-cloud-openclaw-plugin and one version of the PyPI package MemoryOS. Each was the latest version on its registry at the time of the report. The malicious packages drop cross-platform Go binaries that search developer home directories for secrets. The stolen data is reported to attacker-controlled servers. Developers who installed these packages should treat their credentials as exposed.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Sckit_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenClaw",
+        "Linux",
+        "macOS",
+        "Hugging Face",
+        "HashiCorp Vault",
+        "Slack",
+        "SendGrid"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "launchStageZero",
+        "configure_logging",
+        "get_logger",
+        "trigger"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/memtensor-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "sckit: A New Go Implant Framework for Supply Chain Worms",
+      "summary": "sckit is a Go implant framework, also called the \"supplychain.local worm,\" found in two MemTensor packages on September 23, 2026. It runs on Linux, macOS, and Windows and collects credentials from developer machines and CI jobs. The implant receives signed tasks from a command and control server and includes templates to install itself in npm packages, Python packages, and GitHub Actions workflows. The code and infrastructure do not match any known malware family, and the operator built a separate binary for each target. The analysts expect the operator to reuse the framework, and the remote modules the server sends remain unknown.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Sckit_tool",
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "Unix",
+        "Node.js",
+        "OpenClaw",
+        "redis",
+        "rabbitmq",
+        "Hugging Face",
+        "HashiCorp Vault",
+        "Slack",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "xchacha20",
+        "curve25519",
+        "xchacha20-poly1305"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://safedep.io/sckit-go-implant-framework"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "Operation Conflict Compass: Konni Targets Ukraine via Malicious LNK Lures",
+      "summary": "Konni, a DPRK-aligned group, ran Operation Conflict Compass, a campaign apparently aimed at Ukraine-focused individuals and organizations to gather intelligence on the trajectory of the Russian invasion. The actors sent spear-phishing emails with ZIP archives containing LNK files disguised as PDFs, using lures on food price growth, peace negotiations, and social researcher CVs. The LNK files run a VBScript that creates a scheduled task executing the VelvetCake PowerShell downloader every minute. VelvetCake is a lightweight task runner that fetches and runs server-side scripts, which can perform host enumeration, screen capture, and data exfiltration. The campaign also used trojanized Zoom installers, and the targets likely include think tanks, diplomatic entities, and NGOs. Attribution rests on targeting, shared Kimsuky-linked infrastructure, and operator time zone evidence.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Velvetcake",
+        "Flowerpower",
+        "Babyshark"
+      ],
+      "geo": [
+        "Russia",
+        "South korea",
+        "Korean",
+        "South korean",
+        "North korea",
+        "Russian",
+        "North korean",
+        "Ukraine",
+        "Ukrainian",
+        "Japan",
+        "Dprk"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 20,
+      "software": [
+        "outlook",
+        "Zoom"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "Get-Process",
+        "Get-ChildItem",
+        "Get-PSDrive"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://socradar.io/blog/operation-conflict-compass-konni-ukraine-lnk-lure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "Threat Intel \\| One Kit, Forty Companies: How a Malware-as-a-Service Platform Used GitHub as a Distribution Network for its Campaign",
+      "completeness": "High",
+      "threats": [
+        "Rapuncel",
+        "Cruciferra",
+        "Purosangue",
+        "Boryptgrab",
+        "Av-killer",
+        "Dll_sideloading_technique",
+        "Uac_bypass_technique",
+        "Byovd_technique",
+        "Process_hollowing_technique",
+        "Cncrypt_protect_tool",
+        "Reflectiveloader",
+        "Tunnesshclient",
+        "Heaconload",
+        "Dll_injection_technique",
+        "Process_injection_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 15,
+      "software": [
+        "LastPass",
+        "Discord",
+        "Steam",
+        "Telegram",
+        "NativeAOT",
+        "macOS",
+        "Windows registry",
+        "Google Chrome",
+        "Chrome",
+        "NVIDIA graphics",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20",
+        "zip"
+      ],
+      "languages": [
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer",
+        "https://github.com/BlackSnufkin/BYOVD/tree/main/CcProtect-Killer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "[Op Report\\] KongTuke ClickFix to SystemBC: HoK Intrusion",
+      "summary": "KongTuke ClickFix lure, delivered through a fake CAPTCHA, led to a Node.js RAT that resolves its C2 from an Ethereum smart contract, a technique called EtherHiding. Deception.Pro captured the full intrusion over 12 days in a honeynet posing as a small insurer, with TLS inspection exposing the C2 traffic. The operator escalated to credential theft via LSASS MiniDump and SAM dumping, lateral movement, and domain enumeration. Tunneling through Cloudflare and Chisel led to over 5 GB of data exfiltrated. The implant's C2 rotates on chain, so defenders should alert on Ethereum RPC traffic from business hosts and rely on behavioral detection rather than file hashes.",
+      "completeness": "High",
+      "threats": [
+        "Kongtuke",
+        "Clickfix_technique",
+        "Systembc",
+        "Etherhiding_technique",
+        "Passthehash_technique",
+        "Minidump_tool",
+        "Mimikatz_tool",
+        "Rottenpotato_tool",
+        "Impacket_tool",
+        "Crackmapexec_tool",
+        "Chisel_tool",
+        "Adaptixc2_tool",
+        "Mintsloader",
+        "Etherrat",
+        "Winos",
+        "Cloudflared_tool",
+        "Nltest_tool",
+        "Goldenpac_tool",
+        "Conti",
+        "Trickbot",
+        "Ryuk",
+        "Cobalt_strike_tool",
+        "Empire_loader",
+        "Zeppelin",
+        "Avaddon",
+        "Lolbin_technique",
+        "Bitsadmin_tool"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 4,
+      "software": [
+        "WordPress",
+        "Node.js",
+        "curl",
+        "Cloudflare",
+        "Active Directory",
+        "Embarcadero",
+        "Linux",
+        "ESXi",
+        "Kitty",
+        "trycloudflare",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.deception.pro/blog/kongtuke-systembc-sep-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "MemTensor npm and PyPI Packages Hit by a Go Worm",
+      "summary": "The attacker published malicious versions of the npm package @memtensor/memos-cloud-openclaw-plugin (0.1.21, 0.1.23, 0.1.25) and the PyPI package MemoryOS (2.0.34) on September 23, 2026. Both contain the same Go implant, sckit, which runs in the background whenever the package loads and collects credentials from the home directory. The implant can also copy itself into other repositories and packages reachable with the stolen credentials. The attacker obtained publish tokens by pushing commits that made MemTensor's GitHub Actions release jobs hand their npm or PyPI token to the attacker before publishing. Developers should remove affected versions, kill sckit processes, delete the state directories, and rotate every credential reachable from the home directory. Maintainers should avoid trusting scripts from unmerged commits in release jobs, and use protected tags, required reviewers, and trusted publishing.",
+      "completeness": "Medium",
+      "threats": [
+        "Sckit_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "MemTensor",
+        "OpenClaw",
+        "Linux",
+        "Node.js"
+      ],
+      "algorithms": [
+        "xchacha20-poly1305",
+        "ed25519",
+        "curve25519",
+        "base64",
+        "xchacha20"
+      ],
+      "functions": [
+        "collectStageZero",
+        "register",
+        "launchStageZero",
+        "HTTPS",
+        "configure_logging",
+        "trigger",
+        "readCredentialFile",
+        "findRepositories",
+        "deleteExecutable"
+      ],
+      "languages": [
+        "cpython",
+        "python"
+      ],
+      "links": [
+        "https://safedep.io/memtensor-sckit-worm-npm-pypi",
+        "https://github.com/MemTensor/MemOS",
+        "https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin/issues/173"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "CARBONATO: a botnet built around an AI agent",
+      "summary": "CARBONATO is a Docker botnet built around the open-source Hermes Agent framework, installed unchanged and given malicious instructions by overwriting its SOUL.md persona file. It spreads like a worm by compromising Docker daemons exposed on port 2375 without authentication, launching privileged containers to run commands on the host. Operators control infected hosts through a Telegram interface, with the agent prioritizing theft of AI API keys ahead of other credentials. The botnet was found through an unauthenticated Docker registry that leaked its toolchain and the operation's configuration. Defenders should close exposed Docker APIs, require authentication on registries, and rotate and monitor AI API keys.",
+      "completeness": "Low",
+      "threats": [
+        "Carbonato",
+        "Fsociety",
+        "Xmrig_miner",
+        "Gh0st_rat"
+      ],
+      "geo": [
+        "Costa rican",
+        "America",
+        "Costa rica",
+        "Spanish",
+        "Costa_rica"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Telegram",
+        "ocker AP",
+        "url -s",
+        "curl",
+        "lpine:la",
+        "alpine",
+        "ocker ex",
+        "Linux",
+        "systemd",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://www.threatdown.com/blog/carbonato/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "An ongoing “vehicle tax” themed phishing campaign targeting ACI",
+      "summary": "A new phishing campaign impersonates the Automobile Club d'Italia (ACI), using its name, logo and graphics to lure victims with a claimed unpaid vehicle tax (\"bollo auto\"). The fraudulent site, hosted on look-alike domains unconnected to ACI's official channels, displays a fake overdue-payment notice threatening fines, enforcement seizure and driving restrictions. Victims are first asked for their tax code and vehicle plate, then for contact details including name, email, phone number and full residential address. The final stage simulates a €15.87 penalty payment and requests full payment card details, including cardholder name, card number, expiry date and CVV. CERT-AGID requested takedown of the domains and notified the affected organization, and it shared indicators with accredited IoC channels. Defenders should note that ACI's official vehicle tax payment is available only through SPID or CIE authentication, so unsolicited requests for personal or banking data should be treated as fraud.",
+      "completeness": "Low",
+      "geo": [
+        "Italy"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/in-corso-un-phishing-a-tema-bollo-auto-ai-danni-di-aci/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "Meet AvisLoader: A Windows Loader Built to Outlast a Takedown",
+      "summary": "AvisLoader is a new Windows malware loader discovered by Varonis Threat Labs, built to keep its command-and-control channel beyond the reach of domain takedowns. It is delivered through a ClickFix lure, hosted on Cloudflare Workers and disguised as a DocuSign signing request, that tricks visitors into pasting and running an attacker-supplied command. The loader is a Tox client that communicates through the encrypted peer-to-peer Tox network, so it does not depend on a fixed domain or server address. Its recovered tools include shortcut-based persistence, a UAC bypass helper, a process-hiding DLL, and a Command Center for shell tasks and file delivery over Tox. For defenders, the takeaway is that a legitimate messaging protocol can carry operator commands and malware, so detection should cover the host behavior and network connections alongside the ClickFix command and shortcut changes.",
+      "completeness": "Medium",
+      "threats": [
+        "Avisloader",
+        "Clickfix_technique",
+        "Themida_tool",
+        "Vmprotect_tool",
+        "Uac_bypass_technique",
+        "Uacme_tool",
+        "Icmluautil_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 6,
+      "software": [
+        "Cloudflare",
+        "DocuSign",
+        "trycloudflare",
+        "macOS",
+        "Component Object Model",
+        "Twitter"
+      ],
+      "languages": [
+        "vbscript"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/meet-avisloader-a-windows-loader-built-to-outlast-a-takedown"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "Malicious Firefox Extension Poses as PDF Identity Verifier to Hijack Google Accounts",
+      "summary": "A malicious Firefox extension posing as a PDF identity verifier, pdf-para-texto@extensao.local, was published to the Firefox Add-ons store and targets Portuguese- and Spanish-speaking users. Its shipped code contains no hardcoded malicious logic, so it evades store review and static scanning. After installation it fetches a configuration and payload from attacker infrastructure, which arms a webRequest listener and enables injection of an account-takeover script. That script runs inside real accounts.google.com pages, capturing a Google oauth_token session cookie and forcing a password reset to an attacker-known value. Defenders should remove the extension, end Google sessions, reset passwords and passkeys, and block the associated gusercontent domain.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Firefox"
+      ],
+      "functions": [
+        "init",
+        "setTimeout",
+        "Set-Cookie"
+      ],
+      "links": [
+        "https://socket.dev/blog/firefox-google-account-takeover"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "ShinyHunters Claims FBI Breach via New Oracle PeopleSoft Zero-Day",
+      "summary": "ShinyHunters, tracked by Mandiant as UNC6240, claims it breached the FBI through an alleged new Oracle PeopleSoft zero-day and a pivot into AWS GovCloud, and says it holds data on nearly all FBI agents and applicants. The FBI has confirmed only that it is investigating activity affecting FBIjobs.gov, and the jobs portal went offline; the zero-day, cloud pivot and 2 to 3 TB volume remain unverified attacker claims. The reported entry point, a /PSEMHUB/ path, sits in the component exploited in June 2026 via CVE-2026-35273, so defenders should block external access to PSEMHUB and the listening connector regardless of patch status. The main strategic risk is counterintelligence: exposed home addresses and spouse details could enable surveillance, coercion and harassment of agents. The group says it wants the FBI to withdraw an advisory within one week and frames its goal as coercion rather than extortion.",
+      "completeness": "High",
+      "threats": [
+        "Meshcentral_tool",
+        "Clop",
+        "Password_spray_technique",
+        "Meshagent_tool"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 12,
+      "software": [
+        "Linux",
+        "WebLogic",
+        "GuardDuty",
+        "Claude",
+        "Opus 5",
+        "OpenAI"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/shiny-hunters-claims-fbi-breach-via-new-oracle-people-soft-zero-day"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "Sckit Supply Chain Worm Hits MemTensor npm & PyPi scopes",
+      "summary": "The MemTensor npm package @memtensor/memos-cloud-openclaw-plugin versions 0.1.21, 0.1.23, and 0.1.25 were published with a hidden launcher that starts a bundled executable during OpenClaw gateway startup and memory recall. The launcher passes the host process environment and the user's prompt text to the child process, which the report links to credential harvesting. The embedded configuration names the home directory as an inventory root, and the binary's strings match many cloud, source-control, and package-registry token formats. A parallel MemoryOS 2.0.34 PyPI package contains a similar launcher triggered by logging initialization during import, plus a conditional CI bridge that targets publishing credentials. Defenders should search for these package versions, revoke exposed secrets, and review developer and CI environments, since removing the package alone does not invalidate stolen credentials.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Sckit_tool",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "MemTensor",
+        "Linux",
+        "OpenClaw",
+        "Clawdbot",
+        "Moltbot",
+        "redis",
+        "rabbitmq",
+        "Hugging Face",
+        "HashiCorp Vault",
+        "Slack",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "ed25519",
+        "base64"
+      ],
+      "functions": [
+        "Relevant",
+        "launchStageZero",
+        "unref",
+        "collectStageZero",
+        "get_logger",
+        "configure_logging",
+        "_get_current_pid",
+        "trigger",
+        "load_dotenv",
+        "register",
+        "have more..."
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/sckit-supply-chain-worm-hits-memtensor-npm-pypi-scopes",
+        "https://github.com/step-security/harden-runner",
+        "https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin/issues/173"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "Inside a multi stage toll fraud operation targeting Poland",
+      "summary": "CERT Polska analysed a multi-stage Android toll fraud operation targeting Polish users, distributed through paid Meta advertisements falsely claiming a PDF application had expired and leading to Google Play listings. Investigators linked 17 Google Play applications and 852 advertisements to the campaign through shared code and infrastructure, with Messenger Pro as the technical baseline. The malware hid its purpose behind a messaging cover, using encrypted DEX stages, a country policy and remotely downloaded payloads. For Polish devices, the command and control server issued premium SMS and browser-based carrier billing jobs, with some automated steps controlled by remote JavaScript. Google and Meta removed reported apps and ads, but new packages appeared and the C2 infrastructure stayed active. Defenders should note that store listings and paid advertising do not establish application safety.",
+      "completeness": "Medium",
+      "threats": [
+        "Artemis",
+        "Joker"
+      ],
+      "geo": [
+        "Malta",
+        "Saudi arabia",
+        "Turkey",
+        "Indonesian",
+        "Jordan",
+        "French",
+        "Malaysia",
+        "Indonesia",
+        "France",
+        "Netherlands",
+        "United arab emirates",
+        "Arab emirates",
+        "Switzerland",
+        "Nederland",
+        "German",
+        "Nigeria",
+        "Polish",
+        "Austria",
+        "China",
+        "Poland",
+        "African",
+        "Thailand",
+        "Greece",
+        "Romania",
+        "Germany"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Play",
+        "android",
+        "Max Messenger",
+        "TikTok",
+        "chromium",
+        "Unix",
+        "Chrome",
+        "maxmessenger",
+        "pdfviewer"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "hmac",
+        "cbc",
+        "gzip",
+        "aes",
+        "md5",
+        "base64",
+        "aes-cbc"
+      ],
+      "functions": [
+        "getApplicationContext",
+        "getClassLoader",
+        "getDeclaredMethod",
+        "getPackageName",
+        "getSimOperator",
+        "getMethod",
+        "getInstance",
+        "getBytes",
+        "setTimeout",
+        "nextThings",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "java"
+      ],
+      "links": [
+        "https://cert.pl/en/posts/2026/09/tollfraud-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-23",
+      "title": "Novel supplychain.local Go worm appears",
+      "summary": "A threat actor published a novel self-propagating Go worm, tracked as supplychain.local, to the npm package @memtensor/memos-cloud-openclaw-plugin (versions 0.1.21 and later) and the PyPI package MemoryOS (versions 2.0.34 and later) on 23 September 2026. Both packages contain a JavaScript or Python loader that runs on any invocation of the package, but not at install time, and launches a platform-specific sckit binary with a base64-encoded configuration blob. The worm attempts to spread through GitHub Actions templates triggered on push to compromised repositories, and through direct npm and PyPI publishing using credentials stolen from infected workstations or CI environments. The malware also searches for numerous secret types, including npm, PyPI, GitHub, AWS, and Vault tokens. Defenders should check for these package versions and rescan their environments, as the report notes that Aikido flags the issue as critical malware.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Sckit_tool"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "Hugging Face",
+        "HashiCorp Vault",
+        "Slack",
+        "SendGrid",
+        "redis",
+        "rabbitmq"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/supplychain-local-memtensor-npm-pypi",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  }
+]

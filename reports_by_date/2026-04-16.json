@@ -1,0 +1,588 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "BlobPhish: The Phantom Phishing Campaign Hiding in Browser Memory",
+      "summary": "BlobPhish is a credential-phishing campaign active since October 2024 that targets Microsoft 365, banking services, and webmail portals. It generates fake login pages inside the victim's browser using Blob objects, so the phishing page exists only in memory and avoids conventional URL, proxy, and cache-based detection. Attackers abuse compromised WordPress sites and reuse exfiltration endpoints such as res.php, tele.php, and panel.php. Victims span multiple sectors, with about one-third located in the U.S., while lures mostly impersonate financial and cloud brands. Defenders are advised to use dynamic sandbox analysis, threat hunting, and continuously updated threat intelligence feeds, since static and perimeter defenses are insufficient.",
+      "completeness": "High",
+      "threats": [
+        "Blobphish",
+        "Bec_technique",
+        "Blob_url_obfuscation_technique",
+        "Credential_harvesting_technique",
+        "Mfa_bombing_technique"
+      ],
+      "geo": [
+        "American",
+        "United kingdom",
+        "Australia",
+        "Switzerland",
+        "Poland",
+        "Saudi arabia",
+        "India",
+        "Germany",
+        "Korea",
+        "Qatar",
+        "Jordan",
+        "Pakistan",
+        "Spain"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Android",
+        "WordPress"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/evasive-blob-phishing-detection/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "A fake Slack download is giving attackers a hidden desktop on your machine",
+      "summary": "A typosquatted Slack download site distributes a trojanized installer that installs a working copy of Slack while secretly running a malware loader in the background. The lure relies on a convincing fake domain and a click-triggered download, requiring only one click from a distracted user. The loader masquerades as a Microsoft Windows Component Update Service and uses encrypted payload delivery, dynamic API resolution, and process injection into explorer.exe. Its payload is a Hidden Virtual Network Computing (HVNC) client that lets attackers operate invisibly on the victim's desktop, often for financial fraud. The Squirrel-based install writes a Run key identical to a legitimate Slack installation, making the persistence entry hard to distinguish. Defenders should verify software only from official sources and treat unexpected downloads from unfamiliar domains as potential compromise.",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Sectop_rat",
+        "Hvnc_tool",
+        "Process_injection_technique"
+      ],
+      "software": [
+        "Slack",
+        "Chrome",
+        "Zoom",
+        "Electron",
+        "Discord",
+        "Microsoft Teams",
+        "NuGet",
+        "slack.slack",
+        "winhttp",
+        "Windows shell",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/04/a-fake-slack-download-is-giving-attackers-a-hidden-desktop-on-your-machine"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "W3LL Unmasked",
+      "summary": "W3LL was a business email compromise-focused phishing-as-a-service ecosystem built around the W3LL Panel kit, which bypassed MFA through AiTM capabilities and was sold via the W3LL Store marketplace. Over 500 cybercriminals used its tools to run BEC campaigns against organizations worldwide, including in manufacturing, IT, financial services, healthcare, and legal services. Group-IB's investigation, which began in 2022, traced the operation back to 2017, mapped its infrastructure, and identified 700+ weaponized email attachments tied to more than 500 victims. Group-IB shared its findings with law enforcement, and the threat actor's store later reemerged via a Telegram bot before being infiltrated again. Defenders are advised to adopt phishing-resistant FIDO authentication, restrict session cookie abuse, and monitor for BEC indicators such as forwarding rules.",
+      "completeness": "Medium",
+      "threats": [
+        "Bec_technique",
+        "W3ll_panel_tool",
+        "Aitm_technique",
+        "W3ll_sender_tool"
+      ],
+      "geo": [
+        "Asia-pacific"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/w3ll-phishing-ecosystem-takedown/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Void Stealer: The Infostealer Malware Quietly Targeting Organizations in 2026",
+      "summary": "Void Stealer is a Malware-as-a-Service infostealer that emerged in late 2025 and is sold via Telegram and underground forums on a monthly subscription, requiring no technical skill to deploy. It steals browser credentials and session cookies, cryptocurrency wallet data, system fingerprints, messaging sessions, and FTP credentials, and it includes an optional webcam capture feature. The malware evades detection through syscall-level EDR bypass, runtime API resolution, and a mutex check that causes it to exit in many sandboxes. It locates its command-and-control server through an operator-controlled Steam profile, allowing infrastructure to be rotated without changing the malware. SOCRadar observed up to six affiliate-run campaigns, and the report recommends behavioral endpoint monitoring alongside underground market intelligence.",
+      "completeness": "Low",
+      "threats": [
+        "Voidstealer",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "Chrome",
+        "Opera",
+        "Discord",
+        "Steam"
+      ],
+      "wallets": [
+        "atomicwallet",
+        "electrum",
+        "metamask",
+        "coinbase"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "links": [
+        "https://socradar.io/blog/void-stealer-infostealer-malware-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Beyond the breach: inside a cargo theft actor’s post-compromise playbook",
+      "summary": "Proofpoint observed a cargo theft actor for over a month inside a decoy environment operated by Deception.pro, providing extended visibility into post-compromise operations. The actor, which had previously targeted trucking and logistics firms via compromised load boards, delivered a malicious VBS payload that installed ScreenConnect and maintained persistence through multiple RMM tools, including Pulseway and SimpleHelp. A fourth ScreenConnect installation used a previously unknown third-party signing-as-a-service to re-sign binaries with a fraudulent code-signing certificate, helping evade revocations and trust-based controls. The actor conducted reconnaissance through at least 13 PowerShell scripts, searching browser data for banking, payment, fuel card, fleet, and load board platforms, and sent results to Telegram bots. Defenders in transportation and logistics should monitor for unauthorized remote management tools, suspicious PowerShell activity, and abnormal browser activity tied to financial platform access.",
+      "completeness": "High",
+      "threats": [
+        "Screenconnect_tool",
+        "Simplehelp_tool",
+        "Credential_harvesting_technique",
+        "Pulseway_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Pulseway",
+        "egram bots",
+        "Chrome",
+        "Firefox",
+        "elegram bo",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.proofpoint.com/us/blog/threat-insight/beyond-breach-inside-cargo-theft-actors-post-compromise-playbook"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Android Bankers: 4 Campaigns In A Row",
+      "summary": "Zimperium zLabs tracked four Android banking trojan campaigns: RecruitRat, SaferRat, Astrinox, and Massiv, which together target over 800 banking, cryptocurrency, and social media applications. The families lure victims through phishing sites, smishing, and social engineering, such as fake recruitment pages, fake streaming offers, and fake app store pages. They install via dropper apps that abuse the Session Installation API, then gain Accessibility Service access to auto-grant permissions and hide their presence. Their evasion includes ZIP-level tampering, encrypted payloads, reflection-based obfuscation, and environment checks that abort on rooted devices or when antivirus is present. Once active, they harvest credentials through overlays, keylogging, OTP interception, and live screen streaming via MediaProjection, with C2 communication over HTTPS or WebSockets. Zimperium notes its on-device behavioral detection and web protection can block these families.",
+      "completeness": "Medium",
+      "threats": [
+        "Recruitrat",
+        "Saferrat",
+        "Astrinox",
+        "Massiv",
+        "Smishing_technique",
+        "Mirax",
+        "Credential_harvesting_technique",
+        "Jsonpacker_tool"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 29,
+      "software": [
+        "Android",
+        "Google Play",
+        "APKTool",
+        "google chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "rc4",
+        "aes",
+        "exhibit"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://zimperium.com/blog/android-bankers-4-campaigns-in-a-row",
+        "https://github.com/Zimperium/IOC/tree/master/2026-04-Multiple-Bankers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "PowMix botnet targets Czech workforce",
+      "summary": "Cisco Talos reported an ongoing campaign, active since at least December 2025, that targets a broader workforce in the Czech Republic using a previously undocumented botnet called PowMix. The attackers send compliance-themed decoy documents impersonating the EDEKA brand and Czech Data Protection Act, aiming at HR, legal, and recruitment staff. Victims run a Windows shortcut inside a malicious ZIP file, which launches a PowerShell loader that bypasses AMSI and runs the PowMix payload in memory. PowMix provides remote access, reconnaissance, and code execution, and it uses randomized beacon intervals and REST-style C2 URL paths to evade network detection. Talos noted tactical overlaps with the earlier ZipLine campaign, including Heroku abuse for C2. The final payload and attacker intent were not observed.",
+      "completeness": "Medium",
+      "threats": [
+        "Powmix",
+        "Zipline",
+        "Mixshell",
+        "Amsi_bypass_technique"
+      ],
+      "geo": [
+        "Czech"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows security",
+        "Windows Defender",
+        "Windows Explorer",
+        "Windows scheduled task",
+        "Unix",
+        "Chrome",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "crc-32",
+        "xor",
+        "zip",
+        "deflate",
+        "gzip"
+      ],
+      "functions": [
+        "Win32ShowWindowAsync",
+        "Get-Random",
+        "REST",
+        "GetSystemWebProxy",
+        "Remove-Item",
+        "Set-Content"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/powmix-botnet-targets-czech-workforce/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/04/powmix-botnet-targets-czech-workforce.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Dissecting Sapphire Sleet's macOS intrusion from lure to compromise",
+      "summary": "North Korean actor Sapphire Sleet runs a macOS campaign that relies on social engineering rather than software vulnerabilities. Victims are lured via fake recruiter contacts into running a disguised Zoom SDK Update AppleScript in Script Editor, which chains curl-to-osascript downloads. The chain harvests user passwords through a fake system dialog, bypasses TCC to grant AppleEvents permissions, and establishes launch daemon persistence. Stolen browser data, cryptocurrency wallets, Telegram sessions, and keychain contents are then exfiltrated. A June 2026 variant uses a Microsoft Teams lure with new masquerading names and a user-level LaunchAgent. Defenders should restrict .scpt execution and piped curl chains, and monitor TCC.db changes and suspicious plist creation.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Mac-cur_tool",
+        "Nukesped_rat"
+      ],
+      "geo": [
+        "North korean"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "acOS se",
+        "OS prot",
+        "ekeeper",
+        "qua",
+        "acOS TC",
+        "Zoom",
+        "curl",
+        "Telegram",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "ledger_wallet"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/04/16/dissecting-sapphire-sleets-macos-intrusion-from-lure-to-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Analyzing the RondoDox Botnet: A DDoS and Mining Threat",
+      "summary": "RondoDox is a botnet whose operators continuously refined their malware between May 2025 and January 2026, according to Bitsight's analysis of hundreds of samples. An initial shell script, delivered through command injection, kills rival malware, finds a writable directory, and fetches the correct architecture binary. The main binary adds anti-analysis techniques, persistence through init scripts and cron, and an XMRig miner, and it connects to one of two C2 servers. It supports DoS attacks at the internet, transport and application layers, with a notable focus on online game protocols. Its obfuscation evolved from a single-byte XOR to custom string encryption by late 2025.",
+      "completeness": "High",
+      "threats": [
+        "Rondodox",
+        "React2shell_vuln",
+        "Xmrig_miner",
+        "Nanomites_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter",
+        "sudo",
+        "busybox",
+        "curl",
+        "apparmor",
+        "crontab",
+        "roblox",
+        "wireguard",
+        "fortnite",
+        "fivem",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "prng",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.bitsight.com/blog/rondodox-botnet-malware-analysis",
+        "https://github.com/xmrig/xmrig-proxy",
+        "https://github.com/danielplohmann/mcrit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Payouts King Takes Aim at the Ransomware Throne",
+      "summary": "Zscaler ThreatLabz attributes some recent attacks with high confidence to Payouts King, a relatively unknown ransomware group that emerged in April 2025 and is believed to be run by former BlackBasta affiliates. The group uses spam bombing combined with vishing, impersonating IT staff over Microsoft Teams and directing victims to Quick Assist to gain initial access. Payouts King steals large amounts of data and selectively encrypts files, using 4,096-bit RSA and 256-bit AES in CTR mode. The malware evades detection through string and API hashing, a custom CRC algorithm, and direct system calls to terminate antivirus and EDR processes. It also deletes shadow copies and clears event logs to hinder recovery and forensics. Defenders should prioritize user training against social engineering, enforce MFA, and monitor anomalous use of remote access tools like Quick Assist.",
+      "completeness": "Medium",
+      "threats": [
+        "Conti",
+        "Blackbasta",
+        "Cactus_ransomware",
+        "Microsoft_quick_assist_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "OpenSSL",
+        "pccntmon"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256",
+        "xor",
+        "aes",
+        "chacha20",
+        "fowlernollv"
+      ],
+      "functions": [
+        "Teams",
+        "Windows"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/payouts-king-takes-aim-ransomware-throne",
+        "https://github.com/ThreatLabz/ransomware\\_notes/blob/main/payoutsking/readme\\_locker.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Trojan smartphone: attackers deliver LunaSpy VPO along with Android device",
+      "summary": "LunaSpy is an Android trojan that F6's Fraud Protection team found in February 2026 in targeted attacks on Russian banking customers. Attackers delivered the malware preinstalled on a smartphone to victims after an initial social engineering phase. The trojan disguises itself as an antivirus app called System Framework and uses Accessibility services and device administrator rights to resist uninstallation. It captures camera feeds, microphone audio, screen content, and sensitive data such as contacts, SMS, call logs, location, and passwords entered in forms. F6 advises banks to detect apps with Accessibility access and to treat preinstalled devices from unknown sources with caution.",
+      "completeness": "Low",
+      "threats": [
+        "Lunaspy"
+      ],
+      "geo": [
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Outlook",
+        "RuStore",
+        "Google Play",
+        "Telegram",
+        "VKontakte",
+        "Viber",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1",
+        "aes"
+      ],
+      "functions": [
+        "GetSMS"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/lunaspy-android-research/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Inside ZionSiphon: Darktrace’s Analysis of OT Malware Targeting Israeli Water Systems",
+      "summary": "ZionSiphon is a malware sample analyzed by Darktrace that combines privilege escalation, persistence, and removable-media propagation with logic aimed at water treatment and desalination environments. The code contains hardcoded Israel-focused IP ranges, Israel water-infrastructure target names, and politically charged strings, suggesting intent to target Israel. It scans the local subnet for Modbus, DNP3, and S7comm services and attempts Modbus register writes that could alter chlorine dosing. Darktrace found the country-validation logic is broken, so the sample always determines the host is not a valid target, and the DNP3 and S7comm components are incomplete. Darktrace concludes this is likely a development or defanged build, but it reflects growing experimentation with OT-focused malware against critical infrastructure.",
+      "completeness": "Low",
+      "threats": [
+        "Zionsiphon"
+      ],
+      "geo": [
+        "Israel",
+        "Palestine",
+        "Israeli",
+        "Iran",
+        "Yemen"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "ZionSiphon",
+        "IsDamDesalinationPlant",
+        "RunAsAdmin",
+        "IsElevated",
+        "s1",
+        "IsTargetCountry",
+        "SelfDestruct",
+        "IncreaseChlorineLevel",
+        "UZJctUZJctUZJct",
+        "GetCommand",
+        "have more..."
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/inside-zionsiphon-darktraces-analysis-of-ot-malware-targeting-israeli-water-systems"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "ClickFix Phishing Campaign Masquerading as a Claude Installer",
+      "summary": "Rapid7 observed a small ClickFix phishing campaign across customers in the EU and US that masqueraded as an installer for the Claude AI tool. The attack began when a user ran a malicious mshta command through the Windows run utility, which Rapid7's detection rule flagged via the RunMRU registry key. The supposed MSIX bundle was actually a ZIP archive containing an embedded HTA file that launched a chain of obfuscated PowerShell stages. These stages bypassed AMSI and ended in process injection using shellcode. Rapid7 recommends monitoring the RunMRU registry key, reviewing browsing history for the lure, and resetting credentials on infected systems, since an information stealer is often the final payload.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Process_injection_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 5,
+      "software": [
+        "Claude",
+        "Microsoft store",
+        "WorkMail"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "Windows"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/ve-clickfix-phishing-campaign-fake-claude-installer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "Joomla SEO Spam Injector: Obfuscated PHP Backdoor Hijacking Site Visitors",
+      "summary": "Sucuri found a Joomla site showing unrelated spam product links, traced to heavily obfuscated PHP code injected at the top of index.php. The malware acts as a remote loader: it sends server environment data to attacker-controlled command-and-control servers and uses the response to redirect visitors or inject spam content. Its strings are split into two-character chunks to evade signature-based scanners, and it uses a three-mode cloaking design that redirects real users and serves fake sitemaps or HTML pages to search crawlers. Because the behavior can be changed remotely at any time, infections like this can persist unnoticed for long periods. Defenders should keep Joomla and extensions patched, use a WAF to block outbound C2 traffic, and audit index.php and other core files.",
+      "completeness": "Low",
+      "threats": [
+        "Cloaking_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Joomla"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "wffn",
+        "mpjy",
+        "joog",
+        "fotr"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://blog.sucuri.net/2026/04/joomla-seo-spam-injector-obfuscated-php-backdoor-hijacking-site-visitors.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-16",
+      "title": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+      "summary": "Palo Alto Networks Unit 42 observed automated scans attempting to exploit CVE-2023-33538, a command injection flaw in end-of-life TP-Link Wi-Fi routers, after CISA added it to the KEV catalog in June 2025. The in-the-wild payloads delivered an ARM Mirai-like botnet binary, similar to the Condi IoT botnet. Emulation of the TL-WR940N firmware confirmed the ssid1 parameter is injectable, but the observed attacks were flawed: they targeted the wrong parameter, were unauthenticated, and relied on wget, which the firmware lacks. Exploitation requires authentication, and default credentials such as admin:admin make the flaw practical. TP-Link has no patches for these devices and recommends replacing them and avoiding default credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Mirai",
+        "Condi"
+      ],
+      "software": [
+        "BusyBox",
+        "Linux",
+        "curl",
+        "Burp Suite"
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "update_bins",
+        "httpd_start",
+        "HTTP_Handler",
+        "httpGetEnv",
+        "wlanNetworkSave",
+        "parseWlanParams",
+        "strncpy",
+        "wlanBasicDynSet",
+        "memcmp",
+        "wirelessConfigUpdate",
+        "have more..."
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/exploitation-of-cve-2023-33538/",
+        "https://web.archive.org/web/20230609111043/https://github.com/a101e-IoTvul/iotvul/blob/main/tp-link/3/TL-WR940N\\_TL-WR841N\\_userRpm\\_WlanNetworkRpm\\_Command\\_Injection.md",
+        "https://github.com/attify/firmware-analysis-toolkit"
+      ]
+    }
+  }
+]

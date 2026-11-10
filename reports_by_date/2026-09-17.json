@@ -1,0 +1,818 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "What’s Behind the Curtain? AWS Bedrock AgentCore Runtime Tear Down – Part II",
+      "summary": "Researchers analyzed the AWS Bedrock AgentCore Runtime microVM and found that its internal Logger binary could be redirected via a technique called MMDS Hijack, which sent platform logs to a researcher-controlled S3 bucket. They then intercepted the platform proxy, built on Pingora, using a graceful SIGQUIT upgrade to capture live invocation traffic. The researchers showed that a minimal JWT containing only the exp and gid claims, signed with a key read from MMDS, was accepted by the proxy, which could let an attacker invoke container sessions while bypassing the Bedrock API gateway and CloudTrail logging. AWS has since enforced mTLS on the platform proxy, closing this path. The research was presented at DEF CON Cloud Village by Dan Gansel of Upwind Security.",
+      "completeness": "Low",
+      "threats": [
+        "Mitm_technique",
+        "Desync_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WS Bedrock Ag",
+        "gentCore Ru",
+        "AgentCore"
+      ],
+      "algorithms": [
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.upwind.io/feed/whats-behind-the-curtain-aws-bedrock-agentcore-runtime-tear-down-part-ii"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "GhostCode: Dissecting a Novel Device Code Phishing Kit",
+      "summary": "eSentire's Threat Response Unit identified GhostCode, a device code phishing kit used in an August 2026 campaign that lured victims through web contact forms by impersonating a procurement officer and sending a password-gated HTML file under an NDA pretext. The kit abuses the OAuth 2.0 device authorization grant flow to obtain authentication tokens after the victim completes sign-in and MFA on Microsoft's legitimate page. Attackers used evasion layers including junk padding, injected comments, and a PBKDF2-derived AES-GCM key to hide the redirect, plus Turnstile and user-agent filtering. Within 78 seconds of compromise, they registered three devices and obtained a Primary Refresh Token. Defenders should restrict device code authentication through Conditional Access and monitor Device Registration Service activity for bursts of registrations.",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Eviltokens_tool",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Germany",
+        "United kingdom",
+        "England",
+        "Ireland",
+        "London"
+      ],
+      "software": [
+        "Salesforce",
+        "WeTransfer",
+        "Cloudflare Turnstile",
+        "curl",
+        "selenium",
+        "phantomjs",
+        "Outlook",
+        "Microsoft Outlook",
+        "Azure AD",
+        "Active Directory",
+        "have more..."
+      ],
+      "algorithms": [
+        "gzip",
+        "aes-gcm",
+        "deflate",
+        "aes",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "Service"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/ghostcode-dissecting-a-novel-device-code-phishing-kit",
+        "https://github.com/eSentire/iocs/blob/main/GhostCode/GhostCode-iocs-09-09-2026.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "The extension you never installed: KREMLIN forges Chrome's own integrity checks to steal banking sessions",
+      "summary": "REF9334 is a Brazilian banking malware operation that Elastic Security Labs has tracked since May 2025, with its toolkit named KREMLIN. The operators use JavaScript loaders, custom C++ installers, and a malicious Chrome and Edge extension that is registered by forging Chromium's Secure Preferences integrity checks. The extension steals cookies, storage, and credentials, captures keystrokes, and intercepts requests, while the infrastructure resolves C2 and payload locations through Ethereum smart contracts. Lures impersonate Brazilian banks and payment services, and victims are primarily in Brazil. Threat Command registered the network canary domain, which stopped over 1,500 infected systems from progressing past initial access, 98.75% of them in Brazil.",
+      "completeness": "High",
+      "threats": [
+        "Dead_drop_technique",
+        "Process_injection_technique",
+        "Runpe_tool",
+        "Api_obfuscation_technique",
+        "Deadlock",
+        "Remcos_rat",
+        "Pulsar_rat",
+        "Donut",
+        "Chromeballrat",
+        "Dll_sideloading_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Finland",
+        "Brazil",
+        "Canada",
+        "Brasil",
+        "Portuguese",
+        "United states",
+        "Switzerland",
+        "Germany",
+        "Russia",
+        "Brazilian",
+        "Netherlands"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "Node.js",
+        "VirtualBox",
+        "vmmemctl",
+        "VBoxGuest",
+        "Google Chrome",
+        "flask",
+        "js) → Run",
+        "ode.js →",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "hmac",
+        "sha256",
+        "zip",
+        "md5",
+        "rc4",
+        "base64"
+      ],
+      "functions": [
+        "GetSyscallNumber",
+        "SetName",
+        "setConfig",
+        "getConfig"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/threat-command/malicious-browser-extension-kremlin-banking-malware",
+        "https://github.com/ElliotKillick/LdrLockLiberator",
+        "https://github.com/elastic/labs-releases/tree/main/indicators/kremlin",
+        "https://github.com/evilashz/PigSyscall"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "Beware the SparroWock: The backdoor that bites, the commands that catch",
+      "summary": "FamousSparrow, a China-aligned cyberespionage group, has replaced its SparrowDoor backdoor with SparroWocky, a modular C++ backdoor, and has been deploying it since at least August 2025. Since mid-2025 the group has focused on Latin America, with about 90% of its targets in the region, primarily governmental entities in countries such as Argentina, Ecuador, Guatemala, and Panama. ESET suggests this focus may reflect China's response to renewed US interest in the region, though it notes the motive is not confirmed. SparroWocky is deployed via a trident loader using DLL side-loading and reflectively loads its payload in memory without writing it to disk. The backdoor includes anti-analysis techniques such as call stack spoofing, thread start address concealment, and host process camouflage, and it can load Beacon Object Files. It supports file exfiltration, screenshots, TCP proxying, and command execution, and it communicates over TLS with RC4-encrypted data.",
+      "completeness": "High",
+      "threats": [
+        "Sparrowocky",
+        "Sparrowdoor",
+        "Proxylogon_exploit",
+        "Dll_sideloading_technique",
+        "Coff_loader",
+        "Silentmoonwalk_technique",
+        "Cobalt_strike_tool",
+        "Brc4_tool",
+        "Metasploit_tool",
+        "Sliver_c2_tool",
+        "Process_camouflage_technique"
+      ],
+      "geo": [
+        "Peru",
+        "Guatemala",
+        "Honduras",
+        "Panama",
+        "China",
+        "Latin america",
+        "Puerto rico",
+        "Venezuela",
+        "Ecuador",
+        "Argentina"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 34,
+      "software": [
+        "MinHook",
+        "Windows service"
+      ],
+      "algorithms": [
+        "md5",
+        "rc4",
+        "sha1",
+        "chacha20-poly1305"
+      ],
+      "functions": [
+        "CreateProcessAsUser"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/beware-sparrowock-backdoor-bites-commands-catch/",
+        "https://github.com/eset/malware-ioc/tree/master/famoussparrow/extract\\_sparrowocky.py",
+        "https://github.com/Mbed-TLS/mbedtls",
+        "https://github.com/Mbed-TLS/mbedtls/blob/mbedtls-3.6.7/library/poly1305.c#L406"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "SilkParasite Infrastructure: SpiceRAT Servers Tied to Energy and Government Targets Across Central Asia",
+      "summary": "Hunt.io tracked a cluster of SpiceRAT command and control servers active from late 2025 through August 2026, hosted mainly on a small set of European providers. The infrastructure uses a TLS certificate impersonating Uzbekistan's state railway authority, issued by a certificate authority funded by a Chinese state research institute. Registration-level links connect this cluster to SpiceRAT, NodeEdgeRAT, and NomadRAT, three malware families documented in Bitdefender's SilkParasite report. A cloned RTX Corporation homepage appears on 13 servers, and the operators impersonate Central Asian government and energy entities such as Galkynysh, Türkmengaz, and Tojiktelecom. Passive DNS suggests the activity dates to at least mid-2022.",
+      "completeness": "Medium",
+      "threats": [
+        "Spicerat",
+        "Nodeedgerat",
+        "Nomadrat",
+        "Bloodalchemy",
+        "Typosquatting_technique",
+        "Smac"
+      ],
+      "geo": [
+        "Uzbekistan",
+        "Kyrgyzstan",
+        "China",
+        "Estonia",
+        "Tajikistan",
+        "Asia",
+        "Chinese",
+        "Turkmenistan",
+        "Bulgaria",
+        "Asian"
+      ],
+      "software": [
+        "nginx"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://hunt.io/blog/silkparasite-spicerat-central-asia-infrastructure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "PhantomRaven: An LLM-Generated Information Stealer Developed for Bug Bounty Hunting",
+      "summary": "PhantomRaven is an information stealer that CrowdStrike assesses was almost certainly generated by an LLM, with the author's technical sophistication likely low. The malware is distributed through typosquatted npm packages that appear harmless but install a remote dependency fetched over HTTP, which carries a preinstall script that runs during installation. It collects system details, IP addresses, environment variables, and CI/CD variables from GitHub Actions, GitLab CI, Jenkins, and CircleCI, likely to harvest credentials, and exfiltrates them over HTTP GET and POST requests. A threat actor linked to PhantomRaven has also been tied to a Python and PyPI variant and claims to have used the malware as leverage for bug bounty rewards. Defenders should consider a private npm registry, run installs with --ignore-scripts by default, and update npm to restrict preinstall script execution.",
+      "completeness": "Medium",
+      "threats": [
+        "Phantomraven",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "Jenkins",
+        "CIRCLECI"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "detectUserEmail"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/phantomraven-llm-generated-information-stealer-for-bug-bounty-hunting/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "Brevo delivered ClickFix through its own infrastructure",
+      "summary": "Brevo's own infrastructure served malicious JavaScript through its tracker scripts and hosted forms on September 14, 2026, placing fake Cloudflare verification checks on customer sites across 51 page domains. The fake check copied a PowerShell-style command to the clipboard and instructed visitors to paste it into the Windows Run dialog. The loader code matches KongTuke, a traffic distribution service whose visitors are profiled before receiving a lure. Some scripts also attempted to plant a WordPress plugin in logged-in administrators' sessions, though the routine was broken. The pasted command led to download servers and then to MintsLoader infrastructure tied to a 97-domain .top group. Defenders should check Brevo-served responses against clean byte sizes and hashes, and enforce default-deny egress to block newly registered destinations.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Kongtuke",
+        "Junk_code_technique",
+        "Copyfail_vuln",
+        "Mintsloader"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Brevo",
+        "Chrome",
+        "WordPress",
+        "Curl",
+        "Firefox"
+      ],
+      "algorithms": [
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "_guik"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://adamnet.works/blog/brevo-delivers-kongtuke-clickfix-to-customer-sites/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "Silent Push Exposes North Korean IT Worker Recruiting Facilitators Through Discord Servers",
+      "summary": "Silent Push investigated a fake job recruitment scam advertised on a Discord server, which it attributed with high confidence to a North Korean IT worker operation. The operator sought U.S., EU, and LATAM proxies to serve as the public face for interviews and to receive employer salary payments, keeping 35% and forwarding 65% to the operative. The scheme relies on live coaching, remote desktop control such as AnyDesk or TeamViewer, and AI-generated responses to pass technical assessments. Defenders should verify applicant physical locations during interviews, since hiring through proxies risks insider threats, IP theft, extortion, and OFAC sanctions violations.",
+      "completeness": "Low",
+      "threats": [
+        "Anydesk_tool",
+        "Teamviewer_tool"
+      ],
+      "geo": [
+        "Argentina",
+        "Russia",
+        "Chile",
+        "Brazil",
+        "Colombia",
+        "Asian",
+        "Latam",
+        "North korea",
+        "Mexico",
+        "Latin american",
+        "North korean",
+        "Iran"
+      ],
+      "software": [
+        "Discord",
+        "Telegram",
+        "Astrill VPN",
+        "Chrome",
+        "ChatGPT"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/nk-it-worker/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "MacOS ClickFix AMOS Campaign",
+      "summary": "A fake \"Bot Protection\" reCAPTCHA overlay, injected into compromised websites (mostly small and mid-sized WordPress sites), tricks visitors into pasting a command into Terminal, which installs the Atomic macOS Stealer (AMOS). The ClickFix lure routes around browser and antivirus download protections, and the loader hides from automated scanners and bots. AMOS targets cryptocurrency wallets, saved passwords, browser sessions, Keychain contents, and SSH and GPG keys. Over seven weeks, researchers identified more than 1,650 infected sites, with infection rates reaching 39% in the latest sweep. Hostnames rotate constantly, so defenders should detect the injected script's structure, such as the /t.js?site= loader pattern, rather than relying on domain blocklists. No legitimate website verification will ask a user to open Terminal and paste a command.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Amos_stealer",
+        "Discord-c2",
+        "Loaderbot"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 13,
+      "software": [
+        "MacOS",
+        "WordPress",
+        "WhatsApp",
+        "Sogou",
+        "ChatGPT",
+        "Anthropic",
+        "curl",
+        "Gatekeeper",
+        "Chrome",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "metamask",
+        "keplr",
+        "rabby"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/macos-clickfix-amos-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "Atomic macOS (AMOS) Stealer Activity",
+      "summary": "AMOS (Atomic macOS) stealer is an information-stealing malware targeting macOS systems, advertised on Telegram since April 2024. It is distributed through ClickFix-style campaigns, malicious ads, and fake cracked-software sites that tell users to paste commands into Terminal. In Unit 42's lab infection, a copied command downloaded staged scripts that installed AMOS binaries, prompted for the user's password, and requested Terminal access to Finder, Notes, Desktop, and Documents. The malware harvested browser data, cryptocurrency wallet data, messenger data, credentials, and developer and cloud configuration files, then exfiltrated them over HTTP POST to command-and-control servers. Infrastructure, filenames, and hashes change frequently between infections, so Unit 42 describes the malware as actively evolving and advises defenders to track its patterns over time.",
+      "completeness": "Medium",
+      "threats": [
+        "Amos_stealer",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "macOS",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip",
+        "base64"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/b97ba6bd934e806421224e2bacd512ef70725145/2026-06-20-ClickFix-campaign-delivers-macOS-infostealer-via-DMG.txt#L22"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "WeaselBiscuit Strips BeaverTail and OtterCookie Down to Essentials",
+      "summary": "WeaselBiscuit is a lean JavaScript infostealer distributed through 11 malicious npm packages, including process-tailwind, which the researchers flagged as high-confidence malicious. It is a stripped-down relative of BeaverTail and OtterCookie that runs as a detached Node process and pulls its payload from an Npoint dead-drop URL, executing it in memory. The malware steals Chrome extension storage across Windows, macOS, and Linux, and can capture clipboard contents and Windows keystrokes when the operator enables those features. It uses a simple polling HTTP control plane and omits wallet-draining, password decryption, and remote shell capabilities found in its relatives. The researchers tentatively link it to DPRK, but describe this as a working hypothesis rather than a confirmed attribution.",
+      "completeness": "Medium",
+      "threats": [
+        "Weaselbiscuit",
+        "Beavertail",
+        "Ottercookie",
+        "Invisibleferret",
+        "Dead_drop_technique",
+        "Polinrider",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Chrome",
+        "macOS",
+        "Linux"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "initialize",
+        "Get-Clipboard"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/introducing-weaselbiscuit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "Noodle RAT: A Recipe for Cross Platform Espionage",
+      "summary": "Noodle RAT, also called ANGRYREBEL, is a modular remote access trojan with versions for Windows and Linux, used by Chinese-speaking threat actors since at least mid-2016. It was previously misclassified as a Gh0st RAT or Rekoobe variant but is now recognized as a distinct backdoor family. The Windows variant runs in memory and is loaded through shellcode loaders, while the Linux variant provides reverse shell, file management, and SOCKS tunneling, often installed after exploiting exposed servers. Both versions use encryption for C2 traffic, with Windows relying on RC4 and XOR and Linux on HMAC-SHA1 and AES-128-CBC. Groups including Iron Tiger, Calypso APT, Rocke, and Cloud Snooper have deployed it against entities in the Asia-Pacific region, including Thailand, India, Japan, Malaysia, and Taiwan. The report notes its builder control panel suggests an actively maintained, possibly commercial toolkit.",
+      "completeness": "Low",
+      "threats": [
+        "Nood_rat",
+        "Gh0st_rat",
+        "Rekoobe_rootkit",
+        "Multidrop",
+        "Microload",
+        "Tinyshell"
+      ],
+      "geo": [
+        "Thailand",
+        "Asia-pacific",
+        "Taiwan",
+        "Japan",
+        "Malaysia",
+        "India"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 15,
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "exhibit",
+        "hmac-sha1",
+        "aes-128-cbc",
+        "rc4",
+        "xor",
+        "sha1",
+        "sha256"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/noodle-rat-a-recipe-for-cross-platform-espionage/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "HEAVYGRAM: A Telegram-based Surveillance Backdoor Linked to Handala Hack",
+      "summary": "HEAVYGRAM is a Windows backdoor linked with moderate confidence to Handala Hack, a persona assessed to be Void Manticore, which operates on behalf of Iran's Ministry of Intelligence and Security (MOIS). The malware has been used since fall 2023 against Iranian dissidents, journalists, and individuals whose views oppose the Iranian government. Victims are contacted via messaging apps and receive a first-stage file disguised as a legitimate program, such as Telegram, KeePass, or Pictory. The implant supports command execution, screen capture, data exfiltration, persistence, and additional payload execution, using Telegram bots and groups for command-and-control. Group-IB's findings recommend monitoring for bthudtask.exe side-loading, restricting execution from user-writable directories, and reviewing or blocking unsanctioned Telegram Bot API traffic.",
+      "completeness": "High",
+      "threats": [
+        "Heavygram",
+        "Crudeexclude",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Iran",
+        "Germany",
+        "London",
+        "Israel",
+        "Palestinian",
+        "Iranian",
+        "United states",
+        "Albania",
+        "Israeli",
+        "United kingdom",
+        "Bahrain"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Windows remote desktop",
+        "KeePass",
+        "Windows registry",
+        "PyInstaller"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "exhibit"
+      ],
+      "functions": [
+        "Get-BotUpdates"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "vbscript",
+        "delphi"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/heavygram-handala-hack-telegram-c2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "TrustSink: How a Rogue External MFA Provider Steals Passwords",
+      "summary": "Varonis Threat Labs describes TrustSink, a credential-phishing technique that abuses a rogue External Authentication Method (EAM) provider registered in Microsoft Entra. The attacker, who must already hold a Global Administrator or Authentication Policy Administrator account, places a convincing copy of the Microsoft password prompt inside the legitimate MFA flow. The fake page captures the user's password in plaintext, then the provider returns a validly signed token so sign-in completes without error. Resetting the captured password does not remove the rogue provider, which harvests the new password at the next sign-in. Defenders should monitor Authentication Methods Policy changes, unfamiliar application registrations, and sign-in logs showing unknown issuers, and should remove the rogue provider before resetting credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Trustsink_technique",
+        "Ngrok_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Entra",
+        "FastAPI",
+        "Windows Hello",
+        "Twitter"
+      ],
+      "functions": [
+        "Graph"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/trustsink"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "The Odyssey and trojans again: MovieReaper attacks users in multiple countries via compromised torrents",
+      "summary": "MovieReaper is a previously unknown modular, multi-stage crimeware framework distributed through a compromised public torrent file repository that trackers relied on, so users of multiple trackers received trojanized torrents disguised as popular movies. The malware is delivered by a loader that avoids sandboxes and runs its shellcode in memory, and it uses Solana blockchain storage to hold the address of its second-stage C2 server. The second stage performs UAC bypass and persistence, and the final module gives the operator 21 filesystem commands. Several hundred victims were identified, including individuals and organizations in Russia, Türkiye, Japan, Kenya, Colombia, and several European countries. For defenders, the report notes that the first-stage domain and IP serve the shellcode and are the clearest point for disruption, while the blockchain-based C2 is more resistant to takedown.",
+      "completeness": "High",
+      "threats": [
+        "Moviereaper",
+        "Trojan.win64.agent.gen",
+        "Uac_bypass_technique"
+      ],
+      "geo": [
+        "Colombia",
+        "Spain",
+        "Uganda",
+        "Belgium",
+        "Nepal",
+        "Russia",
+        "Africa",
+        "Asia",
+        "Finland",
+        "Netherlands",
+        "Germany",
+        "Kenya",
+        "Ghana",
+        "Japan",
+        "Tanzania"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "base64"
+      ],
+      "links": [
+        "https://securelist.com/moviereaper-malware-torrent-odyssey-solana/121344/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "EtherHiding Exposed: Inside a Blockchain-powered Malware Campaign Hiding in Plain Sight",
+      "completeness": "High",
+      "threats": [
+        "Etherhiding_technique",
+        "Fakecaptcha_tool",
+        "Clickfix_technique",
+        "Bec_technique",
+        "Watering_hole_technique"
+      ],
+      "geo": [
+        "North korea",
+        "Iran",
+        "North korean"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 28,
+      "software": [
+        "WordPress",
+        "Windows Scheduled Task",
+        "OpenSSH",
+        "Chrome",
+        "Google Chrome"
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "RPC"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/etherhiding-exposed-deep-dive/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "Your Zimbra server is under threat",
+      "summary": "Ransomware groups are exploiting CVE-2026-73570, a pre-authentication command injection flaw in the SNMP component of Zimbra Collaboration Suite versions below 10.1.20, to run commands as the zimbra user via crafted SMTP requests. Attackers drop a version file as an exploitation marker, then deploy JSP web shells, the Gsocket tool, and the TargetZimbra Go-based ransomware, which encrypts files under /opt/zimbra/ with ChaCha20 and appends .elock. Defenders should check maillog for \"changed from stopped to\" entries with injected shell commands, review recently modified JSP files and web access logs for 200 responses to unusual JSP paths, and scan the server for malware. The recommended mitigation is to update Zimbra, or, if that is not immediately possible, disable SNMP notifications and remove the zimbra-snmp package. Absence of these indicators does not rule out compromise, since the flaw could also be used by cryptominers or APT groups.",
+      "completeness": "Low",
+      "threats": [
+        "Targetzimbra",
+        "Gsocket_tool",
+        "Cyberstrikeai_tool"
+      ],
+      "software": [
+        "Zimbra",
+        "Zimbra Collaboration Suite",
+        "Linux",
+        "Nginx",
+        "imbra so"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1082654/",
+        "https://github.com/Ed1s0nZ/CyberStrikeAI"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "PolinRider Spreads Through Compromised GitHub Accounts and Packagist",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider",
+        "Dead_drop_technique",
+        "Etherhiding_technique",
+        "Nullreceiver_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Node.js"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://socket.dev/blog/polinrider-github-packagist",
+        "https://github.com/lahirulhr"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "T-Mobile rewards points expiry texts are a phishing scam",
+      "summary": "A phishing campaign since early May 2026 uses fake T-Mobile rewards points expiry texts to lure recipients into clicking links. The messages invent point balances and urgent expiry dates to push recipients to act before verifying the claim, and they use generic greetings rather than naming the recipient. Researchers found more than 1,000 closely related templates, with the closest matches differing only in superficial details while the core story stays the same. The campaign used at least 81 rotating, short-lived domains that imitate T-Mobile and follow a recognizable pattern now blocked by Malwarebytes Browser Guard. Defenders should not follow links in unsolicited messages, should open the company's app or site directly, and should never enter credentials, payment details, or verification codes after clicking such a link.",
+      "completeness": "Low",
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/09/t-mobile-rewards-points-expiry-texts-are-a-phishing-scam"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "Chatbot Conundrum: Phishing Attempts of OpenAI’s ChatGPT",
+      "summary": "Threat actors are sending fake ChatGPT subscription invoice emails claiming users' payment methods need updating, according to Cofense's Phishing Defense Center. The emails use the real ChatGPT logo, bold urgent wording, and a 48-hour deadline to push recipients to a button labeled \"Update Payment Information.\" That button leads to a near-identical fake OpenAI login page that captures entered credentials and sends them to the attacker. The lure targets both work and personal ChatGPT users. Defenders should check sender addresses and hover over links, since the sender domain and login page URL do not match OpenAI's legitimate domains.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_stealing_technique"
+      ],
+      "software": [
+        "hatGPT",
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "links": [
+        "https://cofense.com/blog/chatbot-conundrum-phishing-attempts-of-openai-s-chatgpt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-17",
+      "title": "SideCopy Threat Intel: MSHTA-driven Execution and RAT Deployment",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Reverserat_rat",
+        "Heracles",
+        "Trojan.js.generic.mvx",
+        "Lolbas_technique"
+      ],
+      "geo": [
+        "Indian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "Windows Registry",
+        "Linux",
+        "Android"
+      ],
+      "algorithms": [
+        "aes",
+        "gzip",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "SetCurPos",
+        "GetHostsFile",
+        "GetCPText"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/sidecopy-threat-intel-mshta-execution-rat-deployment/"
+      ]
+    }
+  }
+]

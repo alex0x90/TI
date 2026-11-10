@@ -1,0 +1,736 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "WordlistLoader Delivering Amatera via ClearFake Campaigns",
+      "summary": "Gen Threat Labs describes WordlistLoader, a new loader that delivers the Amatera Stealer, an infostealer that has become one of the most prevalent in its user base. The loader is distributed through ClearFake campaigns, where compromised legitimate websites display fake CAPTCHAs that lead victims via the ClickFix flow to paste and run a malicious command. WordlistLoader rebuilds its shellcode from a wordlist of plain English words, and it unhooks loaded modules and bypasses ETW to evade defenses. The report also details Amatera 4.3.3-alpha1 changes since version 4.0.2 Beta, including heavier static obfuscation, WoW64 syscall hardening, indirect-syscall trampolines invoked through Heaven's Gate, and a revamped Application-Bound Encryption bypass resembling Remus/Lumma. Defenders should note that the shared origin of the reflective loader and ABE bypass suggests links to Amatera's authors, though the report states this is unconfirmed.",
+      "completeness": "High",
+      "threats": [
+        "Wordlistloader",
+        "Amatera_stealer",
+        "Clearfake",
+        "Heavens_gate_technique",
+        "Acr_stealer",
+        "Fakecaptcha_tool",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Nop_sled_technique",
+        "Remus",
+        "Lumma_stealer",
+        "Poolparty"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows",
+        "chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "WinAPI"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/wordlistloader-delivering-amatera-via-clearfake-campaigns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "77 Firefox Extensions Linked to Crypto Wallet and Credential Theft",
+      "summary": "Socket researchers tracked 77 linked Firefox extension identities, including 40 confirmed malicious extensions that steal crypto wallet secrets or credentials, and 37 deceptive sports-score shells. The campaign, provisionally named \"Offside Wallet Theft Factory,\" has operated since at least March 2026 and impersonates products such as OKX, Rabby Wallet, and TronLink. Some extensions use Supabase projects as remote switches to serve phishing pages, while others exfiltrate recovery phrases or private keys through Cloudflare Workers or modified Rabby code. Several malicious identities were first published as sports-score shells before later updates repurposed them into wallet-stealing code. Defenders should not rely on requested permissions as a measure of trust, should re-evaluate extensions after updates, and should treat exposed recovery phrases or private keys as permanently compromised.",
+      "completeness": "High",
+      "threats": [
+        "Credential_stealing_technique",
+        "Homoglyph_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "American"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "Firefox",
+        "Supabase",
+        "Outlook"
+      ],
+      "wallets": [
+        "rabby",
+        "tronlink"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "persistAllKeyrings"
+      ],
+      "languages": [
+        "swift",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/firefox-crypto-wallet-theft"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "Windows Infostealer Hits npm and Ruby",
+      "summary": "A single threat actor ran two typosquatting campaigns, one on RubyGems (StubMaker) and one on npm, that deliver the same Rust loader and Go infostealer. The npm campaign, documented by OpenHack and extended by this report, comprised 40 packages targeting popular libraries such as chalk, commander, lodash, typescript, react, and axios. The packages were published in an eight-minute burst across five burner accounts, and npm removed all of them within roughly 90 minutes. The malware runs a postinstall hook on Windows, pulls a loader from GitHub, and steals browser credentials, cryptocurrency wallets, and Telegram data. For defenders, blocking the shared beacon IP and the dresslee.com webhook at the network layer covers both ecosystems, which is more durable than package-name blocklists.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Telegram",
+        "Gmail"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "ruby",
+        "rust",
+        "typescript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/windows-infostealer-stubmaker-npm-ruby"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "GOFFEE To Go: Breaking Down the New Techniques of an Espionage Group",
+      "summary": "The F6 report examines the APT group GOFFEE, also known as Paper Werewolf, which conducts espionage and was analyzed during a compromise assessment at a Russian company. The group gains initial access through social engineering and phishing with decoy document archives, then deploys Mythic agents and SSH backdoors such as ElfDoor/BindSycler and SWATSSHD. It maintains persistence through system services, registry modifications, and stealthy techniques like AutodialDLL and Print Monitors, and it uses disguised file names and timestamps to evade detection. Its most distinctive tactics include trojanizing 7-Zip and Git on an internal software repository and modifying Windows installation images. Defenders should prioritize early detection and proactive threat hunting, since the group's stealth grows the longer it remains in the network.",
+      "completeness": "High",
+      "threats": [
+        "Mimikatz_tool",
+        "Nmap_tool",
+        "Mythic_c2_tool",
+        "Bindsycler",
+        "Qwakmyagent",
+        "Winsw_tool",
+        "Psexec_tool",
+        "Aitm_technique",
+        "Winrm_tool",
+        "Nanodump_tool",
+        "Rawcopy_tool",
+        "Rclone_tool",
+        "Garble_tool",
+        "Ebowla_tool",
+        "Neo-regeorg_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "VKontakte",
+        "Viber",
+        "WhatsApp",
+        "PsExec",
+        "sExec ut",
+        "curl",
+        "Node.js",
+        "Windows authentication",
+        "Active Directory",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "rsa-4096",
+        "aes",
+        "sha512",
+        "base64",
+        "zip",
+        "sha1",
+        "aes-256",
+        "cbc"
+      ],
+      "functions": [
+        "OnUserLogin"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "javascript",
+        "elvish"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/goffee-report-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "Grandoreiro goes north: From Brazil to Mexico with a new DLL sideloading campaign",
+      "summary": "Grandoreiro, a Latin American banking trojan, continues operating at reduced volume after a January 2024 law-enforcement disruption. A May 2026 campaign abused the legitimate Duplicate Files Finder application to sideload a malicious mingwm10.dll via DLL sideloading. The loader hides its window and performs extensive anti-analysis checks, including sandbox, virtual machine, debugger and security tool detection, plus geolocation and hostname blacklisting, before contacting C2. Telemetry from the last 30 days of June 2026 shows activity concentrated in Mexico, with some detections in Spain and elsewhere in Europe and North America. Defenders should hunt for renamed Duplicate Files Finder binaries loading mingwm10.dll and the CLIENT_SOLICITA_DDS_MDL token in egress traffic or memory.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Grandoreiro",
+        "Astaroth",
+        "Javali",
+        "Dllsearchorder_hijacking_technique"
+      ],
+      "geo": [
+        "Portugal",
+        "Spain",
+        "Spanish",
+        "Latin america",
+        "Brazil",
+        "Budapest",
+        "Mexico",
+        "Mexican",
+        "Brazilian",
+        "America",
+        "Russia",
+        "Latin american"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 10,
+      "software": [
+        "twitter",
+        "Google Chrome",
+        "Firefox",
+        "Microsoft Edge",
+        "VirtualBox",
+        "VBoxGuest",
+        "QEMU",
+        "XEN",
+        "windump"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor",
+        "zip",
+        "base64",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "delphi"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/grandoreiro-goes-north-from-brazil-to-mexico-with-a-new-dll-sideloading-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "Infrastructure Destruction Squad / BLACKNET-00: Ransomware, Firebase and ICS Tooling",
+      "summary": "Infrastructure Destruction Squad (BLACKNET-00) is a low-maturity, promotional actor cluster whose advertised tooling often exceeds what is verified. Its ransomware builder is weak: it claims AES-256 but applies repeating-key XOR and writes the decryption key into the ransom note, so recovery is possible in the tested build. The Shadow Ghost scanner contains a functional Firebase reconnaissance module that finds exposed Storage, Firestore and Realtime Database deployments caused by misconfiguration. The TRK-25 ICS scanner is not a credible standalone weapon, but its SCADA/HMI discovery, OT fingerprinting and Modbus routines support reconnaissance of exposed industrial systems. Defenders should prioritise confirmed host artefacts, exposed OT services and Firebase rule audits, and verify, not amplify, the actor's claims.",
+      "completeness": "High",
+      "threats": [
+        "Blacknet-00_tool",
+        "Trk-25_tool",
+        "Blacknet_rat",
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Eternalblue_vuln",
+        "Uac_bypass_technique",
+        "Httpflood_technique",
+        "Synflood_technique",
+        "Slowloris_technique",
+        "Bluekeep_vuln"
+      ],
+      "geo": [
+        "Israeli",
+        "Georgian",
+        "Africa",
+        "Iranian",
+        "Indian",
+        "Russia",
+        "Russian",
+        "American",
+        "Switzerland",
+        "Chinese",
+        "Iraq",
+        "Iran",
+        "Asia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "PyInstaller",
+        "WinHTTP",
+        "vmwaretray",
+        "Xen",
+        "Weintek"
+      ],
+      "wallets": [
+        "tron",
+        "coinbase"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "ecdh",
+        "zip",
+        "sha1",
+        "aes-128",
+        "base64",
+        "xor",
+        "md5",
+        "chacha20",
+        "aes-256-cbc",
+        "aes-256",
+        "aes"
+      ],
+      "functions": [
+        "GenerateKey",
+        "rand"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/infrastructure-destruction-squad-blacknet-00/",
+        "https://github.com/Ransom-ISAC-Org/LOCKSTAR/tree/main/BlackNet-00"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "Balonx Sistema: The Face Behind the PhaaS Affecting Mexican Banking",
+      "summary": "Balonx Sistema is a weekly subscription Phishing-as-a-Service platform run by an operator based in Mexico, targeting more than 20 Mexican financial institutions. It uses a persistent WebSocket channel to act as a live man-in-the-middle, pushing up to 14 fraudulent screens to victims and capturing OTP codes to defeat multi-factor authentication. The kit also distributes a Spyroid-based Android RAT disguised as a bank protection app. A separate CallFlow module uses GPT-4o-mini, synthetic voices and Whisper to run automated vishing calls impersonating bank representatives. Group-IB found the operation through leaked GitHub repositories and noted over 350 rotating domains, so defenders should treat the published indicators as live and banks should favor hardware-based authentication.",
+      "completeness": "High",
+      "threats": [
+        "Balonx_tool",
+        "Spyroid_tool",
+        "Mitm_technique",
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Latin america",
+        "Brazil",
+        "Mexican",
+        "Latam",
+        "Mexico"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 12,
+      "software": [
+        "Android",
+        "Telegram",
+        "OpenAI",
+        "FreePBX",
+        "PostgreSQL",
+        "AppStores",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/balonx-sistema-mexico-phaas/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "AI-Agent-Driven Offensive Operation : Exposed Adversary Open Directory Reveals Autonomous Crypto-Theft Campaign Leading to Mass Wallet and Credential Compromise",
+      "summary": "A financially motivated, Chinese-speaking operator was found running an exposed open directory that revealed a fleet of commercial and open-source AI coding agents operating unattended in full-auto mode, tasked over Telegram. The agents were jailbroken with a reusable fake \"authorized penetration test\" prompt, and the operator ran two campaigns: mass WordPress compromise yielding over 12,000 backdoor records, and targeted crypto and DeFi theft. The operator holds private keys and seed phrases for hundreds of wallets, most scraped from a third-party phishing clone's open database. A blockchain-based C2 project was developed but never deployed to mainnet. Defenders should rotate exposed secrets, treat affected wallets as compromised, disable open directories, and keep human approvals enabled for AI agents.",
+      "completeness": "Medium",
+      "threats": [
+        "Hermes",
+        "Blockchain-c2",
+        "Nikto_tool",
+        "Subfinder_tool",
+        "Mirai",
+        "Naabu_tool",
+        "Nuclei_tool",
+        "Wp2shell_vuln",
+        "Credential_harvesting_technique",
+        "Dead_drop_technique",
+        "Etherhiding_technique"
+      ],
+      "geo": [
+        "Netherlands",
+        "Canada",
+        "Russia",
+        "India",
+        "Finland",
+        "Germany",
+        "United states",
+        "France",
+        "United kingdom",
+        "Poland",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Telegram",
+        "WordPress",
+        "PostgreSQL"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "monero",
+        "solana"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "ed25519"
+      ],
+      "functions": [
+        "setEmergency",
+        "getStatus"
+      ],
+      "languages": [
+        "solidity",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/ai-agent-driven-offensive-operation-crypto-wallet-credential-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "The ToxicPanda Never Sleeps: ToxicPanda 2.0 Prepares its Next Strike on Mobile",
+      "summary": "ToxicPanda 2.0 is an updated variant of the Android banking Trojan, previously known mainly for targeting Europe, now supporting a set of 167 remote commands. It abuses Accessibility Services and a VPN-permission dropper to install its payload, then communicates with its C2 server over WebSocket using AES-encrypted traffic. Its overlay-based phishing and PIN theft now target 349 financial, e-wallet, and cryptocurrency apps across 16 countries, up from 16 apps previously. The malware automates Wireless Debugging (ADB) pairing to gain shell-level access, and it can steal lock screen credentials and grant itself permissions. Defenders should note that the samples are delivered from Amazon AWS-hosted buckets, and that detection should cover dropper behavior, ADB pairing, and overlays.",
+      "completeness": "Low",
+      "threats": [
+        "Toxicpanda"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "links": [
+        "https://zimperium.com/blog/the-toxicpanda-never-sleeps-toxicpanda-2.0-prepares-its-next-strike-on-mobile",
+        "https://github.com/Zimperium/IOC/tree/master/2026-08-ToxicPanda",
+        "https://github.com/Zimperium/IOC/blob/master/2026-08-ToxicPanda/commands.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "Post-DEF CON Phishing Uses Google Doc Apps Script to Deliver Malware",
+      "completeness": "High",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Clickonce_tool"
+      ],
+      "geo": [
+        "Norwegian",
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Dropbox",
+        "Telegram",
+        "curl",
+        "macOS Gatekeeper",
+        "Windows installer",
+        "Electron",
+        "NSIS installer",
+        "Discord",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "wallets": [
+        "ledger_wallet"
+      ],
+      "algorithms": [
+        "xor",
+        "crc-32",
+        "sha256"
+      ],
+      "functions": [
+        "Function"
+      ],
+      "languages": [
+        "javascript",
+        "applescript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/defcon-phishing-google-doc-malware",
+        "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-08/20260819\\_google-maldoc-defcon-targets.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "The boardflow campaign: 15 fake Kanban VS Code extensions that download and run a remote payload",
+      "summary": "Fifteen fake Kanban and board-themed VS Code extensions, published from eleven throwaway marketplace accounts between June and August 2026, shared one malicious boardflow npm dependency. On activation, its obfuscated install.js decodes a curl command, downloads a .bat file from a remote domain, and runs it without user interaction. The payload domain rotated three times, and the payload endpoint was later found serving an empty file, though the extensions still fetch it on every IDE start. Near-identical TLSH fingerprints across all publishers and domains indicate a single code base. Defenders should uninstall the listed extensions, remove unexpected .bat or .hta files from the temp directory, and run a full malware scan.",
+      "completeness": "Low",
+      "threats": [
+        "Eviltwin_technique"
+      ],
+      "software": [
+        "curl",
+        "DeepSeek",
+        "Roblox",
+        "Open VSX"
+      ],
+      "languages": [
+        "cscript"
+      ],
+      "links": [
+        "https://yeethsecurity.com/blog/2026-08-19-Boardflow-Kanban-Dropper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "Malware-as-a-Service Cocktail: ErrTraffic and Cruciferra - Killing Your EDR Since 2025",
+      "summary": "ErrTraffic is a malware-as-a-service product sold on underground forums that generates ClickFix lures disguised as Google reCAPTCHA, Cloudflare Turnstile, or BSOD errors, and it uses Ethereum and Polygon smart contracts to resolve rotating dead-drop C2 domains. Victims reach these lures through compromised WordPress sites, and the lures trick them into pasting and running a malicious PowerShell command. The chain delivers Cruciferra, a crypter sold as an EDR and AV killer, which side-loads a DLL and uses process hollowing to inject the Remus infostealer. When enabled, Cruciferra loads the signed vulnerable driver DCRCVDrv.sys to terminate 145 AV and EDR processes from the kernel. Defenders should block the driver via their EDR or AV console, strengthen phishing awareness training, and monitor for ClickFix and BYOVD activity.",
+      "completeness": "High",
+      "threats": [
+        "Errtraffic",
+        "Cruciferra",
+        "Clickfix_technique",
+        "Dead_drop_technique",
+        "Process_hollowing_technique",
+        "Remus",
+        "Uac_bypass_technique",
+        "Edr-killer",
+        "Byovd_technique",
+        "Dll_sideloading_technique",
+        "Purosangue",
+        "Email_bombing_technique",
+        "Screenconnect_tool"
+      ],
+      "geo": [
+        "South korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 2,
+      "software": [
+        "LenAI",
+        "CloudFlare Turnstile",
+        "WordPress",
+        "Linux",
+        "macOS",
+        "Windows Defender",
+        "Huorong",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "PccNTMon",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "base64",
+        "md5",
+        "xor",
+        "fnv-1a"
+      ],
+      "functions": [
+        "getDomain"
+      ],
+      "languages": [
+        "powershell",
+        "php",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/malware-as-a-service-cocktail-errtraffic-and-cruciferra-killing-your-edr-since-2025",
+        "https://github.com/Washi1337/ghidra-nativeaot/pull/29",
+        "https://github.com/YungBinary/binja-nativeaot",
+        "https://github.com/Dump-GUY/ida-nativeaot/pull/3"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "When AI Becomes the Lure: A Fake Gemini Installer Delivers Vidar",
+      "summary": "Darktrace observed a customer in the EMEA region download a fake Google Gemini installer named \"Download_Google_Gemini_For_Windows.exe\" that delivered the Vidar information stealer. The lure was surfaced through a Google Colab page, which the attacker used to exploit trust in a legitimate Google platform, and it redirected users to a fake \"Windows Software Hub\" download site. The victim was not phished by email; instead, the user searched for and downloaded the software. The README in the accompanying ZIP archive told users to run the binary as administrator and add it to antivirus exception lists. Darktrace detected the activity through anomalous behavior and its Autonomous Response blocked the infrastructure and quarantined the device. The report's takeaway is that defenders should watch for fake AI-themed installers and misuse of trusted platforms, since the malware itself was not new but the lure was.",
+      "completeness": "Medium",
+      "threats": [
+        "Vidar_stealer"
+      ],
+      "geo": [
+        "Emea",
+        "Africa",
+        "Middle east"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "Jupyter notebook"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/when-ai-becomes-the-lure-a-fake-gemini-installer-delivers-vidar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "Chinese Malware Delivery Domains Part V",
+      "summary": "Silver Fox-associated affiliates continue operating a typo-squatted malware delivery network targeting Chinese-speaking users, with over 400 new malicious domains registered between June 17 and June 27, 2026, despite reported arrests in mid-June. Analysts assess the infrastructure as a decentralized MaaS platform used by multiple affiliates with distinct lures and targeting. Lures spoof foreign VPNs, trading platforms, domestic software such as DeepSeek, DingTalk, and Huorong Security, and mobile-linked apps. Victims receive padded Inno Setup or Advanced Installer packages that deliver a modified Gh0stRAT variant using OLLVM obfuscation, a UAC bypass, and sRDI injection into system processes. Operators also abuse legitimate cloud storage, GitHub, and Microsoft Store redirects, and they chain outer redirector domains to inner payload hubs to complicate takedowns. Defenders should block both redirector and payload hosting domains and monitor for abuse of trusted cloud services.",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Gh0st_rat",
+        "Reflective_dll_injection_technique",
+        "Uac_bypass_technique",
+        "Dll_injection_technique",
+        "Bloat_technique",
+        "Steganography_technique",
+        "Vmprotect_tool",
+        "Icmluautil_tool",
+        "Ollvm_tool",
+        "Dll_sideloading_technique",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Hong kong"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Store",
+        "DeepSeek",
+        "OLLVM",
+        "Alibaba Cloud",
+        "Google Play",
+        "macOS",
+        "DingTalk",
+        "Huorong",
+        "TradingView",
+        "OpenClaw",
+        "have more..."
+      ],
+      "wallets": [
+        "imtoken"
+      ],
+      "algorithms": [
+        "xor",
+        "exhibit"
+      ],
+      "functions": [
+        "Read-Write",
+        "Read-Write-Execute"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://dti.domaintools.com/research/chinese-malware-delivery-domains-part-v",
+        "https://github.com/DomainTools-Investigations/Malware-and-Scams/tree/main/CHINESE%20MALWARE%20DELIVERY%20DOMAINS%20IOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-19",
+      "title": "When Agents Go Rogue: The OpenClaw Supply Chain Crisis",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Clickfix_technique",
+        "Nova_stealer",
+        "Typosquatting_technique",
+        "Amos_stealer",
+        "Clipboard_hijacking_technique",
+        "Netcat_tool",
+        "Lolbin_technique",
+        "Polymorphism_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 7,
+      "software": [
+        "OpenClaw",
+        "ClawHub",
+        "Clawdbot",
+        "Moltbot",
+        "macOS",
+        "curl",
+        "Slack",
+        "Node.js",
+        "process explorer",
+        "Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "electrum"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "Set-Clipboard",
+        "Get-Clipboard"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/when-agents-go-rogue-openclaw-supply-chain-crisis/"
+      ]
+    }
+  }
+]

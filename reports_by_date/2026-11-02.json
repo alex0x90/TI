@@ -1,0 +1,892 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Exposed Opendir Reveals APT DONOT Cyber Espionage Toolkit Targeting Pakistan's Nuclear and Energy Sectors",
+      "summary": "An exposed open directory on a staging server revealed a multi-stage toolkit linked to the DoNot APT group (APT-C-35) and aimed at Pakistan's nuclear, energy, and ICS sectors. The recovered scripts contain hardcoded references to PAEC, Chashma, KANUPP, SCADA, and Modbus, and they search user documents for these keywords. The toolkit uses Go and PowerShell reverse shells, Inveigh to capture NetNTLM hashes via LLMNR/NBNS/mDNS poisoning, and scripts that spoof the OGDCL domain. Operators also enumerate hosts, map networks, and test harvested credentials against administrative shares on 30 hosts. The attribution to DoNot rests on a shared domain in VirusTotal passive DNS and similarities to documented DoNot macro and staging techniques. The report notes that the scripts alone do not confirm the victim organization or the actor's ultimate objective.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Inveigh_tool",
+        "Opendir_technique",
+        "Metasploit_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Pakistani",
+        "Mexican",
+        "Asian",
+        "Singapore",
+        "Pakistan",
+        "Brazilian",
+        "Malaysian",
+        "India",
+        "Brazil",
+        "France"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 13,
+      "software": [
+        "Chrome",
+        "curl",
+        "inux ke",
+        "WordPress"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Auto_Open"
+      ],
+      "languages": [
+        "golang",
+        "java",
+        "powershell"
+      ],
+      "links": [
+        "https://www.infrahunter.com/research/open-directory-exposes-apt-donot-toolkit-targeting-pakistan",
+        "https://github.com/Kevin-Robertson/Inveigh"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Warning About the Distribution of C3RB3R Ransomware Targeting Synology NAS and Recommendation to Update DSM Security",
+      "summary": "C3RB3R, a Cerber ransomware variant, has been targeting Synology NAS devices since late October 2026, encrypting files, appending the .L0CK3D extension, and dropping read-me3.txt ransom notes in each folder. The attackers are believed to have exploited DSM vulnerabilities, with CVE-2026-13639 and CVE-2026-13684 (Synology-SA-26:13, CVSS 9.8) cited by one source and older Synology-SA-24:20 flaws cited by Synology itself. The flaws require no authentication, so admin account lockdown, country IP blocking, and login-failure auto-blocking do not prevent exploitation. Files are encrypted with ChaCha8 and RSA-2048, and no free decryptor is currently available. Defenders should update DSM to the patched versions, remove router port forwarding for the DSM management ports, and restrict remote access to VPN. They should also maintain immutable snapshots and offline backups, and check for .L0CK3D files and read-me3.txt notes.",
+      "completeness": "Low",
+      "threats": [
+        "C3rb3r",
+        "Smishing_technique"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "sync se",
+        "ask Scheduler"
+      ],
+      "algorithms": [
+        "rsa-2048"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://alyacofficialblog.tistory.com/5791"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "N0n Extortion Group Targets Global Shipping",
+      "summary": "N0n is a data-theft extortion group that launched a Tor leak site on 18 September 2026 and shifted in October to a concentrated campaign against the maritime supply chain. On 12 October it posted 38 port, terminal, shipping and logistics organisations across 18 countries and territories, 26 of them in Asia, with South Korea alone accounting for 12. The claimed data is mostly EDI archives, terminal operating system material and invoices, which name trading partners beyond the listed victims. No listed organisation has publicly confirmed a breach, although the Korea Internet & Security Agency is reportedly notifying Korean port companies and at least one firm has acknowledged an intrusion notice. CYFIRMA assesses with moderate confidence that N0n has real access to some victims, but its claims of encryption and backup destruction remain unverified and no encryptor has been identified. Defenders should rotate partner credentials, enforce MFA on remote access, and monitor the leak site through the 19 October 2026 publication deadline.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Shadow_copies_delete_technique",
+        "0apt_syndicate",
+        "Smuggling_technique",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Canada",
+        "Uzbekistan",
+        "Taiwan",
+        "Usa",
+        "Netherlands",
+        "Middle east",
+        "Brazilian",
+        "Kuwait",
+        "Hong kong",
+        "Americas",
+        "South korea",
+        "Brazil",
+        "Luxembourg",
+        "Singapore",
+        "Japanese",
+        "Canadian",
+        "Japan",
+        "Tunisia",
+        "Australia",
+        "Morocco",
+        "Ireland",
+        "China",
+        "Venezuela",
+        "South korean",
+        "United states",
+        "Argentina",
+        "Vietnam",
+        "Germany",
+        "American",
+        "India",
+        "Saudi arabia",
+        "Indonesian",
+        "Korea",
+        "Korean",
+        "Indonesia",
+        "Spain"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 7,
+      "software": [
+        "Rsync",
+        "dropbox",
+        "azureblob"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "functions": [
+        "Remove-CimInstance",
+        "Remove-WmiObject"
+      ],
+      "languages": [
+        "swift, javascript",
+        "SIGMA: Found"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/n0n-extortion-group-targets-global-shipping/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "NIK C2 Turns Credential Theft Into a Live Operator Loop",
+      "summary": "Cisco Talos analyzed NIK C2, a Go-based Windows implant with more than 52 commands that collects browser databases, cookies, saved passwords, Discord tokens, Wi-Fi credentials, wallet material and live keystrokes. The implant returns results over a persistent WebSocket channel with an HTTP polling fallback, and the same control session supports hidden desktop access, screen and audio capture, RDP interaction, proxying and reverse tunnels. It also includes an operator-directed handler that sends prompts to OpenAI's Chat Completions API from the infected host, and an extortion module that locks the screen with an HTML payment window. Talos found no delivery campaign, named victim, or operator, and did not confirm credential replay or a breach. Defenders should isolate the host, revoke and rotate exposed credentials, and review the endpoint as a possible internal relay.",
+      "completeness": "Low",
+      "threats": [
+        "Nik_c2_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chromium",
+        "Firefox",
+        "Discord",
+        "OpenAI"
+      ],
+      "functions": [
+        "AI"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.codeaintel.com/p/nik-c2-turns-credential-theft-into",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2026/10"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "From Business Emails to XLoader: An Order Lure That Led to In-Memory Injection",
+      "summary": "XLoader, an information stealer in the FormBook lineage, is delivered through business-themed email lures such as order and quotation requests carrying RAR archives with obfuscated JScript. The JScript drops an x86 LuaJIT interpreter and a Lua loader that decodes and manually maps a packed PE, which decrypts and runs the XLoader core in memory. The core uses a shared-section injection technique with x86 thread-context redirection to transfer a clone into a selected x86 process, rather than using process hollowing. Its sample-specific capabilities include HTTP GET commands, Windows Vault enumeration, and cookie-record preparation. Defenders can stop the chain by detecting in-memory execution and shared executable mappings followed by thread-context redirection.",
+      "completeness": "Medium",
+      "threats": [
+        "Formbook",
+        "Agent_tesla",
+        "Remcos_rat",
+        "Xworm_rat"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "plesk"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "rc4"
+      ],
+      "languages": [
+        "jscript",
+        "lua"
+      ],
+      "links": [
+        "https://www.morphisec.com/blog/from-business-emails-to-xloader-an-order-lure-that-led-to-in-memory-injection/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Amatera: How the prolific infostealer works and spreads",
+      "summary": "Amatera is a Windows infostealer written in C++, first observed in 2024, that is sold as malware-as-a-service to affiliates who pay a subscription to run their own campaigns. It is very likely a rebrand of ACR Stealer, which itself descends from the GrMsk stealer. The malware steals browser credentials, cookies, tokens, crypto wallet data, and files synced with OneDrive or SharePoint, so a single compromise can enable account hijacking, fraud, and entry into the victim's employer. Affiliates deliver it through compromised websites, search engine ads, phishing emails, fake documents, and most notably ClickFix, a social engineering technique that tricks users into running commands themselves. Amatera topped ESET's infostealer detections in Latin America in the first half of 2026. Defenders should treat any request to paste commands into the Run dialog, PowerShell, or Terminal as a red flag, and after a confirmed compromise, revoke sessions and rotate all secrets.",
+      "completeness": "Low",
+      "threats": [
+        "Amatera_stealer",
+        "Acr_stealer",
+        "Clickfix_technique",
+        "Crashfix",
+        "Consentfix_technique",
+        "Lumma_stealer",
+        "Formbook",
+        "Vidar_stealer",
+        "Snake_keylogger",
+        "Rhadamanthys",
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "Latin america"
+      ],
+      "software": [
+        "Telegram",
+        "SharePoint",
+        "Anthropic's",
+        "OpenAI's",
+        "WordPress",
+        "Claude",
+        "Claude Code",
+        "JetBrains"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/malware/amatera-how-prolific-infostealer-works-spreads/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "PngLoader — Steganographic Payload Research",
+      "completeness": "Low",
+      "threats": [
+        "Pngloader",
+        "Steganography_technique",
+        "Meterpreter_tool"
+      ],
+      "software": [
+        "Studio project",
+        "Visual Studio",
+        "Windows Imaging Component"
+      ],
+      "functions": [
+        "UtilDecryptFileQuoted"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://github.com/i014n/PngLoader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "BITTER Expands Its Arsenal with PapRAT",
+      "summary": "BITTER, a suspected South Asian cyberespionage group active since at least 2013, is running a campaign against South Asian organizations using PowerShell scripts and a custom remote access trojan called PapRAT. The campaign uses three infection chains, one relying on a malicious LNK file that abuses ftp.exe and scheduled tasks without a traditional executable, and two delivering PapRAT through LNK files and MSI installers. PapRAT has C++ and Rust versions, with the Rust variant expanding its commands from eight to eleven, including PowerShell execution. The implant supports reconnaissance, file manipulation, screenshots, and remote command execution, and in one chain it delivers the WmRAT implant. Defenders should monitor scripting tools, scheduled tasks, and installer activity, not just known malware signatures.",
+      "completeness": "Medium",
+      "threats": [
+        "Paprat",
+        "Wmrat",
+        "Lolbin_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "fsutil"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/bitter-expands-its-arsenal-with-paprat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "CYFIRMA Threat Advisory: Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+      "summary": "CYFIRMA reports that a suspected North Korean state-nexus operator linked to the Lazarus Group ecosystem is targeting internet-facing PHP using two unauthenticated remote-code-execution flaws, CVE-2026-109618 and CVE-2026-109619. The operators reportedly exploit the flaws via crafted multipart requests and deploy PHP web shells, with highest success against Apache mod_php. Targets include government, banking, telecommunications, infrastructure and other sectors across 10 countries, and CYFIRMA captured an original 216-host list. The operators claim to have expanded the set to 581 hosts, which CYFIRMA has not verified. Defenders should patch and restart all PHP workers to fixed releases, preserve volatile evidence before patching, and hunt logs back to 17 October 2026.",
+      "completeness": "Medium",
+      "threats": [
+        "P2pshell_vuln",
+        "Watering_hole_technique",
+        "Credential_harvesting_technique",
+        "Mirai"
+      ],
+      "geo": [
+        "Usa",
+        "United states",
+        "Singapore",
+        "Japan",
+        "Taiwan",
+        "Australia",
+        "Japanese",
+        "Thailand",
+        "North korean",
+        "India",
+        "Asia-pacific",
+        "America",
+        "Middle east",
+        "Saudi arabia",
+        "Dprk",
+        "Korea",
+        "South korean",
+        "Indonesia",
+        "South korea"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 17,
+      "software": [
+        "PHP-FPM",
+        "LiteSpeed",
+        "cPanel",
+        "Plesk",
+        "OpenAI",
+        "curl",
+        "busybox",
+        "Kubernetes",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "Set-Cookie"
+      ],
+      "languages": [
+        "swift",
+        "php"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/https-www-cyfirma-com-research-cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-v4-targeting-against-global-php-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "APT36 group Uses a Disguised KMS Activation Tool to Carry Out a Multistage Intrusion and Deploy Scareware",
+      "summary": "A threat campaign tied to APT36 (Transparent Tribe) used a pirated Windows activator, KMS Auto, as a bundled malware carrier to gain initial access to victim systems. Attackers then deployed the XMRig cryptominer, abused the legitimate ScreenConnect remote management tool, and added MeshAgent as a backup backdoor. The final payload, a scareware tool disguised as a Windows Defender process, replaced wallpapers, displayed a fake ransomware overlay, and renamed files without performing any real encryption. Researchers said attribution remains uncertain because the metadata strings could be forged and the behavior did not match typical APT36 espionage. The stages were separated by 12 to 24 hours, which helped evade detections that look for short bursts of activity. Defenders are advised to treat unauthorized activation tools and unusual remote management deployments as warning signs, and to correlate events across longer time windows.",
+      "completeness": "Low",
+      "threats": [
+        "Xmrig_miner",
+        "Screenconnect_tool",
+        "Meshagent_tool"
+      ],
+      "geo": [
+        "Pakistan",
+        "Indian"
+      ],
+      "links": [
+        "https://www.secrss.com/articles/95181"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Charming Kitten",
+      "summary": "Charming Kitten, an Iranian APT group, is targeting aerospace, aviation, and defense industries in Israel and the UAE, with possible activity in Turkey, India, and Albania. The campaign uses LinkedIn recruiter profiles and a fake job site, \"Careers 2 Find,\" offering a \"Dream Job\" lure to deliver the SnailResin malware. Victims are led to download a ZIP archive containing a legitimate executable and a malicious secur32.dll, which is loaded through DLL side-loading. The malware leverages trusted platforms and legitimate cloud traffic to hide its command-and-control communications. This simulation also reproduces techniques associated with North Korean Lazarus to illustrate how similar tactics can cause misattribution by security tools.",
+      "completeness": "Medium",
+      "threats": [
+        "Snailresin",
+        "Dll_sideloading_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Spear-phishing_technique",
+        "Bear-c2",
+        "Cloudflared_tool"
+      ],
+      "geo": [
+        "Turkey",
+        "Israel",
+        "Albania",
+        "India",
+        "Middle east",
+        "North korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 9,
+      "software": [
+        "Cloudflare",
+        "sharepoint",
+        "Microsoft SharePoint"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://github.com/S3N4T0R-0X0/APTs-Adversary-Simulation/tree/main/Iranian%20APT%2FCharming%20Kitten",
+        "https://github.com/S3N4T0R-0X0/APTs-Adversary-Simulation/tree/main/North%20Koreans%20APT/Lazarus",
+        "https://github.com/S3N4T0R-0X0/BEAR"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "EByte Ransomware: Prince Code Behind a New Locker",
+      "summary": "EByte is a Go ransomware package advertised on a forum in October 2026 that uses ChaCha20 encryption with ECIES key protection, along with a builder, panel and decryptor. Source review found that much of its encryptor, decryptor and file-walker code is reused from the Prince ransomware project, with new branding and operator tooling added. The encryptor overwrites files using an intermittent pattern that encrypts every third byte and leaves the other two unchanged, so partially intact files do not guarantee full recovery. The builder embeds the private key in the matching decryptor and prints it to the console, making that artifact the strongest recovery lead. Defenders should preserve the encryptor, any matching decryptor and builder logs before attempting recovery, and should verify file content rather than trust renames.",
+      "completeness": "Medium",
+      "threats": [
+        "Ebyte_ransomware",
+        "Prince_ransomware",
+        "Shadow_copies_delete_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Linux"
+      ],
+      "algorithms": [
+        "xchacha20",
+        "sha256",
+        "chacha20",
+        "aes-gcm"
+      ],
+      "functions": [
+        "XOR",
+        "XORKeyStream"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/ebyte-ransomware-prince-code-new-locker/",
+        "https://github.com/oakkaya/Prince-Ransomware/blob/e7ec248b846cf956456e7967519f10f402124264/Encryptor/encryption/encryption.go",
+        "https://github.com/oakkaya/Prince-Ransomware/tree/e7ec248b846cf956456e7967519f10f402124264",
+        "https://github.com/oakkaya/Prince-Ransomware/blob/e7ec248b846cf956456e7967519f10f402124264/Decryptor/decryption/decryption.go"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "CyberStrikeAI in the wild: the use of AI in real-world attacks on organizations",
+      "summary": "Kaspersky identified a campaign in which CyberStrikeAI, an open-source framework, was used in post-exploitation against education-sector organizations in several African and Latin American countries. In this framework, an LLM orchestrator on the command-and-control server plans actions and generates commands, while a non-AI implant executes them on compromised hosts. Human operators set tasks in general terms, and the model chose the technical steps, taking the attackers from reconnaissance to full domain compromise within about three to four days. The techniques used, including Kerberoasting, LSASS dumps, DCSync, and Golden Ticket attacks, are well-documented and detectable with existing rules. The main takeaway is that AI mainly speeds up and lowers the skill barrier for attacks rather than creating new detection challenges.",
+      "completeness": "High",
+      "threats": [
+        "Cyberstrikeai_tool",
+        "Credential_dumping_technique",
+        "Cobalt_strike_tool",
+        "Fscan_tool",
+        "As-rep_roasting_technique",
+        "Kerberoasting_technique",
+        "Azcopy_tool",
+        "Lolbin_technique",
+        "Golden_ticket_technique",
+        "Dcsync_technique",
+        "Mimikatz_tool",
+        "Impacket_tool",
+        "Wmiexec_tool",
+        "Hexstrike",
+        "Sliver_c2_tool",
+        "Mythic_c2_tool",
+        "Havoc",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Africa",
+        "Latin america"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "SQL Server Reporting Services",
+        "Linux",
+        "crontab",
+        "Microsoft Defender",
+        "Active Directory",
+        "ChatGPT",
+        "Claude",
+        "Windows registry",
+        "Windows security"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "MiniDump"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/tr/cyberstrikeai-attacks/121715/",
+        "https://github.com/aipentest/cyberstrikeai"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Trojan.Loader.3261",
+      "summary": "Trojan.Loader.3261 is a multi-stage loader distributed through GitHub repositories and aimed at cryptogame users and information security specialists. It downloads and unpacks the Nexara.7z archive from attacker servers, then collects system details and sends them to operators through a Telegram bot. The malware escalates privileges via COR_PROFILER registry hijacking or a computerdefaults.exe method, and disables Windows Defender, UAC, and VSS shadow copies. It injects payloads into RegAsm.exe, dwwin.exe, and dwm.exe after bypassing EDR and AMSI protections. The final payloads include AsyncRAT backdoors, a clipboard hijacker that swaps cryptocurrency wallet addresses, and a stealer.",
+      "completeness": "Medium",
+      "threats": [
+        "Shadow_copies_delete_technique",
+        "Asyncrat",
+        "Injectnet",
+        "Com_hijacking_technique",
+        "Pid_spoofing_technique",
+        "Process_injection_technique",
+        "Spymax"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 34,
+      "software": [
+        "Windows Defender",
+        "Telegram",
+        "Microsoft Windows Defender",
+        "Windows Defender Security Center",
+        "Event Tracing for Windows",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "macOS",
+        "Linux",
+        "Android",
+        "have more..."
+      ],
+      "algorithms": [
+        "7zip",
+        "aes",
+        "sha1"
+      ],
+      "functions": [
+        "ensureConfigKeyBaseline",
+        "fetchAndProcess",
+        "InternetExplorer",
+        "executeTelemetryReportingWorkflow",
+        "ensureScheduledExecutionPolicy",
+        "executeUacElevationWorkflow",
+        "executeSystemHardeningWorkflow",
+        "runHandlerWithTcpControl",
+        "executeRuntimeBootstrapWorkflow",
+        "performAllChecks",
+        "have more..."
+      ],
+      "languages": [
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://vms.drweb.ru/search/?q=Trojan.Loader.3261&lng=ru"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Forged Commits Push a preinstall Dropper into hugo-paper and mevn-cli",
+      "summary": "Attackers planted a malicious preinstall hook in the GitHub repositories hugo-paper and mevn-cli by force-pushing forged commits that copied the original author, date, and message, so the history looked unchanged. Running npm install or bun install in either repository fetches a second-stage script from buildwithknexus.xyz and runs it in the background, and no npm package carries the payload, so registry scanners miss it. The server controls the second stage, which SafeDep has not retrieved, so any machine that ran the hook should be treated as compromised. The attacker changed the mevn-cli loader once, and hugo-paper received only the second version. The pattern suggests stolen maintainer push credentials, and the technique resembles earlier GlassWorm and ForceMemo campaigns but uses different tooling. Defenders should check for the named file paths, rotate reachable secrets, and block the domain.",
+      "completeness": "Medium",
+      "threats": [
+        "Glassworm",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "curl",
+        "linux",
+        "macOS",
+        "Travis"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://safedep.io/blog/hugo-paper-mevn-cli-forged-commit-preinstall-dropper",
+        "https://github.com/nanxiaobei/hugo-paper/blob/a68d2c9b2ad9d857b09dcb30a578ac1de6487061/scripts/preinstall.js",
+        "https://github.com/madlabsinc/mevn-cli",
+        "https://github.com/nanxiaobei/hugo-paper"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Tempo, not technique: hunting the AI harnesses behind today’s intrusions",
+      "summary": "Three open-source AI agent harnesses, Cairn, ARTEX and PentAGI, are being used to run fast, largely autonomous intrusions, including campaigns attributed to Storm-0940 and VAPOR PANDA. These tools plan, run commands and adapt without a human in the loop, so attacks can reach privileged cloud access within hours of first targeting. Researchers counted about 1,341 unique internet-exposed consoles for the three harnesses, many with no authentication by default. Forks and renamed builds are common, so title-based searches miss many instances. Defenders are advised to hunt behavioural signals such as burst timing, probe markers, webhook callbacks and fixed-size exfiltration rather than specific tool names or exploits. Red teams should keep these consoles behind a VPN or authenticating proxy and never expose them publicly.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Screenconnect_tool",
+        "Password_spray_technique",
+        "Cairn_tool",
+        "Pentagi_tool",
+        "Specter_rootkit",
+        "Cobalt_strike_tool",
+        "Bloodalchemy",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "India",
+        "Indonesia",
+        "Taiwan",
+        "Vietnam",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "uvicorn",
+        "Alpine",
+        "nginx",
+        "MySQL"
+      ],
+      "algorithms": [
+        "murmur3",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.rstcloud.com/hunting-ai-harnesses-cairn-artex-pentagi/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "StyleSmuggler Exploitation Deploys PSK Agent RAT Against Magento Stores",
+      "summary": "A coordinated campaign exploited Magento and Adobe Commerce stores between September 9 and 13, 2026, using the StyleSmuggler vulnerability (CVE-2026-75650) through the /paypal/transparent/response/ endpoint. The attackers used a multi-stage chain that installed a shell-script dropper, a Go-based remote access trojan tracked as PSK Agent, and in some cases a PHP webshell. The activity appears to be opportunistic automated scanning across Western Europe, North America, and Asia-Pacific rather than a single-country or single-sector campaign. Chinese-language comments in the dropper suggest a likely Chinese-speaking operator with moderate confidence, though no specific group is attributed. Defenders should apply Adobe's VULN-39341 hotfix, but patching does not remove existing RATs or webshells, so affected systems need full incident response and secret rotation.",
+      "completeness": "High",
+      "threats": [
+        "Psk_agent",
+        "Stylesmuggler_vuln"
+      ],
+      "geo": [
+        "America",
+        "Asia-pacific",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 10,
+      "software": [
+        "curl",
+        "Unix",
+        "Linux",
+        "systemd"
+      ],
+      "algorithms": [
+        "aes-256-cbc"
+      ],
+      "functions": [
+        "in"
+      ],
+      "languages": [
+        "python",
+        "rust",
+        "php"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/stylesmuggler-exploitation-deploys-psk-agent-rat-against-magento-stores/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
+      "summary": "Threat actors are conducting LLMJacking, hijacking enterprise access to large language models in cloud environments to generate fraudulent charges, with some incidents exceeding $100,000 in a single day. Financially motivated clusters often gain initial access through exposed or stolen cloud identity tokens, service account keys, or LLM API keys, and then escalate privileges and establish persistence. Some actors resell stolen access through \"LLM Mixers\" that proxy and monetize unauthorized requests, and one service reportedly relied on stolen keys to operate. Victims spanned financial services, retail, technology, and transportation organizations across several regions. Defenders should treat unauthorized enablement of LLM services as a critical event, enforce least privilege and credential rotation, and monitor cloud audit logs for model invocations and logging changes.",
+      "completeness": "Medium",
+      "threats": [
+        "Llmjacking_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "America",
+        "Asia pacific"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Ollama",
+        "LiteLLM",
+        "Node.js",
+        "Telegram",
+        "Outlook",
+        "Linux",
+        "Curl",
+        "Hugging Face"
+      ],
+      "functions": [
+        "LLM",
+        "GetFoundationModelAvailability",
+        "CreateFoundationModelAgreement",
+        "GetModelInvocationLoggingConfiguration",
+        "DeleteModelInvocationLoggingConfiguration"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
+        "https://github.com/searxng/searxng",
+        "https://github.com/BerriAI/litellm",
+        "https://github.com/agent-infra/sandbox"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Inside Brazil’s Financial Malware Ecosystem: Deep Dive into the Astaroth",
+      "summary": "Astaroth, also known as Guildma, is a Delphi-based banking trojan that has targeted users mainly in Brazil since at least 2017. This campaign begins with phishing emails containing malicious links that lead to a ZIP file holding a Windows shortcut, which runs regsvr32.exe to load scrobj.dll from an NTFS alternate data stream. The chain then uses AutoIt and Delphi loaders to inject the final payload into RegSvcs.exe through process hollowing. The malware targets a broad range of Brazilian banks, fintechs, payment services, cryptocurrency platforms, and gambling sites through context-aware keylogging and clipboard capture. Its configuration in dump.log points to a Pinggy raw TCP relay for command and control, with a separate HTTP update channel that may run JScript.",
+      "completeness": "High",
+      "threats": [
+        "Astaroth",
+        "Eternidade",
+        "Spear-phishing_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Credential_harvesting_technique",
+        "Centrastage_tool",
+        "Process_hacker_tool",
+        "Ngrok_tool"
+      ],
+      "geo": [
+        "Latin american",
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 41,
+      "software": [
+        "AutoIT",
+        "WhatsApp",
+        "AutoHotKey",
+        "DocuSign",
+        "NET framework",
+        "Etherscan",
+        "opera",
+        "firefox",
+        "chrome",
+        "Google Chrome",
+        "have more..."
+      ],
+      "wallets": [
+        "bybit",
+        "metamask",
+        "coinbase"
+      ],
+      "crypto": [
+        "uniswap",
+        "binance",
+        "pancakeswap",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "ExtractAndDecodeEmbeddedKeySeed",
+        "ReadUnicodeClipboardText"
+      ],
+      "languages": [
+        "powershell",
+        "jscript",
+        "java",
+        "javascript",
+        "python",
+        "delphi"
+      ],
+      "links": [
+        "https://0x0d4y.blog/inside-brazils-financial-malware-ecosystem-deep-dive-into-the-astaroth/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Yoba Malware Campaign Abuses Signed AI Applications to Evade Detection",
+      "summary": "The Yoba campaign distributes malicious installers through fraudulent GitHub repositories and GitHub Pages sites that impersonate ChatGPT and Claude desktop applications. Attackers package a malicious winmm.dll alongside legitimate, digitally signed OpenAI and Anthropic executables, using DLL sideloading to run the YobaDropper component. The malware evades analysis through process-name checks, long execution delays, regional language exclusions, and scheduled-task persistence. YobaLoader retrieves encrypted payloads by combining Telegram profile imagery, a domain generation algorithm, Google DNS over HTTPS, and Catbox hosting. The observed final payload is the XMRig cryptocurrency miner, although the loader can also run additional PE and PowerShell payloads. Defenders should evaluate the full execution chain, not just the valid signature on the primary executable.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Xmrig_miner",
+        "Seo_poisoning_technique",
+        "Yobadropper",
+        "Yobaloader"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "Claude",
+        "Telegram",
+        "GPT-5",
+        "OpenAI",
+        "Anthropic",
+        "Windows Media"
+      ],
+      "algorithms": [
+        "xor",
+        "aes",
+        "ed25519",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.polyswarm.io/yoba-malware-campaign-abuses-signed-ai-applications-to-evade-detection"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-02",
+      "title": "Exploitation Targeting Node-RED, a Tool Embedded in ICS Products",
+      "summary": "VulnCheck observed attackers exploiting CVE-2026-58115, an unauthenticated Node-RED admin API flaw that is also embedded in Siemens SIMATIC IoT2050 Advance products. The exploit deploys a flow with an inject node wired to an exec node, which runs a base64-encoded shell command automatically with no further interaction. The decoded dropper downloads a Linux binary into a RAM-backed path, hides it with a leading dot, and launches it detached from the Node-RED process. Source activity from one Microsoft-hosted IP spanned many CVEs, suggesting opportunistic scanning rather than a targeted campaign. Later payloads included a staged shell script, a second payload server, and persistent webshells. Defenders should confirm Node-RED instances are not externally reachable, enable adminAuth, and review flows for unexpected exec nodes or HTTP endpoints.",
+      "completeness": "Medium",
+      "geo": [
+        "Brazil"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Raspberry Pi",
+        "curl",
+        "Joomla",
+        "Docker",
+        "ZoomEye"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "links": [
+        "https://www.vulncheck.com/blog/exploitation-targeting-node-red"
+      ]
+    }
+  }
+]

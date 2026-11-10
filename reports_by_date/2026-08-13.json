@@ -1,0 +1,1025 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Eclipse Ransomware Launches RaaS Platform Targeting Windows, Linux, and ESXi Infrastructure",
+      "completeness": "Low",
+      "threats": [
+        "Kyber"
+      ],
+      "software": [
+        "Linux",
+        "ESXi",
+        "Hyper-V",
+        "Active Directory"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero"
+      ],
+      "algorithms": [
+        "chacha20"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/eclipse-ransomware-raas-platform/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Akira Hits Safe Mode: Ransomware Rebooting Around EDR",
+      "completeness": "Medium",
+      "threats": [
+        "Akira_ransomware",
+        "Snatch_ransomware",
+        "Avoslocker",
+        "S5cmd_tool",
+        "Anydesk_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 2,
+      "software": [
+        "Microsoft Defender",
+        "Active Directory",
+        "Windows Defender",
+        "WinRAR",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Get-ADUser",
+        "Get-ADComputer"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/akira-hits-safe-mode-ransomware-rebooting-around-edr"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "AmnesiaStealer: a multi-stage Rust-based macOS infostealer that hijacks Chromium browsers",
+      "summary": "AmnesiaStealer is a multi-stage, Rust-based macOS infostealer distributed through ClickFix lures, where a counterfeit GitHub \"Download for macOS\" page tricks victims into pasting a Terminal command. The first stage is a shell dropper, and the second stage is a Rust infostealer that captures the user's login password through a native prompt and collects the keychain, browser data, Apple Notes and Telegram sessions. Its Chromium collection includes a destructive rewrite of the Chrome Safe Storage key on macOS 26 when key recovery fails. A third, operator-fetched stream module uses the Chrome DevTools Protocol to give hidden, interactive control of a cloned, headless copy of the victim's browser and to export cookies. Several of its macOS bypasses, including a Safari cookie route reusing CVE-2020-9771 and a TCC.db injection, fail on macOS 26 unless the process already holds Full Disk Access. Jamf recommends that defenders configure threat prevention and web protection to block and report such activity.",
+      "completeness": "High",
+      "threats": [
+        "Amnesia_stealer",
+        "Clickfix_technique",
+        "Tsunami_botnet",
+        "Amos_stealer",
+        "Macc_stealer",
+        "Crashstealer",
+        "Clipboard_hijacking_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Chromium",
+        "Telegram",
+        "curl",
+        "gatekeeper",
+        "Chrome",
+        "sudo",
+        "IndexedDB",
+        "Google Chrome",
+        "Microsoft Edge",
+        "have more..."
+      ],
+      "algorithms": [
+        "hmac",
+        "md5",
+        "zip",
+        "aes",
+        "sha256",
+        "sha1",
+        "xor",
+        "base64"
+      ],
+      "functions": [
+        "CDP"
+      ],
+      "languages": [
+        "applescript",
+        "rust"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/amnesia-stealer-macos-infostealer-clickfix/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "CNCMachineRMS: The Undocumented RAT At the End of a BabaDeda Chain",
+      "summary": "CNCMachineRMS is a previously undocumented x64 remote access trojan delivered at the end of a multi-stage BabaDeda loader chain that begins with a ClickFix lure. The chain abuses a legitimately signed IBM SPSS IDE executable, WinWrapIDE.exe, whose scripting engine is used to load a malicious DLL, followed by four decoy DLLs. The final stage runs shellcode via the benign EnumTimeFormatsEx API, and the implant has no import table and resolves APIs by hash at runtime. It gives operators an interactive shell, file manager, screen capture, a local account backdoor, seven persistence mechanisms, and twenty typed commands for staging further payloads. Its behavior is driven by a custom scripting language stored in its config, and its state file and C2 traffic use a deliberately random-looking container format. For defenders, the report advises assuming hands-on-keyboard access if the implant is found and treating follow-on payloads as the real incident.",
+      "completeness": "Medium",
+      "threats": [
+        "Cncmachinerms",
+        "Babadeda",
+        "Clickfix_technique"
+      ],
+      "software": [
+        "scripting engine",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/cncmachinerms-the-undocumented-rat-at-the-end-of-a-babadeda-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "APT PROFILE – TURLA GROUP",
+      "summary": "Turla is a Russia-linked APT group active since at least 2008, widely assessed to conduct long-term cyber espionage in support of Russian strategic intelligence objectives. It targets government, diplomatic, military, and other high-value networks, using custom malware, covert persistence, and encrypted command-and-control infrastructure. Recent campaigns, including STOCKSTAY backdoor activity against entities in Ukraine and Italy and an intrusion campaign against French organizations, focus on intelligence collection rather than destructive operations. The group increasingly relies on living-off-the-land techniques, fileless execution, and abuse of trusted software and cloud platforms to minimize detection. Its activity extends beyond government to defense contractors, telecommunications, technology, research, and critical infrastructure organizations. Defenders should note its tendency to establish long-term footholds for continuous collection and later access.",
+      "completeness": "Low",
+      "threats": [
+        "Agent_btz",
+        "Stockstay",
+        "Kazuar",
+        "Wildday",
+        "Lightneuron",
+        "Apolloshadow",
+        "Gazer",
+        "Tinyturla-ng",
+        "Lolbin_technique",
+        "Spear-phishing_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Italy",
+        "France",
+        "Belarus",
+        "India",
+        "Kazakhstan",
+        "Saudi arabia",
+        "Russian",
+        "Romania",
+        "Tajikistan",
+        "Russia",
+        "Iran",
+        "Netherlands",
+        "Russian federation",
+        "French",
+        "Switzerland",
+        "Poland",
+        "Ukraine",
+        "United states",
+        "Germany",
+        "Iraq",
+        "Uzbekistan"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 67,
+      "software": [
+        "Winlogon"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "visual_basic"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/apt-profile-turla-group/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Radar danger: Android trojan RedWing is being distributed under the guise of a mobile app for air raid alerts",
+      "summary": "F6 researchers found RedWing, an Android trojan, distributed under the guise of a fake air raid alert app called RadarTrevog aimed at Russian users. The malware is sold as malware-as-a-service via Telegram, and Zimperium first reported it in July 2026. Fake websites promote the app with claims of alerts even with weak signal and family-sharing features, which encourages victims to spread it further. RedWing can steal SMS, contacts and banking or crypto data, remotely control devices, hide itself, and join DDoS attacks. The trojan abuses permissions such as SMS, notifications and Accessibility services, which are needed to bypass bank confirmations and hijack accounts. Defenders should install apps only from trusted stores, deny sensitive permissions such as Accessibility, and act quickly if an APK was installed.",
+      "completeness": "Low",
+      "threats": [
+        "Redwing"
+      ],
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "software": [
+        "Android",
+        "ndroid tr",
+        "Telegram",
+        "RuStore"
+      ],
+      "links": [
+        "https://www.f6.ru/media-center/press-releases/redwing/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Solidity Pro's WhiteCobra Chassis: Cloudflare C2 to Telegram Infostealer",
+      "summary": "The helper-beeps and web3devtoolsx publishers distribute a malicious \"solidity-pro\" extension family on Open VSX and the VS Code Marketplace, linked to the WhiteCobra group. Early versions used delayed Cloudflare Worker-based C2 to download and run an encrypted Python payload. From version 3.0.0 onward, the family became an infostealer that harvests crypto wallets, developer tokens, API keys, and SSH keys and exfiltrates them through Telegram bot uploads. The extension is designed to evade review and sandboxing through randomized multi-hour to multi-day activation delays, heavy obfuscation, and interleaved decoy versions. Defenders should verify extension publishers, avoid storing seed phrases or private keys in developer tools, and detect behavior rather than relying on the listing page or download counts.",
+      "completeness": "Medium",
+      "threats": [
+        "Lumma_stealer",
+        "Supply_chain_technique",
+        "Arguscryptor"
+      ],
+      "software": [
+        "Telegram",
+        "Open VSX",
+        "OpenAI",
+        "1Password",
+        "Windows Installer",
+        "curl"
+      ],
+      "wallets": [
+        "metamask",
+        "rabby",
+        "coinbase",
+        "keplr"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-gcm",
+        "xor"
+      ],
+      "languages": [
+        "solidity",
+        "cscript",
+        "python"
+      ],
+      "links": [
+        "https://yeethsecurity.com/blog/2026-08-06-Solidity-Pro-WhiteCobra-C2-to-Telegram"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Ransomware Moves up the Org Chart: Managers Are Prime Targets",
+      "summary": "Zscaler ThreatLabz analyzed 351 victims across 334 organizations linked to a single ransomware campaign over one month. The group is known for gaining initial access, stealing large amounts of corporate data, and selectively encrypting critical systems. Sixty-two percent of victims held manager-level titles or higher, and roughly 75% worked in accounting and finance, sales, operations, human resources, or marketing. Researchers say managers' broad business access, such as approving payments, overseeing vendors, and reviewing contracts, can help attackers establish a foothold and increase extortion pressure. Defenders are advised to restrict external collaboration-platform messages, train staff to verify unusual IT requests, enforce least-privilege access, and monitor beyond the first compromised account, since more than a dozen organizations had multiple victims.",
+      "completeness": "Low",
+      "software": [
+        "Microsoft Teams",
+        "Slack"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/ransomware-moves-org-chart-managers-are-prime-targets"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Jewelbug: APT Group Runs Espionage and Crypto Fraud Operations Side by Side",
+      "summary": "Jewelbug is a China-based hackers-for-hire group that runs espionage against government ministries and militaries in the Middle East and Asia alongside a for-profit cryptocurrency fraud business, both administered from one control panel, XG-Web. The group uses the \"PDF Viewer\" browser extension, which gives operators broad control of victims' browsers, and the Antino backdoor, which uses the Microsoft Graph API for command-and-control. Its largest operation compromised a shared government webmail hosting platform to place a watering-hole across more than 15 government tenants at once. The victim database recorded over one million implant check-ins and more than 580,000 stolen browser cookies. Investigators linked the fraud arm to a named individual and a Changsha SEO company, though the exact relationship to the espionage operators remains unconfirmed.",
+      "completeness": "High",
+      "threats": [
+        "Antino",
+        "Watering_hole_technique",
+        "Mitm_technique",
+        "Clientking",
+        "Dns_tunneling_technique",
+        "Seo_poisoning_technique",
+        "Hack-for-hire_technique"
+      ],
+      "geo": [
+        "Venezuela",
+        "Chinese",
+        "Middle east",
+        "China",
+        "Ukraine",
+        "Taiwanese",
+        "Taiwan",
+        "Russia",
+        "Asia",
+        "Indo-pacific",
+        "Asian"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Microsoft Edge",
+        "Linux",
+        "Node.js",
+        "MySQL",
+        "Graph API",
+        "sudo",
+        "Telegram",
+        "Google Chrome",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/jewelbug-crypto-fraud-espionage"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "CSS Bomb Attacks Turn Malicious Emails Into Password-Stealing Keyloggers",
+      "completeness": "Low",
+      "threats": [
+        "Css_bomb_technique"
+      ],
+      "software": [
+        "Gmail",
+        "Outlook",
+        "ProtonMail",
+        "Slack"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/css-bomb-attack/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "The Gentlemen: How GentleKiller Clears the Path to Encryption",
+      "summary": "The Gentlemen is a ransomware-as-a-service operation that surfaced in July 2025 and moved to a public RaaS model around September 2025, with 580 victims on its leak site across 77 countries by July 2026. It offers affiliates a 90 percent share of paid ransoms and supplies Go-based Windows and Linux ransomware, an ESXi locker, a custom backdoor, and EDR killers. Its GentleKiller framework targets more than 400 processes tied to 48 security products. Affiliates typically gain entry through vulnerable firewalls and VPNs, exposed remote services, weak credentials, or purchased access, then move laterally and use bring-your-own-vulnerable-driver tools to disable security processes before encryption. Defenders should patch exposed systems, restrict vulnerable drivers, segment networks, monitor for outbound data transfers, and maintain offline or immutable backups.",
+      "completeness": "Low",
+      "threats": [
+        "Gentlekiller",
+        "Gentlemen_ransomware",
+        "Byovd_technique",
+        "Psexec_tool",
+        "Shadow_copies_delete_technique"
+      ],
+      "software": [
+        "Linux",
+        "ESXi",
+        "PsExec",
+        "Hyper-V",
+        "Windows Defender Application Control"
+      ],
+      "algorithms": [
+        "xchacha20",
+        "curve25519"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.blackfog.com/gentlemen-gentlekiller-clears-path-to-encryption/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "$7 Million in Expired Domains Fuel a Streaming Empire with a Malware Secret",
+      "summary": "Sable Squirrel is a transnational Asian actor controlling more than 10,000 domains that run illegal sports streaming brands such as Xoilac, Cakhia, and Socolive, which funnel viewers to gambling platforms like VSBet and ColaScore. The actor spent an estimated $7 million or more on expired dropcatch domains that inherit legitimate reputation and traffic. Since late 2025, a subset of these streaming domains has also served as command-and-control for more than 31,000 RAT samples, including Quasar RAT, AsyncRAT, DCRat, and NanoCore. Malware samples embed the actor's brand names in their metadata, linking the malware directly to the operation. Vietnamese enforcement in early 2026 disrupted specific properties but the operation recovered within a month. Defenders should note that aged domain history does not reliably indicate trustworthiness.",
+      "completeness": "Medium",
+      "threats": [
+        "Quasar_rat",
+        "Asyncrat",
+        "Dcrat",
+        "Nanocore_rat",
+        "Remcos_rat",
+        "Njrat",
+        "Hiddentear",
+        "Supply_chain_technique",
+        "Cloaking_technique",
+        "Balada_injector"
+      ],
+      "geo": [
+        "Brazilian",
+        "Australia",
+        "Asia",
+        "Japan",
+        "Hong kong",
+        "Russian",
+        "Indonesian",
+        "Vietnamese",
+        "Chinese",
+        "French",
+        "Taiwan",
+        "South korea",
+        "China",
+        "Asian",
+        "Polish",
+        "Vietnam",
+        "Singapore"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "GoDaddy",
+        "unicorn",
+        "Instagram",
+        "Google Play",
+        "Keitaro",
+        "Android"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/7-million-in-expired-domains-fuel-a-streaming-empire-with-a-malware-secret/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "When SQL Server Becomes the Initial Launcher: A Deep Dive into Weaxor Ransomware Execution",
+      "summary": "Weaxor ransomware, a rebranded version of the Mallox family, targets enterprise MS-SQL Server deployments. The attackers enabled xp_cmdshell and OLE Automation, letting sqlservr.exe spawn a command interpreter. An obfuscated PowerShell loader disabled AMSI and downloaded a stager that injected a Cobalt Strike Beacon into memory using ROR13 API hashing and WinINet. The Beacon then injected the ransomware into the legitimate, signed SQLPS.exe, which encrypted files with ChaCha20 and appended .weax. Defenders should harden SQL Server, enable PowerShell and script block logging, and monitor for database processes spawning shells.",
+      "completeness": "High",
+      "threats": [
+        "Weaxor",
+        "Cobalt_strike_tool",
+        "Targetcompany",
+        "Amsi_bypass_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 7,
+      "software": [
+        "Microsoft SQL Server",
+        "Microsoft SQL",
+        "MS-SQL",
+        "OLE Automation",
+        "Chrome"
+      ],
+      "algorithms": [
+        "xor",
+        "ror13",
+        "chacha20"
+      ],
+      "functions": [
+        "CreateFile",
+        "WriteFile"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/when-sql-server-becomes-the-initial-launcher-a-deep-dive-into-weaxor-ransomware-execution/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Jewelbug: APT Group Runs Espionage and Crypto Fraud Operations Side by Side",
+      "summary": "Jewelbug is a China-based hackers-for-hire group that runs espionage against government and military targets in the Middle East, Southeast Asia and South Asia alongside a for-profit cryptocurrency fraud business. Both activities are administered from a single browser-centric control panel, XG-Web, which turns victims' browsers into remote-control channels and reaches into their hosts and internal networks. Its main implant, the Antino backdoor, uses the Microsoft Graph API for command-and-control, and a malicious \"PDF Viewer\" browser extension gives operators broad access. In its largest operation, attackers compromised a shared webmail hosting platform and planted a watering-hole across more than 15 Middle Eastern government tenants at once. Investigators linked the fraud arm to a named individual and a Changsha SEO company, and noted uneven operational security. The report shows how one intrusion on shared hosting can expose an entire national webmail estate.",
+      "completeness": "High",
+      "threats": [
+        "Antino",
+        "Watering_hole_technique",
+        "Mitm_technique",
+        "Clientking",
+        "Dns_tunneling_technique",
+        "Seo_poisoning_technique",
+        "Hack-for-hire_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Taiwan",
+        "Taiwanese",
+        "China",
+        "Asia",
+        "Asian",
+        "Venezuela",
+        "Chinese",
+        "Ukraine",
+        "Middle east",
+        "Indo-pacific"
+      ],
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Microsoft Edge",
+        "Linux",
+        "Node.js",
+        "MySQL",
+        "Graph API",
+        "sudo",
+        "Telegram",
+        "Google Chrome",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "rust"
+      ],
+      "links": [
+        "https://www.security.com/blog-post/jewelbug-crypto-fraud-espionage"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Dissecting the JWR phishing framework",
+      "summary": "The JWR phishing framework is an undocumented, operator-driven phishing kit that impersonates checkout and login pages for payment and shopping platforms. Unlike static credential-stealing pages, it keeps an encrypted WebSocket open so the operator can steer each victim's session live and stream keystrokes as they are typed. Harvested data goes well beyond payment card details to include Social Security numbers, identity document images, PayPal credentials, 2FA codes, and device fingerprints. Talos assesses with medium confidence that JWR is a variant of The Outsider PhaaS platform, and it has been used in SMS lures impersonating toll, postal, and courier services in Southeast Asia and the Middle East. Defenders should note the kit's Chinese-language operator interface and its signature-based coverage.",
+      "completeness": "High",
+      "threats": [
+        "Jwr_tool",
+        "Credential_stealing_technique",
+        "Outsider_tool",
+        "Smishing_technique",
+        "Lucid_tool",
+        "Darcula_tool"
+      ],
+      "geo": [
+        "Chinese",
+        "Asian",
+        "Middle east",
+        "Asia",
+        "Singapore"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "aes-ctr",
+        "base36"
+      ],
+      "functions": [
+        "getIPInfo",
+        "getSyncSettings",
+        "initShopifyProductInfo",
+        "initWordPressProductInfo"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/dissecting-the-jwr-phishing-framework/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/08/dissecting-the-jwr-phishing-framework.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "ClickFix campaign abuses Deno runtime for infostealer delivery",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Deno_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 2,
+      "software": [
+        "WordPress",
+        "Windows Terminal"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/clickfix-campaign-abuses-deno-runtime-for-infostealer-delivery"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Helix Extortion Group Claims Uber Freight Breach as UNC6671 Vishing Campaign Expands Into Logistics",
+      "summary": "Helix is an extortion brand that GTIG assesses as tightly linked to the UNC6671 cluster, which also operates BlackFile, Redact, Pink, and Falcon. Helix claims a data breach at Uber Freight, which says it is investigating a cyber incident but has not confirmed a breach. The actor uses vishing to impersonate helpdesks and push fake passkey or MFA migrations, then proxies logins through AiTM to steal sessions. Attackers enroll their own authenticators, delete security alerts, and script data exfiltration from Microsoft 365 and Okta at machine speed. Defenders should adopt phishing-resistant MFA such as FIDO2 or passkeys, because push and OTP do not stop this chain, and should hunt identity-layer behavior rather than brand names.",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Residential_proxy_technique"
+      ],
+      "software": [
+        "okta",
+        "Windows Hello",
+        "Microsoft Defender",
+        "buntu; L",
+        "inux x8",
+        "ta.android.aut"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/helix-extortion-group-claims-uber-freight-breach-as-unc-6671-vishing-campaign-expands-into-logistics"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "A Developer's Guide to Getting Rid of PolinRider",
+      "summary": "PolinRider is a North Korean (DPRK) campaign that targets individual software developers, with more than 2000 GitHub owners and 4000 repos compromised as of July. Victims are infected through fake job interviews with booby-trapped coding tests, typosquatted malicious packages, or infected repos, packages, or commits from other developers. The malware steals browser credentials, crypto wallet data, SSH keys, cloud credentials, and tokens, then self-spreads by using those credentials to plant malicious code in the victim's other projects. Standard remediation often fails because the local propagation script persists, credentials may be missed during rotation, and infected collaborators or CI links can reinfect cleaned systems. Defenders should disable automatic VS Code tasks, freeze repo access, rotate every reachable credential, and audit all repos the account can reach.",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider",
+        "Nullreceiver_technique",
+        "Etherhiding_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "North korea"
+      ],
+      "software": [
+        "curl",
+        "macOS",
+        "Linux",
+        "crontab",
+        "Windows Defender",
+        "Telegram"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "aptos",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "Get-CimInstance"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/developer-guide-getting-over-polinrider",
+        "https://github.com/orgs/community/discussions/188732",
+        "https://github.com/OpenSourceMalware/PolinRider"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Armored Likho expands its cyber-espionage toolkit",
+      "summary": "Armored Likho, also known as Eagle Werewolf, ran a May 2026 cyber-espionage campaign targeting private individuals and organizations in Russia, including corporations, the public sector, IT firms, and educational institutions. The attackers used a fake donation app, built with Rust and Tauri, as a dropper that decrypts and launches later-stage payloads while the user browses a catalog. The campaign introduces the Still Toolkit, written in Rust, whose Still Sync component steals Telegram session data to pull chats and media through the Telegram API. Still Audio is a covert microphone implant that detects speech, records conversations, and sends them to a command-and-control server. Kaspersky attributes the campaign to Armored Likho with high confidence, citing code and infrastructure overlaps with earlier campaigns.",
+      "completeness": "High",
+      "threats": [
+        "Still_toolkit_tool",
+        "Still_sync",
+        "Still_audio",
+        "Aquilarat",
+        "Shadow_copies_delete_technique",
+        "Robocopy_tool",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Starlink",
+        "Microsoft Store"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "blowfish"
+      ],
+      "languages": [
+        "powershell",
+        "rust"
+      ],
+      "links": [
+        "https://securelist.com/armored-likho-still-toolkit/121033/",
+        "https://github.com/tokio-rs/tokio",
+        "https://github.com/google/flatbuffers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "North Korean hacker groups fully integrate AI: From phishing documents to self-built local large language models",
+      "summary": "North Korean group Kimsuky, attributed to the Reconnaissance General Bureau, has integrated AI across its attack chain in a campaign named GitPower, which continues its earlier FlowerPower activity. The group now generates spear-phishing decoy documents with generative AI, and its phishing lures are apparently built with python-docx and WPS Word, with batch-generated timestamps suggesting automated scripts. Operators deployed local large language model tools (Ollama, GPT4All and Msty) on internal systems and collected AI development libraries, including retrieval-augmented generation components, suggesting they plan to build AI-enabled attack tools. Evidence indicates the group is still learning to use public models rather than training its own. Targets include diplomatic, military, security and virtual asset sectors. Defenders should note that the infection chain relies on malicious LNK files, obfuscated PowerShell, scheduled tasks, GitHub as command-and-control, and AsyncRAT.",
+      "completeness": "Low",
+      "threats": [
+        "Flowerpower",
+        "Spear-phishing_technique",
+        "Whisper_backdoor",
+        "Asyncrat"
+      ],
+      "geo": [
+        "South korean",
+        "North korea",
+        "Korean",
+        "North korean"
+      ],
+      "software": [
+        "Ollama",
+        "Llama",
+        "Mistral",
+        "Qwen",
+        "DeepSeek",
+        "LangChain",
+        "OpenAI",
+        "Astrill VPN"
+      ],
+      "algorithms": [
+        "gzip",
+        "zip",
+        "rc4",
+        "base64"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.secrss.com/articles/92962"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Dropcatch Scavengers: Expired Malicious Domains Become Cash Cows",
+      "summary": "Infoblox describes dropcatch actors who buy expired malicious domains that still receive traffic from compromised websites, then redirect visitors to scams and malware. Three actors are covered: Stuffy Squirrel hides malicious activity in legitimate-looking scripts and sells traffic to affiliate advertising networks. Shady Squirrel uses cloaking and Keitaro injections to route victims to tech support scams and, after partnering with SocGholish about ten days after Operation Endgame, to fake updates. Swiping Squirrel, the most prolific, resells traffic through ZeroPark, where visitors may land on malware or scams. The report stresses that expired domains embedded in compromised sites carry significant risk for defenders.",
+      "completeness": "Medium",
+      "threats": [
+        "Socgholish_loader",
+        "Clearfake",
+        "Scavenger",
+        "Cloaking_technique",
+        "Help_tds_tool",
+        "Balada_injector",
+        "Popunder_technique",
+        "Tech-support-scam_kit_tool",
+        "Supply_chain_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Japan",
+        "Japanese",
+        "United states",
+        "Russian"
+      ],
+      "software": [
+        "Keitaro",
+        "WordPress",
+        "Binom"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "functions": [
+        "Keitaro"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/dropcatch-scavengers-expired-malicious-domains-become-cash-cows/",
+        "https://github.com/infobloxopen/threat-intelligence"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "PATCHCORD: New malware cluster targets Afghan telecom and South Asian critical infrastructure",
+      "summary": "PATCHCORD is a previously undocumented C/C++ backdoor delivered through fake VPN and telecom management installers impersonating Afghan Telecom, targeting Afghan telecom providers and South Asian critical infrastructure. Acronis TRU links the campaign with moderate confidence to APT36 (Transparent Tribe), noting a stronger focus on Afghan telecom alongside government, defense and energy organizations. The malware hijacks browser shortcuts for persistence and supports remote command execution and in-memory shellcode execution. Related implants include SHEETCORD, a Go-based tool that uses Google Sheets for C2, and HACKERAI C2 Agent, which uses GitHub Gists and shows signs of AI-assisted development. An exposed staging server revealed a broader toolkit, including exploit tooling for CVE-2024-6387 (regreSSHion), suggesting possible network-level access attempts against telecom and government systems. The campaign remains active, so defenders should watch for sector-specific phishing lures.",
+      "completeness": "High",
+      "threats": [
+        "Patchcord",
+        "Sheetcord",
+        "Supershell",
+        "Credential_harvesting_technique",
+        "Regre_ssh_ion_vuln",
+        "Hackerai",
+        "Metasploit_tool",
+        "Sheetcreep",
+        "Spear-phishing_technique",
+        "Gatesentinel_tool",
+        "Hackbrowserdata_tool",
+        "Pwnkit_tool",
+        "Valleyrat",
+        "Abcdoor",
+        "Cobalt_strike_tool",
+        "Havoc"
+      ],
+      "geo": [
+        "Pakistan",
+        "Asia",
+        "Chinese",
+        "Indian",
+        "Afghanistan",
+        "India",
+        "Netherlands",
+        "Afghan",
+        "China",
+        "Asian",
+        "Guangdong"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "Embarcadero",
+        "NET Reactor",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Mozilla Firefox",
+        "chrome",
+        "Internet Explorer",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "exhibit",
+        "zip",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "FindAndHijackBrowserShortcut",
+        "SetIconLocation",
+        "TaskBar"
+      ],
+      "languages": [
+        "golang",
+        "delphi",
+        "vbscript",
+        "python"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/patchcord-new-malware-cluster-targets-afghan-telecom-and-south-asian-critical-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Signed, sealed, injected: The mechanics of DCRat in 2026",
+      "completeness": "High",
+      "threats": [
+        "Dcrat",
+        "Dll_sideloading_technique",
+        "Process_hollowing_technique",
+        "Process_injection_technique",
+        "Smuggling_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Colombian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 13,
+      "software": [
+        "Brotli",
+        "Windows Registry",
+        "Pastebin"
+      ],
+      "algorithms": [
+        "7zip",
+        "aes",
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "CreateProcessInternalW",
+        "InitializeSettings"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.trellix.com/blogs/research/signed-sealed-injected-dcrat-mechanics-2026/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Ethereum Malware Loader Targets Portuguese-Speaking Users",
+      "summary": "WatchGuard Threat Lab identified a multi-stage malware loader targeting Portuguese-speaking users that begins with obfuscated JavaScript run through Windows Script Host and installs its own Node.js runtime. The chain uses an Ethereum smart contract as a dead-drop resolver to locate attacker infrastructure, and it deploys a legitimate SentinelOne-signed executable that side-loads a malicious DLL. That DLL installs a Chromium extension targeting Google Chrome and Microsoft Edge, which can steal cookies and web storage, capture screenshots, log form inputs, and receive remote commands over WebSocket. The modular design lets operators change infrastructure or payloads without altering already-distributed initial stages.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Portuguese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 7,
+      "software": [
+        "Node.js",
+        "Chromium",
+        "Chrome",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Windows Registry"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "getConfig"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "jscript"
+      ],
+      "links": [
+        "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/ethereum-malware-loader-targets-portuguese-speaking-users"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-13",
+      "title": "Multi-Functional Linux Botnet “Evooo1Bot”",
+      "summary": "Evooo1Bot is a previously undocumented Linux botnet that reuses the DDoS engine from leaked Mirai source code and adds encrypted C2 communications, an SSH brute-force scanner, a SOCKS relay module, a credential sniffer, and an exploit arsenal. It has been exploiting Internet-facing edge devices such as routers, cameras, and firewalls since July 2026, using a loader script that downloads a binary matching the host's CPU architecture. Its persistence mechanisms include systemd, cron, and rc.local, and it checks for analysis tools and honeypots before acting. The SOCKS relay turns infected devices into proxies that attackers can use to conceal their origin and pivot into internal networks. Defenders should prioritize patching edge devices and monitor for suspicious outbound connections.",
+      "completeness": "High",
+      "threats": [
+        "Evooo1bot",
+        "Mirai",
+        "Ettercap_tool",
+        "Httpflood_technique",
+        "Udpflood_technique",
+        "Dnsflood_technique",
+        "Tcpsynflood_technique",
+        "Synflood_technique",
+        "Tcpackflood_technique",
+        "Ackflood_technique",
+        "Tcpstomp_technique",
+        "Tcpflood_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Tenda",
+        "busybox",
+        "curl",
+        "virtualbox",
+        "qemu",
+        "systemd",
+        "jenkins",
+        "Confluence",
+        "Zyxel",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-ctr",
+        "aes",
+        "chacha20",
+        "xor"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/multi-functional-linux-botnet-evooo1bot"
+      ]
+    }
+  }
+]

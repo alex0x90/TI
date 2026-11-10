@@ -1,0 +1,38 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-03",
+      "title": "Chinese Cybercrime Infrastructure Detected: Automated Exploitation & Harvesting Infrastructure",
+      "summary": "A Chinese-linked cybercrime operation, coordinated through a backend called paperclip and the OpenClaw workflow system, automates exploitation of vulnerable web applications and monetizes the results. The actor uses FOFA and 360Quake to find high-value targets such as Web3, fintech, and security vendors. Custom Python scripts run remote code execution across hundreds of hosts, with WAF bypass and parallel execution, and dump environment variables to harvest AI, Stripe, and database secrets. Persistence is maintained through Cloudflare tunnels, P2P clients, and d2 and pl backdoors, which outnumber confirmed webshells. Stolen Stripe keys are tested via API calls and cryptocurrency addresses are tracked across chains to prioritize accounts with balances. Defenders should watch for post-exploitation behavior and monetization activity, not just exploitation attempts.",
+      "completeness": "High",
+      "threats": [
+        "React2shell_vuln",
+        "Log4shell_vuln",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "nClaw",
+        "en",
+        "OpenClaw",
+        "PostgreSQL",
+        "trycloudflare",
+        "curl",
+        "nClaw"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://socradar.io/blog/chinese-cybercrime-exploitation-harvesting/"
+      ]
+    }
+  }
+]

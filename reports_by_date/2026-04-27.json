@@ -1,0 +1,129 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-27",
+      "title": "Bitwarden CLI Hijacked in npm Supply Chain Attack Linked to TeamPCP & Checkmarx Breach",
+      "summary": "A malicious @bitwarden/cli version 2026.4.0 was published to npm for about 90 minutes on April 22, 2026, and it was linked to threat actor TeamPCP and a concurrent Checkmarx supply chain compromise. The attackers did not alter Bitwarden's core code; the likely entry point was a compromised GitHub Action in the CI/CD packaging workflow. A preinstall loader fetched the Bun runtime and ran an obfuscated payload that harvested SSH keys, Git and npm credentials, .env files, cloud credentials, CI/CD secrets, and AI/MCP tool configurations. The malware abused stolen GitHub tokens to create repositories for exfiltration and to harvest Actions secrets, and it could propagate to packages the victim could publish. Defenders should remove the affected version, block the listed exfiltration domain, and rotate exposed credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Bitwarden",
+        "Docker",
+        "Node.js",
+        "claude",
+        "Trivy",
+        "LiteLLM"
+      ],
+      "algorithms": [
+        "gzip",
+        "zip",
+        "aes-256-gcm",
+        "aes",
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://socradar.io/blog/bitwarden-cli-hijacked-npm-supply-chain-teampcp/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-27",
+      "title": "Beyond PowerShell: Analyzing the Multi-Action ClickFix Variant",
+      "summary": "A newly observed ClickFix variant abuses native Windows utilities cmdkey and regsvr32 to deliver a remote DLL without dropping an initial executable to disk. Victims are lured by a fake CAPTCHA page into pasting a single command into the Windows Run dialog, which stores credentials and loads the payload from attacker-controlled SMB infrastructure. The DLL's DllRegisterServer export creates a hidden scheduled task whose definition is pulled from a remote XML file, letting attackers change second-stage behavior without redeploying the DLL. The report notes this relies entirely on trusted LOLBins and aims for low-noise execution, while the command-and-control server was down at publication. Defenders should monitor cmdkey targeting external IPs, regsvr32 loading UNC-path DLLs, chained cmd.exe execution, and scheduled tasks sourced from remote XML, and continue user education on ClickFix lures.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "languages": [
+        "powershell",
+        "SIGMA: Found"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/beyond-powershell-analyzing-the-multi-action-clickfix-variant/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-27",
+      "title": "Defending Critical Infrastructure in a Hyperconnected Society",
+      "completeness": "Low",
+      "threats": [
+        "Stuxnet",
+        "Industoyer2",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Portugal",
+        "Berlin",
+        "France",
+        "Spain",
+        "London",
+        "Iran"
+      ],
+      "links": [
+        "https://outpost24.com/blog/defending-critical-infrastructure-hyperconnected-society/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-27",
+      "title": "The Meta 2FA Trap: From Verified Badge to Account Takeover",
+      "summary": "A Cofense phishing campaign impersonates Meta's verification system to steal login credentials and two-factor authentication (2FA) tokens from Facebook and Instagram users and businesses. Victims receive an email from a Gmail account displaying \"Meta Verified\" as the sender name, claiming account verification has been approved. The email links to a Google Form branded as Meta Verified, which redirects users to a page hosted on a legitimate hosting service, where they submit personal details, passwords, and then their 2FA token. The attacker captures the 2FA token in real time and uses it to log into the account almost immediately. Defenders should watch for domain mismatches, such as a Meta-branded page hosted on a third-party domain, and treat any request for a 2FA token as a strong sign of phishing.",
+      "completeness": "Low",
+      "software": [
+        "Instagram",
+        "Gmail"
+      ],
+      "links": [
+        "https://cofense.com/blog/the-meta-2fa-trap-from-verified-badge-to-account-takeover"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-27",
+      "title": "New Malware SLOTAGENT for BOF Execution, etc.",
+      "summary": "IIJ discovered SLOTAGENT, a previously unknown multifunction RAT, in an early 2026 ZIP file uploaded from Japan to a public malware repository. The malware executes Beacon Object File (BOF) payloads, the same format used by Cobalt Strike and other post-exploitation frameworks, and includes anti-forensic timestomping. A loader uses API hashing and RC4 decryption of a data file to run shellcode that reflectively loads the SLOTAGENT DLL. SLOTAGENT communicates with a hardcoded command-and-control server over a custom TCP protocol, sending host details and receiving commands such as screenshot, shell, file transfer, process kill, and self-destruct. The malware also employs API hashing and string encryption to hinder reverse engineering, and IIJ released a decryption script and YARA rules for detection.",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Timestomp_technique",
+        "Slotagent"
+      ],
+      "geo": [
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "rc4",
+        "zip"
+      ],
+      "links": [
+        "https://sect.iij.ad.jp/blog/2026/04/slotagent/",
+        "https://github.com/mopisec/research/blob/main/decrypt\\_slotagent\\_string.py"
+      ]
+    }
+  }
+]

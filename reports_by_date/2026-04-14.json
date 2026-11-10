@@ -481,5 +481,54 @@
         "https://github.com/eSentire/iocs/blob/main/STX%20RAT/STXRATIdaPython.zip"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-14",
+      "title": "When PUPs Grow Fangs: Dragon Boss Solutions Left an Open Door on 25,000+ Endpoints",
+      "completeness": "High",
+      "threats": [
+        "Dragonboss",
+        "Av-killer",
+        "Supply_chain_technique",
+        "Chromnius"
+      ],
+      "geo": [
+        "Arab emirates",
+        "France",
+        "United arab emirates",
+        "Germany",
+        "America",
+        "United kingdom",
+        "Canada",
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Chrome",
+        "Microsoft Edge",
+        "Google Chrome",
+        "Windows Installer"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Set-ExecutionPolicy",
+        "RemoveClockAtLogon",
+        "RemoveClockPeriodic",
+        "Initialize-MbSetupWmiKill",
+        "Remove-AVCompletely",
+        "Remove-OurScheduledTasks"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/pups-grow-fangs"
+      ]
+    }
   }
 ]

@@ -1,0 +1,568 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "Anatomy of an Attack. VIPERTUNNEL",
+      "summary": "VIPERTUNNEL is a Python-based backdoor that acts as a persistent post-compromise network proxy, linked by threat intelligence to UNC2165 (EvilCorp), with its deployment prior to DragonForce ransomware activity observed in one engagement. It abuses the legitimate pythonw.exe interpreter, a scheduled task, and a malicious sitecustomize.py to load a heavily obfuscated Python script disguised as a DLL. The final payload runs in memory and opens a SOCKS5 tunnel to a hardcoded command-and-control server over TCP port 443. Evidence suggests it may be paired with the Pyramid post-exploitation framework, though this could not be definitively verified. Because the malware leaves little static signature, defenders should rely on network behavior, correlating scheduled-task persistence, unusual Python execution, and unexpected SOCKS or port 443 traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Vipertunel",
+        "Dragonforce_ransomware",
+        "Lolbin_technique",
+        "Lolbas_technique",
+        "Socgholish_loader",
+        "Pyramid_c2_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 18,
+      "software": [
+        "Windows scheduled task",
+        "Windows Security"
+      ],
+      "algorithms": [
+        "chacha20",
+        "xor",
+        "aes"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.extrahop.com/blog/vipertunnel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "Citizen, Update Yourself : An Analysis of the Falcon Malware Campaign",
+      "summary": "The Falcon Android malware campaign, analyzed by PT Sandbox researchers, began with an APK named \"mir-pay.apk\" disguised as a Russian service and asking users to update the app. The malware uses a multi-stage loader that unpacks a hidden payload, and it fetches its later stages from legitimate project-management services such as Trello, YouGile, and a Mail.ru tracker. The campaign targets users in Russia, with phishing overlays that harvest credentials and fake PIN and pattern-lock screens. Compared with its 2022 samples, the 2026 variant adds screen recording, SMS and call interception, persistence mechanisms, and a feature that can brick devices by displaying HTML over the lock screen. Defenders should avoid installing apps from untrusted sources, remove apps that demand excessive permissions or a forced update, and never grant Accessibility Service access.",
+      "completeness": "Medium",
+      "threats": [
+        "Falcon_malware",
+        "Mamont_spy"
+      ],
+      "geo": [
+        "Russian",
+        "Ukrainian",
+        "Russia"
+      ],
+      "software": [
+        "Android",
+        "Dropbox"
+      ],
+      "algorithms": [
+        "rc4"
+      ],
+      "languages": [
+        "php",
+        "java",
+        "javascript"
+      ],
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1036620/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "The Gentlemen Ransomware With Custom EDR/AV Killers Scaling Faster to Attack Industries Worldwide",
+      "completeness": "High",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Av-killer",
+        "Qilin_ransomware",
+        "Gentlekiller",
+        "Edr-killer",
+        "Hexkiller",
+        "Throttleblood",
+        "Havockiller",
+        "Credential_harvesting_technique",
+        "Oxideharvest",
+        "Mamba",
+        "Glocker_tool",
+        "Netexec_tool",
+        "Winrm_tool",
+        "Certihound_tool",
+        "Nmap_tool",
+        "Credential_dumping_technique",
+        "Ksldump_tool",
+        "Kslkatz_tool",
+        "Byovd_technique",
+        "Burntcigar",
+        "Zemana_tool",
+        "Iobit_tool",
+        "Poisonx",
+        "Medusalocker",
+        "Edrstartuphinder_tool",
+        "Gfreeze_tool",
+        "Glinker_tool",
+        "Dumpbrowsersecrets_tool",
+        "Zerosalarium_tool",
+        "Titanis_tool",
+        "Themida_tool",
+        "Anydesk_tool",
+        "Systembc",
+        "Zeropulse_tool",
+        "Putty_tool",
+        "Vssadmin_tool",
+        "Shadow_copies_delete_technique",
+        "Manspider_tool",
+        "Garble_tool",
+        "Wevtutil_tool",
+        "Relayking_tool",
+        "Mimikatz_tool",
+        "Privhound_tool",
+        "Regpwn_tool",
+        "Cobalt_strike_tool",
+        "Ransom.win64.gentleman",
+        "Ransom.win64.gentleman.thhaibe",
+        "Blackbyte",
+        "Trojan:win32/mptamperbulkexcl.h",
+        "Bloodhound_tool"
+      ],
+      "geo": [
+        "France",
+        "Russian",
+        "United states",
+        "Asia",
+        "America",
+        "Thailand",
+        "Turkish",
+        "Germany",
+        "Australia"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 36,
+      "software": [
+        "DeepSeek",
+        "Qwen",
+        "FortiGate",
+        "Active Directory",
+        "Windows service",
+        "Valorant",
+        "ThrottleStop",
+        "Event Tracing for Windows",
+        "PsExec",
+        "Sysinternals",
+        "have more..."
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "curve25519",
+        "xchacha20",
+        "sha1",
+        "ecdh"
+      ],
+      "functions": [
+        "TaskHound",
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "golang",
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/gentlemen-ransomware-global-attacks/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "GoodPersonRAT: Fake Chinese VPN drops extensive C2 client",
+      "summary": "A fake installer for Kuailian VPN (LetsVPN), a service known for bypassing China's Great Firewall, drops an encrypted remote access trojan on victim machines. The malicious MSI is unsigned, though it bundles a legitimate signed LetsVPN installer to appear genuine. A shellcode loader decrypts and reflectively loads the final RAT stage into memory so it is never written to disk. The RAT provides remote control, keylogging, clipboard theft, proxy redirection, browser profile resets, Telegram tampering, and persistence via services and SYSTEM scheduled tasks. It also tampers with Microsoft Defender through exclusions and disabled reporting, and it profiles other EDR/AV products. Defenders should verify the integrity of software installers, and ThreatLocker notes that allowlisting and outbound network restrictions can mitigate this attack.",
+      "completeness": "Medium",
+      "threats": [
+        "Goodpersonrat"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 2,
+      "software": [
+        "LetsVPN",
+        "Kuailian VPN",
+        "Telegram",
+        "Huorong",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.threatlocker.com/blog/goodpersonrat-fake-chinese-vpn-drops-extensive-c2-client"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "Vidar Stealer Unmasked: Code Signing Abuse, Go Loaders and File Inflation",
+      "summary": "Unit 42 identified an April 2026 financially motivated campaign delivering Vidar stealer and the XMRig Monero miner to consumer and small- and medium-sized business victims, mainly in the U.S. and EU. Victims are lured through malvertising to fake cracked software downloads packaged as password-protected .bin archives. The Go-based loaders use the Factory-v3 builder, carry a fabricated Authenticode signature impersonating JustWatch, and are padded with null bytes to hundreds of megabytes to evade sandboxes. A later variant swapped in a certificate impersonating Bleacher Report, and the loaders include an in-memory AMSI bypass. Defenders should enforce strict Authenticode chain validation, scan files regardless of size, and monitor for MpClient.dll loads from non-standard paths.",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Goloader",
+        "Dll_sideloading_technique",
+        "Factory-v3_tool",
+        "Xmrig_miner",
+        "Lumma_stealer",
+        "Dllsearchorder_hijacking_technique",
+        "Amsi_bypass_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "German"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 1,
+      "software": [
+        "Windows Defender",
+        "Telegram"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "xor",
+        "sha1",
+        "exhibit"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/vidar-stealer-xmrig-miner-campaign-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "Mycelium Framework: First Ever Witnessed AI-as-a-Service Botnet",
+      "summary": "The Mycelium Framework is an underground botnet advertisement that positions compromised machines as an AI-as-a-Service platform rather than a simple tool for DDoS, spam, or ransomware. It is a modular C++ system for Windows and Linux, controlled through IRC-based C2 with AES-256 encryption, and it advertises more than 20 RCE exploit modules targeting enterprise applications and admin consoles. Its Distributed AI Grid routes tasks to nodes according to their CPU, GPU, local models, stolen AI API keys, and browser sessions, and it also supports password cracking, reconnaissance, and social engineering. The researchers could not verify the claims because the actor supplied no source code or proof of execution, though most individual techniques have been documented before. The main takeaway for defenders is that the risk lies in combining these capabilities, so teams should watch for unexpected model API usage, inference-level compute on servers, and unusual encrypted outbound traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Mycelium",
+        "Mirai",
+        "Phorpiex",
+        "Dorkbot",
+        "Ragebot",
+        "Proxyshell_vuln",
+        "Spring4shell",
+        "Log4shell_vuln",
+        "Com_hijacking_technique",
+        "Polymorphism_technique",
+        "Credential_harvesting_technique",
+        "Passthehash_technique",
+        "Winrm_tool",
+        "Netgrid_tool",
+        "Hashgrid_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Microsoft Exchange",
+        "BIG-IP",
+        "Confluence",
+        "Apache Struts",
+        "ActiveMQ",
+        "Jenkins",
+        "JBoss",
+        "systemd",
+        "Chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/mycelium-framework-ai-as-a-service-botnet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "JADEPUFFER: Agentic ransomware for automated database extortion",
+      "summary": "JADEPUFFER is an agentic threat actor, an operation driven end-to-end by a large language model, which Sysdig TRT assesses as the first documented case of agentic ransomware. It gained initial access to an internet-facing Langflow instance through CVE-2025-3248, then harvested credentials, pulled secrets from a MinIO store using default credentials, and set up persistence. The agent then compromised a separate production MySQL and Alibaba Nacos server, encrypted Nacos configurations, left a ransom note, and dropped databases. Its payloads were self-narrating and it corrected failed steps within seconds, which Sysdig cites as evidence of autonomy. The main takeaway for defenders is to patch Langflow, harden Nacos and database admin accounts, and restrict egress from application hosts.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Llmjacking_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Langflow",
+        "OpenAI",
+        "Anthropic",
+        "DeepSeek",
+        "minio",
+        "crontab",
+        "MySQL",
+        "Nacos",
+        "Docker",
+        "nacos:nacos",
+        "have more..."
+      ],
+      "wallets": [
+        "bitcoincore"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes",
+        "base64",
+        "aes-128-ecb",
+        "bcrypt"
+      ],
+      "functions": [
+        "GetObject",
+        "AES_ENCRYPT",
+        "uuid4"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion",
+        "https://github.com/langflow-ai/langflow"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "Analysis of APT-C-20’s Covert Attack Activities Using Techniques Such as Explorer Hijacking and LSB Steganography",
+      "summary": "APT-C-20 (APT28, also known as Fancy Bear), a state-level threat group active since 2004, is the subject of this report from 360 Advanced Threat Research Institute. The campaign begins with a macro-laden decoy Word document that drops components, establishes user-level persistence via COM hijacking, and uses explorer.exe to sideload a malicious DLL. The DLL extracts shellcode from an LSB-steganography PNG and loads a C# Covenant Grunt implant that uses the Filen.io cloud service for command and control. The decoy themes target Eastern European defense topics, and the researchers attribute the activity to APT-C-20 based on these overlaps and similarities with prior campaigns. The report notes that the attack chain relies on legitimate processes and cloud infrastructure to evade traditional detection, so defenders should monitor COM hijacking and unexpected cloud API traffic.",
+      "completeness": "Low",
+      "threats": [
+        "Steganography_technique",
+        "Com_hijacking_technique",
+        "Pixynetloader",
+        "Covenant_c2_tool",
+        "Grunt"
+      ],
+      "software": [
+        "process explorer"
+      ],
+      "algorithms": [
+        "xor",
+        "hmac",
+        "aes",
+        "base64",
+        "exhibit",
+        "pbkdf2",
+        "md5",
+        "aes-256"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/TDb_UzNfebMzMxh_bQdMvA"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "RedWing: A Mobile Malware-as-a-Service Operation",
+      "summary": "RedWing is an Android spyware variant sold as Malware-as-a-Service through a Telegram channel, with links to Russian threat actors and apparent similarities to the Oblivion malware. Operators distribute it through mobile phishing sites using customizable fake app store pages, and many associated payloads and droppers evade conventional detection. The malware uses social engineering to obtain critical permissions such as default SMS handler, battery optimization exemption, and Accessibility, then exfiltrates SMS, contacts, call logs, and files while enabling remote screen control, audio and camera capture, and call forwarding to bypass voice-based 2FA. It deploys fake banking and cryptocurrency overlays, with a focus on 82 institutions, mainly Russian financial firms, and its target list can be changed without redistributing the malware. RedWing can also turn infected devices into DDoS botnets. Zimperium's report stresses that enterprises should treat every mobile device as a potential entry point.",
+      "completeness": "Medium",
+      "threats": [
+        "Redwing",
+        "Oblivion_rat",
+        "Credential_harvesting_technique",
+        "Httpflood_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 21,
+      "software": [
+        "Android",
+        "Telegram",
+        "Google Play",
+        "RuStore"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://zimperium.com/blog/redwing-a-mobile-malware-as-a-service-operation",
+        "https://github.com/Zimperium/IOC/tree/master/2026-07-RedWing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "Helix, a New Name in the Data Extortion Ecosystem?",
+      "summary": "Helix is a data extortion group that ReliaQuest assesses as likely linked to the BlackFile and ShinyHunters ecosystem, though attribution is not confirmed. The group uses vishing and device code phishing to capture session tokens, often impersonating a target's manager, and then registers a new MFA method for persistence. Operators enumerate and bulk-download SharePoint libraries using scripted tools after dwell periods that range from under an hour to over a week. Some campaigns split access and extortion across two compromised accounts, making incident mapping harder. Defenders should disable device code authentication, restrict sensitive SaaS access to managed endpoints, and hunt across all accounts when an internal extortion message appears.",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Credential_harvesting_technique",
+        "Residential_proxy_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Salesforce"
+      ],
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-helix-new-name-in-data-extortion-ecosystem/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "Malicious Go Module Exposes GitHub Malware Lure Network Spanning 222 Repositories",
+      "summary": "Socket researchers tracking Operation \"Muck and Load\" began with a malicious Go module posing as a DNS/subdomain scanner that embedded a hidden PowerShell Windows loader. The loader pulled encrypted resolver material from public dead-drop services such as Pastebin and YouTube, then retrieved a password-protected archive that launched RAT and infostealer payloads. Pivoting from the module revealed a GitHub lure network of 222 confirmed repositories across 190 accounts, kept active by commit-farming workflows. Many of these repositories were themed around crypto wallets, game cheats, and bots to attract users willing to run untrusted code. Researchers linked the campaign with high confidence to previously reported ischhfd83-linked repository-backdoor activity. Defenders are advised to detect behavior and clustering, such as synthetic commit workflows and hidden PowerShell launched from packages, rather than relying only on fixed indicators.",
+      "completeness": "High",
+      "threats": [
+        "Dead_drop_technique",
+        "Vidar_stealer",
+        "Xmrig_miner",
+        "Bitminer",
+        "Lolbin_technique",
+        "Asyncrat",
+        "Quasar_rat",
+        "Remcos_rat",
+        "Right-to-left_override_technique",
+        "Supply_chain_technique",
+        "Process_injection_technique",
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 21,
+      "software": [
+        "Pastebin",
+        "Instagram",
+        "Telegram",
+        "Microsoft Defender",
+        "WalletConnect",
+        "Valorant",
+        "Discord",
+        "Outlook",
+        "Windows Service"
+      ],
+      "wallets": [
+        "exodus_wallet",
+        "metamask"
+      ],
+      "crypto": [
+        "monero",
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "main"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-go-module-exposes-github-malware-lure-network",
+        "https://socket.dev/go/package/github.com/kaleidora/dnsub-scanning-tool",
+        "https://github.com/yunxu1/dnsub"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "SilverFox Hackers Use Go RAT, AV Killer, and Kernel Rootkit in Live ValleyRAT Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Av-killer",
+        "Valleyrat",
+        "Smuggling_technique",
+        "Steganography_technique",
+        "Donut",
+        "Polymorphism_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/silverfox-hackers-use-go-rat-av-killer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-08",
+      "title": "APT-C-36 Conducts Attack Campaigns Using a New Loader",
+      "summary": "APT-C-36 (Blind Eagle), a suspected South American APT group, has been running a new campaign in May 2026 that targets government, financial, and insurance organizations, mainly in Colombia and other South American countries. The attackers hide an executable and several DLLs inside lures, and when victims run them, a loader side-loads the malicious payload. The loader is a variant of QuirkyLoader built with .NET Ahead-of-Time compilation, which produces native machine code and makes analysis harder. It decrypts its payload from a DLL section and injects it into a legitimate AddInProcess32.exe process, then establishes persistence via a startup entry. The final payload is DcRAT, a remote access trojan that is a more capable AsyncRAT-family evolution, and the report notes the group's pattern of swapping in various MaaS loaders while keeping the same lures and payload.",
+      "completeness": "Medium",
+      "threats": [
+        "Quirkyloader",
+        "Process_injection_technique",
+        "Process_hollowing_technique",
+        "Dcrat",
+        "Asyncrat"
+      ],
+      "geo": [
+        "Colombia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "pastebin"
+      ],
+      "algorithms": [
+        "chacha20",
+        "aes",
+        "xor"
+      ],
+      "functions": [
+        "CreateProcessInternalW",
+        "WriteProcessMemory"
+      ],
+      "links": [
+        "https://mp.weixin.qq.com/s/7eMIvKmpK5h2GlkH5U83rg"
+      ]
+    }
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-05-01",
+      "title": "Malicious Ruby Gems and Go Modules Impersonate Developer Tools to Steal Secrets and Poison CI",
+      "summary": "The BufferZoneCorp GitHub account published malicious Ruby gems and Go modules that impersonate legitimate developer tooling, often closely mimicking or typosquatting well-known libraries. The campaign began with sleeper packages that were later updated to add active payloads. The Ruby gems run at install time through extconf.rb and harvest environment secrets and local credential files such as SSH keys, AWS credentials, and GitHub CLI configuration. The Go modules run automatically via init() and target GitHub Actions by tampering with GITHUB_ENV, GOPROXY, checksum settings, and go.sum, or by planting fake go wrappers. One module also appends a hardcoded SSH key to authorized_keys, establishing persistence. Defenders should remove the packages, rotate exposed credentials, and limit CI secret scope.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "Outlook",
+        "GOPROXY",
+        "Docker",
+        "Unix"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "init",
+        "_syncRegistry",
+        "that"
+      ],
+      "languages": [
+        "ruby",
+        "swift"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-ruby-gems-and-go-modules-steal-secrets-poison-ci",
+        "https://socket.dev/go/package/github.com/BufferZoneCorp/go-metrics-sdk",
+        "https://socket.dev/go/package/github.com/BufferZoneCorp/go-retryablehttp",
+        "https://socket.dev/go/package/github.com/BufferZoneCorp/go-weather-sdk"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-01",
+      "title": "Copy Fail: Universal Linux Local Privilege Escalation Vulnerability",
+      "summary": "Copy Fail (CVE-2026-31431) is a Linux kernel vulnerability, discovered by Xint, that lets an unprivileged local user gain root by writing 4 controlled bytes into the page cache of any readable file. The flaw is a logic error in the AEAD crypto implementation (algif_aead), and chaining it with AF_ALG sockets and splice() allows overwriting setuid binaries such as /usr/bin/su. It affects nearly all Linux kernel versions since 2017, and it can also enable container escape when an unprivileged container shares a base image with a privileged one on the same node. A upstream fix exists, but as of May 1, 2026, many distributions, including Ubuntu LTS and Debian stable, had not yet released patches. Defenders should prioritize multi-tenant and CI runner hosts that execute untrusted code, and detection signals such as late AF_ALG loading and malformed su auth.log entries should be correlated with other indicators.",
+      "completeness": "Low",
+      "threats": [
+        "Copyfail_vuln"
+      ],
+      "software": [
+        "Linux",
+        "Ubuntu",
+        "Debian",
+        "Fedora",
+        "curl"
+      ],
+      "functions": [
+        "splice"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/copyfail-cve-2026-31431-linux-privilege-escalation-vulnerability",
+        "https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-01",
+      "title": "Watch Guard! Qilin affiliate exploits network appliances for initial access",
+      "summary": "Qilin, a prolific Ransomware-as-a-Service group, had an affiliate that exposed its operations through repeated OPSEC failures between August 2025 and March 2026, according to Ctrl-Alt-Intel. The affiliate gained initial access mainly by exploiting edge devices such as WatchGuard and Fortinet VPN appliances, then deployed Sliver C2 and Chisel SOCKS proxies on them. Known CVEs, including WatchGuard CVE-2025-9242 and FortiOS CVE-2025-59718, were used, with over 900 targeted WatchGuard IP addresses concentrated in Germany and the United States. The affiliate's Linux Qilin binaries were capable of encrypting Linux, ESXi, and Nutanix AHV environments, and were linked to US and German victims. The researchers stress that firewalls and VPN appliances usually lack adequate EDR telemetry, creating an industry-wide detection gap.",
+      "completeness": "High",
+      "threats": [
+        "Qilin_ransomware",
+        "Sliver_c2_tool",
+        "Chisel_tool",
+        "Cobalt_strike_tool",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "Germany",
+        "France",
+        "United kingdom",
+        "Netherlands",
+        "Italy",
+        "German"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 15,
+      "software": [
+        "Linux",
+        "ESXi",
+        "SmarterMail",
+        "Flask",
+        "Unix",
+        "inux sa",
+        "esxcli",
+        "vim-cmd"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "algorithms": [
+        "chacha20",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://ctrlaltintel.com/research/Qilin/",
+        "https://github.com/ctrlaltint3l/intelligence/tree/main/Qilin"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-01",
+      "title": "Malicious Ad for Homebrew Leads to MacSync Stealer",
+      "summary": "A malicious Google Ads result on April 30, 2026 led macOS users to a fake Homebrew page that distributed the MacSync Stealer. The fake page told victims to copy and paste a script into Terminal, which downloaded and ran further shell scripts. The infection prompted victims for their password and requested Terminal access to Finder through fake popups. MacSync Stealer then gathered host information, staged it in a temporary archive, and sent it to a command-and-control server. The report notes that as macOS adoption grows, attackers are increasingly targeting Mac users through search ads.",
+      "completeness": "Low",
+      "threats": [
+        "Macc_stealer"
+      ],
+      "software": [
+        "macOS"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "links": [
+        "https://dshield.org/diary/Malicious+Ad+for+Homebrew+Leads+to+MacSync+Stealer/32942/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-05-01",
+      "title": "The cPanel Situation Is…",
+      "summary": "CVE-2026-41940, a critical pre-authentication bypass in cPanel/WHM disclosed April 29, 2026, was reportedly weaponized by multiple third parties within 24 hours. Censys saw a sharp spike in malicious hosts on May 1, with about 80% of newly classified hosts running cPanel/WHM. One activity path deploys Mirai variants after compromise, and the report found no cPanel exploit code built into the sample it analyzed. A second path involves ransomware, with roughly 7,000 cPanel hosts exposing open directories where files carry a \".sorry\" extension. Defenders should prioritize patching cPanel/WHM and checking for these indicators, though the report notes the campaign scope is still developing.",
+      "completeness": "Low",
+      "threats": [
+        "Mirai",
+        "Hiddentear"
+      ],
+      "software": [
+        "cPanel",
+        "anel",
+        "Twitter"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://censys.com/blog/the-cpanel-situation-is/"
+      ]
+    }
+  }
+]

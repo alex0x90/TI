@@ -1,0 +1,540 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "0day in {REA_TEAM}",
+      "summary": "The report analyzes SolidPDFCreator.dll, a stage-1 backdoor attributed to Mustang Panda and part of a \"Target India – Campaign 3\" effort. It is delivered via a spear-phishing ZIP containing a benign-looking loader that side-loads the malicious DLL through its GetSPApp export. The DLL copies itself into C:\\ProgramData\\IDM\\logs, registers a daily SYSTEM scheduled task named MediumNetMonIt, and runs a 34,816-byte shellcode payload from executable memory. The shellcode is obfuscated through 186 individually XOR-and-reverse-encoded chunks. Defenders should block file creation in that IDM logs path, deny the MediumNetMonIt task name, and monitor EnumSystemLocalesA callbacks following RWX changes.",
+      "completeness": "High",
+      "threats": [
+        "Solidpdfcreator",
+        "Shardloader",
+        "Dll_sideloading_technique",
+        "Spear-phishing_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "India"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 8,
+      "software": [
+        "Visual Studio",
+        "Task scheduler",
+        "windows service"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "sha1",
+        "md5",
+        "xor",
+        "exhibit"
+      ],
+      "functions": [
+        "GetSPApp",
+        "CreateDirectoriesRecursively",
+        "GetModuleDirectory",
+        "_access",
+        "_mkdir",
+        "COM"
+      ],
+      "languages": [
+        "python",
+        "SIGMA: Found"
+      ],
+      "links": [
+        "https://kienmanowar.wordpress.com/2026/07/13/quicknote-solidpdfcreator-mustang-panda-stage-1-backdoor-target-india/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "Inside Pegasus: The evolution of the world’s most notorious spyware system",
+      "summary": "Amnesty International's Security Lab analyzed NSO Group's Pegasus spyware using internal NSO documents disclosed in WhatsApp and Meta's U.S. lawsuit against the company. Pegasus is sold to governments as an end-to-end system, with NSO Group running the anonymized delivery and relay infrastructure while customers operate the dashboard locally. Targeting begins with a phone number entered into a case, followed by fingerprinting and a choice of zero-click or one-click infection vectors. The report also says NSO Group's \"White Services\" team creates unique accounts and domains per customer, which lets researchers cluster attacks to the same operator. For defenders, the key takeaway is that customer-specific attack accounts and domains can serve as attribution indicators, and that Pegasus depends on ongoing vendor maintenance.",
+      "completeness": "Low",
+      "threats": [
+        "Chrysaor",
+        "Mitm_technique",
+        "Forcedentry_exploit"
+      ],
+      "geo": [
+        "Poland",
+        "India",
+        "Israel",
+        "United states",
+        "Peru",
+        "Serbian",
+        "Peruvian",
+        "Serbia",
+        "Brazil",
+        "Mexico"
+      ],
+      "software": [
+        "WhatsApp",
+        "Android",
+        "Viber",
+        "App in ord",
+        "iMessage",
+        "Outlook",
+        "Gmail"
+      ],
+      "links": [
+        "https://securitylab.amnesty.org/latest/2026/07/inside-pegasus-the-evolution-of-the-worlds-most-notorious-spyware/",
+        "https://github.com/AmnestyTech/inside-pegasus",
+        "https://github.com/AmnestyTech/inside-pegasus/blob/main/documents/testimony/eshkar-deposition.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "Large-Scale GitHub Actions Abuse Powers a Distributed cPanel and WHM Exploitation Campaign",
+      "summary": "Attackers compromised a legitimate PHP developer's GitHub repositories and planted 55 to 62 malicious GitHub Actions workflow files in each of ten Packagist development versions, totaling 583 files. These workflows launched GitHub-hosted Ubuntu runners that downloaded a Linux payload, which scanned internet-facing cPanel and WHM systems and attempted exploitation of CVE-2026-41940, an authentication bypass. The payload harvested cloud, payment, source-control, database, and SSH credentials, sending heartbeats and incremental results to attacker-controlled servers. Code searches suggest the activity extends well beyond one maintainer, though matching files do not confirm compromised accounts. Defenders should review and protect .github/workflows changes, restrict runner and token permissions, patch cPanel and WHM, and rotate exposed credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 12,
+      "software": [
+        "cPanel",
+        "Ubuntu",
+        "Linux",
+        "OpenAI",
+        "SendGrid",
+        "curl",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://socket.dev/blog/github-actions-abuse-powers-cpanel-and-whm-exploitation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "A New Awakening of Likho: The Awaken Likho Group Has Developed a backdoor for attacks on targets in Russia",
+      "summary": "Awaken Likho (also known as Core Werewolf) is an APT group that since at least 2021 has targeted organizations mainly in Russia and Belarus, including government bodies and their contractors. In May 2026 Kaspersky observed the group deploying a new custom backdoor written in AutoIt, delivered via targeted phishing and self-extracting 7-Zip archives. The implant is a lightweight loader that displays a decoy PDF, periodically polls a C2 server for commands executed through cmd.exe, and downloads and launches an update file. Its Russian-language file names and decoys reflect the group's focus on Russian-speaking users, with espionage as the main motive. The shift from legitimate remote tools such as UltraVNC to in-house tooling is a notable change, while the overall approach remains largely unchanged.",
+      "completeness": "Medium",
+      "threats": [
+        "Ultra_vnc_tool",
+        "Dropper.win32.autoit",
+        "Kryptik"
+      ],
+      "geo": [
+        "Russian",
+        "Belarus",
+        "Russia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "WinHttp"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "FileDelete"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://securelist.ru/tr/novoe-probuzhdenie-liha-gruppa-awaken-likho-podgotovila-bekdor-dlya-atak-po-tselyam-v-rossii/116325/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "Dolphin X Stealer Targets 300+ Apps and Profiles Users with AI",
+      "summary": "Dolphin X is a Windows stealer and remote access trojan advertised on a cybercrime forum by a vendor using the alias \"Kontraktnik.\" The listing claims it can target over 300 applications, including browsers, cryptocurrency wallets, password managers, SSH keys, .env files, and cloud and DevOps credentials, with the data staged in a single archive. An operator-side panel builds each binary on the vendor's remote server, where an opt-in mutation engine can alter the binary to evade hash-based and YARA-based detection. The panel also includes an AI Profiler that scores victims by application usage and browsing activity so attackers can prioritize high-value machines. Defenders should keep long-lived credentials off disk and focus detection on behavior, such as explorer.exe running under a non-default desktop, rather than file signatures. Varonis notes that the capabilities are largely as advertised or exposed in the panel and were not independently confirmed through execution on an infected machine.",
+      "completeness": "Medium",
+      "threats": [
+        "Spamgpt_tool",
+        "Bluekit_tool",
+        "Hvnc_tool",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 11,
+      "software": [
+        "Twitter"
+      ],
+      "wallets": [
+        "metamask",
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "pbkdf2",
+        "sha256"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/dolphin-x-stealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "Abusing Trusted Business Workflows: A Multi-Stage Phantom Stealer Campaign",
+      "summary": "Phantom Stealer v3.5.0 is delivered through phishing emails that impersonate UPS Forwarding Hub and the Malaysian Inland Revenue Board (LHDN), with malicious JavaScript hidden in compressed archive attachments. The JavaScript loader is heavily obfuscated and embeds a Base64 PowerShell script, which in turn decrypts an AES-protected stage and runs it in memory. The final payload is injected into the legitimate aspnet_compiler.exe binary via a reflective .NET loader, avoiding writing files to disk. The stealer harvests browser credentials, cookies, payment cards, cryptocurrency wallet data, and messaging app data, then exfiltrates it over SMTP on port 587 using STARTTLS. No specific threat actor was attributed, as the malware is widely available in the criminal ecosystem. Defenders should monitor for suspicious PowerShell activity, reflective loading, process injection, and unusual outbound SMTP traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Phantom_stealer",
+        "Process_injection_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Malaysian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 14,
+      "software": [
+        "Windows COM"
+      ],
+      "algorithms": [
+        "cbc",
+        "xor",
+        "zip",
+        "base64",
+        "aes"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/abusing-trusted-business-workflows-a-multi-stage-phantom-stealer-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "MuddyWater: ClickFix to Telegram & PatchAgent Backdoor",
+      "summary": "PatchAgent is a three-stage loader chain assessed with high confidence as MuddyWater-linked, starting from a cloud.dll COM dropper executed via regsvr32. The loader validates a custom PTCH v2 container with HMAC-SHA256 and decrypts it with AES-256-CBC through Windows BCrypt before running the final shellcode. That implant beacons over plain HTTP to 46.30.188[.]99 using /api/checkin, /api/cmd/<id>, and /api/result/<id>, executes hidden PowerShell, and hollows notepad.exe. It persists through Run keys and a copied executable under %APPDATA%\\Microsoft\\PatchAgent\\. The report links related infrastructure to a ClickFix lure using WebDAV and odbcconf, assessed with very high confidence for the delivery route. Defenders should hunt for regsvr32 loading DLLs from user-writable paths, PatchAgent-style Run keys, and the listed C2 API pattern.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Patchagent",
+        "Process_hollowing_technique",
+        "Com_hijacking_technique",
+        "Putty_tool",
+        "Process_injection_technique",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "India",
+        "Iranian",
+        "Asia",
+        "Russian",
+        "Africa",
+        "Latin america",
+        "Egyptian",
+        "Netherlands",
+        "Russia",
+        "Iran",
+        "America",
+        "Middle east"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 23,
+      "software": [
+        "Telegram",
+        "chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-cbc",
+        "sha256",
+        "sha1",
+        "aes-cbc",
+        "aes",
+        "xor",
+        "md5",
+        "cbc",
+        "hmac",
+        "bcrypt",
+        "aes-256"
+      ],
+      "functions": [
+        "getMe"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://ransom-isac.com/blog/muddywater-clickfix-patchagent/",
+        "https://github.com/Ransom-ISAC-Org/LOCKSTAR/blob/main/MuddyWater%20PatchAgent/readme.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "RondoDox to begin DDoS attacks",
+      "summary": "RondoDox, an IoT botnet first tracked from December 2025, began sending DDoS attack commands in May 2026 after about ten months of mostly keepalive activity and cryptomining. Early attacks were tests, including a single spoofed TCP packet sent to its own download server, and real DDoS attacks began on May 19 and were confirmed through reflected packets captured by NICTER sensors. Command timing suggested the operator was likely based in the US Pacific time zone, though this was an inference. Between versions 2 and 10, the operator added subnet targeting, multiple instances, new attack vectors, and a new C2 server while the malware targets routers and network cameras, mainly ARMv7 devices. By July 15 the activity no longer matched a single time zone, suggesting development was complete and a DDoS-for-hire operation might have started. Defenders should use strong passwords, update firmware, disable unused features, and replace unsupported devices.",
+      "completeness": "Low",
+      "threats": [
+        "Rondodox",
+        "Rapperbot",
+        "Aisuru"
+      ],
+      "geo": [
+        "Canada",
+        "United states",
+        "America",
+        "Pacific",
+        "Japanese"
+      ],
+      "software": [
+        "roblox wireguard",
+        "fortnite fivem",
+        "discord",
+        "csgo"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://blog.nicter.jp/2026/07/rondodox_2026_3g/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "1,509 WordPress sites feed an active SocGholish chain",
+      "summary": "A SocGholish operation used 1,509 compromised WordPress hosts between April 21 and July 21, 2026, with the malicious gateway running under each victim's trusted hostname. The injected script exchanges opaque tokens with a same-origin REST route, and a visitor-filtering controller decides whether to deliver a fake browser update to selected Windows users. Visitors who pass the checks download Google Launcher.js, which runs GhoLoader and fetches further controller-supplied code. Some of the same hosts later received ClickFix injections backed by Polygon EtherHiding, so the earlier gateway acts as a precursor indicator. Defenders should hunt the s6qgn route and related state-exchange behavior, and cleanup must remove the fake plugin, stolen access, and persistence.",
+      "completeness": "Low",
+      "threats": [
+        "Socgholish_loader",
+        "Gholoader",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Bouncer",
+        "Blob_url_obfuscation_technique",
+        "Rude"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "rc4",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "jscript"
+      ],
+      "links": [
+        "https://www.derp.ca/research/ta2726-wordpress-malware-launchpads/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "Inside a TrickBot Variant Using DNS Tunneling for C2",
+      "summary": "TrickBot variant uses DNS tunneling for command-and-control instead of the HTTP protocol used by earlier versions, according to FortiGuard Labs. The malware maintains persistence through a Windows Task Scheduler task disguised as a Wireshark update and stores its configuration in NTFS Alternate Data Streams. It obfuscates its strings and APIs and sends encrypted, malformed DNS queries via a public resolver, hiding response data in IPv4 addresses. Its modular design supports downloading and executing modules, process injection, and PowerShell execution, and the report describes it as a threat to Windows users. Defenders are advised to monitor for anomalous DNS traffic, and Fortinet notes its products detect the activity through IPS signatures, DNS behavioral analysis, and antivirus.",
+      "completeness": "Medium",
+      "threats": [
+        "Dns_tunneling_technique",
+        "Trickbot",
+        "Anchor",
+        "Process_hollowing_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 10,
+      "software": [
+        "Windows Task Scheduler",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "exhibit",
+        "base64"
+      ],
+      "functions": [
+        "Get_API_By_Hash",
+        "TrickBot"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/inside-a-trickbot-variant-using-dns-tunneling-for-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "Device Code Phishing: Turning a Convenience Feature Into an MFA Bypass",
+      "summary": "Device code phishing abuses the OAuth 2.0 device authorization grant, a legitimate flow meant for devices with limited input, to bypass MFA. The attacker starts a genuine device-code request and lures a victim into entering the code on the real Microsoft sign-in page, so the tokens are issued to the attacker after MFA is satisfied. In a reported Microsoft 365 case, the attacker used a conversation posing as a law firm partner, then a link hosted on Google Sites and routed through open redirects. After access, the attacker registered devices, created hidden inbox rules, and sent phishing from the mailbox. Defenders are advised to train users to distrust unexpected codes, block the device-code flow where not needed, and monitor device-code sign-ins and device registrations.",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Aitm_technique",
+        "Credential_harvesting_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 12,
+      "software": [
+        "Outlook"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/g/device-code-phishing.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "@copilot-mcp/apex: A macOS Infostealer Re-Published on npm After Takedown",
+      "summary": "A malicious npm postinstall dropper, @copilot-mcp/apex, installs a macOS infostealer on any machine that runs npm install or npx on it. npm removed the original package, @apexfdn/apex, and the operator republished the same dropper under a new scope about 11 hours later, with 20+ versions shipped in roughly 8 hours. The macOS payload is an AMOS-family stealer that phishes the login password through a fake system prompt, then harvests browser data, crypto wallets, SSH and cloud credentials, the Keychain, and Telegram sessions. It uploads the archive to attacker infrastructure and installs a LaunchAgent that polls the command-and-control server every 60 seconds. The lure targets Web3 and crypto founders with a free AI-credits pitch. npm has since removed the new package too, but the GitHub binaries and C2 server remained live, so defenders should block the names and domains and assume compromise on any affected Mac.",
+      "completeness": "High",
+      "threats": [
+        "Amos_stealer",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Germany"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Kubernetes",
+        "Telegram",
+        "Linux",
+        "Caddy",
+        "Claude",
+        "curl",
+        "openssl",
+        "Chrome",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "trezor",
+        "bluewallet",
+        "electron_cash"
+      ],
+      "crypto": [
+        "monero",
+        "bitcoin",
+        "litecoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256",
+        "sha1",
+        "sha256",
+        "aes",
+        "gzip",
+        "aes-256-cbc",
+        "zip"
+      ],
+      "languages": [
+        "solidity",
+        "typescript",
+        "applescript"
+      ],
+      "links": [
+        "https://safedep.io/malicious-copilot-mcp-apex-npm-macos-infostealer/",
+        "https://github.com/safedep/vet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "A Day With Webamon: EvilTokens, and a Long-Running Indian Tax Lure",
+      "completeness": "Low",
+      "threats": [
+        "Eviltokens_tool",
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "Indian",
+        "India"
+      ],
+      "links": [
+        "https://intel.webamon.com/blog/eviltokens-and-a-long-running-india-tax-lure"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-22",
+      "title": "Email Bombing, IT Impersonation, Quick Assist, and Edgecution: Breaking Down UNC6692's Tradecraft",
+      "summary": "UNC6692 ran a targeted phishing campaign against a customer in the software industry, starting with an email bombing attack. The threat actors then contacted the victim via Microsoft Teams while impersonating IT Support and persuaded them to launch Quick Assist for hands-on access. They used an Amazon S3-hosted fake Office 365 page to deliver AutoHotkey and a stager that installs Edgecution, a backdoor disguised as an \"Edge Monitoring Agent\" browser extension. Edgecution uses a Python native messaging host to escape the browser sandbox, monitor visits to banking, email, VPN, and admin portals, and execute commands on the host. The report notes UNC6692 operates as an initial access broker for Payouts King ransomware, and defenders should restrict external Microsoft Teams contact from unrecognized tenants.",
+      "completeness": "High",
+      "threats": [
+        "Email_bombing_technique",
+        "Microsoft_quick_assist_tool",
+        "Edgecution"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft Edge",
+        "AutoHotkey",
+        "Office 365",
+        "Outlook",
+        "Windows Task Scheduler",
+        "Edge and load t",
+        "chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "Teams",
+        "Get-CimInstance"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/email-bombing-it-impersonation-quick-assist-and-edgecution-breaking-down-unc6692s-tradecraft"
+      ]
+    }
+  }
+]

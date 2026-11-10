@@ -1,0 +1,211 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-07",
+      "title": "Analysis of the Connection Between Xctdoor and Past CRAT Attack Cases (Larva-26005)",
+      "summary": "Larva-26005, a threat actor ASEC links to North Korea and possibly Lazarus, distributes the Xctdoor backdoor to users in Korea. In 2026 the actor disguised droppers as Veraport and SoftCamp security installers and later used LNK files in spear phishing with decoy documents. Xctdoor is installed via the XcLoader injector and runs in C++ and Go variants, with C2-driven commands for shell access, file transfer, keylogging, and screenshots. ASEC links the actor to CRAT and early Xctdoor attacks from 2020 that also deployed Hansom ransomware, and to 2024 intrusions through web servers and a Korean ERP solution. Defenders should exercise caution with email attachments and unknown executables and keep security software updated.",
+      "completeness": "Medium",
+      "threats": [
+        "Xctdoor",
+        "Trurat",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Xcloader",
+        "Ngrok_tool",
+        "Process_injection_technique",
+        "Credential_stealing_technique",
+        "Threatneedle"
+      ],
+      "geo": [
+        "North korea",
+        "Korea",
+        "Korean",
+        "South korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Sysinternals",
+        "ShellRunAs",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "xor",
+        "md5"
+      ],
+      "functions": [
+        "RsdserviceMain",
+        "OfficeServiceMain",
+        "DllEntryPoint"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/en/94847/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-07",
+      "title": "FirewallFalcon Manager: Supply-Chain Backdoors in Underground VPN Infrastructure",
+      "summary": "FirewallFalcon Manager is a free-looking Linux server management tool promoted through Telegram and GitHub to VPN resellers who run SSH tunneling services. Its DT Tunnel option is a supply-chain backdoor that pins the legitimate Brazilian DTunnel proxy hostname to attacker-controlled infrastructure and installs a rogue root CA certificate. This enables transparent man-in-the-middle interception of tunnel traffic, and the installer runs as root via sudo. Older versions hid a Telegram reconnaissance bot and a hardcoded SSH backdoor user inside SHC-obfuscated binaries. Defenders should treat root-level installers and \"free\" management tools from untrusted sources as high-risk, and check for hosts file changes and unexpected CA certificates.",
+      "completeness": "High",
+      "threats": [
+        "Firewallfalcon-manager_tool",
+        "Supply_chain_technique",
+        "Mitm_technique",
+        "Dns_hijacking_technique",
+        "Dtunnel_tool",
+        "Badvpn_tool",
+        "Dnstt_tool",
+        "Xray_tool",
+        "Dns_tunneling_technique",
+        "Domain_fronting_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Senegal",
+        "India",
+        "Morocco",
+        "Ghana",
+        "Africa",
+        "Iraq",
+        "Chile",
+        "Saudi arabia",
+        "Turkey",
+        "Brazilian",
+        "Bangladesh",
+        "Pakistan",
+        "Italy",
+        "Middle east",
+        "Mena",
+        "African",
+        "Saudi",
+        "Sri lanka",
+        "Kenya",
+        "Brazil",
+        "Egyptian",
+        "Tunisia",
+        "Tanzania",
+        "Egypt",
+        "Algeria"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 10,
+      "software": [
+        "Linux",
+        "sudo",
+        "Telegram",
+        "Discord",
+        "Nginx",
+        "HAProxy",
+        "systemd",
+        "curl",
+        "Ubuntu",
+        "Android",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://flare.io/learn/resources/blog/firewallfalcon-manager-supply-chain-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-07",
+      "title": "ExfilSquad Targets New Victims, Shares Data via Torrents",
+      "summary": "ExfilSquad is an emerging, financially motivated data extortion group that does not typically deploy ransomware, instead threatening to leak stolen data on an onion-based Data Leak Site unless a ransom is paid. The group has targeted a range of high-profile organizations, including Wesco International, Allstate, Frontier Airlines, the City of Houston, and the UK Police National Legal Database. Its operations focus on CRM, internal case management, and AI support platforms, and it reportedly exploits misconfigured cloud and SaaS portals. After victims are listed, ExfilSquad publishes torrent files so stolen data spreads via peer-to-peer networks, making it impossible to fully remove. Resecurity recommends regular vulnerability assessment and penetration testing and stronger access controls on CRM, employee, and consumer portals holding sensitive PII.",
+      "completeness": "Low",
+      "threats": [
+        "Lockbit",
+        "Clop"
+      ],
+      "geo": [
+        "Sweden",
+        "Russia",
+        "Brazil",
+        "China",
+        "Columbia",
+        "Nigeria"
+      ],
+      "links": [
+        "https://www.resecurity.com/blog/article/exfilsquad-targets-new-victims-shares-data-via-torrents"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-07",
+      "title": "APT group Head Mare is exploiting vulnerabilities in an unpatched TrueConf server to deliver PhantomCore and PhantomGraph malware to videoconferencing participants",
+      "summary": "Kaspersky attributes a July 2026 campaign to Head Mare, which it now classes as an APT group rather than a hacktivist group. The actors chained two newly discovered vulnerabilities in TrueConf Server, reached through its default port 4307/TCP without authentication, to run code as NT AUTHORITY\\SYSTEM. They then replaced a legitimate web file with a web shell, used it to deploy the PhantomCore and PhantomGraph backdoors, and swapped in trojanized, unsigned TrueConf Client installers. Targets include Russian organizations in instrumentation, electronics, transport, energy, IT and software development. The vulnerabilities were fixed in TrueConf Server versions 5.3.9, 5.4.9 and 5.5.5, released June 18, 2026, so defenders should update and verify client installer signatures.",
+      "completeness": "High",
+      "threats": [
+        "Phantomcore",
+        "Phantomgraph"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "TrueConf",
+        "Microsoft OneDrive",
+        "rueConf ev",
+        "Windows service"
+      ],
+      "algorithms": [
+        "md5",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.ru/tr/head-mare-targets-trueconf-server-with-phantomcore/116557/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-07",
+      "title": "Awaken Likho is finally changing its modus operandi: moving to its own backdoors TokenBuoy and TokenBuoySH",
+      "summary": "Awaken Likho, also known as Core Werewolf, is an APT group that has targeted Russian and Belarusian government organizations since 2021. Its campaign begins with a phishing email containing a RAR archive that hides a self-extracting 7-Zip archive disguised as a PDF, which drops and runs a decoy document and a backdoor. The group's new custom backdoor, TokenBuoy, is written in C++ and supports basic system reconnaissance, command execution, file download, and self-deletion, with operators controlling it manually. The second backdoor, TokenBuoySH, is loaded through TokenBuoy, includes OpenSSH, and generates a unique sample per infection by checking the victim's hostname. It uses a registry key to store its configuration and is used to install Rclone to exfiltrate documents. The report highlights that the group is shifting from legitimate tools to custom malware, making detection harder through per-victim tailoring.",
+      "completeness": "Medium",
+      "threats": [
+        "Tokenbuoy",
+        "Tokenbuoysh",
+        "Ultra_vnc_tool",
+        "Meshcentral_tool",
+        "Rclone_tool"
+      ],
+      "geo": [
+        "Belarusian",
+        "Russian"
+      ],
+      "software": [
+        "OpenSSH",
+        "WinRAR"
+      ],
+      "algorithms": [
+        "base58",
+        "zip"
+      ],
+      "languages": [
+        "autoit"
+      ],
+      "links": [
+        "https://securelist.ru/awaken-likho-tokenbuoy/116536/"
+      ]
+    }
+  }
+]

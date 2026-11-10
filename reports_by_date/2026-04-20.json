@@ -1,0 +1,772 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "A 656 MB Trojan, a Legitimate Crypto Wallet, and a Hidden C2: Inside the anchorwallet[.\\]org Campaign",
+      "summary": "A fake clone of the Anchor Wallet site by Greymass, anchorwallet[.]org, serves genuine macOS and Linux installers alongside a 656 MB trojanized Windows executable. The Windows file is padded with null bytes to evade sandbox size limits and is signed with an EV certificate issued to PIXEL PLAY PRIVATE LIMITED. The trojan installs Remote Utilities Host 7.1, a legitimate remote management tool, from the C2 zorvexion24[.]com, hiding it through file attributes, registry changes, and scheduled tasks running as SYSTEM. The investigators assess the campaign as likely financially motivated and Russian-speaking, based mainly on Yandex Metrika tracking. Defenders are advised to block the listed domains and IPs, hunt for the PIXEL PLAY signer, and alert on unexpected Remote Utilities installations and the named scheduled tasks.",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Cyprus",
+        "India",
+        "Hong kong",
+        "Russian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "macOS",
+        "Linux",
+        "Ubuntu",
+        "Windows installer",
+        "nginx",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "sha512",
+        "aes-256",
+        "sha256"
+      ],
+      "functions": [
+        "Get-Process"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/anchorwallet-org-656mb-trojan-remote-utilities-c2-zorvexion24"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "Cryptostealer FakeWallet is distributed via iOS apps in the App Store",
+      "summary": "FakeWallet is a cryptostealer campaign that Kaspersky reports has distributed more than two dozen phishing apps in the App Store impersonating popular crypto wallets such as MetaMask, Ledger, Trust Wallet and Coinbase. The apps open phishing pages styled as the App Store that deliver trojanized wallet versions installed via provisioning profiles. Injected malicious modules hook wallet screens to capture recovery phrases, which are encrypted with RSA and sent to command-and-control servers. Ledger Live was also modified to show fake verification prompts and a phishing page that collects seed phrases, targeting cold wallets. Most victims appear to be Chinese users, though the modules are not region-locked, and the campaign may be linked to the SparkKitty actors. The campaign has been active since at least autumn 2025, and defenders should watch for phishing apps reached through search results and banners claiming official wallets are unavailable.",
+      "completeness": "Medium",
+      "threats": [
+        "Fakewallet",
+        "Typosquatting_technique",
+        "Sparkkitty"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "Ledger Live",
+        "task scheduler",
+        "Android",
+        "Google Play"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tokenpocket",
+        "imtoken",
+        "onekey",
+        "ledger_wallet"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "objective_c"
+      ],
+      "links": [
+        "https://securelist.ru/fakewallet-cryptostealer-ios-app-store/115241/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "Operation PHANTOM CENTRE",
+      "summary": "Operation PHANTOM CENTRE is a credential harvesting campaign running an adversary-in-the-middle phishing platform from a single origin server in Dusseldorf, Germany, behind Cloudflare CDN. The investigation expanded from four initial domains to at least seven campaign domains hosting over 200 subdomains. The infrastructure impersonates VPN, SSO, and Citrix authentication portals and uses fake Cloudflare challenge pages to evade analysis. Targets include at least 15 named organizations across sectors such as technology, financial services, and military education, with multi-language lures. Defenders should block the origin IP and campaign domains, search email logs for related links, and review VPN authentication logs for anomalous sessions.",
+      "completeness": "Medium",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Aitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Polish",
+        "Latin american",
+        "America",
+        "Spanish",
+        "Latin america",
+        "Germany",
+        "French",
+        "Dutch"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 8,
+      "software": [
+        "Twitter",
+        "AnyConnect",
+        "Ubuntu",
+        "securevpn",
+        "Microsoft Exchange",
+        "fortivpn",
+        "OpenSSH",
+        "Debian"
+      ],
+      "algorithms": [
+        "ecc",
+        "base64",
+        "des"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/salmanvsf-domains"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "DFIR Report – The Gentlemen & SystemBC: A Sneak Peek Behind the Proxy",
+      "summary": "The Gentlemen is a fast-growing ransomware-as-a-service operation that claims over 320 victims, most of them in early 2026, and offers lockers for Windows, Linux, NAS, BSD and ESXi. During an incident response case, an affiliate deployed SystemBC proxy malware, and Check Point observed a related botnet of over 1,570 victims, likely mostly corporate, concentrated in the United States, United Kingdom and Germany. The intrusion began with attacker presence on a Domain Controller holding Domain Admin privileges, followed by Cobalt Strike deployment over administrative shares and rapid lateral movement. The attacker disabled Defender, enabled RDP, installed AnyDesk for persistence, and harvested credentials. The ransomware was pushed via Group Policy, and the report notes the affiliate adapted when SystemBC was blocked, so defenders should treat The Gentlemen as part of a modular intrusion ecosystem.",
+      "completeness": "High",
+      "threats": [
+        "Systembc",
+        "Nltest_tool",
+        "Shadow_copies_delete_technique",
+        "Wevtutil_tool",
+        "Gentlemen_ransomware",
+        "Cobalt_strike_tool",
+        "Anydesk_tool",
+        "Credential_harvesting_technique",
+        "Mimikatz_tool",
+        "Centrastage_tool",
+        "Msp360_tool",
+        "Teamviewer_tool",
+        "Psexec_tool",
+        "Timestomp_technique",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "United kingdom",
+        "Chinese",
+        "Germany"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 51,
+      "software": [
+        "Windows Firewall",
+        "tor browser",
+        "Microsoft Windows Defender",
+        "ESXi",
+        "vim-cmd",
+        "esxcli",
+        "crontab",
+        "Linux",
+        "inux",
+        "N",
+        "SXi im",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "xchacha20",
+        "curve25519",
+        "rc4",
+        "chacha20",
+        "base64"
+      ],
+      "functions": [
+        "Set-MpPreference",
+        "Set-NetFirewallProfile",
+        "Write-Host",
+        "Get-ADDomain",
+        "Get-WmiObject",
+        "Get-ADComputer",
+        "system"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/dfir-report-the-gentlemen/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "GoLoader at Industrial Scale: Two Unauthenticated Builder Panels, 468K Polymorphic Samples, Steganographic .NET Loaders, and a Cracked njRAT Config Pointing to a Chinese XWorm Operator",
+      "summary": "GoLoader is a Go-based builder tool whose two unauthenticated Chinese-language panels in Hong Kong generated 468,349 polymorphic Windows samples across 71 tasks. The operator delivers them through LNK droppers, polymorphic VBS scripts, and steganographic images hiding .NET loaders that hollow RegAsm.exe to run njRAT. Targets appear to be Chinese-speaking cryptocurrency investors, lured with Simplified Chinese decoy documents. Researchers cracked the njRAT config encryption, which derives its AES key from the Mutex field, and linked the C2 to an existing XWorm operation across a shared DDNS cluster. Defenders should block the panel and C2 infrastructure and monitor for process hollowing into RegAsm.exe.",
+      "completeness": "High",
+      "threats": [
+        "Goloader",
+        "Polymorphism_technique",
+        "Njrat",
+        "Xworm_rat",
+        "Process_hollowing_technique",
+        "Steganography_technique",
+        "Spear-phishing_technique",
+        "Lolbin_technique",
+        "Junk_code_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Hong kong"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 13,
+      "software": [
+        "Alibaba Cloud",
+        "Photoshop",
+        "NET Framework",
+        "Linux"
+      ],
+      "algorithms": [
+        "aes-256",
+        "aes-256-ecb",
+        "aes-128",
+        "base64",
+        "deflate",
+        "sha256",
+        "md5",
+        "aes"
+      ],
+      "functions": [
+        "WriteProcessMemory",
+        "GetHashT",
+        "GetBytes"
+      ],
+      "languages": [
+        "dotnet",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/goloader-polymorphic-builder-panels-stego-njrat-xworm-laohe"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "SuperShell C2 Panel at 8[.\\]216[.\\]26[.\\]169:8888",
+      "summary": "SuperShell is an open-source, Chinese-language C2 framework written in Go that uses reverse SSH over WebSocket for agent management and supports Windows, Linux, macOS, and Android. This report documents a live SuperShell v2.0.0 panel hosted on Alibaba Cloud Singapore, with a reverse-tunnel listener on port 3232. The framework offers reverse shells, file transfer, memfd fileless execution, and multi-platform payload generation. ThreatFox tracks 66 SuperShell C2 instances, mostly on Chinese cloud providers. The operator appears minimally configured, with no default credentials accepted and no TLS or domain on the panel. Defenders should block the panel, hunt for listed SuperShell IPs, and alert on \"/supershell/\" in HTTP URIs.",
+      "completeness": "Medium",
+      "threats": [
+        "Supershell"
+      ],
+      "geo": [
+        "Korea",
+        "Luxembourg",
+        "Hong kong",
+        "Japan",
+        "Malaysia",
+        "Netherlands",
+        "China",
+        "Singapore",
+        "Chinese"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 7,
+      "software": [
+        "Alibaba Cloud",
+        "Linux",
+        "macOS",
+        "Android",
+        "OpenSSH",
+        "Ubuntu",
+        "nginx"
+      ],
+      "functions": [
+        "InternetDB",
+        "get_attribution_html"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/supershell-c2-8-216-26"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "macOS ClickFix Campaign: AppleScript Stealers & New Terminal Protections",
+      "summary": "The Netskope Threat Labs report describes a ClickFix campaign that delivers an AppleScript-based infostealer to macOS users, in parallel with a Windows RAT. The fake CAPTCHA page uses user-agent checks to skip mobile visitors and route desktop users to the macOS or Windows payload. A persistent dialog mimicking a system prompt loops until the victim enters their password, which the malware validates through macOS Directory Services. The stealer then collects Keychain data, cookies and credentials from 12 browsers, data from over 200 extensions, and files from 16 cryptocurrency wallets. Defenders are advised that macOS Tahoe 26.4 or Sequoia adds a Terminal warning against pasting untrusted commands.",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Credential_harvesting_technique",
+        "Sparrow"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Chrome",
+        "Vivaldi",
+        "Opera",
+        "OperaGX",
+        "Chrome Canary",
+        "Chromium",
+        "CocCoc",
+        "IndexedDB",
+        "Firefox",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "exodus_wallet",
+        "electrum",
+        "coinomi",
+        "guarda_wallet",
+        "trezor",
+        "bitcoincore",
+        "litecoincore",
+        "wassabi",
+        "have more..."
+      ],
+      "crypto": [
+        "dogecoin",
+        "monero"
+      ],
+      "algorithms": [
+        "aes-256",
+        "zip"
+      ],
+      "languages": [
+        "applescript",
+        "javascript"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/macos-clickfix-campaign-applescript-stealers-new-terminal-protections",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Malware/MAC%20infostealer/IOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "XWorm V6.0 Multi-Stage Campaign — backupallfresh2030 — Breakglass Intelligence Report",
+      "summary": "A Turkish-origin actor using GitHub alias flexhere687-art is running an XWorm V6.0 remote access trojan campaign active since at least 2026-03-22. The actor abuses Google Blogger, Filemail, and GitHub to host and stage payloads through multi-stage chains of JavaScript droppers, BAT files with UAC bypass, and trojanized Python 3.12 distributions. The campaign targets English-speaking victims with tax document, invoice, shipping, and CV lures. Persistence uses a fake Realtek audio service name, Run keys, scheduled tasks, and a Startup folder entry, and Defender exclusions are added. The report notes OPSEC failures, including an exposed email address and infrastructure still live more than 12 days into the campaign.",
+      "completeness": "High",
+      "threats": [
+        "Xworm_rat",
+        "Uac_bypass_technique",
+        "Lolbin_technique",
+        "Credential_harvesting_technique",
+        "Process_injection_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Turkey",
+        "Turkish",
+        "Iceland"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 18,
+      "software": [
+        "Twitter",
+        "Telegram",
+        "VirtualBox",
+        "Windows Defender",
+        "Microsoft Windows Defender Security Center"
+      ],
+      "algorithms": [
+        "xor",
+        "aes-ecb",
+        "md5",
+        "zip",
+        "sha256",
+        "aes",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "swift",
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/xworm-backupallfresh",
+        "https://github.com/flexhere687-art/vxcxc-xcv",
+        "https://github.com/flexhere687-art/xvxc-",
+        "https://github.com/contact/report-content"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "FakeWallet crypto stealer spreading through iOS apps in the App Store",
+      "summary": "FakeWallet is a crypto-stealing campaign that has been distributed through more than twenty phishing apps in the Apple App Store, mostly in the Chinese storefront, that imitate popular wallets such as MetaMask, Ledger, and Trust Wallet. The stub apps open a link that uses enterprise provisioning profiles to install trojanized wallet builds, which inject malicious libraries or modify app code to capture recovery phrases from hot wallets. For cold wallets like Ledger, the malware instead displays convincing phishing prompts that ask users to enter their mnemonics. Stolen phrases are RSA-encrypted and sent to attacker servers. The campaign is linked to the SparkKitty actors based on shared modules, Chinese-language artifacts, and similar tactics. Defenders should treat App Store wallet lookalikes and wallet prompts requesting recovery phrases with suspicion.",
+      "completeness": "Medium",
+      "threats": [
+        "Fakewallet",
+        "Typosquatting_technique",
+        "Sparkkitty"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "Ledger Live",
+        "Android",
+        "Google Play"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tokenpocket",
+        "imtoken",
+        "onekey",
+        "ledger_wallet"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "objective_c"
+      ],
+      "links": [
+        "https://securelist.com/fakewallet-cryptostealer-ios-app-store/119474/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "Calipology / SystemAutoUpdater — Trojanized RustDesk via Signed MSTeams Installer",
+      "summary": "A trojanized Microsoft Teams installer (MSTeamsSetup.exe) distributes a weaponized RustDesk remote access client signed with a certificate issued to \"Zlatin Stamatov\" via Certum. The malware's C2 infrastructure is hosted on EvoXT and presents a TLS certificate tied to calipology[.]com, linking it to a previously investigated Striker C2 operator. Victims are lured by searches for \"MS Teams Download,\" after which the payload establishes remote access via RustDesk. The report assesses that the certificate was likely obtained shortly before the sample appeared, suggesting it was acquired for signing malware. Defenders should block the listed indicators, look for RustDesk connections to the malware's C2 domain, and check for the certificate thumbprint on signed binaries.",
+      "completeness": "Medium",
+      "threats": [
+        "Striker-c2",
+        "Rustdesk_tool"
+      ],
+      "geo": [
+        "New york",
+        "United kingdom",
+        "Philippines",
+        "Hungary",
+        "Bulgarian",
+        "Poland",
+        "Bulgaria"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 8,
+      "software": [
+        "Microsoft Teams",
+        "Telegram",
+        "WordPress",
+        "LiteSpeed",
+        "OpenSSH",
+        "Ubuntu",
+        "nginx"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/systemautoupdater-23-27-141-44"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "CastleLoader / maybedontbanplease[.\\]com",
+      "summary": "CastleLoader is a malware-as-a-service loader operated by the actor tracked as GrayBravo, with its command-and-control domain maybedontbanplease.com registered on April 2, 2026. The malware is distributed as a 61.8MB NSIS installer that embeds a Python 3.14 runtime, an AES-encrypted payload, and about 100MB of junk padding to evade sandboxes. The installer is signed with an EV certificate issued to \"SERPENTINE SOLAR LIMITED,\" a company not found in UK Companies House records, which the report assesses as fraudulent. CastleLoader has been linked to multiple secondary payloads, including LummaC2, StealC, RedLine, and NetSupport RAT, and has targeted US government agencies, critical infrastructure, and IT and logistics firms. Defenders should revoke the certificate, block the C2 domain and IP, and hunt for pythonw.exe running from %TEMP% directories.",
+      "completeness": "High",
+      "threats": [
+        "Castleloader",
+        "Netsupportmanager_rat",
+        "Lumma_stealer",
+        "Stealc",
+        "Redline_stealer",
+        "Rhadamanthys",
+        "Deerstealer",
+        "Sectop_rat",
+        "Clickfix_technique",
+        "Supply_chain_technique",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian",
+        "Russia",
+        "London",
+        "Netherlands"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 10,
+      "software": [
+        "NSIS installer",
+        "nginx",
+        "Ubuntu",
+        "OpenSSH",
+        "FiveM",
+        "Redis",
+        "HyperV",
+        "Redis HyperV"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-cbc",
+        "lzma",
+        "aes",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/castleloader-maybedontbanplease"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "Operation HEXSTRIKE -- npm Supply Chain Attack Targeting Guardarian Cryptocurrency Exchange",
+      "summary": "Operation HEXSTRIKE is a targeted supply chain campaign in which an actor using the npm account umarbek1233 published nine malicious packages impersonating Strapi CMS plugins within a two-hour window on April 3, 2026. The packages use postinstall hooks to run a multi-phase C2 agent that steals environment variables, database and JWT credentials, API keys, cryptocurrency wallet files, and SSH keys, and establishes a reverse shell. The confirmed primary victim is Guardarian, an Estonian cryptocurrency exchange, and the attacker also used post-compromise SSTI, Elasticsearch TLS interception, credential stuffing, and container escape. An exposed open directory revealed the attacker's 52-file toolkit and exfiltration logs. Defenders should rotate exposed credentials, block the C2 address, and audit Strapi plugin installations and CI/CD pipelines.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Hexstrike",
+        "Mitm_technique",
+        "Netcat_tool",
+        "Credential_harvesting_technique",
+        "Aitm_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Russia"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 17,
+      "software": [
+        "Redis",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "Ubuntu",
+        "OpenSSH",
+        "jenkins",
+        "Laravel",
+        "Telegram",
+        "Linux",
+        "have more..."
+      ],
+      "algorithms": [
+        "hmac",
+        "sha256",
+        "md5",
+        "sha1"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/strapi-plugin-events-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "HYFLOCK RaaS — Breakglass Intelligence Report",
+      "summary": "HYFLOCK is a previously unreported Ransomware-as-a-Service panel operating exclusively on Tor, with a live onion service observed as of 2026-04-03. The panel gives affiliates a ransomware builder, a deployment button, victim negotiation chat rooms, a data leak site, and payment processing in BTC, ZEC, and XMR. Victims access negotiations through a Target ID login, and affiliates can self-register at an open registration page. Investigators assessed with high confidence that the CSS was written by a native Chinese speaker, while the Russian UI translation suggests a Russian-speaking operator audience. Researchers could not bypass the DDoS captcha, so findings come only from unauthenticated reconnaissance and no malware samples have been attributed yet.",
+      "completeness": "Low",
+      "threats": [
+        "Hyflock"
+      ],
+      "geo": [
+        "Russian",
+        "Chinese"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 8,
+      "software": [
+        "Node.js"
+      ],
+      "wallets": [
+        "zcash"
+      ],
+      "crypto": [
+        "zcash",
+        "monero",
+        "bitcoin"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/onion-e5hdifgit6"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "TwizAdmin -- Multi-Stage Crypto Clipper, Infostealer & Ransomware Operation",
+      "summary": "TwizAdmin is a multi-function malware-as-a-service operation combining a crypto clipper, seed phrase scanner, infostealer, Fernet-based ransomware module, and Java RAT builder, managed through a FastAPI panel with a license key system. The operation targets Windows and macOS users with social engineering lures themed as FedEx shipping details and OnlyFans account dumps. The ransomware component uses the \"DataBreachPlus\" identity and communicates with three Russian .ru domains, while the clipper replaces cryptocurrency addresses across eight chains. The actor's infrastructure was exposed through an open directory, a publicly accessible API schema, and leaked API secrets, which the analysts assess as moderate sophistication with amateur operational security. Defenders should search endpoints for the listed persistence artifacts and .crpx0 files, and block the associated infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "Twizadmin-c2",
+        "Crpx0",
+        "Qtox_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Chinese",
+        "Russian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 19,
+      "software": [
+        "macOS",
+        "Telegram",
+        "ProtonMail",
+        "curl",
+        "LiteSpeed",
+        "FastAPI",
+        "Uvicorn",
+        "Discord",
+        "Opera GX",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "dogecoin",
+        "litecoin",
+        "solana",
+        "ripple"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "aes-128-cbc",
+        "hmac",
+        "base64"
+      ],
+      "languages": [
+        "applescript",
+        "php",
+        "visual_basic",
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/twizadmin-103-241-66"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "AllSyDevs C2 Infrastructure",
+      "summary": "A .NET remote access trojan and information stealer operation uses a compromised Syrian web development company's cPanel server to host a disguised WordPress image file that contains the payload. The payload is an AES-encrypted process-injection loader classified as MSIL/Benin, and it beacons to a separate C2 server on a Windows VPS in North America. That C2 server is linked to at least six malware variants that target Middle Eastern construction and export businesses through business-themed lure files. The infrastructure was set up in early April 2026 and was reported live at the time of writing. Defenders should block the C2 and payload-hosting IPs, hunt for the mutex and deleted scheduled task, and search for related hashes.",
+      "completeness": "High",
+      "threats": [
+        "Process_injection_technique",
+        "Spear-phishing_technique",
+        "Process_hollowing_technique",
+        "Bobik",
+        "Confuserex_tool"
+      ],
+      "geo": [
+        "Serbian",
+        "Syrian",
+        "Asia",
+        "Germany",
+        "Benin",
+        "Middle east",
+        "America"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 11,
+      "software": [
+        "cPanel",
+        "WordPress",
+        "LiteSpeed",
+        "OpenResty",
+        "Linux",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "aes-128",
+        "aes",
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "GetDelegateForFunctionPointer"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://intel.breakglass.tech/post/allsydevs-c2-dump"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-04-20",
+      "title": "Nightmare-Eclipse Tooling Moves From Public PoC to Real-World Intrusion",
+      "completeness": "High",
+      "threats": [
+        "Nightmare_eclipse_tool",
+        "Bluehammer_tool",
+        "Redsun_tool",
+        "Undefend_tool",
+        "Beigeburrow_tool",
+        "Yamux_tool",
+        "Toctou_vuln",
+        "Shadow_copies_delete_technique",
+        "Dirty_cow_vuln",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Switzerland",
+        "Russian",
+        "Russian federation",
+        "Russia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Linux",
+        "indows Defender wi"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "runAgent",
+        "DefaultConfig"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/nightmare-eclipse-intrusion",
+        "https://github.com/hashicorp/yamux",
+        "https://github.com/RussianPanda95/Yara-Rules/blob/main/BeigeBurrow/win\\_mal\\_BeigeBurrow.yar"
+      ]
+    }
+  }
+]

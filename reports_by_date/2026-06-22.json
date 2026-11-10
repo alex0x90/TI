@@ -1,0 +1,147 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-22",
+      "title": "A Multi-Stage Steganographic Loader Campaign Deploying Diverse Payloads Globally",
+      "summary": "The campaign delivers a variant of the Remcos RAT through phishing emails carrying an archive attachment, with a file disguised as a brick-building game and containing embedded Turkish-language artifacts. Its multi-stage chain hides next-stage components inside embedded resources, including a serialized Bitmap object, and loads them into memory via reflection and AppDomain.Load to avoid writing to disk. The final Remcos payload uses process hollowing, establishes persistence through a Run registry key, checks for sandbox and VM environments, and bypasses UAC. It is capable of credential theft from Chrome and Firefox, keylogging-style window monitoring, and audio and webcam recording. Related samples were also observed delivering other families such as Agent Tesla, Formbook, and Redline Stealer, suggesting a loader-as-a-service model, and payload filenames point to targeting of India.",
+      "completeness": "Low",
+      "threats": [
+        "Remcos_rat",
+        "Steganography_technique",
+        "Process_hollowing_technique",
+        "Agent_tesla",
+        "Phantom_stealer",
+        "Snake_keylogger",
+        "Masslogger",
+        "Formbook",
+        "Xworm_rat"
+      ],
+      "geo": [
+        "India"
+      ],
+      "software": [
+        "winlogon"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://labs.k7computing.com/index.php/a-multi-stage-steganographic-loader-campaign-deploying-diverse-payloads-globally/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-22",
+      "title": "GhostShell (MB-0009): Targeting Ukraine’s UAV Operations and Defense Supply Chain",
+      "summary": "GhostShell (MB-0009) is a previously unattributed threat cluster active since February 2026 that targets Ukraine's UAV and drone supply chain, including military units, procurement staff and volunteer organizations. It delivers a RAR archive exploiting CVE-2025-8088 and CVE-2025-6218, which places a VBS script in the Windows Startup folder and impersonates drone maker Besomar with decoy PDFs. The VBS downloads loaders that run an mTLS-authenticated implant, a Telegram dead-drop stager, and a Go launcher that delivers the Vidar v2 infostealer. The implant's self-named issuer, \"GhostShell Implant CA\", is highlighted as the strongest pivot for tracking the cluster. The authors assess the activity as a distinct cluster but find no evidence to attribute it to a sponsor.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Ghostshell",
+        "Kraken_cryptor",
+        "Mantis_botnet",
+        "Metasploit_tool",
+        "Process_injection_technique",
+        "Xray_tool",
+        "Native_loader",
+        "Vidar_stealer",
+        "Dead_drop_technique",
+        "Antidebugging_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Spain",
+        "Ukrainian",
+        "Russia",
+        "German",
+        "Ukraine",
+        "Moldova",
+        "Kazakhstan",
+        "Germany",
+        "Ukraines"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 14,
+      "software": [
+        "WinHTTP",
+        "Windows Security",
+        "Telegram",
+        "Discord",
+        "Steam",
+        "Outlook",
+        "curl",
+        "nginx"
+      ],
+      "algorithms": [
+        "base64",
+        "gzip",
+        "ecdsa",
+        "xor",
+        "sha256",
+        "md5",
+        "aes-256-cbc",
+        "ecdh",
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "GetComputerName",
+        "GetUserName",
+        "CreateFile",
+        "GetTempPath"
+      ],
+      "languages": [
+        "golang",
+        "visual_basic",
+        "python"
+      ],
+      "links": [
+        "https://blog.synapticsystems.de/ghostshell-mb-0009-targeting-ukraines-uav-operations-and-defense-supply-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-22",
+      "title": "A VBScript campaign distributed through WhatsApp deploying RMM software",
+      "summary": "A VBScript campaign spreads through WhatsApp Desktop and WhatsApp Web, sending malicious attachments from compromised accounts to victims' contacts. The attachments use financial-themed file names such as invoices, debt notices, and bank statements, and some are localized into Portuguese, French, German, and Malay. Each script downloads secondary VBScript payloads that attempt to lower User Account Control settings and install a preconfigured ManageEngine Endpoint Central agent, giving attackers remote access. Victims were spread across many countries, with most in Malaysia, and the activity appears broad and opportunistic rather than targeted. Researchers assess with low confidence that a Chinese-speaking operator is responsible, based on Chinese-language comments and infrastructure overlaps. Defenders should treat unexpected script attachments from known contacts with suspicion.",
+      "completeness": "Medium",
+      "threats": [
+        "Bitsadmin_tool",
+        "Gh0st_rat",
+        "Valleyrat"
+      ],
+      "geo": [
+        "Portuguese",
+        "Australia",
+        "French",
+        "India",
+        "Spain",
+        "Malaysia",
+        "Taiwan",
+        "Russia",
+        "Vietnam",
+        "Singapore",
+        "German",
+        "Mexico",
+        "Chinese",
+        "Brazil"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "curl"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://securelist.com/whatsapp-vbs-rmm-campaign/120290/"
+      ]
+    }
+  }
+]

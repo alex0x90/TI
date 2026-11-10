@@ -1,0 +1,258 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-04",
+      "title": "Keyv and friends compromised in active Shai-Hulud supply chain attack",
+      "summary": "A supply chain worm compromised the GitHub account of the maintainer of keyv, a key-value storage library, on August 4, 2026, and used it to push malicious code across the maintainer's package family, including flat-cache, file-entry-cache, and cacheable. The attacker pushed changes directly to the main branch and published new releases, so the poisoned versions carried valid GitHub Actions provenance. Each affected package gained a preinstall script that downloads the Bun runtime and runs an obfuscated credential stealer. The stealer harvests npm, GitHub, AWS, Kubernetes, Vault, Stripe, and Slack secrets, plus files like SSH keys, .env files, and Terraform state, then encrypts them and uploads them to public GitHub repositories. The worm also spreads by using stolen npm and GitHub tokens to infect other maintainers' packages and repositories, and by August 5, 2026, at least 444 packages were affected. Defenders should treat any install of these versions as a full credential compromise and rotate exposed secrets.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Shai-hulud",
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "Slack",
+        "Stripe API",
+        "macOS",
+        "Linux",
+        "Docker",
+        "KeePass",
+        "dependabot",
+        "claude"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-04",
+      "title": "npm Stealer Reads Its C2 From an Ethereum Contract",
+      "summary": "Netskope identified 28 malicious npm package versions across four enterprise namespaces (@or-sdk, @onereach, @servicetitan, and @umacloud) published on 2026-08-04, all carrying the same or functionally equivalent stealer payload. The operator calls the campaign Shai-Hulud, and the payload matches a sample used against the keyv package family the same day, per Aikido Security. At install time, the packages download a signed Bun runtime from GitHub, run an obfuscated JavaScript stealer under it, and then delete the runtime. The stealer harvests SSH keys, AWS and Docker credentials, Jenkins secrets, and /etc/shadow, then posts an encrypted bundle to an exfiltration domain. That domain is resolved at runtime through an eth_call to an Ethereum smart contract, so operators can redirect exfiltration without republishing packages. Defenders should detect the behavior rather than rely on the tarball, which contains no malicious executable.",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Jenkins",
+        "HashiCorp Vault",
+        "Linux",
+        "macOS"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Full"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/npm-stealer-reads-its-c2-from-an-ethereum-contract"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-04",
+      "title": "The Gentlemen Affiliate Deploys EtherRAT Across Windows Networks Using Ethereum Smart Contract C2",
+      "summary": "The Gentlemen ransomware affiliate deployed EtherRAT, a persistent implant that resolves its C2 domains from an Ethereum smart contract, across a Windows network. The operator used remote scheduled tasks, certutil.exe, and msiexec.exe to push the MSI installer to target hosts, and tasks were masqueraded under names such as WinSvcUpdate2. EtherRAT executes received C2 responses as JavaScript inside a Node.js runtime, so capabilities can be extended without replacing the implant. The toolkit also included Sliver, Go reverse shells, Chisel tunneling, Mimikatz, and Potato-family privilege escalation, with account creation and ESET service tampering. Because each domain rotation is recorded on the blockchain, defenders can reconstruct the full historical C2 set, and the custom X-Bot-Server HTTP header is a usable detection point.",
+      "completeness": "High",
+      "threats": [
+        "Etherrat",
+        "Gentlemen_ransomware",
+        "Sliver_c2_tool",
+        "Clickfix_technique",
+        "Lolbas_technique",
+        "Mimikatz_tool",
+        "Chisel_tool",
+        "Ligolo-ng_tool",
+        "Godpotato_tool",
+        "Juicypotato_tool",
+        "Printspoofer_tool",
+        "React2shell_vuln",
+        "Credential_dumping_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "American",
+        "Estonia",
+        "United states",
+        "United arab emirates",
+        "Usa",
+        "United kingdom",
+        "Dprk",
+        "Arab emirates",
+        "Netherlands"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 18,
+      "software": [
+        "Node.js",
+        "Active Directory",
+        "curl"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "golang",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://hunt.io/blog/the-gentlemen-etherrat-ethereum-smart-contract-c2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-04",
+      "title": "Fake CAPTCHA, Real Business: Traffic Distribution for Hire",
+      "summary": "FakeCaptcha operators run a traffic distribution system (TDS) that uses more than 12,700 structurally similar PDF lures hosted on Webflow's CDN, which Google indexes as upgrade guides. The gate filters visitors through IP and autonomous-system checks, a Cloudflare Turnstile challenge, and geo and device filtering, then routes qualifying victims to malware or scam infrastructure while sending others to ad landers. Observed downloads came mostly from Google search, with about 3% from AI assistants, across 26 countries led by the United States and India. The routed destinations include the Legion Loader distribution hub, a shared TDS reseller gate, and a Spanish premium-SMS subscription scam. The operation has run for over 14 months and rotates lure domains often, so defenders should prioritize stable PDF structure and router subdomain patterns over domain blocklists. Blocking individual lure domains removes only one entry point, because the shared gate is fed by many referrer domains.",
+      "completeness": "Medium",
+      "threats": [
+        "Fakecaptcha_tool",
+        "Seo_poisoning_technique",
+        "Legionloader",
+        "Injuke"
+      ],
+      "geo": [
+        "United kingdom",
+        "United states",
+        "Australia",
+        "Spanish",
+        "Canada",
+        "India"
+      ],
+      "software": [
+        "Cloudflare Turnstile",
+        "Claude",
+        "WinRAR"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/fake-captcha-real-business-traffic-distribution-for-hire",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-04",
+      "title": "Popular npm Packages in the keyv and Cacheable Namespaces Compromised in Active Supply Chain Attack",
+      "summary": "Socket's Threat Research Team reports an active supply chain compromise of the keyv and cacheable npm package families, with malicious versions published on August 4, 2026 after the maintainer account was compromised. The malicious preinstall hook (setup.mjs) downloads a standalone Bun runtime to run an obfuscated second stage that harvests cloud, Vault, Kubernetes, GitHub, and npm credentials. The payload is a worm that republishes trojanized versions of other packages using stolen npm tokens, with valid-looking provenance attestations. Exfiltration goes to attacker-controlled GitHub repositories and DNS-resolved destinations, and autostart hooks in .claude and .vscode target developers who clone the source. The report warns that a host-level dead-man's switch evaluates a remote-supplied handler when a stolen token is revoked, so defenders should remove it before rotating credentials and pin or block affected versions.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Polymorphism_technique",
+        "Trufflehog_tool",
+        "Shai-hulud",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "HashiCorp Vault",
+        "Kubernetes",
+        "claude",
+        "vscode",
+        "Redis",
+        "Alpine"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "sha512",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "createCommitOnBranch"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/popular-npm-packages-in-the-keyv-and-cacheable-namespaces-compromised-in-active-supply-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-04",
+      "title": "CVE-2026-18577: N-able N-central Authentication Bypass Exploited in the Wild",
+      "summary": "N-able N-central, a widely used RMM platform for managed service providers and IT teams, is under active exploitation through CVE-2026-18577, an authentication bypass that grants remote unauthenticated attackers administrative control. Exploitation was observed from August 1, 2026, following an incomplete fix for the earlier CVE-2026-18556. Attackers used the platform's Take Control functionality to access managed endpoints and deployed Cloudflare Tunnel (cloudflared) for persistent access. A separate critical pre-authentication RCE, CVE-2026-86218, affects N-central versions before 2026.3.1.14 (Hotfix 4) and was added to CISA's KEV catalog on September 8, 2026. Defenders should urgently apply 2026.3.1.14 (Hotfix 4) to address both issues, and on-premise deployments require manual patching while hosted environments are updated by the vendor.",
+      "completeness": "Low",
+      "threats": [
+        "Cloudflared_tool"
+      ],
+      "software": [
+        "Windows service"
+      ],
+      "links": [
+        "https://www.rapid7.com/blog/post/etr-cve-2026-18577-n-able-n-central-authentication-bypass-exploited-in-the-wild"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-04",
+      "title": "Threat Actor Profile: NightSpire Ransomware - Barricade Cyber Solutions",
+      "completeness": "Medium",
+      "threats": [
+        "Nightspire",
+        "Qtox_tool",
+        "Anydesk_tool"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 4,
+      "software": [
+        "ProtonMail",
+        "Telegram",
+        "Gmail",
+        "FortiGate",
+        "Chrome",
+        "WinSCP"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://barricadecyber.com/threat-actor-profile-nightspire-ransomware/"
+      ]
+    }
+  }
+]

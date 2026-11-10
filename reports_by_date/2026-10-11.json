@@ -1,0 +1,93 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-11",
+      "title": "Kimsuky’s Operation GitPower Targeting Ukraine Behind the Scenes of the Russia War",
+      "summary": "Kimsuky, a North Korea-linked group, is running Operation GitPower against Ukrainian diplomacy, security, and international policy experts. The actor sends reply-baiting spearphishing emails impersonating conference organizers and analysis collaborators, withholding malicious links or attachments until targets respond. Malicious LNK files disguised as PDFs and Zoom installers use legitimate platforms such as GitLab, GitHub, and Codeberg to host payloads, and they run PowerShell that establishes persistence through scheduled tasks and exfiltrates system information. The report links the activity to Ukraine's war and the North Korean troop deployment, suggesting intelligence collection about captured soldiers. Defenders should correlate behaviors such as LNK execution, curl downloads, and scheduled task creation with EDR rather than blocking trusted developer platforms outright.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Asian",
+        "Korean",
+        "Japan",
+        "Asia",
+        "Korea",
+        "South korea",
+        "North korea",
+        "Russia",
+        "Russian",
+        "Ukraine",
+        "Japanese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "Gmail",
+        "curl",
+        "m meet",
+        "mail,”",
+        "m",
+        "to",
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "m were",
+        "ler",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "zip"
+      ],
+      "functions": [
+        "Replace"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript",
+        "php"
+      ],
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/operation-gitpower"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-11",
+      "title": "GhostAction Phishing Campaign",
+      "summary": "GhostAction operators sent a personalized phishing email impersonating a GitHub security alert to an open-source maintainer, directing them to the lookalike domain my-github[.]com. The site acted as a GitHub reverse proxy that captured passwords and authenticator codes and injected JavaScript to start an OAuth device flow requesting repo, workflow, and read:org scopes. Those scopes match GhostAction's ability to enumerate repositories and inject malicious workflow files. The domain resolves to the same server used by GhostAction workflows to receive stolen CI/CD credentials. The redirect behavior of the phishing link changed over time, and the email's \"Moscow\" sign-in claim used an IP address not linked to the actor. Defenders should block the listed indicators, revoke suspicious OAuth grants, and treat developer identity attacks and repository compromise as one connected incident.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Moscow",
+        "Bulgaria"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Gmail",
+        "Slack",
+        "SendGrid",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/ghostaction-phishing-campaign"
+      ]
+    }
+  }
+]

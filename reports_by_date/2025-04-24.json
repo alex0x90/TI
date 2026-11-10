@@ -1,0 +1,549 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Google Spoofed Via DKIM Replay Attack: A Technical Breakdown",
+      "summary": "A phishing campaign replayed a legitimate Google security alert, carrying a valid DKIM signature, to deliver a fake subpoena message to a targeted user. The attacker captured a genuine Google email, sent it through Outlook, a third-party SMTP relay, and Namecheap's PrivateEmail forwarding, so SPF, DKIM and DMARC all showed pass in Gmail. The lure was created by abusing Google OAuth, where the attacker set an arbitrary app name containing phishing content and linking to a cloned support page hosted on Google Sites. Because the attack relied on a previously signed message rather than broken cryptography, authentication checks alone did not flag it. Defenders should treat authentication passes as insufficient, scrutinize links even on trusted Google domains, and consider shorter DKIM key rotation for high-risk domains.",
+      "completeness": "Low",
+      "threats": [
+        "Jellyfish",
+        "Bec_technique",
+        "Credential_harvesting_technique"
+      ],
+      "software": [
+        "Outlook",
+        "Gmail"
+      ],
+      "links": [
+        "https://easydmarc.com/blog/google-spoofed-via-dkim-replay-attack-a-technical-breakdown/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "One Small Click for an Admin, One Giant Breach for the Organization",
+      "summary": "Attackers used SEO poisoning to push a weaponized copy of RV-Tools, a VMware utility, to the top of search results, and a Domain Admin downloaded it. The malicious version ran alongside the legitimate software and deployed the SMOKEDHAM PowerShell-based .NET backdoor for persistent access. The threat actor then performed reconnaissance, deployed the Kickidler monitoring tool, moved laterally via RDP and PsExec, and used KiTTY, AnyDesk, and WinSCP for command and control and exfiltration. Nearly a terabyte of data was stolen, and the attackers encrypted the customer's ESXi VMDK files. The report urges defenders to use application allow-listing, block RMM and file-transfer tools, segment networks, and monitor for threats early in the kill chain.",
+      "completeness": "Medium",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Smokedham_backdoor",
+        "Kickidler_tool",
+        "Screen_shotting_technique",
+        "Anydesk_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "PsExec",
+        "KiTTY",
+        "WinSCP",
+        "ESXi",
+        "Twitter"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/seo-poisoning"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Is SafePay Ransomware Safe?",
+      "summary": "SafePay is a ransomware group that emerged in October 2024 and has attacked over 50 organizations worldwide, using double extortion that combines encryption with data theft. Its victims span business services, retail, education, and manufacturing, with the United States the most targeted country. In a recent batch of 11 victims published on April 16, eight were German, prompting a warning for German organizations. The group typically gains access via Remote Desktop Protocol, uses LOLBins and PowerShell to disable defenses, and deletes shadow copies and uses bcdedit to block recovery. Defenders should prioritize endpoint monitoring, regular patching, and strong access controls.",
+      "completeness": "Medium",
+      "threats": [
+        "Lolbin_technique",
+        "Safepay",
+        "Shadow_copies_delete_technique",
+        "Uac_bypass_technique",
+        "Lockbit"
+      ],
+      "geo": [
+        "Usa",
+        "Germany",
+        "Singapore",
+        "Australia",
+        "Canada"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Twitter",
+        "Windows Defender",
+        "bcdedit"
+      ],
+      "wallets": [
+        "safepay"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cyberint.com/blog/other/is-safepay-ransomware-safe/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Russian Infrastructure Plays Crucial Role in North Korean Cybercrime Operations",
+      "summary": "North Korea-aligned actors tracked as Void Dokkaebi (Famous Chollima) run cybercrime campaigns that rely on Russian IP ranges assigned to organizations in Khasan and Khabarovsk. These ranges sit beneath commercial VPN, proxy, and RDP layers that hide the origin of malicious traffic. The actors use dozens of VPS servers to reach communication, cryptocurrency, and recruitment services while using fake job interviews to lure software developers. Victims, including IT professionals in Ukraine, the US, and Germany, can be infected when they run tainted coding tests on personal or production machines. The primary goal is cryptocurrency theft, though access may be passed to espionage-focused teams. Defenders should run coding tests only in isolated virtual environments.",
+      "completeness": "Low",
+      "threats": [
+        "Beavertail",
+        "Frostyferret"
+      ],
+      "geo": [
+        "Russian",
+        "North korea",
+        "America",
+        "Pakistan",
+        "Russia",
+        "Ecuador",
+        "Germany",
+        "Dprk",
+        "China",
+        "Ukraine",
+        "Ukrainian",
+        "North korean"
+      ],
+      "software": [
+        "Telegram",
+        "Discord",
+        "Slack",
+        "Astrill VPN",
+        "Microsoft Teams",
+        "Dropbox",
+        "Visual Studio",
+        "node.js",
+        "outlook",
+        "Twitter",
+        "have more..."
+      ],
+      "wallets": [
+        "bybit",
+        "sui_wallet",
+        "exodus_wallet",
+        "keplr_wallet",
+        "rabby"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/25/d/russian-infrastructure-north-korean-cybercrime.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Reverses NFCGATE: A new way of contactless theft of money has been disclosed",
+      "summary": "Russian cybercrime groups have turned the legitimate NFCGate app into a major threat to clients of Russian banks, with 175,000 compromised devices recorded in Russia as of March 2025. F6 researchers describe a \"reverse\" NFCGate variant that relays a money mule's card data to the victim's phone, so when the victim taps the phone at an ATM to \"deposit\" funds, the money goes to the attackers. The malware is installed through social engineering under the guise of a payment app or financial regulator app, and it needs only minimal permissions, avoiding root by tricking the user into setting it as the default payment app. Its server-side command set was expanded, and it hides its launcher icon and encrypts its network parameters to evade antivirus detection, with none of the samples tested on VirusTotal flagged. F6 recommends that banks request the physical card for suspicious NFC ATM transactions, use geolocation data, and add ATM and tokenization events to antifraud systems.",
+      "completeness": "Low",
+      "threats": [
+        "Nfcgate_tool",
+        "Craxsrat"
+      ],
+      "geo": [
+        "Russian",
+        "Russia"
+      ],
+      "software": [
+        "Android"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "java"
+      ],
+      "links": [
+        "https://www.f6.ru/blog/reverse-nfcgate/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "CyberAv3ngers: The Iranian Saboteurs Hacking Water and Gas Systems Worldwide",
+      "summary": "CyberAv3ngers is a group the report links to Iran's Revolutionary Guard Corps, which has been targeting industrial control systems since its activity became prominent in November 2023. Initially presenting as a hacktivist campaign, the group hacked Israeli-made Unitronics devices used in water utilities and wastewater plants, altering their ladder logic and disrupting service at several facilities, including a water utility and brewery near Pittsburgh. It also breached a US oil and gas firm in 2023 and later deployed IOControl, a Linux-based backdoor spread across industrial and IoT devices worldwide, which the FBI neutralized. Researchers say the group has shifted from opportunistic message-sending toward a persistent threat able to disrupt critical infrastructure at will, so defenders should expect it to remain active.",
+      "completeness": "Low",
+      "threats": [
+        "Sparrow",
+        "Iocontrol"
+      ],
+      "geo": [
+        "Iranian",
+        "Australia",
+        "Israeli",
+        "Palestinians",
+        "Ireland",
+        "Iran",
+        "Israel"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "functions": [
+        "Claroty"
+      ],
+      "links": [
+        "https://www.wired.com/story/cyberav3ngers-iran-hacking-water-and-gas-industrial-systems/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Operation SyncHole: Lazarus APT goes back to the well",
+      "summary": "Lazarus, the North Korean APT group, ran \"Operation SyncHole\" against South Korean organizations, compromising at least six in software, IT, financial, semiconductor, and telecommunications sectors. The attackers used a watering hole strategy, redirecting visitors from South Korean online media sites to attacker-controlled pages that exploited a likely flaw in Cross EX, a locally developed security software package. The exploitation led to malware injection into the legitimate SyncHost.exe process, delivering ThreatNeedle, wAgent, SIGNBT, and COPPERHEDGE variants. For lateral movement, the group abused a one-day vulnerability in Innorix Agent, a file transfer tool widely required in South Korea, and researchers found and reported further Innorix flaws that were patched. Defenders should note that the affected software had been updated to patched versions after the vendors were notified through KrCERT.",
+      "completeness": "High",
+      "threats": [
+        "Watering_hole_technique",
+        "Threatneedle",
+        "Agamemnon",
+        "Wagent",
+        "Signbt",
+        "Copperhedge",
+        "Lpeclient",
+        "Credential_dumping_technique",
+        "Volgmer",
+        "Mistpen",
+        "Cookieplus",
+        "Supply_chain_technique",
+        "Cometer",
+        "Zenpak"
+      ],
+      "geo": [
+        "Korean",
+        "Korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 30,
+      "software": [
+        "Innorix Agent",
+        "liblzma",
+        "Innorix",
+        "Internet Explorer"
+      ],
+      "algorithms": [
+        "curve25519",
+        "aes",
+        "chacha20",
+        "aes-128-cbc"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://securelist.com/operation-synchole-watering-hole-attacks-by-lazarus/116326/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Malware DslogdRAT installed in Ivanti Connect Secure",
+      "summary": "DslogdRAT is a malware family found on Japanese organizations' Ivanti Connect Secure appliances around December 2024, installed through the then-zero-day CVE-2025-0282 alongside a Perl-based web shell. The web shell runs attacker commands when a specific cookie value is present, and the malware then spawns child processes that communicate with a command-and-control server over sockets, with XOR-encoded traffic and optional proxy support. Its commands allow file upload and download, shell execution, and proxy functionality, which could help attackers pivot into internal networks. The malware is configured to operate only between 8:00 and 20:00, likely to blend in with business-hours traffic and avoid detection. It was found alongside SPAWNSNARE, and it is unclear whether this activity belongs to the same campaign as the UNC5221 SPAWN family attacks. Organizations should remain vigilant, as attacks on Ivanti Connect Secure are expected to continue.",
+      "completeness": "Low",
+      "threats": [
+        "Dslogdrat",
+        "Spawnchimera",
+        "Spawnsnare_tool",
+        "Resurge"
+      ],
+      "geo": [
+        "China"
+      ],
+      "software": [
+        "Ivanti"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "perl"
+      ],
+      "links": [
+        "https://blogs.jpcert.or.jp/ja/2025/04/dslogdrat.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "SessionShark Steals Session Tokens to Slip Past Office 365 MFA",
+      "summary": "SessionShark is a phishing-as-a-service toolkit, promoted on a cybercrime network, that is designed to bypass Microsoft Office 365 multifactor authentication. It operates as an adversary-in-the-middle kit that steals session cookies, allowing attackers to hijack authenticated sessions without the one-time passcode. The kit includes antibot measures, Cloudflare compatibility, and evasion features intended to avoid security scanners and threat intelligence feeds. It mimics Microsoft 365 login pages and sends captured credentials and session cookies to attackers via a Telegram bot in real time. Its sellers market it as \"for educational purposes,\" but the report concludes this is a thin cover for criminal use, and it warns that MFA loses its protection once credential phishing succeeds.",
+      "completeness": "Low",
+      "threats": [
+        "Sessionshark_tool",
+        "Antibot",
+        "Aitm_technique",
+        "Tycoon_2fa"
+      ],
+      "software": [
+        "Office 365",
+        "Microsoft Office 365",
+        "Telegram",
+        "Twitter"
+      ],
+      "links": [
+        "https://slashnext.com/blog/sessionshark-steals-session-tokens-to-slip-past-office-365-mfa/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Technical Malware Analysis Report: Python-based RAT Malware",
+      "summary": "A Python-based Remote Access Trojan uses Discord as its command-and-control platform, with commands issued through clickable bot buttons. It disguises itself as a benign script and copies itself into the Windows Startup folder under a name resembling a system component to persist across reboots. Its modules can lock the screen, force a BSOD, move the mouse randomly, and collect system and geolocation data sent to the attacker's channel. The malware relies on widely used Python libraries and Discord traffic, which often passes unfiltered, making it hard to detect with traditional tools. The report recommends endpoint and network monitoring for Discord activity, user awareness about unknown bots and scripts, and removal of unauthorized bots.",
+      "completeness": "Low",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Discord"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/technical-malware-analysis-report-python-based-rat-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Backdor Vipnet: Zhui and Pypin pass greetings from 2021",
+      "summary": "The report describes malicious ViPNet software updates used to deliver a backdoor, linked to 2021 and 2025 intrusions. Attackers abused a signed InfoTeCS executable vulnerable to DLL hijacking (2021) and a signed lumpdiag.exe that was used to load a swapped msinfo32.exe (2025), since the update system verifies only the launched file. The 2025 loader was compiled in November 2021 and interprets bytecode stored encrypted in settings.log, unpacking a backdoor that supports reconnaissance, file theft, process and shellcode execution, and disabling ViPNet Application Control. The researchers attribute the activity with high confidence to the East Asian APT groups BlueTraveller and TA428 for 2021, and suspect a related East Asian group for 2025. Defenders are advised to update ViPNet components, deploy the provided Sigma rule, and disable automatic update installation.",
+      "completeness": "Medium",
+      "threats": [
+        "Webdav-o_rat",
+        "Bulldog_backdoor",
+        "Kingofhearts",
+        "Mamont",
+        "Darkwatchman",
+        "Dameware_tool",
+        "Crossc2_tool",
+        "Snake_keylogger",
+        "Goblinrat",
+        "Dead_drop_technique",
+        "Reign",
+        "Obsidium_tool",
+        "Dfkrat",
+        "Sliver_c2_tool",
+        "Hardbit",
+        "Glupteba",
+        "Plugx_rat",
+        "Dll_hijacking_technique",
+        "Pe32_ransomware",
+        "Bluetraveller_rat",
+        "Deed_rat",
+        "Shadowpad"
+      ],
+      "geo": [
+        "Asian",
+        "Russian federation",
+        "Iranian",
+        "Asia"
+      ],
+      "software": [
+        "Vipnet",
+        "Linux",
+        "Steam",
+        "Vipnet VIPNET"
+      ],
+      "wallets": [
+        "harmony_wallet"
+      ],
+      "algorithms": [
+        "sha1",
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://rt-solar.ru/solar-4rays/blog/5487/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Phish & Chips: Serving Up Tycoon 2FAs Secrets",
+      "summary": "Tycoon 2FA is a phishing-as-a-service kit, first seen in August 2023, that targets Microsoft 365 and Gmail accounts. According to eSentire's Threat Response Unit, it accounted for 40% of user-account compromise cases it handled in 2025 so far. The kit bypasses multi-factor authentication and steals session cookies, enabling follow-on activity such as email exfiltration, BEC-style attacks, and mail forwarding rules. Its evasion techniques include a custom CAPTCHA, invisible-character obfuscation, and anti-debugging checks that redirect analysts. Defenders should revoke session tokens, restrict access to compliant devices, and hunt for suspicious sign-ins, MFA changes, and forwarding rules.",
+      "completeness": "Medium",
+      "threats": [
+        "Tycoon_2fa",
+        "Credential_harvesting_technique",
+        "Sneaky_2fa_tool",
+        "Mamba_2fa_tool",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Cloudflare Turnstile",
+        "Selenium",
+        "Burp Suite",
+        "CryptoJS"
+      ],
+      "algorithms": [
+        "base64",
+        "sha512",
+        "aes",
+        "cbc",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/phish-chips-serving-up-tycoon-2fas-secrets",
+        "https://github.com/eSentire/iocs/tree/main/Tycoon2FA"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Contagious Interview (DPRK) Launches a New Campaign Creating Three Front Companies to Deliver a Trio of Malware: BeaverTail, InvisibleFerret, and OtterCookie",
+      "summary": "North Korean group Contagious Interview, also known as Famous Chollima and a subgroup of Lazarus, is using three cryptocurrency front companies (BlockNovas LLC, Angeloper Agency, and SoftGlide LLC) to deliver BeaverTail, InvisibleFerret, and OtterCookie malware through fake job interview lures. The actors target cryptocurrency job applicants via GitHub repositories, job listings, and freelancer sites. Their fake personas use AI-generated images, some created with Remaker AI, and many employee profiles appear fabricated. Malware steals cryptocurrency wallet data and browser credentials, and includes a Golang backdoor and reverse shell capabilities. Defenders should treat unsolicited interview coding tests and \"skill assessments\" that require running code as high risk.",
+      "completeness": "High",
+      "threats": [
+        "Beavertail",
+        "Invisibleferret",
+        "Ottercookie",
+        "Residential_proxy_technique",
+        "Frostyferret",
+        "Clickfix_technique",
+        "Powershell_shell_tool",
+        "Anydesk_tool",
+        "Hades"
+      ],
+      "geo": [
+        "North koreans",
+        "North korean",
+        "Mexico",
+        "Dprk",
+        "Brazil",
+        "Usa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Astrill VPN",
+        "Linux",
+        "macOS",
+        "Twitter",
+        "gmail",
+        "Chrome",
+        "Google Chrome",
+        "Opera",
+        "Dropbox",
+        "curl",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tronlink",
+        "coin98",
+        "sui_wallet"
+      ],
+      "crypto": [
+        "solana",
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "eval",
+        "main_process",
+        "add_to_startup"
+      ],
+      "languages": [
+        "python",
+        "golang",
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.silentpush.com/blog/contagious-interview-front-companies/",
+        "https://github.com/Collaborate3562/ncipher-backend/blob/main/backend/config/key.js",
+        "https://github.com/search?q=content%3A%22mongodb%3A%2F%2Fadmin%3Aadmin987%40cluster0-shard-00-00.r3fs6.mongodb.net%3A27017%2Ccluster0-shard-00-01.r3fs6.mongodb.net%3A27017%2Ccluster0-shard-00-02.r3fs6.mongodb.net%3A27017%2Fauth%3FauthSource%3Dadmin%26replicaSet%3Datlas-638q0p-shard-0%26readPreference%3Dprimary%26ssl%3Dtrue%22%2C&type=code",
+        "https://github.com/hashtopolis/server"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-24",
+      "title": "Sock(et) Puppet: How RansomHub Affiliates Pull the Strings",
+      "summary": "SocGholish, also known as FakeUpdates, was used in an early March 2025 intrusion linked to RansomHub affiliates, according to eSentire's Threat Response Unit. Victims were lured through a compromised WordPress site that displayed a fake Microsoft Edge update, which delivered a JScript file. The malware collected system information, dumped saved browser credentials, and then retrieved a Python backdoor that enabled a SOCKS proxy into internal networks. The backdoor used sandbox and virtual machine checks to evade analysis, and the deployment came about six and a half minutes after first contact, suggesting targets were chosen after discovery. Defenders are advised to redirect script file extensions, disable wscript.exe, enable script logging, and deploy EDR or NGAV.",
+      "completeness": "Medium",
+      "threats": [
+        "Ransomhub",
+        "Socgholish_loader",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress",
+        "Microsoft Edge",
+        "Active Directory",
+        "Google Chrome",
+        "Chrome",
+        "task scheduler"
+      ],
+      "algorithms": [
+        "sha256",
+        "aes-256",
+        "aes-gcm",
+        "chacha20",
+        "aes",
+        "aes-128",
+        "pbkdf2",
+        "xor",
+        "blake3",
+        "zip"
+      ],
+      "functions": [
+        "eval",
+        "exec",
+        "Exception",
+        "pc_start"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "jscript"
+      ],
+      "links": [
+        "https://www.esentire.com/blog/socket-puppet-how-ransomhub-affiliates-pull-the-strings",
+        "https://github.com/eSentire/iocs/blob/main/RansomHub/RansomHub-iocs-2025-03-28.txt"
+      ]
+    }
+  }
+]

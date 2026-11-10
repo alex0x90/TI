@@ -1,0 +1,566 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "PixelSmash – Critical FFmpeg Vulnerability Turns Media Files into Weapons",
+      "summary": "CVE-2026-8461, named PixelSmash by JFrog Security Research, is a heap out-of-bounds write in the MagicYUV decoder of FFmpeg, rated CVSS 8.8. A crafted AVI, MKV, or MOV file can crash applications that use FFmpeg and, in a demonstrated lab setup with ASLR disabled, achieve remote code execution on a Jellyfin server and a Nextcloud instance. Targets include desktop players, thumbnail generators, cloud transcoding, media servers, and ML video pipelines that process untrusted media. Because MagicYUV is enabled by default in upstream FFmpeg builds, the flaw propagates to downstream projects that inherit it silently. Defenders should upgrade to FFmpeg 8.1.2 or later, or disable the MagicYUV decoder at build time.",
+      "completeness": "Low",
+      "threats": [
+        "Pixelsmash_vuln",
+        "Supply_chain_technique",
+        "Lumma_stealer"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "MagicYUV",
+        "Linux",
+        "Jellyfin",
+        "Slack",
+        "Discord",
+        "Telegram",
+        "Ubuntu",
+        "Debian",
+        "Fedora",
+        "Alpine",
+        "have more..."
+      ],
+      "functions": [
+        "system",
+        "free"
+      ],
+      "links": [
+        "https://jfrog.com/blog/pixelsmash-critical-ffmpeg-vulnerability-turns-media-files-into-weapons/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "An Income Tax Assessment Notice Phishing Campaign Delivering Malware",
+      "summary": "A CYFIRMA report describes a malware campaign that uses a fake Indian Income Tax Department assessment notice, hosted on the domain harivo[.]vip, to lure victims into downloading a ZIP archive. The archive contains a disk image holding a loader executable (Tax_Assessment.exe) that uses .NET reflection to run a RAT-like DLL payload (libsvcs.dll). Both components are protected with ConfuserEx obfuscation, and the malware hides its console window, modifies the registry, and spoofs assembly metadata. The payload supports persistence, system and security software discovery, user activity monitoring, and encrypted C2 communication, and it resembles XWorm-like RAT families. Attribution remains unconfirmed despite Hong Kong-hosted infrastructure. Defenders should watch for tax-themed phishing, restrict execution of archive and disk image contents, and monitor loader behavior and autorun persistence.",
+      "completeness": "High",
+      "threats": [
+        "Confuserex_tool",
+        "Dll_sideloading_technique",
+        "Xworm_rat",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Indian",
+        "Hong kong",
+        "China"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 22,
+      "algorithms": [
+        "sha256",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "SetAutoRun",
+        "GetWindowsVersion",
+        "GetIdleTime"
+      ],
+      "links": [
+        "https://www.cyfirma.com/research/an-income-tax-assessment-notice-phishing-campaign-delivering-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "WhatsApp VBScript Campaign Installs ManageEngine Endpoint Central for Persistent Remote Access",
+      "summary": "The WhatsApp VBScript campaign, reported as active as of June 22, 2026, uses chat attachments from hijacked WhatsApp accounts to deliver VBS/VBE files disguised as financial or business documents. When a recipient runs the script via wscript.exe, it creates hidden working folders under C:\\Users\\Public\\Documents, downloads a ZIP using built-in Windows tools, and removes Mark-of-the-Web markers. The chain ends with a silent msiexec install of a preconfigured ManageEngine Endpoint Central agent that reports to attacker-controlled servers, giving persistent remote control. Victims span many countries, with Malaysia accounting for about 80%, and targeting appears opportunistic rather than vertical-specific. No confirmed attribution exists, though Chinese-language comments suggest a possible operator, with low confidence. Defenders should block script attachments from chat channels, alert on unusual wscript.exe and msiexec activity, and hunt for randomized folders under the Public Documents path.",
+      "completeness": "Medium",
+      "threats": [
+        "Bitsadmin_tool",
+        "Motw_bypass_technique",
+        "Gh0st_rat",
+        "Valleyrat"
+      ],
+      "geo": [
+        "Vietnam",
+        "Australia",
+        "German",
+        "Portuguese",
+        "Brazil",
+        "French",
+        "Mexico",
+        "Russia",
+        "Spain",
+        "India",
+        "Taiwan",
+        "Chinese",
+        "Singapore",
+        "Malaysia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "curl"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript"
+      ],
+      "links": [
+        "https://socradar.io/blog/whatsapp-vbscript-campaign-manageengine-endpoint/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "MYRA: A Full Linux RAT Distributed via npm",
+      "completeness": "Medium",
+      "threats": [
+        "Myra",
+        "Supply_chain_technique",
+        "Process_injection_technique",
+        "Nop_sled_technique"
+      ],
+      "geo": [
+        "Polish"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "Node.js",
+        "systemd",
+        "curl",
+        "Ubuntu",
+        "sudo"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "readFileSync",
+        "createHmac",
+        "persistStealthPreload",
+        "writeFileSync",
+        "persistStealthCron",
+        "persistStealthProfile",
+        "findDesktopProcessEnv",
+        "readProcEnviron"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://safedep.io/malicious-apintergrationpost-npm-myra-rat",
+        "https://github.com/safedep/pmg"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "Operation FlutterBridge: The FlutterShell macOS Backdoor",
+      "summary": "Operation FlutterBridge is a macOS campaign by cluster CL-CRI-1089 that delivers the FlutterShell backdoor, which misuses the Flutter framework and is distributed through Google and YouTube malvertising. The backdoor is C2-conditional: its command payload is JavaScript fetched at runtime through a WKWebView flutterInvoke bridge, so no bridge commands ran in sandbox telemetry without a live C2. Across three generations from December 2025 to March 2026, the actor rotated Apple Developer certificates, moved to self-signed artifacts in Gen 3, and renamed bridge commands from exec_sync to pdf_sync to renderPDF. The report notes that the shared Flutter base produces an invariant exported-symbol fingerprint, which defenders can use for a generation-agnostic detection rule. Recommended behavioral detections include Chrome relaunches with crash-suppression flags, ioreg hardware UUID queries from non-system parents, and Sparkle bundle replacement.",
+      "completeness": "Medium",
+      "threats": [
+        "Flutterbridge",
+        "Fluttershell",
+        "Sparkle_tool",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "macOS",
+        "Flutter",
+        "Chrome",
+        "Google Chrome",
+        "flutter.flutter",
+        "Gatekeeper",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "setSparkleDelay"
+      ],
+      "languages": [
+        "javascript",
+        "objective_c"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/operation-flutterbridge-the-fluttershell-macos-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "Extended Rapid Response: Zimperium's On-Device Coverage of the EvilTokens Multi-Brand Phishing Campaign",
+      "summary": "The EvilTokens PhaaS kit runs device-code phishing against Microsoft 365, using DocuSign, Microsoft 365, and Adobe lures hosted on disposable Cloudflare Workers infrastructure. Rather than harvesting passwords, it tricks victims into approving an attacker's device on the genuine Microsoft sign-in flow, bypassing both credential-phishing defenses and MFA. Page content is AES-GCM encrypted and decrypted in the browser to evade static analysis. Stolen refresh tokens grant persistent access that survives password resets. Links are increasingly opened on phones, where endpoint controls are weakest. Zimperium's Mobile Threat Defense detects and blocks the phishing URLs on-device before the victim reaches the device-code step.",
+      "completeness": "Low",
+      "threats": [
+        "Eviltokens_tool",
+        "Device_code_phishing_technique"
+      ],
+      "algorithms": [
+        "aes-gcm"
+      ],
+      "links": [
+        "https://zimperium.com/blog/extended-rapid-response-zimperiums-on-device-coverage-of-the-eviltokens-multi-brand-phishing-campaign",
+        "https://github.com/Zimperium/IOC/tree/master/2026-06-EvilTokens"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "From PostCSS Masquerading to Windows RAT",
+      "summary": "Malicious npm packages posing as postcss-selector-parser tooling delivered a Windows remote access trojan. The package postcss-minify-selector-parser sits close enough to the legitimate postcss-selector-parser, which has over 150M weekly downloads, to pass a quick dependency review. Its entry point hides an encrypted blob that decodes to a JavaScript dropper, which runs a PowerShell script that downloads and extracts a Windows bundle. That bundle includes a bundled Python runtime and Nuitka-compiled modules implementing an HTTP C2 with RC4 packet encryption, persistence, remote shell, file transfer, and Chrome credential theft. Defenders should remove the related packages (postcss-minify-selector-parser, postcss-minify-selector, aes-decode-runner-pro), check for the listed Windows artifacts and Run-key persistence, and rotate credentials from affected developer machines.",
+      "completeness": "Medium",
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "curl",
+        "Nuitka",
+        "virtualbox",
+        "qemu",
+        "hyper-v",
+        "vmwaretray"
+      ],
+      "algorithms": [
+        "aes",
+        "zip",
+        "rc4",
+        "aes-256-gcm",
+        "md5",
+        "chacha20-poly1305",
+        "gzip"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://research.jfrog.com/post/from-postcss-typosquat-to-windows-rat/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "macOS.Gaslight \\| Rust Backdoor Turns Prompt Injection on the Analyst, Not the Sandbox",
+      "summary": "macOS.Gaslight is a Rust macOS implant that SentinelLABS assesses with high confidence as part of a DPRK-aligned macOS cluster. It embeds a 3.5 KB Markdown-fenced payload of 38 fabricated \"system\" messages designed to make an LLM-assisted triage agent abort, truncate, or refuse its analysis. The implant uses a Telegram Bot API polling loop for command-and-control, with AES-GCM encrypted payloads over certificate-pinned TLS. Its operator shell supports commands such as shell, kill, and upload, and it includes a Python-based stealer that harvests browser data, keychain copies, and other host information. It persists through a LaunchAgent disguised with an Apple-style label and redacts its Telegram bot token from runtime output. The main takeaway for defenders is to treat sample content as adversarial input, never as instructions.",
+      "completeness": "Low",
+      "threats": [
+        "Bonzai",
+        "Supply_chain_technique",
+        "Amos_stealer",
+        "Hades",
+        "Shai-hulud"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Telegram",
+        "Linux",
+        "Chrome",
+        "Firefox",
+        "PyInstaller",
+        "Nuitka",
+        "Anthropic",
+        "Claude"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "aes",
+        "zip",
+        "base64"
+      ],
+      "functions": [
+        "getUpdates"
+      ],
+      "languages": [
+        "python",
+        "cpython",
+        "rust"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "CVE-2025-54068 Laravel Livewire Credential Theft Campaign: 6,000+ Applications Compromised",
+      "summary": "Imperva reports a credential theft campaign exploiting CVE-2025-54068, an unauthenticated remote code execution flaw in Laravel Livewire v3 up to v3.6.3, which lets attackers inject malicious serialized PHP objects during component hydration. The attacker runs a Bash stealer that recursively searches for .env files, extracts database, APP_KEY and related values, archives them, and exfiltrates through FTP, Telegram and GoFile. Recovered data showed credentials from 6,167 applications across many sectors, including online gambling, e-commerce, healthcare, financial services and government, with 188 live Stripe keys and 381 AWS IAM credentials. Attribution indicators point to an Indonesian-origin actor. Defenders should patch to Livewire 3.6.4 or later, block outbound FTP and alert on unusual web server connections to Telegram and GoFile, and rotate credentials and APP_KEY if compromise is suspected.",
+      "completeness": "Medium",
+      "geo": [
+        "Asian",
+        "Indonesian",
+        "Brazilian",
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 11,
+      "software": [
+        "Laravel Livewire",
+        "Livewire",
+        "Laravel",
+        "telegram",
+        "Unix",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.imperva.com/blog/cve-2025-54068-laravel-livewire-credential-theft-campaign-6000-applications-compromised/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "Payouts King Ransomware Initial Access Broker Deploys New Edgecution Malware",
+      "summary": "Zscaler ThreatLabz reports that an initial access broker affiliated with Payouts King ransomware is deploying Edgecution, a malicious Microsoft Edge browser extension paired with a Python backdoor. Attacks typically begin with Microsoft Teams messages impersonating IT staff, which lead victims to a fake Outlook updates website that also requests Microsoft 365 or Outlook passwords. The extension abuses the Chrome native messaging protocol to escape the browser sandbox and gain host access for filesystem manipulation, process execution, and arbitrary code execution. It runs in a headless Edge instance, so it remains invisible to users. Defenders should monitor browser extension installations, tightly control native messaging host configurations, and train users to recognize fake IT update prompts.",
+      "completeness": "Low",
+      "threats": [
+        "Edgecution"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Edge",
+        "Chrome",
+        "Microsoft Teams",
+        "Outlook",
+        "AutoHotKey",
+        "Microsoft Outlook",
+        "Windows registry"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/payouts-king-ransomware-initial-access-broker-deploys-new-edgecution"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "Analyzing TAX#TRIDENT: Fake Indian Tax Lures Pivot Across ZIP, VBS, Stego and PHP-Wrapped VBS Delivery",
+      "summary": "TAX#TRIDENT is an active campaign using fake Indian Income Tax assessment lures to deliver malware through three distinct paths. The first path serves a ZIP archive containing a signed ClientSetup installer that creates a hidden client directory, service and driver persistence, and outbound session traffic. The second path uses a VBScript downloader that shows a decoy tax image and runs the same ClientSetup payload with a different server configuration. The third path uses a PHP-named endpoint that returns VBScript, which stages files from S3, lowers UAC prompt behavior, and silently installs a signed ManageEngine UEMS agent. The ClientSetup tooling matches publicly reported SyncFuture/Yangtu-style activity with China-linked indicators, but the report does not attribute the campaign to a named actor. For defenders, the key takeaway is to hunt behavior, such as scripts run from web endpoints, misleading file names, UAC changes, and unapproved endpoint-management installs, rather than relying on single hashes or domains.",
+      "completeness": "High",
+      "threats": [
+        "Steganography_technique",
+        "Sysaid_tool",
+        "Syncfuture_tool",
+        "Ytscrat",
+        "Lolbin_technique",
+        "Bitsadmin_tool",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "India",
+        "Indian",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 23,
+      "software": [
+        "Windows installer",
+        "Windows service",
+        "curl"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "vbscript",
+        "visual_basic",
+        "powershell"
+      ],
+      "links": [
+        "https://www.securonix.com/blog/taxtrident-indian-fax-lures/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "EvilTokens: How “Ghost” Code Threatens US and European Businesses",
+      "summary": "EvilTokens is a phishing kit that abuses Microsoft's legitimate device login flow (Device Code Phishing) to gain access to victims' Microsoft 365 accounts without directly stealing passwords. Its landing page HTML is AES-GCM encrypted and becomes visible only after the browser decrypts and renders it, which can hide the phishing content from static URL checks and network-level detection. The kit has been observed targeting organizations in managed security services, technology, manufacturing, education, banking, and consulting and financial services, concentrated mainly in the United States and Europe. The report's analysis shows the decrypted page requests a user code from a backend endpoint, polls device-code session status, and redirects completed victims to the legitimate OneDrive site. For defenders, the report argues that browser-level inspection reveals decrypted DOM content and requests needed for faster triage, detection engineering, and pivoting to related device-code phishing activity.",
+      "completeness": "Low",
+      "threats": [
+        "Eviltokens_tool",
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "algorithms": [
+        "aes-gcm"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/eviltokens-ghost-code-analysis/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "Chinese actor compromises thousands of Wordpress sites",
+      "summary": "A Chinese-speaking operator conducted a mass web-exploitation campaign against WordPress sites in June 2026, with medium-high confidence in attribution. The actor built target lists from FOFA, ran parallel custom scanners, and exploited known CVEs, mainly WordPress plugin file-upload and code-execution flaws. Successful exploits placed marker-bearing PHP shells, which were then replaced with larger webshells such as down.php and Godzilla-compatible shells. Roughly 25,195 unique sites showed confirmed or validated compromise, with Breeze Cache producing the largest confirmed set. Post-exploitation activity targeted wp-config.php files, database credentials, and internal network details, and the operator also deployed a VShell command-and-control tool.",
+      "completeness": "High",
+      "threats": [
+        "Godzilla_webshell",
+        "Bestshell",
+        "Meterpreter_tool",
+        "Vshell",
+        "Snowlight"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "links": [
+        "http://ctrlaltintel.com/research/Wordpress/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "From Langflow to Monero: Inside CVE-2026-33017 Cryptominer",
+      "summary": "Commodity cryptominer operators are exploiting CVE-2026-33017, an unauthenticated remote code execution flaw in Langflow's public flow build endpoint, to deliver a Monero mining chain. The dropper isp.sh fetches a Go binary, lambsys, which kills rival miners, disables security controls such as AppArmor, SELinux, UFW and iptables, and plants cron and bash-loop persistence. The malware spreads through SSH keys and known_hosts entries, so a Langflow instance running with privileged access can expose other systems. Observed activity ran from March to April 2026 against a single C&C, with the operator reusing one hardcoded flow ID. Defenders should update to Langflow 1.9.0 or later, restrict public access, reduce service privileges, and rotate exposed SSH keys.",
+      "completeness": "High",
+      "threats": [
+        "Ssh_worm",
+        "Xmrig_miner",
+        "Flodrix_botnet",
+        "Kinsing_miner",
+        "Typosquatting_technique",
+        "Korkerds",
+        "Outlaw_botnet",
+        "Hezb",
+        "Supportxmr",
+        "C3pool",
+        "Malxmr_miner"
+      ],
+      "geo": [
+        "America",
+        "Canada",
+        "Ontario"
+      ],
+      "ttp_tactics": 12,
+      "ttp_techniques": 26,
+      "software": [
+        "Langflow",
+        "Linux",
+        "Docker",
+        "Confluence",
+        "curl",
+        "systemd",
+        "AppArmor",
+        "SELinux",
+        "Alibaba Cloud",
+        "Chrome",
+        "have more..."
+      ],
+      "crypto": [
+        "monero",
+        "ethereum"
+      ],
+      "algorithms": [
+        "ghostrider",
+        "sha256",
+        "base64",
+        "randomx",
+        "md5",
+        "cryptonight"
+      ],
+      "functions": [
+        "createBashScript",
+        "b",
+        "lambsys_pre_setup_clear_fuckers_FindFile"
+      ],
+      "languages": [
+        "php",
+        "golang",
+        "python"
+      ],
+      "links": [
+        "https://www.trendmicro.com/en_us/research/26/f/from-langflow-to-monero-inside-cve-2026-33017-cryptominer.html",
+        "https://github.com/langflow-ai/langflow/commit/73b6612e3ef25fdae0a752d75b0fabd47328d4f0",
+        "https://github.com/langflow-ai/langflow/pull/12160"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-23",
+      "title": "OpenClaw’s Skill Marketplace and the Emerging AI Supply Chain Threat",
+      "summary": "OpenClaw is an AI agent that executes third-party skills from its ClawHub marketplace, and Unit 42 found five unblocked malicious skills between February and May 2026. Two skills delivered macOS infostealers through paste-site redirect lures and connected to command-and-control infrastructure. One skill, omnicogg, padded its file with about 22 MB of characters to exceed scanner size limits and evade ClawScan and VirusTotal. The money-radar skill used runtime agentic affiliate injection to push affiliate links through financial recommendations, and the letssendit skill coordinated agents in a front-running pump-and-dump scheme. Unit 42 notes that all these cases passed existing detection at the time, and that defenders should verify publisher provenance, audit skill source files, and monitor outbound traffic for undocumented endpoints.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Amos_stealer",
+        "Paste-jacking_technique"
+      ],
+      "geo": [
+        "Singapore",
+        "Hong kong",
+        "China"
+      ],
+      "software": [
+        "OpenClaw",
+        "ClawHub",
+        "macOS",
+        "Telegram",
+        "TradingView"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/"
+      ]
+    }
+  }
+]

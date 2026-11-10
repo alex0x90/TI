@@ -1,0 +1,231 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-08",
+      "title": "PSA: Supply Chain Compromise in BdThemes Ecosystem via Poisoned API Response",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "zip",
+        "md5",
+        "base36"
+      ],
+      "languages": [
+        "php, javascript",
+        "SIGMA: Found"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/08/psa-supply-chain-compromise-in-bdthemes-ecosystem-via-poisoned-api-response/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-08",
+      "title": "Cracking Kynx: The Stealer Hunting for Your Wallets, Games, and AI Tools",
+      "summary": "Kynx is a new Malware-as-a-Service infostealer built in C++ with AI assistance and promoted on a Turkish game cheating forum. It uses a tiered subscription model with premium features restricted to users holding an invite code. Kynx runs anti-analysis checks that score virtual machine and debugger indicators and aborts execution above a threshold, then steals data using a cascade of browser credential extraction methods. Its targets include browser credentials, dozens of crypto wallet applications and extensions, gaming platforms, Discord tokens, VPN and email data, and AI coding assistants such as Claude Code and Cursor. Stolen data is staged in a temporary directory and exfiltrated in chunks over HTTP POST requests to a web panel. Defenders should treat infostealer logs as a source for identifying compromised accounts and reducing identity-based risk.",
+      "completeness": "High",
+      "threats": [
+        "Kynx",
+        "Clickfix_technique",
+        "Credential_harvesting_technique",
+        "Sandbox_evasion_technique",
+        "Credential_stealing_technique",
+        "Chromeelevator_tool",
+        "Elevator",
+        "Dumpbrowsersecrets_tool",
+        "Adwind_rat"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 17,
+      "software": [
+        "Discord",
+        "proxifier",
+        "burpsuite",
+        "Windows Defender",
+        "Chrome",
+        "Chromium",
+        "Opera",
+        "Roblox",
+        "Steam",
+        "Minecraft",
+        "have more..."
+      ],
+      "wallets": [
+        "bitcoincore",
+        "exodus_wallet",
+        "electrum",
+        "atomicwallet",
+        "coinomi",
+        "guarda_wallet",
+        "wassabi",
+        "daedalus",
+        "litecoincore",
+        "jaxx",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "monero",
+        "dogecoin",
+        "binance",
+        "aptos",
+        "casper",
+        "starcoin",
+        "tezos"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Kynx"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://socradar.io/blog/kynx-stealer-wallets-games-ai-tools/",
+        "https://github.com/Maldev-Academy/DumpBrowserSecrets",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption/blob/main/docs/RESEARCH.md#2-the-abe-mechanism-a-step-by-step-breakdown",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-08",
+      "title": "Investigating a Multi-Stage PowerShell Loader",
+      "summary": "PowerShell content served from 203[.]188[.]171[.]166 and dorenzaa[.]com was observed retrieving and executing further payloads, with no VirusTotal detections for either at the time of analysis. The PowerShell downloaded Grape2.zip from a Vercel-hosted domain, extracted it, and ran Grape.exe from the user's local application data directory. A second Vercel instance hosted multiple loaders that use hidden PowerShell execution, dynamically constructed IEX, and Base64 with repeating-key XOR obfuscation. One loader displayed a decoy \"Verification complete!\" prompt titled \"Google.com\" while downloading and running UltraToolliteSetup.exe and draw.zip. The initial infection vector and the final functionality of the downloaded executables remain unidentified, and no threat actor attribution is made. Defenders should review the listed Vercel-hosted artifacts and file-system paths, noting that detection coverage was limited at the time of analysis.",
+      "completeness": "Medium",
+      "threats": [
+        "Junk_code_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "zip",
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://malwr-analysis.com/2026/08/08/investigating-a-multi-stage-powershell-loader/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-08",
+      "title": "Mirai and Its Heirs: A Decade of Structural Neglect in IoT Security",
+      "summary": "Mirai and its descendants, including Aisuru and Kimwolf, continue to exploit default credentials and unpatched services in consumer routers, DVRs, and IP cameras. After the March 2026 government takedown, only 9% of reported Aisuru C2 IPs remained active, yet known infrastructure more than doubled within four months. Kimwolf reportedly fragmented into more than 20 competing botnets, with daily active DDoS endpoints rising from about 1 million to 8–9 million. Over 500,000 hosts still run Boa, a web server discontinued in 2005, often introduced through chip-level SDKs that manufacturers and consumers struggle to patch. The report concludes that disruption is not elimination, and that until vulnerable SDK components and default configurations are fixed at the source, these botnets will keep regenerating.",
+      "completeness": "Low",
+      "threats": [
+        "Mirai",
+        "Aisuru",
+        "Kimwolf",
+        "Synflood_technique",
+        "Dnsflood_technique",
+        "Okiru",
+        "Masuta",
+        "Reaper",
+        "Botenago",
+        "Supply_chain_technique",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Deutsche",
+        "Canadian",
+        "Georgia",
+        "Brazil"
+      ],
+      "software": [
+        "Android",
+        "Minecraft",
+        "Twitter"
+      ],
+      "links": [
+        "https://censys.com/blog/mirai-and-its-heirs-a-decade-of-structural-neglect-in-iot-security/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-08",
+      "title": "Reversing EtherRAT: When Malware Uses the Blockchain for C2",
+      "summary": "EtherRAT is a backdoor delivered in a Windows Installer (MSI) file tied to \"The Gentlemen\" ransomware campaign, which this analysis describes in a technical walkthrough. The malware uses a batch bootstrapper to download a portable Node.js runtime and run an obfuscated JavaScript loader that sets up persistence via a Registry Run key. Its encrypted payload is decrypted with a custom byte-wise routine, and the resulting RAT polls over HTTP while disguising requests as image or stylesheet fetches. Instead of hardcoding a C2 server, EtherRAT queries an Ethereum smart contract via eth_call, which returned a URL during the researcher's testing. The main takeaway for defenders is that blockchain-based C2 lets operators change infrastructure through new transactions, so static DNS blocklists are insufficient and detection should focus on anomalous Node.js activity and unusual queries to public RPC endpoints.",
+      "completeness": "Low",
+      "threats": [
+        "Etherrat",
+        "Gentlemen_ransomware",
+        "Ostap_loader"
+      ],
+      "software": [
+        "Windows Installer",
+        "curl",
+        "Node.js"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "md5",
+        "zip",
+        "sha1"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://medium.com/@ckant/reversing-etherrat-when-malware-uses-the-blockchain-for-c2-522af31f79f3"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-08",
+      "title": "Social engineering by UAC-0145: compromise during the hiring process",
+      "completeness": "Medium",
+      "geo": [
+        "Bulgaria"
+      ],
+      "software": [
+        "Telegram",
+        "Zoom",
+        "Wireguard",
+        "ireGuard so",
+        "Linux",
+        "cURL"
+      ],
+      "algorithms": [
+        "crc-32",
+        "aes-256",
+        "base64",
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cert.gov.ua/article/6318863"
+      ]
+    }
+  }
+]

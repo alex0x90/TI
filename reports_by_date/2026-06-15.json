@@ -129,5 +129,194 @@
         "https://socradar.io/blog/dark-web-profile-fox-kitten/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-15",
+      "title": "Inside a malicious infrastructure delivering EtherRAT, phishing pages, and malicious software",
+      "summary": "EtherRAT is a Node.js-based remote access trojan distributed through MSI installers, PowerShell scripts, and JavaScript scripts hosted on a malicious infrastructure. It retrieves its active command-and-control server address from an Ethereum smart contract, which makes it more resilient to infrastructure takedowns. Once running, it can execute arbitrary JavaScript from its C2 server, and it sends its own code to the server to receive a newly obfuscated version on each run. The same infrastructure also hosts phishing pages, malicious documents, and remote desktop software, and phishing campaigns often begin with emails carrying PDF or Excel attachments. Researchers also found an open directory and misconfigured domains exposing phishing kit code, including a URL cloaker. Defenders should watch for MSI or PowerShell payloads that launch Node.js through conhost.exe.",
+      "completeness": "Low",
+      "threats": [
+        "Etherrat",
+        "Msi_loader"
+      ],
+      "software": [
+        "Node.js",
+        "curl"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "javascript",
+        "jscript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/06/inside-a-malicious-infrastructure-delivering-etherrat-phishing-pages-and-malicious-software"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-15",
+      "title": "Public and Private Medical Community Targeted by China-Nexus Threat Actor Pursuing Artificial Intelligence, Cyber, Medical, and National Defense Research",
+      "summary": "GTIG attributes a campaign targeting North American academic, medical, and military research institutions to UNC6508, a PRC-nexus espionage actor. The actor exploited externally facing REDCap servers, including legacy versions left side-by-side with current ones, and deployed the custom INFINITERED malware to harvest credentials. INFINITERED trojanized REDCap system files to persist through upgrades and to run a backdoor on every page load. After remaining undetected for over a year, the actor used captured credentials to reach an administrator account and abused content compliance rules to covertly BCC-forward matching emails to an external account. Defenders should enforce phishing-resistant 2SV, patch REDCap, remove old versions, and monitor for INFINITERED.",
+      "completeness": "High",
+      "threats": [
+        "Infinitered",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "China",
+        "Indo-pacific",
+        "Canada",
+        "American"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 13,
+      "software": [
+        "Chrome",
+        "Gmail"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "getcwd",
+        "php_uname",
+        "phpversion"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/prc-targets-us-medical-research/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-15",
+      "title": "Iran Hajj Organization Data Claim, Crypto Leads Sale, APT43 Tooling Claim, Sweden User Data, and Chrysler Breach Claim",
+      "summary": "Threat actors posted several underground listings, per SOCRadar's Dark Web Team, including an alleged 168-million-record database linked to Iran's Hajj and Pilgrimage Organization, offered for $80,000 in Bitcoin. A separate seller advertised crypto-related user leads, collected via a \"crypto checker,\" naming platforms such as Coinbase, Kraken, and Gemini. Another post claimed APT43/Kimsuk backdoors, rootkits, and three zero-day vulnerabilities, but these claims remain unverified and may be exaggerated or used as lures. A seller also advertised over 5.4 million Swedish user records allegedly tied to AdressFakta for $3,800, which could enable smishing and vishing. Everest ransomware group claimed a Chrysler breach of over 1 TB, including 105 GB of Salesforce-related customer and dealer records, which could fuel phishing and recall-related scams if confirmed.",
+      "completeness": "Low",
+      "threats": [
+        "Sim_swapping_technique",
+        "Smishing_technique",
+        "Everest"
+      ],
+      "geo": [
+        "Swedish",
+        "Sweden",
+        "North korea",
+        "Iran"
+      ],
+      "software": [
+        "Android",
+        "Linux"
+      ],
+      "wallets": [
+        "coinbase"
+      ],
+      "crypto": [
+        "bitcoin",
+        "binance"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://socradar.io/blog/iran-hajj-organization-apt43-sweden-data/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-15",
+      "title": "Operation Turb00: Analyzing and Hunting a Vidar Campaign",
+      "summary": "The report analyzes a two-stage malware operation: a Go loader that decrypts and runs an in-memory Vidar infostealer, which the author clustered as \"Operation Turb00.\" The loader uses a custom string-decoding cipher and hash-based API resolution to hide its functionality, and the Vidar payload was found to steal browser credentials, cryptocurrency wallet data, and FTP and documents. In the sandbox run, the malware also installed a persistent SYSTEM-level DLL via a disguised Windows service, a departure from typical non-persistent Vidar behavior. Its command-and-control domains sit behind Cloudflare, so the author recommends domain-based blocking rather than IP blocking and monitoring for an impossible Firefox User-Agent. The author clustered 55 related samples and built YARA, Sigma, and Suricata rules, plus a monitoring query for newly pre-staged domains.",
+      "completeness": "High",
+      "threats": [
+        "Vidar_stealer",
+        "Goloader",
+        "Dead_drop_technique",
+        "Process_hacker_tool",
+        "Procmon_tool",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Finland"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 1,
+      "software": [
+        "WinHTTP",
+        "Firefox",
+        "Telegram",
+        "Steam",
+        "Windows service",
+        "Chrome",
+        "openssl",
+        "Linux"
+      ],
+      "algorithms": [
+        "fnv-1a",
+        "xor",
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "golang"
+      ],
+      "links": [
+        "https://mrtiepolo.medium.com/operation-turb00-analyzing-and-hunting-a-vidar-campaign-b45481d8cd74",
+        "https://github.com/tiepologian/signature-base/blob/main/rules/vidar\\_turb00/vidar\\_turb00\\_hunting\\_vt.yar",
+        "https://github.com/tiepologian/signature-base/blob/main/rules/vidar\\_turb00/vidar\\_turb00.yar",
+        "https://github.com/tiepologian/signature-base/tree/main/rules/vidar\\_turb00"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-06-15",
+      "title": "Inside a malicious infrastructure delivering EtherRAT, phishing pages, and malicious software",
+      "completeness": "Low",
+      "threats": [
+        "Etherrat",
+        "Msi_loader"
+      ],
+      "software": [
+        "Node.js",
+        "curl"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "jscript",
+        "powershell",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://securityboulevard.com/2026/06/inside-a-malicious-infrastructure-delivering-etherrat-phishing-pages-and-malicious-software/"
+      ]
+    }
   }
 ]

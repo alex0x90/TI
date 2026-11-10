@@ -1,0 +1,927 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "The Telegram Malware Ecosystem",
+      "summary": "The report documents how a 9,898-row dataset of Telegram-based malware was built from VirusTotal pivots, covering samples first seen from 2016 through December 2025. Malware such as stealers and RATs uses the Telegram Bot API as a free, TLS-protected exfiltration and command channel, and operators often embed the bot token and chat ID in samples. The authors recovered tokens and chat IDs, enriched them with passive Bot API queries (such as getMe, getChatAdministrators, and getWebhookInfo) without reading victim messages, and clustered the results into 854 operator campaigns. Case studies cover a long-running GPS stalkerware operation, a crypto-drainer malware-as-a-service, and an account-takedown service linked to a Russian-language lookup relay. For defenders, the key takeaways are to hunt for api.telegram.org/bot URLs, pivot on webhooks and bot metadata, and treat recovered chat IDs as sensitive.",
+      "completeness": "Medium",
+      "threats": [
+        "Maas_tool",
+        "Typosquatting_technique",
+        "Incontroller_tool",
+        "Masrep_tool",
+        "Jalapeno",
+        "Asyncrat",
+        "Xworm_rat",
+        "Ngate",
+        "Heracles",
+        "Homoglyph_technique",
+        "Cloaking_technique",
+        "Evi_rent_tool",
+        "Dyxless_tool"
+      ],
+      "geo": [
+        "Ukraine",
+        "Morocco",
+        "Palestine",
+        "Spain",
+        "Latam",
+        "Libya",
+        "Lebanon",
+        "Kurdish",
+        "Belarusian",
+        "Germany",
+        "Montenegro",
+        "Russia",
+        "Mena",
+        "Canada",
+        "Brazil",
+        "India",
+        "Ukrainian",
+        "Portugal",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "trycloudflare",
+        "Android",
+        "elegram's"
+      ],
+      "wallets": [
+        "tonkeeper"
+      ],
+      "algorithms": [
+        "sha512",
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "functions": [
+        "VirusTotal",
+        "getMe",
+        "getChatAdministrators",
+        "getUserProfilePhotos",
+        "getChat",
+        "getChatMemberCount",
+        "getWebhookInfo",
+        "getMyCommands",
+        "getMyDescription",
+        "getChatMenuButton",
+        "have more..."
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://ransom-isac.org/blog/the-telegram-malware-ecosystem"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Not only hacktivism. The motivation and goals of Insolent Hyena are ambiguous",
+      "summary": "Insolent Hyena is a threat cluster that BI.ZONE tracked from January to July 2026, targeting Russian organizations in science, education, government, retail, e-commerce, IT, and engineering. The group uses a fake regulator website with ClickFix social engineering to make victims run a PowerShell command that drops MSI installers disguised as legitimate applications, which load the CapDoor RAT and Octowave Loader. Its toolkit also includes the NightWire RAT, the Python-based Excalibur stealer, NetSupport, AnyDesk, AdaptixC2, and Cobalt Strike. The actor works alongside financially motivated and cyberespionage groups and relies on legitimate remote access tools to evade detection. Defenders are advised to deploy endpoint detection and response to catch and contain such attacks early.",
+      "completeness": "High",
+      "threats": [
+        "Nightwire",
+        "Excalibur",
+        "Pyarmor_tool",
+        "Netsupportmanager_rat",
+        "Capdoor",
+        "Cobalt_strike_tool",
+        "Adaptixc2_tool",
+        "Clickfix_technique",
+        "Octowave_loader",
+        "Antidebugging_technique",
+        "Sandbox_evasion_technique",
+        "Garble_tool",
+        "Uac_bypass_technique",
+        "Dll_sideloading_technique",
+        "Crashpad",
+        "Anydesk_tool",
+        "Mremoteng_tool",
+        "Rustdesk_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 1,
+      "software": [
+        "VBoxGuest",
+        "VirtualBox",
+        "Microsoft Defender",
+        "Microsoft Windows Defender",
+        "Firefox",
+        "WireGuard",
+        "PyInstaller",
+        "MineCraft",
+        "Roblox",
+        "Steam",
+        "have more..."
+      ],
+      "wallets": [
+        "coinomi",
+        "electrum",
+        "exodus_wallet",
+        "guarda_wallet",
+        "metamask",
+        "mymonero",
+        "wassabi"
+      ],
+      "crypto": [
+        "binance",
+        "bitcoin",
+        "litecoin",
+        "monero"
+      ],
+      "algorithms": [
+        "rc4",
+        "murmur3",
+        "salsa20",
+        "base64",
+        "xor",
+        "zip"
+      ],
+      "functions": [
+        "Write-Host",
+        "Remove-ItemProperty",
+        "SetTimer"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://bi.zone/expertise/blog/ne-tolko-khaktivizm-motivatsiya-i-tseli-insolent-hyena-neodnoznachny/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Inside the growing residential proxy botnet threat",
+      "summary": "Black Lotus Labs tracks nearly 20 million distinct IPs per day across more than 30 malicious residential proxy botnet clusters, with over 20 regularly exceeding 100,000 daily victims. These networks help criminals hide fraud, credential attacks and scanning inside ordinary home internet traffic, as shown by a case where a Vietnam-based actor used proxy services to validate stolen card data. Many large providers build botnets through SDKs bundled in legitimate apps, backdoored Android devices and IoT or SOHO routers, often without victim consent. Providers resell IPs to one another, so disrupting a single botnet typically leads to rapid recovery, as seen with IPIDEA. Defenders should watch for credential attacks from residential IPs and secure management interfaces, and the report calls for coordinated action across industry, telecoms and law enforcement.",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Supply_chain_technique",
+        "Kadnap",
+        "Ngioweb",
+        "Nsocks_tool",
+        "Kimwolf",
+        "Ipidea",
+        "Netnut",
+        "Popa_tool",
+        "G3proxy",
+        "Ipmoyu",
+        "Asocks",
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "China",
+        "Vietnam",
+        "Dutch"
+      ],
+      "software": [
+        "Android",
+        "ipcola",
+        "kookeey",
+        "Claude",
+        "zabbix",
+        "VN5Socks"
+      ],
+      "links": [
+        "https://www.lumen.com/blog/en-us/symbiotic-parasites-the-modern-proxy-ecosystem"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Really Muddy Waters",
+      "summary": "The report argues that the March 2026 Symantec attribution of CastleLoader, DeonoRAT, CastleRAT, Tsundere Bot, and ClixFlare activity to Iran's Seedworm/MuddyWater is incorrect, and that the activity is commercial malware-as-a-service. Its main basis is the \"Donald Gay\" code-signing certificate, which the author says has no independently verifiable link to Seedworm. The author tested ten reconstructed attack chains and found no technical APT indicators in nine of them. Certificates in the chains were purchased from a criminal MSaaS seller, and vendor attributions were inherited from one another without re-verification. The report advises defenders to treat these artifacts as commodity crimeware, with high confidence in that assessment.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Nightshade",
+        "Tsundere",
+        "Stagecomp",
+        "Darkcomp",
+        "Amadey",
+        "Ghostfetch",
+        "Keyc2",
+        "Persianc2",
+        "Microsoft_quick_assist_tool",
+        "Rhadamanthys",
+        "Dindoor",
+        "Deno_tool",
+        "Fakeset",
+        "Powerstats",
+        "Sharpstats",
+        "Powgoop",
+        "Mori",
+        "Sieve",
+        "Starwhale",
+        "Muddyviper",
+        "Fooder",
+        "Rustywater",
+        "Dchspy",
+        "Hvnc_tool",
+        "Pyarmor_tool",
+        "Steganography_technique",
+        "Donut",
+        "Bitsadmin_tool",
+        "Castleloader",
+        "Chaos_ransomware",
+        "Chainshell",
+        "Etherhiding_technique",
+        "Char",
+        "Ghostbackdoor",
+        "Http_vip",
+        "Anydesk_tool",
+        "Blackbeard",
+        "Spear-phishing_technique",
+        "Chromelevator_tool",
+        "Dll_sideloading_technique",
+        "Qilin_ransomware",
+        "Akira_ransomware",
+        "Rhysida",
+        "F5updater",
+        "Asgard_protector_tool",
+        "Process_hollowing_technique",
+        "Hatef"
+      ],
+      "geo": [
+        "German",
+        "Netherlands",
+        "Russian",
+        "Iranian",
+        "Egyptian",
+        "Egypt",
+        "Iran",
+        "Israel",
+        "Mena",
+        "Middle east",
+        "Jordan",
+        "Israeli",
+        "Korean",
+        "Canadian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "l (Ser",
+        "ode.js 18",
+        "Telegram",
+        "WordPress",
+        "Microsoft Teams",
+        "e.js driv",
+        "url"
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://muddy.vibecoded.systems/",
+        "https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Ransomware Gangs Attack Palo Alto, Fortinet, Citrix, and Check Point VPNs to Target Corporate Networks",
+      "completeness": "Medium",
+      "threats": [
+        "Qilin_ransomware",
+        "Credential_harvesting_technique",
+        "Fortibleed_vuln",
+        "Impacket_tool",
+        "Aitm_technique",
+        "Citrix_bleed_vuln",
+        "Spear-phishing_technique",
+        "Mimikatz_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Australia",
+        "United kingdom",
+        "United states",
+        "London"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 13,
+      "software": [
+        "FortiGate",
+        "PAN-OS",
+        "PsExec",
+        "Chrome",
+        "Windows Subsystem for Linux",
+        "Linux"
+      ],
+      "algorithms": [
+        "pbkdf2"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/ransomware-gangs-attack-vpn/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "AgentBaiting: How 800+ Fake AI Skills and MCP Servers Delivered Malware",
+      "summary": "FakeGit, a campaign of about 7,600 malicious GitHub repositories, expanded in April 2026 into AI capabilities by posing as Skills and MCP servers, with over 800 such repositories and more than 600 listings across public AI registries. The lures deliver SmartLoader, which installs the StealC information stealer that targets browser sessions, credentials, and other sensitive data. The report introduces AgentBaiting, in which AI agents such as Claude Code, Gemini, and ChatGPT discovered malicious repositories on their own and relayed the attacker's README installation instructions to users. The campaign borrowed enterprise workflow themes, including Databricks, Jenkins, and Docker tooling, to appear relevant to real work. Defenders should use curated catalogs, test new capabilities in isolated environments, verify publishers, and monitor agent-initiated downloads.",
+      "completeness": "Medium",
+      "threats": [
+        "Agentbaiting_technique",
+        "Fakegit_tool",
+        "Smartloader",
+        "Stealc",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "ChatGPT",
+        "Gmail",
+        "WhatsApp",
+        "Jenkins",
+        "Docker"
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "links": [
+        "https://www.island.io/blog/agentbaiting-how-800-fake-ai-skills-and-mcp-servers-delivered-malware",
+        "https://github.com/45d5r/databricks-mcp-server",
+        "https://github.com/Naveenkm07",
+        "https://github.com/Naveenkm007"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "An Angry Spark, or a Triangle in Disguise?",
+      "summary": "Researchers traced a Windows spyware family called Angry Spark, first observed by Gen Digital in 2022, to command-and-control infrastructure they had previously found on Amazon EC2 while tracking suspected spyware. They used a novel path-fingerprinting technique, IP-ESSENCE, that relies on Record Route IP options to pivot across servers. Their earlier OBTUSE cluster matched Kaspersky's publicly reported Operation Triangulation, an iPhone attack. A second cluster, SCALENE, was linked to Angry Spark through a shared server. The researchers suspect both operations shared private tooling or infrastructure playbooks, though this remains unconfirmed.",
+      "completeness": "Low",
+      "threats": [
+        "Angryspark",
+        "Hping3_tool"
+      ],
+      "geo": [
+        "London",
+        "Middle east",
+        "Russia"
+      ],
+      "software": [
+        "ChatGPT",
+        "Linux"
+      ],
+      "links": [
+        "https://medium.com/@billmarczak/an-angry-spark-or-a-triangle-in-disguise-ac32852a1be3",
+        "https://github.com/salesforce/jarm",
+        "https://github.com/torvalds/linux/blob/v7.0/include/net/tcp.h#L2640"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Two Joyfill npm Beta Releases Compromised to Deliver DEV#POPPER Remote Access Trojan",
+      "summary": "Two beta releases of Joyfill npm packages, @joyfill/layouts@0.1.2-2773.beta.0 and @joyfill/components@4.0.0-rc24-2773-beta.4, contain an import-time JavaScript implant linked to the DEV#POPPER malware family. The implant retrieves its next-stage code through public blockchain transactions on Tron, Aptos, and BNB Smart Chain, which makes payload selection changeable without a new npm publication. It runs when the package is loaded, so install-script suppression does not prevent execution. The final payload is a Node.js remote-access trojan with a Socket.IO control channel, and a parallel branch delivers a Python credential stealer. Developers should remove the affected versions and pin to the verified earlier releases, and defenders should treat any host that imported them as potentially compromised.",
+      "completeness": "High",
+      "threats": [
+        "Dev_popper",
+        "Omnistealer",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 9,
+      "software": [
+        "Node.js",
+        "Chrome",
+        "macOS",
+        "Linux",
+        "Discord",
+        "Chromium",
+        "Firefox",
+        "Telegram",
+        "Unix"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "aptos"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor",
+        "zip",
+        "aes",
+        "rc4"
+      ],
+      "functions": [
+        "unref",
+        "eval"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://socket.dev/blog/joyfill-npm-beta-releases-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Overview of Turla, a Russian APT group that has been active in Europe for more than 20 years",
+      "summary": "Turla is a long-running cyber espionage group that France's C4 agency, with the EU's High Representative, attributed to Russia's FSB 16th Center. The group has been active since at least 2004 and targets governments, diplomacy, defense, research, and energy sectors across Europe, Ukraine, and NATO. It relies on custom malware such as Kazuar, open-source tools like Mimikatz, phishing, watering hole attacks, and zero-day exploits. It hides its activity behind compromised WordPress sites, cloud servers, satellite command-and-control links, and peer-to-peer relays. In France, victims include the defense and foreign ministries and the justice ministry, and many small organizations are used as relay points.",
+      "completeness": "Low",
+      "threats": [
+        "Mimikatz_tool",
+        "Metasploit_tool",
+        "Agent_btz",
+        "Penquin_turla",
+        "Gazer",
+        "Crutch",
+        "Tinyturla",
+        "Lightneuron",
+        "Capibar",
+        "Kazuar",
+        "Spear-phishing_technique",
+        "Watering_hole_technique"
+      ],
+      "geo": [
+        "Kaliningrad",
+        "German",
+        "United states",
+        "Asia",
+        "French",
+        "Crimea",
+        "Russia",
+        "Moscow",
+        "Ukraine",
+        "Ukrainian",
+        "Russian",
+        "France"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "Outlook",
+        "Microsoft Exchange",
+        "WordPress"
+      ],
+      "links": [
+        "https://www.secrss.com/articles/92523"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Dark Web Profile: ExfilSquad",
+      "summary": "ExfilSquad is an emerging data-extortion group that surfaced publicly on July 26, 2026, with a Tor-hosted leak site naming 15 alleged victims, including Microsoft. The group appears to focus on data theft rather than file encryption, and it has no confirmed affiliate program or ransomware-as-a-service structure. Its claims have provided no forensic evidence, data samples, or independent confirmation, and fabrication or reused data appears more likely than not. Government-linked organizations make up the largest share of claims, with the United States most heavily represented. No confirmed intrusion method or technical indicators are available. Defenders should validate each claim against internal telemetry and prioritize sensitive data repositories.",
+      "completeness": "Low",
+      "geo": [
+        "Sweden",
+        "Columbia",
+        "United kingdom",
+        "Nigeria",
+        "United states"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "nginx"
+      ],
+      "links": [
+        "https://socradar.io/blog/dark-web-profile-exfilsquad/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Mirage Kitten targets Middle East and Africa region with new malware",
+      "summary": "Mirage Kitten, also known as UNC1549, is an APT group conducting cyber-espionage against aerospace, aviation, defense, and telecommunications organizations in the Middle East and Africa. This report documents a previously undocumented toolset, including the NightLedger Windows backdoor, which supports reconnaissance, command execution, file operations, and screenshot capture. The group also uses two WebSocket-based tunnelers, BridgeHead and ArcBridge, to provide operators with covert network access and SOCKS5 proxy relay through victim machines. BridgeHead was observed in Egypt and at a Pakistan-based aerospace organization, following spear-phishing with recruitment-themed lures. The tools include username checks that restrict execution to specific machines, suggesting per-target tailoring and efforts to evade analysis. Defenders should note the group's shift from Azure-style infrastructure toward Cloudflare-backed domains.",
+      "completeness": "Medium",
+      "threats": [
+        "Spear-phishing_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Twostroke",
+        "Tunneler",
+        "Minifast",
+        "Miniupdate",
+        "Lightrail",
+        "Pollblend"
+      ],
+      "geo": [
+        "Middle east",
+        "Ethiopia",
+        "Jordan",
+        "Tanzania",
+        "Egypt",
+        "Pakistan",
+        "African",
+        "Africa"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://securelist.com/mirage-kitten-new-tools/120811/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "ClickFix Keeps Evolving: Rundll32 Ordinal Execution over WebDAV",
+      "summary": "ClickFix variant from CyberProof tricks users into pasting a command into the Windows Run dialog, which launches pcalua.exe and then uses WMI, caret insertion, or runtime string assembly to run pushd and rundll32 against a remote WebDAV share over port 443. The remote payload, with names such as gc.key, j.pm, and goog.ct, is loaded by ordinal #1 and never written to disk, so the activity is hidden from name-based detections. In one incident the loader completed and collected browser credential files and documents, while in others it was caught at execution. The most obfuscated case evaded automated EDR and was found only through proactive threat hunting. The report's key takeaway is to hunt on the constant ordinal load and WebDAV mount rather than payload names or keywords.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 8,
+      "software": [
+        "Google Chrome",
+        "Microsoft Edge",
+        "Microsoft Defender for Endpoint"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/clickfix-keeps-evolving-rundll32-ordinal-execution-over-webdav/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Compromised npm Packages: @joyfill/components and @joyfill/layouts Ship an Obfuscated Remote Access Trojan",
+      "summary": "Malicious beta versions of the npm packages @joyfill/components and @joyfill/layouts, published July 28, 2026, carried an obfuscated remote access trojan injected into their distribution bundles. The payload executes on import rather than on install, so npm install --ignore-scripts does not stop it. It resolves its command and control server through public blockchain transactions, opens a Socket.IO remote access channel, and stages a Python credential stealer that targets developer workstations. The packages were legitimate projects that were hijacked, and the malicious code exists only in the published tarballs. Defenders should remove the 2773 prerelease versions, pin to a release published before July 28, 2026, and rotate credentials on affected machines.",
+      "completeness": "Medium",
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Discord",
+        "trongrid"
+      ],
+      "wallets": [
+        "tron",
+        "mainnet"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/joyfill-npm-supply-chain-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Distributed npm Package Cluster Delivers Cross-Platform RAT Targeting Alibaba Developers",
+      "summary": "A malicious npm cluster of about 15 packages, spread across several publisher accounts, delivers a cross-platform remote access trojan aimed at developers working in Alibaba Group companies. The packages use unscoped names that impersonate private @ali-scoped packages, and they chain through a middle-layer package to hide their connection. One component, local-config-parser, implements legitimate rule evaluation but can be abused via a Node.js vm sandbox escape to fetch a second-stage payload from an attacker-controlled GitHub repository. The final payload, aone-cli, supports command execution, file transfer, reverse proxying, lateral movement via DingTalk, and poisoning of AI-tool scripts for persistence. The report assesses the campaign as industrial espionage likely run by a Chinese-speaking actor, though attribution is not firm. Defenders should treat any host that installed affected packages as compromised and rebuild from a clean machine, rotating exposed secrets.",
+      "completeness": "Low",
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "curl",
+        "Node.js",
+        "Alibaba Cloud",
+        "macOS",
+        "Linux",
+        "DingTalk",
+        "Kubernetes",
+        "Docker",
+        "Slack"
+      ],
+      "functions": [
+        "require"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://socket.dev/blog/npm-rat-targets-alibaba",
+        "https://github.com/smi1e2u/smart-config-manager",
+        "https://github.com/smi1e2u/fast-transform-pipeline",
+        "https://github.com/smi1e2u"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Not Every Fox is Silver: Inside an AtlasRAT Loader Chain",
+      "summary": "AtlasRAT is a Windows remote access trojan delivered through a four-stage in-memory loader chain that starts with a Delphi executable disguised as AGE Flash Player. The final payload communicates with its command-and-control server over TLS using ChaCha20 encryption and supports modular plugins, offline keylogging, and remote DLL injection into WeChat.exe. A separate persistence module uses BITS database tampering, NTUSER.MAN-based logon persistence, and CMSTPLUA and registry hijacking to bypass UAC. The report's scale and diversity suggest a commercially developed or privately distributed framework, though its link to Silver Fox is only circumstantial. Defenders can hunt for ServiceRun exports in 32-bit DLLs, the By@V< configuration marker, and the self-signed CN=update.microsoft.com certificate.",
+      "completeness": "High",
+      "threats": [
+        "Atlas_rat",
+        "Dll_injection_technique",
+        "Uac_bypass_technique",
+        "Sfuck_tool",
+        "Process_injection_technique"
+      ],
+      "geo": [
+        "South korea",
+        "Hong kong"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Flash Player",
+        "WeChat"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "chacha20",
+        "sha2",
+        "aes-256-cbc"
+      ],
+      "languages": [
+        "delphi"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94648/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Flying Eagle Android RAT: Leaked Source Code, 170 Active Servers, and a New Platform Called Night Dragon",
+      "summary": "Flying Eagle is a leaked Android RAT builder and device control framework, with its source code distributed through Telegram channels after a 2026 compromise. The framework combines APK generation with C2 device management, producing samples that use randomized package and class names and encrypted C2 URLs to evade static detection. Operators use it for financially motivated attacks, including phishing overlays targeting Alipay, WeChat, and Chinese banks, with lures disguised as government, adult, and financial apps. Hunt.io identified 170 servers running the framework, mostly hosted in Hong Kong, using a panel fingerprint and default TLS certificate. Modified variants and a likely successor, Night Dragon, are being sold and supported by Telegram-based actors. Defenders can hunt for the \"AdminPro\" login panel and its 302 redirect headers.",
+      "completeness": "Medium",
+      "threats": [
+        "Flying_eagle",
+        "Eaglerat",
+        "Night_dragon",
+        "Spynote_rat",
+        "Anydesk_tool",
+        "Btmob_rat"
+      ],
+      "geo": [
+        "Hong kong",
+        "Chinese",
+        "China",
+        "United states",
+        "Germany",
+        "Japan",
+        "Malaysia",
+        "Finland",
+        "Canada"
+      ],
+      "software": [
+        "Android",
+        "Telegram",
+        "Docker",
+        "nginx",
+        "MySQL",
+        "Node.js",
+        "TikTok",
+        "egram chan",
+        "WeChat",
+        "r versio",
+        "have more..."
+      ],
+      "wallets": [
+        "tokenpocket",
+        "imtoken"
+      ],
+      "algorithms": [
+        "aes-128-cbc",
+        "base64",
+        "sha256",
+        "sha1",
+        "zip"
+      ],
+      "languages": [
+        "php",
+        "java"
+      ],
+      "links": [
+        "https://hunt.io/blog/flying-eagle-android-rat-170-servers-night-dragon"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Wordfence PRISM Detected Backdoored WordPress Plugin within Two Hours of it Being Introduced",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "_arve_uc_init",
+        "sanitize_text_field",
+        "get_users",
+        "_arve_uc_cb",
+        "wp_set_current_user"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/07/wordfence-prism-detected-backdoored-wordpress-plugin-within-two-hours-of-it-being-introduced/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "BRG-26183: A Free Ransomware Kit Aimed at Windows 10, and Why the Weak Ones Matter - Barricade Cyber Solutions",
+      "completeness": "High",
+      "threats": [
+        "Brg-26183_tool",
+        "Shadow_copies_delete_technique",
+        "Chaos_builder_tool",
+        "Babuk",
+        "Conti",
+        "Lockbit"
+      ],
+      "geo": [
+        "Spanish"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 11,
+      "software": [
+        "Windows Defender",
+        "Microsoft Defender",
+        "Outlook"
+      ],
+      "algorithms": [
+        "aes-128",
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "links": [
+        "https://barricadecyber.com/brg-26183-a-free-ransomware-kit-windows-10/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Huntress Threat Advisory: Widespread SonicWall Credential Stuffing Campaign",
+      "completeness": "Low",
+      "geo": [
+        "Jordan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "links": [
+        "https://www.huntress.com/blog/sonicwall-credential-stuffing-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "The Mantis Grip: Endpoint Defenses Pinned Before Encryption",
+      "completeness": "High",
+      "threats": [
+        "Gentlekiller",
+        "Byovd_technique",
+        "Driverkiller_tool",
+        "Virit_tool",
+        "Vmprotect_tool",
+        "Edr-killer",
+        "Anticheatg13_tool"
+      ],
+      "geo": [
+        "French"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 3,
+      "software": [
+        "indows Service  ﻿",
+        "windows service"
+      ],
+      "algorithms": [
+        "xor",
+        "crc-32",
+        "sha1",
+        "ror13",
+        "sha256",
+        "md5"
+      ],
+      "links": [
+        "https://catalyst.prodaft.com/public/report/the-mantis-grip-endpoint-defenses-pinned-before-encryption/overview/yq54e011"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-28",
+      "title": "Chaos in Teams vishing",
+      "completeness": "High",
+      "threats": [
+        "Chaos_ransomware",
+        "Blackbasta",
+        "Email_bombing_technique",
+        "Microsoft_quick_assist_tool",
+        "Dwagent_tool",
+        "Anydesk_tool",
+        "Royal_ransomware",
+        "Blacksuit_ransomware",
+        "3am_ransomware",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Russian",
+        "America",
+        "Canada",
+        "Iranian",
+        "American"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Teams",
+        "Windows service",
+        "Pyinstaller",
+        "icrosoft Teams vi"
+      ],
+      "algorithms": [
+        "aes",
+        "sha256",
+        "md5",
+        "base64",
+        "sha1"
+      ],
+      "languages": [
+        "python",
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/chaos-in-teams-vishing",
+        "https://github.com/sophoslabs/IoCs/blob/master/STAC4749-Chaos\\_IOCs\\_July2026.csv"
+      ]
+    }
+  }
+]

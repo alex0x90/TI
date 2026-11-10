@@ -1,0 +1,270 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-18",
+      "title": "Pay2Key Iranian-Linked Ransomware is Back, Back Again",
+      "summary": "Pay2Key is a ransomware-as-a-service operation linked to Iranian state interests, which has operated since 2020 and continues to target Western organizations, particularly in the U.S. and Israel. In a February 2026 intrusion at a U.S. healthcare organization, the attacker maintained access through a compromised admin account for several days, used TeamViewer for interactive access, and harvested credentials before encrypting the environment within three hours. The new variant features improved evasion, including a fake Avast Security Center registration that disables Windows Defender, plus anti-forensic steps such as deleting backup catalogs and clearing event logs. Unusually, no evidence of data exfiltration was found, a departure from the group's double-extortion pattern. The operation was listed for sale in late 2025, with its ownership still unresolved. Defenders should note that the group's activity tends to intensify during periods of U.S.-Iran tension.",
+      "completeness": "High",
+      "threats": [
+        "Pay2key",
+        "Teamviewer_tool",
+        "Credential_harvesting_technique",
+        "Mimikatz_tool",
+        "Lazagne_tool",
+        "Extpassword_tool",
+        "Netscan_tool",
+        "Themida_tool",
+        "Mimic_ransomware",
+        "Conti"
+      ],
+      "geo": [
+        "Russian",
+        "Iranian",
+        "Israel",
+        "Iran",
+        "Israeli"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Windows Security",
+        "Windows Security Center",
+        "Windows Defender",
+        "Windows Error Reporting",
+        "BitLocker",
+        "Hyper-V",
+        "bcdedit"
+      ],
+      "algorithms": [
+        "curve25519",
+        "7zip",
+        "chacha20"
+      ],
+      "functions": [
+        "PowerShell",
+        "Get-BitLockerVolume",
+        "Get-VM",
+        "Get-VHD",
+        "Get-DiskImage",
+        "Get-Volume"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.halcyon.ai/ransomware-research-reports/pay2key-iranian-linked-ransomware-is-back-back-again"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-18",
+      "title": "ConnectWise Credential Compromise Enables Unauthorized Access to 173 Microsoft 365 Tenants: Cybersecurity Incident Analysis",
+      "summary": "A compromised ConnectWise service account credential gave attackers delegated admin access to 173 Microsoft 365 tenants, with the activity beginning on October 13, 2026. The report states that no software vulnerability in ConnectWise was involved, only the theft or exposure of a legitimate credential. Attackers used native tools such as Microsoft Graph API and Exchange Online PowerShell to enumerate users and permissions and to access mailboxes, OneDrive, SharePoint, and Teams data. No malware was found, and no threat actor has been attributed. Targets included MSPs, law firms, national security and trade entities, and critical infrastructure sectors. Defenders should disable unused delegated admin credentials, review delegated admin scope, and enforce MFA on privileged accounts.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Screenconnect_tool"
+      ],
+      "software": [
+        "Microsoft 365",
+        "SharePoint",
+        "Graph API"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.rescana.com/post/connectwise-credential-compromise-enables-unauthorized-access-to-173-microsoft-365-tenants-cybersecurity-incident-analys"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-18",
+      "title": "Two Hawks in a Pod: one Android RAT behind a flock of fake Japanese brands",
+      "summary": "Black Hawk is a financially motivated Android remote access trojan family, observed in 64 samples first seen between September and October 2026. A thin dropper installs a packed second-stage WebSocket RAT, which is repackaged under fake brands such as Japan's e-Tax service, Rakuten and Mercari, plus romance and SpaceX investment lures. Operators run two hawk-branded control panels, 黑鹰安卓远控 and 雄鹰安卓远程, that are live at the same time and share identical software. The RAT captures lock-screen credentials and payment input, provides remote screen control, and self-grants WRITE_SECURE_SETTINGS through wireless-ADB self-pairing. Defenders should hunt behavioural dropper traits and packer markers rather than the throwaway signing certificate, since the certificate is shared by many unrelated apps.",
+      "completeness": "Medium",
+      "threats": [
+        "Black_hawk"
+      ],
+      "geo": [
+        "Japanese",
+        "Chinese",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "ote Contr",
+        "an identi",
+        "WeChat",
+        "ote )",
+        "se",
+        "starlink",
+        "Alibaba Cloud"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "aes",
+        "zip",
+        "hmac",
+        "aes-ctr",
+        "ed25519",
+        "aes-256-ctr",
+        "aes-128-gcm",
+        "aes-256"
+      ],
+      "functions": [
+        "GetByteArrayElements",
+        "GetArrayLength",
+        "getAssets",
+        "getPackageInstaller",
+        "getLaunchIntentForPackage",
+        "getCertPin",
+        "getHmacSignature",
+        "getTimedHmacSignature",
+        "SecureRandom",
+        "getPublicKeyHex",
+        "have more..."
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://starlabs.sg/blog/2026/10-two-hawks-in-a-pod-one-android-rat-behind-a-flock-of-fake-japanese-brands/",
+        "https://github.com/maoabc/nmmp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-18",
+      "title": "EtherRAT spread through IT support impersonation on Microsoft Teams: Ethereum smart contract as a C&C resolution mechanism",
+      "summary": "EtherRAT is a Node.js-based implant delivered through fake IT support calls on Microsoft Teams, as reported by Palo Alto Networks Unit 42 on 28 June 2026. The attackers take remote control of victims' machines, have them install AnyDesk and HopToDesk, and deploy an MSI that uses a legitimate Node.js runtime to run the payload in memory via stdin. The core resolves its C&C server by querying an Ethereum smart contract through public RPC endpoints, falling back to a hardcoded domain only when all queries fail. Because the core executes any JavaScript the server returns, its capabilities come entirely from runtime tasks rather than the static sample. The contract-based resolution lets operators switch infrastructure with a single cheap transaction, and the report notes that similar blockchain-based C&C techniques appear in at least eight campaigns. Defenders should hunt on process-tree and behavior patterns, such as Node.js processes making RPC calls and then polling external servers, rather than blocking public RPC services or Node.js itself.",
+      "completeness": "High",
+      "threats": [
+        "Etherrat",
+        "Etherhiding_technique",
+        "React2shell_vuln",
+        "Hoptodesk_tool",
+        "Anydesk_tool",
+        "Junk_code_technique",
+        "Credential_stealing_technique",
+        "Dead_drop_technique",
+        "Goloader",
+        "Garble_tool",
+        "Lorikazz",
+        "Kimwolf",
+        "Aisuru",
+        "Clearfake",
+        "Clickfix_technique",
+        "Remus",
+        "Spear-phishing_technique",
+        "Nullreceiver_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 14,
+      "software": [
+        "Microsoft Teams",
+        "Node.js",
+        "Linux",
+        "Adobe Acrobat",
+        "Microsoft Edge",
+        "erviceNow po",
+        "Windows Installer",
+        "curl",
+        "Etherscan",
+        "ode.js ru",
+        "have more..."
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "rc4",
+        "zip",
+        "aes",
+        "md5",
+        "base36",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Teams",
+        "Get-Content",
+        "Set-Content",
+        "eval",
+        "setTimeout",
+        "unref",
+        "taskCode",
+        "setImmediate",
+        "setInterval",
+        "getString",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-07-30-Remus-Info-Stealer-Uses-Blockchain-Anchored-C2.txt",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel",
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-06-28-Fake-IT-support-abuses-Teams-to-deliver-EtherRAT.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-18",
+      "title": "EtherRAT distributed via a fake Advanced IP Scanner installer imported into Microsoft Intune",
+      "summary": "EtherRAT, a Node.js-based backdoor, was delivered through a trojanized Advanced IP Scanner MSI that a user found via a Bing search leading to a fake GitHub repository. The malicious package was imported into Microsoft Intune as a legitimate installer and silently deployed to four endpoints through MDM, without Intune itself being compromised. The malware stages an obfuscated PowerShell script and a renamed Node.js runtime, then retrieves its command-and-control configuration from public Ethereum RPC providers using a dead-drop smart contract technique. Post-compromise activity includes system and security software discovery, network enumeration, and PowerShell-based screen capture. The campaign targets administrators through SEO poisoning and fake GitHub tool repositories, so defenders should scrutinize software imported into Intune and watch for Node.js runtimes running from unexpected locations.",
+      "completeness": "Medium",
+      "threats": [
+        "Etherrat",
+        "Dead_drop_technique",
+        "Seo_poisoning_technique",
+        "Azcopy_tool"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 9,
+      "software": [
+        "crosoft Defender for",
+        "crosoft Defender for Endpoint",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Node.js",
+        "PsExec"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://cyberveille.ch/posts/2026-10-19-etherrat-distribue-via-un-faux-installeur-advanced-ip-scanner-importe-dans-microsoft-intune/",
+        "https://urlhaus.abuse.ch/browse.php?search=https%3A%2F%2Fgithub.com%2FAdvancedIPScanner%2Fdownload"
+      ]
+    }
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Tortoiseshell: New Toolset and Operational Infrastructure Exposed",
+      "summary": "Group-IB reports that Tortoiseshell, an Iranian-nexus actor affiliated with the IRGC and also tracked as Mirage Kitten, UNC1549, and Nimbus Manticore, has expanded its toolset and infrastructure. The researchers identified a reverse SSH tunneling utility disguised as wtsapi32.dll, which forwards traffic from a C2 server into compromised networks. They also found a TWOSTROKE-like C++ backdoor that uses DLL search-order hijacking and supports shell execution, file transfer, and reconnaissance. Pivoting from known C2 data uncovered extensive infrastructure spanning Europe and the Middle East, suggesting broader targeting. Defenders are advised to hunt for TWOSTROKE activity, watch for wtsapi32.dll loaded from unusual paths, and monitor outbound HTTPS beaconing.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Watering_hole_technique",
+        "Twostroke",
+        "Dllsearchorder_hijacking_technique",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "Israel",
+        "Iranian",
+        "Iran",
+        "France",
+        "Middle east",
+        "United states",
+        "Albania",
+        "Turkey",
+        "Belarus"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Terminal",
+        "WinHttp"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/tortoiseshell-apt-toolset-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Behind the Leak",
+      "summary": "Threat actor \"Cyberleek\" leaked GTA VI gameplay footage and map assets in August 2026, with the leak doled out gradually via Discord token polls tied to a Solana token, $CYBERLEEK, that earns trading fees for the creator. Opportunists quickly distributed fake \"playable Cyberleek build\" packages through torrents, fake ISOs, and Telegram that install infostealers and remote access trojans. The lure sites profile visitors via IP lookup services, report victim data to a Telegram bot used as a serverless drop point, and silently install a signed ScreenConnect client that connects to attacker-controlled relays. A second lure, a fake DocuSign page at docsn[.]cc, uses the same playbook on separate infrastructure, indicating a shared tactic rather than shared infrastructure. Defenders should watch for ScreenConnect clients with the listed instance IDs and for outbound traffic to the listed relays and Telegram API calls.",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Typosquatting_technique",
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Netherlands",
+        "Russian"
+      ],
+      "software": [
+        "Telegram",
+        "discord",
+        "Cloudflare Turnstile",
+        "Godaddy",
+        "WordPress"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "functions": [
+        "CDN"
+      ],
+      "links": [
+        "https://intelinsights.substack.com/p/behind-the-leak"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Cambodia-focused cluster uses multistage infection chain with localized lures",
+      "summary": "Acronis TRU identified a campaign targeting individuals and organizations in Cambodia, using lures such as government notices, public health materials, and real estate documents. The attack chain uses DLL sideloading via a signed Tencent executable, shellcode hidden in PNG files, process injection into legitimate Windows processes, and a BYOVD technique that deploys the vulnerable driver ardrv.sys (CVE-2026-36425) to terminate security products. The final payload is SparkRAT, an open-source remote access trojan, which communicates with a C2 server over port 443 and uses a backup endpoint. The activity shares techniques with SilverFox, but Acronis found no shared infrastructure or code reuse, so it tracks the cluster as unattributed with low-confidence Chinese-language links.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Byovd_technique",
+        "Spark_rat",
+        "Valleyrat",
+        "Winos"
+      ],
+      "geo": [
+        "Asian",
+        "Cambodia",
+        "China",
+        "Cambodian",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter",
+        "Huorong",
+        "winlogon",
+        "Windows Service",
+        "Microsoft Defender"
+      ],
+      "algorithms": [
+        "aes-ctr",
+        "md5"
+      ],
+      "functions": [
+        "__debugbreak",
+        "TaskHandler"
+      ],
+      "links": [
+        "https://www.acronis.com/en/tru/posts/cambodia-focused-cluster-uses-multi-stage-infection-chain-with-localized-lures/",
+        "https://github.com/XZB-1248/Spark"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Dark Caracal Reloaded: New Malware, Same Hunting Grounds",
+      "summary": "Arctic Wolf Labs assesses with medium confidence that Dark Caracal, a cyberespionage group linked to Lebanon's General Directorate of General Security, conducted a June 2026 intrusion at a Venezuelan communications organization. The group delivered malware via weaponized SVG files, redirectors and a Delphi loader, following a delivery pattern similar to its earlier AsioGate campaign reported by Kaspersky. Researchers identified a new modular Go-based framework, GoCaracal, with lightweight access and extended collection builds, deployed alongside an updated Bandook variant. The extended build can fetch replacement C2 addresses from an Ethereum smart contract, so operators can change infrastructure without redeploying malware. The findings suggest GoCaracal augments rather than replaces Bandook, and the campaign appears to target Spanish-speaking victims across Latin America.",
+      "completeness": "High",
+      "threats": [
+        "Asiogate",
+        "Gocaracal",
+        "Full_spectrum",
+        "Bandok",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "El salvador",
+        "Lebanon",
+        "Chile",
+        "Ecuador",
+        "Venezuela",
+        "Brazil",
+        "Latin america",
+        "Uruguay",
+        "Latam",
+        "Colombia",
+        "Latin american"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WebRTC",
+        "Chrome",
+        "Firefox"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64"
+      ],
+      "languages": [
+        "golang",
+        "delphi",
+        "solidity"
+      ],
+      "links": [
+        "https://arcticwolf.com/resources/blog/dark-caracal-reloaded-new-malware-same-hunting-grounds/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "When AI infrastructure becomes the target: Securing gateways and control points",
+      "summary": "Microsoft observed attacks against three AI workloads: a LiteLLM gateway, a RAGFlow deployment, and a Kestra workflow environment, with the intrusion paths differing but the objectives, including credential theft, persistence, and compute monetization, being similar. In the LiteLLM case, attackers likely exploited the exposed gateway through CVE-2026-42271 and CVE-2026-48710, then harvested secrets from the gateway process environment and accessed the backend PostgreSQL database. The RAGFlow compromise focused on intercepting newly configured LLM provider credentials by installing a hook in the application startup path. The Kestra compromise likely began with CVE-2026-49869, after which attackers used workflow execution to reach a shell, enumerate containers via the Docker socket, and deploy the XMRig miner. Microsoft's takeaway for defenders is to treat AI gateways and orchestration services as high-value control points, restrict their exposure, and correlate unexpected shells, secret access, and outbound callbacks.",
+      "completeness": "Medium",
+      "threats": [
+        "Xmrig_miner",
+        "Credential_harvesting_technique",
+        "Coinminer",
+        "C3pool"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 11,
+      "software": [
+        "Microsoft Defender",
+        "LiteLLM",
+        "RAGFlow",
+        "Kestra",
+        "PostgreSQL",
+        "Docker",
+        "curl",
+        "Linux",
+        "crontab",
+        "systemd",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "randomx",
+        "base64"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/08/26/when-ai-infrastructure-becomes-target-securing-gateways-control-points/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Edge-Delivered ClickFix: Cloudflare Zaraz, EtherHiding, and the BW Panel Ecosystem",
+      "summary": "A malicious Pageview action delivered through Cloudflare Zaraz on a compromised site loads the BW Panel bootstrap used by ErrTraffic ClickFix campaigns. The payload is hidden with Base64 encoding and a single-byte XOR with key 0x06, then executed in the browser. The loader fetches its panel server address from a Polygon smart contract, a technique called EtherHiding, so the operator can rotate the server by updating one record. The panel returns one of nine presentation modules, including fake Cloudflare, CAPTCHA, and browser prompts, that trick visitors into copying and running a PowerShell command. The same selector, storage keys, and file map appear across other BW Panel deployments, making them useful family fingerprints for defenders.",
+      "completeness": "Medium",
+      "threats": [
+        "Bw_panel_tool",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Errtraffic"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-gcm",
+        "rc4",
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Function",
+        "loadModeScript"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.derp.ca/research/zaraz-clickfix-bw-panel/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Beware of fake Indeed interview apps used to install spyware",
+      "summary": "Scammers are using fake Android \"interview\" apps that impersonate Indeed to target job seekers on the platform. Victims are lured by recruiters posing as employers, who instruct them to sideload an APK outside Google Play, connect to a VPN, and create an account. The apps are Trojan droppers that impersonate Indeed's login page and create a VPN connection, and their final payload was spyware in the analysis at the time of writing. Once granted Accessibility permission, the malware can take over the device and block users from uninstalling it. Indeed has confirmed that its interview process runs entirely in a browser and never requires a separate app, so any such request is illegitimate. Defenders should advise job seekers to avoid installing apps from recruitment messages and to verify employers independently.",
+      "completeness": "Low",
+      "geo": [
+        "Brasil"
+      ],
+      "software": [
+        "Android",
+        "Google Play"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/08/beware-of-fake-indeed-interview-apps-used-to-install-spyware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Infostealers highlight malware-as-a-service trend",
+      "summary": "Infostealer malware-as-a-service is being used across many campaign types, and ReversingLabs focused on three families: AuraStealer, ACRStealer/Amatera, and RemusStealer. AuraStealer, a subscription-based stealer that emerged in July 2025, gained momentum and adopted virtualization in summer 2026 that made its files harder to analyze. ACRStealer, active since 2018, went on hiatus in 2024 and was followed by the very similar Amatera family, both still in use. RemusStealer, which began in early 2026, appears to be a 64-bit variant of LummaStealer that uses Ethereum smart contracts for command-and-control communication. These families are delivered mainly through social engineering such as ClickFix, ClearFake, and SEO poisoning, and they target credentials, crypto wallets, and session tokens. The report stresses that defenders should stay skeptical of phishing lures and be aware of the different infostealer families.",
+      "completeness": "High",
+      "threats": [
+        "Aurastealer",
+        "Acr_stealer",
+        "Remus",
+        "Lumma_stealer",
+        "Amatera_stealer",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Seo_poisoning_technique",
+        "Gcleaner",
+        "Offloader",
+        "Vmprotect_tool",
+        "Clearfake"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "languages": [
+        "golang",
+        "javascript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/infostealers-highlight-malware-as-a-service-trend"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Philippine Nuclear Agency and Naval Contractor Targeted by Suspected Chinese-Speaking Operator Using Known Vulnerabilities",
+      "summary": "Suspected Chinese-speaking operator targeted a Philippine nuclear research agency and a marine engineering contractor serving the Philippine Navy, using known vulnerabilities. The operator abused CVE-2023-49105 in an ownCloud instance to retrieve files without credentials, using scripts with simplified Chinese docstrings and folder names. Stolen material reportedly included nuclear-material records, reactor component data, personnel records, and credential stores. Against the contractor's WordPress site, the operator used CVE-2024-28000 and XML-RPC brute forcing to gain administrator access and exfiltrate the site. Hunt.io assessed with medium confidence that the activity was targeted collection and did not attribute it to a named group. Defenders should patch ownCloud and LiteSpeed Cache, set strong signing keys, restrict XML-RPC, and enforce strong administrator passwords with MFA.",
+      "completeness": "High",
+      "threats": [
+        "Sliver_c2_tool",
+        "Metasploit_tool",
+        "Mettle",
+        "Meterpreter_tool",
+        "Etherhiding_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Philippine",
+        "Philippines",
+        "Netherlands",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 11,
+      "software": [
+        "WordPress",
+        "BitLocker",
+        "KeePass",
+        "SimpleHTTP",
+        "OpenSSH",
+        "Ubuntu",
+        "LiteSpeed"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "prng",
+        "pbkdf2",
+        "sha512"
+      ],
+      "functions": [
+        "mt_rand"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "links": [
+        "https://hunt.io/blog/chinese-speaking-operator-philippine-nuclear-naval-contractor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "Inside China-nexus cyber espionage infrastructure",
+      "summary": "Black Lotus Labs describes a China-nexus infrastructure provider it calls the \"quartermaster,\" which supplies reconnaissance, proxy orchestration and operational routing as a reusable service to Chinese state-aligned espionage operators. The quartermaster's Fast Labyrinth network repurposes commercial \"Airport\" proxy subscriptions into an encrypted relay mesh, while its QScan framework performs distributed scanning of target networks. Observed targeting focuses on research universities, U.S. military and defense networks, government, energy, healthcare and financial services. The report says QScan-profiled sectors were later seen receiving inbound Fast Labyrinth sessions, suggesting reconnaissance was followed by attempted exploitation. Defenders are advised to implement CISA and NCSC guidance, adopt SASE solutions, and keep routers, firewalls and IoT devices patched.",
+      "completeness": "Medium",
+      "threats": [
+        "Fast_labyrinth_tool",
+        "Qscan_tool",
+        "Qtrouter",
+        "Qtproxy_tool",
+        "Raptor_train",
+        "Kv-botnet",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Asia-pacific",
+        "China"
+      ],
+      "software": [
+        "ORB network",
+        "RabbitMQ",
+        "Redis"
+      ],
+      "links": [
+        "https://www.lumen.com/blog/en-us/the-infrastructure-quartermaster-inside-a-china-nexus-state-enablement-model",
+        "https://github.com/blacklotuslabs/IOCs/blob/main/Quartermaster\\_IOCs.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-26",
+      "title": "China-Linked Hacking Group QTFY Targets Military and Critical Infrastructure with Malicious Distributed Systems",
+      "summary": "China-linked hacking group QTFY, attributed to Nanjing Xinjiuwei Network Technology Co. (XJW), has operated since 2018 and works with PRC state-linked enablers. The group builds malicious distributed systems: QScan, a large-scale vulnerability scanning and exploitation platform, and QTRouter, an obfuscation network that routes traffic through compromised IoT devices and commercial proxies. QTFY controls botnets of compromised IoT devices that serve as proxy nodes, letting its actors blend in with legitimate users. The group has targeted US defense contractors, energy, telecommunications, government, and higher education entities, and exploited zero-day and N-day vulnerabilities for initial access. Defenders should apply software and firmware updates, protect internet-facing applications from information disclosure, and isolate critical systems from edge devices.",
+      "completeness": "Medium",
+      "threats": [
+        "Qscan_tool",
+        "Beyondtrust_tool",
+        "Qtrouter",
+        "Proxylogon_exploit",
+        "Log4shell_vuln",
+        "Qtbotnet"
+      ],
+      "geo": [
+        "United states",
+        "Taiwan",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 5,
+      "software": [
+        "Ivanti",
+        "RabbitMQ",
+        "Redis",
+        "Alibaba Cloud",
+        "Fortinet FortiOS",
+        "Citrix Application Delivery Controller",
+        "Microsoft Exchange",
+        "BIG-IP",
+        "Confluence",
+        "OpenWrt",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://www.ic3.gov/CSA/2026/260826.pdf"
+      ]
+    }
+  }
+]

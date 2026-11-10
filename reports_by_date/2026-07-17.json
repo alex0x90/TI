@@ -1,0 +1,356 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "Behind the Refund: From GST Phishing to Remcos RAT Through a Multi-Stage .NET Infection Chain",
+      "summary": "A phishing campaign impersonating the Government of India GST system distributes a fake refund notification email with a RAR attachment that delivers Remcos RAT. The attachment contains a .NET executable that hides its next-stage payload as pixel data within a bitmap resource and loads it in memory without writing it to disk. Subsequent loaders decrypt and run further components in memory, using method indexes and cmstp.exe to obscure execution and gain elevated privileges. Persistence is established through a copied executable, a PowerShell script, and a Run registry entry. The campaign targets Indian taxpayers and businesses, and defenders should note the fileless, multi-stage design that evades signature-based detection.",
+      "completeness": "Medium",
+      "threats": [
+        "Remcos_rat",
+        "Junk_code_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "India",
+        "Indian"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 26,
+      "software": [
+        "NET framework"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "ServiceChromatic",
+        "GetTypes",
+        "GetMethods",
+        "Invoke",
+        "WaitForAdvancedController",
+        "WaitForGlobalAggregator"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.seqrite.com/blog/behind-the-refund-from-gst-phishing-to-remcos-rat-through-a-multi-stage-net-infection-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "NadMesh Botnet Analysis: A Product-Grade Threat for the AI Service Era",
+      "summary": "NadMesh is a Go-based botnet first observed in early July 2026 that combines scanning, exploitation, and credential and AI-service harvesting in one autonomous platform. It targets AI infrastructure and the MCP ecosystem, using Shodan to find ComfyUI, Ollama, n8n, and similar services and scanning them at the highest priority. Its controller runs an autonomous task-feed loop that rescans dangerous hosts and amplifies high-yield subnets, and it uses 20+ RCE vectors across Redis, Docker, Kubernetes, MCP, and others. Agents are polymorphic, with obfuscation and packing that give each build a unique hash, and they persist through an SSH backdoor, multiple file locations, and cron watchdogs. Defenders should note that harvested cloud credentials, Kubernetes tokens, and exposed AI services are the attacker's main objectives.",
+      "completeness": "High",
+      "threats": [
+        "Nadmesh",
+        "Polymorphism_technique",
+        "Garble_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Redis",
+        "Docker",
+        "Kubernetes",
+        "ComfyUI",
+        "Ollama",
+        "Langflow",
+        "ginx he",
+        "reSQL ║",
+        "tgreSQL ║",
+        "kubelet",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "sha1",
+        "base64",
+        "xor",
+        "hmac"
+      ],
+      "functions": [
+        "taskCh"
+      ],
+      "languages": [
+        "golang",
+        "python"
+      ],
+      "links": [
+        "https://blog.xlab.qianxin.com/nadmesh-botnet-analysis-a-product-grade-threat-for-the-ai-service-era-en/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "KUDANKULAM NUCLEAR POWER PLANT LEAK: AN ACCIDENTAL DISCLOSURE",
+      "summary": "The Ransomware group WORLDLEAKS, a spin-off of Hunters International and linked to Hive, leaked a Reliance Infrastructure database on its dark web leak site in June 2026. The leaked set included a Kudankulam Nuclear Power Plant folder of 18,997 files totaling 14.3GB, covering financial, tender, vendor, employee, and technical records, mostly from balance-of-plant and common services. The author notes that NPCIL states reactor systems and nuclear security were not affected, and the breach is attributed to a third-party hosting vendor, Yotta. The report highlights that vendor background checks, timely patching, and network isolation of critical infrastructure are priorities for defenders.",
+      "completeness": "Medium",
+      "threats": [
+        "Hunters_international",
+        "Hive_ransomware",
+        "Rustyrocket_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "India",
+        "French",
+        "North korea",
+        "Dprk",
+        "China",
+        "Russia"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "sha256",
+        "md5"
+      ],
+      "functions": [
+        "Internet-Facing"
+      ],
+      "links": [
+        "https://theravenfile.com/2026/07/17/kudankulam-nuclear-power-plant-leak-an-accidental-disclosure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "New North Korean campaign uses fake coding interviews to steal developer credentials",
+      "summary": "North Korean-aligned hackers, tracked by Elastic as REF9403 and part of the Contagious Interview campaign, hid malware inside SVG flag images using steganography. The actors posed as a recruiter in Elastic's community Slack and sent developers a trojanized e-commerce \"coding challenge\" repository. Running the project triggered a payload aligned with OTTERCOOKIE, which combines a browser credential and crypto wallet stealer, a file stealer, a Socket.IO-based remote access trojan, and a clipboard stealer. The trojanized repositories had zero antivirus detections at the time of writing. Elastic notes that compromising a single developer can provide initial access for wider supply chain attacks against downstream organizations.",
+      "completeness": "High",
+      "threats": [
+        "Steganography_technique",
+        "Ottercookie",
+        "Supply_chain_technique",
+        "Watering_hole_technique",
+        "Beavertail"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "Slack",
+        "macOS",
+        "Linux",
+        "Chrome",
+        "Opera",
+        "claude",
+        "android",
+        "steam",
+        "flutter",
+        "llama",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "readFileSync",
+        "Check",
+        "eval",
+        "atob",
+        "runServerValidation",
+        "getClipboard",
+        "Get-Clipboard"
+      ],
+      "languages": [
+        "javascript",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.elastic.co/security-labs/contagious-interview-malware-svg-steganography",
+        "https://github.com/elastic/endpoint-rules/blob/main/rules/windows/credential\\_access\\_scripting\\_util.toml",
+        "https://github.com/GreatStackDev/gocart",
+        "https://github.com/GreatStackDev"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "Inside Qilin Ransomware: Custom Rust Loader and Kernel-Level EDR Killer",
+      "summary": "Qilin ransomware, a ransomware-as-a-service group, now uses a custom Rust loader that reflectively loads its payload within the same process to avoid process injection. Flashpoint also found a new EDR killer, sold on illicit marketplaces for US $2,000, that is packed with the Shanya packer. The EDR killer abuses the ThrottleStop driver, a legitimate tool with a vulnerability, to map physical memory and perform kernel read and write operations. It then bypasses Windows driver signing enforcement and removes callbacks and minifilters belonging to blacklisted security products. It also alters file permissions on those products' executables so they cannot run again, and it skips systems in CIS countries such as Russia and Belarus. Flashpoint warns that anti-EDR tooling will keep growing, so defenders should focus on protecting the kernel and detecting rogue driver deployments.",
+      "completeness": "Low",
+      "threats": [
+        "Edr-killer",
+        "Qilin_ransomware",
+        "Process_injection_technique",
+        "Shanya_tool",
+        "Junk_code_technique",
+        "Iat_hooking_technique"
+      ],
+      "geo": [
+        "Russia",
+        "Belarus"
+      ],
+      "software": [
+        "ThrottleStop",
+        "gatekeeper"
+      ],
+      "functions": [
+        "WinAPI"
+      ],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "links": [
+        "https://flashpoint.io/blog/inside-qilin-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "ChainVeil and ViteVenom are DPRK’s PolinRider Campaign",
+      "summary": "The report argues that the ChainVeil npm campaign and the ViteVenom typosquats, both documented by Checkmarx Zero in June and July 2026, are part of North Korea's PolinRider campaign rather than separate operations. The attribution rests on shared infrastructure, including two TRON wallets, an Aptos address, and two XOR decryption keys that match values the author published in a March 8 PolinRider report. The author attributes PolinRider to the Lazarus Group and describes it as a parallel or sub-campaign to Contagious Interview, with activity spanning GitHub, Go, Packagist, npm, and PyPI. The targeted packages typosquat Tailwind and Vite tooling, and the report lists the affected packages and their malicious versions. Defenders tracking these as separate entries are advised to merge them, since the shared wallets and markers feed the same detection surface.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_harvesting_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "North korean",
+        "Dprk"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "aptos",
+        "binance"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/chainveil-and-vitevenom-dprk-polinrider-campaign",
+        "https://github.com/OpenSourceMalware/PolinRider"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "Social Engineering Attempts Via LinkedIn Messaging: How to Stay Safe",
+      "summary": "A researcher reported four suspected social engineering attempts conducted through LinkedIn messaging over two weeks and documented the attacker's playbook. The attacker opens with a seemingly legitimate conversation, then sends a meeting invitation, often via a scheduling platform such as Calendly. During the video call, the caller appeared to work from a noisy call center and spoke with a Chinese accent, while refusing to turn on a camera and using a personal email account. The caller also asked to share screens, claimed technical problems when asked to reciprocate, and heaped praise on the target's expertise even when given nonsensical answers. The next stage reportedly involves sending links to fraudulent websites and urging victims to install code or software. Defenders should treat new LinkedIn contacts who invite off-platform meetings, refuse video, or push software downloads with extreme caution.",
+      "completeness": "Low",
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "ail acc"
+      ],
+      "links": [
+        "https://hackernoon.com/social-engineering-attempts-via-linkedin-messaging-how-to-stay-safe"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "The PhantomGate Campaign — Obfuscation, Persistence, and Covert Surveillance",
+      "summary": "PhantomGate is a malware family that uses obfuscated .LNK and .BAT files to download a malicious .NET binary through PowerShell commands. The infection begins with a shortcut file disguised as \"Hyper Diagnostic Engine X,\" which fetches a heavily obfuscated batch script. The binary enumerates hardware, browser credentials, cookies, and security software, and it uses sleep loops and debugger detection to evade analysis. It also sets up HRDP and HVNC access and adds a firewall rule allowing inbound RDP traffic on port 3389. A bundled payload uses legitimate AForge libraries to covertly capture webcam video and stream it to the attacker. SonicWall detects the threat with signatures including PhantomGate.Multi.A and WebcamHelper.A.",
+      "completeness": "Low",
+      "threats": [
+        "Phantomgate",
+        "Hvnc_tool"
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.sonicwall.com/blog/the-phantomgate-campaign-obfuscation-persistence-and-covert-surveillance"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "Proxying to Compromise: SonicWall Secure Mobile Access 0-day Exploitation",
+      "summary": "Volexity tracks a threat actor it calls UTA0533, which compromised SonicWall Secure Mobile Access 1000 series VPN appliances by chaining multiple zero-day exploits. The attacker bypassed authentication on the /wsproxy path to reach localhost-only services, abused CouchDB and a path traversal flaw (CVE-2026-15410) to gain root command execution, and then deployed the KNUCKLEBALL loader to inject Suo5 and ORANGETAIL webshells into memory. Volexity first observed compromise on June 22, 2026, and the SonicWall fixes arrived in hotfix versions 12.4.3-03453 and 12.5.0-02835. The actor used root access to capture unencrypted LDAP traffic and harvest credentials, and attempted lateral movement, though evidence suggests limited success. Defenders should review SMA appliances for unexpected files in /tmp and /var/tmp, unfamiliar nginx routes, and unusual setuid binaries.",
+      "completeness": "Low",
+      "threats": [
+        "Xzfind_tool",
+        "Rootrun_tool",
+        "Knuckleball",
+        "Suo5_tool",
+        "Behinder",
+        "Orangetail"
+      ],
+      "software": [
+        "Volexity Volcano",
+        "nginx",
+        "Unix"
+      ],
+      "algorithms": [
+        "md5",
+        "aes",
+        "base64",
+        "sha256",
+        "aes-128-ecb",
+        "sha1"
+      ],
+      "functions": [
+        "Volexity",
+        "setuid",
+        "getMethod"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.volexity.com/blog/2026/07/17/proxying-to-compromise-sonicwall-secure-mobile-access-0-day-exploitation/",
+        "https://github.com/jboss-javassist/javassist",
+        "https://github.com/erlang/epmd",
+        "https://github.com/volexity/threat-intel/blob/main/2026/2026-07-17%20SonicWall/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-17",
+      "title": "DPRK Fake IT Workers: Inside Their Evolving Network Infrastructure",
+      "summary": "Kudelski Security follows up on its earlier research into the internal network of North Korean (DPRK) fake IT worker operations, using stealer logs and passive analysis of public data. The report finds that much of the internal infrastructure appears to be located in North Korea, and it traces a path from North Korea to western Russia after the actors changed parts of their public-facing infrastructure. The actors primarily target the United States and Japan and use commercial VPNs, including Astrill and Mullvad, to obtain exit nodes in those countries. The researchers identify internal references such as Ryonbong, Kim Chaek University of Technology, and a WebRTC call server, and they note the actors may share exit nodes with offensive teams. Researchers can pivot on previously used IP addresses and the keyword \"Lazarus\" to find overlaps.",
+      "completeness": "Low",
+      "geo": [
+        "Russia",
+        "Dprk",
+        "United states",
+        "Japan",
+        "Russian",
+        "Moscow",
+        "North korea",
+        "North korean"
+      ],
+      "software": [
+        "Astrill VPN",
+        "Huorong"
+      ],
+      "functions": [
+        "WebRTC"
+      ],
+      "links": [
+        "https://kudelskisecurity.com/research/dprk-fake-it-workers-inside-their-evolving-network-infrastructure"
+      ]
+    }
+  }
+]

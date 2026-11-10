@@ -1,0 +1,154 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-19",
+      "title": "SleeperGem: RubyGems supply chain attack targets dormant maintainer accounts",
+      "summary": "Attackers published malicious versions of a new RubyGems package called git_credential_manager, which downloaded and executed binaries from a public Forgejo-hosted repository impersonating \"Git Ecosystem.\" The dropper was built up over about nine hours across four versions, adding quieter output, automatic execution on require, and a sandbox check that skips CI environments so it targets developer laptops. The attackers also reactivated long-dormant maintainer accounts, pushing the same dependency into existing gems such as Dendreo and a version of fastlane-plugin-run_tests_firebase_testlab, which has a separate maintainer. Researchers say this is RubyGems' first case of this kind of dormant-account supply chain attack, a pattern previously seen on npm and PyPI. Defenders should watch for reactivated, long-inactive maintainer accounts and unexpected new dependencies in trusted gems.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Forgejo",
+        "OpenSSL",
+        "Unix",
+        "CircleCI",
+        "Travis",
+        "Jenkins"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/sleepergem-rubygems-supply-chain-attack"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-19",
+      "title": "SleeperGem: Compromised git_credential_manager, Dendreo, and fastlane RubyGems Drop a Persistent Backdoor",
+      "summary": "Between July 18 and 19, 2026, malicious versions of three RubyGems packages were published in a supply chain attack named SleeperGem, affecting git_credential_manager, Dendreo, and fastlane-plugin-run_tests_firebase_testlab. Each malicious release acts as a loader that checks for CI environment variables and exits if it finds any, so it targets developer laptops instead. On a developer machine, it downloads a shell script and a native binary from an attacker-controlled Forgejo host, then installs the binary as a background daemon with systemd and cron persistence. Version 2.8.2 only stages the payload, while 2.8.3 runs the full chain, and the code also contains a path to a setuid root shell if passwordless sudo is available. Defenders should check for outbound connections to git.disroot.org, search lockfiles for the affected versions, and rotate any secrets present on exposed machines.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Forgejo",
+        "systemd",
+        "CIRCLECI",
+        "sudo"
+      ],
+      "languages": [
+        "ruby"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/sleepergem-compromised-rubygems-drop-persistent-backdoor",
+        "https://github.com/step-security/harden-runner"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-19",
+      "title": "WannaCry Ransomware: Infection, Impact, and Prevention",
+      "summary": "WannaCry is a ransomware strain that caused a global outbreak in May 2017 by encrypting victims' files and demanding Bitcoin payment for decryption. Unlike many ransomware variants, it spread on its own as a worm, using the EternalBlue exploit against a vulnerability in Windows' SMB protocol. The vulnerability was originally discovered by the NSA and leaked by the Shadow Brokers, and Microsoft had released a fix in April 2017. Many organizations had not installed the patch, and the attack infected more than 200,000 computers across over 150 countries. The report highlights that the outbreak was largely enabled by outdated systems and unpatched software.",
+      "completeness": "Medium",
+      "threats": [
+        "Wannacry",
+        "Eternalblue_vuln",
+        "Shadow_brokers_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 24,
+      "software": [
+        "Windows Service"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/wannacry-ransomware-infection-impact-and-prevention/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-19",
+      "title": "APT42: AI-Assisted Rapport Phishing and a More Resilient TAMECAT",
+      "summary": "APT42, an Iran-linked actor also tracked as TA453 in some reporting, combines long, personalized relationship-building across personal email, corporate email, and WhatsApp with legitimate cloud services for lures, redirects, and command and control. The SpearSpecter campaign targeted senior defense and government figures and sometimes their family members, delivering a substantially expanded TAMECAT modular backdoor through a search-ms and WebDAV chain. TAMECAT supports credential and cookie theft, mailbox collection, and redundant C2 paths, so a password reset alone may not be enough after compromise. The group also uses generative AI for personas, translation, and code, making language quality an unreliable phishing indicator. Defenders should correlate external impersonation and infrastructure intelligence with email, endpoint, identity, and cloud telemetry, and use phishing-resistant MFA.",
+      "completeness": "High",
+      "threats": [
+        "Tamecat",
+        "Credential_harvesting_technique",
+        "Pssuspend_tool",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "Israeli",
+        "Sweden",
+        "United states",
+        "Ukraine",
+        "United kingdom",
+        "Iranian",
+        "Iran",
+        "Middle east",
+        "Tehran"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Discord",
+        "Telegram",
+        "Windows Explorer",
+        "curl",
+        "Outlook",
+        "Microsoft Edge",
+        "Chrome",
+        "Sysinternals",
+        "Microsoft OneDrive",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://darkatlas.io/blog/apt42-ai-assisted-phishing-tamecat-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-19",
+      "title": "Mianju (面具): Mapping the Largest Chinese Scam Infrastructure via a Single Fingerprint",
+      "completeness": "Low",
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "GoDaddy"
+      ],
+      "links": [
+        "https://intel.webamon.com/blog/mianju-mapping-the-largest-chinese-scam-infrastructure"
+      ]
+    }
+  }
+]

@@ -1,0 +1,749 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Threat Intelligence \\| Analysis of a Malicious Bookmark Phishing Attack Targeting Fomo Users",
+      "completeness": "High",
+      "threats": [
+        "Robinhood",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "SlowMist",
+        "Discord",
+        "indexedDB",
+        "loudflare Wo",
+        "ram",
+        "and s",
+        "Telegram",
+        "cloudflare",
+        "MistTrack"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "solana",
+        "binance"
+      ],
+      "algorithms": [
+        "hmac-sha1",
+        "sha256"
+      ],
+      "functions": [
+        "v",
+        "getAll",
+        "y"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://slowmist.medium.com/threat-intelligence-analysis-of-a-malicious-bookmark-phishing-attack-targeting-fomo-users-0985bff1ed36?source=rss-4ceeedda40e8------2",
+        "https://github.com/slowmist/MistEye-DepScan",
+        "https://github.com/slowmist/MistEye-DNS-Guard",
+        "https://github.com/slowmist/misteye-skills"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "UAT-11985: AI-assisted event lures delivering real-time Google AitM phishing",
+      "summary": "Cisco Talos tracked UAT-11985, an APT spear-phishing campaign targeting individuals at Taiwan-based research organizations, using lures that impersonated legitimate institutions and public event details. The emails shared a highly consistent, formulaic structure that suggests AI-assisted template generation, though Talos could not conclusively confirm LLM use. The actor also modified legitimate event posters with malicious QR codes, extending the attack to people who scan printed materials. The campaign used a real-time AitM phishing kit that mimicked Google sign-in pages, relaying credentials and MFA challenges via HTTP POST and WebSocket channels. Defenders should watch for mismatches between displayed and actual link destinations and for suspicious QR codes on posters.",
+      "completeness": "Low",
+      "threats": [
+        "Aitm_technique",
+        "Spear-phishing_technique",
+        "Qshing_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Asian",
+        "Taiwan",
+        "Chinese",
+        "Hong kong",
+        "Taiwanese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64",
+        "exhibit"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/uat-11985/",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/10/uat-11985.txt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Tensorlake npm Package Compromised: A Worm With a Hostage Token That Wipes Your Machine If You Revoke It",
+      "summary": "The malicious tensorlake@0.5.144 npm package runs a preinstall hook on developer machines (it skips CI) that steals GitHub and npm tokens, cloud and Kubernetes secrets, SSH keys, browser logins, and AI tool configs. It spreads by republishing the victim's npm packages and committing .claude and .vscode files to their GitHub repos, which execute again when projects open in Claude Code or VS Code. The package was pushed directly to the main branch of tensorlakeai/tensorlake under a maintainer's name and published with a valid provenance attestation, so provenance alone does not prove safety. A gh-token-monitor service deletes the home directory if the stolen GitHub token is revoked, so defenders should remove that service before rotating credentials. Affected users should pin to tensorlake@0.5.143, disable install scripts, and check their GitHub accounts for \"Shai-Hulud\" repos.",
+      "completeness": "Low",
+      "threats": [
+        "Shai-hulud",
+        "Gh-token-monitor",
+        "Supply_chain_technique",
+        "Math_symbol"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "Kubernetes",
+        "vscode",
+        "Linux",
+        "macOS",
+        "Task Scheduler"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "typescript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm",
+        "https://github.com/tensorlakeai/tensorlake/issues/1014",
+        "https://github.com/tensorlakeai/tensorlake/commit/e90c47bbb208e99cac8aa678405b2133f6cb3f52"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "tensorlake NPM package compromised with Shai Hulud worm",
+      "summary": "The malicious tensorlake npm package version 0.5.144, published on 8 October 2026, contains a variant of the Shai-Hulud worm that steals secrets and attempts to self-replicate through connected supply chains. The malware runs through a preinstall script that drops the Bun runtime and executes an obfuscated payload. It resolves its command-and-control address through a blockchain dead-drop contract, and it differs from earlier waves by targeting cryptocurrency wallet browser extensions and browser credential stores. The malware originated from a repository compromise, with malicious commits made under a maintainer's identity before the npm publish. Defenders should treat any infected environment as fully compromised and rotate all exposed secrets as a critical priority.",
+      "completeness": "Medium",
+      "threats": [
+        "Shai-hulud",
+        "Supply_chain_technique",
+        "Math_symbol",
+        "Dead_drop_technique",
+        "Hackbrowserdata_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "IndexedDB",
+        "CIRCLECI",
+        "TRAVIS",
+        "VERCEL",
+        "docker"
+      ],
+      "wallets": [
+        "keplr",
+        "metamask",
+        "coinbase",
+        "rabby",
+        "tronlink",
+        "ronin_wallet",
+        "solflare_wallet",
+        "exodus_wallet",
+        "unisat",
+        "safepal",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "monero"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/tensorlake-npm-package-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "tensorlake 0.5.144 npm Compromise Ships Mini Shai-Hulud",
+      "summary": "The tensorlake 0.5.144 npm package shipped a credential-stealing worm, a new build of the Mini Shai-Hulud wave of the Shai-Hulud family, which runs on install. The package had about 106,000 monthly downloads, and npm removed the version after SafeDep flagged it eight minutes after publication. The attacker committed the payload to the main branch through the GitHub web interface using a repository administrator account, then ran the project's release workflow, so no npm token was needed. The worm steals cloud, GitHub, npm, SSH, browser, and wallet credentials and spreads through npm packages and GitHub repositories. It takes commands from a command-and-control server, including an Ethereum contract used for domain lookup, and it deletes the home directory when a stolen GitHub token is revoked.",
+      "completeness": "High",
+      "threats": [
+        "Credential_stealing_technique",
+        "Shai-hulud",
+        "Math_symbol",
+        "Dead_drop_technique",
+        "Hackbrowserdata_tool",
+        "Gh-token-monitor",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Docker",
+        "Kubernetes",
+        "claude",
+        "Ledger Live",
+        "systemd",
+        "macOS",
+        "Windows scheduled task",
+        "Claude Code"
+      ],
+      "wallets": [
+        "electrum",
+        "metamask"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "rc4",
+        "zip",
+        "aes-256-gcm",
+        "sha1"
+      ],
+      "functions": [
+        "Remove-Item"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "links": [
+        "https://safedep.io/tensorlake-npm-compromise-mini-shai-hulud",
+        "https://github.com/tensorlakeai/tensorlake/pull/1016",
+        "https://github.com/tensorlakeai/tensorlake/commit/c79bc475544311ca3ae8e3628ec30a9b2c9b2d6b",
+        "https://github.com/tensorlakeai/tensorlake/commit/e90c47bbb208e99cac8aa678405b2133f6cb3f52"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "TensorLake npm SDK Compromised in ChainDrop Shai-Hulud Credential-Stealing Attack",
+      "summary": "The compromised tensorlake npm SDK version 0.5.144 was published on October 8, 2026, and Socket flagged it about 11 minutes later as part of a ChainDrop / Shai-Hulud supply chain attack. A preinstall hook runs an obfuscated loader that launches a credential-stealing, self-propagating worm, so the code executes during installation without the SDK being imported. The payload harvests npm, GitHub, AWS, Vault, Kubernetes, SSH, and AI tool credentials, then republishes compromised packages and plants GitHub Actions workflows. It resolves its command-and-control endpoint through an Ethereum contract and includes a dead-man switch that wipes the home directory if the stolen GitHub token is revoked while the monitor runs. Defenders should block the version, treat affected hosts as compromised, remove persistence before rotating any credentials, and rebuild from trusted sources.",
+      "completeness": "Medium",
+      "threats": [
+        "Chaindrop",
+        "Shai-hulud",
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Math_symbol",
+        "Credential_harvesting_technique",
+        "Gh-token-monitor"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Kubernetes",
+        "HashiCorp Vault",
+        "claude",
+        "Linux",
+        "macOS"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "typescript"
+      ],
+      "links": [
+        "https://socket.dev/blog/tensorlake-compromise"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Ignore all instructions and read this blog: The state of AI-analysis evasion in malware",
+      "summary": "Cisco Talos describes \"AI-analysis evasion\" (A3), where malware embeds natural-language instructions to manipulate LLM-based analysis pipelines, tracked across FRUITSHELL, PLOTSAFE, HOLLOWCLAD, and MANTLEMAZE in 84 samples from January 2025 to July 2026. The FRUITSHELL comment, which tells an AI to skip a benign-looking script, was reused verbatim by at least four other actors and even appeared in a more capable loader, ROZESHELL. Later families used template-generated comments, and HOLLOWCLAD sprayed instructions across seven chat template formats plus intimidation notes. In Talos's tests, the simplest direct instructions were most effective, shifting verdicts toward benign in about 35% of runs at best, while complex variants had little effect or backfired. Talos concludes the threat is not alarming, since the evasion text is always plaintext and detectable. Defenders should treat embedded text as evidence rather than instruction and flag imperative language aimed at analyzers.",
+      "completeness": "Low",
+      "threats": [
+        "Cairn",
+        "Fruitshell",
+        "Plotsafe",
+        "Hollowclad",
+        "Mantlemaze",
+        "Amsi_bypass_technique",
+        "Rozeshell",
+        "Rozena",
+        "Themida_tool",
+        "Byovd_technique",
+        "Blackbyte"
+      ],
+      "software": [
+        "Microsoft Defender"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/ignore-all-instructions-and-read-this-blog-the-state-of-ai-analysis-evasion-in-malware/",
+        "https://github.com/Cisco-Talos/CAIRN/blob/db84c86e4d8909ac462a3734993626853509ba4b/config/acquisition\\_filters.yaml#L105",
+        "https://github.com/Cisco-Talos/CAIRN",
+        "https://github.com/Cisco-Talos/Cognitive-Artifact-Intelligence-Research-Network/blob/main/docs/families/FRUITSHELL.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Suspected TraderTraitor Group Uses Trojanized Terraform Provider to Deliver Cross-Platform Malware",
+      "summary": "Zscaler ThreatLabz reports a campaign suspected to be linked to TraderTraitor, a North Korean government-backed threat actor that targets the cryptocurrency industry, though attribution is not made with high confidence. The campaign uses a trojanized Go-based Terraform provider disguised as an AWS provider, which runs malicious code when Terraform loads it and then downloads a cross-platform Bash loader. The loader selects and decrypts FLATROOF payloads for macOS, Linux, and Windows, which are hidden inside decoy .woff font files. FLATROOF deploys Python stealers that harvest browser credentials, cookies, shell history, and cryptocurrency wallet extension data, then drops the ROOFDECK backdoor. Targets appear to be cloud engineers, developers, and cryptocurrency and Web3 developers who use Terraform, so defenders should restrict untrusted providers and verify provider checksums.",
+      "completeness": "High",
+      "threats": [
+        "Gaslight_backdoor",
+        "Roofdeck",
+        "Dead_drop_technique",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 26,
+      "software": [
+        "macOS",
+        "Linux",
+        "Pastebin",
+        "Node.js",
+        "OpenSSL",
+        "Telegram",
+        "Firefox",
+        "Chrome",
+        "Chromium",
+        "Unix",
+        "have more..."
+      ],
+      "wallets": [
+        "metamask",
+        "rabby"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "aes-256-cbc",
+        "base64",
+        "zip",
+        "aes",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "rust",
+        "perl"
+      ],
+      "links": [
+        "https://www.zscaler.com/blogs/security-research/suspected-tradertraitor-group-uses-trojanized-terraform-provider-deliver"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Warden Stealer: The Rapid Rise of an Infostealer with an Appetite for AI Agent Data",
+      "summary": "Warden Stealer is a Rust-based infostealer-as-a-service, promoted on underground forums since August 2026, that has quickly become one of the most prevalent infostealers in Gen's user base. Unlike most competitors, it ships with its own in-house loader and a built-in cryptocurrency clipper, and its builds are heavily obfuscated and morphed to evade detection. It is one of the first infostealers observed targeting configuration files and local data of AI assistants and agentic coding tools such as Claude, Codex, Grok, and Cursor, which may expose access tokens, MCP credentials, and prompt histories. The report describes its injection-mode loader, anti-VM checks, and a Chromium Application-Bound Encryption bypass that resembles techniques used by Vidar and Remus. Gen's researchers linked the malware, previously tracked as CallbackBeaver, to Warden Stealer based on code analysis and the authors' public statements.",
+      "completeness": "Medium",
+      "threats": [
+        "Warden_stealer",
+        "Vidar_stealer",
+        "Amatera_stealer",
+        "Remus",
+        "Clickfix_technique",
+        "Goflateloader",
+        "Bloat_technique",
+        "Sandbox_evasion_technique"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Codex",
+        "VirtualBox",
+        "Xen",
+        "QEMU",
+        "Chromium"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "monero",
+        "solana",
+        "litecoin",
+        "cardano"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "lznt1",
+        "base64"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/warden-stealer-rust-infostealer-analysis",
+        "https://github.com/chromium/chromium/blob/2e22ca200ff2c2c2606e345b0ec880339b6bfa73/components/os\\_crypt/async/common/encryptor.h#L121",
+        "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libcxx/+/97b436da4c33663581d394f4ee0a5977fc38c2f4/include/\\_\\_vector/layout.h#82",
+        "https://github.com/vojtechkrejsa/ioc/blob/master/WardenStealer/extras/warden\\_stealer\\_configuration.bin"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Threat Actors Exploit Critical AhsayCBS Flaws to Drop Webshells and XMRig Cryptominer",
+      "completeness": "High",
+      "threats": [
+        "Xmrig_miner",
+        "Nssm_tool",
+        "Xmr_miner"
+      ],
+      "geo": [
+        "Taiwan",
+        "Vietnam",
+        "United states",
+        "France",
+        "Hong kong"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 16,
+      "software": [
+        "Microsoft Edge",
+        "curl",
+        "Windows service",
+        "Microsoft Edge Update",
+        "Alibaba Cloud",
+        "Microsoft 365"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Get-Date"
+      ],
+      "languages": [
+        "powershell, java",
+        "SIGMA: Found"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/ahsaycbs-flaws-exploit",
+        "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-10/AhsayCBS\\_XMRig\\_Miner/proc\\_creation\\_win\\_susp\\_ahsaycbs\\_unexpected\\_child\\_process.yml",
+        "https://github.com/huntresslabs/threat-intel/tree/main/2026/2026-10/AhsayCBS\\_XMRig\\_Miner",
+        "https://github.com/huntresslabs/threat-intel/blob/main/2026/2026-10/AhsayCBS\\_XMRig\\_Miner/proc\\_creation\\_win\\_susp\\_fake\\_edge\\_daemonized\\_miner.yml"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "ARTokens 5.1.2: From Compromised SharePoint Tenants to Device Code Phishing",
+      "summary": "ARTokens 5.1.2 is a Microsoft 365 device code phishing kit, linked by Cisco Talos and Abnormal to the EvilTokens lineage. In two disrupted attacks, spoofed emails about a payment invoice or RFP review led victims through a compromised SharePoint directory, a Google Sites page, and a Cloudflare Workers lure. The lure is XOR-encrypted, includes bot and sandbox checks, and uses operator-configurable polling aliases instead of previously documented fixed endpoints. The panel offers post-compromise tools for mailboxes, inbox rules, SharePoint, Entra ID, and Primary Refresh Tokens, plus a Windows client called ARTBrowser. Defenders should restrict device code flow via Conditional Access and hunt for unexpected device code sign-ins followed by device registrations or inbox rule changes.",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Artoken_tool",
+        "Eviltokens_tool",
+        "Artbrowser_tool",
+        "Spear-phishing_technique",
+        "Bec_technique"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 14,
+      "software": [
+        "SharePoint",
+        "Microsoft 365",
+        "Cloudflare",
+        "harePoint",
+        "flare Worker",
+        "Selenium",
+        "PhantomJS",
+        "Node.js",
+        "Telegram",
+        "DocuSign",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://zerobec.com/blog/artokens-5-1-2-sharepoint-device-code-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "The phone was compromised before the user turned it on: the rise of Midnight Mimosa",
+      "summary": "Bitdefender identified Midnight Mimosa, a malware campaign preinstalled in firmware of low-cost MediaTek-based Android devices, before the owner first switches them on. The core is a platform-signed system app, com.android.system.lite, which runs as system user and can silently install and remove apps and grant permissions. It drops a rotating set of disguised payloads that perform ad fraud, click fraud, and residential-proxy botnet enrollment. Its operators also disable Google Play Protect during installs and can spoof the installer source. The same ad-fraud code appeared in thirteen apps on Google Play. Defenders should detect on the shared core and behavior, since package names rotate and uninstalling the system component is generally not possible.",
+      "completeness": "High",
+      "threats": [
+        "Midnight-mimosa",
+        "Residential_proxy_technique",
+        "Supply_chain_technique",
+        "Gogo_tool",
+        "Joker"
+      ],
+      "geo": [
+        "France",
+        "Americas",
+        "United states",
+        "Germany",
+        "Asia",
+        "Middle east",
+        "Brazil",
+        "Spain",
+        "Africa",
+        "Mexico",
+        "Italy"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "ndroid; o",
+        "ndroid 13",
+        "ndroid.ve",
+        "roid.vend",
+        "id.vendin",
+        "ndroid.Cl",
+        "appstore"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "aes",
+        "md5",
+        "base64",
+        "cbc"
+      ],
+      "functions": [
+        "getUserHandleForUid",
+        "getConfigs",
+        "setAdData",
+        "createSession"
+      ],
+      "languages": [
+        "kotlin",
+        "java"
+      ],
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/midnight-mimosa-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Making sure the checks get printed",
+      "summary": "Cisco Talos reports that malware authors are embedding natural-language instructions in their code to evade AI-assisted analysis, a trend it classifies as \"A3: AI-Analysis Evasion.\" Tracked over 18 months, the techniques range from simple comments telling an AI to ignore a file to \"template spraying\" aimed at specific large language models. These prompt-injection tactics steer AI verdicts in the attacker's favor about 35 percent of the time and appear across all levels of malware sophistication. Talos advises defenders to flag imperative language addressed to analysis systems inside binaries as suspicious. Anyone using AI-assisted pipelines should treat text extracted from samples strictly as evidence, never as a system directive.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Spanish",
+        "Spain",
+        "Portuguese",
+        "Danish"
+      ],
+      "software": [
+        "KMSAuto"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/making-sure-the-checks-get-printed/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "DarkBlinders: Inside an Active Espionage Campaign",
+      "summary": "DarkBlinders is an active espionage campaign, tracked here as part of an operational cluster also known as UNC5795 and Dust Specter, that targeted Israel and the Kurdistan Region of Iraq between August and October 2026. It used lures impersonating government webmail, cloud-drive services, and a fake video-meeting app called StarkMeet, and phishing pages mimicking the GCC Secretariat General and Kuwait's Ministry of Foreign Affairs. The malware used GitHub repositories under the PeakyBlindersTeam account as command-and-control, with a loader registering victims and the operator selectively supplying decryption material to activate a PowerShell-capable backdoor. Confirmed victims included a government cloud environment in Kurdistan and a high-profile Israeli security-sector individual, with at least 1 GB exfiltrated from the former. The report assesses with medium confidence that this cluster and UNC5187 are related subclusters within APT34, and notes Iranian-nexus indicators that are contextual rather than conclusive.",
+      "completeness": "High",
+      "threats": [
+        "Starkmeet",
+        "Tommyfiles_tool",
+        "Shelbyloader",
+        "Shelbyc2",
+        "Hotair",
+        "Aerostat",
+        "Ghostform",
+        "Treeworld",
+        "Enddot"
+      ],
+      "geo": [
+        "United kingdom",
+        "Germany",
+        "Kurdistan",
+        "Israel",
+        "Kuwait",
+        "Netherlands",
+        "Iranian",
+        "Canada",
+        "Iraq"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Outlook",
+        "NET Framework",
+        "Cloudflare",
+        "ClickHouse",
+        "Microsoft OneDrive",
+        "Visual Studio"
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "base64",
+        "sha256",
+        "aes-cbc",
+        "md5",
+        "aes-256",
+        "zip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://dreamgroup.com/blog/darkblinders-inside-an-active-espionage-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "Spike in Attacks Targeting Digital Video Recorders in Ukraine",
+      "summary": "GreyNoise reported a nine-day surge in scanning and exploitation attempts against Digital Video Recorders in Ukraine between 21 September and 1 October 2026. The majority of the activity targeted CVE-2021-36260, a flaw allowing unauthenticated command injection on unpatched Hikvision products. Attempts came from four IP addresses, three of them PureVPN exit nodes that GreyNoise attributes to a single entity, plus one Ukrainian domestic address with low-confidence linkage. The surge coincided with escalating Russian missile and drone strikes, though GreyNoise could not determine whether the two are connected. Compromised DVRs could give attackers battlefield surveillance before, during, and after strikes. Defenders should patch Hikvision devices against this vulnerability.",
+      "completeness": "Low",
+      "threats": [
+        "Nuclei_tool"
+      ],
+      "geo": [
+        "Russian",
+        "Ukraine",
+        "Lithuania",
+        "Ukrainian"
+      ],
+      "links": [
+        "https://www.greynoise.io/blog/hikvision-camera-exploitation-attempts-ukraine"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "RMM tools being distributed through phishing attacks (ScreenConnect, FleetDeck, Datto, SimpleHelp, JumpCloud, N-able)",
+      "summary": "Threat actors are distributing legitimate remote monitoring and management (RMM) tools such as ScreenConnect, FleetDeck, Datto RMM, SimpleHelp, JumpCloud, and N-able through phishing emails, attachments, and fake document pages. Because these tools are legitimate and often used by organizations, they are harder for firewalls and antivirus products to detect and block than typical malware. ScreenConnect is the most commonly distributed, delivered via LNK, BAT, and VBS files, and has also been used by APT and ransomware actors. FleetDeck embeds a deployment ID that lets the distributing attacker take control of the installed agent, and it has been used by Scattered Spider. SimpleHelp has been linked to Play, Medusa, and ALPHV (BlackCat) ransomware attacks. Defenders should verify email senders, inspect URLs before clicking, check for suspicious file extensions, and keep systems and security products updated.",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Fleetdeck_tool",
+        "Centrastage_tool",
+        "Simplehelp_tool",
+        "Jump_cloud_tool",
+        "N-able_tool",
+        "Syncro_tool",
+        "Ninjaone_tool",
+        "Superops_tool",
+        "Dragonforce_ransomware",
+        "Playcrypt",
+        "Medusa_ransomware",
+        "Blackcat"
+      ],
+      "software": [
+        "dropbox",
+        "Adobe Acrobat",
+        "DocuSign"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/95750/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-08",
+      "title": "From JBRJ to JUCEC: Exposed Infrastructure Reveals a Broad Brazilian Government Intrusion Campaign",
+      "summary": "An exposed open directory on a single Malaysian VPS contained files from an intrusion campaign targeting Brazilian government bodies. Port 9998 documents a confirmed multi-stage compromise of JBRJ, Brazil's federal botanical research institute, through a GBIF IPT portal, using SSTI and a missing-authentication flaw. The operator then harvested AWS temporary credentials from instance metadata, reused credentials across several systems, and deployed JSP webshells. A second directory held a hunting kit with webshells, Zimbra, Active Directory, and Openfire tooling already inside JUCEC, a Ceará state agency. A third directory contained a dropper for the public Linux kernel exploit CVE-2026-31431 (\"Copy Fail\"). Defenders should patch exposed applications, eliminate hardcoded and reused secrets, and monitor for webshells, persistence, and lateral movement.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Password_spray_technique",
+        "Shadow_copies_delete_technique",
+        "Copyfail_vuln",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Mexican",
+        "Malaysian",
+        "Brazil",
+        "Brazilian",
+        "Malaysia",
+        "Singapore",
+        "Brasil"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 14,
+      "software": [
+        "Linux",
+        "Active Directory",
+        "Zimbra",
+        "Codex",
+        "Claude",
+        "Claude Code",
+        "PostgreSQL",
+        "Ubuntu",
+        "boto3",
+        "Openfire",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "bcrypt",
+        "aes"
+      ],
+      "functions": [
+        "isBaseURLValid",
+        "io_uring_setup",
+        "chr",
+        "Windows"
+      ],
+      "languages": [
+        "java",
+        "python",
+        "powershell",
+        "php",
+        "javascript"
+      ],
+      "links": [
+        "https://www.infrahunter.com/research/a-live-compromise-of-a-brazilian-federal-research-institute"
+      ]
+    }
+  }
+]

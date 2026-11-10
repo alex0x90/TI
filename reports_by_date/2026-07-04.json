@@ -1,0 +1,42 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-04",
+      "title": "Microsoft Store Apps + Go Backconnect Proxyware Part 2",
+      "summary": "The StoreSocks campaign, named by HexaStrike, uses Microsoft Store apps to deliver DLL payloads that enroll victim hosts in a residential proxy network. The report notes new publisher names and DLL file names, with changes that appear to be updates to the same campaign rather than a new one. The author found no disclosure that installing these apps makes users part of a proxy network, which they describe as deceptive, since users install what appears to be free software. Defenders are advised to watch for unfamiliar DLL names in the WindowsApps directory and to apply the published YARA rule. The author also warns that proxyware can expose home IP addresses to misuse that may be traced back to the owner.",
+      "completeness": "Low",
+      "threats": [
+        "Baoloader",
+        "Solarmarker",
+        "Bondat",
+        "Donut",
+        "Emotet",
+        "Tamperedchef",
+        "Justaskjacky",
+        "Purerat",
+        "Quasar_rat",
+        "Recipelister",
+        "Seo_poisoning_technique",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Store",
+        "electron",
+        "Jupyter"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "rust",
+        "javascript"
+      ],
+      "links": [
+        "https://blog.lukeacha.com/2026/07/microsoft-store-apps-go-backconnect.html",
+        "https://github.com/securitymagic/yara/tree/main/proxyware"
+      ]
+    }
+  }
+]

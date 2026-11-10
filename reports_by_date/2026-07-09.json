@@ -1,0 +1,567 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "The target is developers. A new Trojan attacks supply chains and inflicts combined damage on infected PCs An update to the Dr.Web vxCube sandbox is coming",
+      "summary": "A new Trojan from Doctor Web's analysis is a supply chain attack that targets developers working with C++ and C# projects. It combines the functions of a stealer, clipper, backdoor, miner and file infector in one threat. First cases were recorded in the last quarter of 2025, and the authors keep modifying it. It spreads mainly over the internet via infected .exe and Python files, and its multi-stage infection uses C2 addresses hidden on GitHub and Steam. The malware infects Visual Studio and C++ library files such as imgui_impl_win32.cpp, .suo, .vcxproj and .csproj, so projects shared or built by other developers spread the infection further. Doctor Web states that its antivirus products detect and remove the Trojan, and that infected project files can be cleaned.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique",
+        "Downloader49",
+        "Siggen",
+        "Uac_bypass_technique",
+        "Btcmine",
+        "Xmrig_miner",
+        "T-rex",
+        "Teamredminer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Steam",
+        "Discord",
+        "Microsoft Edge",
+        "WinRar",
+        "Chrome",
+        "Opera",
+        "Telegram",
+        "curl",
+        "Microsoft Visual Studio",
+        "Visual Studio",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "algorithms": [
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "unlock"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://news.drweb.ru/show/?i=15276&lng=ru&c=5",
+        "https://github.com/todxx/teamredminer/releases",
+        "https://github.com/trexminer/T-Rex",
+        "https://github.com/xmrig/xmrig"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "One Target, Two Flags \\| Rival Espionage Actors Converge On Pakistani Law Enforcement",
+      "summary": "Suspected China-nexus and India-nexus espionage actors conducted sustained intrusions against several Pakistani law enforcement organizations between February 2024 and April 2026, with the highest concentration at Balochistan Police. China-nexus actors likely aimed to assess threats to Chinese nationals, while India-nexus actors likely sought insight into Pakistan's security posture in Balochistan. Compromised assets included servers hosting web applications that manage biometric, criminal, personnel, and citizen complaint records. A suspected China-nexus actor planted implants disguised as a portal update in the Complaint Management System, which is used by both police staff and citizens. The report notes that law enforcement digitalization systems can centralize intelligence value and become intelligence targets.",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Plugx_rat",
+        "Shadowpad",
+        "Remcos_rat",
+        "Asyncrat"
+      ],
+      "geo": [
+        "Pakistani",
+        "China",
+        "Chinese",
+        "Middle east",
+        "Tibetan",
+        "America",
+        "India",
+        "Asia",
+        "Afghan",
+        "Taiwan",
+        "Indian",
+        "Pakistan",
+        "Kashmir"
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.sentinelone.com/labs/one-target-china-india-espionage-converge-on-pakistani-law-enforcement/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware",
+      "summary": "GigaWiper is a Golang-based backdoor that Microsoft Threat Intelligence first identified in October 2025, combining robust C2 capabilities with multiple destructive payloads. It is assembled from separate malware families, including a standalone disk-level wiper, a wiper disguised as ransomware derived from Crucio, and a Golang reimplementation of FlockWiper. The backdoor communicates with operators over RabbitMQ and Redis and persists through a scheduled task. Its commands include wiping, encryption, screenshots, keylogging, remote VNC-style control, and log clearing. Microsoft recommends enabling tamper protection, cloud-delivered protection, and EDR in block mode to defend against it.",
+      "completeness": "Medium",
+      "threats": [
+        "Gigawiper",
+        "Crucio",
+        "Flockwiper",
+        "Wevtutil_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "RabbitMQ",
+        "Redis",
+        "MinIO",
+        "Windows firewall"
+      ],
+      "algorithms": [
+        "aes",
+        "cbc",
+        "sha256",
+        "aes-cbc",
+        "aes-256"
+      ],
+      "functions": [
+        "createKey",
+        "deleteKey",
+        "deleteValue",
+        "setValue",
+        "GigaWiper"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/07/09/gigawiper-anatomy-of-a-destructive-backdoor-assembled-from-multiple-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Fake Braintree NuGet Package Skims Credit Cards and Harvests Merchant Credentials",
+      "summary": "A malicious NuGet package named Braintree.Net typosquats the official Braintree .NET SDK, copying its API surface and README while routing stolen data to attacker-controlled infrastructure. In production gateway use, its hooks on card creation and transaction methods send full card numbers, CVVs, and expiry dates to an external endpoint, and its property setter exfiltrates merchant IDs and API keys. A companion dependency, DependencyInjector.Core, runs on load for .NET 8 and later and harvests environment variables, connection strings, and cloud or Kubernetes tokens. Sandbox use avoids card and key theft, and empty catch blocks keep failures silent. Defenders should remove the package, rotate Braintree credentials, check for related SipNet packages, and block the C2 domain.",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "NuGet",
+        "openai",
+        "Kubernetes",
+        "Docker",
+        "ASP.NET",
+        "Azure Functions",
+        "NET Framework",
+        "WebRTC",
+        "uGet's"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "HTTP",
+        "Braintree",
+        "Create",
+        "AnalyzeAndPrint",
+        "Analyze",
+        "IsProduction",
+        "GetDefaultEndpoint"
+      ],
+      "languages": [
+        "dotnet"
+      ],
+      "links": [
+        "https://socket.dev/blog/braintree-nuget-typosquat-skims-credit-cards"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "GodDamn Ransomware: Latest Beast Rebrand Uses Malicious Driver to Disable Defenses",
+      "summary": "GodDamn is the latest rebrand of the Beast ransomware, which itself derives from Hyadina's Monster ransomware first seen in 2022, according to Symantec. In a June 2026 attack, the operators used AnyDesk for remote access, a NirSoft-based credential harvesting toolkit, and a defense evasion tool disguised as a Symantec product. That tool loaded PoisonX, a malicious kernel driver that was signed by Microsoft and can terminate security processes and remove user-mode hooks. The attackers used PsExec to move laterally, configured AnyDesk for unattended access across at least 10 hosts, and then deployed the ransomware. Defenders should note that Hyadina continues to expand its defense evasion capabilities, and the initial infection vector remains unknown.",
+      "completeness": "Medium",
+      "threats": [
+        "Goddamn_ransomware",
+        "Monster_ransomware",
+        "Beast_ransomware",
+        "Credential_harvesting_technique",
+        "Anydesk_tool",
+        "Poisonx",
+        "Byovd_technique",
+        "Mimik_tool",
+        "Mimikatz_tool",
+        "Passview_tool",
+        "Chromepass_tool",
+        "Passwordfox_tool",
+        "Messengerpass_tool",
+        "Vncpassview_tool",
+        "Sniffpass_tool",
+        "Operapassview_tool",
+        "Wirelesskeyview_tool",
+        "Extpassword_tool",
+        "Pstpassword_tool",
+        "Netpass_tool",
+        "Credential_dumping_technique",
+        "Netscan_tool",
+        "Defendercontrol_tool",
+        "Gmer_tool",
+        "Iobit_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "PsExec",
+        "Linux",
+        "ESXi",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Set-MpPreference",
+        "Set-Content"
+      ],
+      "languages": [
+        "delphi",
+        "powershell"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/goddamn-ransomware-beast-rebrand"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Compromised Injective SDK npm Package Exfiltrates Wallet Keys and Mnemonics",
+      "summary": "Socket identified a malicious release, @injectivelabs/sdk-ts version 1.20.21, in the npm Injective Labs TypeScript SDK, which receives roughly 50,000 weekly downloads. The malicious code was pushed through commits from a developer account with an established contribution history, and the release was published to npm before the account owner contained it. The stealer does not run at install time; instead, hooks in the fromMnemonic and fromHex key-derivation functions silently record mnemonics or private-key material. The recorded data is base64-encoded and sent via POST to a public Injective-branded endpoint, blending with normal traffic. The same version was also published across 17 other @injectivelabs scoped packages that pin the malicious SDK, so transitive users are affected. Defenders should pin to the clean 1.20.23 release, audit transitive dependencies, and treat any keys or mnemonics used with affected packages as compromised.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "links": [
+        "https://socket.dev/blog/compromised-injective-sdk-npm-package",
+        "https://github.com/InjectiveLabs/injective-ts/releases",
+        "https://github.com/InjectiveLabs/injective-ts/activity?ref=test-backdoor-check"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "nodemon-sudo: an npm Backdoor With No Install Script",
+      "summary": "nodemon-sudo is a malicious npm package that impersonates the nodemon process monitor by shipping an identical copy of nodemon plus one injected dependency, tslint-conf. The tslint-conf package is a repackaged pino logger carrying a backdoor that fetches a second stage from an IPFS gateway and executes it with Node's require in scope, enabling remote code execution. Neither package uses an install script, so the payload only fires when a developer calls the fake logger at runtime. The top-level nodemon-sudo package contains no malicious code itself, so reviewing it alone will find nothing. Defenders should review dependency graphs and runtime behavior, remove both packages if installed, rotate reachable credentials, and check for outbound requests to the named hosts.",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "outlook"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "getCallers"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://safedep.io/malicious-nodemon-sudo-tslint-conf-npm-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Compromised @injectivelabs/sdk-ts exfiltrates wallet keys through fake telemetry",
+      "summary": "A malicious release of the npm package @injectivelabs/sdk-ts, version 1.20.21, was live for under an hour on June 8, 2026, and it captured wallet mnemonics and private keys during key derivation and sent them to an attacker-controlled endpoint. The payload did not run at install time and did not break SDK behavior, so install-time scanners could miss it. The attacker also republished 17 other @injectivelabs packages at 1.20.21, each pinned to the poisoned SDK, so projects depending on them pulled the stealer transitively. The compromise appears to stem from account takeover of a GitHub account with an established history on the repository. Defenders should upgrade to the clean 1.20.23, and because the malicious version remained downloadable and any exposed keys should be treated as compromised, they should move funds and rotate keys and seed phrases.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "_d"
+      ],
+      "links": [
+        "https://www.aikido.dev/blog/compromised-injectivelabs-exfiltrates-keys",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Threat Intelligence Report: The Pro-Iran Hacktivist Ecosystem 2026",
+      "summary": "The report describes the pro-Iran hacktivist ecosystem as a decentralized network of jihadist-aligned collectives, nationalist actors, and state-adjacent influence groups, rather than a single organized force. These actors rely mostly on DDoS attacks, defacements, hack-and-leak messaging, and propaganda amplification coordinated through Telegram, with claims often appearing within hours of kinetic events. Notable examples include 313 Team, whose May 2026 DDoS campaign disrupted Canonical and Ubuntu infrastructure, and Handala, which the report rates as highly credible for hack-and-leak and intimidation operations. The report assesses that most activity is technically unsophisticated and that its main effect is psychological and reputational pressure, not advanced intrusion. Defenders should prioritize DDoS readiness, MFA, credential-leak monitoring, and rapid communication about exaggerated claims.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Password_spray_technique",
+        "Ddosia_botnet"
+      ],
+      "geo": [
+        "Kuwait",
+        "Israel",
+        "Russian",
+        "Iran",
+        "Iraq",
+        "Middle east",
+        "Israeli",
+        "Malaysia",
+        "Iranian",
+        "United states",
+        "Afghan"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Ubuntu"
+      ],
+      "links": [
+        "https://dti.domaintools.com/research/threat-intelligence-report-the-pro-iran-hacktivist-ecosystem-2026"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Not-so-anonymous telemetry: The @injectivelabs/sdk-ts backdoor",
+      "summary": "The npm package @injectivelabs/sdk-ts version 1.20.21, used by developers building on the Injective blockchain, was published on July 8, 2026 with a hidden credential-stealing module disguised as SDK telemetry. The malicious code was pushed through a GitHub commit that appears to come from a legitimate maintainer, though Datadog assesses that a malicious actor made the commit from an unusual timezone. Two hooks in the PrivateKey functions fromMnemonic and fromHex captured seed phrases and private keys when wallets were loaded. The stolen secrets were base64-encoded and sent in the X-Request-Id HTTP header to a remote endpoint. The malicious version was live for about 49 minutes before it was reverted and replaced by version 1.20.23, and defenders should check for version 1.20.21 in their environments and review traffic to the disclosed domain.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Smuggling_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "twitter"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "typescript"
+      ],
+      "links": [
+        "https://securitylabs.datadoghq.com/articles/not-so-anonymous-telemetry-injectivelabs-sdk-ts-backdoor/",
+        "https://github.com/InjectiveLabs/injective-ts/commit/7c4b1a092d8cbbcda469bda5a88db2a742d15b4a",
+        "https://github.com/InjectiveLabs/injective-ts",
+        "https://github.com/InjectiveLabs/injective-ts/commit/01219285b16ce85c70cdf47a71a551ff5e41f1ed"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Injective npm Supply Chain Attack: 18 Packages Backdoored to Steal Crypto Wallet Keys",
+      "summary": "A compromised maintainer account backdoored Injective's TypeScript SDK and 17 packages that depend on it. Disguised as analytics, the code captured recovery phrases and private keys whenever apps called PrivateKey.fromMnemonic() or fromHex(). It sent batched, encoded secrets in a request header to a lookalike Injective domain, failing silently. The tainted versions stayed live for under an hour before being reverted. Apps that installed affected packages in that window should treat handled wallet secrets as exposed.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "_d",
+        "setTimeout"
+      ],
+      "languages": [
+        "javascript",
+        "typescript"
+      ],
+      "links": [
+        "https://www.stepsecurity.io/blog/injective-npm-supply-chain-attack-18-packages-backdoored-to-steal-crypto-wallet-keys",
+        "https://github.com/InjectiveLabs/injective-ts",
+        "https://github.com/InjectiveLabs/injective-ts/actions/runs/28975012939"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "When AI Infrastructure Becomes Part of the Attack Surface",
+      "summary": "Darktrace investigated an AWS EC2 instance named LiteLLM-Proxy, an AI gateway linked to Amazon Bedrock services, that was used for cryptomining. The instance appeared externally exposed over SSH, received a large volume of brute-force-style connection attempts, and then downloaded an XMRig miner before connecting repeatedly to mining pool infrastructure. The exact initial access vector could not be confirmed, and the host was later shut down after Darktrace escalated the activity. A separate suspicious IAM user showed unusual API calls, failed Bedrock model enumeration attempts, and an attempt to create a new user, though no definitive link to the EC2 compromise was established. The main takeaway is that AI gateways concentrate cloud permissions and model access, so they should be secured as part of the wider cloud attack surface.",
+      "completeness": "Low",
+      "threats": [
+        "Xmrig_miner"
+      ],
+      "geo": [
+        "Vietnam"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "GetSendQuota",
+        "CreateUser"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/when-ai-infrastructure-becomes-part-of-the-attack-surface"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "RedHook Returns with a Dangerous Upgrade",
+      "summary": "RedHook is an Android Remote Access Trojan that has re-emerged with upgrades focused on privilege abuse. It abuses ADB Wireless Debugging, embedding an ADB client and borrowing Shizuku code, to autonomously obtain shell-level (uid 2000) privileges without rooting the device. The malware is distributed through social engineering, with victims directed to spoofed government and financial sites that mimic the Google Play Store, and its APK payloads are hosted on GitHub and AWS S3. Recent activity shows targeting expanding from Vietnam to Indonesia. RedHook uses a multi-layered persistence stack and supports 53 server-issued commands. Defenders should treat Accessibility and Wireless Debugging as high-value abuse vectors, since no exploit is required.",
+      "completeness": "Medium",
+      "threats": [
+        "Redhook"
+      ],
+      "geo": [
+        "Vietnam",
+        "Indonesia",
+        "Asia",
+        "Vietnamese"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android",
+        "Google Play",
+        "Linux"
+      ],
+      "functions": [
+        "bindService",
+        "onServiceDisconnected",
+        "mlock"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/redhook-android-rat-upgraded/",
+        "https://github.com/rikkaapps/shizuku"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Inside Forg365: A Telegram-Distributed Sneaky 2FA-Style PhaaS Targeting Microsoft 365",
+      "summary": "Forg365 is a commercial Microsoft 365 phishing-as-a-service platform distributed and supported through Telegram, with a 5-day trial and paid monthly and annual plans. It combines device-code phishing, AiTM routing with cloaking, and AI-assisted lure generation within its operator panel. The platform supports persistence through token vaulting, a browser extension that refreshes Microsoft SSO cookies, and post-compromise mailbox tools such as keyword alerts and viewer links. Researchers classify it as Kali365-class with Sneaky 2FA-style AiTM overlap, without evidence of common ownership. Defenders should block or tightly restrict device-code flow through Conditional Access and hunt for deviceCodeFlow sign-ins, Forg365-prefixed device names, and post-authentication mailbox activity.",
+      "completeness": "High",
+      "threats": [
+        "Forg365_tool",
+        "Aitm_technique",
+        "Antibot",
+        "Kali365_tool",
+        "Sneaky_2fa_tool",
+        "Forgcookie_tool",
+        "Gophish_tool",
+        "Cloaking_technique",
+        "Device_code_phishing_technique",
+        "Polymorphism_technique",
+        "Supply_chain_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "Ukraine",
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "SendGrid",
+        "Microsoft Entra",
+        "Ubuntu",
+        "nginx",
+        "Microsoft Office",
+        "Chrome"
+      ],
+      "algorithms": [
+        "aes"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://zerobec.com/blog/inside-forg365-telegram-distributed-sneaky2fa-style-phaas"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-09",
+      "title": "Hiding in the Chain: Multi-Stage LNK Attack Leveraging TON Blockchain to Deliver Node.JS Backdoor",
+      "summary": "A malicious ZIP archive containing a Windows LNK file, delivered through booking-themed spam emails aimed at the hospitality sector, launches a hidden PowerShell command that downloads a legitimate Node.js runtime and deploys a Node.js backdoor. The LNK file and PowerShell stages use obfuscated C2 reconstruction from large integers and AES-decrypted payloads to hide their logic. The backdoor runs a custom bytecode virtual machine to evade static analysis and establishes persistence through a Run registry key. It retrieves its C2 address from a TON blockchain smart contract via TONAPI, a technique called EtherHiding, which lets the operator change C2 domains without modifying the malware. The campaign remains active, with new samples observed daily, so defenders should watch for LNK files and unusual Node.js process activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Etherhiding_technique",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.JS"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "aes-256-cbc",
+        "aes-128-cbc",
+        "ecdh"
+      ],
+      "functions": [
+        "q",
+        "k",
+        "u",
+        "D",
+        "Set-ItemProperty",
+        "X",
+        "B"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/hiding-in-the-chain-multi-stage-lnk-attack-leveraging-ton-blockchain-to-deliver-node.js-backdoor"
+      ]
+    }
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-07-10",
+      "title": "How WP-SHELLSTORM Exposed 1.4M WordPress Sites",
+      "summary": "The SOCRadar team found WP-SHELLSTORM, a professional, financially motivated webshell access-brokerage operation, after an unauthenticated open directory exposed its toolkit, logs, and target lists for about 22 days. The group had targeted over 1.4 million domains using 27 CVEs and had more than 5,700 active webshells. Beyond WordPress, the operator scanned and exploited Apache Nacos, XXL-Job, and Spring Boot, chaining a Nacos auth bypass (CVE-2021-29441) to steal cloud, database, and payment credentials from nine organizations in May 2026. Attribution to a China-linked actor is only partly solid, and the team describes the group as cybercrime rather than a nation-state APT. Defenders should patch the listed WordPress plugins, upgrade Nacos with authentication enabled, rotate exposed credentials, and hunt for the reported webshell filenames and kworker-masquerading processes.",
+      "completeness": "Medium",
+      "threats": [
+        "Jdumpspider_tool",
+        "Bestshell",
+        "Godzilla_webshell",
+        "Snowlight",
+        "Vshell"
+      ],
+      "geo": [
+        "Singapore",
+        "Chinese",
+        "Taiwan"
+      ],
+      "software": [
+        "WordPress",
+        "Nacos",
+        "Alibaba Cloud",
+        "Telegram",
+        "MySQL",
+        "Linux",
+        "ThemeREX",
+        "Joomla",
+        "WavePlayer",
+        "BerqWP",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "java"
+      ],
+      "links": [
+        "https://socradar.io/blog/wp-shellstorm-expose-1-4m-wordpress-sites/",
+        "http://github.com/Kevil-hui/BestShell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-10",
+      "title": "This new Windows malware can take over your PC and wipe it clean",
+      "summary": "GigaWiper is a modular Golang backdoor for Windows that Microsoft has observed in intrusions since October 2025. It functions as an operational platform combining command-and-control, data destruction, and remote access rather than a single-purpose wiper. The malware appears to consolidate previously separate tools, including the Crucio ransomware and the FlockWiper disk wiper. Its roughly 20 commands cover destruction, remote access and monitoring, and system management, including screen capture and a TCP-based remote control feature. It maintains persistence through a scheduled task named \"OneDrive Update.\" Because it is deployed after attackers have already compromised a system, defenders should focus on preventing initial intrusion, enabling tamper protection, and detecting its activity early.",
+      "completeness": "Low",
+      "threats": [
+        "Gigawiper",
+        "Crucio",
+        "Flockwiper"
+      ],
+      "software": [
+        "Windows Firewall"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/news/2026/07/this-new-windows-malware-can-take-over-your-pc-and-wipe-it-clean"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-10",
+      "title": "No Manners Here: The Ruthless Rise of The Gentlemen Ransomware",
+      "summary": "The Gentlemen (Storm-2697) is a Ransomware-as-a-Service operation active since at least July 2025, with operators likely previously working as an affiliate of Qilin. Its encryptors are written in C and Go, allowing them to target different operating systems and virtual infrastructure. The group uses varied initial access methods, including edge device exploits, brute force, stolen credentials, and initial access brokers, and it employs a custom Go backdoor and an EDR killer called GentleKiller. Through July 2026, the group claimed 580 victims across 77 countries, with June 2026 its busiest month, making it the second most active RaaS program of 2026. Defenders should prioritize patching known exploited vulnerabilities, hardening edge devices, and restricting lateral movement and ESXi management access.",
+      "completeness": "Low",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Qilin_ransomware",
+        "Edr-killer",
+        "Gentlekiller",
+        "Akira_ransomware",
+        "ransomware.live",
+        "React2shell_vuln",
+        "Wevtutil_tool",
+        "Systembc",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows SMB Client",
+        "ThrottleStop",
+        "ESXi"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/the-gentlemen-ransomware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-10",
+      "title": "Cybersecurity Startup Publishes Infostealers to NPM",
+      "summary": "Between late June 2026 and the publication of this report, a threat actor published six typosquatted NPM packages impersonating AI developer tools (Anthropic, LangChain, Ollama, OpenAI, Vercel) and a password-hashing library from Aspect Security. The packages run install-time scripts that profile developer machines, collecting hostnames, git and GitHub identities, SSH key comments, cloud configuration, DNS search domains and project metadata, while avoiding actual credential files. The data is sent to a Google Cloud Run endpoint, and the packages reached roughly 20,000 downloads. The author's earlier argon2 squat used a broken shell package with a preinstall beacon, showing iterative refinement of the technique. The npm account traced to the founder of a stealth-mode Israeli cybersecurity startup, and the packages and account have been taken down. Defenders should note that install-time scripts are a key attack surface, and that run.app traffic and package age from version counts can be misleading.",
+      "completeness": "Low",
+      "threats": [
+        "Typosquatting_technique",
+        "Spear-phishing_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Israel",
+        "Polish"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Anthropic",
+        "LangChain",
+        "Ollama",
+        "OpenAI",
+        "Anthropic Claude",
+        "CIRCLECI",
+        "TRAVIS",
+        "Node.js",
+        "Hugging Face",
+        "huggingface",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "typescript",
+        "python"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/cybersecurity-startup-publishes-infostealers-to-npm",
+        "https://github.com/ranisalt"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-10",
+      "title": "Fake Robinhood Sign-In Alerts Trick Users Into Calling Hacker-Controlled Phone Numbers",
+      "summary": "Attackers are running a callback phishing campaign that impersonates Robinhood with fake sign-in alerts warning of unusual activity or potential theft. The unsolicited email or SMS urges recipients to call a provided number for \"account verification\" rather than relying on links that security products might flag. During the call, the scammer posing as Robinhood support uses VoIP spoofing to display a plausible caller ID and asks for passwords and two-factor codes, and in crypto variants pushes victims to move assets to attacker-controlled addresses. Some campaigns abuse Robinhood's legitimate login alert emails to pass SPF and DKIM checks. For defenders, the takeaway is to monitor outbound calls to high-risk international prefixes and to flag Robinhood-themed messages containing external phone numbers.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Congo"
+      ],
+      "software": [
+        "witter.co"
+      ],
+      "links": [
+        "https://gbhackers.com/fake-robinhood-sign-in-alerts/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-10",
+      "title": "Odyssey Stealer Attacks Macs Worldwide and Replaces Crypto Wallet Apps With Drainers",
+      "summary": "Odyssey Stealer is a macOS infostealer campaign that has reached more than 100 countries and is linked to earlier Poseidon Stealer activity. It is delivered largely through the ClickFix technique, where fake CAPTCHA or verification pages trick users into pasting a base64-encoded command into Terminal that runs an AppleScript loader. Targets include developers, admins, crypto traders and executives, reached through malvertising and phishing that impersonate tools such as Microsoft Teams, Homebrew and Ledger Live. The malware harvests browser credentials, Keychain entries, cloud and SSH keys, and cryptocurrency wallet data, then exfiltrates it via curl POST requests. It persists through LaunchDaemons and replaces legitimate wallet apps with trojanized drainers that capture PINs and recovery phrases. Defenders should verify software sources, scrutinize Terminal-based CAPTCHA prompts, and hunt for suspicious LaunchDaemons, anomalous osascript use and unexpected wallet app replacements.",
+      "completeness": "Low",
+      "threats": [
+        "Odyssey_stealer",
+        "Poseidon_stealer",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "America",
+        "Asia"
+      ],
+      "software": [
+        "macOS",
+        "acOS co",
+        "Microsoft Teams",
+        "Ledger Live",
+        "hrome",
+        "Br",
+        "ivaldi",
+        "O",
+        "pera",
+        "A",
+        "KeePass",
+        "curl",
+        "l POST",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "exodus_wallet",
+        "trezor"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "applescript"
+      ],
+      "links": [
+        "https://gbhackers.com/odyssey-stealer-attacks-macs/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-07-10",
+      "title": "Process Parameter Poisoning Technique Hides Shellcode Inside Windows Startup Data",
+      "summary": "Process Parameter Poisoning (P³) is a newly documented Windows injection technique that hides shellcode in process startup parameters instead of using conventional remote-memory writes. It is implemented in the P³-Shellcode Loader proof of concept, which places encoded shellcode in the command line, environment variables, or the lpReserved member of STARTUPINFOW. The data arrives through legitimate CreateProcessW execution, so the injector avoids APIs such as VirtualAllocEx and WriteProcessMemory that security products heavily monitor. The loader then reads the PEB, changes memory protection, and redirects the initial thread's instruction pointer using thread-context APIs. Defenders should watch for executable process-parameter memory, unusual PEB reads, high-entropy startup data, and process creation followed by thread instruction pointer changes.",
+      "completeness": "Low",
+      "threats": [
+        "Process_parameter_poisoning_technique",
+        "Process_hollowing_technique"
+      ],
+      "functions": [
+        "CreateProcessW",
+        "WriteProcessMemory"
+      ],
+      "links": [
+        "https://gbhackers.com/process-parameter-poisoning-technique/",
+        "https://github.com/Orange-Cyberdefense/p3-loader"
+      ]
+    }
+  }
+]

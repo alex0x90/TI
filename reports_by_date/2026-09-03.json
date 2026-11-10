@@ -1,0 +1,486 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America",
+      "summary": "Attackers ran two separate Latin American intrusion campaigns that both used commercial large language models to troubleshoot operations. The Mexican transportation campaign, tracked as CL-CRI-1131, hit a transportation organization and federal and municipal targets in Mexico and Ecuador using living-off-the-land techniques and batch scripts. Operators repeatedly failed to dump Active Directory data, and the report assesses that LLMs generated their workaround scripts. The Brazilian financial campaign, tracked as CL-CRI-1163, began with resume-themed phishing and used homebrewed RATs and a Go-based SOCKS5 proxy, SockTz, with iteratively named versions and scripts. Both clusters exposed their staging infrastructure, including an open NextChat instance and an open directory, which revealed their playbooks and prompt history to researchers. The report's takeaway is that these operational security lapses give defenders a route to track and disrupt the activity.",
+      "completeness": "High",
+      "threats": [
+        "Socktz_tool",
+        "Lolbin_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Ecuador",
+        "Brazilian",
+        "Mexico",
+        "Latin america"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "ChatGPT",
+        "Claude",
+        "Claude code",
+        "NextChat",
+        "WildFire",
+        "GPT-4",
+        "WordPress",
+        "JBoss",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Rogue ScreenConnect Installations Across Unrelated Hosts Suggest Worm-Like Activity",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Ultraviewer_tool",
+        "Microsoft_quick_assist_tool",
+        "Tech-support-scam_kit_tool",
+        "Edr-killer",
+        "Uac_bypass_technique",
+        "Amsi_bypass_technique",
+        "Wstunnel_tool",
+        "Xmrig_miner",
+        "Deathransom"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Edge",
+        "Windows Registry",
+        "Dropbox",
+        "Windows service",
+        "Windows Defender"
+      ],
+      "algorithms": [
+        "aes-cbc",
+        "sha256",
+        "base64",
+        "xor",
+        "aes"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript"
+      ],
+      "links": [
+        "https://www.huntress.com/blog/rogue-screenconnect-installations"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "TencShell and Gshell",
+      "summary": "Suspected China-linked operators are running an intrusion campaign using the TencShell and Gshell command and control frameworks against government bodies and billing and payment platforms across several regions. RST Cloud identified sixteen command and control servers absent from prior published reporting and a complete Java exploitation chain exposed on the operators' own servers. The exploitation payload writes a marker file before attempting any callback, so an organisation that blocked command and control traffic may still have been reached. Defenders are advised to block the primary domain, which has survived every observed infrastructure rotation, and to sweep hosts for the marker file back to April 2026. Blocks should target individual hosts rather than shared /24 ranges, because those ranges contain many unrelated tenants.",
+      "completeness": "Medium",
+      "threats": [
+        "Tencshell",
+        "Gshell",
+        "Marshalsec_tool"
+      ],
+      "geo": [
+        "Latin america",
+        "American",
+        "Thailand",
+        "Brazil",
+        "Apac",
+        "America",
+        "China",
+        "Hong kong",
+        "Afghanistan",
+        "Asia",
+        "Middle east",
+        "Taiwan",
+        "United states"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "HTTPS"
+      ],
+      "languages": [
+        "python",
+        "java"
+      ],
+      "links": [
+        "https://www.rstcloud.com/tencshell-and-gshell/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Malware on the Blockchain: An Ongoing Campaign’s New WebRTC Twist",
+      "summary": "EtherHiding is a campaign that abuses BSC testnet smart contracts as takedown-resistant payload storage, and it has been observed across more than 5,400 compromised small-business websites, mostly WordPress and sometimes PrestaShop. Each compromised site carries an injected loader that makes a JSON-RPC call to a testnet contract, retrieves a second-stage script, and displays a ClickFix lure that tricks visitors into pasting a downloader command. Because the operator controls the contract, the final payload can change and differ between victims. A newer variant instead opens a covert WebRTC data channel to a C2 server, hardcoding negotiation values to skip the signaling handshake that defenders would normally observe. Netskope recommends blocking the full BSC-testnet RPC pool and monitoring non-web traffic for WebRTC channels, along with integrity-checking CMS assets.",
+      "completeness": "Low",
+      "threats": [
+        "Webrtc_technique",
+        "Clickfix_technique",
+        "Dead_drop_technique"
+      ],
+      "software": [
+        "ebRTC Tw",
+        "WebRTC",
+        "WordPress"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "functions": [
+        "JSON-RPC",
+        "Function"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.netskope.com/blog/malware-on-the-blockchain-an-ongoing-campaigns-new-webrtc-twist",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/Malware/Amatera%20ClickFix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Contagious Interview steps outside the developer workflow",
+      "summary": "Jamf Threat Labs identified trojanized macOS DMG and PKG installers impersonating legitimate apps, linked to the North Korea-attributed Contagious Interview campaign. The fake applications are unsigned and Intel-only, and they run a hidden executable that downloads a shell script from staging infrastructure. That script fetches Node.js and a final payload identified as OtterCookie, a family with remote access, credential theft, file scanning, and clipboard clipping capabilities. Researchers found 14 trojanized samples spanning many well-known Mac applications. The report notes that the samples do not execute by default, suggesting testing or early development. Defenders should block and report such threats through endpoint protections.",
+      "completeness": "Medium",
+      "threats": [
+        "Ottercookie"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Node.js",
+        "Visual Studio Code",
+        "Gatekeeper",
+        "curl",
+        "sudo",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "func",
+        "is_vmware_mac"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.jamf.com/blog/contagious-interview-trojanized-macos-installers/",
+        "https://github.com/W3PI-Protocol/w3pi-contracts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Node.js: Old Technique Makes a Comeback",
+      "summary": "Attackers since February 2026, including the Woodgnat-linked actors behind ModeloRAT, have revived abuse of the signed Node.js runtime to run malicious JavaScript and evade signature-based detection. In one Asian technology company intrusion, attackers whose payloads were blocked installed Node.js from its official site and ran an implant that contacted Ethereum blockchain gateways, likely to retrieve commands via EtherHiding. The same actors compromised a U.S. fintech firm and deployed the Rust-based C2Looper backdoor, which has been linked to ransomware. Victims across government, technology, and hotel sectors show the technique is used by multiple actors with varying skill levels. Defenders should note that Node.js persistence via Run-key entries and EtherHiding C&C are key indicators to hunt for.",
+      "completeness": "High",
+      "threats": [
+        "Etherhiding_technique",
+        "C2looper",
+        "Blackbasta",
+        "Modelorat",
+        "Kongtuke",
+        "Qilin_ransomware",
+        "Interlock",
+        "Rhysida",
+        "Akira_ransomware",
+        "8base",
+        "Embargo_ransomware",
+        "Cobalt_strike_tool",
+        "Adaptixc2_tool",
+        "Clickfix_technique",
+        "Looperc2",
+        "Asukastealer",
+        "Bitsadmin_tool",
+        "Etherrat",
+        "Mltbackdoor",
+        "Nltest_tool",
+        "Lolbin_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Asian"
+      ],
+      "software": [
+        "Node.js",
+        "Windows service",
+        "Active Directory",
+        "curl"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://www.security.com/threat-intelligence/node-js-returns-ransomware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "ASCII smuggling crosses over from AI prompt injection to phishing evasion",
+      "summary": "Microsoft observed a high-volume phishing campaign that used invisible Unicode tag characters, a technique known from AI prompt injection research as ASCII smuggling, to split finance lure words such as \"funding\" and evade email filters. Hits on the hunting signature surged on February 9, 2026, and stayed elevated on weekdays for about three months, dropping sharply after May 15, 2026. The campaign relied on hundreds of disposable, finance-themed sender domains and was relayed through a legitimate email-marketing platform, ActiveCampaign. Most flagged messages were caught by layered protections such as reputation, ML classification, and authentication rather than the Unicode signal alone. Defenders should normalize invisible characters before content matching, treat tag-block characters as a strong anomaly, and verify that their pipelines handle them consistently.",
+      "completeness": "Low",
+      "threats": [
+        "Smuggling_technique",
+        "Shadow_copies_delete_technique",
+        "Cross_prompt_injection_technique",
+        "Js-smuggler",
+        "Homoglyph_technique",
+        "Credential_harvesting_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 2,
+      "software": [
+        "Microsoft Defender",
+        "Office 365"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/03/ascii-smuggling-crosses-over-from-ai-prompt-injection-to-phishing-evasion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Borrowed Trust, Badly Done",
+      "summary": "A business email compromise lure was sent from a real, compromised mailbox belonging to a legitimate grocery retailer, so it carried genuine sender reputation. The body is assessed as highly likely LLM generated, with polished structure but generic content lacking specific PO numbers, invoice references, or amounts. The lure chains from an AWS S3-hosted \"RFP Access Portal\" to a Cloudflare-fronted domain that serves a fake Google sign-in page and harvests credentials. The page source suggests a grant or school portal phishing kit was repurposed for a financial lure, with leftover placeholders. Defenders should enforce phishing-resistant MFA, restrict OAuth app access, and verify payment changes out of band.",
+      "completeness": "Low",
+      "threats": [
+        "Bec_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 5,
+      "software": [
+        "Gmail"
+      ],
+      "links": [
+        "https://www.invictus-ir.com/news/borrowed-trust-badly-done"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "The Outsider Phishing Kit: A Resilient Threat in the Face of Law Enforcement Action",
+      "summary": "The Outsider Phishing Kit is a Phishing-as-a-Service platform run by the actor \"ChenLun\" that includes Adversary-in-the-Middle capabilities to intercept authentication and bypass MFA. Group-IB identified over 100,000 phishing pages targeting 54+ countries, using 267 templates, mainly impersonating financial services, telecommunications, logistics, and government toll services. Campaigns are delivered via SMS and the kit is sold through a Telegram ecosystem. Operators use a WebSocket connection for live keylogging and to manipulate victims' MFA challenges. Despite Operation Ghost Hook and a Google lawsuit, affiliates created more than 700 new phishing pages within a month. Defenders can track the kit using its filename prefixes and the \"GetSyncSetting\" filename, which are unique to these pages.",
+      "completeness": "High",
+      "threats": [
+        "Outsider_tool",
+        "Aitm_technique",
+        "Smishing_technique",
+        "Mitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "Singapore"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "Telegram",
+        "WordPress"
+      ],
+      "algorithms": [
+        "aes-256-ctr",
+        "aes-ctr"
+      ],
+      "functions": [
+        "GetSyncSetting",
+        "GetSyncSettings",
+        "getDeviceInfo"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/chenlun-outsider-phaas-kit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Attackers Actively Exploiting Critical Vulnerability in Super Forms Plugin",
+      "completeness": "Low",
+      "geo": [
+        "Malaysia"
+      ],
+      "software": [
+        "WordPress",
+        "Linux",
+        "Joomla"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "submit_form"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/09/attackers-actively-exploiting-critical-vulnerability-in-super-forms-plugin/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Chinese-Speaking Operator Uses AI Agents to Target Government and Education Systems Across Asia",
+      "summary": "A Chinese-speaking operator, tracked by Hunt.io, used a self-built AI orchestration framework called SecFlow to route reconnaissance, exploitation, and reporting across Claude, Qwen, and DeepSeek worker profiles. The campaign spans five open directories linked by a shared SOCKS endpoint and touched six countries and nearly a dozen sectors. Targets included Taiwan's KMT party archives, Indonesia's Foreign Ministry, a Fengtai District government office system in China, a Chinese education AI platform, and Vietnamese industrial hosts. The most extensive confirmed compromise involved webshells, credential dumping, and a custom Go implant called SecBox. The report's key lesson is that AI-generated false claims can propagate through shared context, while confirmed breaches still relied on familiar weaknesses such as exposed services, unpatched applications, and stolen credentials.",
+      "completeness": "High",
+      "threats": [
+        "Secflow_tool",
+        "Glutton",
+        "Shellshock_vuln",
+        "Spring4shell",
+        "Ghostcat",
+        "Log4shell_vuln",
+        "Supply_chain_technique",
+        "Winrm_tool",
+        "Secbox_tool",
+        "Yamux_tool",
+        "Dead_drop_technique",
+        "Nmap_tool",
+        "Nuclei_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Vietnamese",
+        "Indonesia",
+        "Taiwanese",
+        "Taiwan",
+        "Afghan",
+        "Vietnam",
+        "China",
+        "Indonesian",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 12,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "DeepSeek",
+        "Qwen",
+        "MySQL",
+        "Linux",
+        "Nacos",
+        "OpenAI",
+        "NET Framework",
+        "NET Core",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes",
+        "base64",
+        "aes-256-cbc",
+        "aes-256-gcm",
+        "xor"
+      ],
+      "functions": [
+        "shell_exec"
+      ],
+      "languages": [
+        "php",
+        "golang",
+        "java",
+        "javascript"
+      ],
+      "links": [
+        "https://hunt.io/blog/chinese-operator-secflow-claude-qwen-deepseek-asia",
+        "https://github.com/Wei-Shaw/sub2api"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Bring Your Own Trusted Caller (BYOTC): A New Way to Exploit Vulnerable Windows Drivers (Part 1)",
+      "summary": "Bring Your Own Trusted Caller (BYOTC) is a technique where an attacker gains code execution inside a user-mode program that a Windows driver already trusts, then uses that program to invoke privileged driver functions. The author presents two case studies: Malwarebytes' mbamchameleon.sys, where injecting into the signed MBAM.exe client allowed terminating Microsoft Defender, and System Informer's SystemInformer.sys, where a malicious elevated parent process could create and modify a child that was promoted to the highest trust level. System Informer fixed this by rooting its secure-creation chain in a Windows TCB-protected service process and making violations sticky. The report notes that Malwarebytes had no fix available at disclosure. The main takeaway for defenders is that a valid signature on a client does not prove runtime integrity, so authorization must be preserved over time.",
+      "completeness": "Low",
+      "threats": [
+        "Byovd_technique",
+        "Toctou_vuln"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender",
+        "macOS"
+      ],
+      "algorithms": [
+        "sha512",
+        "sha256"
+      ],
+      "links": [
+        "https://xusheng.dev/posts/byotc/main/",
+        "https://github.com/winsiderss/systeminformer/blob/553d309edb07934bda9387cff29a82ca1714acbb/kphlib/include/kphapi.h#L20-L76",
+        "https://github.com/winsiderss/systeminformer/blob/553d309edb07934bda9387cff29a82ca1714acbb/KSystemInformer/verify.c#L405-L614",
+        "https://github.com/winsiderss/systeminformer/blob/553d309edb07934bda9387cff29a82ca1714acbb/KSystemInformer/cid\\_tracking.c#L2270-L2354"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-03",
+      "title": "Fake TARI refund exploited in new phishing campaigns targeting PagoPA",
+      "summary": "A phishing campaign impersonates PagoPA, the Italian government payment platform, using its name, logo and graphics to target victims. The fraudulent sites claim a TARI waste tax overpayment refund and lure users into an online procedure supposedly to confirm identity and bank details. Victims are asked for their tax code or ID card number, then personal contact information, and finally cardholder name, card number, expiry date and CVV. The collected data can enable fraudulent card transactions and be reused in future targeted phishing. CERT-AGID is working to take down the malicious domains and has shared indicators of compromise with accredited partners.",
+      "completeness": "Low",
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://cert-agid.gov.it/news/falso-rimborso-tari-sfruttato-nelle-nuove-campagne-di-phishing-ai-danni-di-pagopa/"
+      ]
+    }
+  }
+]

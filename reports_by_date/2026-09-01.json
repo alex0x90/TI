@@ -1,0 +1,466 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Ungentlemanly behavior: Insights into a ransomware operation",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware",
+        "Edr-killer",
+        "Credential_harvesting_technique",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Cloudflared_tool",
+        "Centrastage_tool",
+        "Megasync_tool",
+        "Rclone_tool",
+        "Restic_tool",
+        "Byovd_technique",
+        "Gentlekiller",
+        "Havoc"
+      ],
+      "geo": [
+        "Netherlands"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 0,
+      "software": [
+        "FortiGate",
+        "SoftPerfect Network Scanner",
+        "Local Security Authority",
+        "Windows service",
+        "MinIO",
+        "Windows Defender",
+        "Linux",
+        "PsExec"
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "functions": [
+        "ESET"
+      ],
+      "languages": [
+        "powershell",
+        "golang"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/ungentlemanly-behavior-insights-into-a-ransomware-operation",
+        "https://github.com/BlackSnufkin/BYOVD/tree/main/Xkpsm-Killer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Hackers Abuse Real ChatGPT Links to Trick Windows Users Into Installing Malware",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Netsupportmanager_rat"
+      ],
+      "software": [
+        "ChatGPT",
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://cybersecuritynews.com/hackers-abuse-real-chatgpt-links/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Financially Motivated Threat Actor BREEZE COMET Targets Brazil",
+      "summary": "BREEZE COMET (formerly UNC5669) is a financially motivated threat actor that manipulates payment systems and banking software in Brazil to conduct fraudulent transfers. The group gains initial access through password spraying, voice calls impersonating IT support, and compromised trusted government websites that stage remote management tools and XWORM backdoors. It moves laterally using custom tools such as COBALTSPIN, a Rust-based tunneler, and maintains redundant access through backdoors including LIGHTPAINT, MILDFROST, KICKPLATE, and BOATBEAM. The actor has executed hundreds of fraudulent transactions within 24 to 48 hours of gaining access to core financial applications and has used LLMs to accelerate script development. Defenders should prioritize application control, network access control, phishing-resistant MFA, and segmentation of financial workloads and secrets.",
+      "completeness": "High",
+      "threats": [
+        "Password_spray_technique",
+        "Anydesk_tool",
+        "Xworm_rat",
+        "Netcat_tool",
+        "Impacket_tool",
+        "Adrecon_tool",
+        "Realbreeze_tool",
+        "Cobaltspin",
+        "Tunneler",
+        "Shadow_copies_delete_technique",
+        "Chisel_tool",
+        "Gsocket_tool"
+      ],
+      "geo": [
+        "Africa",
+        "Latin american",
+        "Brazilian",
+        "Paraguay",
+        "Venezuela",
+        "Latin america",
+        "Ghana",
+        "Brazil",
+        "Nigeria"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "JBoss",
+        "Kubernetes",
+        "SoftEther",
+        "Windows Defender Firewall",
+        "Windows Defender",
+        "LINUX",
+        "Outlook",
+        "macOS",
+        "Gatekeeper",
+        "have more..."
+      ],
+      "functions": [
+        "Set-MpPreference"
+      ],
+      "languages": [
+        "golang",
+        "powershell",
+        "rust",
+        "java"
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/financially-motivated-threat-actor-breeze-comet-targets-brazil/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Counterfeit installers to system compromise: Tracking a deceptive software download campaign",
+      "summary": "Microsoft Defender Experts is tracking a malware campaign that uses counterfeit software-download websites impersonating trusted vendors such as Razer, Kaspersky, and Microsoft Edge to distribute malicious installers. Victims are primarily China-based operations of multinational organizations and Chinese-speaking users across healthcare, manufacturing, gaming, technology, logistics, government, and education. The installers deploy randomized stage-one payloads that create disguised scheduled tasks for persistence, inject code into trusted processes, and add Microsoft Defender exclusions. Attackers also disable Windows Update, delete shadow copies, and communicate with C2 servers on non-standard ports. Microsoft assesses with moderate confidence that this activity is consistent with the Silver Fox campaign, and recommends enabling Tamper Protection and blocking untrusted software downloads.",
+      "completeness": "High",
+      "threats": [
+        "Typosquatting_technique",
+        "Process_injection_technique",
+        "Shadow_copies_delete_technique",
+        "Vssadmin_tool"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 19,
+      "software": [
+        "Microsoft Defender",
+        "Alibaba Cloud",
+        "Microsoft Edge",
+        "Youdao",
+        "Sogou",
+        "WinRAR",
+        "RAR.exe",
+        "Task Scheduler",
+        "Windows Installer",
+        "ask Scheduler se",
+        "have more..."
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip",
+        "sha256"
+      ],
+      "functions": [
+        "CreateRemoteThreadApiCall",
+        "Get-ScheduledTask"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "EtherHiding Exposed: What Security Leaders Need to Know",
+      "completeness": "Medium",
+      "threats": [
+        "Etherhiding_technique",
+        "Clickfix_technique",
+        "Regre_ssh_ion_vuln"
+      ],
+      "geo": [
+        "Iran",
+        "North korean"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.guidepointsecurity.com/blog/etherhiding_exposed_what_security_leaders_need_to_know/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Fake GTA 6 leaked copy drains your crypto wallet",
+      "summary": "Fake GTA 6 \"leaked copy\" sites use a wallet drainer that activates as soon as visitors arrive, offering a copy for $50 or 1 SOL. The page mixes accurate release details with contradictory and misspelled sales copy, suggesting a reused fan template with a sales pitch added later. Connecting a wallet triggers a script that profiles holdings across seven blockchain networks and can transfer assets immediately or obtain token and NFT approvals for later theft. Visitors from ten Commonwealth of Independent States countries are blocked by a settings-driven country filter. The drainer appears to be a rented, reconfigurable service. Defenders should reject transactions that move nearly all of a balance or grant token access, and remember that Rockstar sells no playable GTA 6 copies before its November 19, 2026 release.",
+      "completeness": "Low",
+      "geo": [
+        "Russia",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan",
+        "Moldova",
+        "Armenia",
+        "Azerbaijan",
+        "Belarus"
+      ],
+      "software": [
+        "GTA 6"
+      ],
+      "crypto": [
+        "solana",
+        "ethereum",
+        "arbitrum"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/scams/2026/09/fake-gta-6-leaked-copy-drains-your-crypto-wallet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Mirage Kitten targeting aviation and FinTech sectors across the Middle East and Africa with a new malware set",
+      "summary": "Mirage Kitten, an APT group, is using two previously undocumented cross-platform remote access trojans, NodeRabbit and PollCat, both built with Node.js or JavaScript. The malware is delivered through fake recruiter contacts on LinkedIn and other job search platforms, which send trojanized coding challenge archives hosted on Amazon S3. NodeRabbit has three variants found in Afghanistan, Egypt, and Ethiopia, and the later variants add anti-analysis checks, corporate proxy support, and VS Code and Git hook persistence. PollCat starts running before the user enters the one-time access code and can begin command polling during application startup. Victims were identified in fintech and aviation and aerospace sectors in Egypt, Ethiopia, and Afghanistan. Defenders should note that Mirage Kitten's use of Azure-hosted and Cloudflare-backed C2 helps its traffic blend into normal business activity.",
+      "completeness": "High",
+      "threats": [
+        "Noderabbit",
+        "Spear-phishing_technique",
+        "Pollcat",
+        "Dllsearchorder_hijacking_technique",
+        "Hook_injection_technique",
+        "Minifast"
+      ],
+      "geo": [
+        "Egypt",
+        "Afghanistan",
+        "Ethiopia",
+        "Ireland",
+        "Africa",
+        "Israel",
+        "Germany",
+        "Iraq",
+        "India",
+        "Middle east"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Linux",
+        "macOS",
+        "curl",
+        "WinHTTP",
+        "crontab",
+        "Outlook",
+        "vscode",
+        "Microsoft Outlook",
+        "onlyoffice",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "aes-256-gcm",
+        "base64",
+        "aes",
+        "md5"
+      ],
+      "functions": [
+        "TaskFlow",
+        "Task-FullStack"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "A malicious npm package hidden three dependencies deep: the ulid-xyz delivery chain",
+      "summary": "The ulid-xyz npm package typosquats the ulidx library and functions as a cross-platform remote access trojan. Its postinstall hook launches a 467 KB bundled payload that connects over WebSocket to a hardcoded command server and installs persistence named MicrosoftSystem64 on Windows, macOS and Linux. The package is reached through a three-layer delivery chain, starting from ioredis-xyz, which mimics the real ioredis client, and passing through redis-type-xyz. The payload was added to the chain 19 minutes after the entry package was published, so a review at release time would have found nothing. The chain is planted in 28 purpose-built GitHub repositories, several of which are trading and fintech tools. SafeDep links the implant to a DPRK-linked cluster associated with FAMOUS CHOLLIMA, based on a shared name, persistence design, port and hosting provider.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Dprk",
+        "Germany"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "Redis",
+        "Node.js",
+        "systemd",
+        "Telegram",
+        "HuggingFace"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "base64"
+      ],
+      "links": [
+        "https://safedep.io/ulid-xyz-transitive-dependency-delivery-chain/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Anatomy of BraZetsu: How Cybercriminals Fuel the Underground Ecosystem",
+      "summary": "BraZetsu is a Python-based Windows malware framework that Group-IB attributes with high confidence to the Brazilian actor Exilware, acting as an Initial Access Broker toolkit. It establishes a persistent WebSocket connection to its command and control infrastructure and performs broad reconnaissance, including browser history extraction, banking window monitoring, and certificate and financial file collection. Its victims are concentrated in Brazil and across Iberian and Latin American organizations, spanning banking, ERP, SCADA, government, law enforcement, and healthcare sectors. Access to compromised hosts is sold through the Infect Marketplace, which allows customers to run secondary payloads. Defenders should monitor ERP and financial endpoints, watch for CNAB, PFX and P12 file searches, and restrict Pastebin access.",
+      "completeness": "High",
+      "threats": [
+        "Brazetsu_tool",
+        "Cnabhunter",
+        "Bancos",
+        "Ousaban",
+        "Putty_tool",
+        "Anydesk_tool",
+        "Agentev2",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Spain",
+        "Chile",
+        "Brazil",
+        "Spanish",
+        "Mexico",
+        "Brazilian",
+        "Argentina",
+        "Portugal",
+        "Paraguay",
+        "Latam",
+        "Latin american",
+        "Portuguese",
+        "United states"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 15,
+      "software": [
+        "Nuitka",
+        "Microsoft Edge",
+        "Pastebin",
+        "Google Chrome",
+        "Microsoft Edge",
+        "Vivaldi",
+        "Opera",
+        "PostgreSQL",
+        "MySQL",
+        "docker",
+        "DICOM",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "exhibit",
+        "base64"
+      ],
+      "functions": [
+        "get_server_config",
+        "_dec",
+        "get_active_window_title",
+        "check_active_bank_windows",
+        "get_browser_intel"
+      ],
+      "languages": [
+        "visual_basic",
+        "python",
+        "powershell"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/brazetsu-ai-enhanced-iab-marketplace/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "CaptiveCrunch Part 2: Burning More Threat Actor Infrastructure",
+      "summary": "UNC7005/STORM-2945 is a threat actor linked to the CaptiveCrunch campaign, and this follow-up report pivots on Google Threat Intelligence Group's findings to map more of its infrastructure. The actor runs device code phishing against Microsoft and WhatsApp accounts, distributes malware, and conducts OAuth phishing against academia, diplomatic, and NGO personnel in Ukraine, Western Europe, and the US. The researcher used shared IP addresses, urlscan and FOFA pivots, and reused Gmail registration and SOA records to identify additional phishing domains and C2 infrastructure, including a reused \"Mister Shell\" C2 panel. The report concludes that the activity is separate from but linked to the CaptiveCrunch campaign, which used compromised captive portals and router infrastructure. Defenders can use the reused registration emails and shared hosting as pivot points to confirm related infrastructure.",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique"
+      ],
+      "geo": [
+        "American",
+        "United states",
+        "Ukrainian",
+        "Ukraine"
+      ],
+      "software": [
+        "WhatsApp",
+        "gmail"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.tlp-unclear.com/posts/captivecrunch-part-2-burning-more-infrastructure/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-09-01",
+      "title": "Peer Pressure: Inside the Sality Botnet Disruption Operation",
+      "summary": "CrowdStrike, with international law enforcement, disrupted the Sality botnet, a decades-old P2P network operated by a criminal actor tracked as SALTY SPIDER. The operator stole an estimated ₽12.1M (about $150,000 USD) in cryptocurrency through the EggJagger payload family, and also used the botnet for several DDoS attacks. The disruption removed legitimate super peers from infected machines' peer lists and injected sinkhole entries, cutting off the operator's ability to send new tasking. Coordinated takedowns of URLs hosting payloads also prevented bots from downloading new files. Infected machines now beacon to CrowdStrike-operated sinkholes, so defenders can detect infections by reviewing UDP traffic to a specific lighthouse address. Existing malware on infected systems remains active and should be removed.",
+      "completeness": "Medium",
+      "threats": [
+        "Sality",
+        "Polymorphism_technique",
+        "Eggjagger",
+        "Clipjacking_technique",
+        "Zeus",
+        "Kelihos"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "exhibit"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/inside-sality-botnet-disruption-operation/"
+      ]
+    }
+  }
+]

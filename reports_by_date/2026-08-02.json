@@ -1,0 +1,110 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-02",
+      "title": "NullReceiver's Blank Crypto Transfers Solves the Challenges of EtherHiding",
+      "summary": "DPRK-linked npm malware uses a new blockchain command-and-control technique called NullReceiver, found in trojanized packages bianira-ui and fluid-type-ui, which are clones of legitimate Tailwind CSS plugins. The malware looks up an attacker wallet, reads the recipient address of its latest outbound transaction, and decodes a C2 IP address from that address's bytes. Unlike EtherHiding, it uses no smart contract and no transaction data, and each lookup uses a new, disposable recipient address. The researchers note that this makes it harder to detect than EtherHiding, which relies on the fixed, publicly known burn address. Defenders should monitor transaction recipient addresses as well as data fields, since the attacker wallet can be watched once identified.",
+      "completeness": "Low",
+      "threats": [
+        "Nullreceiver_technique",
+        "Etherhiding_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Dprk"
+      ],
+      "software": [
+        "Node.js"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/nullreceiver-dprk-c2-technique"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-02",
+      "title": "Havoc Malware: Techniques, Targets, and Threat Overview",
+      "summary": "Havoc is an open-source command and control framework, first released in 2022, that threat actors have increasingly adopted as an alternative to paid tools like Cobalt Strike and Brute Ratel. It offers cross-platform support, modules for command execution, process management, token manipulation and shellcode execution, and claims evasion of Microsoft Defender on updated Windows 11 systems. In January 2024, an undisclosed threat group used it in a campaign against a government organization, where the loader disabled Event Tracing for Windows and the payload was loaded without DOS and NT headers. The framework was also distributed through a malicious npm package. Defenders should monitor for these evasion techniques and for suspicious npm packages.",
+      "completeness": "Medium",
+      "threats": [
+        "Havoc",
+        "Cobalt_strike_tool",
+        "Brc4_tool",
+        "Supply_chain_technique",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 18,
+      "software": [
+        "Microsoft Defender",
+        "Event Tracing for Windows",
+        "Windows Service"
+      ],
+      "links": [
+        "https://cyberint.com/blog/dark-web/raccoon-stealer-malware-techniques-targets-and-threat-overview/",
+        "https://github.com/HavocFramework/Havoc/blob/main/client/src/Havoc/Demon/ConsoleInput.cc#L876-L883"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-02",
+      "title": "Atomic MacOS (AMOS) stealer infection",
+      "summary": "The AMOS (Atomic macOS) stealer was distributed through a fake \"macOS toolkit\" web page that told users to paste text into Terminal, which instead retrieved and installed the malware. The analyst's lab test showed the infection pulling a base64-encoded, gzip-compressed script that fetched Mach-O universal binaries and established persistence under user Library Application Support directories. Once running, the stealer sent staged HTTP POST requests to a command-and-control server, reporting stages such as credentials, browsers, messengers, and wallets. The malware also copied stolen data and system information into the /tmp directory before the user's account password was entered. Defenders should note that this lure relies on users running copy-pasted Terminal commands, so blocking or warning on such behavior is a practical control.",
+      "completeness": "Low",
+      "threats": [
+        "Amos_stealer"
+      ],
+      "software": [
+        "MacOS"
+      ],
+      "algorithms": [
+        "gzip",
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://isc.sans.edu/diary/33208"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-02",
+      "title": "Analysis of Phishing Email Attack Cases by the Larva-24009 attacker",
+      "summary": "Larva-24009 is a threat actor active since at least 2023 that targets domestic and foreign users, with the report covering attacks observed in 2026. The actor sends phishing emails with malicious LNK files disguised as document lures, often themed around hospital surveys, blockchain, project documents, or résumés, and these lures target enterprises. Running an LNK triggers obfuscated PowerShell that drops a decoy document and downloads further scripts, which establish persistence via scheduled tasks and deliver a backdoor. The actor then installs remote control tools such as QuasarRAT and UltraVNC, possibly also abusing RDP, and uses NirSoft utilities and custom keyloggers to steal stored credentials and user data. Defenders should treat email attachments and unknown executables with caution and keep endpoint protection updated.",
+      "completeness": "High",
+      "threats": [
+        "Quasar_rat",
+        "Ultra_vnc_tool",
+        "Notifier_malware"
+      ],
+      "geo": [
+        "South korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "task scheduler",
+        "Telegram",
+        "Microsoft OneDrive",
+        "Chrome"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/94785/"
+      ]
+    }
+  }
+]

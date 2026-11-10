@@ -1,0 +1,615 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "The Ultra Trail: From Viewer to Mailer",
+      "summary": "Researchers traced a tech-support scam using the remote-access tool UltraViewer to the bulk-mailing application UltraMailer and a long-running QuickBooks phishing campaign that used over 350 lookalike domains. The phishing emails embedded tracking pixels served through chanret[.]com, which exposed recipient information and directed victims to call scammers seeking QuickBooks credentials. When the actor briefly moved to bulk-mail provider Mail250, the account was suspended after reporting and the campaign paused, but it resumed on the UltraMailer-associated tracker, and UltraMailer has no abuse-reporting mechanism. Trojanized installers of UltraMailer and UltraViewer were also found, with one UltraMailer installer carrying njRAT and one UltraViewer installer tied to Win32.Comet.A. The researchers found no evidence that the developers of either tool participated in the abuse. Defenders should consider restricting UltraViewer where there is no business need.",
+      "completeness": "Low",
+      "threats": [
+        "Tech-support-scam_kit_tool",
+        "Ultraviewer_tool",
+        "Njrat",
+        "Help_tds_tool"
+      ],
+      "geo": [
+        "Vietnam",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "UltraMailer",
+        "QuickBooks"
+      ],
+      "algorithms": [
+        "sha1",
+        "base64",
+        "sha256"
+      ],
+      "links": [
+        "https://www.infoblox.com/blog/threat-intelligence/the-ultra-trail-from-viewer-to-mailer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Inside Coruna and DarkSword Chains: From Web Lures to iOS Exploitation",
+      "summary": "The Coruna iOS exploit framework, first analyzed by GTIG, now deploys two chains depending on iOS version: the legacy Coruna framework for iOS 17.2.1 and earlier, and a DarkSword-derived chain for later builds. Delivery relies on drive-by pages with hidden iframes, lure sites, and compromised legitimate sites, including a backdoored npm package, requiring no user prompts or installs. Recovered native modules reach beyond the browser, with kernel memory access, AMFI state changes, encrypted C2 with certificate validation disabled, and log deletion. Defenders should patch iOS promptly, treat \"Open in Safari\" prompts as suspicious, and hunt on the shared runtime and code artifacts rather than lure content or campaign strings.",
+      "completeness": "High",
+      "threats": [
+        "Coruna_tool",
+        "Darksword_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Brazilian",
+        "Nigeria",
+        "Indonesia",
+        "Brazil"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 6,
+      "software": [
+        "TikTok",
+        "ikTok e",
+        "Telegram",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "exhibit",
+        "xor",
+        "chacha20"
+      ],
+      "functions": [
+        "buildGuideUrl",
+        "showLightGuideDirect",
+        "buildSafariUrl"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://zimperium.com/blog/inside-coruna-and-darksword-chains-from-web-lures-to-ios-exploitation",
+        "https://github.com/Zimperium/IOC/tree/master/2026-10-CorunaDarkSword"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "DPRK's Contagious Interview Meets ErrTraffic",
+      "summary": "North Korean (DPRK) actors are running multiple Contagious Interview campaigns that share techniques and infrastructure, and the report finds them using ErrTraffic, a ClickFix kit sold as a service, to deliver their loader. Victims are reached through fake recruiters asking them to run a GitHub repo during an interview, fake video-call \"camera fix\" commands, compromised WordPress sites, and fake crypto company sites. All routes lead to a Node.js-based loader that fetches its command-and-control address from a Polygon smart contract, then runs an in-memory RAT. The RAT deploys a keylogger, a Chrome App-Bound Encryption bypass DLL to steal saved passwords and cookies, and remote-control tooling. Defenders should note that ErrTraffic reflects a shift from targeted lures to untargeted traffic from compromised small-business sites.",
+      "completeness": "High",
+      "threats": [
+        "Errtraffic",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Winrm_tool",
+        "Beavertail",
+        "Ottercookie",
+        "Jadesnow",
+        "Invisibleferret",
+        "Clearfake"
+      ],
+      "geo": [
+        "Dprk",
+        "North korean"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "WordPress",
+        "macOS",
+        "curl",
+        "Chrome",
+        "Linux",
+        "Vercel",
+        "Cloudflare",
+        "Visual Studio",
+        "VScode",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "rc4",
+        "zip"
+      ],
+      "functions": [
+        "getVercelCommand",
+        "writeFileSync",
+        "Windows",
+        "Win32",
+        "Get-Clipboard",
+        "setInterval",
+        "readClipboard"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://newtonpaul.com/blog/dprk-contagious-interview-polygon-loader/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Polymarket Breach Alert: Wallet-Draining Code Found in a Third-Party Script",
+      "summary": "A third-party performance-monitoring script loaded on Polymarket's site, served from a DebugBear CDN URL, contains wallet-draining code. The payload searches the logged-in user's browser session for the trading client and signer, inspects portfolio balances, and attempts to sell positions or transfer assets to a hard-coded fallback recipient. Polymarket's production build metadata records the removal of the DebugBear RUM script, though the exact containment time is not verified. A supplied screenshot shows about $2.19 million at the fallback recipient address, but this is not a verified total of stolen funds. The number of affected users, total losses, and initial compromise method remain unresolved. Defenders should preserve delivery evidence, remove unnecessary third-party scripts from signing flows, and use Subresource Integrity with a restrictive Content Security Policy.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "createOrder",
+        "createMarketOrder"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/polymarket-breach-alert-wallet-draining-code-found-in-a-third-party-script/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "MadApe: The Code That Opens the Door",
+      "summary": "Group-IB identified MadApe, a previously undocumented phishing kit that abuses Microsoft Device Code authentication to access Microsoft 365 accounts without collecting passwords on phishing pages. The campaign uses business-themed PDF lures, intermediary redirect pages, and human-verification gates before serving a page that displays a dynamically supplied device code. Victims are directed to Microsoft's legitimate Device Login portal, where authentication occurs on trusted infrastructure. Templates impersonate SharePoint, OneDrive, Teams, Adobe Acrobat, DocuSign, and Microsoft sign-in, with lures in at least nine languages. Group-IB links 155 domains to one operator, with 97 hosting phishing components, and advises monitoring Device Code sign-ins and restricting the flow through Conditional Access.",
+      "completeness": "High",
+      "threats": [
+        "Madape",
+        "Device_code_phishing_technique",
+        "Credential_harvesting_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Israel"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft 365",
+        "SharePoint",
+        "Microsoft SharePoint",
+        "Microsoft Teams",
+        "Adobe Acrobat",
+        "DocuSign",
+        "cure Documen",
+        "ified additi",
+        "Cloudflare",
+        "Microsoft Entra",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha1"
+      ],
+      "functions": [
+        "cc",
+        "ne"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.group-ib.com/blog/madape-microsoft-device-code-phishing-kit/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "VAPOR PANDA Uses AI-Driven ARTEX to Scale a Global Espionage Campaign",
+      "summary": "VAPOR PANDA, a China-nexus adversary, used the ARTEX agentic AI framework with the DeepSeek LLM and a second commercial LLM to run parallel intrusions against high-value targets, beginning October 17, 2026. Targets included foreign ministries in Latin America, Europe, Asia, and the Middle East, U.S. semiconductor, defense, and think tank organizations, and telecommunications providers. A human operator directed multiple AI agents at decision points, who pursued several attack paths at once across web, cloud, container, Active Directory, and mail and VPN systems. The agents also checked for hosts lacking the CrowdStrike Falcon sensor so follow-on activity could focus on unprotected machines. The report recommends rotating keys and credentials after suspected exposure, enforcing SAML validation, hunting for ARTEX markers, and deploying EDR across the environment.",
+      "completeness": "High",
+      "threats": [
+        "Artex_tool",
+        "Bloodalchemy",
+        "Password_spray_technique",
+        "Chisel_tool"
+      ],
+      "geo": [
+        "Belgium",
+        "America",
+        "China",
+        "Latin america",
+        "Philippines",
+        "Asia",
+        "Middle east",
+        "Oceania"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 16,
+      "software": [
+        "DeepSeek",
+        "Active Directory",
+        "SoftEther"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Unknown APT uses NetamLoader to attack a Win10 OS customized for governments in Asia",
+      "summary": "An unknown APT, not attributed to any known group, uses a multi-stage framework dubbed NetamLoader that appears to be a supply-chain attack hidden in a CAB archive placed among Windows update packages. The infection chain abuses AppDomainManager injection and a fabricated fabric.config to trigger a BinaryFormatter deserialization flaw, which then loads layered XAML and .NET payloads. The malware bypasses AMSI by patching its scan function, disables CLR ETW logging, and moves its core payload into a remote dllhost.exe process to evade EDR. It also deletes logs, Prefetch files and registry evidence, and it beacons to a Cloudflare-fronted C2 with long polling delays. Based on a single victim in Asia, the targets are inferred to be government entities running a customized government-only Windows build.",
+      "completeness": "High",
+      "threats": [
+        "Netamloader",
+        "Supply_chain_technique",
+        "Zapchast"
+      ],
+      "geo": [
+        "Asian",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "inHTTP AP",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "hmac",
+        "cbc",
+        "base64",
+        "aes",
+        "zip",
+        "aes-cbc",
+        "sha256"
+      ],
+      "functions": [
+        "Scan",
+        "GetExtendedUpdateInfoHandler",
+        "Impersonate"
+      ],
+      "links": [
+        "https://securelist.com/netamloader/121676/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "SolanaCry: Malware in the wild steals crypto wallets from web-browsing AI agents",
+      "summary": "A malicious GitHub repository, SolanaUpdateTools/solana-starter-kit, was found to exploit AI coding agents by appearing as a top search result for a Solana starter kit. Its README instructs users to run a PowerShell one-liner that fetches and runs a payload in memory without touching disk. The payload is a dropper that installs genuine, signed NetSupport Manager remote-access components with an attacker-supplied configuration that hides user-facing controls and establishes persistence at login. The operator reuses infrastructure and an install command from an earlier campaign that lured traders, showing established malware groups are adapting to target developers via their agents. The main takeaway for defenders is that security controls must monitor what agents read and execute, since developers may never see the instructions driving agent actions.",
+      "completeness": "Medium",
+      "threats": [
+        "Netsupportmanager_rat",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows registry",
+        "TradingView",
+        "curl",
+        "PHP2Shell"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "Set-ItemProperty",
+        "Remove-ItemProperty",
+        "Remove-Item"
+      ],
+      "languages": [
+        "typescript",
+        "php",
+        "powershell"
+      ],
+      "links": [
+        "https://www.air.security/blog-posts/solanacry"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Fake “View & Sign” and Adobe Acrobat Lures Deliver Attacker-Configured ScreenConnect Clients",
+      "summary": "Fake \"View & Sign\" and Adobe Acrobat lure pages delivered genuine, digitally signed ConnectWise ScreenConnect installers configured to connect to attacker-controlled ScreenConnect Cloud tenants. The installers were not trojanized, so the risk comes from their preconfigured remote-access settings. If installed, they could give an external operator persistent interactive access through a LocalSystem service. The page cluster profiled visitors, sent their details to Telegram bots, applied ISP-based download restrictions, and automatically downloaded tenant-specific clients. The shared tooling suggests a common delivery technique, but the report does not establish whether one operator or several are involved. Defenders should focus on identifying unapproved ScreenConnect tenants and services rather than relying on file hashes alone.",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 5,
+      "software": [
+        "be Acrobat Lure",
+        "Adobe Acrobat",
+        "Telegram",
+        "Cloudflare",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.cloudsek.com/blog/fake-adobe-acrobat-lures-deliver-screenconnect-remote-access-clients"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Threat Researcher’s Notebook: How Attackers Redirect Crypto Payments",
+      "summary": "Clipbanker malware replaces copied cryptocurrency wallet addresses with attacker-controlled ones, and ReversingLabs examined two families, AnimateClipper and Efimer, that do this. AnimateClipper, also called ZigClipper, matches wallet patterns across cryptocurrency types and is typically delivered through fake software installs, ClickFix, and alongside infostealers. Efimer goes further by matching the first or last one to three digits of the replacement address, making mismatches harder to spot, and it also exfiltrates clipboard data and screenshots. Efimer evades analysis, communicates with its C2 over TOR, and generates new builds hourly. Both families became inactive shortly after the research concluded. Defenders should verify wallet addresses carefully before sending funds, since cryptocurrency transactions are irreversible, and remain cautious about social engineering lures.",
+      "completeness": "High",
+      "threats": [
+        "Clipbanker",
+        "Animateclipper",
+        "Efimer",
+        "Zigclipper",
+        "Clickfix_technique",
+        "Pyarmor_tool",
+        "Cryptobandits",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "PyInstallers"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "monero"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "php",
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://www.reversinglabs.com/blog/threat-researchers-notebook-how-attackers-redirect-crypto-payments"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "NIK C2: The new AI-enabled command-and-control framework",
+      "summary": "NIK C2 is a new AI-integrated command-and-control framework observed by Cisco Talos, built around a Go-based 64-bit Windows implant. The implant offers credential dumping, keystroke streaming, and wallet and browser data theft, and it embeds an OpenAI API client that lets operators send prompts through the victim's machine. If the actor supplies no API key, the implant uses the victim's OPENAI_API_KEY environment variable, so the victim is billed and the actor stays hidden. The framework can also deploy a screen-locking ransomware module that demands payment in Bitcoin or USDT. Talos notes that combining collection and AI analysis in one session removes the offline delays that once gave defenders detection windows, so continuous behavioral monitoring is needed.",
+      "completeness": "High",
+      "threats": [
+        "Nik_c2_tool",
+        "Credential_dumping_technique",
+        "Process_hollowing_technique",
+        "Hvnc_tool",
+        "Com_hijacking_technique",
+        "Uac_bypass_technique",
+        "Lolbin_technique",
+        "Amsi_bypass_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "Windows remote access",
+        "Linux",
+        "gpt-4",
+        "GPT4",
+        "Discord",
+        "Firefox",
+        "bcdedit",
+        "Chrome",
+        "Opera",
+        "have more..."
+      ],
+      "wallets": [
+        "bitcoincore",
+        "atomicwallet",
+        "electrum",
+        "metamask",
+        "coinbase",
+        "brave_wallet"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "aes",
+        "base64"
+      ],
+      "functions": [
+        "Get-Process"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "links": [
+        "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2026/10"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Polymarket wallet drainer served from DebugBear's script CDN",
+      "summary": "A malicious version of DebugBear's real-user monitoring script, cdn.debugbear.com's C7xcKKrjUnXK.js, was loaded by Polymarket on 29 October 2026 and replaced with a wallet drainer. The drainer borrowed Polymarket's own trading client from the page and signed transfers through Polymarket's relayer, so it needed no keys of its own. It targeted only logged-in Polymarket users, moving their cash and positions to a single Polygon wallet within about 52 minutes. Polymarket removed the script at 17:59 UTC, and the recipient forwarded roughly 28.6 million POL onward. Defenders should note that the drainer stayed within Polymarket's Content Security Policy, so CSP alone did not block it.",
+      "completeness": "Low",
+      "geo": [
+        "Pol"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare",
+        "Ubuntu"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "functions": [
+        "getInitialData",
+        "createOrder",
+        "createMarketOrder"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://ohey.ca/research/polymarket-debugbear-wallet-drainer/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Load/Mine: A Hugging Face Malware Campaign Returns After Takedown",
+      "summary": "Pluto Research tracked a Hugging Face malware campaign that distributes cryptomining and backdoor payloads through repositories posing as small Qwen2 test models. The malicious Python runs at load time when a model is loaded with trust_remote_code=True, so no poisoned weights are needed. The campaign targets self-hosted AI infrastructure such as Xinference and GPUStack, along with rented GPU machines and shared research notebooks. Its operator returned within days of a takedown with a second wave of 19 repositories, using reverse shells in place of the earlier SSH key. Standard scanners returned clean results because none of them analyze what the Python code does. Defenders should review custom model code before enabling the flag and treat model code like any other software dependency.",
+      "completeness": "High",
+      "threats": [
+        "Kryptex_tool",
+        "Upx_tool",
+        "Supply_chain_technique",
+        "Gsocket_tool",
+        "Xmrig_miner",
+        "Gs-netcat"
+      ],
+      "geo": [
+        "China",
+        "Chinese"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Hugging Face",
+        "Xinference",
+        "llama",
+        "Alibaba Cloud",
+        "Cloudflare",
+        "huggingface",
+        "trycloudflare"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "ed25519",
+        "sha256",
+        "base32"
+      ],
+      "functions": [
+        "get_class_in_module",
+        "exec_module",
+        "getattr",
+        "from_pretrained",
+        "_boot",
+        "_run",
+        "_margs"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://pluto.security/blog/hugging-face-malware-campaign-load-mine/",
+        "https://github.com/huggingface/transformers/blob/main/SECURITY.md",
+        "https://github.com/huggingface/transformers/blob/main/src/transformers/dynamic\\_module\\_utils.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "Kairos Hold'em: Dissecting a New Go-Based DDoS Botnet",
+      "summary": "Kairos is a previously undocumented Go-based DDoS bot for Linux that turns compromised machines into attack nodes in a botnet. Attackers gained access through Telnet using default root credentials with an empty password, then staged the payload with a multi-fallback shell dropper. On command, the bot opens hundreds to thousands of TCP connections to a chosen target and keeps them alive with minimal traffic, slowly exhausting the victim's service. The analyzed builds appear to be one codebase recompiled per C2 server, so code-based signatures remain stable while C2 addresses rotate. Defenders should disable Telnet, replace default credentials, block the known C2 endpoints, and alert on the plaintext REGISTER beacon.",
+      "completeness": "Medium",
+      "threats": [
+        "Kairos",
+        "Synflood_technique",
+        "Mirai"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 7,
+      "software": [
+        "curl",
+        "busybox",
+        "linux",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "links": [
+        "https://www.nozominetworks.com/blog/kairos-holdem-dissecting-a-new-go-based-ddos-botnet"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-29",
+      "title": "AI used in Aur0ra ransomware testing and execution",
+      "completeness": "Medium",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Aurora_ransomware",
+        "Process_injection_technique",
+        "Sharpshares_tool",
+        "Password_spray_technique",
+        "Kerberoasting_technique",
+        "Coerce_plus_tool",
+        "Nmap_tool",
+        "Netexec_tool",
+        "Bloodhound_tool",
+        "Petitpotam_tool",
+        "Printerbug_tool",
+        "Impacket_tool",
+        "Certipy_tool",
+        "Chisel_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Anthropic",
+        "Linux",
+        "Claude"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.sophos.com/en-us/blog/ai-used-in-aur0ra-ransomware-testing-and-execution"
+      ]
+    }
+  }
+]

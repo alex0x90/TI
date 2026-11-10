@@ -1,0 +1,307 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "Fake Microsoft security scans trick victims into uninstalling their antivirus",
+      "summary": "Fake \"SysScan\" websites with Microsoft branding claim that third-party antivirus is causing serious problems and tell victims to uninstall it, as the first step in a refund scam. Eleven such sites were found on a single host, all running a convincing but fabricated security scan that always returns a failing score. The scan reads real browser data but attaches invented findings, and it can never produce a passing result. After the scan, victims are asked for personal, banking, cryptocurrency, and remote-access details, which are sent to a Telegram chat. Victims are then told a refund manager will call, and the sites use a looping video to keep them waiting. Defenders should note that Microsoft still supports third-party antivirus and that legitimate refunds never require uninstalling security tools, remote access, or cryptocurrency.",
+      "completeness": "Low",
+      "threats": [
+        "Sysscan"
+      ],
+      "software": [
+        "WebRTC",
+        "Microsoft Defender",
+        "Telegram"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/08/fake-microsoft-security-scans-trick-victims-into-uninstalling-their-antivirus"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "Tracking PavinLoader across ClickFix and fake download campaigns",
+      "summary": "PavinLoader is a multi-stage .NET loader tracked by Malwarebytes across RenPy malware, ClickFix, and fake software download campaigns. It delivers trojanized .NET DLLs (such as DotNetZip, Nancy, and OpenXML) through MSI or Inno Setup installers that abuse MSBuild, .csproj, and .bat files. The loader uses EtherHiding, retrieving its C2 domain from a blockchain, to fetch later stages, which in the RenPy case led to Amatera Stealer. Victims are reached through fake CAPTCHAs, fake software, and malicious games. Defenders should watch for MSBuild launched with .csproj or .bat files and for EtherHiding-related blockchain RPC traffic, though the report does not confirm PavinLoader is sold as a service.",
+      "completeness": "High",
+      "threats": [
+        "Pavinloader",
+        "Clickfix_technique",
+        "Etherhiding_technique",
+        "Amatera_stealer",
+        "Gollopdevest",
+        "Junk_code_technique",
+        "Heavens_gate_technique",
+        "Hijackloader",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Belarusian",
+        "Ukrainian",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "RenPy",
+        "Dropbox",
+        "xen",
+        "virtualbox",
+        "qemu"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor",
+        "base64",
+        "hmac"
+      ],
+      "functions": [
+        "GetDelegateForFunctionPointer",
+        "OpenMutex"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/08/tracking-pavinloader-across-clickfix-and-fake-download-campaigns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "A ClickFix cluster: Observed activity from recent ClickFix campaigns",
+      "summary": "The Field Effect team observed three related ClickFix campaigns from June to July 2026 that used a fake verification prompt to copy malicious commands into victims' clipboards. The campaigns shared DLL sideloading via legitimate signed programs, consistent ProgramData file naming, hidden folders created with attrib, and C2 addresses stored in dead drops on the Digital Point web forum. One actor phoned victims and directed them to compromised WordPress sites hosting the lures. Post-compromise activity included Active Directory and domain trust discovery, and the overlap with previously reported BlueVoyant \"Lorem Ipsum\" activity and the Vanilla Tempest Supper backdoor suggests a link to ransomware precursor operations. Defenders should restrict PowerShell, CMD, and Terminal use for standard users, train staff to distrust copy-and-paste verification steps, and monitor for unusual command execution.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Clickonce_tool",
+        "Nltest_tool",
+        "Supper_backdoor",
+        "Lorem_ipsum_loader",
+        "Lorem_ipsum",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 10,
+      "software": [
+        "WordPress",
+        "Bitwarden",
+        "Active Directory"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://fieldeffect.com/blog/clickfix-cluster-observed-activity-recent-campaigns"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "Cato CTRL Insights: When Trust Becomes the Payload in a Fake Codex ClickFix Campaign",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Amos_stealer"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "OpenAI",
+        "Linux",
+        "ChatGPT",
+        "Claude",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes",
+        "gzip"
+      ],
+      "links": [
+        "https://www.catonetworks.com/blog/cato-ctrl-when-trust-becomes-payload-in-fake-codex-clickfix-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "Ten Minutes to Containment: How Agentic MXDR Scoped a Fake Claude Desktop Intrusion",
+      "summary": "A single masqueraded scheduled task alert led CyberProof threat hunters to run their Agentic MXDR threat hunting agent, which executed a correlated, estate-wide sweep in about ten minutes. The activity matched the FakeAgent malvertising campaign, documented by Huntress, which uses spoofed Claude Desktop installers distributed via Bing ads and claude.ai artifact pages to deliver SectopRAT. The intrusion involved a trojanized ClaudeDesktop.exe, DLL sideloading of a malicious libcef.dll through a signed JetBrains helper, Microsoft Defender exclusions, and scheduled-task persistence. C2 retrieval used EtherHiding, which pulls encrypted parameters from Ethereum smart contracts rather than conventional C2 domains. Analysts contained the host by isolating it, resetting credentials, removing persistence, and reimaging the device.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Sectop_rat",
+        "Vmprotect_tool",
+        "Etherhiding_technique",
+        "Spear-phishing_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "Claude",
+        "Microsoft Defender",
+        "Chromium",
+        "Microsoft Edge",
+        "Docker",
+        "Anthropic",
+        "JetBrains",
+        "claude-code",
+        "chrome",
+        "firefox",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/ten-minutes-to-containment-how-agentic-mxdr-scoped-a-fake-claude-desktop-intrusion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "Apollo Cloud Hit in UNC6671 Vishing Breach via Fake Passkey Migration",
+      "summary": "UNC6671, assessed as the rebranded continuation of the BlackFile extortion operation, used vishing calls to personal phones spoofing corporate helpdesk caller IDs to lure employees into a fake passkey migration. The victims were directed to lookalike domains running an adversary-in-the-middle reverse proxy that relayed credentials and live MFA responses, enabling attacker enrollment and access. Apollo Global Management confirmed unauthorized cloud access from 6 to 10 July 2026 that exposed names, dates of birth, addresses and Social Security numbers, but discovered it only on 12 August. The intrusion left no malware, and the actor deleted security notifications and MFA change records, so identity and SaaS audit logs are the only usable evidence. Defenders should enforce phishing-resistant MFA, block the known domains with a naming-pattern rule, and hunt for abandoned MFA challenges followed by factor enrollment.",
+      "completeness": "Medium",
+      "threats": [
+        "Aitm_technique",
+        "Redact",
+        "Spear-phishing_technique",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "California"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 9,
+      "software": [
+        "Okta",
+        "buntu; L",
+        "inux x8",
+        "ta.android.aut",
+        "Windows Hello"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/apollo-cloud-hit-in-unc-6671-vishing-breach-via-fake-passkey-migration"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "Fake GTA 6 Extended Look and demo sites deliver an infostealer",
+      "summary": "Fake Rockstar-themed sites impersonating GTA 6 demo and download pages are distributing gta6_installer.exe, which is actually the Vidar infostealer rather than a game or demo. The sites copy Rockstar's genuine August 27 Extended Look promotion, and their \"Play Now\" links can lead visitors to the malicious executable. The stealer targets saved passwords, session cookies, browsing data, and credentials across 19 browsers, and it reuses legitimate browser binaries to access protected data. Because stolen sessions can be reused without a login, changing passwords and signing out of all sessions are important after an infection. Defenders should note that the 1.1 MB file size is far too small for a modern AAA game, and that Vidar retrieves its command-and-control addresses from profiles on legitimate services such as Telegram and Steam.",
+      "completeness": "Medium",
+      "threats": [
+        "Vidar_stealer",
+        "Dead_drop_technique"
+      ],
+      "software": [
+        "Discord",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Vivaldi",
+        "Roblox",
+        "Steam",
+        "Telegram"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/08/fake-gta-6-extended-look-and-demo-sites-deliver-an-infostealer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "arrayref Supply Chain Attack: A One-Line Build Dependency Ran a Backdoor During cargo build",
+      "summary": "arrayref 0.3.10 was a hijacked Rust crate release that added one dependency, the typosquatted proc-macro1, whose build script downloaded and ran a backdoor during cargo build without any call to the crate's code. The malicious releases were live for roughly 86 to 107 minutes on August 20, 2026, and were deleted rather than patched, so developers should pin arrayref to 0.3.9 or earlier. Any developer workstation or CI runner that built an affected project should be treated as compromised, with credentials rotated and artifacts rebuilt. Static checks failed because the publishing account was legitimate, the source was unchanged, and the manifest diff was a single line. Defenders should rely on runtime telemetry from build hosts, since lockfiles show exposure but not whether the payload ran.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique",
+        "Typosquatting_technique",
+        "Arone",
+        "Aronenaos",
+        "Tinymember",
+        "Launchagents_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "arrayref",
+        "Chrome",
+        "Linux",
+        "macOS",
+        "Unix",
+        "systemd"
+      ],
+      "crypto": [
+        "ethereum",
+        "solana"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "aes-128-gcm",
+        "blake3",
+        "base64"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "links": [
+        "https://www.upwind.io/feed/arrayref-supply-chain-attack-a-one-line-build-dependency-ran-a-backdoor-during-cargo-build"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-08-24",
+      "title": "Extended Rapid Response: Zimperium Identifies RecruitTrap Recruit Scams are Targeting Enterprise Credentials on Mobile",
+      "summary": "Threat actors are running RecruitTrap, a recruitment-themed phishing campaign that impersonates real HR staff at well-known companies using interview scheduling lures. On mobile devices, the attack replaces the desktop browser-in-the-browser popup with a full-screen fake login page that lacks visible URL bars, making it hard for victims to spot. The phishing kit screens inputs and rejects personal email domains, so it targets corporate credentials and, once inside, grants access to OAuth tokens, internal communications, and cloud apps. Zimperium's one-year telemetry shows persistent hosting on a small set of cloud and parking providers, and lookalike domains often went unflagged by public feeds for days, months, or even years. The report recommends securing corporate identities at the mobile endpoint, since desktop-centric web gateways may miss these attacks.",
+      "completeness": "Low",
+      "threats": [
+        "Bitm_technique",
+        "Credential_harvesting_technique"
+      ],
+      "geo": [
+        "Emirates"
+      ],
+      "software": [
+        "chrome"
+      ],
+      "links": [
+        "https://zimperium.com/blog/extended-rapid-response-zimperium-identifies-recruittrap-recruit-scams-are-targeting-enterprise-credentials-on-mobile",
+        "https://github.com/Zimperium/IOC/tree/master/2026-08-RecruitTrap"
+      ]
+    }
+  }
+]

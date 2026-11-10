@@ -1,0 +1,574 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "Earliest Known PolinRider Malware Found in 2025 npm Packages",
+      "summary": "The 2025 npm packages from one maintainer, including itsa-utils@1.4.2, carried an early PolinRider payload that was published on May 4, 2025, eight months before the earliest documented victims. The malware was obfuscated JavaScript appended after long runs of whitespace, and it fetched stages from blockchain transaction calldata. The chain delivered a Node.js RAT that gave attackers interactive shell access and a Python stealer that targeted browsers, crypto wallets, and developer credentials on Windows, Linux, and macOS. The 2025 sample lacked PolinRider's self-spreading behavior, which appeared in the same maintainer's GitHub repositories in 2026 through force-pushes. Defenders should hunt for the affected package versions, the marker strings, and Node.js processes that query blockchain explorers before spawning node -e.",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider",
+        "Jadesnow",
+        "Invisibleferret",
+        "Dead_drop_technique",
+        "Beavertail",
+        "Etherhiding_technique"
+      ],
+      "geo": [
+        "North korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "macOS",
+        "Telegram",
+        "Node.js",
+        "MySQL",
+        "Chrome",
+        "Chromium",
+        "Opera",
+        "Opera GX",
+        "Vivaldi",
+        "have more..."
+      ],
+      "wallets": [
+        "tron",
+        "metamask",
+        "coinbase",
+        "tronlink",
+        "keplr",
+        "rabby",
+        "exodus_wallet",
+        "safepal",
+        "atomicwallet",
+        "electrum",
+        "have more..."
+      ],
+      "crypto": [
+        "ethereum",
+        "aptos",
+        "binance",
+        "solana",
+        "bitcoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "aes",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "getAddressHistory",
+        "getUpdates",
+        "getFile"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/polinrider-malware-found-in-2025-npm-packages"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "Beware of PureRAT malware distributed via emails impersonating complaints about damaged deliveries",
+      "summary": "Phishing emails impersonating shopping mall or delivery companies, with subjects like damaged-goods disputes, deliver the PureRAT malware. The emails were sent through Google AppSheet's notification feature, so they passed SPF, DKIM, and DMARC checks and evaded email security filters. Recipients are lured to a fake video page that uses HTML smuggling to download a ZIP file containing a signed Microsoft Word executable that side-loads a malicious DLL. The infection chain runs through a Python loader that patches AMSI and hosts the .NET runtime, so the final payload executes in memory without leaving files on disk. PureRAT targets cryptocurrency wallet extensions in browsers, desktop wallets, and Telegram Desktop accounts. Defenders should treat unsolicited links about damaged deliveries with caution and not rely on email authentication results alone.",
+      "completeness": "High",
+      "threats": [
+        "Purerat",
+        "Smishing_technique",
+        "Spear-phishing_technique",
+        "Dll_sideloading_technique",
+        "Blob_url_obfuscation_technique",
+        "Smuggling_technique",
+        "Amsi_bypass_technique",
+        "Purecrypter"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Office",
+        "Gmail",
+        "Microsoft Word",
+        "WinRAR",
+        "Task Scheduler",
+        "NET Reactor",
+        "Chrome",
+        "Bitcoin-Qt",
+        "Litecoin-Qt",
+        "Ledger Live",
+        "have more..."
+      ],
+      "wallets": [
+        "tronlink",
+        "metamask",
+        "guarda_wallet",
+        "exodus_wallet",
+        "bitkeep_wallet",
+        "bitget_wallet",
+        "coinbase",
+        "keplr",
+        "ronin_wallet",
+        "braavos_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "solana",
+        "cardano"
+      ],
+      "algorithms": [
+        "rc4",
+        "gzip",
+        "md5",
+        "xor",
+        "zip",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "GetWindowText"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://alyacofficialblog.tistory.com/5790"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "Official Claude Code Extension Compromise: Security Advisory",
+      "summary": "A backdoored bundle of the official Claude Code VS Code extension, distributed through the Cursor Marketplace in versions 2.1.312 and 2.1.313, was found by Phorion, and Cursor has since removed those versions. The injected code runs as soon as Node loads the extension file, without any user interaction. It adds an attacker-controlled SSH key to authorized_keys, attempts to enable Remote Login, and opens a reverse SSH tunnel to an external server for long-term interactive access. Persistence is established through a macOS LaunchAgent disguised as a com.apple.* plist, along with Linux and Windows equivalents. A macOS check bug means Remote Login is often not enabled, which limits inbound access, but the keys and persistence still get dropped. The payload also sends a host reconnaissance beacon that lists the names of environment variables matching credential-related patterns. Defenders should check for the affected versions, watch for IDE helper processes modifying SSH files, and remove all dropped artifacts and rotate exposed credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Launchagents_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "Open VSX",
+        "macOS",
+        "Linux",
+        "VSCode",
+        "Anthropic",
+        "Node.js",
+        "sudo",
+        "OpenSSH",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "ed25519",
+        "sha256"
+      ],
+      "functions": [
+        "det",
+        "ex",
+        "setTimeout"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "links": [
+        "https://phorion.io/blog/offical-claude-code-vsx-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "Trojanized Claude Code Extension Plants an SSH Backdoor",
+      "summary": "A malicious version 2.1.313 of the Claude Code extension, published to the Cursor Marketplace on October 29, 2026, impersonated Anthropic's official extension. The malicious code is a 66-line loader prepended to the legitimate extension.js bundle, so it runs when VS Code loads the extension without requiring any Claude conversation. The loader adds an attacker-controlled SSH key labeled svc-telemetry, attempts to enable SSH services, and opens a reverse SSH tunnel to a remote server. It also installs platform-specific persistence and sends host reconnaissance data, including environment variable names matching credential keywords, in beacons. Cursor later said version 2.1.312 was also malicious and that the compromise likely extended beyond one extension. Defenders should search for the listed artifacts, review authorized_keys and persistence mechanisms, and treat affected hosts as compromised.",
+      "completeness": "Medium",
+      "threats": [
+        "Launchagents_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "VSCode",
+        "anthropic",
+        "claude-code",
+        "Open-VSX",
+        "Open VSX",
+        "Node.js",
+        "Visual Studio",
+        "Visual Studio Code",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/trojanized-claude-code-extension-plants-persistent-ssh-backdoor"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
+      "summary": "Microsoft Threat Intelligence describes two human-operated intrusions that began with Microsoft Teams messages and calls impersonating IT or help desk staff, tricking users into granting remote access via Quick Assist. Attackers then staged portable Python, Bun, or Java runtimes and assessed Active Directory Certificate Services for certificate-based authentication paths. In Case 1, they abused an ESC1-vulnerable certificate template to obtain privileged certificates and performed DCSync, but an identity excluded from automated containment was later used for data exfiltration. In Case 2, they used PetitPotam and ESC8 NTLM relay to obtain a domain-controller certificate and authenticate via PKINIT, and the attack stopped after the customer isolated the workstation. The takeaway for defenders is that misconfigured AD CS and social-engineered remote sessions can create durable privileged access, so exclusions from containment should be treated as risk decisions.",
+      "completeness": "Medium",
+      "threats": [
+        "Dcsync_technique",
+        "Petitpotam_tool",
+        "Rclone_tool",
+        "Spear-phishing_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 4,
+      "software": [
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Teams",
+        "Active Directory",
+        "Office 365"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "Teams"
+      ],
+      "languages": [
+        "java",
+        "javascript",
+        "python"
+      ],
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "The Shrinking Exploit Window: How AI Speeds Up the Hunt for Old Bugs",
+      "summary": "The report argues that the window between public disclosure and weaponized exploitation has collapsed, using PHP2Shell, Node2Shell, and related 2026 incidents as examples. PHP2Shell involves two CVSS 9.2 PHP flaws whose vulnerable code path spans at least 14 years, and researchers used AI tooling to find them. Technical details leaked a day before coordinated patch distribution, and reliable shell execution was documented on 24 October, leading CISA to add both CVEs to its KEV catalog. Node2Shell had a fix merged upstream in February but no patched Node.js build until 21 October, followed by a public proof-of-concept within a day. The authors stress retiring \"no known exploit\" as a risk metric, cataloging nested runtimes, hunting behavioral telemetry, and setting mitigation SLAs measured in hours.",
+      "completeness": "High",
+      "threats": [
+        "P2pshell_vuln",
+        "Node2shell_vuln",
+        "Motw_bypass_technique",
+        "Supply_chain_technique",
+        "Mirai",
+        "Potassium"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Shell",
+        "LiteLLM",
+        "OpenAI",
+        "GPT-5",
+        "Cloudflare",
+        "Brotli",
+        "Node.js",
+        "Claude",
+        "DeepSeek",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "java",
+        "swift"
+      ],
+      "links": [
+        "https://www.cyberproof.com/blog/the-shrinking-exploit-window-lessons-from-php2shell-node2shell-the-ai-attack-surface/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "UFile: Signed PDF Utility Delivering an In-Memory Chrome Search Hijacker",
+      "summary": "UFile is a signed .NET PDF utility installer, distributed through advertising redirects, that delivers an in-memory Chrome search hijacker. The installed application requests an encrypted second-stage payload from catchasail.com infrastructure, decrypts it using date-derived AES-CBC material, and loads the resulting AutomationPref assembly in memory. That payload kills Chrome, rewrites its search-provider preferences to a server-supplied destination, and relaunches the browser. In a controlled reinstall, a redirect through quickbrowse.co to Yahoo reappeared after the browser had been cleaned. The report found no demonstrated link to the CookUp or GooPDF malware families, so it treats UFile as a distinct case. Defenders should note that a valid code signature does not establish benign behavior.",
+      "completeness": "Medium",
+      "geo": [
+        "Cyprus"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "CookUp",
+        "Chrome s"
+      ],
+      "algorithms": [
+        "rsa-4096",
+        "aes-gcm",
+        "sha256",
+        "aes-cbc",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "setOSOU"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://blog.lukeacha.com/2026/10/yapa-ufile-hides-chrome-search-hijacker.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "PHP2Shell One Week Later: Honeypot Shells on the Web, a Path to Root on Palo Alto Firewalls",
+      "summary": "PHP2Shell is a pair of PHP memory-safety flaws, CVE-2026-109618 and CVE-2026-109619, rated CVSS 9.2 and exploitable through session.upload_progress under vulnerable configurations. Honeypot operators logged shells from several hosts, while Wiz and CrowdStrike saw no successful exploitation. Operators shared a byte-identical ASLR-bypass kit that reached www-data in lab environments and staged it against government, finance, and telecom targets. Attackers chained PHP2Shell with the Fragnesia kernel flaw (CVE-2026-46300) to root about 25 internet-facing Palo Alto PAN-OS firewalls. Defenders should patch PHP, disable session.upload_progress where patching must wait, and monitor for web workers spawning shells.",
+      "completeness": "Medium",
+      "threats": [
+        "P2pshell_vuln",
+        "Fragnesia_vuln",
+        "Nuclei_tool",
+        "Evilginx_tool",
+        "Aiscan_tool",
+        "Thc-hydra_tool"
+      ],
+      "geo": [
+        "Africa",
+        "Moldova",
+        "Chinese",
+        "Asia",
+        "Singapore"
+      ],
+      "software": [
+        "AN-OS",
+        "Linux",
+        "PAN-OS",
+        "cPanel",
+        "curl",
+        "Metabase",
+        "DeepSeek",
+        "Claude",
+        "Claude Code",
+        "php-fpm",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "longjmp",
+        "system"
+      ],
+      "languages": [
+        "php"
+      ],
+      "links": [
+        "https://hunt.io/blog/php2shell-honeypot-shells-root-palo-alto-firewalls",
+        "https://github.com/0x4D31/honeypot-data/blob/main/reports/php2shell/2026-10-24-confirmed-rce.md",
+        "https://github.com/ikow/php2shell-poc/blob/main/README.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "Compromised Claude Code Extension (2.1.313) in Cursor Marketplace Plants Attacker SSH Key and Persistence",
+      "summary": "Malicious builds 2.1.312 and 2.1.313 of the Anthropic.claude-code extension were distributed through the Cursor VS Code Extension Marketplace on October 29, 2026, between about 2:27 AM and 1:35 PM PT. The modified extension collects host and user details, appends an attacker-controlled SSH key labeled svc-telemetry to authorized_keys, and attempts to open a reverse SSH tunnel. It also installs persistence through a LaunchAgent or scheduled task that retries the connection about every 60 seconds. Uninstalling the extension alone may not remove these artifacts. Defenders should check for the unauthorized key, remove persistence and tunnel processes, and rotate credentials reachable from affected hosts.",
+      "completeness": "Medium",
+      "threats": [
+        "Launchagents_tool"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "Anthropic",
+        "claude-code",
+        "macOS",
+        "OpenSSH"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.ox.security/blog/malicious-claude-code-extension-cursor-ssh-backdoor/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "BlackApex, SPY, and Counting: The Emerging Wave of Vibe-Coded Phishing Kits",
+      "summary": "BlackApex, SPY, and related panel names form a phishing kit family that abuses the Microsoft device code flow to take over Microsoft 365 accounts, with more than 70 instances sharing one backend and admin panel. The kit runs lures styled as SharePoint, Zoom, Adobe Acrobat Sign, Excel, and OneDrive, and it sends victims to the real microsoft.com/devicelogin page where they complete MFA themselves. The attacker then redeems the code and captures access and refresh tokens, along with a Primary Refresh Token that enables persistent access. Victims are reached through spearphishing emails that route through trusted services such as Google share links and Microsoft Forms to avoid filtering. Researchers assess with high confidence that the code was largely AI-generated, based on its consistency, verbose comments, and defensive polish. For defenders, the key takeaway is to review Entra ID sign-in logs for unusual deviceCodeFlow events and to restrict device code authentication with Conditional Access.",
+      "completeness": "Medium",
+      "threats": [
+        "Blackapex",
+        "Eviltokens_tool",
+        "Kali365_tool",
+        "Tycoon_2fa",
+        "Golden_ticket_technique",
+        "Spear-phishing_technique",
+        "Device_code_phishing_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "United states"
+      ],
+      "software": [
+        "Microsoft 365",
+        "SharePoint",
+        "Cloudflare",
+        "Zoom",
+        "Adobe Acrobat",
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft Entra",
+        "Active Directory",
+        "Azure AD",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "exhibit"
+      ],
+      "functions": [
+        "updateBranding",
+        "getSessionId",
+        "updateCompanyInfo"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.levelblue.com/blogs/spiderlabs-blog/blackapex-spy-and-counting-the-emerging-wave-of-vibe-coded-phishing-kits"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "“Black October” for AI Developer Platforms",
+      "summary": "A wave of \"Black October\" incidents has hit AI developer platforms, including Fireworks, Zeabur, Lightning, Railway, Warp, OpenCode, Brev, Trigger.dev, Chainstack, kernel.sh and RunPod, with several vendors attributing root causes to credential access. Public reports so far highlight targeted exploitation that hunts stored environment variables, especially those granting AI access, and some vendors describe an \"agent swarm\" or \"distillation\" activity. Wiz tracked downstream abuse of two enterprise AWS Bedrock keys that were previously used on a compromised vendor's infrastructure, with one key generating about 800k calls and the other about 1.7 million calls. The activity was linked to overt LLM resale operations, suggesting an active market for stolen AI credentials. Defenders should treat AI API keys as high-value secrets, monitor for unusual model invocation and quota enumeration, and rotate keys exposed through vendor breaches.",
+      "completeness": "Medium",
+      "threats": [
+        "Llmjacking_technique",
+        "Supply_chain_technique",
+        "Artex_tool"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Claude",
+        "Fable 5",
+        "Opus 5",
+        "boto3",
+        "DeepSeek",
+        "ChatGPT",
+        "Team sea",
+        "号池管理 ( C",
+        "-pool man"
+      ],
+      "functions": [
+        "Bedrock",
+        "PutAccountDataRetention"
+      ],
+      "links": [
+        "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "C2 environment targeting five Mexican organizations: data exfiltration and infrastructure analyzed",
+      "summary": "A ThreatMon infrastructure report (TTI-IN-004, published 30 October 2026) analyses a suspicious C2 environment used for data collection against several Mexican organizations, with no threat actor attributed. The environment is built from separate utilities rather than a single framework, including a Python HTTP server that receives POSTed data, XML payloads that run a shell script via Java ProcessBuilder, and an SSH reverse port forward on TCP/1521 (Oracle DB). Five per-target Python scripts extract data from Oracle databases and application APIs, which is then compressed and uploaded to Google Drive via rclone. The targets include two telecommunications providers, an insurance provider, a government entity and a Mexican university. Initial access, successful SSH tunnelling and full dataset exfiltration remain unconfirmed. Defenders should note that the report highlights outbound SSH tunnels to database ports and rclone uploads to cloud storage as detection opportunities.",
+      "completeness": "Medium",
+      "threats": [
+        "Rclone_tool",
+        "Mirai"
+      ],
+      "geo": [
+        "Mexico",
+        "Mexican"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 7,
+      "software": [
+        "WireGuard",
+        "Unix"
+      ],
+      "algorithms": [
+        "sha256",
+        "ed25519"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "links": [
+        "https://cyberveille.ch/posts/2026-10-31-environnement-c2-ciblant-cinq-organisations-mexicaines-extraction-de-donnees-et-infrastructure-analysees/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-10-30",
+      "title": "CikaBika Bot: Inside a Discord RAT",
+      "summary": "CikaBika Bot is a Rust-based remote access trojan campaign identified by Darktrace, delivered through a disk image containing a malicious shortcut disguised as a Word document and a decoy PDF. The shortcut launches hidden PowerShell that decodes an embedded payload, which is a Nim-based loader that deploys the RAT. The loader uses a PowerShell script to attempt a UAC bypass and plant a malicious dbghelp.dll in the Microsoft Edge directory, exploiting DLL search-order hijacking. The RAT uses Discord channels for command-and-control, supporting reconnaissance, remote shell commands, screenshots, and file transfers without dedicated infrastructure. Defenders should note that the report found the phishing delivery method unconfirmed and that the attacker also exfiltrated data via ngrok.",
+      "completeness": "Medium",
+      "threats": [
+        "Cikabika",
+        "Uac_bypass_technique",
+        "Dllsearchorder_hijacking_technique",
+        "Nim_loader",
+        "Ngrok_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 18,
+      "software": [
+        "Discord",
+        "Microsoft Edge",
+        "Discord f"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "base64"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/cikabika-bot-inside-a-discord-rat"
+      ]
+    }
+  }
+]

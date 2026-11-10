@@ -1,0 +1,125 @@
+[
+  {
+    "parsed": {
+      "report_date": "2025-04-22",
+      "title": "The Bad Seeds: Malicious npm and PyPI Packages Pose as Developer Tools to Steal Wallet Credentials",
+      "summary": "Socket researchers found three malicious packages, one on npm and two on PyPI, that steal cryptocurrency wallet secrets such as mnemonic seed phrases and private keys. The npm package react-native-scrollpageviewtest, downloaded 1,215 times, poses as a page-scrolling helper and exfiltrates wallet data through Google Analytics. The PyPI package web3x, downloaded 3,405 times, poses as an Ethereum balance checker and sends the victim's seed phrase to a Telegram bot. The PyPI package herewalletbot, downloaded 3,425 times, poses as a wallet automation tool and tricks users into entering their seed phrase into a Telegram bot. Developers should never share seed phrases or private keys with any code or bot, and any package that collects them without explicit consent should be treated as malicious.",
+      "completeness": "Medium",
+      "threats": [
+        "Typosquatting_technique",
+        "Credential_harvesting_technique",
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Spear-phishing_technique"
+      ],
+      "software": [
+        "Telegram",
+        "Outlook",
+        "elegram bo",
+        "Chrome"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "getSaf",
+        "main"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-npm-and-pypi-packages-steal-wallet-credentials"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-22",
+      "title": "PE32 Ransomware: A New Telegram-Based Threat on the Rise",
+      "summary": "PE32 is a newly emerging ransomware strain, discussed on social media, that encrypts files, including visible desktop locations, and appends the .pe32s extension. It uses a two-tier ransom model, with separate fees to unlock files and to prevent data leaks, and it directs victims to Telegram. The malware relies exclusively on the Telegram Bot API for command and control, and its bot token is exposed in the code, making infrastructure easy to trace. Its encryption is non-selective and noisy, and it triggers disk repair activity, though it lacks obfuscation and data exfiltration capabilities. Defenders should watch for Telegram-based C2 traffic and early signals like lock files and the PE32-KEY folder.",
+      "completeness": "Low",
+      "threats": [
+        "Pe32_ransomware",
+        "Chaos_ransomware"
+      ],
+      "geo": [
+        "Russian",
+        "Portuguese",
+        "Romanian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Telegram",
+        "Twitter",
+        "Gmail",
+        "Firefox",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "links": [
+        "https://any.run/cybersecurity-blog/pe32-ransomware-analysis/",
+        "http://github.com/0x6rss/matkap"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-22",
+      "title": "Russian organizations targeted by backdoor masquerading as secure networking software updates",
+      "summary": "A backdoor disguised as ViPNet software updates was discovered during a April 2025 incident response and targeted large organizations in Russia across government, finance, and industrial sectors. ViPNet is a software suite for creating secure networks, and the backdoor targets computers connected to ViPNet networks. It was distributed inside LZH archives structured like legitimate ViPNet updates, containing a text file, a legitimate executable, a small malicious executable, and an encrypted payload. The ViPNet update service executes an action that launches the legitimate lumpdiag.exe, which is susceptible to path substitution, causing the malicious msinfo32.exe to run instead. That loader decrypts and loads a versatile backdoor that can connect to a C2 server, steal files, and deploy additional components. The ViPNet developer confirmed targeted attacks against some users and issued updates and recommendations.",
+      "completeness": "Low",
+      "geo": [
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "vipnet"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "links": [
+        "https://securelist.com/new-backdoor-mimics-security-software-update/116246/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2025-04-22",
+      "title": "APT-C-27 (Golden Rat) new attack weapon exposed",
+      "summary": "APT-C-27 (Golden Rat), a threat group active in the Middle East, has resurfaced with a new Windows attack weapon after shifting its focus to Android around 2019. The group's targets include opposition figures in Syria and organizations in countries such as Turkey. The malware is a VB.NET executable that hides an encrypted payload in its resources, decrypts it through character substitution, and runs Revenge-RAT, a full-featured remote access trojan. Revenge-RAT connects to a command-and-control server and can collect system and security product information, download and execute files, and load plugins. Defenders should be wary of files and links received via social platforms, download software only from official sources, and keep systems and security software updated.",
+      "completeness": "Low",
+      "threats": [
+        "Goldenrat_rat",
+        "Revenge_rat"
+      ],
+      "geo": [
+        "Middle east",
+        "Syria"
+      ],
+      "software": [
+        "Android",
+        "WeChat"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "links": [
+        "https://www.ctfiot.com/242076.html"
+      ]
+    }
+  }
+]
