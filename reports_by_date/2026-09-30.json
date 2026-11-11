@@ -114,6 +114,7 @@
     "parsed": {
       "report_date": "2026-09-30",
       "title": "SilverFox in the Desktop",
+      "summary": "The report describes a Windows malware delivery chain that began with a ZIP archive sent via WhatsApp to Malaysian targets, using a finance-themed lure. The archive contained an IMG disk image holding a validly signed executable that impersonated KuGou software and an unsigned companion DLL disguised as a Microsoft Desktop Window Manager component. The executable loads the DLL and invokes its exported functions, which run an obfuscated initialization routine that transforms data and copies it into executable memory. The malware stages both files in the user's %APPDATA%\\Microsoft\\Update directory, adds a Registry Run key named MicrosoftUpdate for persistence, and repeatedly attempts outbound connections over TCP/443 at roughly three-second intervals. Researchers linked the activity to tradecraft similar to a Silver Fox campaign against India, but said it is not an exact match.",
       "completeness": "Medium",
       "threats": [
         "Valleyrat"
@@ -137,6 +138,41 @@
         "ClearDesktopMonitorHook",
         "FUN_180001ae4"
       ],
+      "ttps": [
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1566.001",
+          "name": "Phishing: Spearphishing Attachment",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File",
+          "tactics": [
+            "Execution"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "f712c2a8b4abf2e299a2b480020333deb0f43364e9686cda78b1243c62e4830d",
+          "c1e184615241fe69db3bf4093a22c7c0bf5d6072d2f51e558142b844e871084f",
+          "9f2caeda208c9d729b44f31c32b5e1eeef18d84d6e36b04afe15d894d3809672",
+          "e2bf8b7cd396ee950a5b6911ea098c2e49d4ed002a6c04d5d660ccd4f7d66baa"
+        ],
+        "sha1": [
+          "757bdd02cba91ca59c46e2098a5479c1abc1fdbe"
+        ]
+      },
       "links": [
         "https://research.pelagos-intel.com/silverfox-in-the-desktop"
       ]
