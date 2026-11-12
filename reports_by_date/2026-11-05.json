@@ -1646,5 +1646,141 @@
         "https://zerobec.com/blog/phantomdom-browser-in-the-middle-microsoft-365"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "A Dish Served Lukewarm: The Refrigerator Botnet",
+      "summary": "SecurityScorecard's STRIKE team found exposed Dixell/Copeland XWEB PRO refrigeration controllers, which run supermarket and cold storage refrigeration, being abused as proxy exits and spam senders. Many of these devices remain exposed to the internet with unpatched vulnerabilities, including CVE-2026-25085, a pre-authentication bypass. Flow data pointed to a suspected SMTP botnet of nine IPs, three of them confirmed as XWEB controllers, acting as outbound-only mail senders. Heavy overlap in mail-target lists, with 508 of 1,041 targets hit by two or more nodes, suggests a single coordinated operator. The report notes this is an ongoing investigation with low to medium confidence, and it links the botnet to no known attacks on supermarket refrigeration. Defenders are advised that exposed controllers carry both availability risk to the cold chain and misuse risk.",
+      "completeness": "Low",
+      "threats": [
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "Namibia",
+        "Luxembourg",
+        "Sweden",
+        "Belgium",
+        "Estonia",
+        "Finland",
+        "France",
+        "South africa",
+        "Ireland"
+      ],
+      "software": [
+        "Linux",
+        "WireGuard"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "iocs": {
+        "ipv4": [
+          "197.188.223.161",
+          "160.19.119.226",
+          "168.195.122.22",
+          "181.192.79.179",
+          "151.3.178.94",
+          "213.221.44.60",
+          "178.244.215.186",
+          "85.29.149.211",
+          "78.21.151.21",
+          "95.229.5.248",
+          "84.1.34.242",
+          "90.0.156.128",
+          "46.255.231.42",
+          "143.244.202.96"
+        ],
+        "domain": [
+          "xweb.ru",
+          "xweb.at"
+        ],
+        "email": [
+          "threatintel@securityscorecard.io"
+        ]
+      },
+      "links": [
+        "https://securityscorecard.com/blog/a-dish-served-lukewarm-the-refrigerator-botnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-05",
+      "title": "The Invitation That Wasn't: Fake Crypto Conference Invites Deliver a PowerShell Backdoor",
+      "summary": "Fake Windows shortcuts disguised as PDF invitations to real crypto events, including Korea Blockchain Week and Digital Asset Summit London, deliver a PowerShell backdoor. The lures use .pdf.lnk double extensions to hide their true nature, and a hidden script checks for analysis tools before showing a convincing decoy. The payload hides as a fake .err log and runs through a scheduled task named after OneDrive. The backdoor profiles the victim and then lets the attacker run commands and move files. The report says the backdoor matches a toolkit that Check Point attributed to KONNI, a North Korea-linked group, with new bait and payload-hiding techniques. Targets are crypto professionals, and the report does not link this campaign to the Binance theft.",
+      "completeness": "Medium",
+      "threats": [
+        "Procmon_tool"
+      ],
+      "geo": [
+        "Korea",
+        "London",
+        "North korea"
+      ],
+      "software": [
+        "Zoom",
+        "ChatGPT",
+        "Microsoft Defender",
+        "OpenAI",
+        "Discord"
+      ],
+      "crypto": [
+        "binance",
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "solidity"
+      ],
+      "ttps": [
+        {
+          "id": "T1036.007",
+          "name": "Masquerading: Double File Extension",
+          "tactics": [
+            "Stealth"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "be5ba9de52af8ecd2fd7f6a97eeb8f05e8587bdcb01722bf26487dcc87489ac1",
+          "10a13e5adcbddcb8cce88436c41cadd5eb95d99b7bf1135fbcfc41cc57aad5f8",
+          "ec6a59f2c773d87c9fa5d6f90142c3013bd98a2b9dce24d5419c608e8896fec5",
+          "09d7e0e75c70b8a95b48655971ea1a38bf10eb6cbe3fff135b878ca98d8e81cc",
+          "d782bdd883c0a1f8c484e50765a1481116f9e700fea7dc9e39df2ab4cb9dd8a2",
+          "a355496c47d79ab9ad373d34192e1d47580668642436912caf5b215d27db02be",
+          "4adb8b4f38f0199a238831a9c8892bae329b8737e5c00d26eaf072b8b4e43106",
+          "6f574714403c37dd55531a25105c964a6522af7e58f2154f22905667d81eae10",
+          "805e6e6c170e6a35e062ea85d1a5f63b3b022359d27fa55537a54eb376db8094",
+          "1c9714f6b66ef6088bfe6a2a05be8b41a8e6dce0c21baf727872ae9e7d57f25a",
+          "21fab098b51024e574ab34f74a6b8b3696028e348e01c9ddea7a204e3649391f",
+          "1515eecc7d32ae5dfd7378da129dafc348fdf8a1b347a49462055498f8440df8",
+          "2e836c823b9233697468489f9d6ef2a9e42e0e0e8ed885042f9458d00cc0f999",
+          "cca40d18fcf264927332274cd77d7cbae6afddcec9e6d92df8460d441fb3937e",
+          "d18c2739f671ec970b58128c81fa504a0c6998f2bb8cc18ea4abf1fa8ca0cd63"
+        ],
+        "domain": [
+          "fe29jf323.kesug.com",
+          "h92jcihwicllow.wuaze.com",
+          "e08f-67b173c2-34234332.site.je",
+          "026-u10-a16-z22-e.wuaze.com"
+        ],
+        "url": [
+          "https://fe29jf323.kesug.com/YE97Bw999zB87t1U8i.php",
+          "https://h92jcihwicllow.wuaze.com/YE97Bw999zB87t1U8i.php",
+          "https://e08f-67b173c2-34234332.site.je/234234234proxy.php",
+          "https://026-u10-a16-z22-e.wuaze.com/234234234proxy.php"
+        ]
+      },
+      "links": [
+        "https://blog.filescan.io/posts/fake-crypto-conference-invites/",
+        "https://github.com/filescanio/aether-mcp"
+      ]
+    }
   }
 ]

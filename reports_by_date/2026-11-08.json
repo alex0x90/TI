@@ -613,5 +613,44 @@
         "https://sshole.events.greynoise.io/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-08",
+      "title": "ARTEX: reading the source behind the IOCs",
+      "summary": "ARTEX is an open-source, LLM-driven pentesting framework that threat actors have used in real intrusions, and many published indicators for it turn out to be weak. The author cloned the upstream code and 73 forks, and found that most target-side indicators such as user agents, made-up test strings like ArtexProbe, and tool headers come from the model or the tools it runs rather than from the framework itself. One enrichment user agent, artex-enrich/1.0, is never called in any code base, and the Basic Auth realm from the Unit 42 report was removed from the most popular fork within days of publication. Optional traffic recording makes curl's TLS handshake look like Go's, while pauses between request bursts mainly reflect the time the LLM takes to respond. Defenders should prioritize behavioural patterns of the agent and operator-side artifacts over generic user agents, model-made names, IPs and timings.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool",
+        "Pentagi_tool",
+        "Hexstrike_tool",
+        "Cairn_tool",
+        "Nmap_tool",
+        "Mitm_technique",
+        "Nuclei_tool"
+      ],
+      "software": [
+        "curl",
+        "zoom",
+        "OpenSSL",
+        "OpenAI",
+        "Docker",
+        "boto3",
+        "Chrome",
+        "Ubuntu"
+      ],
+      "functions": [
+        "writeJSON"
+      ],
+      "languages": [
+        "python"
+      ],
+      "links": [
+        "https://andpalmier.com/posts/artex-source-behind-iocs/",
+        "https://github.com/Hinln/ARTEX/tree/e6ec56999175509551a1e43a3ee3b053d0941bd9",
+        "https://github.com/andpalmier/repopsy",
+        "https://github.com/Hinln/ARTEX"
+      ]
+    }
   }
 ]
