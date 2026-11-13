@@ -1,0 +1,1233 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Off the Rails: Inside an Exposed Silent Lynx Server",
+      "summary": "Silent Lynx, a Central Asia-focused espionage cluster, was exposed through an open directory on a server that CloudSEK analysed, covering activity from April to October 2026. The directory held implant builds for Laplas and Chvost families, delivery kits built on LNK shortcuts and PowerShell reverse shells, and victim data. The operator had domain-level access to Tajikistan's national railway and used one compromised railway employee account to pull thousands of government documents, many tied to the Ministry of Defence, from Tajikistan's document management platform. Intrusions also reached an Uzbek GeoServer host, and lures impersonating Turkmen railway and regional administration bodies pointed to a planned campaign against Turkmenistan. The operator ran much of the work through a self-hosted DeepSeek-based AI agent, and test sessions from a residential Kazakh ISP connection support a medium-confidence Kazakhstan nexus.",
+      "completeness": "High",
+      "threats": [
+        "Laplasclipper",
+        "Chvost",
+        "Amsi_bypass_technique",
+        "Spear-phishing_technique",
+        "Pickleshell",
+        "Foalshell",
+        "Stallionrat",
+        "Hermes_tool",
+        "Fscan_tool",
+        "Ligolo_tool",
+        "Inveigh",
+        "Responder_tool",
+        "Netexec_tool",
+        "Impacket_tool",
+        "Metasploit_tool",
+        "Gentlemen_ransomware"
+      ],
+      "geo": [
+        "Tajikistan",
+        "Asian",
+        "Pakistan",
+        "Russian",
+        "Kyrgyzstan",
+        "Uzbekistan",
+        "Asia",
+        "Kazakhstan",
+        "Turkmenistan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "DeepSeek",
+        "Telegram",
+        "Debian",
+        "OpenSSL",
+        "Visual Studio",
+        "GeoServer",
+        "curl",
+        "PostgreSQL",
+        "sudo",
+        "Docker",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "af2822560bc0e44b600eefbe0170d3526e035704b533a806f9d455da6ac30d2c",
+          "f26756cabe92842e25d82bee5f65ef9c22c80aec895386b9840b471b42e01463",
+          "e6907392677134a1a4ffec14d303471352eee90da09db1991eb47486611f2e0d",
+          "5d8a2df90fa3cf913e2b5764e586ee3405a101294909df091060bd3e3d1a44c1",
+          "19b68e504e1512dc19feef6b1da0f67f876191a937fdcd64ffb965c12d1f0bf0",
+          "bf7fe6b518676a3e6d40459ac16b491e62d0e0a222ebb243a44d64ac33aed826",
+          "27dc5628adc666da702c9a33e8f96bb87087ac68a7064f99b91fb76b932aef6e",
+          "efc1bbb873e9b691657a66e987b0ea87c454bb16e89126d1a41bcaa9bae9fab1",
+          "368cb250f7b962c551dd721f6f62224a936dd7cffb8e0d92f223d82b991a0e6d"
+        ],
+        "ipv4": [
+          "89.125.213.123",
+          "134.17.14.24"
+        ],
+        "domain": [
+          "bi.zone",
+          "foreverpeace.ru"
+        ],
+        "url": [
+          "http://89.125.213.123:8080/P.ps1",
+          "http://89.125.213.123:8080/decoy.pdf"
+        ]
+      },
+      "links": [
+        "https://www.cloudsek.com/blog/off-the-rails-inside-an-exposed-silent-lynx-server"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Trigram Campaign",
+      "summary": "Stormshield attributes the Trigram campaign with high confidence to North Korea, as a continuation of the UNK_DeadDrop cluster and the Kimsuky group. The actors impersonate about 50 brands in the blockchain, AI, and logistics sectors through fake recruitment, conference invitation, and package-tracking sites. Victims are tricked via a ClickFix-style fake verification step into pasting a command that is silently swapped in the clipboard to download and run a malicious script. The payload is a JavaScript loader that deploys an infostealer targeting browser credentials and cryptocurrency wallets. A campaign management platform automates GitHub-based target collection, bulk email delivery across four providers, and real-time victim tracking.",
+      "completeness": "High",
+      "threats": [
+        "Overlord_tool",
+        "Clickfix_technique",
+        "Motw_bypass_technique",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "United states",
+        "North korea"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "Linux",
+        "curl",
+        "Node.js",
+        "Brevo",
+        "Django",
+        "Etherscan",
+        "Gmail",
+        "Telegram"
+      ],
+      "algorithms": [
+        "exhibit",
+        "base64"
+      ],
+      "functions": [
+        "d",
+        "Vt",
+        "u",
+        "WriteAllBytes",
+        "ReadAllText"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "typescript",
+        "vbscript",
+        "perl"
+      ],
+      "iocs": {
+        "sha256": [
+          "cd20f43f985f7df7ba3ad9b08e5bdbecc20aaa4d8f60dc09e8468bdd1b249fe6",
+          "249626244f23928c75e6c382da62278ed1d4e012a0c0f62beafefc1e4d7c5baa"
+        ],
+        "md5": [
+          "d7e1fad24bec3461127a5b0abb8477c0",
+          "b6ef333e88a4c32052b8da81bea56822",
+          "23fb87dba7987105af15305733fd19ef",
+          "066500479fee42a43a18b969729c3a62",
+          "3268b8179366a1207ce673319bfc3074",
+          "17b87eea9dd474a58be45a8a8547ddaa",
+          "0026b5baa3b105bd06dcb8af608585be",
+          "8cea1f1ebd2992af6506ecdd6e1d3fd5"
+        ],
+        "ipv4": [
+          "193.160.32.10",
+          "170.205.29.83",
+          "170.205.30.27",
+          "198.54.127.82",
+          "170.205.31.182",
+          "216.198.79.1",
+          "185.147.159.187",
+          "146.19.215.187",
+          "193.160.32.188",
+          "65.110.40.18",
+          "170.205.28.251",
+          "193.160.32.243",
+          "208.84.100.64",
+          "23.137.104.77"
+        ],
+        "domain": [
+          "fuelcouncil.ink",
+          "mantle2council.xyz",
+          "mantlehires.xyz",
+          "lineacareers.xyz",
+          "ritualtalents.xyz",
+          "buildwithritual.xyz",
+          "buildwithmina.ink",
+          "inv2boyaa.site",
+          "inv2initia.ink",
+          "joinwebflow.xyz",
+          "joinmetis.site",
+          "somniabuilders.network",
+          "icagllmbt.space",
+          "loadshipdpd.ink",
+          "waybilltrack.xyz",
+          "loadwatcherdpd.ink",
+          "tracearamex.ink",
+          "freightviewer.ink",
+          "loadtracedpd.xyz",
+          "trackaramex.xyz",
+          "tracedhl.xyz",
+          "parcelaramex.ink",
+          "shipdhl.xyz",
+          "loadwadpd.xyz",
+          "loadtrace.delivery",
+          "loadwatchdpd.ink",
+          "freightracker.ink",
+          "tracedpd.xyz",
+          "loadshiparamex.ink",
+          "shiptrace.delivery",
+          "loadwatcharamex.xyz",
+          "transitwatch.ink",
+          "shiparamex.xyz",
+          "loadwatchdhl.xyz",
+          "parcelaramex.xyz",
+          "shiptransit.ink",
+          "gitlab.com",
+          "api.chestsoi.ink",
+          "api.cerysoi.ink",
+          "api.gaganata.ink",
+          "api.fallgganata.ink",
+          "dashboard.gaganata.ink",
+          "subnet.dokamacto.xyz",
+          "inv2linea.xyz",
+          "workwithapex.xyz",
+          "dymensioncareers.xyz",
+          "buildwithespresso.online",
+          "joinmotus.site",
+          "oslhires.ink",
+          "verifearth.space",
+          "movementgigs.site",
+          "buildwithmercor.site",
+          "groundvy.xyz",
+          "dscufo.xyz",
+          "geoveral.space",
+          "lumenorbit.space",
+          "terraverro.space",
+          "albedorb.space",
+          "veriearth.space",
+          "swathely.space",
+          "nadirva.space",
+          "groundvy.space",
+          "bullishtalents.xyz",
+          "ambercouncil.xyz",
+          "boytalents.xyz",
+          "joinnillion.xyz",
+          "seihires.xyz",
+          "inv2scroller.xyz",
+          "availcouncil.xyz",
+          "rdcouncil.xyz",
+          "oslcouncil.xyz",
+          "eignecloudhires.xyz",
+          "movementhires.xyz",
+          "inv2taiko.xyz",
+          "joinearnest.xyz",
+          "lineahires.xyz",
+          "jointuring.xyz",
+          "pixelground.space",
+          "celestiatalents.xyz",
+          "mercortalents.xyz",
+          "joinsaga.xyz",
+          "buildwithaztec.xyz",
+          "joinfuel.xyz",
+          "hyperlanecouncil.xyz",
+          "kaicouncil.xyz",
+          "metiscouncil.xyz",
+          "buildwithalephzero.xyz",
+          "joinocho.xyz",
+          "inv2surge.xyz",
+          "minatalents.xyz",
+          "joinaxelar.xyz",
+          "initiatalents.xyz",
+          "bit2talents.xyz",
+          "workwithbera.xyz",
+          "dymensionhires.xyz",
+          "animocacouncil.xyz",
+          "ritualhires.xyz",
+          "pantherbuilders.xyz",
+          "soniccouncil.xyz",
+          "inv2apexef.xyz",
+          "inv2motus.xyz",
+          "joinsuccinct.xyz",
+          "jointheladders.xyz",
+          "joindill.xyz",
+          "espresssotalents.xyz",
+          "inv2sonic.xyz",
+          "joinkaia.xyz",
+          "inv2animoca.xyz",
+          "inv2amber.xyz",
+          "inv2avail.xyz",
+          "eigencouncil.xyz",
+          "buildwithrd.xyz",
+          "buildwithdymension.xyz",
+          "movementcouncil.xyz",
+          "workwithsei.xyz",
+          "workwithlinea.xyz",
+          "seicareers.site",
+          "berahires.online",
+          "axelarbuilders.ink",
+          "buildwithnillion.site",
+          "dymensioncouncil.site",
+          "apexbuilders.site",
+          "surgebuilders.ink",
+          "workwitheigen.xyz",
+          "inv2bullish.xyz",
+          "scrolltalents.online",
+          "sonichires.site",
+          "albedorb.world",
+          "pixelground.xyz",
+          "terraverro.info",
+          "nadirva.info",
+          "geoveral.ink",
+          "lineagigs.site",
+          "joinmantle.ink",
+          "inv2celestia.online",
+          "whaleradar.ink",
+          "d2stradeapp.ink",
+          "ievade.net",
+          "scrollbuilders.xyz",
+          "kaiatalents.xyz",
+          "inv2metis.xyz",
+          "alephzerotalents.xyz",
+          "buildwithlinea.xyz",
+          "osltalents.xyz",
+          "inv2eigen.xyz",
+          "sagabuilders.xyz",
+          "dymensiontalents.xyz",
+          "sonictalent.xyz",
+          "joinhyperlane.xyz",
+          "sagatalents.xyz",
+          "seitalents.xyz",
+          "taikotalent.xyz",
+          "buildwithsei.xyz",
+          "alephzerobuilders.xyz",
+          "jointoamber.xyz",
+          "inv2dymension.xyz",
+          "ambertalents.xyz",
+          "animocabuilders.xyz",
+          "lineatalent.xyz",
+          "joinanimoca.xyz",
+          "jointoavail.xyz",
+          "buildiwitheigen.xyz",
+          "buildwithtaiko.xyz",
+          "inv2mantle.xyz",
+          "inv2nillion.xyz",
+          "nillionbuilders.xyz",
+          "turingbuilders.xyz",
+          "buildwithboyaa.xyz",
+          "succinctbuilders.xyz",
+          "seibuilders.xyz",
+          "inv2saga.xyz",
+          "joineigencloud.xyz",
+          "aztectalents.xyz",
+          "joinaztec.xyz",
+          "aztecbuilders.xyz",
+          "inv2bera.xyz",
+          "beratalents.xyz",
+          "movementtalents.xyz",
+          "axelartalents.xyz",
+          "ritualbuilders.xyz",
+          "rdtalents.xyz",
+          "dymensionbuilders.xyz",
+          "inv2osl.xyz",
+          "buildwithfuel.xyz",
+          "buildwithsonic.xyz",
+          "nilliontalents.xyz",
+          "buildwithbullish.xyz",
+          "movementbuilders.xyz",
+          "panthertalents.xyz",
+          "validator.dokamacto.xyz",
+          "online.dokamacto.xyz",
+          "dashboard.asteara.org",
+          "almanac.3dscenebox.online",
+          "dashboard.cklomino.ink",
+          "api.gamsterb.ink",
+          "api.fallgamsterb.ink"
+        ],
+        "url": [
+          "http://subnet.dokamacto.xyz/ops-7f3k9m",
+          "http://subnet.dokamacto.xyz",
+          "https://api.gamsterb.ink/guard-launcher-result",
+          "https://api.gamsterb.ink/guard-install-log",
+          "https://api.fallgamsterb.ink/guard-launcher-result",
+          "https://api.fallgamsterb.ink/guard-install-log"
+        ],
+        "email": [
+          "eros1030109@gmail.com",
+          "apollo1030109@gmail.com",
+          "harper.danie95@gmail.com"
+        ]
+      },
+      "links": [
+        "https://www.stormshield.com/news/cti-trigram-campaign/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Analysis of a Wpcdoor Attack Distributed Through Domestic DVR Management Software",
+      "summary": "The Wpcdoor backdoor was distributed through the CMS (Central Management Software) of a domestic Korean DVR and CCTV vendor, as reported by Huntress and confirmed by AhnLab's ASD logs showing infections in Korea. The attack chain runs through rs.win32.exe, where a malicious IPHLPAPI.DLL is side-loaded and acts as a downloader for WpcMon.exe and samcli.dll, which in turn fetches the final Wpcdoor backdoor and runs it in memory. Wpcdoor can steal system information, capture screenshots and clipboard data, grab files, dump browser data and cryptocurrency wallet-related memory, and enable remote control. AhnLab tracks the actor as Larva-26013, which has also deployed Wpcdoor in other campaigns. Defenders should apply vendor patches, review the configuration of the affected software, and immediately change IDs and passwords used in the software and connected systems.",
+      "completeness": "Medium",
+      "threats": [
+        "Wpcdoor",
+        "Dll_sideloading_technique",
+        "Hvnc_tool"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "software": [
+        "Chrome"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "tronlink",
+        "solflare"
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "iocs": {
+        "md5": [
+          "81669d8b1539333e96b84c2e5c4dba5d",
+          "0a9cb414b53536ad8fc217fc46a2cf56",
+          "14746a3aa1d1882a53d244b39e6895b3",
+          "2376baa1ba3a918f754db6bbc15cb1d7",
+          "6bafd9065f68ecd5778b8c828bb17134",
+          "7e42d1461339572111a2eedfff42e1c2"
+        ],
+        "ipv4": [
+          "172.86.127.14",
+          "144.172.116.37",
+          "172.86.127.89"
+        ]
+      },
+      "links": [
+        "https://asec.ahnlab.com/ko/96476/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "The XG Files: Falcon C2 Flying Under The (Browser) Radar",
+      "summary": "Unit 42 describes Falcon (aka XG), a NodeJS command and control framework that compromises browsers by running malicious JavaScript on webmail and government web applications. The framework can sideload a malicious Chrome extension disguised as a PDF viewer to steal passwords, emails, session cookies and communications. Falcon also delivers the Rust-based Antino implant, which uses Microsoft OneDrive as a C2 channel. Campaigns between March and May 2026 compromised government entities in one Middle Eastern country and several Southeast Asian countries, targeting foreign affairs, defense, interior and law enforcement ministries. Defenders should monitor for developer-mode extensions with broad permissions, unexpected Hm_lvt_ cookies, and unfamiliar external script tags on internal portals.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Antino",
+        "Peckbirdy_tool",
+        "Lolbin_technique",
+        "Falcon_malware",
+        "Clipboard_hijacking_technique"
+      ],
+      "geo": [
+        "Asian"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Flash Player",
+        "Chrome",
+        "Microsoft OneDrive",
+        "WildFire",
+        "Telegram",
+        "Firefox",
+        "PDF Viewer",
+        "Twitter",
+        "Discord",
+        "WhatsApp",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "aes",
+        "base64",
+        "sha256",
+        "aes-256-cbc",
+        "exhibit",
+        "xor"
+      ],
+      "functions": [
+        "preventDefault"
+      ],
+      "languages": [
+        "powershell",
+        "rust",
+        "jscript",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "3e535d63af8a95221fb517fa1b3e4a0029d3463d8b767443abdff385ee8cb6e9",
+          "f8b86238e179d88a9979b6f97750a39dda1d07b54d634bc1348fdfb0944a3b92",
+          "88e8b07bdf294ace0357d35acb7e108c66ba65a2c4ad66351fb8f7806dae0862",
+          "065d18fcfeddbd718c054f4b21c3cde5b9291db921d01f343d7ac0d4b41f29ce",
+          "3eab406d841fa22a4b0200c95c1afab068347f835400d5771e8de60aef732016",
+          "5711586125909863b91c1b5ff7cf70ef5d35249d67b11d7a23dc864405cddfe2",
+          "b6a7be724871ed3e81c986b74d62da8911c82a336c4c1857b35f2446b2d49fda",
+          "2ed834d92bfefc9d07a9f1a48f986974ae2a29669029f8163a1f6e8706388fcd",
+          "356b96c2267c5f2d8c07693643626e090b6389318b4ffa74699fa1732da5a00c",
+          "32af8413cbd38ce8beb257288cb8e6aa2f9b781d56d0f5272bffbcdc22d999f4",
+          "e2b6b1becdbcc340121e163b5afdfc5437a480ca132248ed5c7c309c45ac3dbb",
+          "265c2b36060e4b21c25aa86a8bb22d1db5f806117b484774c75c65b5b38222e0",
+          "66e9098551a1c0c74077d6cf55570e5d307a4a5ef0b0f2053e139394e61c442d",
+          "3e923f11db08413fca8a3a69d33d8896cfd56309e5179e8604d7fb7110428da2",
+          "2ebe36f1322b77264a33fded81cd4b8817f93362945070bf0bb5845dd27c0575",
+          "857429faffe0e0747ce299e86eed063ed781b4e403b917ca7e853e89bedf072c",
+          "b33f2e95943e3ff0a72dea1be9fdea03d986bada4def34f6991b3113ec161ad7",
+          "898656c33effb51e109c548fc213f157f151a870ea64a4601eda74ae75bd3af6",
+          "b3d8ea89b19a87bf2fdd63127086681059f41d67b6e5f8c939f5636a1b2315ce",
+          "24d69139cb2d32598f0f4983876f6320485fac134a66ade59cab76b50b4128f7",
+          "0c39264337a1186b2e765e24073399cbdcba118306614eb411e315887af578bd"
+        ],
+        "domain": [
+          "evil.com",
+          "fonts.tarotfree101.top",
+          "fonts.chrorne.com",
+          "robot.avbliud.com",
+          "microsoft-flash.com",
+          "wps-cn.com"
+        ],
+        "url": [
+          "https://microsoft-flash.com/download/Adobe_installer.exe"
+        ]
+      },
+      "links": [
+        "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Beyond the Signature: How Attackers Hide Malware in PE Certificate Tables",
+      "summary": "Morphisec researchers describe a finance-themed campaign, distributed via WhatsApp and email archives with invoice and account-adjustment lures, that delivers a modular encrypted backdoor. Two alternative loaders converge on Donut-based execution: one side-loads a malicious dbghelp.dll beside a Tencent-signed executable and downloads shellcode for Early Bird APC injection into mspaint.exe. The newer variant hides an RC4-encrypted payload in the PE certificate-table region of a modified Kingsoft/WPS DLL and runs it via in-process APC. The implant communicates over AES-256-GCM-protected TCP, profiles hosts, monitors user activity, and loads C2-delivered PE modules for persistence and remote desktop. Defenders should correlate suspicious side-loaded DLLs, unexpected PE security-directory data, and APC-based execution rather than trusting signed hosts alone.",
+      "completeness": "Medium",
+      "threats": [
+        "Donut",
+        "Apc_injection_technique",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "WinHTTP"
+      ],
+      "algorithms": [
+        "zip",
+        "ecdh",
+        "rc4",
+        "xor",
+        "aes-256-gcm",
+        "sha256"
+      ],
+      "iocs": {
+        "sha256": [
+          "bcfee6a87237934e5b5a456acad805fefd9b08a9266da9097cfd04cba603ab84",
+          "3fd0aecbb0e8266be514fe5c68f0163e09a9b1a679bb2f2c0b88aa80935f2f63",
+          "78dfad1a682df9837a4af46888f40e228f2e069c57823aceb876b645e6534b89",
+          "1be5e652840a644503723a4eb22a534dacb8e24b002d6818d314582ef575c519",
+          "f0712676a5a42fa6c88c55a439fe8ff65ca2d4e24d29213feacac0bba0c0391f",
+          "553c79542794820c82c20f1794c4a6f30c68bd4a3b5abc702b11c28a20b5db63",
+          "c41c8c28f270ba14d2bee6305d8d52c525883c648db6bfe566e47ce2e7262200",
+          "6860ef580d4b1db34b4e4184cce9bca714bce53083c4290dc1c6017ef7fbbdf5",
+          "47f0e971a9affae06adfa75b6c87ccddaa1351cd821819a93c3d0360e641e95d",
+          "759239cde5a033ff7fa330e3a9122392ab8fde7fdec72b0ec72033920c5227d3",
+          "adda6e9ba56c909638b6e4f547e0de9168afae92d7723a600b04d9cd74609b44",
+          "a77351d3435a7cac5880247533a25f213bcc3e4ff469f0a68d1b984dad311891",
+          "ae583046cef84789f57e4db2f06ba41ba537e035ecb959f74264ed5d36dc8ba8",
+          "f89fe259e8ec0022063e9be77062cb33ab79b2642516ca2b61f65684b0de874d",
+          "2eab6deca19ce3919526ec63eba9a601157aa1ff5168a03032701dd60056dd60",
+          "3cc04e79ab6a222d048953a40f468f4fec60e1870093362bada4de9138233740",
+          "9cea88212d13f143ca5f06bfb2eea2606f819731c4bb4475b0dd1ee8137fa6dd",
+          "f23187312b1d0ad1136450028365549fa4e1522d77c1d986c7bd0ae87653d295",
+          "6c28462ee3c5c64671b348351e65573108a62ea2e7728a6e5a38221461d6c87c",
+          "ba22557213899a76af9cd3851e486d55e772cdc2f091f2c1485cffcc76e750c3"
+        ],
+        "ipv4": [
+          "107.148.225.248"
+        ],
+        "domain": [
+          "dahosuday.eu.cc",
+          "cos.ap-singapore.myqcloud.com",
+          "gdnkdl.eu.cc",
+          "cdn.bcebos.com",
+          "qdzip-1476850762.cos.ap-singapore.myqcloud.com",
+          "lequn01.cdn.bcebos.com"
+        ],
+        "url": [
+          "http://107.148.225.248/updat/dahosuday.eu.cc.bin",
+          "http://107.148.225.248/qd/zip.zip",
+          "https://qdzip-1476850762.cos.ap-singapore.myqcloud.com/zip.zip",
+          "https://gdnkdl.eu.cc/files/ahfayui.eu.cc.bin",
+          "https://gdnkdl.eu.cc/files/lahfadau.eu.cc.bin",
+          "https://gdnkdl.eu.cc",
+          "https://gdnkdl.eu.cc/files/awhfos.eu.cc.bin",
+          "https://lequn01.cdn.bcebos.com/leceshi.bin"
+        ]
+      },
+      "links": [
+        "https://www.morphisec.com/blog/beyond-the-signature-how-attackers-hide-malware-in-pe-certificate-tables/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Field Intelligence #5: Scareware at scale. Investment scams built on AI platforms.",
+      "summary": "ZoidWays is a mobile scareware forced-redirect campaign tracked since March, reaching about 1.5 million blocked impressions in one day across at least six ad buying platforms. Victims see a fake phone-settings clone with a bogus \"Platform Security for wiretapping\" alert that leads to antivirus checkouts, paid support lines, or subscription traps. The report also covers a fake Microsoft Teams APK that functions as a remote access trojan, harvesting cryptocurrency seed phrases via clipboard, filesystem, and OCR scanning. PseudoCamo runs investment scams on AI app-builder platforms, with cloaked age-gate landing pages that redirect to second-hop money pages across multiple countries. D-Shortiez has shifted its tech-support scams to BunnyCDN and Azure hosts and added a fake CAPTCHA step that resembles ClickFix but is a forced redirect. A Claude-branded \"trading bot\" scam tricks UK victims into moving their own funds through a MetaMask contract that forwards the balance to the scammer.",
+      "completeness": "Low",
+      "threats": [
+        "Tech-support-scam_kit_tool",
+        "Cloaking_technique",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Poland",
+        "Czechia",
+        "Romania",
+        "Spain",
+        "Canada",
+        "Ireland",
+        "Turkey",
+        "China",
+        "Chinese"
+      ],
+      "software": [
+        "Microsoft Teams",
+        "Azure Blob",
+        "ChatGPT"
+      ],
+      "wallets": [
+        "metamask"
+      ],
+      "iocs": {
+        "domain": [
+          "safenetgroup.site",
+          "guardpointtech.online",
+          "static.sunwaymarketing.co",
+          "track.topofferlinks.com",
+          "teamsapk.cyou",
+          "abc.claude-go.com",
+          "abc.visapath-vp.com",
+          "befideapro.lovable.app",
+          "befidea.pro",
+          "newsireland-2.base44.app",
+          "istanbul-space.base44.app",
+          "arveniop.lovable.app",
+          "z13.web.core.windows.net",
+          "tp9265tnfqwdc4kmth34fe23.b-cdn.net",
+          "lofim.shop",
+          "dzoobhojw4l6s.cloudfront.net",
+          "compile-code-online.pages.dev"
+        ]
+      },
+      "links": [
+        "https://blog.confiant.com/p/field-intelligence-5-scareware-at-scale"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Inside The Server: 14 Months of Offensive Cyber Operations Targeting Europe",
+      "summary": "Group-IB discovered an open directory on a Latvian server exposing the working environment of a threat actor it tracks as DarkLunnen, containing over 14 months of offensive operations against Europe. The operator, apparently still active at discovery, used a modified watchTowr proof-of-concept for FortiGate CVE-2024-55591 to create a backdoor \"service\" super-admin account across devices in Turkey, Ukraine, Azerbaijan, and Algeria. Other activity included VNC brute-forcing that reached apparent HMI systems, scanning of Hikvision cameras, and attempted source code collection from Ukrainian defense and aviation organizations. Group-IB has not attributed the operator to a known actor, and only 35 of 457 files were recovered. Defenders should patch edge devices, rotate secrets on any exposed device, and restrict VNC, camera, and remote management interfaces.",
+      "completeness": "High",
+      "threats": [
+        "Opendir_technique",
+        "Git-dumper_tool",
+        "Golden_ticket_technique",
+        "Sliver_c2_tool",
+        "Nmap_tool",
+        "Neo-regeorg_tool",
+        "Regeorg_tool",
+        "Suo5_tool",
+        "Evil-winrm_tool",
+        "Donpapi_tool",
+        "Netexec_tool",
+        "Wmiexec_tool",
+        "Restic_tool",
+        "Yuze_tool",
+        "Responder_tool",
+        "Fscan_tool",
+        "Impacket_tool",
+        "Masscan_tool"
+      ],
+      "geo": [
+        "Ukrainian",
+        "German",
+        "Germany",
+        "Czech",
+        "Poland",
+        "Thailand",
+        "Ukraine",
+        "Netherlands",
+        "Canada",
+        "Turkey",
+        "Polish",
+        "Ireland",
+        "Slovakia",
+        "Algeria",
+        "France",
+        "Romanian",
+        "Mexico",
+        "Latvia",
+        "Romania",
+        "South korea",
+        "Switzerland",
+        "Great britain",
+        "United states",
+        "Azerbaijan"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "FortiGate",
+        "Roundcube",
+        "WireGuard",
+        "FortiGates",
+        "Discord",
+        "Weintek",
+        "Linux",
+        "SonicWall",
+        "Active Directory",
+        "yml",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "golang",
+        "python",
+        "lua"
+      ],
+      "ttps": [
+        {
+          "id": "T1595.001",
+          "name": "Active Scanning: Scanning IP Blocks",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1595.002",
+          "name": "Active Scanning: Vulnerability Scanning",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1583.003",
+          "name": "Acquire Infrastructure: Virtual Private Server",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1588.002",
+          "name": "Obtain Capabilities: Tool",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1588.005",
+          "name": "Obtain Capabilities: Exploits",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1588.007",
+          "name": "Obtain Capabilities: Artificial Intelligence",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1133",
+          "name": "External Remote Services",
+          "tactics": [
+            "Persistence",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1078.004",
+          "name": "Valid Accounts: Cloud Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.008",
+          "name": "Command and Scripting Interpreter: Network Device CLI",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1047",
+          "name": "Windows Management Instrumentation",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1136.001",
+          "name": "Create Account: Local Account",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1505.003",
+          "name": "Server Software Component: Web Shell",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1550.002",
+          "name": "Use Alternate Authentication Material: Pass the Hash",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1003.002",
+          "name": "OS Credential Dumping: Security Account Manager",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1003.004",
+          "name": "OS Credential Dumping: LSA Secrets",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1557.001",
+          "name": "Adversary-in-the-Middle: Name Resolution Poisoning and SMB Relay",
+          "tactics": [
+            "Credential Access",
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1555.003",
+          "name": "Credentials from Password Stores: Credentials from Web Browsers",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1552.001",
+          "name": "Unsecured Credentials: Credentials In Files",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1110.001",
+          "name": "Brute Force: Password Guessing",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1021.002",
+          "name": "Remote Services: SMB/Windows Admin Shares",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1021.006",
+          "name": "Remote Services: Windows Remote Management",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1572",
+          "name": "Protocol Tunneling",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1567",
+          "name": "Exfiltration Over Web Service",
+          "tactics": [
+            "Exfiltration"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "d9edfa7e57067b0a175577e511a9a7ac3d885d15ce28080fa779203317f7616a",
+          "e15780896245c5f8cbff9303a517e782e94e20f39bb87221a5cb1faac5372c07",
+          "0b65f60dc4ace2506003e18bf3ce4a25a149473b57c18af22167afc7037da3bb",
+          "27ddcf81362f87d865329e07235e950fb69ed175afa1f71f76ccfd24ef50fb46",
+          "61e706f5606e025ae8c85a8d1fe7096e0418e16d66acab75b009704d5529a94b",
+          "b8a76bd31984c13d2b0a47d2aaf68e7472d24f6e63575d1feb2fe50956c32acb",
+          "8a43a9c335d9dfe642a0fc5082800753f5ed450fb13b4823cae17e3d0a5bfa1f",
+          "3732b1ffd1a28cf0cc35532bcbea7c179928b8aaa20b16684cd0255ad0f075d1",
+          "482d16f6c2fa15c10cfc46e37cb298ccee3da1c1ac058a045166fa1429aeb8f7",
+          "c7a1e7f8c81e5deb8e63132e942a56aa88acfddabb14ef10141b5c950477b61e",
+          "c2a37e9f628d7bfe2e8403c451120f314ef65edb1fde1ab83444714fce85d787",
+          "ce8faad7a4074429d532a39dfd4aedd3afaf1145a3c8c89d2060fc7d8de5d598",
+          "8c6969152a0e1ac530909d426797b8326c755ac174a354b67a25f0d0e50b87fa",
+          "97826498e0bdebb04d6372a8aae3f86a63d22aeadd6edf15ae2931b037e21958",
+          "5ebceb30834144677c09faf41fa238d1e1eabbb60a4e565c43a337f02381aed9",
+          "73624b493febe5af0b9f5893adc2ae41c6b09bf1bf2e6fc05ab3a5908b9a7a2a",
+          "05f6e90c037205bf230a1784b0df09a49bc99ccca7643284e290c58679760ab2",
+          "5c65130964db07a2a3fa86b809430aec3ec61d49678349ec693e1ef39cd10b97",
+          "6a619a8710badffadead19d75d6aaf4db0d477282fbf44553a36bf7bc83c3a0c",
+          "52e85a33f216ce6e258d82eb7fa79c2bfdb3b7479751571b6c225884a61a10e8",
+          "d3d6c5c91d856abfcd3dc05a33d7f602b2c59c7a6950c1b641edeee88793600e",
+          "ffee49eed5f8095e30b124eaeaa1ff5e925e3ebd9f85ed1252abfbedd42dbbd2",
+          "dcec7e94a3a76f9f233bcfbb3e7b37b1bb869c1871a4bb29141db3e09344a8f8",
+          "73bc1226e3fafaab0189adb293bbd9a9a1bbfd8d6e68e4ad8efc309d59aaa050",
+          "02575593e5259f5ba22d524d1fefd71d56d60d0e49d2597333cd4de83ccac9a8",
+          "2abc95ce81460a1f018a3ad97a82b4cf201ad1944f2e6fa5a625f301c48b54b7",
+          "57220bac36ac74a003ac09a4c1b6248b43ad10cae2cde4019ceb3144abf6879c",
+          "5e36c5b3c592172d46d1fc73ab594611c2f8fb600a18f4bd33dbf5719313a00e",
+          "19b00abb2caa589b8d2d5cd4816be65e5f456e0c7edbccf17df8fc17dd97cbfe",
+          "bc7870c02f5d74828064a0d08a275e927ca205a85e847ed4f48cc4b45bc87b3c",
+          "9a05fe85b9528115f9515b14e17aeeca9011f83cdd1e4c72acc93bc284a1e467"
+        ],
+        "ipv4": [
+          "46.8.236.121",
+          "129.146.87.174",
+          "103.28.71.82",
+          "108.175.14.121",
+          "122.155.11.107",
+          "144.91.77.125"
+        ],
+        "domain": [
+          "ukroboronprom.com.ua",
+          "all-smart.freeddns.org",
+          "sp-psdebs.education-bf.com"
+        ],
+        "url": [
+          "http://129.146.87.174:18080/hJCdxq/popoc.py",
+          "http://129.146.87.174:18080/UzIwMH/forti-ca.txt",
+          "http://129.146.87.174:18080/aN2MLr/forti_GB.txt",
+          "http://129.146.87.174:18080/OJGWIP/son2.tar.gz"
+        ]
+      },
+      "links": [
+        "https://www.group-ib.com/blog/offensive-cyber-operations-europe/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Online Casino Serves Malicious Python SDK",
+      "summary": "The malicious PyPI package aurum-pay (version 1.2.0) presents itself as a working payment SDK for an online casino, but its first real API request silently fetches a command from the casino's domain and runs it. On Linux, that command downloads and launches \"RCMD Remote Agent,\" a remote access trojan that installs persistence as a fake Chromium systemd service. The trojan connects to a hard-coded controller and gives the operator shell access, file transfer, reconnaissance, and screenshots. Because the SDK's default host also receives API keys and customer payment data, applications using the package may have exposed sensitive information as well. Defenders should assume compromise of any host that ran aurum-pay and check for the listed persistence files and network connections.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "systemd",
+        "macOS",
+        "Dropbox",
+        "curl",
+        "Chromium"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "_boot_once"
+      ],
+      "languages": [
+        "python",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "d6e250af80317e26d850f41d5c15e61fad4f678074a4f70695069fb6f7cab206",
+          "36df147e96e7a4de151feaa2259a4e31ce0bd91b83b418c02f41735948bf5b64",
+          "c119af2c72f0e68556fc0c7ca0c858845a04b5f46ebb31b614414a5bf470e414"
+        ],
+        "sha1": [
+          "f0a4a1638252f6957597efb8b9ac7c0623231535"
+        ],
+        "ipv4": [
+          "209.99.184.80"
+        ],
+        "domain": [
+          "aurum-casino.com"
+        ],
+        "url": [
+          "https://aurum-casino.com/sdk/ping",
+          "https://www.dropbox.com/scl/fi/ovn8wxlle1eev6fapq8kv/rcmd-agent?rlkey=mzlx4zi0peodkv8vwdv4tr0v7&st=vv80smtk&dl=1"
+        ]
+      },
+      "links": [
+        "https://opensourcemalware.com/blog/online-casino-serves-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
+      "summary": "Threat actors are deploying GSocket, an open source remote access tool, on compromised Linux servers to keep access after the original web application vulnerabilities are patched. GSocket relays traffic through a shared public network, so there is no threat actor-owned IP address or domain to block. Microsoft Defender telemetry shows detections rising 356.2% from March through August 2026, concentrated on PHP web applications and cPanel hosting. Education and research accounted for the largest share of affected organizations at 30.7%. Defenders should remediate the host by removing the GSocket client, persistence, and staged files, and constrain outbound traffic rather than relying on application patching alone.",
+      "completeness": "High",
+      "threats": [
+        "Gsocket_tool",
+        "Gs-netcat",
+        "Timestomp_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 6,
+      "software": [
+        "Linux",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint",
+        "cPanel",
+        "curl",
+        "systemd",
+        "Telegram",
+        "Discord"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "java"
+      ],
+      "ttps": [
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.004",
+          "name": "Command and Scripting Interpreter: Unix Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1053.003",
+          "name": "Scheduled Task/Job: Cron",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1543.002",
+          "name": "Create or Modify System Process: Systemd Service",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1036",
+          "name": "Masquerading",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1564.001",
+          "name": "Hide Artifacts: Hidden Files and Directories",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1222.002",
+          "name": "File and Directory Permissions Modification: Linux and Mac Permissions",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1070.006",
+          "name": "Indicator Removal: Timestomp",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1070.004",
+          "name": "Indicator Removal: File Deletion",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1090.002",
+          "name": "Proxy: External Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "d94f75a70b5cabaf786ac57177ed841732e62bdcc9a29e06e5b41d9be567bcfa",
+          "f95c4d029e6784e3849b4d1e2e2ae1a661187236ef7c5d487c71158a290a03b5",
+          "55d141bb2f62c527c3fea3413b8429fed7d52633d0b123b5e611bfa42165229f",
+          "12450bafc7a4398040e1ad3a16dbf4dbc79b6a8f83ef306c4f0f73f59886f06c"
+        ],
+        "domain": [
+          "cdn.gsocket.io",
+          "gsgg.b-cdn.net",
+          "isc.sans.edu",
+          "sansec.io"
+        ],
+        "url": [
+          "https://gsocket.io/y",
+          "https://gsocket.io/install.sh",
+          "https://gsgg.b-cdn.net/bin/gs-netcat_mini-linux-x86_64",
+          "https://cdn.gsocket.io/bin/gs-netcat_mini-linux-aarch64",
+          "https://github.com/hackerschoice/gsocket",
+          "https://isc.sans.edu/diary/32816",
+          "https://sansec.io/research/gsocket"
+        ]
+      },
+      "links": [
+        "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Citrus Ransomware: VLESS for traffic, Sn00py for encryption, and LLMs lending a hand",
+      "summary": "Citrus Ransomware is a previously undocumented Russian-speaking group that targets Russian companies only, and it gains access through compromised contractor accounts used over corporate VPNs or internet-facing RDP. The group uses LLM-generated commands and scripts, identifiable by typical LLM comments, and tunnels traffic through Xray VLESS with REALITY to mimic HTTPS. It escalates privileges by exploiting the Certighost authentication bypass (CVE-2026-54121) and disables Windows Defender and other security tools via malicious Group Policy Objects. Its Sn00py-family ransomware, distributed as ransomware-as-a-service, encrypts user files with RSA-2048 and ChaCha20 and skips domain controllers so the policy keeps spreading. Defenders should tightly control contractor access, since compromised contractor accounts are how attackers get in.",
+      "completeness": "Medium",
+      "threats": [
+        "Sn00py",
+        "Atexec_tool",
+        "Impacket_tool",
+        "1c-shell_tool",
+        "Metasploit_tool",
+        "Mimikatz_tool",
+        "Snaffler_tool",
+        "Fscan_tool",
+        "Adrecon_tool",
+        "Bloodhound_tool",
+        "Xray_tool",
+        "Anydesk_tool",
+        "Shadow_copies_delete_technique",
+        "Meterpreter_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Windows Defender",
+        "KeePass",
+        "curl",
+        "Microsoft SQL",
+        "Telegram",
+        "Google Chrome",
+        "Chrome",
+        "bcdedit",
+        "PsExec",
+        "have more..."
+      ],
+      "algorithms": [
+        "chacha20",
+        "rsa-2048"
+      ],
+      "languages": [
+        "java",
+        "powershell"
+      ],
+      "iocs": {
+        "md5": [
+          "d631627131b90d576d77f4bf530e1abe",
+          "7107fb029e7c63523e3aca5fc8e56b38",
+          "e251df2d0b7c3682965efb4d2009a2f4",
+          "17b29b6c9de80402a45e321bbe1168fa",
+          "9eee984b187423c46c10a63d080da15d",
+          "cf903e4a1629aa0582fd0363b5786676"
+        ],
+        "ipv4": [
+          "91.210.109.118",
+          "91.210.108.180"
+        ],
+        "domain": [
+          "2ip.io"
+        ]
+      },
+      "links": [
+        "https://securelist.com/citrus-ransomware/121879/"
+      ]
+    }
+  }
+]

@@ -970,5 +970,156 @@
         "https://github.com/zingolabs/zingo-common/pull/85"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Beyond the clipboard: The evolving tradecraft of ClickFix",
+      "summary": "ClickFix is a social engineering technique that tricks users into pasting and running commands, and threat actors keep finding new ways to use it. Recent campaigns have used malvertising, typosquatted domains, SEO poisoning, and compromised websites to lure victims to fake Cloudflare \"verify you are human\" pages. Attackers add fake verification messages in terminals to make the malicious PowerShell look legitimate while it downloads and runs payloads. Delivered payloads now include RATs such as a Node.js-based tool disguised as an RMM, lateral movement tooling used to reach domain controllers, and steganographic chains that rebuild executables from PNG files. Defenders should train users never to paste commands at a web page's request, restrict execution from user-writable locations, and monitor for behaviors like browser-spawned PowerShell and new scheduled tasks or Run keys.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Typosquatting_technique",
+        "Seo_poisoning_technique",
+        "Duskdesk",
+        "Rustdesk_tool",
+        "Matanbuchus_maas",
+        "Astarionrat",
+        "Rmmproject",
+        "Etherrat",
+        "Smbexec_tool",
+        "Dll_sideloading_technique",
+        "Winrm_tool",
+        "Steganography_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "node.js",
+        "Cloudflare",
+        "ChatGPT",
+        "PsExec",
+        "Active Directory",
+        "Firefox",
+        "Mozilla Firefox",
+        "Chrome",
+        "Google Chrome",
+        "BraveSoftware",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "de9d325af3156232c34916840210efb5706d6e6a5eba1827c8240e4f71c09fa2",
+          "ed37c12fc4beea98722f6f308cec45e6440c3089e1a002c837bed147fbeb0c52",
+          "4155a4c7e857d9b613e14cf00e148037859cf627cf4004f5a4257f2cd29de2cb",
+          "e921fe5307e29bf6fd00000dd594356affd3a7b044e52720c7f10decbdc305b9"
+        ],
+        "ipv4": [
+          "167.148.201.104",
+          "23.227.199.41",
+          "151.240.151.76"
+        ],
+        "domain": [
+          "apirequestaccess.com",
+          "moziw.com",
+          "westlaw-signon.com",
+          "vvestalw.ghost.io"
+        ],
+        "url": [
+          "https://vvestalw.ghost.io",
+          "https://westlaw-signon.com",
+          "https://vvestalw.ghost.io/",
+          "https://moziw.com/vvestalw/",
+          "https://westlaw-signon.com/",
+          "http://apirequestaccess.com/cfirm.php?token=QsKjQ1pEd43R33hJ1xV4LQwIVE8"
+        ]
+      },
+      "links": [
+        "https://www.huntress.com/blog/the-evolving-tradecraft-of-clickfix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Black October 2026: Critical Vulnerabilities, Trusted Technology Under Attack, and What Comes Next",
+      "summary": "PHP2Shell, two critical unauthenticated RCE flaws in PHP (CVE-2026-109618 and CVE-2026-109619), were rapidly scanned and exploited, and a suspected Chinese-nexus group, CL-UNK-1280, used them with a Linux privilege escalation flaw to compromise about 25 Palo Alto Networks PAN-OS appliances worldwide. October also saw exploitation of BeyondTrust Remote Support and Ivanti Connect Secure, and supply-chain attacks on the LiteLLM package and on 42 GitHub repositories that targeted developer tools and cloud and AI credentials. The report's main takeaway is that the time between disclosure and exploitation is shrinking, so defenders should prioritize by real exposure rather than CVSS alone. It also warns that trusted software, identities, and AI integrations are increasingly used as attack paths. Holiday staffing gaps may heighten ransomware and fraud risk through the end of 2026.",
+      "completeness": "High",
+      "threats": [
+        "P2pshell_vuln",
+        "Supply_chain_technique",
+        "Mirai",
+        "Potassium"
+      ],
+      "geo": [
+        "Chinese"
+      ],
+      "software": [
+        "Node.js",
+        "PAN-OS",
+        "Linux",
+        "Active Directory",
+        "Brotli",
+        "Ivanti",
+        "ColdFusion",
+        "Adobe ColdFusion",
+        "LiteLLM",
+        "Docker",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "sha1"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "0c5486f06620e26e316f4b33f318b0d646d5e1133789331aa2fed012360d1486",
+          "e2529d4afa39ae4db2eb05d5176317c906289abf09660c75bdeec43e54c55aa3"
+        ],
+        "sha1": [
+          "84965cd889f8f8a7a7549def4678f9c3eefd99d0",
+          "c472dab4ff7c16782a8037f988d4daa6d4bdb343"
+        ],
+        "md5": [
+          "b61a098fc62a2c2696e196dca78da71a",
+          "00cc64d29286b86e9c65f09466e2e6d8"
+        ],
+        "ipv4": [
+          "134.199.154.64",
+          "117.55.202.115",
+          "45.198.224.169",
+          "5.175.189.76",
+          "92.118.112.100",
+          "45.115.26.26"
+        ],
+        "domain": [
+          "hik.gettingheadfromduckysmom.st",
+          "thunder.godofthunder.st",
+          "hackattackkaboom.botlesscucks.st"
+        ],
+        "url": [
+          "http://45.115.26.26:8000/cCmono",
+          "http://92.118.112.100/mountpoint",
+          "http://92.118.112.100/nfs-setup"
+        ]
+      },
+      "links": [
+        "https://www.cyberproof.com/blog/black-october-2026-critical-vulnerabilities-trusted-technology-under-attack/"
+      ]
+    }
   }
 ]

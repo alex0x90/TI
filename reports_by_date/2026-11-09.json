@@ -732,5 +732,124 @@
         "https://habr.com/ru/companies/pt/articles/1104152/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Identifying Yutek-NN Personnel Linked to Past Cyber Campaigns Serving Russian State Interests",
+      "summary": "Void Blizzard, also tracked as Laundry Bear, is linked to Yutek-NN, a private Russian company that the United States has indicted for cyber espionage on behalf of the Russian government. The report identifies Anton Listarov as the person who controlled accounts and infrastructure used in 2021 email campaigns targeting Russian opposition activists supporting Alexei Navalny. Those campaigns used a leaked database of Free Navalny registrants to send threats and fake Smart Voting recommendations before the 2021 Duma election. The investigators assess with moderate confidence that Vyacheslav Zubkov coordinated with Listarov, and both reportedly worked under Denis Obrezko. The report links the activity to FSB and Presidential Administration interests, though it does not establish direct state tasking.",
+      "completeness": "Low",
+      "geo": [
+        "Russian",
+        "Russia",
+        "Moscow"
+      ],
+      "software": [
+        "Telegram",
+        "Steam"
+      ],
+      "iocs": {
+        "sha1": [
+          "524993311a904548effe929d457608401bae5277"
+        ],
+        "domain": [
+          "free.navalny.com",
+          "xss.is",
+          "fbk.info",
+          "rusvote.press",
+          "navalny.host",
+          "rusvote.uno",
+          "navalnylive.tech",
+          "rusvote.pw",
+          "rusvote.tech",
+          "rusvote.space",
+          "rus-vote.online",
+          "navalnydream.online",
+          "navalny-team.com",
+          "eshche.pw",
+          "eshche.tech",
+          "eshche.space",
+          "darkweb.pw",
+          "gosuslugi.uno",
+          "kryptonite.ru.com",
+          "rostec.online",
+          "sulcron.com",
+          "flyugegekhaymen.xyz",
+          "kammesant.com",
+          "reo.ru.com",
+          "veld-21.com",
+          "sport-marathon.ru",
+          "vk.com",
+          "mirtesen.ru",
+          "navalnyfail.ru",
+          "navalnyfail.online",
+          "zasekin.press",
+          "zasekin.space",
+          "vsfi.org"
+        ],
+        "url": [
+          "https://github.com/EvilSocks",
+          "https://github.com/EvilSocks/avtozak_help/commit/524993311a904548effe929d457608401bae5277.patch"
+        ],
+        "email": [
+          "vote@fbkinfo.tech",
+          "babkov@protonmail.com",
+          "evilsocks.dev@gmail.com",
+          "vampiro.rastafari@gmail.com"
+        ]
+      },
+      "links": [
+        "https://malfors.com/blog/yutek-nn-cyber-campaigns-1",
+        "https://github.com/EvilSocks/avtozak\\_help"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "A signed fake Windows DLL that asks BITS to keep it alive",
+      "summary": "A signed malicious DLL, DUI70.dll, poses as Microsoft's \"Windows DirectUI Engine\" but is signed with a certificate issued to an individual, Barbaros Cetinkaya. It is sideloaded by a genuine Windows program, CameraSettingsUIHost.exe, placed in C:\\Users\\Public\\Documents. The DLL forwards all 86 legitimate DirectUI functions so the host keeps working, and it creates a deliberately failing BITS job whose notify command relaunches the host and reloads the DLL. The DLL then acts as a remote-access backdoor over HTTPS, offering 14 commands including remote shell, file transfer, and process control. Defenders should audit BITS jobs for notify commands pointing outside C:\\Windows, hunt for the listed files in the Public Documents folder, and block the signing certificate.",
+      "completeness": "Low",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Bitsadmin_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Opus 5",
+        "Claude Code",
+        "Windows Defender",
+        "Windows service",
+        "WinHTTP",
+        "Azure App Service"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "Get-BitsTransfer"
+      ],
+      "iocs": {
+        "sha256": [
+          "adf0957559b8914b125ef263959f2882481df3b5dd0472888bf07e4e455a5d34"
+        ],
+        "md5": [
+          "237dd9c69ce233b0cf24aa24aa803da4"
+        ],
+        "domain": [
+          "healthlys.com",
+          "sync-endpoint.azurewebsites.net",
+          "sync-endpoint-1.azurewebsites.net",
+          "sync-endpoint-2.azurewebsites.net",
+          "sync-endpoint-3.azurewebsites.net"
+        ]
+      },
+      "links": [
+        "https://rogueauthority.org/signed-fake-windows-dll-bits-backdoor"
+      ]
+    }
   }
 ]

@@ -1,0 +1,596 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Dissecting StrikeStub: ClickFix PowerShell Malware and Modular RAT",
+      "completeness": "Medium",
+      "threats": [
+        "Strikestub",
+        "Dcrat",
+        "Asyncrat",
+        "Hvnc_tool",
+        "Process_injection_technique",
+        "Clipboard_hijacking_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows remote access",
+        "Chromium",
+        "Firefox",
+        "Google Chrome",
+        "chrome",
+        "BraveSoftware",
+        "Brave-Browser",
+        "Mozilla Firefox"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "functions": [
+        "sessionLoop"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://www.akamai.com/blog/security-research/2026/nov/strikestub-clickfix-powershell-malware-modular-rat",
+        "https://github.com/radareorg/radare2"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "KongTuke ClickFix comes for a Canadian treasure: Canada Dry",
+      "summary": "KongTuke, a ClickFix operator, has been injecting a loader into five websites of one drinks company, including canadadry.ca, mottsclamato.ca, drinknestea.ca, hydratewithcore.com and drinkbai.com. Some sites serve the loader from their own domain via a planted WordPress plugin, while others load it from outside hosts. The loader first harvests visitors' cookies and token-like storage values, then shows a fake Cloudflare check that tricks users into pasting a command into the Windows Run box. That command connects to an FTP server whose greeting downloads and starts two files, vclreg.exe and vclx370.bpl. Two sites first loaded the code in July 2026, and all five still carried it on 10 November 2026. Defenders should audit WordPress plugins and injected script tags on these domains, and check for these files in %APPDATA%\\Microsoft\\Windows\\Themes.",
+      "completeness": "Medium",
+      "threats": [
+        "Kongtuke",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Canadian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare",
+        "WordPress",
+        "curl"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "delphi",
+        "php"
+      ],
+      "iocs": {
+        "sha256": [
+          "bac7598633bc86d162fa53cb9a60055d3523806b9ac2dc34c86db62e5e59acd6",
+          "6b2c6a8d979bbd2f89ca1dbcbf524a41a53fa02146a74a32336f81b5a83fb6ff",
+          "ab6fc4fa3df8780b3a195f7a9a4492da3fd959baf1f06671c3485a0f80e96376",
+          "deaa1af05e29c1204ad85f40981dd1636198790ccb03e1909bd4455c321d7c4b",
+          "d97870758963bf9ce3caafaf65218bdc8f7fb26fb4e2102dd11305af8e7acc35",
+          "86f847071553858cb443c2610f4113ad976ae30453b8fae27eb068d4bf2252f6",
+          "7c4d27c2bcf94e249859a618e14051519e599ca17934efcdf655d21092b1b4b6",
+          "7940f2e85bbe067b362e6adf483885fed598b20739d46836e9cf57fff3da470f",
+          "dfc5c894e6f66970f963440ab579976f64be02d03b123b484ed76f8a1585ca88",
+          "9af8d6560b2b656c9806e0cfd61f5a28890ac66f18881b4be24e73f0dacd9add",
+          "996c49cfa4f0b7b60c7a5368b6a5ab2d87277d15b45077b8436e83787e430b58",
+          "5ecc332f8a25bb5ed8f1caeea16229e8d6d48b4c10bacd6deecb1a4866b38b7e",
+          "b48e3a914f021674d36049d4707b58c437bebe96d1e42f1d7e688500a165fbb4"
+        ],
+        "ipv4": [
+          "144.31.215.239",
+          "46.29.26.20"
+        ],
+        "domain": [
+          "report-ftp.wiki",
+          "yelahaye.surf",
+          "syncservice9638.com",
+          "battaglia.lol",
+          "kloppert.lol",
+          "griffihhs.click",
+          "canadadry.ca",
+          "mottsclamato.ca",
+          "www.drinknestea.ca",
+          "hydratewithcore.com",
+          "drinkbai.com",
+          "monteiro.click",
+          "lrmbardo.lol",
+          "watsiia.top",
+          "bradtte.lol",
+          "sehneider.com"
+        ],
+        "url": [
+          "https://monteiro.click/3log1f4x.js",
+          "https://monteiro.click/we4uc4cq.js",
+          "https://watsiia.top/y5y6di9k.js",
+          "https://sehneider.com/woon2mr9.js",
+          "https://lrmbardo.lol/pn7wc3xl.js",
+          "https://battaglia.lol/wltovzil.js",
+          "https://bradtte.lol/file.js",
+          "https://kloppert.lol/onrc8wif.js",
+          "https://griffihhs.click/ln3ped5u.js",
+          "https://syncservice9638.com/ue/x/"
+        ]
+      },
+      "links": [
+        "https://ohey.ca/research/kongtuke-canada-dry-clickfix/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Exchange for breakfast: Turla’s Cereal tricks are not for kids",
+      "summary": "Turla, a Russia-aligned APT group, is behind Cereal, a previously undocumented modular .NET toolset designed to run on compromised Microsoft Exchange servers for long-term cyberespionage. ESET found it at a Kazakh governmental organization and later at a Romanian one, where it targeted emails involving NATO and EU addresses. The toolset has no external command-and-control infrastructure, because the victim's own Exchange server receives commands through web paths that resemble legitimate Exchange traffic. Its CerealBox component hijacks existing transport agents in memory to collect messages with attachments, leaving no new agent in Exchange's configuration. Its use of unusual .NET techniques, such as native code execution before the runtime starts and abuse of the native image cache, sets it apart from most recent APT cases.",
+      "completeness": "Low",
+      "threats": [
+        "Cerealbox",
+        "Cerealloader",
+        "Cerealrunner",
+        "Cerealsprinter",
+        "Cerealneuron",
+        "Neuron",
+        "Cerealhermit",
+        "Cerealmoth"
+      ],
+      "geo": [
+        "Romania",
+        "Middle east",
+        "Russian",
+        "Ukraine",
+        "United kingdom",
+        "Romanian",
+        "Kazakhstan",
+        "Russia",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Exchange",
+        "Microsoft Exchange server",
+        "Outlook",
+        "Active Directory"
+      ],
+      "links": [
+        "https://www.welivesecurity.com/en/eset-research/exchange-for-breakfast-turlas-cereal-tricks-are-not-for-kids/",
+        "https://github.com/eset/malware-ioc/tree/master/turla"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "4EverAble2Shell is already mining Monero on live N-central servers",
+      "summary": "4EverAble2Shell is an unauthenticated remote code execution exploit against N-able N-central that grants root, and it works against 2026.4 Hotfix 2 when the Legacy API is enabled. The attacker sends a crafted SOAP fault to the Apache Axis endpoint, causing a Java class to run a shell command built from attacker-supplied data. A Python script then escalates from the nable account to root by abusing N-central's own maintenance helper, and the root command installs a Monero miner with persistence. Researchers found 21 live N-central servers mining for the operator within hours of exploit publication, 19 of them already on the patched build. Defenders should check for the listed file, persistence, process and network artifacts, treat any hit as full compromise, and keep the Legacy API disabled until the fix is released.",
+      "completeness": "Low",
+      "threats": [
+        "4everable2shell_exploit",
+        "Xmrig_miner",
+        "Agent2shell_exploit"
+      ],
+      "geo": [
+        "Germany",
+        "Sweden",
+        "United kingdom",
+        "South africa",
+        "United states",
+        "France",
+        "Canada"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "sudo",
+        "curl",
+        "systemd",
+        "crontab",
+        "FreePBX",
+        "PaperCut",
+        "Node.js"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "randomx",
+        "sha256",
+        "base64",
+        "gzip"
+      ],
+      "functions": [
+        "setLDFileOwner"
+      ],
+      "languages": [
+        "java",
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "fc4c01fd11bc301cf312830460cfdccc3af9dcfe50c910b86d6a1117bc76c747"
+        ],
+        "ipv4": [
+          "157.20.241.16",
+          "139.99.69.109",
+          "79.76.51.56"
+        ],
+        "url": [
+          "http://157.20.241.16:8080/jup.sh",
+          "http://157.20.241.16:8080/xvgz",
+          "http://157.20.241.16:8080/ob/cronhit"
+        ]
+      },
+      "links": [
+        "https://huntback.io/blog/ncentral-4everable2shell-miners-on-live-servers",
+        "https://github.com/MSPNightmare/CVEs/tree/main/0-Days/N-Central%20N-Able/4EverAble2Shell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "How AI Revived a Stalled Attack on a U.S. Retailer",
+      "summary": "Attackers targeting a U.S. retail organization in September 2026 switched from hand-typed commands to long, error-free PowerShell scripts after their initial attempts were repeatedly blocked. Symantec assesses with high confidence that AI assistance was involved, with comments in the scripts reading as a model's reasoning and timing suggesting a human operator relaying output to an AI tool. About 10 minutes after querying SolarWinds Orion, the attackers used its bundled RabbitMQ Erlang cookie to run commands on a second server. The attackers appear financially motivated, searching point-of-sale scripts for passwords, and their tools overlap with ShadowPad-associated loaders and a staging server from an earlier non-AI intrusion. The AI added speed and reliability rather than new techniques, and Symantec saw dozens of similar AI-assisted attacks, mostly in September 2026.",
+      "completeness": "High",
+      "threats": [
+        "Yuze_tool",
+        "Dll_sideloading_technique",
+        "Shadowpad",
+        "Dllsearchorder_hijacking_technique",
+        "Breakchain_tool",
+        "Warlock",
+        "Putty_tool",
+        "Chisel_tool",
+        "Credential_harvesting_technique",
+        "Printspoofer_tool",
+        "Godpotato_tool"
+      ],
+      "geo": [
+        "Vietnam",
+        "Asia",
+        "China",
+        "Africa",
+        "Asian"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft SQL",
+        "Microsoft SQL Server",
+        "EfsPotato",
+        "Windows Encrypting File System",
+        "WinSCP",
+        "Zabbix",
+        "RabbitMQ",
+        "Active Directory",
+        "Windows service"
+      ],
+      "algorithms": [
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "Get-CimInstance"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "iocs": {
+        "sha256": [
+          "54fb493822bcd832f7b2256015f13e3dfde815e1931e7fd39a90ea8ad3fdbd0a",
+          "a6579b16f895cf9ac4c31ba20606f2ad1ac4d1458e95c296da2afc1039881513",
+          "9c866c403e6bd5778fa3788cac9aac39aab1bf2d18a22c9999a4c27e30c0abf3",
+          "e95a265bf220a4330f77f842b3eeed8b1ed8c61f51d7e3f2fd33bac14b6b26af",
+          "c21e4fb40f871e418def63a5cdf3603ed4c3c6d1b218710db8ba45538b66fa01",
+          "6500890307f3860899f96452fea3effde777e6fcf369dc1e8861bdb65836d55e",
+          "7265d69dd8d8939dc888ce5f05190ce200ee2660f928f3b84f60e6a7b3383205",
+          "3d79628bf7804dbf17e7b396ecd62ebf5d66518940c6d23daccf59a20953438a",
+          "f042d705e1de3b5f9b8161ff59aa3ff80c684f5aaeac42be589a579ab1c7cf51",
+          "5db5e7f655c4ee94411df8110d1b6d02bb15574ac199fa7a553ce6c3cb25bf03",
+          "f8b67854d119da08c704b78f7c9fae0501417f5e63ffece86d2e811f1c7dea68",
+          "ef7c23619cf9293002fbe4f50147e806de0168cf186ca01fea2e113dc2eb1dce",
+          "b739635832c7f7f2be4821982980d2977165a2c8226f5912e6431db8c0cf6eea",
+          "0241f569f4ce1bf0f2470867d6ba40f23f78d4d3ee2fbc423c91f3b591f446bc",
+          "c9a5e9799f2844a71d0085697b3c2adb5528f4b9516146826193ddbe4d89423c",
+          "fad5dc8987df3206fdc50d0f4889bee06721d54a373bdc2f5545ba560562647e",
+          "2b7ed8dc34a83430029764d64f81c8f42e19c81fe923742558c96799a34dcf19",
+          "7c8eb7d23337536ed2aec14f1425c2fcd13976a4390cfecf653533e6a3bd87c4",
+          "7e866f007b8e42b0888c922c290c92d4f5f285089865a8e62788a9b4409e2bcf",
+          "935c1861df1f4018d698e8b65abfa02d7e9037d8f68ca3c2065b6ca165d44ad2",
+          "ba4038fd20e474c047be8aad5bfacdb1bfc1ddbe12f803f473b7918d8d819436",
+          "deabe064a12641c4e95d4b133746f148d8ed4bcffd1dfe9ce1b6621dde2aa774",
+          "d92f20d73ade9a6134bec960aed0c02873e19cd03d707c85064c73ce0f852104",
+          "bcccfca65602e2691e25e8590a7029fa40712e05eac8bf203f3f5dc900b31ad4",
+          "9b077fc464d9a4a2e6b227e61eae8a759de13b728e7cd2f06563a1af0de93d19",
+          "59e51c54cf3ac4d375de96a358c15bc125fe5453ee29cf923276c429097b9eac",
+          "330e9314bd39898984e52e2e3cc01e84c9c4c95f5bc467cf5bc75cd539dd0438",
+          "2be9c2222cb177747f58f2ccb224a85879f1c2ffb0240e0b8968536d320b8edf",
+          "1df54c1c5ee76f2f8f962963df3962f1a688806631da01d0e5ce85b817a5e2f7",
+          "11b26168927a622ddc3beb592edc3bf476b897a360cbab36ad3ef0039068dd67",
+          "1f8565e14f8bcde3eb48a6676596d0cd8b7cc3c12d903f97b0e0b3ac8725c17c",
+          "d376e01930adabbe40634b8b16664a088d8bec2dc99aa88c16db9d302e45aaf5",
+          "642ea33ddf7eba3043cf7b567ccffe57d6671f640e7734072f02975dfa44d893",
+          "5ee783076e9c8b3830d8e2dccda9abf65be81a0b8dfc281ff12188f7607f1d38",
+          "dac237636f2fb1e44e28117999e77fc42a53d3b59b80cfb84928452ffe561793",
+          "76adf3141ccd877d98c85dbb7f6f227e70f71e8158392ac9797927260dd2faa3",
+          "5666332a66b1fb46bfbc7e076b21a8081f22931f5688686550d42bcec6aa3207",
+          "2ffe8c6910d08072ccb8fef133a4570c6a085289b669373b1b508bd294fe9b23",
+          "717319bc981c2b8f76907e2985f363540cb286f68aff0c75a5841eec2d0c9b04",
+          "7e9b60d021067dfe22b28783162ce9f55c2ccce7d221cadbf1f0f155dca6779e",
+          "9b7b2dadba43634e8f6b38f612287865800b6c790e83a69211da55434c26a74a",
+          "318ce2ca913ff8297f23886a6d6640f28f63ba2bb62c0c6897972265d71e1407"
+        ],
+        "ipv4": [
+          "204.194.49.129",
+          "155.254.22.215",
+          "166.0.25.106",
+          "154.81.37.136",
+          "108.165.20.205",
+          "103.142.103.225",
+          "176.97.117.157",
+          "103.79.79.191",
+          "103.79.79.120",
+          "8.219.82.21",
+          "43.208.224.101"
+        ],
+        "url": [
+          "http://154.81.37.136/server.ps1",
+          "http://166.0.25.106/server.ps1",
+          "http://166.0.25.106/filemanager.asp",
+          "http://204.194.49.129:8080/log.dll",
+          "http://204.194.49.129:8080/log.txt",
+          "http://204.194.49.129:8080/bdreinit.exe",
+          "http://204.194.49.129:8080/ASK.exe",
+          "http://204.194.49.129:8080/qwdajhsd.asp",
+          "http://108.165.20.205:8080/sqlrun2.ps1",
+          "http://103.79.79.191/yuze",
+          "http://8.219.82.21/yuze–Windows–X64.exe"
+        ]
+      },
+      "links": [
+        "https://www.security.com/threat-intelligence/ai-assisted-attack-us-retailer"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "WFX Phantom: The GitHub Actions Secret Stealer That Deletes Its Tracks",
+      "summary": "The wfx stealer is a CI secret-stealing script that attackers push into repositories using stolen GitHub tokens, including tokens issued to the Fly.io GitHub App and bot accounts. It collects all Actions secrets, runner process memory and cloud credentials, then tries to persist in AWS and Azure after rotation. The attacker reverts each commit and deletes the workflow run to cover its tracks. Thousands of repositories are affected, and the stealer has shifted from HTTP servers to Telegram-only exfiltration. Defenders should search for the listed commit messages and run-number gaps, rotate reachable secrets, remove cloud persistence, and block collection hosts and Telegram egress.",
+      "completeness": "Low",
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Docker",
+        "Kubernetes",
+        "Azure AD",
+        "Node.js",
+        "sudo",
+        "HashiCorp Vault"
+      ],
+      "functions": [
+        "GitHub",
+        "CreateAccessKey"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha1": [
+          "ee6e5addfe591923fc385553cb66cf0d25634a6b"
+        ],
+        "ipv4": [
+          "194.150.166.244",
+          "18.143.168.96",
+          "153.75.82.159",
+          "193.32.204.199"
+        ]
+      },
+      "links": [
+        "https://www.stepsecurity.io/blog/wfx-phantom-the-github-actions-secret-stealer",
+        "https://github.com/EbukaLovesTech/2gether/pull/1",
+        "https://github.com/search?q=%22docs%3A+dependency+audit+notes%22&type=pullrequests",
+        "https://api.github.com/repos/EbukaLovesTech/2gether/issues/1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Compromised GitHub accounts push CI secret stealer to tens of thousands of repositories",
+      "summary": "A threat actor used stolen GitHub credentials from November 10 to push a malicious workflow payload, named wfx-loot, into tens of thousands of repositories. The payload is a roughly 1,500-line shell script that steals GitHub Actions secrets, cloud credentials and AI provider keys from CI runners. It escalates to deeper cloud access and attempts to persist through forged status checks, AWS trust policy rewrites and Azure federated identity injection. Compromised accounts first opened probe pull requests, and at least 1,806 repositories show signs the payload ran, though the run logs were deleted. Defenders should assume every secret and cloud role available to affected workflows is compromised, and check for a missing run number on the attacker's commits.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Claude"
+      ],
+      "languages": [
+        "golang",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "89695abb392d5cfd4972672961e644bb46baa98aa1ed7173c2a2816c762735cf"
+        ],
+        "ipv4": [
+          "194.150.166.244",
+          "18.143.168.96",
+          "193.32.204.199"
+        ],
+        "url": [
+          "http://194.150.166.244:8080/exfil"
+        ]
+      },
+      "links": [
+        "https://www.aikido.dev/blog/compromised-github-accounts-push-ci-secret-stealer-to-tens-of-thousands-of-repositories",
+        "https://github.com/AikidoSec/safe-chain"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Attackers turn NIKKE’s game launcher into malware",
+      "summary": "Attackers abused the NIKKE game launcher, a signed and legitimate binary from Shift Up and Level Infinite, by remotely instructing it to download a payload through its server-pushed task channel. The payload was a Lua-based info stealer disguised as a log file containing LuaJIT bytecode, and it ran inside the launcher process without modifying any shipped binaries. It targeted saved browser passwords and cookies from Chrome, Edge and Opera, cryptocurrency wallet extensions, and developer secrets such as SSH keys, Git credentials and Kubernetes configs. Stolen data was sent through the launcher's existing telemetry channel, and the full run took under ten minutes. Bitdefender Advanced Threat Defense stopped the launcher before exfiltration on protected systems, and the delivery server was taken down. Defenders should watch for non-browser processes accessing credential stores and for oversized log files with LuaJIT headers.",
+      "completeness": "High",
+      "threats": [
+        "K2f",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Iceland"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Chromium",
+        "Kubernetes",
+        "Opera",
+        "NuGet"
+      ],
+      "wallets": [
+        "metamask",
+        "coinbase",
+        "keplr",
+        "tronlink"
+      ],
+      "crypto": [
+        "solana"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "aes-256-gcm"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "iocs": {
+        "sha256": [
+          "cc0ad05bfe85940a6067b3a72c182d3953339129206634141926d5d0b35973ec"
+        ],
+        "md5": [
+          "d6c049a09ba8ac3085c51ee9df24a4e5"
+        ],
+        "ipv4": [
+          "89.127.233.127"
+        ],
+        "domain": [
+          "analytics.insightjs.com"
+        ],
+        "url": [
+          "https://analytics.insightjs.com/comm/assets/insight.bundle"
+        ]
+      },
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/nikke-game-launcher-malware",
+        "https://gist.github.com/MotherSphere/d6c049a09ba8ac3085c51ee9df24a4e5"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "APT StingyBasilisk: Malware is flowing through the pipes",
+      "completeness": "High",
+      "threats": [
+        "Com_hijacking_technique",
+        "Silentcom",
+        "Tediousloader",
+        "Cunningdoor",
+        "Atexec_tool",
+        "Impacket_tool",
+        "Dll_sideloading_technique",
+        "Trojan.win64.monloader",
+        "Trojan.win64.pipeserver"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 8,
+      "software": [
+        "Task Scheduler",
+        "Windows Task Scheduler",
+        "Component Object Model",
+        "HyperV",
+        "Windows Service"
+      ],
+      "algorithms": [
+        "cbc",
+        "md5",
+        "fnv-1a",
+        "xor",
+        "aes-256-cbc",
+        "aes-192-cbc",
+        "aes-256",
+        "curve25519",
+        "chacha20",
+        "ecdh"
+      ],
+      "functions": [
+        "TaskRegisteredEvent",
+        "TaskName",
+        "W32Time",
+        "select",
+        "HandlerPayload"
+      ],
+      "links": [
+        "https://ptsecurity.com/research/pt-esc-threat-intelligence/apt-stingybasilisk-malware-is-spreading-through-the-pipes/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "The Enemy Within. Tracking LIMINAL PANDA and SilentAir through Mobile Networks",
+      "summary": "Enea reports on LIMINAL PANDA, a China-nexus actor that abuses mobile operator interconnect networks, and on SilentAir, a newly identified state-level actor. LIMINAL PANDA uses GTPDoor, a Unix implant for covert command and control, and Enea found a new variant, GTPDoor v3, that operates over GTP-U traffic, which is harder to inspect. SilentAir generates SS7 and Diameter signalling attacks from compromised operator nodes, with Taiwan as its primary target and VIP political and government subscribers among its victims. Its tactics include location updates for call and SMS interception, and it sent silent SMS to confirm interception was active. Enea sees possible but unconfirmed links between the two actors. The key takeaway for defenders is to secure all interconnect protocols as untrusted and share visibility across them.",
+      "completeness": "Low",
+      "threats": [
+        "Gtpdoor",
+        "Sgsnemu",
+        "Echobackdoor",
+        "Timestomp_technique",
+        "Sctpe_tojan",
+        "Sigtranslator",
+        "Cordscan"
+      ],
+      "geo": [
+        "Latin america",
+        "Chinese",
+        "Taiwanese",
+        "Asia",
+        "Russian",
+        "Taiwan",
+        "Middle east",
+        "China",
+        "Asian",
+        "Africa"
+      ],
+      "software": [
+        "Linux"
+      ],
+      "algorithms": [
+        "md5",
+        "xor"
+      ],
+      "iocs": {
+        "md5": [
+          "35f0d4d0c5519a2957338e448fce53bc",
+          "da35d98c9a22e8ede93595d21fe7e63e"
+        ]
+      },
+      "links": [
+        "https://www.enea.com/insights/the-enemy-within-tracking-liminal-panda-and-silentair-through-mobile-networks/"
+      ]
+    }
+  }
+]
