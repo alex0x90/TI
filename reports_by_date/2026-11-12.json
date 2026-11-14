@@ -592,5 +592,993 @@
         "https://www.enea.com/insights/the-enemy-within-tracking-liminal-panda-and-silentair-through-mobile-networks/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors",
+      "summary": "Chinese-speaking attackers tracked as CL-STA-1238 used the open-source AI penetration testing framework Cairn, paired with Zhipu GLM and DeepSeek models, to run 25 autonomous operations against at least 19 organizations in semiconductor, defense policy and civil society sectors. Operators supplied only a target and a goal, and Cairn planned and executed the intrusions on its own, with no attacker-imposed time limit. The attacks confirmed unauthorized access or data retrieval at 10 organizations, including exposed personal data, persistent administrator accounts and a modified standards-ballot document. Unit 42 assesses with moderate confidence that this is China-nexus intelligence collection. The report's key takeaway is that the exploited weaknesses were known, such as authentication bypasses, weak credentials and dated CVEs, so identity hygiene, attack-surface reduction and patching remain effective.",
+      "completeness": "Medium",
+      "threats": [
+        "Cairn_tool",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "China",
+        "Chinese",
+        "Canadian",
+        "Hong kong"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "DeepSeek"
+      ],
+      "iocs": {
+        "ipv4": [
+          "154.44.31.4",
+          "82.29.129.54"
+        ]
+      },
+      "links": [
+        "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+        "https://github.com/oritera/Cairn"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Luna Moth Returns, Re-Targeting Law Firms Through Access Tokens",
+      "summary": "Luna Moth, also known as Silent Ransom Group, is a data-extortion group that is returning to law firms that likely did not pay its earlier ransom demands. Instead of deploying remote-management tools or malware, the group persuades victims during video calls, posing as IT support, to copy a Microsoft Graph access token from Microsoft 365 Copilot. The attackers then replay the token from their own infrastructure to bulk-download files within about an hour. Because the token was issued to a compliant device after MFA and Conditional Access checks, the activity appears to be the user's own. Defenders should enable Continuous Access Evaluation with strict location enforcement and verify unsolicited IT calls through known help-desk numbers.",
+      "completeness": "Low",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Residential_proxy_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft 365",
+        "SharePoint",
+        "Graph API",
+        "Microsoft access",
+        "chrome"
+      ],
+      "functions": [
+        "IT"
+      ],
+      "iocs": {
+        "ipv4": [
+          "104.37.184.195"
+        ],
+        "domain": [
+          "justsendtext.xyz"
+        ]
+      },
+      "links": [
+        "https://reliaquest.com/blog/threat-spotlight-luna-moth-returns-re-targeting-law-firms-through-access-tokens/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "T-SQL Being Abused to Deliver Malware on Compromised MS SQL Servers",
+      "summary": "Attackers are abusing exposed Microsoft SQL Server instances with a Go-based payload, dllhost.exe, that scans IP ranges for open TCP port 1433 using an embedded Naabu scanner. The malware brute-forces logins with a list of usernames and about 2,700 predefined passwords, then runs T-SQL commands that enable xp_cmdshell and download additional executables. Those executables include an XMRig Monero miner disguised as a Microsoft Edge update and a Gh0st RAT variant that supports keylogging, screen capture, and remote shell access. The campaign uses scheduled tasks and Run key persistence to survive reboots. Defenders should restrict SQL Server exposure to the Internet and enforce strong credentials.",
+      "completeness": "High",
+      "threats": [
+        "Xmr_miner",
+        "Naabu_tool",
+        "Themida_tool",
+        "Xmrig_miner",
+        "Gh0st_rat",
+        "Upx_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 20,
+      "software": [
+        "MS SQL",
+        "Microsoft SQL",
+        "Microsoft SQL Server",
+        "S SQL Se",
+        "Microsoft Edge",
+        "Microsoft Edge Update",
+        "winlogon",
+        "Windows service",
+        "MSSQL"
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "ConnectionSQL",
+        "URLDownloadToFileA",
+        "memcpy",
+        "SeShutdownPrivilege"
+      ],
+      "languages": [
+        "visual_basic",
+        "php"
+      ],
+      "ttps": [
+        {
+          "id": "T1046",
+          "name": "Network Service Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1110.001",
+          "name": "Brute Force: Password Guessing",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1505.001",
+          "name": "Server Software Component: SQL Stored Procedures",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.005",
+          "name": "Command and Scripting Interpreter: Visual Basic",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1071.002",
+          "name": "Application Layer Protocol: File Transfer Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1095",
+          "name": "Non-Application Layer Protocol",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1543.003",
+          "name": "Create or Modify System Process: Windows Service",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1027.002",
+          "name": "Obfuscated Files or Information: Software Packing",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1496",
+          "name": "Resource Hijacking",
+          "tactics": [
+            "Impact"
+          ]
+        },
+        {
+          "id": "T1562.002",
+          "name": "Impair Defenses: Disable Windows Event Logging",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1057",
+          "name": "Process Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1012",
+          "name": "Query Registry",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1112",
+          "name": "Modify Registry",
+          "tactics": [
+            "Defense Impairment",
+            "Persistence"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "8ce2cd98ef6ceeece8239936e4aea042c41807f632cd691d5091705bf6c0076d",
+          "f5444e8e9e9e019693aacb363b7441ac0b8ecfe96a77fd94b9c312a017588eb4",
+          "2a0d2889241885d5ea6fe7dd1b1adc83653a0c07b8aaa1b0832e5f9c0225b379",
+          "79596cf6e267ef5cb658bd97d04e42a41001d36595e370441adb3c2b5dd5666c",
+          "e9d3fd9093c476b8b5de19aa00c50758568649def6491f54fa3e0aba4ea31ac9",
+          "d6e3fd28f479138b336e2c2088ad2e86b7646a163aa453b1703905a4b359070f",
+          "124774698fd3ede0800015d19c2bd6c1869d03bbc2e6e8dbe2f69d2978f7f4d0",
+          "125d3a0efe7699bb20397c13f0f4993ad893952727487b4d190e386a5b14c427",
+          "20983573b840447e1aacd6d3f6dd240732b15037d268d6456f0d3c4ec5051cb0",
+          "58db0ca2054abe2989412d7a1c8ed16718577f893c196825c848fcd56c7e8f05",
+          "2a23e10bfc097e98295cbff8124bd403c4cb677e709b48ccc53d6aca216c3061",
+          "da4128aa5d006e05c58f0d240c2d8e5fb02774b6acf314f1230059c7a3498724",
+          "3f64b0146b323c5716043360e84384a5a197a897f46088df93a910470a29e1a0"
+        ],
+        "domain": [
+          "ftp.vietnam852.com",
+          "server.vietnam852.com",
+          "www.swordaa.com",
+          "site.vietnam852.com",
+          "site.hfgjjkrewjk.com",
+          "site.jiancai008.com"
+        ],
+        "url": [
+          "http://site.vietnam852.com:88/ip.php",
+          "http://site.vietnam852.com:88/down.exe",
+          "http://site.vietnam852.com:88/2026/2018.sql",
+          "http://site.vietnam852.com:88/2026/dwm.exe",
+          "http://site.vietnam852.com:88/2026/go.bat",
+          "http://site.vietnam852.com:88/2026/go.vbs",
+          "http://site.vietnam852.com:88/2026/out.bat",
+          "http://site.vietnam852.com:88/2026/pass.txt",
+          "http://site.vietnam852.com:88/2026/sqlcmd.exe",
+          "http://site.vietnam852.com:88/2026/user.txt",
+          "http://ftp.vietnam852.com:88/post.php",
+          "http://site.jiancai008.com:88/test/dllhost.exe",
+          "http://site.jiancai008.com:88/test/winlogon.exe",
+          "http://site.jiancai008.com:88/test/WinRing0x64.sys",
+          "http://site.jiancai008.com:88/test/MicrosoftEdgeUpdate.exe",
+          "http://ftp.vietnam852.com:88/test/WinRing0x64.sys",
+          "http://ftp.vietnam852.com:88/test/MicrosoftEdgeUpdate.exe",
+          "http://ftp.vietnam852.com:88/test/winlogon.exe",
+          "http://ftp.vietnam852.com:88/test/dllhost.exe",
+          "http://ftp.vietnam852.com:88/test/sihost.exe",
+          "http://site.vietnam852.com/tj/xmr.php?data=",
+          "http://site.hfgjjkrewjk.com/tj/xmr.php?data="
+        ]
+      },
+      "links": [
+        "https://www.fortinet.com/blog/threat-research/t-sql-being-abused-to-deliver-malware-on-compromised-ms-sql-servers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "0% GPU utilization: How SANSAR hides Linux cryptomining",
+      "summary": "SANSAR is a Linux cryptomining orchestrator tracked by Elastic as REF3364 that manages CPU and GPU miners over Tor. The actor gained root after compromising an exposed Ray job agent that accepted unauthenticated job submissions, then deployed the toolkit across three Linux GPU hosts. A kernel rootkit hides selected processes, files and socket entries, while a modified NVML wrapper reports 0% GPU utilization and random temperature and power readings. A separate netns backdoor retrieves its controller address from an Ethereum smart contract and provides shell access without authentication. Defenders should verify who can submit jobs to GPU clusters and check whether GPU monitoring libraries have been modified.",
+      "completeness": "Medium",
+      "threats": [
+        "Sansar",
+        "Xmrig_miner",
+        "Srbminer_tool",
+        "Phantompulse_rat"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 8,
+      "software": [
+        "Linux",
+        "systemd"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "hmac",
+        "sha256"
+      ],
+      "functions": [
+        "NVML"
+      ],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "ttps": [
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.006",
+          "name": "Command and Scripting Interpreter: Python",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.004",
+          "name": "Command and Scripting Interpreter: Unix Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1611",
+          "name": "Escape to Host",
+          "tactics": [
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1136.001",
+          "name": "Create Account: Local Account",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1098.004",
+          "name": "Account Manipulation: SSH Authorized Keys",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1543.002",
+          "name": "Create or Modify System Process: Systemd Service",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.006",
+          "name": "Boot or Logon Autostart Execution: Kernel Modules and Extensions",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1078.003",
+          "name": "Valid Accounts: Local Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1021.004",
+          "name": "Remote Services: SSH",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1014",
+          "name": "Rootkit",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1622",
+          "name": "Debugger Evasion",
+          "tactics": [
+            "Stealth",
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1027",
+          "name": "Obfuscated Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1685.006",
+          "name": "Disable or Modify Tools: Clear Linux or Mac System Logs",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1690",
+          "name": "Prevent Command History Logging",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1016",
+          "name": "System Network Configuration Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1090.003",
+          "name": "Proxy: Multi-hop Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1102.001",
+          "name": "Web Service: Dead Drop Resolver",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1095",
+          "name": "Non-Application Layer Protocol",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1496.001",
+          "name": "Resource Hijacking: Compute Hijacking",
+          "tactics": [
+            "Impact"
+          ]
+        },
+        {
+          "id": "T1498.001",
+          "name": "Network Denial of Service: Direct Network Flood",
+          "tactics": [
+            "Impact"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "00c9ac44291f83c72d54302e99d155a3e26d02225a3e516764d5833a99657c9e",
+          "96fc528ca5e7d1c2b3add5e31b8797cb126f704976c8fbeaecdbf0aa4309ad46",
+          "acc706afc9322a3eae1ef49049749e0a7c9f1a123895ac56dc8a289beb2fb5b7",
+          "cc1ad7f14777a098ccc91fd4e8f6143da14418c2b6fdf23b7f8f6b3d1b0b7f1d",
+          "675c24728f87f7aa0fa07527027c95c24c246049c65eaef89270ab04ea50a180",
+          "6ba1aa275e0e2826e8b48b36473539ca56cbdc41f429e539a45f8532b084d7a4",
+          "df8ab6fd699e6ae90e63e9696bae8f01342708bafc2ed88af414337e4f237194"
+        ],
+        "sha1": [
+          "43eb291f56688c63c93e8a93c4591fc997cf6349"
+        ]
+      },
+      "links": [
+        "https://www.elastic.co/security-labs/threat-command/sansar-linux-cryptomining-malware",
+        "https://github.com/doktor83/SRBMiner-Multi/releases/tag/3.6.9"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Analysis of phishing and malicious apps distributed via smishing messages claiming to offer “Pi rewards”",
+      "summary": "Smishing messages posing as \"Pi Network 500π rewards\" target Korean users, delivered via KakaoTalk notifications and SMS links. The campaign runs a three-stage phishing site that harvests 24-word wallet seed phrases, then account, password, and phone data, and finally pushes a malicious APK disguised as the Pi Network app. The Android malware, detected as Trojan.Android.SmsSpy, intercepts SMS and OTP codes, takes remote commands from a C2 server, and scans for 34 cryptocurrency exchange, payment, and wallet app keywords. It hides from analysis tools and resists removal by abusing device administrator rights. Hidden iframes on the phishing pages also load a WebKit exploit framework, linked to the Coruna kit, against iOS Safari users on versions 17.3 and earlier. Defenders should note that updating iOS to 17.4 or later mitigates the iOS exploit.",
+      "completeness": "Medium",
+      "threats": [
+        "Smishing_technique",
+        "Coruna_tool",
+        "Smsspy"
+      ],
+      "geo": [
+        "China",
+        "South korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "aoTalk noti",
+        "Android",
+        "KakaoTalk",
+        "qemu"
+      ],
+      "wallets": [
+        "mainnet",
+        "coinbase",
+        "bybit",
+        "bitkeep_wallet",
+        "metamask",
+        "tronlink",
+        "imtoken",
+        "tokenpocket",
+        "safepal",
+        "exodus_wallet",
+        "have more..."
+      ],
+      "crypto": [
+        "binance",
+        "kucoin",
+        "uniswap"
+      ],
+      "algorithms": [
+        "lzw",
+        "sha256",
+        "chacha20",
+        "md5"
+      ],
+      "iocs": {
+        "md5": [
+          "7473ce15392718106041546787e8ad71",
+          "41bae7fa264430f55da4c8e95fdc9545",
+          "1c1c2587e23f0914753f18b9e84c8f3b"
+        ],
+        "domain": [
+          "mainnet.walletpinet.com",
+          "piwalletapp.com",
+          "rectify-pinetwork.pages.dev",
+          "pi-workers.com",
+          "pi-wallets.com",
+          "p1-nework.com",
+          "pi-wellet.com",
+          "pi-piwalletnetwork.com",
+          "pi-nework.com",
+          "pi-walletes.com",
+          "pi-networkwallet.com",
+          "piwork-wallet.com",
+          "piwork-wellet.com",
+          "pinet-mains.com",
+          "pinet-walletwork.com"
+        ]
+      },
+      "links": [
+        "https://alyacofficialblog.tistory.com/5794"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "PHP2Shell Exploitation on Check Point Gateway",
+      "summary": "Beginning October 30, 2026, an attacker scanned for and exploited unpatched Check Point Security Gateways' Mobile Access portals, using PHP2Shell for initial access and CVE-2026-123039 for privilege escalation to root. The first wave targeted Israeli organizations and included destructive activity, while a second wave on November 2 hit organizations in multiple countries and sectors without evidence of destruction. The attacker deployed PHP webshells, the persistent TSGA backdoor, and TSProxy, which intercepts networking functions in appliance processes. TSGA and TSProxy are modified variants of PhiliKit, previously linked to China-nexus UNC5221, though the report says attribution remains uncertain and could reflect a false flag or initial access broker role. The attacker moved to a VMware ESXi host over SSH, deployed the destroy_v6 wiper, and left a politically themed note.",
+      "completeness": "Medium",
+      "threats": [
+        "P2pshell_vuln",
+        "Tsproxy",
+        "Philikit",
+        "Gogo_tool",
+        "Process_injection_technique",
+        "Tinyshell"
+      ],
+      "geo": [
+        "Israeli",
+        "Israel",
+        "Chinese",
+        "China"
+      ],
+      "software": [
+        "ESXi",
+        "Ivanti",
+        "Linux",
+        "Unix"
+      ],
+      "algorithms": [
+        "des",
+        "base64"
+      ],
+      "languages": [
+        "perl",
+        "python",
+        "php"
+      ],
+      "iocs": {
+        "sha256": [
+          "edb3e92eb7bda7413a09edcc4b1ba3cbed4bcdf42808a8abce63b6e4c3fda2b3",
+          "4171b521fa6441382aa2fa014a08e18ff9a6e0ab6096c9144072bf46b37a2ec8",
+          "d7549671c7189979f0624ec52dad9ea6a707d23146e3585ab8f8c4720eca0c63",
+          "3b51080a909023f7d484e2443740b572307ce0054eb9e32d98f0a06bfcd2db90",
+          "c7d9477309fac6c638a1128442056a242de086996add8cb49cd6496c36003237",
+          "0522937c0c0337be54fe25493539e5f5f8ceb9742c980aaff1cfc9515f3a96f7",
+          "ee16e1695711b9d60c62925fcfb2fe1a29c18ae26565bc05410a14e16d2a39d7",
+          "fb1a6235eb6bce8c9ec8cd8bb85f17c9c2bde8ecb45b7a243a30ceadf26654da"
+        ],
+        "ipv4": [
+          "130.94.19.204",
+          "130.94.19.168"
+        ]
+      },
+      "links": [
+        "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/",
+        "https://github.com/chainreactors/gogo"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "TypoPrompting: From AI Typos to Malware",
+      "summary": "TypoPrompting is a delivery pattern in which typosquatted lookalike domains of 27 AI brands, including Claude, ChatGPT, DeepSeek and Perplexity, redirect mistyped visits to ClickFix lures, browser-hijacking malware and search-hijacking extensions. One Claude typo led through a traffic distribution system and a fingerprinting gate to a fake verification page that instructed Windows users to run a hidden PowerShell command fetched from a decimal-encoded IP address. Another route delivered Net Guard, a Microsoft Store-signed app whose hash matched the listing but which contains browser-hijacking code that can change the default search engine and run remote JavaScript. A third route led to a Chrome Web Store extension that overrides the default search provider with a third-party domain, and 17 of its 30 kit extensions remained listed with 972,000 declared users. Defenders should control browser-to-shell handoffs, web-delivered installer provenance and search overrides, and provide direct routes to approved AI services.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Fingerprintjs_tool",
+        "In2al5d_p3in4er",
+        "Aurora_stealer"
+      ],
+      "software": [
+        "Claude",
+        "ChatGPT",
+        "DeepSeek",
+        "Midjourney",
+        "Mistral",
+        "zoom",
+        "macOS",
+        "Kling",
+        "Cloudflare",
+        "curl",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "md5",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "bdddb50204d6867b4bd73d9cfe93cbc98c4518342da104e4608f04e675ac6cb3",
+          "a052b63e9c358c8911c17d1f58cce00949791f103fcf74f6057863d681c52301",
+          "51d577c84e50657d6cacf0e7738c9539ee4f39f76838423c682ad0dadc8e2d87"
+        ],
+        "ipv4": [
+          "185.138.88.3"
+        ],
+        "domain": [
+          "cloude.ai",
+          "chatgpy.com",
+          "chtgpt.com",
+          "deepseel.com",
+          "deeepseek.com",
+          "runawayml.com",
+          "perplixity.ai",
+          "lovabe.dev",
+          "charactor.ai",
+          "giemini.com",
+          "griok.com",
+          "mistrial.ai",
+          "notbooklm.com",
+          "mauns.im",
+          "opnai.com",
+          "anthropiv.com",
+          "midjourny.com",
+          "leonardi.ai",
+          "poll.ai",
+          "klign.ai",
+          "hailou.ai",
+          "viggie.ai",
+          "hygen.ai",
+          "sunno.ai",
+          "speachma.com",
+          "vocie.ai",
+          "elevnlabs.io",
+          "clsude.ai",
+          "cluade.ai",
+          "caude.ai",
+          "chstgpt.com",
+          "lovsble.dev",
+          "charatcer.ai",
+          "deespeek.com",
+          "lovble.dev",
+          "purplexity.ai",
+          "perplexty.ai",
+          "a11.click",
+          "perplecity.ai",
+          "haiulo.ai",
+          "kiling.ai",
+          "klig.ai",
+          "netguardsite.com",
+          "netguardprotect.com",
+          "xml.securetrackingnode.com",
+          "biomimicrydevtech.buzz",
+          "blockchainfuturedev.buzz",
+          "maccl0ude.com",
+          "chatlgpt.com",
+          "midj0urney.org",
+          "deepsek.icu",
+          "ckaude.ai",
+          "deepceek.com",
+          "copiot.com",
+          "elevenlebs.io",
+          "deezyj.com",
+          "preplexity.ai",
+          "quickflashtool.com",
+          "find.flashysearches.com",
+          "claudie.ai"
+        ]
+      },
+      "links": [
+        "https://www.island.io/blog/typoprompting-from-ai-typos-to-malware"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Hunting ClickFix Attacks: Deep Dive into One Trick Across Four Different Payloads",
+      "summary": "ClickFix is a social engineering technique that tricks victims into pasting a command into the Windows Run dialog under the guise of a fake CAPTCHA or verification check. Researchers hunting in the wild found five unrelated campaigns using this same lure with widely varying payloads. One fake DMarket gaming-marketplace campaign used a Google-signed utility to exclude the entire C: drive from Microsoft Defender and delivered a previously undocumented RAT, dubbed CrashHandler RAT. A Stripe-based implant used api.stripe.com as a two-way command-and-control channel, which evades destination-based blocking. Another server delivered only a Calculator launcher, but its infrastructure remained live and could be changed to deliver malware at any time. Defenders should disable the Run dialog for standard users, monitor Defender exclusion changes, and watch for shells or mshta spawned by browsers.",
+      "completeness": "High",
+      "threats": [
+        "Clickfix_technique",
+        "Typosquatting_technique",
+        "Homoglyph_technique",
+        "Crashhandler_rat",
+        "Goloader",
+        "Asyncrat",
+        "Dead_drop_technique",
+        "Lumma_stealer",
+        "Motw_bypass_technique"
+      ],
+      "geo": [
+        "Czech"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Defender",
+        "Microsoft Defender",
+        "Telegram",
+        "Cloudflare",
+        "Stripe API",
+        "curl",
+        "NET Framework",
+        "Microsoft Edge"
+      ],
+      "algorithms": [
+        "zip",
+        "rsa-4096",
+        "bcrypt",
+        "sha384",
+        "aes",
+        "deflate",
+        "sha256",
+        "aes-ctr",
+        "gzip"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "ed7c64b489f4a79c7be217ae6bed6f2f4aa5f03dc74e20c546f5caa9c680bfdf",
+          "a1d4e4a7ada48e1980f06c1f4d58ab16a3edf30eeb8f92a5381680c790c8f381",
+          "be8be8a567070e4bba1de3e685e588ef65ff0bf796f8720769b6c70eaba99855",
+          "ab81755c362ff86d90b9e3529ab7bb527c7fdce7a29cedf57c53ae0102747cac",
+          "5efa21cf88471bc55dce800674fb1105de6a4c01d23a947934f97cd0de226135",
+          "bcd389ba3926c573a8002c2cc8cc8d07a38c346928d7322f5e080b5c2c447bee",
+          "89faee1d3450c2e373f5f8ccd4736650fa23495c2fdaff0ec94654516fb04fcd",
+          "ebb9192b3bcf2a921b3be719f82fb669157ea1929f74334208d4c0b5294941f9",
+          "4f2678fa0f90074ae304f8fdb9174d0c577f1a0587af44a4e8e756a547e5c2e4"
+        ],
+        "md5": [
+          "0b50cf246b263efd85a729315158f3ff"
+        ],
+        "ipv4": [
+          "18.117.141.76",
+          "2.27.200.185",
+          "45.13.186.129",
+          "95.85.238.53",
+          "34.89.60.35",
+          "193.26.115.174"
+        ],
+        "domain": [
+          "updates.howclens.com",
+          "login.microsoftofice.cz",
+          "lijil.icu",
+          "kupujto.unas.cz"
+        ]
+      },
+      "links": [
+        "https://flare.io/learn/resources/blog/hunting-clickfix-attacks-deep-dive"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "SignDrop: Windows Zero-Day That Turns Microsoft's Own CLFS Mitigation Into a Privilege Escalation Path",
+      "summary": "SignDrop is a local privilege escalation from a standard user to NT AUTHORITY\\SYSTEM, published by the researcher MSNightmare on November 10, 2026, with no coordinated disclosure, CVE, or patch. It abuses Microsoft's CLFS authentication mitigation, forcing clfs.sys to create a signature file at an attacker-chosen path, which is then replaced with a payload DLL. The chain is triggered through Microsoft Defender's signature update RPC interface and uses no memory corruption, relying only on legitimate Windows subsystems. Howler Cell reproduced the full chain, obtaining a SYSTEM shell, and the researcher's claim that about 80% of Windows installations are vulnerable is unsupported. Disabling CLFS authentication is not a safe workaround, so defenders should focus on behavioral detections such as hid.dll creation in the ink directory and Defender RPC calls from outside the Defender service tree.",
+      "completeness": "Medium",
+      "threats": [
+        "Signdrop_vuln",
+        "Nightmare_eclipse_tool",
+        "Undefend_tool",
+        "Redsun_tool",
+        "Bluehammer_tool",
+        "Yellowkey_vuln",
+        "Greenplasma_vuln",
+        "Miniplasma_vuln",
+        "Rogueplanet_tool",
+        "Greatxml_tool",
+        "Shieldbreak_tool",
+        "Shieldcrash_tool",
+        "Dll_sideloading_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Microsoft Defender",
+        "Visual Studio",
+        "Windows kernel"
+      ],
+      "algorithms": [
+        "hmac"
+      ],
+      "functions": [
+        "RPC"
+      ],
+      "ttps": [
+        {
+          "id": "T1068",
+          "name": "Exploitation for Privilege Escalation",
+          "tactics": [
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1574.001",
+          "name": "Hijack Execution Flow: DLL",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1070.004",
+          "name": "Indicator Removal: File Deletion",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1106",
+          "name": "Native API",
+          "tactics": [
+            "Execution"
+          ]
+        }
+      ],
+      "iocs": {
+        "domain": [
+          "git.projectnightcrawler.dev",
+          "git.churchofmalware.org"
+        ],
+        "url": [
+          "https://github.com/MSNightmare/SignDrop"
+        ]
+      },
+      "links": [
+        "https://www.cyderes.com/howler-cell/signdrop-zero-day"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Beyond ValleyRAT: inside a China-nexus Silver Fox operation",
+      "completeness": "Medium",
+      "threats": [
+        "Valleyrat",
+        "Winos",
+        "Themida_tool",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "Japan",
+        "India",
+        "Taiwan",
+        "Indian",
+        "China",
+        "Taiwanese",
+        "Singapore"
+      ],
+      "software": [
+        "Microsoft Visual Studio",
+        "Visual Studio",
+        "ual Studio temp"
+      ],
+      "algorithms": [
+        "xor",
+        "zip",
+        "rc4"
+      ],
+      "functions": [
+        "C17"
+      ],
+      "links": [
+        "https://www.vmray.com/beyond-valleyrat-inside-a-china-nexus-silver-fox-operation/"
+      ]
+    }
   }
 ]

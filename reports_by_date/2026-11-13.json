@@ -1,0 +1,92 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-13",
+      "title": "SCKit campaign targets MSP ScreenConnect environments",
+      "summary": "The SCKit campaign abuses third-party RMM+ extensions in ConnectWise ScreenConnect partner environments to gain unauthorized access and deploy rogue remote-access software. Researchers linked the activity to the SCKit malware framework, which runs remote commands with SYSTEM privileges, creates Microsoft Defender exclusions, and establishes persistence through a scheduled task. Researchers tracked at least 288 endpoints across 48 organizations, and ConnectWise identified roughly 400 partner environments with an affected extension installed. SCKit also contains code meant to capture technician sessions for further propagation, though researchers have not observed that path succeed. Defenders should disable the five named extensions, review ScreenConnect and endpoint activity for unattributed actions, and validate removal of persistence before restoring systems, since disabling extensions alone does not remove existing access.",
+      "completeness": "Low",
+      "threats": [
+        "Sckit_tool",
+        "Screenconnect_tool",
+        "Winrm_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Defender"
+      ],
+      "links": [
+        "https://fieldeffect.com/blog/sckit-campaign-targets-msp-screenconnect-environments"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-13",
+      "title": "Beware of phishing emails disguised as requests to confirm purchase orders (Xloader)",
+      "summary": "Phishing emails disguised as purchase order confirmation requests deliver a malicious DOCX file that abuses Word's altChunk feature to run a malicious RTF document. The RTF exploits the known Equation Editor vulnerability CVE-2017-11882 to execute a VBS file, which decodes data into a file and launches a PowerShell script. That script achieves persistence through Run key registry entries and loads a loader that decrypts a payload in memory using XOR. The final payload is the XLoader infostealer, which collects PC and browser information, and can download additional malware. Defenders should verify sender domains, check links and attachments for suspicious extensions such as .vbs, and confirm URLs before entering sensitive credentials.",
+      "completeness": "Low",
+      "threats": [
+        "Formbook"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xor",
+        "base64",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "md5": [
+          "5bd3c5f273ba5ae4c4ae745c6943a4f7",
+          "8b3542531d98a47524c0f468d0158996",
+          "e0d7a34bc9f4590bc073d08b50c854d1"
+        ],
+        "domain": [
+          "www.dumbsplash.com"
+        ],
+        "url": [
+          "http://www.dumbsplash.com/ilto/"
+        ]
+      },
+      "links": [
+        "https://asec.ahnlab.com/ko/96512/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-13",
+      "title": "Uncovering ArcticRAT: The Evolution from Targeted Crypto-Stealer to AI-Powered Android RAT",
+      "summary": "ArcticRAT is an Android Remote Access Trojan that began as spyware targeting users of 11 cryptocurrency apps and has evolved into an AI-powered RAT. Its operators distribute it through phishing sites impersonating Google Play and Amazon, with payloads also delivered from AWS buckets. The malware uses raw TCP C2 channels, Hidden VNC, keylogging, and fake lock screen overlays to steal credentials and achieve full device takeover. Its latest variants integrate the xAI API to parse stolen SMS messages and installed app lists for banking and crypto intelligence. Defenders should note its abuse of Accessibility Services, VPN-based staging, and Android Wireless ADB to escalate privileges and alter lock screens.",
+      "completeness": "Medium",
+      "threats": [
+        "Arcticrat",
+        "Hvnc_tool",
+        "Smishing_technique",
+        "Screenlocker",
+        "Rathat",
+        "Lockscreen_bypass_technique"
+      ],
+      "geo": [
+        "Germany",
+        "Hong kong"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 33,
+      "software": [
+        "Android",
+        "TikTok",
+        "Google Play"
+      ],
+      "links": [
+        "https://zimperium.com/blog/arcticrat-ai-powered-android-rat",
+        "https://github.com/Zimperium/IOC/tree/master/2026-11-ArticRAT",
+        "https://github.com/Zimperium/IOC/tree/master/2026-11-ArticRAT/Commands.md"
+      ]
+    }
+  }
+]

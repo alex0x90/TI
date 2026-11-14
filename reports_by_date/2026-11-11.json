@@ -1229,5 +1229,45 @@
         "https://securelist.com/citrus-ransomware/121879/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Beware of phishing emails disguised as quote requests (SnakeKeylogger)",
+      "summary": "Phishing emails impersonating a purchasing department materials staffer and disguised as quote requests are distributing SnakeKeylogger, an infostealer. The email lures the recipient into downloading a compressed archive containing a JavaScript file, which decrypts and runs an obfuscated PowerShell script. That script uses AES-256-CBC and XOR decryption to load the final payload in memory and injects it into aspnet_compiler.exe via process hollowing. SnakeKeylogger collects browser-stored data, system information, and keystrokes, then exfiltrates them over SMTP or Telegram. Defenders should verify sender domains, check for suspicious file extensions such as .js or .exe, and confirm URLs before entering sensitive information.",
+      "completeness": "Low",
+      "threats": [
+        "Snake_keylogger",
+        "Process_injection_technique",
+        "Process_hollowing_technique"
+      ],
+      "software": [
+        "Telegram"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "aes-256-cbc"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "iocs": {
+        "md5": [
+          "e89c8668c8b5041768a59c1532edf2ad"
+        ],
+        "domain": [
+          "hosting2.ro.hostsailor.com"
+        ],
+        "email": [
+          "logs@aewn.buzz",
+          "log@aewn.buzz"
+        ]
+      },
+      "links": [
+        "https://asec.ahnlab.com/ko/96494/"
+      ]
+    }
   }
 ]

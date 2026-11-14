@@ -1121,5 +1121,48 @@
         "https://www.cyberproof.com/blog/black-october-2026-critical-vulnerabilities-trusted-technology-under-attack/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "2026-11-10: Antifox Agentic Pentesting Platform Used to Steal AWS Credentials and Move Laterally in Compromised Environments",
+      "summary": "AntiFox, an open source Chinese-language agentic penetration testing platform, was observed in intrusions where Alibaba Cloud systems hosting its interfaces were tied to malicious activity against internet-facing web services and associated AWS environments. In one path, the w3wp.exe process of a compromised IIS server created an ASPX web shell and ran commands that harvested web.config files, database connection strings, and configuration and log files. In other cases, the actor began with a valid AWS credential obtained by unknown means. Using IAM users or an assumed EC2 role, the actor rapidly enumerated dozens of AWS services, and some runs reached a successful GetSecretValue call against a production secret. Defenders should hunt for w3wp.exe spawning shells, new ASPX files in writable directories, and rapid cross-service List, Get, and Describe bursts from novel hosting infrastructure. Rotating exposed credentials and enforcing IMDSv2 and least-privilege policies are key mitigations.",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Antifox",
+        "Alibaba Cloud",
+        "DynamoDB",
+        "Boto3",
+        "GuardDuty"
+      ],
+      "functions": [
+        "GetSecretValue",
+        "GetCallerIdentity",
+        "GetUser",
+        "GetAuthorizationToken",
+        "GetObject"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "sha1": [
+          "c370d03542ed2ec696f7337940b14652e98e9bab"
+        ],
+        "ipv4": [
+          "47.79.4.33",
+          "8.208.101.210"
+        ]
+      },
+      "links": [
+        "https://github.com/rtkwlf/wolf-tools/tree/main/pack_alerts/202611-antifox-alibaba-hosted-platforms-facilitate-web-cloud-intrusions",
+        "https://github.com/AntiFox-AI/antifox"
+      ]
+    }
   }
 ]
