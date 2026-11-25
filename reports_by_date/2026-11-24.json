@@ -448,14 +448,14 @@
       },
       "detections": [
         {
-          "id": "5011c569-8724-51e1-8904-66c1a28b4467",
-          "title": "ConsentPromptBehaviorAdmin Set to 0 Disabling UAC Admin Prompt",
+          "id": "2f4d0c10-fe65-5b73-a8fa-c93c7fb9901a",
+          "title": "ConsentPromptBehaviorAdmin Set to 0 by Script Host",
           "attack": [
             "T1548.002",
             "T1112"
           ],
           "level": "high",
-          "sigma": "detections/2026-11-24/5011c569-8724-51e1-8904-66c1a28b4467.yml",
+          "sigma": "detections/2026-11-24/2f4d0c10-fe65-5b73-a8fa-c93c7fb9901a.yml",
           "model": "anthropic/claude-sonnet-5.5"
         }
       ],
@@ -612,14 +612,13 @@
       },
       "detections": [
         {
-          "id": "f6c396c4-0902-55c7-9d4d-0fd62a18516d",
-          "title": "Run Key Persistence Named KlUpd Pointing to ProgramData",
+          "id": "b01ee3c6-cb4e-5882-9075-1a33eb7e3ff8",
+          "title": "Scheduled Task Created to Run as SYSTEM Every Minute Pointing to ProgramData",
           "attack": [
-            "T1547.001",
-            "T1036.005"
+            "T1053.005"
           ],
           "level": "high",
-          "sigma": "detections/2026-11-24/f6c396c4-0902-55c7-9d4d-0fd62a18516d.yml",
+          "sigma": "detections/2026-11-24/b01ee3c6-cb4e-5882-9075-1a33eb7e3ff8.yml",
           "model": "anthropic/claude-sonnet-5.5"
         }
       ],
@@ -709,19 +708,6 @@
           "hxxp://95.135.181[.]84:443/0x/ls"
         ]
       },
-      "detections": [
-        {
-          "id": "a2b731aa-45f2-5648-920d-c5598400b137",
-          "title": "Node.js Interactive Shell Spawned by Python Process",
-          "attack": [
-            "T1059.007",
-            "T1105"
-          ],
-          "level": "high",
-          "sigma": "detections/2026-11-24/a2b731aa-45f2-5648-920d-c5598400b137.yml",
-          "model": "anthropic/claude-sonnet-5.5"
-        }
-      ],
       "links": [
         "https://safedep.io/blog/polinrider-python-loader-ethereum-calldata",
         "https://github.com/Mizero-eloi/alu\\_regex-data-extraction-MizeroEloi/blob/82a87bb90b3eca941b913f5699fa54b8d1551b52/conftest.py",
@@ -801,25 +787,25 @@
       },
       "detections": [
         {
-          "id": "57ebc01a-3943-5dd9-bfd5-5388eda136f6",
-          "title": "Executable Launched from Fake Microsoft Store Programs Directory with --agent",
+          "id": "7ab4e49c-25ba-5b28-a657-997830e41e2e",
+          "title": "Executable Launched with --agent From Fake Microsoft Store Directory in User Profile",
           "attack": [
             "T1036.005",
             "T1547.001"
           ],
           "level": "high",
-          "sigma": "detections/2026-11-24/57ebc01a-3943-5dd9-bfd5-5388eda136f6.yml",
+          "sigma": "detections/2026-11-24/7ab4e49c-25ba-5b28-a657-997830e41e2e.yml",
           "model": "anthropic/claude-sonnet-5.5"
         },
         {
-          "id": "34cc40d6-4314-59e1-a7b5-88df343e4250",
-          "title": "Run Key Persistence Named MicrosoftStoreUpdaterV Pointing to User Profile Executable",
+          "id": "abc56cc1-0adb-5a23-92ed-b70012e8b264",
+          "title": "Run Key MicrosoftStoreUpdaterV Persistence Pointing to User Programs Directory",
           "attack": [
             "T1547.001",
             "T1036.005"
           ],
           "level": "high",
-          "sigma": "detections/2026-11-24/34cc40d6-4314-59e1-a7b5-88df343e4250.yml",
+          "sigma": "detections/2026-11-24/abc56cc1-0adb-5a23-92ed-b70012e8b264.yml",
           "model": "anthropic/claude-sonnet-5.5"
         }
       ],
