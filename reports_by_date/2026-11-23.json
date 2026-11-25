@@ -215,5 +215,660 @@
         "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "Hunting EvilTokens: residual activity after takedown",
+      "completeness": "Medium",
+      "threats": [
+        "Eviltokens_tool",
+        "Bec_technique",
+        "Paste-jacking_technique",
+        "Spear-phishing_technique",
+        "Device_code_phishing_technique"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 6,
+      "software": [
+        "Microsoft 365",
+        "Telegram",
+        "DocuSign",
+        "SharePoint",
+        "Cloudflare",
+        "Groq",
+        "OpenAI",
+        "Adobe Acrobat",
+        "Microsoft Entra",
+        "Vercel",
+        "have more..."
+      ],
+      "functions": [
+        "HTTP"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "links": [
+        "https://www.vmray.com/hunting-eviltokens-residual-activity-after-takedown/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "From Game Cheats to NWHStealer: Following a Rust Loader Infection Chain",
+      "summary": "NWHStealer is delivered through game cheat and utility lures, including fake FiveM, Valorant, and Fortnite cheats, Lua script executors, and a Discord mass-DM tool, hosted on GitLab and GitHub. Several downloader families (.NET PowerShell, Go, and a Delphi dropper) fetch a Rust loader the researchers track as WarpLoader. WarpLoader uses module stomping, ETW bypass through hardware breakpoints, and indirect syscalls to inject the stealer into Chromium-based browsers. The stealer harvests browser credentials, cookies, wallet data, Discord and Telegram data, and AI developer-tool credentials. The researchers assess that the campaign targets individuals such as game enthusiasts rather than enterprises, but it poses risks to shared and BYOD devices used for gaming.",
+      "completeness": "Medium",
+      "threats": [
+        "Nwhstealer",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Event Tracing for Windows",
+        "Discord",
+        "Microsoft Defender",
+        "Pastebin",
+        "Telegram",
+        "FiveM",
+        "Valorant",
+        "Fortnite",
+        "Chrome",
+        "Chromium",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "coinomi",
+        "wassabi",
+        "daedalus"
+      ],
+      "algorithms": [
+        "aes",
+        "xor",
+        "aes-256-cbc",
+        "aes-256-ctr",
+        "sha256"
+      ],
+      "functions": [
+        "GDI"
+      ],
+      "languages": [
+        "golang",
+        "lua",
+        "powershell",
+        "delphi",
+        "rust"
+      ],
+      "iocs": {
+        "sha256": [
+          "ee224045a89b4bb62af10c017ec15fe966b72fc23de2f6fa13b79cf232a31958",
+          "ec42e37baa9e5de642d8bf0a66a4e3142120c06dd7b78c6fbc60e7285e9023af",
+          "2dd8fd009987a2e78a28c830cf37add474f162a9ead7583dbf93d4ab4b0f25fb",
+          "1ce31bbe51328ee1bc759cbe34aa964ceeb370971d20ecb470dd371265d0fcf3"
+        ],
+        "md5": [
+          "6a08686b19a2ab040000000000000000"
+        ]
+      },
+      "links": [
+        "https://invokere.com/posts/2026/11/from-game-cheats-to-nwhstealer-following-a-rust-loader-infection-chain/",
+        "https://github.com/Invoke-RE/community-malware-research/tree/main/Research/Loaders/WarpLoader#appendix",
+        "https://github.com/V4NSH4J/discord-mass-DM-GO",
+        "https://github.com/WithSecureLabs/ModuleStomping"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "13 Malicious NuGet Packages Target .NET Developers With Fake Job Assessments",
+      "summary": "Socket identified 13 malicious NuGet packages, published from July to November 2026, that are tied to fake \"Home Assessment\" take-home projects aimed at Windows .NET developers. The packages pose as WinUI 3 and WPF button controls, and building or running a project that uses them downloads files from GitHub, side-loads a DLL through osk.exe, or runs an executable. One package, WinUI.Button 1.0.0, remains listed on NuGet, while NuGet removed the other 12. The operation also uses fake axios repositories, npm packages, a ClickFix page and a trojanized crypto wallet app, with GitHub serving as staging and command-and-control infrastructure. The report does not attribute the campaign to a named actor, though it resembles North Korean fake-interview lures. Defenders should treat take-home projects as untrusted code and check for the listed packages and artifacts.",
+      "completeness": "High",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Clickfix_technique",
+        "Themida_tool",
+        "Shadow_copies_delete_technique",
+        "Beavertail",
+        "Invisibleferret",
+        "Ottercookie",
+        "Supply_chain_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Korean",
+        "North korea",
+        "Iranian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 32,
+      "software": [
+        "NuGet",
+        "Chrome",
+        "Telegram",
+        "Visual Studio",
+        "docker",
+        "Windows shell",
+        "Sysinternals",
+        "PyInstaller",
+        "Xen",
+        "Hyper-V",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-cbc",
+        "xor",
+        "aes-gcm",
+        "sha1",
+        "sha256",
+        "base64",
+        "aes",
+        "zip"
+      ],
+      "functions": [
+        "SetButtonColor",
+        "InitializeCustomButton",
+        "TaskParameter",
+        "InitializeToolset",
+        "TryInitializeEnvironmentCompatibilityProbe",
+        "WriteDiagnosticLog",
+        "GetLoader",
+        "GetExternalIp"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "dotnet",
+        "python"
+      ],
+      "ttps": [
+        {
+          "id": "T1583.006",
+          "name": "Acquire Infrastructure: Web Services",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1585.003",
+          "name": "Establish Accounts: Cloud Accounts",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1608.001",
+          "name": "Stage Capabilities: Upload Malware",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1195.001",
+          "name": "Supply Chain Compromise: Compromise Software Dependencies and Development Tools",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1204.005",
+          "name": "User Execution: Malicious Library",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1204.004",
+          "name": "User Execution: Malicious Copy and Paste",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1129",
+          "name": "Shared Modules",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1127.001",
+          "name": "Trusted Developer Utilities Proxy Execution: MSBuild",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1480",
+          "name": "Execution Guardrails",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1574.001",
+          "name": "Hijack Execution Flow: DLL",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1564.003",
+          "name": "Hide Artifacts: Hidden Window",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1036.008",
+          "name": "Masquerading: Masquerade File Type",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1036.001",
+          "name": "Masquerading: Invalid Code Signature",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1027.013",
+          "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1027.002",
+          "name": "Obfuscated Files or Information: Software Packing",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1102.002",
+          "name": "Web Service: Bidirectional Communication",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1102.001",
+          "name": "Web Service: Dead Drop Resolver",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1567.001",
+          "name": "Exfiltration Over Web Service: Exfiltration to Code Repository",
+          "tactics": [
+            "Exfiltration"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1016",
+          "name": "System Network Configuration Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1033",
+          "name": "System Owner/User Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1012",
+          "name": "Query Registry",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1518",
+          "name": "Software Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1497.001",
+          "name": "Virtualization/Sandbox Evasion: System Checks",
+          "tactics": [
+            "Stealth",
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1497.003",
+          "name": "Virtualization/Sandbox Evasion: Time Based Checks",
+          "tactics": [
+            "Stealth",
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1622",
+          "name": "Debugger Evasion",
+          "tactics": [
+            "Stealth",
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1620",
+          "name": "Reflective Code Loading",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1047",
+          "name": "Windows Management Instrumentation",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1555.003",
+          "name": "Credentials from Password Stores: Credentials from Web Browsers",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1539",
+          "name": "Steal Web Session Cookie",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1560.002",
+          "name": "Archive Collected Data: Archive via Library",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1030",
+          "name": "Data Transfer Size Limits",
+          "tactics": [
+            "Exfiltration"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1070.004",
+          "name": "Indicator Removal: File Deletion",
+          "tactics": [
+            "Stealth"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "33510d8e48c26279c0c212b4e6e5f95b7f0a116061eae7f50241f81903be5b6b",
+          "9bc1be99462f89880e1e22d9d3ade01cbbfe8bae54a27125e0129542f92ce93f",
+          "b33c9b4c9771032b16de477271551f64f4f550f85eec96a70d1a345f84f55603",
+          "b8eb00ae419b1a9421f13200ff4893eba57800543de1d71b9752c301123783ff",
+          "2ae7e8cb7d50922c9b8f6032fa452d0e0b27f8b0f520ddd90945ebdb6ecf423a",
+          "0068c4edd784c482030b68fa3a13e5d16fde30ed999619b87ead40ef5333a074",
+          "ccf299e23471cd79b2f40f91ee6f48293893e6c626ef84b10ef0b3ba86a89770",
+          "9e58baccd25b009b80f093bbcaf007b1ca3ac763c9826e05e1352e64264d0d42",
+          "d0a78aec3dd8dbce2e3fb0412b666a602fc0a71a800e24b99d735581795e11dc",
+          "352b04dac5f63208f45c7c7326ed06c6fa8ae2752e4cdafff0cfe649ebaeabe2",
+          "b49a89af8c4884f9aecad7d980bfffa03226e8d30aa35afd813919af9e2d7cfa",
+          "09dd6f214a5b5a1fe2934cc859a1d1ce566894faf9236a0bcab2d2cf34448d63",
+          "63f1c64bd0db73b327d6655e4262ab8dcbd4ff2ed0a6dd5e062ceb977dcb3e75",
+          "a3d04638930eae8442578679be6d150b3c56373627c9bc7e480725a31bb2d85d",
+          "56e899eb1d5c967cbe760d1b7ac409fb9420b862c122ef7ec2a2aa6469a503a7",
+          "016f633b9a8dd5ef17d577775cc64f96aa30192f3fbf814eba0c3f5c9fa5d91a",
+          "ef691b00cada5974b6bb516386c90589bd2340216f446518ad08d11fc930d631",
+          "ae28ff44ee3bd2911c5a1e4110f12d12e7b585f087a0afd85d6fdc4d4b5a36f5",
+          "541b0893ca326b6c652cb1d5873f208e968481e33b635c3869479016bcd75d4f",
+          "1bc553ee2324f67c86cf8d9057da242e8ab363c59e452f5a69a1275909c20a97",
+          "b8cf4c68dc362aeb31546a3dd091f8f23cf624e495eec84c840f2dd0906e2f4d",
+          "26485a167f9e4c4ea146c8420ba0bcc44facbec4d5e8fd91e624f2c81255b589",
+          "3dfce4e8d5b625e435429c8d15fb6ce8bad9601fbc7b84f74b4aa5b560bc482e",
+          "78fa8ea3d4daaaf088babd49f2bc0e59220940dc256d8b8938bad95e2fe4717b",
+          "b797935ff3db3da42d046537d17191d790a6344a12947347165eea2744e1265d",
+          "e7e7649f7249cb32f3123299e3a200c83dc210420b40f944168c36ab781b9458",
+          "17761569bf44d46877b22972bb1ca224527562a7a7aeb5b70ca8112510a49537",
+          "27f600d476638c8f1236db3eda9d70e39c9a96ff62fca69ca227426c48448bf7",
+          "9a581faca7fba81aa0ac91f621eb9302646bca3a954d044746c4751aae2e23a0"
+        ],
+        "sha1": [
+          "50f2e9c97c3c15ac3c7abbad47a272bdfe47acef"
+        ],
+        "md5": [
+          "4b8f63685671c33f9641cd5828a78b3b",
+          "cd5bc2ef1c7e076b4460e33047e3c1ad",
+          "988e5f290039d4b31527468bd4e76787",
+          "e36515e3fb6349a641ef456317ae0b3f",
+          "505524d1acd4caad4a1c119312b0e1d1"
+        ],
+        "ipv4": [
+          "172.86.119[.]233"
+        ],
+        "domain": [
+          "cloudservicebase.ddns[.]net",
+          "figma-share.github[.]io"
+        ],
+        "url": [
+          "hxxps://raw.githubusercontent[.]com/stevenleedig-ux/fantastic-giggle/main/src/demos/SPGO/build.docker",
+          "hxxps://figma-share.github[.]io/",
+          "hxxps://github[.]com/stevenleedig-ux/WinUI3_Home_Assessment",
+          "hxxps://github[.]com/stevenleedig-ux/axios-http",
+          "hxxps://github[.]com/jason-code-super/axios",
+          "hxxps://github[.]com/figma-share/axios-http",
+          "hxxps://github[.]com/figma-share/",
+          "hxxps://api.github[.]com/repos/Carol-White-Super/cloud/contents/db/avast.exe?ref=Main",
+          "hxxps://raw.githubusercontent[.]com/jason-code-super/axios/main/lib/env/axios.csproj",
+          "hxxps://raw.githubusercontent[.]com/jason-code-super/axios/main/lib/env/axios.exe",
+          "hxxps://raw.githubusercontent[.]com/stevenleedig-ux/axios-http/main/lib/env/axios.csproj",
+          "hxxps://raw.githubusercontent[.]com/ThoSuperstarDev/axios-http/main/lib/env/axios.exe",
+          "hxxps://raw.githubusercontent[.]com/ThoSuperstarDev/axios-http/main/lib/env/axios-telemetry.json",
+          "hxxps://api.github[.]com/repos/James-White-Super/React_prj/contents/react-burger/public",
+          "hxxps://api.github[.]com/repos/James-Tran-Dev/teris/contents/Tetris-main/Assets/Anims/Cam",
+          "hxxps://api.github[.]com/repos/Best-Seller-Dev/dexTrader/contents/src/signal",
+          "hxxps://api.github[.]com/repos/gabsantosbus-star/EngineeringRepository/contents/",
+          "hxxps://raw.githubusercontent[.]com/jeksifjeksjejcks/test/main/README.md",
+          "hxxps://cloudservicebase.ddns[.]net/update/CVE-2026-44747_patch.dat"
+        ],
+        "email": [
+          "bus[@]gmail[.]com"
+        ]
+      },
+      "detections": [
+        {
+          "id": "48481e53-3d67-553e-91d7-139d1e4cb605",
+          "title": "On-Screen Keyboard (osk.exe) Executed from User-Writable LocalAppData Folder",
+          "attack": [
+            "T1574.001",
+            "T1036.005"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-23/48481e53-3d67-553e-91d7-139d1e4cb605.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        },
+        {
+          "id": "a5b1a54e-91ff-552a-9ac1-7da962e019d9",
+          "title": "OskSupport.dll Written Outside System32",
+          "attack": [
+            "T1574.001",
+            "T1105"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-23/a5b1a54e-91ff-552a-9ac1-7da962e019d9.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://socket.dev/blog/malicious-nuget-packages-fake-job-assessments",
+        "https://github.com/NuGet/NuGetGallery/blob/main/RemovedPackages.md"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "ARTEX leads to persistent ZQAgent backdoor",
+      "summary": "ZQAgent is a new stealthy backdoor, deployed by the FOG0003 actor using the LLM-driven ARTEX tool during an NVISO incident response engagement. Unlike typical smash-and-grab LLM intrusions, it gives operators a long-lasting foothold, which NVISO believes reflects operator-specific instructions rather than autonomous behavior. The backdoor hides by migrating into an anonymous memory file and spoofing a dbus-daemon process, and it encrypts its configuration and network traffic. It persists through both systemd services and cron jobs, with ZQAgent reportedly observed in Belgium and Taiwan and likely used in Asia against government and human-rights organizations. NVISO warns that LLM use will likely spread to ransomware and espionage, so defenders should harden perimeters and shorten response times, including considering automated asset isolation.",
+      "completeness": "High",
+      "threats": [
+        "Artex_tool",
+        "Zqagent",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Taiwan",
+        "Belgium",
+        "Asia"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 3,
+      "software": [
+        "crontab"
+      ],
+      "algorithms": [
+        "sha1",
+        "exhibit",
+        "chacha20",
+        "md5",
+        "sha256"
+      ],
+      "ttps": [
+        {
+          "id": "T1071",
+          "name": "Application Layer Protocol",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1543",
+          "name": "Create or Modify System Process",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1053",
+          "name": "Scheduled Task/Job",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "c5d1358ece7dff7834507a29f59fdc35a1a2afa3045ae8d754fb497f6f999296",
+          "0319739869e1aadb2d598152a0290215c057c8364257f3a84a42164cf863019f",
+          "a49f43d0ae373cb35df2cb7a5542bc58234764dad15a628d28a5c67fc6834357"
+        ],
+        "sha1": [
+          "f585e980a16e52b8da2d2328dc5688cb0a1dc5cd",
+          "7e9fd6f02d35806af0b7447038322fdf0eed4318",
+          "2cbeaed3a591219c0eca708b4cb9f4e249231b89"
+        ],
+        "md5": [
+          "8211127a7bc385bc784822d22f69c426",
+          "e9a03f331f3d737a2dcf479a54b94fd7",
+          "97669d76529bc5efd4fa6506de13fb71"
+        ],
+        "ipv4": [
+          "37.122.150[.]15"
+        ],
+        "domain": [
+          "bloonspace[.]com",
+          "man7[.]org"
+        ],
+        "url": [
+          "hxxps://cloud.google[.]com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks",
+          "hxxps://man7[.]org/linux/man-pages/man1/loginctl.1.html",
+          "hxxps://man7[.]org/linux/man-pages/man5/crontab.5.html"
+        ]
+      },
+      "links": [
+        "https://blog.nviso.eu/2026/11/23/artex-fog0003-zqagent-backdoor/"
+      ]
+    }
   }
 ]

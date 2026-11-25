@@ -1,0 +1,831 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Exposing the Gmail “Zero-Day” Behind Remus Stealer’s Email Interception Feature",
+      "summary": "Remus Stealer's developers advertised a Gmail email interception feature in November 2026, claiming it was a Gmail zero-day that persists even after password changes and session revocation. Gen Threat Labs analyzed the feature and found it is a native DLL module that silently installs a malicious Chrome extension, disguised as Google Sheets, by tampering with Chrome's preferences files. The extension polls Gmail's Atom feed for new unread messages across up to ten signed-in accounts, downloads each full message via the attachment view endpoint, and sends the content to the C2 server. The researchers concluded there is no Gmail vulnerability, since the extension relies entirely on the victim's valid session and stops working once sessions are revoked. Defenders should watch for unexpected extensions and Developer Mode enabled in Chrome, because the real risk is that victims often overlook the malicious extension after changing passwords.",
+      "completeness": "Low",
+      "threats": [
+        "Remus"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Chrome",
+        "Google Chrome"
+      ],
+      "algorithms": [
+        "base64",
+        "zip",
+        "chacha20",
+        "xor",
+        "hmac"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "2d92fe0b3b918bdbca318879a65bd5a00e63e00b181085afdeed6922c85f90bd",
+          "e13e019dae958f20d7a252adf64888ab6e6c427622b67c5bf7ae6ffa4a0e25f3",
+          "75e5225cb2fca8b62718648e0c663b9003048a19860ae9f0458f7d904220e693",
+          "39cb29f0985fa58d6b4f632948d543c3633e0a8ab1a51a360a813f2752eb082f",
+          "ae9556b371d29e5fd1f7ff45c00fb60644d6cd8c5bfc1b78a565c1f6296f3a81",
+          "acf1b83914aca2944f55be6ff269cc984f35e3a757a12d9cd036e428c93087bc"
+        ]
+      },
+      "links": [
+        "https://www.gendigital.com/blog/insights/research/remus-stealer-email-interception-analysis"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "clampony npm Dropper Stages a Windows Credential Stealer",
+      "summary": "Two npm packages, clampony and safeclamp3, copy a clamp utility and add a preinstall hook that, in clampony, downloads a Windows credential stealer from Pastebin on every install. The stealer collects cloud, SSH, package registry, FTP, shell history and Telegram session data and uploads it to a Telegram bot. It also downloads enterotoxin.exe, a remote-access trojan with keylogging and clipboard capture. The npm dropper does not yet write or run the payload, though safeclamp3 has tested a hidden background launch. Defenders should remove these packages, rotate credentials on any Windows machine that installed a newer version, and check for the RAT and rewritten taskbar shortcuts.",
+      "completeness": "Medium",
+      "threats": [
+        "Enterotoxin",
+        "Process_hacker_tool",
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "clampony",
+        "safeclamp3",
+        "Pastebin",
+        "Telegram",
+        "Kubernetes",
+        "Docker",
+        "WinSCP",
+        "Microsoft Store",
+        "Process Lasso",
+        "Process Explorer",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "sha1",
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "run",
+        "download",
+        "main",
+        "bringBeautifulGift",
+        "Get-ScheduledTask",
+        "Get-ChildItem",
+        "Get-ItemProperty"
+      ],
+      "languages": [
+        "python",
+        "powershell",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "ca2b7eced5937817b2aca2d50542d2e171bc95593be72a94c158616ed17a5334",
+          "48cf14560a8c2c5eaa984078cb345a81bc6d49d6695a06851499a3a31260aa91",
+          "10a47e65e492bda12bb634439976fd3c63df62d4ff6cb2297df3bcefe7cfbdff",
+          "d25696da7a9cb1f550356c16189a57385937c4e1712261a0e3a6edcd7ad5cf3e"
+        ],
+        "ipv4": [
+          "195.123.6[.]29"
+        ],
+        "domain": [
+          "calcal[.]ru"
+        ],
+        "url": [
+          "hxxps://pastebin[.]com/raw/z6K1Rg8J",
+          "hxxps://calcal[.]ru/p/t5edjvR/raw",
+          "hxxps://195.123.6[.]29:443/enterotoxin.exe"
+        ]
+      },
+      "detections": [
+        {
+          "id": "485c01c8-00d2-59ed-979b-314ec034b31a",
+          "title": "Taskbar Shortcut Hijack via MicrosoftStoreUpdater Agent with --payload",
+          "attack": [
+            "T1547.009",
+            "T1036.005"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-24/485c01c8-00d2-59ed-979b-314ec034b31a.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://safedep.io/blog/clampony-npm-preinstall-telegram-stealer",
+        "https://github.com/safedep/vet",
+        "https://github.com/hughsk/clamp"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Webworm APT: Threat Intelligence Analysis Report",
+      "summary": "China-aligned Webworm APT group continued operating in 2025, using two new backdoors, EchoCreep and GraphWorm, which use Discord and the Microsoft Graph API (OneDrive) respectively for command-and-control. The group also deploys custom proxy tools, including WormFrp, ChainWorm, SmuxProxy, and WormSocket, to build covert infrastructure. Its targeting has shifted from Asia toward European government institutions, with 2025 victims in Belgium, Italy, Serbia, Poland, and Spain, plus a South African university. Reconnaissance used nuclei and dirsearch, and CVE-2017-7692 (SquirrelMail RCE) was observed as a likely initial access vector. Defenders should prioritize behavior-based detection and cloud traffic analysis, since blocking by IP or domain is less effective against abuse of legitimate cloud services.",
+      "completeness": "High",
+      "threats": [
+        "Echocreep",
+        "Graphworm",
+        "Wormfrp",
+        "Chainworm",
+        "Smuxproxy_tool",
+        "Wormsocket_tool",
+        "Nuclei_tool",
+        "Dirsearch_tool",
+        "Mcrat",
+        "Trochilus_rat",
+        "9002_rat",
+        "Iox_tool",
+        "Impacket_tool",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Spain",
+        "Asia",
+        "China",
+        "South africa",
+        "Serbia",
+        "Italy",
+        "Italian",
+        "Belgium",
+        "Poland",
+        "Spanish"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 24,
+      "software": [
+        "Discord",
+        "Graph API",
+        "WordPress",
+        "SoftEther",
+        "OpenSSL",
+        "Microsoft Visio"
+      ],
+      "algorithms": [
+        "aes-ecb",
+        "sha1",
+        "des",
+        "aes-128-cbc",
+        "aes-256-cbc",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "isset"
+      ],
+      "languages": [
+        "vbscript"
+      ],
+      "links": [
+        "https://proudsec.com/reports-pdf/webworm-apt.en.pdf"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Volant Manticore: Flying Under the Radar",
+      "summary": "Check Point Research describes Volant Manticore, a previously undocumented Iran-nexus threat group it assesses has links to Iran's Ministry of Intelligence and Security (MOIS). The group uses the KuboShell backdoor, which relies on IPFS for command-and-control, to deploy the Homa Framework, a reimplementation of MuddyWater's MuddyC2Go client. It targets Cyprus, including telecommunications companies, airlines, and critical infrastructure, and in September 2026 shifted to Saudi healthcare organizations. Researchers assess that the group likely consists of former MuddyWater operators who now run as a separate cluster. Defenders should avoid treating Volant Manticore as part of MuddyWater, as this could create blind spots for organizations in Saudi Arabia and Cyprus.",
+      "completeness": "High",
+      "threats": [
+        "Kuboshell",
+        "Muddyc2go",
+        "Credential_harvesting_technique",
+        "N-able_tool",
+        "Phonyc2",
+        "Meshcentral_tool",
+        "Gophish_tool",
+        "Spear-phishing_technique",
+        "Darkbeatc2"
+      ],
+      "geo": [
+        "Iranian",
+        "Saudi arabian",
+        "Saudi arabia",
+        "Iran",
+        "Cyprus",
+        "Saudi"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WinHttp",
+        "VirtualBox",
+        "Active Directory",
+        "ADFS",
+        "Microsoft Word",
+        "Microsoft Office",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "exhibit",
+        "zip"
+      ],
+      "functions": [
+        "Get-Variable",
+        "run"
+      ],
+      "languages": [
+        "python",
+        "jscript",
+        "javascript",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "684f748deceabf0fbb789ce11cc748ec62ea7e218f44289557e733509ec9b250",
+          "27f36e562015365017c1458a5944b4f03cb13049f3b268bb919fcff7f83c459f",
+          "8657c350a2cf338721ade0bba8bd976cdd0c6e21fb7d5052eec24f8a034d7f7f",
+          "3239b5916a3462e17ed3110083f3310c58bf1c74aca75e20ddb8bfa7b7b519fb",
+          "d619323f20fd58e70ff846e1051a830d9735c89c6b2c72809258cfbc180d915c",
+          "9aa67867d5407184882da7eca22542fe4fa40db8e7cdb3526d4f9b75a9c57d55",
+          "625f86e71a4b99c1fb9764a98e81901158ef0b1f6b0374b4cf1753f58bb3b858",
+          "deed01f1f9359b1bbb926795234a5ba5860894aac9c0db4e55b3c9a8fa77d2a1",
+          "7bfd88831a0599b2fe070f8f41fd4e1953584aa220b0cb788d4b1f805e7f0920",
+          "438290e0fb6651bd8fc5eb45a6e50b7c9339e435c425adf2e0718c2edec03c72",
+          "80f98fff65c9488a1794a7b7e61acfa65830308d1ccd6801f5d4936e71403e04",
+          "c763a530794ca9b5b2319941fedef3684a65c427e945038f9a03cd505afb30f7",
+          "f78e4ab9d74f9cd74c02a8e0cb9e00348dff14281d44092b9d874c17dee8bded",
+          "15cb048c38063ec269208ea0ff98c7fd86e21a4d7a7c2eaeaa49933e36224de7",
+          "31782222f017e5340261f0cb6d1b0bbbd9eb8309bd56a67a628e7335bdb1be4f",
+          "a4ef03a850d6a9bc590d4c074230f09848309c95c92a62a9d32c5d0be7573f52",
+          "648365b4983f3468b0f077c30110d6271e6f0c9a870ed6769be774f87f5c2b08",
+          "68ed37807c4c41541c3fb5afa3763b514be0b5d3086e8864c1e67a74580f4535",
+          "2477bbf0ab3f0c9db73fcb2f5f9dfe8cf6703a88862a7c98a5de6f349cd8833f",
+          "fdd5c7a353c5f313076a8c37eb6e672e633fe4416591642564abe3274782d2bf",
+          "651a5ba217c996cbdd567038632e28896e06d0f728708327badd5f0b53963d9a",
+          "6cedef9bdbaef331bad705b1488686e10dd4e2fbd5fda78af57b4704bf4ab344",
+          "6be53629a26384078fd38c431819d86a27fd03af53ff3ae7fd19ae38aae2be73",
+          "90e79eab4188775d1da963d6ddc8c92b63c01f17d709e03f836f42241e7210ec",
+          "61cdefd7f039f5c7d1c1b17ba74b8dae31138ff16072ba474e20f7566d2c011a",
+          "bf98bdb300e04d2200ce90a3626f05c2a9942597f5919ae2f6152a8d1327443b",
+          "40e8117a60a1490a94b65bbac8163968e2823113a5cb3023a60eff611171ebc4",
+          "f733b6cac9f85dd0e7a73ab8e592df5125e13195e5acd2793f76d4ccbf736990",
+          "351a44052f2e3f0897ca3c517650e3cd93515bf2d29db8006e0f26f062ecb5c9",
+          "9a3de87064b4e7f246b5282d4b313ea48fdb37176d85bad1ba6faca6c6907ee5",
+          "884327755c4bf778b524bbe3814307c077d3bd72c19920a0995824a931ca9e2d",
+          "428f92ef5f7f7348cc1abdf168854b676808957de812a53b956db473036ae131",
+          "13ed4c76184bf60f46db4b3b2b7cb62f91bb8208b2813e58d8b8c879ee9259cc",
+          "dff387a7cc85a396f95eb1833cecd65fb991cdbcdaef45cc657cd75be266cc39",
+          "ca5b94ec1a3a218e12bfe6179a396e69b48de0000eac48e445b49e9d2cc80fa2",
+          "29c0173763a740aca360970c5646b299f492ef64d37476ca4d02da7a832df80a",
+          "2212b52b448740327d96fb98cf0145ffce62cf0741a12822f8bd40216a4a5863",
+          "b42ce40afb65b510317bc755d37f2f4617186b70dd28e3a35b7f064eb42628bd",
+          "2627ea4d7dcadca71de39b19fe8dc877e8f5c54c5e71d85202641196864df9ae",
+          "4469babd3d9b88bdec90b9164f0f80d95fb267434461ae85114a7197eeb02e3a",
+          "85e78b3ae9648594f7c3a069b5aa6bf985f25e6c14794aa9511054b6828912c6",
+          "9977374425f552e8408d400dfd0340b1047a5085943ba9c85cb4b454be828427",
+          "3c0be3c1397a5a14ee511a3452c708514b3afd0fd975a11715f0d9fb98e462dd",
+          "abe2761831fbccb959037c65443f3988d92a69a2140b76f3e6666734f3982ba4",
+          "90619f94124e86f9337f12e88fb3533b9718b8fe6328c7c1bb97503efe1d2bb2",
+          "d271b2ef422709febe95b891d42ccd9fd0855bff8a15f76b78a528ff34195342",
+          "02a12f39429d7f111aa4f087dd73fd8d8415fe7be0e76202a4cfd5242144040e",
+          "1971142007ed60d009dcd56600b96a41a01e9fba8696b65ed7699aaf12265b77",
+          "6a522cb5d1888511b547f64043bb4c35f9d81452adcfa268650f7d803bf77dfc",
+          "fc110456041ec607e3dea81e13277baa5328e8a8026084d6d679236f45da8c4c",
+          "2db69a664953fd4ad33f7cfda67f8ec53798803a0b95f0c004222e94c4f9629b",
+          "6b183b16dbbda5a01cfa73366d01ef1a87a9bedfcc3ddae8d7849bc3f37cedbf",
+          "451ea8cf63e71a79211308734913453d03b4cc9b07b43163805dea8d49a46bc4",
+          "845302a55726b76dd48baa2beaf302fa33cbb6479a816a3794e78ba49ddf3973",
+          "5d3d532dcdd2002ce7b16fd95d9d04ccf7cdf001b003eaec49e7f288eaa43e17",
+          "35b236fc5ff19e05b2699b0f824fe85d6ffdf7c2f1516d3fed8c6dbe920ea162",
+          "0547965e807a030ad9b1bcd0b7cc7c383f3ad6ae7ad173e236057430279fb808",
+          "29321b3a590ba2c0850eea6c0bd3dcd8503115fc381282cefaf41fc7bb468c80",
+          "13a619e7501a07cdabc9595050aa03e073d820d843c156a04246104263086749",
+          "f8016ff265fac046a72a1f89c98ced960c492d2b1ec303f0f07ef39c6324a985",
+          "28ef8ced263c5732726ae6e615a9f0ddf05863a1bde95c4dcb6b96561b5ac9ba",
+          "5b29f81adcfe1b795f344bd660b87ddc2cb06dc6ac72b7aeee5af2a64438b635",
+          "197fd95c1b0ffad9c3a116c8bc53f5445381d31af789ed11b2227ab20fb4c0f8",
+          "f0dadfd28efdace2701ca95939602825a49c9f61f703e2814269b7c469fc789c",
+          "27d50c5f96ab050bead5710b2c213a9de4ab0a8823ef6394e9aa0a23f8372600",
+          "7e3e897ffe49395918a015ec54bdff4c89ee2411131ca94ccff20678a62b5974",
+          "e9598232aa4232fcc2db3ae60490d2a71ba103f12f07f9d819f88b86400a81ff",
+          "5d3b30589eceab51b804383c3a1f8538b207826a4dbcc919db4b6b17c090cf56",
+          "772756296fd234156415da4081abd399e4647f83470120097e925918b2f03f85"
+        ],
+        "ipv4": [
+          "185.205.187[.]109",
+          "185.205.187[.]107",
+          "185.205.187[.]108",
+          "185.106.102[.]70",
+          "185.253.118[.]221",
+          "159.198.36[.]115",
+          "185.221.222[.]185",
+          "95.182.88[.]89",
+          "88.119.170[.]218",
+          "88.119.171[.]245",
+          "213.252.232[.]131",
+          "213.252.245[.]44",
+          "213.252.245[.]60",
+          "217.60.5[.]55",
+          "217.60.5[.]75",
+          "217.60.5[.]87",
+          "45.38.170[.]31",
+          "192.142.46[.]141",
+          "94.126.227[.]67"
+        ],
+        "domain": [
+          "nl-backend.cnpcyprus[.]net",
+          "primtel-tel[.]com",
+          "primetel-tel[.]com",
+          "gapgroups[.]com",
+          "dpwords[.]com",
+          "portal-gateway[.]net",
+          "nl-backend.gatewaynet[.]site",
+          "nl-backend.cabelenet[.]com",
+          "remote.medochomie[.]com",
+          "mesh.websitegate[.]net",
+          "owa.webmail-eac[.]com",
+          "exchange.webmail-eac[.]com",
+          "webmail.cabelenet[.]com",
+          "federation.aegeneair[.]com",
+          "corenewsnetwork[.]com",
+          "liveupdatenews[.]net",
+          "files.catbox[.]moe"
+        ],
+        "url": [
+          "hxxps://remote.medochomie[.]com/api/ClientDownloads/WindowsInstaller/0f3db892-22d4-4479-a7ec-e54a375bd19c",
+          "hxxp://185.205.187[.]109:8000/{UID}",
+          "hxxp://185.205.187[.]109:8000/X{key}",
+          "hxxp://185.205.187[.]109:8000/X",
+          "hxxp://185.106.102[.]70:8080/HK5PpjU6I9ug0zmNZqAFdIPa9wayXl2RZ",
+          "hxxps://files.catbox[.]moe/hnrhw9.zip",
+          "hxxps://www.dropbox[.]com/scl/fi/yr21f2wlppfbxf4tvb59k/.zip?rlkey=p2dxe0c4eeahon6sogbpq54db&st=nt5t3k3n&dl=1"
+        ],
+        "email": [
+          "mahaalazami[@]protonmail[.]com",
+          "u0138738662[@]proton[.]me"
+        ]
+      },
+      "detections": [
+        {
+          "id": "930f68ed-85da-5e28-8c92-282ff0c95fea",
+          "title": "PowerShell Add-Type JScript MemberDefinition Loop Execution",
+          "attack": [
+            "T1059.001",
+            "T1059.007"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-24/930f68ed-85da-5e28-8c92-282ff0c95fea.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://research.checkpoint.com/2026/volant-manticore-flying-under-the-radar/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "How Hackers Use WhatsApp and Telegram to Hijack Windows PCs",
+      "summary": "WatchGuard Red Cell researcher Euler Neto analyzed four malware campaigns targeting Windows users in Southeast Asia, particularly Cambodia and Malaysia, distributed through Telegram and WhatsApp. The Telegram-based campaigns deliver remote access trojans, including a suspected Gh0stRAT variant and a Go-based RAT capable of surveillance, data theft, and cryptocurrency hijacking, using techniques such as DLL sideloading, PNG-concealed payloads, and process injection. The WhatsApp-based campaigns abuse Zoho's ManageEngine Endpoint Central to gain unauthorized remote control of infected devices. The report notes that Chinese-language references do not by themselves establish attribution to a specific threat actor. Its key takeaway for defenders is that trusted applications do not guarantee trusted behavior, so monitoring application behavior and remote access activity is essential.",
+      "completeness": "High",
+      "threats": [
+        "Gh0st_rat",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Vmprotect_tool",
+        "Uac_bypass_technique",
+        "Uacme_tool",
+        "Byovd_technique",
+        "Hellsgate_technique",
+        "Clipboard_hijacking_technique",
+        "Credential_stealing_technique"
+      ],
+      "geo": [
+        "Asia",
+        "Cambodia",
+        "Malaysia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Chrome",
+        "Sunlogin",
+        "DingTalk",
+        "Huorong"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "base64",
+        "lznt1"
+      ],
+      "functions": [
+        "SetDesktopMonitorHook"
+      ],
+      "languages": [
+        "golang"
+      ],
+      "iocs": {
+        "ipv4": [
+          "137.220.156[.]123",
+          "134.122.155[.]188",
+          "45.64.52[.]172"
+        ],
+        "domain": [
+          "xiksjha[.]cc",
+          "cakkaao[.]com",
+          "cakkoo[.]com",
+          "hello.cakkao[.]com"
+        ],
+        "url": [
+          "hxxp://45.64.52[.]172:8080/api/dropper/report",
+          "hxxps://hello.cakkao[.]com/778888/sunllo.zip”"
+        ]
+      },
+      "detections": [
+        {
+          "id": "5011c569-8724-51e1-8904-66c1a28b4467",
+          "title": "ConsentPromptBehaviorAdmin Set to 0 Disabling UAC Admin Prompt",
+          "attack": [
+            "T1548.002",
+            "T1112"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-24/5011c569-8724-51e1-8904-66c1a28b4467.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/how-hackers-use-whatsapp-and-telegram-hijack-windows-pcs"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Inside a Staged Post-Exploitation Toolkit Targeting Pakistan's Cricket Board: Exchange Webshells, DCSync, and Active Directory Persistence",
+      "summary": "An operator exposed a 37-file post-exploitation toolkit on a Latvia-hosted VPS (AS56971) that was used against the Pakistan Cricket Board network. The toolkit uses a compromised Exchange OWA webshell at mail.pcb.com[.]pk as a command relay, masking C2 traffic as legitimate Exchange HTTPS communications. Operators staged DCSync scripts using DSInternals to extract NT hashes from domain controllers without touching LSASS, plus Chisel tunnels for SOCKS proxying and RDP access. Persistence includes a .NET implant with scheduled tasks, a Run key masquerading as Kaspersky tooling, and a malicious Group Policy startup script targeting named machines. Defenders should audit Exchange OWA paths for unexpected ASPX files, block the staging IP, and monitor for unauthorized directory replication and new Run key entries.",
+      "completeness": "High",
+      "threats": [
+        "Dcsync_technique",
+        "Chisel_tool",
+        "Dsinternals_tool",
+        "Credential_harvesting_technique",
+        "Golden_ticket_technique",
+        "Winrm_tool"
+      ],
+      "geo": [
+        "Pakistan",
+        "Latvia"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 12,
+      "software": [
+        "Active Directory",
+        "Azure AD",
+        "Microsoft Exchange",
+        "Outlook",
+        "NuGet",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "Get-ADDomain",
+        "Get-ADReplAccount",
+        "Heal",
+        "H"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic",
+        "python"
+      ],
+      "ttps": [
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.005",
+          "name": "Command and Scripting Interpreter: Visual Basic",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1027",
+          "name": "Obfuscated Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1003.006",
+          "name": "OS Credential Dumping: DCSync",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1021.006",
+          "name": "Remote Services: Windows Remote Management",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1090.001",
+          "name": "Proxy: Internal Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "8c4594d103c7b9f665d29e00713a3a2076e9445ea083c03515187467badebed8"
+        ],
+        "ipv4": [
+          "109.248.163[.]36"
+        ],
+        "url": [
+          "hxxp://109.248.163[.]36:8080",
+          "hxxp://109.248.163[.]36:8081/x",
+          "hxxp://109.248.163[.]36:8888/"
+        ]
+      },
+      "detections": [
+        {
+          "id": "f6c396c4-0902-55c7-9d4d-0fd62a18516d",
+          "title": "Run Key Persistence Named KlUpd Pointing to ProgramData",
+          "attack": [
+            "T1547.001",
+            "T1036.005"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-24/f6c396c4-0902-55c7-9d4d-0fd62a18516d.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://www.infrahunter.com/research/a-staged-post-exploitation-toolkit-targeting-pakistan-cricket-board",
+        "https://github.com/MichaelGrafnetter/DSInternals"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "PolinRider Moves to Python with an Ethereum Calldata Loader",
+      "summary": "PolinRider now plants a Python loader in GitHub repositories, hidden in a utils package or in conftest.py. When the file is imported, it reads the newest self-sent transaction of an Ethereum wallet, decodes the JavaScript stored in its input data, and runs it with Node.js. That JavaScript reads a second wallet to find the command and control server, then starts the next stage in a detached node -i process. SafeDep found the loader in 375 public repositories under 260 accounts, mostly small personal projects, and no package on PyPI or npm carries it. Because the loader uses only the standard library, dependency scans will not reveal it. Defenders should search repositories for the wallet and loader calls, treat any machine that ran the loader with Node.js as compromised, and clean the machines that push to affected repositories.",
+      "completeness": "Medium",
+      "threats": [
+        "Polinrider",
+        "Tinynuke",
+        "Dead_drop_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Node.js",
+        "Django",
+        "FastAPI",
+        "uvicorn"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "javascript",
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "45f1e5c405d1253b0014a17619581d31e1b94fdca8733519d84b9795a460f53a",
+          "adf94e02b0dea9efbf0c02c522fd39d7b833adc41067e747c3eb0843e36a1f91",
+          "474097c1e7162d858090b798e37ec7342cef00c44c8c71f1b8cdd755b6f75db7",
+          "623daf99f3bba7ac590025b46d7d7e3fc8d8917629548d3c6e28cfb5aa1b6328",
+          "09d11256e2ea5a8125a4d69ce953400c71a4106164493ef79a2fffbb5c44efa2",
+          "f4357b87bb0742d027728a20d303eef7103612f9c3d3684394908cffcf8858d3",
+          "7fe11f4de256ad59d7b112fb107348672449f977b492da954f2dc18151806f3b",
+          "65408e27530326d501d481955300fa8e3ef2fffc0b7b07ffa29747b7337e0f17"
+        ],
+        "sha1": [
+          "3b1574417524c11a7403c4b232cacbb320ccebc6",
+          "1eef0849eda15d87f64e51c73c8442cf3c8bcef3",
+          "6e82b409a357be8d8e88e7d4fcb588ded3de104f",
+          "92559ff0c631a96fa1592e9f591d7c80cfd9a209",
+          "a4ac9897ddd17708e4c5e01afd4b2dfe4f42a8d4",
+          "1d74fc0f89de034451ccddf5893988632701a2d0",
+          "1c198a8c8ee50ffb0406c1ccecfc5612634466c1",
+          "54b86d0240de5b91c72abc1782eb67fe109eb32f",
+          "6bb4684dd52fd95a03868a46a5e3a56c03a6760a",
+          "103e00e4079c42c8230e9c75bacd4c2f384aa325",
+          "e5bda9a01e8db67ea9b0712d59a45a4a543ab07d",
+          "262831f7891708bab6d1247d0d59a5e7a667e7ec",
+          "4ffa20c0c7076c178d00cc0d0d64768721aceab8",
+          "19cae66adbdbd597155c7693364056edd3774baa",
+          "000faa948ba9e7e600b9573f0f03be3ab08c7e43",
+          "3af648950330feb43e6ffffc886be4a2bd26e717",
+          "36fd8cf36798f0039daf694c05c74e93e31816b6",
+          "01cca117dc72f304fd922755359028cc61e084d0",
+          "63983a07b25b79885bef1b313b930f7f64895ef1",
+          "273c16fff16c89f646263c0818590fb26cbeb7f7",
+          "a6cdd03931d2e90838d906c84a036ec22521a5c2",
+          "95de1bda395bd9a5bd874c449ba991847a58dd8e",
+          "098399485b48fe5e93f91425ca9b8e3b7e2d803b",
+          "0302eeba73c5e1b9717b60e6c07de110349cb4e9",
+          "e9e0e43379fbb8297d0b2d57b57b4ab94217d7e4"
+        ],
+        "ipv4": [
+          "95.135.181[.]84",
+          "166.88.134[.]75",
+          "103.179.143[.]219",
+          "23.27.13[.]72",
+          "95.135.181[.]151"
+        ],
+        "url": [
+          "hxxp://95.135.181[.]84:443/0x/cls",
+          "hxxp://95.135.181[.]84:443/0x/ls"
+        ]
+      },
+      "detections": [
+        {
+          "id": "a2b731aa-45f2-5648-920d-c5598400b137",
+          "title": "Node.js Interactive Shell Spawned by Python Process",
+          "attack": [
+            "T1059.007",
+            "T1105"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-24/a2b731aa-45f2-5648-920d-c5598400b137.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://safedep.io/blog/polinrider-python-loader-ethereum-calldata",
+        "https://github.com/Mizero-eloi/alu\\_regex-data-extraction-MizeroEloi/blob/82a87bb90b3eca941b913f5699fa54b8d1551b52/conftest.py",
+        "https://github.com/jaym2026",
+        "https://github.com/meSingh/polinrider-scanner/issues/96"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "New Enterotoxin Malware Uses NPM Packages to Deliver RAT",
+      "summary": "The OpenSourceMalware team found two npm packages, clampony and safeclamp3, that impersonate the legitimate clamp utility. Clampony's preinstall hook downloads an obfuscated JavaScript credential stealer that targets AWS, Google Cloud, Azure, Kubernetes, Docker, npm, PyPI, Git and SSH credentials and exfiltrates them via Telegram. That stealer also downloads Enterotoxin, a Windows remote access backdoor that runs Python and batch tasks sent by its server, logs keystrokes, captures clipboard data and screenshots, and persists under Microsoft Store and Windows Update names. Enterotoxin can also rewrite trusted shortcuts so that everyday applications launch the malware first. The safeclamp3 package appears to be a dormant sibling that only runs a placeholder script. Defenders should hunt for these packages and the listed network, file, and persistence artifacts, and rotate any developer or cloud credentials exposed on affected hosts. No actor attribution could be established.",
+      "completeness": "Medium",
+      "threats": [
+        "Enterotoxin",
+        "Supply_chain_technique",
+        "Typosquatting_technique"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "Clampony",
+        "Telegram",
+        "Safeclamp3",
+        "pastebin",
+        "Kubernetes",
+        "Docker",
+        "WinSCP",
+        "WinHTTP",
+        "Microsoft Store",
+        "Node.js",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "run"
+      ],
+      "languages": [
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "ca2b7eced5937817b2aca2d50542d2e171bc95593be72a94c158616ed17a5334",
+          "48cf14560a8c2c5eaa984078cb345a81bc6d49d6695a06851499a3a31260aa91",
+          "831ad680ca2bf13e94ed4ff0a3bcfeb031b183a2ad88024ceb2ebdf0326d7d24",
+          "10a47e65e492bda12bb634439976fd3c63df62d4ff6cb2297df3bcefe7cfbdff",
+          "c778b7851d9d614a7f0cf6360c4bd0e7a80d56616ec879aed3d66cdc70aec9ff",
+          "0d6282f9941fbdf5486a0d75fd051b57230726c83c8cfda968d1012a122c927d",
+          "d25696da7a9cb1f550356c16189a57385937c4e1712261a0e3a6edcd7ad5cf3e",
+          "0a286891c11c056e1ab5bfc25bf5d6b2f5b06d38eac10944f678fd8a2e70c393"
+        ],
+        "sha1": [
+          "2e722860713f10b5f83d514fbc0854c202dc641e"
+        ],
+        "md5": [
+          "ed72098d69058a7f43b1b78a30ec6c1f"
+        ],
+        "ipv4": [
+          "195.123.6[.]29"
+        ],
+        "domain": [
+          "calcal[.]ru"
+        ],
+        "url": [
+          "hxxps://195.123.6[.]29:443",
+          "hxxps://pastebin[.]com/raw/z6K1Rg8J",
+          "hxxps://calcal[.]ru/p/t5edjvR/raw",
+          "hxxps://195.123.6[.]29:443/enterotoxin.exe"
+        ]
+      },
+      "detections": [
+        {
+          "id": "57ebc01a-3943-5dd9-bfd5-5388eda136f6",
+          "title": "Executable Launched from Fake Microsoft Store Programs Directory with --agent",
+          "attack": [
+            "T1036.005",
+            "T1547.001"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-24/57ebc01a-3943-5dd9-bfd5-5388eda136f6.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        },
+        {
+          "id": "34cc40d6-4314-59e1-a7b5-88df343e4250",
+          "title": "Run Key Persistence Named MicrosoftStoreUpdaterV Pointing to User Profile Executable",
+          "attack": [
+            "T1547.001",
+            "T1036.005"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-24/34cc40d6-4314-59e1-a7b5-88df343e4250.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://opensourcemalware.com/blog/enterotoxin-malware"
+      ]
+    }
+  }
+]
