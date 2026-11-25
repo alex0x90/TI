@@ -4,6 +4,7 @@ Output layout:
     <out>/index.html, app.js, style.css    copied from site/
     <out>/data/manifest.json               {"total", "first", "last", "generated_at", "days": {date: {"n", "high"}}}
     <out>/data/days/<date>.json            the day's file, unchanged
+    <out>/detections/<date>/<id>.yml       Sigma rules the reports point to (if any)
 """
 from __future__ import annotations
 
@@ -33,6 +34,10 @@ def build_site(repo_dir: Path, out_dir: Path) -> dict:
         n = len(entries)
         days[f.stem] = {"n": n, "high": sum(e["parsed"].get("completeness") == "High" for e in entries)}
         total += n
+
+    # AI-written behavior rules (Sigma), referenced from reports as "detections/<date>/<id>.yml"
+    if (repo_dir / "detections").is_dir():
+        shutil.copytree(repo_dir / "detections", out_dir / "detections")
 
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
