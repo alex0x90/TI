@@ -1164,5 +1164,239 @@
         "https://github.com/AntiFox-AI/antifox"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Open up, this is an order: Exploiting CVE-2026-21513 to deliver a JScript backdoor",
+      "summary": "PT ESC researchers observed exploitation of CVE-2026-21513, a flaw in the Windows MSHTML component, in attacks against Russian organizations. The attack chain starts with a DOCX file disguised as an official order, which loads a remote RTF document via WebDAV. That RTF references a malicious LNK-plus-HTML file that exploits the vulnerability to launch a DLL loader, which in turn runs mshta.exe to install a JScript backdoor. The backdoor persists through a scheduled task that runs every 30 minutes, reports basic user and domain details to the operator, and executes server-supplied code via eval. Attackers can also deliver a reconnaissance payload that clears Office and IE caches before collecting system information. Defenders should install the February 2026 or later Windows security updates and hunt for the listed artifacts, since patching does not remove an existing infection.",
+      "completeness": "Medium",
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows shell",
+        "Microsoft OneDrive",
+        "Windows security"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "jscript",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "3e3e4ab49ef879ecdd424f24b5638666deb79b767d140a00cf47b58a6ad479aa",
+          "4d6a6e9c4a94f479b0670120aaa1d0cbb1090e9e0f48b60b2489e7be55815fda",
+          "7154b729333ec22e401b7529fe2c75dd712c03c673f89ff182a5bf36a0f972e0",
+          "b7fdf63523250503c93b6c59f6cacfea72c61732f45ff9e2d544789005509f66",
+          "06e9dbe71016f2e447b3106b50afc6646dcc81f365b69b74fef1f3aac79f5610",
+          "07efc69553cccbab7c06e2d362315abaffa045ff8904304a14a0c984ddabdfc7",
+          "f3d9ffcbb8378c71a102ad951ddcba08f42acdceddb9d4cf0205671141671571",
+          "f695ed881d71c0103eabc7073c2d81116722c08a83fb27582010a33eeb4a93eb"
+        ]
+      },
+      "links": [
+        "https://habr.com/ru/companies/pt/articles/1106050/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "Unpacking a Multi-Stage Loader: From Embedded Payloads to Cobalt Strike Beacon",
+      "summary": "Threatcat analysed a multi-stage loader delivered via a SwissTransfer link containing a zip with a malicious Windows shortcut (.lnk) that hides a second payload past the file's end, extracted using curl and tar. The shortcut launches a batch/PowerShell polyglot dropper that displays a decoy \"Sample Luxury London Apartment\" PDF to the victim while running a fileless .NET loader. Subsequent stages unpack layered XOR and GZip-protected .NET assemblies and a raw x64 shellcode loader, which runs Cobalt Strike's PrependLoader in memory. The final payload is a 64-bit Cobalt Strike Beacon, likely version 4.13 or later, configured for HTTPS C2 over CloudFront on port 443. The lure targets people seeking rental or real-estate listings, and the report notes that the in-memory techniques aim to reduce detection rather than guarantee stealth.",
+      "completeness": "High",
+      "threats": [
+        "Cobalt_strike_tool",
+        "Prependloader",
+        "Process_injection_technique",
+        "Domain_fronting_technique"
+      ],
+      "geo": [
+        "London"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "curl",
+        "Chrome"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256",
+        "rc4",
+        "lznt1",
+        "sha1",
+        "zip",
+        "base64",
+        "gzip",
+        "md5"
+      ],
+      "functions": [
+        "GetType",
+        "GetMethod",
+        "GetField",
+        "GetValue",
+        "GetProperty",
+        "CreateInstance",
+        "Get-Content",
+        "GetExecutingAssembly",
+        "GetManifestResourceStream",
+        "GetParameters",
+        "have more..."
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "c34e1d12704ba68bce8476415202d529c4239f5b8c81a6dab2271c66d8f12208",
+          "6b29cdb02fb353e47df7a92e7efbad40ae45fd9dc2648b1fb85ab8ecd8716bb0",
+          "7451c2a9fbbf82eacb1582eaa009fea6d8ae5a7b37602efbee492bae81492eb0",
+          "375690e52f145963cf5c98611773b24f491b8dcbf44573c83b340d15ea20acae"
+        ],
+        "sha1": [
+          "0ea8aeb8f89548d772e59dcef78734eddfe2beca",
+          "5050ae6ba19bf93b325a4f8742a4056ddb153160",
+          "c3b100ecb27a0921344616ec00c458dc6d69481f"
+        ],
+        "md5": [
+          "758f7be58a27713e1433ea95c7a11288",
+          "ec848debc47ecaf91def4df5991baa63",
+          "3e2a61f5be3960350f7c25923a4a3f5f"
+        ],
+        "domain": [
+          "d3qx7quq68rdce.cloudfront[.]net",
+          "www.swisstransfer[.]com"
+        ],
+        "url": [
+          "hxxps://www.swisstransfer[.]com/d/8e25d3b7-d334-42f0-a563-57a02d91786b",
+          "hxxps://d3qx7quq68rdce.cloudfront[.]net/css3/index2.shtml",
+          "hxxps://d3qx7quq68rdce.cloudfront[.]net/tools/family.shtml"
+        ]
+      },
+      "links": [
+        "https://threatcat.ch/blog/unpacking-a-multi-stage-loader/",
+        "https://github.com/fox-it/dissect.cobaltstrike",
+        "https://github.com/fox-it/dissect.cobaltstrike/blob/main/dissect/cobaltstrike/beacon.py"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-10",
+      "title": "CNCERT: In-Depth Analysis Report on the Attack Landscape of the “Golden Hook (G03)” Group Behind the “Silver Fox” Trojan",
+      "summary": "The CNCERT report describes the \"Golden Hook (G03)\" group, which distributes the Silver Fox trojan through fake Chinese stock trading software sites impersonating Tonghuashun (10jqka), promoted via SEO poisoning. Victims who download the bundled installer are led through multi-stage in-memory loading that ends with a remote-access trojan capable of screenshots, keylogging, command execution, and plugin delivery over TCP. The group targets Chinese universities, healthcare, securities firms, and technology companies. The trojan persists through a user-level Run registry entry and uses an anti-sandbox check based on process count. CNCERT observed 25,164 compromised hosts in China between October 4 and November 2, 2026. Defenders should download software only from official sources and check for the SystemKKfile registry entry and suspicious programs in the Temp directory.",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare",
+        "self-ext",
+        "ex outp",
+        "macOS"
+      ],
+      "algorithms": [
+        "md5",
+        "sha256",
+        "zip",
+        "rc4",
+        "xor"
+      ],
+      "iocs": {
+        "sha256": [
+          "53b7e792ab43ba2d529772c18f133dc62fd6d54e0139cf6cd7847eac8ddf07ee",
+          "ae4697dc3688a45299a038e4b3d08df55a25dd4484273f63ae8922d80f765d35",
+          "c7fc37bc64f00c3aaf8422737a4c11ccb2d682ad283c0191e40c3b0fe7861279",
+          "413bbbcb3d3a0a97da6fbdbb71a92ce048c1016acfaf3cafbd5e58b1c6cb1008"
+        ],
+        "md5": [
+          "736da9b2cab1ef70c2973cc211c5636a"
+        ],
+        "ipv4": [
+          "172.67.136[.]42",
+          "13.113.93[.]176",
+          "104.21.80[.]194",
+          "172.67.153[.]78",
+          "104.21.59[.]154",
+          "172.67.159[.]215",
+          "104.21.62[.]131",
+          "43.199.114[.]131",
+          "52.223.22[.]103",
+          "76.223.113[.]170",
+          "134.122.204[.]71",
+          "134.122.155[.]157",
+          "134.122.155[.]140",
+          "204.194.50[.]202",
+          "143.92.40[.]155",
+          "134.122.189[.]47",
+          "143.92.40[.]243",
+          "118.107.44[.]141",
+          "134.122.204[.]118",
+          "134.122.200[.]118",
+          "134.122.155[.]105",
+          "154.201.82[.]55",
+          "118.107.47[.]92",
+          "134.122.129[.]44",
+          "134.122.189[.]31",
+          "1.32.250[.]70",
+          "134.122.155[.]16",
+          "134.122.129[.]33",
+          "103.101.176[.]18",
+          "143.92.40[.]244",
+          "118.107.44[.]226",
+          "143.92.43[.]162",
+          "134.122.155[.]14",
+          "134.122.155[.]150",
+          "143.92.37[.]202",
+          "134.122.189[.]27",
+          "118.107.44[.]15"
+        ],
+        "domain": [
+          "lojqka[.]com",
+          "10jqkaapp[.]com",
+          "10jqkapc[.]com",
+          "l0jqka[.]com",
+          "l0jqka[.]ai",
+          "yhao.sxkj999[.]vip",
+          "hk3.1984233[.]xyz",
+          "tj.edatonee[.]com",
+          "afa.sxkj999[.]vip",
+          "www.khop112[.]cfd",
+          "ahua.sxkj999[.]vip",
+          "gcheng.sxkj999[.]vip",
+          "laomo.sxkj999[.]vip",
+          "dan.sxkj999[.]vip",
+          "yifan.sxkj999[.]vip",
+          "haiwen.sxkj999[.]vip",
+          "test.nanhuasell[.]com",
+          "andi.sxkj999[.]vip",
+          "four.x517l[.]com",
+          "xsi.sxkj999[.]vip",
+          "cchen.sxkj999[.]vip",
+          "dowmasfz[.]cv"
+        ],
+        "url": [
+          "hxxps://dowmasfz[.]cv/THS.zip”下载捆绑木马的安装包THS.zip。",
+          "hxxps://lojqka[.]com",
+          "hxxps://dowmasfz[.]cv/THS.zip（失活）"
+        ]
+      },
+      "links": [
+        "https://www.secrss.com/articles/95524"
+      ]
+    }
   }
 ]

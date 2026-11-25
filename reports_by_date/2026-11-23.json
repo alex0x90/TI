@@ -1,0 +1,219 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "Attempts to Disable Domestic Security Products via BYOVD: Beware of Malware Distributed Disguised as Legitimate AI Tools",
+      "summary": "Attackers distributed malware disguised as a legitimate AI tool installer, with a Korean-language fake download site, to target users in South Korea. The malware dropped the vulnerable NeacSafe64.sys anti-cheat driver, which carries CVE-2025-45737, and used it to load a malicious kernel driver named WinWyvern. The attackers reused a publicly available proof-of-concept exploit with only minor changes. WinWyvern patches memory in domestic security products to disable file detection and blocking, which could allow follow-on malware to run undetected. It can also execute additional payloads from its C2 server. AhnLab notes that the latest version of its V3 Lite product is not affected by these memory patches and can detect and remediate the attack chain.",
+      "completeness": "Medium",
+      "threats": [
+        "Byovd_technique"
+      ],
+      "geo": [
+        "Korea"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows installer",
+        "ollama",
+        "Windows kernel"
+      ],
+      "algorithms": [
+        "md5"
+      ],
+      "functions": [
+        "encode_payload",
+        "DLL"
+      ],
+      "iocs": {
+        "md5": [
+          "dcc288fafad0bf3b505c4b44791d423d",
+          "09a0a4256980457c23663278b40e4c51",
+          "5da8a73f76fc7f621c9f77af4512a1f3",
+          "62bdb2cd59af038dcddfc8f24fdd40aa"
+        ],
+        "domain": [
+          "ollama-ko[.]com"
+        ],
+        "url": [
+          "hxxp://ollama-ko[.]com/"
+        ]
+      },
+      "links": [
+        "https://asec.ahnlab.com/ko/96707/",
+        "https://github.com/za233/NeacController/tree/main"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "Agentic Attacks: In The Wild",
+      "summary": "Agentic offensive frameworks such as ARTEX, Cairn, CyberStrikeAI and HexStrike are driving a surge in cloud intrusions, with Wiz reporting a 3x rise in engagement requests. These tools are open source, with hundreds of forks, and activity attributed to ARTEX comes from multiple unrelated operators rather than one campaign or actor. Attacks are noisy and opportunistic, using residential proxy rotation, password spraying, and probing of sign-up, identity-provider, and CI/CD paths across many organizations. One documented intrusion chained compromised VCS credentials and a stolen service-account token into cluster-admin access. Exposed ARTEX consoles and open directories revealed operator workflows and harvested AI provider keys, and keys stolen from one platform often enabled attacks on the next. Defenders are advised to rely on behavioral detections for speed, breadth and systematic structure, since tool-specific rules are perishable.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool",
+        "Cairn_tool",
+        "Cyberstrikeai_tool",
+        "Hexstrike_tool",
+        "Hermes_tool",
+        "Residential_proxy_technique",
+        "Dns_tunneling_technique",
+        "Password_spray_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "boto3",
+        "kubelet",
+        "Jenkins",
+        "claude",
+        "Anthropic",
+        "Alibaba Cloud"
+      ],
+      "functions": [
+        "GetCallerIdentity"
+      ],
+      "iocs": {
+        "ipv4": [
+          "192.236.187[.]90",
+          "104.223.50[.]72",
+          "107.172.5[.]167",
+          "107.173.104[.]66",
+          "130.94.102[.]111",
+          "130.94.103[.]64",
+          "130.94.109[.]218",
+          "38.60.171[.]222",
+          "172.86.80[.]80",
+          "172.86.82[.]159",
+          "172.86.82[.]160",
+          "172.86.82[.]161",
+          "172.86.82[.]163",
+          "172.86.82[.]164",
+          "172.86.82[.]178",
+          "172.86.82[.]179",
+          "118.107.19[.]99",
+          "137.220.202[.]200",
+          "134.122.173[.]40",
+          "134.122.163[.]240",
+          "143.92.37[.]131",
+          "68.166.169[.]20",
+          "134.222.209[.]136",
+          "129.80.215[.]35",
+          "129.121.162[.]36",
+          "43.172.40[.]251",
+          "129.226.56[.]74",
+          "142.86.89[.]21",
+          "168.143.104[.]44",
+          "103.27.80[.]145",
+          "216.203.20[.]186",
+          "66.179.31[.]32",
+          "8.208.101[.]210",
+          "8.222.148[.]117",
+          "47.79.40[.]236",
+          "47.84.82[.]39",
+          "47.79.89[.]122",
+          "58.243.42[.]153",
+          "123.116.51[.]114",
+          "5.181.181[.]168",
+          "37.77.150[.]119",
+          "45.76.225[.]196",
+          "72.57.131[.]24",
+          "149.255.35[.]138",
+          "154.86.0[.]28",
+          "157.22.126[.]128",
+          "162.251.248[.]190",
+          "166.0.23[.]89",
+          "180.178.51[.]150",
+          "187.77.250[.]192",
+          "194.59.30[.]231",
+          "199.19.77[.]84",
+          "45.199.130[.]250",
+          "111.223.247[.]165",
+          "45.38.20[.]153",
+          "85.193.69[.]250",
+          "82.29.53[.]185",
+          "68.68.250[.]114",
+          "192.238.246[.]157",
+          "104.207.150[.]173",
+          "2.26.225[.]135",
+          "109.238.87[.]4",
+          "111.223.247[.]202",
+          "130.94.108[.]151",
+          "161.77.116[.]139",
+          "185.87.121[.]140",
+          "45.199.130[.]245",
+          "2.26.226[.]17",
+          "2.26.225[.]235",
+          "134.122.173[.]60",
+          "130.94.103[.]197",
+          "76.13.169[.]197",
+          "82.29.131[.]60",
+          "130.94.35[.]151"
+        ]
+      },
+      "links": [
+        "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
+        "https://github.com/wiz-sec-public/wiz-research-iocs/blob/main/reports/black\\_october\\_iocs.csv",
+        "https://github.com/wiz-sec-public/wiz-research-iocs/blob/main/reports/agentic\\_attacks\\_in\\_the\\_wild\\_iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "OXLoader abuses DLL hijacking to distribute different malware families",
+      "summary": "OXLoader is a loader that installs other malware, and Malwarebytes reports increased activity involving it after Elastic first documented it in June 2026. The payloads observed include Remcos, OverLord, PureRAT, Lunex Stealer, LOLD, and Hermes, which can steal browser passwords or grant remote control of Windows PCs. Attackers distribute it through malicious ZIP files disguised as complaint or copyright-infringement notices, fake software activators, and cracks hosted on GitLab. A key new feature is DLL hijacking, in which legitimate executables from Microsoft, Steam, OBS Studio, and PDF or Word readers load trojanized DLLs to decrypt and run OXLoader. Defenders should be wary of copyright-themed emails, executables with long names or double extensions, and downloaded activators or cracks.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_hijacking_technique",
+        "Oxloader",
+        "Castlestealer",
+        "Lunexstealer",
+        "Remcos_rat",
+        "Overlord_tool",
+        "Purerat",
+        "Hermes_tool",
+        "Donut"
+      ],
+      "software": [
+        "Steam"
+      ],
+      "algorithms": [
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "Get-WmiObject"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "md5": [
+          "ac8547f5af42dc6932367ebcb162fb0e",
+          "a9d620b690f84d552986a4872d57849e",
+          "b97730ba59b158f400e67050406cb3ea",
+          "27b3fd4a4ac2c2f62f7b175ca904c8f7",
+          "5a0b0bae87a464228398696517fcf6f5"
+        ],
+        "ipv4": [
+          "217.60.102[.]123",
+          "91.92.243[.]204"
+        ],
+        "domain": [
+          "guestsisfilesjpmp[.]com",
+          "wovplaying[.]help",
+          "biklonasmain[.]net",
+          "videohostinginsort[.]net",
+          "videovisitors[.]com",
+          "oz-cloud[.]com",
+          "smartkitcheneg[.]com"
+        ]
+      },
+      "links": [
+        "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families"
+      ]
+    }
+  }
+]

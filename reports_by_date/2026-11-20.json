@@ -1,0 +1,1275 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "Inside the ‘Party’ Panel: How Fraudsters Rent Android Banking Trojans to Target Indian Bank Customers",
+      "summary": "A rent-a-trojan service, uncovered by CloudSEK's XVigil platform, lets fraudsters build fake Google Play pages and branded Android banking malware targeting Indian bank and card customers. A fake credit-card app page collects card number, expiry, CVV, date of birth and mother's name before pushing a sideloaded APK. The APK is a dropper that installs a hidden SMS stealer, which forwards bank OTPs and sets call forwarding so verification calls reach the attacker. An unprotected panel server exposed 50 tenant accounts, 34 of them paid, targeting six Indian banks and card issuers as well as government-service users. Defenders should warn customers to install apps only from official stores and monitor for unexpected call-forwarding activation around card-not-present transactions.",
+      "completeness": "Medium",
+      "threats": [
+        "Sms_stealer"
+      ],
+      "geo": [
+        "India",
+        "Indian"
+      ],
+      "software": [
+        "roid Bank",
+        "ndroid Ba",
+        "Google Play",
+        "Android",
+        "Telegram",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256",
+        "xor"
+      ],
+      "iocs": {
+        "sha256": [
+          "66b51246f648a25aca8150d82900e37568dc67712ea4341afb7929638368acd7",
+          "5fcd3ff3c0a07651041eb79bd8b04aee37d6848f6b77bbad567b6fa9852215ff"
+        ],
+        "sha1": [
+          "927ca44949d7788aa86f9d7f04d7fdacecd1dfb9"
+        ],
+        "ipv4": [
+          "103.151.199[.]22",
+          "103.129.96[.]11"
+        ],
+        "domain": [
+          "node3.sanaminfotech[.]online"
+        ],
+        "url": [
+          "hxxp://103.151.199[.]22:8080"
+        ]
+      },
+      "links": [
+        "https://www.cloudsek.com/blog/inside-party-panel-android-banking-trojan-targeting-indian-banks"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "MoldyRoost: A Malvertising Machine Built to Deliver iOS Exploits",
+      "summary": "MoldyRoost is a large malvertising operation that buys programmatic ads and uses cloaked landing pages to deliver iOS exploit chains, with no user action needed beyond loading the page. It uses existing exploit kits, Coruna and DarkSword, and picks one for each visitor by iOS version, while the operation itself adds the ad-based distribution. Its payloads are built to steal crypto wallet seed phrases, keychain data, messages and photos. Its ads have targeted more than 47 countries, with the largest share aimed at Hong Kong. The report assesses that the six sub-clusters form one operation, and a leaked source repository showed per-channel tracking of stolen data.",
+      "completeness": "Medium",
+      "threats": [
+        "Cloaking_technique",
+        "Coruna_tool",
+        "Darksword_tool",
+        "Silkpath",
+        "Ghostwave_tool",
+        "Clickfix_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "France",
+        "Israel",
+        "Macau",
+        "Canada",
+        "Thailand",
+        "Turkey",
+        "Russian",
+        "Italy",
+        "Turkish",
+        "Ukrainians",
+        "Singapore",
+        "Saudi arabia",
+        "Mexico",
+        "Austria",
+        "India",
+        "Australia",
+        "Nigeria",
+        "New zealand",
+        "Germany",
+        "Vietnam",
+        "Hong kong",
+        "China",
+        "South korea",
+        "Kuwait",
+        "Uganda",
+        "Japan"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Optimizely",
+        "iMessage",
+        "WhatsApp",
+        "Telegram",
+        "Instagram",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Cloudflare"
+      ],
+      "wallets": [
+        "metamask",
+        "bitget_wallet",
+        "tonkeeper"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "ipv4": [
+          "67.215.227[.]138"
+        ],
+        "domain": [
+          "r8q3k[.]com",
+          "k16mq[.]com",
+          "veloris[.]cyou",
+          "tldye[.]vip",
+          "hg0-q-nuu0fy8vm5a[.]lol",
+          "kintoklart[.]com",
+          "openrices[.]click",
+          "discus[.]cyou",
+          "zhcnn[.]com",
+          "agodahk[.]top",
+          "hhtagg[.]cn",
+          "lazaruscollections[.]cn",
+          "luxurycitadel[.]com",
+          "realbotxes[.]com",
+          "81by[.]top",
+          "matchsphere[.]icu",
+          "ycka[.]my",
+          "jiaoyang677[.]sbs",
+          "ezdata88[.]com",
+          "poodoobb[.]com",
+          "baidubot[.]com",
+          "vuzarela[.]sbs",
+          "blockstermediacoin[.]live",
+          "gq26uzx2.ab124[.]live",
+          "i0s[.]top",
+          "i0s[.]io",
+          "63tk8[.]com",
+          "1tc4d[.]com",
+          "5za2c[.]com",
+          "m64tw[.]com",
+          "5mq1m[.]com",
+          "9kd2r[.]com",
+          "b6v9d[.]com",
+          "d49tw[.]com",
+          "9kp1r[.]com",
+          "1pm3n[.]com",
+          "7wb5m[.]com",
+          "4wb6c[.]com",
+          "27wa5[.]com",
+          "93wb4[.]com",
+          "6nd5x[.]com",
+          "37wa8[.]com",
+          "k42fa[.]com",
+          "2tc5w[.]com",
+          "7yd9w[.]com",
+          "2za4d[.]com",
+          "3rt8c[.]com",
+          "k47mq[.]com",
+          "5fa9h[.]com",
+          "8pm4r[.]com",
+          "8fx7c[.]com",
+          "81wb3[.]com",
+          "4pm2v[.]com",
+          "v94fa[.]com",
+          "9za4r[.]com",
+          "6j5n9[.]com",
+          "v42nb[.]com",
+          "k13fa[.]com",
+          "9kd4p[.]com",
+          "7m2qc[.]com",
+          "6xd7k[.]com",
+          "35rq1[.]com",
+          "28wa4[.]com",
+          "d86tw[.]com",
+          "d82kc[.]com",
+          "83rq5[.]com",
+          "5wb2k[.]com",
+          "4wb3t[.]com",
+          "m73da[.]com",
+          "8mc9r[.]com",
+          "61vd8[.]com",
+          "5tk1a[.]com",
+          "4td8n[.]com",
+          "4kv9b[.]com",
+          "k35vb[.]com",
+          "3nx9p[.]com",
+          "3kd9v[.]com",
+          "t58va[.]com",
+          "4tc7q[.]com",
+          "3wa9p[.]com",
+          "28vd6[.]com",
+          "7fa2m[.]com",
+          "4zp6k[.]com",
+          "8nb1t[.]com",
+          "6k28w[.]com",
+          "4tz9k[.]com",
+          "5vq7k[.]com",
+          "5rk4v[.]com",
+          "4xb8m[.]com",
+          "3vt5p[.]com",
+          "m19da[.]com",
+          "3d9f7[.]com",
+          "2fa8t[.]com",
+          "6tw2n[.]com",
+          "21wd8[.]com",
+          "7rc1b[.]com",
+          "8pk3d[.]com",
+          "6ab8c[.]com",
+          "5ma4v[.]com",
+          "7d2v5[.]com",
+          "6z1x5[.]com",
+          "4c8f2[.]com",
+          "w35ra[.]com",
+          "h814k[.]com",
+          "9tx63[.]com",
+          "7m4rk[.]com",
+          "2b9nc[.]com",
+          "28wa7[.]com",
+          "2z6w4[.]com",
+          "k86vw[.]com",
+          "1da5p[.]com",
+          "pivor42[.]com",
+          "ralix39[.]com",
+          "qunex35[.]com",
+          "ydwk8[.]com",
+          "qwe9r[.]com",
+          "h18m4[.]com",
+          "82j7k[.]com",
+          "3v9k6[.]com",
+          "2j6l9[.]com",
+          "9g5v2[.]com",
+          "7p8m1[.]com",
+          "5m6d1[.]com",
+          "4g6k7[.]com",
+          "3p9v1[.]com",
+          "8k2m5[.]com",
+          "7f2n5[.]com",
+          "4z3c8[.]com",
+          "3k9w8[.]com",
+          "8c5f1[.]com",
+          "4b9k3[.]com",
+          "8z5t2[.]com",
+          "4g2m7[.]com",
+          "5t6k3[.]com",
+          "5n6k2[.]com",
+          "2x5m9[.]com",
+          "9p5r6[.]com",
+          "8p3k6[.]com",
+          "8x7r3[.]com",
+          "2k6z5[.]com",
+          "4v7d3[.]com",
+          "5p1v9[.]com",
+          "1x7b3p6v2d[.]com",
+          "f7n4w[.]com",
+          "9p5t8[.]com",
+          "7z2p5[.]com",
+          "7m4t2[.]com",
+          "5x3p9[.]com",
+          "5d1t3[.]com",
+          "1v8r6[.]com",
+          "1p8n3[.]com",
+          "z5k2r[.]com",
+          "9k7f4[.]com",
+          "8g4z9n1c5f[.]com",
+          "4m1p3[.]com",
+          "9x2f4b7n1c[.]com",
+          "8x4f9[.]com",
+          "4v8k1[.]com",
+          "3k8z5m2p9v[.]com",
+          "7p3g8[.]com",
+          "4v2m6[.]com",
+          "k7w4q[.]com",
+          "6k4v7[.]com",
+          "8w2x5[.]com",
+          "8n7g3[.]com",
+          "6m4r2[.]com",
+          "5t7k1[.]com",
+          "5t2d7[.]com",
+          "3z5p6[.]com",
+          "3p1r8[.]com",
+          "1p2w9[.]com",
+          "8g4d3[.]com",
+          "7c9b4[.]com",
+          "2t8n4[.]com",
+          "1x9p2[.]com",
+          "2z6f3[.]com",
+          "b2k8v[.]com",
+          "9n5f4[.]com",
+          "1c4m9[.]com",
+          "6w3b5[.]com",
+          "4g9v3[.]com",
+          "7n6k2[.]com",
+          "4k8m1[.]com",
+          "1d3g6[.]com",
+          "7x2v9[.]com",
+          "2z8c5[.]com",
+          "2z3m8[.]com",
+          "8t7c4[.]com",
+          "6g9f1[.]com",
+          "5v2n6[.]com",
+          "1p4k9[.]com",
+          "d2r7b[.]com",
+          "rrt59[.]com",
+          "p8z4w[.]com",
+          "mmx72[.]com",
+          "k92wp[.]com",
+          "neonflowmedia[.]vip",
+          "8f2g7[.]com",
+          "4z9d5[.]com",
+          "p6k1z[.]com",
+          "9f2n5[.]com",
+          "5k7m1[.]com",
+          "1t3v9[.]com",
+          "f9v3t[.]com",
+          "6k2p9[.]com",
+          "v6k8b[.]com",
+          "7m4p2[.]com",
+          "4g9c6[.]com",
+          "3d9r1[.]com",
+          "w3d8z[.]com",
+          "w2c8k[.]com",
+          "m7x5t[.]com",
+          "kk92w[.]com",
+          "k9q3z[.]com",
+          "t2v8d[.]com",
+          "r4m8c[.]com",
+          "k9v2x[.]com",
+          "3g7r5[.]com",
+          "f4m8t[.]com",
+          "52ndk[.]com",
+          "c2k7z[.]com",
+          "b2n8w[.]com",
+          "f4n6v[.]com",
+          "dreamclickarena[.]vip",
+          "8w6zp[.]com",
+          "4z7p2[.]com",
+          "x93qy[.]com",
+          "vvt93[.]com",
+          "vr33m[.]com",
+          "qp72k[.]com",
+          "fg44t[.]com",
+          "27hz5[.]com",
+          "p8q5b[.]com",
+          "p5g2n[.]com",
+          "p4k2n[.]com",
+          "m7vpx[.]com",
+          "7m77v[.]com",
+          "4bxzd[.]com",
+          "b7w2n[.]com",
+          "8f5k3m[.]com",
+          "superstorywave[.]top",
+          "moneypulse[.]top",
+          "j5k3m[.]com",
+          "glowstoryzone[.]top",
+          "freshsparkstudio[.]vip",
+          "7m3r4x[.]com",
+          "6c2p9d[.]com",
+          "pixelrabbitstudio[.]top",
+          "8n9v2f[.]com",
+          "7p8j2q[.]com",
+          "z55kx[.]com",
+          "tb42n[.]com",
+          "pzm7k2w[.]com",
+          "cx99wjb[.]com",
+          "9b6x2v[.]com",
+          "7m4z9k[.]com",
+          "6f2h8q[.]com",
+          "432btrz[.]com",
+          "v662dxn[.]com",
+          "superlaunchway[.]top",
+          "p2j8r3[.]com",
+          "88qfjnp[.]com",
+          "magicbrandhub[.]top",
+          "g9t5w4[.]com",
+          "arvolitha[.]vip",
+          "5v6n7w[.]com",
+          "5s4t6b[.]com",
+          "3w8m9p[.]com",
+          "r9x2m[.]com",
+          "neonsparkmedia[.]top",
+          "l6r3c[.]com",
+          "9t2p4q[.]com",
+          "8t3p5w[.]com",
+          "4x7m9b[.]com",
+          "488pdj[.]com",
+          "z2k7m[.]com",
+          "y3c8v2[.]com",
+          "f9z7n[.]com",
+          "dreammarketspace[.]top",
+          "5k6w7v[.]com",
+          "4r9d2c[.]com",
+          "3r8d2k[.]com",
+          "3p4m7x[.]com",
+          "d4r8n[.]com",
+          "w6m8t[.]com",
+          "w2d7m[.]com",
+          "freshorbitlane[.]top",
+          "creativeflowhub[.]top",
+          "9v2t6b[.]com",
+          "8m5f3k[.]com",
+          "7n4x2k[.]com",
+          "4k5r2d[.]com",
+          "s4m2p[.]com",
+          "p3k9w[.]com",
+          "k3w7v9[.]com",
+          "brightflowmedia[.]top",
+          "7r3x4m[.]com",
+          "6p2d9c[.]com",
+          "z2t4q8[.]com",
+          "x9k3t[.]com",
+          "x9b4m7[.]com",
+          "n2v4p[.]com",
+          "h7w3x[.]com",
+          "h7n3f5[.]com",
+          "b6m9k[.]com",
+          "6c2v9w[.]com",
+          "x4r7z[.]com",
+          "w7spf[.]com",
+          "s4w7m[.]com",
+          "rk82m[.]com",
+          "r3p8z[.]com",
+          "nqp26[.]com",
+          "m9v4s[.]com",
+          "k3tmz[.]com",
+          "happybrandlane[.]top",
+          "g2n9r[.]com",
+          "d7t1p[.]com",
+          "c5x8b[.]com",
+          "b35tx[.]com",
+          "8f7jw[.]com",
+          "6d3vr[.]com",
+          "y2w7m[.]com",
+          "p9c4k[.]com",
+          "marketvoyager[.]top",
+          "f2g8z[.]com",
+          "c7x2p[.]com",
+          "b5w9q[.]com",
+          "y6b9z[.]com",
+          "x7z6n[.]com",
+          "t5r8p[.]com",
+          "j4t8c[.]com",
+          "g9s5w[.]com",
+          "wealthharbor[.]vip",
+          "v2m7b[.]com",
+          "p9x5r[.]com",
+          "k3w8n[.]com",
+          "g2w7x[.]com",
+          "q3n6t[.]com",
+          "b8j3x[.]com",
+          "u5n8j[.]com",
+          "p2m9b[.]com",
+          "k9w4z[.]com",
+          "h5b9t[.]com",
+          "f2m9w[.]com",
+          "q4z8v[.]com",
+          "k4v7x[.]com",
+          "d3x6b[.]com",
+          "d5w7r[.]com",
+          "n9z3k[.]com",
+          "r2y8n[.]com",
+          "d3q7t[.]com",
+          "a5m4k[.]com",
+          "g5j7v[.]com",
+          "s8p2j[.]com",
+          "p9w3z[.]com",
+          "marketspark[.]top",
+          "l8q4v[.]com",
+          "g7v4n[.]com",
+          "x9w3r[.]com",
+          "vexoralis[.]vip",
+          "v7m2x[.]com",
+          "r8szp[.]com",
+          "r4b8v[.]com",
+          "j2n8t[.]com",
+          "d5k8x[.]com",
+          "b3x7q[.]com",
+          "y6h2p[.]com",
+          "wealthmosaic[.]top",
+          "t4f8x[.]com",
+          "k5d9f[.]com",
+          "f2k9m[.]com",
+          "c6t2m[.]com",
+          "h6m4v[.]com",
+          "z9m2v[.]com",
+          "c2kmz[.]com",
+          "wealthnode[.]vip",
+          "g8p2n[.]com",
+          "c4jvx[.]com",
+          "u8y6k[.]com",
+          "u5p3m[.]com",
+          "p6nmw[.]com",
+          "l9n4f[.]com",
+          "k6t3d[.]com",
+          "e9t6r[.]com",
+          "x9b7t[.]com",
+          "w3h6t[.]com",
+          "v7d8r[.]com",
+          "t2r7j[.]com",
+          "s5v6k[.]com",
+          "s2d7c[.]com",
+          "r3m9v[.]com",
+          "m6g2b[.]com",
+          "lumenvora[.]vip",
+          "e4j2m[.]com",
+          "d3x9c[.]com",
+          "b4n3p[.]com",
+          "a6c2j[.]com",
+          "z7c5b[.]com",
+          "x8m5v[.]com",
+          "j6r3w[.]com",
+          "h9v4k[.]com",
+          "h6y3p[.]com",
+          "r4f9t[.]com",
+          "investsphere[.]vip",
+          "investcanvas[.]top",
+          "investanchor[.]vip",
+          "i5r4z[.]com",
+          "cashpulse[.]top",
+          "cashbridge[.]vip",
+          "t9x4m[.]com",
+          "marketbloom[.]vip",
+          "investtrail[.]vip",
+          "investbloom[.]vip",
+          "lzsw15[.]com",
+          "capitalmosaic[.]vip",
+          "capitalhaven[.]top",
+          "capitalglow[.]vip",
+          "vexoritha[.]vip",
+          "sylvarion[.]vip",
+          "norvessia[.]vip",
+          "dravorian[.]vip",
+          "astralune[.]vip",
+          "zyravella[.]vip",
+          "mylvarion[.]vip",
+          "astravell[.]vip",
+          "quorenthos[.]vip",
+          "luntherix[.]vip",
+          "ayunpay[.]com",
+          "gabengpay[.]com",
+          "xl9967[.]com",
+          "mini-games.it[.]com",
+          "aa222[.]shop",
+          "xx009[.]shop",
+          "wad66[.]com",
+          "gate.de[.]com",
+          "xx005[.]shop",
+          "gnotpay[.]com",
+          "px005[.]shop",
+          "px003[.]shop",
+          "aurum9[.]shop",
+          "px555[.]shop",
+          "aurum8[.]shop",
+          "px002[.]shop",
+          "px001[.]shop",
+          "nocturne8[.]shop",
+          "px000[.]shop",
+          "snake.it[.]com",
+          "px111[.]shop",
+          "px666[.]shop",
+          "px222[.]shop",
+          "one08[.]vip",
+          "tronbid1[.]top",
+          "py325[.]com",
+          "onekey1[.]top",
+          "onc145[.]vip",
+          "zxedu[.]vip",
+          "woltimes[.]top",
+          "faceupcoffee[.]top",
+          "ec21hk[.]top",
+          "tipsma[.]xyz",
+          "importgenius[.]top",
+          "99car[.]my",
+          "trademaphk[.]top",
+          "sportstation[.]top",
+          "gofunspohk[.]top",
+          "polyrnarket[.]cc",
+          "airbnbvip[.]top",
+          "supercellws[.]top",
+          "airbnbhk[.]top",
+          "ctgoodjobss[.]top",
+          "klookku[.]top",
+          "discus[.]vip",
+          "bookinghk[.]top",
+          "audiotechnique[.]top",
+          "coinank[.]top",
+          "trip3[.]top",
+          "hlbike1954[.]top",
+          "zovik[.]lol",
+          "zayro[.]lol",
+          "zenvo[.]lol",
+          "awwx[.]lol",
+          "afwwx[.]lol",
+          "youlunhongkong[.]top",
+          "realbotxs[.]com",
+          "luxurymarket[.]cn",
+          "onetrxgood[.]online",
+          "energymax[.]store",
+          "tronenergy[.]space",
+          "luckyminer[.]store",
+          "iyegjb[.]cc",
+          "data-xbn2bvt[.]net",
+          "v5cdx1zyk9hulab7[.]net",
+          "astro-net[.]net",
+          "blgjemysl0lhq[.]com",
+          "ql9pmbms6a3fuq[.]cfd",
+          "6czpv1rp4f3503z7jbv[.]online",
+          "bnlziduzxo4r9jmb1jm[.]cc",
+          "s2xyx3r9g1vvgki12i[.]icu",
+          "pnzx6dwm5ed0amqrjq-y[.]com",
+          "trc006[.]com"
+        ],
+        "url": [
+          "hxxps://iyegjb[.]cc/assets/js/m.js",
+          "hxxps://iyegjb[.]cc/",
+          "hxxp://67.215.227[.]138:3000/nano/ios_script.git"
+        ]
+      },
+      "links": [
+        "https://blog.confiant.com/p/moldyroost-a-malvertising-machine"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "Fake GTA VI PC client spreads malware through a ClickFix attack",
+      "summary": "A fake GTA VI PC streaming client website lures Windows users with a ClickFix command that tells them to press Win+R, paste a PowerShell command and run it. The command downloads and runs a script that fetches a ZIP archive, which leads to a sideloaded DLL that injects a Rust-based information stealer into legitimate Windows processes. The stealer targets browser credentials and cookies, Discord, Steam and cryptocurrency wallet data, and AI and developer service credentials. Because the game is not available on PC, the attackers pose as a client for streaming it from an Xbox or PlayStation console. Bitdefender Total Security's Advanced Threat Defense detected the threat, and anyone who ran the command should treat the computer as compromised and change important passwords from a clean device.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Dll_sideloading_technique",
+        "Process_injection_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Explorer",
+        "Chromium",
+        "Discord",
+        "Steam"
+      ],
+      "algorithms": [
+        "chacha20-poly1305",
+        "zip",
+        "xor"
+      ],
+      "functions": [
+        "Write-Host",
+        "Get-Item"
+      ],
+      "languages": [
+        "rust",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "3a0c4760dec4fed3e822db9a630107da266aaeffea8a0ccf506dfaa5847bd922",
+          "28f9725fc6a701fc5d3e06c5687c2a842e0cdf79b9b2780fb5a804fc006410e8",
+          "18dd64270e540a52db41bf77e357df709cbecab88e160bd66c23b63f9240ab38",
+          "33f1649976ff7a6c1a785a1d9eb091e078a5d653bff5f696fa48d80d5ef904f3"
+        ],
+        "ipv4": [
+          "192.30.240[.]26"
+        ],
+        "domain": [
+          "gta6cloud[.]nexus",
+          "nimbuskeep[.]com",
+          "velmontriq[.]net"
+        ],
+        "url": [
+          "hxxps://gta6cloud[.]nexus/downloads/GTA6Cloud.zip”",
+          "hxxps://velmontriq[.]net",
+          "hxxps://nimbuskeep[.]com"
+        ]
+      },
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/fake-gta-vi-pc-client-malware-clickfix"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "BabidiGhost: An AI-Augmented Cybercrime Operation",
+      "summary": "BabidiGhost is a French-speaking, low-skill operator who used a jailbroken AI agent from the BlackHatSect0r toolchain to target European banks, insurers, payment providers and municipalities over nine days in November 2026. The agent wrote the scanners, exploits and exfiltration scripts while the operator typed plain-language orders. Successful intrusions relied only on known weaknesses, including an unpatched analytics tool, a readable database credential, a weak administrator password and unauthenticated API endpoints. Ordinary controls such as MFA, IP allowlisting and server-side validation stopped the agent wherever they were in place. The model API key was revoked on November 14, 2026, but already-deployed implants kept checking in for about another day.",
+      "completeness": "Medium",
+      "threats": [
+        "Hermes_tool",
+        "Cobalt_strike_tool"
+      ],
+      "geo": [
+        "France",
+        "United states",
+        "French",
+        "Belgium",
+        "Switzerland",
+        "Moldova"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 21,
+      "software": [
+        "Telegram",
+        "Metabase",
+        "Windows Update service",
+        "PostgreSQL"
+      ],
+      "functions": [
+        "Telegram"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "ttps": [
+        {
+          "id": "T1595.002",
+          "name": "Active Scanning: Vulnerability Scanning",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1596.003",
+          "name": "Search Open Technical Databases: Digital Certificates",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1589.002",
+          "name": "Gather Victim Identity Information: Email Addresses",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1584.004",
+          "name": "Compromise Infrastructure: Server",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1585.002",
+          "name": "Establish Accounts: Email Accounts",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1587.001",
+          "name": "Develop Capabilities: Malware",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1078",
+          "name": "Valid Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.006",
+          "name": "Command and Scripting Interpreter: Python",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1546",
+          "name": "Event Triggered Execution",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1685",
+          "name": "Disable or Modify Tools",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1552.001",
+          "name": "Unsecured Credentials: Credentials In Files",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1110.001",
+          "name": "Brute Force: Password Guessing",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1005",
+          "name": "Data from Local System",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1213",
+          "name": "Data from Information Repositories",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1567",
+          "name": "Exfiltration Over Web Service",
+          "tactics": [
+            "Exfiltration"
+          ]
+        },
+        {
+          "id": "T1657",
+          "name": "Financial Theft",
+          "tactics": [
+            "Impact"
+          ]
+        }
+      ],
+      "iocs": {
+        "ipv4": [
+          "45.92.111[.]116",
+          "45.92.110[.]53"
+        ],
+        "domain": [
+          "cloud-z80lft07.hosteur[.]net"
+        ]
+      },
+      "links": [
+        "https://socradar.io/blog/babidighost-ai-augmented-cybercrime/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "ARTEX in the Tenant: How an Agentic Offensive Framework Abused an Entra Application to Mint Disposable Accounts",
+      "summary": "An operator abused an existing Microsoft Entra application in a US financial-services tenant in October 2026, using it to create three user accounts and obtain tokens for an internal business API. Each account was given a password at creation, signed in within seconds using the resource owner password credentials grant, and was disabled about five minutes later. The application also held the Exchange Online full_access_as_app role, which grants mailbox access across the tenant, though no mailbox access was observed. Abnormal Intelligence links the activity to ARTEX and AntiFox with moderate confidence, based on shared infrastructure rather than proven framework execution. Defenders should treat the compromised application itself as the durable risk: revoke its credentials and roles, review every account it created, and alert on sequences of service-principal user creation, password-grant sign-in, and disabling.",
+      "completeness": "Low",
+      "threats": [
+        "Artex_tool",
+        "Password_spray_technique"
+      ],
+      "software": [
+        "Microsoft Entra",
+        "AntiFox",
+        "curl",
+        "Debian",
+        "Okta"
+      ],
+      "iocs": {
+        "ipv4": [
+          "186.240.201[.]168",
+          "47.79.236[.]115",
+          "45.204.71[.]168",
+          "34.61.246[.]29",
+          "154.36.154[.]63"
+        ]
+      },
+      "links": [
+        "https://abnormal.ai/blog/artex-antifox-entra-application-abuse"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "ROMULUS ClickFix to LegionLoader and Warden Stealer: Breaking Down a Multi-Stage Malware Intrusion",
+      "summary": "eSentire's Threat Response Unit observed a multi-stage intrusion using ROMULUS, a ClickFix delivery system, which led to LegionLoader and ultimately Warden Stealer. The victim was tricked into pasting a clipboard command that downloaded and ran a malicious MSI file. The MSI decrypted embedded PowerShell and C# stages, which launched shellcode that checked for sandboxes and virtual machines before reflectively loading LegionLoader. LegionLoader registered with its C2 server, then downloaded Warden Loader and injected it into ilasm.exe via process hollowing. Defenders are advised to disable the Windows Run prompt via Group Policy, run phishing awareness training, and deploy NGAV or EDR at minimum.",
+      "completeness": "Medium",
+      "threats": [
+        "Warden_stealer",
+        "Romulus",
+        "Clickfix_technique",
+        "Legionloader",
+        "Warden_loader",
+        "Junk_code_technique",
+        "Process_hollowing_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Installer",
+        "hyper-v",
+        "virtualbox",
+        "microsoft virtual machine bus"
+      ],
+      "algorithms": [
+        "crc-32",
+        "sha256",
+        "aes",
+        "aes-256-cbc",
+        "base64",
+        "rc4"
+      ],
+      "functions": [
+        "ReadLen",
+        "ReadBuf"
+      ],
+      "languages": [
+        "python",
+        "vbscript",
+        "powershell",
+        "csharp"
+      ],
+      "iocs": {
+        "sha256": [
+          "f817a4763ad5469fc436db68ca0fccf337d39fdc30b77341b3600f7f4123fc87",
+          "2dc20037fe0ec71307740dee1f58734cdab7ff7bcff3259f862b2d2a6eca2a04",
+          "1156ed7eedc158a11cb65a2b29f96e4ce3bdeada2a4b6d62acb50082e8f3af73",
+          "4c12847c105b764161a7455820bb2da157f3c6b06472c359cda86578d966bbbf",
+          "5f3840bcc3e2fcaabb5b494d45984524c8a5a6d0d028dde835fc21423a80f352",
+          "22dea422c8056e58e315f926da1d131619c2638da9a550b31cb1d24242c689e4",
+          "b3b75f6802b189de6fdac7d6c786944b95c2f9cf44c74a1f351fd40ac33fd5a2",
+          "8b90a534c103141c76bb9a35bd23b89393b17660801d1316569ed7b98e2c1900",
+          "38e8f4c4432cca420a9a52f8b97fd533736665d51fe06030f40e1bbdf3067643",
+          "79094cbf6ee454511610cfe62cc75601fc01c0451ed8211aad54c0e2e6c4ab29",
+          "c4e12c7790006bd1585b55e546f3cf68e5c066efc03cf51148d29751a486b1c0",
+          "f11f84b200979d6393850b00fac3ec0d8c26dd227611af750be79a0544236bd2",
+          "75a43ad9bb6d28195c0333e5f0fd287a75061816a5c11c7a1c3ef7b3c5b86a9c",
+          "e1ca462ee6ca141ed4cdba032dc8b2515bc8f5e0c639d3f6f642b94a7053e194"
+        ],
+        "md5": [
+          "0a033799d6545ee290cdaf13fe8eca1c",
+          "75cefdf5d33380e5ea4e1c35c398ddd0"
+        ],
+        "ipv4": [
+          "23.94.252[.]153"
+        ],
+        "domain": [
+          "hflubfg[.]com",
+          "yugernaut[.]com",
+          "feidaindy[.]com",
+          "benderoflight[.]com",
+          "totebagsforwork[.]com",
+          "smashshape[.]com",
+          "shoeshowshoes[.]com",
+          "scridea[.]com",
+          "uoverlazyt[.]com",
+          "redjaxfire[.]com",
+          "zgrongbo[.]com",
+          "gemscocl[.]com",
+          "nsgggg[.]com",
+          "apapg[.]com",
+          "ruthaiv[.]com",
+          "domae-trs[.]club",
+          "ipinfo[.]io"
+        ],
+        "url": [
+          "hxxps://ipinfo[.]io/what-is-my-ip"
+        ]
+      },
+      "links": [
+        "https://www.esentire.com/blog/romulus-clickfix-to-legionloader-and-warden-stealer-breaking-down-a-multi-stage-malware-intrusion"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "Inside a Gentlemen Ransomware-Linked Intrusion",
+      "summary": "A deception alert triggered by scanning of decoy backup infrastructure exposed a multi-week intrusion linked to Gentlemen ransomware. The threat actor used valid credentials, previously exposed in a stealer log, to sign in through an internet-facing Citrix VDI environment that lacked multifactor authentication. Once inside, the operator mapped Active Directory, performed large-scale account enumeration, and opened files containing plaintext passwords and tokens. The intrusion escalated to domain-level control by re-enabling a disabled Domain Admin account and adding a service identity to Domain Admins, with SFTP activity observed to external addresses. Defenders should enforce phishing-resistant MFA on remote access paths, investigate stealer-log exposures, and remove plaintext secrets from shares.",
+      "completeness": "Medium",
+      "threats": [
+        "Gentlemen_ransomware"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 14,
+      "software": [
+        "Active Directory",
+        "SoftPerfect Network Scanner",
+        "Windows service",
+        "Windows security"
+      ],
+      "algorithms": [
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "ttps": [
+        {
+          "id": "T1078",
+          "name": "Valid Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1133",
+          "name": "External Remote Services",
+          "tactics": [
+            "Persistence",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1018",
+          "name": "Remote System Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1482",
+          "name": "Domain Trust Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1069.002",
+          "name": "Permission Groups Discovery: Domain Groups",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1036",
+          "name": "Masquerading",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1087.002",
+          "name": "Account Discovery: Domain Account",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1552.001",
+          "name": "Unsecured Credentials: Credentials In Files",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1039",
+          "name": "Data from Network Shared Drive",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1098.007",
+          "name": "Account Manipulation: Additional Local or Domain Groups",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1021.002",
+          "name": "Remote Services: SMB/Windows Admin Shares",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1048",
+          "name": "Exfiltration Over Alternative Protocol",
+          "tactics": [
+            "Exfiltration"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "c7513c97463246e693424e64943983bd49e6d8aa86b1e8fb4a98a437ae8bfef1",
+          "1b9badb1c646a19cdf101ac4f6fdd23bc61eaab8c9f925eb41848cea9fd0738e"
+        ],
+        "sha1": [
+          "f6cb1b634e69b2f1dda725051df0d93f5c2d60e0",
+          "6410edbfa1ac3723650b20b6176f55abf5c621aa",
+          "63e6dafa76b3156916bcb175f6b01531a31173bf",
+          "0e67c37e46fd0b0ee2b761e120694cec5ea80a98"
+        ],
+        "ipv4": [
+          "174.138.180[.]146",
+          "216.158.226[.]110",
+          "216.158.226[.]100",
+          "172.32.1[.]175"
+        ],
+        "domain": [
+          "send-anywhere[.]com",
+          "gofile[.]io"
+        ],
+        "url": [
+          "hxxps://gofile[.]io/",
+          "hxxps://send-anywhere[.]com/"
+        ]
+      },
+      "links": [
+        "https://www.cyberproof.com/blog/inside-a-gentlemen-ransomware-linked-intrusion/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-20",
+      "title": "One VHDX kit, five lures: ChatGPT-signed decoys on euro policy and Moldovan finance",
+      "summary": "A VHDX-based spear-phishing kit, active since at least September 2026, delivers document lures in ZIP archives that mount as virtual disks containing a Windows shortcut disguised as a PDF. Clicking it runs a hidden command prompt that launches a real-looking decoy PDF and a small downloader, which checks reachability to reddit[.]com, bing.com or wikipedia.org before fetching a command from a fresh .top domain. The five builds examined share the same compiled code, with lures impersonating a euro-policy event, the National Bank of Moldova, Ministry of Finance and a tax-reporting procedure. Two decoys carry C2PA Content Credentials showing they were generated by ChatGPT. The server address is XOR-scrambled with a GUID passed on the command line, so it isn't visible in plain text. Defenders should alert on conhost.exe --headless launching cmd.exe, hunt for the fake PowerShell User-Agent, and treat disk-image \"documents\" with suspicion.",
+      "completeness": "High",
+      "threats": [
+        "Spear-phishing_technique",
+        "Piroska"
+      ],
+      "geo": [
+        "Moldova"
+      ],
+      "software": [
+        "Claude",
+        "Opus 5",
+        "Claude Code",
+        "speakeasy",
+        "ChatGPT",
+        "OpenAI",
+        "LibreOffice",
+        "nginx"
+      ],
+      "algorithms": [
+        "zip",
+        "sha256",
+        "xor"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "afd1ba88447d99dcb17e72d357116546666dfc2cfa108adb3f3932bf5bd1a452",
+          "612ef208778bd278f4c1ca433997c5d6ebe0b0b548eefba3a98ad813b07d708c",
+          "4f31b82cf7ab82a0b9e3106bfe826840ea6060579308cf8044a44406c97b5f39",
+          "95cb8529d4bda4da6239b7ef34d0e0d16831229b1ec8a54beb5ca1b8be1c1bcf",
+          "4c0de6b9fe79c0d339a3bb6fdf148259976d9e43824bc0332278dbb897f44c95",
+          "4c383c5fc615364eefa019a75d4d5295dbffa6b05ce4c768d8a2df55b30ec5f9",
+          "b37fe9a5ff3a03bc68c90c3fdf70a6b4a6fc31cfed44c519f550bd4066adcda8",
+          "1e98ed3662f68673de57139fad1fe7d32f75007dd20d6ba007a235395f77aa0b",
+          "2a79c8a36f44d906a0d83f4ce5d3cd520d2657b991faf625fc70c8ab14ac1d39",
+          "8318d0a50aeb4498868bdd8241c666db50e0ccf64811c6b7cd96a9e1bd77edd7",
+          "d882d52374cd700d1d83c8e072594dec9b1a1e0e9641be5887a707ac2587bfd1",
+          "759b5a097ff6be7ba2621761b2533dfd54dfcd86f7049c95c0d1d12951495e54",
+          "5995198ffbdcfa3d3443ccbd92528cb9b0421d2278ea84247ae1aa59c46035e4",
+          "6aa2108ca3f8235b0eefbfdb11384ada5eb0b944ed9196578099617c804fbf11",
+          "a35e77b911d07d1ee7ae46bd0194d8b0eb6701224395603c6247d7f7409621fa",
+          "d63ad901c2fa621e5866590c9b1d573afd65ce0107955dc24cce8a7b28d3c7aa",
+          "1aeb43a6b7d9a555e81e386d75fb6e764f6198f95d7197581f2c8f0a21f43f62",
+          "ba8ea29c4b85bb891eef5313ffa7be7f20ff5a3433edcc426c86e3566a442ea0",
+          "29190b581cb6b6b09e47eda77d7b23d980946297152b9521e2687280b4e92c5e",
+          "e010d8471b3a836670625ecefcb0a18a743edbe795783d0fdb8fa8ec0ce515f1",
+          "07cf4f7db874c81e79694659130931ecf61530b79e21a923b4adf9a858038c35",
+          "f8ea9e5e8316c7c5e69204f3e5c30247b3bb9f5b66656b48e6e683ce60a1f1f2",
+          "ea7caf5f14aedb90288990e76e6d1963b43a213dabfb4b950d0a0e98b12bb3aa",
+          "8510a593070d3c1ef7387509d24b38b23b832de47755bbf6e249b59c26fc2ba0",
+          "b8a07e549ef9dffbef81479a0acd5c9bba7487b83c0b3338381c171d10b4f003",
+          "c38a4efcf7def1022816949f0ac9beaf67d8be5b0dbe9cddcb95161ade09cf16",
+          "87ba98655ffcee3b1ac376a90d51a99d9dc2775d0ad57951896186e2f0f916d1",
+          "663ee4c0c75909c1338c4abedfe8366991e73d82fc439fceea8d3b6f44fb1898",
+          "752dd2f496af6247efd459b5356ee8ead731ab30f7a089930cfecf9583360b47",
+          "1eeb5d1e2f24e8846a06dc246a0da4b1400291500fa50fc7b4b1ede58b7afb64",
+          "f7da861f70713b183df0c16e825d64211ddc9812bdc1b80e1b292c40579b54cf"
+        ],
+        "md5": [
+          "2e36375695935c6abc1dc576ce397c7d",
+          "e5d20e9db6f58b5349cefd1c2324df49"
+        ],
+        "ipv4": [
+          "217.60.196[.]158",
+          "5.175.253[.]236",
+          "5.175.253[.]235",
+          "217.60.196[.]157",
+          "150.40.98[.]204"
+        ],
+        "domain": [
+          "klenna[.]top",
+          "tupnlaf[.]top",
+          "naconda[.]top",
+          "2jcoasr[.]top",
+          "cxittro[.]top",
+          "hajomy[.]top"
+        ],
+        "url": [
+          "hxxps://klenna[.]top/mbappe",
+          "hxxps://tupnlaf[.]top/dragonfly",
+          "hxxps://naconda[.]top/bumblebee",
+          "hxxps://naconda[.]top/strawberry",
+          "hxxps://2jcoasr[.]top/starcraft"
+        ]
+      },
+      "links": [
+        "https://rogueauthority.org/vhdx-chatgpt-speech-decoy-downloader"
+      ]
+    }
+  }
+]

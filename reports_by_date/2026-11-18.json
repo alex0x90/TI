@@ -1,0 +1,2759 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "OPTIMJACK: Malicious web injection across CNN, Zoom, Salesforce, Fox and more",
+      "summary": "Cynet researchers found malicious JavaScript loading for visitors to sites including CNN and Zoom, apparently injected through a third-party script layer, with the cause still under investigation. The reported code was designed to swap cryptocurrency wallet addresses and capture payment-form data. It also served device-selective secondary content to iPhone and iPad browsers, though successful iOS exploitation was not established. The investigation began with Cynet EDR alerts for browser connections to a malicious domain and traced the loader to a resource served from cdn.optimizely[.]com, which was assessed as the likely injection point. Salesforce, Fox News and Fox Sports were reported as affected but were not independently verified. Defenders should block validated malicious infrastructure, avoid broad blocks of legitimate delivery platforms, and assess actual execution and data exposure rather than treating an alert as confirmed infection.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "Salesforce"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "ipv4": [
+          "136.113.106[.]136"
+        ],
+        "domain": [
+          "1688360[.]cc",
+          "cdn.optimizely[.]com",
+          "edition.cnn[.]com",
+          "www.salesforce[.]com",
+          "www.foxnews[.]com",
+          "www.foxsports[.]com",
+          "5vobauua3ojpklx[.]icu",
+          "eil786npto9u5bq[.]icu"
+        ]
+      },
+      "links": [
+        "https://www.cynet.com/blog/optimjack-malicious-web-injection-across-cnn-zoom-salesforce-fox-and-more/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Versioned Gmail Addresses Link Four Malicious npm Packages",
+      "summary": "Acevatex is a minor threat actor linked to four malicious npm packages through a shared Gmail root, ggghhh1122334455667788[@]gmail[.]com, with version suffixes on each account. The cluster includes litecore-lib-ltc, a working Litecoin wallet library that from version 1.9.10 sends each new wallet's private key to a Discord webhook. Three August 2026 loader packages (nextjsupdater, originaldevelopmentstelemetry and developmentstelemetry) download an HTA from the operator's GitHub and ultimately deliver PureRAT, a malware-as-a-service RAT. The operator debugged code in public, pushing and fixing versions within minutes. Defenders should treat litecore-lib-ltc 1.9.10 and later as key-theft risks and check for loader artifacts, the fMug scheduled task, and connections to the listed payload and C2 servers. Note that litecore-lib-ltc and developmentstelemetry remained available on npm as of the report's November 2026 check.",
+      "completeness": "Low",
+      "threats": [
+        "Purerat",
+        "Cookie_stealer",
+        "Donut"
+      ],
+      "geo": [
+        "German",
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Discord",
+        "curl",
+        "PyInstaller",
+        "Authy",
+        "Telegram",
+        "Foxmail",
+        "Linux",
+        "Minecraft",
+        "Roblox",
+        "have more..."
+      ],
+      "wallets": [
+        "exodus_wallet"
+      ],
+      "crypto": [
+        "litecoin",
+        "binance",
+        "coingecko"
+      ],
+      "algorithms": [
+        "3des",
+        "sha256",
+        "base64",
+        "aes"
+      ],
+      "functions": [
+        "downloadAndRunUpdate"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "71b6879c6b18901c9282fa56a84cc5efd6fe8ace17878e6caf6a6f99c254ff21",
+          "a64819733a85f798b5ebbfabcd94da6fa04c7e669f9a41a67aeaaa7e63337cfb",
+          "d7fe3fe6cd6d89b0575d95fa223669ce2551b1750b7bd81851d5ea52601116e2",
+          "2f1b131b90f2231bd90caf0c8241e82fe968ff1f651a4061376bc960bc882d0e",
+          "c5b9257e62d7844f09744bf37fd6f705d0e4069da6cc840652061f16bd2cbfb3",
+          "84815f65986c2a9e4d8db836dcde6c328f14f31cd219834e231ce0f04f5fa9d6",
+          "bfeab9ae83f4636485a4d3ae4d413f04199d281f767a4d84fff1141cfea590e0",
+          "4792dc11f5fceb880af5a3b21c0e495384ed4d80fa86305a93bb9bc7f6adff1d",
+          "2634221eb23ca1d9248a18c8f05753b0e2f59a063adca14fddc20aa9edbd3840",
+          "7cf480b860e23e003bbcb544805e8e1d39846ba05f26174b21747a5481b59ee5",
+          "bfbd808732407090d6cf58a7c5462cb154a0978675c0f0744cc9a536724bc353",
+          "2e14391fb40b601c91a73c823c574d1c286bf4dc359184c33d42384eb3b40bcd"
+        ],
+        "ipv4": [
+          "79.110.49[.]129"
+        ],
+        "url": [
+          "hxxps://raw.githubusercontent[.]com/Acevatex/Testprogram/main/updater.hta",
+          "hxxps://raw.githubusercontent[.]com/Acevatex/Testprogram/main/update.hta",
+          "hxxp://79.110.49[.]129:8080/ayan/RuLnbcv9dlmEX7F6ez10.exe",
+          "hxxp://79.110.49[.]129:8080/ayan/p5wPgZnWF3LGjsEbYryf.exe",
+          "hxxp://79.110.49[.]129:8080/ayan/QFOltCgLKA0nGRcz6YmJ.dat"
+        ],
+        "email": [
+          "ggghhh1122334455667788[@]gmail[.]com",
+          "ggghhh1122334455667788v2.0[@]gmail[.]com",
+          "ggghhh1122334455667788v4.0[@]gmail[.]com",
+          "ggghhh1122334455667788v3.0[@]gmail[.]com"
+        ]
+      },
+      "links": [
+        "https://opensourcemalware.com/blog/versioned-gmail-addresses-link-four-malicious-npm-packages",
+        "http://github.com/acevatex"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Exposing tcherber: VPN Access Brokerage, Custom Malware, and an Exposed C2 Panel",
+      "summary": "The tcherber report describes a Russian-speaking actor operating as both an Initial Access Broker and a Malware-as-a-Service provider, with a Go toolkit for FortiGate and SonicWall VPN access, LDAP and SMB reconnaissance, and credential validation. Its Rust arsenal includes a credential-stealing loader and stealer, an HVNC implant for hidden-desktop remote access, and Enigma ransomware using ChaCha12 with ECIES key wrapping. Attribution rests on a shared /home/tcherber/ build path embedded in panic strings and crate paths, which the actor could have removed by stripping panic paths. A STANDALONE C2 Panel v3 hosted without authentication was reported to have 178 active bots. Defenders should audit VPN credentials on FortiGate and SonicWall appliances.",
+      "completeness": "High",
+      "threats": [
+        "Uac_bypass_technique",
+        "Hvnc_tool",
+        "Enigma_ransomware",
+        "Zer0day_tool",
+        "Process_hollowing_technique",
+        "Anydesk_tool",
+        "Shadow_copies_delete_technique",
+        "Wevtutil_tool",
+        "Vssadmin_tool",
+        "Megasync_tool",
+        "Openconnect_tool",
+        "Crackmapexec_tool",
+        "Netexec_tool"
+      ],
+      "geo": [
+        "Usa",
+        "Russian"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 28,
+      "software": [
+        "FortiGate",
+        "SonicWall",
+        "Active Directory",
+        "Telegram",
+        "Windows Security",
+        "Linux",
+        "qemu",
+        "xen",
+        "virtualbox",
+        "chrome",
+        "have more..."
+      ],
+      "algorithms": [
+        "zip",
+        "aes-256-gcm",
+        "xor"
+      ],
+      "functions": [
+        "GetConsoleWindow",
+        "Get-WmiObject",
+        "Get-VM"
+      ],
+      "languages": [
+        "golang",
+        "powershell",
+        "rust"
+      ],
+      "ttps": [
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1620",
+          "name": "Reflective Code Loading",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1562.001",
+          "name": "Impair Defenses: Disable or Modify Tools",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1562.002",
+          "name": "Impair Defenses: Disable Windows Event Logging",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1497.001",
+          "name": "Virtualization/Sandbox Evasion: System Checks",
+          "tactics": [
+            "Stealth",
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1546.003",
+          "name": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1548.002",
+          "name": "Abuse Elevation Control Mechanism: Bypass User Account Control",
+          "tactics": [
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1555.003",
+          "name": "Credentials from Password Stores: Credentials from Web Browsers",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1115",
+          "name": "Clipboard Data",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1113",
+          "name": "Screen Capture",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1057",
+          "name": "Process Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1021.005",
+          "name": "Remote Services: VNC",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1133",
+          "name": "External Remote Services",
+          "tactics": [
+            "Persistence",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1078.001",
+          "name": "Valid Accounts: Default Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1486",
+          "name": "Data Encrypted for Impact",
+          "tactics": [
+            "Impact"
+          ]
+        },
+        {
+          "id": "T1490",
+          "name": "Inhibit System Recovery",
+          "tactics": [
+            "Impact"
+          ]
+        },
+        {
+          "id": "T1489",
+          "name": "Service Stop",
+          "tactics": [
+            "Impact"
+          ]
+        },
+        {
+          "id": "T1041",
+          "name": "Exfiltration Over C2 Channel",
+          "tactics": [
+            "Exfiltration"
+          ]
+        },
+        {
+          "id": "T1567.004",
+          "name": "Exfiltration Over Web Service: Exfiltration Over Webhook",
+          "tactics": [
+            "Exfiltration"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "18a30346a7fdd1b9aba4fd3b46d06c05359d5332bd86e01987af8ae6684fb838"
+        ],
+        "ipv4": [
+          "158.94.209[.]138",
+          "93.152.223[.]30",
+          "93.152.220[.]87"
+        ],
+        "domain": [
+          "rehubcom[.]pro",
+          "94.209.138.sslip[.]io",
+          "138.sslip[.]io",
+          "158.94.209.138.sslip[.]io"
+        ],
+        "url": [
+          "hxxps://158.94.209.138.sslip[.]io/",
+          "hxxp://158.94.209[.]138/agent.exe"
+        ]
+      },
+      "links": [
+        "https://www.cyderes.com/howler-cell/exposing-tcherber"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "COLD RELIC: A Case Study in Impersonation and Compromise",
+      "summary": "COLD RELIC is a Russian state-sponsored espionage group, reportedly within the FSB, that turns one cloud compromise into a springboard for further compromises of partner organizations. In a late-2025 intrusion, the group used a Super Admin account, MFA fatigue, and residential proxies to exfiltrate an entire cloud drive and employee lists while deleting Alert Center notifications. In a follow-on 2026 intrusion, it impersonated a contact from the first victim over an encrypted messaging app and phished credentials for a federated Entra ID account. Defenders should enforce phishing-resistant MFA, audit passkey and device enrollments, and revoke all sessions and OAuth grants during incident response, since password resets alone failed in at least one case.",
+      "completeness": "Low",
+      "threats": [
+        "Residential_proxy_technique",
+        "Spear-phishing_technique",
+        "Bec_technique",
+        "Aitm_technique",
+        "Mfa_bombing_technique"
+      ],
+      "geo": [
+        "America",
+        "Russia",
+        "Russian"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 9,
+      "software": [
+        "Google Takeout",
+        "Microsoft Entra",
+        "Outlook",
+        "Microsoft 365",
+        "SharePoint"
+      ],
+      "ttps": [
+        {
+          "id": "T1621",
+          "name": "Multi-Factor Authentication Request Generation",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1114.002",
+          "name": "Email Collection: Remote Email Collection",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1528",
+          "name": "Steal Application Access Token",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1119",
+          "name": "Automated Collection",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1530",
+          "name": "Data from Cloud Storage",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1567.002",
+          "name": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+          "tactics": [
+            "Exfiltration"
+          ]
+        },
+        {
+          "id": "T1098.005",
+          "name": "Account Manipulation: Device Registration",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1078.004",
+          "name": "Valid Accounts: Cloud Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1562.008",
+          "name": "Impair Defenses: Disable or Modify Cloud Logs",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1087.004",
+          "name": "Account Discovery: Cloud Account",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1083",
+          "name": "File and Directory Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1552.001",
+          "name": "Unsecured Credentials: Credentials In Files",
+          "tactics": [
+            "Credential Access"
+          ]
+        }
+      ],
+      "links": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Bazuka: The Fraud Framework That Can Do It All",
+      "summary": "Bazuka is a modular Android malware framework discovered by ThreatFabric in October 2026 during an NFC-relay trojan investigation. It comprises a dropper or downloader, a core, and 23 modules covering overlays, keylogging, 2FA and SMS interception, remote control, and crypto-address swapping. The core can obtain permissions through Accessibility and ADB shell commands, including enabling Wireless Debugging. Operators use an LLM-enabled control panel to identify and manage victims, and the dropper was configured with minimal permissions, suggesting intent to reach Google Play. Traffers lure victims with themes such as adult content and IPTV apps. Defenders should note the growing use of ADB bridging and LLM-assisted victim selection in banking trojans.",
+      "completeness": "Medium",
+      "threats": [
+        "Bazuka",
+        "Raton",
+        "Traffer_technique"
+      ],
+      "geo": [
+        "Moscow",
+        "Netherlands"
+      ],
+      "software": [
+        "Google Play",
+        "tiktok",
+        "android",
+        "Cloudflare",
+        "Node.js"
+      ],
+      "algorithms": [
+        "sha256",
+        "chacha20-poly1305"
+      ],
+      "functions": [
+        "setOverrides",
+        "getPrimaryClip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "f046b50166c8229b49839eeebcc7fd14bf3f198e4ec1bfde8a5b271e1407dec5",
+          "4d572669d6000304a692874c1583021dfdb4f2f113ea487e470f7e4c486e503a",
+          "7e8f8f2be55855a86ee120382fa4cbdd851f958a06543da80fffa424b89555df",
+          "3cb8711a51331123247476eef768c435d6286a21cd8ac5479a6276349632c82b",
+          "c08a5f3df1693b03540db8c6c001b5e7f98ea6121ad4aca9c6904c798f4f4635",
+          "84849921d229c4e6c1a43af86582bff7560e938e96ad8b01b0ff13dafe559757",
+          "ffc35c48d8a5cb1ee3e5bdc80e0df3e8509e8dd840edd0b9fb0ff5d5880834d0",
+          "3da80bbcf6c6e7ff117db4cdfe1422375ecf1db97b61574359f97a1da43566ae",
+          "7361a1ad372367dfc11421385632586da4aaf164c41f67e0acb2ccdb7931e3c1",
+          "910911b7d1be3f67c926067e923ba86be6100366e52f0fe30484176353bf1701",
+          "38bf5b694512cf14620edc0af700c08e7570fa5a20b4c3c052c7fe8823b2ec5f",
+          "b97b3ca1fdce56ae41418b287ca0e97d93ea16ec7b9182bdde459bba8b09f661",
+          "d0fc542db2602d3a881c825c4d58e5ae34db054496d64c9185a84dceab30a850",
+          "5cf38406fbed48fe110bcf1e84314429e1f649a2539c00b78216a5808fb53aa0",
+          "de97f4864e94eb9fecd018d51c36fc0a2e0d3a67e9bb83ab0e5ac29ad101f292",
+          "b7987e06d515fa06751a014a034b680f5a2c185bf0eb1fcf76c29b8626527d53",
+          "2cc693857f47758e974c3ee928a4fe0fdba444b7efe5a284dcfc0d3b47429275",
+          "4dcad3a1547c72d08ccb86dc393e14935c7f06ebe3ca63ba30e51b98ab4930e1",
+          "1c29e14001edcfc548e1ae43572aa17f91ad89ce09a0e9028737077d7af97d30",
+          "d0ba986440b06c4b587690acd3e594cc674c82408cd4f5c59c7f6675a2b4d9c0",
+          "0785f8ca820ccfb62be61ac4bd55fd5295a771cab9e4cd91fc4eb1e3c43af3db",
+          "ac57a003ad4464ac357ae78e8e4eb24aae9d8442545129f82ad683efa1b2ad99",
+          "5be63e04a98988d8d15d12cdf2af8cd6b1b6b8681e511587bb1a22ebcb32583f",
+          "ac34c61cb7368ba4409311a7492bf14316e1cee1f2984955005915d6ec7336f3",
+          "c181d5c6c098f9f4ac6b10e4b1d69a0278bb3e07f260d0013244113c8504f39a",
+          "adf9a4689e4c178a8c8fedef5e0bdf7be6ab443264125efabfadd8e1594bd471",
+          "8ee9d88db8874662c7743bb0f7d06e852c372b2bdb1846a12afb71a62b8f0a7b"
+        ],
+        "ipv4": [
+          "95.181.213[.]21",
+          "170.168.61[.]117"
+        ],
+        "domain": [
+          "c2ws.brokerok[.]org",
+          "c2data.brokerok[.]org",
+          "c2proxy.brokerok[.]org",
+          "c2api.brokerok[.]org",
+          "gargona[.]cash"
+        ]
+      },
+      "links": [
+        "https://www.threatfabric.com/blogs/bazuka-the-fraud-framework-that-can-do-it-all"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "React2STEAL Uses GitHub Actions to Exploit React2Shell",
+      "summary": "React2STEAL is an automated attack framework run through GitHub Actions in 45 public repos named ci-wk-<number>, which scan for Next.js servers and exploit React2Shell (CVE-2025-55182) and CVE-2025-29927. When an exploit succeeds, a payload steals environment variables, cloud credentials, and AI provider keys, then tests those keys and commits the loot back to the same public repos. At least 1,281 victim hostnames are recorded, and the repos were still receiving new results when the report was published. Many of the accounts running the repos were also used in the separate wfx-loot campaign, which suggests stolen GitHub tokens. Defenders should check logs for the x-middleware-subrequest header and metadata SSRF requests, rotate exposed secrets, and treat any matching account as compromised.",
+      "completeness": "Low",
+      "threats": [
+        "React2shell_vuln",
+        "Credential_stealing_technique",
+        "Supply_chain_technique",
+        "Polinrider"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "OpenAI",
+        "Anthropic",
+        "Telegram",
+        "Ubuntu",
+        "Node.js",
+        "Kubernetes"
+      ],
+      "algorithms": [
+        "base32",
+        "zip"
+      ],
+      "languages": [
+        "python",
+        "javascript"
+      ],
+      "iocs": {
+        "sha1": [
+          "823e8824acb61aa036a3e0c8945a63d4a2e0cf64",
+          "418bf778648c9f5fa4fd95340e07a05dca797e37",
+          "fda8b5097a5223a5afcbc0c346a8af55faa4fd07",
+          "ee6e5addfe591923fc385553cb66cf0d25634a6b"
+        ]
+      },
+      "links": [
+        "https://opensourcemalware.com/blog/react2steal-github-actions"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Threat Researcher’s Notebook: BubbleLoader",
+      "summary": "BubbleLoader is an evolving loader and packer that hijacks benign software such as WinRAR, x64dbg, and Windows Media Player by patching its entry point and appending two PNG files that carry second-stage and third-stage code. The loader uses position-independent GetPC and PEB-based techniques, obfuscated API calls, and opaque predicates to evade analysis. Its fake PNG has a truncated IHDR chunk, which gives defenders a simple structural check. A key feature is runtime polymorphism: it overwrites compiler padding with CPU timestamp randomness, so the payload's hash changes on every execution. ReversingLabs observed active use in mid-September and early October clusters and recommends strict allowlisting, code-signing verification, EDR alerts on RWX allocations, and behavioral analysis rather than reliance on static hashes.",
+      "completeness": "Medium",
+      "threats": [
+        "Bubbleloader",
+        "Polymorphism_technique",
+        "Junk_code_technique",
+        "Api_unhooking_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "WinRAR",
+        "Windows Media",
+        "Windows Media Player",
+        "Firefox"
+      ],
+      "algorithms": [
+        "sha256",
+        "xor"
+      ],
+      "functions": [
+        "GetPC",
+        "Function",
+        "call",
+        "GetModuleHandle",
+        "Second",
+        "Obfuscated"
+      ],
+      "iocs": {
+        "sha256": [
+          "4987af027009d572c26f6d009c5e53e237cb2e3ab9d52094c14dc0b8b6f40b14",
+          "3bde84b2ba4c53ace15695770779383ff788d850cea38d21cb0c6d80e650d710",
+          "a347e678626686a9bb27120df1e92ce98561f60f0f54e2501bcb4648cc41566a",
+          "053066c7764e8c5c35ef3b44e7c51f0cad0d287adab41966d393c78357c1c917",
+          "d5c8c4e528c659f6b772e16e0e26529c02faf21e46402ec0e97b25d99f801626",
+          "df11dd7bb354f4b020c8e3bd09f7751fc89d0b764519d7ea2bdc2f5e4d3b15be",
+          "f88891995c61bb349c772e8864a4d408d5ed605b59b7b7db581a58601f820029",
+          "e39a78e433f1704f2f5776ef389ec802beb628350691614bfc581d49842aae56",
+          "07784d651f8d049356a98a433eeb08b4168429f1c4a8bc8d0e597381e57249e8",
+          "08c98eb05a9b95a4f934ba67310ff670af63fc057c0c53879592b450b8848cfd",
+          "8e01f550789617de4605dc5e3288ff51795e88462126dd71ef3ec85f3e318b37",
+          "1e61e1842792d3f790820b3b9268edd22e68e0f43eaedfaf1015f6eaf9ef7c2d",
+          "ad70a492aef847553f771d6fb717541d11e242a83de63f3c0100de76a5ecdff5",
+          "c0974e323cb96b77a98c28f7dbc3f00bf8fe421890b2cbfb11b43a7b64fa6c3b",
+          "aa71f94a01b82617fbc44f6d1727c93cfc9d39727c332681f850bcbce96dc2ae",
+          "70ece0d830302898af0df01137b4042b6a039d2ef34f77abbac48a9e73f7674a",
+          "776e778dfe8c5c19f1433da60b7f9d0de86a84723e9bfc66bb2b2fd0f98f04bf",
+          "fd00db1f4e95aea21083a4eaed555091e39ea3c4200ea79bc856b45f1c2ebb3a",
+          "d14c71d924e965af4e98ab8f93b7ffbeb561c7fb37d5280f7146a900a7a0da6f",
+          "17a34146fef39ec6a403546364249a574f8add6d40dfc09ee30f8ad478226f15",
+          "ce86d243904e31d815713351b99e251ce4b415b3df7bb204a9f8b695e9c4b333",
+          "184f90da785a868dc1439b0796cc2081efc133040f2c4f79cfcc45acfa50089c",
+          "e4b6699c56fe9d3bb1f6492c9c42b0497e546155ac0f81b4994612142f5cb03f",
+          "da84d6ea16251c912e9603ab1f642df2b7178d07db053588f7c1f7ab3df8d4c3"
+        ]
+      },
+      "links": [
+        "https://www.reversinglabs.com/blog/threat-researchers-notebook-bubbleloader"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "How AI Agents Become New Targets in GitHub Malware Campaign",
+      "summary": "Bitdefender Labs identified a malware campaign using 22 malicious GitHub links that target developers working with AI coding assistants. The malicious content abuses project instruction files such as AGENTS.md and CLAUDE.md to persuade AI assistants to run a file named setup.js without review. Session-start hooks in configuration files can also trigger the script automatically once a repository is trusted, with no AI prompt needed. The malware steals developer, cloud, CI/CD, and password-manager credentials, and it validates stolen GitHub and GitLab tokens to infect other repositories. It also plants malicious AI-agent configurations on the victim's machine and in remote repositories. Bitdefender recommends reviewing AI-agent configuration files before opening unfamiliar repositories and notes that its AI Guardian product blocked the malicious instruction file in all 22 samples in internal tests.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "CLAUDE",
+        "Claude Code",
+        "Node.js",
+        "Codex",
+        "macOS",
+        "OpenClaw"
+      ],
+      "algorithms": [
+        "aes-128-gcm"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "md5": [
+          "b9a182b646c7fdff68f2ff9dfd822516",
+          "2f54f6d41f41bb3c8e684b0f009cbcc3",
+          "3794736979327349404171798328a38a",
+          "ab7ff2f782c194953e5811d16b9e1817",
+          "2191cbd04134839daeb6b8909725eae0",
+          "31f1f5d9c59b950d91d05cecee20fce8",
+          "908293cd1ed04cf50fbe72baf74967b6",
+          "bbd5695c36e76538547c45fd17e6c7e4",
+          "7ad1567180f6d5a5b317f697310a796c",
+          "5c8db9bf78c6c2174ccf8a6299f9aafd",
+          "82a8be193a41f5b17906f919a179d999",
+          "5dc5473468ee2d8006ebdaab0c7e93fb",
+          "a20a99e325226f56d7a25460a9d436ab"
+        ]
+      },
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/how-ai-agents-become-new-targets-in-github-malware-campaign"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Microsoft agent-framework Compromised: Credential Stealer Targets Azure and CI Pipelines",
+      "summary": "The malicious agent-framework versions 1.26.1 and 1.26.2 were uploaded to PyPI on November 17, 2026, and contained a credential stealer. Installing either version drops a .pth file that runs the payload every time Python starts, even if the package is never imported. The stealer targets Azure and Azure DevOps credentials, along with environment secrets, credential files, and managed-identity and OIDC tokens, and sends them to a hardcoded webhook[.]site URL. Version 1.26.2 adds a new trigger and steals GitHub Actions OIDC tokens. Defenders should pin to 1.26.0, check site-packages for the named .pth files, rotate exposed credentials, and audit Azure and GitHub federated identities.",
+      "completeness": "Medium",
+      "threats": [
+        "Cairn_tool"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "OPENAI",
+        "NUGET",
+        "Hugging Face"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "54d885b7d7161c9ed96489c66364c4bfbf635929166843bba10d97d46b5a2e1f",
+          "325e7e9f0ec94e41ad1a1b7a3f18a6b8b5bffece2e2b97b8d3369eb967452f93",
+          "d27fa34414e6201d5e03e559ef634f020057554d7b3f4898dd5d7cd3e989e110",
+          "3d20a8bc91351a9a16b6db243b848ceca0206b7a8623b02d2af553a9c9f7e0a9"
+        ],
+        "sha1": [
+          "0a013e4724c4437cf9b177def1d988113e167539"
+        ],
+        "domain": [
+          "webhook[.]site"
+        ],
+        "url": [
+          "hxxps://webhook[.]site/d381fd80-ec62-42ad-8f5c-d1b15103c9bb"
+        ]
+      },
+      "links": [
+        "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Operation ShadowCloud: cloud service–based backdoors targeting government networks in Asia and Africa. Part 2",
+      "summary": "Operation ShadowCloud Part 2 examines the GraphDoor backdoor, which uses Microsoft Graph API calls to SharePoint as a command-and-control channel. The malware authenticates as a malicious application to Microsoft's login service, then uploads encrypted victim data disguised as a JavaScript source map file. It downloads plug-ins for screenshots, process listing, and keylogging, plus proxy plug-ins derived from Erfrp and Ably-based channels. Attribution remains unconfirmed, but overlaps with Chinese-speaking groups FamousSparrow and CopperTurtle were observed, including shared staging directories. The main takeaway is that legitimate cloud APIs such as SharePoint, GitHub, and Ably can blend malicious traffic into normal enterprise activity, so unexpected use of these services and legitimate tools like MeshCentral Agent should be treated as suspicious.",
+      "completeness": "High",
+      "threats": [
+        "Gitdoor",
+        "Graphdoor",
+        "Erfrp_tool",
+        "Pythonrat_rat",
+        "Frpc_tool",
+        "Winmm",
+        "Plead",
+        "Cobalt_strike_tool",
+        "Meshcentral_tool"
+      ],
+      "geo": [
+        "Africa",
+        "Asia",
+        "Chinese"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Graph API",
+        "Chrome",
+        "Point docume",
+        "SharePoint",
+        "sqlite",
+        "Microsoft SharePoint"
+      ],
+      "algorithms": [
+        "rc4",
+        "aes",
+        "md5",
+        "base64",
+        "xor"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "md5": [
+          "14ec33ea808e697870d00c5e434c2952",
+          "e9d4081fac4a5111e6856f333d490439",
+          "d89b2fe0759df2d534e7a728700a6f8c",
+          "b4956b230d296cb4b015b42b11d80e32",
+          "32151547d912488ac5242731057170a3",
+          "86a46af43e18288e1df439b2a9a6f7ca",
+          "733f8002aa9531b25384c0014d15cc1f",
+          "91bee19d31d32346cd4d1febb4308606",
+          "45b3aa39bc33528650d9181cd946b2df",
+          "9a5e0ab7466594dcf46943c413db7b81"
+        ],
+        "ipv4": [
+          "103.106.230[.]33",
+          "123.58.205[.]105",
+          "104.194.154[.]28",
+          "216.73.158[.]72",
+          "122.147.252[.]16",
+          "223.165.4[.]203",
+          "172.86.66[.]19",
+          "103.214.68[.]20",
+          "216.146.25[.]173",
+          "103.137.63[.]39",
+          "103.227.224[.]189",
+          "104.194.152[.]173",
+          "66.42.52[.]137",
+          "153.75.94[.]148",
+          "45.59.124[.]164",
+          "104.194.153[.]161",
+          "153.75.95[.]27",
+          "216.73.158[.]117",
+          "154.205.154[.]209",
+          "43.134.62[.]111",
+          "38.54.17[.]113",
+          "38.52.17[.]113"
+        ],
+        "domain": [
+          "login.microsoftonline[.]com",
+          "buildersemp.sharepoint[.]com",
+          "ms.twnic[.]top",
+          "ekmt[.]tw",
+          "cskautogo.sharepoint[.]com"
+        ]
+      },
+      "links": [
+        "https://securelist.com/operation-shadowcloud-graphdoor/122005/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "EggStreme Malware: Rebuilt Under Scrutiny",
+      "summary": "EggStreme is a suspected Chinese state-aligned APT framework that its operators revised after Bitdefender's September 2025 publication, changing Fuel's configuration protection, the loader's ciphers and payload format, and the agent's network protocol and commands. Bitdefender assesses with high confidence that the operation continues to target Philippine government organizations with multiple victims, and with low to medium confidence that Taiwan is also targeted. The changes mainly affected hashes, infrastructure and tooling, while behaviors such as DLL sideloading, share-based lateral movement, in-memory execution and mutual TLS stayed the same. The legacy certificate authority pivot is no longer useful, though development-server staging still leaks some infrastructure. Defenders are advised to build detections around these persistent behaviors rather than hashes or ciphers, which will go stale.",
+      "completeness": "High",
+      "threats": [
+        "Eggstreme_agent",
+        "Eggstreme_fuel",
+        "Eggstreme_loader",
+        "Eggstreme_reflectiveloader",
+        "Eggstreme_wizard",
+        "Eggstreme_keylogger",
+        "Dll_sideloading_technique",
+        "Impacket_tool",
+        "Stowaway_tool"
+      ],
+      "geo": [
+        "Taiwan",
+        "Chinese",
+        "Philippine"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 27,
+      "software": [
+        "Microsoft OneDrive",
+        "wolfSSL",
+        "Active Directory",
+        "SQLite",
+        "Windows Error Reporting",
+        "Component Object Model"
+      ],
+      "algorithms": [
+        "md5",
+        "cbc",
+        "aes",
+        "xor",
+        "aes-256-cbc",
+        "rc4"
+      ],
+      "functions": [
+        "bytearray"
+      ],
+      "languages": [
+        "powershell",
+        "python",
+        "visual_basic"
+      ],
+      "ttps": [
+        {
+          "id": "T1574.002",
+          "name": "Hijack Execution Flow: DLL Side-Loading",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1021.002",
+          "name": "Remote Services: SMB/Windows Admin Shares",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1570",
+          "name": "Lateral Tool Transfer",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1059.005",
+          "name": "Command and Scripting Interpreter: Visual Basic",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1564.001",
+          "name": "Hide Artifacts: Hidden Files and Directories",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1078.002",
+          "name": "Valid Accounts: Domain Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1027",
+          "name": "Obfuscated Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1095",
+          "name": "Non-Application Layer Protocol",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1573.001",
+          "name": "Encrypted Channel: Symmetric Cryptography",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1573.002",
+          "name": "Encrypted Channel: Asymmetric Cryptography",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1087.002",
+          "name": "Account Discovery: Domain Account",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1069.001",
+          "name": "Permission Groups Discovery: Local Groups",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1069.002",
+          "name": "Permission Groups Discovery: Domain Groups",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1018",
+          "name": "Remote System Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1090.001",
+          "name": "Proxy: Internal Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1047",
+          "name": "Windows Management Instrumentation",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1134.001",
+          "name": "Access Token Manipulation: Token Impersonation/Theft",
+          "tactics": [
+            "Stealth",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1620",
+          "name": "Reflective Code Loading",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1562.004",
+          "name": "Impair Defenses: Disable or Modify System Firewall",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1583.001",
+          "name": "Acquire Infrastructure: Domains",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1587.003",
+          "name": "Develop Capabilities: Digital Certificates",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1571",
+          "name": "Non-Standard Port",
+          "tactics": [
+            "Command and Control"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "15c7ab53f7cfec92512844244fb09c2f07c2e9aea42b604c31fb78633248a825"
+        ],
+        "sha1": [
+          "51655e8e97fc7265b1aaa4265d94e2f7cae9c913"
+        ],
+        "md5": [
+          "8ad958676e67ff70d1b2b95851de6d5d",
+          "a363c1529033fb6017985ce07ab0ad57",
+          "5e21c73c6e055b67ce1d3311092e09f1",
+          "0f2404810a20ad1c265a94cf7643e38f",
+          "2848d5f1a827b70827e4e17497e33946",
+          "fac380128a04ffc5b8f175071622e885",
+          "6f920aa7d2e48d1c2a201eb119ba20f1",
+          "467566ff6573d84b927baf37acf11047",
+          "197be742fc81bbc87e5f66d1a4a9af92",
+          "a1da36e1225a3d08ae647980250f43d0",
+          "cd030f106eada108715e99a4661f7fd4",
+          "8b88eb038251be49b1ae78406d817610",
+          "cbd2d377a041a31bdf94ff95bf37d352",
+          "4cfb49f749b75941f1cff59b7cf92e53"
+        ],
+        "ipv4": [
+          "45.115.225[.]73",
+          "109.248.24[.]84",
+          "149.104.109[.]230",
+          "45.221.112[.]129",
+          "221.128.249[.]228"
+        ],
+        "domain": [
+          "mepintei[.]com",
+          "fsstore[.]org",
+          "readyui[.]net",
+          "hostkbc[.]com",
+          "osaweb[.]org",
+          "rodosdeals[.]com",
+          "eusurvey[.]org",
+          "precontact[.]org",
+          "siliconmetal[.]net",
+          "dalkeys[.]com"
+        ]
+      },
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/businessinsights/eggstreme-malware-revises-architecture-infrastructure",
+        "https://github.com/bitdefender/malware-ioc/blob/master/2026\\_11-eggstreme-iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "URGENT: iOS Exploits Are Being Actively Deployed via Poisoned JavaScript on BBC, Zoom, CNN and Other Major Websites",
+      "summary": "Poisoned third-party JavaScript on at least 21 major websites, including BBC, CNN, Zoom and GitLab, routed iOS visitors to Coruna and DarkSword exploit-kit infrastructure. Attackers injected malicious loaders into scripts from Optimizely, Kissmetrics, StorifyMe and Minute-ly rather than breaching the sites' backends. The chains profile the device, then exploit WebKit memory corruption and a PAC bypass, escape the sandbox, and run native payloads, all without user interaction. Retrospective defenders face limits because the payloads purge Safari history and crash logs, and some poisoned scripts were later cleaned. Defenders should note that trusted domains and DNS filters offer little protection here, so on-device runtime detection and fleet-wide iOS version visibility are recommended.",
+      "completeness": "Medium",
+      "threats": [
+        "Coruna_tool",
+        "Darksword_tool",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Zoom",
+        "Salesforce"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "domain": [
+          "1688360[.]cc",
+          "webshell[.]lol"
+        ]
+      },
+      "links": [
+        "https://zimperium.com/blog/urgent-ios-exploits-are-being-actively-deployed-via-poisoned-javascript-on-bbc-zoom-cnn-and-other-major-websites"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Meet TheMailer: The AI Phishing Kit that Rewrites Emails and Taps Top Models",
+      "summary": "TheMailer is a self-hosted phishing platform that connects to commercial AI models such as Claude, ChatGPT, Gemini, and DeepSeek through operator-supplied API keys. Its Inbox Loop sends test emails, checks whether they land in spam, and has AI rewrite and retest the message until it reaches the inbox. The tool generates a different version of each email and attachment for every recipient, tailored to individual mail providers. It is sold on a cybercrime network for a lifetime license, priced between $3,000 and $6,000. Because content-based filters cannot block a single template, the report recommends focusing defenses on sender behavior, intent, and strict email authentication.",
+      "completeness": "Low",
+      "threats": [
+        "Themailer_tool",
+        "Spamgpt_tool",
+        "Residential_proxy_technique",
+        "Bec_technique"
+      ],
+      "geo": [
+        "French",
+        "Japanese",
+        "German"
+      ],
+      "software": [
+        "Claude",
+        "ChatGPT",
+        "Mistral",
+        "DeepSeek",
+        "Telegram",
+        "Anthropic",
+        "OpenAI",
+        "Gmail"
+      ],
+      "functions": [
+        "Please"
+      ],
+      "links": [
+        "https://www.varonis.com/blog/themailer-ai-phishing-kit"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Citrus Ransomware: VLESS for traffic, Sn00py for encryption, and an LLM to help",
+      "summary": "Citrus Ransomware is a previously undescribed group that combines VLESS tunnels disguised as HTTPS traffic, the Sn00py ransomware family, and large language models used to generate scripts and commands. It typically gains initial access through compromised contractor accounts used to log in to VPN or exposed RDP servers. The group exploits the Certighost authentication bypass vulnerability (CVE-2026-54121) to escalate privileges in Active Directory, and it disables antivirus and clears event logs before deploying ransomware through malicious Group Policy objects. The ransomware is a Go-based RaaS payload that encrypts user files with RSA-2048 and ChaCha20 and appends the .citrus extension. Citrus shares overlapping TTPs and tooling with the Russian-speaking Toy Ghouls group, and the report stresses strict control of contractor access to defend against this threat.",
+      "completeness": "Medium",
+      "threats": [
+        "Sn00py",
+        "Atexec_tool",
+        "Impacket_tool",
+        "1c-shell_tool",
+        "Metasploit_tool",
+        "Wevtutil_tool",
+        "Mimikatz_tool",
+        "Snaffler_tool",
+        "Fscan_tool",
+        "Adrecon_tool",
+        "Bloodhound_tool",
+        "Winrm_tool",
+        "Xray_tool",
+        "Anydesk_tool",
+        "Bcedit_tool",
+        "Shadow_copies_delete_technique",
+        "Meterpreter_tool"
+      ],
+      "geo": [
+        "Russian"
+      ],
+      "ttp_tactics": 9,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "Windows Defender",
+        "eePass",
+        "curl",
+        "Microsoft SQL",
+        "Telegram",
+        "Google Chrome",
+        "Chrome",
+        "PsExec"
+      ],
+      "algorithms": [
+        "rsa-2048",
+        "chacha20"
+      ],
+      "languages": [
+        "powershell",
+        "java"
+      ],
+      "iocs": {
+        "md5": [
+          "d631627131b90d576d77f4bf530e1abe",
+          "7107fb029e7c63523e3aca5fc8e56b38",
+          "e251df2d0b7c3682965efb4d2009a2f4",
+          "17b29b6c9de80402a45e321bbe1168fa",
+          "9eee984b187423c46c10a63d080da15d",
+          "cf903e4a1629aa0582fd0363b5786676"
+        ],
+        "ipv4": [
+          "91.210.109[.]118",
+          "91.210.108[.]180"
+        ],
+        "domain": [
+          "2ip[.]io"
+        ]
+      },
+      "links": [
+        "https://securelist.ru/citrus-ransomware/117647/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Claude Free Tokens Scam: 70 NovaTokens Phishing Panels",
+      "summary": "A phishing email impersonating Anthropic Events promoted a fake \"Claude Fable 5.2\" webinar offering six months of Claude Pro and $500 in tokens, and ZeroBEC detected and blocked it. The lure led to a cloned Anthropic landing page offering Microsoft device code phishing and Google AiTM-style sign-in, tracked through beacon and session requests. The analysis linked the campaign with moderate confidence to NovaTokens, a phishing-as-a-service platform with 70 active panels, most hosted in Tencent Cloud address space. The platform includes captured-token management, OTP interception, HumanSim, Auto Re-Lure and admin-control features for long-term account access. Defenders should restrict device code flow via Conditional Access and hunt for the listed application ID, sign-ins, and URL patterns.",
+      "completeness": "High",
+      "threats": [
+        "Novatokens_tool",
+        "Device_code_phishing_technique",
+        "Aitm_technique",
+        "Spear-phishing_technique"
+      ],
+      "geo": [
+        "London",
+        "Singapore",
+        "China",
+        "Hong kong"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 10,
+      "software": [
+        "Claude",
+        "Fable 5",
+        "Anthropic",
+        "Microsoft 365",
+        "Salesforce",
+        "Cloudflare",
+        "Outlook",
+        "Unix",
+        "Telegram",
+        "Office 365",
+        "have more..."
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "ttps": [
+        {
+          "id": "T1583.001",
+          "name": "Acquire Infrastructure: Domains",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1583.007",
+          "name": "Acquire Infrastructure: Serverless",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1566.002",
+          "name": "Phishing: Spearphishing Link",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1656",
+          "name": "Impersonation",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1528",
+          "name": "Steal Application Access Token",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1098.005",
+          "name": "Account Manipulation: Device Registration",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1087.004",
+          "name": "Account Discovery: Cloud Account",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1114.002",
+          "name": "Email Collection: Remote Email Collection",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1114.003",
+          "name": "Email Collection: Email Forwarding Rule",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1531",
+          "name": "Account Access Removal",
+          "tactics": [
+            "Impact"
+          ]
+        }
+      ],
+      "iocs": {
+        "ipv4": [
+          "185.7.214[.]42",
+          "13.111.173[.]152",
+          "139.138.42[.]115",
+          "43.172.115[.]68",
+          "217.60.102[.]48"
+        ],
+        "domain": [
+          "mta.lnyfe[.]com",
+          "bounce.lnyfe[.]com",
+          "click.lnyfe[.]com",
+          "claude.register-eventrsvp[.]com",
+          "continue-to-event.claudewebinnar[.]com",
+          "workmeta-pages.workers[.]dev",
+          "msdc.workmeta-pages.workers[.]dev",
+          "continue.mslogstep[.]app",
+          "eventrsvp-217-60-102-48.sslip[.]io",
+          "continue-to-office-.ggleventapi[.]icu"
+        ],
+        "url": [
+          "hxxps://continue-to-office-.ggleventapi[.]icu",
+          "hxxps://continue-to-event.claudewebinnar[.]com/",
+          "hxxps://msdc.workmeta-pages.workers[.]dev",
+          "hxxps://eventrsvp-217-60-102-48.sslip[.]io/collect.php",
+          "hxxps://claude.register-eventrsvp[.]com/?action=beacon"
+        ],
+        "email": [
+          "lyla.naboulsi[@]ldry[.]com"
+        ]
+      },
+      "links": [
+        "https://zerobec.com/blog/claude-free-tokens-scam-novatokens-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "HDGfx Infector",
+      "summary": "HDGfx Infector is a polymorphic Windows x86 file infector and USB worm, first seen on 2026-10-22, that was still spreading as of 2026-11-17. It is a MinGW-w64 DLL that infects 32-bit EXEs on all fixed and removable drives, encrypting its core with RC4 and padding each infection with newly generated junk code. Infected files include Adobe, Java, Firefox and Google Update components, and infection removes their Authenticode signatures. The worm copies itself to drive roots with a randomised autorun.inf and polls an update host on TCP 8000 to download and run a payload. Defenders should note the two observed builds, the sabotage of AV installers with bitdef or kasp in their names, and the absence of an update server check.",
+      "completeness": "Medium",
+      "threats": [
+        "Hdgfx_infector",
+        "Polymorphism_technique",
+        "Fileinfector",
+        "Upx_tool",
+        "Junk_code_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Firefox"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "sha256",
+        "rc4"
+      ],
+      "functions": [
+        "rand",
+        "DllMain",
+        "CreateAutoRun"
+      ],
+      "languages": [
+        "java"
+      ],
+      "iocs": {
+        "sha256": [
+          "ec55c4ba2ab0b530c4d613e9c0214611c734fc0d17e2fabec68ade33b980075c",
+          "80b49269fa01f64e34960f99922f93c53e0370d94c3158dac450281defb4d0bf",
+          "fbcbcd9c743695119f822da7d57e7f4605c93513b8cd70ed598d2aa942363af2",
+          "967c2c5bd65e8dc3fd46007e9ef19b5c117a5335d83080d0e9ffe61cf0d94041",
+          "0678e636166df303548c8c2f4d75611304f7f01d5881ac6e4baad16dae0aa566",
+          "a0c42a23fbcd3cd8c21db68517e18b5c229e9a2d95af62a5a57407ff92e48141",
+          "b448a0be6e7c3c25905bf6c97ecda197d3ef8f4f362a8920c8974c3c32cfe354",
+          "44a58d2e7d0f114939e067b1645fcc171ce60ffaa8ee918b7a35f2acd44a4945",
+          "5d90689c226a121eeca04ab5676430ed608a6d0f0c1339fb1684497346de9f82",
+          "7b232565f9697568eb4cc89dc49bf956ba2ee401a820dce93f28b6af704e8fd6",
+          "3cd13ce7ff46c49466c5484c0d7c08be4d97944288d356f2e1472dfa8c606e28",
+          "8015cea2882398190b58093a0715c5b21bd53510e7186c3db7f36e78cdacc349",
+          "609372a70bd5b35befcf8e99a83355a049618f8cd9e6d53102a17811abfaa123",
+          "cd551a44e7673c9a4a2007a7574ac1b1be7e439a3705461d5de07af70f90310c",
+          "59163fa30be47fbcce61171774d81f0283611ef51d2100561f501b3180dd8802",
+          "727966a9ec7f46a0227dcaf39be22193f24f2650e48541013bc90e3456286f90",
+          "249ea8bf7b6a76694253970e9312ee88d3e2144fe56479cfcad19966f827e834",
+          "8dd3e8a7ce2a7e4d5566603a67833a4ff97c8b1cd84010edbf63765d9681762b",
+          "51c263c86d5933248e4ba7b186eb12b5afa87c1a26be7dffc9ff1516efab9d0f",
+          "76f52cf20a71cb883c8c4048c14e3a88b6a5590a99a4f59c9d162f45e58c9471",
+          "115e3d313832e8b316052d65848a8d236a17444c3d1c87818e3be0c4e96745fd",
+          "9ce158f5767ca6ed78677a1a3a64b481c9e3a5a3e763b777290e65290c275e5e",
+          "93f1d015de77d727bb33081fef5ef0fc4098e256c554950bc539fd77cd73e349",
+          "fdc0a130b156a7fdbae7d55896f245cec9db4d30ef8174a6531efa6f9b272705",
+          "d051dfb9a5e492bf1999b193656a76091cc9946403c42dd2b941b30f66246987",
+          "418871b8b598100a5f5e399e01a89422ca0a2a5b770fbc18cc58e352bb07a31c",
+          "949f2bae70c44b36d0583d4f2c012a97aa3e2ba5e0c85be6302fcbbf64aab429",
+          "795d8d2e4360bc1e39c67b02dae1601e4847169fc2f05cef261de1c0ccc64e61",
+          "4685a9c8f49f7d176caa00559f014aeb8b6cf6660d3c279f58dfadaea31700e7",
+          "649b448d5d617ecc4f55f999dede56386503249f4eabc64754ef8e0a013043e8",
+          "2192360d42246a9ed475215fe7c6afed67d15ac80782bd52e44b8cdc74de77c0",
+          "c88c2d9c0d8059e60b1e9eb374b8d8c58c8077b10cb264b13ebb3ff0f78f0d66"
+        ],
+        "domain": [
+          "nerds[.]de",
+          "updatewin.ddns[.]net",
+          "updatewinold.ddns[.]net"
+        ]
+      },
+      "links": [
+        "https://research.openanalysis.net/hdgfx/fileinfector/worm/usb/polymorphic/config/2026/11/17/hdgfx-infector.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "n0n Ransomware Gang Claims Visa & JPMorgan Chase Data Breach",
+      "summary": "n0n is a financially motivated extortion gang that has listed Visa and JPMorgan Chase on its leak site with a 48 hour countdown to publish data it claims to hold. Visa says the activity it is investigating began at an unnamed third-party provider in the Asia Pacific region, that its own systems were not involved, and that no payment card data appears affected. JPMorgan attributes a separate service outage to a software bug and says it has no evidence of a cyberattack. Since emerging in mid September 2026, n0n has claimed over 100 victims, with financial services its most targeted sector at 23 percent. The group typically gains access through weak or reused credentials rather than vulnerability exploitation. Defenders in finance should focus on vendor credential hygiene, since the group's model relies on compromising one supplier to reach many downstream firms.",
+      "completeness": "Medium",
+      "threats": [
+        "Residential_proxy_technique",
+        "Shadow_copies_delete_technique",
+        "Supply_chain_technique"
+      ],
+      "geo": [
+        "Asia pacific",
+        "Sweden"
+      ],
+      "software": [
+        "FortiGate",
+        "Linux"
+      ],
+      "crypto": [
+        "bitcoin"
+      ],
+      "algorithms": [
+        "aes-256-cbc"
+      ],
+      "languages": [
+        "swift"
+      ],
+      "ttps": [
+        {
+          "id": "T1078.004",
+          "name": "Valid Accounts: Cloud Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1133",
+          "name": "External Remote Services",
+          "tactics": [
+            "Persistence",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1110.002",
+          "name": "Brute Force: Password Cracking",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1110.004",
+          "name": "Brute Force: Credential Stuffing",
+          "tactics": [
+            "Credential Access"
+          ]
+        }
+      ],
+      "links": [
+        "https://www.secureblink.com/threat-feeds/n0n-ransomware-gang-claims-visa-and-jp-morgan-chase-data-breach"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "The forced audit: how AuditTeam’s OpsAgent framework masks ransomware as consulting",
+      "summary": "AuditTeam is a threat group using the OpsAgent framework, which has been observed infecting dozens of organizations across at least seven countries from January through October 2026. Its ransom note demands an \"Audit & Consulting fee\" in exchange for a vulnerability report, while stolen data is threatened with public release. OpsAgent offers capabilities comparable to Cobalt Strike, and it was rewritten from C++ to Rust with new WebSocket and interactive shell features. Its cryptor module encrypts files, terminates database processes, and removes shadow copies, while a signed Jiangmin driver is used to kill security products. C2 addresses are retrieved from a public GitHub repository and hosted on Amazon CloudFront subdomains, so removing that repository disrupts the attack chain.",
+      "completeness": "High",
+      "threats": [
+        "Opsagent",
+        "Process_injection_technique",
+        "Edr-killer",
+        "Cobalt_strike_tool",
+        "Runpe_tool",
+        "Mimikatz_tool",
+        "Passthehash_technique",
+        "Shadow_copies_delete_technique"
+      ],
+      "geo": [
+        "Italy",
+        "China",
+        "Turkey",
+        "Hong kong",
+        "Russian",
+        "Thailand",
+        "Argentina",
+        "South korea",
+        "Philippines",
+        "Ukraine",
+        "Russia",
+        "Senegal",
+        "Japan",
+        "Spain",
+        "Finland"
+      ],
+      "software": [
+        "OLLVM",
+        "MySQL",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "algorithms": [
+        "curve25519",
+        "chacha20",
+        "aes-cbc",
+        "aes-gcm",
+        "xor",
+        "base64",
+        "cbc",
+        "aes",
+        "hmac"
+      ],
+      "functions": [
+        "GetConfig"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "iocs": {
+        "md5": [
+          "f4bb8c7e15d8b98d535eb20b09176b3d",
+          "d3e49dceb89a25f5da4ff0c42e996857",
+          "bd4c327ad208cb722ad25e43ea3f35fc",
+          "5d1425ab3dad1d2de053f69529d227e1",
+          "f0d5752054f6b7af1325ea340c4326d0",
+          "83768e994c6bb72d0b430b98a71ec8d6",
+          "109cdc24ccd4872a3e4bf6f2d4f3c3d4"
+        ],
+        "ipv4": [
+          "157.20.104[.]111"
+        ],
+        "domain": [
+          "dbdigest[.]com",
+          "d19v1tntmz2i98.cloudfront[.]net",
+          "d35htktbyt7nxc.cloudfront[.]net"
+        ],
+        "url": [
+          "hxxps://github[.]com/RonaldCMalcolm1983/staticPage"
+        ]
+      },
+      "links": [
+        "https://securelist.com/auditteam-opsagent-forced-audit/122031/",
+        "https://opentip.kaspersky.com/hxxps%3A%2F%2Fgithub.com%2FRonaldCMalcolm1983%2FstaticPage/results/?icid=gl\\_sl\\_post-opentip\\_sm-team\\_9f1a5f61452ee6f8&utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "UAT-12643: Suspected North Korea-aligned actor blends blockchain resilience with targeted infostealing",
+      "summary": "Cisco Talos tracks UAT-12643, a financially motivated actor with a suspected low-confidence North Korea-aligned link, which uses the Go-based Overlord RAT, a Python infostealer called \"Good Game,\" and a multi-cryptocurrency clipboard hijacker. The actor appears to target cryptocurrency holders, gaming account owners, VoIP software users, and finance staff, with file harvesting aimed at English, French, Spanish, and Portuguese documents suggesting a potential focus on Europe. Overlord embeds encrypted C2 URLs in Solana blockchain transaction memos, a technique also linked to Lazarus, so updated C2 addresses reach deployed implants without redeployment. Initial access uses weaponized LNK, HTA, and MSBuild XML files that abuse signed Windows binaries and spoofed BITS User-Agent strings. Defenders should watch for these abuses and for Overlord's Windows Recovery Environment persistence, which survives a system reset.",
+      "completeness": "High",
+      "threats": [
+        "Good_game_stealer",
+        "Clipboard_hijacking_technique",
+        "Overlord_tool",
+        "Lolbin_technique",
+        "Reflective_dll_injection_technique",
+        "Dll_injection_technique"
+      ],
+      "geo": [
+        "North korean",
+        "North korea"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Viber",
+        "Node.js",
+        "Flask",
+        "discord",
+        "Windows Explorer",
+        "Windows Defender",
+        "Microsoft Edge",
+        "Microsoft Edge PDF",
+        "Windows Background Intelligent Transfer Service",
+        "Microsoft Defender",
+        "have more..."
+      ],
+      "wallets": [
+        "electrum",
+        "trezor",
+        "atomicwallet",
+        "coinbase"
+      ],
+      "crypto": [
+        "solana",
+        "binance"
+      ],
+      "algorithms": [
+        "md5",
+        "xor",
+        "base58",
+        "zip",
+        "aes-256"
+      ],
+      "functions": [
+        "getSignatures",
+        "getTransaction",
+        "GetConsoleWindow"
+      ],
+      "languages": [
+        "golang",
+        "python",
+        "javascript"
+      ],
+      "iocs": {
+        "ipv4": [
+          "41.216.188[.]11"
+        ],
+        "domain": [
+          "upload.gofile[.]io"
+        ],
+        "url": [
+          "hxxps://upload.gofile[.]io/uploadFile"
+        ]
+      },
+      "links": [
+        "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+        "https://github.com/CirqueiraDev",
+        "https://github.com/Cisco-Talos/IOCs/tree/main/2026/11"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "PHP2Shell Exploited by AI Agents from Day One: Inside a Credential-Harvesting Campaign",
+      "summary": "A SOCRadar investigation found an unauthorized, financially motivated operator exploiting the PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) within days of public proofs of concept released on October 21, 2026. The operator used a self-built job orchestrator to dispatch AI-agent workers backed by DeepSeek V4.1 endpoints, automating target queueing, exploitation, persistence and credential harvesting. Collectors stole cloud API keys, database backups, application secrets, OAuth tokens, repositories and session files, while webshells, cron beacons, SSH keys and Dropbear tunnels maintained access. Analysts assess the pattern as initial-access brokering, with 404 hosts confirmed compromised and no confirmed cryptocurrency theft. Defenders should patch PHP, rotate exposed secrets, hunt for persistence, and block the associated infrastructure.",
+      "completeness": "High",
+      "threats": [
+        "P2pshell_vuln",
+        "Credential_harvesting_technique",
+        "Dropbear_tool",
+        "Supply_chain_technique",
+        "Socat_tool",
+        "Rclone_tool",
+        "Trufflehog_tool",
+        "Linpeas_tool",
+        "React2shell_vuln",
+        "Dirty_cow_vuln",
+        "Copyfail_vuln"
+      ],
+      "ttp_tactics": 11,
+      "ttp_techniques": 28,
+      "software": [
+        "DeepSeek",
+        "Redis",
+        "OpenSSH",
+        "curl",
+        "Debian",
+        "MinIO",
+        "Cloudflare",
+        "Laravel",
+        "Docker",
+        "sudo",
+        "have more..."
+      ],
+      "crypto": [
+        "binance"
+      ],
+      "algorithms": [
+        "hmac",
+        "ed25519",
+        "zip",
+        "sha256",
+        "base64",
+        "gzip"
+      ],
+      "functions": [
+        "Set-Cookie"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "ttps": [
+        {
+          "id": "T1595.002",
+          "name": "Active Scanning: Vulnerability Scanning",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1587.001",
+          "name": "Develop Capabilities: Malware",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1588.002",
+          "name": "Obtain Capabilities: Tool",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1583.003",
+          "name": "Acquire Infrastructure: Virtual Private Server",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.004",
+          "name": "Command and Scripting Interpreter: Unix Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1505.003",
+          "name": "Server Software Component: Web Shell",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1098.004",
+          "name": "Account Manipulation: SSH Authorized Keys",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1053.003",
+          "name": "Scheduled Task/Job: Cron",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1543.002",
+          "name": "Create or Modify System Process: Systemd Service",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1548.003",
+          "name": "Abuse Elevation Control Mechanism: Sudo and Sudo Caching",
+          "tactics": [
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1027",
+          "name": "Obfuscated Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1078.004",
+          "name": "Valid Accounts: Cloud Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1552.001",
+          "name": "Unsecured Credentials: Credentials In Files",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1552.004",
+          "name": "Unsecured Credentials: Private Keys",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1552.005",
+          "name": "Unsecured Credentials: Cloud Instance Metadata API",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1555.001",
+          "name": "Credentials from Password Stores: Keychain",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1555.003",
+          "name": "Credentials from Password Stores: Credentials from Web Browsers",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1539",
+          "name": "Steal Web Session Cookie",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1110.001",
+          "name": "Brute Force: Password Guessing",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1083",
+          "name": "File and Directory Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1016",
+          "name": "System Network Configuration Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1049",
+          "name": "System Network Connections Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1057",
+          "name": "Process Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1033",
+          "name": "System Owner/User Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1087",
+          "name": "Account Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1005",
+          "name": "Data from Local System",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1074.001",
+          "name": "Data Staged: Local Data Staging",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1560.001",
+          "name": "Archive Collected Data: Archive via Utility",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1114",
+          "name": "Email Collection",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1571",
+          "name": "Non-Standard Port",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1572",
+          "name": "Protocol Tunneling",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1041",
+          "name": "Exfiltration Over C2 Channel",
+          "tactics": [
+            "Exfiltration"
+          ]
+        },
+        {
+          "id": "T1020",
+          "name": "Automated Exfiltration",
+          "tactics": [
+            "Exfiltration"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "d01948e930848dd139915f646760e6dba61caf3eec222d5479518c19b5076ad2",
+          "48df6ff05731bf735cb1914905191d01fcab59ffec5b002f73e235b2c021a267",
+          "484e92ae0ceaa888459d2ad5260274923c58d8e8db5a5ff244cf7f9f90f3a1da",
+          "84f161021452e58ce65dec9fee14dd77f4968fe54d284c4059c373388a31f594",
+          "7befbc027e31c32437d82f70096cd9edd96ec98e88c6b3139e7fe640d02fec41",
+          "b889846842a168773a5b6382143792acd3a2310f5802d61f48805e1d38e6575b",
+          "c2d898f29b4c6058ba2587fa7477bac546c838b72e48ad42e5e4fa11ab799ba9",
+          "1642c2de5949909d1470523337a0e50b844f26a1f018e6b6984a4ed815657d33",
+          "57617d2d8a1cd7da3614b4329929df0d2f4a26fbbd79a418ec8623e83decf14f",
+          "93f8bcb90e608cdac0239d4218f31fb755357b056e862ce8b61df1026536d83d",
+          "7f1bd30c173af0e793f0a9a9ec44646131e8148fcb6fe64d00c06bf751a53d7d",
+          "4712fe539da6b81329dfe25d1b0e38a04539a68fac58bd8f6a537807b3f15cf5",
+          "88b5ed6aa763acf5d11119d4cb53d9601533ab35371a4f5cb932991b19bfdef0",
+          "abaf7a73520ec77853d83ca1cd946a650291457b6303147cd6622fca5b8be39e",
+          "452776d0507e33e71982b0f2d7f928b1f2d60f852195b1d9aac6a5d71c019060",
+          "c66a3a56f75ef8d9ce79c3cf012ad77c166be10e4d0264a56ed96e67e15b27c1",
+          "839f516d17cb0ebfdfa002f195299077198ec334f248b8084a954444ce3fbfdb",
+          "3ae6c2d36edf2db4845db9f18e1ae865de4e784c9c807e6d89033bef21e284c5",
+          "ad06f3a8fd168659a72cea4ee1b105575f38c485e741776b1b097f6a79e43eae",
+          "6d10e9923374c2e11b6528a34f23356e3cb4aa5d2f11db35a35193550d0d2be3",
+          "c56e18a28fd7a3bf59891df955f6f03b009b85ed00c5ff8539b545250c004924",
+          "d8d17dcc97bbcb9c40219fa157a77c50be1d4c0c80cbd57a8b3eda0fcc42d9a1",
+          "d2a6102d7f94a44e9aa517e3b9c3656d790b31b74c399c78cd3a0305f987f968"
+        ],
+        "sha1": [
+          "58da42285568a591680c08176b31880410bc097e"
+        ],
+        "ipv4": [
+          "206.245.153[.]56",
+          "157.180.96[.]7",
+          "185.65.134[.]250"
+        ],
+        "domain": [
+          "s3.buckets[.]ninja",
+          "fedora-42.servers[.]guru"
+        ],
+        "url": [
+          "hxxp://206.245.153[.]56:8088/",
+          "hxxp://206.245.153[.]56:8088/tools/{collect.sh",
+          "hxxp://206.245.153[.]56:8088/x280.sh",
+          "hxxp://206.245.153[.]56/",
+          "hxxps://s3.buckets[.]ninja"
+        ]
+      },
+      "links": [
+        "https://socradar.io/blog/php2shell-ai-agents-credential-harvesting/",
+        "https://github.com/9bie/php2shell-bypass-aslr-exp",
+        "https://github.com/3em0/php2shell"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Behind the Power Outage: Unmasking a New Intrusion Vector in Enterprise Infrastructure Tools",
+      "summary": "Symantec analyzed an intrusion in which attackers abused CyberPower PowerPanel Business (PPB), a UPS management application, as an execution channel on a Windows domain controller. The attackers uploaded scripts through the PPB web service on TCP port 3052 and had the ppbed.exe service run them as SYSTEM. They used this channel as a general remote shell, iteratively refining scripts to export the Active Directory database (ntds.dit) with ntdsutil and esentutl. They then launched a persistent implant, upnpcont.exe, which side-loads a malicious atl.dll. Defenders should restrict access to PPB, change default credentials, and monitor the product's parent-child process activity.",
+      "completeness": "Medium",
+      "threats": [
+        "Ntdsutil_tool",
+        "Anydesk_tool",
+        "Screenconnect_tool",
+        "Burntcigar",
+        "Shadow_copies_delete_technique",
+        "Dll_sideloading_technique",
+        "Vssadmin_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Active Directory",
+        "CyberPower PowerPanel",
+        "Tomcat",
+        "yberPower PowerPanel Bu",
+        "curl"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "1949894c26e03d6f15ed7f4393a89dbd52f8acc62959d3d5e4f695d6a19c6d9c",
+          "d8ae46604dc4eab411977764bd923af686aea117fb33304520d928f1d382ef0e",
+          "22b8f2776f1c941d8240ee4243da537147f8d2ee4d859a68038335da7b0d7688",
+          "04206431c83d1d81726e56fffb5166c0a7f138eb366e5aa918dee54af1ef22b5",
+          "899f072c505e56ed65b4ea5d64ab3bc0f98c39366b2c413c988551843e729451",
+          "76670eaadda9806c9aefa91c2ee4f2a33dcf8124574721a6ff072f19e7c03514",
+          "839300af16b7117adf05751e1847e1e026146d388cc328a179ba799eb1c9c229",
+          "2776cfcdd46264043b823adaf37e0c85d0efd3b46d5fdbb72219535061d44b86",
+          "cbd790d052a57d18f1cd58fe4c9887340eec5d38bfae105caf0d222f30a856d5",
+          "c3f6aa4dc9cdbcd2cfdacd18e59e0c1af0406d59d1f81cd962ac3cde60626ee8",
+          "b0d382443411a7986ce7eda473c3e8ed787de9083db71deb4ea0539ed74c0c25",
+          "9abbcb4ac9a98690c666a2e843facf62af773d078db40570f08f052b0e42003f",
+          "c2454052f49e43226f69413ce58ba0bb3a2d89e7a52f32ef8adbf0961bb838c2",
+          "8ee88ef957597fd4788ae9da4463dcbecec0f1969e6573204f4263f99f46b125",
+          "3d73d5342a11dce35081e70a4ea75d39ad65bc6d480337bd33c1d2e0ba4090ee",
+          "12e716f48875befa978ff4a78a0b99a18b1809fc5bcc34c761158875da611aa8",
+          "bdea608430fbf6384ce518a542af3e0e69a685980ef826f7db3de20d4c835e26",
+          "5b2285f788eec4d17bf18d85795d457f40f7598bbab2697919f5810f54a9c3fe",
+          "d4032e61aa9ef01a5a174a90beffa5a27dd21b36e653ce5304907787554b7d95"
+        ],
+        "ipv4": [
+          "84.200.205[.]145"
+        ],
+        "url": [
+          "hxxp://84.200.205[.]145/",
+          "hxxp://84.200.205[.]145:55557/junk50k.bin",
+          "hxxp://84.200.205[.]145:55556/"
+        ]
+      },
+      "links": [
+        "https://www.security.com/threat-intelligence/power-management-software-attack-vector"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Official Microsoft agent-framework PyPI package compromised",
+      "summary": "Malicious Microsoft agent-framework releases 1.26.1 and 1.26.2 were published to PyPI through Microsoft's legitimate publisher account. Both versions include a .pth file that runs a credential stealer automatically whenever Python starts, without the package being imported. The stealer collects environment variables, credential files and other processes' environments, and requests fresh GitHub Actions, Azure DevOps and Azure managed identity tokens. It sends the compressed, encoded data to an attacker-controlled webhook, and PyPI has quarantined the publisher because the threat actor is believed to retain access. Defenders should treat any installation of either version as a credential compromise, rebuild affected environments, and rotate and revoke exposed secrets and tokens.",
+      "completeness": "Low",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft publisher",
+        "OPENAI",
+        "NUGET",
+        "Docker",
+        "Hugging Face"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "_start",
+        "fork"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "325e7e9f0ec94e41ad1a1b7a3f18a6b8b5bffece2e2b97b8d3369eb967452f93",
+          "54d885b7d7161c9ed96489c66364c4bfbf635929166843bba10d97d46b5a2e1f",
+          "056b52a6cec4e911cb6e7debae8fd49dad3255ef109357d0f7a386b0a2bc7461",
+          "5f04333fc30dc7a1af5407996249761531ee75df423f3ea58460dc64ae8e49f1"
+        ],
+        "domain": [
+          "webhook[.]site"
+        ],
+        "url": [
+          "hxxps://webhook[.]site/d381fd80-ec62-42ad-8f5c-d1b15103c9bb",
+          "hxxps://webhook[.]site/d381fd80-ec62-42ad-8f5c-d1b15103c9bb?t=telemetry"
+        ]
+      },
+      "links": [
+        "https://opensourcemalware.com/blog/agent-framework-pypi-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Microsoft agent-framework PyPI Package Compromised",
+      "summary": "The malicious Microsoft agent-framework PyPI releases 1.26.1 and 1.26.2, published on November 17, 2026, carried a credential-stealing payload. The payload installs a .pth startup hook that runs during Python startup, so importing the framework is not required. It harvests environment variables, credential files, and other processes' environments, attempts to mint identity tokens from GitHub Actions, Azure DevOps, and Azure managed identity endpoints, and sends the data to a webhook[.]site endpoint. The attacker published the second release just over two minutes after the first was quarantined, showing continued publishing access. Defenders should treat any environment that installed either version as compromised, isolate it, rotate credentials, and review identity and resource-access logs.",
+      "completeness": "Low",
+      "threats": [
+        "Credential_stealing_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "OPENAI",
+        "NUGET",
+        "Docker",
+        "Hugging Face",
+        "Azure AD"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "setsid"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "d27fa34414e6201d5e03e559ef634f020057554d7b3f4898dd5d7cd3e989e110",
+          "3d20a8bc91351a9a16b6db243b848ceca0206b7a8623b02d2af553a9c9f7e0a9",
+          "54d885b7d7161c9ed96489c66364c4bfbf635929166843bba10d97d46b5a2e1f",
+          "325e7e9f0ec94e41ad1a1b7a3f18a6b8b5bffece2e2b97b8d3369eb967452f93",
+          "39fa329f2a93f734b0bb8f5adb203ea3331d1ae479832a5015a54cb17aabd663",
+          "21f28e8517a10ffe431f8d68f5875c85eca4001ae6d118322b0a41873998eb5e"
+        ],
+        "domain": [
+          "webhook[.]site"
+        ],
+        "url": [
+          "hxxps://webhook[.]site/d381fd80-ec62-42ad-8f5c-d1b15103c9bb"
+        ]
+      },
+      "links": [
+        "https://www.stepsecurity.io/blog/microsoft-agent-framework-pypi-package-compromised"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Open by default. Already occupied.",
+      "summary": "Rapid7 analysed a single unauthenticated scan of 20,354 pre-selected IPv4 addresses taken on 10 November 2026, finding that many exposed Ollama servers already show signs of third-party use. Model lists contain callback registries, IP-tagged names, and Base64 strings decoding to sensitive paths such as /etc/shadow, matching the Probllama (CVE-2024-37032) technique that Ollama patched in 2024. Honeypot and sensor infrastructure inflated the raw totals, so the authors removed 429 such hosts before reporting figures. Most exposed hosts sit in rented hosting and cloud networks, and 79% list cloud-routed models, which could expose the owner's paid subscription. The authors advise treating listed artifacts as evidence of compromise, binding runtimes to private networks behind authentication, restricting egress, and assigning every model server a named owner.",
+      "completeness": "Low",
+      "threats": [
+        "Llmjacking_technique"
+      ],
+      "geo": [
+        "South korea",
+        "United kingdom",
+        "India",
+        "United states",
+        "Finland",
+        "China",
+        "Singapore",
+        "Germany",
+        "France",
+        "Canada"
+      ],
+      "software": [
+        "curl",
+        "llama3",
+        "gpt-4o",
+        "o:latest",
+        "a server",
+        "Ollama",
+        "Jupyter",
+        "Jupyter Notebook",
+        "Qwen",
+        "Llama",
+        "have more..."
+      ],
+      "algorithms": [
+        "ed25519",
+        "base64"
+      ],
+      "iocs": {
+        "ipv4": [
+          "103.249.201[.]108",
+          "24.144.109[.]68",
+          "76.13.49[.]213",
+          "62.31.247[.]107",
+          "43.143.113[.]68",
+          "185.165.171[.]21"
+        ],
+        "domain": [
+          "bore[.]pub"
+        ]
+      },
+      "links": [
+        "https://www.rapid7.com/blog/post/tr-self-hosted-ai-renting-compute-exposed-servers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Hackers Use Hidden Cron Jobs to Reinstall Malware on Firewalls and Routers Every 5 Minutes",
+      "summary": "Evooo1Bot is a Linux botnet that hides persistence in scheduled jobs on routers, firewalls, switches and other internet-facing devices. A hidden cron job re-downloads the malware within five minutes, so killing the process and deleting the file is not enough. The bot's !persist command also creates a systemd service, init script, rc.local entry and login script for redundancy. The botnet spreads by exploiting known flaws in devices from vendors such as D-Link, Tenda and NETGEAR, and by guessing SSH passwords, and it can turn infected devices into SOCKS proxies. Defenders should inspect the cron spool and scheduler files directly, remove the cron entry before killing the process, and treat any job that downloads and runs code as an incident.",
+      "completeness": "Low",
+      "threats": [
+        "Evooo1bot",
+        "Mirai",
+        "Sshstalker",
+        "Ncat_tool",
+        "Peerstitch"
+      ],
+      "software": [
+        "Linux",
+        "curl",
+        "systemd",
+        "Tenda",
+        "crontab"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "iocs": {
+        "sha256": [
+          "f13cb360768363d3424e2192c7805b8c8015eb8706dbbbcdead6aed8cf390109",
+          "4c0886349e9d348569fffe1b7a31e474d514508bf0cd6f1e5dd99c2a73525e4d"
+        ],
+        "ipv4": [
+          "91.92.40[.]118"
+        ]
+      },
+      "links": [
+        "https://cybersecuritynews.com/hackers-use-hidden-cron-jobs/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Fake Conad Plus App: A Promise of 10× Loyalty Points Conceals Android Malware",
+      "summary": "A fake Conad Plus website in Italy promises tenfold miPREMIO loyalty points and distributes an Android APK that leads to the Koktevrat remote-access trojan. The first APK acts as a downloader that installs a second APK after the user approves installation from unknown sources and enables Accessibility services. Once active, the malware can capture screenshots, intercepted text, form data, and keystrokes, and it can interact with the interface and display overlay screens. Koktevrat's code matches the MandatGO sample analyzed by CERT Orange Polska, though the researchers did not establish that the two campaigns share operators. Defenders should advise users who installed the app and enabled Accessibility to treat anything typed or displayed as exposed and to check sensitive accounts from a trusted device.",
+      "completeness": "Medium",
+      "threats": [
+        "Koktevrat"
+      ],
+      "geo": [
+        "Italy"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Android M",
+        "Android",
+        "Google Play"
+      ],
+      "algorithms": [
+        "zip",
+        "rc4",
+        "sha256",
+        "aes-128-cbc",
+        "base64"
+      ],
+      "languages": [
+        "php"
+      ],
+      "iocs": {
+        "sha256": [
+          "e7b859f5e6560e441a00d18e03531f2e02532298246832574bd6220fa9b1942a",
+          "21669e7c60f78a90c10c37b8c741e14efc0820c5e51725094dcb8b86767c6dca",
+          "6ac3cc61aefeb0c6a4600e03c35f72ca702b3b297ec72d1d844f19db76b7db9a",
+          "ecb4590d7093295f3c3ea13c74b8c6e0c96b4d12ac977d5e4e8b14dc3f7534ec"
+        ],
+        "domain": [
+          "nq9y7o5gd1zh[.]icu",
+          "z4t85uapc9skbvq[.]cfd",
+          "www.conad-plus[.]shop",
+          "i0.wp[.]com"
+        ],
+        "url": [
+          "hxxps://i0.wp[.]com/www.d3lab.net/wp-content/uploads/2026/11/falsa-promozione-conad-plus.png?fit=1260%2C936&ssl=1"
+        ]
+      },
+      "links": [
+        "https://www.d3lab.net/fake-conad-plus-app-a-promise-of-10x-loyalty-points-conceals-android-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-18",
+      "title": "Threat Researcher’s Notebook: Detection Strategies for ARTEX and Related Forks",
+      "summary": "ARTEX is an open-source Agentic Offensive Framework that Autumn-27 published on GitHub in July 2026 for authorized testing, and attackers adopted it almost immediately. Powered by the norma LLM orchestrator, it runs planner and worker agents in parallel to chain known weaknesses, with some intrusions reaching privileged access in under three hours. Adversaries are mostly financially motivated criminals and China-nexus actors, and campaigns reportedly include South Korean financial firms and the ConnectWise Cloud Backup supply chain compromise. ReversingLabs mapped 11 fork-families sharing one engine, with 3,096 actionable IP indicators concentrated in a few hosting providers and more than 900 live consoles identified by a favicon pivot. Defenders should focus on behavioral and HTTP fingerprints, LLM gateway abuse, and time-windowed network activity rather than file hashes or permanent IP blocklists. The report's main takeaway is that hardening management interfaces, rotating exposed credentials, and patching known weaknesses promptly remove the advantage that machine-speed automation provides.",
+      "completeness": "High",
+      "threats": [
+        "Artex_tool",
+        "Supply_chain_technique",
+        "Residential_proxy_technique",
+        "Blackrock",
+        "Masscan_tool",
+        "Putty_tool",
+        "Mitm_technique"
+      ],
+      "geo": [
+        "Chinese",
+        "South korea",
+        "Hong kong",
+        "China"
+      ],
+      "software": [
+        "Linux",
+        "macOS",
+        "AntiFox",
+        "Cloudflare",
+        "OpenSSH",
+        "SQLite",
+        "Chrome",
+        "Firefox",
+        "LiteLLM",
+        "claude",
+        "have more..."
+      ],
+      "algorithms": [
+        "murmur3",
+        "base64",
+        "sha256"
+      ],
+      "ttps": [
+        {
+          "id": "T1046",
+          "name": "Network Service Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1595.001",
+          "name": "Active Scanning: Scanning IP Blocks",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1590.002",
+          "name": "Gather Victim Network Information: DNS",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1021.004",
+          "name": "Remote Services: SSH",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1036",
+          "name": "Masquerading",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1656",
+          "name": "Impersonation",
+          "tactics": [
+            "Stealth"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "8b567c0244f2dbee787165aea9c4ddabaaafb0fdb3b29899ac898c60a589856b",
+          "68e261808e123d7f33675acac8ca66132fcbc4e4c70a11c5b76487736b221c68",
+          "3e8f0d584403e3ce6793f8e6041f8b1ebf8c987663ff83aa189d883c6e475cc6",
+          "c5f96fe44bb95f24efe844a2c8f492501a28ccedf57c1fd488b707c0e2cc1eaa",
+          "55efde710accb5b818af94a1c6c29f00a865e89f0719692b76585d44fce14168",
+          "445c165a11d9ab41d11cd50cf446f69e138d827bea4f6ca5f4907968a57f668d",
+          "63a35d14f74313299a1f79a5caea4b74f88ba77734234aace15b512db79ff808",
+          "90e20973d4fbdc7b30b700d05777e233d44958eec8cfaa4759872b351f6f8907",
+          "7836c216bebc774fa86de522a00b78c8b80f8e2da3141fe79d1d454289f98a84",
+          "001eb437c20805fb94e8e7014c019318f0f3186bc0cd2ea3508245aafbf0c248",
+          "014154af33662f55901a20902b9deae23a63fe3817fad44a2718f6e30e7a9cb1",
+          "01edf9d0f41a7f527c935bb95974402cf1667635e32111b063eecf8b19f0e322",
+          "047da1e769cc583b2f697e9d6c5043b8aa004a7bff4870718850900cd64836b5",
+          "04f1f1c54918c16db83d82362a8bd14a2ad9441b5654627889d96a8b7a2d33dd",
+          "0640d39ec254fffea1c2aefe3d44659ba31dc9dd62db75d0b0ab480592ddd619",
+          "080a0c302f4ed5499ad9cbedfd8dfd1e10d813351774b35884d8c088ba705410",
+          "0a43907be0bec39e8e17da86eeb681eaee68e4d3d2dc527e58f4d7590833ecfd",
+          "0c7f958f59af463d81a158400e254a87a68855ba8c30d9939d299dfb82ec59b2",
+          "0c84527c81534d06f31acd35a498e7f7df71110034dae34b3171f57b169780ce",
+          "0ced4f0ae55582381d810f07cb21101d3e25cfbc915e9890547e728c5cbc19fc",
+          "0ec720ed1f51fa8522a5f0cfecfa71e449141baaaad194ecf9bb907aa291079f",
+          "0f8b606b7532d04d4aa36a6339777b9cbf6f320cc700d90a67f580f75b3c9843",
+          "0fd9bd3adcaccd65e7dae5e37dbbdb352c37a753298458065ac11f4f6e548c0e",
+          "0ff7ebc88eaf10679d67498ca0a4fe3f682a6abf6158a2c53e0ac0a54085d097",
+          "10318e642fdbf39e46800621bc27e0b7fdd2e23c562cdc5473998bc212dab034",
+          "14e8d3f73d03b745bd29b0a397aab157a37089f65f64519f836889e5c9219a49",
+          "15f2c050d974edc60298dc3555a3f6887a80d10853b611d1355cb2674844dee0",
+          "16f12d805d44cb6f0559451ec4a692069c37f0d118bdf7feabda6b9c32535a3e",
+          "18de42e9541c741aba1efef1885beaab359065e7139632dfbec151c7b7fe1093",
+          "1af499b6a896b591d0ced4d37f08f7e38a672b50fefce30dd0b74e39803a8ca6",
+          "217d03398123ca50ce0109f438897ebaaaeb207f6cda4a7bed0f63bbb15321c4",
+          "2345276e7d0fc9e5215c70a56b752d2f743d6171084ca2088065499788bc94ca",
+          "26c9c3a17dfe5a4882384492e9ecc6cd28646c159e8116d258a621cccee6b3de",
+          "2968118ecddff20b947466531a8079fd77686f57b41601993e17f62344fad353",
+          "2a0980fd128f21710f2dd43ccb5c6c48742741e9bb642a5ab32ce46aa6995362",
+          "2b2140cd6e30e2263963db48808ed0341108f067cdb725cd109215b1b54fa321",
+          "2be8e1a61aaa40092c92a91612fe8b9aacb0213aee20b97e67b14f863d83b77c",
+          "2c2a98f29116c2fe99dad2af20e0ba8f2e1c8ac0fe2fb29c20f9addada18adfe",
+          "2ca4d627ec984033938ff45dd70e31e7b8ccd6ef190f9a5a39c84d9fe913ae37",
+          "2d2b32c115c606e33cabd48e0b132e5515fd7bb33827ad17191fb37356a121b9",
+          "2dea5549a9765c1b9d8da5e5590af6bf631bdf05f7074365510c72b6ff11ec8c",
+          "2fcccfc4cb1e58a974bad00f148f2c057d8f4062633c9ee873612cbc6dfaf07a",
+          "337b310ea48d2d686e4ba1e4f2bfce4e04788e7db16be5b04f533950b4664728",
+          "341696595b5ff430b9b09c2d688a814062e50d4dee56cd823052a3a3426da605",
+          "34696f6a26b97fd056e717095c462117299c7affdcd58d514c9bf9419472c612",
+          "3604a12e4e13a3e6d8166dd999b9b1e0d981f0dafd2d3f6faa04f686d0f6fbf5",
+          "364acf32a9e5557efbe6c9b360f41c010f3450388bc8cc73c20c799697f8e92d",
+          "372b1611564b54d0e35b1c6e58d2ef94bca896fbf223dcbe9fd13c1bbc230938",
+          "37c6f69f8ab92d3fc2abc94f5205fa163576420d8fcd819adab8edc38722dadc",
+          "3906ce6f6662c12b72d61228a4d19ac9a55d922e8d90b339c8ae266e7ed02c04",
+          "3bc0bf20e659f2bc4d1b27c9b0b3e6eac77435b56caaf374dba8b90ee3f01793",
+          "3f5accc83f6b8c27eb0b30963be7a3b451bdc1b163980d2244f4367ee8fc069b",
+          "3fcf1b94b41f27d293417898e1510ecae5d77c56ae403e39d299a3e2712ee5e1",
+          "42175ef6cece7c25b47ad293debdc350a851efe036de9fdb3c18913148eb0306",
+          "4477ce65f82ba53c85eb49af97c58fe7ed2cf263898761fcc85d6dffb3d3b0c5",
+          "44f8cb7983396bd788bed1d3050536e14b342fbc9533de65192e0d0621d7383e",
+          "455d53c475366ad016aff75e86e91371533e0f5163d6d6a53790758b814940c0",
+          "4794afee2c4e96641eb5b54ea0c2cb2ac186e405c8308f2b6f3ba119434ef05f",
+          "495a1158e29ae5b96242432a50b27363606d1fe9bad032c73d002c94853fbaf6",
+          "4ac8b8cafef2bbbb350f2c41355c6401fe016a4be316cf633f9cc3b5f643c475",
+          "4b5feff5afee2d413a82ab223ae7584084897836ddc6596f5fa011034e8c57f2",
+          "4bc371ff77a10ee3c43619c7bd8eea182694274285b3edb2beab8f7ba334ba14",
+          "4bfab9628a112e9a15cd1268da9968c04632619f2cfa042ab4cf40d281bb51e5",
+          "4cab003ff6c1a18cd428dcc11c37dc17b2168aefe8a9ba24735a01fdd7adee35",
+          "4d007e9971b6ffd2ed34350216a30e891fc6fa20a8ebb0e8b5552273a58df116",
+          "4f3799e957ec6e00f63c2718d137227f512a01cc6f93d0c1e4d49c3e45652085",
+          "507633e1304ea900f88ca7a6ee2461e1a7bb2718ad99f9b540418ce1516e3f60",
+          "54eee4274db92b85e7148d9581224b47f4badd283103661ae173034ae4eb07fd",
+          "55c17d6c96471d33e8abc0e3d9e0a6554b2eab482179df78c250a47be991b425",
+          "56a24823a14938524bba2238a6d4174425f775f0928859fcbdef8668d5f6ab7c",
+          "58726beb0e7ed135a53c652a22397d40bb873316229ca5c533b8c34c7d544c3e",
+          "5c51cb048a1fa56802c4efefe9eea04b04172322fe66999c463d517a2b15fb4d",
+          "5f6da34f6464b9920739da02922c28d9ea7d4b45f6ac987060a3ad7846fe9510",
+          "600147630d43f091c9e4abf7916d24f95fe4d6fdcc4e428b6bc3c50cda512a2a",
+          "602182484171c55ad69dbc9005ddbd4ae39c820d4181d6c375a6bcd8c8c37214",
+          "60a1ca983cb123ee648d69a7fa43060286851738d2b2c188711520f01d3e7a7d",
+          "61d5057f69a4d73a4a0f88688ee8b4533f90adb04424c151703c1091b0719585",
+          "65e2198108b6a961badc5d2d9dde5bda5fe58288e497d22aadabf254dc83af97",
+          "673c3cc9cf4d40c41b60d096117eec09cef50137195cf8dba6651f5a485837a0",
+          "6a2c4bc243fbd74737ff8c10e7094e8222bffbdb7c07161b68f640840956a797",
+          "6b9f776b4be8a8ce7852a74113fc762da285fc719b3b7e37ec09e88094f34226",
+          "6c0420cd824db3b283171e4394e666ce8a4380987523a71f336c027b89161d3b",
+          "6d9b1a208a404c0b21a0dba2dbad29f3371258f1a38b1bb97fe6548c810fda12",
+          "6db39fae89463d741a49bfe8bd7b791e470c0eef566d290a32b00a7018c4626c",
+          "6ef8e26d864d2bee25c6f9fce8d6061f621ddf8185e0f80cb041419288c4a24b",
+          "701777f3ee7e1c35d0aa38f2718474103da5158eb2d75e0dc2c2b74b3a80d430",
+          "7062c0b95eaef75058ea1c8cc45e2819e182bd7a1b0cffdd0fe97ec4c986fba4",
+          "706d9498536950d76004b887a13c5ef4cfdd9c480161e17a91eebcf702dc0211",
+          "71c8ef5ab8c46ee1a50217965401dc5f9cf70405934d671fc67797e6e6b0e3db",
+          "7334945ba09f88394ae7fc528a8ff9d065871d87da77d5c12db678c5da02372c",
+          "75d31da701fc318378c865d16f95c93c4e009d477d0fd87c80387aa0f6842cfe",
+          "779c8e219b439918eb6c1baad364a36a7fc2ce66385feff4cd0b51dbfc6bd236",
+          "78f6f08bd9bc49967aebd41e7a75807059a810f88cdc832cf89c7e800df0ebda",
+          "796abe4536c19dcc331c2187035bd95d1eb7d5f336677f7c0f97ad83ba417bda",
+          "799804d28c26129f5ce8788ffeeb5d0f36fafae0a3383e3efa9bde8f82bd2271",
+          "7a600f4c756d88cbbade4631fc4a80e5f594dbad4cfbb82dc26c26ccee6f1756",
+          "7bf0cb8dfd5073d3b02668991203f6fdc3ef55c8c730e5edd3274be3d32967bd",
+          "7ca0ad5573a46565924735267a2ef7d9d72f2705bdd3ae717155d20f2fee631b",
+          "7dc7d2b965282409c1c58d5439ecdf38f6e65879f1b79d20ee7d196967038d2b",
+          "8016d0225590c620fc9652ba80d2892fb030ee6c1ac31dfbdd389aa1d624ac40",
+          "8090b025cc81f3e5fa076711fcf9f6f2224238c23e593a389b9744c03c6dc991",
+          "835c715128fad6ec94bee00b042ec5cbe9d63be2dc12d04cada2163047e59d5b",
+          "83744c0ba61a6cf3fc576a36528bd649be6d44d72180086fa5f980cf2841119b",
+          "84aab232b137c771de8ebf5a0eec7a60b9ccfc9dd8722680b2cf2e3a1161e98e",
+          "858ae5c78c2bb99d7a46ecc379fe2d0f969665dfb0e55e4fc268076bbc385559",
+          "88fc27302d17b977b0d6665b1543dc53c4c71c8e5b96e583d4bbf94c6470de43",
+          "8a910f4c99479901d44c92db19e81cfb2d9df1155583dc952500ebc31d79af65",
+          "8c46c5792ed05ae517e2e1ea57a6ee0895caec30ccfe0457e415039e54c42377",
+          "8cb632aa6573d5db720ad0ac59410dcd880f9492b70e15e64149bd20c2c4280b",
+          "8df39b7a366662c28666c756ae1279478ae6c0339e509bdaa2186d35e82fb0ad",
+          "91213edc0a550c45eb3b31bf6cbaeabf7ea8e7a9faf0030c0d79038dc0fb3946",
+          "925960071dfb177c94ab407b99508ae593a7ffecaf22247e1a81f43b55f148f8",
+          "92f540f4b2f13c33d156e1152e914ae95c331ab6834c15992e96a3f89d5c84c6",
+          "94e11934292238add948ea7b3aaa94d24b42b05137f7ddfc3351a70cbf48a51a",
+          "94faea0373d30035c2e77503cbcd7c7badc962ea49eb113a3b63c448a12de39e",
+          "9898059220380ff443302c831963f0be892e481fecd6f601edcd74193699759a",
+          "9a150e662ce706ba4841abc75b73575c669bb527c2a5f549aded0eb07675e4fa",
+          "9c05e1166c78e1ccd135e7d6e46dd552670245998302fa66939f708898418647",
+          "9c3bfef4d3bf1b4406bdffba710a28420fbef59d88b96ae1fca8068fd7fb8e65",
+          "9c74f5935dc2ece9e3e52c21d9e243bb6bbd6f6f8f519e6343df2c5a9d88ebbc",
+          "9d24eab373c521969a9373ac0b87e75dc38e95951fca32c698ed917549193819",
+          "9e59b455ca368761f6d07a2c53761b6d39b99472391ad59c3445b1c704f75b8c",
+          "a0e245e278d1f6452fe15cb3a389a3c4a8284b2e8846e7dee6c14557861b82d0",
+          "a2d03840a8f673c11cee82cdefdc515e90fc68d27e0093b508220b39342d9f9a",
+          "a3479ff2a1b869727ba52c6241de9f84d1a0838e38621eab608f1ac0699f1d61",
+          "a3ce7bb27632c049be2f91cc318ff4b5c5cbd34ff23d2b7fbfc083f266e20890",
+          "a4043d79ff73b1453897fcfb5d6d4c2abbe5b1992d88ca10fa86767e008b296d",
+          "a436b79646c9bf1571af6df86a3768862e15158d729f3945bb2de21a231615dd",
+          "a5ff047fafeb8d4c919fb4da7bd5bef813bec776a01c07f4ab0e88477ea4121d",
+          "a7113a383baf704783e5778081330e592a849f07abb71029d35415a4e7794a73",
+          "aa0a1d841e2eda0e008beb0ede43437342e2b5dab18aa6d2bf856efc17ca2a54",
+          "aa54a99b11c8e14d9d8c6b611d2eeb3415be497b1bb3464cd9b24bb6acaabf11",
+          "ab5d2733502c316ab38b6a5cfad6041967d2f099417d3db385a6acfb77245461",
+          "add41c81346653f0f21ec54b3ffb23c5722f5a18ec82ced767616bfbf96d27ac",
+          "b0d21afa26de8ea6ed7edb6b6d820716624a2dc20070fa44652c599e139cd425",
+          "b14c0d1fe8d8b4e516f25b4d10501c53ae93c8b76cd525d911f1548facbe5529",
+          "b1871724bc3cd7778e2613662f23b7e1ebd3ee6131d5ab0fd2053dd23b7b04a5",
+          "b243b5ae4c96b6139bb801c81a5251066b012fcb362d6c4dd0d7cf02960d580e",
+          "b441e34c8c1d724686533b700494e2dfe68b5d1f2bb9d6d5ea6080616c88780d",
+          "b4692f5b3eda0b3bc5eaa2ee733bceb186af4564aa39f454adc5f32e3a902adb",
+          "b576d0f470836626a46141565ddbce91af910beeef68354888b0b0a09ce71202",
+          "bc9b1bc95fa8c9b111c2bb95e5e35fbb6b75b4fb6d9d12900f3e4ab7190b36f6",
+          "bd690c6064307b51c6643ad2c4e2ccc59c577c55af2b6cbbd72bfc26a751715b",
+          "bdbc6c48b948e56de7376650d61e2d4a731f9e90eab24438a781fa78e4117dad",
+          "c15442ab82856e62cd742bb3432fa421b116848fe1395d7b23d0b1ae3b87f7db",
+          "c21208e6c50a6bdc09d7b876147de3bd8dd64323dc9abba5f9998e3b1f7fe5b6",
+          "c3499ae0e1fe2d6e6b0bdb47715987284700b891f0bfbd4b368484000da0ec4e",
+          "c61ced2755714cf175c91ca72291d264c052808aa254b4ca9f3e7f1b1f98e245",
+          "c6616765ce657255949d9d9f23fed616d1a1bc5fdc73cb5670f2e363fc0fcad1",
+          "c6fbfe3fe19ab5a36db3355029d987bd723561138e0a388813a84873535c9363",
+          "cc6e2711d9adbcf54db0edb2e35bd58abe3b1cd7b0aeede4e918736b2c71be80",
+          "cce7e887604bdb99a23dfa31d931294e9289c2387badfc4edfa88c23416cb6c5",
+          "cd540e70cd7a0339452377eb2c5d0e99d29c1c95370415b7d543f5075eb21727",
+          "cdbaa9cf60159a1f0e367737b3a2463ec8be9bf49db219959c5fbd662582de1f",
+          "ceb757fb00444ff86ebc6b123e5eee78b19ec250bb8dff4bce94e35047b7e9f4",
+          "cece90bcfb1acb44a29346d602088007872a1040775ffb5e6418c9cece6f4f69",
+          "cf960b11517be5a0659016a5b8ed5b5ea788cb969ae9314656e402e1122a7335",
+          "d38a75b3c241a6ecce6c9400f71b0e87bfa20230dfb0b9ec66e8c39753eff83e",
+          "d5070f52262effe216b840711343bff8f2787f39208d887d8dfd9c673f8d1573",
+          "d5c393ee91a52377df0485f1d082280c11ddf8f2302f558d4a63792434ed1eca",
+          "d64c7ca7944f38d47e162db8813463f0d5f258dce9e839216220b1188422bf40",
+          "d74616950ee8224028074b23e544f30d76e7e9746ac30a9d4a0b3638c3857af4",
+          "d79309ad58d5889a865f001ab1824a47e602e9c129641ea1bc4361f5c1f28dbf",
+          "d833479919740eb37194110c15e69466453320623170104be1f588c2131cdfe8",
+          "d8e944a8487b317c51d2cb8e083f1eac6c0c9fcba1fc5dfcb8afb6b133071e7d",
+          "d97f75c6049cb724f45a8e67efcb2e4f187fb665f4d7ff1cfe85e31352f27ce2",
+          "db9fcde39d063f3a03a9a387e64cce82d6f06ca11ff442f82518a69a57b3ea13",
+          "dbd37f380a5851b07f315b049b1d7f4c96024af6ac735a92340ee534b18d563e",
+          "dd8d5b29f59e14e728ac1e76d85593e64fa5dba83102212f8168c49ac134348c",
+          "de4c14be3df2bd11dd6764582efd70c26851c02a49307979fb2d386e96487c57",
+          "e01033a18e673e4d451415603b25de4240b23decc8af186e33a323fb41d4de1d",
+          "e07273e058f78098a8471ba60dad3c07c17f704ffc69e8839bbac02496861ba0",
+          "e263204b9d527c8b9adb327fa4a1d42f9339265e51c7dc47d6c9a34304956843",
+          "e2e6326e5ed2dffb93ce18646b97cfed13881cdbc499857ffd6f58e2b2534653",
+          "e72001f93c1a0f7ee99dc324ff55cca77c72f7a3c6d90aa1ba58057142b4ca84",
+          "e8373decf467e1fe2535372f69fde6b706b131dda67da986b9a7b4f0b9290450",
+          "ea0c689b4e27af5f25f916a76c2c7f0c88f9bce161cc833a2b736055066303ca",
+          "eb4daebb55c749a4e52b0f5543bd4b28baafc88623c2901af7732a8c480c62b9",
+          "ebebac146650a28a52afc7820cb4bdced6f5d6fef06b99a258d6d4b486d69acc",
+          "ecbcf4537bab72e6e440773e88eef0b96f9cc374de8b84f956685bc32496c44c",
+          "edb6c5016843d312670c26432bdaec7d497d167490499e4beb9722eb2d90ba28",
+          "ee1d15e80c277af4f7b9588fb3063e1d70ac23bf530634411f03e94d4a369e2b",
+          "f1bce44caff928a9cc29d773e757f1f8cf74461b8597d64e3bcd2a129babcd1f",
+          "f5ba4ba600d13508bff42c692c8928e15a56f5d64d0217b123ecd1c7d7992e3c",
+          "f800cd76f1989cefb186bf5adabd77446e18afd91ce106c9cea69b70c0ceff13",
+          "fb308542d2001e80d3acc44beb63e36f196799c0938dfec53df642a34164210b",
+          "fbbe8d3864f10e518e815b5f1e4fbfde2ae25d15647b7de7c379bb9ebe3aefb5",
+          "fc6684f563e0ceb629335419325898bcc996eac81e3d89f932e87bff6b92d77f",
+          "fde0be013587a64cb06e17ef0617ae32f7676d981033da81dd70d917b6f85073",
+          "fe30bfc2c1517de84618d38838d9731f7aa76571f4a34a01fc680a2496822b54",
+          "feb9d6d6a34037c2821ffaa29bbc2820beb0a90424143ba00fb55d47a93672d9",
+          "fef8e000dda1fb7100a2e8db823b50e908b341580bcee606c5e67066e5d65b87",
+          "feffac4f40d717e8e70174b0199edeca9741ff30046bd737db5840c0c703272a"
+        ]
+      },
+      "links": [
+        "https://www.reversinglabs.com/blog/threat-researchers-notebook-detection-strategies-for-artex-and-related-forks"
+      ]
+    }
+  }
+]

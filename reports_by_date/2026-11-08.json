@@ -652,5 +652,279 @@
         "https://github.com/Hinln/ARTEX"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-08",
+      "title": "Arabic espionage campaigns",
+      "summary": "Arid Viper-linked actors are running two separate campaigns against Arabic-speaking users in the Middle East, using decoy Arabic survey documents as lures. The first chain uses a macro-enabled Word document that launches an HTA dropper via WMI, which extracts a Go backdoor hidden after the IDAT chunk of a PNG image. The second campaign ships a 4 MB C++ libcurl implant inside a 200 MiB VHDX container, so the payload never receives the Mark-of-the-Web. The two campaigns share targeting and a staging-address habit but no code or infrastructure. A third sample, DWApp, matches ESET's published Arid Gopher report and is assessed with high confidence as Arid Viper activity. The other campaigns are assessed only at moderate confidence, so defenders should follow each chain across the document, script host, image, mounted volume and persistence entry.",
+      "completeness": "High",
+      "threats": [
+        "Motw_bypass_technique",
+        "Aridgopher",
+        "Spear-phishing_technique",
+        "Steganography_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Palestinian"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 25,
+      "software": [
+        "Windows service",
+        "winhttp",
+        "Unix",
+        "macOS",
+        "OpenSSL",
+        "SQLite",
+        "WordPad",
+        "Windows Imaging Component",
+        "Windows shell"
+      ],
+      "algorithms": [
+        "base64",
+        "aes-256-gcm",
+        "xor",
+        "cbc",
+        "pbkdf2",
+        "aes",
+        "zip",
+        "aes-cbc"
+      ],
+      "functions": [
+        "ESET",
+        "Windows",
+        "CreatePNGEncoder"
+      ],
+      "languages": [
+        "powershell",
+        "visual_basic"
+      ],
+      "ttps": [
+        {
+          "id": "T1553.005",
+          "name": "Subvert Trust Controls: Mark-of-the-Web Bypass",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1566.001",
+          "name": "Phishing: Spearphishing Attachment",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1204.002",
+          "name": "User Execution: Malicious File",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.005",
+          "name": "Command and Scripting Interpreter: Visual Basic",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1047",
+          "name": "Windows Management Instrumentation",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1027.003",
+          "name": "Obfuscated Files or Information: Steganography",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1518.001",
+          "name": "Software Discovery: Security Software Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1083",
+          "name": "File and Directory Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1016",
+          "name": "System Network Configuration Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1012",
+          "name": "Query Registry",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1113",
+          "name": "Screen Capture",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1123",
+          "name": "Audio Capture",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1560.001",
+          "name": "Archive Collected Data: Archive via Utility",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1573.001",
+          "name": "Encrypted Channel: Symmetric Cryptography",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1041",
+          "name": "Exfiltration Over C2 Channel",
+          "tactics": [
+            "Exfiltration"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "bc21c0cfa9af29fdfbed7debf6c46c6ae395dc6ee4dadcb12f3b143d29ee3856",
+          "4110481d476d35251269009a51a2db80a855c0f576ab87cd39587c2bb4161298",
+          "eeab260fef2d538abbee63e0e82ada70591adf467c00f1803a078e084cc8bb82",
+          "2959385a23197296bdbd1508213102ecc503c0a91655805de2fc8f9afcfc029d",
+          "8e21d9db7e06b834c76270d5a26b0a443c92dc3f27fa0722e9217b0c8d5d9334",
+          "971d1bc7f3857227574e49b846a1265f77baa12ae0a8cbc4e83238956a9348b9",
+          "d4b266649018ff5b49314f81140bc353236f094f7140141f667151154c5e52d6",
+          "bf548292a63c90ac8607aec358b4cbd5a5a5a6902a35f4b9e4b135c597f69804",
+          "520a44c21283013adac93db06f84f86eabcc280d56df235ce841aaa5a9e1b226",
+          "f4c351880de9ac9a17e533d2ca65df569045f368e4316fff13602f41b53b6011",
+          "0f509f1ec9735b9c141e168b37eabcdcaa222d7e80371e9de15c1b1ff7d6bb8a",
+          "637302c99030a371cd0814041d8b212e073e62daf1755e7cf230c28b8b48c56f",
+          "675ddfe4b9303c7185a6dabaa99e7ef4785492dca0cd69f5dc76ff7c6bd0c337",
+          "b63afd53212e63b70e1ede50f48093c34744bf18592fa3f173e7f971f1273fff"
+        ],
+        "md5": [
+          "12345678901234567890123456789012"
+        ],
+        "ipv4": [
+          "45.56.162[.]130"
+        ],
+        "domain": [
+          "mmarketplaces[.]com",
+          "adodb[.]stream",
+          "wscript[.]shell",
+          "shell[.]run",
+          "kanreki[.]net",
+          "conakrymidi[.]net",
+          "urawareimei-webdesign[.]com",
+          "web-assets.esetstatic[.]com"
+        ],
+        "url": [
+          "hxxps://conakrymidi[.]net//api/jpv4urbWV2HF",
+          "hxxps://urawareimei-webdesign[.]com//api/jpv4urbWV2HF",
+          "hxxps://www.google[.]com",
+          "hxxp://45.56.162[.]130/content/helpss.hta",
+          "hxxp://45.56.162[.]130/content/view.png",
+          "hxxp://45.56.162[.]130/content/ViewData.png",
+          "hxxp://45.56.162[.]130/content/1995.docx",
+          "hxxp://45.56.162[.]130/content/421062026.docx",
+          "hxxps://web-assets.esetstatic[.]com/wls/en/papers/threat-reports/eset-apt-activity-report-q2-2026-q3-2026.pdf"
+        ]
+      },
+      "links": [
+        "https://github.com/NextronSystems/iocs/tree/master/reports/Arabic%20espionage%20campaigns%20",
+        "https://github.com/NextronSystems/iocs/commit/949a8a2b9e0641cc77d408b4b0ff5d0128ae4494",
+        "https://github.com/NextronSystems/iocs/blob/master/reports/Arabic%20espionage%20campaigns%20/readme.md",
+        "https://github.com/NextronSystems/iocs/tree/master/reports"
+      ]
+    }
   }
 ]

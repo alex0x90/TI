@@ -1,0 +1,316 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-15",
+      "title": "Analysis of a New North Korea-Linked NodeLinkRAT That Abused a Public Memo Service as C2",
+      "summary": "North Korea-linked actor, attributed with moderate confidence to Kimsuky, ran a reply-baiting spear-phishing campaign against South Korean policy and security personnel, posing as a National Assembly aide offering a seminar honorarium. The lure was a ZIP containing a disguised HWP-document shortcut (LNK) that launched a fileless PowerShell chain, using legitimate tools and obfuscated commands. The chain set up a scheduled task and repeatedly fetched instructions from a public note-sharing service, which the attackers changed over time to deliver XenoRAT, data-harvesting and document-theft scripts, and finally the Node.js-based NodeLinkRAT. Exfiltration went to Dropbox, MEGA and free Korean web hosting, so blocking those services outright is impractical. Defenders should correlate behaviors such as LNK execution, script fetching, scheduled-task creation and Node.js installation in a single attack chain, rather than relying on file names, signatures or domains.",
+      "completeness": "High",
+      "threats": [
+        "Nodelink_rat",
+        "Spear-phishing_technique",
+        "Xenorat",
+        "Lolbin_technique",
+        "Polymorphism_technique",
+        "Megacmd_tool",
+        "Teamviewer_tool"
+      ],
+      "geo": [
+        "Japanese",
+        "Korean",
+        "Japan",
+        "India",
+        "North korean",
+        "South korea",
+        "North korea"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Dropbox",
+        "Node.js",
+        "curl",
+        "Telegram",
+        "pbox app",
+        "e.js runt",
+        "Windows runtime",
+        "ropbox",
+        "f",
+        "Gmail"
+      ],
+      "algorithms": [
+        "zip",
+        "base64",
+        "xor",
+        "aes-256-gcm",
+        "exhibit",
+        "md5"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "php",
+        "vbscript"
+      ],
+      "iocs": {
+        "md5": [
+          "12345678901234567890123456789012",
+          "6985f297c03520a5852734a385322d8d",
+          "a151531b792b1df1eec8d3a6a8e1ded5",
+          "a15df586bf29e7c1a5db64d603cee382",
+          "7575d230350299cfde0c4f993d761333",
+          "cbcb66b530fb4f03d7dc9d55271b2ce4",
+          "ef317291bf88651666133abe84f115f0"
+        ],
+        "ipv4": [
+          "103.81.116[.]10",
+          "207.148.112[.]166",
+          "185.27.134[.]207",
+          "185.27.134[.]120",
+          "211.223.14[.]75"
+        ],
+        "domain": [
+          "notepal[.]me",
+          "hypernotepad[.]com",
+          "mega[.]nz",
+          "oppsite.dothome.co[.]kr",
+          "inmain.22web[.]org",
+          "owna.loveslife[.]biz",
+          "nid.weffm.p-e[.]kr",
+          "nid.naver[.]com",
+          "epaper.dothome.co[.]kr"
+        ],
+        "url": [
+          "hxxps://epaper.dothome.co[.]kr/******/?…"
+        ]
+      },
+      "links": [
+        "https://www.genians.co.kr/blog/threat_intelligence/nodelinkrat"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-15",
+      "title": "Tendril",
+      "summary": "Tendril is a modular Windows persistence toolkit comprising a C# assembly, a unified BOF, a Mythic command, and a Cobalt Strike aggressor script, with 22 modules that the author reports as 24/24 tested on a live target. The modules cover techniques such as COM object hijacking, WMI event subscriptions, hidden scheduled tasks, IFEO debugger abuse, AppInit_DLLs, Active Setup, and LSASS security support provider loading, with several requiring administrator rights. Some modules are designed for stealth, such as WMI subscriptions that store no files, registry entries, or services and that Sysmon 19/20/21 can detect, and scheduled tasks hidden from schtasks and most EDR enumeration. Other modules are reconnaissance tools that identify writable DLL, PATH, and service binary locations for hijacking. The report includes build instructions, usage examples, and references to prior persistence research, but it does not state a specific defensive takeaway.",
+      "completeness": "Medium",
+      "threats": [
+        "Tendril_tool",
+        "Cobalt_strike_tool",
+        "Mythic_c2_tool",
+        "Apollo_mythic",
+        "Emeraldstrike",
+        "Com_hijacking_technique",
+        "Tarrask",
+        "Steganography_technique",
+        "Covenant_c2_tool",
+        "Grunt",
+        "Pixynetloader",
+        "Crystal_palace_tool",
+        "Caro-kann_tool",
+        "Byovd_technique",
+        "Polymorphism_technique",
+        "Dll_hijacking_technique",
+        "Clickfix_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 21,
+      "software": [
+        "Task Scheduler",
+        "Winlogon",
+        "Linux"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "go",
+        "TaskCache"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "ttps": [
+        {
+          "id": "T1546.015",
+          "name": "Event Triggered Execution: Component Object Model Hijacking",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1546.003",
+          "name": "Event Triggered Execution: Windows Management Instrumentation Event Subscription",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1546.002",
+          "name": "Event Triggered Execution: Screensaver",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1546.012",
+          "name": "Event Triggered Execution: Image File Execution Options Injection",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1037.001",
+          "name": "Boot or Logon Initialization Scripts: Logon Script (Windows)",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.004",
+          "name": "Boot or Logon Autostart Execution: Winlogon Helper DLL",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1546.010",
+          "name": "Event Triggered Execution: AppInit DLLs",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1546.008",
+          "name": "Event Triggered Execution: Accessibility Features",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1546.013",
+          "name": "Event Triggered Execution: PowerShell Profile",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1546.007",
+          "name": "Event Triggered Execution: Netsh Helper DLL",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1547.010",
+          "name": "Boot or Logon Autostart Execution: Port Monitors",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.005",
+          "name": "Boot or Logon Autostart Execution: Security Support Provider",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.003",
+          "name": "Boot or Logon Autostart Execution: Time Providers",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1547.014",
+          "name": "Boot or Logon Autostart Execution: Active Setup",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1197",
+          "name": "BITS Jobs",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1574.002",
+          "name": "Hijack Execution Flow: DLL Side-Loading",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1574.007",
+          "name": "Hijack Execution Flow: Path Interception by PATH Environment Variable",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1574.010",
+          "name": "Hijack Execution Flow: Services File Permissions Weakness",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1204.004",
+          "name": "User Execution: Malicious Copy and Paste",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        }
+      ],
+      "links": [
+        "https://github.com/Whispergate/Tendril"
+      ]
+    }
+  }
+]

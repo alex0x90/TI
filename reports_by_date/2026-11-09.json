@@ -851,5 +851,75 @@
         "https://rogueauthority.org/signed-fake-windows-dll-bits-backdoor"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-09",
+      "title": "Contagious Interview - One Interview Away From Infection",
+      "summary": "JFrog's report exposes AccuraSoftHire, a fake company whose careers site, job ads, recruiter personas and take-home coding test deliver malicious npm packages to job candidates. The operation hides a loader in a Tailwind plugin look-alike inside a take-home project, and the operator re-points the task to a new package each time npm removes one. The company's careers site also hands candidates a \"camera driver\" installer script that runs a payload, so the malware is served from the company's own website. Researchers linked the recruiter, task author and package publishers through shared email addresses and account activity. Defenders should treat any take-home that asks for a driver install as an attack, open unknown projects in VS Code restricted mode, and run take-home code in isolated environments.",
+      "completeness": "Medium",
+      "threats": [
+        "Dead_drop_technique",
+        "Polinrider"
+      ],
+      "geo": [
+        "North korea",
+        "United states",
+        "North korean",
+        "Georgia"
+      ],
+      "software": [
+        "Gmail",
+        "curl",
+        "macOS",
+        "Linux",
+        "Chrome"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "binance",
+        "ethereum",
+        "aptos"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "functions": [
+        "setTimeout",
+        "getUserMedia"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha1": [
+          "a322e5f3d311d3080e6f0121063e9adc2490ef1a",
+          "67b38e9b67b38e9b68656c6c6f6970626f742121"
+        ],
+        "domain": [
+          "eth.blockscout[.]com",
+          "accurasofthire[.]com"
+        ],
+        "url": [
+          "hxxps://accurasofthire[.]com/camera-driver/setup-win",
+          "hxxps://accurasofthire[.]com/camera-driver/setup-mac",
+          "hxxps://accurasofthire[.]com/camera-driver/setup-linux",
+          "hxxps://accurasofthire[.]com/camera-driver/ack",
+          "hxxps://eth.blockscout[.]com/api",
+          "hxxp://accurasofthire[.]com/notification-settings-win?download=1"
+        ],
+        "email": [
+          "handy.apple117[@]gmail[.]com",
+          "antongoss11995[@]gmail[.]com",
+          "oleksandr.hryniuk[@]accurasofthire[.]com",
+          "support[@]accurasofthire[.]com"
+        ]
+      },
+      "links": [
+        "https://research.jfrog.com/post/accurasofthire-fake-interview/"
+      ]
+    }
   }
 ]

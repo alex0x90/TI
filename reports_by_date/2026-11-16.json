@@ -1,0 +1,1293 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "Hackers Disguise LOTUSLITE V2 Malware as Indo-Pacific Security Assessment to Compromise Windows Systems",
+      "summary": "A Thailand-focused campaign distributes LOTUSLITE V2, a .NET successor to the C++ LOTUSLITE backdoor, disguised as an Indo-Pacific economic and security assessment. The intrusion starts with a public Zoho WorkDrive link to an archive, and executing its launcher stages a signed PDFgear executable that side-loads a malicious DLL. The malware establishes persistence through a Run key when running as SYSTEM or a user Load value otherwise, and it hijacks the PdfGear document file-association command. Its encrypted command-and-control uses AES-256-GCM over WebSockets and a new PRO1 protocol marker, so older signatures may miss it. The Mustang Panda link is an analytical assessment, not confirmed attribution. Defenders should correlate DeviceSync staging, suspicious PDFgear child processes, and persistence changes rather than relying only on network signatures.",
+      "completeness": "Low",
+      "threats": [
+        "Lotuslite",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "Indo-pacific",
+        "Thailand"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "algorithms": [
+        "xor",
+        "aes-256-gcm"
+      ],
+      "iocs": {
+        "ipv4": [
+          "31.59.184[.]185",
+          "103.175.50[.]32"
+        ]
+      },
+      "links": [
+        "https://gbhackers.com/lotuslite-v2-malware/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "Five Years Chasing Gootloader",
+      "summary": "Operation Endgame disrupted Gootloader's infrastructure on November 12, 2026, as described in this first-person account by a threat hunter who has tracked the malware since 2021. Gootloader was traced to the Gootkit family and spread through compromised WordPress blogs that hosted malicious files and hidden SEO spam posts to boost Google rankings. The researcher reverse-engineered the backdoor's color-value scheme by brute-forcing hashes on a GPU, which let them identify many compromised sites. After an outside cleanup effort in 2022, the attackers changed the backdoor, making it far harder to crack. The author notes that many victim organizations were hard to warn and that some infections later appeared on ransomware leak sites.",
+      "completeness": "Low",
+      "threats": [
+        "Gootkit"
+      ],
+      "software": [
+        "WordPress",
+        "Twitter",
+        "Cloudflare"
+      ],
+      "algorithms": [
+        "md5",
+        "zip",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "cscript",
+        "javascript"
+      ],
+      "iocs": {
+        "domain": [
+          "my-game[.]biz"
+        ]
+      },
+      "links": [
+        "https://gootloader.wordpress.com/2026/11/12/five-years-chasing-gootloader/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "Malware Must Die!: MMD-072-2026 - ARTEX detection signature pack - from IOC w/playbook process",
+      "summary": "The MalwareMustDie project released MMD-072-2026, a public, behavior-first detection pack (now v1.1.6) for misuse of the ARTEX AI pentest framework, an LLM-driven tool used in multiple campaigns from mid-2026. The pack covers Sigma, Sentinel KQL, Suricata, Snort, osquery, YARA, STIX and Zeek formats, and it targets web, identity, cloud and CI/CD telemetry. Because ARTEX indicators change quickly across forks, the pack treats IP and string indicators as short-lived context and relies on behavioral rules such as recon chains, password spraying, OAuth and application-credential abuse, and cloud secret sweeps. All rules are experimental and should be deployed in monitor-only mode and validated against local benign data before use. IP indicators are tiered as shared or past-incident infrastructure, with a warning against auto-blocking.",
+      "completeness": "High",
+      "threats": [
+        "Artex_tool",
+        "Winrm_tool",
+        "Psexec_tool",
+        "Password_spray_technique",
+        "Wisp",
+        "Vshell",
+        "Adaptixc2_tool",
+        "Cairn_tool",
+        "Cyberstrikeai_tool",
+        "Blutter_tool",
+        "Neo-regeorg_tool",
+        "Nuclei_tool",
+        "Lolbin_technique",
+        "Pentagi_tool",
+        "Supply_chain_technique",
+        "Dll_sideloading_technique",
+        "Bloodalchemy",
+        "Cobalt_strike_tool",
+        "Netcat_tool",
+        "Nmap_tool",
+        "Evil-winrm_tool",
+        "Impacket_tool",
+        "Chisel_tool",
+        "Dcsync_technique",
+        "Kerberoasting_technique",
+        "Interactsh_tool"
+      ],
+      "geo": [
+        "Korean",
+        "Japanese",
+        "South korean"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 1,
+      "software": [
+        "Linux",
+        "Cloudflare",
+        "Docker",
+        "Claude",
+        "DeepSeek",
+        "Claude Code",
+        "Telegram",
+        "Metabase",
+        "OpenAI",
+        "Codex",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "functions": [
+        "zeek_init",
+        "GetId",
+        "GetCredentialsForIdentity",
+        "GetLogEvents",
+        "LLM-API",
+        "ARM",
+        "Get-Service",
+        "CreateVolume"
+      ],
+      "languages": [
+        "python",
+        "php",
+        "powershell"
+      ],
+      "ttps": [
+        {
+          "id": "T1595.003",
+          "name": "Active Scanning: Wordlist Scanning",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1530",
+          "name": "Data from Cloud Storage",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1083",
+          "name": "File and Directory Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1606.001",
+          "name": "Forge Web Credentials: Web Cookies",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1213",
+          "name": "Data from Information Repositories",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1110.003",
+          "name": "Brute Force: Password Spraying",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1078.004",
+          "name": "Valid Accounts: Cloud Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1528",
+          "name": "Steal Application Access Token",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1552.001",
+          "name": "Unsecured Credentials: Credentials In Files",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1505.003",
+          "name": "Server Software Component: Web Shell",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1059.004",
+          "name": "Command and Scripting Interpreter: Unix Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1136.001",
+          "name": "Create Account: Local Account",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1611",
+          "name": "Escape to Host",
+          "tactics": [
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1098.001",
+          "name": "Account Manipulation: Additional Cloud Credentials",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1098.003",
+          "name": "Account Manipulation: Additional Cloud Roles",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1518.001",
+          "name": "Software Discovery: Security Software Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        }
+      ],
+      "iocs": {
+        "ipv4": [
+          "178.16.54[.]129",
+          "178.15.54[.]129",
+          "144.172.64[.]99",
+          "144.172.64[.]128",
+          "187.15.88[.]186",
+          "144.172.64[.]60",
+          "38.244.50[.]120",
+          "101.53.80[.]20",
+          "205.214.59[.]31",
+          "124.155.252[.]63",
+          "154.201.79[.]246",
+          "23.248.249[.]90",
+          "23.248.226[.]250",
+          "104.194.150[.]21",
+          "167.88.172[.]97",
+          "199.19.77[.]84",
+          "207.5.195[.]93",
+          "187.15.90[.]217",
+          "187.15.89[.]186",
+          "23.158.220[.]98",
+          "103.248.148[.]84",
+          "203.160.133[.]172",
+          "209.209.85[.]38",
+          "23.248.226[.]251",
+          "23.248.226[.]252",
+          "23.248.226[.]253",
+          "23.248.226[.]254",
+          "161.8.161[.]140",
+          "31.59.92[.]155",
+          "31.56.206[.]187",
+          "46.8.227[.]73",
+          "64.44.24[.]195",
+          "94.183.184[.]98",
+          "94.183.184[.]254",
+          "95.182.99[.]112",
+          "176.65.144[.]71",
+          "199.19.95[.]66",
+          "199.19.95[.]67",
+          "199.19.95[.]68",
+          "91.92.240[.]238",
+          "85.11.168[.]45",
+          "85.11.167[.]52",
+          "31.77.229[.]35"
+        ],
+        "domain": [
+          "webhook[.]site",
+          "xcai[.]pro",
+          "api.deepseek[.]com",
+          "dnslog[.]cn",
+          "staging.artex[.]lol",
+          "artex.tokena2b[.]top",
+          "artex.ok7777.eu[.]cc",
+          "artex.noog2infra[.]site",
+          "open.bigmodel[.]cn",
+          "api.db-ip[.]com",
+          "hack[.]lu"
+        ]
+      },
+      "links": [
+        "https://blog.malwaremustdie.org/2026/11/mmd-072-2026-artex-detection-signature.html",
+        "https://github.com/unixfreaxjp/malwaremustdie/blob/master/etc/artex-stix-osquery-sigma-kql-snort-suricata-yara/tests/",
+        "https://github.com/unixfreaxjp/malwaremustdie/tree/master/etc/artex-stix-osquery-sigma-kql-snort-suricata-yara/tools",
+        "https://github.com/unixfreaxjp/malwaremustdie/blob/master/etc/artex-stix-osquery-sigma-kql-snort-suricata-yara/iocs/mmd-artex-iocs.csv"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "WPPConnect Compromised: Malicious Releases Steal Secrets and WhatsApp Sessions Through the Project's Own Pipeline",
+      "summary": "Malicious releases of two WPPConnect npm packages, @wppconnect-team/wppconnect 2.4.1 and @wppconnect/server 2.10.82, shipped a diagnostics module that steals environment variables, .env and config files, and WhatsApp session tokens. The payload runs on import or server start, so npm install --ignore-scripts does not prevent it. The malicious code was built and published through the project's own GitHub Actions pipeline with valid provenance, after unreviewed commits were pushed to default branches. The project then force-pushed history and deleted tags, so tagged source on GitHub no longer matched the published tarballs. Affected Docker images, nightly release assets, and CI jobs that imported the library are also exposed. Defenders should search lockfiles and image digests, treat any exposed secrets and WhatsApp sessions as compromised, pin to library 2.4.0 and server 2.10.81, and add a release-age delay and egress allowlist.",
+      "completeness": "Low",
+      "threats": [
+        "Mitm_technique",
+        "Typosquatting_technique"
+      ],
+      "software": [
+        "WhatsApp",
+        "Telegram",
+        "Docker",
+        "arrayref"
+      ],
+      "algorithms": [
+        "base64",
+        "sha1",
+        "sha256"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "iocs": {
+        "sha256": [
+          "56a546a38f6e59509f627168c8d67f9c87fd487babf3ad91f375fe99a235c4c7",
+          "cc01ce839afeaf865cfeff2e020288f721c46941e14a4e42b0f88e554c7f6aeb",
+          "7c882ee934a5663a107b5f5a0382bfd8b1fb95150cd21ab35cd8ff9cea70d1f8"
+        ],
+        "sha1": [
+          "dee571e55aef07e648d675055a45fcef13f9e586",
+          "755274304012c7489e85c23da3c2423d184d113b",
+          "950514e4fea481c0770bd618274cecb306bd8d56",
+          "06caa8c6f5f06e47900d5466289b4aab2753add3",
+          "27ed8e343f0393978c63f84888eeb9b8fa197852",
+          "bdddf54ca86019c853ba68c2eeca45c2ac8128d6",
+          "ccdc9c9eb6fed6cf17067fbedbc0b0c62aacb7ea"
+        ],
+        "domain": [
+          "api.ipify[.]org"
+        ],
+        "url": [
+          "hxxps://api.ipify[.]org?format=json"
+        ]
+      },
+      "links": [
+        "https://www.stepsecurity.io/blog/wppconnect-compromised-malicious-releases-steal-secrets-and-whatsapp-sessions",
+        "https://github.com/wppconnect-team/wppconnect-server/issues/2734",
+        "https://github.com/wppconnect-team/wppconnect/issues/2968"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "CVE-2026-84869 in ScreenConnect Exploited to Run Malicious Files on MSP Technician Accounts",
+      "summary": "ConnectWise's CVE-2026-84869 (CVSS 9.9) lets a guest in a ScreenConnect session trigger file transfers that the technician's host client runs without prompt or confirmation, including with elevated rights. Huntress observed attackers spraying MSP ScreenConnect servers with hundreds of thousands of \"run file\" requests for update.bat-style files, waiting for technicians to join. On November 12, one technician's workstation was fully compromised within about 9 seconds, after which a rebranded ScreenConnect client named WindowsUpdate.WindowsClient.exe connected to the attacker's relay. Other activity included canary tests, path traversal attempts into technicians' Startup folders, and near-misses. Defenders should update host clients to 26.6.5 or later, or remove the TransferFiles permission as an interim step.",
+      "completeness": "Medium",
+      "threats": [
+        "Screenconnect_tool",
+        "Sckit_tool"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 18,
+      "software": [
+        "Telegram",
+        "curl",
+        "Windows Service",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "languages": [
+        "powershell",
+        "vbscript"
+      ],
+      "ttps": [
+        {
+          "id": "T1583.001",
+          "name": "Acquire Infrastructure: Domains",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1608.001",
+          "name": "Stage Capabilities: Upload Malware",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1199",
+          "name": "Trusted Relationship",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1203",
+          "name": "Exploitation for Client Execution",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1547.001",
+          "name": "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1543.003",
+          "name": "Create or Modify System Process: Windows Service",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1134.002",
+          "name": "Access Token Manipulation: Create Process with Token",
+          "tactics": [
+            "Stealth",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1564.003",
+          "name": "Hide Artifacts: Hidden Window",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1218.007",
+          "name": "System Binary Proxy Execution: Msiexec",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1027.004",
+          "name": "Obfuscated Files or Information: Compile After Delivery",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1012",
+          "name": "Query Registry",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1518",
+          "name": "Software Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1049",
+          "name": "System Network Connections Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1102.003",
+          "name": "Web Service: One-Way Communication",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1219.002",
+          "name": "Remote Access Tools: Remote Desktop Software",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1571",
+          "name": "Non-Standard Port",
+          "tactics": [
+            "Command and Control"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "f8871b1561d5c77c297378a7f49c84de52a01ff297395544f0e95d13ef972841"
+        ],
+        "ipv4": [
+          "91.224.92[.]167",
+          "193.26.115[.]63",
+          "57.128.131[.]66",
+          "91.224.92[.]83",
+          "107.148.223[.]37",
+          "194.15.36[.]33",
+          "162.35.40[.]249",
+          "64.20.44[.]120",
+          "103.195.102[.]66",
+          "103.195.102[.]76",
+          "199.127.60[.]150",
+          "199.127.62[.]58",
+          "181.215.242[.]106",
+          "162.35.167[.]105",
+          "23.92.65[.]131",
+          "23.94.77[.]110",
+          "198.23.165[.]181",
+          "107.173.186[.]58",
+          "50.114.203[.]14",
+          "38.18.228[.]165",
+          "66.118.239[.]23",
+          "74.235.98[.]176",
+          "172.81.61[.]149",
+          "178.173.246[.]85",
+          "154.30.4[.]248",
+          "107.148.223[.]103",
+          "103.195.100[.]70",
+          "103.195.100[.]69",
+          "38.18.229[.]249",
+          "98.142.247[.]243",
+          "45.13.233[.]32",
+          "38.18.228[.]173",
+          "199.127.60[.]149"
+        ],
+        "domain": [
+          "masterdarky[.]com",
+          "wscript[.]shell"
+        ],
+        "url": [
+          "hxxps://masterdarky[.]com/WindowsUpdate.msi"
+        ]
+      },
+      "links": [
+        "https://www.huntress.com/blog/cve-2026-84869-screenconnect-technician-exploitation"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "Poisoned Scripts on BBC, Zoom and Other Major Websites Linked to iPhone Exploit Loaders",
+      "summary": "Poisoned third-party Optimizely, Kissmetrics, StorifyMe and minute-ly code was served to visitors of major websites including BBC, Zoom, HSBC UAE and Fox Sports. The injected code carries a browser-based financial-theft module that substitutes cryptocurrency addresses and includes card-skimming behavior. The same delivery channel also routes to iPhone exploit-kit stages linked to Coruna and DarkSword, though these are delivery observations rather than proven device compromises. Audience figures for the affected sites are context only and do not measure victims, and the number of affected visitors or successful thefts remains unknown. Defenders should remove the poisoned code, block both delivery paths, and treat blocking domains alone as insufficient because some specimens embed a full fallback payload.",
+      "completeness": "High",
+      "threats": [
+        "Coruna_tool",
+        "Darksword_tool"
+      ],
+      "geo": [
+        "Singapore"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "salesforce",
+        "Google Chrome",
+        "Chrome",
+        "Cloudflare"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "solana",
+        "litecoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "xor"
+      ],
+      "functions": [
+        "IP-sync"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "2033556a49942224b486e70fa8beeaeae4265dc4b10adffec2326c002d30397b",
+          "f7b84b9a94f749f8ced3f0112d0a66894e8bbc3b4aa5592021d1b8976a9bad40",
+          "c2a34c579e4c2e8802752c93b3a9cca0230610f3e4dd6688f4272459c7c7c162",
+          "a87a2eaea9cfb74aae7283d15fbdb499b5a8ebc3fab4c453df7d62e503996240",
+          "305d0b00a7bafae9f240dbaf5bfdbb19648e38e509e8992112fcb7866c2e37dc",
+          "295f2ff6b934e7be8c07d501b0561a9a7da29e0fa775b742613a6edb0d0b6069",
+          "3fa37e49fbf39434d03a6078d2d6cffcd4451fa0d4eccdea8c48b7462c780dd4",
+          "aa0706634eecc9d833c8a0b353099c26083f22bd742ccf81d8942ed6b1798b75",
+          "d3f01f57103b8bcf07b6f18551f29885ffd61de190e2184249f824d2c268e09f",
+          "19b1f83f333424326aaceaa4e84dac2a378684b4d2475c73b272b2e4b409e415",
+          "9cab90c80b9a668cbf3ba2489671e7870885273ceb7c0e56ae478fceb14ffc34",
+          "0f2f2a27d19112e5800541daecc91eb6c77e49f9b43ed23c890b876631978533",
+          "123f813b18cf5a3b513beabd52a110e19f1c7834f2aa9b972633b2214c57e737",
+          "8d69f32fff37208e52dc573111e8db99f031f4913845a24fb2e14755747ac860",
+          "e410b6509f33defce16ad7896cbe2fb3cc689f2cc53d87c87d75efba6b57e290",
+          "f286c965982bee4225c4edda261ce8685a55721dd997ddedf106666101118c07",
+          "435987c1d7f4da3d4a6d3175538d32751d1a6d55a38dcc9d39c24399a8eaa6fa",
+          "792deb03483ce9b212df6f46319a78ea6fc39bfc5b2719c7e8b87d084524437d",
+          "9039ebbdd6abe36ad8ac48097dae6813d4a49315e1403c9ae7ebab539601cde6",
+          "7175872c4fff6eba2bb98f5a86093f80178baac85b0973a344a4720aab806b92",
+          "c154f3b644cd51f2446483c7ffd2ae4f178c4b0cb54846cfb5b83215367349cf",
+          "aebab839a4335477a51d75ce19d0596df5bed4259c2444aba664f2602ce24618",
+          "94d174abe1e3b12b000f2bc8cbd8e9344290f4b5a8661c8d700cdc5675675fba",
+          "0408c5e199664c7841c4dfdb6e5065ca394f11247e5ed992ce28ecaafc936455",
+          "0d13b2c39d5911cc6a17eeeda72d40f86fce6cb0665faef22df204f6ee0a60b7",
+          "45e42f5fa7520f6e7c048587f025549b31f0f24be8be058c7037d1da37e37b67",
+          "515ddf846086fec3215c2574611b4c338f5b7533a8fd5f3c2234c35bf7f7c004",
+          "b18941eb7623508594483dc4b338a02661730a363b6732806c539640f981ee44",
+          "5913a8225d16b7d3caf0bef504307c8c89e958fd27cd2be59f45108fd09991aa",
+          "8bf4cb2fd2d31ccf209bfa58e21e488e61bc2ab9fa3e1ed11b98f4e0618fab98",
+          "617df364120adc47fb4f55dcc0c69a9b6c9e108a92c60bc2b64a266254ab02f3",
+          "450794992ffe035dce462ef669c6ac46e1a9e87b7b0af3e8f9040f9436cd896f",
+          "2f69879f1c5bdfe9c075ef67ddb6405afe992aff89dcf42863567f83237d3ba6",
+          "3c693a9e3117d84ba62a20012ba7d5c41f91ece27a5ec1b367e34bf7559fabdb"
+        ],
+        "sha1": [
+          "7541feb9b98160c21c87c2a9218d9456e3918643",
+          "c4026b06d82b0f0b363eda0642d61cfbdc17884e"
+        ],
+        "md5": [
+          "34ef644ff217a50beadde64dc8e23a7d"
+        ],
+        "ipv4": [
+          "136.113.106[.]136"
+        ],
+        "domain": [
+          "1688360[.]cc",
+          "webshell[.]lol",
+          "bbc[.]com",
+          "about.gitlab[.]com",
+          "stamps[.]com",
+          "securitybank[.]com",
+          "buzzstream[.]com",
+          "chicagoitsupport[.]com",
+          "faz[.]net",
+          "smh.com[.]au",
+          "unibas[.]ch",
+          "vidaxl.co[.]uk",
+          "salesforce[.]com",
+          "edition.cnn[.]com",
+          "foxsports[.]com",
+          "mutualofomaha[.]com",
+          "foxnews[.]com",
+          "5vobauua3ojpklx[.]icu",
+          "eil786npto9u5bq[.]icu",
+          "ios-hack[.]icu",
+          "je4ft3gn8vxudum[.]icu",
+          "l7bcsnwc7nzr3uo[.]icu",
+          "zoom[.]com",
+          "q1ls1ho9x7wsxlu[.]icu",
+          "p55abnw2pnsz0bo[.]icu",
+          "1y69gy2mdzaltz1[.]icu",
+          "gm38duxoihbmy5o[.]icu"
+        ]
+      },
+      "links": [
+        "https://www.infostealers.com/article/poisoned-scripts-on-bbc-zoom-and-other-major-websites-linked-to-iphone-exploit-loaders/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "GzipGnaw ClickFix kit",
+      "summary": "GzipGnaw is a ClickFix loader that stores its next stage encrypted and compressed in an Ethereum Sepolia contract, a technique known as EtherHiding. It has been matched on 6,443 sites since 3 August, with 2,706 matches in the last 30 days as of 25 November 2026. The loader fetches the contract's bytes, decrypts and decompresses them in the browser, and runs the result, while caching responses in local storage. Some sites also carry a misspelled fake tag manager script, goolgetagmanager.js. Of 1,042 sites recaptured at least 25 days after first match, 69% were still serving it, and 95% of recent sites run WordPress.",
+      "completeness": "Medium",
+      "threats": [
+        "Gzipgnaw_tool",
+        "Clickfix_technique",
+        "Etherhiding_technique"
+      ],
+      "software": [
+        "WordPress",
+        "curl",
+        "sudo"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-256-gcm",
+        "base64"
+      ],
+      "iocs": {
+        "sha1": [
+          "0321c73150543faa9d016c9c46abf293eb6839e4",
+          "c0b115978ab0a985ed081cb609f35e7888ccdcf0",
+          "d6cc368f8b2c62b781dc8407eb1c9ede74949fa8"
+        ],
+        "ipv4": [
+          "111.0.0[.]2"
+        ],
+        "domain": [
+          "zvh4[.]com",
+          "zvh3[.]com",
+          "kqdztkzavmuni.zhv8[.]com",
+          "gwsfkxdgvdbnz.xzx1[.]com",
+          "trxllvxewesmu.zvx1[.]com",
+          "fzwwyfvxcbilj.kzl1[.]com",
+          "bvpbenkzzthqq.zo15[.]com",
+          "birdo[.]site",
+          "archive.kali[.]org",
+          "socialviewsec[.]lc"
+        ],
+        "url": [
+          "hxxp://kqdztkzavmuni.zhv8[.]com/s/w/1",
+          "hxxp://gwsfkxdgvdbnz.xzx1[.]com/s/w/1",
+          "hxxp://trxllvxewesmu.zvx1[.]com/s/w/1",
+          "hxxp://fzwwyfvxcbilj.kzl1[.]com/s/w/1",
+          "hxxp://bvpbenkzzthqq.zo15[.]com/s/w/1",
+          "hxxps://birdo[.]site/LLxZY2r36FcfDdmF",
+          "hxxp://111.0.0[.]2/nsfocus",
+          "hxxps://archive.kali[.]org/archive-keyring.gpg",
+          "hxxps://socialviewsec[.]lc/p?d=aa390893&echo"
+        ]
+      },
+      "links": [
+        "https://ohey.ca/threats/clickfix/gzipgnaw/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "Emerging Threat: Optimizely and Three Other Providers Poisoned in iOS Exploit and Skimming Campaign",
+      "summary": "Attackers injected malicious code into third-party JavaScript served from Optimizely Web Experimentation, Kissmetrics, StorifyMe, and minute-ly, affecting major sites including CNN, Zoom, and the BBC. Visitors were served a payment card skimmer and a cryptocurrency address swapper that replaces wallet addresses in page content and form fields. On iPhone and iPad visitors, the injected code also loads additional stages linked to Coruna and DarkSword iOS exploit kits. The root cause and attacker remain unidentified, and Optimizely has not published guidance. Defenders should review Optimizely project JavaScript for the injected loader, block the listed domains via CSP, check for unauthorized script changes, and treat pages collecting card data directly as high risk.",
+      "completeness": "High",
+      "threats": [
+        "Coruna_tool",
+        "Darksword_tool",
+        "Clickfix_technique"
+      ],
+      "geo": [
+        "Italian",
+        "Singapore"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "curl",
+        "Salesforce",
+        "Brevo",
+        "iPadOS"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "ethereum",
+        "bitcoin",
+        "solana",
+        "litecoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "iocs": {
+        "sha256": [
+          "c2a34c579e4c2e8802752c93b3a9cca0230610f3e4dd6688f4272459c7c7c162",
+          "0f2f2a27d19112e5800541daecc91eb6c77e49f9b43ed23c890b876631978533",
+          "c154f3b644cd51f2446483c7ffd2ae4f178c4b0cb54846cfb5b83215367349cf",
+          "0408c5e199664c7841c4dfdb6e5065ca394f11247e5ed992ce28ecaafc936455",
+          "123f813b18cf5a3b513beabd52a110e19f1c7834f2aa9b972633b2214c57e737",
+          "8d69f32fff37208e52dc573111e8db99f031f4913845a24fb2e14755747ac860",
+          "e410b6509f33defce16ad7896cbe2fb3cc689f2cc53d87c87d75efba6b57e290",
+          "f7b84b9a94f749f8ced3f0112d0a66894e8bbc3b4aa5592021d1b8976a9bad40",
+          "2f69879f1c5bdfe9c075ef67ddb6405afe992aff89dcf42863567f83237d3ba6",
+          "2033556a49942224b486e70fa8beeaeae4265dc4b10adffec2326c002d30397b"
+        ],
+        "sha1": [
+          "c4026b06d82b0f0b363eda0642d61cfbdc17884e"
+        ],
+        "domain": [
+          "1688360[.]cc",
+          "5vobauua3ojpklx[.]icu",
+          "eil786npto9u5bq[.]icu",
+          "je4ft3gn8vxudum[.]icu",
+          "amirulcyber[.]com",
+          "webshell[.]lol",
+          "ios-hack[.]icu",
+          "l7bcsnwc7nzr3uo[.]icu"
+        ],
+        "url": [
+          "hxxps://1688360[.]cc/track.js",
+          "hxxps://1688360[.]cc/card.php",
+          "hxxps://1688360[.]cc/hit.php",
+          "hxxps://1688360[.]cc/html2canvas.min.js",
+          "hxxps://5vobauua3ojpklx[.]icu/boot.js",
+          "hxxps://eil786npto9u5bq[.]icu/boot.js",
+          "hxxps://eil786npto9u5bq[.]icu/JIUJIU888/weifile.html",
+          "hxxps://webshell[.]lol/get.js",
+          "hxxps://1688360[.]cc/px.gif",
+          "hxxps://5vobauua3ojpklx[.]icu/D11/b.html",
+          "hxxps://eil786npto9u5bq[.]icu/A8/a.html",
+          "hxxps://ios-hack[.]icu/api/ip-sync/sync",
+          "hxxps://l7bcsnwc7nzr3uo[.]icu/api/iptj"
+        ]
+      },
+      "links": [
+        "https://labs.beazley.security/advisories/BSL-A1247"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "ChainBite ClickFix kit",
+      "summary": "ChainBite is a ClickFix kit that splits its attack across multiple BNB Smart Chain testnet contracts, with each contract handling one stage. The injected loader fetches the next stage from these contracts, which return a hostname or script depending on the build, and then selects a Windows or macOS lure by operating system. The lure tracks visitors on-chain using a cjs_id cookie and a yes/no contract, hiding the fake check from those who already ran the command. Lure commands on Windows chain pcalua.exe, curl, and regsvr32 to run a scriptlet via Squiblydoo. Researchers file this activity under ClearFake, and defenders can check page source for injected data URI scripts, a load_ function, or the cjs_id cookie.",
+      "completeness": "Low",
+      "threats": [
+        "Chainbite",
+        "Clickfix_technique",
+        "Clearfake",
+        "Squiblydoo",
+        "Etherhiding_technique"
+      ],
+      "software": [
+        "WordPress",
+        "macOS",
+        "curl",
+        "openssl"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "gzip"
+      ],
+      "languages": [
+        "javascript",
+        "powershell"
+      ],
+      "iocs": {
+        "sha1": [
+          "9e33a3979f74c7700e4baa7e7a2934556f72ef96",
+          "a1decfb75c8c0ca28c10517ce56b710baf727d2e",
+          "df132e2893824e26ec8ae8014b4f4facd54ed67f",
+          "46790e2ac7f3ca5a7d1bfce312d11e91d23383ff",
+          "0cd58060328e308a43d3c53cfd03a45233ea308a",
+          "68dce15c1002a2689e19d33a3ae509dd1feb11a5",
+          "fb6484dc6cbe8af83e940e08748b7de88b17cb64",
+          "0f14777c78d402bed55a67a6eb55dc87cc0b050a",
+          "f4a32588b50a59a82fba148d436081a48d80832a",
+          "0eb267784da2c37ff5b09238c369a8e8d23c9b46",
+          "0aa9996fbb680f6f80fd65eb5548f8b8b4f7c4de",
+          "33830ccec1a25a55fc971b127fc41188f3c349b0",
+          "4a0e8ac014cafcb0aff9e90f68d6c0e0c031360d",
+          "55178661af7e21ad6ef38141f7840f32dd454c07",
+          "6326c54ff3d237c991d7235a42a77e927d540019",
+          "67e496c293d991c684a04f569d6144eaa78d3a40",
+          "79fa087b8dafdec23f189562c238ece70dd904eb",
+          "80d31d935f0ec978253a26d48b5593599b9542c7",
+          "886d310ac23e05ea705e24e513d19f53793832a9",
+          "a7f1283ef18da3a9ce87f02f7e78ba87e08882e6",
+          "e75744c53ec0914fe9be92847019d3d7122b6b77"
+        ],
+        "domain": [
+          "fastly.jsdelivr[.]net",
+          "techfilipino[.]com",
+          "gitlab[.]com",
+          "oakislandtheories[.]com",
+          "likingdropout[.]site",
+          "193-233-126-53.sslip[.]io",
+          "193-233-82-248.sslip[.]io",
+          "abloadies[.]com",
+          "degpoints[.]com",
+          "postaspen18[.]com"
+        ],
+        "url": [
+          "hxxps://193-233-126-53.sslip[.]io/d3f8a142c9/verification.sct",
+          "hxxps://abloadies[.]com/techagent/install.sh|sh",
+          "hxxps://abloadies[.]com/n",
+          "hxxps://abloadies[.]com/techagent/install.sh",
+          "hxxps://degpoints[.]com/setup/49fnea/Client_f5cb30.exe",
+          "hxxps://postaspen18[.]com/curl/403rtw0brf8/xcity3lv14lpb1qv.dat"
+        ]
+      },
+      "links": [
+        "https://ohey.ca/threats/clickfix/chainbite/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "CyberXtron Researchers Uncover Fake Parivahan Campaign Delivering Grok-Assisted Android Banking Trojan",
+      "summary": "A fake e-Challan traffic-fine campaign targeting Indian vehicle owners uses at least 64 lookalike domains to deliver a multi-stage Android banking trojan. The dropper shows a fake Google Play install screen and decrypts further stages in memory before installing a full remote-access trojan. Once Accessibility access is granted, the operator can stream the screen over hidden VNC, log keystrokes, overlay payment apps such as PhonePe, and intercept SMS and OTPs. The malware can also steal and reset lock-screen credentials on many phone brands, and it sends stolen SMS and app lists to the xAI Grok API for automated triage. The report links the command-and-control design to the Groklem and ArcticRAT family but does not attribute the campaign to a named actor. Defenders should watch for the multi-port C2 pattern, Accessibility and SMS permission combinations, and outbound calls to AI and messaging APIs from sideloaded apps.",
+      "completeness": "High",
+      "threats": [
+        "Hvnc_tool",
+        "Typosquatting_technique",
+        "Arcticrat"
+      ],
+      "geo": [
+        "India",
+        "Indian",
+        "Hong kong"
+      ],
+      "ttp_tactics": 10,
+      "ttp_techniques": 31,
+      "software": [
+        "Android",
+        "Google Play",
+        "Telegram",
+        "Unix",
+        "WhatsApp"
+      ],
+      "algorithms": [
+        "sha256",
+        "gzip"
+      ],
+      "languages": [
+        "kotlin"
+      ],
+      "iocs": {
+        "sha256": [
+          "91d4341e85d40d1a7928195ecc5b23d3d0c4e2120009182423c1974566d05ef6",
+          "bcbd3d551020d94634bff4f645a68acef7b77586320c38f249a412cce947a0fe",
+          "512943d0313f4b23493c53057f4bf41983320c477defe371c44584ee381943fd",
+          "a909828008863dfb34f86afe84660ff2ae7d0d98d7ebda433ca57050aaf7a49f",
+          "3fa66ba902a8b74db1e08754bdd6ca0ae7cee3d2a7fa10603548c8a0303e9277",
+          "1b7e75053d9f00eaca368ab7c92be9b49be50e0e1ebca47abd21bd2bbdd2243e"
+        ],
+        "ipv4": [
+          "45.192.214[.]64"
+        ],
+        "domain": [
+          "echallan.parivahan.nic[.]in",
+          "echaecl[.]cyou",
+          "yubx9d[.]top",
+          "7dhd6[.]top",
+          "echaecl[.]cfd",
+          "echalila[.]xyz",
+          "echalila[.]cyou",
+          "echalln[.]cyou",
+          "echallna[.]icu",
+          "xi09nn[.]top",
+          "echaecll[.]cyou",
+          "echallr[.]cyou",
+          "echall[.]icu",
+          "ecllhaec[.]cyou",
+          "ecllhaec[.]xyz",
+          "echallao[.]icu",
+          "echallin[.]cyou",
+          "echalla[.]xyz",
+          "echallln[.]cfd",
+          "5gwr2r[.]top",
+          "echallin[.]xyz",
+          "echalla[.]cfd",
+          "echaiio[.]cyou",
+          "uj4s26[.]top",
+          "echalln[.]icu",
+          "echallal[.]cfd",
+          "eclihaeo[.]cyou",
+          "echalla[.]cyou",
+          "echaecl[.]xyz",
+          "echaoll[.]cyou"
+        ]
+      },
+      "links": [
+        "https://cyberxtron.com/resources/blogs/cyberxtron-researchers-uncover-fake-parivahan-campaign-delivering-grok-assisted-android-banking-trojan-8336"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "LenAI ClickFix kit",
+      "summary": "LenAI is a packed ClickFix loader that reads its controller address from Polygon smart contracts, and it has been matched on 14,723 sites since 1 August. Its code is rented to several operators, and a stage that removes rival loaders and wallet drainers from infected pages has been seen since 28 September. Most infections sit inline in or appended to WordPress scripts, with 93% of recent sites running WordPress, and some are placed on bait sites posing as a free PDF editor. The lure poses as a Cloudflare, Microsoft or DDoS-Guard human check and tricks Windows, Mac and Linux users into pasting commands that download and run scripts. Defenders should inspect page source and theme or plugin JavaScript for atob and new Function patterns and wpmbchik markers, and flag browser requests to public Polygon RPC services from sites without blockchain features.",
+      "completeness": "Low",
+      "threats": [
+        "Clickfix_technique",
+        "Socgholish_loader",
+        "Etherhiding_technique"
+      ],
+      "software": [
+        "LenAI",
+        "WordPress",
+        "curl",
+        "Cloudflare",
+        "Linux",
+        "openssl"
+      ],
+      "wallets": [
+        "mainnet"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "aes-gcm",
+        "base64",
+        "xor",
+        "rc4"
+      ],
+      "functions": [
+        "rival"
+      ],
+      "languages": [
+        "javascript",
+        "powershell",
+        "php"
+      ],
+      "iocs": {
+        "sha1": [
+          "b6bc9e1d0b2fb96ab7c47e04cb0be477410bc1f2",
+          "3445d5be21e0131c3eeee2b3cc942abf76df1de2",
+          "98228e31a075d14fcfbc8048eb0a8e5720f869be",
+          "fd75a8f503be4851e11a52b645de1f017492a6b0",
+          "9715fd44c8cec000ebef00f6620b18b68f649f80",
+          "94ccd43a2e8f5cbc99daa0288adac94ff70795e8",
+          "0f935e2c823f18927e515b70a741312d7db9d79a",
+          "ff9e792a3015a79340cdec1847ab0aa10560422a",
+          "f3450b57ab732864e4a04b3699e42d1b8a426970",
+          "ccde3fc8e02fb5d50f285d3d1ab38cc6fd7c2b9c",
+          "0da763d7a0ad6696a0253bdebc3c2e407432a35e",
+          "0856780a9ac5169592b693b49e87805a64c1d446",
+          "0c7cb01c83203ac0a50abc3a9aff3c9ca727ef55",
+          "1098b16ee0a2f7ff8cdae67fbbf053b557fe96b7",
+          "289fd372fc932a5c68846b97e249a4e4299f4f48",
+          "4cf2d3bfc2e9dcf9dfd88493eab5b1a3e6b247a6",
+          "6af606b63ef2dbf3bb5519d9c30245fd6beb1ad5",
+          "74db0d5d9b5be32d8ec82620f5181e148660f7db",
+          "78859088d429c2b3d0d999f01810285bd15f4b63",
+          "83833c5d676ca06e941a32310ae67d0890f657ee",
+          "a22ab39d7362dbb1aaacc4e597094704dabdbfac",
+          "bab25ced421128c427ad19914473566633894dd5",
+          "bb9b2df9dcbd487212052da0974d1a2e388322b0"
+        ],
+        "domain": [
+          "editpdf[.]space",
+          "managedhosting[.]space",
+          "poyanercold[.]top",
+          "sfesfes[.]world",
+          "pogchatauth[.]com",
+          "ke4asholdings[.]com",
+          "holidayvrbo[.]top",
+          "abcsgftr[.]cc",
+          "mon-blanc-02[.]cfd",
+          "interseqf[.]com",
+          "cap.gramspin[.]win",
+          "softify[.]lat",
+          "monitoringsites[.]shop",
+          "verification[.]beer",
+          "schneemann[.]cfd",
+          "megeve[.]beer",
+          "ilovemonney[.]com",
+          "makeverizyjar[.]info",
+          "barabulkaaaa[.]org",
+          "browse-login[.]info",
+          "lovezramexar[.]info",
+          "thu-ipad-03[.]cfd",
+          "cloudeccentric[.]cc",
+          "interseq[.]at",
+          "browse-cloud[.]codes",
+          "timelevel12[.]com",
+          "hagosuro[.]lc",
+          "lepafonso[.]bz",
+          "escapeai[.]live",
+          "internetserchinkas[.]co",
+          "copiose[.]org",
+          "img-codes-cloude[.]info",
+          "fingerprint-veri[.]info",
+          "codes.browse-cdn[.]beer"
+        ],
+        "url": [
+          "hxxp://browse-cloud[.]codes/1076cb1718beab28",
+          "hxxp://timelevel12[.]com/big",
+          "hxxp://hagosuro[.]lc/dantestraff18/9956ca98593d95f4",
+          "hxxps://lepafonso[.]bz/dantestraff2929/7d180aad5b40f31e",
+          "hxxps://escapeai[.]live/loader_v2.sh?build=lom&owner=ekm",
+          "hxxps://internetserchinkas[.]co/hex/lom/84aa3f59",
+          "hxxps://copiose[.]org/lom/62a9405c9735a1a7",
+          "hxxp://img-codes-cloude[.]info/fd9091bc1afb44f6",
+          "hxxp://fingerprint-veri[.]info/d8fc26fb3c8ae49a",
+          "hxxp://codes.browse-cdn[.]beer/842d2fef832bd05b"
+        ]
+      },
+      "links": [
+        "https://ohey.ca/threats/clickfix/lenai/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "`@wppconnect-team/wppconnect` `2.4.1` and `@wppconnect/server` `2.10.82` shipped a Telegram secret stealer through trusted publishing, then the git history was rewritten",
+      "summary": "The npm packages @wppconnect-team/wppconnect 2.4.1 and @wppconnect/server 2.10.82 shipped a hidden module named diagnostics that stole secrets and sent them to an attacker-controlled Telegram bot. The library version ran the payload on import, while the server version waited 30 to 240 seconds after startup and skipped hosts that look like CI runners or malware sandboxes. The payload collected environment variables, common config files, and WhatsApp session files, which could let an attacker use a victim's WhatsApp account without a QR scan. Both releases were published through the projects' own trusted-publishing workflows, and the commits that added the payload were removed from branch history. Defenders should pin to the safe versions (2.4.0 and 2.10.81), avoid affected Docker tags, and rotate secrets and log out linked WhatsApp devices on any host that ran the bad code.",
+      "completeness": "Low",
+      "threats": [
+        "Mitm_technique",
+        "Supply_chain_technique"
+      ],
+      "software": [
+        "Telegram",
+        "WhatsApp",
+        "Docker",
+        "Node.js"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "require"
+      ],
+      "iocs": {
+        "sha256": [
+          "06158b832fb2aeb5482202c944bc8f23d59f5cf35c0dc66e926c2e395e5673a0",
+          "a8fd315c910cf0d0e84e7a642c0fd70b8e4ca20673ba0cba1f8b69392c944f2d",
+          "f2dd03a8368c4dcc74795a121f1ea3da82a4bafee2814d57af29f4d18ad9d427",
+          "cefc9ea30124812d8c417b216e26f4c880a1726dd5466584f2fe32500323986f",
+          "f33c4385218ecc302f02222e5e309261dbfc86f21515e0f0dd279312709a63af",
+          "56a546a38f6e59509f627168c8d67f9c87fd487babf3ad91f375fe99a235c4c7",
+          "cc01ce839afeaf865cfeff2e020288f721c46941e14a4e42b0f88e554c7f6aeb",
+          "cba29bc582908603cb5e96a627e0bcc09363e9063a25f03d009f885bc69f69e0"
+        ],
+        "sha1": [
+          "dee571e55aef07e648d675055a45fcef13f9e586"
+        ],
+        "ipv4": [
+          "149.154.166[.]110"
+        ],
+        "domain": [
+          "api.ipify[.]org"
+        ],
+        "url": [
+          "hxxps://api.ipify[.]org?format=json"
+        ]
+      },
+      "links": [
+        "https://corgea.com/research/wppconnect-npm-docker-trusted-publishing-telegram-secret-stealer-november-2026",
+        "https://github.com/wppconnect-team/wppconnect/pull/2967",
+        "https://github.com/wppconnect-team/wppconnect-server/pull/2733"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-16",
+      "title": "SkinFrame ClickFix kit",
+      "summary": "SkinFrame is a ClickFix kit that hides a website's content and overlays a fake Cloudflare check, with the design chosen per visitor's platform, and it has been matched on 2,324 sites since 7 September. The kit injects a hidden-page block that loads an obfuscated embed.js from a short list of controller hosts, and it is built to survive script optimisation. After a click on the lure, the visitor is told to press Win+R, Ctrl+V and Enter, which pastes a command fetched from the controller. The commands run Windows tools such as mshta or MSIEXEC to install remote packages, using lookalike Cloudflare-themed hosts that change daily. Around 96% of captured sites run WordPress. Defenders should check pages for the cf-captcha-hide-style and cf-captcha-overlay markers and for unrecognised embed.js sources.",
+      "completeness": "Medium",
+      "threats": [
+        "Skinframe_tool",
+        "Clickfix_technique",
+        "Clearfake"
+      ],
+      "software": [
+        "WordPress",
+        "LiteSpeed",
+        "Cloudflare",
+        "Android"
+      ],
+      "algorithms": [
+        "base64"
+      ],
+      "iocs": {
+        "domain": [
+          "js-static[.]cfd",
+          "www.restapi-web-cf[.]cfd",
+          "dslkf[.]sbs",
+          "batrt[.]sbs",
+          "cf.com-web-restapi[.]sbs",
+          "dslkf[.]cfd",
+          "osidvn[.]sbs",
+          "www.cf-web-restapi[.]cfd",
+          "eiwfn[.]sbs",
+          "coeuau[.]com",
+          "wiufen[.]sbs",
+          "cf.restapi-com-web[.]sbs"
+        ],
+        "url": [
+          "hxxp://dslkf[.]sbs/h7y9adh",
+          "hxxp://batrt[.]sbs/vaphudi",
+          "hxxp://cf.com-web-restapi[.]sbs/8pawp257rrsy87",
+          "hxxp://dslkf[.]cfd/k20rnry",
+          "hxxp://osidvn[.]sbs/pjzwlbx",
+          "hxxp://www.cf-web-restapi[.]cfd/1apsivec1id1z0",
+          "hxxp://eiwfn[.]sbs/qo5mdmc",
+          "hxxp://coeuau[.]com/sulzv7zjwvhs7k",
+          "hxxp://wiufen[.]sbs/hjihff4",
+          "hxxp://cf.restapi-com-web[.]sbs/sxabkhtrdm5mtf"
+        ]
+      },
+      "links": [
+        "https://ohey.ca/threats/clickfix/skinframe/"
+      ]
+    }
+  }
+]

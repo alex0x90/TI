@@ -1,0 +1,436 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-14",
+      "title": "Attackers use Crypto Exchange Names to Disguise Unauthorized Sessions on 100+ ScreenConnect Servers",
+      "summary": "Attackers registered more than 2,200 fake guest sessions on over 100 self-hosted ScreenConnect servers, named after crypto exchanges such as KUCOIN-SRV and BACKUP-PROBIT, with crypto trading-desktop thumbnails. The sessions were added between November 3 and November 13, 2026, and were kept online through repeated reconnections every few minutes. The guest installer was publicly downloadable on at least one server, which enabled registration. Huntress found no malicious activity from the fake guests themselves, though the researchers consider a bait for technicians exploiting CVE-2026-84869 their leading hypothesis but have not observed it. MSPs should upgrade affected clients to 26.6.5 or later, verify unfamiliar sessions before joining, and preserve the session database before deleting fakes.",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool",
+        "Sckit_tool"
+      ],
+      "geo": [
+        "Egyptian"
+      ],
+      "algorithms": [
+        "sha256",
+        "ecdsa"
+      ],
+      "iocs": {
+        "sha256": [
+          "008839ef2a2d54e9efa47013bb23c773d3a152f351e9dfd3b2f4dd27086121df",
+          "45136a9ab47015c4334b881df9daf824a72347daae0b5730ce3bd7d42b204bf2",
+          "e73020645e7a11a90865d93bd7f3d797585f49ef72b1ac7354392a2da7fbd91f",
+          "c15b008b0296b1bc9e0f979e6f25b780e3e89edabb344c7ee8c284a1a140f0d7",
+          "b55ce5130cd2623017cca29318341f6b4656e3a1dc5ab82ce704e912d0d17535",
+          "bea82efc82672225cf29eb869972670754f15941bc61b9e5801ffd41c5c39e5f",
+          "f6d37291c4948b974caf2e9e7e8ca9c2173d2779d1ec0a391488706bbd1a995c"
+        ],
+        "ipv4": [
+          "74.208.158[.]106",
+          "197.47.160[.]252",
+          "87.106.111[.]220"
+        ]
+      },
+      "links": [
+        "https://www.huntress.com/blog/fake-crypto-exchange-sessions-screenconnect"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-14",
+      "title": "Aur0ra – An Xray Reverse Tunnel Hidden Inside Explorer After a Teams Vishing Call",
+      "summary": "Hexastrike attributed with high confidence a September 2026 intrusion at a German manufacturing group to the Aur0ra ransomware group or an affiliate. The attacker sent email bombs, then posed as IT support over Microsoft Teams using a sender that impersonated a real employee. The victim installed AnyDesk, and the operator captured the domain password through a fake security prompt and uploaded it with a network inventory to a Microsoft dev tunnel. The operator then installed an Xray-core reverse tunnel, side-loaded as a DLL into Explorer via a per-user COM hijack, that disguised its traffic as Google connections. Defenders should note that monitoring-only controls recorded the activity without stopping it, and that a firewall rule allowing direct outbound connections bypassed the proxy.",
+      "completeness": "High",
+      "threats": [
+        "Aurora_ransomware",
+        "Xray_tool",
+        "Anydesk_tool",
+        "Email_bombing_technique",
+        "Dev_tunnels_tool",
+        "Teamviewer_tool",
+        "Screenconnect_tool",
+        "Ad_explorer_tool",
+        "Opendir_technique",
+        "Polyglot_technique",
+        "Com_hijacking_technique",
+        "Spear-phishing_technique",
+        "Timestomp_technique"
+      ],
+      "geo": [
+        "Germany",
+        "German"
+      ],
+      "ttp_tactics": 13,
+      "ttp_techniques": 28,
+      "software": [
+        "Microsoft Teams",
+        "Windows Explorer",
+        "Chrome",
+        "curl",
+        "Microsoft Defender",
+        "Microsoft 365",
+        "SQUID",
+        "Dropbox",
+        "Sysinternals",
+        "credential dialog",
+        "have more..."
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Set-CsTenantFederationConfiguration",
+        "Teams",
+        "LogonUser",
+        "Xray"
+      ],
+      "languages": [
+        "powershell",
+        "python"
+      ],
+      "ttps": [
+        {
+          "id": "T1583.001",
+          "name": "Acquire Infrastructure: Domains",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1583.006",
+          "name": "Acquire Infrastructure: Web Services",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1588.003",
+          "name": "Obtain Capabilities: Code Signing Certificates",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1608.001",
+          "name": "Stage Capabilities: Upload Malware",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1566.004",
+          "name": "Phishing: Spearphishing Voice",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1546.015",
+          "name": "Event Triggered Execution: Component Object Model Hijacking",
+          "tactics": [
+            "Privilege Escalation",
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1684.001",
+          "name": "Social Engineering: Impersonation",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1574.001",
+          "name": "Hijack Execution Flow: DLL",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1070.006",
+          "name": "Indicator Removal: Timestomp",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1070.004",
+          "name": "Indicator Removal: File Deletion",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1027",
+          "name": "Obfuscated Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1553.002",
+          "name": "Subvert Trust Controls: Code Signing",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1056.002",
+          "name": "Input Capture: GUI Input Capture",
+          "tactics": [
+            "Collection",
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1033",
+          "name": "System Owner/User Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1016",
+          "name": "System Network Configuration Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1057",
+          "name": "Process Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1005",
+          "name": "Data from Local System",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1219.002",
+          "name": "Remote Access Tools: Remote Desktop Software",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1572",
+          "name": "Protocol Tunneling",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1090",
+          "name": "Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1573.002",
+          "name": "Encrypted Channel: Asymmetric Cryptography",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1567",
+          "name": "Exfiltration Over Web Service",
+          "tactics": [
+            "Exfiltration"
+          ]
+        },
+        {
+          "id": "T1667",
+          "name": "Email Bombing",
+          "tactics": [
+            "Impact"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "52f97236a6af9a067b1edd60f89fd48d3949d0172116cb027c34792e90479d4a",
+          "ff44ca8c0ae2b4ae000f8184eebe2e54ede8e33b7777145b4a86a51c86e4ba57",
+          "2fccf940755405530f6b7bad48317df7561b445e5a5aeaf6209df9bfc0c0c4d9",
+          "c0297f822ce9dff921c647deea57f26fdbb5aa3b1f9641406f45578aac604efb",
+          "b85a96fff18a3e1cde010f2d60983992cb28d00a96afdd5b1da19aa0a305fb80",
+          "80bad186c66038aa972f1f31df23b1461dada71a8ad32c7d3aa785c4624f3544",
+          "2a1edc443478664f0b11300282b02f540b0d890c665707bd303f4539b52cc4de",
+          "c5f7a4c772f2bdcf929220e93dc354b825698a5f43f3f344ea34dc4eec772c2f",
+          "f3e4cc876700c87349bf1b2cc7dca9febc673d175474b614f32d755d90962827",
+          "d4ebf87becb8ac6c9e0c204b483d8c9e56e2b8233471ef7c974f405406acbb88",
+          "43b6ea2500336c14abb732eeced4a8a21eaca0ad16e97d28e5f5e08ab0db006f",
+          "58161642b971ad33588d4edaddb34230e725ddef57a747bd1b68fff3876b9474",
+          "e0927287b4b78432ca1a3156266ec31d46e1c48b757c1ca38d631c7f61e0a24e",
+          "5b96280469074f69f4805caddae054c1bdab3dd0735e7f64d79f26f745bccee3",
+          "88fce5bc260870ef6296c4c5967449d0dc38e83b3fcfea5a971446e8dfd1f5ff",
+          "eeaaa6954b5ab26b2dad9a4cd85857e3eb5b68c9f8026561cc817b0dba664c80",
+          "11ebc7fdec7fc866de4a912cff5d02ec353aed5e66c0850a8c9b7f3b498437b1",
+          "8718dc15475c3e12d5bdae6d3153229b12358a45d0f7d095d8da743a4696a7d9",
+          "ecf67c03cc1ed5395da671dc8e5dbd7b87760e810cdbc4eacffadaacf94066e9",
+          "cfe976aa42a6c1d8e99098aff4124c6799ba210bc936173d8bd7a55ead45f620",
+          "3ad956afb68fa07b1742fbcd845b004043c86b5f985646f5a47f182262b644e2",
+          "2abc09c853b0bb6599cc93372cc56387df44631a6e5dcb7e7cc1f86d17c9f3b5",
+          "bbd3e7ff557eaebed512478546726b819a33748958d4536cfc9708385dd07fbb",
+          "00a6ae4ef127f5f528e0273adbdcb5646ed2ff213472d776fe7b35fc12742b8c",
+          "b2c26b6682647bd4ada42058c7edc71e1fe84bf8135da8388510de2cfe4fe953",
+          "340e06ec3ea7f624f9559416268069beab443faa67a7ff983c0cb54606cf7afc",
+          "2dd1c68f93645911b962fd5d39d78443a4ea34fa5b31ab43afa89cdd7b890bb1",
+          "9ba214bb8ebb0c2a6e34fa3f5edd0e4d04606ace6693b7c4bf29d35b36964d98",
+          "09bb282ef89b5356fea5e5b7ca710ad9c5f454368b1031a06c330fcda2ca06db",
+          "5b88552940b393539c02569319e0c6ebd109123930b066ec1f9b50fcd6f81f77",
+          "c59179bdd0b44b957cda479ec690a10bc56023aafc3cda78ada52bd00c13a041",
+          "5f80100560c0422cfd71a5138d65f1124287d2bf9f941c33add56ee9626b071b",
+          "62244f212090a266f8da67c59fa8ef1fdd7937b2a63fd7c738b155b1b98611c4",
+          "b9386907d05d0bc7c00b4b1551cae01a18da2ffbe9fee19af3e608d75805a594",
+          "c0e872aaf8ca21eae35733209e893b497066e4f3bf3e8b639ebf337d00f3b046",
+          "806ab0002bd5882e85ceeb1b4e9c69b0f579ea438bd030212285583a4259c060",
+          "0b542e26b2352b0192afb818cd75338a7d9732db62658fe533c93e3b0cf31b53",
+          "41b9b04be4d9ede16b08b86a9b100bfc8f3ac3ae4298a846302e4d2d4b722e9f",
+          "554f9808620c000c0459f23207dfc3a83dfda6c0720d88eb7e1d07dbd90df571",
+          "9def4ae514597044732b01afd823790ba6cedf5d4b080af3ff39fc66d338e5da",
+          "3b193168eb61c79cea2c6c42646d051885b2dd6a2e8fc28e7f85cd51c684d882",
+          "241d1719367a3100c37564a8ad386c385aa66c1a4ec4597db2826fb8fb2200b5",
+          "7df0d6a35b291b37f52c067bea6818b7b23199bef78899634cd7a349f767c514",
+          "44bbcfab65d72795e24b33d9b9f1411d0cb7fa2b589187109b11d50203399754",
+          "cb733e7c972be907609dc4371e63bdb33ebada7b25b7f92b49e2cdec33ae13f8",
+          "373897ef35445c0291b9be8aca28db29d3a5fb7405fd667b65a7fa16d6c7281e",
+          "d47fdbab1f87df369aad89c2bf2677cc4adbd6feae7a3a710c47f53fecbaff7b",
+          "8393723e98569f9a453e595b9cb17b921b8fd620bfcd7382e86d5343786b54ff",
+          "b4aa16e4d82cf18ec25464514d7f5c3e1f2096a799cdbaf958a487811cc7eca3",
+          "b2e9cbb469f1b3dbb8f696ba3c8135f7bf7c08bffdbdd7bb51ee8e005155ff6c",
+          "ad55ce12defdb938bb310d998513d2fab4a05e57e4113004e6818c6dc7d5f8dc",
+          "292884247e7103bd24789c6cac06e9e38488a7e6d0afc5c17d787fe31e4d9ae4",
+          "1692ff878336fe2d1942236031a33095939e4c065fd230bf153c7459d2715c68",
+          "65b975bc7830f006a6aaa3115a7263ec08fb707860a418a5b9bb2c97c4f72177",
+          "135cfc43fe6428bad794462f2d34b43984700787477fc6ee79c359d54f616ee2",
+          "43080aba3f771b71b0c57ad6103eb2a882a6baf7e808bb938dee5a3d8a4e414e",
+          "62c6382f64d854b30a27d9afd6beb97fe253463cbd8e0e4c7a190b79c3fc78a8",
+          "a02f4f5b59175fe69bf539f9bb3781fa972d05678183dfc285ef70e3980076be",
+          "d0ed160617e46954a345d7e782d8ac877298c4898e204715fa483f6c05f9c430",
+          "d227cfa03702c6263d98d93bd1be77a8e0209b09cb8c45ada77ecbaaa7f23977",
+          "9686df7402351dc8a9665467f240f091eda4a4fad1ecc8aa478df34db62b751f",
+          "e3f143312cd9fb5263676d2753e5aba4be3326fbe7c63820a5075ef6d157c994",
+          "c490ffdcbb093983806903c28159732298a45da5f6b7fab003ee4b5163c2f0b6",
+          "e69a99d4a9254d0d8e863e1b7fbedaefc147e75da3cbfc06e4c49cffcb2b4bd9",
+          "1b998dbf377874777608f6fad726a461e051352f1a7f94b426b3a017484f23dd",
+          "017b837116e9816db7bffbf1e9c18325218b30804fc57abf3f56264a0041034b",
+          "cb87bd0849c61493596c73702c029981d32c92726f089cb5daec3a35a9cb1f1a",
+          "dac35aa4b443c2cfd991b5c53667c6016a2a1d1f7082c108bdaf6d5c1d83ee2a",
+          "bb0815dbc5e00a15622e62e282d1c99b035a57f26db7a5a0e848a03d57deb917",
+          "d19abb292af0dd1308234e39d9d8371a278683809321831f0acff1c8f4d95599",
+          "8b131bf3a1df600465c39d7bd2a0b38263ecb2e40c5e556d1c402aeb177f5875",
+          "d76b6559bec4edaaa548c8906c92fc7542c04d68a564626d83f1d1c8fdeafbb6",
+          "f280c5cebcf404d73927450e763254052a63b43df963ccf69327b8ee775f7e5f",
+          "1ac34756f59d05a0f5e6cbad210100c8186e53467a479eccd3e8c69d19e693f8",
+          "6f1988b0951eb30b8236442e6ed214b888317b41f50309d9be820986d26e0197",
+          "55381bc7eed1b279dd6fcc55b29e0a821ed300aeccdd2d53ff072ee5ec0cfd3e",
+          "bb9a3911da31135c13e4fa6608ecafc707609f72f0083782f6d79e331c5e21d9",
+          "eaa8daf2999fb3404898c12712a2b23a8563d037fce7467c3f2003b5484b1e99",
+          "be0d4305eba25842fd826aea7a1f070564bfb0493b02fbddaa8f1c21af98e100",
+          "debbbef23276c43ebf9433c6070410fe5bf41d30206c8a243577d7f7e8afa140",
+          "808de6da13656dfea6dfc4fd2757eb474cf2334cf9896a2ea827a5c6a9d72c47",
+          "2305aebf93cda410d3e3435722eee2a8691d99ae5ac7bf0335fbd9f5ed19e534",
+          "a2c2dfaaed4b134babef7c44a9e406f8c7c69998a4d3818991e60045b1678b49",
+          "b65b51c0fa481193b21f9225cd2aba3729f8e6a3aed5c3f50160b3be2c6f364a",
+          "c595631fd5fee128ccad2884262ac06ad0538c64120ef18500d13f649c74ae2f",
+          "782d938ed45324ad2eba58e6c096160d2f65b1e152e51208a12bbdb171eb2b58",
+          "9536c9064c6e4f8be6c121ad1ffefe016d707bade0989f57f14a0beb07a5da67"
+        ],
+        "md5": [
+          "66096fe6aab808036b840f230f5606a5",
+          "a7df46af2d897ff91b38c5de7efbc331",
+          "7af487b9452c297bfa92808051e5bb69",
+          "9fec0cba318fe636a4480ba3f5019872",
+          "089124b0be12eebb6bb173f40fe91754",
+          "3d7b3b375fe1434665cbf43ef2119168"
+        ],
+        "ipv4": [
+          "82.41.181[.]45",
+          "77.110.125[.]143",
+          "147.185.197[.]237",
+          "184.174.97[.]220",
+          "104.194.134[.]109",
+          "207.180.58[.]163",
+          "83.147.18[.]13",
+          "74.0.42[.]157"
+        ],
+        "domain": [
+          "helpdesk-support-office-3[.]com",
+          "uce335ab57daaa14730ec58df391.dl.dropboxusercontent[.]com",
+          "use.devtunnels[.]ms",
+          "1l6xqzpp-7443.use.devtunnels[.]ms",
+          "d2hvq6y0ldmm9s.cloudfront[.]net",
+          "d5hkgtqjxqnfo.cloudfront[.]net",
+          "helpdesk-support-office-4[.]com",
+          "helpdesk-support-office-1[.]com",
+          "helpdesk-support-office-2[.]com",
+          "g2j2d2hw-7443.euw.devtunnels[.]ms",
+          "sdj4mqcf-8443.use.devtunnels[.]ms",
+          "wcz2ps4v-8443.use.devtunnels[.]ms",
+          "4jgq343l-7443.uks1.devtunnels[.]ms",
+          "file-node-neu.ambitioussand-8c67ee96.northeurope.azurecontainerapps[.]io",
+          "file-node-us.azurewebsites[.]net"
+        ],
+        "url": [
+          "hxxps://1l6xqzpp-7443.use.devtunnels[.]ms/",
+          "hxxps://www.dropbox[.]com/scl/fi/4bdw6lggu5x5avrjls7sg/z.zip",
+          "hxxps://www.dropbox[.]com/scl/fi/rzyml151zxmse06yvodqz/a.zip",
+          "hxxps://www.dropbox[.]com/scl/fi/2x5vw0md8h2mlj116k5w3/Xray-windows-64.zip",
+          "hxxps://www.dropbox[.]com/scl/fi/y0unoesteryu5ah2j7cpr/z.zip",
+          "hxxps://www.dropbox[.]com/scl/fi/sqlxdga6304tc95dhc7pi/ConnectivityHost.zip",
+          "hxxps://www.dropbox[.]com/scl/fi/qx8s9gny8oiw42j11iwkx/Xray-windows-64.zip"
+        ]
+      },
+      "links": [
+        "https://hexastrike.com/resources/blog/threat-intelligence/aur0ra-an-xray-reverse-tunnel-hidden-inside-explorer-after-a-teams-vishing-call/",
+        "https://github.com/XTLS/Xray-core"
+      ]
+    }
+  }
+]

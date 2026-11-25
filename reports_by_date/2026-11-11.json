@@ -1269,5 +1269,468 @@
         "https://asec.ahnlab.com/ko/96494/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Malware Must Die!: MMD-0070-2026 - Once upon a time, Linux/Hajime hexstring-pushed a tiny ARM ELF fileless downloader",
+      "summary": "Linux/Hajime is an IoT botnet that spreads through three propagation methods, including a 480-byte ARM ELF downloader delivered via hexstring pushing that uses socketcall to evade ptrace-based tracing. The downloader fetches a custom-packed 80280-byte payload, then deletes itself after dropping it. Once unpacked, the main bot disables the hardware watchdog, renames itself to look like telnetd, adds iptables DROP rules for ports 23, 7547, 5555 and 5358, and force-kills processes listed in /proc/net/tcp. It maintains BitTorrent DHT and NTP routines for lookups, which gives it a peer-to-peer design with no fixed C2 to block. The author notes 3,029 infected IPs across 111 countries, with Taiwan and South Korea leading. Defenders should close exposed Telnet, TR-069 and similar services, patch device firmware, and watch for unexpected DHT traffic and firewall rules from IoT segments.",
+      "completeness": "Low",
+      "threats": [
+        "Hajime"
+      ],
+      "geo": [
+        "Taiwan",
+        "South korea",
+        "Japan"
+      ],
+      "software": [
+        "utorrent",
+        "BitTorrent"
+      ],
+      "algorithms": [
+        "des"
+      ],
+      "links": [
+        "https://blog.malwaremustdie.org/2026/11/once-upon-time-linuxhajime-hexstring.html",
+        "https://github.com/unixfreaxjp",
+        "https://github.com/unixfreaxjp/malwaremustdie/blob/master/etc/hajimebot-stix-osquery-sigma-snort-suricata/hajime\\_sigma.yml",
+        "https://github.com/unixfreaxjp/Yara\\_rules\\_forked/blob/master/malware/MALW\\_Hajime.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Analysis of APT-C-35 (Donot) group attack activity against Pakistan using holiday-themed lures",
+      "summary": "APT-C-35 (Donot), a South Asia-focused espionage group, was observed by 360 Advanced Threat Research Institute using a malicious Excel macro document disguised as an Eid-ul-Adha invitation. The macro loads multi-stage shellcode that decrypts data via NOT and XOR operations, checks for security product drivers, and downloads a DLL disguised with an MP3 extension after repairing its PE header. The DLL persists through a scheduled task that runs rundll32, then uploads host information such as username, computer name, and installed software to a C2 server using AES-128-CBC encryption and Base64 encoding. The C2 server selectively delivers follow-on plugins, so the operators may tailor payloads to specific victims, which limited the researchers' full view. Targets were Pakistan-based, and the group's reuse of prior TTPs, such as macro structure, URL patterns, and DLL header fixes, supported attribution. Defenders should treat unsolicited attachments and links with caution, especially document lures tied to current events.",
+      "completeness": "Low",
+      "geo": [
+        "Pakistan"
+      ],
+      "algorithms": [
+        "xor",
+        "md5",
+        "base64",
+        "aes-128-cbc"
+      ],
+      "iocs": {
+        "md5": [
+          "54715f6d79797cadc8ccbcd8e8bd22d0",
+          "2b420e55cacf0a6cdb04f13e6c16c79b",
+          "192912ae2d5cdacec7d32f326d5e3b98",
+          "15e2f8d7a2d8a39af5354818afbfd4cf",
+          "7cc4698bc503d7e9a0cbe0d340776df1",
+          "79351ffb12802230d9b4700da456d6df",
+          "2753e87d5d7656ff39bf7b718c93dd66",
+          "bb24a56a74aef6c04dc6546c531d9dfe",
+          "f8a825417341cbbce3f94c5dfda7f4d2",
+          "95977ade6a6df5dc3abad813490fa855"
+        ],
+        "domain": [
+          "vomologs[.]info",
+          "uploadsurf[.]info",
+          "greezupdto[.]info",
+          "shadoworkz[.]info",
+          "pakdw.orchidheaven[.]online"
+        ],
+        "url": [
+          "hxxps://greezupdto[.]info/3yCzLQKEZLZNZSAM/AVZ06kTqLCcrbmunUVxRuQY45mFi72dd5cCOdYdI5gE1XRIP.ico",
+          "hxxps://greezupdto[.]info/3yCzLQKEZLZNZSAM/AVZ06kTqLCcrbmunUVxRuQY45mFi72dd5cCOdYdI5gE1XRIP.mp3",
+          "hxxps://greezupdto[.]info/3yCzLQKEZLZNZSAM/AVZ06kTqLCcrbmunUVxRuQY45mFi72dd5cCOdYdI5gE1XRIP.png",
+          "hxxps://shadoworkz[.]info/Treolekomana/recopereta",
+          "hxxp://uploadsurf[.]info/YaPfgI9hpoApADQ8/pfb8LWo9omzs2QNaoDjQo93xaovbW5Zh0iOW4AjEvQjmSMAR.ico",
+          "hxxp://uploadsurf[.]info/YaPfgI9hpoApADQ8/pfb8LWo9omzs2QNaoDjQo93xaovbW5Zh0iOW4AjEvQjmSMAR.png",
+          "hxxp://uploadsurf[.]info/YaPfgI9hpoApADQ8/pfb8LWo9omzs2QNaoDjQo93xaovbW5Zh0iOW4AjEvQjmSMAR.mp4",
+          "hxxps://uploadsurf[.]info/YaPfgI9hpoApADQ8/pfb8LWo9omzs2QNaoDjQo93xaovbW5Zh0iOW4AjEvQjmSMAR.mp3",
+          "hxxps://vomologs[.]info/Treolekomana/recopereta",
+          "hxxps://pakdw.orchidheaven[.]online/ghfjsgdh/sgdjfgrv",
+          "hxxps://pakdw.orchidheaven[.]online/bsdghfr/skdhfgs"
+        ]
+      },
+      "links": [
+        "https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247509083&idx=1&sn=6db4ea5f0fab35a30d10c28f83173514&chksm=f9c19752ceb61e4459dd0f34eaf40ef12b9bc2938db2da936d3baafeb741b2bd1be06b99fd5f&scene=178&cur_album_id=1955835290309230595&search_click_id="
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "Trading User Risk Alert: Counterfeit MetaTrader Installer Bundles Rust Malware to Deliver the Silver Fox Backdoor",
+      "summary": "Rising's threat intelligence team reports a campaign targeting traders with counterfeit MetaTrader installers that bundle a Rust downloader with a legitimately signed MetaTrader 4 setup. The downloader runs in the background while the genuine installer is displayed to distract the user. It establishes persistence through a logon scheduled task or logon script, depending on privileges, and retrieves a loader that fetches a Silver Fox remote access module. That module supports command execution, file management, screen capture, keylogging, and clipboard access. The report links the activity to the Silver Fox ecosystem based on several distinctive traits. Defenders should block social-engineered installer bundles and monitor for in-memory loading and unexpected logon persistence.",
+      "completeness": "Medium",
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "appstore",
+        "Task Scheduler",
+        "Windows COM"
+      ],
+      "algorithms": [
+        "crc-32",
+        "xor",
+        "zip",
+        "md5"
+      ],
+      "functions": [
+        "CreateFile"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "iocs": {
+        "md5": [
+          "0ce0a45ae22cb19d04c10d035b8a6bcc",
+          "61e69d701f70d18c5caf304bbc429224",
+          "8b9253c44fde1797ada4fa5a0354413f",
+          "3f71ed87003b4f0b65e7723d2ae2e4a7",
+          "1ec2c2783c3e3fb3848087661634a8a8"
+        ],
+        "domain": [
+          "api.appstore[.]name",
+          "pc.dyappdows[.]xyz"
+        ],
+        "url": [
+          "hxxps://pc.dyappdows[.]xyz/p8/Mt4setup.zip",
+          "hxxps://api.appstore[.]name/pujing/cx_config.5.18.8.bin"
+        ]
+      },
+      "links": [
+        "https://rayblog.rising.com.cn/2026/11/%e4%ba%a4%e6%98%93%e7%94%a8%e6%88%b7%e9%a3%8e%e9%99%a9%e9%a2%84%e8%ad%a6%ef%bc%9a%e4%bb%bf%e5%86%92metatrader%e5%ae%89%e8%a3%85%e5%8c%85%e6%8d%86%e7%bb%91rust%e6%81%b6%e6%84%8f%e7%a8%8b%e5%ba%8f/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "ZeroQlik Returns: Exploiting N-Days Still Pays Off",
+      "summary": "Cynet researchers observed a PowerShell reverse shell on Qlik Sense servers at several EU-based customers in October 2026, launched under scheduler.exe in a pattern resembling the 2023 Cactus ransomware intrusions. The activity likely exploited Qlik Sense vulnerabilities CVE-2023-41266, CVE-2023-41265, or CVE-2023-48365, though the exact vulnerability remains unconfirmed. An open directory on the same server hosted Go-based backdoors for Windows and Linux, persistence scripts, and ActiveMQ and Veeam exploit material, which appeared to be in testing. The attacker ran discovery commands and persistence tasks, including SSH key installation and a scheduled task. Cynet blocked the initial script, and no successful ActiveMQ exploitation was observed.",
+      "completeness": "Medium",
+      "threats": [
+        "Zeroqlik_vuln",
+        "Cactus_ransomware",
+        "Doubleqlik_vuln",
+        "Nishang_tool",
+        "Upx_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 19,
+      "software": [
+        "Qlik Sense",
+        "Linux",
+        "ActiveMQ",
+        "OpenSSH",
+        "OpenWrt",
+        "Windows Service",
+        "OpenWire",
+        "Unix",
+        "SmarterMail"
+      ],
+      "algorithms": [
+        "ed25519",
+        "base64"
+      ],
+      "functions": [
+        "Close"
+      ],
+      "languages": [
+        "powershell",
+        "golang",
+        "java"
+      ],
+      "ttps": [
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1059.003",
+          "name": "Command and Scripting Interpreter: Windows Command Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.001",
+          "name": "Command and Scripting Interpreter: PowerShell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1059.004",
+          "name": "Command and Scripting Interpreter: Unix Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1027.010",
+          "name": "Obfuscated Files or Information: Command Obfuscation",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1564.003",
+          "name": "Hide Artifacts: Hidden Window",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1027.002",
+          "name": "Obfuscated Files or Information: Software Packing",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1053.005",
+          "name": "Scheduled Task/Job: Scheduled Task",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1543.003",
+          "name": "Create or Modify System Process: Windows Service",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1098.004",
+          "name": "Account Manipulation: SSH Authorized Keys",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1686.003",
+          "name": "Disable or Modify System Firewall: Windows Host Firewall",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1033",
+          "name": "System Owner/User Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1016",
+          "name": "System Network Configuration Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1083",
+          "name": "File and Directory Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1095",
+          "name": "Non-Application Layer Protocol",
+          "tactics": [
+            "Command and Control"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "24ee79a519839230377585ec541863b1615286736cbeb98125afeb82d91bb768",
+          "1ff457d643e5246efb04861169153402345d50b0bb296443b93a87790909efd5"
+        ],
+        "ipv4": [
+          "45.115.26[.]23"
+        ],
+        "url": [
+          "hxxp://45.115.26[.]23:80/hb?"
+        ]
+      },
+      "links": [
+        "https://www.cynet.com/security-foundations/attack-techniques/exploiting-Qlik-Sense-servers/",
+        "https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-11",
+      "title": "CookUp follow-up: nine signing companies and 25 C2 domains behind the “useful app” installers",
+      "summary": "The CookUp campaign is a cluster of signed \"useful app\" installers that a server-side decision gates, and the same loader has now been tied to installers signed by nine companies. The installers contact 25 command-and-control domains, all behind Cloudflare, with lures that include recipe apps, PDF tools, game cheats, and generic \"download ready\" pages. Several antivirus vendors label these installers as TamperedChef. The app-themed ones install a working app, and the final payload has not been observed because the servers refused to deliver it. Defenders are advised to block the domains, hunt for files from the listed signers, and treat any Document_, PDF_, or CookingApp_-named executable as a program rather than a document.",
+      "completeness": "Low",
+      "threats": [
+        "Tamperedchef",
+        "Opensupdater",
+        "Projextor",
+        "Catchlight"
+      ],
+      "geo": [
+        "Ukrainian",
+        "Mexico",
+        "United kingdom",
+        "Ukraine"
+      ],
+      "software": [
+        "CookUp",
+        "Claude",
+        "Opus 5",
+        "Claude Code",
+        "Cloudflare",
+        "Electron"
+      ],
+      "algorithms": [
+        "ecc"
+      ],
+      "iocs": {
+        "sha256": [
+          "e7bc65daf98767646cb1a0e8c3d19cf0db0dce4618a9bcd2d287426cfd2c9034",
+          "cbac5c21b6d5eceef068a4cdbe200f5bfbda3fc7e5af4ef4f2f61e78e827e3a9",
+          "ffde5fbba662c27dbdf89236b16c80fcef3e5552d8ff98c052dd69b434fadf15",
+          "6a406c3447799237b350ed341091834b21944e8a0e2411865cb56d702e4337d2",
+          "af74f8974df1bff1c938a6f8f585cc8b5f370c98d41e7c5f476a4abda3cbfa2e",
+          "c37a22fa29e84996d5110d8887ee32905ab318e43d5a785120be5bbe5ea58062",
+          "2f4502f29a7c61ebb300849d07b182a8f07efe8f72c2b84b10c74989e851158f",
+          "40798b13e16d6a83cf5b828d7eca110b433eaabf8ca5c83511425eb24bbaee4f",
+          "a7666e5aa3c6ecae0295caa7c3f49714eb561d6e1be6807cf1020b79f1902cd0",
+          "32201a3c693cbca677b75205cf392e1eacd8e96313952bc497ea2ff46711eae5",
+          "8f0ece85a46ee70ea70a176d19bd9a0e8a93286f3f8714e2e49c8526f704d880",
+          "e99a053b9d6a414256177e1529417f85867d6ed355f6009300d626f63429753c",
+          "01fdb4146e3a5d32baf349063835b106498b341f589522dd5251cf7d9ae327d0",
+          "522328693c562b0551d3e0d0184c8126d9e818e1ee3c8936ec04856e80cbdbd7",
+          "6584c54cd70d18da2d955f22cfd2ff8b23e0e10e7766bf44c438591116658985",
+          "b0e4d803731b88025eabdbee498fec8806e59e5ffc35d16a247bce3b6f5e87b1",
+          "e71f26175f0bd7e3ad4b655ad84195fbb50c283a3570486801e2971a721f05a7",
+          "8e0d1c38f976aca3ecb3fb0457790bcb6f5c567842938adf5833cbf832f514c5",
+          "120e7294eff78dde791875e7affd8f52b53220e63db1625665e6342f49915a04",
+          "a931ad04558159e3db2501d90a936c5ee72b407c4c032f60ea347e8c96e7babf",
+          "caff81027b939c259271a9b69013c09b31325a7d32ff1adcbd65323aeeccab46",
+          "f3b37ec3dbafd98f144dbe959daeebb9463048b84cabcf32f462af5fb0624a98",
+          "c4161be01385c6a3dd8a233c7aa9366a92df952db7c4b6a6d4fe8d7123fed604",
+          "351676db9cb90912d49406637d14054237a51b5af1d0855863c8f1df1254ed88",
+          "4365f595f7d9626eb25d229efe2d4f8160d9fafc2ed975505c1832df3664c7dd",
+          "b280a0ac0810698e57425d86141fac8985d92aa424b755f2c4010be2027d3ec9",
+          "f42acc7a919805d776ed26c76d8e7958e8b581d2ee9e5d2eb34ecf53201b05fe",
+          "0e8ae26649bdfc3ceac1c89e29992be58e2b868fc74fe7ab4dfe4202b6037c3b",
+          "143948e6991d266a74d03a272f1df2c7979f12b1f00e155fa11bc5a738344551",
+          "09499c78fb3da7be31cd1123d76c63a263701cc321a73571fdb05494276214fa",
+          "5dba7781d999a33496c03e87c489e3e4b95494fbf8786492ab42abe790a011a7",
+          "68af7ece0141237c82e44d7e144239cd6786adfc2eabf2e94ad183c448a34607",
+          "b067d45e7a424e95392aabb0b119125efccdd1ad3eda95280eacf3dc2a0e3dbc",
+          "2fb8f8d0ddd39bf26a34c5ef4113acd2b240f99a3b75d8b6ba565e58c6a245c3",
+          "6a05a754437fd2245cc7a9b93f0b29844bbeea1740858f7539432cc55425f66e",
+          "930b2f8c395b3e37936370d49e31c0cd20f82b13735019eb51b649501b9427a4",
+          "a78020f0c61dfe25037b449e4ea5c73ff11f5167f8669980c995f56874c3a976",
+          "e864a4c216eac1f5d5f047e1ec8cada10f126089b6301c4a0ea80741bd1fa230",
+          "391e092009f31829435aa567bb6103b2d534a25308bcc9d96fa54c40f951b238",
+          "416b6bacd7ea420bd6ff65947414cbfc75ac08af500a2bde5cc424aa6c31152d",
+          "dc27bf7ab7568930ea50733396a235ed876cc5a504e376f8f516adac93859606",
+          "16aa8544a931baac273b3b7be429039e50c91e8a309a282e84327fde10071693",
+          "92499c08766a398e9540e9497d5986d2bc7e7d47f11484c8ccace61a2cbaf583",
+          "b73fe3ba92396c2a051619b13b55e8e8f67b0a6b28b9888ced976047e50f5d9e",
+          "c4d5b70ab253952bfb0e1039eb2a07ac5686e742306195319043447840ef21d9",
+          "e1d8cea8f23a4c2ccfa104e367eee028c16484db9fb635c17ed05761ede1e0be",
+          "4e1d92b4ab516799b3882b57028122f0f36020248f473986bbd617c7a8263c41",
+          "538a6bbec60b0e59c4629ee467f86e4ee9c7969edd8d7ebd3a07f431b5b70f81",
+          "d3fea43498a14b97d28612feb2c2cd439a01ed5017d473b74fcabc574e6b8ddd",
+          "23fd7fb96f077847b320ded75bff3e3424da5aa7e0faa636c27b34166cf791ba",
+          "88149618c2acdd3a9d1ef9abeb743bfe172a3519fa53e6f78bcd5db466932dee",
+          "a1ed75d974ebd5135d3cbb6889f96ed8ce63991fc73eeb10898496d7fa3c2628",
+          "b22c543606594609d7fc08ad4dec1434a201ce1616842849b0a09768d5046b62",
+          "061514f669e53a85e5f940fcc5ca951326245cf5b459aa1f3ed2d32c49b78cd5",
+          "16e62857cdd57ec1c8ce6c581c13dbd1dcca1362c61bda8b96be83b352fad20a",
+          "904546a6a3743c8fb9dbfc592956ac07f049c88ef0be8a24826ac4b7cfbc7a75",
+          "ffb8ed2f54a310a0238ed414a9eb6c4c07c29860d4d0056b9dc86b85d76ca599",
+          "0c19ea5b0e0f646bd0cab476f8b38e57f282399e6489075e1ea66066f5925c9d",
+          "b36389d1d89662f402df93e669430b44d32b77e9bc046fa17f7150d078e42337",
+          "b84ccc136a5696d47b716f8dd7fe30310a46946bf3e1e965d561f0354ef12913",
+          "212c7bd125ae9c825d8c6bba7d36dfaad5d15f2cc9dffc5733416dac18e40558",
+          "8b25d4e4e9ddb8cdede130e8c93f0e5a2b4c53397d902ae2a641066da569d400",
+          "d0f0dd6c92f6644ca3db23c753a777d9841ec7d29db433a528c88d941ab00e3c",
+          "4cbddbfdc2a2dc5111728db28806e1b74dfcd13bf0f56eee20d103fb67094754",
+          "7d0649430f9e179ae573bdd10692628833d9a45a3df0a403dc35e11744c87d07"
+        ],
+        "md5": [
+          "05c1a74171954558211acb8abc9e16ee",
+          "454981b689399cf22e25587c243c3311",
+          "0dabb775277835052bc6e8ebba835ab1",
+          "67fbc798b53502f9513295d1cd917b34",
+          "672d1b6ffc643916ac69bbf4dbaa0b0f"
+        ],
+        "domain": [
+          "codeonicinc[.]com",
+          "setupsoftwarecenter[.]com",
+          "applicensingstudio[.]com",
+          "buysoftinstaller[.]com",
+          "cookingsuiteinstaller[.]com",
+          "foodcooksoftware[.]com",
+          "innodocumentsetup[.]com",
+          "installerpdf[.]com",
+          "installmyproduct[.]com",
+          "licensedproductioninstaller[.]com",
+          "lulunotescompany[.]com",
+          "mypdfsoftware[.]com",
+          "nomadiccookapp[.]com",
+          "nomadiccooknow[.]com",
+          "peregrinecooksoft[.]com",
+          "perfectcookingsuite[.]com",
+          "recipecookingapp[.]com",
+          "recipeinstaller[.]com",
+          "reciperoverapp[.]com",
+          "securedocinstaller[.]com",
+          "setuppdfsoft[.]com",
+          "snipappusa[.]com",
+          "softsetupstudio[.]com",
+          "thesoftwarerepo[.]com",
+          "vegapdf[.]com",
+          "webpdfinstallerstudio[.]com"
+        ]
+      },
+      "links": [
+        "https://rogueauthority.org/cookup-cluster-signers-c2-domains"
+      ]
+    }
   }
 ]

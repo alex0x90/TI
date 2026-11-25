@@ -1580,5 +1580,664 @@
         "https://www.vmray.com/beyond-valleyrat-inside-a-china-nexus-silver-fox-operation/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Crafty Microsoft Teams Booking Flow Disguises Device Code Phishing",
+      "summary": "Attackers disguised a device code phishing attack as a Microsoft Teams meeting-booking workflow, as observed by Huntress in mid-October against a construction-industry employee. The spear-phishing email impersonated a real senior vice president using a typosquatted domain, and multiple redirects, including Google short links, helped the email evade URL reputation checks. The phishing site silently started a Microsoft device-code sign-in and copied the resulting code to the clipboard as a fake \"Booking Reference\" when the victim clicked \"Confirm Meeting.\" The victim then entered the code on Microsoft's real device-login page, which authorized the attacker's session. Huntress quickly contained the incident, and the report advises treating unexpected device-code prompts as suspicious, restricting device-code authentication, and enforcing phishing-resistant MFA.",
+      "completeness": "Medium",
+      "threats": [
+        "Device_code_phishing_technique",
+        "Typosquatting_technique",
+        "Spear-phishing_technique",
+        "Residential_proxy_technique",
+        "Aitm_technique"
+      ],
+      "ttp_tactics": 7,
+      "ttp_techniques": 11,
+      "software": [
+        "Microsoft Teams",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "aes-256-gcm"
+      ],
+      "functions": [
+        "Introductory"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "ttps": [
+        {
+          "id": "T1583.001",
+          "name": "Acquire Infrastructure: Domains",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1608.005",
+          "name": "Stage Capabilities: Link Target",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1566.002",
+          "name": "Phishing: Spearphishing Link",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1204.001",
+          "name": "User Execution: Malicious Link",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1027.013",
+          "name": "Obfuscated Files or Information: Encrypted/Encoded File",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1078.004",
+          "name": "Valid Accounts: Cloud Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1684.001",
+          "name": "Social Engineering: Impersonation",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1528",
+          "name": "Steal Application Access Token",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1539",
+          "name": "Steal Web Session Cookie",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1557",
+          "name": "Adversary-in-the-Middle",
+          "tactics": [
+            "Credential Access",
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1550.004",
+          "name": "Use Alternate Authentication Material: Web Session Cookie",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1090",
+          "name": "Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        }
+      ],
+      "iocs": {
+        "domain": [
+          "share[.]google",
+          "gpimmlgration[.]com",
+          "railway[.]com",
+          "calendly[.]com"
+        ],
+        "url": [
+          "hxxps://gpimmlgration[.]com/static-export/api/device/start",
+          "hxxps://calendly[.]com/",
+          "hxxps://gpimmlgration[.]com/static-export"
+        ]
+      },
+      "links": [
+        "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "56 AWS API calls in 141 milliseconds: Inside an AI-run intrusion",
+      "summary": "A CyberStrikeAI server, an open-source platform pairing LLM agents with offensive tools, used stolen credentials from eight AWS identities across four accounts between September 30 and October 16, 2026. The activity followed a familiar sequence: validating credentials, harvesting Secrets Manager values and EC2 user data, decrypting an SSM parameter, and sending a remote command. One role made 56 user data requests in 141 milliseconds, and the operator returned after a 14-day gap. Six detection rules each fired on only part of the activity, and all 78 alerts were medium or low severity, so only correlation by source IP linked them. The report recommends high-signal behavioral detections, flexible correlation windows, rotating exposed credentials and instance roles, and restricting access to EC2 user data.",
+      "completeness": "Low",
+      "threats": [
+        "Cyberstrikeai_tool"
+      ],
+      "geo": [
+        "China",
+        "Singapore",
+        "Hong kong"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 4,
+      "software": [
+        "GuardDuty"
+      ],
+      "algorithms": [
+        "sha256",
+        "ecdsa"
+      ],
+      "functions": [
+        "AWS",
+        "GetSecretValue",
+        "GetCallerIdentity",
+        "GetSessionToken",
+        "GetParameter",
+        "DescribeInstanceAttribute",
+        "SendCommand"
+      ],
+      "ttps": [
+        {
+          "id": "T1078.004",
+          "name": "Valid Accounts: Cloud Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1087.004",
+          "name": "Account Discovery: Cloud Account",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1552.005",
+          "name": "Unsecured Credentials: Cloud Instance Metadata API",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1555.006",
+          "name": "Credentials from Password Stores: Cloud Secrets Management Stores",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1651",
+          "name": "Cloud Administration Command",
+          "tactics": [
+            "Execution"
+          ]
+        }
+      ],
+      "iocs": {
+        "ipv4": [
+          "43.240.29[.]11",
+          "43.240.29[.]28",
+          "43.240.29[.]33"
+        ],
+        "url": [
+          "hxxps://github[.]com/Ed1s0nZ/CyberStrikeAI",
+          "hxxps://github[.]com/elastic/workflows"
+        ]
+      },
+      "links": [
+        "https://www.elastic.co/security-labs/threat-command/cyberstrikeai-aws-cloudtrail-intrusion",
+        "https://github.com/elastic/detection-rules/blob/main/rules/integrations/aws/discovery\\_new\\_terms\\_sts\\_getcalleridentity.toml",
+        "https://github.com/elastic/detection-rules/blob/main/rules/integrations/aws/discovery\\_ec2\\_userdata\\_request\\_for\\_ec2\\_instance.toml",
+        "https://github.com/Ed1s0nZ/CyberStrikeAI"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "Malware Must Die!: MMD-071-2026 - Linux/KinsingBot a bad-bad -designed botnet a while ago.. until recent.",
+      "summary": "Linux/Kinsing is a Go-written ELF bot with remote command execution, coded by an actor called \"nook\" and linked to the SystemTen operator at medium confidence. It gets in through weak Redis authentication, reused SSH keys and a Pastebin-hosted installer script, then plants a tweaked XMRig miner. The bot also offers encrypted C2 tasking, a SOCKS proxy, an on-demand backdoor and mass-scanning. It kills rival miners and removes cloud security agents, then spreads by reusing trusted SSH keys. Defenders should harden Redis and SSH, audit cron entries and rotate keys after any compromise.",
+      "completeness": "High",
+      "threats": [
+        "Kinsing_miner",
+        "Xmrig_miner",
+        "Masscan_tool",
+        "Yamux_tool",
+        "Go-socks5_tool",
+        "Log4shell_vuln"
+      ],
+      "geo": [
+        "Russia",
+        "Chinese",
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 6,
+      "software": [
+        "Linux",
+        "Redis",
+        "Apache Tomcat",
+        "pastebin",
+        "crontab",
+        "Chrome",
+        "debian",
+        "UNIX",
+        "SELinux",
+        "AppArmor",
+        "have more..."
+      ],
+      "crypto": [
+        "monero"
+      ],
+      "algorithms": [
+        "rc4",
+        "aes",
+        "hmac",
+        "sha256",
+        "ecdsa",
+        "ed25519",
+        "md5",
+        "sha1",
+        "gzip",
+        "base64",
+        "des"
+      ],
+      "functions": [
+        "FUNCTIONS",
+        "runTaskWithHttp",
+        "runTaskWithScan",
+        "updateTask",
+        "startCmd",
+        "execTaskOut",
+        "runTask",
+        "masscan",
+        "backconnect",
+        "socks",
+        "have more..."
+      ],
+      "languages": [
+        "java",
+        "python",
+        "golang"
+      ],
+      "ttps": [
+        {
+          "id": "T1046",
+          "name": "Network Service Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1082",
+          "name": "System Information Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1018",
+          "name": "Remote System Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1608.001",
+          "name": "Stage Capabilities: Upload Malware",
+          "tactics": [
+            "Resource Development"
+          ]
+        },
+        {
+          "id": "T1110.001",
+          "name": "Brute Force: Password Guessing",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1552.004",
+          "name": "Unsecured Credentials: Private Keys",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1059.004",
+          "name": "Command and Scripting Interpreter: Unix Shell",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1053.003",
+          "name": "Scheduled Task/Job: Cron",
+          "tactics": [
+            "Execution",
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1562.001",
+          "name": "Impair Defenses: Disable or Modify Tools",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1562.004",
+          "name": "Impair Defenses: Disable or Modify System Firewall",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1070.002",
+          "name": "Indicator Removal: Clear Linux or Mac System Logs",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1222.002",
+          "name": "File and Directory Permissions Modification: Linux and Mac Permissions",
+          "tactics": [
+            "Defense Impairment"
+          ]
+        },
+        {
+          "id": "T1564.001",
+          "name": "Hide Artifacts: Hidden Files and Directories",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1027",
+          "name": "Obfuscated Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1140",
+          "name": "Deobfuscate/Decode Files or Information",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1021.004",
+          "name": "Remote Services: SSH",
+          "tactics": [
+            "Lateral Movement"
+          ]
+        },
+        {
+          "id": "T1071.001",
+          "name": "Application Layer Protocol: Web Protocols",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1573.002",
+          "name": "Encrypted Channel: Asymmetric Cryptography",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1090",
+          "name": "Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1571",
+          "name": "Non-Standard Port",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1105",
+          "name": "Ingress Tool Transfer",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1496",
+          "name": "Resource Hijacking",
+          "tactics": [
+            "Impact"
+          ]
+        },
+        {
+          "id": "T1497.001",
+          "name": "Virtualization/Sandbox Evasion: System Checks",
+          "tactics": [
+            "Stealth",
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1070.004",
+          "name": "Indicator Removal: File Deletion",
+          "tactics": [
+            "Stealth"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+          "d247687e9bdb8c4189ac54d10efd29aee12ca2af78b94a693113f382619a175b"
+        ],
+        "sha1": [
+          "2cb455f23b352e27b1f2f60abd61b444d15fafb0",
+          "fece7b18f2b763690b617f8649d4f9c8c93f6dc6"
+        ],
+        "md5": [
+          "6bffa50350be7234071814181277ae79",
+          "a71ad3167f9402d8c5388910862b16ae",
+          "5b439ea84bc00eb74217461d1c64342d",
+          "fa3cf35e7e83175f395a5b6d35fd456d",
+          "e7dcf743bd2afa0a3a6165d8cd15c0de",
+          "45a7ef83238f5244738bb5e7e3dd6299",
+          "1692020039cb723c351aa1a6a9b03fdc",
+          "653d25b7839461bcf45ea19ced583785"
+        ],
+        "ipv4": [
+          "45.10.88[.]102",
+          "91.215.169[.]111",
+          "139.99.50[.]255",
+          "46.243.253[.]167",
+          "195.123.220[.]193",
+          "6.243.253[.]167",
+          "193.33.87[.]220",
+          "217.12.221[.]244",
+          "195.3.146[.]118",
+          "45.89.230[.]240",
+          "178.170.189[.]5",
+          "92.63.99[.]17",
+          "213.32.10[.]148",
+          "5.23.52[.]131",
+          "45.153.231[.]180",
+          "95.142.40[.]254"
+        ],
+        "domain": [
+          "icanhazip[.]com",
+          "hack[.]lu",
+          "redis[.]io",
+          "imgur[.]com",
+          "bitbucket[.]org"
+        ],
+        "url": [
+          "hxxps://imgur[.]com/a/H7YuWuj",
+          "hxxps://pastebin[.]com/f4fYBPLe",
+          "hxxp://195.123.220[.]193",
+          "hxxps://redis[.]io/topics/rediscli",
+          "hxxps://bitbucket[.]org/kimrakfl33/git/raw/master/kinsing",
+          "hxxp://217.12.221[.]244/spr.sh",
+          "hxxp://217.12.221[.]244/spre.sh",
+          "hxxp://217.12.221[.]244/al.sh",
+          "hxxp://217.12.221[.]244/cron.sh",
+          "hxxp://217.12.221[.]244/kinsing",
+          "hxxp://195.3.146[.]118/spr.sh",
+          "hxxp://195.3.146[.]118/unk.sh"
+        ]
+      },
+      "links": [
+        "https://blog.malwaremustdie.org/2026/11/mmd-071-2026-kinsingbot-well-designed.html",
+        "https://github.com/unixfreaxjp",
+        "https://github.com/unixfreaxjp/malwaremustdie/tree/master/etc/kinsingbot-stix-osquery-sigma-snort-suricata/sigma",
+        "https://github.com/unixfreaxjp/Yara\\_rules\\_forked/blob/master/malware/MALW\\_Kinsingbot.yar"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "How Attackers Hide ScreenConnect in Windows Installers",
+      "completeness": "Low",
+      "threats": [
+        "Screenconnect_tool"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows Installer"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "links": [
+        "https://bolster.ai/blog/screenconnect-hidden-windows-installers"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "SCKit Worm Installs Rogue ScreenConnect Clients and Session Cookie Relays Across Hundreds of Endpoints",
+      "summary": "SCKit is a worm-like toolkit that abused attacker-controlled ScreenConnect clients and RMM+ extension access to push commands to hundreds of managed endpoints across Huntress customer organizations, affecting at least 288 hosts in the initial wave. The kit runs as SYSTEM, installs a rogue ScreenConnect client, and deploys a \"RelayTrap\" that takes over the legitimate client's connection slot and persists through a scheduled task. A stage aimed at technician workstations is designed to steal ScreenConnect session cookies and push payloads to every session a technician can reach, though Huntress has not observed a successful spread beyond the initial endpoints. The campaign exploited RMM+ versions 1.0.31 and 1.0.32, which accepted a blank access key, and ConnectWise disabled the affected extensions and urged partners to upgrade to ScreenConnect 26.6.5 or later. Defenders should avoid interactive ScreenConnect sessions with suspected hosts, use out-of-band tools such as WinRM, and remove persistence before returning systems to service.",
+      "completeness": "Medium",
+      "threats": [
+        "Sckit_tool",
+        "Screenconnect_tool"
+      ],
+      "software": [
+        "curl",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "languages": [
+        "php",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "94b93c649b0ae0281352da9d01761fa9195ab1e6ac7010af3b9ba1646355eb11",
+          "7a9aca9fdd4dcc13fe497cabdb13ca1e5d6a529271c8aa495e5ca1c1c80271ec",
+          "b93f10f30ee453d1e1c046fec9d141c41d7680be5cd46c3aeb3febe0f4953b4d",
+          "3c7a98f0fdb6235b8076319c74dc1085f7b349b6d750416dd0cadb07d7972ec4",
+          "d2ed7a7bf4f8ac9c7969e9b3a07ebd4dda0d858f372c876ac0a041611698de9a",
+          "4a1dd3cd2ea14368afadf7e9dfdd63b104e3981ef8c85bbb6510919b810af04b",
+          "8cb5f48bbe70b5248db7f327f3d1ad6649df5c767d2a7e0711ee147fd92e06af",
+          "cf50d73fa8117a758093b1344de41cd6a6ccddc645cdda1fa91a9264efe93956",
+          "81cc2baa35b798d6084bd078662fa29ff28df02c46c6ccdb2b43bde97d19f781",
+          "c31e6f075cd77e01839aebce32ed35659a9ee962d102aca53040bb5e297410a9",
+          "deda7c30d798a19b6699a45fbcba503cf778594df9163c61c2f96bb2d2b9fb45",
+          "0bd84c776dc01f784a617e73fc77b269f847fc4a062ffd489e4692869724bf08",
+          "454c43d296b1276bde9a4f6ff1da2221cb35ccdb2fc7991bdd572e45bce12a8a",
+          "5dd3a6ba806ac472663e243cfc1c034c534d5d9a42ec362c3dbf0f8d950148d0",
+          "43b7a5e56f9e6c7b74e1ce2b7b5af63f383084625fcc2d3a5985fa1059e2db95",
+          "50659748723e906c8b3d3c0386bd4cf692f693a3e23639398c1a14d0c31fed61"
+        ],
+        "ipv4": [
+          "185.241.211[.]197",
+          "185.99.255[.]28",
+          "155.94.150[.]39"
+        ],
+        "domain": [
+          "007.from-ak[.]com",
+          "newnewnew.gotdns[.]org",
+          "sc.payproofkit[.]com",
+          "soxnewwork.homedns[.]org",
+          "cdn007-digitaldownloads[.]com",
+          "ns.mo7sen[.]dev"
+        ],
+        "url": [
+          "hxxps://ns.mo7sen[.]dev/EadF.php",
+          "hxxps://ns.mo7sen[.]dev/EadF.php?p=4",
+          "hxxps://ns.mo7sen[.]dev/EadF.php?p=5"
+        ]
+      },
+      "links": [
+        "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-12",
+      "title": "School Bomb Threats: Hudson Rock Finds Reported Sender Accounts in Infostealer Data",
+      "summary": "Hudson Rock found infostealer-derived credential records for two university email addresses linked to threatening emails that disrupted Italian schools on November 11. The Egyptian address appears in a Vidar infection record dated October 1, 2021, which includes browser-saved passwords, including two for Microsoft authentication pages. The Taiwanese address appears in the AlienTXTBASE collection, with its data placed more than a year before the threats. Hudson Rock's findings do not confirm that these credentials were used to send the threats, and the sender identity remains unverified. The report's main takeaway is that exposure intelligence should trigger prompt account containment, credential replacement, and endpoint remediation.",
+      "completeness": "Low",
+      "threats": [
+        "Vidar_stealer"
+      ],
+      "geo": [
+        "Italy",
+        "Italian",
+        "Egyptian",
+        "Taiwanese",
+        "Ireland"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Google Chrome",
+        "Chrome"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/school-bomb-threats-hudson-rock-finds-reported-sender-accounts-in-infostealer-data/"
+      ]
+    }
   }
 ]

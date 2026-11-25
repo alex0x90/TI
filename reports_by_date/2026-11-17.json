@@ -1,0 +1,1648 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Inside the AI-Powered Marketplace Turning Infected Computers Into Searchable Profiles",
+      "summary": "A newly advertised cybercrime service adds AI-generated descriptions and natural-language search to the sale of infostealer logs, presenting each compromised computer as a profile of its apparent owner, workplace, and applications. Hudson Rock says a listing for a $10 ophthalmology clinic front-desk machine matched a record in its own infostealer database, and its review of the stolen files supported parts of the description. The screenshots show asking prices, and the operator's claims about database size and AI coverage are unverified. Listed profiles may combine work and personal activity, and descriptions can make claims of employment or access seem more certain than the evidence supports. Defenders should map stolen artifacts to affected accounts, contain the endpoint, revoke sessions and tokens, and review authentication activity for abuse.",
+      "completeness": "Low",
+      "geo": [
+        "Canadian"
+      ],
+      "software": [
+        "Firefox",
+        "Anthropic",
+        "Claude"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "links": [
+        "https://www.infostealers.com/article/inside-the-ai-powered-marketplace-turning-infected-computers-into-searchable-profiles/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "ARTEX and VAPOR PANDA: How One Operator Used an Agentic AI Pentest Framework Against 200+ Organizations",
+      "summary": "CrowdStrike tied a campaign starting October 17 to the China-nexus adversary VAPOR PANDA, which used ARTEX, an open-source agentic AI pentest framework, to target more than 200 organizations in at least 14 countries from one controller. ARTEX introduced no new exploits; it automated planning and memory, letting one operator run parallel attack paths and switch when one failed. CrowdStrike confirmed post-exploitation activity at nine organizations, with password spraying against at least 12 more, so the 200-plus figure counts targets rather than compromises. Attacks relied on known gaps such as an unsigned SAML assertion, an exposed cloud metadata service, and the BLOODALCHEMY backdoor delivered via DLL side-loading. Because multiple actors now use ARTEX, defenders should detect behavior and machine-speed cadence rather than attribute by tool. Recommended steps include rotating credentials, enforcing SAML signature validation and IMDSv2, and running EDR everywhere.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Password_spray_technique",
+        "Bloodalchemy",
+        "Nuclei_tool",
+        "Sqlmap_tool",
+        "Nmap_tool",
+        "Proxylogon_exploit",
+        "Supply_chain_technique",
+        "Screenconnect_tool",
+        "Pentagi_tool",
+        "Cyberstrikeai_tool",
+        "Dll_sideloading_technique",
+        "Chisel_tool",
+        "Cobalt_strike_tool",
+        "Adaptixc2_tool",
+        "Vshell",
+        "Dcsync_technique"
+      ],
+      "geo": [
+        "Middle east",
+        "Belgium",
+        "Korean",
+        "China",
+        "Philippines",
+        "Oceania",
+        "Latin america",
+        "America",
+        "South korean",
+        "Asia"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 16,
+      "software": [
+        "Playwright",
+        "Microsoft Exchange",
+        "Microsoft 365",
+        "DeepSeek",
+        "Active Directory",
+        "SoftEther",
+        "Claude",
+        "Claude Code",
+        "Microsoft Entra",
+        "Okta",
+        "have more..."
+      ],
+      "ttps": [
+        {
+          "id": "T1518.001",
+          "name": "Software Discovery: Security Software Discovery",
+          "tactics": [
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1552.005",
+          "name": "Unsecured Credentials: Cloud Instance Metadata API",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1651",
+          "name": "Cloud Administration Command",
+          "tactics": [
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1606.002",
+          "name": "Forge Web Credentials: SAML Tokens",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1505.003",
+          "name": "Server Software Component: Web Shell",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1555",
+          "name": "Credentials from Password Stores",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1134.001",
+          "name": "Access Token Manipulation: Token Impersonation/Theft",
+          "tactics": [
+            "Stealth",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1114.002",
+          "name": "Email Collection: Remote Email Collection",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1574.001",
+          "name": "Hijack Execution Flow: DLL",
+          "tactics": [
+            "Stealth",
+            "Execution"
+          ]
+        },
+        {
+          "id": "T1036.005",
+          "name": "Masquerading: Match Legitimate Resource Name or Location",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1133",
+          "name": "External Remote Services",
+          "tactics": [
+            "Persistence",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1078",
+          "name": "Valid Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1110.003",
+          "name": "Brute Force: Password Spraying",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1090.003",
+          "name": "Proxy: Multi-hop Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1572",
+          "name": "Protocol Tunneling",
+          "tactics": [
+            "Command and Control"
+          ]
+        }
+      ],
+      "links": [
+        "https://www.safebreach.com/blog/artex-ai-pentest-framework-vapor-panda/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Lotuslite V2: The Evolution of Mustang Panda’s .NET Backdoor",
+      "summary": "Lotuslite V2 is a .NET successor to the LOTUSLITE malware family, which the report assesses with high confidence as attributed to China-nexus Mustang Panda (Earth Preta). The campaign began with a public Zoho WorkDrive link delivering a ZIP archive containing a signed PDFgear executable that side-loaded a malicious DLL. The malware establishes registry persistence through Run and Load keys and a PDF file-association hijack, and it communicates using a new PRO1 protocol marker with application-layer AES-256-GCM encryption. The observed activity targeted Thailand, which the report links to Mustang Panda's regional espionage priorities. Defenders should note that network detection rules based on earlier LOTUSLITE magic values will not match this variant's traffic.",
+      "completeness": "Medium",
+      "threats": [
+        "Lotuslite",
+        "Dll_sideloading_technique"
+      ],
+      "geo": [
+        "China",
+        "Thailand"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Windows registry",
+        "winhttp",
+        "NET Framework"
+      ],
+      "algorithms": [
+        "zip",
+        "aes-gcm",
+        "aes-256-gcm",
+        "xor"
+      ],
+      "iocs": {
+        "sha256": [
+          "d74fee10090cae17655d137e060398ce6fe52eb811ebc67a439ef37297e5014f",
+          "33cf56f15b9e069e3f21d23338ec96c2aaf6edd4f2baadcea2af39e1968515ea",
+          "4748571d98c6af34f4967a3886f73b4421239a1203f048140d3bfdaf8aa78937"
+        ],
+        "md5": [
+          "523fa72200f642ec9175750b71cae0db"
+        ],
+        "ipv4": [
+          "31.59.184[.]185",
+          "103.175.50[.]32"
+        ],
+        "domain": [
+          "files-accl.zohoexternal[.]com"
+        ],
+        "url": [
+          "hxxps://files-accl.zohoexternal[.]com/public/workdrive-external/download/sa40h523fa72200f642ec9175750b71cae0db?x-cli-msg=n"
+        ]
+      },
+      "links": [
+        "https://antares-research.com/reports/lotuslite-v2/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Living off the AI: Shared Memories as a Covert C2 Channel",
+      "summary": "Darktrace Signal Labs demonstrated a proof-of-concept in a lab where attackers with a foothold and stolen Claude Console credentials abused the Claude platform's memory stores feature to turn Claude Code agents into live command and control implants. The technique uses the same Claude API endpoint used for inference, so communications blend into normal agent traffic. In a simulated Active Directory environment, the attacker dispatched nine natural-language jobs covering network discovery, password spraying, share enumeration, and exfiltration of a 1 GB file via the Files API. The technique was not observed in the wild and does not rely on a Claude platform vulnerability. Defenders should monitor agent harness process creation, command-line arguments, and API data transfer ratios against behavioral baselines.",
+      "completeness": "Low",
+      "threats": [
+        "Lolbin_technique",
+        "Quietvault",
+        "Sandworm_mode",
+        "Dustmaker",
+        "Nmap_tool",
+        "Password_spray_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Claude Code",
+        "anthropic",
+        "Active Directory",
+        "Linux",
+        "SMB server",
+        "curl",
+        "systemd"
+      ],
+      "links": [
+        "https://www.darktrace.com/blog/living-off-the-ai-shared-memories-as-a-covert-c2-channel"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Blatant and Beyond",
+      "summary": "Blatant Technologies (AS403005), a recently registered Seychelles-addressed autonomous system, was found hosting infrastructure behind fake helpdesk \"Security Verification\" pages targeting financial institutions. The investigation expanded to anonymous VPS services, including AnonRDP, KittyRDP, VMHeaven and Wildservers, which share hosting labels and routing ties with TechTies and SkyLink through the SMARTNET-associated AS-ALEX0220 set. Historical reporting links several Blatant prefixes to malicious use under earlier origin ASNs, including Lumma C2 and LiteLLM exfiltration. Observed activity includes CERBERUS and Evilginx panels, ScreenConnect deployments and GreyNoise-classified scanning. Defenders should hunt at both prefix and service-IP level, retain historical prefix origins, and treat shared labels as context rather than proof of abuse.",
+      "completeness": "High",
+      "threats": [
+        "Anonrdp_tool",
+        "Kittyrdp_tool",
+        "Cerberus",
+        "Screenconnect_tool",
+        "Evilginx_tool",
+        "Lumma_stealer",
+        "Supply_chain_technique",
+        "Fastflux_technique",
+        "Dojiner",
+        "Sliver_c2_tool",
+        "Hermes_tool",
+        "Artex_tool",
+        "Btmob_rat",
+        "Pentagi_tool"
+      ],
+      "geo": [
+        "Netherlands",
+        "Ukraine",
+        "Lithuania",
+        "Turkey",
+        "German",
+        "Philippines",
+        "Singapore",
+        "America",
+        "Seychelles",
+        "Belize",
+        "New york",
+        "United states",
+        "Germany"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "LiteLLM",
+        "Discord",
+        "Telegram",
+        "Alpine",
+        "CSGO",
+        "Okta",
+        "ServiceNow"
+      ],
+      "crypto": [
+        "bitcoin",
+        "monero"
+      ],
+      "iocs": {
+        "ipv4": [
+          "31.56.19[.]34"
+        ],
+        "domain": [
+          "santandergetsupport[.]com",
+          "virtualine[.]net",
+          "models.litellm[.]cloud",
+          "anonrdp[.]com",
+          "g2fali.kittyrdp[.]com",
+          "dojiner[.]at",
+          "c3rberus[.]at",
+          "welp[.]my"
+        ],
+        "email": [
+          "ghostynet[@]airmail[.]cc",
+          "abuse[@]ghostynetworks[.]com"
+        ]
+      },
+      "links": [
+        "https://ransom-isac.org/blog/blatant-and-beyond/",
+        "https://github.com/zyntarvo/EVILGINX-Control-Panel",
+        "https://github.com/vxcontrol/pentagi"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "World's Largest Brands Infected With Malware Via Optimizely",
+      "summary": "Attackers injected malicious JavaScript into the Project JavaScript field of customer projects on Optimizely Web, so visitors to 178 organisations, including Zoom, the BBC, CNN, HSBC, Equifax and IKEA, received a malicious payload from a trusted Optimizely domain. The payload swapped cryptocurrency wallet addresses, skimmed payment card details, stole cookies and screenshots, and on iOS 13 to 18 delivered Coruna and DarkSword exploit kits. Attacker wallets received roughly $7,000 in crypto before the funds were swept. Most infected snippets were cleaned by 16 November, and the attacker's domains have since been taken down. Defenders were advised to review Optimizely projects, rotate credentials, and deploy a restrictive CSP, noting that 'strict-dynamic' and 'unsafe-eval' allowed the payload through.",
+      "completeness": "Medium",
+      "threats": [
+        "Darksword_tool",
+        "Coruna_tool"
+      ],
+      "geo": [
+        "India",
+        "New zealand",
+        "Italia",
+        "Indonesia",
+        "Vietnam",
+        "Malaysia",
+        "Canada",
+        "Mexico",
+        "Singapore",
+        "Japan",
+        "Germany",
+        "Deutschland",
+        "Taiwan",
+        "Netherlands",
+        "Turkish",
+        "Hong kong",
+        "Danish",
+        "Philippines",
+        "Australia",
+        "Usa",
+        "American",
+        "Egypt",
+        "Korea",
+        "Spain"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "Salesforce"
+      ],
+      "wallets": [
+        "tron",
+        "wassabi"
+      ],
+      "crypto": [
+        "solana",
+        "litecoin",
+        "bitcoin",
+        "dogecoin",
+        "ethereum"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "atob"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "814a963c0da480e2449d9b6664480156e1cd6d731014117401bf635badec3a0f",
+          "f7b84b9a94f749f8ced3f0112d0a66894e8bbc3b4aa5592021d1b8976a9bad40"
+        ],
+        "sha1": [
+          "c4026b06d82b0f0b363eda0642d61cfbdc17884e"
+        ],
+        "domain": [
+          "1688360[.]cc",
+          "webshell[.]lol",
+          "5vobauua3ojpklx[.]icu",
+          "eil786npto9u5bq[.]icu",
+          "l7bcsnwc7nzr3uo[.]icu",
+          "linkforge[.]cc",
+          "je4ft3gn8vxudum[.]icu",
+          "q1ls1ho9x7wsxlu[.]icu",
+          "ios-hack[.]icu",
+          "p55abnw2pnsz0bo[.]icu",
+          "1y69gy2mdzaltz1[.]icu",
+          "gm38duxoihbmy5o[.]icu"
+        ]
+      },
+      "links": [
+        "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "ClickFix lures, from blockchain contract to pasted command",
+      "summary": "ClickFix kits hosted on hacked websites use blockchain smart contracts, a technique called EtherHiding, to look up their command servers, then copy a malicious command to the visitor's clipboard disguised as a captcha or Cloudflare check. The researchers tracked 240 contracts across seven chains, with 116 on free test networks, and 382 download hosts as of 16 November 2026. GzipGnaw, the most widely seen kit, changed its server domain from zhv8[.]com to xzx1[.]com a week after a new contract named it. Some commands hide Windows tool names, and macOS variants clear the Terminal and its history after running. Defenders should note that changing a contract answer requires only one transaction, so hacked sites need no editing to switch servers.",
+      "completeness": "Medium",
+      "threats": [
+        "Clickfix_technique",
+        "Chainbite_tool",
+        "Gzipgnaw_tool",
+        "Skinframe_tool",
+        "Etherhiding_technique",
+        "Hexmage",
+        "Bw_panel_tool",
+        "Tokentooth_tool",
+        "Doubledonut",
+        "Framefinger_tool",
+        "Clocktail"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Cloudflare",
+        "LenAI",
+        "Windows installer",
+        "curl"
+      ],
+      "crypto": [
+        "ethereum",
+        "arbitrum"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "sha1": [
+          "0321c73150543faa9d016c9c46abf293eb6839e4",
+          "c0b115978ab0a985ed081cb609f35e7888ccdcf0",
+          "68dce15c1002a2689e19d33a3ae509dd1feb11a5",
+          "a1decfb75c8c0ca28c10517ce56b710baf727d2e",
+          "623f65e5945c0fecf8f68ff9d98ce56fece6bc6a"
+        ],
+        "ipv4": [
+          "85.239.149[.]40",
+          "93.152.224[.]29",
+          "94.156.170[.]255",
+          "45.158.199[.]240"
+        ],
+        "domain": [
+          "qaz4[.]com",
+          "qaz6[.]com",
+          "xaz2[.]com",
+          "zvh4[.]com",
+          "fmjjchoiowdel.xzx1[.]com",
+          "adkdqrqkldbpt.zhv8[.]com",
+          "ktoktotam[.]cc",
+          "nikogdatakonebilo[.]cc",
+          "efreitorher[.]org",
+          "yaebalciganovvjopu[.]org",
+          "dog.caspers66[.]com",
+          "checkingrayid[.]com",
+          "cf-www[.]com",
+          "zvx1[.]com",
+          "hagosuro[.]lc"
+        ],
+        "url": [
+          "hxxps://efreitorher[.]org/h/c/f9e1881c658d8b72&echo",
+          "hxxp://94.156.170[.]255/webdav",
+          "hxxp://hagosuro[.]lc/dantestraff18/9956ca98593d95f4",
+          "hxxp://45.158.199[.]240/fd8dc70d485d?force=1"
+        ],
+        "email": [
+          "peufghxxdh[@]dns-api[.]org"
+        ]
+      },
+      "links": [
+        "https://ohey.ca/research/clickfix-blockchain-contract-to-pasted-command/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "A USB worm’s second life: Retadup spreading CoffeeLoader",
+      "summary": "CoffeeLoader is now delivered via the Retadup worm, which a 2019 law enforcement takedown had dismantled but which was revived around 2024 by someone re-registering its former C2 domains. The new CoffeeLoader variant is an NSIS installer that drops a patched 7-Zip library containing a new Armoury packer version, which uses OpenGL rather than OpenCL for GPU-based decryption. The downloader establishes persistence through the Run registry key and fetches the main body over HTTPS, verifying a signed response before executing it. The Trojan's functionality is largely unchanged, though its protocol constants and keys were altered. Retadup's infections spread through USB drives via hidden LNK files, and defenders were told that roughly 15,000 systems were blocked in the first three quarters of the year, mostly in Peru, Angola, Russia, and Bolivia.",
+      "completeness": "Low",
+      "threats": [
+        "Retadup",
+        "Coffeeloader",
+        "Armouryloader",
+        "Smokeloader"
+      ],
+      "geo": [
+        "Russia",
+        "Peru",
+        "Angola",
+        "French",
+        "Bolivia"
+      ],
+      "software": [
+        "OpenGL",
+        "Firefox",
+        "cloudflare",
+        "AutoIt",
+        "AutoHotkey",
+        "WinHTTP",
+        "nginx"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "md5"
+      ],
+      "iocs": {
+        "sha256": [
+          "62327438664878386332786c5a5841744e6a41774d4441774c584e735a575677"
+        ],
+        "md5": [
+          "d7785198d9341310978e4cedc7bdb735",
+          "a21251838432306f2cd2540593656b9e",
+          "2026f751079659cf71c7ba64b345c12a",
+          "fd0c7ee872277f33e3335530299b836a",
+          "2272dde17925d6179bea6fcf4d543d20",
+          "dce55eec553f6af16ba6481eaacb8638",
+          "449c9e8bc6eb308aa3c46c88959e1a4f",
+          "58886d45a0c5e802a5d0a7545c36112d",
+          "cca710c5455c1fe2732771afbac16a09"
+        ],
+        "domain": [
+          "alphanoob[.]com",
+          "newblackage[.]com",
+          "newminersage[.]com",
+          "radnewage[.]com",
+          "minernewage[.]com",
+          "rad2016.publicvm[.]com",
+          "radpal.publicvm[.]com",
+          "roro2016.linkpc[.]net",
+          "internet-speed-check[.]com"
+        ]
+      },
+      "links": [
+        "https://securelist.com/retadup-delivers-coffeeloader/121908/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "QUIC and Covert: Novel HTTP/3-Powered RATs Target Southeast Asian Governments",
+      "summary": "TGR-STA-0049, also tracked as REF7707, Earth Alux and Ink Dragon, has been running a cyberespionage campaign against Southeast Asian government entities since at least July 2025. The group deployed two previously undocumented Go and C++ remote access Trojans, PerfectPioneer RAT and its modular successor KUKURAT, which appeared in March 2026. Both families use HTTP/3 over QUIC and UDP for command and control, which can evade traditional TCP-focused inspection. Initial access came mainly from exploiting unpatched Microsoft Exchange and web servers to deploy web shells, supplemented by phishing with disguised PDF executables. After compromising domain controllers, the actors abused log-on scripts, dumped credentials, and used mailbox impersonation rights to exfiltrate documents. Defenders should monitor or block outbound UDP 443, audit log-on scripts and Exchange permissions, and watch for rundll32 with comsvcs.dll.",
+      "completeness": "High",
+      "threats": [
+        "Credential_harvesting_technique",
+        "Dll_sideloading_technique",
+        "Squidoor",
+        "Finaldraft",
+        "Perfectpioneer",
+        "Kukurat",
+        "Aspxspy_shell",
+        "Godzilla_webshell",
+        "Suo5_tool",
+        "Process_injection_technique",
+        "Winrm_tool",
+        "Credential_stealing_technique",
+        "Dcsync_technique",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Procdump_tool",
+        "Sdelete_tool",
+        "Portscan_tool"
+      ],
+      "geo": [
+        "Myanmar",
+        "Asian",
+        "America",
+        "Asia"
+      ],
+      "ttp_tactics": 6,
+      "ttp_techniques": 0,
+      "software": [
+        "WildFire",
+        "Linux",
+        "Microsoft Exchange",
+        "GlobalProtect",
+        "PsExec",
+        "Windows service",
+        "Google Chrome",
+        "Chrome",
+        "Active Directory",
+        "Local Security Authority",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "Get-ManagementRoleAssignment"
+      ],
+      "languages": [
+        "golang",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "2281e754f70e11298db1a0a7c1b527cf2b5eec2056d4c73a46ed572ab873dc6e",
+          "9721d65ee7695db2b3dc3705f5d8e5efe3a478c3b6d1704d66daf77fe95aeb0d",
+          "d725ad8b523c94f99fca9e72a650e835dca47b9ebe7610d6c4eb3525d410c365",
+          "f4c9d5d13c1a09533876a02f6fa04831efbf600b05cfb3ed765a0ebde82b0457",
+          "19bb3012d846f3672fb98dad0449ae5c267ab30150800b2f1559036564c7d0b8",
+          "92fb9545ea49e2fb4635fce1859ff3f609738be75f85d146614243fc8bc80b67",
+          "ab06f540ecdd1d45491aa71bfc04c80852371c8f5cd43b9a6ebb53f1e1b69588",
+          "bf59f8d7ef79b09a72bbb9c05ca8746466d03226a3779cc1096ba067117ca008",
+          "8bf9401990d3255d1022a25884b02ee75ef01bd1a729d29ff52de2e5f0d637a2",
+          "5f857ff78bfbef2a55a846fc93744e11e07a9b72ee3fc3bc345c32ce9615ddee",
+          "61f7e2f4159c566578e88cb05cdf49e4378f45ebddbd332224e97c11df922120",
+          "5b7effbf0465c05e8dc9a8fea69b000a78237735ea0b854e8d9baee5b7af8344",
+          "cd8f43da32849584751eec884cf7e3208eb0a71108197a32e9bb248612e757d2",
+          "7541222a1316ec54bf9c8660b923e1d0490a925b2ee92060b1567be7cb1bde4b",
+          "cffcd6f2589d3ab4f3693805d1752b7c328a00cc543dd02b129763e179c3f311",
+          "5805cb5b0a6fb738ef7c1873b8e5de4281c36c7f440f28717fa9f441c5e0ef17",
+          "a6a9ccffadd00b0e75e913b0f851b1f834fd20588df8b89759d9ae49a48c8e10",
+          "b975f5932c04b381f8fa58a3303194f1aff950d3c6cd12dcc1d323bb3393718b",
+          "904409ce8846394e1fe9a5ce37f2265cbf6933611278ae57fdf5fa74759af2bb",
+          "d700b573ea8387efad633a70124b7a2a3aece844a267157b1cb55be7b62f3b67",
+          "52d3442fb26023ebc0bc76542b56be88d1c3327c8bcedf1dcb95f80511527f07",
+          "8cfe629fc08ae06c8ba106113ba30bb16fa2fbbf8bd3dd6831d16b031e0ebe70",
+          "619b749e1c6634d38f15c51005a4237e9076aaaf36927b562a990e8bc34fdfcb",
+          "fb5b0b1d083d6f6afa90948bd1fd1a498b51dd3f6dc7f90a02a2a17818756563",
+          "183abf82951c2052e9a1829c70c173c11756e8df0e86c8071c27df0988caeaa0",
+          "0533365accbba405757de7eb486533c11c8e0510a28d414ee8c5e6b8a41ed97b",
+          "3cb5376a5e6c0fcbd6844ab76f3dc73a42da7ecee6ecaaef285d4abe33964fa1",
+          "f5ebe85418655d75d1a760543858846db1478a060875fd19ddaa5e2febc038d7",
+          "b5bea4d8b94fbb39ac992e8e763680af6f39d12d42e264b43431fb61cf7b9a88",
+          "7745523939fc6b31b6a73d8ca1f363c62438b6eef56f6fe8c39e71fcd14b65f4",
+          "0c49e1b98a236d3391740473101b66dd48c719fa4112dbef3816b56bce58e6e7",
+          "24c46bc9269e1c1ee54004e01d5c7c54f759bc1b93a282d3561d2d27f678af86",
+          "e5689e1bf916c2f7649e178008e790ea13eb844aefc14516c06b0da8296377a1",
+          "63eac14921f138fffe73db417c12afd16d64202ebbee7ad5f08068697d2942d0",
+          "790e6699704395a7fad633f4e502312bc43693a44a8e18d43239209eefbd7ff2",
+          "f82c06184ab36e91d28f7802c739e637792c241a7ff2fba9ca24178f12423684",
+          "2e52b2936e67872d1364d2d0d26a8733ed9582b38f6f0b3a877ffdd6e2c04aa4",
+          "9dfefc7118646535d1193e1b036dd0c93fa66cc585a60301fcdceb6f45903aad",
+          "600572a912650b258d56aedeef0ab712abbe35a38cdd23faa5a95dacfdc67b7f",
+          "86194c3b3cc7a58e439621aff42e116ca94d40f3a6f539f20ce483f1cf5a7191",
+          "e8cd6bbcf6073669a7415ce0c9009a0fbb5551bf5e17803be12ef295f0c99889",
+          "5b779b81a9bb25591ecac6bd74bb44a4a5b2b8f257093f9efd5910346ab8d772",
+          "c4b4647795567ab15528edd1ab1bf37fb50e21b442e59a653051061973e87c02",
+          "bf8afbd1c2074c7cd6ff8b86dbe67a57ca5594817e46b24e226b71c4edde7697",
+          "b8dca1c7e7a74ce82ab4e4cad9b718a458735d2c6c956e4cf3109aac59bfd0e4",
+          "9fb0976fcd1f92c4711726a91cff8be9a39944efedc4caf2d80f935327f8f490",
+          "7225ef57161cf0908560811be798d22e9354c071d576540a43aa7900784c0688",
+          "a214d264c6bb0d2ba89986f73e196ea200307574745a245fc42c32fbef4cc140",
+          "662dc73e11b60b2f12c94b6b68da45de7bffece4b1dcc75679ed020629d0705d",
+          "b062b4d8c19baf5c1568e28b3e0a5e2318e9501ea61ddfe804d9755c1bdbf887",
+          "34cc9bc4a533b91e7cdb30fecc57ba609dc890780fd13ecfbc253047b3b37b78",
+          "0cbde9b7f59dafca80f214121a04eda7804b920da28ce1c06939a4783e6b097f",
+          "cdc9757294d3063eb10c9a37d1d945d31f6857c652b864803815406b02eeefbf",
+          "82a989c728db4e09a2b85a4a55f7663cefa62844632cb16dcda5ca70bf09a8a5",
+          "71d897427329ca14dd621e777046dc35f3d9dc870d3b13a56125125391a56afe",
+          "6781f84417d0056df95ed38b3e7a6b49312d30119470356f6923238d49de3490",
+          "dd02d28c48cf5cabd35a0b32e05e7c99ff0de35541201026ae36c59e54968c78",
+          "e59b08eb03ffa10ccf9103d171af757308e6d43519c4e904ef5e0929ef92d8fd",
+          "99f571c07170250a84f0ae9de4179044df91244855d9b39978729933ea3d438f",
+          "7ee22a7b028102bb22f0a41d41cd101d5956c1db0cfd157b22bf4128bd472a4f",
+          "571067cc8f4224a4b80113b52672c7ac87e25dcdb0282a36a29a1784a24efa27",
+          "8d8ccf24b785a33a9388043baecc4be247ad01182b87df3f8e425957ef73087c",
+          "0e01c44e5a0615098d8c583930dd88dbd0ce6fe54b365c9f04d8b315a93f540a",
+          "1dd423ff0106b15fd100dbc24c3ae9f9860a1fcdb6a871a1e27576f6681a0850",
+          "04be76217500275335e82eb4c2c1588478f7a171efd7a0d9bdc6bbe83e315589",
+          "3deb43cc864f2322d374541d99af79d87ad08abf81cd967862c554f1c0c5fdb6",
+          "224ed1d3f8d7247989f812cb0accc1d1804197916c47d9600e6c4e9bef46a723",
+          "9b16333820189e94b2368e87cba0a9642595d5be0f985a6351f1ad834f5cd11d",
+          "bdcd0eefc62721814d0bd557285490aa99a4eb0425bf5204e6be16ec7ce93823",
+          "3e56d049f23ed45a7034e5c74bad45cae11ce6d15189fa7bda6b8d120439c7cc"
+        ],
+        "ipv4": [
+          "27.254.164[.]212",
+          "27.254.164[.]209"
+        ],
+        "domain": [
+          "www.investigationj6[.]com",
+          "www.maui-cocktailbar[.]com",
+          "ads-edge[.]com",
+          "www.wkuyda[.]com",
+          "www.thailisting[.]net",
+          "www.yangon.it[.]com",
+          "www.cloudflacecdn[.]com",
+          "www.police.gr[.]com",
+          "www.sacofficegov[.]com"
+        ]
+      },
+      "links": [
+        "https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/",
+        "https://github.com/GhostPack/SharpDPAPI",
+        "https://github.com/zesiar0/MyPsExec/tree/master"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Rezet Have Changed: Analyzing the Group’s New Attacks on Russia and the World",
+      "summary": "Rezet, a cyber-espionage group active since late 2018, targets companies in Russia, Belarus and Kazakhstan with phishing emails carrying disguised archives that deliver AnyDesk or RustDesk for persistent remote access. In autumn 2026 F6 observed the group experimenting with modified chains, adding AutoHotkey and PsExec, and switching to RustDesk. A third variant used AnyDoor, a panel built with AI tools that handles infected-device data, file building, and mass phishing campaigns. The AnyDoor phishing wave hit industries such as energy, logistics, healthcare and retail across 25 countries, with Russia as the main focus. Shared Yandex sender accounts and similar email templates link AnyDoor to Rezet, suggesting AI is being used to automate its attacks. Defenders should note that the group's AI-assisted tooling contains logic errors, though its activity remains high.",
+      "completeness": "High",
+      "threats": [
+        "Passview_tool",
+        "Mipko_tool",
+        "Xmrig_miner",
+        "Anydesk_tool",
+        "Rustdesk_tool",
+        "Anydoor_tool",
+        "Psexec_tool"
+      ],
+      "geo": [
+        "Africa",
+        "Uzbekistan",
+        "Russian",
+        "Belarus",
+        "Americas",
+        "Kazakhstan",
+        "Polish",
+        "Russia",
+        "Asia"
+      ],
+      "software": [
+        "AutoHotKey",
+        "PsExec",
+        "curl",
+        "UnRAR",
+        "Microsoft Word",
+        "Sysinternals",
+        "yInstaller an",
+        "elegram bo",
+        "nstaller and",
+        "Telegram",
+        "have more..."
+      ],
+      "algorithms": [
+        "md5",
+        "aes-cbc",
+        "aes",
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "php"
+      ],
+      "iocs": {
+        "sha256": [
+          "85144ff030adf6ffc142c6abcfeb1ac282e3bd30cf23cc0031679748df2a3dde",
+          "3aa49aaa1657730aaf62e17485b3a1be9728477d4a433e340ec07cb3daac1d25",
+          "0ad289c0dfb18a3fc2b1f0c5c5f279d1338ec3eb55db0305ab7fffc25e5f2936",
+          "f31fca28c1a9e928e5f0fab8fe835fbf196fc582ab07bb8c70b12086f270a53d",
+          "069de487bddb5a947642c32953a01ed868df191dc5349f6bbb7ac0fcd8017e70",
+          "0e9f09718283cc0f41001607b1c72088509d18c765c365aa5b6dbc4c816b6747",
+          "01c25c6403a07f2810088bfb36c36e4a66854b63f5050608db7425f087af5271",
+          "a076ac873a512516d9dbba250ff607a8ac3404907a577057392c1206315e94d6"
+        ],
+        "md5": [
+          "5742f45d7e36d5c9b942ccddbf41d937"
+        ],
+        "ipv4": [
+          "91.92.33[.]67",
+          "193.233.198[.]114"
+        ],
+        "domain": [
+          "mail-target-domain[.]site",
+          "mail.versio[.]nl"
+        ],
+        "url": [
+          "hxxp://91.92.33[.]67/api/payload?cid=1",
+          "hxxp://91.92.33[.]67/api/report",
+          "hxxp://91.92.33[.]67/",
+          "hxxp://91.92.33[.]67",
+          "hxxp://193.233.198[.]114:5000/api/report",
+          "hxxp://193.233.198[.]114:5000/api/heartbeat"
+        ],
+        "email": [
+          "in1[@]okbm-bus[.]nl",
+          "quitreskortuizinnonfu[@]yandex[.]ru",
+          "litothetingpairagigen[@]yandex[.]ru",
+          "toppapimplocafarrixap[@]yandex[.]ru",
+          "terwsembviringliepathimo[@]yandex[.]ru",
+          "epboopagliorocises[@]yandex[.]ru",
+          "botasandnowimembtuterp[@]yandex[.]ru",
+          "nescimusksubsboahaukofsu[@]yandex[.]ru",
+          "gastjehydjodhbetipedi[@]yandex[.]ru",
+          "spurgutolunesloonoterp[@]yandex[.]ru",
+          "bartlankrelanhowpadeva[@]yandex[.]ru",
+          "roisienyamamentcasehen[@]yandex[.]ru"
+        ]
+      },
+      "links": [
+        "https://www.f6.ru/blog/rezet-ai/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Hackers Exploit Unpatched Microsoft Exchange Servers to Deploy Custom RATs Across Southeast Asia",
+      "summary": "Threat actor TGR-STA-0049 (also tracked as REF7707, Earth Alux, and Ink Dragon) has targeted Southeast Asian government entities since at least July 2025 using unpatched Microsoft Exchange and web servers. The campaign deployed web shells, lookalike-domain phishing with disguised executables, and two custom RATs, PerfectPioneer and its modular successor KUKURAT. Both malware families use HTTP/3 over QUIC, and KUKURAT adds a camouflage engine that buries malicious activity in benign-looking noise. Attackers stole credentials with tools such as Mimikatz and DCSync, modified domain log-on scripts for further spread, and granted compromised accounts broad mailbox access. Defenders should patch exposed servers, audit log-on scripts and Exchange permissions, and address stolen credentials as well as malware removal, since removal alone may leave attackers with routes back in.",
+      "completeness": "Medium",
+      "threats": [
+        "Perfectpioneer",
+        "Kukurat",
+        "Aspxspy_shell",
+        "Godzilla_webshell",
+        "Suo5_tool",
+        "Tinyrct",
+        "Dcsync_technique",
+        "Mimikatz_tool",
+        "Procdump_tool",
+        "Credential_dumping_technique"
+      ],
+      "geo": [
+        "Asia"
+      ],
+      "software": [
+        "Microsoft Exchange",
+        "GlobalProtect"
+      ],
+      "iocs": {
+        "sha256": [
+          "2281e754f70e11298db1a0a7c1b527cf2b5eec2056d4c73a46ed572ab873dc6e",
+          "9721d65ee7695db2b3dc3705f5d8e5efe3a478c3b6d1704d66daf77fe95aeb0d",
+          "d725ad8b523c94f99fca9e72a650e835dca47b9ebe7610d6c4eb3525d410c365",
+          "f4c9d5d13c1a09533876a02f6fa04831efbf600b05cfb3ed765a0ebde82b0457",
+          "19bb3012d846f3672fb98dad0449ae5c267ab30150800b2f1559036564c7d0b8",
+          "92fb9545ea49e2fb4635fce1859ff3f609738be75f85d146614243fc8bc80b67",
+          "ab06f540ecdd1d45491aa71bfc04c80852371c8f5cd43b9a6ebb53f1e1b69588",
+          "bf59f8d7ef79b09a72bbb9c05ca8746466d03226a3779cc1096ba067117ca008",
+          "8bf9401990d3255d1022a25884b02ee75ef01bd1a729d29ff52de2e5f0d637a2",
+          "5f857ff78bfbef2a55a846fc93744e11e07a9b72ee3fc3bc345c32ce9615ddee",
+          "61f7e2f4159c566578e88cb05cdf49e4378f45ebddbd332224e97c11df922120",
+          "5b7effbf0465c05e8dc9a8fea69b000a78237735ea0b854e8d9baee5b7af8344",
+          "cd8f43da32849584751eec884cf7e3208eb0a71108197a32e9bb248612e757d2",
+          "7541222a1316ec54bf9c8660b923e1d0490a925b2ee92060b1567be7cb1bde4b",
+          "cffcd6f2589d3ab4f3693805d1752b7c328a00cc543dd02b129763e179c3f311",
+          "5805cb5b0a6fb738ef7c1873b8e5de4281c36c7f440f28717fa9f441c5e0ef17",
+          "a6a9ccffadd00b0e75e913b0f851b1f834fd20588df8b89759d9ae49a48c8e10",
+          "b975f5932c04b381f8fa58a3303194f1aff950d3c6cd12dcc1d323bb3393718b",
+          "904409ce8846394e1fe9a5ce37f2265cbf6933611278ae57fdf5fa74759af2bb",
+          "d700b573ea8387efad633a70124b7a2a3aece844a267157b1cb55be7b62f3b67",
+          "52d3442fb26023ebc0bc76542b56be88d1c3327c8bcedf1dcb95f80511527f07",
+          "8cfe629fc08ae06c8ba106113ba30bb16fa2fbbf8bd3dd6831d16b031e0ebe70",
+          "619b749e1c6634d38f15c51005a4237e9076aaaf36927b562a990e8bc34fdfcb",
+          "fb5b0b1d083d6f6afa90948bd1fd1a498b51dd3f6dc7f90a02a2a17818756563",
+          "183abf82951c2052e9a1829c70c173c11756e8df0e86c8071c27df0988caeaa0",
+          "0533365accbba405757de7eb486533c11c8e0510a28d414ee8c5e6b8a41ed97b",
+          "3cb5376a5e6c0fcbd6844ab76f3dc73a42da7ecee6ecaaef285d4abe33964fa1",
+          "f5ebe85418655d75d1a760543858846db1478a060875fd19ddaa5e2febc038d7",
+          "b5bea4d8b94fbb39ac992e8e763680af6f39d12d42e264b43431fb61cf7b9a88",
+          "7745523939fc6b31b6a73d8ca1f363c62438b6eef56f6fe8c39e71fcd14b65f4",
+          "0c49e1b98a236d3391740473101b66dd48c719fa4112dbef3816b56bce58e6e7",
+          "24c46bc9269e1c1ee54004e01d5c7c54f759bc1b93a282d3561d2d27f678af86",
+          "e5689e1bf916c2f7649e178008e790ea13eb844aefc14516c06b0da8296377a1",
+          "63eac14921f138fffe73db417c12afd16d64202ebbee7ad5f08068697d2942d0",
+          "790e6699704395a7fad633f4e502312bc43693a44a8e18d43239209eefbd7ff2",
+          "f82c06184ab36e91d28f7802c739e637792c241a7ff2fba9ca24178f12423684",
+          "2e52b2936e67872d1364d2d0d26a8733ed9582b38f6f0b3a877ffdd6e2c04aa4",
+          "9dfefc7118646535d1193e1b036dd0c93fa66cc585a60301fcdceb6f45903aad",
+          "600572a912650b258d56aedeef0ab712abbe35a38cdd23faa5a95dacfdc67b7f",
+          "86194c3b3cc7a58e439621aff42e116ca94d40f3a6f539f20ce483f1cf5a7191",
+          "e8cd6bbcf6073669a7415ce0c9009a0fbb5551bf5e17803be12ef295f0c99889",
+          "5b779b81a9bb25591ecac6bd74bb44a4a5b2b8f257093f9efd5910346ab8d772",
+          "c4b4647795567ab15528edd1ab1bf37fb50e21b442e59a653051061973e87c02",
+          "bf8afbd1c2074c7cd6ff8b86dbe67a57ca5594817e46b24e226b71c4edde7697",
+          "b8dca1c7e7a74ce82ab4e4cad9b718a458735d2c6c956e4cf3109aac59bfd0e4",
+          "9fb0976fcd1f92c4711726a91cff8be9a39944efedc4caf2d80f935327f8f490",
+          "7225ef57161cf0908560811be798d22e9354c071d576540a43aa7900784c0688",
+          "a214d264c6bb0d2ba89986f73e196ea200307574745a245fc42c32fbef4cc140",
+          "662dc73e11b60b2f12c94b6b68da45de7bffece4b1dcc75679ed020629d0705d",
+          "b062b4d8c19baf5c1568e28b3e0a5e2318e9501ea61ddfe804d9755c1bdbf887",
+          "34cc9bc4a533b91e7cdb30fecc57ba609dc890780fd13ecfbc253047b3b37b78",
+          "0cbde9b7f59dafca80f214121a04eda7804b920da28ce1c06939a4783e6b097f",
+          "cdc9757294d3063eb10c9a37d1d945d31f6857c652b864803815406b02eeefbf",
+          "82a989c728db4e09a2b85a4a55f7663cefa62844632cb16dcda5ca70bf09a8a5",
+          "71d897427329ca14dd621e777046dc35f3d9dc870d3b13a56125125391a56afe",
+          "6781f84417d0056df95ed38b3e7a6b49312d30119470356f6923238d49de3490",
+          "dd02d28c48cf5cabd35a0b32e05e7c99ff0de35541201026ae36c59e54968c78",
+          "e59b08eb03ffa10ccf9103d171af757308e6d43519c4e904ef5e0929ef92d8fd",
+          "99f571c07170250a84f0ae9de4179044df91244855d9b39978729933ea3d438f",
+          "7ee22a7b028102bb22f0a41d41cd101d5956c1db0cfd157b22bf4128bd472a4f",
+          "571067cc8f4224a4b80113b52672c7ac87e25dcdb0282a36a29a1784a24efa27",
+          "8d8ccf24b785a33a9388043baecc4be247ad01182b87df3f8e425957ef73087c",
+          "0e01c44e5a0615098d8c583930dd88dbd0ce6fe54b365c9f04d8b315a93f540a",
+          "1dd423ff0106b15fd100dbc24c3ae9f9860a1fcdb6a871a1e27576f6681a0850",
+          "04be76217500275335e82eb4c2c1588478f7a171efd7a0d9bdc6bbe83e315589",
+          "3deb43cc864f2322d374541d99af79d87ad08abf81cd967862c554f1c0c5fdb6",
+          "224ed1d3f8d7247989f812cb0accc1d1804197916c47d9600e6c4e9bef46a723",
+          "9b16333820189e94b2368e87cba0a9642595d5be0f985a6351f1ad834f5cd11d",
+          "bdcd0eefc62721814d0bd557285490aa99a4eb0425bf5204e6be16ec7ce93823",
+          "3e56d049f23ed45a7034e5c74bad45cae11ce6d15189fa7bda6b8d120439c7cc",
+          "834491282da22555f53b769ef8ad91a958f860c583ee5cb67b3f161caf19f854"
+        ],
+        "ipv4": [
+          "27.254.164[.]212",
+          "27.254.164[.]209"
+        ],
+        "domain": [
+          "www.maui-cocktailbar[.]com",
+          "ads-edge[.]com",
+          "www.wkuyda[.]com",
+          "www.thailisting[.]net",
+          "www.yangon.it[.]com",
+          "www.cloudflacecdn[.]com",
+          "www.police.gr[.]com",
+          "www.investigationj6[.]com",
+          "www.sacofficegov[.]com"
+        ]
+      },
+      "links": [
+        "https://cybersecuritynews.com/microsoft-exchange-servers/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Optimizely Attack Hits Zoom, BBC, CNN With Skimmer, iOS Kits",
+      "summary": "An Optimizely supply chain attack on November 16, 2026 turned a trusted experimentation script into a malware delivery channel for many well-known websites, including Zoom, BBC and CNN. Attackers exploited a vulnerability in Optimizely's Experimentation product to add a small loader to the Project JavaScript setting of many customer projects. The loader fetched a shared payload that swapped cryptocurrency addresses, skimmed card details from forms, and routed iOS devices to exploit kits. Researchers found 188 infected snippets across 178 organizations, and the malicious code was removed within hours. Sites with a tight Content Security Policy fared better, while the use of 'strict-dynamic' and 'unsafe-eval' weakened protection. Defenders should review Project JavaScript, rotate credentials, and tighten CSP.",
+      "completeness": "High",
+      "threats": [
+        "Supply_chain_technique",
+        "Coruna_tool",
+        "Darksword_tool"
+      ],
+      "geo": [
+        "Turkish"
+      ],
+      "software": [
+        "Zoom",
+        "Salesforce"
+      ],
+      "wallets": [
+        "tron"
+      ],
+      "crypto": [
+        "bitcoin",
+        "ethereum",
+        "solana",
+        "litecoin",
+        "dogecoin"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "atob"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "814a963c0da480e2449d9b6664480156e1cd6d731014117401bf635badec3a0f",
+          "f7b84b9a94f749f8ced3f0112d0a66894e8bbc3b4aa5592021d1b8976a9bad40"
+        ],
+        "sha1": [
+          "c4026b06d82b0f0b363eda0642d61cfbdc17884e"
+        ],
+        "ipv4": [
+          "136.113.106[.]136",
+          "34.96.213[.]201",
+          "34.87.36[.]58"
+        ],
+        "domain": [
+          "webshell[.]lol",
+          "1688360[.]cc",
+          "eil786npto9u5bq[.]icu",
+          "5vobauua3ojpklx[.]icu",
+          "l7bcsnwc7nzr3uo[.]icu",
+          "linkforge[.]cc",
+          "je4ft3gn8vxudum[.]icu",
+          "q1ls1ho9x7wsxlu[.]icu",
+          "ios-hack[.]icu",
+          "p55abnw2pnsz0bo[.]icu",
+          "1y69gy2mdzaltz1[.]icu",
+          "gm38duxoihbmy5o[.]icu"
+        ],
+        "url": [
+          "hxxps://1688360[.]cc/track.js"
+        ]
+      },
+      "links": [
+        "https://socradar.io/blog/optimizely-attack-hits-zoom-bbc-cnn-with-skimmer-ios-kits/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "3 Cybercrime Campaigns Targeting US Logistics: How Attackers Exploit Freight Workflows",
+      "summary": "Three campaigns target US logistics firms through routine business workflows: HelloFriends, NodeRemote, and Fake Freight Portals. HelloFriends uses phishing emails impersonating FMCSA and fake SAFER or Motus portals to harvest SSNs, EINs, fuel-card credentials, and one-time codes. NodeRemote distributes malware through fake broker onboarding pages and bills of lading, using PowerShell or VBS scripts to deploy a Node.js backdoor with scheduled-task persistence and rotating C2 relays. Fake Freight Portals, impersonating TIMOCOM and DAT, use WebDAV shortcuts to install MeshCentral and then deploy CastleRAT, with attempts to retrieve BitLocker recovery keys and weaken Defender. Defenders should monitor behavior and persistence rather than relying only on file or domain blocking, and verify carrier and broker workflows independently. The report also promotes ANY.RUN products, which should be discounted as vendor content.",
+      "completeness": "High",
+      "threats": [
+        "Noderemote",
+        "Credential_harvesting_technique",
+        "Meshcentral_tool",
+        "Nightshade",
+        "Uac_bypass_technique",
+        "Netsupportmanager_rat",
+        "Dead_drop_technique",
+        "Clickfix_technique",
+        "Residential_proxy_technique"
+      ],
+      "geo": [
+        "American"
+      ],
+      "ttp_tactics": 5,
+      "ttp_techniques": 0,
+      "software": [
+        "Vercel",
+        "Telegram",
+        "Cloudflare",
+        "Node.js",
+        "Windows Explorer",
+        "BitLocker",
+        "Microsoft Defender",
+        "Steam",
+        "Microsoft 365"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "56970620ba88b24aa993099cebbe7d5e118447b52450e886f9f896abc88ceab0",
+          "925a9d35a32e1a6a1ce1ae4b9ff09e289184d4d925d700752c99f15ab04296dd"
+        ],
+        "ipv4": [
+          "45.139.84[.]200",
+          "87.120.104[.]213"
+        ],
+        "domain": [
+          "dotcompanyinfo[.]com",
+          "dot.fmcsa.saferprofilereview[.]info",
+          "motus.relayconsolidation[.]online",
+          "motus.iconnectdataconsolidation[.]online",
+          "highwayonboarding[.]net",
+          "smart-url-worker.denisfsr-kemp.workers[.]dev",
+          "termsconditionsrelease[.]pro",
+          "update-dat[.]com"
+        ]
+      },
+      "links": [
+        "https://any.run/cybersecurity-blog/us-logistics-cyber-threats-3-campaigns/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Operation ShadowCloud: cloud service–based backdoors targeting government networks in Asia and Africa. Part 1",
+      "summary": "Operation ShadowCloud is an active campaign, first identified in early 2026, in which a threat actor abuses the legitimate MeshAgent utility to deploy two new backdoors, GitDoor and GitHub-based C2 variant names aside, GraphDoor. The implants hide command-and-control traffic behind Microsoft SharePoint, GitHub, and Ably so it blends with normal traffic and evades network-based detection. Initial access is unclear, but the evidence points to reuse of an existing infection on a Taiwanese network. The actor uses trusted executables to sideload malicious loader DLLs that decrypt and inject the backdoor into memory. GitDoor uses GitHub repositories as drop points for commands and as upload locations for victim data, and it fetches plug-ins and shellcode modules, including credential dumping and process injection tools. Victims were found in Asia and Africa, mainly in government, and the report notes that defenders should watch for abuse of trusted cloud services as C2 channels.",
+      "completeness": "High",
+      "threats": [
+        "Meshagent_tool",
+        "Graphdoor",
+        "Gitdoor",
+        "Erfrp_tool",
+        "Dll_sideloading_technique",
+        "Process_injection_technique",
+        "Procdump_tool",
+        "Cookie_stealer",
+        "Cookiekatz_tool",
+        "Credential_dumping_technique",
+        "Mimikatz_tool",
+        "Lsadump_tool",
+        "Petitpotam_tool"
+      ],
+      "geo": [
+        "Taiwanese",
+        "Africa",
+        "Chinese",
+        "Asia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Sysinternals",
+        "Windows service",
+        "Chrome",
+        "winlogon",
+        "Task Scheduler",
+        "Windows scheduled task",
+        "Windows Registry",
+        "Windows Security",
+        "WhatsApp",
+        "inlogon.ex",
+        "have more..."
+      ],
+      "algorithms": [
+        "aes-256-ecb",
+        "rc4",
+        "md5",
+        "aes",
+        "xor",
+        "crc-32",
+        "base64"
+      ],
+      "functions": [
+        "AllocADsMem",
+        "CreateThread",
+        "HTTP",
+        "createFolder",
+        "SetThreadContext",
+        "CreateService",
+        "MakeDir",
+        "DeleteDirectoryRecursively",
+        "GetProcessUserInfo",
+        "CreateTask",
+        "have more..."
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "md5": [
+          "32151547d912488ac5242731057170a3",
+          "e63ec733393e4e7e3424cbff918003a3",
+          "552f0a9cc5fc3755721fa49be05e8035",
+          "74b025084026d8d9a64661bf995d835b",
+          "8b78ef5609d942036e93721d75bd1f29",
+          "be739a7036dc8e2ee8608fba13c8c3a4",
+          "84802caf2579cfe7a38f079a64a3cd22",
+          "d955d03104f988582cbd2967177693d3",
+          "3896d44bc6d517291c60ee3f70543a31",
+          "e9d4081fac4a5111e6856f333d490439",
+          "b930fb3ab14fe45b378d5acfa6e0a763",
+          "14ec33ea808e697870d00c5e434c2952",
+          "6a54f8008ee659b6923abf5dba2b2cc1",
+          "12345678901234567890123456789012"
+        ],
+        "ipv4": [
+          "27.102.66[.]162"
+        ],
+        "domain": [
+          "upload.gofile[.]io"
+        ],
+        "url": [
+          "hxxps://github[.]com/LatonyCharnleyaW",
+          "hxxps://github[.]com/StevenDFournier",
+          "hxxps://github[.]com/JeneLeo",
+          "hxxps://github[.]com/VenoraKlanimU",
+          "hxxps://github[.]com/AlexandaJazzmynwC",
+          "hxxps://github[.]com/FloraineSuvitC",
+          "hxxps://github[.]com/bvgarciajocelynxccZ",
+          "hxxps://github[.]com/Eclemensadolph1n",
+          "hxxps://github[.]com/aYulysseserinYtas"
+        ]
+      },
+      "links": [
+        "https://securelist.com/operation-shadowcloud-gitdoor/122004/",
+        "https://opentip.kaspersky.com/https%3A%2F%2Fgithub.com%2FVenoraKlanimU/?utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL&icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_d2f301410b97200b",
+        "https://opentip.kaspersky.com/https%3A%2F%2Fgithub.com%2FLatonyCharnleyaW/?utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL&icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_6b064765fe3f040e",
+        "https://opentip.kaspersky.com/https%3A%2F%2Fgithub.com%2FStevenDFournier/?utm\\_source=SL&utm\\_medium=SL&utm\\_campaign=SL&icid=gl\\_sl\\_opentip-lnk\\_sm-team\\_0fb02d63cc1e433d"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Inside CyberStrikeAI: 221 tool executions and a disabled approval gate",
+      "summary": "A retained session database from an exposed CyberStrikeAI workspace records one conversation on 16 November 2026 in which an operator repeatedly directed an AI agent through offensive testing, with 221 stored tool executions. Four approval interrupts were rejected by an audit agent that failed to obtain a model answer, not by a human, and the approval configuration was later disabled at 09:48:15 UTC. The agent's strongest supported result is retrieval of compute-node and job data, while its claims of shell access, internal-network access, a data-lake breach and destructive changes are not established by the evidence. The report warns that the agent's final conclusions overstate access, uniqueness and impact, so claims need process, file, identity or transaction evidence. Defenders should correlate audit failures with configuration changes and subsequent execution, and should check whether agent data directories are exposed.",
+      "completeness": "Low",
+      "threats": [
+        "Cyberstrikeai_tool",
+        "Nmap_tool",
+        "Rustscan_tool"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "SQLite"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "a0b4be0a70e35d0d30809e0856e9860d4265df65e41fef2e93405e166d6edd36",
+          "4da5383d7a1bc2a83c20a39510227aad34072876fa47bfb20fd10aeb48b676eb"
+        ],
+        "ipv4": [
+          "38.76.169[.]207"
+        ]
+      },
+      "links": [
+        "https://huntback.io/blog/inside-cyberstrikeai-221-tool-executions-disabled-approval-gate"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Operation ArgonHunt: Open Directory Exposes a Crypto Exchange Breach and 44,000 Stolen AI API Keys",
+      "summary": "Operation ArgonHunt is a financially motivated operator whose working files were exposed through a misconfigured staging server's open directory on port 8099, which SOCRadar found during routine threat hunting. The first campaign compromised a Türkiye-based cryptocurrency exchange, with scripts that connect directly to the production database and forge withdrawal records to redirect customer funds to the operator's wallet. The logs show more than 200 forged entries, though SOCRadar did not verify on-chain settlement, so the losses are unconfirmed. The second campaign is an automated pipeline that harvested 44,096 unique AI API keys across Gemini, OpenAI, OpenRouter, Anthropic and xAI, of which 2,686 were still working on the operator's latest recheck. The report's key takeaway is that exchanges need integrity controls below the application layer, and AI API keys should be scanned, scoped, rotated and monitored like other production credentials.",
+      "completeness": "Medium",
+      "threats": [
+        "Password_spray_technique"
+      ],
+      "geo": [
+        "Canada",
+        "Uzbekistan",
+        "Turkish",
+        "Russia",
+        "Brazilian",
+        "United states",
+        "United arab emirates",
+        "Seychelles",
+        "Austria",
+        "Lithuania",
+        "Brazil",
+        "Kyrgyzstan",
+        "Singapore",
+        "Armenia"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 13,
+      "software": [
+        "OpenAI",
+        "Anthropic",
+        "MySQL",
+        "systemd",
+        "Chromium",
+        "Linux",
+        "Playwright"
+      ],
+      "algorithms": [
+        "base64",
+        "md5",
+        "bcrypt"
+      ],
+      "languages": [
+        "javascript",
+        "php",
+        "python"
+      ],
+      "ttps": [
+        {
+          "id": "T1595",
+          "name": "Active Scanning",
+          "tactics": [
+            "Reconnaissance"
+          ]
+        },
+        {
+          "id": "T1190",
+          "name": "Exploit Public-Facing Application",
+          "tactics": [
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1078",
+          "name": "Valid Accounts",
+          "tactics": [
+            "Stealth",
+            "Persistence",
+            "Privilege Escalation",
+            "Initial Access"
+          ]
+        },
+        {
+          "id": "T1110.001",
+          "name": "Brute Force: Password Guessing",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1110.002",
+          "name": "Brute Force: Password Cracking",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1110.003",
+          "name": "Brute Force: Password Spraying",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1552.001",
+          "name": "Unsecured Credentials: Credentials In Files",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1213",
+          "name": "Data from Information Repositories",
+          "tactics": [
+            "Collection"
+          ]
+        },
+        {
+          "id": "T1505.003",
+          "name": "Server Software Component: Web Shell",
+          "tactics": [
+            "Persistence"
+          ]
+        },
+        {
+          "id": "T1090.002",
+          "name": "Proxy: External Proxy",
+          "tactics": [
+            "Command and Control"
+          ]
+        },
+        {
+          "id": "T1528",
+          "name": "Steal Application Access Token",
+          "tactics": [
+            "Credential Access"
+          ]
+        },
+        {
+          "id": "T1565.001",
+          "name": "Data Manipulation: Stored Data Manipulation",
+          "tactics": [
+            "Impact"
+          ]
+        },
+        {
+          "id": "T1657",
+          "name": "Financial Theft",
+          "tactics": [
+            "Impact"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha1": [
+          "d2afce0c4cc6a115e8ef370d073a49f9e586349a"
+        ],
+        "ipv4": [
+          "176.65.148[.]2",
+          "176.65.148[.]228"
+        ],
+        "domain": [
+          "test.phoenixbot[.]lol"
+        ]
+      },
+      "links": [
+        "https://socradar.io/blog/argonhunt-crypto-breach-stolen-ai-api-keys/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Beyond Optimizely: Malicious Scripts Traced Across Four Web Services",
+      "summary": "Attackers exploited a signup vulnerability in Optimizely's Experimentation service and injected malicious JavaScript into customer project code, which websites loaded from trusted Optimizely snippets. Similar poisoned scripts were also traced to Kissmetrics, StorifyMe and minute-ly, though their access paths remain unresolved. Affected organizations include BBC, Fox Sports, FAZ and HSBC UAE, and Report URI counts 188 poisoned snippets across 178 organizations. The recovered payload replaces cryptocurrency destinations, watches for card details on accessible pages, and includes a fallback copy that runs if the remote load fails. Later iOS-related stages were described, but the report states that successful exploitation has not been proven. Removing the script does not reverse exposure that already occurred, so defenders should preserve script versions, verify project code and cached copies, and review sensitive pages that loaded the affected assets.",
+      "completeness": "Medium",
+      "threats": [
+        "Coruna_tool",
+        "Darksword_tool"
+      ],
+      "geo": [
+        "Usa"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Optimizely",
+        "Zoom",
+        "Salesforce",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "c154f3b644cd51f2446483c7ffd2ae4f178c4b0cb54846cfb5b83215367349cf",
+          "94d174abe1e3b12b000f2bc8cbd8e9344290f4b5a8661c8d700cdc5675675fba",
+          "a87a2eaea9cfb74aae7283d15fbdb499b5a8ebc3fab4c453df7d62e503996240",
+          "0f2f2a27d19112e5800541daecc91eb6c77e49f9b43ed23c890b876631978533",
+          "f7b84b9a94f749f8ced3f0112d0a66894e8bbc3b4aa5592021d1b8976a9bad40",
+          "c2a34c579e4c2e8802752c93b3a9cca0230610f3e4dd6688f4272459c7c7c162",
+          "45e42f5fa7520f6e7c048587f025549b31f0f24be8be058c7037d1da37e37b67",
+          "305d0b00a7bafae9f240dbaf5bfdbb19648e38e509e8992112fcb7866c2e37dc"
+        ],
+        "domain": [
+          "webshell[.]lol",
+          "1688360[.]cc",
+          "5vobauua3ojpklx[.]icu",
+          "eil786npto9u5bq[.]icu",
+          "l7bcsnwc7nzr3uo[.]icu",
+          "je4ft3gn8vxudum[.]icu",
+          "ios-hack[.]icu"
+        ]
+      },
+      "links": [
+        "https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Uncovering GhostMap: The Rootkit Behind Shai-Hulud’s Rusty Cousin",
+      "summary": "GhostMap is Aqua Nautilus's research name for a Linux eBPF rootkit found in IronWorm and Atomic Arch malware payloads. It hides selected processes, files and sockets by altering kernel data that user-space tools read, such as directory buffers and Netlink socket messages. In controlled tests, process and directory concealment worked against ps and directory readers, but a hidden listener remained visible to ss. Tracee detected the attachment of eBPF programs with memory-writing capabilities, even though user-space listings were manipulated. The key takeaway for defenders is to compare independent views and rely on runtime telemetry, not empty process listings alone.",
+      "completeness": "Low",
+      "threats": [
+        "Ghostmap",
+        "Shai-hulud",
+        "Ironworm"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 4,
+      "software": [
+        "Linux",
+        "systemd",
+        "sudo"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "ttps": [
+        {
+          "id": "T1014",
+          "name": "Rootkit",
+          "tactics": [
+            "Stealth"
+          ]
+        },
+        {
+          "id": "T1543.002",
+          "name": "Create or Modify System Process: Systemd Service",
+          "tactics": [
+            "Persistence",
+            "Privilege Escalation"
+          ]
+        },
+        {
+          "id": "T1622",
+          "name": "Debugger Evasion",
+          "tactics": [
+            "Stealth",
+            "Discovery"
+          ]
+        },
+        {
+          "id": "T1564.014",
+          "name": "Hide Artifacts: Extended Attributes",
+          "tactics": [
+            "Stealth"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "0c16ee8a8c1f5b51b01bce924e173030f032912d5b66f1a564fd636a67ddbf5f",
+          "36abd242ddaa27f0160c539377a0e92cf781c1695137850acc87e3892b436d36",
+          "8795b5215dd06c5366a038a65b18b4dfefa5fd90244a567c3e0b58323103377c",
+          "6144d433f8a0316869877b5f834c801251bbb936e5f1577c5680878c7443c98b",
+          "3607de2597f8955f9a88f36ee43b64d3891b8ef536e99fa098e80169350f7b01"
+        ]
+      },
+      "links": [
+        "https://www.aquasec.com/blog/ironworm-ebpf-rootkit-ghostmap-linux/",
+        "https://github.com/iproute2/iproute2/blob/v6.1.0/lib/libnetlink.c"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Two malicious agent-framework releases hit PyPI in 33 minutes",
+      "summary": "Two malicious releases of the agent-framework PyPI meta-package, 1.26.1 and 1.26.2, were published 33 minutes apart on Nov 17, 2026, and both have since been removed. The packages run a credential stealer every time Python starts, using a .pth startup hook that fires even when the package is never imported. The stealer harvests environment variables, credential files, Azure managed identity tokens, and CI secrets, including Azure DevOps and GitHub Actions OIDC tokens, and sends them to a webhook[.]site endpoint. Defenders should pin agent-framework==1.26.0, check for the listed .pth and loader files, and rotate every secret reachable from any machine or CI runner that installed either version.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Hugging Face",
+        "Docker",
+        "Linux",
+        "macOS",
+        "OPENAI",
+        "NUGET",
+        "Microsoft Entra",
+        "Dependabot",
+        "LiteLLM"
+      ],
+      "algorithms": [
+        "base64",
+        "sha256"
+      ],
+      "functions": [
+        "_start",
+        "_run",
+        "setsid"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "d27fa34414e6201d5e03e559ef634f020057554d7b3f4898dd5d7cd3e989e110",
+          "39fa329f2a93f734b0bb8f5adb203ea3331d1ae479832a5015a54cb17aabd663",
+          "c275ccbe520ef3c0f02dc6a35389e427f9f1b4e0b12e140cd7bf7179ce143f02",
+          "21f28e8517a10ffe431f8d68f5875c85eca4001ae6d118322b0a41873998eb5e",
+          "3d20a8bc91351a9a16b6db243b848ceca0206b7a8623b02d2af553a9c9f7e0a9",
+          "54d885b7d7161c9ed96489c66364c4bfbf635929166843bba10d97d46b5a2e1f",
+          "325e7e9f0ec94e41ad1a1b7a3f18a6b8b5bffece2e2b97b8d3369eb967452f93"
+        ],
+        "domain": [
+          "webhook[.]site"
+        ],
+        "url": [
+          "hxxps://webhook[.]site/d381fd80-ec62-42ad-8f5c-d1b15103c9bb",
+          "hxxps://webhook[.]site/d381fd80-ec62-42ad-8f5c-d1b15103c9bb?t=telemetry"
+        ]
+      },
+      "links": [
+        "https://www.aikido.dev/blog/two-malicious-agent-framework-releases-hit-pypi-in-33-minutes",
+        "https://github.com/AikidoSec/safe-chain",
+        "https://github.com/microsoft/agent-framework"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-17",
+      "title": "Rootways Authorize.net CIM: Apple Pay SSRF exploited on Magento stores",
+      "summary": "The Rootways Authorize.net CIM extension for Magento 2 contains a server-side request forgery flaw, CVE-2026-130583 (CVSS 9.2), in its Apple Pay endpoint that lets anonymous visitors read server files and reach internal services. Sansec observed an attacker exploit it on November 15 against a Magento 2.4.8 store running version 4.0.0, reading database credentials and the encryption key, then creating an admin account. The attacker gained code execution and injected a WebSocket payment skimmer into store pages, completing the chain in 14 hours. Rootways fixed the flaw in version 4.1.5, released November 17, and offers a two-file patch for merchants who cannot upgrade fully. Defenders should upgrade, or disable Apple Pay until they can, and assume compromise if it was enabled, rotating credentials and reviewing admin accounts.",
+      "completeness": "Low",
+      "threats": [
+        "Stylesmuggler_vuln",
+        "Polyshell_vuln",
+        "Sessionreaper_vuln"
+      ],
+      "geo": [
+        "Netherlands",
+        "Russia"
+      ],
+      "software": [
+        "curl",
+        "Redis",
+        "Shopware"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "functions": [
+        "putenv",
+        "mail"
+      ],
+      "languages": [
+        "php"
+      ],
+      "iocs": {
+        "sha256": [
+          "0ef70175c37ae25c9495725912ef4988234c5db068bbace50d6c80144ece1231"
+        ],
+        "ipv4": [
+          "37.72.140[.]221",
+          "45.86.62[.]180",
+          "45.166.20[.]61",
+          "54.39.16[.]34",
+          "2.27.168[.]28"
+        ],
+        "domain": [
+          "45-86-62-180.sslip[.]io"
+        ]
+      },
+      "links": [
+        "https://sansec.io/research/rootways-authorize-net-apple-pay-ssrf"
+      ]
+    }
+  }
+]
