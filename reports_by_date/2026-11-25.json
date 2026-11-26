@@ -1,0 +1,383 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-25",
+      "title": "WalletGuard: A Crypto Phishing Campaign Hosted Entirely on GitHub",
+      "summary": "A GitHub phishing campaign, dubbed WalletGuard, opened issues on over 200 cryptocurrency, wallet and developer-tool repositories in under 20 minutes on November 25, 2026. The issues falsely claimed wallet keys had leaked and urged maintainers to move funds to attacker wallets and submit seed phrases or private keys to a fake verification page. That page sent the secrets to a webhook[.]site collector, then displayed a \"no exposure found\" message to reassure victims. A companion CLI, walletguard-cli, collected wallet secrets, SSH keys and cloud credentials and exfiltrated them through a Cloudflare Worker to Telegram. Defenders should treat unsolicited \"security exposure\" issues as hostile and never provide seed phrases or private keys to third-party verification services.",
+      "completeness": "Medium",
+      "threats": [
+        "Walletguard",
+        "Credential_harvesting_technique",
+        "Zeus",
+        "Supply_chain_technique",
+        "Credential_stealing_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Indian"
+      ],
+      "ttp_tactics": 3,
+      "ttp_techniques": 0,
+      "software": [
+        "Telegram",
+        "Cloudflare",
+        "Unix",
+        "Node.js",
+        "curl",
+        "Ledger Live",
+        "Chrome",
+        "Chromium",
+        "Firefox",
+        "Docker",
+        "have more..."
+      ],
+      "wallets": [
+        "rabby",
+        "trezor",
+        "tonkeeper",
+        "tron",
+        "solflare",
+        "electrum",
+        "coinomi"
+      ],
+      "crypto": [
+        "uniswap",
+        "solana",
+        "cardano",
+        "monero",
+        "ethereum",
+        "aptos"
+      ],
+      "algorithms": [
+        "base58",
+        "sha256",
+        "gzip",
+        "aes-256-gcm",
+        "base64",
+        "zip"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "82c0bf5ce81d4c7e425fcde4f4cbfcfa6d672c781cd9d797576f44f24eb88411",
+          "5de78591e650ec331872213867daf85ab38010c086322c21a1c317cbb1f80490",
+          "5f0c022f9f4416f587c3c4aae554e4755f0f735e0c72f969dcd52864557312bf",
+          "5ba2d39a56074b733b3c367a1b635687869485fe8b5ca0b4f5ad9379082c442f",
+          "c5cde1095dd8e3efb7dd8ab348fdb5ec3db93cfe18c93d081df7a81029ab2c5b",
+          "39a7023acecd00fef9aa95a9bbbd55650ba8cb269d9ece978b27b59ca0d8111d",
+          "12e944d76883694a471e4003dfc3ea0c4931ddd41054226bcdceecc5e104cc34",
+          "53d6af1c8853c63875eea4cb11f11cefd3e09cc58623cf5f6aa1d0f6809c5ee7",
+          "6308f2e4ec3a2b730cae2606112784ebe030defb33ea6137cb0b546a129ee884"
+        ],
+        "sha1": [
+          "2c708911e4bc1e04c66ac703678111fac0f96985",
+          "e9af20496832e94b5c7789d696604894a4612bcc",
+          "46bf07c192c98dc3f68ceff38891ae3ea751fd78",
+          "52f5883ea59cd24782489fea24479384f6c3a1b6",
+          "3b776ce5750e8e2c93a2991402ac86a153da5f2e",
+          "381d76d0ff22b41b53e779c92a8a8699d6b0e67d"
+        ],
+        "md5": [
+          "47f103926979a610a5e00d2d27dd4d99",
+          "f5afb83900fd4f1b8f6b97da26b0a407"
+        ],
+        "domain": [
+          "amrbentaleb.github[.]io",
+          "webhook[.]site",
+          "walletguard-c2.walletcheck.workers[.]dev"
+        ],
+        "url": [
+          "hxxps://amrbentaleb.github[.]io/wallet-security-check/",
+          "hxxps://webhook[.]site/b39ec3ff-1525-4fdd-9f01-66dabce33eec",
+          "hxxps://walletguard-c2.walletcheck.workers[.]dev",
+          "hxxps://github[.]com/AmrBentaleb",
+          "hxxps://github[.]com/AmrBentaleb/wallet-security-check",
+          "hxxps://github[.]com/verifygmail2-debug",
+          "hxxps://github[.]com/verifygmail2-debug/walletguard-cli"
+        ]
+      },
+      "links": [
+        "https://opensourcemalware.com/blog/walletguard-phishing-campaign",
+        "https://github.com/localsend/localsend/issues/3766",
+        "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "https://github.com/localsend/localsend"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-25",
+      "title": "Risk Alert: Widespread Spread of a New Variant of the Cling Remote-Access Botnet",
+      "summary": "The new Cling botnet variant primarily targets Linux servers and IoT devices, and CNCERT detected its widespread propagation in November 2026. It hides command-and-control traffic among public STUN services by embedding commands in the STUN Transaction ID field, making its traffic difficult to separate from legitimate STUN exchanges. This variant removes propagation, proxying, and DDoS modules, retaining command execution and program download-and-execute capabilities to maintain long-term control of compromised hosts. Attackers use infected hosts as launchpads for delivering other malware, and the report counted about 5,600 infected devices in mainland China between November 9 and 20. Defenders are advised to monitor for anomalous STUN traffic on UDP port 3478 and non-random Transaction IDs, and to inspect startup entries in files such as /etc/inittab.",
+      "completeness": "Low",
+      "threats": [
+        "Clingstun",
+        "Mirai"
+      ],
+      "geo": [
+        "China"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Linux",
+        "LB-LINK"
+      ],
+      "algorithms": [
+        "exhibit",
+        "md5",
+        "chacha20"
+      ],
+      "iocs": {
+        "md5": [
+          "84ced85e53bc326f8b11115ae4bc24a7",
+          "65d94c9dddea41ef4690f193fbc54ec3",
+          "92533318fb6f0365eefd25090e7df146",
+          "be719987bf96fa16ac98b7c2a280cc74",
+          "e37b94dfcaa56924142c344edcb3652a",
+          "79de772daa218e25a812ecbedca08476",
+          "606f2fee6fa4b3ca556187c9ee709f3d",
+          "b672e3238742504faa93d5a7cb8d0ea0",
+          "dc11a0e68e5235e36480ddf14f08afbe",
+          "76021af2d82cade790dd87d3af0f80c9",
+          "16ef618bf21a3322c6793be87d553f08",
+          "fe35c5b3cfa118fdf8e1afb9a134e084"
+        ],
+        "ipv4": [
+          "209.99.188[.]119"
+        ],
+        "url": [
+          "hxxp://202.110.70[.]60:800/alya.x86",
+          "hxxp://202.110.70[.]60:800/alya.mipsel",
+          "hxxp://202.110.70[.]60:800/alya.arc",
+          "hxxp://202.110.70[.]60:800/alya.mips",
+          "hxxp://202.110.70[.]60:800/alya.x86_64",
+          "hxxp://202.110.70[.]60:800/alya.m68k",
+          "hxxp://202.110.70[.]60:800/alya.i486",
+          "hxxp://202.110.70[.]60:800/alya.sparc",
+          "hxxp://202.110.70[.]60:800/alya.powerpc",
+          "hxxp://58.211.144[.]243:800/alya.mipsel",
+          "hxxp://58.211.144[.]243:800/alya.mips",
+          "hxxp://58.211.144[.]243:800/alya.x86_64",
+          "hxxp://58.211.144[.]243:800/alya.i486",
+          "hxxp://58.211.144[.]243:800/alya.arc",
+          "hxxp://58.211.144[.]243:800/alya.powerpc",
+          "hxxp://58.211.144[.]243:800/alya.m68k",
+          "hxxp://118.45.196[.]225:800",
+          "hxxp://120.193.219[.]210:800"
+        ]
+      },
+      "links": [
+        "https://nsfocusglobal.com/risk-alert-widespread-spread-of-a-new-variant-of-the-cling-remote-access-botnet/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-25",
+      "title": "Analysis of AMOS and a backdoor targeting macOS, with ClickFix as the starting point",
+      "summary": "ClickFix lures on compromised Japanese university WordPress sites led an NICT employee's Mac to run a pasted terminal command, which installed AMOS-style infostealer components and two persistent backdoors. The stager, a zsh script, decrypts and runs a payload that steals passwords, browser data, Cookies, SSH keys and keychains within about two minutes. The backdoors use fixed C2 servers, Telegram and DNS dead drop resolvers, and a DGA as fallback, and one of them swaps cryptocurrency addresses in the clipboard, with roughly 150,000 USD in associated deposits observed. The compromised site also loaded a fake verification script and an EtherHiding loader that changes its payload domains often, while a related iOS Safari exploit kit resembled Google's Coruna. Infrastructure analysis suggests infections spread across many countries, including Japan, and are ongoing. Defenders should look for suspicious LaunchDaemons and hidden Application Support folders, watch for DGA lookups and _cfg TXT queries, and check WordPress plugin folders. Users should be warned never to paste commands from web pages into Terminal, and any infected system should be rebuilt with all credentials rotated.",
+      "completeness": "High",
+      "threats": [
+        "Amos_stealer",
+        "Clickfix_technique",
+        "Dead_drop_technique",
+        "Etherhiding_technique",
+        "Coruna_tool"
+      ],
+      "geo": [
+        "United states",
+        "United kingdom",
+        "Canada",
+        "Japan",
+        "South korea",
+        "China"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "macOS",
+        "OS user",
+        "WordPress",
+        "curl",
+        "Chrome",
+        "Telegram"
+      ],
+      "algorithms": [
+        "zip",
+        "xor",
+        "base64",
+        "sha256",
+        "chacha20-poly1305",
+        "aes-128-ctr",
+        "md5",
+        "chacha20"
+      ],
+      "languages": [
+        "php",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "ff6c956bfbbff56930265155dee2fa05ee94067b233f770d06aac9c010c21b93",
+          "cce8f181f5e751d1c545782cd3878cfe45c580f0b84f5c78bc243299de056030",
+          "7748969f9532754d10635be69fff7d1b390875f746c21deed794f3be27a77f41",
+          "341ccf614c2b88a2809269e8c347e288e8a42c96bdeab45a03ac5f209650ad8f",
+          "2bf8b57b0caea096288a847da36c4cf865faed2cbc2ecac081c3595402c171e6",
+          "d8cadf7b0b831767cfe03a22dc621f894da8ae43168dd8c7b3ff05f0dd18f4a1",
+          "65f36adef5e3dbbe2dbd81be62085555d8c629dcde581dd809810801db831346",
+          "2c4a5a49a84f55db0dd5554f7a9e055dbb0eae3782986726c6dcfab84ecd6dc5"
+        ],
+        "sha1": [
+          "b6bc9e1d0b2fb96ab7c47e04cb0be477410bc1f2",
+          "4fc5efd55b1c845e2e88b8431c0d018a6e5331fc"
+        ],
+        "ipv4": [
+          "178.62.247[.]40",
+          "165.232.95[.]242",
+          "185.7.214[.]97",
+          "62.197.45[.]33",
+          "109.120.147[.]236"
+        ],
+        "domain": [
+          "javascript[.]skin",
+          "interseq[.]at",
+          "trek-72[.]com",
+          "willow-62[.]com",
+          "stitch15[.]com",
+          "coral-stratos[.]com",
+          "2vl6zldhwsqa4[.]com",
+          "verifing-server[.]codes",
+          "poyanercold[.]top",
+          "img-codes-cloude[.]info",
+          "browse-cloud[.]codes",
+          "gorbit39[.]com",
+          "ichargeme[.]com",
+          "press-81[.]com",
+          "facetstem5[.]com",
+          "1km89wh41wqaf[.]com",
+          "knf3sgtw5zzs[.]com",
+          "1koz45z3h255v[.]com",
+          "38nlu8w7djbd1[.]com"
+        ],
+        "url": [
+          "hxxps://interseq[.]at/proliv2929/api",
+          "hxxps://poyanercold[.]top/proliv2929/api"
+        ]
+      },
+      "links": [
+        "https://blog.nicter.jp/2026/11/clickfix_amos_macos/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-25",
+      "title": "3,821 Philippine casino sites frame Coruna and DarkSword",
+      "summary": "Coruna and DarkSword iOS exploit kits are being delivered through a network of at least 3,821 Philippine online-casino sites that all promote one casino through a single affiliate link. Starting 10 November 2026, the sites carry a hidden one-pixel iframe that loads a router page on channel G.J.LJ, which selects an exploit chain based on the visitor's iOS version. iOS 17 and desktop or Android visitors receive the Coruna dispatcher, while iOS 18.4 to 18.7.2 visitors are routed to the DarkSword loader. Channel G.J.LJ is the only router build in the researchers' captures that logs exploit results and ten-minute survival heartbeats to measure whether iOS kills the tab. The operator registered failover domains and staged router hosts in pairs, with the affiliate network dating back about a year.",
+      "completeness": "High",
+      "threats": [
+        "Coruna_tool",
+        "Darksword_tool"
+      ],
+      "geo": [
+        "Philippine",
+        "Hong kong",
+        "Philippines"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Zoom",
+        "WordPress",
+        "Cloudflare",
+        "Android",
+        "Linux",
+        "Chrome"
+      ],
+      "algorithms": [
+        "sha256",
+        "base64"
+      ],
+      "functions": [
+        "createElement",
+        "parseIosVersion",
+        "print"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "76d7be883b5966d9390ae2a2a2aa042515a83140ab5eec6c433fc70ccaf42ac6",
+          "ef9d44b8c5f82a953b2e7e6102e41798d3ec58f2558606539b3243e75bf8d1c4",
+          "af38ed51fbfbfe31c5d5fe3e6627842e93b6c7334dcf435afd448681d7358146",
+          "eaab0874332777ad8a03a292bcd608a3358547f9f16ab551d34eef35d5cd539e",
+          "62fd9708c4d651de502ac7aa2524d66bfe83ec081e60b6382343b38f6aeeb5d5",
+          "7bdb98f4b2cebca85a8b017c9000ff5a0fb2e876667874072e40ff5d1856b642",
+          "a5883a35d528f312e8dab760bc79208e14602bc7283f6811b58725859894cf94",
+          "f07711ce38d06df378ae9b43dc1564411a36df5618d4cc82cbdd95ddc84b160a"
+        ],
+        "sha1": [
+          "6beef463953ff422511395b79735ec990bed65f4"
+        ],
+        "ipv4": [
+          "103.234.99[.]117",
+          "172.64.80[.]1",
+          "64.90.15[.]154",
+          "104.166.92[.]94"
+        ],
+        "domain": [
+          "knzcmny6mbpy10z[.]icu",
+          "6v0c0w7m520jdv5[.]icu",
+          "l4x3s9v4[.]com",
+          "x9n9.waps-pggaming[.]com",
+          "jd77com[.]com",
+          "lboj1ghk7ja3ndb[.]icu",
+          "kehs7d65698eyz1[.]icu",
+          "koko7-app[.]com",
+          "jiliace-casino[.]com",
+          "200jili-ph[.]com",
+          "phskyphp[.]com",
+          "ssbet77bingo[.]com",
+          "007jl-casino[.]com",
+          "a45au[.]com",
+          "a11.share-dns[.]com",
+          "b11.share-dns[.]net",
+          "phcash-com[.]com",
+          "jljl99bf[.]com",
+          "pagcor-app[.]com",
+          "phlarowin[.]com",
+          "iosaj.e90[.]pw",
+          "iosqd.e90[.]pw",
+          "javascript[.]skin",
+          "kskjd123dsxxds[.]cfd",
+          "19clz71rybr2xkq[.]icu",
+          "32rn8k1d1k011bl[.]icu",
+          "4a1iunhdtzszy80[.]icu",
+          "b9a8mw4a2de8efq[.]icu",
+          "ep09mxrn51fex0q[.]icu",
+          "g550484uqephxm3[.]icu",
+          "gku77iyy1j5etam[.]icu",
+          "he9ok1zhx1738fb[.]icu",
+          "hu53jgeufx3u0v2[.]icu",
+          "iooklqki5wp7aw4[.]icu",
+          "jd7c4fi7ku2xg7p[.]icu",
+          "y8q7dtqm1xmfjte[.]icu",
+          "znst20y1m36oa0r[.]icu",
+          "znymef9kmu35k4z[.]icu"
+        ],
+        "url": [
+          "hxxps://l4x3s9v4[.]com?ch=76184",
+          "hxxps://knzcmny6mbpy10z[.]icu/channel/G.J.LJ/weifile/weifile.html",
+          "hxxps://knzcmny6mbpy10z[.]icu/log.html"
+        ]
+      },
+      "links": [
+        "https://ohey.ca/research/coruna-darksword-philippine-casino-network/"
+      ]
+    }
+  }
+]

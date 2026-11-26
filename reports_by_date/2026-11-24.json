@@ -813,5 +813,228 @@
         "https://opensourcemalware.com/blog/enterotoxin-malware"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Vinci RAT Lives in the Microsoft Store",
+      "summary": "Vinci RAT is a previously undocumented PowerShell-based remote access trojan tracked by eSentire's Threat Response Unit, delivered through a malicious application named \"Setup Assistant\" published in the Microsoft Store by \"ETPS Ltd\". Victims were redirected from a search for a snipping tool to a fake download site that delivered a Microsoft-signed store installer, which then installed the app. The Electron-based app was obfuscated and acted as a backdoor, executing C2-supplied PowerShell and JavaScript and establishing persistence through a scheduled task. The RAT provides remote and reverse shell access, file staging, and fileless and file-based execution of EXE, DLL, PowerShell, and shellcode payloads, and it disables AMSI. Microsoft reported that the app did not violate its store terms, so defenders should not treat Microsoft Store availability as proof of safety and should restrict store installs and monitor for AMSI bypass and suspicious PowerShell activity.",
+      "completeness": "High",
+      "threats": [
+        "Vinci",
+        "Amsi_bypass_technique"
+      ],
+      "ttp_tactics": 4,
+      "ttp_techniques": 0,
+      "software": [
+        "Microsoft Store",
+        "Electron",
+        "Microsoft Teams",
+        "Roblox",
+        "Node.js",
+        "WinHttp",
+        "active directory",
+        "Microsoft Defender",
+        "Microsoft Defender for Endpoint"
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "sha256"
+      ],
+      "languages": [
+        "php",
+        "python",
+        "javascript",
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "8beaa8db7b85c08de59313a53c67e7ed0f1c62cd54991555d41561b68c49808f",
+          "28ef014272655afc4e5246c1661abf81a7807e2a3e445cbdf00fa73aaab08414",
+          "422fed3be685f2ccb5bdfbad489584d11e9b266c61eb8c5d521e4f7c7d2ff341",
+          "8eea1de7ad1e4483b8c92f484662a4d67b7a0343fcfe9a233997a39a9c8bfd96",
+          "5d05b6b278fe0733ed796ffc9bd322b46d964eeb4f9a72e8737ae9fdb062c0f5",
+          "7e68eeee6a3e02a1c80dc743234a51bc32c0b377baa1042b9484b70cde9176f3",
+          "2a4ea0bce6e7d5c182a2af9ac0a6bd040b0fcb3671d8f7342d68a0c0a745128f"
+        ],
+        "ipv4": [
+          "67.43.239[.]139"
+        ],
+        "domain": [
+          "snipp.codes-team[.]com",
+          "setup-assistant[.]com",
+          "teams.codes-team[.]com",
+          "monkeysholder[.]info",
+          "api.ipify[.]org"
+        ],
+        "url": [
+          "hxxps://setup-assistant[.]com/api/config",
+          "hxxps://setup-assistant[.]com/api/telemetry",
+          "hxxps://setup-assistant[.]com/api/content?device=",
+          "hxxps://setup-assistant[.]com/api/collect",
+          "hxxps://api.ipify[.]org/?format=json",
+          "hxxps://setup-assistant[.]com/api/update-status?device=",
+          "hxxp://monkeysholder[.]info/api.php",
+          "hxxp://monkeysholder[.]info/api.php?d5758ec1",
+          "hxxp://monkeysholder[.]info/index.php?",
+          "hxxps://github[.]com/ben-sb/obfuscator-io-deobfuscator"
+        ]
+      },
+      "links": [
+        "https://www.esentire.com/blog/vinci-rat-lives-in-the-microsoft-store",
+        "https://github.com/ben-sb/obfuscator-io-deobfuscator"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Signed by Microsoft and Mozilla: a Brazilian kit that hands your logged-in browser to an operator",
+      "summary": "A Brazilian-targeting browser-hijacking kit, delivered via a per-user MSI named HardwareInfo.msi, side-loads a fake wtsapi32.dll into a renamed copy of the genuine Windows BdeUISrv.exe. The DLL signatures come from a Technoservice B.V. certificate issued through Microsoft Trusted Signing, and the Firefox add-on carries a Mozilla signature. The kit force-installs a malicious extension into Chrome, Edge and Firefox and steals saved passwords and cookies from several browsers. It also prepares a hidden, headless Chrome that an operator can drive remotely while logged in as the victim. Defenders should hunt for the BdeUISrv-based side-loading path, the named scheduled tasks and Startup batch file, and the dead-drop domains.",
+      "completeness": "Medium",
+      "threats": [
+        "Dll_sideloading_technique",
+        "Dead_drop_technique"
+      ],
+      "geo": [
+        "Brazil",
+        "Brazilian"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Claude",
+        "Opus 5",
+        "Claude Code",
+        "Windows installer",
+        "Chrome",
+        "Firefox",
+        "Opera",
+        "Vivaldi",
+        "Chromium",
+        "BitLocker",
+        "have more..."
+      ],
+      "algorithms": [
+        "xor",
+        "base64",
+        "zip",
+        "sha256"
+      ],
+      "languages": [
+        "cython",
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "8924cdc34450007e1a31a34ac7a11f1f358c2535ca995d11e60344d17eadb2d2",
+          "98e3bbaced5719581f12aaf603eb9c08519b8a988c202cf085b2c6cd4a36276f",
+          "edd98ca9eefab4ebc1d5c474aabb5f776f40214923857ae94777827fdef0a80e",
+          "1d0f1d845e9a942547dc84e222f2ca559a8fe6587a8e56d6669e2a61145aeb70",
+          "04f8d9f2b357c5861c5f60e76a10c57559b4d7f6b744fd686b2343aa43663f40",
+          "47b8030db237d54041fb2006c67a6c80938dd1d070ff69d1e487c339b8f82022"
+        ],
+        "domain": [
+          "47225cdd.nyxservicos[.]com",
+          "bestnews4u[.]com",
+          "niagentech[.]com",
+          "dvacontabil[.]com",
+          "grupoathos[.]com",
+          "carlosmarket[.]com"
+        ],
+        "url": [
+          "hxxps://nyxservicos[.]com/xl/fl9f03a24b21.txt",
+          "hxxps://bestnews4u[.]com/bs/fl6c844fb620.txt",
+          "hxxps://niagentech[.]com/nt/fl5dd4b8c073.txt",
+          "hxxps://dvacontabil[.]com/di/flc2bf0028dc.txt",
+          "hxxps://grupoathos[.]com/jm/fl60e12b8178.txt",
+          "hxxps://carlosmarket[.]com/sw/fl0fcb1cb536.txt"
+        ]
+      },
+      "links": [
+        "https://rogueauthority.org/hardwareinfo-msi-browser-extension-hidden-browser"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Machine-Generated Fake Plugin Turns WordPress Sites Into JavaScript Delivery Points",
+      "completeness": "Low",
+      "threats": [
+        "Timestomp_technique"
+      ],
+      "software": [
+        "WordPress"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "functions": [
+        "hypercloudor_fastplatformment",
+        "__construct",
+        "smartreacttion_dotnet",
+        "bialgorithming_uniinfrastructurement",
+        "fastserveral_smartapplicationable",
+        "devops_reactful",
+        "PH_FUNC_HANDLE_BOOTSTRAP",
+        "time",
+        "is_ssl",
+        "autodataible_miniservicesion",
+        "have more..."
+      ],
+      "languages": [
+        "javascript",
+        "php"
+      ],
+      "links": [
+        "https://www.wordfence.com/blog/2026/11/machine-generated-fake-plugin-turns-wordpress-sites-into-javascript-delivery-points/"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "Remus Stealer Uses a Fake Google Sheets Extension to Steal Gmail Messages",
+      "summary": "Remus Stealer distributes a Chrome extension disguised as Google Sheets that reads Gmail messages through the victim's existing browser login session, according to Invoke RE. The extension is installed by unpacking a ZIP archive and modifying Chrome's Secure Preferences to register it and enable developer mode. Its presence offers a browser-based explanation for how mail collection could continue after the native Remus executable exits. The extension does not establish collection from revoked sessions, and Hudson Rock has not independently reproduced the behavior. Defenders should secure the Google account and remove the extension together, and restrict developer mode and unmanaged extension installation.",
+      "completeness": "Medium",
+      "threats": [
+        "Remus"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Gmail",
+        "Chrome",
+        "Chromium"
+      ],
+      "algorithms": [
+        "zip"
+      ],
+      "languages": [
+        "powershell",
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "2d92fe0b3b918bdbca318879a65bd5a00e63e00b181085afdeed6922c85f90bd",
+          "e13e019dae958f20d7a252adf64888ab6e6c427622b67c5bf7ae6ffa4a0e25f3",
+          "75e5225cb2fca8b62718648e0c663b9003048a19860ae9f0458f7d904220e693",
+          "39cb29f0985fa58d6b4f632948d543c3633e0a8ab1a51a360a813f2752eb082f",
+          "ae9556b371d29e5fd1f7ff45c00fb60644d6cd8c5bfc1b78a565c1f6296f3a81",
+          "acf1b83914aca2944f55be6ff269cc984f35e3a757a12d9cd036e428c93087bc"
+        ],
+        "domain": [
+          "prem1um[.]onl"
+        ],
+        "url": [
+          "hxxps://prem1um[.]onl/m"
+        ]
+      },
+      "links": [
+        "https://www.infostealers.com/article/remus-stealer-uses-a-fake-google-sheets-extension-to-steal-gmail-messages/"
+      ]
+    }
   }
 ]

@@ -886,5 +886,45 @@
         "https://blog.nviso.eu/2026/11/23/artex-fog0003-zqagent-backdoor/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-23",
+      "title": "Phala November Detailed Incident Report",
+      "summary": "Phala disclosed two linked attacks by one actor: first, requests to its DeepSeek V4 Flash 0731 deployment on OpenRouter were readable from October 21 to November 1, 2026, via an experimental server running without production controls. Second, on November 5, the attacker obtained the root key of Phala Cloud's legacy key management service after abusing host management interfaces and an incomplete key-release policy. The attacker entered through unauthenticated host management software reachable from the local machine, and the TEE hardware itself performed as designed. Affected OpenRouter users should rotate any credentials sent in the exposure window, and Phala Cloud apps that derive keys via getKey() must move protected assets to new keys because the attacker retains the old root key. Phala's main lessons are to require production controls and authentication for every caller, to prioritize security patches, and to add centralized logging with detection rules, since neither attack was detected internally.",
+      "completeness": "Low",
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "DeepSeek",
+        "docker",
+        "Cloudflare",
+        "Unix",
+        "nginx",
+        "QEMU"
+      ],
+      "algorithms": [
+        "sha256",
+        "ed25519"
+      ],
+      "functions": [
+        "getKey",
+        "Every",
+        "GetKmsKey"
+      ],
+      "iocs": {
+        "ipv4": [
+          "82.29.131[.]62",
+          "159.223.110[.]159",
+          "104.28.222[.]46"
+        ]
+      },
+      "links": [
+        "https://phala.com/posts/phala-november-detailed-incident-report",
+        "https://github.com/Dstack-TEE/dstack/pull/1574",
+        "https://github.com/Dstack-TEE/private-ai-gateway",
+        "https://github.com/Dstack-TEE/dstack/issues"
+      ]
+    }
   }
 ]
