@@ -379,5 +379,161 @@
         "https://ohey.ca/research/coruna-darksword-philippine-casino-network/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-25",
+      "title": "PolinRider Malware Force-Pushed Into AsyncAPI, CircuitVerse and Open Food Facts Pull Requests",
+      "summary": "PolinRider, a malware loader, was force-pushed by the GitHub account Eternity0207 into open pull requests at AsyncAPI Generator, CircuitVerse, Open Food Facts and Jaeger, with a Jaeger branch carrying it from July to October 2026. The loader is hidden in api.js, build and test config files, and a fake font file, and it runs through build scripts, test runs, or a hidden VS Code task when a folder is opened. It fetches its server address from a public Ethereum wallet that the operator updates about every three hours. CircuitVerse's CI ran the loader and published 40 infected installers, which were deleted. Defenders should require approval for fork pull request workflows, avoid publishing artifacts from forks, and review force-pushed changes and unsigned commits.",
+      "completeness": "Low",
+      "threats": [
+        "Polinrider",
+        "Chaindrop"
+      ],
+      "software": [
+        "AsyncAPI",
+        "Linux",
+        "macOS"
+      ],
+      "crypto": [
+        "ethereum"
+      ],
+      "algorithms": [
+        "xor",
+        "sha256"
+      ],
+      "functions": [
+        "createRequire"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "iocs": {
+        "sha256": [
+          "b02a81974810532fff8f76903e09b20431857bfaff00f2473421f4a4fb8162b5",
+          "41a69ba3946396d2d1c15f2e43be705f0793e8773dee0f3dda89a541d31c00d9",
+          "3ae470cabb9412bf5f0e64e1f71b458e14eb10b19070845597d5b8230b27d552"
+        ],
+        "sha1": [
+          "1eef0849eda15d87f64e51c73c8442cf3c8bcef3",
+          "f97062cb1b6ffa18b88e9faea373ed288a87ecd0",
+          "a322e5f3d311d3080e6f0121063e9adc2490ef1a",
+          "0e2d8001ae47ec85b75295585ff982f2e8f65527",
+          "a89182973f350b1500ab4bedb1faa5a3928fb810",
+          "c3d3f36443c98c6ee8473a87deeb1e4ce8a81bee",
+          "05e3ffbbfcdf5ab9e8f31b9313e46bef3ae35d6a",
+          "a6569a93cf547382dfe69cd126c846f6af4e7df9",
+          "edb26d5a44e40a9e3266ee8a83a0b2902fd93b6d",
+          "91557f66b31c5ab0b5bb95895cb1d2717524b0b1",
+          "86016a03178a2314cdb0bfbbc14dc6db5d6efa6b"
+        ],
+        "ipv4": [
+          "95.135.181[.]84",
+          "166.88.134[.]75",
+          "95.135.181[.]151",
+          "103.179.143[.]219",
+          "23.27.13[.]72"
+        ],
+        "domain": [
+          "eth.drpc[.]org",
+          "ethereum-rpc.publicnode[.]com",
+          "eth-mainnet.public.blastapi[.]io"
+        ]
+      },
+      "links": [
+        "https://www.stepsecurity.io/blog/polinrider-malware-open-source-pull-requests"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-25",
+      "title": "Silver Fox SEO Poisoning: How Fake Software Downloads Spread Gh0stRAT",
+      "summary": "Silver Fox, a financially driven threat group also tracked as SwimSnake, distributed Gh0stRAT through a fake oCam installer promoted via SEO poisoning. The installer delivered the genuine application alongside hidden malware, and its loader adapted to whichever of three Chinese antivirus products was running. The Gh0stRAT variant used a custom loader to run its payload in memory and hide its command-and-control address. In the endpoint examined, two EDR layers stopped the attack within about 90 seconds, with cloud classification blocking the malicious DLL and behavioral detection blocking a PowerShell attempt to weaken Microsoft Defender. Defenders should treat third-party download portals as untrusted and watch for installers launching scripting engines to modify security settings.",
+      "completeness": "High",
+      "threats": [
+        "Seo_poisoning_technique",
+        "Gh0st_rat",
+        "Upx_tool"
+      ],
+      "geo": [
+        "Asia",
+        "Japan",
+        "Chinese",
+        "India"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 1,
+      "software": [
+        "Microsoft Defender",
+        "Telegram",
+        "Huorong",
+        "Cloudflare",
+        "Chrome"
+      ],
+      "algorithms": [
+        "xor",
+        "rc4",
+        "base64"
+      ],
+      "functions": [
+        "TaskLoad"
+      ],
+      "languages": [
+        "pascal",
+        "powershell"
+      ],
+      "ttps": [
+        {
+          "id": "T1562.001",
+          "name": "Impair Defenses: Disable or Modify Tools",
+          "tactics": [
+            "Stealth"
+          ]
+        }
+      ],
+      "iocs": {
+        "sha256": [
+          "ecb5d5968d77e77b397ef18a077612d8f732a3f9cb78c7d8066c94bd9e580281",
+          "4675678c2314159e1efdbf2f26debc2858acad0d00d5ba3d1f6e5a7081c476dc",
+          "8e6d7eb780d6e05a7728061d06bab9dabc280c4906b3f07a577d737924bbada6",
+          "f1fb4db77fcc50d839523d8df7a0d04a5110320cce1718cf3728ea1be7b2a6f8",
+          "7f36fe6224fb7e6f6fdbfafa5eac99f5dedfc82fb5363bd046a4be9557b96f60",
+          "3a9d8e1f3f7b9f1f8eb5bd03de44abfd5ba2b2b08a263e9362f8c1dcdd8dee53",
+          "2514913f8a6f4671a058304651289b0babe47d81c044212b3140ed1c1b643b09",
+          "25b3981176cec03b0d842008c2f8b0bfb064dfe53bb43ae01653bfe013cac299",
+          "388a796580234efc95f3b1c70ad4cb44bfddc7ba0f9203bf4902b9929b136f95",
+          "408632e9f0a1e3e224747442017677e3ac11f6370fc90154f70ae6c7f25259e7",
+          "4d55f55c35dcca832d6a854edcb28df0517feb65de9757e00c741d3180bfb856",
+          "4ecdf80bcace65f8feecd4b1acb97510ed2fa3abbddfcc6d5bd720829db29806",
+          "4fcf6394b14e24d830b04209a0ede1dcc911d199740a55d12c8ab8aeabb84073",
+          "55c4913ee154821dd43812e49e28ba9248103644a59a5f4704c6a64cffa83a8d",
+          "6feeb95115d7d8a51403996fee1ad219a52151662d3a01a2d17cfb77dbd51f3b",
+          "9bd52ec7e7750500de33df995fcc7e68ed1da70d125579cf76ae8f787577ef75",
+          "ed2c6bc3e77a404b8cf61176844ad19c1fdcae19881206631e3f0831a4bd919a",
+          "f4d68918fe8b7ef0a5b0e53a7c62216e67ccca27e2000a8ba6dcd03140b0c2b9",
+          "95e04537263f52975b63f004f4d576380b23d47309e43e95b16fceb80d4ef836",
+          "a5eb53004c797fbc0117056221b18a7bdf04335029a72c7c8d03d2234baf44ae",
+          "c337899c72e2de6f7049aaf53826f4d34f159adddbc9fbb07e524a70e91104ea",
+          "d2d6a47a8ae96fcae7ea96683a9b700c2f28793495c0b1e3050c5af8c7c7486b",
+          "e85d448b73b1bfae42d7b16d34892d47ce8a055cfe405082b5fa7f36bf5cfd5c",
+          "e29425023df9d35fc69425ea750d15cf1211409452df20f9f72829cdc75fe3f0"
+        ],
+        "ipv4": [
+          "156.234.43[.]98"
+        ],
+        "domain": [
+          "appdlhub.workers[.]dev",
+          "dl2.appdlhub.workers[.]dev",
+          "pcdanouk.appdlhub.workers[.]dev"
+        ],
+        "url": [
+          "hxxps://pcdanouk.appdlhub.workers[.]dev/dl/1789406854/e29425023df9d35fc69425ea750d15cf1211409452df20f9f72829cdc75fe3f0/r0AD6qs/361/ocam.zip"
+        ]
+      },
+      "links": [
+        "https://www.watchguard.com/wgrd-security-hub/secplicity-blog/silver-fox-seo-poisoning-how-fake-software-downloads-spread"
+      ]
+    }
   }
 ]

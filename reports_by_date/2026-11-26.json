@@ -1,0 +1,294 @@
+[
+  {
+    "parsed": {
+      "report_date": "2026-11-26",
+      "title": "UAC-0218's ForPayload: Document Stealer with Mark Twain quotes targeting Ukraine",
+      "summary": "UAC-0218 is using an evolution of the HOMESTEEL malware, dubbed ForPayload, in a campaign running since at least May 2025 against Ukrainian armed forces. The initial sample is a phishing Excel file with a macro that creates a hidden scheduled task, with no third-party malware dropped, running a PowerShell one-liner that uploads recently modified documents, archives and text files to a remote server every week. The malware's comments contain passages from a Mark Twain novel, a technique the researchers note may be meant to hinder analysis heuristics. The actor's infrastructure of more than 50 domains uses Ukrainian, German, and Polish town names, with one domain referencing the Storozhynets city where the 82nd brigade is based. Earlier ForPayload samples from December 2025 use fake OneDrive task names and PE executables, and the researchers link the campaign to UAC-0218 based on similarities to HOMESTEEL.",
+      "completeness": "Low",
+      "threats": [
+        "Forpayload",
+        "Homesteel"
+      ],
+      "geo": [
+        "Ukraine",
+        "Ukrainian"
+      ],
+      "algorithms": [
+        "des",
+        "zip"
+      ],
+      "functions": [
+        "Workbook_Open"
+      ],
+      "languages": [
+        "powershell"
+      ],
+      "iocs": {
+        "sha256": [
+          "90ba67cfe47c52898ef9a7469c5639296aba2cad4b400a930dda173a29f6e9ca",
+          "c95fcee5b3daace259c4f31f699c4fca82da7ebc8ed950caa630ca763b2b3e15",
+          "3486ae808da82ec80d70818db4c45c520cfdf1e3938e1e5128eedc12e08049cc",
+          "cd9bd5d86a603f63bf0e2fe06ecb8eae80efc523d702bfb8f4bac1bc946ec5e4",
+          "b67eb46e4a1b87734f7a2a329b3ef42cd527e031614946c24e86fc712fe1f9b1",
+          "7b9f49068e09cde7958870710b09b774517d676fb4502c5c3eeaf94c60569283",
+          "8d50a7355d5e4b67616b0db993e9de307ca647960d35bf14cc43f9ff7ec778e1",
+          "ab635dc6e5b510bcf44fc9967e95da168eb20ff83f5193fc0265ca0d9853fd56",
+          "5ade007293743b16e1efe28d0f2d53bd57fce6a5a88d1bc38f2b275315f16c4b"
+        ],
+        "domain": [
+          "storozinecz[.]xyz"
+        ],
+        "url": [
+          "hxxps://storozinecz[.]xyz/"
+        ]
+      },
+      "links": [
+        "https://exatrack.com/publications/forpayload-mark-twain-document-stealer.html"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-26",
+      "title": "SYS010 Reloaded: The new malvertising campaign targeting Meta Business Accounts",
+      "summary": "SYS010 is a malvertising campaign that uses Meta ads promoting free animated wallpaper software to target Meta Business accounts, identified by Bitdefender Labs and assessed as a second major version of the SYS01 operation. Victims download a working wallpaper application that secretly installs a PHP loader, which enrolls the machine with a command-and-control server and delivers later stages only to selected victims. The final payload is a malicious browser extension for Chrome, Edge and Firefox that steals cookies, collects Facebook ad account and Business Manager data, and can read and delete emails, including security alerts. Browsers are enrolled into attacker-controlled management consoles, making the extensions hard for users to remove. Bitdefender advises never downloading software from social media ads, treating unexpected \"managed by your organization\" messages as possible compromise, and protecting the email account linked to Meta assets.",
+      "completeness": "Medium",
+      "threats": [
+        "Sys01_stealer"
+      ],
+      "geo": [
+        "Mongolia",
+        "Belgium",
+        "France",
+        "America",
+        "Tunisia",
+        "Laos",
+        "Romania",
+        "Morocco",
+        "Serbia",
+        "Africa",
+        "Thailand",
+        "Asia",
+        "Malaysia",
+        "Egypt",
+        "Peru",
+        "Brazil",
+        "Greece",
+        "Zimbabwe",
+        "Saudi arabia",
+        "Poland",
+        "Algeria",
+        "Italy",
+        "Vietnam",
+        "Spain",
+        "Madagascar",
+        "Pakistan",
+        "Mexico",
+        "Cambodia",
+        "Vietnamese",
+        "Philippines",
+        "Bangladesh",
+        "Nepal",
+        "United states",
+        "Netherlands"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "Chrome",
+        "Firefox",
+        "Gmail",
+        "Outlook",
+        "Telegram",
+        "Cloudflare",
+        "Cloudflare R2",
+        "Electron",
+        "Docker",
+        "Task Scheduler",
+        "have more..."
+      ],
+      "algorithms": [
+        "ecdsa",
+        "sha1",
+        "7zip",
+        "zip"
+      ],
+      "functions": [
+        "HTTPS",
+        "HTTP"
+      ],
+      "languages": [
+        "powershell",
+        "javascript",
+        "php",
+        "vbscript"
+      ],
+      "iocs": {
+        "sha256": [
+          "419f95a427116725e8eb691a53afacaf71ca023139b3f78d51edf66d332b5ec9",
+          "3d155fb874cbef9bf44cff125520a437e791e6faf33efb9f5937097a99f6d31e",
+          "a1e3c512e1b8036d3c2fd2cc7bbefad7b2919000be169db110f1e32e8a085201",
+          "5f5f2d9a34e03dc59530173a1315c344dc690acee3cd7a65c3ff72da65ca68a9",
+          "92686bac718b5853bc26abeafe3bd0d5a542060c94a8715e76dc1a62834f6691"
+        ],
+        "domain": [
+          "wallpapersengine[.]com",
+          "best-pc-softs[.]top",
+          "rarer[.]top",
+          "esora[.]top",
+          "merio[.]top",
+          "dnow[.]top",
+          "static.docs-helper[.]top",
+          "schools-account[.]com",
+          "wallpaper-engine[.]pro",
+          "cdn.static-contents[.]com",
+          "geliang[.]top",
+          "wallpapers[.]top",
+          "shashen[.]top",
+          "porugo[.]com",
+          "lelebag[.]com",
+          "sybase[.]top",
+          "upfiles[.]top",
+          "svc.workplace-local[.]com",
+          "pitanie[.]top",
+          "openmagic[.]net",
+          "avela[.]top",
+          "gover[.]top",
+          "4kwallpapers[.]top",
+          "cdn.httplivelywallpaper[.]app",
+          "scontent.storys[.]top",
+          "pcsofts[.]site",
+          "content.document-hub[.]top",
+          "grosir[.]top",
+          "volosy[.]top",
+          "bmap[.]top",
+          "keshen[.]top",
+          "okara[.]top"
+        ],
+        "url": [
+          "hxxps://wallpapersengine[.]com",
+          "hxxps://gover[.]top",
+          "hxxps://wallpapers[.]top",
+          "hxxps://upfiles[.]top",
+          "hxxps://4kwallpapers[.]top",
+          "hxxps://wallpaper-engine[.]pro",
+          "hxxps://pcsofts[.]site",
+          "hxxps://scontent.storys[.]top",
+          "hxxps://content.document-hub[.]top",
+          "hxxps://static.docs-helper[.]top",
+          "hxxps://best-pc-softs[.]top",
+          "hxxps://cdn.static-contents[.]com",
+          "hxxps://cdn.httplivelywallpaper[.]app",
+          "hxxps://shashen[.]top",
+          "hxxps://okara[.]top",
+          "hxxps://pitanie[.]top",
+          "hxxps://volosy[.]top",
+          "hxxps://geliang[.]top",
+          "hxxps://sybase[.]top",
+          "hxxps://avela[.]top",
+          "hxxps://bmap[.]top",
+          "hxxps://keshen[.]top",
+          "hxxps://grosir[.]top",
+          "hxxps://rarer[.]top",
+          "hxxps://svc.workplace-local[.]com",
+          "hxxps://lelebag[.]com",
+          "hxxps://porugo[.]com",
+          "hxxps://openmagic[.]net",
+          "hxxps://esora[.]top",
+          "hxxps://merio[.]top",
+          "hxxps://dnow[.]top"
+        ]
+      },
+      "links": [
+        "https://www.bitdefender.com/en-us/blog/labs/sys010-reloaded-malvertising-campaign-targeting-meta-business-accounts"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-26",
+      "title": "182 Banks, 38 Crypto Platforms, One Toolkit: The Godfather Tech Android Fraud Arsenal",
+      "summary": "The Godfather Tech seller, using the Telegram name 教父科技, offers Android remote-access trojans, source code and fraud-related setup services, largely built on the Flying Eagle RAT codebase resold under several brand names. The toolkit combines remote control, keylogging, screen overlays and camera access, and its builder produces apps that are repackaged, signed and tuned to survive on major Android phone brands. Operators can push fake bank and crypto login screens over legitimate apps to capture credentials, payment PINs and wallet recovery words, then read SMS codes and move money remotely. The fake-screen catalogues list 182 banks and 38 crypto platforms that the kit was configured to impersonate, which the report notes does not confirm any breach. For defenders, the shared code, class names and panel paths help link related copies, and the report recommends monitoring for combined Accessibility, device-admin and SMS permissions.",
+      "completeness": "High",
+      "threats": [
+        "Flying_eagle",
+        "Eaglerat",
+        "Panda_workshop",
+        "Black_hawk",
+        "Octopus_goes_overseas",
+        "Fisher",
+        "Octopus",
+        "Ink_shadow",
+        "Shadowv2",
+        "Inline_hooking_technique",
+        "China_dragon"
+      ],
+      "geo": [
+        "Portuguese",
+        "India",
+        "Chinese"
+      ],
+      "ttp_tactics": 8,
+      "ttp_techniques": 17,
+      "software": [
+        "Android",
+        "Telegram",
+        "Chrome",
+        "Google Play",
+        "TradingView",
+        "apktool",
+        "Flutter",
+        "Docker",
+        "Node.js",
+        "nginx",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "zip"
+      ],
+      "languages": [
+        "php",
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "f55c4621bf09b497b71beb55da8fa16ed1a7c8b5f60b2274f9289f4de4166ffe",
+          "749a7ad0e6135b08ec594a1b909563e850b443bf6a20c3f890b6296bbb77b7ca",
+          "b5c1612bb553597105ad39c2bdb8f29daf94563c54889731cd0b6ee2aff05a13",
+          "fd813ab6570c596784b460e8d4006041b0480df29aef6b331c75d47f73d6b4d2",
+          "136752b4546400eae540bb594173fe1b71938cc607f5ec5e454c510512b7617b",
+          "6395097d1684d2e738b7356c7c8f444faccf2252643dc1037525c13897c49a3c",
+          "4a41cbd3afee7bf08f3538f606f454035f04424a1f6174a26bcc47daf75416f0",
+          "93015d97897b2eb2be35c5b9c787515a0531aacaf4f2da3987272dbcdfe689b3",
+          "ac07c0ad02590d74f101072fe7d2ab6625ebade71b15b8fc882978c13f1c04c2",
+          "1f77ddbbd4ebcb4903661e5b35027efa6e15bccfdf33ddaf8f1279b213c53b12",
+          "d897e6d47118827018056034070c142cf6861edcf8209627ddf7d551009d10ef",
+          "b5dd0095e1dd5cf2f770139d9057b037b20c0c56a53c6a0966735243682811df",
+          "2fe250590004f6130ff551c8a3b89d1dfad7c4fc8383a73c6e135f8d3833c643"
+        ],
+        "ipv4": [
+          "14.128.50[.]149",
+          "14.128.50[.]253",
+          "103.43.11[.]143"
+        ],
+        "domain": [
+          "esou[.]bond",
+          "s95[.]cn",
+          "beta666888[.]cc",
+          "ts5025[.]cc",
+          "mc.333[.]autos",
+          "xfxf.liconsinc[.]top",
+          "admins.xiongmaodaxia[.]top",
+          "a2.xlopz[.]cn",
+          "alidown3[.]com",
+          "zj410wtg7.apkdown1[.]lol",
+          "www.yaxin000[.]com"
+        ]
+      },
+      "links": [
+        "https://www.cloudsek.com/blog/182-banks-38-crypto-platforms-one-toolkit-the-godfather-tech-android-fraud-arsenal"
+      ]
+    }
+  }
+]
