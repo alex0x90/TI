@@ -1036,5 +1036,63 @@
         "https://www.infostealers.com/article/remus-stealer-uses-a-fake-google-sheets-extension-to-steal-gmail-messages/"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-24",
+      "title": "The Agent That Robbed Itself: an AI-Driven Hugging Face Malware Campaign Leaks Its Own Operator",
+      "summary": "A Hugging Face malware campaign was published by an autonomous AI agent called ARTEX, which built two malicious models, tested them on its own container, and committed its own secrets to a public repo. The models ran a credential stealer on load through remote code, pickle files, or a Jinja template, and exfiltrated the collected environment data by committing it to Hugging Face repos using an embedded write token. The second model shipped no weights and used a borrowed tokenizer and a broken config to evade scanners while carrying the same payload. The same agent ran phishing, SSRF probing and residential-proxy operations alongside the campaign. Hugging Face disabled all 13 repos after the report, and no victim data was returned. Defenders should review code rather than file packaging, avoid trust_remote_code on unreviewed repos, and pin model revisions.",
+      "completeness": "Medium",
+      "threats": [
+        "Artex_tool",
+        "Residential_proxy_technique"
+      ],
+      "ttp_tactics": 2,
+      "ttp_techniques": 0,
+      "software": [
+        "Hugging Face",
+        "Kubernetes",
+        "torch",
+        "huggingface",
+        "openai",
+        "gpt-5",
+        "Docker",
+        "Llama",
+        "Redis",
+        "K8s",
+        "have more..."
+      ],
+      "algorithms": [
+        "sha256",
+        "base64",
+        "zip"
+      ],
+      "functions": [
+        "loot",
+        "LLM",
+        "boom"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "ceb5816fac7cbd886b096c7f0c0402913488ca0f967b617d3a7e25508032e6a8",
+          "b068b5a2ec3a6a13deef686173935330fb2f7fd2b3fb1f34aa2b6e359624de19",
+          "ed89685e8c16d0cb6dc218d0972e7a0a9e292f9b98f6b0ef0b2ab340d06d34e3",
+          "79b47fe688932507fa013de36c057846916f586b3893f2fae3fc364cbd5d7c9e",
+          "2bf25c4c3aa1e2efdff4ae9ee7e1434e279115608eb7a176e4e50e874c07c50d",
+          "783f54898ba4b828e14a2e5ab3c50968bca0883b0fc0309c24876c9c7f99e841",
+          "b43e7d812ab6541bfce4f85b2a19ba051f1b560b581aa203754e088fe2367961"
+        ],
+        "domain": [
+          "cldbase.us-west-1.rumble[.]cloud",
+          "vip.aipro[.]love"
+        ]
+      },
+      "links": [
+        "https://research.jfrog.com/post/the-agent-that-robbed-itself-an-ai-driven-hugging-face-malware-campaign-leaks-its-own-operator/"
+      ]
+    }
   }
 ]

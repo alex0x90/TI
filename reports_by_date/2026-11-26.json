@@ -290,5 +290,137 @@
         "https://www.cloudsek.com/blog/182-banks-38-crypto-platforms-one-toolkit-the-godfather-tech-android-fraud-arsenal"
       ]
     }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-26",
+      "title": "TrojanPony: A Live Skills Malware Campaign spreading in the wild, over 480 marketplaces and repositories affected",
+      "summary": "TrojanPony is a malware campaign that since July 2026 has published fake \"improved\" copies of popular coding-agent skills and plugins, such as ponytail-improved and andrej-karpathy-skills, bundling a Windows malware kit. The kit abuses a renamed, validly signed Notepad++ updater that side-loads a malicious libcurl.dll, which adds Defender exclusions and drops the MopsStealer trojan. The trojan persists as RuntimeBroker.exe, bypasses UAC, patches AMSI, and pulls further modules from its C2 servers. Forks of the fake skills remain live after the original account was removed, and the campaign expanded in November to AI-app lures, a fake GTA VI port, and hijacked trusted repositories. Defenders should hunt for the updater outside Notepad++ folders beside libcurl.dll, and if the kit ran, reimage the machine, rotate credentials, and review GitHub security logs.",
+      "completeness": "Low",
+      "threats": [
+        "Mopsstealer",
+        "Supply_chain_technique",
+        "Dll_hijacking_technique"
+      ],
+      "software": [
+        "curl",
+        "Telegram",
+        "WinRAR"
+      ],
+      "algorithms": [
+        "sha256"
+      ],
+      "iocs": {
+        "sha256": [
+          "eaac64c113ebaba1fae924ad1b6239a44c8806bf2b85d8dc11a27ad65a981cc1",
+          "92717951aae89e960b142cef3d273f104051896a3d527a78ca4a88c22b5216a5",
+          "8b1ff2436596ada8b8102e1073a9cfab8b529618019bcc9cae899e5e0cee45ef",
+          "d7415fedc5dc8953f7010a56e334d51eda27857470f76decd447509de204e6c6",
+          "c6e25ad06f8a958a57e96662ebd9940512b0def50435a2c62dca33e3d7e0c514",
+          "1af1badc7e9714ad80236e5272a2474ae6be053a5edd2d6208e02fa656423072",
+          "6b17049a3c165093849f37cdcfda1858248c742c0cad45a2f049eb14b7d4e24b",
+          "cb01d145768463e1ea16de2e490fbddb1f0d53599cf154d78fead5feb54a1c5e",
+          "7559c583a38c62cad5632b2e3d049821077ccd2ec27949c5860b8b2881fe2cb8",
+          "d38ac892a4246ec062a7b01afd3bb9deabb73c2c5f033a3fbc2b55c7d28e4bf6",
+          "8c51bf0dbf8e71ab312020afc596dd0bdbf6d1124cc56df6d640fdba8d474d87",
+          "fb65648e4f4a7b838a696ae2b273ba916e50d5956123b667a762a09bd5773144",
+          "32481ad9e507fcc4c4238b8502177f8bcf3d731dc94ce63a974589d590d67765"
+        ],
+        "ipv4": [
+          "145.63.134[.]94",
+          "192.162.199[.]167"
+        ],
+        "domain": [
+          "duckdns[.]org",
+          "mopsikimilie[.]cc",
+          "mopsteam[.]cc",
+          "moooooooooooops[.]cv",
+          "promptreel.xo[.]je"
+        ]
+      },
+      "links": [
+        "https://www.air.security/blog-posts/trojanpony"
+      ]
+    }
+  },
+  {
+    "parsed": {
+      "report_date": "2026-11-26",
+      "title": "S/W supply chain attack via SoftwareOK’s official website: Tampering with Q-Dir and DesktopOK installation files",
+      "summary": "Trojanized installers for Q-Dir and DesktopOK were distributed through SoftwareOK's official website and during updates of existing installations, representing a software supply chain attack. The malicious installers run the genuine program to avoid suspicion while secretly downloading a Python-based remote access trojan (RAT) from an external server. The RAT supports shell and Python command execution, file transfer, screen capture, and system information collection, and it checks for installed security products such as AhnLab V3 and CrowdStrike Falcon. Users of affected Q-Dir and DesktopOK versions should compare file hashes against the published values and check for RAT traces, since reinstalling the program may not remove the RAT. Software vendors should verify published hashes against delivered files and monitor for unauthorized changes to distributed binaries.",
+      "completeness": "Medium",
+      "threats": [
+        "Supply_chain_technique"
+      ],
+      "ttp_tactics": 1,
+      "ttp_techniques": 0,
+      "software": [
+        "-Dir an",
+        "Q-Dir"
+      ],
+      "algorithms": [
+        "sha2",
+        "sha256",
+        "md5"
+      ],
+      "languages": [
+        "python"
+      ],
+      "iocs": {
+        "sha256": [
+          "f6ed37559bca28eff3379e4a87c36383e0b0913c058bf124a8b20d5ea975706d",
+          "434b67dd403c74752b336fbb4fc94ee3a6fb615168e3fd31baea71d1a356ecd8",
+          "8ac6901a941788ab9675a9ec9bebdbc00074cb76f19a7d84c2e1b0ddbcee4f48",
+          "0a7a00ec5844cb80ecc6d210d7c0a8c3f44f3a5b138146101b0c534f15d8fabf",
+          "cf9e2433540d0b8ae8c9f4c9d5f11770343d413c1cfb201c5edae7155f88585a",
+          "d1a2cf8882c254156848f4a12b6c6837a3cf0e460f876c6f8b00d32a1560640a",
+          "7afa1e77c115eaa7798237039fde67c8a69686e7d9a4034a8df54aff2d1a126d",
+          "1b7b7947527a05f0fae268b16894440549c2dd512d421a06960e27b5fb1d5fa0",
+          "fc2993e6ad8cd9f82d56d7107018e0a77c90f66d4ba208b15f9fed5cd4609910",
+          "c41bd9eefd7a63fa329b24144a3483abac012ebc11bd5606b6c8295251d46422",
+          "551e5744b24019f016f9ee8dd3a2c00429da587b20321abaef55c18c0a655a5d",
+          "7524fcf3ffc44fc2e9a53af761c2a308edac31d02df3dfb1a4b57504243aec48",
+          "b45ba4a1d9a25116b94e95ef48d63fffda7d77bd358d17d74c7575ce39986b84",
+          "679729814dc2cc09be8f51cdeee767e67af924acff4790584ac77019a104a143",
+          "c12651f2988bb5e05afd1f4b1e6bce618111a4703f1aadc006bfacc6ac7e1d90",
+          "f96cab94d9f0e0000dfef8b9fce16bcefd23679443cc8ba8f7811a55ea5799ec",
+          "68360f3a515f024a990b17ba96066b27333fe360a0e3e32b88ded9e4c23e5dd7",
+          "8c172c421129bda890b504e89d1bb72af477be9896b22a576920c050442b4a04",
+          "5b43284e48edee4acbab49bc5a68eb21d3a369a058d859689b6a5dd2042a5e2a",
+          "bdbbe28cde3dee061536e524bc2a14316015db0c958cad83023790d32a4f8d99",
+          "393d2f9f05affa88aaa19f29f041d28fe5c3e1fc2fd84c76d1e2f1aa6da74a83",
+          "ff4ec1cca4746e33d1205ed434e1e2ac9cee71fec477b032f56d3bde577626d2"
+        ],
+        "md5": [
+          "ae44745919f4ef516581ebfaa97a0b4a"
+        ],
+        "ipv4": [
+          "8.210.69[.]51"
+        ],
+        "domain": [
+          "mail.c1a2[.]top"
+        ],
+        "url": [
+          "hxxps://mail.c1a2[.]top/dl/7zr.exe",
+          "hxxps://mail.c1a2[.]top/dl/dsv2_py39_agent.7z"
+        ]
+      },
+      "detections": [
+        {
+          "id": "18e4fde9-ee87-521a-9260-de3eed493bc4",
+          "title": "Scheduled Task Launching pythonw from ProgramData DeviceSync Path",
+          "attack": [
+            "T1053.005",
+            "T1036.005"
+          ],
+          "level": "high",
+          "sigma": "detections/2026-11-26/18e4fde9-ee87-521a-9260-de3eed493bc4.yml",
+          "model": "anthropic/claude-sonnet-5.5"
+        }
+      ],
+      "links": [
+        "https://asec.ahnlab.com/ko/96826/"
+      ]
+    }
   }
 ]
